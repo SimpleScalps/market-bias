@@ -88,3 +88,22 @@ test('Dubletten behalten den Zeitpunkt der frühesten Meldung', async () => {
   assert.equal(zusammengefasst.date, '2026-09-04T12:31:00Z');
   assert.deepEqual(zusammengefasst.alsoIn, ['CoinDesk']);
 });
+
+test('Friedensbemühungen sind keine Eskalation', () => {
+  const bullish = [
+    "Witkoff and Kushner will travel to end Russia's war in Ukraine: Trump",
+    'Peace talks to end the war in Gaza begin in Cairo',
+    'Ceasefire agreed after months of war',
+  ];
+  for (const t of bullish) {
+    const r = scoreHeadline(t);
+    assert.ok(r && r.scores.crypto > 0, `sollte bullish sein: ${t}`);
+  }
+
+  // Eskalation und gescheiterte Gespräche bleiben risk-off.
+  for (const t of ['Russia escalates war in Ukraine with new strikes',
+                   'Peace talks collapse as both sides walk out']) {
+    const r = scoreHeadline(t);
+    assert.ok(r && r.scores.crypto < 0, `sollte bearish sein: ${t}`);
+  }
+});

@@ -1,5 +1,5 @@
 import { matchEvent } from './events.mjs';
-import { KEYWORDS, GEOPOLITICS } from './keywords.mjs';
+import { KEYWORDS, GEOPOLITICS, DEESKALATION, DEESKALATION_GESCHEITERT } from './keywords.mjs';
 import { extractNumbers } from './numeric.mjs';
 import { countryRelevance, centralBankWeight, emergingMarketDamping } from './relevance.mjs';
 
@@ -230,10 +230,20 @@ export function scoreHeadline(title, regime = 'policy') {
     hitsEn.push((neg < 0 ? 'not ' : '') + (k.labelEn || k.label));
   }
 
+  // Geht es um das Ende eines Konflikts statt um dessen Ausbruch, dreht sich
+  // die Wirkung: Der Markt liest Friedensbemühungen als Entspannung.
+  const friedlich = DEESKALATION.test(title) && !DEESKALATION_GESCHEITERT.test(title);
+
   for (const g of GEOPOLITICS) if (g.re.test(t)) {
-    risk -= g.weight;
-    hits.push(g.label);
-    hitsEn.push(g.labelEn || g.label);
+    if (friedlich) {
+      risk += g.weight * 0.7;   // Entspannung wirkt schwächer als eine Eskalation
+      hits.push('Deeskalation');
+      hitsEn.push('de-escalation');
+    } else {
+      risk -= g.weight;
+      hits.push(g.label);
+      hitsEn.push(g.labelEn || g.label);
+    }
   }
 
   const vs = verbalSurprise(title);

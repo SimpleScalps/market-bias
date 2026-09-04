@@ -71,10 +71,10 @@ const alterMs = (d) => (d?.updated ? Date.now() - new Date(d.updated).getTime() 
  */
 function zusammenfuehren(bestand, frische) {
   const bekannt = new Map((bestand?.items || []).map((n) => [n.id, n]));
-  const neue = [];
+  const kandidaten = [];
   for (const n of frische) {
     const vorhanden = bekannt.get(n.id);
-    if (!vorhanden) neue.push(n);
+    if (!vorhanden) kandidaten.push(n);
     bekannt.set(n.id, vorhanden ? { ...n, date: vorhanden.date } : n);
   }
 
@@ -82,7 +82,18 @@ function zusammenfuehren(bestand, frische) {
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, 300);
 
-  return { items, neue };
+  /*
+   * Nur melden, was auch im Bestand landet.
+   *
+   * Der Bestand fasst 300 Meldungen, die Quellen liefern zusammen mehr. Eine
+   * neue, aber etwas ältere Meldung fällt beim Kürzen heraus - benachrichtigt
+   * wurde vorher trotzdem. Wer dann in der App danach sucht, findet nichts.
+   * Auch die Zusammenfassung von Dubletten kann einen Eintrag ersetzen.
+   */
+  const sichtbar = new Set(items.map((n) => n.id));
+  const neue = kandidaten.filter((n) => sichtbar.has(n.id));
+
+  return { items, neue, verworfen: kandidaten.length - neue.length };
 }
 
 /** Holt eine Feed-Gruppe plus Kalender und aktualisiert den Bestand. */

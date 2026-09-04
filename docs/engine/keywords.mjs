@@ -41,6 +41,9 @@ export const KEYWORDS = [
   { re: /\b(tariff[s]?|trade war|export ban|sanction[s]?)\b/, type: 'risk', weight: -0.45, label: 'Handelskonflikt', labelEn: 'trade conflict' },
   { re: /\b(government shutdown|debt ceiling)\b/, type: 'risk', weight: -0.4, label: 'US-Haushaltsrisiko', labelEn: 'US fiscal risk' },
   { re: /\b(contagion|bank run|banking crisis|credit crunch)\b/, type: 'risk', weight: -0.7, label: 'Finanzstress', labelEn: 'financial stress' },
+  // Scheiternde Verhandlungen sind die Kehrseite der Entspannung: Sie wiegen
+  // schwerer als der Optimismus, der ihnen vorausging.
+  { re: /\b(talks|negotiations|deal|agreement|summit|ceasefire)\b[^.]{0,24}\b(collapse[sd]?|fail\w*|break(s|ing)? down|broke down|stall\w*|reject\w*|walk(s|ed)? out)\b/, type: 'risk', weight: -0.55, label: 'Verhandlungen gescheitert', labelEn: 'talks collapsed' },
 
   // ----- Krypto-spezifisch positiv -----
   { re: /\b(etf (approval|approved|inflow[s]?)|spot etf)\b/, type: 'crypto', weight: 0.7, label: 'ETF-Zuflüsse', labelEn: 'ETF inflows' },
@@ -57,6 +60,17 @@ export const KEYWORDS = [
   { re: /\b(liquidation[s]?|forced selling|miner capitulation|whale[s]? (sold|dump\w*))\b/, type: 'crypto', weight: -0.55, label: 'Liquidationen', labelEn: 'liquidations' },
   { re: /\b(seized|confiscat\w+|mt\.? gox|exchange collapse|halts withdrawals)\b/, type: 'crypto', weight: -0.6, label: 'Coin-Überhang/Ausfall', labelEn: 'coin overhang or failure' },
 ];
+
+/*
+ * Deeskalation. Eine Meldung über das ENDE eines Krieges enthält dasselbe Wort
+ * wie eine über dessen Ausbruch. Ohne diese Prüfung galt "peace talks to end
+ * the war" als Eskalation und damit als bearish - das Gegenteil dessen, was
+ * der Markt daraus macht.
+ */
+export const DEESKALATION = /\b(ceasefire|truce|peace (deal|talks|plan|process|summit)?|end(ing)? the war|to end\b[^.]{0,20}\bwar|withdraw\w*|de-?escalat\w+|disengage\w*|armistice|negotiat\w+|talks\b|agreement|accord|summit|resolution)\b/i;
+
+// ... es sei denn, die Bemühungen scheitern.
+export const DEESKALATION_GESCHEITERT = /\b(fail\w*|collapse[sd]?|break(s|ing)? down|broke down|reject\w*|stall\w*|no (deal|agreement)|walks? out|suspend\w*)\b/i;
 
 // Geopolitik wirkt praktisch immer risk-off.
 export const GEOPOLITICS = [

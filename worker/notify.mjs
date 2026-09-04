@@ -82,7 +82,18 @@ async function anDiscord(ziel, titel, text) {
     }),
     signal: AbortSignal.timeout(10000),
   });
-  if (!res.ok) throw new Error(`Discord ${res.status}`);
+
+  if (!res.ok) {
+    // Discord nennt den Grund im Antwortkörper: 10015 heisst unbekannter
+    // Webhook (geloescht oder falsch kopiert), 50027 ungueltiges Token.
+    let detail = '';
+    try {
+      const koerper = await res.text();
+      const j = JSON.parse(koerper);
+      detail = ` (${j.code || '?'}: ${j.message || koerper.slice(0, 80)})`;
+    } catch { /* kein JSON */ }
+    throw new Error(`Discord ${res.status}${detail}`);
+  }
 }
 
 /** Schickt an alle Ziele; ein fehlerhaftes Ziel stoppt die übrigen nicht. */
