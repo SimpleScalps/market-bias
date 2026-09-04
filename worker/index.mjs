@@ -20,7 +20,8 @@ import { sendeAn } from './notify.mjs';
 const KEY = 'https://market-bias.internal/news';
 const ABO_KEY = 'https://market-bias.internal/abo';
 const GRUPPEN = 3;
-const KAL_MS = 20_000;    // Kalender im Livebetrieb höchstens alle 20 s
+const KAL_MS = 20_000;      // Kalender im Livebetrieb höchstens alle 20 s
+const BESTAND_TTL = 86_400; // Bestand einen Tag halten, nicht zehn Minuten
 
 const CORS = {
   'access-control-allow-origin': '*',
@@ -40,6 +41,11 @@ async function lesen(env, key) {
   return hit ? hit.json() : null;
 }
 
+/**
+ * Ablegen. Die Verfallszeit gilt fuer KV: Sie muss deutlich laenger sein als
+ * der Cron-Takt, sonst verschwindet der Bestand in ruhigen Phasen und der
+ * naechste Lauf haelt jede Meldung fuer neu.
+ */
 async function schreiben(env, ctx, key, data, ttl = 86400) {
   if (env.STORE) return env.STORE.put(key, JSON.stringify(data), { expirationTtl: ttl });
   const res = new Response(JSON.stringify(data), {
@@ -78,7 +84,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
     errors: teil.errors,
     items,
   };
-  await schreiben(env, ctx, KEY, data, 600);
+  await schreiben(env, ctx, KEY, data, BESTAND_TTL);
   return { data, neue };
 }
 
@@ -109,7 +115,7 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
     count: items.length,
     updated: new Date().toISOString(),
   };
-  await schreiben(env, ctx, KEY, data, 600);
+  await schreiben(env, ctx, KEY, data, BESTAND_TTL);
   return { data, neue };
 }
 
