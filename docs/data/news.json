@@ -1,44 +1,11 @@
 {
- "updated": "2026-09-04T23:17:15.713Z",
+ "updated": "2026-09-04T23:18:44.542Z",
  "regime": "policy",
  "count": 300,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
-  {
-   "id": "Al Jazeera:Mock Republican convention website redirects users to Epstein Files",
-   "title": "Mock Republican convention website redirects users to Epstein Files",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/4/mock-republican-convention-website-redirects-users-to-epstein-files?traffic_source=rss",
-   "date": "2026-09-04T22:51:06.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Die Website der Mock Republican Convention leitet Benutzer zu Epstein Files weiter"
-  },
   {
    "id": "FXStreet:Malaysian Ringgit: Range-bound risks and key levels against US Dollar – OCBC",
    "title": "Malaysian Ringgit: Range-bound risks and key levels against US Dollar – OCBC",
@@ -872,7 +839,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1350,7 +1317,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1465,7 +1432,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Malaysia: Falsche Pause hält Optionen offen – DBS"
   },
   {
    "id": "FXStreet:Indian Rupee: Dollar inflows support INR but impulse may fade – OCBC",
@@ -1759,7 +1727,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: strong labour market)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 35,
+   "priority": 34,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -1893,7 +1861,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2603,7 +2571,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 43,
+   "priority": 42,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3030,6 +2998,39 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Die USA haben im August 162.000 neue Arbeitsplätze geschaffen, was die Erwartungen der Fed an Zinserhöhungen erhöht"
+  },
+  {
+   "id": "Al Jazeera:The number 10 shirt must not retire with Messi",
+   "title": "The number 10 shirt must not retire with Messi",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/opinions/2026/9/4/the-number-10-shirt-must-not-retire-with-messi?traffic_source=rss",
+   "date": "2026-09-04T16:31:15.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 21,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Das Trikot Nummer 10 darf nicht mit Messi in den Ruhestand gehen"
   },
   {
    "id": "BBC World:Trump's peace envoys to visit Moscow and Kyiv over weekend",
@@ -3848,7 +3849,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4876,7 +4877,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
