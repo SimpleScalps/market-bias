@@ -25,6 +25,13 @@ export const KEYWORDS = [
   { re: /\b(fed )?(pivot|pause)\b/, type: 'hawkish', weight: -0.4, label: 'Fed-Pause' },
   { re: /\b(weak|soft|weaker.than.expected|cooling) (jobs|payrolls|employment|labou?r market)\b/, type: 'hawkish', weight: -0.55, label: 'schwacher Arbeitsmarkt' },
 
+  // ----- Rohstoff- und Energiepreise -----
+  // Ein Rekordhoch beim Diesel ist keine Rally, sondern ein Preisschock:
+  // er treibt die Inflation und belastet damit Risk-Assets.
+  { re: /\b(oil|crude|diesel|gasoline|petrol|natural gas|energy|food|wheat) (price[s]? )?[a-z ]{0,14}(record|all.time) high\b/, type: 'hawkish', weight: 0.5, label: 'Energiepreisschock' },
+  { re: /\b(oil|crude|diesel|gasoline|petrol|natural gas|energy|food|wheat) (price[s]? )?[a-z ]{0,14}(record|all.time) high\b/, type: 'risk', weight: -0.42, label: 'Preisdruck' },
+  { re: /\b(oil|crude|diesel|gas) prices? (surge|soar|spike|jump|climb)\w*/, type: 'hawkish', weight: 0.42, label: 'Energiepreise steigen' },
+
   // ----- Risikoneigung -----
   { re: /\b(rally|rallies|surge[sd]?|soar[sd]?|record high|all.time high|jump[sd]?)\b/, type: 'risk', weight: 0.4, label: 'Kursanstieg' },
   { re: /\b(ceasefire|truce|peace deal|de.escalat\w+|agreement reached|deal reached)\b/, type: 'risk', weight: 0.55, label: 'Entspannung' },

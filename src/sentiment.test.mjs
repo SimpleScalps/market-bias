@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { scoreMacroEvent, scoreHeadline, label, parseNumber } from './sentiment.mjs';
+import { scoreMacroEvent, scoreHeadline, label, parseNumber } from '../docs/engine/sentiment.mjs';
 
 const dir = (r) => (r ? label(r.scores.crypto) : 'kein_signal');
 

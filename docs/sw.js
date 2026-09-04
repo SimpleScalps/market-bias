@@ -1,6 +1,6 @@
 // Hülle offline verfügbar halten; die Nachrichten selbst kommen immer frisch.
-const CACHE = 'market-bias-v1';
-const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'manifest.webmanifest', 'icon.png'];
+const CACHE = 'market-bias-v2';
+const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'config.js', 'manifest.webmanifest', 'icon.png'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));

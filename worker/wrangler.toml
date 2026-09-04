@@ -1,0 +1,12 @@
+name = "market-bias"
+main = "index.mjs"
+compatibility_date = "2026-01-01"
+
+# Hält den Cache im Minutentakt warm, damit Anfragen sofort beantwortet werden.
+[triggers]
+crons = ["* * * * *"]
+
+[vars]
+# 'policy' = Zinskanal (starke Daten sind schlecht für Krypto)
+# 'growth' = Wachstumskanal (starke Daten sind gut für Krypto)
+REGIME = "policy"
