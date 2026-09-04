@@ -303,12 +303,12 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
   color:var(--faint);margin-bottom:6px;text-transform:uppercase}
 .wahl.klein button{flex:0 0 auto;padding:6px 10px;font-size:10px}
 
-#tgFelder,#dcFelder{display:grid;gap:6px;margin-top:10px}
-#tgFelder input,#dcFelder input{
+#ntfyFelder,#tgFelder,#dcFelder{display:grid;gap:6px;margin-top:10px}
+#ntfyFelder input,#tgFelder input,#dcFelder input{
   width:100%;background:var(--panel);border:1px solid var(--line);border-radius:3px;
   padding:8px 10px;font-family:var(--mono);font-size:10.5px;outline:0
 }
-#tgFelder input:focus,#dcFelder input:focus{border-color:var(--accent)}
+#ntfyFelder input:focus,#tgFelder input:focus,#dcFelder input:focus{border-color:var(--accent)}
 
 .testBtn{
   margin-top:11px;background:var(--panel-2);border:1px solid var(--line-2);border-radius:3px;
