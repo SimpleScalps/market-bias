@@ -22,6 +22,8 @@ const ABO_KEY = 'https://market-bias.internal/abo';
 const GRUPPEN = 3;
 const KAL_MS = 20_000;      // Kalender im Livebetrieb höchstens alle 20 s
 const BESTAND_TTL = 86_400; // Bestand einen Tag halten, nicht zehn Minuten
+const GESEHEN_KEY = 'https://market-bias.internal/gesehen';
+const GESEHEN_MAX = 3000;   // deutlich mehr als die 300 angezeigten Meldungen
 
 const CORS = {
   'access-control-allow-origin': '*',
@@ -128,6 +130,30 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
   return { data, neue };
 }
 
+/**
+ * Merkt sich, welche Meldungen schon einmal da waren.
+ *
+ * Der angezeigte Bestand ist auf 300 Eintraege begrenzt; aeltere fallen heraus
+ * und tauchen beim naechsten Lauf erneut als "neu" auf. Ohne dieses Gedaechtnis
+ * wuerde derselbe Artikel immer wieder eine Benachrichtigung ausloesen - bei
+ * jedem Durchlauf rund fuenfzig Stueck.
+ */
+async function nurWirklichNeue(env, ctx, kandidaten) {
+  if (!kandidaten.length) return [];
+
+  const gespeichert = (await lesen(env, GESEHEN_KEY)) || { ids: [] };
+  const gesehen = new Set(gespeichert.ids);
+
+  const echtNeu = kandidaten.filter((n) => !gesehen.has(n.id));
+  if (!echtNeu.length) return [];
+
+  // Neue Kennungen hinten anhaengen, aelteste verwerfen.
+  const aktualisiert = [...gespeichert.ids, ...echtNeu.map((n) => n.id)].slice(-GESEHEN_MAX);
+  await schreiben(env, ctx, GESEHEN_KEY, { ids: aktualisiert }, BESTAND_TTL * 3);
+
+  return echtNeu;
+}
+
 // --- Benachrichtigungen ---------------------------------------------------
 /** Welche der neuen Meldungen verdienen eine Push-Nachricht? */
 function meldenswert(items, abo) {
@@ -143,10 +169,14 @@ function meldenswert(items, abo) {
 
 async function pushen(env, ctx, neueItems) {
   const abo = await lesen(env, ABO_KEY);
-  if (!abo?.ziele?.length || abo.stufe === 'off' || !neueItems?.length) return;
+  if (!abo?.ziele?.length) return { versucht: false, grund: 'kein Abo hinterlegt' };
+  if (abo.stufe === 'off') return { versucht: false, grund: 'Benachrichtigungen aus' };
+  if (!neueItems?.length) return { versucht: false, grund: 'nichts Neues' };
 
   const treffer = meldenswert(neueItems, abo);
-  if (!treffer.length) return;
+  if (!treffer.length) {
+    return { versucht: false, grund: `${neueItems.length} neu, aber keine mit Richtung` };
+  }
 
   const sprache = abo.lang === 'en' ? 'en' : 'de';
   const asset = abo.asset || 'crypto';
@@ -160,7 +190,14 @@ async function pushen(env, ctx, neueItems) {
     treffer.length > 1 ? `+${treffer.length - 1} ${sprache === 'de' ? 'weitere' : 'more'}` : '',
   ].filter(Boolean).join('\n');
 
-  ctx.waitUntil(sendeAn(abo.ziele, titelText, body));
+  const ergebnis = await sendeAn(abo.ziele, titelText, body);
+  return {
+    versucht: true,
+    treffer: treffer.length,
+    gesendet: ergebnis.gesendet,
+    fehler: ergebnis.fehler,
+    titel: titelText,
+  };
 }
 
 export default {
@@ -183,7 +220,7 @@ export default {
         // und wohin - niemals Token oder Themennamen.
         abo: abo ? {
           stufe: abo.stufe,
-          kanaele: (abo.ziele || []).map((z) => z.typ),
+          kanaele: (abo.ziele || []).map((z) => z.typ + (z.token ? ' (mit Token)' : ' (ohne Token)')),
           anlageklasse: abo.asset,
           profilAktiv: !!abo.profil?.aktiv,
         } : null,
@@ -212,13 +249,17 @@ export default {
       const bestand = await lesen(env, KEY);
       const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
       const { data, neue } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
-      if (bestand) await pushen(env, ctx, neue);
+      const echtNeu = await nurWirklichNeue(env, ctx, neue);
+      const versand = bestand
+        ? await pushen(env, ctx, echtNeu)
+        : { versucht: false, grund: 'erster Lauf, alles neu' };
       return json({
         ok: true,
         gruppe,
         meldungen: data.count,
-        neu: neue.length,
-        benachrichtigt: !!bestand && neue.length > 0,
+        neuImBestand: neue.length,
+        davonNieGesehen: echtNeu.length,
+        versand,
         errors: data.errors,
       });
     }
@@ -266,6 +307,10 @@ export default {
     const { neue } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
 
     // Beim allerersten Lauf ist alles neu — dann nicht benachrichtigen.
-    if (bestand) await pushen(env, ctx, neue);
+    const echtNeu = await nurWirklichNeue(env, ctx, neue);
+    if (bestand) {
+      const r = await pushen(env, ctx, echtNeu);
+      if (r?.fehler?.length) console.log('Versand fehlgeschlagen:', r.fehler.join(' | '));
+    }
   },
 };
