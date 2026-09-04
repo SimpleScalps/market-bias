@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-04T19:11:33.794Z",
+ "updated": "2026-09-04T19:12:50.412Z",
  "regime": "policy",
  "count": 300,
  "errors": [
@@ -215,7 +215,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "„Ich gebe ihm derzeit 1.000 $ pro Monat“: Mein Enkel hat eine schwere psychische Erkrankung. Wie schütze ich ihn, nachdem ich weg bin?"
   },
   {
    "id": "CNBC World:Longtime Fox News host Maria Bartiromo disputes reports of termination",
@@ -249,7 +250,8 @@
    "coins": [],
    "alsoIn": [
     "CNBC"
-   ]
+   ],
+   "titleDe": "Die langjährige Moderatorin von Fox News, Maria Bartiromo, bestreitet Berichte über die Kündigung"
   },
   {
    "id": "Decrypt:'Send Your Lawyers': Robinhood Isn't Backing Down From AMC Over Stock Tokens",
@@ -281,7 +283,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "'Schicken Sie Ihre Anwälte': Robinhood zieht sich nicht von AMC über Aktien-Tokens zurück"
   },
   {
    "id": "MarketWatch:Why the jobs report will actually be good for bonds",
@@ -313,7 +316,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Warum der Stellenbericht eigentlich gut für Anleihen ist"
   },
   {
    "id": "The Block:President Trump says he wants Hyperliquid to enter the US — here’s how it could happen",
@@ -378,7 +382,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "WNBA-Kommissarin Cathy Engelbert geht Ende 2026 in den Ruhestand"
   },
   {
    "id": "Al Jazeera:Villagers vow to rebuild despite devastating mass demolition in West Bank",
@@ -410,7 +415,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Dorfbewohner geloben, trotz verheerender Massenzerstörung im Westjordanland wieder aufzubauen"
   },
   {
    "id": "Cointelegraph:Here’s what happened in crypto today",
@@ -477,7 +483,8 @@
    "coins": [],
    "alsoIn": [
     "CNBC"
-   ]
+   ],
+   "titleDe": "Auf Frauen entfielen im August fast alle Stellenzuwächse. Hier ist, warum"
   },
   {
    "id": "FXStreet:Fed’s Hammack says policy is not restrictive enough",
@@ -542,7 +549,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Türkei: CBRT wird wahrscheinlich vor zwei Zinssenkungen im vierten Quartal gehalten - ING"
   },
   {
    "id": "FXStreet:Australian Dollar resumes advance as US Dollar loses post-NFP momentum",
@@ -677,7 +685,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Moment, in dem zwei Arbeiter lebend aus dem Nepal-Tunnel gezogen werden"
   },
   {
    "id": "MarketWatch:‘Please don’t let this happen to you’: My best friend died without a will — her neglectful family gets everything",
@@ -709,7 +718,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "„Bitte lass dir das nicht passieren“: Meine beste Freundin ist ohne Testament gestorben — ihre nachlässige Familie bekommt alles"
   },
   {
    "id": "MarketWatch:‘It’s not fair’: My twin brother and I were left houses by our parents. Can I make him pay his share for taxes and upkeep?",
@@ -741,7 +751,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "\"Es ist nicht fair\": Mein Zwillingsbruder und ich wurden von unseren Eltern verlassen. Kann ich ihn dazu bringen, seinen Anteil an Steuern und Unterhalt zu zahlen?"
   },
   {
    "id": "CNBC World:White House has vetted candidates for key CFTC vacancies, sources tell CNBC. It's unclear if they will be filled",
@@ -773,7 +784,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Das Weiße Haus hat Kandidaten für wichtige CFTC-Stellenangebote überprüft, so Quellen gegenüber CNBC. Es ist unklar, ob sie gefüllt werden"
   },
   {
    "id": "Al Jazeera:Indonesia wildfires send toxic haze across Southeast Asia",
@@ -805,7 +817,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Indonesische Waldbrände senden giftigen Dunst über Südostasien"
   },
   {
    "id": "CNBC:2-year yield rises to highest since January 2025 after hot jobs report boosts expectations that the Fed could raise rates",
@@ -833,7 +846,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike, strong labour market)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 86,
+   "priority": 85,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -875,7 +888,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Der Dow Jones Industrial Average fällt auf eine Jobnummer, die der Präsident liebt"
   },
   {
    "id": "CNBC:U.S. sanctions Turkish bank accused of enabling Iran as Bessent says he 'hopes for' no further bank penalties",
@@ -946,7 +960,8 @@
    "coins": [],
    "alsoIn": [
     "CNBC"
-   ]
+   ],
+   "titleDe": "Teslas Aktie sinkt, da das Cybercab-Update die Wall Street „unterfordert“"
   },
   {
    "id": "CNBC:Labor Day marks the start of 'fallcations' as wealthy travelers avoid summer crowds",
@@ -978,7 +993,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Der Tag der Arbeit markiert den Beginn der \"Fallkationen\", da wohlhabende Reisende die Sommermassen meiden"
   },
   {
    "id": "Al Jazeera:Yemen’s army says recaptured key territory as clashes with Houthis continue",
@@ -1010,7 +1026,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Jemens Armee sagt, dass sie Schlüsselgebiet zurückerobert hat, während die Zusammenstöße mit den Houthis weitergehen"
   },
   {
    "id": "BBC World:UN votes to adopt new world map to reflect Africa's true size",
@@ -1042,7 +1059,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Die Vereinten Nationen stimmen für die Annahme einer neuen Weltkarte, die die wahre Größe Afrikas widerspiegelt"
   },
   {
    "id": "Cointelegraph:Crypto Biz: AI took a back seat when Bitcoin started climbing",
@@ -1144,7 +1162,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "A16z-gestützte OpenReserve erhält Genehmigung für Full-Service-Nationalbank"
   },
   {
    "id": "CNBC Economy:U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
@@ -1215,7 +1234,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Argentinisches Ehepaar, um das von den Nazis geraubte Gemälde an den rechtmäßigen Eigentümer zurückzugeben"
   },
   {
    "id": "BeInCrypto:Quantum Memory: The Device That Breaks Bitcoin and Replaces It",
@@ -1387,7 +1407,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Cybercabs sind ein Game Changer, sagt Mike Khouw. So handelt er mit Tesla"
   },
   {
    "id": "BeInCrypto:Liquid Mercury Announces Initial Closing of ACQUA1 Offering",
@@ -1419,7 +1440,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Liquid Mercury gibt den erstmaligen Abschluss des ACQUA1-Angebots bekannt"
   },
   {
    "id": "BBC World:Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
@@ -1484,7 +1506,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Rettungskräfte rennen, um den 10-jährigen algerischen Jungen zu retten, der in einem tiefen Brunnen gefangen ist"
   },
   {
    "id": "U.Today:'We Stand Behind Stock Tokens': Robinhood CEO Backs $104 Million Ecosystem Amid Backlash",
@@ -1516,7 +1539,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "\"Wir stehen hinter Aktien-Token\": Robinhood-CEO unterstützt 104 Millionen $ Ökosystem inmitten von Gegenreaktionen"
   },
   {
    "id": "Al Jazeera:US adds 162,000 jobs in August, raising Fed rate hike expectations",
@@ -1585,7 +1609,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Das Trikot Nummer 10 darf nicht mit Messi in den Ruhestand gehen"
   },
   {
    "id": "BBC World:Trump's peace envoys to visit Moscow and Kyiv over weekend",
@@ -1617,7 +1642,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Trumps Friedensgesandte besuchen Moskau und Kiew am Wochenende"
   },
   {
    "id": "U.Today:Ripple Lands Major XRP Sponsorship Deal With Florida Gators",
@@ -1684,7 +1710,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Braut geht trotz hüfttiefem Hochwasser den Gang entlang"
   },
   {
    "id": "Decrypt:Zcash Hits Highest Price in Nearly a Decade, Crushing Short Bets",
@@ -1716,7 +1743,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Zcash erreicht den höchsten Preis seit fast einem Jahrzehnt, vernichtende Short-Wetten"
   },
   {
    "id": "Al Jazeera:October 7 attack shapes Israel’s elections and fuels political blame",
@@ -1781,7 +1809,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Stellen Sie sich Nvidias 13 Milliarden $ Deal für Hugging Face als eine Form der \"Krankenversicherung\" vor"
   },
   {
    "id": "BeInCrypto:3 Altcoins That Could Reach All-Time Highs This Weekend",
@@ -1813,7 +1842,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "3 Altcoins, die an diesem Wochenende Allzeithochs erreichen könnten"
   },
   {
    "id": "BeInCrypto:ChatGPT Recommended a Fake Crypto Site Linked to $2.2 Million Scam",
@@ -1878,7 +1908,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "‘Winds of change’: Wie Milei den Anspruch der Falklandinseln inmitten von Trump-UK-Spat aufrührt"
   },
   {
    "id": "BeInCrypto:Will AI Push Bitcoin Mining Out of the Market?",
@@ -2048,7 +2079,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "LIVE: Ipswich Town vs Liverpool – Premier League"
   },
   {
    "id": "MarketWatch:Here’s how people are building their nest eggs using ‘rent and invest’ strategies",
@@ -2080,7 +2112,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "So bauen Menschen ihre Nesteier mit „Mieten und Investieren“ -Strategien"
   },
   {
    "id": "FXStreet:Silver claws back post-NFP losses after briefly crashing below $65",
@@ -2112,7 +2145,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Silber krallt sich nach NFP-Verlusten zurück, nachdem er kurzzeitig unter 65 $ abgestürzt ist"
   },
   {
    "id": "Al Jazeera:Russia’s jet-powered drones overwhelm Ukraine, killing dozens",
@@ -2177,7 +2211,8 @@
    "eventTypeEn": "Price prediction",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "EUR/USD-Preisprognose: Euro bildet potenziell höheres Tief über 100-Tage-SMA"
   },
   {
    "id": "FXStreet:Brent: Questionable flows, fragile outlook – Commerzbank",
@@ -2209,7 +2244,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Brent: Fragwürdige Ströme, fragile Aussichten – Commerzbank"
   },
   {
    "id": "The Block:Ripple expands college sports push with XRP partnership at Florida",
@@ -2526,7 +2562,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Ungarn: Inflationsanstieg erschwert ZINSSENKUNGSPFAD"
   },
   {
    "id": "Decrypt:Bitcoin Slides as Blowout Jobs Report Revives Fed Hike Odds",
@@ -2638,7 +2675,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "BitMEX-Mitbegründer Ben Delo gibt Farages Reform UK weitere 4 Millionen £"
   },
   {
    "id": "Federal Reserve:Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
@@ -2703,7 +2741,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Robinhood gibt nicht nach, nachdem AMC-CEO Stopp der Aktien-Token fordert"
   },
   {
    "id": "FXStreet:Swiss Franc loses ground upbeat US Nonfarm Payrolls",
@@ -2763,7 +2802,7 @@
    "whyEn": "Signal words point to easier policy — positive for risk assets. (signals: Fed pause)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 52,
+   "priority": 51,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -3475,7 +3514,7 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 39,
+   "priority": 38,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -4467,7 +4506,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "medium",
@@ -4711,7 +4750,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 39,
+   "priority": 38,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -5313,7 +5352,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6214,7 +6253,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
