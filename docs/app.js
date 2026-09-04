@@ -33,6 +33,7 @@ let profil = { ...STANDARD_PROFIL, ...JSON.parse(P.get('profil', '{}')) };
 let kanaele = new Set(JSON.parse(P.get('kanaele', '["browser"]')));
 let tg = JSON.parse(P.get('tg', '{}'));
 let dc = JSON.parse(P.get('dc', '{}'));
+let ntfy = JSON.parse(P.get('ntfy', '{}'));
 let query = '';
 let gesehen = new Set();
 let frischeIds = new Set();
@@ -45,8 +46,11 @@ const T = () => window.I18N[lang];
 
 const zeit = (iso) => new Date(iso).toLocaleTimeString(lang === 'en' ? 'en-GB' : 'de-DE', { hour: '2-digit', minute: '2-digit' });
 const grund = (n) => (lang === 'en' ? (n.whyEn || n.why) : n.why) || T().keineBegruendung;
-// Deutsche Fassung nutzen, wo vorhanden — sonst bleibt der Originaltitel stehen.
-const titel = (n) => (lang === 'de' ? (n.titleDe || n.title) : n.title);
+// Die Schlagzeile bleibt immer im Original — Fachbegriffe wie "payrolls" oder
+// "hawkish" verlieren beim Übersetzen an Schärfe. Die deutsche Fassung steht
+// aufgeklappt darunter.
+const titel = (n) => n.title;
+const uebersetzt = (n) => (lang === 'de' && n.titleDe && n.titleDe !== n.title ? n.titleDe : null);
 
 // ---------- Filterkette ----------
 function matches(n) {
@@ -112,35 +116,133 @@ function tagesbild() {
   return { score, bull, bear, neut, anzahl: heute.length, treiber };
 }
 
+let treiberOffen = false;
+
+const escape = (s) => String(s).replace(/[<>&"]/g, (c) =>
+  ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' }[c]));
+
 function renderTages() {
   const t = tagesbild();
   const box = $('#tages');
-  if (!t) { box.innerHTML = `<p class="tagesLeer">${T().tagesbildLeer}</p>`; return; }
+  const T_ = T();
+  if (!t) { box.innerHTML = `<p class="tagesLeer">${T_.tagesbildLeer}</p>`; return; }
 
   // Für die Tagessicht ist die Skala enger — ein Tagesmittel von 0,3 ist viel.
   const l = label(t.score * 1.8);
   const datum = new Date().toLocaleDateString(lang === 'en' ? 'en-GB' : 'de-DE',
-    { day: '2-digit', month: '2-digit', year: 'numeric' });
+    { day: '2-digit', month: 'short', year: 'numeric' });
 
-  const treiber = t.treiber.length
-    ? `<div class="treiber"><span>${T().treiber}</span><ul>${
-        t.treiber.map((n) => `<li class="${label(n.scores[asset])}">${
-          titel(n).replace(/[<>&]/g, '').slice(0, 74)}</li>`).join('')
-      }</ul></div>`
-    : '';
+  // Verteilung als Band: auf einen Blick sichtbar, wie einseitig der Tag ist.
+  const g = t.bull + t.bear + t.neut || 1;
+  const band = `<div class="band" role="img" aria-label="${T_.verteilung(t.bull, t.neut, t.bear)}">
+    <i class="b" style="width:${(t.bull / g) * 100}%"></i>
+    <i class="n" style="width:${(t.neut / g) * 100}%"></i>
+    <i class="r" style="width:${(t.bear / g) * 100}%"></i>
+  </div>`;
+
+  const treiberListe = t.treiber.map((n) => {
+    const ll = label(n.scores[asset]);
+    const ueb = uebersetzt(n);
+    return `<li class="${ll}">
+      <span class="tw">${T_.labels[ll]}</span>
+      <span class="tt">${escape(titel(n))}</span>
+      ${ueb ? `<span class="tu">${escape(ueb)}</span>` : ''}
+    </li>`;
+  }).join('');
 
   box.innerHTML = `
     <div class="tagesKopf">
-      <span class="tagesTitel">${T().tagesbild}</span>
+      <span class="tagesTitel">${T_.tagesbild}</span>
       <span class="tagesDatum">${datum}</span>
     </div>
-    <div class="tagesWert">
+
+    <div class="tagesHaupt">
+      <div class="tagesScore">
+        <span class="badge gross ${l}">${T_.labels[l]}</span>
+        <span class="tagesZahl">${t.score > 0 ? '+' : ''}${t.score.toFixed(2)}</span>
+      </div>
       <span class="meter gross"><i style="${meterStyle(t.score * 1.8)}"></i></span>
-      <span class="badge ${l}">${T().labels[l]}</span>
-      <span class="tagesZahl">${t.score > 0 ? '+' : ''}${t.score.toFixed(2)}</span>
+      <p class="tagesSub">${T_.tagesHinweis} · ${T_.assets[asset]}</p>
     </div>
-    <p class="tagesVerteilung">${T().verteilung(t.bull, t.neut, t.bear)}</p>
-    ${treiber}`;
+
+    ${band}
+    <p class="tagesVerteilung">${T_.verteilung(t.bull, t.neut, t.bear)}</p>
+
+    ${t.treiber.length ? `
+      <button class="treiberBtn" aria-expanded="${treiberOffen}">
+        <span class="pfeil">${treiberOffen ? '▾' : '▸'}</span>
+        ${treiberOffen ? T_.treiberVerbergen : T_.treiberZeigen}
+        <b>${t.treiber.length}</b>
+      </button>
+      <div class="treiber" ${treiberOffen ? '' : 'hidden'}>
+        <ul>${treiberListe}</ul>
+      </div>` : ''}`;
+
+  const btn = $('.treiberBtn', box);
+  if (btn) btn.addEventListener('click', () => {
+    treiberOffen = !treiberOffen;
+    renderTages();
+  });
+}
+
+// ---------- Ausführliche Erklärung ----------
+const zeile = (k, v) => `<div class="dz"><span>${k}</span><b>${v}</b></div>`;
+
+/**
+ * Baut die Langfassung: woher die Zahlen kommen, wie daraus ein
+ * geldpolitischer Impuls wird und was das für den Handel bedeutet.
+ * Alles stammt aus Feldern, die ohnehin in der Meldung stecken.
+ */
+function detailText(n) {
+  const t = T();
+  const blocks = [];
+  const fmtZahl = (v) => (v > 0 ? '+' : '') + Number(v).toFixed(2);
+
+  // 1) Datenlage — nur bei Meldungen mit echten Zahlen
+  if (n.actual != null && n.consensus != null) {
+    const ueber = typeof n.surprise === 'number'
+      ? (n.surprise > 0 ? '+' : '') + (Number.isInteger(n.surprise) ? n.surprise : n.surprise.toFixed(1))
+      : '—';
+    blocks.push(`<div class="dblock"><h4>${t.detailDaten}</h4>
+      ${zeile(t.dVeroeffentlicht, n.actual)}
+      ${zeile(t.dErwartet, n.consensus)}
+      ${n.previous ? zeile(t.dVormonat, n.previous) : ''}
+      ${zeile(t.dUeberraschung, ueber)}</div>`);
+  }
+
+  // 2) Signalwörter — bei reinen Textschlagzeilen
+  if (n.signals?.length) {
+    blocks.push(`<div class="dblock"><h4>${t.detailSignale}</h4>
+      <ul class="dliste">${n.signals.map((x) => `<li>${x}</li>`).join('')}</ul></div>`);
+  }
+
+  // 3) Übertragung zur Geldpolitik
+  const kanalNamen = { inflation: t.kanalInflation, growth: t.kanalWachstum, policy: t.kanalPolitik };
+  const impulsTxt = typeof n.hawkish === 'number'
+    ? `${fmtZahl(n.hawkish)} (${n.hawkish > 0 ? t.restriktiv : t.locker})`
+    : '—';
+  blocks.push(`<div class="dblock"><h4>${t.detailUebertragung}</h4>
+    ${n.channel ? zeile(t.dKanal, kanalNamen[n.channel] || n.channel) : ''}
+    ${n.region ? zeile(t.dRegion, n.region) : ''}
+    ${zeile(t.dImpuls, impulsTxt)}</div>`);
+
+  // 4) Wirkung je Anlageklasse
+  blocks.push(`<div class="dblock"><h4>${t.detailWirkung}</h4>${bars(n)}</div>`);
+
+  // 5) Einordnung für den Handel
+  const typ = lang === 'en' ? (n.eventTypeEn || n.eventType) : n.eventType;
+  blocks.push(`<div class="dblock"><h4>${t.detailHandel}</h4>
+    ${zeile(t.tradingImpact, t.impact[n.impactLevel] || '—')}
+    ${zeile(t.erwarteteDauer, t.dauer[n.duration] || '—')}
+    ${typ ? zeile(t.dTyp, typ) : ''}
+    ${zeile(t.dRelevanz, `${n.priority}/100`)}
+    ${zeile(t.dQuelle, n.source + (n.alsoIn?.length ? ` +${n.alsoIn.length}` : ''))}</div>`);
+
+  // 6) Die Annahme, auf der alles beruht
+  blocks.push(`<div class="dblock"><h4>${t.detailAnnahme}</h4>
+    <p class="dtext">${data.regime === 'growth' ? t.annahmeGrowth : t.annahmePolicy}</p></div>`);
+
+  return blocks.join('');
 }
 
 // ---------- Darstellung ----------
@@ -229,11 +331,31 @@ function render() {
     $('.src', node).textContent =
       `${n.source.toUpperCase()}${n.region ? ' · ' + n.region : ''}${auch} · REL ${n.priority}`;
 
+    // Deutsche Fassung der Schlagzeile, falls vorhanden.
+    const ueb = $('.uebersetzung', node);
+    const deutsch = uebersetzt(n);
+    if (deutsch) { ueb.textContent = deutsch; ueb.hidden = false; }
+
     $('.reason', node).textContent = grund(n);
     $('.bars', node).innerHTML = bars(n);
 
     const link = $('.link', node);
     if (n.url) { link.href = n.url; link.textContent = T().quelleOeffnen; } else link.remove();
+
+    // Langfassung wird erst auf Wunsch gebaut — spart Arbeit bei 300 Einträgen.
+    const mehr = $('.mehrBtn', node);
+    const detail = $('.detail', node);
+    mehr.textContent = T().mehrDetails;
+    mehr.addEventListener('click', () => {
+      const offen = mehr.getAttribute('aria-expanded') === 'true';
+      if (!offen && !detail.dataset.gebaut) {
+        detail.innerHTML = detailText(n);
+        detail.dataset.gebaut = '1';
+      }
+      mehr.setAttribute('aria-expanded', String(!offen));
+      mehr.textContent = offen ? T().mehrDetails : T().wenigerDetails;
+      detail.hidden = offen;
+    });
 
     const head = $('.head', node);
     const why = $('.why', node);
@@ -290,6 +412,7 @@ function renderTexte() {
   $('#lKanaele').textContent = T().kanaele;
   $('#hTelegram').textContent = T().telegramHinweis;
   $('#hDiscord').textContent = T().discordHinweis;
+  $('#hNtfy').textContent = T().ntfyHinweis;
   $('#testSenden').textContent = T().testen;
   $$('#profilAn button')[0].textContent = T().profilAus;
   $$('#profilAn button')[1].textContent = T().profilAn;
@@ -342,22 +465,41 @@ matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
 // ---------- Benachrichtigungen ----------
 function hinweisBenachrichtigung() {
   const el = $('#hBenach');
+  if (notify === 'off') { el.textContent = ''; return; }
+
+  // Der Hinweis gilt nur für den Browser-Kanal; Telegram funktioniert immer.
+  if (!kanaele.has('browser')) { el.textContent = ''; return; }
   if (!('Notification' in window)) { el.textContent = T().benachrichtigungHinweis; return; }
   el.textContent = Notification.permission === 'denied'
     ? T().benachrichtigungAbgelehnt
-    : T().benachrichtigungHinweis;
+    : Notification.permission === 'granted'
+      ? ''
+      : T().benachrichtigungHinweis;
 }
 
-async function benachrichtigungSetzen(wert) {
-  if (wert !== 'off' && 'Notification' in window && Notification.permission === 'default') {
-    try { await Notification.requestPermission(); } catch { /* abgelehnt */ }
-  }
-  notify = (wert !== 'off' && 'Notification' in window && Notification.permission !== 'granted') ? 'off' : wert;
+function benachrichtigungSetzen(wert) {
+  notify = wert;
   P.set('notify', notify);
   $$('#benach button').forEach((b) => b.classList.toggle('on', b.dataset.notify === notify));
   hinweisBenachrichtigung();
   kanaeleAnzeigen();
   aboSenden();
+}
+
+/**
+ * Die Browser-Berechtigung wird erst abgefragt, wenn dieser Kanal auch wirklich
+ * gewählt wird. Telegram und Discord laufen unabhängig davon — sie an dieselbe
+ * Erlaubnis zu koppeln, hätte den Telegram-Weg unerreichbar gemacht.
+ */
+async function browserKanalAnfragen() {
+  if (!('Notification' in window)) return false;
+  if (Notification.permission === 'granted') return true;
+  if (Notification.permission === 'denied') return false;
+  try {
+    return (await Notification.requestPermission()) === 'granted';
+  } catch {
+    return false;
+  }
 }
 
 function melde(frisch) {
@@ -390,8 +532,10 @@ function melde(frisch) {
 function kanaeleAnzeigen() {
   $('#kanaele').hidden = notify === 'off';
   $$('#kanalWahl button').forEach((b) => b.classList.toggle('on', kanaele.has(b.dataset.kanal)));
+  $('#ntfyFelder').hidden = !kanaele.has('ntfy');
   $('#tgFelder').hidden = !kanaele.has('telegram');
   $('#dcFelder').hidden = !kanaele.has('discord');
+  $('#ntfyTopic').value = ntfy.topic || '';
   $('#tgToken').value = tg.token || '';
   $('#tgChat').value = tg.chat || '';
   $('#dcHook').value = dc.hook || '';
@@ -401,10 +545,17 @@ function kanaeleAnzeigen() {
  * Schickt eine Meldung an die aktiven Kanäle. Telegram und Discord laufen über
  * den Worker: nur der kann zustellen, während die App geschlossen ist.
  */
-async function anKanaele(titelText, text) {
+/** Alle aktiven Ziele mit vollständigen Angaben. */
+function zielListe() {
   const ziele = [];
+  if (kanaele.has('ntfy') && ntfy.topic) ziele.push({ typ: 'ntfy', ...ntfy });
   if (kanaele.has('telegram') && tg.token && tg.chat) ziele.push({ typ: 'telegram', ...tg });
   if (kanaele.has('discord') && dc.hook) ziele.push({ typ: 'discord', hook: dc.hook });
+  return ziele;
+}
+
+async function anKanaele(titelText, text) {
+  const ziele = zielListe();
   if (!ziele.length) return { ok: false, grund: 'kein Ziel' };
 
   // Mit Worker: der verschickt, dann kommt es auch bei geschlossener App an.
@@ -430,6 +581,22 @@ async function direktSenden(ziele, titelText, text) {
   let letzterGrund = '';
 
   for (const z of ziele) {
+    if (z.typ === 'ntfy') {
+      try {
+        const server = (z.server || 'https://ntfy.sh').replace(/\/$/, '');
+        const stark = /STARK|STRONG/i.test(titelText);
+        const tag = /BEARISH/i.test(titelText) ? (stark ? 'rotating_light' : 'chart_with_downwards_trend')
+                  : /BULLISH/i.test(titelText) ? (stark ? 'rocket' : 'chart_with_upwards_trend')
+                  : 'newspaper';
+        const res = await fetch(`${server}/${encodeURIComponent(z.topic)}`, {
+          method: 'POST',
+          headers: { 'Title': titelText, 'Priority': stark ? 'urgent' : 'high', 'Tags': tag },
+          body: text,
+        });
+        if (res.ok) ok++; else letzterGrund = `ntfy ${res.status}`;
+      } catch { letzterGrund = 'ntfy nicht erreichbar'; }
+      continue;
+    }
     if (z.typ !== 'telegram') { letzterGrund = 'Discord braucht den Worker'; continue; }
     try {
       const res = await fetch(`https://api.telegram.org/bot${z.token}/sendMessage`, {
@@ -460,9 +627,7 @@ async function direktSenden(ziele, titelText, text) {
  */
 async function aboSenden() {
   if (!liveUrl) return;
-  const ziele = [];
-  if (kanaele.has('telegram') && tg.token && tg.chat) ziele.push({ typ: 'telegram', ...tg });
-  if (kanaele.has('discord') && dc.hook) ziele.push({ typ: 'discord', hook: dc.hook });
+  const ziele = zielListe();
 
   try {
     await fetch(`${liveUrl}/subscribe`, {
@@ -520,7 +685,10 @@ async function load() {
     if (!neu.items) throw new Error('Antwort ohne Meldungen');
     data = mergeNeu(neu);
     const alt = (Date.now() - new Date(data.updated)) / 1000;
-    $('#dot').classList.toggle('stale', alt > (liveUrl ? 120 : 2700));
+    const veraltet = alt > (liveUrl ? 120 : 2700);
+    const punkt = $('#dot');
+    punkt.classList.toggle('stale', veraltet);
+    punkt.title = veraltet ? T().punktAlt : T().punktLive;
   } catch {
     $('#dot').classList.add('stale');
     if (liveUrl && !data.items.length) {
@@ -646,13 +814,23 @@ $$('#coins button').forEach((b) => b.addEventListener('click', () => {
 }));
 
 // Benachrichtigungskanäle
-$$('#kanalWahl button').forEach((b) => b.addEventListener('click', () => {
+$$('#kanalWahl button').forEach((b) => b.addEventListener('click', async () => {
   const k = b.dataset.kanal;
-  if (kanaele.has(k)) kanaele.delete(k); else kanaele.add(k);
+  if (kanaele.has(k)) {
+    kanaele.delete(k);
+  } else {
+    if (k === 'browser') await browserKanalAnfragen();
+    kanaele.add(k);
+  }
   P.set('kanaele', JSON.stringify([...kanaele]));
   kanaeleAnzeigen();
+  hinweisBenachrichtigung();
   aboSenden();
 }));
+$('#ntfyTopic').addEventListener('change', (e) => {
+  ntfy.topic = e.target.value.trim(); P.set('ntfy', JSON.stringify(ntfy));
+  aboSenden();
+});
 $('#tgToken').addEventListener('change', (e) => {
   tg.token = e.target.value.trim(); P.set('tg', JSON.stringify(tg));
   aboSenden();

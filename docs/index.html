@@ -77,9 +77,14 @@
       <p class="src"></p>
     </button>
     <div class="why" hidden>
+      <p class="uebersetzung" hidden></p>
       <p class="reason"></p>
       <div class="bars"></div>
-      <a class="link" target="_blank" rel="noopener"></a>
+      <div class="whyFuss">
+        <button class="mehrBtn" aria-expanded="false"></button>
+        <a class="link" target="_blank" rel="noopener"></a>
+      </div>
+      <div class="detail" hidden></div>
     </div>
   </article>
 </template>
@@ -165,10 +170,15 @@
           <div class="unterfeld">
             <span id="lKanaele">Kanäle</span>
             <div class="wahl klein" id="kanalWahl">
+              <button data-kanal="ntfy">ntfy</button>
               <button data-kanal="browser">Browser</button>
               <button data-kanal="telegram">Telegram</button>
               <button data-kanal="discord">Discord</button>
             </div>
+          </div>
+          <div id="ntfyFelder" hidden>
+            <input id="ntfyTopic" type="text" placeholder="Themenname, z. B. marktbias-delan-8f3k" spellcheck="false" autocomplete="off">
+            <p class="hinweis" id="hNtfy"></p>
           </div>
           <div id="tgFelder" hidden>
             <input id="tgToken" type="text" placeholder="Bot-Token (123456:ABC-...)" spellcheck="false" autocomplete="off">

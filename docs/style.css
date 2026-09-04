@@ -313,3 +313,83 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
 .testStatus{margin-left:9px;font-family:var(--mono);font-size:10px;letter-spacing:.06em}
 .testStatus.ok{color:var(--bull)}
 .testStatus.fehler{color:var(--bear)}
+
+/* ============ Tagesdashboard, ueberarbeitet ============ */
+.tages{padding:13px 14px}
+.tagesKopf{margin-bottom:12px}
+.tagesHaupt{margin-bottom:13px}
+.tagesScore{display:flex;align-items:baseline;gap:10px;margin-bottom:9px}
+.badge.gross{font-size:12px;padding:5px 10px;letter-spacing:.1em}
+.tagesZahl{font-family:var(--mono);font-size:19px;font-weight:600;color:var(--txt);
+  font-variant-numeric:tabular-nums;letter-spacing:-.02em;margin-left:auto}
+.meter.gross{display:block;height:7px;border-radius:4px}
+.tagesSub{margin:9px 0 0;font-family:var(--mono);font-size:9px;letter-spacing:.09em;
+  color:var(--faint);text-transform:uppercase}
+
+/* Verteilungsband: auf einen Blick, wie einseitig der Tag ist */
+.band{display:flex;height:5px;border-radius:3px;overflow:hidden;gap:1px;margin-bottom:7px}
+.band i{display:block;min-width:2px}
+.band .b{background:var(--bull)}
+.band .n{background:var(--panel-2)}
+.band .r{background:var(--bear)}
+.tagesVerteilung{margin:0}
+
+/* Treiber: eingeklappt, kein abgeschnittener Text mehr */
+.treiberBtn{
+  display:flex;align-items:center;gap:7px;width:100%;margin-top:12px;
+  background:var(--bg-2);border:1px solid var(--line);border-radius:3px;
+  padding:8px 10px;cursor:pointer;color:var(--dim);
+  font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase
+}
+.treiberBtn:active{border-color:var(--accent)}
+.treiberBtn b{margin-left:auto;color:var(--faint);font-weight:500}
+.treiberBtn .pfeil{color:var(--accent);font-size:11px}
+
+.treiber{margin-top:9px;padding-top:0;border-top:0}
+.treiber ul{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+.treiber li{
+  padding:9px 10px;background:var(--bg-2);border:1px solid var(--line);
+  border-radius:3px;border-left-width:2px;display:grid;gap:4px
+}
+.treiber li::before{display:none}
+.treiber li.strong_bullish,.treiber li.bullish{border-left-color:var(--bull)}
+.treiber li.strong_bearish,.treiber li.bearish{border-left-color:var(--bear)}
+.treiber li.neutral{border-left-color:var(--neut)}
+.tw{font-family:var(--mono);font-size:8.5px;letter-spacing:.11em;color:var(--faint)}
+.treiber li.strong_bullish .tw,.treiber li.bullish .tw{color:var(--bull)}
+.treiber li.strong_bearish .tw,.treiber li.bearish .tw{color:var(--bear)}
+.tt{font-size:12.5px;line-height:1.42;color:var(--txt)}
+.tu{font-size:11.5px;line-height:1.4;color:var(--faint);font-style:italic}
+
+/* ============ Uebersetzung und Langfassung ============ */
+.uebersetzung{
+  margin:0 0 9px;font-size:13px;line-height:1.45;color:var(--txt);
+  padding:8px 10px;background:var(--bg-2);border:1px solid var(--line);
+  border-radius:3px;border-left:2px solid var(--accent)
+}
+.whyFuss{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.mehrBtn{
+  background:var(--panel-2);border:1px solid var(--line-2);border-radius:3px;
+  color:var(--dim);font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;
+  padding:6px 11px;cursor:pointer;text-transform:uppercase
+}
+.mehrBtn:active,.mehrBtn[aria-expanded="true"]{border-color:var(--accent);color:var(--accent)}
+
+.detail{margin-top:12px;display:grid;gap:11px;animation:slide .18s ease-out}
+.dblock{background:var(--bg-2);border:1px solid var(--line);border-radius:3px;padding:10px}
+.dblock h4{
+  margin:0 0 8px;font-family:var(--mono);font-size:8.5px;letter-spacing:.13em;
+  font-weight:600;color:var(--accent);text-transform:uppercase
+}
+.dz{display:flex;justify-content:space-between;gap:12px;padding:3px 0;
+  font-size:11.5px;color:var(--faint);border-bottom:1px solid var(--line)}
+.dz:last-child{border-bottom:0}
+.dz b{font-family:var(--mono);color:var(--dim);font-weight:500;
+  font-variant-numeric:tabular-nums;text-align:right}
+.dliste{margin:0;padding-left:15px;display:grid;gap:3px}
+.dliste li{font-size:11.5px;color:var(--dim);line-height:1.4}
+.dtext{margin:0;font-size:11.5px;line-height:1.5;color:var(--dim)}
+.dblock .bars{margin:0;background:none;border:0;padding:0}
+
+/* Der Punkt oben rechts erklaert sich per Tooltip */
+.dot{cursor:help}
