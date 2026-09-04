@@ -249,7 +249,9 @@ export function scoreHeadline(title, regime = 'policy') {
   // die Wirkung: Der Markt liest Friedensbemühungen als Entspannung.
   const friedlich = DEESKALATION.test(title) && !DEESKALATION_GESCHEITERT.test(title);
 
+  let geoTreffer = false;
   for (const g of GEOPOLITICS) if (g.re.test(t)) {
+    geoTreffer = true;
     if (friedlich) {
       risk += g.weight * 0.7;   // Entspannung wirkt schwächer als eine Eskalation
       hits.push('Deeskalation');
@@ -272,9 +274,15 @@ export function scoreHeadline(title, regime = 'policy') {
 
   // Eine Aussage der Fed bewegt Krypto, eine der RBNZ kaum.
   const cb = centralBankWeight(title);
-  const hawkish = clamp(macroHawk) * (cb === null ? emergingMarketDamping(title) : cb);
+  const emDaempfung = emergingMarketDamping(title);
+  const hawkish = clamp(macroHawk) * (cb === null ? emDaempfung : cb);
   const base = assetScores(hawkish, regime);
-  const riskOn = clamp(risk);
+
+  // Die Daempfung gilt auch fuer Risikosignale. "USD/MXN: Peso rally" galt
+  // sonst als Kursanstieg und damit als bullish fuer Krypto, obwohl ein
+  // mexikanisches Waehrungspaar dafuer ohne Belang ist. Geopolitik bleibt
+  // ausgenommen: Ein Krieg wirkt weltweit, gleich wo er stattfindet.
+  const riskOn = clamp(risk * (geoTreffer ? 1 : emDaempfung));
 
   const scores = {
     crypto: clamp(base.crypto + riskOn * 0.9 + clamp(cryptoDirect)),

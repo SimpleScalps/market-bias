@@ -138,3 +138,14 @@ test('Notenbanken kleiner Märkte bewegen Krypto nicht', () => {
   const fed = scoreHeadline('Fed signals rate hike in September');
   assert.ok(fed.scores.crypto < -0.5, 'die Fed dagegen schon');
 });
+
+test('Randmärkte färben auch nicht über Risikosignale ab', () => {
+  // Ein mexikanisches Währungspaar ist für Krypto ohne Belang, auch wenn
+  // das Wort "rally" darin vorkommt.
+  const peso = scoreHeadline('USD/MXN Price Forecast: Peso rally targets April 2024 low');
+  assert.ok(!peso || Math.abs(peso.scores.crypto) < 0.16, 'MXN-Prognose darf nicht werten');
+
+  // Krypto selbst und weltweite Geopolitik bleiben unberührt.
+  assert.ok(scoreHeadline('Bitcoin rallies to new all-time high').scores.crypto > 0.16);
+  assert.ok(scoreHeadline('Iran says response to Israeli airstrike will be devastating').scores.crypto < -0.16);
+});

@@ -192,7 +192,16 @@ function meldenswert(items, abo) {
   const asset = abo.asset || 'crypto';
 
   return items.filter((n) => {
+    // Was die Einstufung als Rauschen kennzeichnet, gehoert nie in eine
+    // Benachrichtigung - Kursprognosen und Projektmeldungen etwa erschienen
+    // sonst mehrfach am Tag, weil die Redaktionen sie laufend neu fassen.
+    if (n.impactLevel === 'ignore') return false;
     if (profil.aktiv && profilPassung(n, profil) === null) return false;
+
+    // Bei "nur starke Signale" zaehlt auch die Handelswirkung, nicht allein
+    // die Richtung: Ein starkes Sentiment ohne Marktwirkung weckt niemanden.
+    if (abo.stufe === 'strong' && n.impactLevel === 'low') return false;
+
     const l = label(n.scores?.[asset] ?? 0);
     return abo.stufe === 'strong' ? l.startsWith('strong') : l !== 'neutral';
   });
