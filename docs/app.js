@@ -1,19 +1,13 @@
 import { profilPassung, STANDARD_PROFIL } from './engine/profile.mjs';
+// Die Schwellen kommen aus der Engine, nicht aus einer zweiten Fassung hier:
+// Sonst zeigt die Liste "bullish", während die Benachrichtigung schweigt.
+import { label } from './engine/sentiment.mjs';
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v16';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v17';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
-
-// Identische Schwellen wie in docs/engine/sentiment.mjs
-function label(s) {
-  if (s >= 0.55) return 'strong_bullish';
-  if (s >= 0.16) return 'bullish';
-  if (s <= -0.55) return 'strong_bearish';
-  if (s <= -0.16) return 'bearish';
-  return 'neutral';
-}
 
 /**
  * Bringt eine eingegebene Worker-Adresse in eine brauchbare Form.
@@ -54,6 +48,7 @@ let query = '';
 let offen = new Set();
 let detailsOffen = new Set();
 let letzteSignatur = '';
+let kennung = '';   // Inhaltskennung der zuletzt geladenen Daten
 let gesehen = new Set();
 let frischeIds = new Set();
 let timer = null;
@@ -248,8 +243,7 @@ function detailText(n) {
     ${n.region ? zeile(t.dRegion, n.region) : ''}
     ${zeile(t.dImpuls, impulsTxt)}</div>`);
 
-  // 4) Wirkung je Anlageklasse
-  blocks.push(`<div class="dblock"><h4>${t.detailWirkung}</h4>${bars(n)}</div>`);
+  // Die Wirkung je Anlageklasse steht bereits in der kompakten Ansicht.
 
   // 5) Einordnung für den Handel
   const typ = lang === 'en' ? (n.eventTypeEn || n.eventType) : n.eventType;
@@ -736,10 +730,28 @@ function zeigeBanner(frisch) {
 async function load() {
   const ziel = liveUrl || `data/news.json?t=${Date.now()}`;
   try {
-    const res = await fetch(ziel, { cache: 'no-store' });
+    /*
+     * Beim Worker die Kennung des letzten Standes mitschicken. Hat sich nichts
+     * geändert, antwortet er mit 304 und ohne Inhalt — statt der rund 35 KB,
+     * die alle zwölf Sekunden sonst über die Mobilfunkverbindung gingen.
+     */
+    const kopf = liveUrl && kennung ? { 'If-None-Match': kennung } : undefined;
+    const res = await fetch(ziel, { cache: 'no-store', headers: kopf });
+
+    if (res.status === 304) {
+      // Inhalt unverändert, Verbindung aber nachweislich frisch.
+      const stand = res.headers.get('x-stand');
+      if (stand) data.updated = stand;
+      $('#dot').classList.remove('stale');
+      $('#dot').title = T().punktLive;
+      renderFoot();
+      return;
+    }
+
     if (!res.ok) throw new Error(res.status);
     const neu = await res.json();
     if (!neu.items) throw new Error('Antwort ohne Meldungen');
+    kennung = res.headers.get('etag') || '';
     data = mergeNeu(neu);
     const alt = (Date.now() - new Date(data.updated)) / 1000;
     // Der Worker hält den Cache bis zu 90 s; mit Netzlaufzeit und Cron-Takt

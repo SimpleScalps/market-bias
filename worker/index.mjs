@@ -42,8 +42,26 @@ const CORS = {
   'content-type': 'application/json; charset=utf-8',
 };
 
-const json = (data, status = 200) =>
-  new Response(JSON.stringify(data), { status, headers: CORS });
+const json = (data, status = 200, extra = {}) =>
+  new Response(JSON.stringify(data), { status, headers: { ...CORS, ...extra } });
+
+/**
+ * Kennzeichnet den Inhalt, damit unveraenderte Antworten nicht erneut
+ * uebertragen werden muessen.
+ *
+ * Die App fragt alle zwoelf Sekunden nach; komprimiert sind das je 35 KB und
+ * damit rund zehn Megabyte pro Stunde - auf dem Mobilfunk spuerbar. Meist hat
+ * sich aber nichts geaendert. Der Zeitstempel bleibt bewusst aussen vor: Er
+ * wandert bei jedem Abruf weiter und wuerde die Kennung wertlos machen.
+ */
+function inhaltsKennung(data) {
+  let h = 0;
+  const roh = `${data.count}|${(data.items || []).map((n) => n.id).join()}`;
+  for (let i = 0; i < roh.length; i++) {
+    h = (h * 31 + roh.charCodeAt(i)) | 0;
+  }
+  return `"${(h >>> 0).toString(36)}-${data.count}"`;
+}
 
 // --- Ablage: KV wenn gebunden, sonst der flüchtige Cache ------------------
 async function lesen(env, key) {
@@ -392,12 +410,25 @@ export default {
       }
 
       // Sonst reicht der Kalender — er trägt die zeitkritischen Zahlen.
-      if (alterMs(bestand) > KAL_MS) {
-        const { data } = await kalenderNachziehen(env, ctx, regime, bestand);
-        return json({ ...data, quelle: 'worker' });
+      const stand = alterMs(bestand) > KAL_MS
+        ? (await kalenderNachziehen(env, ctx, regime, bestand)).data
+        : bestand;
+
+      const kennung = inhaltsKennung(stand);
+
+      // Cloudflare schwaecht die Kennung bei komprimierten Antworten ab und
+      // stellt ihr W/ voran; der Browser schickt sie in dieser Form zurueck.
+      const gesendet = (request.headers.get('if-none-match') || '').replace(/^W\//, '').trim();
+      if (gesendet === kennung) {
+        // Unveraendert: Die App uebernimmt den Zeitpunkt aus dem Kopfbereich
+        // und weiss dadurch trotzdem, dass die Verbindung frisch ist.
+        return new Response(null, {
+          status: 304,
+          headers: { ...CORS, 'etag': kennung, 'x-stand': stand.updated },
+        });
       }
 
-      return json({ ...bestand, quelle: 'worker-cache' });
+      return json({ ...stand, quelle: 'worker' }, 200, { 'etag': kennung });
     } catch (err) {
       const fallback = await lesen(env, KEY);
       if (fallback) return json({ ...fallback, quelle: 'worker-cache', fehler: err.message });
