@@ -5,7 +5,7 @@ import { label } from './engine/sentiment.mjs';
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v18';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v19';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -31,7 +31,7 @@ const P = {
 let data = { items: [] };
 let asset = P.get('asset', 'crypto');
 let cat = P.get('cat', 'all');
-let sent = 'all';
+let sent = P.get('sent', 'nonneutral');
 let sort = P.get('sort', 'priority');
 let lang = P.get('lang', navigator.language?.startsWith('en') ? 'en' : 'de');
 let theme = P.get('theme', 'system');
@@ -826,7 +826,7 @@ $('#clear').addEventListener('click', () => {
   $('#q').value = ''; query = ''; $('#clear').hidden = true; render(true);
 });
 
-$('#sent').addEventListener('change', (e) => { sent = e.target.value; render(true); });
+$('#sent').addEventListener('change', (e) => { sent = e.target.value; P.set('sent', sent); render(true); });
 $('#sort').addEventListener('change', (e) => { sort = e.target.value; P.set('sort', sort); render(true); });
 $('#banner').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
