@@ -1,3 +1,7 @@
 node_modules/
 .DS_Store
 *.log
+
+# Cloudflare-Arbeitsdateien: enthalten Account-ID und Kontonamen
+.wrangler/
+worker/.wrangler/

@@ -152,9 +152,20 @@ beim Worker (`/subscribe`), der Cron-Job prüft jede Minute auf neue Meldungen
 und verschickt sie.
 
 **Telegram einrichten:** In Telegram [@BotFather](https://t.me/BotFather)
-anschreiben, `/newbot` senden, den Token kopieren. Dann dem eigenen Bot einmal
-schreiben und die Chat-ID über
-`https://api.telegram.org/botTOKEN/getUpdates` ablesen.
+anschreiben, `/newbot` senden, den Token kopieren. Dem neuen Bot einmal
+schreiben, damit Telegram die Chat-ID kennt. Dann:
+
+```bash
+node scripts/telegram-setup.mjs DEIN-TOKEN
+```
+
+Das Skript prüft den Token, nennt die Chat-ID und verschickt eine
+Testnachricht. Der Token wird nicht gespeichert und geht nur an Telegram selbst.
+
+Ohne Worker sendet die App direkt an Telegram — das funktioniert, solange sie
+geöffnet ist. Erst der Worker stellt auch bei geschlossener App zu. Discord
+braucht den Worker in jedem Fall, weil dessen Webhooks keine Browser-Aufrufe
+annehmen.
 
 **Discord einrichten:** Serveinstellungen → Integrationen → Webhooks → Neuer
 Webhook → Adresse kopieren.

@@ -402,22 +402,55 @@ function kanaeleAnzeigen() {
  * den Worker: nur der kann zustellen, während die App geschlossen ist.
  */
 async function anKanaele(titelText, text) {
-  if (!liveUrl) return { ok: false, grund: 'kein Worker' };
   const ziele = [];
   if (kanaele.has('telegram') && tg.token && tg.chat) ziele.push({ typ: 'telegram', ...tg });
   if (kanaele.has('discord') && dc.hook) ziele.push({ typ: 'discord', hook: dc.hook });
   if (!ziele.length) return { ok: false, grund: 'kein Ziel' };
 
-  try {
-    const res = await fetch(`${liveUrl}/notify`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ titel: titelText, text, ziele }),
-    });
-    return { ok: res.ok };
-  } catch {
-    return { ok: false, grund: 'nicht erreichbar' };
+  // Mit Worker: der verschickt, dann kommt es auch bei geschlossener App an.
+  if (liveUrl) {
+    try {
+      const res = await fetch(`${liveUrl}/notify`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ titel: titelText, text, ziele }),
+      });
+      if (res.ok) return { ok: true };
+    } catch { /* Worker weg — unten direkt versuchen */ }
   }
+
+  // Ohne Worker direkt aus dem Browser. Telegram erlaubt das (CORS offen),
+  // Discord blockt es — dort bleibt der Worker Voraussetzung. Diese Variante
+  // funktioniert nur, solange die App geöffnet ist.
+  return direktSenden(ziele, titelText, text);
+}
+
+async function direktSenden(ziele, titelText, text) {
+  let ok = 0;
+  let letzterGrund = '';
+
+  for (const z of ziele) {
+    if (z.typ !== 'telegram') { letzterGrund = 'Discord braucht den Worker'; continue; }
+    try {
+      const res = await fetch(`https://api.telegram.org/bot${z.token}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: z.chat,
+          text: `*${titelText}*\n${text}`,
+          parse_mode: 'Markdown',
+          disable_web_page_preview: true,
+        }),
+      });
+      const j = await res.json().catch(() => ({}));
+      if (j.ok) ok++;
+      else letzterGrund = j.description || `HTTP ${res.status}`;
+    } catch {
+      letzterGrund = 'Telegram nicht erreichbar';
+    }
+  }
+
+  return ok ? { ok: true, direkt: true } : { ok: false, grund: letzterGrund || 'kein Ziel' };
 }
 
 /**
@@ -637,7 +670,9 @@ $('#testSenden').addEventListener('click', async () => {
   const st = $('#testStatus');
   st.textContent = '…';
   const r = await anKanaele('Market Bias', 'Test — die Verbindung steht.');
-  st.textContent = r.ok ? T().gesendet : `${T().fehlgeschlagen}${r.grund ? ' (' + r.grund + ')' : ''}`;
+  st.textContent = r.ok
+    ? `${T().gesendet}${r.direkt ? ' (nur bei offener App)' : ''}`
+    : `${T().fehlgeschlagen}${r.grund ? ' (' + r.grund + ')' : ''}`;
   st.className = 'testStatus ' + (r.ok ? 'ok' : 'fehler');
   setTimeout(() => { st.textContent = ''; st.className = 'testStatus'; }, 6000);
 });
