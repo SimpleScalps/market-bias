@@ -22,10 +22,16 @@ const ABO_KEY = 'https://market-bias.internal/abo';
 const GRUPPEN = 3;
 const KAL_MS = 20_000;      // Kalender im Livebetrieb höchstens alle 20 s
 const BESTAND_TTL = 86_400; // Bestand einen Tag halten, nicht zehn Minuten
-const GESEHEN_KEY = 'https://market-bias.internal/gesehen';
-const GESEHEN_MAX = 3000;   // deutlich mehr als die 300 angezeigten Meldungen
 const SPERRE_KEY = 'https://market-bias.internal/letzterVersand';
-const RUHE_MS = 10 * 60_000;  // Mindestabstand zwischen Benachrichtigungen
+
+/*
+ * Mindestabstand zwischen Benachrichtigungen — aber nur für Kanäle, die ihn
+ * brauchen. ntfy sperrt bei erschöpftem Tageskontingent komplett, Discord
+ * kennt kein Tageslimit. Wer Discord nutzt, soll Meldungen sofort bekommen;
+ * dafür ist das Werkzeug da.
+ */
+const RUHE_MS = 10 * 60_000;
+const BRAUCHT_RUHE = new Set(['ntfy']);
 
 const CORS = {
   'access-control-allow-origin': '*',
@@ -75,7 +81,10 @@ function zusammenfuehren(bestand, frische) {
   for (const n of frische) {
     const vorhanden = bekannt.get(n.id);
     if (!vorhanden) kandidaten.push(n);
-    bekannt.set(n.id, vorhanden ? { ...n, date: vorhanden.date } : n);
+    // Zeitpunkt der Erstsichtung und den Meldevermerk übernehmen.
+    bekannt.set(n.id, vorhanden
+      ? { ...n, date: vorhanden.date, gemeldet: vorhanden.gemeldet }
+      : n);
   }
 
   const items = dedupe([...bekannt.values()])
@@ -96,20 +105,35 @@ function zusammenfuehren(bestand, frische) {
   return { items, neue, verworfen: kandidaten.length - neue.length };
 }
 
-/** Holt eine Feed-Gruppe plus Kalender und aktualisiert den Bestand. */
+/**
+ * Holt eine Feed-Gruppe, benachrichtigt und legt beides zusammen ab.
+ *
+ * Der Meldevermerk steckt bewusst im Bestand selbst statt in einem zweiten
+ * Objekt: KV wird erst nach und nach über alle Rechenzentren verteilt. Zwei
+ * getrennte Einträge konnten deshalb auseinanderlaufen, und dieselbe Meldung
+ * ging zweimal raus. Ein Objekt, ein Schreibvorgang, ein Stand.
+ */
 async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
   const teil = await collectNews({ regime, gruppe, gruppen: GRUPPEN, limit: 300 });
   const { items, neue } = zusammenfuehren(bestand, teil.items);
 
+  // Nur was neu ist und noch nie gemeldet wurde.
+  const kandidaten = neue.filter((n) => !n.gemeldet);
+  const versand = bestand ? await pushen(env, ctx, kandidaten) : { versucht: false, grund: 'erster Lauf' };
+
+  // Beim ersten Lauf gilt alles als erledigt, sonst käme es später gesammelt.
+  const erledigt = new Set(bestand ? (versand.ids || []) : items.map((n) => n.id));
+  const vermerkt = items.map((n) => (erledigt.has(n.id) ? { ...n, gemeldet: true } : n));
+
   const data = {
     updated: new Date().toISOString(),
     regime,
-    count: items.length,
+    count: vermerkt.length,
     errors: teil.errors,
-    items,
+    items: vermerkt,
   };
   await schreiben(env, ctx, KEY, data, BESTAND_TTL);
-  return { data, neue };
+  return { data, neue: kandidaten, versand };
 }
 
 /**
@@ -141,30 +165,6 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
   };
   await schreiben(env, ctx, KEY, data, BESTAND_TTL);
   return { data, neue };
-}
-
-/**
- * Merkt sich, welche Meldungen schon einmal da waren.
- *
- * Der angezeigte Bestand ist auf 300 Eintraege begrenzt; aeltere fallen heraus
- * und tauchen beim naechsten Lauf erneut als "neu" auf. Ohne dieses Gedaechtnis
- * wuerde derselbe Artikel immer wieder eine Benachrichtigung ausloesen - bei
- * jedem Durchlauf rund fuenfzig Stueck.
- */
-async function nurWirklichNeue(env, ctx, kandidaten) {
-  if (!kandidaten.length) return [];
-
-  const gespeichert = (await lesen(env, GESEHEN_KEY)) || { ids: [] };
-  const gesehen = new Set(gespeichert.ids);
-
-  const echtNeu = kandidaten.filter((n) => !gesehen.has(n.id));
-  if (!echtNeu.length) return [];
-
-  // Neue Kennungen hinten anhaengen, aelteste verwerfen.
-  const aktualisiert = [...gespeichert.ids, ...echtNeu.map((n) => n.id)].slice(-GESEHEN_MAX);
-  await schreiben(env, ctx, GESEHEN_KEY, { ids: aktualisiert }, BESTAND_TTL * 3);
-
-  return echtNeu;
 }
 
 // --- Benachrichtigungen ---------------------------------------------------
@@ -199,15 +199,25 @@ async function pushen(env, ctx, neueItems) {
    * Extremereignisse - Börsen-Hack, Zinsentscheid - kommen sofort durch.
    */
   const dringend = treffer.some((n) => n.impactLevel === 'extreme');
-  const sperre = await lesen(env, SPERRE_KEY);
-  const seitLetztem = sperre?.zeit ? Date.now() - sperre.zeit : Infinity;
 
-  if (!dringend && seitLetztem < RUHE_MS) {
-    return {
-      versucht: false,
-      grund: `Ruhezeit, noch ${Math.ceil((RUHE_MS - seitLetztem) / 60000)} Min`,
-      zurueckgestellt: treffer.length,
-    };
+  // Nur Kanäle mit Tageslimit werden gedrosselt; alle anderen bekommen sofort.
+  const gedrosselt = abo.ziele.filter((z) => BRAUCHT_RUHE.has(z.typ));
+  const sofort = abo.ziele.filter((z) => !BRAUCHT_RUHE.has(z.typ));
+
+  let ziele = abo.ziele;
+  if (gedrosselt.length && !dringend) {
+    const sperre = await lesen(env, SPERRE_KEY);
+    const seitLetztem = sperre?.zeit ? Date.now() - sperre.zeit : Infinity;
+    if (seitLetztem < RUHE_MS) {
+      if (!sofort.length) {
+        return {
+          versucht: false,
+          grund: `Ruhezeit für ${gedrosselt.map((z) => z.typ).join(', ')}, noch ${Math.ceil((RUHE_MS - seitLetztem) / 60000)} Min`,
+          zurueckgestellt: treffer.length,
+        };
+      }
+      ziele = sofort;   // Discord und Co. bekommen die Meldung trotzdem
+    }
   }
 
   const sprache = abo.lang === 'en' ? 'en' : 'de';
@@ -222,8 +232,8 @@ async function pushen(env, ctx, neueItems) {
     treffer.length > 1 ? `+${treffer.length - 1} ${sprache === 'de' ? 'weitere' : 'more'}` : '',
   ].filter(Boolean).join('\n');
 
-  const ergebnis = await sendeAn(abo.ziele, titelText, body);
-  if (ergebnis.gesendet) {
+  const ergebnis = await sendeAn(ziele, titelText, body);
+  if (ergebnis.gesendet && ziele.some((z) => BRAUCHT_RUHE.has(z.typ))) {
     await schreiben(env, ctx, SPERRE_KEY, { zeit: Date.now() }, BESTAND_TTL);
   }
   return {
@@ -233,6 +243,9 @@ async function pushen(env, ctx, neueItems) {
     gesendet: ergebnis.gesendet,
     fehler: ergebnis.fehler,
     titel: titelText,
+    kanaele: ziele.map((z) => z.typ),
+    // Woruber benachrichtigt wurde - der Aufrufer vermerkt es im Bestand.
+    ids: ergebnis.gesendet ? treffer.map((n) => n.id) : [],
   };
 }
 
@@ -284,17 +297,12 @@ export default {
     if (url.pathname === '/tick') {
       const bestand = await lesen(env, KEY);
       const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
-      const { data, neue } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
-      const echtNeu = await nurWirklichNeue(env, ctx, neue);
-      const versand = bestand
-        ? await pushen(env, ctx, echtNeu)
-        : { versucht: false, grund: 'erster Lauf, alles neu' };
+      const { data, neue, versand } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
       return json({
         ok: true,
         gruppe,
         meldungen: data.count,
-        neuImBestand: neue.length,
-        davonNieGesehen: echtNeu.length,
+        nochNieGemeldet: neue.length,
         versand,
         errors: data.errors,
       });
@@ -364,13 +372,7 @@ export default {
     const bestand = await lesen(env, KEY);
     const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
 
-    const { neue } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
-
-    // Beim allerersten Lauf ist alles neu — dann nicht benachrichtigen.
-    const echtNeu = await nurWirklichNeue(env, ctx, neue);
-    if (bestand) {
-      const r = await pushen(env, ctx, echtNeu);
-      if (r?.fehler?.length) console.log('Versand fehlgeschlagen:', r.fehler.join(' | '));
-    }
+    const { versand } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
+    if (versand?.fehler?.length) console.log('Versand fehlgeschlagen:', versand.fehler.join(' | '));
   },
 };

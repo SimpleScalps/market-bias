@@ -39,7 +39,7 @@ export function centralBankWeight(title) {
 // Schwellenlaender-Notenbanken bewegen den Krypto-Markt kaum. Enthaelt eine
 // Schlagzeile geldpolitische Signalwoerter, bezieht sich aber auf einen
 // solchen Markt, wird das Signal stark gedaempft.
-const EM_MARKETS = /\b(india|indian rupee|inr|turkey|lira|brazil|real|mexico|peso|indonesia|rupiah|south africa|rand|russia|rouble|ruble|nigeria|argentina|philippines|thailand|baht|vietnam|egypt|pakistan|colombia|chile|peru)\b/i;
+const EM_MARKETS = /\b(india|indian rupee|inr|turkey|lira|brazil|real|mexico|peso|indonesia|rupiah|south africa|rand|russia|rouble|ruble|nigeria|argentina|philippines|thailand|baht|vietnam|egypt|pakistan|colombia|chile|peru|malaysia|ringgit|myr|bnm|singapore|sgd|taiwan|twd|korea|won|kospi|hungary|forint|poland|zloty|czech|koruna|romania|israel|shekel|saudi|riyal|uae|dirham|norway|krone|nok|sweden|krona|sek|denmark|new zealand|nzd)\b/i;
 
 export function emergingMarketDamping(title) {
   return EM_MARKETS.test(title) ? 0.2 : 1;
