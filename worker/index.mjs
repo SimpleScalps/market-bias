@@ -42,6 +42,34 @@ const GEGENPROBE_MAX = 10;
  * zu stossen.
  */
 const NACHZIEHEN_MAX = 5;
+
+/*
+ * Zugangswort fuer die schreibenden und die kostenpflichtigen Wege.
+ *
+ * Die Adresse eines Workers ist kein Geheimnis - sie folgt aus Projekt- und
+ * Kontonamen und laesst sich erraten. Ohne Pruefung konnte damit jeder das
+ * Benachrichtigungs-Abo ueberschreiben und so die Meldungen abstellen oder
+ * umlenken, und jeder konnte das Kontingent des Sprachmodells aufbrauchen.
+ * Der Abruf der Meldungen bleibt offen: Er kostet nichts und veraendert nichts.
+ *
+ * Ist kein Wort hinterlegt, arbeitet alles wie bisher - damit eine bestehende
+ * Einrichtung nicht ueber Nacht stehen bleibt. /health weist dann darauf hin.
+ */
+const GESCHUETZT = ['/subscribe', '/notify', '/testpush', '/deuten', '/tageslage', '/modelle', '/tick'];
+
+function zugangGeprueft(request, url, env) {
+  if (!env.ZUGANG) return true;                       // nicht eingerichtet
+  if (!GESCHUETZT.includes(url.pathname)) return true; // offener Weg
+
+  const mitgegeben = (request.headers.get('x-zugang') || url.searchParams.get('zugang') || '').trim();
+  // Beim Hinterlegen ueber die Kommandozeile haengt leicht ein Zeilenumbruch
+  // an; ohne diese Bereinigung stimmt dann nie etwas ueberein.
+  const soll = String(env.ZUGANG).trim();
+  if (mitgegeben.length !== soll.length) return false;
+  let gleich = 0;
+  for (let i = 0; i < soll.length; i++) gleich |= mitgegeben.charCodeAt(i) ^ soll.charCodeAt(i);
+  return gleich === 0;
+}
 const LAGE_KEY = 'https://market-bias.internal/lage';
 const LAGE_FRISCH_MS = 15 * 60_000;   // Zusammenfassung eine Viertelstunde nutzen
 const SPERRE_KEY = 'https://market-bias.internal/letzterVersand';
@@ -442,6 +470,10 @@ export default {
     const url = new URL(request.url);
     const regime = env.REGIME || 'policy';
 
+    if (!zugangGeprueft(request, url, env)) {
+      return json({ fehler: 'Zugangswort fehlt oder stimmt nicht' }, 401);
+    }
+
     if (url.pathname === '/health') {
       const bestand = await lesen(env, KEY);
       const abo = await lesen(env, ABO_KEY);
@@ -450,6 +482,9 @@ export default {
         zeit: new Date().toISOString(),
         ablage: env.STORE ? 'kv' : 'cache',
         zweitmeinung: env.GROQ_KEY ? 'eingerichtet' : 'kein Schluessel',
+        zugang: env.ZUGANG
+          ? 'geschuetzt'
+          : 'OFFEN - jeder mit dieser Adresse kann das Abo aendern und das Kontingent verbrauchen',
         meldungen: bestand?.items?.length ?? 0,
         alterSekunden: Math.round(alterMs(bestand) / 1000),
         geprueft: bestand?.items

@@ -285,6 +285,32 @@ Kontingent erschöpft, arbeitet alles unverändert weiter — nur ohne Zweitmein
 > behandeln. Die Antwort wird nur übernommen, wenn sie der erwarteten Form
 > entspricht.
 
+## Zugangswort
+
+Die Adresse eines Workers ist kein Geheimnis — sie folgt aus Projekt- und
+Kontonamen und lässt sich erraten. Ohne Schutz könnte deshalb jeder, der sie
+kennt, das Benachrichtigungs-Abo überschreiben (und damit die Meldungen
+abstellen oder auf eigene Kanäle umlenken) sowie das Tageskontingent des
+Sprachmodells aufbrauchen.
+
+Die schreibenden und die kostenpflichtigen Wege — `/subscribe`, `/notify`,
+`/testpush`, `/deuten`, `/tageslage`, `/modelle`, `/tick` — verlangen deshalb
+ein Wort, das im Worker hinterlegt ist. Der reine Abruf der Meldungen bleibt
+offen: Er kostet nichts und verändert nichts.
+
+**Einrichten:**
+
+```bash
+cd worker && npx wrangler secret put ZUGANG
+```
+
+Ein langes Zufallswort wählen und dasselbe in der App unter *Live-Quelle* in
+das zweite Feld eintragen. Ruft ein externer Dienst `/tick` auf, hängt man es
+als `?zugang=…` an die Adresse.
+
+Ist kein Wort hinterlegt, arbeitet alles wie bisher — `/health` weist dann
+ausdrücklich darauf hin.
+
 ## Aktualität
 
 Hier wird die Architektur entschieden. Es gibt zwei Betriebsarten:

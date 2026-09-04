@@ -5,7 +5,7 @@ import { label } from './engine/sentiment.mjs';
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v24';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v25';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -43,6 +43,7 @@ let kanaele = new Set(JSON.parse(P.get('kanaele', '["browser"]')));
 let tg = JSON.parse(P.get('tg', '{}'));
 let dc = JSON.parse(P.get('dc', '{}'));
 let ntfy = JSON.parse(P.get('ntfy', '{}'));
+let zugang = P.get('zugang', '');   // schuetzt die schreibenden Wege des Workers
 let query = '';
 // Aufgeklappte Artikel und geöffnete Langfassungen überdauern das Neuzeichnen.
 let offen = new Set();
@@ -57,6 +58,16 @@ const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const feed = $('#feed');
 const T = () => window.I18N[lang];
+
+/**
+ * Kopfzeilen für Anfragen an den Worker.
+ *
+ * Die Adresse des Workers ist erratbar; ohne Zugangswort könnte jeder das
+ * Benachrichtigungs-Abo überschreiben oder das Kontingent des Sprachmodells
+ * aufbrauchen. Ist keines gesetzt, bleibt es beim bisherigen Verhalten.
+ */
+const workerKopf = (weitere = {}) =>
+  zugang ? { ...weitere, 'X-Zugang': zugang } : weitere;
 
 const zeit = (iso) => new Date(iso).toLocaleTimeString(lang === 'en' ? 'en-GB' : 'de-DE', { hour: '2-digit', minute: '2-digit' });
 const grund = (n) => (lang === 'en' ? (n.whyEn || n.why) : n.why) || T().keineBegruendung;
@@ -230,7 +241,7 @@ async function zweitmeinung(titelText) {
   try {
     const res = await fetch(`${liveUrl}/deuten`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: workerKopf({ 'Content-Type': 'application/json' }),
       body: JSON.stringify({ titel: titelText }),
     });
     const j = await res.json();
@@ -337,7 +348,8 @@ function detailText(n) {
 async function lagebericht() {
   if (!liveUrl) return { fehler: T().lageOhneWorker };
   try {
-    const res = await fetch(`${liveUrl}/tageslage?asset=${encodeURIComponent(asset)}`);
+    const res = await fetch(`${liveUrl}/tageslage?asset=${encodeURIComponent(asset)}`,
+      { headers: workerKopf() });
     const j = await res.json();
     return res.ok && j.lage ? j : { fehler: j.fehler || T().lageFehler };
   } catch {
@@ -565,6 +577,7 @@ function renderTexte() {
   $('#lLive').textContent = T().liveQuelle;
   $('#lQuellen').textContent = T().quellenListe;
   $('#hLive').textContent = T().liveHinweis;
+  $('#zugangInput').placeholder = T().zugangPlatzhalter;
   $('#lProfil').textContent = T().profil;
   $('#lStil').textContent = T().stil;
   $('#lZeit').textContent = T().zeitrahmen;
@@ -724,7 +737,7 @@ async function anKanaele(titelText, text) {
     try {
       const res = await fetch(`${liveUrl}/notify`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: workerKopf({ 'Content-Type': 'application/json' }),
         body: JSON.stringify({ titel: titelText, text, ziele }),
       });
       if (res.ok) return { ok: true };
@@ -793,7 +806,7 @@ async function aboSenden() {
   try {
     await fetch(`${liveUrl}/subscribe`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: workerKopf({ 'Content-Type': 'application/json' }),
       body: JSON.stringify({ stufe: notify, ziele, profil, asset, lang }),
     });
   } catch { /* Worker gerade nicht erreichbar */ }
@@ -963,6 +976,12 @@ $$('#theme button').forEach((b) => b.addEventListener('click', () => {
 
 $$('#benach button').forEach((b) => b.addEventListener('click', () => benachrichtigungSetzen(b.dataset.notify)));
 
+$('#zugangInput').addEventListener('change', (e) => {
+  zugang = e.target.value.trim();
+  P.set('zugang', zugang);
+  aboSenden();
+});
+
 $('#liveInput').addEventListener('change', (e) => {
   liveUrl = urlNormalisieren(e.target.value);
   e.target.value = liveUrl;          // ergänzte Adresse sichtbar zurückschreiben
@@ -1049,6 +1068,7 @@ $$('.seg button').forEach((b) => b.setAttribute('aria-selected', String(b.datase
 $$('#sprache button').forEach((b) => b.classList.toggle('on', b.dataset.lang === lang));
 $$('#benach button').forEach((b) => b.classList.toggle('on', b.dataset.notify === notify));
 $('#liveInput').value = liveUrl;
+$('#zugangInput').value = zugang;
 
 profilAnzeigen();
 kanaeleAnzeigen();
