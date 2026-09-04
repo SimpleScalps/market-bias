@@ -1,44 +1,11 @@
 {
- "updated": "2026-09-04T19:27:29.686Z",
+ "updated": "2026-09-04T19:29:47.305Z",
  "regime": "policy",
  "count": 300,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
-  {
-   "id": "Cointelegraph:FinCEN ties $13B in crypto scams to non-US operations",
-   "title": "FinCEN ties $13B in crypto scams to non-US operations",
-   "source": "Cointelegraph",
-   "url": "https://cointelegraph.com/news/fincen-crypto-overseas-scam-centers-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "date": "2026-09-04T19:22:26.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 52,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "FinCEN bindet $ 13B in Krypto-Betrügereien an Nicht-US-Operationen"
-  },
   {
    "id": "CNBC World:Trump doubles down on threat to halt trade with top partners unless Fed cuts rates",
    "title": "Trump doubles down on threat to halt trade with top partners unless Fed cuts rates",
@@ -538,7 +505,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -571,7 +538,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -604,7 +571,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2202,7 +2169,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 83,
+   "priority": 82,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "high",
@@ -2235,7 +2202,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2545,7 +2512,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 56,
+   "priority": 55,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3045,7 +3012,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Ist Craig Wright Satoshi? Ein 70-Millionen $ -Film und ein Richter am Obersten Gerichtshof sind anderer Meinung"
   },
   {
    "id": "BBC World:'A rare moment of joy': Nepal tunnel rescues bring hope for more flood survivors",
@@ -3077,7 +3045,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "\"Ein seltener Moment der Freude\": Nepal-Tunnelrettungen bringen Hoffnung für mehr Überlebende von Überschwemmungen"
   },
   {
    "id": "Al Jazeera:Why is Farage’s Reform accused of violating the UK’s foreign funding rules?",
@@ -3109,7 +3078,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Warum wird Farages Reform vorgeworfen, gegen die britischen Vorschriften zur Auslandsfinanzierung verstoßen zu haben?"
   },
   {
    "id": "CNBC:Bitcoin heads for third winning week in a row as macro pressures mount",
@@ -3689,7 +3659,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Zwei muslimische Journalistinnen behaupten, in Indien von der Polizei angegriffen worden zu sein"
   },
   {
    "id": "U.Today:Headline-Grabbing Robinhood Blockchain Stops Recording New Transactions",
@@ -3754,7 +3725,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Zscaler übertrifft die Gewinnerwartungen, gibt optimistische Prognosen heraus, aber die Aktien fallen"
   },
   {
    "id": "Al Jazeera:Philippine court orders arrest of VP Duterte over President Marcos threats",
@@ -3786,7 +3758,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Philippinisches Gericht ordnet Festnahme von VP Duterte wegen Drohungen von Präsident Marcos an"
   },
   {
    "id": "Cointelegraph:Revolut, OpenReserve get preliminary US bank approval with crypto plans",
@@ -4013,7 +3986,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: strong labour market)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 45,
+   "priority": 44,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -4366,7 +4339,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: labour market data higher than expected)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 43,
+   "priority": 42,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -4814,7 +4787,7 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -5532,7 +5505,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Zcash springt um 20% auf das Niveau von 1.000 $, da Leerverkäufer 34 Millionen $ verlieren"
   },
   {
    "id": "Decrypt:FinCEN Ties $12.7B to Crypto Scams Run From Asian Compounds",
@@ -5656,7 +5630,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 43,
+   "priority": 42,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -5723,7 +5697,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 37,
+   "priority": 36,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5758,7 +5732,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6102,7 +6076,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 14,
+   "priority": 13,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6289,7 +6263,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -9575,6 +9549,47 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Australien warnt nicht lizenzierte Kryptofirmen vor Bußgeldern von bis zu 10 % des Jahresumsatzes"
+  },
+  {
+   "id": "Cointelegraph:Ether, XRP ETF inflow streaks end as Bitcoin funds rebound",
+   "title": "Ether, XRP ETF inflow streaks end as Bitcoin funds rebound",
+   "source": "Cointelegraph",
+   "url": "https://cointelegraph.com/markets/eth-xrp-etf-inflow-streaks-end-bitcoin-funds-rebound?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "date": "2026-09-03T07:22:00.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "ETF-Zuflüsse"
+   ],
+   "scores": {
+    "crypto": 0.7,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "why": "Direkt kryptopositive Nachricht. (Signale: ETF-Zuflüsse)",
+   "whyEn": "Directly crypto-positive news. (signals: ETF inflows)",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 37,
+   "label": "strong_bullish",
+   "labelText": "Stark Bullish",
+   "impactLevel": "high",
+   "duration": "intraday",
+   "eventType": "ETF-Flüsse",
+   "eventTypeEn": "ETF flows",
+   "scope": "market",
+   "coins": [
+    "BTC",
+    "ETH",
+    "XRP"
+   ],
+   "alsoIn": [],
+   "titleDe": "Ether-, XRP-ETF-Zuflussstreifen enden, wenn sich die Bitcoin-Fonds erholen"
   },
   {
    "id": "BBC World:UN warns of 'supersized' El Niño as countries prepare for impact",
