@@ -2,6 +2,7 @@ import { profilPassung, STANDARD_PROFIL } from './engine/profile.mjs';
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
+const VERSION = 'v6';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -379,7 +380,7 @@ function renderFoot() {
   const fehler = data.errors?.length ? `<br>${T().quellenFehler(data.errors.length)}` : '';
 
   $('#foot').innerHTML =
-    `${modus} · ${T().stand} ${t}<br>${T().regime} ${regime} · ${T().bewertungFuer} ${T().assets[asset]}${fehler}` +
+    `${modus} · ${T().stand} ${t} · ${VERSION}<br>${T().regime} ${regime} · ${T().bewertungFuer} ${T().assets[asset]}${fehler}` +
     `<br>${T().haftung}`;
 }
 
@@ -884,4 +885,19 @@ starteTakt();
 aboSenden();
 document.addEventListener('visibilitychange', () => { if (!document.hidden) load(); });
 
-if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').then((reg) => {
+    // Beim Start und danach stuendlich nach einer neuen Fassung sehen.
+    reg.update().catch(() => {});
+    setInterval(() => reg.update().catch(() => {}), 3600_000);
+
+    // Uebernimmt eine neue Fassung die Kontrolle, einmal neu laden — sonst
+    // liefe die Oberflaeche mit altem Code weiter.
+    let neuGeladen = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (neuGeladen) return;
+      neuGeladen = true;
+      location.reload();
+    });
+  }).catch(() => {});
+}

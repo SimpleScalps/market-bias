@@ -1,5 +1,5 @@
 // Hülle offline verfügbar halten; die Nachrichten selbst kommen immer frisch.
-const CACHE = 'market-bias-v5';
+const CACHE = 'market-bias-v6';
 const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'config.js', 'i18n.js', 'manifest.webmanifest', 'icon.png'];
 
 self.addEventListener('install', (e) => {
@@ -25,5 +25,21 @@ self.addEventListener('fetch', (e) => {
     );
     return;
   }
+  // Programmcode immer zuerst aus dem Netz holen. Sonst haelt der
+  // Zwischenspeicher nach einem Update die alte Fassung fest — auf dem iPhone
+  // hartnaeckig, weil eine installierte PWA selten vollstaendig neu startet.
+  if (/\.(js|mjs|css|html)$/.test(url.pathname) || url.pathname.endsWith('/')) {
+    e.respondWith(
+      fetch(e.request)
+        .then((r) => {
+          const kopie = r.clone();
+          caches.open(CACHE).then((c) => c.put(e.request, kopie));
+          return r;
+        })
+        .catch(() => caches.match(e.request))
+    );
+    return;
+  }
+
   e.respondWith(caches.match(e.request).then((r) => r || fetch(e.request)));
 });
