@@ -1,0 +1,9 @@
+# Zeilenenden einheitlich halten
+* text=auto eol=lf
+
+# Diese Dateien erzeugt die Automatik alle zehn Minuten neu. Ohne Sonderregel
+# kollidiert jeder lokale Lauf mit dem Bot-Commit. Der Treiber "generiert"
+# behaelt kommentarlos die lokale Fassung -- der Inhalt wird ohnehin beim
+# naechsten Durchlauf ueberschrieben.
+docs/data/news.json         merge=generiert
+docs/data/translations.json merge=generiert
