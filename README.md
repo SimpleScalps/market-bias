@@ -241,13 +241,25 @@ Grundlage sind die vierzehn gewichtigsten Meldungen der letzten 24 Stunden,
 gewählt nach Signalstärke und Relevanz. Das Ergebnis wird eine Viertelstunde
 vorgehalten, damit nicht jeder Klick eine Anfrage kostet.
 
-**Als stille Gegenprobe.** Die stärksten neuen Signale — meist zwei bis drei am
-Tag — werden automatisch gegengelesen. Weicht das Modell in der Richtung
-deutlich ab, trägt die Meldung ein Fragezeichen in der Liste und einen Hinweis
-im Detail; die Benachrichtigung nennt den Widerspruch ebenfalls. Genau die
-Fehler, die beim Regelwerk schwer zu fassen sind, fallen so auf: eine
-Notenbank-Meldung aus einem Randmarkt, eine Reportage mit dem Wort *stolen*
-darin, eine Friedensmission, die wie Kriegsberichterstattung klingt.
+**Als laufende Gegenprobe, die das Urteil berichtigt.** Jede Meldung, die
+überhaupt handelbar sein könnte, wird gegengelesen — neue zuerst, der Bestand
+nach und nach. Widerspricht das Modell dem Regelwerk deutlich, **gilt seine
+Einschätzung**: Es liest den Satz, das Regelwerk nur die Wörter darin. Die
+Meldung trägt dann ein Kennzeichen, und die ursprüngliche Bewertung bleibt
+sichtbar.
+
+Warum das nötig ist, zeigt der erste Durchlauf: Von fünf geprüften Meldungen
+waren **drei falsch eingeordnet** — alle drei Varianten derselben Nachricht:
+
+| | Regelwerk | Modell |
+|---|---|---|
+| „Trump's threat to stop trading unless there's a rate cut" | stark bullish (+0,75) | **stark bearish (−0,60)** |
+| „Trump doubles down on threat to halt trade… unless Fed cuts rates" | stark bullish (+0,75) | **bearish (−0,40)** |
+| „Trump's threat… risks shock to U.S. economy" | stark bullish (+0,75) | **bearish (−0,40)** |
+
+Das Regelwerk fand „cuts rates" und schloss auf Lockerung. Dass es sich um eine
+Drohung handelt und die Zinssenkung bloß deren Bedingung ist, steht nicht in
+den Wörtern — es steht im Satz.
 
 **Einrichten** (kostenlos, keine Zahlungsdaten):
 

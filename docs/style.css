@@ -464,3 +464,8 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
    Handy, wo Überschriften über mehrere Zeilen laufen. */
 .item:nth-child(even){background:var(--bg-2)}
 .item:nth-child(even) .head:active{background:var(--panel)}
+
+/* Eine ersetzte Bewertung wird gekennzeichnet: Das Urteil stammt dann vom
+   Modell, nicht vom Regelwerk. */
+.item.korrigiert .badge::after{content:" ·"}
+.item.korrigiert .lead::after{content:"KI"}

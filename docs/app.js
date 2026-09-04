@@ -5,7 +5,7 @@ import { label } from './engine/sentiment.mjs';
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v23';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v24';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -241,7 +241,7 @@ async function zweitmeinung(titelText) {
 }
 
 /** Stellt eine Einschätzung dar — die des Modells oder eine bereits geprüfte. */
-function kiDarstellen(box, deutung, regelWert) {
+function kiDarstellen(box, deutung, regelWert, korrigiert = false) {
   if (deutung.fehler) {
     box.className = 'kiAntwort fehler';
     box.textContent = deutung.fehler;
@@ -261,7 +261,9 @@ function kiDarstellen(box, deutung, regelWert) {
       <span class="kiWert ${deutung.richtung}">${T().kiRichtung[deutung.richtung]} ${deutung.staerke.toFixed(2)}</span>
     </div>
     <p class="kiGrund">${escape(deutung.grund)}</p>
-    ${uneins ? `<p class="kiWarnung">${T().kiWidersprichtKurz}</p>` : ''}`;
+    ${korrigiert
+      ? `<p class="kiWarnung">${T().kiKorrigiert} · ${T().regelSagte} ${regelWert > 0 ? '+' : ''}${regelWert.toFixed(2)}</p>`
+      : (uneins ? `<p class="kiWarnung">${T().kiWidersprichtKurz}</p>` : '')}`;
   box.hidden = false;
 }
 
@@ -441,6 +443,8 @@ function render(erzwingen = false) {
     // Ein Widerspruch soll schon in der Liste auffallen, nicht erst
     // aufgeklappt: Wer danach handelt, soll vorher hinsehen.
     if (n.kiWiderspruch) item.classList.add('uneins');
+    // Wurde das Urteil ersetzt, gehoert der Hinweis an die Bewertung selbst.
+    if (n.kiKorrigiert) item.classList.add('korrigiert');
 
     const anzahl = n.alsoIn?.length || 0;
     const auch = anzahl ? ` · +${anzahl} ${anzahl > 1 ? T().quellenMehr : T().quellen}` : '';
@@ -467,7 +471,7 @@ function render(erzwingen = false) {
     kiBtn.textContent = T().zweitmeinung;
 
     if (n.ki && !n.ki.fehler) {
-      kiDarstellen(kiBox, n.ki, score);
+      kiDarstellen(kiBox, n.ki, n.regelScores?.[asset] ?? score, n.kiKorrigiert);
       kiBtn.hidden = true;          // liegt bereits vor
     }
 

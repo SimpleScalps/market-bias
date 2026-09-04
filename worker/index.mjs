@@ -1,7 +1,7 @@
 import { collectNews, loadCalendar, enrich } from '../docs/engine/feeds.mjs';
 import { dedupe } from '../docs/engine/dedupe.mjs';
 import { profilPassung, STANDARD_PROFIL } from '../docs/engine/profile.mjs';
-import { label } from '../docs/engine/sentiment.mjs';
+import { label, LABEL_TEXT } from '../docs/engine/sentiment.mjs';
 import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
 import { sendeAn } from './notify.mjs';
 import { deuten, widerspruch, verfuegbareModelle, tageslage } from './deuten.mjs';
@@ -24,7 +24,24 @@ const GRUPPEN = 3;
 const KAL_MS = 20_000;      // Kalender im Livebetrieb höchstens alle 20 s
 const BESTAND_TTL = 86_400; // Bestand einen Tag halten, nicht zehn Minuten
 const GESEHEN_MAX = 4000;   // Gedächtnis über die Sichtbarkeitsgrenze hinaus
-const GEGENPROBE_MAX = 3;   // starke Signale je Durchlauf, die geprüft werden
+/*
+ * Wie viele Meldungen je Durchlauf gegengelesen werden.
+ *
+ * Bei rund 36 neuen Meldungen am Tag und einem Kontingent von 14.400 Anfragen
+ * liegt die Auslastung im Promillebereich - es gibt keinen Grund zu sparen.
+ * Die Zahl begrenzt allein die Laufzeit eines einzelnen Durchlaufs.
+ */
+const GEGENPROBE_MAX = 10;
+
+/*
+ * Wie viele Altbestaende je Durchlauf nachgeprueft werden.
+ *
+ * Bei einem Durchlauf pro Minute sind das bis zu 7.200 Anfragen am Tag und
+ * damit die Haelfte des Kontingents - genug, um einen Bestand von 300
+ * Meldungen in gut einer Stunde vollstaendig durchzusehen, ohne an die Grenze
+ * zu stossen.
+ */
+const NACHZIEHEN_MAX = 5;
 const LAGE_KEY = 'https://market-bias.internal/lage';
 const LAGE_FRISCH_MS = 15 * 60_000;   // Zusammenfassung eine Viertelstunde nutzen
 const SPERRE_KEY = 'https://market-bias.internal/letzterVersand';
@@ -104,8 +121,33 @@ function zusammenfuehren(bestand, frische) {
   for (const n of frische) {
     const vorhanden = bekannt.get(n.id);
     if (!vorhanden) kandidaten.push(n);
-    // Zeitpunkt der Erstsichtung übernehmen.
-    bekannt.set(n.id, vorhanden ? { ...n, date: vorhanden.date } : n);
+    /*
+     * Erstsichtung und geprueftes Urteil uebernehmen.
+     *
+     * Beim Abgleich kommt die Meldung frisch bewertet aus dem Regelwerk
+     * zurueck. Ohne diese Uebernahme waere die Pruefung durch das Modell bei
+     * jedem Durchlauf verloren - und eine bereits berichtigte Bewertung fiele
+     * auf das Regelurteil zurueck.
+     */
+    bekannt.set(n.id, vorhanden
+      ? {
+          ...n,
+          date: vorhanden.date,
+          ...(vorhanden.ki ? {
+            ki: vorhanden.ki,
+            kiWiderspruch: vorhanden.kiWiderspruch,
+            kiKorrigiert: vorhanden.kiKorrigiert,
+            regelScores: vorhanden.regelScores,
+            regelLabel: vorhanden.regelLabel,
+            // Das berichtigte Urteil gilt weiter.
+            ...(vorhanden.kiKorrigiert ? {
+              scores: vorhanden.scores,
+              label: vorhanden.label,
+              labelText: vorhanden.labelText,
+            } : {}),
+          } : {}),
+        }
+      : n);
   }
 
   const items = dedupe([...bekannt.values()])
@@ -157,6 +199,18 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
   // Vor dem Versand gegenlesen lassen: Ein Widerspruch gehoert in die
   // Benachrichtigung, nicht erst in die spaetere Ansicht.
   await gegenlesen(kandidaten, env);
+
+  /*
+   * Den Bestand nachziehen.
+   *
+   * Neue Meldungen werden oben geprueft - die bereits vorhandenen aber nie.
+   * In der Liste stuenden damit hunderte Eintraege, die allein aus Stichworten
+   * beurteilt sind, waehrend nur der Zulauf gegengelesen wird. Bei jedem
+   * Durchlauf kommt deshalb ein Teil des Bestands dazu, die gewichtigsten
+   * zuerst. Nach einigen Stunden ist alles einmal durch.
+   */
+  const nachzuholen = items.filter((n) => !n.ki && n.impactLevel !== 'ignore');
+  if (nachzuholen.length) await gegenlesen(nachzuholen, env, NACHZIEHEN_MAX);
 
   const versand = bestand
     ? await pushen(env, ctx, kandidaten)
@@ -224,28 +278,63 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
 }
 
 /**
- * Lässt die stärksten neuen Signale vom Sprachmodell gegenlesen.
+ * Laesst neue Meldungen vom Sprachmodell gegenlesen und korrigiert das Urteil.
  *
- * Betroffen sind nur wenige Meldungen am Tag, das faellt weder beim Kontingent
- * noch bei der Laufzeit ins Gewicht. Der Gewinn: Genau die Fehler, die ein
- * Regelwerk schwer fassen kann, fallen auf. Eine Notenbank-Meldung aus
- * Malaysia oder eine Reportage, in der zufaellig das Wort "stolen" vorkommt,
- * wertet das Modell anders - und die Meldung traegt dann einen Hinweis.
+ * Stichworte allein tragen nur so weit. Ueber die Zeit hat sich ein Dutzend
+ * Faelle gezeigt, in denen dasselbe Wort das Gegenteil bedeutete: "tames rate
+ * hike hopes" ist keine Straffung, "inflation cooling faster than expected"
+ * keine Beschleunigung, "travel to end the war" keine Eskalation, "unless the
+ * Fed cuts rates" keine Zinssenkung. Jeder Fall liess sich als Regel nachtragen
+ * - der naechste kommt trotzdem, weil Sprache mehr Wendungen kennt, als sich
+ * aufschreiben lassen.
+ *
+ * Deshalb liest das Modell alles gegen, was ueberhaupt handelbar sein koennte.
+ * Widerspricht es dem Regelwerk deutlich, gilt seine Einschaetzung: Es liest
+ * den Satz, das Regelwerk nur die Woerter darin. Die Herleitung der Regel
+ * bleibt sichtbar, damit nachvollziehbar ist, wie es zum ersten Urteil kam.
  */
-async function gegenlesen(items, env) {
+async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX) {
   if (!env.GROQ_KEY) return;
 
   const kandidaten = items
-    .filter((n) => n.label?.startsWith('strong') && !n.ki)
-    .sort((a, b) => Math.abs(b.scores.crypto) - Math.abs(a.scores.crypto))
-    .slice(0, GEGENPROBE_MAX);
+    .filter((n) => n.impactLevel !== 'ignore' && !n.ki)
+    .sort((a, b) => Math.abs(b.scores.crypto) * b.priority
+                  - Math.abs(a.scores.crypto) * a.priority)
+    .slice(0, hoechstens);
 
-  for (const n of kandidaten) {
-    const deutung = await deuten(n.title, env);
-    if (!deutung) continue;
+  if (!kandidaten.length) return;
+
+  // Nebeneinander abfragen: nacheinander summierte sich die Wartezeit.
+  const deutungen = await Promise.all(kandidaten.map((n) => deuten(n.title, env)));
+
+  kandidaten.forEach((n, i) => {
+    const deutung = deutungen[i];
+    if (!deutung || deutung.fehler) return;
+
     n.ki = deutung;
     n.kiWiderspruch = widerspruch(n.scores.crypto, deutung);
-  }
+
+    if (!n.kiWiderspruch) return;
+
+    // Urteil korrigieren, die urspruengliche Bewertung aufheben.
+    n.regelScores = n.scores;
+    n.regelLabel = n.label;
+    n.kiKorrigiert = true;
+
+    const kiWert = deutung.richtung === 'neutral' ? 0
+      : (deutung.richtung === 'bullish' ? 1 : -1) * deutung.staerke;
+
+    // Dieselben Verhaeltnisse zwischen den Anlageklassen wie im Regelwerk:
+    // Was Krypto stuetzt, stuetzt Aktien etwas schwaecher und belastet den Dollar.
+    n.scores = {
+      crypto: +kiWert.toFixed(3),
+      stocks: +(kiWert * 0.85).toFixed(3),
+      gold: +(kiWert * 0.8).toFixed(3),
+      usd: +(-kiWert).toFixed(3),
+    };
+    n.label = label(kiWert);
+    n.labelText = LABEL_TEXT[n.label];
+  });
 }
 
 // --- Benachrichtigungen ---------------------------------------------------
@@ -363,6 +452,10 @@ export default {
         zweitmeinung: env.GROQ_KEY ? 'eingerichtet' : 'kein Schluessel',
         meldungen: bestand?.items?.length ?? 0,
         alterSekunden: Math.round(alterMs(bestand) / 1000),
+        geprueft: bestand?.items
+          ? `${bestand.items.filter((n) => n.ki).length} von ${bestand.items.length}`
+          : '0',
+        berichtigt: bestand?.items?.filter((n) => n.kiKorrigiert).length ?? 0,
         // Ohne hinterlegtes Abo verschickt der Worker nichts. Zeigt nur, ob
         // und wohin - niemals Token oder Themennamen.
         abo: abo ? {
