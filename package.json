@@ -6,7 +6,7 @@
   "description": "Finanznachrichten mit automatischer Bullish/Bearish-Einordnung",
   "scripts": {
     "fetch": "node scripts/fetch.mjs",
-    "test": "node --test src/sentiment.test.mjs",
+    "test": "node --test src/*.test.mjs",
     "serve": "node --run fetch && npx --yes http-server docs -p 8080 -c-1"
   }
 }

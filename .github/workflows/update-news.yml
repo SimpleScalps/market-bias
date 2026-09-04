@@ -25,7 +25,7 @@ jobs:
           node-version: '20'
 
       - name: Engine testen
-        run: node --test src/sentiment.test.mjs
+        run: node --test src/*.test.mjs
 
       - name: Nachrichten holen und bewerten
         run: node scripts/fetch.mjs
