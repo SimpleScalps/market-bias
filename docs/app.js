@@ -2,7 +2,7 @@ import { profilPassung, STANDARD_PROFIL } from './engine/profile.mjs';
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v12';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v13';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -50,6 +50,10 @@ let tg = JSON.parse(P.get('tg', '{}'));
 let dc = JSON.parse(P.get('dc', '{}'));
 let ntfy = JSON.parse(P.get('ntfy', '{}'));
 let query = '';
+// Aufgeklappte Artikel und geöffnete Langfassungen überdauern das Neuzeichnen.
+let offen = new Set();
+let detailsOffen = new Set();
+let letzteSignatur = '';
 let gesehen = new Set();
 let frischeIds = new Set();
 let timer = null;
@@ -298,13 +302,27 @@ function renderCats() {
     cat = b.dataset.cat;
     P.set('cat', cat);
     renderCats();
-    render();
+    render(true);
   }));
 }
 
-function render() {
+/**
+ * Zeichnet die Liste neu — aber nur, wenn nötig.
+ *
+ * Die App fragt alle zwölf Sekunden neue Daten ab. Wurde dabei jedes Mal die
+ * gesamte Liste neu aufgebaut, schloss sich ein gerade geöffneter Artikel
+ * wieder und die Seite sprang an den Anfang zurück. Auf dem Handy war Lesen
+ * damit kaum möglich. Ändert sich nichts, bleibt das Bild deshalb stehen.
+ */
+function render(erzwingen = false) {
   const items = ordered(data.items.filter(matches));
   $('#count').textContent = `${items.length}/${data.items.length}`;
+
+  // Kennung des sichtbaren Zustands: Reihenfolge, Bewertung und Sprache.
+  const signatur = `${lang}|${asset}|${items.map((n) => n.id + label(n.scores[asset] ?? 0)).join()}`;
+  if (!erzwingen && signatur === letzteSignatur && feed.children.length) return;
+  letzteSignatur = signatur;
+
   feed.innerHTML = '';
 
   if (!items.length) {
@@ -363,25 +381,45 @@ function render() {
     // Langfassung wird erst auf Wunsch gebaut — spart Arbeit bei 300 Einträgen.
     const mehr = $('.mehrBtn', node);
     const detail = $('.detail', node);
-    mehr.textContent = T().mehrDetails;
-    mehr.addEventListener('click', () => {
-      const offen = mehr.getAttribute('aria-expanded') === 'true';
-      if (!offen && !detail.dataset.gebaut) {
+    const head = $('.head', node);
+    const why = $('.why', node);
+
+    const detailZeigen = (an) => {
+      if (an && !detail.dataset.gebaut) {
         detail.innerHTML = detailText(n);
         detail.dataset.gebaut = '1';
       }
-      mehr.setAttribute('aria-expanded', String(!offen));
-      mehr.textContent = offen ? T().mehrDetails : T().wenigerDetails;
-      detail.hidden = offen;
+      mehr.setAttribute('aria-expanded', String(an));
+      mehr.textContent = an ? T().wenigerDetails : T().mehrDetails;
+      detail.hidden = !an;
+    };
+
+    mehr.textContent = T().mehrDetails;
+    mehr.addEventListener('click', () => {
+      const an = mehr.getAttribute('aria-expanded') !== 'true';
+      if (an) detailsOffen.add(n.id); else detailsOffen.delete(n.id);
+      detailZeigen(an);
     });
 
-    const head = $('.head', node);
-    const why = $('.why', node);
     head.addEventListener('click', () => {
-      const offen = head.getAttribute('aria-expanded') === 'true';
-      head.setAttribute('aria-expanded', String(!offen));
-      why.hidden = offen;
+      const an = head.getAttribute('aria-expanded') !== 'true';
+      if (an) {
+        offen.add(n.id);
+      } else {
+        offen.delete(n.id);
+        detailsOffen.delete(n.id);
+      }
+      head.setAttribute('aria-expanded', String(an));
+      why.hidden = !an;
+      if (!an) detailZeigen(false);
     });
+
+    // Zustand aus der vorherigen Darstellung übernehmen.
+    if (offen.has(n.id)) {
+      head.setAttribute('aria-expanded', 'true');
+      why.hidden = false;
+      if (detailsOffen.has(n.id)) detailZeigen(true);
+    }
 
     frag.appendChild(node);
   }
@@ -691,7 +729,7 @@ function zeigeBanner(frisch) {
     banner.hidden = true;
     banner.classList.remove('stark', 'normal');
     frischeIds.clear();
-    render();
+    render(true);
   }, 15000);
 }
 
@@ -734,7 +772,7 @@ function starteTakt() {
   timer = setInterval(load, liveUrl ? LIVE_INTERVAL : STATIC_INTERVAL);
 }
 
-function alles() { renderCats(); renderTages(); renderFoot(); render(); }
+function alles() { renderCats(); renderTages(); renderFoot(); render(true); }
 
 // ---------- Quellenliste ----------
 function renderQuellen() {
@@ -770,14 +808,14 @@ $('#q').addEventListener('input', (e) => {
   query = e.target.value.trim().toLowerCase();
   $('#clear').hidden = !query;
   clearTimeout(typing);
-  typing = setTimeout(render, 120);
+  typing = setTimeout(() => render(true), 120);
 });
 $('#clear').addEventListener('click', () => {
-  $('#q').value = ''; query = ''; $('#clear').hidden = true; render();
+  $('#q').value = ''; query = ''; $('#clear').hidden = true; render(true);
 });
 
-$('#sent').addEventListener('change', (e) => { sent = e.target.value; render(); });
-$('#sort').addEventListener('change', (e) => { sort = e.target.value; P.set('sort', sort); render(); });
+$('#sent').addEventListener('change', (e) => { sent = e.target.value; render(true); });
+$('#sort').addEventListener('change', (e) => { sort = e.target.value; P.set('sort', sort); render(true); });
 $('#banner').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
 // Einstellungen öffnen und schließen

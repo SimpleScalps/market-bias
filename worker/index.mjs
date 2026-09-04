@@ -22,6 +22,7 @@ const ABO_KEY = 'https://market-bias.internal/abo';
 const GRUPPEN = 3;
 const KAL_MS = 20_000;      // Kalender im Livebetrieb höchstens alle 20 s
 const BESTAND_TTL = 86_400; // Bestand einen Tag halten, nicht zehn Minuten
+const GESEHEN_MAX = 4000;   // Gedächtnis über die Sichtbarkeitsgrenze hinaus
 const SPERRE_KEY = 'https://market-bias.internal/letzterVersand';
 
 /*
@@ -81,10 +82,8 @@ function zusammenfuehren(bestand, frische) {
   for (const n of frische) {
     const vorhanden = bekannt.get(n.id);
     if (!vorhanden) kandidaten.push(n);
-    // Zeitpunkt der Erstsichtung und den Meldevermerk übernehmen.
-    bekannt.set(n.id, vorhanden
-      ? { ...n, date: vorhanden.date, gemeldet: vorhanden.gemeldet }
-      : n);
+    // Zeitpunkt der Erstsichtung übernehmen.
+    bekannt.set(n.id, vorhanden ? { ...n, date: vorhanden.date } : n);
   }
 
   const items = dedupe([...bekannt.values()])
@@ -117,20 +116,39 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
   const teil = await collectNews({ regime, gruppe, gruppen: GRUPPEN, limit: 300 });
   const { items, neue } = zusammenfuehren(bestand, teil.items);
 
-  // Nur was neu ist und noch nie gemeldet wurde.
-  const kandidaten = neue.filter((n) => !n.gemeldet);
-  const versand = bestand ? await pushen(env, ctx, kandidaten) : { versucht: false, grund: 'erster Lauf' };
+  /*
+   * Das Gedächtnis überlebt die Sichtbarkeitsgrenze.
+   *
+   * Ein Vermerk an der Meldung selbst reicht nicht: Der angezeigte Bestand
+   * fasst 300 Einträge, die Quellen liefern mehr. Eine gemeldete Nachricht
+   * wird von neueren verdrängt, verschwindet samt Vermerk - und gilt beim
+   * nächsten Durchlauf derselben Feed-Gruppe wieder als neu. Genau so ging
+   * dieselbe Meldung dreimal raus. Die Liste der gemeldeten Kennungen liegt
+   * deshalb neben den Meldungen, aber im selben Objekt: Zwei getrennte
+   * Einträge liefen wegen der verzögerten Verteilung von KV auseinander.
+   */
+  const gesehen = new Set(bestand?.gesehen || []);
 
-  // Beim ersten Lauf gilt alles als erledigt, sonst käme es später gesammelt.
-  const erledigt = new Set(bestand ? (versand.ids || []) : items.map((n) => n.id));
-  const vermerkt = items.map((n) => (erledigt.has(n.id) ? { ...n, gemeldet: true } : n));
+  // Neu ist, was noch nie im Bestand war - nicht bloss, was gerade fehlt.
+  const kandidaten = neue.filter((n) => !gesehen.has(n.id));
+
+  const versand = bestand
+    ? await pushen(env, ctx, kandidaten)
+    : { versucht: false, grund: 'erster Lauf' };
+
+  // Alles Sichtbare gilt fortan als bekannt, auch das noch nicht Gemeldete:
+  // Wandert eine Meldung spaeter aus der Anzeige, soll sie beim Wiederauftauchen
+  // keine zweite Benachrichtigung ausloesen.
+  for (const n of items) gesehen.add(n.id);
+  const gedaechtnis = [...gesehen].slice(-GESEHEN_MAX);
 
   const data = {
     updated: new Date().toISOString(),
     regime,
-    count: vermerkt.length,
+    count: items.length,
     errors: teil.errors,
-    items: vermerkt,
+    items,
+    gesehen: gedaechtnis,
   };
   await schreiben(env, ctx, KEY, data, BESTAND_TTL);
   return { data, neue: kandidaten, versand };
@@ -162,7 +180,7 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
     ...bestand, items, errors,
     count: items.length,
     updated: new Date().toISOString(),
-  };
+  };   // ...bestand traegt das Gedaechtnis mit
   await schreiben(env, ctx, KEY, data, BESTAND_TTL);
   return { data, neue };
 }
