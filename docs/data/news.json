@@ -1,11 +1,44 @@
 {
- "updated": "2026-09-04T19:24:18.910Z",
+ "updated": "2026-09-04T19:27:29.686Z",
  "regime": "policy",
  "count": 300,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "Cointelegraph:FinCEN ties $13B in crypto scams to non-US operations",
+   "title": "FinCEN ties $13B in crypto scams to non-US operations",
+   "source": "Cointelegraph",
+   "url": "https://cointelegraph.com/news/fincen-crypto-overseas-scam-centers-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "date": "2026-09-04T19:22:26.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 52,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "FinCEN bindet $ 13B in Krypto-Betrügereien an Nicht-US-Operationen"
+  },
   {
    "id": "CNBC World:Trump doubles down on threat to halt trade with top partners unless Fed cuts rates",
    "title": "Trump doubles down on threat to halt trade with top partners unless Fed cuts rates",
@@ -742,7 +775,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: hawkish)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 80,
+   "priority": 79,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -907,7 +940,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1048,7 +1081,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 66,
+   "priority": 65,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "medium",
@@ -1357,7 +1390,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1390,7 +1423,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2661,7 +2694,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Ungarn: Inflationsanstieg erschwert ZINSSENKUNGSPFAD"
   },
   {
    "id": "Decrypt:Bitcoin Slides as Blowout Jobs Report Revives Fed Hike Odds",
@@ -2729,7 +2763,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: energy price shock, price pressure, price rally)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 64,
+   "priority": 63,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "medium",
@@ -2773,7 +2807,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "BitMEX-Mitbegründer Ben Delo gibt Farages Reform UK weitere 4 Millionen £"
   },
   {
    "id": "Federal Reserve:Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
@@ -2944,7 +2979,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Kanada: Aussichten für eine allmähliche Verbesserung des Arbeitsmarktes – RBC"
   },
   {
    "id": "Al Jazeera:Israel frees four more Lebanese prisoners in Red Cross-mediated handover",
@@ -3370,7 +3406,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 37,
+   "priority": 36,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3806,7 +3842,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3838,7 +3874,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 43,
+   "priority": 42,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4112,7 +4148,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4149,7 +4185,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -4606,7 +4642,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4921,7 +4957,7 @@
    "whyEn": "Directly crypto-positive news. (signals: accumulation)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 47,
+   "priority": 46,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -5352,7 +5388,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5519,7 +5555,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 38,
+   "priority": 37,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5854,7 +5890,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 52,
+   "priority": 51,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -6034,7 +6070,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 20,
+   "priority": 19,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -6592,7 +6628,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 9,
+   "priority": 8,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6696,7 +6732,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7039,7 +7075,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Tether verklagt über gefrorene \"Schweinemetzger\" -Münzen, 6.600 Studenten erhalten Krypto-Darlehen: Asia Express"
   },
   {
    "id": "BBC World:Transplanted pig kidney works in US man's body for record 271 days",
@@ -7173,7 +7210,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Bitcoin Miner Ditches Site für KI-Deal, der 1,2 Milliarden $ übersteigen könnte"
   },
   {
    "id": "Cointelegraph:CFTC files to dismiss CME lawsuit over crypto perpetual futures",
@@ -7205,7 +7243,8 @@
    "eventTypeEn": "Regulatory action",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "CFTC-Akten, um CME-Klage über Krypto-Perpetual-Futures abzuweisen"
   },
   {
    "id": "CNBC World:Automakers urge Congress to permanently ban Chinese connected vehicles in U.S.",
@@ -7271,7 +7310,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Coinbase sucht SEC-GREENLIGHT, um 24/7 Equity Perpetuals aufzulisten"
   },
   {
    "id": "Decrypt:What Is Pons? The Robinhood Chain Meme Coin Factory Token Up 18,000% Since July",
@@ -7303,7 +7343,8 @@
    "eventTypeEn": "Project update",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Was ist Pons? Das Robinhood Chain Meme-Münzfabrik-Token ist seit Juli um 18.000 % gestiegen"
   },
   {
    "id": "CNBC World:Carney claps back at Lutnick, says Canada will resume trade talks 'when the Americans are ready'",
@@ -7509,7 +7550,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Mantle fügt die USDG-Stablecoin von Paxos hinzu und tritt dem Global Dollar Network bei"
   },
   {
    "id": "Decrypt:OpenAI Releases GPT-6 Astra: The Closest AI Model Yet to AGI",
@@ -7638,7 +7680,8 @@
    "eventTypeEn": "Legislation",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Krypto steht vor \"sehr schlechten Nachrichten\", da SICH die Abstimmungsrisiken des CLARITY-Gesetzes verzögern"
   },
   {
    "id": "Cointelegraph:Bitcoin reclaims $80K as DXY falls amid continuing suspected yen intervention",
@@ -7672,7 +7715,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Bitcoin fordert 80.000 $ zurück, da DXY unter dem anhaltenden Verdacht einer Yen-Intervention fällt"
   },
   {
    "id": "BBC World:AI data centres are booming in Australia - but at what cost?",
@@ -7772,7 +7816,8 @@
     "ETH",
     "XRP"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Bitcoin-ETFs erholen sich, während Ethereum- und XRP-ETFs Siegesserien beenden"
   },
   {
    "id": "BBC World:US billionaire Leon Black defies summons and sues Epstein panel",
@@ -7868,7 +7913,8 @@
    "eventTypeEn": "Regulatory action",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "CFTC fordert Richter auf, CME-Klage wegen unbefristeter Krypto-Futures abzuweisen"
   },
   {
    "id": "Cointelegraph:Bybit Pay integrates with Mesh to expand crypto payments",
@@ -7900,7 +7946,8 @@
    "eventTypeEn": "Partnership",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Bybit Pay lässt sich in Mesh integrieren, um Krypto-Zahlungen zu erweitern"
   },
   {
    "id": "Cointelegraph:BitMEX co-founder contributed 75% of Reform UK’s donations in Q2 2026",
@@ -8081,7 +8128,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Strive CEO sagt, dass das Unternehmen 2026 als zweitgrößter öffentlicher Bitcoin-Inhaber enden könnte, da ASST ansteigt"
   },
   {
    "id": "U.Today:Bessent Delivers Bitcoin's Best Ad, Scaramucci Claims",
@@ -8115,7 +8163,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Bessent liefert Bitcoins beste Anzeige, Scaramucci Claims"
   },
   {
    "id": "Cointelegraph:Kraken parent Payward partners with SoFi on stablecoin, 24/7 settlement",
@@ -8147,7 +8196,8 @@
    "eventTypeEn": "Partnership",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Kraken Eltern Payward Partner mit SoFi auf Stablecoin, 24/7 Abrechnung"
   },
   {
    "id": "The Block:Stablecoin payments infrastructure startup Diameter Pay raises $10 million",
@@ -8179,7 +8229,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Stablecoin-Zahlungsinfrastruktur-Startup Diameter Pay bringt 10 Millionen $ ein"
   },
   {
    "id": "CoinDesk:Standard Chartered brings spot crypto trading to Dubai FX platform",
@@ -8211,7 +8262,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Standard Chartered bringt Spot-Kryptohandel auf die Dubai FX-Plattform"
   },
   {
    "id": "BBC World:Around 2,000 fall ill in Indonesia after eating free school meals",
@@ -8275,7 +8327,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Binance teilt entscheidende Warnung inmitten steigender Phishing-Textschemata"
   },
   {
    "id": "Decrypt:SoFi Links Banking Network and Stablecoin to Kraken in New Deal",
@@ -8307,7 +8360,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "SoFi verbindet Bankennetzwerk und Stablecoin mit Kraken in New Deal"
   },
   {
    "id": "CoinDesk:Crypto for Advisors: Why crypto earnings reports can be misleading",
@@ -8339,7 +8393,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Krypto für Berater: Warum Krypto-Gewinnberichte irreführend sein können"
   },
   {
    "id": "CoinDesk:A memecoin making app becomes crypto’s top fee generators as Robinhood Chain activity explodes",
@@ -8371,7 +8426,8 @@
    "eventTypeEn": "Project update",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Eine Memecoin-Herstellungs-App wird zu den Top-Gebührengeneratoren von Krypto, da die Robinhood-Chain-Aktivität explodiert"
   },
   {
    "id": "CoinDesk:Bitget in talks with Wall Street giants including BlackRock to fuel Asian distribution",
@@ -8437,7 +8493,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Pompliano unterstützt Bitcoin-AI Duo als ultimatives Portfolio für die nächsten zwei Jahrzehnte"
   },
   {
    "id": "CNBC Economy:Fed Governor Waller indicates he will support holding rates steady at September meeting",
@@ -8502,7 +8559,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Recovery-Spezialisten knacken $ 1B Krypto-Wallet... finden aber nur $ 10"
   },
   {
    "id": "U.Today:XRP's Most Important Website Gets Revamp: What Changed?",
@@ -8536,7 +8594,8 @@
    "coins": [
     "XRP"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Die wichtigste Website von XRP wird überarbeitet: Was hat sich geändert?"
   },
   {
    "id": "Cointelegraph:VARA, Securitize sign MoU for tokenization innovation in Dubai",
@@ -8730,7 +8789,8 @@
    "coins": [
     "XRP"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Warum Ex-Ripple-Vizepräsident 'Déjà Vu' über Goldman Sachs 'neue bankgedeckte Stablecoin hat"
   },
   {
    "id": "U.Today:Robinhood Chain Beats Tron in 24-Hour Revenue",
@@ -8794,7 +8854,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "SoFi, Kraken verbinden sich, während Krypto und Banking sich gegenseitig in den Rasen schieben"
   },
   {
    "id": "BBC World:Sharpeville massacre survivors start legal fight for justice in South Africa",
@@ -8892,7 +8953,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "\"Reiche Leute kaufen Bitcoin\": Michael Saylor mag die BTC-Strategie beim Golfspielen"
   },
   {
    "id": "Decrypt:Mamdani Imposes One-Year Moratorium on Generative AI in NYC Schools",
@@ -8990,7 +9052,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "FX hat aufgehört, Anleiherenditen auf die alte Weise zu lesen. Bitcoin sollte das auch."
   },
   {
    "id": "CoinDesk:The yen is surging and it’s helping bitcoin, for now",
@@ -9024,7 +9087,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Der Yen steigt und es hilft Bitcoin, vorerst"
   },
   {
    "id": "The Block:Bitcoin-gold correlation hits six-year high, but analysts question whether equity decoupling will last",
@@ -9058,7 +9122,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Die Bitcoin-Gold-Korrelation erreicht ein Sechsjahreshoch, aber Analysten fragen sich, ob die Aktienentkopplung anhalten wird"
   },
   {
    "id": "Cointelegraph:Pencil Finance completes $1M onchain lending cycle for 6.6K students in Southeast Asia",
@@ -9198,7 +9263,8 @@
     "SOL",
     "XRP"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Solana, XRP, Ethereum-ETFs in Rot, da Bitcoin-ETF 100 Millionen $ hinzufügt"
   },
   {
    "id": "CoinDesk:Bitcoin recovers toward $78,000 as pons and arbitrum extend Robinhood Chain rally",
@@ -9272,7 +9338,8 @@
     "BTC",
     "ETH"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Standard Chartered startet Spot-Bitcoin- und Ether-Handel in den VAE"
   },
   {
    "id": "CoinDesk:Australia is cracking down on crypto businesses as its strict new regulatory deadline nears",
@@ -9304,7 +9371,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Australien geht hart gegen Krypto-Unternehmen vor, da sich die strenge neue regulatorische Frist nähert"
   },
   {
    "id": "Decrypt:Ukraine Busts Kyiv Crypto Drainer Ring Moving Up to $1M Monthly",
@@ -9505,48 +9573,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
-  },
-  {
-   "id": "Cointelegraph:Ether, XRP ETF inflow streaks end as Bitcoin funds rebound",
-   "title": "Ether, XRP ETF inflow streaks end as Bitcoin funds rebound",
-   "source": "Cointelegraph",
-   "url": "https://cointelegraph.com/markets/eth-xrp-etf-inflow-streaks-end-bitcoin-funds-rebound?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "date": "2026-09-03T07:22:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "ETF-Zuflüsse"
-   ],
-   "scores": {
-    "crypto": 0.7,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "why": "Direkt kryptopositive Nachricht. (Signale: ETF-Zuflüsse)",
-   "whyEn": "Directly crypto-positive news. (signals: ETF inflows)",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 37,
-   "label": "strong_bullish",
-   "labelText": "Stark Bullish",
-   "impactLevel": "high",
-   "duration": "intraday",
-   "eventType": "ETF-Flüsse",
-   "eventTypeEn": "ETF flows",
-   "scope": "market",
-   "coins": [
-    "BTC",
-    "ETH",
-    "XRP"
-   ],
    "alsoIn": [],
-   "titleDe": "Ether-, XRP-ETF-Zuflussstreifen enden, wenn sich die Bitcoin-Fonds erholen"
+   "titleDe": "Australien warnt nicht lizenzierte Kryptofirmen vor Bußgeldern von bis zu 10 % des Jahresumsatzes"
   },
   {
    "id": "BBC World:UN warns of 'supersized' El Niño as countries prepare for impact",
@@ -9707,7 +9735,8 @@
    "eventTypeEn": "Regulatory action",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "‘Viel Lärm um nichts’: CFTC-Akten, um CMEs Klage über Krypto-Perpetual-Futures abzuweisen"
   },
   {
    "id": "CNBC Economy:South Korea's semiconductor exports just tripled year-over-year. Is it too much of a good thing?",
@@ -9967,7 +9996,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "FBI beschlagnahmt 560.000 $ an Krypto für Hamas, übernimmt Fundraising-Sites"
   },
   {
    "id": "The Block:Anthony Armstrong, former CFO at Elon Musk’s xAI and X, joins Coinbase board",
@@ -9999,7 +10029,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Anthony Armstrong, ehemaliger CFO bei Elon Musks xAI und X, tritt dem Coinbase-Vorstand bei"
   },
   {
    "id": "CNBC Economy:Private payrolls rose by 38,000 in August, less than expected, ADP reports",
