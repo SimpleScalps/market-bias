@@ -7,7 +7,7 @@
 
 export const KEYWORDS = [
   // ----- Geldpolitik: restriktiv -----
-  { re: /\b(rate (hike|increase|rise)|hike[sd]? rates|raise (interest )?rates)\b/, type: 'hawkish', weight: 0.75, label: 'Zinserhöhung', labelEn: 'rate hike' },
+  { re: /\b(rate (hikes?|increases?|rises?)|hike[sd]? rates|raise[sd]? (interest )?rates|hiking rates|tightening cycle)\b/, type: 'hawkish', weight: 0.75, label: 'Zinserhöhung', labelEn: 'rate hike' },
   { re: /\bhawkish\b/, type: 'hawkish', weight: 0.6, label: 'hawkisch', labelEn: 'hawkish' },
   { re: /\bhigher for longer\b/, type: 'hawkish', weight: 0.6, label: 'higher for longer', labelEn: 'higher for longer' },
   { re: /\b(tightening|quantitative tightening|\bqt\b)\b/, type: 'hawkish', weight: 0.5, label: 'Straffung', labelEn: 'tightening' },
@@ -18,7 +18,7 @@ export const KEYWORDS = [
   { re: /\b(strong|robust|solid|hot|blowout) (jobs|payrolls|nfp|employment|labou?r market|report)\b/, type: 'hawkish', weight: 0.6, label: 'starker Arbeitsmarkt', labelEn: 'strong labour market' },
 
   // ----- Geldpolitik: locker -----
-  { re: /\b(rate cut|cut[s]? rates|lower[s]? rates|rate reduction)\b/, type: 'hawkish', weight: -0.75, label: 'Zinssenkung', labelEn: 'rate cut' },
+  { re: /\b(rate cuts?|cut[s]? rates|lower[s]? rates|rate reductions?|cutting rates|easing cycle)\b/, type: 'hawkish', weight: -0.75, label: 'Zinssenkung', labelEn: 'rate cut' },
   { re: /\bdovish\b/, type: 'hawkish', weight: -0.6, label: 'dovish', labelEn: 'dovish' },
   { re: /\b(quantitative easing|\bqe\b|stimulus|liquidity injection)\b/, type: 'hawkish', weight: -0.7, label: 'geldpolitische Lockerung', labelEn: 'monetary easing' },
   { re: /\b(disinflation|inflation (cools|eases|slows|falls|declines))\b/, type: 'hawkish', weight: -0.65, label: 'Inflation kühlt ab', labelEn: 'inflation cooling' },
@@ -71,6 +71,19 @@ export const DEESKALATION = /\b(ceasefire|truce|peace (deal|talks|plan|process|s
 
 // ... es sei denn, die Bemühungen scheitern.
 export const DEESKALATION_GESCHEITERT = /\b(fail\w*|collapse[sd]?|break(s|ing)? down|broke down|reject\w*|stall\w*|no (deal|agreement)|walks? out|suspend\w*)\b/i;
+
+/*
+ * Gefordert ist nicht beschlossen.
+ *
+ * "unless the Fed cuts rates" nennt eine Bedingung, "Trump calls for rate
+ * cuts" eine Forderung - in beiden Faellen ist die Zinssenkung nicht
+ * geschehen. Das Regelwerk las bisher nur das Stichwort und schloss auf eine
+ * tatsaechliche Lockerung; eine Drohung mit Handelsstopp galt dadurch als
+ * kaufenswerte Nachricht. Steht das geldpolitische Signal in einem solchen
+ * Zusammenhang, wird es stark gedaempft: Die Aeusserung sagt etwas ueber den
+ * Wunsch des Sprechers, nicht ueber die Geldpolitik.
+ */
+export const NUR_GEFORDERT = /\b(unless|if\b|should\b|must\b|calls? for|demand(s|ed|ing)?|urges?|urging|pressur(e|es|ing)|push(es|ing)? for|wants?|wanted|insists?|threat(en(s|ed|ing)?)?|hopes? for|expects? (a )?cut|forderung)\b/i;
 
 // Geopolitik wirkt praktisch immer risk-off.
 export const GEOPOLITICS = [

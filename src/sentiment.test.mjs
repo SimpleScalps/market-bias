@@ -171,3 +171,28 @@ test('Verbrichtung erkennt auch die Verlaufsform', () => {
   assert.ok(scoreHeadline('Payrolls rising faster than expected').scores.crypto < 0);
   assert.ok(scoreHeadline('Jobless claims falling faster than expected').scores.crypto < 0);
 });
+
+test('Gefordert ist nicht beschlossen', () => {
+  // "unless the Fed cuts rates" nennt eine Bedingung, keine Entscheidung.
+  // Die Drohung mit Handelsstopp galt dadurch als kaufenswerte Nachricht.
+  const drohung = scoreHeadline(
+    'Trump doubles down on threat to halt trade with top partners unless Fed cuts rates');
+  assert.ok(drohung.scores.crypto < 0,
+    'eine Handelsdrohung ist nicht bullish, auch wenn Zinssenkung darin vorkommt');
+
+  // Der Plural fehlte im Muster: "rate cuts" blieb unerkannt, waehrend
+  // "cuts rates" erfasst wurde. Die Forderung war damit aus Zufall neutral.
+  for (const t of ['Trump calls for immediate rate cuts from the Fed',
+                   'Trump urges the Fed to deliver rate cuts']) {
+    const r = scoreHeadline(t);
+    assert.ok(r, `Stichwort muss erkannt werden: ${t}`);
+    assert.ok(Math.abs(r.scores.crypto) < 0.16, `blosse Forderung bewegt nichts: ${t}`);
+  }
+
+  // Plural auch bei tatsaechlichen Entscheidungen.
+  assert.ok(scoreHeadline('Fed delivers two rate cuts this year').scores.crypto > 0.5);
+
+  // Tatsächliche Entscheidungen wirken unverändert.
+  assert.ok(scoreHeadline('Fed cuts rates by 25 basis points').scores.crypto > 0.5);
+  assert.ok(scoreHeadline('Fed signals rate hike in September').scores.crypto < -0.5);
+});

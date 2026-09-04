@@ -1,5 +1,5 @@
 import { matchEvent } from './events.mjs';
-import { KEYWORDS, GEOPOLITICS, DEESKALATION, DEESKALATION_GESCHEITERT } from './keywords.mjs';
+import { KEYWORDS, GEOPOLITICS, DEESKALATION, DEESKALATION_GESCHEITERT, NUR_GEFORDERT } from './keywords.mjs';
 import { extractNumbers } from './numeric.mjs';
 import { countryRelevance, centralBankWeight, emergingMarketDamping } from './relevance.mjs';
 
@@ -297,7 +297,19 @@ export function scoreHeadline(rohTitel, regime = 'policy') {
   // Eine Aussage der Fed bewegt Krypto, eine der RBNZ kaum.
   const cb = centralBankWeight(title);
   const emDaempfung = emergingMarketDamping(title);
-  const hawkish = clamp(macroHawk) * (cb === null ? emDaempfung : cb);
+
+  /*
+   * Eine geforderte oder an Bedingungen geknuepfte Zinsentscheidung ist keine
+   * getroffene. "unless the Fed cuts rates" sagt etwas ueber den Wunsch des
+   * Sprechers aus, nicht ueber die Geldpolitik - das Signal zaehlt deshalb nur
+   * zu einem Viertel. Berichtet die Meldung dagegen von einer tatsaechlichen
+   * Entscheidung, bleibt es unberuehrt.
+   */
+  // Ein Viertel war noch zu viel: Eine blosse Forderung blieb damit knapp
+  // ueber der Schwelle und erschien als handelbares Signal. Wer seit Monaten
+  // Zinssenkungen verlangt, bewegt damit nichts.
+  const gefordert = NUR_GEFORDERT.test(title) ? 0.15 : 1;
+  const hawkish = clamp(macroHawk) * (cb === null ? emDaempfung : cb) * gefordert;
   const base = assetScores(hawkish, regime);
 
   // Die Daempfung gilt auch fuer Risikosignale. "USD/MXN: Peso rally" galt
