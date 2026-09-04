@@ -1,11 +1,48 @@
 {
- "updated": "2026-09-04T21:59:13.647Z",
+ "updated": "2026-09-04T22:02:11.763Z",
  "regime": "policy",
  "count": 300,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "FXStreet:USD/MXN Price Forecast: Peso rally targets April 2024 low",
+   "title": "USD/MXN Price Forecast: Peso rally targets April 2024 low",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/usd-mxn-price-forecast-peso-rally-targets-april-2024-low-202609042159",
+   "date": "2026-09-04T21:59:40.000Z",
+   "tags": [
+    "Makro"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Kursanstieg"
+   ],
+   "scores": {
+    "crypto": 0.36,
+    "stocks": 0.36,
+    "gold": -0.18,
+    "usd": -0.12
+   },
+   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 38,
+   "label": "bullish",
+   "labelText": "Bullish",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Kursprognose",
+   "eventTypeEn": "Price prediction",
+   "scope": "project",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "USD/MXN-Preisprognose: Peso-Rallyeziele April 2024 niedrig"
+  },
   {
    "id": "Decrypt:TikTok's Parent Company Just Borrowed $30 Billion to Go All-In on AI",
    "title": "TikTok's Parent Company Just Borrowed $30 Billion to Go All-In on AI",
@@ -73,6 +110,72 @@
    "titleDe": "Bloom Energy wurde gerade in den S&P 500 aufgenommen. Diese anderen Aktien werden ebenfalls in den Index aufgenommen."
   },
   {
+   "id": "Al Jazeera:Costa Rican president signals openness to domestic US military operations",
+   "title": "Costa Rican president signals openness to domestic US military operations",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/4/costa-rican-president-signals-openness-to-domestic-us-military-operations?traffic_source=rss",
+   "date": "2026-09-04T21:45:56.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 62,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Costa Ricas Präsident signalisiert Offenheit für inländische US-Militäroperationen"
+  },
+  {
+   "id": "Al Jazeera:Betis beat Real Madrid as Mbappe misses penalty in first La Liga defeat",
+   "title": "Betis beat Real Madrid as Mbappe misses penalty in first La Liga defeat",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/2026/9/4/real-madrid-beaten-by-betis-as-mourinho-suffers-first-defeat-on-return?traffic_source=rss",
+   "date": "2026-09-04T21:37:56.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Betis besiegte Real Madrid, als Mbappe bei der ersten Niederlage in der La Liga den Elfmeter verpasste"
+  },
+  {
    "id": "FXStreet:Malaysian Ringgit: BNM hawkish tilt supports MYR – Commerzbank",
    "title": "Malaysian Ringgit: BNM hawkish tilt supports MYR – Commerzbank",
    "source": "FXStreet",
@@ -108,6 +211,39 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Malaysian Ringgit: BNM Hawkish Tilt unterstützt MYR – Commerzbank"
+  },
+  {
+   "id": "Al Jazeera:US regulator opens safety investigation as Tesla launches driverless taxis",
+   "title": "US regulator opens safety investigation as Tesla launches driverless taxis",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/us-regulator-opens-safety-investigation-as-tesla-launches-driverless-taxis?traffic_source=rss",
+   "date": "2026-09-04T21:27:26.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 44,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Regulierungsverfahren",
+   "eventTypeEn": "Regulatory action",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Regulierungsbehörde leitet Sicherheitsuntersuchung ein, da Tesla fahrerlose Taxis auf den Markt bringt"
   },
   {
    "id": "FXStreet:USD/CHF Price Forecast: NFP rally stalls at 0.8100, retraces",
@@ -237,7 +373,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -270,7 +406,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -538,7 +674,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -573,7 +709,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1566,7 +1702,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1632,7 +1768,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2278,7 +2414,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2839,39 +2975,6 @@
    "titleDe": "Zcash erreicht den höchsten Preis seit fast einem Jahrzehnt, vernichtende Short-Wetten"
   },
   {
-   "id": "Al Jazeera:October 7 attack shapes Israel’s elections and fuels political blame",
-   "title": "October 7 attack shapes Israel’s elections and fuels political blame",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/4/october-7-attack-shapes-israels-elections-and-fuels-political-blame?traffic_source=rss",
-   "date": "2026-09-04T16:20:35.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 79,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Der Angriff vom 7. Oktober prägt Israels Wahlen und schürt die politische Schuld"
-  },
-  {
    "id": "BeInCrypto:3 Altcoins That Could Reach All-Time Highs This Weekend",
    "title": "3 Altcoins That Could Reach All-Time Highs This Weekend",
    "source": "BeInCrypto",
@@ -2936,39 +3039,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "ChatGPT empfahl eine gefälschte Kryptoseite, die mit 2,2 Millionen $ Betrug verbunden ist"
-  },
-  {
-   "id": "Al Jazeera:‘Winds of change’: How Milei is stirring Falklands claim amid Trump-UK spat",
-   "title": "‘Winds of change’: How Milei is stirring Falklands claim amid Trump-UK spat",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/4/winds-of-change-how-milei-is-stirring-falklands-claim-amid-trump-uk-spat?traffic_source=rss",
-   "date": "2026-09-04T16:13:34.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 23,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "‘Winds of change’: Wie Milei den Anspruch der Falklandinseln inmitten von Trump-UK-Spat aufrührt"
   },
   {
    "id": "BeInCrypto:Will AI Push Bitcoin Mining Out of the Market?",
@@ -3041,39 +3111,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Binance Delisting-Warnung: Zwölf Kryptowährungen stehen vor dem Ausstieg"
-  },
-  {
-   "id": "Al Jazeera:Russian drone strikes Ukraine’s security service headquarters",
-   "title": "Russian drone strikes Ukraine’s security service headquarters",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/09-04-russia-targets-ukraine-security-hq-clip-mp4?traffic_source=rss",
-   "date": "2026-09-04T16:03:41.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 53,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Russische Drohne greift das Hauptquartier des ukrainischen Sicherheitsdienstes an"
   },
   {
    "id": "BBC World:Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
@@ -3685,7 +3722,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3957,7 +3994,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3990,7 +4027,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 60,
+   "priority": 59,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -4329,7 +4366,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 39,
+   "priority": 38,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4373,38 +4410,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Token-Rückkäufe boomen. Aber sind sie gut für Krypto-Projekte?"
-  },
-  {
-   "id": "FXStreet:Gold: Central bank buying underpins prices – ING",
-   "title": "Gold: Central bank buying underpins prices – ING",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/gold-central-bank-buying-underpins-prices-ing-202609041325",
-   "date": "2026-09-04T13:25:01.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 18,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
   },
   {
    "id": "BeInCrypto:PONS Rallies 41% to New Record as Traders See Mixed Fortunes",
@@ -5030,7 +5035,7 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -5534,7 +5539,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5835,7 +5840,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 39,
+   "priority": 38,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -7442,8 +7447,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "titleDe": "Coinbase sucht SEC-GREENLIGHT, um unbefristete Aktien aufzulisten"
+   "alsoIn": []
   },
   {
    "id": "Decrypt:What Is Pons? The Robinhood Chain Meme Coin Factory Token Up 18,000% Since July",
@@ -7812,8 +7816,7 @@
    "eventTypeEn": "Legislation",
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "titleDe": "Krypto steht vor \"sehr schlechten Nachrichten\", da SICH die Abstimmungsrisiken des CLARITY-Gesetzes verzögern"
+   "alsoIn": []
   },
   {
    "id": "Cointelegraph:Bitcoin reclaims $80K as DXY falls amid continuing suspected yen intervention",
@@ -7847,8 +7850,7 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": [],
-   "titleDe": "Bitcoin fordert 80.000 $ zurück, da DXY unter dem anhaltenden Verdacht einer Yen-Intervention fällt"
+   "alsoIn": []
   },
   {
    "id": "BBC World:AI data centres are booming in Australia - but at what cost?",
@@ -7948,8 +7950,7 @@
     "ETH",
     "XRP"
    ],
-   "alsoIn": [],
-   "titleDe": "Bitcoin-ETFs erholen sich, während Ethereum- und XRP-ETFs Siegesserien beenden"
+   "alsoIn": []
   },
   {
    "id": "BBC World:US billionaire Leon Black defies summons and sues Epstein panel",
