@@ -5,7 +5,7 @@ import { label } from './engine/sentiment.mjs';
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v19';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v20';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -202,6 +202,54 @@ function renderTages() {
   });
 }
 
+// ---------- Zweitmeinung ----------
+/**
+ * Holt die Einschätzung eines Sprachmodells zu einer einzelnen Meldung.
+ *
+ * Die Regeln bleiben die Grundlage — sie sind sofort da und erklären sich. Das
+ * Modell hilft bei Meldungen, deren Wortlaut die Regeln nicht recht fassen.
+ * Der Zugangsschlüssel liegt im Worker, deshalb geht die Anfrage über ihn.
+ */
+async function zweitmeinung(titelText) {
+  if (!liveUrl) return { fehler: T().zweitmeinungOhneWorker };
+  try {
+    const res = await fetch(`${liveUrl}/deuten`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ titel: titelText }),
+    });
+    const j = await res.json();
+    return res.ok ? j : { fehler: j.fehler || T().zweitmeinungFehler };
+  } catch {
+    return { fehler: T().zweitmeinungFehler };
+  }
+}
+
+/** Stellt eine Einschätzung dar — die des Modells oder eine bereits geprüfte. */
+function kiDarstellen(box, deutung, regelWert) {
+  if (deutung.fehler) {
+    box.className = 'kiAntwort fehler';
+    box.textContent = deutung.fehler;
+    box.hidden = false;
+    return;
+  }
+
+  const kiWert = deutung.richtung === 'neutral' ? 0
+    : (deutung.richtung === 'bullish' ? 1 : -1) * deutung.staerke;
+  const uneins = Math.sign(kiWert) !== 0 && Math.sign(regelWert) !== 0
+    && Math.sign(kiWert) !== Math.sign(regelWert) && Math.abs(kiWert) >= 0.3;
+
+  box.className = 'kiAntwort' + (uneins ? ' uneins' : '');
+  box.innerHTML = `
+    <div class="kiKopf">
+      <span class="kiMarke">${T().zweitmeinung}</span>
+      <span class="kiWert ${deutung.richtung}">${T().kiRichtung[deutung.richtung]} ${deutung.staerke.toFixed(2)}</span>
+    </div>
+    <p class="kiGrund">${escape(deutung.grund)}</p>
+    ${uneins ? `<p class="kiWarnung">${T().kiWidersprichtKurz}</p>` : ''}`;
+  box.hidden = false;
+}
+
 // ---------- Ausführliche Erklärung ----------
 const zeile = (k, v) => `<div class="dz"><span>${k}</span><b>${v}</b></div>`;
 
@@ -356,6 +404,10 @@ function render(erzwingen = false) {
     const typ = lang === 'en' ? (n.eventTypeEn || n.eventType) : n.eventType;
     $('.etyp', node).textContent = typ || '';
 
+    // Ein Widerspruch soll schon in der Liste auffallen, nicht erst
+    // aufgeklappt: Wer danach handelt, soll vorher hinsehen.
+    if (n.kiWiderspruch) item.classList.add('uneins');
+
     const anzahl = n.alsoIn?.length || 0;
     const auch = anzahl ? ` · +${anzahl} ${anzahl > 1 ? T().quellenMehr : T().quellen}` : '';
     $('.src', node).textContent =
@@ -375,6 +427,26 @@ function render(erzwingen = false) {
     // Langfassung wird erst auf Wunsch gebaut — spart Arbeit bei 300 Einträgen.
     const mehr = $('.mehrBtn', node);
     const detail = $('.detail', node);
+    // Zweitmeinung: entweder schon vom Worker geprüft, oder auf Knopfdruck.
+    const kiBtn = $('.kiBtn', node);
+    const kiBox = $('.kiAntwort', node);
+    kiBtn.textContent = T().zweitmeinung;
+
+    if (n.ki && !n.ki.fehler) {
+      kiDarstellen(kiBox, n.ki, score);
+      kiBtn.hidden = true;          // liegt bereits vor
+    }
+
+    kiBtn.addEventListener('click', async () => {
+      kiBtn.disabled = true;
+      kiBtn.textContent = T().zweitmeinungLaeuft;
+      const deutung = await zweitmeinung(n.title);
+      kiDarstellen(kiBox, deutung, score);
+      kiBtn.hidden = !deutung.fehler;
+      kiBtn.disabled = false;
+      kiBtn.textContent = T().zweitmeinung;
+    });
+
     const head = $('.head', node);
     const why = $('.why', node);
 

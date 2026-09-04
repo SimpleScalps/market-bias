@@ -58,6 +58,12 @@ window.I18N = {
     telegramHinweis: 'Bot-Token und Chat-ID. Der Worker verschickt die Nachricht, damit sie auch bei geschlossener App ankommt.',
     discordHinweis: 'Webhook-Adresse deines Servers.',
     testen: 'Test senden', gesendet: 'Gesendet', fehlgeschlagen: 'Fehlgeschlagen',
+    zweitmeinung: 'Zweitmeinung', zweitmeinungLaeuft: 'wird geprüft …',
+    zweitmeinungFehler: 'Zweitmeinung nicht verfügbar',
+    zweitmeinungOhneWorker: 'Braucht den Cloudflare Worker mit hinterlegtem Schlüssel.',
+    kiWidersprichtKurz: 'Zweitmeinung weicht ab',
+    kiRichtung: { bullish: 'bullish', bearish: 'bearish', neutral: 'neutral' },
+
 
     uebersetzung: 'Übersetzung',
     mehrDetails: 'Mehr Details', wenigerDetails: 'Weniger',
@@ -135,6 +141,12 @@ window.I18N = {
     telegramHinweis: 'Bot token and chat ID. The worker sends the message so it arrives even when the app is closed.',
     discordHinweis: 'Webhook address of your server.',
     testen: 'Send test', gesendet: 'Sent', fehlgeschlagen: 'Failed',
+    zweitmeinung: 'Second opinion', zweitmeinungLaeuft: 'checking …',
+    zweitmeinungFehler: 'Second opinion unavailable',
+    zweitmeinungOhneWorker: 'Requires the Cloudflare Worker with a key set.',
+    kiWidersprichtKurz: 'Second opinion differs',
+    kiRichtung: { bullish: 'bullish', bearish: 'bearish', neutral: 'neutral' },
+
 
     uebersetzung: 'Translation',
     mehrDetails: 'More detail', wenigerDetails: 'Less',

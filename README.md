@@ -216,6 +216,49 @@ hinterlegt. Schlägt die Übersetzung fehl, bleibt der englische Titel stehen �
 die Bewertung selbst ist davon nie betroffen, weil sie auf dem Originaltext
 arbeitet.
 
+## Zweitmeinung durch ein Sprachmodell
+
+Das Regelwerk bleibt die Grundlage: Es antwortet in Millisekunden, kostet
+nichts und erklärt jede Einordnung nachvollziehbar. Ein Sprachmodell ergänzt es
+an zwei Stellen, wo Regeln naturgemäß schwach sind — beim Erkennen von
+Zusammenhängen, die nicht im Wortlaut stehen.
+
+**Auf Knopfdruck.** Jede aufgeklappte Meldung hat einen Knopf *Zweitmeinung*.
+Das Modell liest die Schlagzeile und antwortet mit Richtung, Stärke und einem
+Satz Begründung.
+
+**Als stille Gegenprobe.** Die stärksten neuen Signale — meist zwei bis drei am
+Tag — werden automatisch gegengelesen. Weicht das Modell in der Richtung
+deutlich ab, trägt die Meldung ein Fragezeichen in der Liste und einen Hinweis
+im Detail; die Benachrichtigung nennt den Widerspruch ebenfalls. Genau die
+Fehler, die beim Regelwerk schwer zu fassen sind, fallen so auf: eine
+Notenbank-Meldung aus einem Randmarkt, eine Reportage mit dem Wort *stolen*
+darin, eine Friedensmission, die wie Kriegsberichterstattung klingt.
+
+**Einrichten** (kostenlos, keine Zahlungsdaten):
+
+1. Konto auf [console.groq.com](https://console.groq.com) anlegen
+2. Dort *API Keys* → *Create API Key* → Schlüssel kopieren
+3. Im Worker hinterlegen:
+
+```bash
+cd worker && npx wrangler secret put GROQ_KEY
+```
+
+Der Schlüssel liegt damit im Worker und verlässt ihn nie — die App fragt über
+ihn an, statt selbst mit dem Anbieter zu sprechen.
+
+**Kontingent.** Der kostenlose Tarif erlaubt 14.400 Anfragen und 500.000 Token
+am Tag. Bei rund 60 neuen Meldungen täglich und höchstens drei Gegenproben pro
+Durchlauf liegt der Bedarf deutlich darunter. Fehlt der Schlüssel oder ist das
+Kontingent erschöpft, arbeitet alles unverändert weiter — nur ohne Zweitmeinung.
+
+> **Zu den Schlagzeilen als Eingabe:** Sie stammen von fremden Servern. Das
+> Modell bekommt sie ausdrücklich als Daten zwischen Markierungen übergeben,
+> gekürzt und einzeilig, mit der Anweisung, nichts darin als Aufforderung zu
+> behandeln. Die Antwort wird nur übernommen, wenn sie der erwarteten Form
+> entspricht.
+
 ## Aktualität
 
 Hier wird die Architektur entschieden. Es gibt zwei Betriebsarten:

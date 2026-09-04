@@ -4,6 +4,7 @@ import { profilPassung, STANDARD_PROFIL } from '../docs/engine/profile.mjs';
 import { label } from '../docs/engine/sentiment.mjs';
 import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
 import { sendeAn } from './notify.mjs';
+import { deuten, widerspruch } from './deuten.mjs';
 
 // Cloudflare Worker: holt die Quellen serverseitig (RSS-Feeds senden keine
 // CORS-Header, der Browser kann sie also nicht selbst laden), bewertet sie mit
@@ -23,6 +24,7 @@ const GRUPPEN = 3;
 const KAL_MS = 20_000;      // Kalender im Livebetrieb höchstens alle 20 s
 const BESTAND_TTL = 86_400; // Bestand einen Tag halten, nicht zehn Minuten
 const GESEHEN_MAX = 4000;   // Gedächtnis über die Sichtbarkeitsgrenze hinaus
+const GEGENPROBE_MAX = 3;   // starke Signale je Durchlauf, die geprüft werden
 const SPERRE_KEY = 'https://market-bias.internal/letzterVersand';
 
 /*
@@ -150,6 +152,10 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
   // Neu ist, was noch nie im Bestand war - nicht bloss, was gerade fehlt.
   const kandidaten = neue.filter((n) => !gesehen.has(n.id));
 
+  // Vor dem Versand gegenlesen lassen: Ein Widerspruch gehoert in die
+  // Benachrichtigung, nicht erst in die spaetere Ansicht.
+  await gegenlesen(kandidaten, env);
+
   const versand = bestand
     ? await pushen(env, ctx, kandidaten)
     : { versucht: false, grund: 'erster Lauf' };
@@ -213,6 +219,31 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
   };
   await schreiben(env, ctx, KEY, data, BESTAND_TTL);
   return { data, neue };
+}
+
+/**
+ * Lässt die stärksten neuen Signale vom Sprachmodell gegenlesen.
+ *
+ * Betroffen sind nur wenige Meldungen am Tag, das faellt weder beim Kontingent
+ * noch bei der Laufzeit ins Gewicht. Der Gewinn: Genau die Fehler, die ein
+ * Regelwerk schwer fassen kann, fallen auf. Eine Notenbank-Meldung aus
+ * Malaysia oder eine Reportage, in der zufaellig das Wort "stolen" vorkommt,
+ * wertet das Modell anders - und die Meldung traegt dann einen Hinweis.
+ */
+async function gegenlesen(items, env) {
+  if (!env.GROQ_KEY) return;
+
+  const kandidaten = items
+    .filter((n) => n.label?.startsWith('strong') && !n.ki)
+    .sort((a, b) => Math.abs(b.scores.crypto) - Math.abs(a.scores.crypto))
+    .slice(0, GEGENPROBE_MAX);
+
+  for (const n of kandidaten) {
+    const deutung = await deuten(n.title, env);
+    if (!deutung) continue;
+    n.ki = deutung;
+    n.kiWiderspruch = widerspruch(n.scores.crypto, deutung);
+  }
 }
 
 // --- Benachrichtigungen ---------------------------------------------------
@@ -286,6 +317,13 @@ async function pushen(env, ctx, neueItems) {
   const body = [
     sprache === 'de' ? (top.titleDe || top.title) : top.title,
     `${IMPACT_TEXT[sprache][top.impactLevel]} · ${DURATION_TEXT[sprache][top.duration]}`,
+    // Sind sich Regelwerk und Modell uneins, steht das dabei - wer danach
+    // handelt, soll es vorher wissen.
+    top.kiWiderspruch
+      ? (sprache === 'de'
+          ? `Zweitmeinung weicht ab: ${top.ki.grund}`
+          : `Second opinion differs: ${top.ki.grund}`)
+      : '',
     treffer.length > 1 ? `+${treffer.length - 1} ${sprache === 'de' ? 'weitere' : 'more'}` : '',
   ].filter(Boolean).join('\n');
 
@@ -320,6 +358,7 @@ export default {
         ok: true,
         zeit: new Date().toISOString(),
         ablage: env.STORE ? 'kv' : 'cache',
+        zweitmeinung: env.GROQ_KEY ? 'eingerichtet' : 'kein Schluessel',
         meldungen: bestand?.items?.length ?? 0,
         alterSekunden: Math.round(alterMs(bestand) / 1000),
         // Ohne hinterlegtes Abo verschickt der Worker nichts. Zeigt nur, ob
@@ -387,6 +426,22 @@ export default {
         fehler: r.fehler,
         kanaele: abo.ziele.map((z) => z.typ),
       }, r.gesendet ? 200 : 502);
+    }
+
+    /**
+     * Einschaetzung zu einer einzelnen Meldung, auf Abruf aus der App.
+     * Der Zugangsschluessel liegt im Worker und verlaesst ihn nie.
+     */
+    if (url.pathname === '/deuten' && request.method === 'POST') {
+      if (!env.GROQ_KEY) return json({ fehler: 'kein Schluessel hinterlegt' }, 501);
+      try {
+        const { titel } = await request.json();
+        if (!titel) return json({ fehler: 'keine Schlagzeile' }, 400);
+        const deutung = await deuten(titel, env);
+        return json(deutung || { fehler: 'keine Antwort' }, deutung?.fehler ? 502 : 200);
+      } catch (err) {
+        return json({ fehler: err.message }, 400);
+      }
     }
 
     // Abo hinterlegen, damit der Cron auch bei geschlossener App verschickt.

@@ -406,3 +406,39 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
   font-style:normal;font-size:8.5px;letter-spacing:.06em;color:var(--faint);
   border:1px solid var(--line-2);border-radius:2px;padding:1px 4px;margin-left:6px
 }
+
+/* ================= Zweitmeinung ================= */
+.kiBtn{
+  background:var(--panel-2);border:1px solid var(--line-2);border-radius:3px;
+  color:var(--dim);font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;
+  padding:6px 11px;cursor:pointer;text-transform:uppercase
+}
+.kiBtn:active{border-color:var(--accent);color:var(--accent)}
+.kiBtn:disabled{opacity:.55;cursor:default}
+
+.kiAntwort{
+  margin-top:11px;padding:10px;border-radius:3px;
+  background:var(--bg-2);border:1px solid var(--line);border-left:2px solid var(--accent);
+  animation:slide .18s ease-out
+}
+.kiAntwort.uneins{border-left-color:#ffb84d;background:rgba(255,184,77,.06)}
+.kiAntwort.fehler{border-left-color:var(--neut)}
+.kiKopf{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:6px}
+.kiMarke{font-family:var(--mono);font-size:8.5px;letter-spacing:.13em;
+  color:var(--accent);text-transform:uppercase}
+.kiWert{font-family:var(--mono);font-size:10px;font-variant-numeric:tabular-nums}
+.kiWert.bullish{color:var(--bull)}
+.kiWert.bearish{color:var(--bear)}
+.kiWert.neutral{color:var(--neut)}
+.kiGrund{margin:0;font-size:12px;line-height:1.5;color:var(--dim)}
+.kiWarnung{
+  margin:7px 0 0;font-family:var(--mono);font-size:9px;letter-spacing:.1em;
+  color:#ffb84d;text-transform:uppercase
+}
+
+/* Widerspruch schon in der Liste sichtbar */
+.item.uneins .lead::after{
+  content:"?";font-family:var(--mono);font-size:9px;font-weight:700;
+  color:#ffb84d;border:1px solid #ffb84d;border-radius:2px;
+  width:14px;height:14px;display:grid;place-items:center
+}
