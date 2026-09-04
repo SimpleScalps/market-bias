@@ -176,11 +176,23 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
     ? [...(bestand.errors || []).filter((e) => !e.startsWith('Wirtschaftskalender')), fehler]
     : (bestand.errors || []).filter((e) => !e.startsWith('Wirtschaftskalender'));
 
+  /*
+   * Auch dieser Pfad pflegt das Gedaechtnis.
+   *
+   * Er laeuft bei jeder Anfrage der App, also alle zwoelf Sekunden, und kann
+   * dabei neue Kalendereintraege in den Bestand holen. Wurden sie hier nicht
+   * vermerkt, galten sie spaeter - nach dem Herausrotieren und erneutem
+   * Auftauchen - als unbekannt und loesten eine Benachrichtigung aus.
+   */
+  const gesehen = new Set(bestand.gesehen || []);
+  for (const n of items) gesehen.add(n.id);
+
   const data = {
     ...bestand, items, errors,
     count: items.length,
     updated: new Date().toISOString(),
-  };   // ...bestand traegt das Gedaechtnis mit
+    gesehen: [...gesehen].slice(-GESEHEN_MAX),
+  };
   await schreiben(env, ctx, KEY, data, BESTAND_TTL);
   return { data, neue };
 }
