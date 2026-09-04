@@ -75,3 +75,16 @@ test('Wachstumsregime dreht die Zinslogik um', () => {
   assert.ok(scoreMacroEvent(ev, 'policy').scores.crypto < 0);
   assert.ok(scoreMacroEvent(ev, 'growth').scores.crypto > 0);
 });
+
+test('Dubletten behalten den Zeitpunkt der frühesten Meldung', async () => {
+  const { dedupe } = await import('../docs/engine/dedupe.mjs');
+  const titel = 'US Nonfarm Payrolls rise sharply above forecast in August';
+  const [zusammengefasst] = dedupe([
+    { id: 'a', title: titel, source: 'CoinDesk', date: '2026-09-04T12:31:00Z', priority: 40 },
+    { id: 'b', title: titel, source: 'CNBC', date: '2026-09-04T17:16:00Z', priority: 90 },
+  ]);
+  // Der wichtigere Eintrag gewinnt, aber mit der früheren Uhrzeit.
+  assert.equal(zusammengefasst.source, 'CNBC');
+  assert.equal(zusammengefasst.date, '2026-09-04T12:31:00Z');
+  assert.deepEqual(zusammengefasst.alsoIn, ['CoinDesk']);
+});

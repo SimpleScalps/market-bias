@@ -39,7 +39,12 @@ export function dedupe(items) {
     const quellen = [...new Set([...(prev.alsoIn || []), ...(n.alsoIn || []), verlierer.source])]
       .filter((s) => s !== sieger.source);
 
-    bySig.set(sig, { ...sieger, alsoIn: quellen });
+    // Der Zeitpunkt der frühesten Meldung zählt, nicht der des ausführlichsten
+    // Artikels. Wer handelt, will wissen, wann die Nachricht zuerst draußen
+    // war — nicht, wann die dritte Redaktion nachgezogen hat.
+    const frueheste = new Date(prev.date) <= new Date(n.date) ? prev.date : n.date;
+
+    bySig.set(sig, { ...sieger, date: frueheste, alsoIn: quellen });
   }
 
   return [...bySig.values()];
