@@ -4,7 +4,7 @@ import { profilPassung, STANDARD_PROFIL } from '../docs/engine/profile.mjs';
 import { label } from '../docs/engine/sentiment.mjs';
 import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
 import { sendeAn } from './notify.mjs';
-import { deuten, widerspruch } from './deuten.mjs';
+import { deuten, widerspruch, verfuegbareModelle } from './deuten.mjs';
 
 // Cloudflare Worker: holt die Quellen serverseitig (RSS-Feeds senden keine
 // CORS-Header, der Browser kann sie also nicht selbst laden), bewertet sie mit
@@ -426,6 +426,17 @@ export default {
         fehler: r.fehler,
         kanaele: abo.ziele.map((z) => z.typ),
       }, r.gesendet ? 200 : 502);
+    }
+
+    // Zeigt, welche Modelle das hinterlegte Konto nutzen darf. Nuetzlich,
+    // wenn Groq wieder eines ausmustert und die Zweitmeinung schweigt.
+    if (url.pathname === '/modelle') {
+      if (!env.GROQ_KEY) return json({ fehler: 'kein Schluessel hinterlegt' }, 501);
+      try {
+        return json({ modelle: await verfuegbareModelle(env) });
+      } catch (err) {
+        return json({ fehler: err.message }, 502);
+      }
     }
 
     /**

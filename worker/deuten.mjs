@@ -12,7 +12,55 @@
 // nichts ausrichten.
 
 const GROQ = 'https://api.groq.com/openai/v1/chat/completions';
-const MODELL = 'llama-3.3-70b-versatile';
+const GROQ_MODELLE = 'https://api.groq.com/openai/v1/models';
+
+/*
+ * Modellwahl in Reihenfolge der Eignung.
+ *
+ * Groq mustert Modelle regelmaessig aus - llama-3.3-70b-versatile etwa wurde
+ * im Juni 2026 abgekuendigt und antwortet seither mit 404. Ein fest
+ * eingetragener Name veraltet also zwangslaeufig. Der Worker fragt deshalb ab,
+ * was tatsaechlich verfuegbar ist, und nimmt das erste Modell dieser Liste,
+ * das darin vorkommt. Bevorzugt werden groessere Modelle: Die Zahl der
+ * Anfragen ist klein, die Genauigkeit zaehlt mehr als das Tempo.
+ */
+const WUNSCHMODELLE = [
+  'openai/gpt-oss-120b',
+  'qwen/qwen3.8-27b',
+  'qwen/qwen3.6-27b',
+  'openai/gpt-oss-20b',
+  'groq/compound',
+  'moonshotai/kimi-k2-instruct',
+  'llama-3.3-70b-versatile',
+  'llama-3.1-8b-instant',
+];
+
+let gewaehltesModell = null;   // ueberdauert im Isolat, spart Abfragen
+
+/** Fragt ab, welche Modelle das Konto nutzen darf. */
+export async function verfuegbareModelle(env) {
+  const res = await fetch(GROQ_MODELLE, {
+    headers: { 'Authorization': `Bearer ${env.GROQ_KEY}` },
+    signal: AbortSignal.timeout(12000),
+  });
+  if (!res.ok) throw new Error(`Groq ${res.status}`);
+  const j = await res.json();
+  return (j.data || []).map((m) => m.id);
+}
+
+/** Waehlt das beste verfuegbare Modell und merkt es sich. */
+async function modellWaehlen(env) {
+  if (env.GROQ_MODELL) return env.GROQ_MODELL;   // ausdrueckliche Vorgabe
+  if (gewaehltesModell) return gewaehltesModell;
+
+  const vorhanden = new Set(await verfuegbareModelle(env));
+  gewaehltesModell = WUNSCHMODELLE.find((m) => vorhanden.has(m))
+    // Nichts aus der Wunschliste da: irgendein Textmodell nehmen.
+    || [...vorhanden].find((m) => !/whisper|tts|guard|vision/i.test(m));
+
+  if (!gewaehltesModell) throw new Error('kein nutzbares Modell verfuegbar');
+  return gewaehltesModell;
+}
 
 const ANWEISUNG = `Du bewertest Finanznachrichten für einen Krypto-Händler.
 
@@ -45,6 +93,7 @@ export async function deuten(schlagzeile, env) {
   if (!env.GROQ_KEY) return null;
 
   try {
+    const modell = await modellWaehlen(env);
     const res = await fetch(GROQ, {
       method: 'POST',
       headers: {
@@ -52,7 +101,7 @@ export async function deuten(schlagzeile, env) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: env.GROQ_MODELL || MODELL,
+        model: modell,
         temperature: 0.2,
         max_tokens: 200,
         response_format: { type: 'json_object' },
@@ -65,6 +114,8 @@ export async function deuten(schlagzeile, env) {
     });
 
     if (!res.ok) {
+      // Wurde das Modell zwischenzeitlich ausgemustert, beim naechsten Mal neu waehlen.
+      if (res.status === 404) gewaehltesModell = null;
       const text = await res.text().catch(() => '');
       throw new Error(`Groq ${res.status}${text ? ': ' + text.slice(0, 120) : ''}`);
     }
@@ -83,7 +134,7 @@ export async function deuten(schlagzeile, env) {
     const staerke = Math.max(0, Math.min(1, Number(geparst.staerke) || 0));
     const grund = String(geparst.grund || '').replace(/\s+/g, ' ').slice(0, 300);
 
-    return { richtung, staerke: +staerke.toFixed(2), grund, modell: env.GROQ_MODELL || MODELL };
+    return { richtung, staerke: +staerke.toFixed(2), grund, modell };
   } catch (err) {
     return { fehler: err.message.slice(0, 160) };
   }
