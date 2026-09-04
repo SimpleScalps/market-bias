@@ -163,12 +163,21 @@ export default {
 
     if (url.pathname === '/health') {
       const bestand = await lesen(env, KEY);
+      const abo = await lesen(env, ABO_KEY);
       return json({
         ok: true,
         zeit: new Date().toISOString(),
         ablage: env.STORE ? 'kv' : 'cache',
         meldungen: bestand?.items?.length ?? 0,
         alterSekunden: Math.round(alterMs(bestand) / 1000),
+        // Ohne hinterlegtes Abo verschickt der Worker nichts. Zeigt nur, ob
+        // und wohin - niemals Token oder Themennamen.
+        abo: abo ? {
+          stufe: abo.stufe,
+          kanaele: (abo.ziele || []).map((z) => z.typ),
+          anlageklasse: abo.asset,
+          profilAktiv: !!abo.profil?.aktiv,
+        } : null,
       });
     }
 
