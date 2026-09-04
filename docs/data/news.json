@@ -1,11 +1,149 @@
 {
- "updated": "2026-09-04T18:32:00.865Z",
+ "updated": "2026-09-04T18:36:35.002Z",
  "regime": "policy",
  "count": 300,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "CNBC World:Longtime Fox News host Maria Bartiromo disputes reports of termination",
+   "title": "Longtime Fox News host Maria Bartiromo disputes reports of termination",
+   "source": "CNBC World",
+   "url": "https://www.cnbc.com/2026/09/04/maria-bartiromo-fox-news-termination.html",
+   "date": "2026-09-04T18:35:37.000Z",
+   "tags": [
+    "Weltwirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "CNBC"
+   ],
+   "titleDe": "Die langjährige Moderatorin von Fox News, Maria Bartiromo, bestreitet Berichte über die Kündigung"
+  },
+  {
+   "id": "The Block:President Trump says he wants Hyperliquid to enter the US — here’s how it could happen",
+   "title": "President Trump says he wants Hyperliquid to enter the US — here’s how it could happen",
+   "source": "The Block",
+   "url": "https://www.theblock.co/news/regulation/2026-09-04-trump-wants-hyperliquid-enter-us-how-it-could-happen-413594",
+   "date": "2026-09-04T18:35:21.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 45,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Präsident Trump sagt, er möchte, dass Hyperliquid in die USA kommt — so könnte es passieren"
+  },
+  {
+   "id": "CNBC:WNBA Commissioner Cathy Engelbert to retire at the end of 2026",
+   "title": "WNBA Commissioner Cathy Engelbert to retire at the end of 2026",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/09/04/wbna-commissioner-cathy-engelbert-to-retire-at-the-end-of-2026-.html",
+   "date": "2026-09-04T18:32:55.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "WNBA-Kommissarin Cathy Engelbert geht Ende 2026 in den Ruhestand"
+  },
+  {
+   "id": "MarketWatch:Trump’s threat to stop trade unless there’s a rate cut risks shock to U.S. economy",
+   "title": "Trump’s threat to stop trade unless there’s a rate cut risks shock to U.S. economy",
+   "source": "MarketWatch",
+   "url": "https://www.marketwatch.com/story/trumps-threat-to-stop-trade-unless-theres-a-rate-cut-risks-shock-to-u-s-economy-2e6b9798?mod=mw_rss_topstories",
+   "date": "2026-09-04T18:29:00.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": -0.75,
+   "signals": [
+    "Zinssenkung"
+   ],
+   "scores": {
+    "crypto": 0.75,
+    "stocks": 0.637,
+    "gold": 0.6,
+    "usd": -0.75
+   },
+   "why": "Signalwörter deuten auf lockerere Geldpolitik — positiv für Risk-Assets. (Signale: Zinssenkung)",
+   "whyEn": "Signal words point to easier policy — positive for risk assets. (signals: rate cut)",
+   "category": "fed",
+   "categoryLabel": "Notenbank",
+   "priority": 84,
+   "label": "strong_bullish",
+   "labelText": "Stark Bullish",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Trumps Drohung, den Handel zu stoppen, es sei denn, es gibt einen Schock der Zinssenkungsrisiken für die US-Wirtschaft"
+  },
   {
    "id": "CNBC Economy:Women accounted for almost all of job gains in August. Here's why",
    "title": "Women accounted for almost all of job gains in August. Here's why",
@@ -38,8 +176,7 @@
    "coins": [],
    "alsoIn": [
     "CNBC"
-   ],
-   "titleDe": "Auf Frauen entfielen im August fast alle Stellenzuwächse. Hier ist, warum"
+   ]
   },
   {
    "id": "FXStreet:Fed’s Hammack says policy is not restrictive enough",
@@ -62,7 +199,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 72,
+   "priority": 71,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -104,8 +241,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "titleDe": "Türkei: CBRT wird wahrscheinlich vor zwei Zinssenkungen im vierten Quartal gehalten - ING"
+   "alsoIn": []
   },
   {
    "id": "FXStreet:Australian Dollar resumes advance as US Dollar loses post-NFP momentum",
@@ -240,8 +376,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "titleDe": "Moment, in dem zwei Arbeiter lebend aus dem Nepal-Tunnel gezogen werden"
+   "alsoIn": []
   },
   {
    "id": "MarketWatch:‘Please don’t let this happen to you’: My best friend died without a will — her neglectful family gets everything",
@@ -273,8 +408,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "titleDe": "„Bitte lass dir das nicht passieren“: Meine beste Freundin ist ohne Testament gestorben — ihre nachlässige Familie bekommt alles"
+   "alsoIn": []
   },
   {
    "id": "MarketWatch:‘It’s not fair’: My twin brother and I were left houses by our parents. Can I make him pay his share for taxes and upkeep?",
@@ -361,7 +495,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -398,7 +532,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike, strong labour market)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 87,
+   "priority": 86,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -431,7 +565,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -485,40 +619,6 @@
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/teslas-stock-drops-as-cybercab-update-underwhelms-nhtsa-probe.html",
    "date": "2026-09-04T17:33:08.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 30,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ]
-  },
-  {
-   "id": "CNBC World:Longtime host Maria Bartiromo disputes reports of Fox News termination",
-   "title": "Longtime host Maria Bartiromo disputes reports of Fox News termination",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/04/maria-bartiromo-fox-news-termination.html",
-   "date": "2026-09-04T17:32:35.000Z",
    "tags": [
     "Weltwirtschaft"
    ],
@@ -850,38 +950,6 @@
    ],
    "alsoIn": [],
    "titleDe": "Quantenspeicher: Das Gerät, das Bitcoin bricht und ersetzt"
-  },
-  {
-   "id": "CNBC:WNBA Commissioner Cathy Engelbert to retire at the end of 2026",
-   "title": "WNBA Commissioner Cathy Engelbert to retire at the end of 2026",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/04/wbna-commissioner-cathy-engelbert-to-retire-at-the-end-of-2026-.html",
-   "date": "2026-09-04T17:12:15.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 30,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
   },
   {
    "id": "Cointelegraph:QuFi launches post-quantum verification platform with Bitcoin testnet proof",
@@ -1338,7 +1406,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1370,7 +1438,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 85,
+   "priority": 84,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "high",
@@ -1834,7 +1902,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1867,7 +1935,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2002,7 +2070,7 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 43,
+   "priority": 42,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -2145,7 +2213,7 @@
    "whyEn": "Signal words point to easier policy — positive for risk assets. (signals: dovish)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 37,
+   "priority": 36,
    "label": "strong_bullish",
    "labelText": "Stark Bullish",
    "impactLevel": "medium",
@@ -2182,7 +2250,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: strong labour market)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 77,
+   "priority": 76,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -2503,38 +2571,6 @@
    "titleDe": "Der Schweizer Franken verliert an Boden bei den Nonfarm Payrolls in den USA"
   },
   {
-   "id": "MarketWatch:A Democratic midterm sweep could make bonds the fourth-quarter contrarian play, says B. of A.’s Hartnett",
-   "title": "A Democratic midterm sweep could make bonds the fourth-quarter contrarian play, says B. of A.’s Hartnett",
-   "source": "MarketWatch",
-   "url": "https://www.marketwatch.com/story/a-democratic-midterm-sweep-could-make-bonds-the-fourth-quarter-contrarian-play-says-b-of-a-s-hartnett-badfa59c?mod=mw_rss_topstories",
-   "date": "2026-09-04T14:53:00.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
    "id": "U.Today:Crypto Treasury Fire Sale: Nasdaq's AIXC Dumps Bitcoin, XRP, Others for Robotics Pivot",
    "title": "Crypto Treasury Fire Sale: Nasdaq's AIXC Dumps Bitcoin, XRP, Others for Robotics Pivot",
    "source": "U.Today",
@@ -2559,7 +2595,7 @@
    "whyEn": "Signal words point to easier policy — positive for risk assets. (signals: Fed pause)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 53,
+   "priority": 52,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -3099,7 +3135,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -3303,7 +3339,7 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 40,
+   "priority": 39,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -3730,7 +3766,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4046,7 +4082,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4361,7 +4397,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "medium",
@@ -4642,7 +4678,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 40,
+   "priority": 39,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -4783,7 +4819,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 41,
+   "priority": 40,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5244,7 +5280,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 20,
+   "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5613,7 +5649,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5714,7 +5750,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 37,
+   "priority": 36,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6145,7 +6181,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 14,
+   "priority": 13,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6181,7 +6217,7 @@
    "whyEn": "Directly crypto-positive news. (signals: accumulation)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 40,
+   "priority": 39,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -9870,38 +9906,6 @@
    "source": "Decrypt",
    "url": "https://decrypt.co/377225/pentagon-ai-official-sold-millions-perplexity-stock",
    "date": "2026-09-02T20:46:04.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
-   "id": "The Block:New Jersey asks Supreme Court to decide who regulates sports betting on prediction markets",
-   "title": "New Jersey asks Supreme Court to decide who regulates sports betting on prediction markets",
-   "source": "The Block",
-   "url": "https://www.theblock.co/news/regulation/2026-09-02-new-jersey-asks-supreme-court-to-decide-who-regulates-sports-betting-on-prediction-markets-413398",
-   "date": "2026-09-02T18:18:28.000Z",
    "tags": [
     "Krypto"
    ],
