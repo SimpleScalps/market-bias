@@ -77,6 +77,27 @@ Aussage ist.
 Ratgeber- und Lifestyle-Artikel der großen Portale werden vorab aussortiert,
 Dubletten über mehrere Quellen zu einem Eintrag zusammengefasst.
 
+## Tagesübersicht
+
+Über dem Feed steht das Gesamtbild der letzten 24 Stunden: ein gewichtetes
+Mittel aller Bewertungen, die Verteilung aus bullish, bearish und neutral sowie
+die drei stärksten Treiber des Tages. Relevante Meldungen zählen dabei mehr,
+damit ein NFP-Tag nicht von zwanzig beiläufigen Schlagzeilen verwässert wird.
+Die Übersicht folgt der oben gewählten Anlageklasse — dieselbe Nachrichtenlage
+ist für Krypto bearish und für den Dollar bullish.
+
+## Einstellungen
+
+Über das Zahnrad oben rechts:
+
+- **Sprache** — Deutsch oder Englisch, inklusive der Begründungstexte
+- **Design** — Dunkel, Hell oder der Systemeinstellung folgend
+- **Benachrichtigungen** — aus, nur bei starken Signalen oder bei allen
+  gerichteten Meldungen. Auf dem iPhone erst verfügbar, wenn die Seite über
+  "Zum Home-Bildschirm" installiert wurde.
+- **Live-Quelle** — Adresse des Cloudflare Workers
+- **Quellen** — alle Feeds mit Trefferzahl, einzeln ab- und zuschaltbar
+
 ## Aktualität
 
 Hier wird die Architektur entschieden. Es gibt zwei Betriebsarten:

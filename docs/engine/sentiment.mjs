@@ -91,7 +91,8 @@ export function scoreMacroEvent({ title, actual, consensus, previous, impact }, 
   const scores = assetScores(hawkish, regime);
   const beat = a - c;
 
-  // Begründungskette, damit die Einordnung nachvollziehbar ist.
+  // Begründungskette, damit die Einordnung nachvollziehbar ist — zweisprachig,
+  // weil die App zwischen Deutsch und Englisch umschalten kann.
   const richtung = beat > 0 ? 'über' : beat < 0 ? 'unter' : 'exakt auf';
   const staerke = ev.polarity > 0
     ? (beat > 0 ? 'stärker' : 'schwächer')
@@ -110,6 +111,19 @@ export function scoreMacroEvent({ title, actual, consensus, previous, impact }, 
     `${hawkTxt}. ${folge}`,
   ].join(' ');
 
+  const dirEn = beat > 0 ? 'above' : beat < 0 ? 'below' : 'exactly at';
+  const strEn = ev.polarity > 0
+    ? (beat > 0 ? 'stronger' : 'weaker')
+    : (beat > 0 ? 'weaker' : 'stronger');
+  const topicEn = ev.channel === 'inflation' ? 'Inflation pressure' : 'Economic activity';
+  const whyEn = [
+    `${ev.nameEn || ev.name} (${rel.region}): ${fmt(a)} versus ${fmt(c)} expected — ${dirEn} forecast.`,
+    `${topicEn} therefore comes in ${strEn} than priced in.`,
+    hawkish > 0
+      ? 'That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.'
+      : 'That gives the Fed room to ease. Falling rate expectations mean more liquidity — supportive for crypto and equities, negative for the dollar.',
+  ].join(' ');
+
   return {
     kind: 'macro',
     event: ev.name,
@@ -120,6 +134,7 @@ export function scoreMacroEvent({ title, actual, consensus, previous, impact }, 
     hawkish: +hawkish.toFixed(3),
     scores: Object.fromEntries(Object.entries(scores).map(([k, v]) => [k, +v.toFixed(3)])),
     why,
+    whyEn,
   };
 }
 
@@ -134,11 +149,11 @@ const SURPRISE_DOWN = /\b(less|lower|weaker|worse|slower|cooler|below|smaller|fe
 
 // Worum ging es? polarity: +1 = höher bedeutet stärkere Wirtschaft/heißere Inflation
 const SURPRISE_TOPIC = [
-  { re: /\b(cpi|inflation|price index|ppi|pce|prices)\b/, polarity: 1, channel: 'inflation', label: 'Inflationsdaten' },
-  { re: /\b(wages?|earnings)\b/, polarity: 1, channel: 'inflation', label: 'Lohndaten' },
-  { re: /\b(unemployment rate|jobless claims|claims)\b/, polarity: -1, channel: 'growth', label: 'Arbeitslosendaten' },
-  { re: /\b(payrolls?|nfp|jobs?|employment|hiring)\b/, polarity: 1, channel: 'growth', label: 'Arbeitsmarktdaten' },
-  { re: /\b(gdp|growth|retail sales|ism|pmi|orders|production|confidence|sentiment)\b/, polarity: 1, channel: 'growth', label: 'Konjunkturdaten' },
+  { re: /\b(cpi|inflation|price index|ppi|pce|prices)\b/, polarity: 1, channel: 'inflation', label: 'Inflationsdaten', labelEn: 'inflation data' },
+  { re: /\b(wages?|hourly earnings|average earnings|labou?r costs)\b/, polarity: 1, channel: 'inflation', label: 'Lohndaten', labelEn: 'wage data' },
+  { re: /\b(unemployment rate|jobless claims|claims)\b/, polarity: -1, channel: 'growth', label: 'Arbeitslosendaten', labelEn: 'jobless data' },
+  { re: /\b(payrolls?|nfp|jobs?|employment|hiring)\b/, polarity: 1, channel: 'growth', label: 'Arbeitsmarktdaten', labelEn: 'labour market data' },
+  { re: /\b(gdp|growth|retail sales|ism|pmi|orders|production|confidence|sentiment)\b/, polarity: 1, channel: 'growth', label: 'Konjunkturdaten', labelEn: 'activity data' },
 ];
 
 // Richtung des Verbs. "Inflation kuehlt staerker als erwartet" ist dovish,
@@ -146,9 +161,15 @@ const SURPRISE_TOPIC = [
 const VERB_DOWN = /\b(cools?|cooled|eas(e|es|ed|ing)|falls?|fell|drops?|dropped|slows?|slowed|declines?|declined|shrank|shrinks?|contracts?|tumbles?|sinks?|weakens?)\b/;
 const VERB_UP   = /\b(ros?e|rise[sn]?|jumps?|jumped|climbs?|climbed|surges?|surged|accelerat\w+|increas\w+|grew|grows?|gains?|gained|picks? up|heats? up)\b/;
 
+// Quartalszahlen einzelner Unternehmen sind keine Konjunkturdaten. "Zscaler
+// beats earnings expectations" darf nicht als Lohninflation gelesen werden.
+const UNTERNEHMEN = /\b(stock|shares|guidance|quarterly|revenue|eps|profit|earnings (call|report|per share)|q[1-4]\b|fiscal|outlook)\b/;
+
 /** Erkennt "besser/schlechter als erwartet" und leitet den Zinsimpuls ab. */
 export function verbalSurprise(title) {
   const t = title.toLowerCase();
+  if (UNTERNEHMEN.test(t)) return null;
+
   const up = SURPRISE_UP.test(t);
   const down = up ? false : SURPRISE_DOWN.test(t);
   if (!up && !down) return null;
@@ -174,7 +195,9 @@ export function verbalSurprise(title) {
   return {
     hawkish: clamp(surpriseDir * topic.polarity * gain),
     label: topic.label,
+    labelEn: topic.labelEn || topic.label,
     strongerWord: surpriseDir > 0 ? 'höher' : 'niedriger',
+    strongerWordEn: surpriseDir > 0 ? 'higher' : 'lower',
   };
 }
 
@@ -190,6 +213,7 @@ export function scoreHeadline(title, regime = 'policy') {
   const t = ' ' + title.toLowerCase().replace(/[^a-z0-9äöüß%$. -]/g, ' ') + ' ';
   let macroHawk = 0, cryptoDirect = 0, risk = 0;
   const hits = [];
+  const hitsEn = [];
 
   for (const k of KEYWORDS) {
     if (!k.re.test(t)) continue;
@@ -202,12 +226,21 @@ export function scoreHeadline(title, regime = 'policy') {
     else if (k.type === 'crypto') cryptoDirect += w;
     else if (k.type === 'risk') risk += w;
     hits.push((neg < 0 ? 'nicht ' : '') + k.label);
+    hitsEn.push((neg < 0 ? 'not ' : '') + (k.labelEn || k.label));
   }
 
-  for (const g of GEOPOLITICS) if (g.re.test(t)) { risk -= g.weight; hits.push(g.label); }
+  for (const g of GEOPOLITICS) if (g.re.test(t)) {
+    risk -= g.weight;
+    hits.push(g.label);
+    hitsEn.push(g.labelEn || g.label);
+  }
 
   const vs = verbalSurprise(title);
-  if (vs) { macroHawk += vs.hawkish * 1.4; hits.push(`${vs.label} ${vs.strongerWord} als erwartet`); }
+  if (vs) {
+    macroHawk += vs.hawkish * 1.4;
+    hits.push(`${vs.label} ${vs.strongerWord} als erwartet`);
+    hitsEn.push(`${vs.labelEn} ${vs.strongerWordEn} than expected`);
+  }
 
   if (!hits.length) return null;
 
@@ -235,11 +268,26 @@ export function scoreHeadline(title, regime = 'policy') {
     ? 'Direkt kryptopositive Nachricht.'
     : 'Direkt kryptonegative Nachricht.');
 
+  const partsEn = [];
+  if (macroHawk) partsEn.push(macroHawk > 0
+    ? 'Signal words point to tighter policy — negative for risk assets.'
+    : 'Signal words point to easier policy — positive for risk assets.');
+  if (risk) partsEn.push(risk < 0
+    ? 'Risk-off tone: capital rotates out of crypto and equities into safe havens.'
+    : 'Risk-on tone: capital rotates into crypto and equities.');
+  if (cryptoDirect) partsEn.push(cryptoDirect > 0
+    ? 'Directly crypto-positive news.'
+    : 'Directly crypto-negative news.');
+
+  const signale = [...new Set(hits)].slice(0, 4).join(', ');
+  const signalsEn = [...new Set(hitsEn)].slice(0, 4).join(', ');
+
   return {
     kind: 'headline',
     hawkish: +hawkish.toFixed(3),
     signals: [...new Set(hits)].slice(0, 6),
     scores: Object.fromEntries(Object.entries(scores).map(([k, v]) => [k, +v.toFixed(3)])),
-    why: parts.join(' ') + ` (Signale: ${[...new Set(hits)].slice(0, 4).join(', ')})`,
+    why: parts.join(' ') + ` (Signale: ${signale})`,
+    whyEn: partsEn.join(' ') + ` (signals: ${signalsEn})`,
   };
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-04T13:37:37.179Z",
+ "updated": "2026-09-04T13:43:40.596Z",
  "regime": "policy",
  "count": 300,
  "errors": [],
@@ -15,22 +15,19 @@
    ],
    "impact": "low",
    "kind": "headline",
-   "hawkish": -0.625,
-   "signals": [
-    "Lohndaten niedriger als erwartet"
-   ],
    "scores": {
-    "crypto": 0.625,
-    "stocks": 0.531,
-    "gold": 0.5,
-    "usd": -0.625
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
    },
-   "why": "Signalwörter deuten auf lockerere Geldpolitik — positiv für Risk-Assets. (Signale: Lohndaten niedriger als erwartet)",
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 42,
-   "label": "strong_bullish",
-   "labelText": "Stark Bullish",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
    "alsoIn": []
   },
   {
@@ -55,6 +52,7 @@
     "usd": 0.868
    },
    "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: Arbeitsmarktdaten höher als erwartet)",
+   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: labour market data higher than expected)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
    "priority": 59,
@@ -64,6 +62,32 @@
     "CNBC World",
     "CNBC"
    ]
+  },
+  {
+   "id": "Cointelegraph:Revolut, OpenReserve get preliminary US bank approval with crypto plans",
+   "title": "Revolut, OpenReserve get preliminary US bank approval with crypto plans",
+   "source": "Cointelegraph",
+   "url": "https://cointelegraph.com/news/revolut-openreserve-occ-approval-national-bank-crypto-plan?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "date": "2026-09-04T13:34:30.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 52,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "alsoIn": []
   },
   {
    "id": "MarketWatch:Six reasons that the risk of a stock-market selloff is rising. Here’s what investors should be doing.",
@@ -87,6 +111,7 @@
     "usd": 0.15
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Kurssturz)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 39,
@@ -219,7 +244,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -245,7 +270,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 45,
+   "priority": 44,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -272,6 +297,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 37,
@@ -328,6 +354,7 @@
     "usd": 1
    },
    "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: Zinserhöhung, starker Arbeitsmarkt)",
+   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike, strong labour market)",
    "category": "fed",
    "categoryLabel": "Notenbank",
    "priority": 87,
@@ -357,6 +384,7 @@
     "usd": 0.6
    },
    "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: starker Arbeitsmarkt)",
+   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: strong labour market)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
    "priority": 54,
@@ -570,6 +598,7 @@
     "usd": 0.15
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Kurssturz)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 38,
@@ -600,7 +629,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -629,6 +658,7 @@
     "usd": 0.506
    },
    "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Energiepreisschock, Preisdruck, Kursanstieg)",
+   "whyEn": "Signal words point to tighter policy — negative for risk assets. Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: energy price shock, price pressure, price rally)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
    "priority": 69,
@@ -686,6 +716,7 @@
     "usd": -0.538
    },
    "why": "Signalwörter deuten auf lockerere Geldpolitik — positiv für Risk-Assets. (Signale: Konjunkturdaten niedriger als erwartet)",
+   "whyEn": "Signal words point to easier policy — positive for risk assets. (signals: activity data lower than expected)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 39,
@@ -767,6 +798,7 @@
     "usd": 0
    },
    "why": "Direkt kryptonegative Nachricht. (Signale: Verbot/Delisting)",
+   "whyEn": "Directly crypto-negative news. (signals: ban or delisting)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 61,
@@ -796,6 +828,7 @@
     "usd": 0.538
    },
    "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: Arbeitsmarktdaten höher als erwartet)",
+   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: labour market data higher than expected)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
    "priority": 52,
@@ -825,6 +858,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 56,
@@ -859,6 +893,7 @@
     "usd": 0
    },
    "why": "Arbeitslosenquote (Global): 6.4 gegenüber 6.4 erwartet — exakt auf Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Spielraum für lockerere Geldpolitik. Sinkende Zinserwartungen bedeuten mehr Liquidität — das stützt Krypto und Aktien und schwächt den Dollar.",
+   "whyEn": "Unemployment Rate (Global): 6.4 versus 6.4 expected — exactly at forecast. Economic activity therefore comes in stronger than priced in. That gives the Fed room to ease. Falling rate expectations mean more liquidity — supportive for crypto and equities, negative for the dollar.",
    "category": "global-data",
    "categoryLabel": "Weltdaten",
    "priority": 33,
@@ -893,6 +928,7 @@
     "usd": -0.005
    },
    "why": "Erwerbsquote (Global): 65 gegenüber 65.2 erwartet — unter Prognose. Konjunktur fällt damit schwächer aus als eingepreist. Die Fed bekommt damit Spielraum für lockerere Geldpolitik. Sinkende Zinserwartungen bedeuten mehr Liquidität — das stützt Krypto und Aktien und schwächt den Dollar.",
+   "whyEn": "Participation Rate (Global): 65 versus 65.2 expected — below forecast. Economic activity therefore comes in weaker than priced in. That gives the Fed room to ease. Falling rate expectations mean more liquidity — supportive for crypto and equities, negative for the dollar.",
    "category": "global-data",
    "categoryLabel": "Weltdaten",
    "priority": 33,
@@ -927,6 +963,7 @@
     "usd": 0.258
    },
    "why": "Durchschnittslöhne (USA): 3.1 gegenüber 3 erwartet — über Prognose. Inflationsdruck fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
+   "whyEn": "Average Hourly Earnings (USA): 3.1 versus 3 expected — above forecast. Inflation pressure therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "us-data",
    "categoryLabel": "US-Daten",
    "priority": 80,
@@ -961,6 +998,7 @@
     "usd": 0.89
    },
    "why": "Non-Farm Payrolls (USA): 162 gegenüber 56 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
+   "whyEn": "Non-Farm Payrolls (USA): 162 versus 56 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "us-data",
    "categoryLabel": "US-Daten",
    "priority": 100,
@@ -995,6 +1033,7 @@
     "usd": 0.227
    },
    "why": "U-6 Arbeitslosenquote (USA): 7.7 gegenüber 8 erwartet — unter Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
+   "whyEn": "U-6 Unemployment Rate (USA): 7.7 versus 8 expected — below forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "us-data",
    "categoryLabel": "US-Daten",
    "priority": 98,
@@ -1029,6 +1068,7 @@
     "usd": 0.3
    },
    "why": "Payrolls (Teilbereich) (USA): 35 gegenüber -11 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
+   "whyEn": "Payrolls (component) (USA): 35 versus -11 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "us-data",
    "categoryLabel": "US-Daten",
    "priority": 69,
@@ -1063,6 +1103,7 @@
     "usd": 0.465
    },
    "why": "Private Payrolls (USA): 127 gegenüber 45 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
+   "whyEn": "Private Payrolls (USA): 127 versus 45 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "us-data",
    "categoryLabel": "US-Daten",
    "priority": 100,
@@ -1097,9 +1138,10 @@
     "usd": 0.023
    },
    "why": "Erwerbsquote (USA): 61.6 gegenüber 61.4 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
+   "whyEn": "Participation Rate (USA): 61.6 versus 61.4 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "us-data",
    "categoryLabel": "US-Daten",
-   "priority": 77,
+   "priority": 76,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -1131,9 +1173,10 @@
     "usd": 0.083
    },
    "why": "Payrolls (Teilbereich) (USA): 16 gegenüber 5 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
+   "whyEn": "Payrolls (component) (USA): 16 versus 5 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "us-data",
    "categoryLabel": "US-Daten",
-   "priority": 66,
+   "priority": 65,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -1292,6 +1335,7 @@
     "usd": 0.135
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Handelskonflikt)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
    "priority": 66,
@@ -1505,9 +1549,10 @@
     "usd": 0.5
    },
    "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: Straffung)",
+   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: tightening)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 78,
+   "priority": 77,
    "label": "bearish",
    "labelText": "Bearish",
    "alsoIn": []
@@ -1560,6 +1605,7 @@
     "usd": 0
    },
    "why": "Direkt kryptonegative Nachricht. (Signale: Hack/Exploit)",
+   "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 41,
@@ -1825,6 +1871,7 @@
     "usd": 0
    },
    "why": "Direkt kryptonegative Nachricht. (Signale: Hack/Exploit)",
+   "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 40,
@@ -1854,6 +1901,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
    "priority": 47,
@@ -1882,7 +1930,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": [
@@ -1910,7 +1958,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -1936,7 +1984,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -1963,6 +2011,7 @@
     "usd": 0
    },
    "why": "Direkt kryptopositive Nachricht. (Signale: Akkumulation)",
+   "whyEn": "Directly crypto-positive news. (signals: accumulation)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 56,
@@ -1991,7 +2040,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -2044,9 +2093,10 @@
     "usd": 0
    },
    "why": "Direkt kryptonegative Nachricht. (Signale: Hack/Exploit)",
+   "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 53,
+   "priority": 52,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "alsoIn": []
@@ -2073,6 +2123,7 @@
     "usd": 0.12
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
    "priority": 64,
@@ -2310,6 +2361,7 @@
     "usd": 0
    },
    "why": "Direkt kryptonegative Nachricht. (Signale: Hack/Exploit)",
+   "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 39,
@@ -2365,6 +2417,7 @@
     "usd": 0.15
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Kurssturz)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "fed",
    "categoryLabel": "Notenbank",
    "priority": 75,
@@ -2419,7 +2472,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 41,
+   "priority": 40,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -2445,7 +2498,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 41,
+   "priority": 40,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -2498,9 +2551,10 @@
     "usd": -0.262
    },
    "why": "Signalwörter deuten auf lockerere Geldpolitik — positiv für Risk-Assets. (Signale: nicht Zinserhöhung)",
+   "whyEn": "Signal words point to easier policy — positive for risk assets. (signals: not rate hike)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 72,
+   "priority": 71,
    "label": "bullish",
    "labelText": "Bullish",
    "alsoIn": []
@@ -2553,6 +2607,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 33,
@@ -2660,9 +2715,10 @@
     "usd": 0.175
    },
    "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: Straffung)",
+   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: tightening)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "bearish",
    "labelText": "Bearish",
    "alsoIn": []
@@ -2715,6 +2771,7 @@
     "usd": 0.135
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Handelskonflikt)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 33,
@@ -2900,6 +2957,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 52,
@@ -3085,9 +3143,10 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "bullish",
    "labelText": "Bullish",
    "alsoIn": []
@@ -3114,6 +3173,7 @@
     "usd": 0.12
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
    "priority": 61,
@@ -3249,6 +3309,7 @@
     "usd": 0.15
    },
    "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: Zinserhöhung)",
+   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike)",
    "category": "fed",
    "categoryLabel": "Notenbank",
    "priority": 68,
@@ -3356,6 +3417,7 @@
     "usd": 0.12
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
    "priority": 61,
@@ -3437,6 +3499,7 @@
     "usd": 0
    },
    "why": "Direkt kryptonegative Nachricht. (Signale: Verbot/Delisting)",
+   "whyEn": "Directly crypto-negative news. (signals: ban or delisting)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 55,
@@ -3497,6 +3560,7 @@
     "usd": -0.3
    },
    "why": "Einzelhandelsumsätze (Eurozone): -0.6 gegenüber 0.3 erwartet — unter Prognose. Konjunktur fällt damit schwächer aus als eingepreist. Die Fed bekommt damit Spielraum für lockerere Geldpolitik. Sinkende Zinserwartungen bedeuten mehr Liquidität — das stützt Krypto und Aktien und schwächt den Dollar.",
+   "whyEn": "Retail Sales (Eurozone): -0.6 versus 0.3 expected — below forecast. Economic activity therefore comes in weaker than priced in. That gives the Fed room to ease. Falling rate expectations mean more liquidity — supportive for crypto and equities, negative for the dollar.",
    "category": "global-data",
    "categoryLabel": "Weltdaten",
    "priority": 32,
@@ -3578,6 +3642,7 @@
     "usd": 0.15
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Kurssturz)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 31,
@@ -3610,6 +3675,7 @@
     "usd": 0.89
    },
    "why": "Non-Farm Payrolls (USA): 162 gegenüber 56 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
+   "whyEn": "Non-Farm Payrolls (USA): 162 versus 56 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
    "priority": 55,
@@ -3664,7 +3730,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -3696,6 +3762,7 @@
     "usd": -0.113
    },
    "why": "Einzelhandelsumsätze (Global): -0.4 gegenüber 0.2 erwartet — unter Prognose. Konjunktur fällt damit schwächer aus als eingepreist. Die Fed bekommt damit Spielraum für lockerere Geldpolitik. Sinkende Zinserwartungen bedeuten mehr Liquidität — das stützt Krypto und Aktien und schwächt den Dollar.",
+   "whyEn": "Retail Sales (Global): -0.4 versus 0.2 expected — below forecast. Economic activity therefore comes in weaker than priced in. That gives the Fed room to ease. Falling rate expectations mean more liquidity — supportive for crypto and equities, negative for the dollar.",
    "category": "global-data",
    "categoryLabel": "Weltdaten",
    "priority": 28,
@@ -3730,6 +3797,7 @@
     "usd": -0.15
    },
    "why": "Einzelhandelsumsätze (Global): 0.8 gegenüber 3 erwartet — unter Prognose. Konjunktur fällt damit schwächer aus als eingepreist. Die Fed bekommt damit Spielraum für lockerere Geldpolitik. Sinkende Zinserwartungen bedeuten mehr Liquidität — das stützt Krypto und Aktien und schwächt den Dollar.",
+   "whyEn": "Retail Sales (Global): 0.8 versus 3 expected — below forecast. Economic activity therefore comes in weaker than priced in. That gives the Fed room to ease. Falling rate expectations mean more liquidity — supportive for crypto and equities, negative for the dollar.",
    "category": "global-data",
    "categoryLabel": "Weltdaten",
    "priority": 28,
@@ -3759,6 +3827,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 29,
@@ -3814,9 +3883,10 @@
     "usd": 0.12
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "bearish",
    "labelText": "Bearish",
    "alsoIn": [
@@ -3844,7 +3914,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -3871,6 +3941,7 @@
     "usd": 0.15
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Kurssturz)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 30,
@@ -3902,9 +3973,10 @@
     "usd": 0
    },
    "why": "Direkt kryptopositive Nachricht. (Signale: ETF-Zuflüsse)",
+   "whyEn": "Directly crypto-positive news. (signals: ETF inflows)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 54,
+   "priority": 53,
    "label": "strong_bullish",
    "labelText": "Stark Bullish",
    "alsoIn": []
@@ -3931,9 +4003,10 @@
     "usd": 0.15
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Kurssturz)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "bearish",
    "labelText": "Bearish",
    "alsoIn": []
@@ -4038,6 +4111,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 27,
@@ -4066,7 +4140,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": [
@@ -4150,6 +4224,7 @@
     "usd": 0.626
    },
    "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Energiepreisschock, Preisdruck, Kursanstieg, Eskalation)",
+   "whyEn": "Signal words point to tighter policy — negative for risk assets. Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: energy price shock, price pressure, price rally, escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
    "priority": 65,
@@ -4205,6 +4280,7 @@
     "usd": 0.12
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
    "priority": 56,
@@ -4286,6 +4362,7 @@
     "usd": 0
    },
    "why": "Direkt kryptopositive Nachricht. (Signale: Akkumulation)",
+   "whyEn": "Directly crypto-positive news. (signals: accumulation)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 47,
@@ -4315,6 +4392,7 @@
     "usd": 0.12
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
    "priority": 56,
@@ -4375,6 +4453,7 @@
     "usd": 0.14
    },
    "why": "Auftragseingang Industrie (Global): 2.5 gegenüber 0.3 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
+   "whyEn": "Factory Orders (Global): 2.5 versus 0.3 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "global-data",
    "categoryLabel": "Weltdaten",
    "priority": 25,
@@ -4429,7 +4508,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 20,
+   "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": [
@@ -4457,7 +4536,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 20,
+   "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -4589,7 +4668,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 38,
+   "priority": 37,
    "label": "neutral",
    "labelText": "Neutral",
    "alsoIn": []
@@ -4616,6 +4695,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 43,
@@ -4827,6 +4907,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 17,
@@ -4938,6 +5019,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 36,
@@ -5019,6 +5101,7 @@
     "usd": 0
    },
    "why": "Direkt kryptonegative Nachricht. (Signale: Regulierungsdruck)",
+   "whyEn": "Directly crypto-negative news. (signals: regulatory pressure)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 17,
@@ -5264,6 +5347,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 32,
@@ -5319,6 +5403,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 32,
@@ -5348,6 +5433,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 12,
@@ -5821,6 +5907,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 32,
@@ -5876,6 +5963,7 @@
     "usd": -0.4
    },
    "why": "Signalwörter deuten auf lockerere Geldpolitik — positiv für Risk-Assets. (Signale: Fed-Pause)",
+   "whyEn": "Signal words point to easier policy — positive for risk assets. (signals: Fed pause)",
    "category": "fed",
    "categoryLabel": "Notenbank",
    "priority": 52,
@@ -5905,6 +5993,7 @@
     "usd": 0.135
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Handelskonflikt)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
    "priority": 42,
@@ -6792,6 +6881,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 32,
@@ -6847,6 +6937,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 32,
@@ -6954,6 +7045,7 @@
     "usd": 0
    },
    "why": "Direkt kryptonegative Nachricht. (Signale: Hack/Exploit)",
+   "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 37,
@@ -7141,6 +7233,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 32,
@@ -7196,6 +7289,7 @@
     "usd": 0
    },
    "why": "Direkt kryptopositive Nachricht. (Signale: ETF-Zuflüsse)",
+   "whyEn": "Directly crypto-positive news. (signals: ETF inflows)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 37,
@@ -7459,6 +7553,7 @@
     "usd": 0
    },
    "why": "Direkt kryptonegative Nachricht. (Signale: Hack/Exploit)",
+   "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 17,
@@ -7857,32 +7952,6 @@
    "alsoIn": []
   },
   {
-   "id": "Cointelegraph:New Jersey officials petition US Supreme Court over prediction markets",
-   "title": "New Jersey officials petition US Supreme Court over prediction markets",
-   "source": "Cointelegraph",
-   "url": "https://cointelegraph.com/news/new-jersey-supreme-court-kalshi-prediction-markets-cftc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "date": "2026-09-02T18:55:41.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 19,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "alsoIn": []
-  },
-  {
    "id": "U.Today:Tether's Stablecoin Goes Live on Stellar",
    "title": "Tether's Stablecoin Goes Live on Stellar",
    "source": "U.Today",
@@ -7930,6 +7999,7 @@
     "usd": 0.15
    },
    "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Kurssturz)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "crypto",
    "categoryLabel": "Krypto",
    "priority": 33,
@@ -8011,6 +8081,7 @@
     "usd": -0.12
    },
    "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 12,
@@ -8092,6 +8163,7 @@
     "usd": -0.538
    },
    "why": "Signalwörter deuten auf lockerere Geldpolitik — positiv für Risk-Assets. (Signale: Arbeitsmarktdaten niedriger als erwartet)",
+   "whyEn": "Signal words point to easier policy — positive for risk assets. (signals: labour market data lower than expected)",
    "category": "markets",
    "categoryLabel": "Märkte",
    "priority": 15,

@@ -18,7 +18,12 @@
 <header class="top">
   <div class="status">
     <span class="brand"><i class="mark"></i>MARKET<span>BIAS</span></span>
-    <span class="live"><i id="dot" class="dot"></i><span id="clock">--:--:--</span></span>
+    <span class="live">
+      <i id="dot" class="dot"></i><span id="clock">--:--:--</span>
+      <button id="gear" class="gear" aria-label="Einstellungen">
+        <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/><path fill="currentColor" d="m19.4 13-.1-1 .1-1 1.7-1.3-1.7-3-2 .7a7 7 0 0 0-1.7-1L15.3 4h-3.4l-.4 2.4a7 7 0 0 0-1.7 1l-2-.7-1.7 3L7.8 11l-.1 1 .1 1-1.7 1.3 1.7 3 2-.7c.5.4 1.1.8 1.7 1l.4 2.4h3.4l.4-2.4c.6-.2 1.2-.6 1.7-1l2 .7 1.7-3L19.4 13z" opacity=".28"/></svg>
+      </button>
+    </span>
   </div>
 
   <div class="seg" role="tablist" aria-label="Anlageklasse">
@@ -37,26 +42,17 @@
   <nav class="cats" id="cats" aria-label="Kategorie"></nav>
 
   <div class="sel">
-    <label>SIGNAL
-      <select id="sent">
-        <option value="all">alle</option>
-        <option value="strong">nur starke</option>
-        <option value="bull">bullish</option>
-        <option value="bear">bearish</option>
-        <option value="nonneutral">mit Richtung</option>
-      </select>
+    <label><span id="lblSignal">SIGNAL</span>
+      <select id="sent"></select>
     </label>
-    <label>SORT
-      <select id="sort">
-        <option value="priority">Relevanz</option>
-        <option value="time">Zeit</option>
-        <option value="impact">Signalstärke</option>
-      </select>
+    <label><span id="lblSort">SORT</span>
+      <select id="sort"></select>
     </label>
     <span class="count" id="count">—</span>
   </div>
 </header>
 
+<section class="tages" id="tages" aria-live="polite"></section>
 <button id="banner" class="banner" hidden></button>
 <main id="feed" class="feed" aria-live="polite"></main>
 <footer class="foot" id="foot"></footer>
@@ -78,12 +74,65 @@
     <div class="why" hidden>
       <p class="reason"></p>
       <div class="bars"></div>
-      <a class="link" target="_blank" rel="noopener">Quelle öffnen ↗</a>
+      <a class="link" target="_blank" rel="noopener"></a>
     </div>
   </article>
 </template>
 
+<!-- Einstellungen -->
+<div id="modal" class="modal" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="mTitel">
+    <div class="sheetKopf">
+      <h2 id="mTitel">EINSTELLUNGEN</h2>
+      <button id="zu" class="clear" aria-label="Schließen">&times;</button>
+    </div>
+    <div class="sheetInhalt">
+
+      <div class="feld">
+        <label id="lSprache">Sprache</label>
+        <div class="wahl" id="sprache">
+          <button data-lang="de">Deutsch</button>
+          <button data-lang="en">English</button>
+        </div>
+      </div>
+
+      <div class="feld">
+        <label id="lDesign">Design</label>
+        <div class="wahl" id="theme">
+          <button data-theme="dark">Dunkel</button>
+          <button data-theme="light">Hell</button>
+          <button data-theme="system">System</button>
+        </div>
+      </div>
+
+      <div class="feld">
+        <label id="lBenach">Benachrichtigungen</label>
+        <div class="wahl" id="benach">
+          <button data-notify="off">Aus</button>
+          <button data-notify="strong">Nur starke</button>
+          <button data-notify="direction">Mit Richtung</button>
+        </div>
+        <p class="hinweis" id="hBenach"></p>
+      </div>
+
+      <div class="feld">
+        <label id="lLive">Live-Quelle</label>
+        <input id="liveInput" type="url" placeholder="https://market-bias.name.workers.dev" spellcheck="false" autocomplete="off">
+        <p class="hinweis" id="hLive"></p>
+      </div>
+
+      <div class="feld">
+        <label id="lQuellen">Quellen</label>
+        <div class="quellen" id="quellen"></div>
+        <p class="hinweis" id="hQuellen"></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <script src="config.js"></script>
+<script src="i18n.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
