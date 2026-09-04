@@ -393,3 +393,10 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
 
 /* Der Punkt oben rechts erklaert sich per Tooltip */
 .dot{cursor:help}
+
+/* Fassung in der Kopfleiste: klein, damit sie den Schriftzug nicht stoert,
+   aber jederzeit ablesbar — nach einem Update sieht man sofort, was laeuft. */
+.brand em{
+  font-style:normal;font-size:8.5px;letter-spacing:.06em;color:var(--faint);
+  border:1px solid var(--line-2);border-radius:2px;padding:1px 4px;margin-left:6px
+}
