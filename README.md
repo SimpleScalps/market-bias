@@ -160,8 +160,8 @@ cd worker && wrangler deploy
 
 Wrangler nennt am Ende eine Adresse der Form
 `https://market-bias.DEIN-NAME.workers.dev`. Diese Adresse entweder in
-`docs/config.js` eintragen oder in der App unten über
-**LIVE-QUELLE EINRICHTEN** einfügen. Der Cron-Trigger hält den Cache im
+`docs/config.js` eintragen oder in der App über das Zahnrad unter
+**Live-Quelle** einfügen. Der Cron-Trigger hält den Cache im
 Minutentakt warm; die App fragt dann alle 12 Sekunden ab.
 
 Das kostenlose Cloudflare-Kontingent (100.000 Anfragen pro Tag) reicht dafür
