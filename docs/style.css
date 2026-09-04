@@ -9,6 +9,13 @@
   --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+
+/* Verstecktes bleibt versteckt.
+   Das hidden-Attribut wirkt nur über die Vorgabe des Browsers und verliert
+   gegen jede Klasse, die ein display setzt. Genau daran scheiterte der Knopf
+   "Weniger": Der Zustand wurde korrekt gesetzt, das Feld mit display:grid
+   blieb trotzdem sichtbar. Diese Regel gilt für alle solchen Fälle. */
+[hidden]{display:none !important}
 html{-webkit-text-size-adjust:100%}
 body{
   margin:0;background:var(--bg);color:var(--txt);
@@ -151,7 +158,6 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
   text-align:center;line-height:1.7;letter-spacing:.04em}
 
 /* ================= Live-Betrieb ================= */
-.banner[hidden]{display:none}
 .banner{
   position:relative;z-index:15;
   display:block;width:calc(100% - 24px);margin:8px 12px 0;
