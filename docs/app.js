@@ -685,7 +685,9 @@ async function load() {
     if (!neu.items) throw new Error('Antwort ohne Meldungen');
     data = mergeNeu(neu);
     const alt = (Date.now() - new Date(data.updated)) / 1000;
-    const veraltet = alt > (liveUrl ? 120 : 2700);
+    // Der Worker hält den Cache bis zu 90 s; mit Netzlaufzeit und Cron-Takt
+    // sind zwei Minuten zu knapp bemessen und lösen Fehlalarm aus.
+    const veraltet = alt > (liveUrl ? 300 : 2700);
     const punkt = $('#dot');
     punkt.classList.toggle('stale', veraltet);
     punkt.title = veraltet ? T().punktAlt : T().punktLive;

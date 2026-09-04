@@ -82,12 +82,33 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
   return { data, neue };
 }
 
-/** Nur den Kalender nachziehen — der billigste Weg zu frischen Zahlen. */
+/**
+ * Nur den Kalender nachziehen — der billigste Weg zu frischen Zahlen.
+ *
+ * Fällt die Kalenderquelle aus (MyFXBook sperrt Anfragen aus Rechenzentren
+ * zeitweise mit 403), ist der Bestand trotzdem aktuell: Die übrigen fünfzehn
+ * Quellen pflegt der Cron weiter. Der Zeitstempel darf deshalb nicht auf dem
+ * alten Stand einfrieren — sonst meldet die App fälschlich veraltete Daten.
+ */
 async function kalenderNachziehen(env, ctx, regime, bestand) {
-  const frisch = enrich(await loadCalendar(regime));
-  const { items, neue } = zusammenfuehren(bestand, frisch);
+  let frisch = [];
+  let fehler = null;
+  try {
+    frisch = enrich(await loadCalendar(regime));
+  } catch (err) {
+    fehler = `Wirtschaftskalender: ${err.message}`;
+  }
 
-  const data = { ...bestand, items, count: items.length, updated: new Date().toISOString() };
+  const { items, neue } = zusammenfuehren(bestand, frisch);
+  const errors = fehler
+    ? [...(bestand.errors || []).filter((e) => !e.startsWith('Wirtschaftskalender')), fehler]
+    : (bestand.errors || []).filter((e) => !e.startsWith('Wirtschaftskalender'));
+
+  const data = {
+    ...bestand, items, errors,
+    count: items.length,
+    updated: new Date().toISOString(),
+  };
   await schreiben(env, ctx, KEY, data, 600);
   return { data, neue };
 }
