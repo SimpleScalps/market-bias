@@ -2,7 +2,7 @@ import { profilPassung, STANDARD_PROFIL } from './engine/profile.mjs';
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v9';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v10';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -13,6 +13,20 @@ function label(s) {
   if (s <= -0.55) return 'strong_bearish';
   if (s <= -0.16) return 'bearish';
   return 'neutral';
+}
+
+/**
+ * Bringt eine eingegebene Worker-Adresse in eine brauchbare Form.
+ *
+ * Fehlt das Protokoll, behandelt der Browser die Angabe als relativen Pfad und
+ * fragt den eigenen Server ab. Das scheitert lautlos: Die App faellt auf die
+ * mitgelieferten Daten zurueck, meldet trotzdem Live-Betrieb, und weder
+ * Benachrichtigungs-Abo noch Versand erreichen jemals den Worker.
+ */
+function urlNormalisieren(roh) {
+  const u = String(roh || '').trim().replace(/\/+$/, '');
+  if (!u) return '';
+  return /^https?:\/\//i.test(u) ? u : 'https://' + u;
 }
 
 const P = {
@@ -28,7 +42,7 @@ let sort = P.get('sort', 'priority');
 let lang = P.get('lang', navigator.language?.startsWith('en') ? 'en' : 'de');
 let theme = P.get('theme', 'system');
 let notify = P.get('notify', 'off');
-let liveUrl = P.get('liveUrl', '') || window.MARKET_BIAS_LIVE_URL || '';
+let liveUrl = urlNormalisieren(P.get('liveUrl', '') || window.MARKET_BIAS_LIVE_URL || '');
 let ausQuellen = new Set(JSON.parse(P.get('ausQuellen', '[]')));
 let profil = { ...STANDARD_PROFIL, ...JSON.parse(P.get('profil', '{}')) };
 let kanaele = new Set(JSON.parse(P.get('kanaele', '["browser"]')));
@@ -697,7 +711,9 @@ async function load() {
     punkt.classList.toggle('stale', veraltet);
     punkt.title = veraltet ? T().punktAlt : T().punktLive;
   } catch {
-    $('#dot').classList.add('stale');
+    const punkt = $('#dot');
+    punkt.classList.add('stale');
+    punkt.title = T().punktAlt;
     if (liveUrl && !data.items.length) {
       try {
         const res = await fetch(`data/news.json?t=${Date.now()}`, { cache: 'no-store' });
@@ -787,7 +803,8 @@ $$('#theme button').forEach((b) => b.addEventListener('click', () => {
 $$('#benach button').forEach((b) => b.addEventListener('click', () => benachrichtigungSetzen(b.dataset.notify)));
 
 $('#liveInput').addEventListener('change', (e) => {
-  liveUrl = e.target.value.trim().replace(/\/$/, '');
+  liveUrl = urlNormalisieren(e.target.value);
+  e.target.value = liveUrl;          // ergänzte Adresse sichtbar zurückschreiben
   P.set('liveUrl', liveUrl);
   starteTakt();
   load();
