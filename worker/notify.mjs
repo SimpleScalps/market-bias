@@ -37,7 +37,19 @@ async function anNtfy(ziel, titel, text) {
     body: text,
     signal: AbortSignal.timeout(10000),
   });
-  if (!res.ok) throw new Error(`ntfy ${res.status}`);
+
+  if (!res.ok) {
+    // ntfy legt der Antwort einen eigenen Fehlercode bei, der weit mehr sagt
+    // als der Statuscode: 42901 heisst tageslimit erschoepft, 42908 zu viele
+    // Anfragen pro Sekunde, 40101 fehlende Berechtigung.
+    let detail = '';
+    try {
+      const koerper = await res.text();
+      const j = JSON.parse(koerper);
+      detail = ` (${j.code || '?'}: ${j.error || koerper.slice(0, 80)})`;
+    } catch { /* kein JSON */ }
+    throw new Error(`ntfy ${res.status}${detail}${ziel.token ? ' [mit Token]' : ' [ohne Token]'}`);
+  }
 }
 
 async function anTelegram(ziel, titel, text) {

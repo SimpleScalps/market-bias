@@ -24,6 +24,8 @@ const KAL_MS = 20_000;      // Kalender im Livebetrieb höchstens alle 20 s
 const BESTAND_TTL = 86_400; // Bestand einen Tag halten, nicht zehn Minuten
 const GESEHEN_KEY = 'https://market-bias.internal/gesehen';
 const GESEHEN_MAX = 3000;   // deutlich mehr als die 300 angezeigten Meldungen
+const SPERRE_KEY = 'https://market-bias.internal/letzterVersand';
+const RUHE_MS = 10 * 60_000;  // Mindestabstand zwischen Benachrichtigungen
 
 const CORS = {
   'access-control-allow-origin': '*',
@@ -178,6 +180,25 @@ async function pushen(env, ctx, neueItems) {
     return { versucht: false, grund: `${neueItems.length} neu, aber keine mit Richtung` };
   }
 
+  /*
+   * Ruhezeit. Der Worker läuft alle zwei Minuten; ohne Abstand wären das bis zu
+   * 720 Nachrichten am Tag, und kostenlose Push-Dienste sperren lange vorher.
+   * Zehn Minuten Abstand halten den Kanal brauchbar, ohne dass etwas verloren
+   * geht: Was in der Ruhezeit auflief, steht in der nächsten Sammelmeldung.
+   * Extremereignisse - Börsen-Hack, Zinsentscheid - kommen sofort durch.
+   */
+  const dringend = treffer.some((n) => n.impactLevel === 'extreme');
+  const sperre = await lesen(env, SPERRE_KEY);
+  const seitLetztem = sperre?.zeit ? Date.now() - sperre.zeit : Infinity;
+
+  if (!dringend && seitLetztem < RUHE_MS) {
+    return {
+      versucht: false,
+      grund: `Ruhezeit, noch ${Math.ceil((RUHE_MS - seitLetztem) / 60000)} Min`,
+      zurueckgestellt: treffer.length,
+    };
+  }
+
   const sprache = abo.lang === 'en' ? 'en' : 'de';
   const asset = abo.asset || 'crypto';
   const top = treffer.sort((a, b) => Math.abs(b.scores[asset]) - Math.abs(a.scores[asset]))[0];
@@ -191,8 +212,12 @@ async function pushen(env, ctx, neueItems) {
   ].filter(Boolean).join('\n');
 
   const ergebnis = await sendeAn(abo.ziele, titelText, body);
+  if (ergebnis.gesendet) {
+    await schreiben(env, ctx, SPERRE_KEY, { zeit: Date.now() }, BESTAND_TTL);
+  }
   return {
     versucht: true,
+    dringend,
     treffer: treffer.length,
     gesendet: ergebnis.gesendet,
     fehler: ergebnis.fehler,
@@ -262,6 +287,30 @@ export default {
         versand,
         errors: data.errors,
       });
+    }
+
+    /**
+     * Testversand über das hinterlegte Abo. Prüft genau den Weg, den auch die
+     * automatischen Meldungen nehmen — im Unterschied zum Knopf in der App,
+     * der bei geöffneter App direkt aus dem Browser sendet und deshalb an
+     * anderen Sperren vorbeikommt. Zugangsdaten müssen dafür nirgends
+     * eingegeben werden, sie liegen bereits im Abo.
+     */
+    if (url.pathname === '/testpush') {
+      const abo = await lesen(env, ABO_KEY);
+      if (!abo?.ziele?.length) return json({ ok: false, grund: 'kein Abo hinterlegt' }, 400);
+
+      const r = await sendeAn(
+        abo.ziele,
+        'BULLISH · TEST',
+        'Testnachricht über den Worker.' + String.fromCharCode(10) + 'Kommt sie an, funktioniert der Versand auch bei geschlossener App.'
+      );
+      return json({
+        ok: r.gesendet > 0,
+        gesendet: r.gesendet,
+        fehler: r.fehler,
+        kanaele: abo.ziele.map((z) => z.typ),
+      }, r.gesendet ? 200 : 502);
     }
 
     // Abo hinterlegen, damit der Cron auch bei geschlossener App verschickt.
