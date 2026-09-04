@@ -38,6 +38,17 @@ jobs:
           DEEPL_KEY: ${{ secrets.DEEPL_KEY }}
           TRANSLATE_EMAIL: ${{ secrets.TRANSLATE_EMAIL }}
 
+      # Sicherheitsnetz: Cloudflares Cron faellt gelegentlich aus und wird nicht
+      # wiederholt. Dieser Aufruf stoesst den Worker an, laesst ihn seinen
+      # Bestand auffrischen und dabei faellige Benachrichtigungen verschicken.
+      - name: Worker anstossen
+        if: vars.WORKER_URL != ''
+        continue-on-error: true
+        run: |
+          echo "Rufe Worker auf: ${{ vars.WORKER_URL }}"
+          curl -sS -m 60 -o /dev/null -w 'HTTP %{http_code} in %{time_total}s' "${{ vars.WORKER_URL }}"
+          echo
+
       - name: Änderungen committen
         run: |
           git config user.name  "github-actions[bot]"

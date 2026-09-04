@@ -536,6 +536,7 @@ function kanaeleAnzeigen() {
   $('#tgFelder').hidden = !kanaele.has('telegram');
   $('#dcFelder').hidden = !kanaele.has('discord');
   $('#ntfyTopic').value = ntfy.topic || '';
+  $('#ntfyToken').value = ntfy.token || '';
   $('#tgToken').value = tg.token || '';
   $('#tgChat').value = tg.chat || '';
   $('#dcHook').value = dc.hook || '';
@@ -831,6 +832,10 @@ $$('#kanalWahl button').forEach((b) => b.addEventListener('click', async () => {
 }));
 $('#ntfyTopic').addEventListener('change', (e) => {
   ntfy.topic = e.target.value.trim(); P.set('ntfy', JSON.stringify(ntfy));
+  aboSenden();
+});
+$('#ntfyToken').addEventListener('change', (e) => {
+  ntfy.token = e.target.value.trim(); P.set('ntfy', JSON.stringify(ntfy));
   aboSenden();
 });
 $('#tgToken').addEventListener('change', (e) => {

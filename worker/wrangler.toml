@@ -2,18 +2,23 @@ name = "market-bias"
 main = "index.mjs"
 compatibility_date = "2026-01-01"
 
-# Hält den Cache im Minutentakt warm, damit Anfragen sofort beantwortet werden.
+# Haelt den Bestand warm und verschickt Benachrichtigungen, waehrend die App
+# geschlossen ist. Cloudflare wiederholt fehlgeschlagene Laeufe nicht und
+# meldet sie auch nicht, deshalb pingt zusaetzlich die GitHub-Action den
+# Worker an - siehe .github/workflows/update-news.yml.
 [triggers]
-crons = ["* * * * *"]
+crons = ["*/2 * * * *"]
 
 [vars]
 # 'policy' = Zinskanal (starke Daten sind schlecht für Krypto)
 # 'growth' = Wachstumskanal (starke Daten sind gut für Krypto)
 REGIME = "policy"
 
-# Optional, aber empfohlen: dauerhafte Ablage für Benachrichtigungs-Abos.
-# Anlegen mit:  wrangler kv namespace create STORE
-# Danach die ausgegebene id hier eintragen und die beiden Zeilen einkommentieren.
-# [[kv_namespaces]]
-# binding = "STORE"
-# id = "HIER_DIE_ID"
+# Dauerhafte Ablage. Zwingend erforderlich: Auf workers.dev-Adressen bleibt
+# die Cache API wirkungslos, der Worker koennte sich sonst zwischen zwei
+# Aufrufen nichts merken - weder den Meldungsbestand noch die Abos, und der
+# Cron erkennt ohne Bestand keine neuen Meldungen.
+# Neu anlegen mit:  npx wrangler kv namespace create STORE
+[[kv_namespaces]]
+binding = "STORE"
+id = "baf70d73449c411ca8769f09b735f5d2"

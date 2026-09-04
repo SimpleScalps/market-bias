@@ -80,7 +80,7 @@ window.I18N = {
     tagesHinweis: 'Gewichtetes Mittel der letzten 24 Stunden',
     punktLive: 'Daten sind aktuell', punktAlt: 'Daten veralten — Verbindung prüfen',
     ntfy: 'ntfy',
-    ntfyHinweis: 'Frei wählbarer Themenname. Denselben Namen in der ntfy-App abonnieren — je länger und ungewöhnlicher, desto besser, denn wer den Namen kennt, liest mit.',
+    ntfyHinweis: 'Frei wählbarer Themenname, denselben in der ntfy-App abonnieren — je länger und ungewöhnlicher, desto besser, denn wer ihn kennt, liest mit. Der Token wird nur für den Versand über den Worker gebraucht: ntfy drosselt Cloudflare-Adressen, mit Konto zählt das Limit pro Nutzer. Ohne Token kommen Meldungen nur bei geöffneter App an.',
     ntfyApp: 'ntfy-App laden',
   },
 
@@ -163,7 +163,7 @@ window.I18N = {
     tagesHinweis: 'Weighted average of the last 24 hours',
     punktLive: 'Data is current', punktAlt: 'Data is going stale — check the connection',
     ntfy: 'ntfy',
-    ntfyHinweis: 'Freely chosen topic name. Subscribe to the same name in the ntfy app — the longer and more unusual, the better, because anyone who knows it can read along.',
+    ntfyHinweis: 'Freely chosen topic name, subscribe to the same one in the ntfy app — the longer and more unusual, the better, because anyone who knows it can read along. The token is only needed for delivery via the worker: ntfy throttles Cloudflare addresses, with an account the limit counts per user. Without a token, alerts only arrive while the app is open.',
     ntfyApp: 'Get the ntfy app',
   },
 };
