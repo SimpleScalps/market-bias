@@ -6,15 +6,21 @@ import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
 import { sendeAn } from './notify.mjs';
 
 // Cloudflare Worker: holt die Quellen serverseitig (RSS-Feeds senden keine
-// CORS-Header, der Browser kann sie also nicht selbst laden) und liefert das
-// bewertete Ergebnis mit CORS aus. Der Cron-Trigger hält den Cache im
-// Minutentakt warm und verschickt dabei Benachrichtigungen — auch dann, wenn
-// die App gerade geschlossen ist.
+// CORS-Header, der Browser kann sie also nicht selbst laden), bewertet sie mit
+// derselben Engine wie die App und liefert das Ergebnis mit CORS aus. Der
+// Cron-Trigger verschickt dabei Benachrichtigungen — auch dann, wenn die App
+// geschlossen ist. Das ist der eigentliche Zweck des Workers.
+//
+// Rechenzeit: Der Gratisplan erlaubt 10 ms pro Aufruf, alle Feeds zusammen
+// brauchen rund 19 ms. Deshalb arbeitet der Cron rollierend eine Gruppe pro
+// Minute ab (rund 4 ms) und führt das Ergebnis mit dem Bestand zusammen. Der
+// Wirtschaftskalender läuft in jedem Durchgang mit, weil NFP und CPI auf die
+// Sekunde zählen — er kostet nur 0,4 ms.
 
 const KEY = 'https://market-bias.internal/news';
 const ABO_KEY = 'https://market-bias.internal/abo';
-const VOLL_MS = 90_000;   // Vollabgleich höchstens alle 90 s
-const KAL_MS = 20_000;    // Kalender im Livebetrieb alle 20 s
+const GRUPPEN = 3;
+const KAL_MS = 20_000;    // Kalender im Livebetrieb höchstens alle 20 s
 
 const CORS = {
   'access-control-allow-origin': '*',
@@ -29,10 +35,7 @@ const json = (data, status = 200) =>
 
 // --- Ablage: KV wenn gebunden, sonst der flüchtige Cache ------------------
 async function lesen(env, key) {
-  if (env.STORE) {
-    const v = await env.STORE.get(key, 'json');
-    return v ?? null;
-  }
+  if (env.STORE) return (await env.STORE.get(key, 'json')) ?? null;
   const hit = await caches.default.match(key);
   return hit ? hit.json() : null;
 }
@@ -47,37 +50,49 @@ async function schreiben(env, ctx, key, data, ttl = 86400) {
 
 const alterMs = (d) => (d?.updated ? Date.now() - new Date(d.updated).getTime() : Infinity);
 
-/**
- * Zieht nur den Wirtschaftskalender nach. Das ist der zeitkritische Teil:
- * NFP, CPI und Zinsentscheide erscheinen dort Sekunden nach der Veröffentlichung.
- */
-async function kalenderNachziehen(bestand, regime) {
-  const frisch = enrich(await loadCalendar(regime));
-  const bekannt = new Map(bestand.items.map((n) => [n.id, n]));
-  for (const n of frisch) if (!bekannt.has(n.id)) bekannt.set(n.id, n);
+/** Führt frische Meldungen mit dem Bestand zusammen. */
+function zusammenfuehren(bestand, frische) {
+  const bekannt = new Map((bestand?.items || []).map((n) => [n.id, n]));
+  const neue = [];
+  for (const n of frische) {
+    if (!bekannt.has(n.id)) neue.push(n);
+    bekannt.set(n.id, n);
+  }
 
   const items = dedupe([...bekannt.values()])
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, 300);
 
-  return { ...bestand, items, count: items.length, updated: new Date().toISOString() };
+  return { items, neue };
 }
 
-async function aktualisieren(env, ctx, regime, vorhanden) {
-  if (!vorhanden || alterMs(vorhanden) > VOLL_MS) {
-    const data = await collectNews({ regime });
-    await schreiben(env, ctx, KEY, data, 600);
-    return data;
-  }
-  if (alterMs(vorhanden) > KAL_MS) {
-    const data = await kalenderNachziehen(vorhanden, regime);
-    await schreiben(env, ctx, KEY, data, 600);
-    return data;
-  }
-  return vorhanden;
+/** Holt eine Feed-Gruppe plus Kalender und aktualisiert den Bestand. */
+async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
+  const teil = await collectNews({ regime, gruppe, gruppen: GRUPPEN, limit: 300 });
+  const { items, neue } = zusammenfuehren(bestand, teil.items);
+
+  const data = {
+    updated: new Date().toISOString(),
+    regime,
+    count: items.length,
+    errors: teil.errors,
+    items,
+  };
+  await schreiben(env, ctx, KEY, data, 600);
+  return { data, neue };
 }
 
-// --- Benachrichtigungen aus dem Cron heraus -------------------------------
+/** Nur den Kalender nachziehen — der billigste Weg zu frischen Zahlen. */
+async function kalenderNachziehen(env, ctx, regime, bestand) {
+  const frisch = enrich(await loadCalendar(regime));
+  const { items, neue } = zusammenfuehren(bestand, frisch);
+
+  const data = { ...bestand, items, count: items.length, updated: new Date().toISOString() };
+  await schreiben(env, ctx, KEY, data, 600);
+  return { data, neue };
+}
+
+// --- Benachrichtigungen ---------------------------------------------------
 /** Welche der neuen Meldungen verdienen eine Push-Nachricht? */
 function meldenswert(items, abo) {
   const profil = abo.profil || STANDARD_PROFIL;
@@ -86,30 +101,27 @@ function meldenswert(items, abo) {
   return items.filter((n) => {
     if (profil.aktiv && profilPassung(n, profil) === null) return false;
     const l = label(n.scores?.[asset] ?? 0);
-    if (abo.stufe === 'strong') return l.startsWith('strong');
-    return l !== 'neutral';
+    return abo.stufe === 'strong' ? l.startsWith('strong') : l !== 'neutral';
   });
 }
 
 async function pushen(env, ctx, neueItems) {
   const abo = await lesen(env, ABO_KEY);
-  if (!abo?.ziele?.length || abo.stufe === 'off' || !neueItems.length) return;
+  if (!abo?.ziele?.length || abo.stufe === 'off' || !neueItems?.length) return;
 
   const treffer = meldenswert(neueItems, abo);
   if (!treffer.length) return;
 
   const sprache = abo.lang === 'en' ? 'en' : 'de';
   const asset = abo.asset || 'crypto';
-  const top = treffer.sort(
-    (a, b) => Math.abs(b.scores[asset]) - Math.abs(a.scores[asset]))[0];
+  const top = treffer.sort((a, b) => Math.abs(b.scores[asset]) - Math.abs(a.scores[asset]))[0];
 
-  const richtung = label(top.scores[asset]).replace('strong_', '').toUpperCase();
-  const stark = label(top.scores[asset]).startsWith('strong') ? 'STARK ' : '';
-  const titelText = `${stark}${richtung} · ${asset.toUpperCase()}`;
+  const l = label(top.scores[asset]);
+  const titelText = `${l.startsWith('strong') ? 'STARK ' : ''}${l.replace('strong_', '').toUpperCase()} · ${asset.toUpperCase()}`;
   const body = [
     sprache === 'de' ? (top.titleDe || top.title) : top.title,
     `${IMPACT_TEXT[sprache][top.impactLevel]} · ${DURATION_TEXT[sprache][top.duration]}`,
-    treffer.length > 1 ? `+${treffer.length - 1} weitere` : '',
+    treffer.length > 1 ? `+${treffer.length - 1} ${sprache === 'de' ? 'weitere' : 'more'}` : '',
   ].filter(Boolean).join('\n');
 
   ctx.waitUntil(sendeAn(abo.ziele, titelText, body));
@@ -123,7 +135,14 @@ export default {
     const regime = env.REGIME || 'policy';
 
     if (url.pathname === '/health') {
-      return json({ ok: true, zeit: new Date().toISOString(), ablage: env.STORE ? 'kv' : 'cache' });
+      const bestand = await lesen(env, KEY);
+      return json({
+        ok: true,
+        zeit: new Date().toISOString(),
+        ablage: env.STORE ? 'kv' : 'cache',
+        meldungen: bestand?.items?.length ?? 0,
+        alterSekunden: Math.round(alterMs(bestand) / 1000),
+      });
     }
 
     // Sofortversand, ausgelöst von der geöffneten App.
@@ -140,8 +159,7 @@ export default {
     // Abo hinterlegen, damit der Cron auch bei geschlossener App verschickt.
     if (url.pathname === '/subscribe' && request.method === 'POST') {
       try {
-        const abo = await request.json();
-        await schreiben(env, ctx, ABO_KEY, abo, 30 * 86400);
+        await schreiben(env, ctx, ABO_KEY, await request.json(), 30 * 86400);
         return json({ ok: true, dauerhaft: !!env.STORE });
       } catch (err) {
         return json({ fehler: err.message }, 400);
@@ -149,9 +167,22 @@ export default {
     }
 
     try {
-      const vorhanden = await lesen(env, KEY);
-      const data = await aktualisieren(env, ctx, regime, vorhanden);
-      return json({ ...data, quelle: 'worker' });
+      const bestand = await lesen(env, KEY);
+
+      // Noch kein Bestand: eine Gruppe holen, den Rest übernimmt der Cron.
+      if (!bestand) {
+        const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
+        const { data } = await teilAbgleich(env, ctx, regime, null, gruppe);
+        return json({ ...data, quelle: 'worker' });
+      }
+
+      // Sonst reicht der Kalender — er trägt die zeitkritischen Zahlen.
+      if (alterMs(bestand) > KAL_MS) {
+        const { data } = await kalenderNachziehen(env, ctx, regime, bestand);
+        return json({ ...data, quelle: 'worker' });
+      }
+
+      return json({ ...bestand, quelle: 'worker-cache' });
     } catch (err) {
       const fallback = await lesen(env, KEY);
       if (fallback) return json({ ...fallback, quelle: 'worker-cache', fehler: err.message });
@@ -159,17 +190,15 @@ export default {
     }
   },
 
-  // Cron: Cache warm halten und über neue Meldungen benachrichtigen.
+  // Cron: rollierend eine Gruppe abarbeiten und über Neues benachrichtigen.
   async scheduled(event, env, ctx) {
-    const vorher = await lesen(env, KEY);
-    const bekannt = new Set((vorher?.items || []).map((n) => n.id));
+    const regime = env.REGIME || 'policy';
+    const bestand = await lesen(env, KEY);
+    const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
 
-    const data = await collectNews({ regime: env.REGIME || 'policy' });
-    await schreiben(env, ctx, KEY, data, 600);
+    const { neue } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
 
-    if (vorher) {
-      const neue = data.items.filter((n) => !bekannt.has(n.id));
-      await pushen(env, ctx, neue);
-    }
+    // Beim allerersten Lauf ist alles neu — dann nicht benachrichtigen.
+    if (bestand) await pushen(env, ctx, neue);
   },
 };

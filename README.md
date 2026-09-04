@@ -267,6 +267,13 @@ Minutentakt warm; die App fragt dann alle 12 Sekunden ab.
 Das kostenlose Cloudflare-Kontingent (100.000 Anfragen pro Tag) reicht dafür
 weit aus — Dauerbetrieb im 12-Sekunden-Takt sind rund 7.200 Anfragen am Tag.
 
+> **Rechenzeit:** Der Gratisplan erlaubt 10 ms pro Aufruf. Alle Feeds zusammen
+> zu verarbeiten braucht gemessen rund 19 ms, deshalb arbeitet der Cron
+> rollierend eine von drei Feed-Gruppen pro Minute ab (rund 4 ms). Der
+> Wirtschaftskalender läuft in jedem Durchgang mit, weil NFP und CPI auf die
+> Sekunde zählen — er kostet nur 0,4 ms. Nach drei Minuten ist jede Quelle
+> einmal durch; die zeitkritischen Zahlen sind trotzdem sofort da.
+
 **4. Auf dem iPhone installieren**
 
 Seite in Safari öffnen → Teilen → *Zum Home-Bildschirm*. Die App startet ohne

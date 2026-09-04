@@ -131,8 +131,19 @@ export function enrich(list) {
  * Holt alle Quellen, bewertet, entdoppelt und sortiert.
  * `onlyFast` beschränkt auf die schnellen Quellen — dafür im Live-Betrieb.
  */
-export async function collectNews({ regime = 'policy', onlyFast = false, limit = 300, translate = null } = {}) {
-  const feeds = onlyFast ? FEEDS.filter((f) => f.fast) : FEEDS;
+export async function collectNews({
+  regime = 'policy', onlyFast = false, limit = 300, translate = null,
+  gruppe = null, gruppen = 1,
+} = {}) {
+  let feeds = onlyFast ? FEEDS.filter((f) => f.fast) : FEEDS;
+
+  // Auf dem Cloudflare-Gratisplan stehen pro Aufruf nur 10 ms Rechenzeit zur
+  // Verfügung; alle Feeds zusammen brauchen rund das Doppelte. Deshalb lässt
+  // sich die Arbeit auf mehrere Läufe verteilen: jeder Lauf nimmt eine Gruppe,
+  // der Wirtschaftskalender kommt immer mit, weil er zeitkritisch ist.
+  if (gruppe !== null && gruppen > 1) {
+    feeds = feeds.filter((f, i) => i % gruppen === gruppe || f.fast);
+  }
   const results = await Promise.allSettled([
     loadCalendar(regime),
     ...feeds.map((f) => loadFeed(f, regime)),
