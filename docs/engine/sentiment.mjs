@@ -18,6 +18,26 @@ const NEGATORS = /\b(no|not|nicht|kein|denies|denied|rules out|unlikely|won't|wi
  */
 const KRYPTO_BEZUG = /\b(bitcoin|btc|ethereum|eth\b|ether|crypto\w*|coin\b|coins\b|altcoin|memecoin|token\w*|blockchain|defi|dao\b|wallet|stablecoin|usdt|usdc|tether|binance|coinbase|kraken|okx|bybit|bitfinex|solana|\bsol\b|\bxrp\b|ripple|cardano|dogecoin|litecoin|miner\w*|mining|hashrate|satoshi|ledger|trezor|metamask|onchain|on-chain|halving|etf)\b/i;
 
+/*
+ * Typografie vereinheitlichen, bevor irgendein Muster greift.
+ *
+ * Redaktionen setzen geschwungene Anfuehrungszeichen und lange Gedankenstriche.
+ * "travel to 'end' Russia's war" enthaelt zwischen "to" und "end" ein solches
+ * Zeichen - die Erkennung der Deeskalation scheiterte daran, und eine
+ * Friedensmission wurde erneut als Eskalation gewertet. Das betrifft jedes
+ * Muster gleichermassen, deshalb steht die Bereinigung ganz am Anfang.
+ */
+export function normalisiere(text) {
+  return String(text || '')
+    // Anfuehrungszeichen fallen ganz weg. Sie stehen mitten in Wendungen wie
+    // "travel to 'end' the war" und trennen dort genau die Woerter, an denen
+    // die Muster ansetzen; fuer die Bedeutung tragen sie nichts bei.
+    .replace(/[‘’‚′`´'“”„″"]/g, '')
+    .replace(/[‐-―−]/g, '-')
+    .replace(/…/g, '...')
+    .replace(/[   ]/g, ' ');
+}
+
 const clamp = (v, a = -1, b = 1) => Math.max(a, Math.min(b, v));
 
 // "162.0K" -> 162 | "1.2M" -> 1200 | "4.1%" -> 4.1 | "-23K" -> -23
@@ -170,16 +190,16 @@ const SURPRISE_TOPIC = [
 
 // Richtung des Verbs. "Inflation kuehlt staerker als erwartet" ist dovish,
 // obwohl "mehr als erwartet" darin steht - das Verb dreht die Bedeutung.
-const VERB_DOWN = /\b(cools?|cooled|eas(e|es|ed|ing)|falls?|fell|drops?|dropped|slows?|slowed|declines?|declined|shrank|shrinks?|contracts?|tumbles?|sinks?|weakens?)\b/;
-const VERB_UP   = /\b(ros?e|rise[sn]?|jumps?|jumped|climbs?|climbed|surges?|surged|accelerat\w+|increas\w+|grew|grows?|gains?|gained|picks? up|heats? up)\b/;
+const VERB_DOWN = /\b(cool(s|ed|ing)?|eas(e|es|ed|ing)|fall(s|ing)?|fell|drop(s|ped|ping)?|slow(s|ed|ing)?|declin(e|es|ed|ing)|shrank|shrink(s|ing)?|contract(s|ed|ing)?|tumbl(e|es|ed|ing)|sink(s|ing)?|weaken(s|ed|ing)?|soften(s|ed|ing)?|moderat(e|es|ed|ing))\b/;
+const VERB_UP   = /\b(ros?e|ris(e|es|en|ing)|jump(s|ed|ing)?|climb(s|ed|ing)?|surg(e|es|ed|ing)|accelerat(e|es|ed|ing)|increas(e|es|ed|ing)|grew|grow(s|ing)?|gain(s|ed|ing)?|pick(s|ed|ing)? up|heat(s|ed|ing)? up|quicken(s|ed|ing)?)\b/;
 
 // Quartalszahlen einzelner Unternehmen sind keine Konjunkturdaten. "Zscaler
 // beats earnings expectations" darf nicht als Lohninflation gelesen werden.
 const UNTERNEHMEN = /\b(stock|shares|guidance|quarterly|revenue|eps|profit|earnings (call|report|per share)|q[1-4]\b|fiscal|outlook)\b/;
 
 /** Erkennt "besser/schlechter als erwartet" und leitet den Zinsimpuls ab. */
-export function verbalSurprise(title) {
-  const t = title.toLowerCase();
+export function verbalSurprise(rohTitel) {
+  const t = normalisiere(rohTitel).toLowerCase();
   if (UNTERNEHMEN.test(t)) return null;
 
   const up = SURPRISE_UP.test(t);
@@ -214,7 +234,9 @@ export function verbalSurprise(title) {
 }
 
 /** Bewertet eine reine Text-Schlagzeile über gewichtete Signalwörter. */
-export function scoreHeadline(title, regime = 'policy') {
+export function scoreHeadline(rohTitel, regime = 'policy') {
+  const title = normalisiere(rohTitel);
+
   // Nennt die Schlagzeile konkrete Zahlen, wird exakt statt heuristisch bewertet.
   const nums = extractNumbers(title);
   if (nums) {

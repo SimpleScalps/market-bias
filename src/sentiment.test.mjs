@@ -149,3 +149,25 @@ test('Randmärkte färben auch nicht über Risikosignale ab', () => {
   assert.ok(scoreHeadline('Bitcoin rallies to new all-time high').scores.crypto > 0.16);
   assert.ok(scoreHeadline('Iran says response to Israeli airstrike will be devastating').scores.crypto < -0.16);
 });
+
+test('Typografische Zeichen brechen die Erkennung nicht', () => {
+  // Redaktionen setzen geschwungene Anführungszeichen und lange Striche.
+  // "travel to ‘end’ the war" trennte damit genau die Wörter, an denen die
+  // Erkennung der Deeskalation ansetzt.
+  const paare = [
+    ['Witkoff and Kushner will travel to \u2018end\u2019 Russia\u2019s war in Ukraine', 0],
+    ['Bailey \u2018tames\u2019 rate hike hopes', 0],
+    ['Inflation \u2014 cooling faster than expected', 0],
+  ];
+  for (const [t] of paare) {
+    const r = scoreHeadline(t);
+    assert.ok(r && r.scores.crypto > 0, `sollte bullish sein: ${t}`);
+  }
+});
+
+test('Verbrichtung erkennt auch die Verlaufsform', () => {
+  // "cooling", "rising", "falling" — ohne diese Formen kippte das Vorzeichen.
+  assert.ok(scoreHeadline('Inflation cooling faster than expected').scores.crypto > 0);
+  assert.ok(scoreHeadline('Payrolls rising faster than expected').scores.crypto < 0);
+  assert.ok(scoreHeadline('Jobless claims falling faster than expected').scores.crypto < 0);
+});

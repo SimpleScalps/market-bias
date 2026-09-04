@@ -123,7 +123,20 @@ export function enrich(list) {
       label: label(n.scores.crypto),
       labelText: LABEL_TEXT[label(n.scores.crypto)],
     };
-    return { ...mitRang, ...tradeImpact(mitRang) };
+    const fertig = { ...mitRang, ...tradeImpact(mitRang) };
+
+    /*
+     * Was als Rauschen eingestuft ist, bekommt keine Handelsrichtung.
+     *
+     * Eine Kursprognose zu einem Währungspaar stand sonst mit "IGNORIEREN" und
+     * "BULLISH" zugleich da - das eine sagt, die Meldung sei bedeutungslos, das
+     * andere legt einen Trade nahe. Für den Leser bleibt nur Verwirrung.
+     */
+    if (fertig.impactLevel === 'ignore') {
+      const neutral = Object.fromEntries(Object.keys(fertig.scores).map((k) => [k, 0]));
+      return { ...fertig, scores: neutral, label: 'neutral', labelText: LABEL_TEXT.neutral };
+    }
+    return fertig;
   });
 }
 

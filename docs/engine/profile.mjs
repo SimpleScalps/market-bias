@@ -83,12 +83,3 @@ export function profilPassung(item, profil = STANDARD_PROFIL) {
 
   return dauerFaktor * coinBonus * (1 + rang(impact) * 0.18);
 }
-
-/** Filtert und ordnet eine Liste nach dem Profil. */
-export function nachProfil(items, profil = STANDARD_PROFIL) {
-  if (!profil.aktiv) return items;
-  return items
-    .map((n) => ({ n, f: profilPassung(n, profil) }))
-    .filter((x) => x.f !== null)
-    .map((x) => ({ ...x.n, profilFaktor: +x.f.toFixed(2) }));
-}
