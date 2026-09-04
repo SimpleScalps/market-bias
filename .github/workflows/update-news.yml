@@ -46,7 +46,7 @@ jobs:
         continue-on-error: true
         run: |
           echo "Rufe Worker auf: ${{ vars.WORKER_URL }}"
-          curl -sS -m 60 -o /dev/null -w 'HTTP %{http_code} in %{time_total}s' "${{ vars.WORKER_URL }}"
+          curl -sS -m 90 -w 'HTTP %{http_code} in %{time_total}s' "${{ vars.WORKER_URL }}/tick"
           echo
 
       - name: Änderungen committen

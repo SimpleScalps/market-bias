@@ -183,6 +183,28 @@ export default {
       }
     }
 
+    /**
+     * Ersatz für den Cron-Trigger. Cloudflares eigener Zeitgeber lief bei
+     * diesem Worker nicht an und meldet Fehlläufe auch nicht, deshalb lässt
+     * sich derselbe Ablauf von außen anstoßen — durch die GitHub-Action oder
+     * einen kostenlosen Cron-Dienst. Macht genau das, was scheduled() tut:
+     * eine Feed-Gruppe abgleichen und fällige Benachrichtigungen verschicken.
+     */
+    if (url.pathname === '/tick') {
+      const bestand = await lesen(env, KEY);
+      const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
+      const { data, neue } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
+      if (bestand) await pushen(env, ctx, neue);
+      return json({
+        ok: true,
+        gruppe,
+        meldungen: data.count,
+        neu: neue.length,
+        benachrichtigt: !!bestand && neue.length > 0,
+        errors: data.errors,
+      });
+    }
+
     // Abo hinterlegen, damit der Cron auch bei geschlossener App verschickt.
     if (url.pathname === '/subscribe' && request.method === 'POST') {
       try {
