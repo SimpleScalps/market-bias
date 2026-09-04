@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Market Bias</title>
+<meta name="description" content="Finanznachrichten mit automatischer Bullish/Bearish-Einordnung">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Market Bias">
+<meta name="theme-color" content="#0b0e13">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="bar">
+    <h1>Market&nbsp;Bias</h1>
+    <button id="refresh" class="icon" aria-label="Aktualisieren">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 5V2L8 6l4 4V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/></svg>
+    </button>
+  </div>
+
+  <div class="assets" role="tablist" aria-label="Anlageklasse">
+    <button role="tab" data-asset="crypto"  aria-selected="true">Krypto</button>
+    <button role="tab" data-asset="stocks"  aria-selected="false">Aktien</button>
+    <button role="tab" data-asset="gold"    aria-selected="false">Gold</button>
+    <button role="tab" data-asset="usd"     aria-selected="false">USD</button>
+  </div>
+
+  <div class="filters">
+    <button class="chip on"  data-filter="all">Alle</button>
+    <button class="chip"     data-filter="moving">Market Moving</button>
+    <button class="chip"     data-filter="data">Wirtschaftsdaten</button>
+    <button class="chip"     data-filter="signal">Nur mit Signal</button>
+  </div>
+  <p class="meta" id="meta">Lade…</p>
+</header>
+
+<main id="feed" class="feed" aria-live="polite"></main>
+
+<template id="row">
+  <article class="item">
+    <button class="head" aria-expanded="false">
+      <time></time>
+      <div class="txt">
+        <p class="title"></p>
+        <p class="src"></p>
+      </div>
+      <span class="badge"></span>
+    </button>
+    <div class="why" hidden>
+      <p class="reason"></p>
+      <div class="bars"></div>
+      <a class="link" target="_blank" rel="noopener">Quelle öffnen →</a>
+    </div>
+  </article>
+</template>
+
+<script src="app.js"></script>
+</body>
+</html>
