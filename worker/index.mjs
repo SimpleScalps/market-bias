@@ -56,13 +56,22 @@ async function schreiben(env, ctx, key, data, ttl = 86400) {
 
 const alterMs = (d) => (d?.updated ? Date.now() - new Date(d.updated).getTime() : Infinity);
 
-/** Führt frische Meldungen mit dem Bestand zusammen. */
+/**
+ * Führt frische Meldungen mit dem Bestand zusammen.
+ *
+ * Der Zeitstempel einer bereits bekannten Meldung bleibt stehen. Redaktionen
+ * überarbeiten Artikel im Lauf des Tages und setzen dabei das
+ * Veröffentlichungsdatum neu — dieselbe Meldung wanderte dadurch im Feed nach
+ * oben und wirkte Stunden jünger, als sie war. Für den Handel zählt, wann eine
+ * Nachricht zuerst da war.
+ */
 function zusammenfuehren(bestand, frische) {
   const bekannt = new Map((bestand?.items || []).map((n) => [n.id, n]));
   const neue = [];
   for (const n of frische) {
-    if (!bekannt.has(n.id)) neue.push(n);
-    bekannt.set(n.id, n);
+    const vorhanden = bekannt.get(n.id);
+    if (!vorhanden) neue.push(n);
+    bekannt.set(n.id, vorhanden ? { ...n, date: vorhanden.date } : n);
   }
 
   const items = dedupe([...bekannt.values()])

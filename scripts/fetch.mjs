@@ -25,8 +25,26 @@ const data = await collectNews({
   },
 });
 
+// Zeitstempel bekannter Meldungen beibehalten. Redaktionen setzen das
+// Veroeffentlichungsdatum bei Ueberarbeitungen neu; ohne diesen Abgleich
+// springt dieselbe Meldung Stunden spaeter erneut an die Spitze des Feeds.
+const NEWS_DATEI = 'docs/data/news.json';
+if (existsSync(NEWS_DATEI)) {
+  try {
+    const alt = JSON.parse(readFileSync(NEWS_DATEI, 'utf8'));
+    const erstsichtung = new Map(alt.items.map((n) => [n.id, n.date]));
+    let bewahrt = 0;
+    for (const n of data.items) {
+      const frueher = erstsichtung.get(n.id);
+      if (frueher && frueher !== n.date) { n.date = frueher; bewahrt++; }
+    }
+    if (bewahrt) console.log(`${bewahrt} Zeitstempel auf die Erstsichtung zurueckgesetzt.`);
+    data.items.sort((a, b) => new Date(b.date) - new Date(a.date));
+  } catch { /* erster Lauf oder beschaedigte Datei */ }
+}
+
 mkdirSync('docs/data', { recursive: true });
-writeFileSync('docs/data/news.json', JSON.stringify(data, null, 1));
+writeFileSync(NEWS_DATEI, JSON.stringify(data, null, 1));
 writeFileSync(CACHE_DATEI, JSON.stringify(trimCache(cache), null, 0));
 
 console.log(`${data.count} Meldungen geschrieben.`);

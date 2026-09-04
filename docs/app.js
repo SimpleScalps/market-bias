@@ -2,7 +2,7 @@ import { profilPassung, STANDARD_PROFIL } from './engine/profile.mjs';
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v7';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v8';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -51,7 +51,10 @@ const grund = (n) => (lang === 'en' ? (n.whyEn || n.why) : n.why) || T().keineBe
 // "hawkish" verlieren beim Übersetzen an Schärfe. Die deutsche Fassung steht
 // aufgeklappt darunter.
 const titel = (n) => n.title;
-const uebersetzt = (n) => (lang === 'de' && n.titleDe && n.titleDe !== n.title ? n.titleDe : null);
+// Die Übersetzung hängt bewusst nicht an der Menüsprache: Wer die Oberfläche
+// auf Englisch stellt, will trotzdem die Möglichkeit haben, eine Schlagzeile
+// auf Deutsch nachzulesen. Sie erscheint nur aufgeklappt, nie in der Liste.
+const uebersetzt = (n) => (n.titleDe && n.titleDe !== n.title ? n.titleDe : null);
 
 // ---------- Filterkette ----------
 function matches(n) {
