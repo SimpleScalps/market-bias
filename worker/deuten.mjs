@@ -80,6 +80,24 @@ Code-Zaun:
 richtung und staerke beziehen sich auf Bitcoin. staerke 0 heißt ohne Wirkung,
 1 heißt marktbewegend. Bei Meldungen ohne Bezug zum Finanzmarkt: neutral, 0.`;
 
+/**
+ * Liest das Objekt aus der Antwort — auch wenn Text drumherum steht.
+ *
+ * Manche Modelle stellen der Ausgabe eine Erklaerung voran oder legen sie in
+ * einen Code-Zaun, obwohl das Format vorgegeben ist. Statt daran zu scheitern,
+ * wird der erste geschweifte Block herausgeschnitten.
+ */
+function ausJson(text) {
+  try {
+    return JSON.parse(text);
+  } catch {
+    const von = text.indexOf('{');
+    const bis = text.lastIndexOf('}');
+    if (von === -1 || bis <= von) throw new Error('keine verwertbare Antwort');
+    return JSON.parse(text.slice(von, bis + 1));
+  }
+}
+
 /** Nimmt der Schlagzeile die Möglichkeit, wie eine Anweisung zu wirken. */
 const alsDaten = (text) =>
   String(text || '').replace(/\s+/g, ' ').slice(0, 400);
@@ -103,7 +121,17 @@ export async function deuten(schlagzeile, env) {
       body: JSON.stringify({
         model: modell,
         temperature: 0.2,
-        max_tokens: 200,
+        /*
+         * Reichlich Spielraum, obwohl die Antwort kurz ist.
+         *
+         * Die gpt-oss-Modelle denken intern nach, bevor sie ausgeben, und
+         * verbrauchen dafuer Token. Bei knappem Budget war es aufgebraucht,
+         * ehe die eigentliche Antwort begann - Groq meldete dann einen
+         * Formatfehler mit leerer Ausgabe. Wenig Denkaufwand genuegt hier,
+         * die Aufgabe ist eng umrissen.
+         */
+        max_tokens: 900,
+        reasoning_effort: 'low',
         response_format: { type: 'json_object' },
         messages: [
           { role: 'system', content: ANWEISUNG },
@@ -117,14 +145,14 @@ export async function deuten(schlagzeile, env) {
       // Wurde das Modell zwischenzeitlich ausgemustert, beim naechsten Mal neu waehlen.
       if (res.status === 404) gewaehltesModell = null;
       const text = await res.text().catch(() => '');
-      throw new Error(`Groq ${res.status}${text ? ': ' + text.slice(0, 120) : ''}`);
+      throw new Error(`Groq ${res.status}${text ? ': ' + text.slice(0, 400) : ''}`);
     }
 
     const j = await res.json();
     const roh = j.choices?.[0]?.message?.content;
     if (!roh) throw new Error('leere Antwort');
 
-    const geparst = JSON.parse(roh);
+    const geparst = ausJson(roh);
 
     // Nur übernehmen, was der erwarteten Form entspricht.
     const richtung = ['bullish', 'bearish', 'neutral'].includes(geparst.richtung)
@@ -136,7 +164,7 @@ export async function deuten(schlagzeile, env) {
 
     return { richtung, staerke: +staerke.toFixed(2), grund, modell };
   } catch (err) {
-    return { fehler: err.message.slice(0, 160) };
+    return { fehler: err.message.slice(0, 400) };
   }
 }
 
