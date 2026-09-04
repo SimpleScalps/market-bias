@@ -25,10 +25,10 @@ export function countryRelevance(title, loose = false) {
 // Zentralbank-Relevanz für Schlagzeilen: die Fed bewegt Krypto, die
 // Reserve Bank of New Zealand praktisch nicht.
 export const CB_WEIGHT = [
-  { re: /\b(fed|fomc|powell|federal reserve)\b/i, weight: 1.0 },
-  { re: /\b(ecb|lagarde)\b/i, weight: 0.45 },
-  { re: /\b(boe|bailey|bank of england|boj|ueda|bank of japan)\b/i, weight: 0.35 },
-  { re: /\b(snb|rba|rbnz|boc)\b/i, weight: 0.15 },
+  { re: /\b(fed\b|fomc|powell|federal reserve|u\.?s\.? central bank)\b/i, weight: 1.0 },
+  { re: /\b(ecb\b|lagarde|european central bank|eurotower)\b/i, weight: 0.45 },
+  { re: /\b(boe\b|bailey|bank of england|boj\b|ueda|bank of japan|old lady of threadneedle)\b/i, weight: 0.35 },
+  { re: /\b(snb\b|rba\b|rbnz\b|boc\b|swiss national bank|reserve bank of|bank of canada|norges bank|riksbank)\b/i, weight: 0.15 },
 ];
 
 export function centralBankWeight(title) {

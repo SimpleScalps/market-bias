@@ -107,3 +107,34 @@ test('Friedensbemühungen sind keine Eskalation', () => {
     assert.ok(r && r.scores.crypto < 0, `sollte bearish sein: ${t}`);
   }
 });
+
+test('Krypto-Signalwörter gelten nur für Krypto-Meldungen', () => {
+  // Dieselben Stichwörter, einmal ohne und einmal mit Bezug zur Sache.
+  const ohneBezug = [
+    'Andrew Tate indicted in Romania for trafficking minors, money laundering',
+    'OpenAI Agents Hack German Website to Share Rule-Breaking Tactics',
+    'Utah Becomes First State to Target VPNs in Age-Verification Crackdown',
+  ];
+  for (const t of ohneBezug) {
+    const r = scoreHeadline(t);
+    assert.ok(!r || Math.abs(r.scores.crypto) < 0.16, `darf nicht werten: ${t}`);
+  }
+
+  const mitBezug = [
+    'Trezor says data breach affects another 67K US customers',
+    'Binance Adds Four Crypto Assets to Delisting Watch',
+    'SEC sues crypto exchange over unregistered securities',
+  ];
+  for (const t of mitBezug) {
+    const r = scoreHeadline(t);
+    assert.ok(r && r.scores.crypto < -0.16, `sollte bearish sein: ${t}`);
+  }
+});
+
+test('Notenbanken kleiner Märkte bewegen Krypto nicht', () => {
+  const rand = scoreHeadline('Malaysian Ringgit: BNM hawkish tilt supports MYR – Commerzbank');
+  assert.ok(Math.abs(rand.scores.crypto) < 0.16, 'BNM ist für Krypto ohne Belang');
+
+  const fed = scoreHeadline('Fed signals rate hike in September');
+  assert.ok(fed.scores.crypto < -0.5, 'die Fed dagegen schon');
+});

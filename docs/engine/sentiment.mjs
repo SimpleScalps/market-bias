@@ -7,6 +7,17 @@ import { countryRelevance, centralBankWeight, emergingMarketDamping } from './re
 // hike hopes" ist dovish, obwohl "rate hike" darin vorkommt.
 const NEGATORS = /\b(no|not|nicht|kein|denies|denied|rules out|unlikely|won't|without|tames?|dampens?|cools?|plays? down|downplays?|pushes? back on|dismisses?|pares?|trims?|scales? back|doubts?|fades?)\s*$/;
 
+/*
+ * Krypto-Signalwörter gelten nur für Meldungen, die auch von Krypto handeln.
+ *
+ * Ohne diese Prüfung schlug jedes "hack", "indicted" oder "crackdown" voll
+ * durch: Ein Strafverfahren gegen einen Influencer, ein gehacktes deutsches
+ * Webportal und eine Altersprüfung für VPNs in Utah galten allesamt als stark
+ * bearish für Bitcoin. Das Stichwort allein sagt nichts - erst der Gegenstand
+ * der Meldung macht es zum Signal.
+ */
+const KRYPTO_BEZUG = /\b(bitcoin|btc|ethereum|eth\b|ether|crypto\w*|coin\b|coins\b|altcoin|memecoin|token\w*|blockchain|defi|dao\b|wallet|stablecoin|usdt|usdc|tether|binance|coinbase|kraken|okx|bybit|bitfinex|solana|\bsol\b|\bxrp\b|ripple|cardano|dogecoin|litecoin|miner\w*|mining|hashrate|satoshi|ledger|trezor|metamask|onchain|on-chain|halving|etf)\b/i;
+
 const clamp = (v, a = -1, b = 1) => Math.max(a, Math.min(b, v));
 
 // "162.0K" -> 162 | "1.2M" -> 1200 | "4.1%" -> 4.1 | "-23K" -> -23
@@ -216,8 +227,12 @@ export function scoreHeadline(title, regime = 'policy') {
   const hits = [];
   const hitsEn = [];
 
+  const kryptoThema = KRYPTO_BEZUG.test(title);
+
   for (const k of KEYWORDS) {
     if (!k.re.test(t)) continue;
+    // Krypto-eigene Signale zählen nur bei krypto-eigenen Meldungen.
+    if (k.type === 'crypto' && !kryptoThema) continue;
     // Verneinung direkt vor dem Treffer dreht das Vorzeichen.
     const idx = t.search(k.re);
     const before = t.slice(Math.max(0, idx - 22), idx);
