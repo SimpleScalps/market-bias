@@ -4,7 +4,7 @@ import { profilPassung, STANDARD_PROFIL } from '../docs/engine/profile.mjs';
 import { label } from '../docs/engine/sentiment.mjs';
 import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
 import { sendeAn } from './notify.mjs';
-import { deuten, widerspruch, verfuegbareModelle } from './deuten.mjs';
+import { deuten, widerspruch, verfuegbareModelle, tageslage } from './deuten.mjs';
 
 // Cloudflare Worker: holt die Quellen serverseitig (RSS-Feeds senden keine
 // CORS-Header, der Browser kann sie also nicht selbst laden), bewertet sie mit
@@ -25,6 +25,8 @@ const KAL_MS = 20_000;      // Kalender im Livebetrieb höchstens alle 20 s
 const BESTAND_TTL = 86_400; // Bestand einen Tag halten, nicht zehn Minuten
 const GESEHEN_MAX = 4000;   // Gedächtnis über die Sichtbarkeitsgrenze hinaus
 const GEGENPROBE_MAX = 3;   // starke Signale je Durchlauf, die geprüft werden
+const LAGE_KEY = 'https://market-bias.internal/lage';
+const LAGE_FRISCH_MS = 15 * 60_000;   // Zusammenfassung eine Viertelstunde nutzen
 const SPERRE_KEY = 'https://market-bias.internal/letzterVersand';
 
 /*
@@ -426,6 +428,41 @@ export default {
         fehler: r.fehler,
         kanaele: abo.ziele.map((z) => z.typ),
       }, r.gesendet ? 200 : 502);
+    }
+
+    /**
+     * Kurzer Lagebericht zum Tag.
+     *
+     * Die Zahlen im Dashboard zeigen, wie einseitig der Tag ist - nicht, woran
+     * es liegt. Das Ergebnis wird eine Viertelstunde vorgehalten: Der Bestand
+     * aendert sich langsamer, und jeder Aufruf kostet sonst eine Anfrage.
+     */
+    if (url.pathname === '/tageslage') {
+      if (!env.GROQ_KEY) return json({ fehler: 'kein Schluessel hinterlegt' }, 501);
+
+      const klasse = (url.searchParams.get('asset') || 'crypto').slice(0, 12);
+      const vorhanden = await lesen(env, LAGE_KEY);
+      if (vorhanden?.[klasse] && Date.now() - new Date(vorhanden[klasse].stand) < LAGE_FRISCH_MS) {
+        return json({ ...vorhanden[klasse], gespeichert: true });
+      }
+
+      const bestand = await lesen(env, KEY);
+      if (!bestand?.items?.length) return json({ fehler: 'kein Bestand' }, 503);
+
+      // Die gewichtigsten Meldungen des Tages, nicht einfach die neuesten.
+      const grenze = Date.now() - 24 * 3600 * 1000;
+      const auswahl = bestand.items
+        .filter((n) => new Date(n.date).getTime() > grenze && n.impactLevel !== 'ignore')
+        .sort((a, b) => Math.abs(b.scores[klasse] ?? 0) * b.priority
+                      - Math.abs(a.scores[klasse] ?? 0) * a.priority)
+        .slice(0, 14)
+        .map((n) => ({ titel: n.title, wertung: (n.scores[klasse] ?? 0).toFixed(2) }));
+
+      const ergebnis = await tageslage(auswahl, klasse, env);
+      if (ergebnis?.lage) {
+        await schreiben(env, ctx, LAGE_KEY, { ...vorhanden, [klasse]: ergebnis }, BESTAND_TTL);
+      }
+      return json(ergebnis || { fehler: 'keine Antwort' }, ergebnis?.fehler ? 502 : 200);
     }
 
     // Zeigt, welche Modelle das hinterlegte Konto nutzen darf. Nuetzlich,

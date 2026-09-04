@@ -227,6 +227,20 @@ Zusammenhängen, die nicht im Wortlaut stehen.
 Das Modell liest die Schlagzeile und antwortet mit Richtung, Stärke und einem
 Satz Begründung.
 
+**Als Lagebericht.** Im Tagesdashboard fasst ein Knopf die Lage in zwei bis
+drei Sätzen zusammen. Die Zahlen dort sagen, wie einseitig der Tag ausfällt —
+der Bericht sagt, woran es liegt:
+
+> Starke US-Beschäftigungszahlen (162.000 neue Jobs, 4,1 % Arbeitslosenquote)
+> lassen die 2-Jahres-Rendite auf den Höchststand seit Januar 2025 steigen und
+> erhöhen die Erwartung weiterer Fed-Zinserhöhungen, was die Liquidität drückt.
+> Für Krypto bedeutet das anhaltenden Abwärtsdruck, solange die Geldpolitik
+> restriktiv bleibt.
+
+Grundlage sind die vierzehn gewichtigsten Meldungen der letzten 24 Stunden,
+gewählt nach Signalstärke und Relevanz. Das Ergebnis wird eine Viertelstunde
+vorgehalten, damit nicht jeder Klick eine Anfrage kostet.
+
 **Als stille Gegenprobe.** Die stärksten neuen Signale — meist zwei bis drei am
 Tag — werden automatisch gegengelesen. Weicht das Modell in der Richtung
 deutlich ab, trägt die Meldung ein Fragezeichen in der Liste und einen Hinweis

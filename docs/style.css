@@ -442,3 +442,25 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
   color:#ffb84d;border:1px solid #ffb84d;border-radius:2px;
   width:14px;height:14px;display:grid;place-items:center
 }
+
+/* ================= Lagebericht ================= */
+.lageZeile{margin-top:11px}
+.lageBtn{
+  width:100%;background:var(--bg-2);border:1px solid var(--line);border-radius:3px;
+  color:var(--dim);font-family:var(--mono);font-size:10px;letter-spacing:.09em;
+  padding:8px 10px;cursor:pointer;text-transform:uppercase
+}
+.lageBtn:active{border-color:var(--accent);color:var(--accent)}
+.lageBtn:disabled{opacity:.55;cursor:default}
+.lageText{
+  margin-top:9px;padding:10px;border-radius:3px;
+  background:var(--bg-2);border:1px solid var(--line);border-left:2px solid var(--accent);
+  font-size:12.5px;line-height:1.55;color:var(--txt);animation:slide .18s ease-out
+}
+.lageText.fehler{border-left-color:var(--neut);color:var(--faint);font-size:11.5px}
+
+/* Jede zweite Meldung leicht abgesetzt. Bei dicht gestapelten Zeilen sonst
+   schwer zu sehen, wo eine endet und die nächste beginnt — besonders auf dem
+   Handy, wo Überschriften über mehrere Zeilen laufen. */
+.item:nth-child(even){background:var(--bg-2)}
+.item:nth-child(even) .head:active{background:var(--panel)}

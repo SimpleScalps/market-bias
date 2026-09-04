@@ -5,7 +5,7 @@ import { label } from './engine/sentiment.mjs';
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v20';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v21';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -134,6 +134,7 @@ function tagesbild() {
 }
 
 let treiberOffen = false;
+let lageText = null;      // Lagebericht des Tages, einmal geholt
 
 const escape = (s) => String(s).replace(/[<>&"]/g, (c) =>
   ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' }[c]));
@@ -185,6 +186,12 @@ function renderTages() {
     ${band}
     <p class="tagesVerteilung">${T_.verteilung(t.bull, t.neut, t.bear)}</p>
 
+    <div class="lageZeile">
+      <button class="lageBtn">${lageText ? T_.lagebericht : T_.lagebericht}</button>
+    </div>
+    ${lageText ? `<div class="lageText${lageText.fehler ? ' fehler' : ''}">${
+      escape(lageText.fehler || lageText.lage)}</div>` : ''}
+
     ${t.treiber.length ? `
       <button class="treiberBtn" aria-expanded="${treiberOffen}">
         <span class="pfeil">${treiberOffen ? '▾' : '▸'}</span>
@@ -198,6 +205,14 @@ function renderTages() {
   const btn = $('.treiberBtn', box);
   if (btn) btn.addEventListener('click', () => {
     treiberOffen = !treiberOffen;
+    renderTages();
+  });
+
+  const lageBtn = $('.lageBtn', box);
+  if (lageBtn) lageBtn.addEventListener('click', async () => {
+    lageBtn.disabled = true;
+    lageBtn.textContent = T().lageLaeuft;
+    lageText = await lagebericht();
     renderTages();
   });
 }
@@ -307,6 +322,25 @@ function detailText(n) {
     <p class="dtext">${data.regime === 'growth' ? t.annahmeGrowth : t.annahmePolicy}</p></div>`);
 
   return blocks.join('');
+}
+
+/**
+ * Holt den Lagebericht zum Tag.
+ *
+ * Die Zahlen im Dashboard zeigen, wie einseitig der Tag ausfällt — nicht,
+ * woran es liegt. Der Worker stellt die gewichtigsten Meldungen zusammen und
+ * lässt daraus zwei bis drei Sätze schreiben; das Ergebnis hält er eine
+ * Viertelstunde vor, damit nicht jeder Klick eine Anfrage kostet.
+ */
+async function lagebericht() {
+  if (!liveUrl) return { fehler: T().lageOhneWorker };
+  try {
+    const res = await fetch(`${liveUrl}/tageslage?asset=${encodeURIComponent(asset)}`);
+    const j = await res.json();
+    return res.ok && j.lage ? j : { fehler: j.fehler || T().lageFehler };
+  } catch {
+    return { fehler: T().lageFehler };
+  }
 }
 
 // ---------- Darstellung ----------
@@ -882,6 +916,7 @@ $$('.seg button').forEach((b) => {
   b.addEventListener('click', () => {
     asset = b.dataset.asset;
     P.set('asset', asset);
+    lageText = null;   // der Bericht galt der vorherigen Anlageklasse
     $$('.seg button').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
     alles();
   });
