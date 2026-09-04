@@ -1,9 +1,119 @@
 {
- "updated": "2026-09-04T14:11:15.453Z",
+ "updated": "2026-09-04T14:16:50.910Z",
  "regime": "policy",
  "count": 300,
- "errors": [],
+ "errors": [
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
+ ],
  "items": [
+  {
+   "id": "CNBC Economy:U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
+   "title": "U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
+   "source": "CNBC Economy",
+   "url": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html",
+   "date": "2026-09-04T14:15:35.000Z",
+   "tags": [
+    "US-Wirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0.868,
+   "signals": [
+    "Arbeitsmarktdaten höher als erwartet"
+   ],
+   "scores": {
+    "crypto": -0.868,
+    "stocks": -0.738,
+    "gold": -0.694,
+    "usd": 0.868
+   },
+   "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: Arbeitsmarktdaten höher als erwartet)",
+   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: labour market data higher than expected)",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 59,
+   "label": "strong_bearish",
+   "labelText": "Stark Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "CNBC World",
+    "CNBC"
+   ],
+   "titleDe": "US-Gehaltslisten stiegen im August um 162.000, viel mehr als erwartet; Arbeitslosenquote bei 4,1%"
+  },
+  {
+   "id": "CNBC Economy:The big business of personal protection: How private security became a $50 billion industry",
+   "title": "The big business of personal protection: How private security became a $50 billion industry",
+   "source": "CNBC Economy",
+   "url": "https://www.cnbc.com/2026/09/04/private-security-spending-crime-allied-universal.html",
+   "date": "2026-09-04T14:15:04.000Z",
+   "tags": [
+    "US-Wirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "CNBC"
+   ],
+   "titleDe": "Das große Geschäft des persönlichen Schutzes: Wie private Sicherheit zu einer 50 Milliarden $ Industrie wurde"
+  },
+  {
+   "id": "CoinDesk:U.S. Sheriff’s association shifts opposition stance to Clarity Act to 'neutral'",
+   "title": "U.S. Sheriff’s association shifts opposition stance to Clarity Act to 'neutral'",
+   "source": "CoinDesk",
+   "url": "https://www.coindesk.com/policy/2026/09/04/u-s-sheriff-s-association-shifts-opposition-stance-to-clarity-act-to-neutral",
+   "date": "2026-09-04T14:12:34.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 45,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Die Vereinigung des US-Sheriffs verschiebt die Oppositionsposition zum Clarity Act auf \"neutral\""
+  },
   {
    "id": "FXStreet:\"Lower the rate or I’ll stop trading\": Trump pressures Fed after strong US jobs report",
    "title": "\"Lower the rate or I’ll stop trading\": Trump pressures Fed after strong US jobs report",
@@ -36,6 +146,39 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "\"Senke den Kurs oder ich höre auf zu handeln\": Trump setzt Fed nach starkem US-Arbeitsmarktbericht unter Druck"
+  },
+  {
+   "id": "CNBC:Labor Day marks the start of 'fallcations' as wealthy travelers avoid summer crowds",
+   "title": "Labor Day marks the start of 'fallcations' as wealthy travelers avoid summer crowds",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/09/04/fall-travel-wealthy-europe.html",
+   "date": "2026-09-04T14:10:22.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Der Tag der Arbeit markiert den Beginn der \"Fallkationen\", da wohlhabende Reisende die Sommermassen meiden"
   },
   {
    "id": "CNBC:Analysis: Lower Treasury yields could require a weaker economy. Trump won't fix them",
@@ -176,89 +319,6 @@
    "titleDe": "Kanadischer Dollar rutscht ab, da Kanada 41.700 Arbeitsplätze abbaut und die US-Gehaltsliste ansteigt"
   },
   {
-   "id": "cal:Canada Ivey PMI s.a:2026-09-04T14:00:00.000Z",
-   "title": "PMI (Global): 64.3 (forecast 56.2, previous 55.1)",
-   "titleDe": "PMI (Global): 64.3 (Prognose 56.2, zuvor 55.1)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/canada/ivey-pmi-s-a",
-   "date": "2026-09-04T14:00:00.000Z",
-   "tags": [
-    "Daten",
-    "Market Moving"
-   ],
-   "impact": "high",
-   "kind": "macro",
-   "event": "PMI",
-   "eventEn": "PMI",
-   "region": "Global",
-   "channel": "growth",
-   "actual": "64.3",
-   "consensus": "56.2",
-   "previous": "55.1",
-   "surprise": 8.099999999999994,
-   "hawkish": 0.12,
-   "scores": {
-    "crypto": -0.12,
-    "stocks": -0.102,
-    "gold": -0.096,
-    "usd": 0.12
-   },
-   "why": "PMI (Global): 64.3 gegenüber 56.2 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
-   "whyEn": "PMI (Global): 64.3 versus 56.2 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
-   "category": "global-data",
-   "categoryLabel": "Weltdaten",
-   "priority": 37,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "PMI",
-   "eventTypeEn": "PMI",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
-   "id": "CNBC Economy:U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
-   "title": "U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
-   "source": "CNBC Economy",
-   "url": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html",
-   "date": "2026-09-04T13:52:53.000Z",
-   "tags": [
-    "US-Wirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0.868,
-   "signals": [
-    "Arbeitsmarktdaten höher als erwartet"
-   ],
-   "scores": {
-    "crypto": -0.868,
-    "stocks": -0.738,
-    "gold": -0.694,
-    "usd": 0.868
-   },
-   "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: Arbeitsmarktdaten höher als erwartet)",
-   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: labour market data higher than expected)",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 58,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [
-    "CNBC World",
-    "CNBC"
-   ],
-   "titleDe": "US-Gehaltslisten stiegen im August um 162.000, viel mehr als erwartet; Arbeitslosenquote bei 4,1%"
-  },
-  {
    "id": "BeInCrypto:Robinhood Chain Briefly Stops Producing Blocks. What Happened?",
    "title": "Robinhood Chain Briefly Stops Producing Blocks. What Happened?",
    "source": "BeInCrypto",
@@ -288,7 +348,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Robinhood Chain stoppt kurz die Produktion von Blöcken. Was ist passiert?"
   },
   {
    "id": "FXStreet:US Dollar: Jobs strength lifts hike odds – ING",
@@ -357,6 +418,43 @@
    "titleDe": "Britisches Pfund reduziert Verluste gegenüber US-Dollar nach NFP-getriebener Volatilität"
   },
   {
+   "id": "U.Today:XRPL Wallet Breach: Users Urged to Halt Use Amid Security Update",
+   "title": "XRPL Wallet Breach: Users Urged to Halt Use Amid Security Update",
+   "source": "U.Today",
+   "url": "https://u.today/xrpl-wallet-breach-users-urged-to-halt-use-amid-security-update",
+   "date": "2026-09-04T13:45:45.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Hack/Exploit"
+   ],
+   "scores": {
+    "crypto": -0.7,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "why": "Direkt kryptonegative Nachricht. (Signale: Hack/Exploit)",
+   "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 46,
+   "label": "strong_bearish",
+   "labelText": "Stark Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "XRPL-Wallet-Verletzung: Benutzer werden aufgefordert, die Verwendung inmitten des Sicherheitsupdates einzustellen"
+  },
+  {
    "id": "MarketWatch:Adobe just announced its next CEO. Here’s why its stock is dropping.",
    "title": "Adobe just announced its next CEO. Here’s why its stock is dropping.",
    "source": "MarketWatch",
@@ -386,7 +484,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Adobe hat gerade seinen nächsten CEO bekannt gegeben. Hier ist der Grund, warum sein Bestand sinkt."
   },
   {
    "id": "Al Jazeera:Two Muslim women journalists allege police assault in India",
@@ -418,7 +517,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Zwei muslimische Journalistinnen behaupten, in Indien von der Polizei angegriffen worden zu sein"
   },
   {
    "id": "U.Today:Headline-Grabbing Robinhood Blockchain Stops Recording New Transactions",
@@ -802,7 +902,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -848,7 +948,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "PONS sammelt 41% auf neuen Rekord, da Händler gemischte Vermögen sehen"
   },
   {
    "id": "Al Jazeera:At least 100 killed as Yemen’s Houthis push towards key strait",
@@ -880,7 +981,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Mindestens 100 Tote, als die jemenitischen Houthis auf die Schlüsselstraße zusteuern"
   },
   {
    "id": "CNBC:2-year yield rises to highest since January 2025 after hot jobs report boosts expectations that the Fed could raise rates",
@@ -1226,7 +1328,8 @@
    "coins": [],
    "alsoIn": [
     "CNBC"
-   ]
+   ],
+   "titleDe": "Lululemon-Aktie sinkt um 20 % auf enttäuschende Gewinne und Aussichten"
   },
   {
    "id": "BeInCrypto:Bitcoin and Gold Fall As US Payrolls Crush Forecasts by 3x",
@@ -1249,7 +1352,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1323,7 +1426,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1368,7 +1471,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Der Euro zieht sich gegenüber dem Pfund Sterling zurück, da die Einzelhandelsumsätze der Eurozone enttäuschen"
   },
   {
    "id": "BBC World:'We expect our sons to be killed,' father of teen shot dead in West Bank tells BBC",
@@ -1391,7 +1495,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 34,
+   "priority": 33,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1400,7 +1504,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "\"Wir erwarten, dass unsere Söhne getötet werden\", sagt der Vater eines Teenagers, der in der Westbank erschossen wurde, gegenüber BBC"
   },
   {
    "id": "Al Jazeera:As the China-US AI race reaches Cairo, Egypt faces a strategic decision",
@@ -1423,7 +1528,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 60,
+   "priority": 59,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1545,350 +1650,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Vormittagsminute: Krypto veranstaltet eine große Rallye aufgrund von Ratenhoffnungen"
-  },
-  {
-   "id": "cal:Canada Unemployment Rate:2026-09-04T12:30:00.000Z",
-   "title": "Unemployment Rate (Global): 6.4% (forecast 6.4%, previous 6.4%)",
-   "titleDe": "Arbeitslosenquote (Global): 6.4% (Prognose 6.4%, zuvor 6.4%)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/canada/unemployment-rate",
-   "date": "2026-09-04T12:30:00.000Z",
-   "tags": [
-    "Daten",
-    "Market Moving"
-   ],
-   "impact": "high",
-   "kind": "macro",
-   "event": "Arbeitslosenquote",
-   "eventEn": "Unemployment Rate",
-   "region": "Global",
-   "channel": "growth",
-   "actual": "6.4%",
-   "consensus": "6.4%",
-   "previous": "6.4%",
-   "surprise": 0,
-   "hawkish": 0,
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "why": "Arbeitslosenquote (Global): 6.4 gegenüber 6.4 erwartet — exakt auf Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Spielraum für lockerere Geldpolitik. Sinkende Zinserwartungen bedeuten mehr Liquidität — das stützt Krypto und Aktien und schwächt den Dollar.",
-   "whyEn": "Unemployment Rate (Global): 6.4 versus 6.4 expected — exactly at forecast. Economic activity therefore comes in stronger than priced in. That gives the Fed room to ease. Falling rate expectations mean more liquidity — supportive for crypto and equities, negative for the dollar.",
-   "category": "global-data",
-   "categoryLabel": "Weltdaten",
-   "priority": 32,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Arbeitslosenquote",
-   "eventTypeEn": "Arbeitslosenquote",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
-   "id": "cal:Canada Participation Rate:2026-09-04T12:30:00.000Z",
-   "title": "Participation Rate (Global): 65.0% (forecast 65.2%, previous 65.1%)",
-   "titleDe": "Erwerbsquote (Global): 65.0% (Prognose 65.2%, zuvor 65.1%)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/canada/participation-rate",
-   "date": "2026-09-04T12:30:00.000Z",
-   "tags": [
-    "Daten",
-    "Makro"
-   ],
-   "impact": "medium",
-   "kind": "macro",
-   "event": "Erwerbsquote",
-   "eventEn": "Participation Rate",
-   "region": "Global",
-   "channel": "growth",
-   "actual": "65.0%",
-   "consensus": "65.2%",
-   "previous": "65.1%",
-   "surprise": -0.20000000000000284,
-   "hawkish": -0.005,
-   "scores": {
-    "crypto": 0.005,
-    "stocks": 0.004,
-    "gold": 0.004,
-    "usd": -0.005
-   },
-   "why": "Erwerbsquote (Global): 65 gegenüber 65.2 erwartet — unter Prognose. Konjunktur fällt damit schwächer aus als eingepreist. Die Fed bekommt damit Spielraum für lockerere Geldpolitik. Sinkende Zinserwartungen bedeuten mehr Liquidität — das stützt Krypto und Aktien und schwächt den Dollar.",
-   "whyEn": "Participation Rate (Global): 65 versus 65.2 expected — below forecast. Economic activity therefore comes in weaker than priced in. That gives the Fed room to ease. Falling rate expectations mean more liquidity — supportive for crypto and equities, negative for the dollar.",
-   "category": "global-data",
-   "categoryLabel": "Weltdaten",
-   "priority": 32,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Erwerbsquote",
-   "eventTypeEn": "Erwerbsquote",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
-   "id": "cal:United States Average Hourly Earnings YoY:2026-09-04T12:30:00.000Z",
-   "title": "Average Hourly Earnings (USA): 3.1% (forecast 3.0%, previous 3.2%)",
-   "titleDe": "Durchschnittslöhne (USA): 3.1% (Prognose 3.0%, zuvor 3.2%)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/united-states/average-hourly-earnings-yoy",
-   "date": "2026-09-04T12:30:00.000Z",
-   "tags": [
-    "Daten",
-    "Makro"
-   ],
-   "impact": "medium",
-   "kind": "macro",
-   "event": "Durchschnittslöhne",
-   "eventEn": "Average Hourly Earnings",
-   "region": "USA",
-   "channel": "inflation",
-   "actual": "3.1%",
-   "consensus": "3.0%",
-   "previous": "3.2%",
-   "surprise": 0.10000000000000009,
-   "hawkish": 0.258,
-   "scores": {
-    "crypto": -0.258,
-    "stocks": -0.219,
-    "gold": -0.206,
-    "usd": 0.258
-   },
-   "why": "Durchschnittslöhne (USA): 3.1 gegenüber 3 erwartet — über Prognose. Inflationsdruck fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
-   "whyEn": "Average Hourly Earnings (USA): 3.1 versus 3 expected — above forecast. Inflation pressure therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
-   "category": "us-data",
-   "categoryLabel": "US-Daten",
-   "priority": 79,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": "Durchschnittslöhne",
-   "eventTypeEn": "Durchschnittslöhne",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
-   "id": "cal:United States Non Farm Payrolls:2026-09-04T12:30:00.000Z",
-   "title": "Non-Farm Payrolls (USA): 162.0K (forecast 56.0K, previous 21.0K)",
-   "titleDe": "Non-Farm Payrolls (USA): 162.0K (Prognose 56.0K, zuvor 21.0K)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/united-states/non-farm-payrolls",
-   "date": "2026-09-04T12:30:00.000Z",
-   "tags": [
-    "Daten",
-    "Market Moving"
-   ],
-   "impact": "high",
-   "kind": "macro",
-   "event": "Non-Farm Payrolls",
-   "eventEn": "Non-Farm Payrolls",
-   "region": "USA",
-   "channel": "growth",
-   "actual": "162.0K",
-   "consensus": "56.0K",
-   "previous": "21.0K",
-   "surprise": 106,
-   "hawkish": 0.89,
-   "scores": {
-    "crypto": -0.89,
-    "stocks": -0.757,
-    "gold": -0.712,
-    "usd": 0.89
-   },
-   "why": "Non-Farm Payrolls (USA): 162 gegenüber 56 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
-   "whyEn": "Non-Farm Payrolls (USA): 162 versus 56 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
-   "category": "us-data",
-   "categoryLabel": "US-Daten",
-   "priority": 100,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "extreme",
-   "duration": "intraday",
-   "eventType": "Non-Farm Payrolls",
-   "eventTypeEn": "Non-Farm Payrolls",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
-   "id": "cal:United States U-6 Unemployment Rate:2026-09-04T12:30:00.000Z",
-   "title": "U-6 Unemployment Rate (USA): 7.7% (forecast 8.0%, previous 7.9%)",
-   "titleDe": "U-6 Arbeitslosenquote (USA): 7.7% (Prognose 8.0%, zuvor 7.9%)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/united-states/u-6-unemployment-rate",
-   "date": "2026-09-04T12:30:00.000Z",
-   "tags": [
-    "Daten",
-    "Market Moving"
-   ],
-   "impact": "high",
-   "kind": "macro",
-   "event": "U-6 Arbeitslosenquote",
-   "eventEn": "U-6 Unemployment Rate",
-   "region": "USA",
-   "channel": "growth",
-   "actual": "7.7%",
-   "consensus": "8.0%",
-   "previous": "7.9%",
-   "surprise": -0.2999999999999998,
-   "hawkish": 0.227,
-   "scores": {
-    "crypto": -0.227,
-    "stocks": -0.193,
-    "gold": -0.181,
-    "usd": 0.227
-   },
-   "why": "U-6 Arbeitslosenquote (USA): 7.7 gegenüber 8 erwartet — unter Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
-   "whyEn": "U-6 Unemployment Rate (USA): 7.7 versus 8 expected — below forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
-   "category": "us-data",
-   "categoryLabel": "US-Daten",
-   "priority": 97,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": "U-6 Arbeitslosenquote",
-   "eventTypeEn": "U-6 Arbeitslosenquote",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
-   "id": "cal:United States Government Payrolls:2026-09-04T12:30:00.000Z",
-   "title": "Payrolls (component) (USA): 35.0K (forecast -11.0K, previous -50.0K)",
-   "titleDe": "Payrolls (Teilbereich) (USA): 35.0K (Prognose -11.0K, zuvor -50.0K)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/united-states/government-payrolls",
-   "date": "2026-09-04T12:30:00.000Z",
-   "tags": [
-    "Daten",
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "macro",
-   "event": "Payrolls (Teilbereich)",
-   "eventEn": "Payrolls (component)",
-   "region": "USA",
-   "channel": "growth",
-   "actual": "35.0K",
-   "consensus": "-11.0K",
-   "previous": "-50.0K",
-   "surprise": 46,
-   "hawkish": 0.3,
-   "scores": {
-    "crypto": -0.3,
-    "stocks": -0.255,
-    "gold": -0.24,
-    "usd": 0.3
-   },
-   "why": "Payrolls (Teilbereich) (USA): 35 gegenüber -11 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
-   "whyEn": "Payrolls (component) (USA): 35 versus -11 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
-   "category": "us-data",
-   "categoryLabel": "US-Daten",
-   "priority": 68,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": "Payrolls (Teilbereich)",
-   "eventTypeEn": "Payrolls (Teilbereich)",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
-   "id": "cal:United States Nonfarm Payrolls Private:2026-09-04T12:30:00.000Z",
-   "title": "Private Payrolls (USA): 127.0K (forecast 45.0K, previous 71.0K)",
-   "titleDe": "Private Payrolls (USA): 127.0K (Prognose 45.0K, zuvor 71.0K)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/united-states/nonfarm-payrolls-private",
-   "date": "2026-09-04T12:30:00.000Z",
-   "tags": [
-    "Daten",
-    "Market Moving"
-   ],
-   "impact": "high",
-   "kind": "macro",
-   "event": "Private Payrolls",
-   "eventEn": "Private Payrolls",
-   "region": "USA",
-   "channel": "growth",
-   "actual": "127.0K",
-   "consensus": "45.0K",
-   "previous": "71.0K",
-   "surprise": 82,
-   "hawkish": 0.465,
-   "scores": {
-    "crypto": -0.465,
-    "stocks": -0.395,
-    "gold": -0.372,
-    "usd": 0.465
-   },
-   "why": "Private Payrolls (USA): 127 gegenüber 45 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
-   "whyEn": "Private Payrolls (USA): 127 versus 45 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
-   "category": "us-data",
-   "categoryLabel": "US-Daten",
-   "priority": 100,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "high",
-   "duration": "intraday",
-   "eventType": "Private Payrolls",
-   "eventTypeEn": "Private Payrolls",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
-   "id": "cal:United States Participation Rate:2026-09-04T12:30:00.000Z",
-   "title": "Participation Rate (USA): 61.6% (forecast 61.4%, previous 61.4%)",
-   "titleDe": "Erwerbsquote (USA): 61.6% (Prognose 61.4%, zuvor 61.4%)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/united-states/participation-rate",
-   "date": "2026-09-04T12:30:00.000Z",
-   "tags": [
-    "Daten",
-    "Makro"
-   ],
-   "impact": "medium",
-   "kind": "macro",
-   "event": "Erwerbsquote",
-   "eventEn": "Participation Rate",
-   "region": "USA",
-   "channel": "growth",
-   "actual": "61.6%",
-   "consensus": "61.4%",
-   "previous": "61.4%",
-   "surprise": 0.20000000000000284,
-   "hawkish": 0.023,
-   "scores": {
-    "crypto": -0.023,
-    "stocks": -0.019,
-    "gold": -0.018,
-    "usd": 0.023
-   },
-   "why": "Erwerbsquote (USA): 61.6 gegenüber 61.4 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
-   "whyEn": "Participation Rate (USA): 61.6 versus 61.4 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
-   "category": "us-data",
-   "categoryLabel": "US-Daten",
-   "priority": 76,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Erwerbsquote",
-   "eventTypeEn": "Erwerbsquote",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
   },
   {
    "id": "FXStreet:European Central Bank: Inflation-driven hike prospects – DBS",
@@ -2082,7 +1843,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 66,
+   "priority": 65,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "medium",
@@ -2352,7 +2113,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: tightening)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 77,
+   "priority": 76,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "high",
@@ -2385,7 +2146,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2432,40 +2193,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Trezor sagt, dass ShipMonk weitere 67.000 Kunden betroffen hat"
-  },
-  {
-   "id": "CNBC Economy:The big business of personal protection: How private security became a $50 billion industry",
-   "title": "The big business of personal protection: How private security became a $50 billion industry",
-   "source": "CNBC Economy",
-   "url": "https://www.cnbc.com/2026/09/04/private-security-spending-crime-allied-universal.html",
-   "date": "2026-09-04T11:57:48.000Z",
-   "tags": [
-    "US-Wirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 28,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ]
   },
   {
    "id": "BBC World:UK support for Falkland Islands 'unwavering' after Argentina restates claims, No 10 says",
@@ -2789,7 +2516,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 47,
+   "priority": 46,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -3000,7 +2727,7 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 52,
+   "priority": 51,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -3339,7 +3066,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Notional Finance Hit by $ 1.7 Million Exploit From Integer Overflow Bug"
   },
   {
    "id": "FXStreet:AUD/USD Price Forecast: On track to revisit four-year high near 0.7280",
@@ -3496,7 +3224,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3529,7 +3257,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3645,7 +3373,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Zcash springt um 20% auf das Niveau von 1.000 $, da Leerverkäufer 34 Millionen $ verlieren"
   },
   {
    "id": "BeInCrypto:Your Exchange Is Selling ‘Fake Bitcoins,' Says the Bitcoin Knots Developer",
@@ -3849,7 +3578,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Argentiniens Milei droht mit Sanktionen, da er sich wieder auf die Falklandinseln konzentriert"
   },
   {
    "id": "Al Jazeera:‘Build The Wall’: White House arcade games face backlash",
@@ -3872,7 +3602,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4178,7 +3908,8 @@
    "eventTypeEn": "Price prediction",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Goldpreisprognose: XAU/USD-Erholung stagniert unter 4.500 $ in Erwartung der US-Nonfarm-Gehaltslisten"
   },
   {
    "id": "CoinDesk:IMF confirms El Salvador’s bitcoin growth was funded by private donations, not public money",
@@ -4245,7 +3976,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "US-Dollar-Index: Zwei-Wege-Risiken innerhalb des bärischen Kanals – OCBC"
   },
   {
    "id": "The Block:South Korea to start tokenizing ‘all types’ of securities in three stages from 2027",
@@ -4304,7 +4036,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -4340,7 +4072,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -4405,7 +4137,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4439,7 +4171,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4659,49 +4391,6 @@
    "titleDe": "Binance fügt Überwachungs-Tag zu 4 Token hinzu und signalisiert das Delisting-Risiko"
   },
   {
-   "id": "cal:Euro Area Retail Sales MoM:2026-09-04T09:00:00.000Z",
-   "title": "Retail Sales (Eurozone): -0.6% (forecast 0.3%, previous 0.2%)",
-   "titleDe": "Einzelhandelsumsätze (Eurozone): -0.6% (Prognose 0.3%, zuvor 0.2%)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/euro-area/retail-sales-mom",
-   "date": "2026-09-04T09:00:00.000Z",
-   "tags": [
-    "Daten",
-    "Market Moving"
-   ],
-   "impact": "high",
-   "kind": "macro",
-   "event": "Einzelhandelsumsätze",
-   "eventEn": "Retail Sales",
-   "region": "Eurozone",
-   "channel": "growth",
-   "actual": "-0.6%",
-   "consensus": "0.3%",
-   "previous": "0.2%",
-   "surprise": -0.8999999999999999,
-   "hawkish": -0.3,
-   "scores": {
-    "crypto": 0.3,
-    "stocks": 0.255,
-    "gold": 0.24,
-    "usd": -0.3
-   },
-   "why": "Einzelhandelsumsätze (Eurozone): -0.6 gegenüber 0.3 erwartet — unter Prognose. Konjunktur fällt damit schwächer aus als eingepreist. Die Fed bekommt damit Spielraum für lockerere Geldpolitik. Sinkende Zinserwartungen bedeuten mehr Liquidität — das stützt Krypto und Aktien und schwächt den Dollar.",
-   "whyEn": "Retail Sales (Eurozone): -0.6 versus 0.3 expected — below forecast. Economic activity therefore comes in weaker than priced in. That gives the Fed room to ease. Falling rate expectations mean more liquidity — supportive for crypto and equities, negative for the dollar.",
-   "category": "global-data",
-   "categoryLabel": "Weltdaten",
-   "priority": 32,
-   "label": "bullish",
-   "labelText": "Bullish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": "Einzelhandelsumsätze",
-   "eventTypeEn": "Einzelhandelsumsätze",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
    "id": "U.Today:Satoshi-Era Bitcoin Holder Moves 2,571,899% Gain to Thwart New York Court Case",
    "title": "Satoshi-Era Bitcoin Holder Moves 2,571,899% Gain to Thwart New York Court Case",
    "source": "U.Today",
@@ -4913,49 +4602,6 @@
    "alsoIn": []
   },
   {
-   "id": "cal:Italy Retail Sales YoY:2026-09-04T08:00:00.000Z",
-   "title": "Retail Sales (Global): 0.8% (forecast 3.0%, previous 3.1%)",
-   "titleDe": "Einzelhandelsumsätze (Global): 0.8% (Prognose 3.0%, zuvor 3.1%)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/italy/retail-sales-yoy",
-   "date": "2026-09-04T08:00:00.000Z",
-   "tags": [
-    "Daten",
-    "Market Moving"
-   ],
-   "impact": "high",
-   "kind": "macro",
-   "event": "Einzelhandelsumsätze",
-   "eventEn": "Retail Sales",
-   "region": "Global",
-   "channel": "growth",
-   "actual": "0.8%",
-   "consensus": "3.0%",
-   "previous": "3.1%",
-   "surprise": -2.2,
-   "hawkish": -0.15,
-   "scores": {
-    "crypto": 0.15,
-    "stocks": 0.128,
-    "gold": 0.12,
-    "usd": -0.15
-   },
-   "why": "Einzelhandelsumsätze (Global): 0.8 gegenüber 3 erwartet — unter Prognose. Konjunktur fällt damit schwächer aus als eingepreist. Die Fed bekommt damit Spielraum für lockerere Geldpolitik. Sinkende Zinserwartungen bedeuten mehr Liquidität — das stützt Krypto und Aktien und schwächt den Dollar.",
-   "whyEn": "Retail Sales (Global): 0.8 versus 3 expected — below forecast. Economic activity therefore comes in weaker than priced in. That gives the Fed room to ease. Falling rate expectations mean more liquidity — supportive for crypto and equities, negative for the dollar.",
-   "category": "global-data",
-   "categoryLabel": "Weltdaten",
-   "priority": 28,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Einzelhandelsumsätze",
-   "eventTypeEn": "Einzelhandelsumsätze",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
    "id": "The Block:AMC stock jumps 21% overnight as CEO slams Robinhood over ‘outrageous’ tokenized shares",
    "title": "AMC stock jumps 21% overnight as CEO slams Robinhood over ‘outrageous’ tokenized shares",
    "source": "The Block",
@@ -5048,7 +4694,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -5196,7 +4842,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -5273,7 +4919,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Zverev geht weit, um in die dritte Runde zu kratzen, da Upsets die US Open rocken"
   },
   {
    "id": "BBC World:100 influencers invited to US Open spark debate on 'tennis etiquette'",
@@ -5305,7 +4952,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "100 Influencer zur US Open Spark Debatte über \"Tennis-Etikette\" eingeladen"
   },
   {
    "id": "BeInCrypto:Oura IPO Could Hit $16 Billion Valuation as Revenue Jumps 74%",
@@ -5332,7 +4980,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "ignore",
@@ -5398,7 +5046,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5506,7 +5154,7 @@
    "whyEn": "Directly crypto-positive news. (signals: accumulation)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 47,
+   "priority": 46,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -5593,49 +5241,6 @@
    "titleDe": "Ripple's Garlinghouse: Die Krypto-Hauptstadt der Welt ist \"in Reichweite\""
   },
   {
-   "id": "cal:Germany Factory Orders MoM:2026-09-04T06:00:00.000Z",
-   "title": "Factory Orders (Global): 2.5% (forecast 0.3%, previous 3.7%)",
-   "titleDe": "Auftragseingang Industrie (Global): 2.5% (Prognose 0.3%, zuvor 3.7%)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/germany/factory-orders-mom",
-   "date": "2026-09-04T06:00:00.000Z",
-   "tags": [
-    "Daten",
-    "Makro"
-   ],
-   "impact": "medium",
-   "kind": "macro",
-   "event": "Auftragseingang Industrie",
-   "eventEn": "Factory Orders",
-   "region": "Global",
-   "channel": "growth",
-   "actual": "2.5%",
-   "consensus": "0.3%",
-   "previous": "3.7%",
-   "surprise": 2.2,
-   "hawkish": 0.14,
-   "scores": {
-    "crypto": -0.14,
-    "stocks": -0.119,
-    "gold": -0.112,
-    "usd": 0.14
-   },
-   "why": "Auftragseingang Industrie (Global): 2.5 gegenüber 0.3 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
-   "whyEn": "Factory Orders (Global): 2.5 versus 0.3 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
-   "category": "global-data",
-   "categoryLabel": "Weltdaten",
-   "priority": 24,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Auftragseingang Industrie",
-   "eventTypeEn": "Auftragseingang Industrie",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
    "id": "CNBC World:India’s June quarter GDP print is courting controversy. Here’s why",
    "title": "India’s June quarter GDP print is courting controversy. Here’s why",
    "source": "CNBC World",
@@ -5690,7 +5295,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5722,7 +5327,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5754,7 +5359,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 38,
+   "priority": 37,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5765,7 +5370,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Eine volle Bitcoin kauft jetzt etwas mehr als 18 Unzen Gold, die meisten seit Januar"
   },
   {
    "id": "CNBC World:Shein has made a shaky stock market entry. Can it get its mojo back?",
@@ -5797,9 +5403,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ]
+   "alsoIn": []
   },
   {
    "id": "BBC World:Watch: Moment workers are rescued from Nepal tunnel",
@@ -5854,7 +5458,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 37,
+   "priority": 36,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5863,7 +5467,8 @@
    "eventTypeEn": "Product announcement",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "USA, Großbritannien starten eine gemeinsame Allianz, die auf Krypto-Betrugszentren abzielt"
   },
   {
    "id": "CoinDesk:Bitcoin back above $81,000 as hike odds fade, Zcash leads with 15% jump",
@@ -5966,7 +5571,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Die US-Bankagentur gibt der Blockchain-Bank OpenReserve das anfängliche OK für den Betrieb"
   },
   {
    "id": "CNBC:Trump-promoted Freedom Fuel expands to Detroit as lawsuit over supplier's unpaid fuel heats up",
@@ -6030,7 +5636,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "AMC CEO sprengt Robinhood für Aktien-Token und rückt synthetische Aktien ins Rampenlicht"
   },
   {
    "id": "BBC World:Nepal says it will need billions in funding to rebuild after flash floods",
@@ -6085,7 +5692,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6153,7 +5760,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -6299,7 +5906,8 @@
     "ETH",
     "XRP"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "XRP springt um 3% auf BIS Ledger Test, Ethereum Pre-Golden Cross Points Höher als Tron TVL Hits $ 28 Billion: Crypto Market Review"
   },
   {
    "id": "Cointelegraph:Tether sued over frozen ‘pig butcher’ coins, 6,600 students get crypto loans: Asia Express",
@@ -6703,7 +6311,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Bitcoin steigt über den gleitenden Schlüssel-Durchschnitt, Schlüsselwiderstand steht kurz vor dem Knacken"
   },
   {
    "id": "Decrypt:Bernie Sanders Pushes Bill to Ban Advanced AI Development",
@@ -6771,7 +6380,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Die Krypto-Marktkapitalisierung steigt auf 2,82 Billionen $, da Zcash neben Aktien eine Rallye anführt"
   },
   {
    "id": "CNBC World:ChargePoint CEO says 70% stock surge 'is the beginning of the momentum'",
@@ -7334,7 +6944,8 @@
    "coins": [
     "XRP"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "XRP verzeichnet abnormes ETF-Ungleichgewicht, da ausgewählte US-Fonds den Token-Anstieg um 100 % übertreffen"
   },
   {
    "id": "CNBC World:Hugging Face approached Nvidia’s Huang weeks ahead of $12.9B acquisition, CEO tells CNBC",
@@ -8555,7 +8166,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Live-Updates: Bitcoin springt über 81.000 $, wenn die Kurse fallen und der Dollar schwächer wird"
   },
   {
    "id": "U.Today:Solana, XRP, Ethereum ETFs in Red as Bitcoin ETF Adds $100 Million",
@@ -8630,7 +8242,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Bitcoin erholt sich in Richtung 78.000 $, da Pons und Arbitrum die Robinhood-Chain-Rallye verlängern"
   },
   {
    "id": "Cointelegraph:Standard Chartered launches spot Bitcoin and Ether trading in UAE",
@@ -8729,7 +8342,8 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Ukraine Zerschlägt Kiew Krypto-Abtropfer-Ring Bewegt sich auf bis zu $ 1M Monatlich"
   },
   {
    "id": "Cointelegraph:Coldcard hacker swaps stolen Bitcoin for ETH via THORChain",
@@ -8768,7 +8382,8 @@
     "BTC",
     "ETH"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Coldcard-Hacker tauscht gestohlenen Bitcoin gegen ETH über THORChain aus"
   },
   {
    "id": "Cointelegraph:Kalshi seeks CFTC approval for WTI crude perpetual futures: Report",
@@ -9000,7 +8615,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Pons (PONS) -Markensprünge über 500 Millionen $: Erklären, warum"
   },
   {
    "id": "Cointelegraph:Australia warns unlicensed crypto firms of fines up to 10% of annual turnover",
@@ -9072,41 +8688,8 @@
     "ETH",
     "XRP"
    ],
-   "alsoIn": []
-  },
-  {
-   "id": "CoinDesk:Bitcoin’s fabled golden cross is coming. And USDT may be the real signal this time",
-   "title": "Bitcoin’s fabled golden cross is coming. And USDT may be the real signal this time",
-   "source": "CoinDesk",
-   "url": "https://www.coindesk.com/markets/2026/09/03/bitcoin-s-fabled-golden-cross-is-coming-and-usdt-may-be-the-real-signal-this-time",
-   "date": "2026-09-03T07:01:28.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "BTC"
-   ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Ether-, XRP-ETF-Zuflussstreifen enden, wenn sich die Bitcoin-Fonds erholen"
   },
   {
    "id": "U.Today:XRP Is Most Asked-About Crypto in Wealth Manager Meetings, Bitwise Claims",
@@ -9238,7 +8821,8 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Chinas Verlangsamung treibt neuseeländische Exporteure dazu, sich von ihrem Top-Käufer zu diversifizieren, sagt ein Beamter von RBNZ gegenüber CNBC"
   },
   {
    "id": "The Block:Michigan court orders Kalshi to keep blocking sports prediction markets",
@@ -9796,40 +9380,6 @@
    "alsoIn": []
   },
   {
-   "id": "U.Today:BIS Finds New Use Case for XRP Ledger",
-   "title": "BIS Finds New Use Case for XRP Ledger",
-   "source": "U.Today",
-   "url": "https://u.today/bis-finds-new-use-case-for-xrp-ledger",
-   "date": "2026-09-02T20:31:02.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "XRP"
-   ],
-   "alsoIn": []
-  },
-  {
    "id": "Decrypt:Goldman Sachs, BofA Among 21 Banks Planning Joint Dollar Stablecoin Launch",
    "title": "Goldman Sachs, BofA Among 21 Banks Planning Joint Dollar Stablecoin Launch",
    "source": "Decrypt",
@@ -9931,7 +9481,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Steht Bitcoin kurz vor dem Flash-Crash? Was ein \"Bart Simpson\" -Muster eigentlich bedeuten würde"
   },
   {
    "id": "The Block:New Jersey asks Supreme Court to decide who regulates sports betting on prediction markets",
@@ -10228,6 +9779,372 @@
    "scope": "market",
    "coins": [],
    "alsoIn": []
+  },
+  {
+   "id": "CNBC Economy:India’s economy expands 7.8% in fiscal first quarter, beating estimates",
+   "title": "India’s economy expands 7.8% in fiscal first quarter, beating estimates",
+   "source": "CNBC Economy",
+   "url": "https://www.cnbc.com/2026/08/31/india-economy-gdp-energy-el-nino.html",
+   "date": "2026-08-31T11:23:42.000Z",
+   "tags": [
+    "US-Wirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 6,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "CNBC Economy:China's factory activity shrinks for second straight month, contracting less than expected",
+   "title": "China's factory activity shrinks for second straight month, contracting less than expected",
+   "source": "CNBC Economy",
+   "url": "https://www.cnbc.com/2026/08/31/china-pmi-august-economy-slowdown.html",
+   "date": "2026-08-31T03:15:01.000Z",
+   "tags": [
+    "US-Wirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 36,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Chinas Fabrikaktivität schrumpft im zweiten Monat in Folge und schrumpft weniger als erwartet"
+  },
+  {
+   "id": "CNBC Economy:Singapore tackles finances and culture to avert a demographic crisis",
+   "title": "Singapore tackles finances and culture to avert a demographic crisis",
+   "source": "CNBC Economy",
+   "url": "https://www.cnbc.com/2026/08/31/singapore-ndr-childcare-incentives-demographic-crisis-.html",
+   "date": "2026-08-30T23:31:15.000Z",
+   "tags": [
+    "US-Wirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 6,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "CNBC Economy:K, C or E? Why economists can’t agree on the shape of today’s economy",
+   "title": "K, C or E? Why economists can’t agree on the shape of today’s economy",
+   "source": "CNBC Economy",
+   "url": "https://www.cnbc.com/2026/08/29/k-shaped-economy-c-shaped-e-shape.html",
+   "date": "2026-08-29T20:22:12.000Z",
+   "tags": [
+    "US-Wirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 6,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "CNBC Economy:Fed Chairman Warsh expresses concern about inflation, advocates for 'quieter' central bank",
+   "title": "Fed Chairman Warsh expresses concern about inflation, advocates for 'quieter' central bank",
+   "source": "CNBC Economy",
+   "url": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html",
+   "date": "2026-08-28T16:11:51.000Z",
+   "tags": [
+    "US-Wirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "fed",
+   "categoryLabel": "Notenbank",
+   "priority": 46,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Fed-Vorsitzender Warsh äußert sich besorgt über die Inflation und befürwortet eine „ruhigere“ Zentralbank"
+  },
+  {
+   "id": "CNBC Economy:Fed's Hammack says 'now is the time to act' on raising interest rates",
+   "title": "Fed's Hammack says 'now is the time to act' on raising interest rates",
+   "source": "CNBC Economy",
+   "url": "https://www.cnbc.com/2026/08/27/feds-hammack-says-now-is-the-time-to-act-on-raising-interest-rates.html",
+   "date": "2026-08-27T17:31:09.000Z",
+   "tags": [
+    "US-Wirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "fed",
+   "categoryLabel": "Notenbank",
+   "priority": 46,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Fed's Hammack sagt \"jetzt ist die Zeit zu handeln\", um die Zinssätze zu erhöhen"
+  },
+  {
+   "id": "Federal Reserve:Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+   "title": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+   "source": "Federal Reserve",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260827a.htm",
+   "date": "2026-08-27T15:00:00.000Z",
+   "tags": [
+    "Fed"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Regulierungsdruck"
+   ],
+   "scores": {
+    "crypto": -0.6,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "why": "Direkt kryptonegative Nachricht. (Signale: Regulierungsdruck)",
+   "whyEn": "Directly crypto-negative news. (signals: regulatory pressure)",
+   "category": "fed",
+   "categoryLabel": "Notenbank",
+   "priority": 56,
+   "label": "strong_bearish",
+   "labelText": "Stark Bearish",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Das Federal Reserve Board ergreift Durchsetzungsmaßnahmen mit dem ehemaligen Mitarbeiter der Banco Popular de Puerto Rico"
+  },
+  {
+   "id": "CNBC Economy:Fed’s preferred inflation gauge shows core prices rose 3.3% annually in July",
+   "title": "Fed’s preferred inflation gauge shows core prices rose 3.3% annually in July",
+   "source": "CNBC Economy",
+   "url": "https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html",
+   "date": "2026-08-26T13:35:50.000Z",
+   "tags": [
+    "US-Wirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "fed",
+   "categoryLabel": "Notenbank",
+   "priority": 46,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Der bevorzugte Inflationsmesser der Fed zeigt, dass die Kernpreise im Juli jährlich um 3,3 % gestiegen sind"
+  },
+  {
+   "id": "Federal Reserve:Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+   "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+   "source": "Federal Reserve",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
+   "date": "2026-08-25T18:00:00.000Z",
+   "tags": [
+    "Fed"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 6,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "CNBC Economy:Stanley Druckenmiller leads doubters who think Bessent's bond ploys will fail",
+   "title": "Stanley Druckenmiller leads doubters who think Bessent's bond ploys will fail",
+   "source": "CNBC Economy",
+   "url": "https://www.cnbc.com/2026/08/25/stanley-druckenmiller-leads-doubters-who-think-bessents-bond-ploys-will-fail.html",
+   "date": "2026-08-25T17:15:50.000Z",
+   "tags": [
+    "US-Wirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 6,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "CNBC Economy:China needs U.S. dollars but is building a hedge against Washington’s sanctions",
+   "title": "China needs U.S. dollars but is building a hedge against Washington’s sanctions",
+   "source": "CNBC Economy",
+   "url": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html",
+   "date": "2026-08-25T16:00:40.000Z",
+   "tags": [
+    "US-Wirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Handelskonflikt"
+   ],
+   "scores": {
+    "crypto": -0.405,
+    "stocks": -0.405,
+    "gold": 0.203,
+    "usd": 0.135
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Handelskonflikt)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 42,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "China braucht US-Dollar, baut aber eine Absicherung gegen Washingtons Sanktionen auf"
   }
  ],
  "uebersetzung": {
