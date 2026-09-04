@@ -139,11 +139,15 @@ Scalper.
 
 Drei Kanäle, einzeln zuschaltbar:
 
-| Kanal | Funktioniert bei geschlossener App | Einrichtung |
-|---|---|---|
-| **Browser** | nur wenn als PWA installiert | ein Klick |
-| **Telegram** | ja, über den Worker | Bot-Token + Chat-ID |
-| **Discord** | ja, über den Worker | Webhook-Adresse |
+| Kanal | Bei geschlossener App | Ohne Worker | Einrichtung |
+|---|---|---|---|
+| **ntfy** | ja, über den Worker | ja | nur ein Themenname |
+| **Telegram** | ja, über den Worker | ja | Bot-Token + Chat-ID |
+| **Discord** | ja, über den Worker | nein | Webhook-Adresse |
+| **Browser** | nein | — | ein Klick |
+
+ntfy ist der einfachste Weg: kein Konto, kein Bot, eigene App mit eigenem
+Symbol je Richtung (📈 bullish, 📉 bearish, 🚀 stark bullish, 🚨 stark bearish).
 
 Telegram und Discord laufen bewusst über den Cloudflare Worker: Nur der kann
 zustellen, während die App geschlossen ist — und das ist der Normalfall, wenn
@@ -167,7 +171,21 @@ geöffnet ist. Erst der Worker stellt auch bei geschlossener App zu. Discord
 braucht den Worker in jedem Fall, weil dessen Webhooks keine Browser-Aufrufe
 annehmen.
 
-**Discord einrichten:** Serveinstellungen → Integrationen → Webhooks → Neuer
+**ntfy einrichten (empfohlen):** Braucht weder Konto noch Bot — nur einen
+selbst gewählten Themennamen. Eigene App, eigenes Symbol je Richtung, damit
+Marktmeldungen von privaten Nachrichten unterscheidbar bleiben.
+
+```bash
+node scripts/ntfy-setup.mjs
+```
+
+Das Skript erzeugt einen sicheren Zufallsnamen und verschickt drei
+Testnachrichten in den Stufen, die die App später nutzt. Danach den Namen in
+der ntfy-App abonnieren und in den Einstellungen eintragen. Der Themenname ist
+zugleich das Zugangsgeheimnis: Wer ihn kennt, liest mit — deshalb nichts
+Erratbares wählen.
+
+**Discord einrichten:** Servereinstellungen → Integrationen → Webhooks → Neuer
 Webhook → Adresse kopieren.
 
 > Damit Benachrichtigungen einen Neustart des Workers überleben, empfiehlt sich
