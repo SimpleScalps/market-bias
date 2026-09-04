@@ -33,6 +33,10 @@ jobs:
           # 'policy' = Zinskanal (starke Daten sind schlecht für Krypto)
           # 'growth' = Wachstumskanal (starke Daten sind gut für Krypto)
           REGIME: policy
+          # Optional, hebt das Übersetzungskontingent an. Beide leer lassen
+          # heißt: rund 60 Schlagzeilen pro Tag werden übersetzt.
+          DEEPL_KEY: ${{ secrets.DEEPL_KEY }}
+          TRANSLATE_EMAIL: ${{ secrets.TRANSLATE_EMAIL }}
 
       - name: Änderungen committen
         run: |

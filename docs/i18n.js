@@ -43,6 +43,25 @@ window.I18N = {
     zinskanal: 'ZINSKANAL', wachstumskanal: 'WACHSTUMSKANAL',
     quellenFehler: (n) => `${n} Quelle(n) nicht erreichbar`,
     haftung: 'Regelbasierte Ersteinordnung, keine Anlageberatung.',
+
+    tradingImpact: 'Trading Impact', erwarteteDauer: 'Erwartete Dauer',
+    impact: { ignore: 'IGNORIEREN', low: 'GERING', medium: 'MITTEL', high: 'HOCH', extreme: 'EXTREM' },
+    dauer: { scalp: 'SCALP < 1 STD', intraday: 'INTRADAY 1–24 STD', swing: 'SWING 1–7 TAGE', long: 'LANGFRISTIG > 7 TAGE' },
+    ereignisTyp: 'Ereignistyp',
+
+    profil: 'Trading-Profil',
+    profilAn: 'Nur was für meinen Handel zählt',
+    profilAus: 'Alle Meldungen zeigen',
+    stil: 'Stil', zeitrahmen: 'Zeitrahmen', muenzen: 'Coins',
+    stilOpt: { scalping: 'Scalping', intraday: 'Intraday', swing: 'Swing', longterm: 'Langfristig' },
+    profilHinweis: 'Blendet aus, was auf deinem Zeitrahmen nicht handelbar ist — Projekt-Updates, Kursprognosen und alles, was nur andere Coins betrifft. Extremereignisse kommen immer durch.',
+    profilAktivHinweis: (n, g) => `${n} von ${g} Meldungen passen zu deinem Profil.`,
+
+    kanaele: 'Kanäle', browser: 'Browser', telegram: 'Telegram', discord: 'Discord',
+    telegramHinweis: 'Bot-Token und Chat-ID. Der Worker verschickt die Nachricht, damit sie auch bei geschlossener App ankommt.',
+    discordHinweis: 'Webhook-Adresse deines Servers.',
+    kanalNurMitWorker: 'Braucht den Cloudflare Worker (siehe Live-Quelle).',
+    testen: 'Test senden', gesendet: 'Gesendet', fehlgeschlagen: 'Fehlgeschlagen',
   },
 
   en: {
@@ -87,5 +106,24 @@ window.I18N = {
     zinskanal: 'RATE CHANNEL', wachstumskanal: 'GROWTH CHANNEL',
     quellenFehler: (n) => `${n} source(s) unreachable`,
     haftung: 'Rule-based first read, not investment advice.',
+
+    tradingImpact: 'Trading impact', erwarteteDauer: 'Expected duration',
+    impact: { ignore: 'IGNORE', low: 'LOW', medium: 'MEDIUM', high: 'HIGH', extreme: 'EXTREME' },
+    dauer: { scalp: 'SCALP < 1H', intraday: 'INTRADAY 1–24H', swing: 'SWING 1–7 DAYS', long: 'LONG-TERM > 7 DAYS' },
+    ereignisTyp: 'Event type',
+
+    profil: 'Trading profile',
+    profilAn: 'Only what matters to my trading',
+    profilAus: 'Show all items',
+    stil: 'Style', zeitrahmen: 'Timeframe', muenzen: 'Coins',
+    stilOpt: { scalping: 'Scalping', intraday: 'Intraday', swing: 'Swing', longterm: 'Long-term' },
+    profilHinweis: 'Hides what is not tradable on your timeframe — project updates, price predictions and anything about other coins. Extreme events always get through.',
+    profilAktivHinweis: (n, g) => `${n} of ${g} items match your profile.`,
+
+    kanaele: 'Channels', browser: 'Browser', telegram: 'Telegram', discord: 'Discord',
+    telegramHinweis: 'Bot token and chat ID. The worker sends the message so it arrives even when the app is closed.',
+    discordHinweis: 'Webhook address of your server.',
+    kanalNurMitWorker: 'Requires the Cloudflare Worker (see live source).',
+    testen: 'Send test', gesendet: 'Sent', fehlgeschlagen: 'Failed',
   },
 };

@@ -69,6 +69,11 @@
         <span class="meter"><i></i></span>
         <span class="badge"></span>
       </div>
+      <div class="trade">
+        <span class="impact"></span>
+        <span class="dauer"></span>
+        <span class="etyp"></span>
+      </div>
       <p class="src"></p>
     </button>
     <div class="why" hidden>
@@ -106,6 +111,48 @@
       </div>
 
       <div class="feld">
+        <label id="lProfil">Trading-Profil</label>
+        <div class="wahl" id="profilAn">
+          <button data-profil="aus">Alle Meldungen</button>
+          <button data-profil="an">Nur was zählt</button>
+        </div>
+        <div id="profilDetails" hidden>
+          <div class="unterfeld">
+            <span id="lStil">Stil</span>
+            <div class="wahl klein" id="stil">
+              <button data-stil="scalping">Scalping</button>
+              <button data-stil="intraday">Intraday</button>
+              <button data-stil="swing">Swing</button>
+              <button data-stil="longterm">Langfristig</button>
+            </div>
+          </div>
+          <div class="unterfeld">
+            <span id="lZeit">Zeitrahmen</span>
+            <div class="wahl klein" id="tf">
+              <button data-tf="1m">1m</button>
+              <button data-tf="3m">3m</button>
+              <button data-tf="5m">5m</button>
+              <button data-tf="15m">15m</button>
+              <button data-tf="1h">1h</button>
+              <button data-tf="4h">4h</button>
+            </div>
+          </div>
+          <div class="unterfeld">
+            <span id="lCoins">Coins</span>
+            <div class="wahl klein" id="coins">
+              <button data-coin="BTC">BTC</button>
+              <button data-coin="ETH">ETH</button>
+              <button data-coin="SOL">SOL</button>
+              <button data-coin="XRP">XRP</button>
+              <button data-coin="BNB">BNB</button>
+              <button data-coin="DOGE">DOGE</button>
+            </div>
+          </div>
+        </div>
+        <p class="hinweis" id="hProfil"></p>
+      </div>
+
+      <div class="feld">
         <label id="lBenach">Benachrichtigungen</label>
         <div class="wahl" id="benach">
           <button data-notify="off">Aus</button>
@@ -113,6 +160,28 @@
           <button data-notify="direction">Mit Richtung</button>
         </div>
         <p class="hinweis" id="hBenach"></p>
+
+        <div id="kanaele" hidden>
+          <div class="unterfeld">
+            <span id="lKanaele">Kanäle</span>
+            <div class="wahl klein" id="kanalWahl">
+              <button data-kanal="browser">Browser</button>
+              <button data-kanal="telegram">Telegram</button>
+              <button data-kanal="discord">Discord</button>
+            </div>
+          </div>
+          <div id="tgFelder" hidden>
+            <input id="tgToken" type="text" placeholder="Bot-Token (123456:ABC-...)" spellcheck="false" autocomplete="off">
+            <input id="tgChat" type="text" placeholder="Chat-ID (z. B. 987654321)" spellcheck="false" autocomplete="off">
+            <p class="hinweis" id="hTelegram"></p>
+          </div>
+          <div id="dcFelder" hidden>
+            <input id="dcHook" type="url" placeholder="https://discord.com/api/webhooks/..." spellcheck="false" autocomplete="off">
+            <p class="hinweis" id="hDiscord"></p>
+          </div>
+          <button id="testSenden" class="testBtn">Test senden</button>
+          <span id="testStatus" class="testStatus"></span>
+        </div>
       </div>
 
       <div class="feld">
@@ -133,6 +202,6 @@
 
 <script src="config.js"></script>
 <script src="i18n.js"></script>
-<script src="app.js"></script>
+<script type="module" src="app.js"></script>
 </body>
 </html>

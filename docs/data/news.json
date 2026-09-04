@@ -1,9 +1,458 @@
 {
- "updated": "2026-09-04T13:43:40.596Z",
+ "updated": "2026-09-04T14:11:15.453Z",
  "regime": "policy",
  "count": 300,
  "errors": [],
  "items": [
+  {
+   "id": "FXStreet:\"Lower the rate or I’ll stop trading\": Trump pressures Fed after strong US jobs report",
+   "title": "\"Lower the rate or I’ll stop trading\": Trump pressures Fed after strong US jobs report",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/lower-the-rate-or-ill-stop-trading-trump-pressures-fed-after-strong-us-jobs-report-202609041410",
+   "date": "2026-09-04T14:10:55.000Z",
+   "tags": [
+    "Makro"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "fed",
+   "categoryLabel": "Notenbank",
+   "priority": 72,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "\"Senke den Kurs oder ich höre auf zu handeln\": Trump setzt Fed nach starkem US-Arbeitsmarktbericht unter Druck"
+  },
+  {
+   "id": "CNBC:Analysis: Lower Treasury yields could require a weaker economy. Trump won't fix them",
+   "title": "Analysis: Lower Treasury yields could require a weaker economy. Trump won't fix them",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/09/04/treasury-bonds-yield-trump-ai-mortgage-rates-analysis.html",
+   "date": "2026-09-04T14:07:24.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "fed",
+   "categoryLabel": "Notenbank",
+   "priority": 72,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Analyse: Niedrigere Treasury-Renditen könnten eine schwächere Wirtschaft erfordern. Trump wird sie nicht reparieren"
+  },
+  {
+   "id": "FXStreet:Canadian Dollar: Jobs weakness caps gains against US Dollar - TD Securities",
+   "title": "Canadian Dollar: Jobs weakness caps gains against US Dollar - TD Securities",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/canadian-dollar-jobs-weakness-caps-gains-against-us-dollar-td-securities-202609041406",
+   "date": "2026-09-04T14:06:57.000Z",
+   "tags": [
+    "Makro"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 45,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Kanadischer Dollar: Beschäftigungsschwäche begrenzt Gewinne gegenüber US-Dollar - TD Securities"
+  },
+  {
+   "id": "CNBC World:Trump tells Fed to slash rates or he'll end trade with countries with U.S. surpluses",
+   "title": "Trump tells Fed to slash rates or he'll end trade with countries with U.S. surpluses",
+   "source": "CNBC World",
+   "url": "https://www.cnbc.com/2026/09/04/trump-fed-rates-jobs-trade.html",
+   "date": "2026-09-04T14:03:47.000Z",
+   "tags": [
+    "Weltwirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "fed",
+   "categoryLabel": "Notenbank",
+   "priority": 72,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "CNBC"
+   ],
+   "titleDe": "Trump fordert die Fed auf, die Zinsen zu senken, oder er wird den Handel mit Ländern mit US-Überschüssen einstellen"
+  },
+  {
+   "id": "FXStreet:Canadian Dollar slides as Canada sheds 41.7K jobs, US payrolls surge",
+   "title": "Canadian Dollar slides as Canada sheds 41.7K jobs, US payrolls surge",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/canadian-dollar-slides-as-canada-sheds-417k-jobs-us-payrolls-surge-202609041400",
+   "date": "2026-09-04T14:00:41.000Z",
+   "tags": [
+    "Makro"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Kursanstieg"
+   ],
+   "scores": {
+    "crypto": 0.36,
+    "stocks": 0.36,
+    "gold": -0.18,
+    "usd": -0.12
+   },
+   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 50,
+   "label": "bullish",
+   "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Kanadischer Dollar rutscht ab, da Kanada 41.700 Arbeitsplätze abbaut und die US-Gehaltsliste ansteigt"
+  },
+  {
+   "id": "cal:Canada Ivey PMI s.a:2026-09-04T14:00:00.000Z",
+   "title": "PMI (Global): 64.3 (forecast 56.2, previous 55.1)",
+   "titleDe": "PMI (Global): 64.3 (Prognose 56.2, zuvor 55.1)",
+   "source": "Wirtschaftskalender",
+   "url": "https://www.myfxbook.com/forex-economic-calendar/canada/ivey-pmi-s-a",
+   "date": "2026-09-04T14:00:00.000Z",
+   "tags": [
+    "Daten",
+    "Market Moving"
+   ],
+   "impact": "high",
+   "kind": "macro",
+   "event": "PMI",
+   "eventEn": "PMI",
+   "region": "Global",
+   "channel": "growth",
+   "actual": "64.3",
+   "consensus": "56.2",
+   "previous": "55.1",
+   "surprise": 8.099999999999994,
+   "hawkish": 0.12,
+   "scores": {
+    "crypto": -0.12,
+    "stocks": -0.102,
+    "gold": -0.096,
+    "usd": 0.12
+   },
+   "why": "PMI (Global): 64.3 gegenüber 56.2 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
+   "whyEn": "PMI (Global): 64.3 versus 56.2 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
+   "category": "global-data",
+   "categoryLabel": "Weltdaten",
+   "priority": 37,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "PMI",
+   "eventTypeEn": "PMI",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "CNBC Economy:U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
+   "title": "U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
+   "source": "CNBC Economy",
+   "url": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html",
+   "date": "2026-09-04T13:52:53.000Z",
+   "tags": [
+    "US-Wirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0.868,
+   "signals": [
+    "Arbeitsmarktdaten höher als erwartet"
+   ],
+   "scores": {
+    "crypto": -0.868,
+    "stocks": -0.738,
+    "gold": -0.694,
+    "usd": 0.868
+   },
+   "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: Arbeitsmarktdaten höher als erwartet)",
+   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: labour market data higher than expected)",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 58,
+   "label": "strong_bearish",
+   "labelText": "Stark Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "CNBC World",
+    "CNBC"
+   ],
+   "titleDe": "US-Gehaltslisten stiegen im August um 162.000, viel mehr als erwartet; Arbeitslosenquote bei 4,1%"
+  },
+  {
+   "id": "BeInCrypto:Robinhood Chain Briefly Stops Producing Blocks. What Happened?",
+   "title": "Robinhood Chain Briefly Stops Producing Blocks. What Happened?",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/robinhood-chain-outage-blocks-stalled/",
+   "date": "2026-09-04T13:50:20.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "FXStreet:US Dollar: Jobs strength lifts hike odds – ING",
+   "title": "US Dollar: Jobs strength lifts hike odds – ING",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/us-dollar-jobs-strength-lifts-hike-odds-ing-202609041349",
+   "date": "2026-09-04T13:49:38.000Z",
+   "tags": [
+    "Makro"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 44,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Dollar: Beschäftigungsstärke erhöht die Wanderungsquoten – ING"
+  },
+  {
+   "id": "FXStreet:British Pound trims losses against US Dollar after NFP-driven volatility",
+   "title": "British Pound trims losses against US Dollar after NFP-driven volatility",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/british-pound-trims-losses-against-us-dollar-after-nfp-driven-volatility-202609041346",
+   "date": "2026-09-04T13:46:26.000Z",
+   "tags": [
+    "Makro"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 44,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Britisches Pfund reduziert Verluste gegenüber US-Dollar nach NFP-getriebener Volatilität"
+  },
+  {
+   "id": "MarketWatch:Adobe just announced its next CEO. Here’s why its stock is dropping.",
+   "title": "Adobe just announced its next CEO. Here’s why its stock is dropping.",
+   "source": "MarketWatch",
+   "url": "https://www.marketwatch.com/story/adobe-just-announced-its-next-ceo-heres-why-its-stock-is-dropping-bad9ed8a?mod=mw_rss_topstories",
+   "date": "2026-09-04T13:42:00.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "Al Jazeera:Two Muslim women journalists allege police assault in India",
+   "title": "Two Muslim women journalists allege police assault in India",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/two-muslim-women-journalists-allege-police-assault-in-india?traffic_source=rss",
+   "date": "2026-09-04T13:37:43.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "U.Today:Headline-Grabbing Robinhood Blockchain Stops Recording New Transactions",
+   "title": "Headline-Grabbing Robinhood Blockchain Stops Recording New Transactions",
+   "source": "U.Today",
+   "url": "https://u.today/headline-grabbing-robinhood-blockchain-stops-recording-new-transactions",
+   "date": "2026-09-04T13:37:42.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 51,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Headline-Grabbing Robinhood Blockchain stoppt die Aufzeichnung neuer Transaktionen"
+  },
   {
    "id": "CNBC World:Zscaler beats earnings expectations, issues upbeat guidance but stock falls",
    "title": "Zscaler beats earnings expectations, issues upbeat guidance but stock falls",
@@ -25,43 +474,48 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
-   "id": "CNBC Economy:U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
-   "title": "U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
-   "source": "CNBC Economy",
-   "url": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html",
-   "date": "2026-09-04T13:36:22.000Z",
+   "id": "Al Jazeera:Philippine court orders arrest of VP Duterte over President Marcos threats",
+   "title": "Philippine court orders arrest of VP Duterte over President Marcos threats",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/4/philippine-court-orders-arrest-of-vp-duterte-over-president-marcos-threats?traffic_source=rss",
+   "date": "2026-09-04T13:35:55.000Z",
    "tags": [
-    "US-Wirtschaft"
+    "Weltlage"
    ],
    "impact": "low",
    "kind": "headline",
-   "hawkish": 0.868,
-   "signals": [
-    "Arbeitsmarktdaten höher als erwartet"
-   ],
    "scores": {
-    "crypto": -0.868,
-    "stocks": -0.738,
-    "gold": -0.694,
-    "usd": 0.868
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
    },
-   "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: Arbeitsmarktdaten höher als erwartet)",
-   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: labour market data higher than expected)",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 59,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "alsoIn": [
-    "CNBC World",
-    "CNBC"
-   ]
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
   },
   {
    "id": "Cointelegraph:Revolut, OpenReserve get preliminary US bank approval with crypto plans",
@@ -84,9 +538,48 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 52,
+   "priority": 51,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Revolut, OpenReserve erhält vorläufige US-Bankgenehmigung mit Kryptoplänen"
+  },
+  {
+   "id": "Al Jazeera:Ireland’s Katie Taylor eyes fairytale finish to trailblazing boxing career",
+   "title": "Ireland’s Katie Taylor eyes fairytale finish to trailblazing boxing career",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/2026/9/4/irelands-katie-taylor-eyes-fairytale-finish-to-trailblazing-boxing-career?traffic_source=rss",
+   "date": "2026-09-04T13:30:42.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -114,10 +607,17 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 39,
+   "priority": 38,
    "label": "bearish",
    "labelText": "Bearish",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Sechs Gründe, warum das Risiko eines Börsenverkaufs steigt. Hier ist, was Investoren tun sollten."
   },
   {
    "id": "Cointelegraph:Token buybacks are booming. But are they good for crypto projects?",
@@ -140,10 +640,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 52,
+   "priority": 51,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Token-Rückkäufe boomen. Aber sind sie gut für Krypto-Projekte?"
   },
   {
    "id": "Cointelegraph:Here’s what happened in crypto today",
@@ -166,10 +673,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 52,
+   "priority": 51,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Folgendes ist heute in Krypto passiert"
   },
   {
    "id": "FXStreet:Gold: Central bank buying underpins prices – ING",
@@ -192,9 +706,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -218,9 +738,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Produktankündigung",
+   "eventTypeEn": "Product announcement",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -247,6 +773,12 @@
    "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -273,7 +805,14 @@
    "priority": 44,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Euro rutscht gegen US-Dollar ab, da die Gehaltsabrechnungen außerhalb der Landwirtschaft die Erwartungen zunichtemachen"
   },
   {
    "id": "BeInCrypto:PONS Rallies 41% to New Record as Traders See Mixed Fortunes",
@@ -300,9 +839,15 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 37,
+   "priority": 36,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -326,9 +871,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -357,10 +908,17 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike, strong labour market)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 87,
+   "priority": 86,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
-   "alsoIn": []
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Die 2-Jahres-Rendite steigt auf den höchsten Stand seit Januar 2025, nachdem der Hot-Jobs-Bericht die Erwartungen steigert, dass die Fed die Zinsen erhöhen könnte"
   },
   {
    "id": "FXStreet:Japanese Yen steadies against US Dollar after strong NFP report",
@@ -387,10 +945,17 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: strong labour market)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 54,
+   "priority": 53,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
-   "alsoIn": []
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Japanischer Yen stabilisiert sich gegenüber US-Dollar nach starkem NFP-Bericht"
   },
   {
    "id": "Al Jazeera:Jerusalem Daily: Israel’s plan to expel Gaza’s population",
@@ -413,10 +978,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Jerusalem Daily: Israels Plan, die Bevölkerung des Gazastreifens zu vertreiben"
   },
   {
    "id": "CNBC:Here are our top 10 things to watch in the stock market Friday",
@@ -439,9 +1011,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -465,9 +1043,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -493,9 +1077,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -519,10 +1109,20 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "SOL",
+    "XRP"
+   ],
+   "alsoIn": [],
+   "titleDe": "XRP und Solana in Fresh SEC Nasdaq Order gecleart: Wichtigste Krypto-Nachrichten heute Morgen"
   },
   {
    "id": "Al Jazeera:US envoys headed to Russia and Ukraine to relaunch mediation",
@@ -545,10 +1145,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Gesandte reisten nach Russland und in die Ukraine, um die Vermittlung wieder aufzunehmen"
   },
   {
    "id": "FXStreet:Mexican Peso: Trade talks support Peso against US Dollar - Societe Generale",
@@ -571,10 +1178,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Mexikanischer Peso: Handelsgespräche unterstützen Peso gegen US-Dollar - Societe Generale"
   },
   {
    "id": "CNBC World:Lululemon stock plunges 20% on disappointing earnings and outlook",
@@ -601,9 +1215,15 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 38,
+   "priority": 37,
    "label": "bearish",
    "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -632,7 +1252,16 @@
    "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Kursprognose",
+   "eventTypeEn": "Price prediction",
+   "scope": "project",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Bitcoin und Gold fallen, da die US-Gehaltsabrechnungen die Prognosen um das Dreifache unterbieten"
   },
   {
    "id": "CNBC World:Diesel hits record high as Ukraine and Iran wars knock out refineries, fueling inflation worries",
@@ -661,12 +1290,17 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: energy price shock, price pressure, price rally)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 69,
+   "priority": 68,
    "label": "bearish",
    "labelText": "Bearish",
-   "alsoIn": [
-    "CNBC"
-   ]
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Diesel erreicht Rekordhöhe, da die Ukraine- und Iran-Kriege Raffinerien ausschalten und die Inflationssorgen anheizen"
   },
   {
    "id": "MarketWatch:Potential midterm-election chaos could roil markets. Here’s one trader’s play.",
@@ -692,6 +1326,12 @@
    "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -719,9 +1359,15 @@
    "whyEn": "Signal words point to easier policy — positive for risk assets. (signals: activity data lower than expected)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 39,
+   "priority": 38,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -748,6 +1394,12 @@
    "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -774,7 +1426,14 @@
    "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Als das China-US-KI-Rennen Kairo erreicht, steht Ägypten vor einer strategischen Entscheidung"
   },
   {
    "id": "U.Today:Binance Adds Four Crypto Assets to Delisting Watch: Full List",
@@ -801,10 +1460,17 @@
    "whyEn": "Directly crypto-negative news. (signals: ban or delisting)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 61,
+   "priority": 60,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
-   "alsoIn": []
+   "impactLevel": "high",
+   "duration": "intraday",
+   "eventType": "Listing",
+   "eventTypeEn": "Listing",
+   "scope": "coin",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Binance fügt vier Krypto-Assets zur Delisting-Überwachung hinzu: Vollständige Liste"
   },
   {
    "id": "CoinDesk:U.S. added stronger than expected 162,000 jobs in August as labor market bounced back",
@@ -831,10 +1497,17 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: labour market data higher than expected)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 52,
+   "priority": 51,
    "label": "bearish",
    "labelText": "Bearish",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Die USA haben im August 162.000 Arbeitsplätze stärker als erwartet geschaffen, als sich der Arbeitsmarkt erholte"
   },
   {
    "id": "Decrypt:Morning Minute: Crypto Stages Major Rally on Rate Hopes",
@@ -861,14 +1534,22 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 56,
+   "priority": 55,
    "label": "bullish",
    "labelText": "Bullish",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Vormittagsminute: Krypto veranstaltet eine große Rallye aufgrund von Ratenhoffnungen"
   },
   {
    "id": "cal:Canada Unemployment Rate:2026-09-04T12:30:00.000Z",
-   "title": "Canada Unemployment Rate: 6.4% (Prognose 6.4%, zuvor 6.4%)",
+   "title": "Unemployment Rate (Global): 6.4% (forecast 6.4%, previous 6.4%)",
+   "titleDe": "Arbeitslosenquote (Global): 6.4% (Prognose 6.4%, zuvor 6.4%)",
    "source": "Wirtschaftskalender",
    "url": "https://www.myfxbook.com/forex-economic-calendar/canada/unemployment-rate",
    "date": "2026-09-04T12:30:00.000Z",
@@ -879,6 +1560,7 @@
    "impact": "high",
    "kind": "macro",
    "event": "Arbeitslosenquote",
+   "eventEn": "Unemployment Rate",
    "region": "Global",
    "channel": "growth",
    "actual": "6.4%",
@@ -896,14 +1578,21 @@
    "whyEn": "Unemployment Rate (Global): 6.4 versus 6.4 expected — exactly at forecast. Economic activity therefore comes in stronger than priced in. That gives the Fed room to ease. Falling rate expectations mean more liquidity — supportive for crypto and equities, negative for the dollar.",
    "category": "global-data",
    "categoryLabel": "Weltdaten",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Arbeitslosenquote",
+   "eventTypeEn": "Arbeitslosenquote",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
    "id": "cal:Canada Participation Rate:2026-09-04T12:30:00.000Z",
-   "title": "Canada Participation Rate: 65.0% (Prognose 65.2%, zuvor 65.1%)",
+   "title": "Participation Rate (Global): 65.0% (forecast 65.2%, previous 65.1%)",
+   "titleDe": "Erwerbsquote (Global): 65.0% (Prognose 65.2%, zuvor 65.1%)",
    "source": "Wirtschaftskalender",
    "url": "https://www.myfxbook.com/forex-economic-calendar/canada/participation-rate",
    "date": "2026-09-04T12:30:00.000Z",
@@ -914,6 +1603,7 @@
    "impact": "medium",
    "kind": "macro",
    "event": "Erwerbsquote",
+   "eventEn": "Participation Rate",
    "region": "Global",
    "channel": "growth",
    "actual": "65.0%",
@@ -931,14 +1621,21 @@
    "whyEn": "Participation Rate (Global): 65 versus 65.2 expected — below forecast. Economic activity therefore comes in weaker than priced in. That gives the Fed room to ease. Falling rate expectations mean more liquidity — supportive for crypto and equities, negative for the dollar.",
    "category": "global-data",
    "categoryLabel": "Weltdaten",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Erwerbsquote",
+   "eventTypeEn": "Erwerbsquote",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
    "id": "cal:United States Average Hourly Earnings YoY:2026-09-04T12:30:00.000Z",
-   "title": "United States Average Hourly Earnings YoY: 3.1% (Prognose 3.0%, zuvor 3.2%)",
+   "title": "Average Hourly Earnings (USA): 3.1% (forecast 3.0%, previous 3.2%)",
+   "titleDe": "Durchschnittslöhne (USA): 3.1% (Prognose 3.0%, zuvor 3.2%)",
    "source": "Wirtschaftskalender",
    "url": "https://www.myfxbook.com/forex-economic-calendar/united-states/average-hourly-earnings-yoy",
    "date": "2026-09-04T12:30:00.000Z",
@@ -949,6 +1646,7 @@
    "impact": "medium",
    "kind": "macro",
    "event": "Durchschnittslöhne",
+   "eventEn": "Average Hourly Earnings",
    "region": "USA",
    "channel": "inflation",
    "actual": "3.1%",
@@ -966,14 +1664,21 @@
    "whyEn": "Average Hourly Earnings (USA): 3.1 versus 3 expected — above forecast. Inflation pressure therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "us-data",
    "categoryLabel": "US-Daten",
-   "priority": 80,
+   "priority": 79,
    "label": "bearish",
    "labelText": "Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": "Durchschnittslöhne",
+   "eventTypeEn": "Durchschnittslöhne",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
    "id": "cal:United States Non Farm Payrolls:2026-09-04T12:30:00.000Z",
-   "title": "United States Non Farm Payrolls: 162.0K (Prognose 56.0K, zuvor 21.0K)",
+   "title": "Non-Farm Payrolls (USA): 162.0K (forecast 56.0K, previous 21.0K)",
+   "titleDe": "Non-Farm Payrolls (USA): 162.0K (Prognose 56.0K, zuvor 21.0K)",
    "source": "Wirtschaftskalender",
    "url": "https://www.myfxbook.com/forex-economic-calendar/united-states/non-farm-payrolls",
    "date": "2026-09-04T12:30:00.000Z",
@@ -984,6 +1689,7 @@
    "impact": "high",
    "kind": "macro",
    "event": "Non-Farm Payrolls",
+   "eventEn": "Non-Farm Payrolls",
    "region": "USA",
    "channel": "growth",
    "actual": "162.0K",
@@ -1004,11 +1710,18 @@
    "priority": 100,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
+   "impactLevel": "extreme",
+   "duration": "intraday",
+   "eventType": "Non-Farm Payrolls",
+   "eventTypeEn": "Non-Farm Payrolls",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
    "id": "cal:United States U-6 Unemployment Rate:2026-09-04T12:30:00.000Z",
-   "title": "United States U-6 Unemployment Rate: 7.7% (Prognose 8.0%, zuvor 7.9%)",
+   "title": "U-6 Unemployment Rate (USA): 7.7% (forecast 8.0%, previous 7.9%)",
+   "titleDe": "U-6 Arbeitslosenquote (USA): 7.7% (Prognose 8.0%, zuvor 7.9%)",
    "source": "Wirtschaftskalender",
    "url": "https://www.myfxbook.com/forex-economic-calendar/united-states/u-6-unemployment-rate",
    "date": "2026-09-04T12:30:00.000Z",
@@ -1019,6 +1732,7 @@
    "impact": "high",
    "kind": "macro",
    "event": "U-6 Arbeitslosenquote",
+   "eventEn": "U-6 Unemployment Rate",
    "region": "USA",
    "channel": "growth",
    "actual": "7.7%",
@@ -1036,14 +1750,21 @@
    "whyEn": "U-6 Unemployment Rate (USA): 7.7 versus 8 expected — below forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "us-data",
    "categoryLabel": "US-Daten",
-   "priority": 98,
+   "priority": 97,
    "label": "bearish",
    "labelText": "Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": "U-6 Arbeitslosenquote",
+   "eventTypeEn": "U-6 Arbeitslosenquote",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
    "id": "cal:United States Government Payrolls:2026-09-04T12:30:00.000Z",
-   "title": "United States Government Payrolls: 35.0K (Prognose -11.0K, zuvor -50.0K)",
+   "title": "Payrolls (component) (USA): 35.0K (forecast -11.0K, previous -50.0K)",
+   "titleDe": "Payrolls (Teilbereich) (USA): 35.0K (Prognose -11.0K, zuvor -50.0K)",
    "source": "Wirtschaftskalender",
    "url": "https://www.myfxbook.com/forex-economic-calendar/united-states/government-payrolls",
    "date": "2026-09-04T12:30:00.000Z",
@@ -1054,6 +1775,7 @@
    "impact": "low",
    "kind": "macro",
    "event": "Payrolls (Teilbereich)",
+   "eventEn": "Payrolls (component)",
    "region": "USA",
    "channel": "growth",
    "actual": "35.0K",
@@ -1071,14 +1793,21 @@
    "whyEn": "Payrolls (component) (USA): 35 versus -11 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "us-data",
    "categoryLabel": "US-Daten",
-   "priority": 69,
+   "priority": 68,
    "label": "bearish",
    "labelText": "Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": "Payrolls (Teilbereich)",
+   "eventTypeEn": "Payrolls (Teilbereich)",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
    "id": "cal:United States Nonfarm Payrolls Private:2026-09-04T12:30:00.000Z",
-   "title": "United States Nonfarm Payrolls Private: 127.0K (Prognose 45.0K, zuvor 71.0K)",
+   "title": "Private Payrolls (USA): 127.0K (forecast 45.0K, previous 71.0K)",
+   "titleDe": "Private Payrolls (USA): 127.0K (Prognose 45.0K, zuvor 71.0K)",
    "source": "Wirtschaftskalender",
    "url": "https://www.myfxbook.com/forex-economic-calendar/united-states/nonfarm-payrolls-private",
    "date": "2026-09-04T12:30:00.000Z",
@@ -1089,6 +1818,7 @@
    "impact": "high",
    "kind": "macro",
    "event": "Private Payrolls",
+   "eventEn": "Private Payrolls",
    "region": "USA",
    "channel": "growth",
    "actual": "127.0K",
@@ -1109,11 +1839,18 @@
    "priority": 100,
    "label": "bearish",
    "labelText": "Bearish",
+   "impactLevel": "high",
+   "duration": "intraday",
+   "eventType": "Private Payrolls",
+   "eventTypeEn": "Private Payrolls",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
    "id": "cal:United States Participation Rate:2026-09-04T12:30:00.000Z",
-   "title": "United States Participation Rate: 61.6% (Prognose 61.4%, zuvor 61.4%)",
+   "title": "Participation Rate (USA): 61.6% (forecast 61.4%, previous 61.4%)",
+   "titleDe": "Erwerbsquote (USA): 61.6% (Prognose 61.4%, zuvor 61.4%)",
    "source": "Wirtschaftskalender",
    "url": "https://www.myfxbook.com/forex-economic-calendar/united-states/participation-rate",
    "date": "2026-09-04T12:30:00.000Z",
@@ -1124,6 +1861,7 @@
    "impact": "medium",
    "kind": "macro",
    "event": "Erwerbsquote",
+   "eventEn": "Participation Rate",
    "region": "USA",
    "channel": "growth",
    "actual": "61.6%",
@@ -1144,41 +1882,12 @@
    "priority": 76,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
-  },
-  {
-   "id": "cal:United States Manufacturing Payrolls:2026-09-04T12:30:00.000Z",
-   "title": "United States Manufacturing Payrolls: 16.0K (Prognose 5.0K, zuvor 14.0K)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/united-states/manufacturing-payrolls",
-   "date": "2026-09-04T12:30:00.000Z",
-   "tags": [
-    "Daten",
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "macro",
-   "event": "Payrolls (Teilbereich)",
-   "region": "USA",
-   "channel": "growth",
-   "actual": "16.0K",
-   "consensus": "5.0K",
-   "previous": "14.0K",
-   "surprise": 11,
-   "hawkish": 0.083,
-   "scores": {
-    "crypto": -0.083,
-    "stocks": -0.071,
-    "gold": -0.067,
-    "usd": 0.083
-   },
-   "why": "Payrolls (Teilbereich) (USA): 16 gegenüber 5 erwartet — über Prognose. Konjunktur fällt damit stärker aus als eingepreist. Die Fed bekommt damit Argumente für straffere Geldpolitik. Höhere Zinserwartungen entziehen dem Markt Liquidität — das belastet Krypto und Aktien und stützt den Dollar.",
-   "whyEn": "Payrolls (component) (USA): 16 versus 5 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
-   "category": "us-data",
-   "categoryLabel": "US-Daten",
-   "priority": 65,
-   "label": "neutral",
-   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Erwerbsquote",
+   "eventTypeEn": "Erwerbsquote",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -1202,9 +1911,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -1228,10 +1943,19 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Der IWF sagt jetzt, dass Spenden das Bitcoin-Wachstum in El Salvador finanziert haben"
   },
   {
    "id": "FXStreet:WTI Oil retreats below $89 despite persistent tensions around the Strait of Hormuz",
@@ -1254,10 +1978,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 60,
+   "priority": 59,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "WTI Oil zieht sich trotz anhaltender Spannungen um die Straße von Hormuz unter 89 $ zurück"
   },
   {
    "id": "U.Today:Zcash (ZEC) Hits $1,000: Analyzing Next Steps Around Privacy Coin",
@@ -1280,9 +2011,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -1306,12 +2043,19 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 43,
+   "priority": 42,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
-   ]
+   ],
+   "titleDe": "Der weltweit größte Staatsfonds plant den Abbau von US-Treasury-Beständen"
   },
   {
    "id": "CNBC World:U.S. 'Economic Outcast’ operation gains momentum as EU joins sanctions; South Korea weighs military backing",
@@ -1341,15 +2085,22 @@
    "priority": 66,
    "label": "bearish",
    "labelText": "Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
-   ]
+   ],
+   "titleDe": "Die US-Operation \"Economic Outcast\" gewinnt an Dynamik, da sich die EU den Sanktionen anschließt; Südkorea wiegt militärische Unterstützung"
   },
   {
    "id": "Al Jazeera:Germany’s far right AfD eyes election breakthrough in Saxony-Anhalt",
    "title": "Germany’s far right AfD eyes election breakthrough in Saxony-Anhalt",
    "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/4/germanys-far-right-eyes-election-breakthrough-as-afd-surges-in-saxony?traffic_source=rss",
+   "url": "https://www.aljazeera.com/news/2026/9/4/germanys-far-right-eyes-election-breakthrough-as-afd-surges-in-saxony-anhalt?traffic_source=rss",
    "date": "2026-09-04T12:19:38.000Z",
    "tags": [
     "Weltlage"
@@ -1366,9 +2117,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -1392,10 +2149,19 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Bitcoin geht in die dritte Gewinnerwoche in Folge, da der Makrodruck steigt"
   },
   {
    "id": "CNBC:Trump admin targets tax-exempt status at private colleges — threatening a key tax break for donations",
@@ -1418,9 +2184,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -1444,9 +2216,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -1470,9 +2248,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -1496,10 +2280,19 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "XRP"
+   ],
+   "alsoIn": [],
+   "titleDe": "7,26 Mrd. $ allein im August: XRP erreicht Sechsmonatshoch im Handelsvolumen"
   },
   {
    "id": "Al Jazeera:South Korea mulls ‘contributions’ in Strait of Hormuz",
@@ -1522,10 +2315,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 60,
+   "priority": 59,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Südkorea erwägt „Beiträge“ in der Straße von Hormus"
   },
   {
    "id": "FXStreet:Federal Reserve: Close call on further tightening – Commerzbank",
@@ -1555,7 +2355,14 @@
    "priority": 77,
    "label": "bearish",
    "labelText": "Bearish",
-   "alsoIn": []
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Federal Reserve: Enge Entscheidung über weitere Straffung – Commerzbank"
   },
   {
    "id": "Al Jazeera:India’s Smriti Mandhana becomes top run-scorer in women’s cricket",
@@ -1581,6 +2388,12 @@
    "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -1608,10 +2421,17 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 41,
+   "priority": 40,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
-   "alsoIn": []
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Trezor sagt, dass ShipMonk weitere 67.000 Kunden betroffen hat"
   },
   {
    "id": "CNBC Economy:The big business of personal protection: How private security became a $50 billion industry",
@@ -1634,9 +2454,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -1662,9 +2488,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -1688,9 +2520,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -1714,10 +2552,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 69,
+   "priority": 68,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Japanischer Yen: Starker Aufschwung und Neubewertung der Fed – MUFG"
   },
   {
    "id": "MarketWatch:These stocks in the red-hot healthcare sector have gotten too crowded to own",
@@ -1740,9 +2585,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -1766,10 +2617,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Dollar-Index steigt auf fast 99,00 vor US-NFP-Daten"
   },
   {
    "id": "FXStreet:Silver Price Forecast: XAG/USD trapped below 100-day SMA as US NFP approaches",
@@ -1792,10 +2650,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Kursprognose",
+   "eventTypeEn": "Price prediction",
+   "scope": "project",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Silberpreisprognose: XAG/USD unter 100-Tage-SMA gefangen, da US-NFP näher rückt"
   },
   {
    "id": "FXStreet:Canadian Dollar steadies at 1.3800 awaiting employment data from US and Canada",
@@ -1818,10 +2683,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Kanadischer Dollar stabilisiert sich bei 1,3800 und wartet auf Beschäftigungsdaten aus den USA und Kanada"
   },
   {
    "id": "CNBC:The wealth of the world's billionaires reached $15.1 trillion last year, per a new report",
@@ -1844,9 +2716,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -1874,10 +2752,17 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 40,
+   "priority": 39,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
-   "alsoIn": []
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "67.000 weitere Trezor-Kunden, die durch die Ausweitung der Datenschutzverletzung gefährdet sind"
   },
   {
    "id": "Cointelegraph:Kalshi US visits soar 1,500% as regulatory pressure mounts",
@@ -1907,7 +2792,14 @@
    "priority": 47,
    "label": "bullish",
    "labelText": "Bullish",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Kalshi US-Besuche steigen um 1.500 %, da der regulatorische Druck steigt"
   },
   {
    "id": "CNBC World:Why Nvidia's 'defensive move' to acquire Hugging Face is about much more than chips",
@@ -1933,6 +2825,12 @@
    "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -1961,7 +2859,14 @@
    "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Dollar: Kurzfristige Abwärtsrisiken – ING"
   },
   {
    "id": "CoinDesk:We checked 6 years of bitcoin data. The NFP report isn't big price mover",
@@ -1987,7 +2892,16 @@
    "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Wir haben 6 Jahre Bitcoin-Daten überprüft. Der NFP-Bericht ist kein großer Preismacher"
   },
   {
    "id": "The Block:El Salvador has not used public funds to accumulate bitcoin since June 2025, IMF says",
@@ -2014,36 +2928,19 @@
    "whyEn": "Directly crypto-positive news. (signals: accumulation)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 56,
+   "priority": 55,
    "label": "bullish",
    "labelText": "Bullish",
-   "alsoIn": []
-  },
-  {
-   "id": "MarketWatch:Governments keep trying to calm global markets. Why that should worry investors.",
-   "title": "Governments keep trying to calm global markets. Why that should worry investors.",
-   "source": "MarketWatch",
-   "url": "https://www.marketwatch.com/story/governments-keep-trying-to-calm-global-markets-why-that-should-worry-investors-e7f93d62?mod=mw_rss_topstories",
-   "date": "2026-09-04T11:27:00.000Z",
-   "tags": [
-    "Märkte"
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
    ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 28,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "El Salvador hat seit Juni 2025 keine öffentlichen Mittel mehr verwendet, um Bitcoin zu akkumulieren, sagt der IWF"
   },
   {
    "id": "The Block:Crypto firms urge SEC to speed ETF reviews and allow confidential draft filings",
@@ -2066,10 +2963,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 48,
+   "priority": 47,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Kryptofirmen fordern die SEC auf, ETF-Überprüfungen zu beschleunigen und vertrauliche Einreichungsentwürfe zuzulassen"
   },
   {
    "id": "Cointelegraph:Trezor says data breach affects another 67K US customers",
@@ -2099,7 +3003,14 @@
    "priority": 52,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
-   "alsoIn": []
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Trezor sagt, dass Datenschutzverletzungen weitere 67.000 US-Kunden betreffen"
   },
   {
    "id": "Al Jazeera:Iran war: Why US midterms could be a pivotal moment",
@@ -2126,10 +3037,17 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 64,
+   "priority": 63,
    "label": "bearish",
    "labelText": "Bearish",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iran-Krieg: Warum die US-Zwischenwahlen ein entscheidender Moment sein könnten"
   },
   {
    "id": "Benzinga:Best Energy Stocks",
@@ -2152,9 +3070,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2178,9 +3102,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2204,9 +3134,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2230,9 +3166,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2256,9 +3198,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2282,9 +3230,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2308,9 +3262,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2334,9 +3294,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2364,9 +3330,15 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 39,
+   "priority": 38,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2390,9 +3362,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Kursprognose",
+   "eventTypeEn": "Price prediction",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2420,10 +3398,17 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 75,
+   "priority": 74,
    "label": "bearish",
    "labelText": "Bearish",
-   "alsoIn": []
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Gold fällt, während Blockbuster-US-NFP den US-Dollar heben, Treasury-Renditen"
   },
   {
    "id": "CNBC:THC drinks could soon be harder to find as Congress delays hemp ban again",
@@ -2446,9 +3431,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2475,7 +3466,14 @@
    "priority": 40,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Dieselpreise erreichten ein Allzeithoch"
   },
   {
    "id": "BeInCrypto:Americans Lose $10 Billion a Year to Scam Compounds. The US and UK Just Teamed Up",
@@ -2501,7 +3499,14 @@
    "priority": 40,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Amerikaner verlieren $ 10 Milliarden pro Jahr durch Betrugsverbindungen. Die USA und Großbritannien haben sich gerade zusammengetan"
   },
   {
    "id": "U.Today:Dogecoin to Erase Zero? $0.12 Target Emerges as Bull Flag Meets Multiple Signals",
@@ -2527,6 +3532,14 @@
    "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "DOGE"
+   ],
    "alsoIn": []
   },
   {
@@ -2557,7 +3570,14 @@
    "priority": 71,
    "label": "bullish",
    "labelText": "Bullish",
-   "alsoIn": []
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Britisches Pfund zieht sich von Session-Hochs zurück, da BoE Bailey die Zinserhöhung zähmt"
   },
   {
    "id": "Cointelegraph:South Korean regulators introduce tokenized securities roadmap",
@@ -2580,9 +3600,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Produktankündigung",
+   "eventTypeEn": "Product announcement",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2610,9 +3636,15 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 33,
+   "priority": 32,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2636,10 +3668,19 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 47,
+   "priority": 46,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Ihre Börse verkauft \"gefälschte Bitcoins\", sagt der Bitcoin-Knoten-Entwickler"
   },
   {
    "id": "Al Jazeera:Reform UK officials step down as new funding scandal hits far-right party",
@@ -2662,9 +3703,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2688,10 +3735,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 47,
+   "priority": 46,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "FinCEN bindet 12,7 Mrd. $ an Krypto-Betrügereien, die von asiatischen Verbindungen ausgehen"
   },
   {
    "id": "FXStreet:Australian Dollar edges higher vs Yen as RBA tightening bets meet BoJ normalization hopes",
@@ -2721,6 +3775,12 @@
    "priority": 29,
    "label": "bearish",
    "labelText": "Bearish",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2744,9 +3804,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2774,9 +3840,15 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 33,
+   "priority": 32,
    "label": "bearish",
    "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2803,6 +3875,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2826,9 +3904,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2852,14 +3936,21 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Crypto Trader verwandelt 3.000 $ in 2,1 Millionen $ in weniger als 12 Stunden: So geht's"
   },
   {
-   "id": "BBC World:Europe targeted by spiralling campaign of sabotage and Russia is the chief suspect",
-   "title": "Europe targeted by spiralling campaign of sabotage and Russia is the chief suspect",
+   "id": "BBC World:Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
+   "title": "Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/c5y4g6meekro?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T10:00:18.000Z",
@@ -2878,10 +3969,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 56,
+   "priority": 55,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Europa wird von einer Sabotagekampagne heimgesucht - und Russland ist der Hauptverdächtige"
   },
   {
    "id": "FXStreet:BoE's Bailey defends central bank flexibility, warns of bond market pressures",
@@ -2904,9 +4002,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2930,9 +4034,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -2960,10 +4070,19 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 52,
+   "priority": 51,
    "label": "bullish",
    "labelText": "Bullish",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Bitcoin räumt 81.000 $ ab, da Datenschutzmünzen eine breite Krypto-Rallye anführen"
   },
   {
    "id": "Cointelegraph:AMC chief criticizes Robinhood’s tokenized stock plan",
@@ -2986,9 +4105,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3012,9 +4137,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3038,9 +4169,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 39,
+   "priority": 38,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Kursprognose",
+   "eventTypeEn": "Price prediction",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3064,10 +4201,19 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Der IWF bestätigt, dass das Bitcoin-Wachstum in El Salvador durch private Spenden und nicht durch öffentliche Gelder finanziert wurde"
   },
   {
    "id": "FXStreet:US Dollar Index: Two-way risks within bearish channel – OCBC",
@@ -3090,9 +4236,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 39,
+   "priority": 38,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3116,9 +4268,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3149,6 +4307,12 @@
    "priority": 31,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3179,7 +4343,14 @@
    "priority": 61,
    "label": "bearish",
    "labelText": "Bearish",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Israel führt seinen Krieg gegen Palästina ins KI-Zeitalter"
   },
   {
    "id": "CoinDesk:South Korea targets February 2027 rollout for full tokenized securities market",
@@ -3202,9 +4373,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Produktankündigung",
+   "eventTypeEn": "Product announcement",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3231,6 +4408,12 @@
    "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -3259,6 +4442,12 @@
    "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3282,10 +4471,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 55,
+   "priority": 54,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "high",
+   "duration": "long",
+   "eventType": "Insolvenz",
+   "eventTypeEn": "Insolvency",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Moment dreistöckiges Gebäude stürzt inmitten von Überschwemmungen in China ein"
   },
   {
    "id": "FXStreet:Indian Rupee: Rate hike path supports currency – Societe Generale",
@@ -3312,10 +4508,17 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 68,
+   "priority": 67,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Indische Rupie: Zinserhöhung unterstützt Währung – Societe Generale"
   },
   {
    "id": "Decrypt:AMC CEO Calls Robinhood Stock Tokens 'Contemptible' and 'Vile'",
@@ -3338,61 +4541,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
-  },
-  {
-   "id": "FXStreet:Experts agree: US-Iran tensions are far from over as Hormuz risks return",
-   "title": "Experts agree: US-Iran tensions are far from over as Hormuz risks return",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/experts-agree-us-iran-tensions-are-far-from-over-as-hormuz-risks-return-202609040916",
-   "date": "2026-09-04T09:16:49.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 55,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "alsoIn": []
-  },
-  {
-   "id": "FXStreet:Japanese Yen: Stronger yen driven by fundamentals – MUFG",
-   "title": "Japanese Yen: Stronger yen driven by fundamentals – MUFG",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/japanese-yen-stronger-yen-driven-by-fundamentals-mufg-202609040915",
-   "date": "2026-09-04T09:15:08.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 25,
-   "label": "neutral",
-   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3420,10 +4577,17 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "bearish",
    "labelText": "Bearish",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Wie könnte der Konflikt zwischen den USA und dem Iran enden? Drei Experten äußern sich"
   },
   {
    "id": "Al Jazeera:Nepal search teams rescue two workers from hydropower tunnel",
@@ -3446,35 +4610,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
-  },
-  {
-   "id": "FXStreet:British Pound: Budget risks weigh on Sterling – Rabobank",
-   "title": "British Pound: Budget risks weigh on Sterling – Rabobank",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/british-pound-budget-risks-weigh-on-sterling-rabobank-202609040906",
-   "date": "2026-09-04T09:06:08.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 25,
-   "label": "neutral",
-   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3502,40 +4646,22 @@
    "whyEn": "Directly crypto-negative news. (signals: ban or delisting)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 55,
+   "priority": 54,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
-   "alsoIn": []
-  },
-  {
-   "id": "FXStreet:Eurozone Retail Sales decline unexpectedly 0.6% MoM in July",
-   "title": "Eurozone Retail Sales decline unexpectedly 0.6% MoM in July",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/eurozone-retail-sales-declines-unexpectedly-06-mom-in-july-202609040902",
-   "date": "2026-09-04T09:02:49.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 25,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "high",
+   "duration": "intraday",
+   "eventType": "Listing",
+   "eventTypeEn": "Listing",
+   "scope": "coin",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Binance fügt Überwachungs-Tag zu 4 Token hinzu und signalisiert das Delisting-Risiko"
   },
   {
    "id": "cal:Euro Area Retail Sales MoM:2026-09-04T09:00:00.000Z",
-   "title": "Euro Area Retail Sales MoM: -0.6% (Prognose 0.3%, zuvor 0.2%)",
+   "title": "Retail Sales (Eurozone): -0.6% (forecast 0.3%, previous 0.2%)",
+   "titleDe": "Einzelhandelsumsätze (Eurozone): -0.6% (Prognose 0.3%, zuvor 0.2%)",
    "source": "Wirtschaftskalender",
    "url": "https://www.myfxbook.com/forex-economic-calendar/euro-area/retail-sales-mom",
    "date": "2026-09-04T09:00:00.000Z",
@@ -3546,6 +4672,7 @@
    "impact": "high",
    "kind": "macro",
    "event": "Einzelhandelsumsätze",
+   "eventEn": "Retail Sales",
    "region": "Eurozone",
    "channel": "growth",
    "actual": "-0.6%",
@@ -3566,6 +4693,12 @@
    "priority": 32,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": "Einzelhandelsumsätze",
+   "eventTypeEn": "Einzelhandelsumsätze",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3589,10 +4722,19 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Satoshi-Ära Bitcoin-Halter bewegt 2.571.899 % Gewinn, um New Yorker Gerichtsverfahren zu vereiteln"
   },
   {
    "id": "The Block:US bitcoin ETFs report the largest inflow day since January, worth $731 million",
@@ -3615,10 +4757,19 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "US-Bitcoin-ETFs melden den größten Zuflusstag seit Januar im Wert von 731 Mio. $"
   },
   {
    "id": "Al Jazeera:Why has the Philippine peso plunged to a record low?",
@@ -3645,9 +4796,15 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "bearish",
    "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3662,6 +4819,7 @@
    "impact": "high",
    "kind": "headline_numeric",
    "event": "Non-Farm Payrolls",
+   "eventEn": "Non-Farm Payrolls",
    "region": "USA",
    "channel": "growth",
    "actual": "162K",
@@ -3678,10 +4836,17 @@
    "whyEn": "Non-Farm Payrolls (USA): 162 versus 56 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 55,
+   "priority": 54,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
-   "alsoIn": []
+   "impactLevel": "extreme",
+   "duration": "intraday",
+   "eventType": "Non-Farm Payrolls",
+   "eventTypeEn": "Non-Farm Payrolls",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Breaking: US Nonfarm Payrolls steigen um 162K im August vs. 56K Prognose"
   },
   {
    "id": "BeInCrypto:Aster Leads Perp DEX Tokens With 256,000 Holders, 5 Times Its Nearest Rival",
@@ -3704,9 +4869,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3733,46 +4904,18 @@
    "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
-  },
-  {
-   "id": "cal:Italy Retail Sales MoM:2026-09-04T08:00:00.000Z",
-   "title": "Italy Retail Sales MoM: -0.4% (Prognose 0.2%, zuvor -0.2%)",
-   "source": "Wirtschaftskalender",
-   "url": "https://www.myfxbook.com/forex-economic-calendar/italy/retail-sales-mom",
-   "date": "2026-09-04T08:00:00.000Z",
-   "tags": [
-    "Daten",
-    "Market Moving"
-   ],
-   "impact": "high",
-   "kind": "macro",
-   "event": "Einzelhandelsumsätze",
-   "region": "Global",
-   "channel": "growth",
-   "actual": "-0.4%",
-   "consensus": "0.2%",
-   "previous": "-0.2%",
-   "surprise": -0.6000000000000001,
-   "hawkish": -0.113,
-   "scores": {
-    "crypto": 0.113,
-    "stocks": 0.096,
-    "gold": 0.091,
-    "usd": -0.113
-   },
-   "why": "Einzelhandelsumsätze (Global): -0.4 gegenüber 0.2 erwartet — unter Prognose. Konjunktur fällt damit schwächer aus als eingepreist. Die Fed bekommt damit Spielraum für lockerere Geldpolitik. Sinkende Zinserwartungen bedeuten mehr Liquidität — das stützt Krypto und Aktien und schwächt den Dollar.",
-   "whyEn": "Retail Sales (Global): -0.4 versus 0.2 expected — below forecast. Economic activity therefore comes in weaker than priced in. That gives the Fed room to ease. Falling rate expectations mean more liquidity — supportive for crypto and equities, negative for the dollar.",
-   "category": "global-data",
-   "categoryLabel": "Weltdaten",
-   "priority": 28,
-   "label": "neutral",
-   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
    "id": "cal:Italy Retail Sales YoY:2026-09-04T08:00:00.000Z",
-   "title": "Italy Retail Sales YoY: 0.8% (Prognose 3.0%, zuvor 3.1%)",
+   "title": "Retail Sales (Global): 0.8% (forecast 3.0%, previous 3.1%)",
+   "titleDe": "Einzelhandelsumsätze (Global): 0.8% (Prognose 3.0%, zuvor 3.1%)",
    "source": "Wirtschaftskalender",
    "url": "https://www.myfxbook.com/forex-economic-calendar/italy/retail-sales-yoy",
    "date": "2026-09-04T08:00:00.000Z",
@@ -3783,6 +4926,7 @@
    "impact": "high",
    "kind": "macro",
    "event": "Einzelhandelsumsätze",
+   "eventEn": "Retail Sales",
    "region": "Global",
    "channel": "growth",
    "actual": "0.8%",
@@ -3803,6 +4947,12 @@
    "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Einzelhandelsumsätze",
+   "eventTypeEn": "Einzelhandelsumsätze",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3830,9 +4980,15 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3856,9 +5012,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3889,9 +5051,16 @@
    "priority": 58,
    "label": "bearish",
    "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
-   ]
+   ],
+   "titleDe": "Argentiniens Milei eskaliert den Streit um die Falklandinseln, da Trump die Unterstützung der USA für Großbritannien in Frage stellt"
   },
   {
    "id": "Al Jazeera:Video: Workers rescued from hydro tunnel nine days after Nepal flooding",
@@ -3917,6 +5086,12 @@
    "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -3944,9 +5119,15 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "bearish",
    "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -3979,7 +5160,16 @@
    "priority": 53,
    "label": "strong_bullish",
    "labelText": "Stark Bullish",
-   "alsoIn": []
+   "impactLevel": "high",
+   "duration": "intraday",
+   "eventType": "ETF-Flüsse",
+   "eventTypeEn": "ETF flows",
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Bitcoin-ETF-Zuflüsse erreichten 731 Mio. $, der höchste Wert seit Januar, da BTC 80.000 $ zurückfordert"
   },
   {
    "id": "CoinDesk:Live updates: Bitcoin tumbles after blowout August jobs print",
@@ -4009,7 +5199,16 @@
    "priority": 49,
    "label": "bearish",
    "labelText": "Bearish",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Live-Updates: Bitcoin fällt nach Blowout August Jobs Print"
   },
   {
    "id": "Al Jazeera:Why Pakistan overhauled its military command structure after five decades",
@@ -4032,10 +5231,17 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 52,
+   "priority": 51,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Warum Pakistan nach fünf Jahrzehnten seine militärische Kommandostruktur überholte"
   },
   {
    "id": "Al Jazeera:Zverev goes distance to scrape into third round as upsets rock US Open",
@@ -4058,9 +5264,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4084,9 +5296,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4117,6 +5335,12 @@
    "priority": 27,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Kursprognose",
+   "eventTypeEn": "Price prediction",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4143,6 +5367,12 @@
    "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -4171,6 +5401,12 @@
    "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4194,9 +5430,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4227,118 +5469,17 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: energy price shock, price pressure, price rally, escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 65,
+   "priority": 64,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
-   "alsoIn": []
-  },
-  {
-   "id": "Al Jazeera:In southern Lebanon, Israeli demolitions continue ‘day and night’",
-   "title": "In southern Lebanon, Israeli demolitions continue ‘day and night’",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/features/2026/9/4/in-southern-lebanon-israeli-demolitions-continue-day-and-night?traffic_source=rss",
-   "date": "2026-09-04T06:24:55.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 20,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "alsoIn": []
-  },
-  {
-   "id": "Al Jazeera:Houthi attacks on Yemen’s Taiz escalate, triggering new displacement wave",
-   "title": "Houthi attacks on Yemen’s Taiz escalate, triggering new displacement wave",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/4/houthi-attacks-on-yemens-taiz-escalate-triggering-new-displacement-wave?traffic_source=rss",
-   "date": "2026-09-04T06:22:44.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Eskalation"
-   ],
-   "scores": {
-    "crypto": -0.36,
-    "stocks": -0.36,
-    "gold": 0.18,
-    "usd": 0.12
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 56,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "alsoIn": []
-  },
-  {
-   "id": "FXStreet:Euro remains steady above 1.1600, unfazed by downbeat Eurozone Retail Sales",
-   "title": "Euro remains steady above 1.1600, unfazed by downbeat Eurozone Retail Sales",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/euro-stalls-above-11600-with-eurozone-retail-sales-us-nonfarm-payrolls-on-tap-202609040621",
-   "date": "2026-09-04T06:21:21.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 20,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "alsoIn": []
-  },
-  {
-   "id": "Al Jazeera:After Gen Z, India’s Gen Alpha rises, demanding education reforms",
-   "title": "After Gen Z, India’s Gen Alpha rises, demanding education reforms",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/4/after-gen-z-indias-gen-alpha-rises-demanding-education-reforms?traffic_source=rss",
-   "date": "2026-09-04T06:20:33.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 20,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Diesel stellt Allzeithoch ein, da die Kriegskraftstoffrechnung 97,5 Milliarden $ erreicht"
   },
   {
    "id": "Cointelegraph:El Salvador’s post-review Bitcoin accumulation used no public funds: IMF",
@@ -4368,7 +5509,16 @@
    "priority": 47,
    "label": "bullish",
    "labelText": "Bullish",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "El Salvadors Post-Review-Bitcoin-Akkumulation verwendete keine öffentlichen Mittel: IWF"
   },
   {
    "id": "CNBC World:CNBC Daily Open: Vance says he would not call Trump's war with Iran a 'war'",
@@ -4395,10 +5545,17 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 56,
+   "priority": 55,
    "label": "bearish",
    "labelText": "Bearish",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "CNBC Daily Open: Vance sagt, er würde Trumps Krieg mit dem Iran nicht als \"Krieg\" bezeichnen"
   },
   {
    "id": "U.Today:Ripple's Garlinghouse: Making America Crypto Capital of the World Is 'Within Reach'",
@@ -4421,14 +5578,24 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "XRP"
+   ],
+   "alsoIn": [],
+   "titleDe": "Ripple's Garlinghouse: Die Krypto-Hauptstadt der Welt ist \"in Reichweite\""
   },
   {
    "id": "cal:Germany Factory Orders MoM:2026-09-04T06:00:00.000Z",
-   "title": "Germany Factory Orders MoM: 2.5% (Prognose 0.3%, zuvor 3.7%)",
+   "title": "Factory Orders (Global): 2.5% (forecast 0.3%, previous 3.7%)",
+   "titleDe": "Auftragseingang Industrie (Global): 2.5% (Prognose 0.3%, zuvor 3.7%)",
    "source": "Wirtschaftskalender",
    "url": "https://www.myfxbook.com/forex-economic-calendar/germany/factory-orders-mom",
    "date": "2026-09-04T06:00:00.000Z",
@@ -4439,6 +5606,7 @@
    "impact": "medium",
    "kind": "macro",
    "event": "Auftragseingang Industrie",
+   "eventEn": "Factory Orders",
    "region": "Global",
    "channel": "growth",
    "actual": "2.5%",
@@ -4456,35 +5624,15 @@
    "whyEn": "Factory Orders (Global): 2.5 versus 0.3 expected — above forecast. Economic activity therefore comes in stronger than priced in. That hands the Fed arguments for tighter policy. Higher rate expectations drain liquidity — a drag on crypto and equities, a tailwind for the dollar.",
    "category": "global-data",
    "categoryLabel": "Weltdaten",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
-  },
-  {
-   "id": "BeInCrypto:IMF Says Donations, Not Public Funds, Drove El Salvador Bitcoin Growth",
-   "title": "IMF Says Donations, Not Public Funds, Drove El Salvador Bitcoin Growth",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/el-salvador-bitcoin-donations-imf-review/",
-   "date": "2026-09-04T05:58:48.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 40,
-   "label": "neutral",
-   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Auftragseingang Industrie",
+   "eventTypeEn": "Auftragseingang Industrie",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4511,6 +5659,12 @@
    "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -4539,6 +5693,12 @@
    "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Produktankündigung",
+   "eventTypeEn": "Product announcement",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4565,6 +5725,12 @@
    "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4591,6 +5757,14 @@
    "priority": 38,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -4614,9 +5788,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -4642,9 +5822,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4671,6 +5857,12 @@
    "priority": 37,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Produktankündigung",
+   "eventTypeEn": "Product announcement",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4698,10 +5890,19 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 43,
+   "priority": 42,
    "label": "bullish",
    "labelText": "Bullish",
-   "alsoIn": []
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Bitcoin wieder über $ 81.000, da die Wanderungsquoten verblassen, Zcash führt mit 15% Sprung"
   },
   {
    "id": "BBC World:Steve Irwin's family celebrates 'superhero' dad, 20 years after shock death",
@@ -4724,9 +5925,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4750,9 +5957,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 36,
+   "priority": 35,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4776,9 +5989,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 16,
+   "priority": 15,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4802,9 +6021,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4828,9 +6053,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 14,
+   "priority": 13,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4857,6 +6088,12 @@
    "priority": 13,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4880,9 +6117,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 12,
+   "priority": 11,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4913,6 +6156,12 @@
    "priority": 17,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -4938,12 +6187,16 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 11,
+   "priority": 10,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": [
-    "CNBC"
-   ]
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
   },
   {
    "id": "BBC World:Kenya's chai lovers are not happy as the nation's cows run dry",
@@ -4966,9 +6219,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 11,
+   "priority": 10,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -4992,9 +6251,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 11,
+   "priority": 10,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5022,9 +6287,18 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 36,
+   "priority": 35,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "ETH",
+    "XRP"
+   ],
    "alsoIn": []
   },
   {
@@ -5048,9 +6322,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5074,9 +6354,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5104,9 +6390,15 @@
    "whyEn": "Directly crypto-negative news. (signals: regulatory pressure)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5130,9 +6422,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -5158,9 +6456,15 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -5189,6 +6493,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -5215,6 +6527,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Regulierungsverfahren",
+   "eventTypeEn": "Regulatory action",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5241,6 +6559,12 @@
    "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -5269,6 +6593,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5295,6 +6625,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Projekt-Update",
+   "eventTypeEn": "Project update",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5321,6 +6657,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
@@ -5353,6 +6695,14 @@
    "priority": 32,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -5379,6 +6729,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5409,6 +6765,12 @@
    "priority": 32,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5439,6 +6801,12 @@
    "priority": 12,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5465,6 +6833,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5491,6 +6865,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5517,6 +6897,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Produktankündigung",
+   "eventTypeEn": "Product announcement",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5543,7 +6929,14 @@
    "priority": 46,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Vance sagt, dass die Fed die Zinssätze senken sollte: \"Es wäre schön, Hilfe zu haben\""
   },
   {
    "id": "Cointelegraph:Michigan authorities continue pursuit to block Kalshi as Supreme Court fight looms",
@@ -5569,6 +6962,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5595,6 +6994,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "long",
+   "eventType": "Gesetzgebung",
+   "eventTypeEn": "Legislation",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5621,35 +7026,15 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ]
-  },
-  {
-   "id": "CNBC:Piper Sandler expects Robinhood to kickstart football season with a win",
-   "title": "Piper Sandler expects Robinhood to kickstart football season with a win",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/03/piper-sandler-expects-robinhood-to-start-football-season-with-a-win.html",
-   "date": "2026-09-03T19:01:36.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "alsoIn": []
   },
   {
    "id": "Cointelegraph:Bitcoin reclaims $80K as DXY falls amid continuing suspected yen intervention",
@@ -5675,6 +7060,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -5701,6 +7094,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5727,6 +7126,12 @@
    "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5753,6 +7158,16 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC",
+    "ETH",
+    "XRP"
+   ],
    "alsoIn": []
   },
   {
@@ -5779,6 +7194,12 @@
    "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5805,32 +7226,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
-  },
-  {
-   "id": "CNBC World:Leon Black sues House Oversight over Epstein probe subpoenas, won't appear Thursday",
-   "title": "Leon Black sues House Oversight over Epstein probe subpoenas, won't appear Thursday",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/03/leon-black-sues-house-oversight-epstein-probe-subpoenas.html",
-   "date": "2026-09-03T17:15:07.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5857,6 +7258,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Partnerschaft",
+   "eventTypeEn": "Partnership",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5883,6 +7290,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5913,6 +7326,14 @@
    "priority": 32,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "XRP"
+   ],
    "alsoIn": []
   },
   {
@@ -5939,6 +7360,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -5969,7 +7396,16 @@
    "priority": 52,
    "label": "bullish",
    "labelText": "Bullish",
-   "alsoIn": []
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Bitcoin pumpt als Fed-Signale Rate Pause, $ 415 Millionen in Shorts Get Rekt"
   },
   {
    "id": "Decrypt:Sony Dismisses PS5 Buyers' $508M Tariff Refund Claim as 'Illogical'",
@@ -5999,7 +7435,14 @@
    "priority": 42,
    "label": "bearish",
    "labelText": "Bearish",
-   "alsoIn": []
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Sony weist den 508 Mio. $ Tarifrückerstattungsanspruch der PS5-Käufer als \"unlogisch\" zurück"
   },
   {
    "id": "The Block:Strive CEO says company could end 2026 as second-largest public bitcoin holder as ASST climbs",
@@ -6025,6 +7468,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -6051,6 +7502,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -6077,6 +7536,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Partnerschaft",
+   "eventTypeEn": "Partnership",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6103,6 +7568,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6129,6 +7600,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6155,6 +7632,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6181,6 +7664,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6207,6 +7696,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6233,6 +7728,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6259,6 +7760,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Projekt-Update",
+   "eventTypeEn": "Project update",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6285,6 +7792,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6311,6 +7824,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -6337,7 +7858,14 @@
    "priority": 46,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Fed-Gouverneur Waller weist darauf hin, dass er es unterstützen wird, die Zinsen bei der September-Sitzung stabil zu halten"
   },
   {
    "id": "Cointelegraph:Recovery specialists crack $1B crypto wallet... but find just $10",
@@ -6363,6 +7891,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6389,6 +7923,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "XRP"
+   ],
    "alsoIn": []
   },
   {
@@ -6415,6 +7957,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6441,6 +7989,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6467,6 +8021,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6493,6 +8053,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6519,6 +8085,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6545,6 +8117,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "XRP"
+   ],
    "alsoIn": []
   },
   {
@@ -6571,6 +8151,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6597,6 +8183,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6623,6 +8215,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6649,6 +8247,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6675,6 +8279,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -6701,6 +8313,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6727,6 +8345,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6753,6 +8377,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -6779,6 +8411,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -6805,6 +8445,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -6831,6 +8479,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6857,6 +8511,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -6887,6 +8547,14 @@
    "priority": 32,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -6913,6 +8581,17 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "XRP"
+   ],
    "alsoIn": []
   },
   {
@@ -6943,6 +8622,14 @@
    "priority": 32,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -6969,6 +8656,15 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Produktankündigung",
+   "eventTypeEn": "Product announcement",
+   "scope": "project",
+   "coins": [
+    "BTC",
+    "ETH"
+   ],
    "alsoIn": []
   },
   {
@@ -6995,6 +8691,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7021,6 +8723,12 @@
    "priority": 36,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7051,6 +8759,15 @@
    "priority": 37,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC",
+    "ETH"
+   ],
    "alsoIn": []
   },
   {
@@ -7077,6 +8794,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Regulierungsverfahren",
+   "eventTypeEn": "Regulatory action",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7103,6 +8826,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7129,6 +8858,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Regulierungsverfahren",
+   "eventTypeEn": "Regulatory action",
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "Decrypt"
    ]
@@ -7157,6 +8892,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "XRP"
+   ],
    "alsoIn": []
   },
   {
@@ -7183,6 +8926,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7209,6 +8958,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7239,6 +8994,12 @@
    "priority": 32,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7265,6 +9026,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7295,6 +9062,16 @@
    "priority": 37,
    "label": "strong_bullish",
    "labelText": "Stark Bullish",
+   "impactLevel": "high",
+   "duration": "intraday",
+   "eventType": "ETF-Flüsse",
+   "eventTypeEn": "ETF flows",
+   "scope": "market",
+   "coins": [
+    "BTC",
+    "ETH",
+    "XRP"
+   ],
    "alsoIn": []
   },
   {
@@ -7321,6 +9098,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -7347,6 +9132,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "XRP"
+   ],
    "alsoIn": []
   },
   {
@@ -7373,6 +9166,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7399,6 +9198,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -7425,6 +9232,12 @@
    "priority": 36,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7451,6 +9264,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7477,6 +9296,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7503,6 +9328,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Regulierungsverfahren",
+   "eventTypeEn": "Regulatory action",
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7529,6 +9360,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7559,6 +9396,12 @@
    "priority": 17,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7585,6 +9428,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7611,6 +9460,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7637,6 +9492,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Kursprognose",
+   "eventTypeEn": "Price prediction",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7663,6 +9524,15 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC",
+    "DOGE"
+   ],
    "alsoIn": []
   },
   {
@@ -7689,6 +9559,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7715,6 +9591,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7741,6 +9623,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7767,6 +9655,16 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC",
+    "ETH",
+    "XRP"
+   ],
    "alsoIn": []
   },
   {
@@ -7793,6 +9691,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7819,6 +9723,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7845,6 +9755,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Produktankündigung",
+   "eventTypeEn": "Product announcement",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7871,6 +9787,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7897,6 +9819,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "XRP"
+   ],
    "alsoIn": []
   },
   {
@@ -7923,6 +9853,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Produktankündigung",
+   "eventTypeEn": "Product announcement",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -7949,32 +9885,14 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
-   "alsoIn": []
-  },
-  {
-   "id": "U.Today:Tether's Stablecoin Goes Live on Stellar",
-   "title": "Tether's Stablecoin Goes Live on Stellar",
-   "source": "U.Today",
-   "url": "https://u.today/tethers-stablecoin-goes-live-on-stellar",
-   "date": "2026-09-02T18:51:01.000Z",
-   "tags": [
-    "Krypto"
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
    ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
    "alsoIn": []
   },
   {
@@ -8005,6 +9923,14 @@
    "priority": 33,
    "label": "bearish",
    "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
    "alsoIn": []
   },
   {
@@ -8031,6 +9957,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -8057,6 +9989,12 @@
    "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -8087,6 +10025,12 @@
    "priority": 12,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Projekt-Update",
+   "eventTypeEn": "Project update",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -8113,6 +10057,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Partnerschaft",
+   "eventTypeEn": "Partnership",
+   "scope": "project",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -8139,6 +10089,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -8169,6 +10125,12 @@
    "priority": 15,
    "label": "bullish",
    "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -8195,6 +10157,12 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   },
   {
@@ -8221,7 +10189,49 @@
    "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "CNBC Economy:Bank of England chief warns new AI models threaten global financial stability",
+   "title": "Bank of England chief warns new AI models threaten global financial stability",
+   "source": "CNBC Economy",
+   "url": "https://www.cnbc.com/2026/08/31/bailey-frontier-ai-financial-stability-risk.html",
+   "date": "2026-08-31T13:35:11.000Z",
+   "tags": [
+    "US-Wirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 6,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": []
   }
- ]
+ ],
+ "uebersetzung": {
+  "uebersetzt": 40,
+  "fehler": null
+ }
 }

@@ -127,6 +127,7 @@ export function scoreMacroEvent({ title, actual, consensus, previous, impact }, 
   return {
     kind: 'macro',
     event: ev.name,
+    eventEn: ev.nameEn || ev.name,
     region: rel.region,
     channel: ev.channel,
     actual, consensus, previous, impact,

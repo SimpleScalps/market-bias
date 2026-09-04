@@ -1,6 +1,8 @@
 import { scoreMacroEvent, scoreHeadline, label, LABEL_TEXT } from './sentiment.mjs';
 import { isNoise, categorize, priority, CATEGORY_LABEL } from './priority.mjs';
 import { dedupe } from './dedupe.mjs';
+import { tradeImpact } from './tradeimpact.mjs';
+import { translateTitles } from './translate.mjs';
 
 // Gemeinsame Sammel-Pipeline für das Node-Skript (GitHub Actions) und den
 // Cloudflare Worker (Live-Betrieb). Beide rufen collectNews() auf.
@@ -65,9 +67,12 @@ export async function loadCalendar(regime = 'policy') {
 
     const scored = scoreMacroEvent({ title, actual, consensus, previous, impact }, regime);
     if (!scored) continue;
+    const zahlen = `${actual} (${'{F}'} ${consensus || '—'}, ${'{P}'} ${previous || '—'})`;
     out.push({
       id: `cal:${title}:${date.toISOString()}`,
-      title: `${title}: ${actual} (Prognose ${consensus || '—'}, zuvor ${previous || '—'})`,
+      // Der Kalendertitel wird selbst gebaut und ist damit in beiden Sprachen exakt.
+      title: `${scored.eventEn} (${scored.region}): ` + zahlen.replace('{F}', 'forecast').replace('{P}', 'previous'),
+      titleDe: `${scored.event} (${scored.region}): ` + zahlen.replace('{F}', 'Prognose').replace('{P}', 'zuvor'),
       source: 'Wirtschaftskalender',
       url: (it.match(/<link>([^]*?)<\/link>/i) || [])[1]?.trim() || '',
       date: date.toISOString(),
@@ -110,7 +115,7 @@ export async function loadFeed(feed, regime = 'policy') {
 export function enrich(list) {
   return list.map((n) => {
     const category = categorize(n);
-    return {
+    const mitRang = {
       ...n,
       category,
       categoryLabel: CATEGORY_LABEL[category],
@@ -118,6 +123,7 @@ export function enrich(list) {
       label: label(n.scores.crypto),
       labelText: LABEL_TEXT[label(n.scores.crypto)],
     };
+    return { ...mitRang, ...tradeImpact(mitRang) };
   });
 }
 
@@ -125,7 +131,7 @@ export function enrich(list) {
  * Holt alle Quellen, bewertet, entdoppelt und sortiert.
  * `onlyFast` beschränkt auf die schnellen Quellen — dafür im Live-Betrieb.
  */
-export async function collectNews({ regime = 'policy', onlyFast = false, limit = 300 } = {}) {
+export async function collectNews({ regime = 'policy', onlyFast = false, limit = 300, translate = null } = {}) {
   const feeds = onlyFast ? FEEDS.filter((f) => f.fast) : FEEDS;
   const results = await Promise.allSettled([
     loadCalendar(regime),
@@ -147,5 +153,17 @@ export async function collectNews({ regime = 'policy', onlyFast = false, limit =
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, limit);
 
-  return { updated: new Date().toISOString(), regime, count: all.length, errors, items: all };
+  // Deutsche Titel ergänzen. Fehlschläge sind unkritisch: dann bleibt der
+  // englische Titel stehen, die Bewertung arbeitet ohnehin auf dem Original.
+  let uebersetzung = null;
+  if (translate) {
+    const r = await translateTitles(all, translate.cache || {}, translate);
+    uebersetzung = { uebersetzt: r.uebersetzt, fehler: r.fehler };
+    if (r.fehler) errors.push(`Übersetzung: ${r.fehler}`);
+  }
+
+  return {
+    updated: new Date().toISOString(),
+    regime, count: all.length, errors, items: all, uebersetzung,
+  };
 }

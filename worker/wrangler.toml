@@ -10,3 +10,10 @@ crons = ["* * * * *"]
 # 'policy' = Zinskanal (starke Daten sind schlecht für Krypto)
 # 'growth' = Wachstumskanal (starke Daten sind gut für Krypto)
 REGIME = "policy"
+
+# Optional, aber empfohlen: dauerhafte Ablage für Benachrichtigungs-Abos.
+# Anlegen mit:  wrangler kv namespace create STORE
+# Danach die ausgegebene id hier eintragen und die beiden Zeilen einkommentieren.
+# [[kv_namespaces]]
+# binding = "STORE"
+# id = "HIER_DIE_ID"

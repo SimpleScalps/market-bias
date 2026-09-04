@@ -96,7 +96,96 @@ ist für Krypto bearish und für den Dollar bullish.
   gerichteten Meldungen. Auf dem iPhone erst verfügbar, wenn die Seite über
   "Zum Home-Bildschirm" installiert wurde.
 - **Live-Quelle** — Adresse des Cloudflare Workers
+- **Trading-Profil** — Stil, Zeitrahmen und Coins (siehe unten)
 - **Quellen** — alle Feeds mit Trefferzahl, einzeln ab- und zuschaltbar
+
+## Trading Impact und Wirkungsdauer
+
+Unter jeder Meldung stehen zwei Angaben, die eine reine Bullish/Bearish-Marke
+nicht liefert:
+
+**Trading Impact** — wie stark bewegt die Meldung überhaupt?
+`IGNORIEREN` · `GERING` · `MITTEL` · `HOCH` · `EXTREM`
+
+**Erwartete Dauer** — wie lange wirkt sie nach?
+`SCALP < 1 STD` · `INTRADAY 1–24 STD` · `SWING 1–7 TAGE` · `LANGFRISTIG > 7 TAGE`
+
+Beides kommt aus dem Ereignistyp, nicht aus dem Sentiment. Eine Whale-Bewegung
+ist ein Scalp-Signal: sofort da, schnell vorbei. Eine ETF-Zulassung wirkt
+Wochen. Beide können bullish sein und verlangen völlig verschiedene Trades.
+
+Die Krypto-Ereignistypen stehen in `docs/engine/cryptoevents.mjs` — von
+Börsen-Hack und Auszahlungsstopp (extrem, Swing) über Whale-Bewegung und
+Liquidationen (mittel, Scalp) bis Projekt-Update und Kursprognose, die als
+`IGNORIEREN` eingestuft werden.
+
+## Trading-Profil
+
+Im Zahnrad unter *Trading-Profil* lässt sich einstellen:
+
+- **Stil** — Scalping, Intraday, Swing oder Langfristig
+- **Zeitrahmen** — 1m bis 4h (setzt den passenden Stil automatisch)
+- **Coins** — BTC, ETH, SOL, XRP, BNB, DOGE
+
+Aktiviert man *Nur was zählt*, verschwindet alles, was auf diesem Zeitrahmen
+nicht handelbar ist: Projekt-Updates, Kursprognosen, Partnerschaften und alles,
+was nur andere Coins betrifft. Im Test blieben von 300 Meldungen 40 übrig.
+
+Extremereignisse kommen immer durch, unabhängig vom Profil — ein Börsen-Hack
+interessiert auch den Langfristanleger, und eine ETF-Entscheidung auch den
+Scalper.
+
+## Benachrichtigungen
+
+Drei Kanäle, einzeln zuschaltbar:
+
+| Kanal | Funktioniert bei geschlossener App | Einrichtung |
+|---|---|---|
+| **Browser** | nur wenn als PWA installiert | ein Klick |
+| **Telegram** | ja, über den Worker | Bot-Token + Chat-ID |
+| **Discord** | ja, über den Worker | Webhook-Adresse |
+
+Telegram und Discord laufen bewusst über den Cloudflare Worker: Nur der kann
+zustellen, während die App geschlossen ist — und das ist der Normalfall, wenn
+das Handy in der Tasche steckt. Die App hinterlegt dafür ihre Einstellungen
+beim Worker (`/subscribe`), der Cron-Job prüft jede Minute auf neue Meldungen
+und verschickt sie.
+
+**Telegram einrichten:** In Telegram [@BotFather](https://t.me/BotFather)
+anschreiben, `/newbot` senden, den Token kopieren. Dann dem eigenen Bot einmal
+schreiben und die Chat-ID über
+`https://api.telegram.org/botTOKEN/getUpdates` ablesen.
+
+**Discord einrichten:** Serveinstellungen → Integrationen → Webhooks → Neuer
+Webhook → Adresse kopieren.
+
+> Damit Benachrichtigungen einen Neustart des Workers überleben, empfiehlt sich
+> ein KV-Speicher. Ohne ihn liegen die Einstellungen nur im flüchtigen Cache:
+> ```bash
+> wrangler kv namespace create STORE
+> ```
+> Die ausgegebene ID in `worker/wrangler.toml` unter `[[kv_namespaces]]`
+> eintragen und erneut deployen.
+
+## Sprache der Schlagzeilen
+
+Die Feeds liefern englische Titel. Kalendereinträge baut die Pipeline selbst in
+beiden Sprachen — dort ist die Fassung exakt. Echte Schlagzeilen werden
+übersetzt und dauerhaft in `docs/data/translations.json` zwischengespeichert;
+ein einmal übersetzter Titel wird nie erneut angefragt.
+
+Ohne Konfiguration läuft das über MyMemory mit rund 5.000 Zeichen pro Tag —
+das reicht für etwa 60 Schlagzeilen täglich. Zwei Wege, das zu erhöhen:
+
+| Weg | Kontingent | Einrichtung |
+|---|---|---|
+| `TRANSLATE_EMAIL` | 50.000 Zeichen/Tag | eigene E-Mail als Umgebungsvariable |
+| `DEEPL_KEY` | 500.000 Zeichen/Monat, bessere Qualität | kostenloser Schlüssel bei DeepL |
+
+Beides wird im Workflow unter *Settings → Secrets and variables → Actions*
+hinterlegt. Schlägt die Übersetzung fehl, bleibt der englische Titel stehen —
+die Bewertung selbst ist davon nie betroffen, weil sie auf dem Originaltext
+arbeitet.
 
 ## Aktualität
 
@@ -180,8 +269,14 @@ Gerät, sofern es das unterstützt.
 ```
 docs/                     von GitHub Pages ausgeliefert
   engine/                 Bewertungslogik, geteilt von Node, Worker und Browser
+    cryptoevents.mjs      Krypto-Ereignistypen mit Wirkung und Dauer
+    tradeimpact.mjs       Trading Impact und erwartete Wirkungsdauer
+    profile.mjs           Filter nach Trading-Profil
+    translate.mjs         Übersetzung mit Zwischenspeicher
   data/news.json          von der Automatik erzeugt
+  data/translations.json  Zwischenspeicher der Übersetzungen
 worker/                   Cloudflare Worker für den Live-Betrieb
+  notify.mjs              Versand an Telegram und Discord
 scripts/fetch.mjs         Einstieg für GitHub Actions
 src/sentiment.test.mjs    Tests
 ```
@@ -195,6 +290,8 @@ src/sentiment.test.mjs    Tests
 | Länder- und Notenbankgewichte | `docs/engine/relevance.mjs` |
 | Kategorien, Rauschfilter, Relevanz | `docs/engine/priority.mjs` |
 | Nachrichtenquellen | `FEEDS` in `docs/engine/feeds.mjs` |
+| Krypto-Ereignistypen, Wirkung und Dauer | `docs/engine/cryptoevents.mjs` |
+| Regeln je Handelsstil | `STIL_REGELN` in `docs/engine/profile.mjs` |
 | Schwellen für stark (±0,55) und normal (±0,16) | `label()` in `docs/engine/sentiment.mjs` **und** `docs/app.js` |
 
 **Marktregime umstellen.** Standard ist `policy`: der Zinskanal dominiert, gute

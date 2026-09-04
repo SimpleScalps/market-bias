@@ -1,3 +1,5 @@
+import { profilPassung, STANDARD_PROFIL } from './engine/profile.mjs';
+
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
@@ -27,6 +29,10 @@ let theme = P.get('theme', 'system');
 let notify = P.get('notify', 'off');
 let liveUrl = P.get('liveUrl', '') || window.MARKET_BIAS_LIVE_URL || '';
 let ausQuellen = new Set(JSON.parse(P.get('ausQuellen', '[]')));
+let profil = { ...STANDARD_PROFIL, ...JSON.parse(P.get('profil', '{}')) };
+let kanaele = new Set(JSON.parse(P.get('kanaele', '["browser"]')));
+let tg = JSON.parse(P.get('tg', '{}'));
+let dc = JSON.parse(P.get('dc', '{}'));
 let query = '';
 let gesehen = new Set();
 let frischeIds = new Set();
@@ -39,11 +45,14 @@ const T = () => window.I18N[lang];
 
 const zeit = (iso) => new Date(iso).toLocaleTimeString(lang === 'en' ? 'en-GB' : 'de-DE', { hour: '2-digit', minute: '2-digit' });
 const grund = (n) => (lang === 'en' ? (n.whyEn || n.why) : n.why) || T().keineBegruendung;
+// Deutsche Fassung nutzen, wo vorhanden — sonst bleibt der Originaltitel stehen.
+const titel = (n) => (lang === 'de' ? (n.titleDe || n.title) : n.title);
 
 // ---------- Filterkette ----------
 function matches(n) {
   if (cat !== 'all' && n.category !== cat) return false;
   if (ausQuellen.has(n.source)) return false;
+  if (profilPassung(n, profil) === null) return false;
 
   const l = label(n.scores[asset] ?? 0);
   if (sent === 'strong' && !l.startsWith('strong')) return false;
@@ -52,7 +61,7 @@ function matches(n) {
   if (sent === 'nonneutral' && l === 'neutral') return false;
 
   if (query) {
-    const hay = `${n.title} ${n.source} ${n.categoryLabel} ${n.event || ''}`.toLowerCase();
+    const hay = `${n.title} ${n.titleDe || ''} ${n.source} ${n.categoryLabel} ${n.eventType || ''}`.toLowerCase();
     if (!query.split(/\s+/).every((w) => hay.includes(w))) return false;
   }
   return true;
@@ -60,7 +69,11 @@ function matches(n) {
 
 function ordered(list) {
   const by = {
-    priority: (a, b) => b.priority - a.priority || new Date(b.date) - new Date(a.date),
+    priority: (a, b) => {
+      const fa = (a.priority ?? 0) * (profil.aktiv ? (profilPassung(a, profil) ?? 0) : 1);
+      const fb = (b.priority ?? 0) * (profil.aktiv ? (profilPassung(b, profil) ?? 0) : 1);
+      return fb - fa || new Date(b.date) - new Date(a.date);
+    },
     time: (a, b) => new Date(b.date) - new Date(a.date),
     impact: (a, b) => Math.abs(b.scores[asset]) - Math.abs(a.scores[asset]) || b.priority - a.priority,
   };
@@ -112,7 +125,7 @@ function renderTages() {
   const treiber = t.treiber.length
     ? `<div class="treiber"><span>${T().treiber}</span><ul>${
         t.treiber.map((n) => `<li class="${label(n.scores[asset])}">${
-          n.title.replace(/[<>&]/g, '').slice(0, 74)}</li>`).join('')
+          titel(n).replace(/[<>&]/g, '').slice(0, 74)}</li>`).join('')
       }</ul></div>`
     : '';
 
@@ -197,12 +210,19 @@ function render() {
     c.textContent = T().cats[n.category] || (n.categoryLabel || '').toUpperCase();
     c.dataset.c = n.category;
 
-    $('.title', node).textContent = n.title;
+    $('.title', node).textContent = titel(n);
     $('.meter i', node).style.cssText = meterStyle(score);
 
     const badge = $('.badge', node);
     badge.textContent = T().labels[l];
     badge.classList.add(l);
+
+    const imp = $('.impact', node);
+    imp.textContent = T().impact[n.impactLevel] || '';
+    imp.dataset.lvl = n.impactLevel || '';
+    $('.dauer', node).textContent = T().dauer[n.duration] || '';
+    const typ = lang === 'en' ? (n.eventTypeEn || n.eventType) : n.eventType;
+    $('.etyp', node).textContent = typ || '';
 
     const anzahl = n.alsoIn?.length || 0;
     const auch = anzahl ? ` · +${anzahl} ${anzahl > 1 ? T().quellenMehr : T().quellen}` : '';
@@ -263,10 +283,47 @@ function renderTexte() {
   $('#lLive').textContent = T().liveQuelle;
   $('#lQuellen').textContent = T().quellenListe;
   $('#hLive').textContent = T().liveHinweis;
+  $('#lProfil').textContent = T().profil;
+  $('#lStil').textContent = T().stil;
+  $('#lZeit').textContent = T().zeitrahmen;
+  $('#lCoins').textContent = T().muenzen;
+  $('#lKanaele').textContent = T().kanaele;
+  $('#hTelegram').textContent = T().telegramHinweis;
+  $('#hDiscord').textContent = T().discordHinweis;
+  $('#testSenden').textContent = T().testen;
+  $$('#profilAn button')[0].textContent = T().profilAus;
+  $$('#profilAn button')[1].textContent = T().profilAn;
+  $$('#stil button').forEach((b) => { b.textContent = T().stilOpt[b.dataset.stil]; });
+  profilHinweis();
   $('#hQuellen').textContent = T().quellenHinweis;
   $$('#theme button').forEach((b) => { b.textContent = T().designOpt[b.dataset.theme]; });
   $$('#benach button').forEach((b) => { b.textContent = T().benachrichtigungOpt[b.dataset.notify]; });
   hinweisBenachrichtigung();
+}
+
+// ---------- Trading-Profil ----------
+function profilHinweis() {
+  const el = $('#hProfil');
+  if (!profil.aktiv) { el.textContent = T().profilHinweis; return; }
+  const passend = data.items.filter((n) => profilPassung(n, profil) !== null).length;
+  el.textContent = `${T().profilAktivHinweis(passend, data.items.length)} ${T().profilHinweis}`;
+}
+
+function profilAnzeigen() {
+  $('#profilDetails').hidden = !profil.aktiv;
+  $$('#profilAn button').forEach((b) =>
+    b.classList.toggle('on', (b.dataset.profil === 'an') === profil.aktiv));
+  $$('#stil button').forEach((b) => b.classList.toggle('on', b.dataset.stil === profil.stil));
+  $$('#tf button').forEach((b) => b.classList.toggle('on', b.dataset.tf === profil.timeframe));
+  $$('#coins button').forEach((b) => b.classList.toggle('on', profil.coins.includes(b.dataset.coin)));
+  profilHinweis();
+}
+
+function profilSpeichern() {
+  P.set('profil', JSON.stringify(profil));
+  profilAnzeigen();
+  aboSenden();
+  alles();
 }
 
 // ---------- Design ----------
@@ -299,10 +356,12 @@ async function benachrichtigungSetzen(wert) {
   P.set('notify', notify);
   $$('#benach button').forEach((b) => b.classList.toggle('on', b.dataset.notify === notify));
   hinweisBenachrichtigung();
+  kanaeleAnzeigen();
+  aboSenden();
 }
 
 function melde(frisch) {
-  if (notify === 'off' || !('Notification' in window) || Notification.permission !== 'granted') return;
+  if (notify === 'off') return;
 
   const relevant = frisch.filter((n) => {
     const l = label(n.scores[asset] ?? 0);
@@ -312,13 +371,73 @@ function melde(frisch) {
 
   const top = relevant.sort((a, b) => Math.abs(b.scores[asset]) - Math.abs(a.scores[asset]))[0];
   const rest = relevant.length - 1;
+  const kopf = `${T().labels[label(top.scores[asset])]} · ${T().assets[asset]}`;
+  const rumpf = `${titel(top)}\n${T().impact[top.impactLevel]} · ${T().dauer[top.duration]}`;
+
+  if (kanaele.has('telegram') || kanaele.has('discord')) anKanaele(kopf, rumpf);
+
+  if (!kanaele.has('browser') || !('Notification' in window) || Notification.permission !== 'granted') return;
   try {
     new Notification(`${T().labels[label(top.scores[asset])]} · ${T().assets[asset]}`, {
-      body: top.title + (rest > 0 ? `\n+${rest} ${rest > 1 ? T().neueMeldungen : T().neueMeldung}` : ''),
+      body: titel(top) + (rest > 0 ? `\n+${rest} ${rest > 1 ? T().neueMeldungen : T().neueMeldung}` : ''),
       icon: 'icon.png',
       tag: 'market-bias',
     });
   } catch { /* Browser verweigert */ }
+}
+
+// ---------- Benachrichtigungskanäle ----------
+function kanaeleAnzeigen() {
+  $('#kanaele').hidden = notify === 'off';
+  $$('#kanalWahl button').forEach((b) => b.classList.toggle('on', kanaele.has(b.dataset.kanal)));
+  $('#tgFelder').hidden = !kanaele.has('telegram');
+  $('#dcFelder').hidden = !kanaele.has('discord');
+  $('#tgToken').value = tg.token || '';
+  $('#tgChat').value = tg.chat || '';
+  $('#dcHook').value = dc.hook || '';
+}
+
+/**
+ * Schickt eine Meldung an die aktiven Kanäle. Telegram und Discord laufen über
+ * den Worker: nur der kann zustellen, während die App geschlossen ist.
+ */
+async function anKanaele(titelText, text) {
+  if (!liveUrl) return { ok: false, grund: 'kein Worker' };
+  const ziele = [];
+  if (kanaele.has('telegram') && tg.token && tg.chat) ziele.push({ typ: 'telegram', ...tg });
+  if (kanaele.has('discord') && dc.hook) ziele.push({ typ: 'discord', hook: dc.hook });
+  if (!ziele.length) return { ok: false, grund: 'kein Ziel' };
+
+  try {
+    const res = await fetch(`${liveUrl}/notify`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ titel: titelText, text, ziele }),
+    });
+    return { ok: res.ok };
+  } catch {
+    return { ok: false, grund: 'nicht erreichbar' };
+  }
+}
+
+/**
+ * Hinterlegt die Benachrichtigungseinstellungen beim Worker. Ohne das würde
+ * nur gepusht, solange die App offen ist — genau dann braucht man es am
+ * wenigsten.
+ */
+async function aboSenden() {
+  if (!liveUrl) return;
+  const ziele = [];
+  if (kanaele.has('telegram') && tg.token && tg.chat) ziele.push({ typ: 'telegram', ...tg });
+  if (kanaele.has('discord') && dc.hook) ziele.push({ typ: 'discord', hook: dc.hook });
+
+  try {
+    await fetch(`${liveUrl}/subscribe`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ stufe: notify, ziele, profil, asset, lang }),
+    });
+  } catch { /* Worker gerade nicht erreichbar */ }
 }
 
 // ---------- Laden ----------
@@ -380,6 +499,7 @@ async function load() {
   }
   renderCats();
   renderQuellen();
+  profilHinweis();
   renderTages();
   renderFoot();
   render();
@@ -465,12 +585,71 @@ $('#liveInput').addEventListener('change', (e) => {
   load();
 });
 
+
+// Trading-Profil
+$$('#profilAn button').forEach((b) => b.addEventListener('click', () => {
+  profil.aktiv = b.dataset.profil === 'an';
+  profilSpeichern();
+}));
+$$('#stil button').forEach((b) => b.addEventListener('click', () => {
+  profil.stil = b.dataset.stil;
+  profilSpeichern();
+}));
+$$('#tf button').forEach((b) => b.addEventListener('click', () => {
+  profil.timeframe = b.dataset.tf;
+  // Der Zeitrahmen legt den Stil nahe — ein Widerspruch wäre verwirrend.
+  const passend = { '1m': 'scalping', '3m': 'scalping', '5m': 'scalping',
+                    '15m': 'intraday', '1h': 'intraday', '4h': 'swing' }[profil.timeframe];
+  if (passend) profil.stil = passend;
+  profilSpeichern();
+}));
+$$('#coins button').forEach((b) => b.addEventListener('click', () => {
+  const c = b.dataset.coin;
+  profil.coins = profil.coins.includes(c)
+    ? profil.coins.filter((x) => x !== c)
+    : [...profil.coins, c];
+  if (!profil.coins.length) profil.coins = ['BTC'];   // ohne Coin bliebe nichts übrig
+  profilSpeichern();
+}));
+
+// Benachrichtigungskanäle
+$$('#kanalWahl button').forEach((b) => b.addEventListener('click', () => {
+  const k = b.dataset.kanal;
+  if (kanaele.has(k)) kanaele.delete(k); else kanaele.add(k);
+  P.set('kanaele', JSON.stringify([...kanaele]));
+  kanaeleAnzeigen();
+  aboSenden();
+}));
+$('#tgToken').addEventListener('change', (e) => {
+  tg.token = e.target.value.trim(); P.set('tg', JSON.stringify(tg));
+  aboSenden();
+});
+$('#tgChat').addEventListener('change', (e) => {
+  tg.chat = e.target.value.trim(); P.set('tg', JSON.stringify(tg));
+  aboSenden();
+});
+$('#dcHook').addEventListener('change', (e) => {
+  dc.hook = e.target.value.trim(); P.set('dc', JSON.stringify(dc));
+  aboSenden();
+});
+
+$('#testSenden').addEventListener('click', async () => {
+  const st = $('#testStatus');
+  st.textContent = '…';
+  const r = await anKanaele('Market Bias', 'Test — die Verbindung steht.');
+  st.textContent = r.ok ? T().gesendet : `${T().fehlgeschlagen}${r.grund ? ' (' + r.grund + ')' : ''}`;
+  st.className = 'testStatus ' + (r.ok ? 'ok' : 'fehler');
+  setTimeout(() => { st.textContent = ''; st.className = 'testStatus'; }, 6000);
+});
+
 // ---------- Start ----------
 $$('.seg button').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.asset === asset)));
 $$('#sprache button').forEach((b) => b.classList.toggle('on', b.dataset.lang === lang));
 $$('#benach button').forEach((b) => b.classList.toggle('on', b.dataset.notify === notify));
 $('#liveInput').value = liveUrl;
 
+profilAnzeigen();
+kanaeleAnzeigen();
 themeAnwenden();
 renderTexte();
 
@@ -482,6 +661,7 @@ setInterval(tick, 1000);
 
 load();
 starteTakt();
+aboSenden();
 document.addEventListener('visibilitychange', () => { if (!document.hidden) load(); });
 
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});

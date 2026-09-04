@@ -272,3 +272,44 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
 }
 .quellen button b{font-weight:500;opacity:.6}
 .quellen button.on{color:var(--dim);border-color:var(--line-2);text-decoration:none}
+
+/* ================= Handelswirkung ================= */
+.trade{display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin-top:1px}
+.impact,.dauer,.etyp{
+  font-family:var(--mono);font-size:8.5px;letter-spacing:.1em;
+  padding:2px 5px;border-radius:2px;white-space:nowrap
+}
+.impact{font-weight:700;border:1px solid currentColor}
+.impact[data-lvl="extreme"]{color:#fff;background:var(--bear);border-color:var(--bear)}
+.impact[data-lvl="high"]{color:var(--bear);background:rgba(255,77,94,.12)}
+.impact[data-lvl="medium"]{color:#ffb84d;background:rgba(255,184,77,.12)}
+.impact[data-lvl="low"]{color:var(--faint);background:transparent}
+.impact[data-lvl="ignore"]{display:none}
+.dauer{color:var(--dim);background:var(--panel-2)}
+.etyp{color:var(--faint);border:1px dashed var(--line-2)}
+.etyp:empty,.dauer:empty{display:none}
+
+:root[data-theme="light"] .impact[data-lvl="extreme"]{color:#fff}
+
+/* ================= Profil und Kanäle ================= */
+.unterfeld{margin-top:11px}
+.unterfeld>span{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.1em;
+  color:var(--faint);margin-bottom:6px;text-transform:uppercase}
+.wahl.klein button{flex:0 0 auto;padding:6px 10px;font-size:10px}
+
+#tgFelder,#dcFelder{display:grid;gap:6px;margin-top:10px}
+#tgFelder input,#dcFelder input{
+  width:100%;background:var(--panel);border:1px solid var(--line);border-radius:3px;
+  padding:8px 10px;font-family:var(--mono);font-size:10.5px;outline:0
+}
+#tgFelder input:focus,#dcFelder input:focus{border-color:var(--accent)}
+
+.testBtn{
+  margin-top:11px;background:var(--panel-2);border:1px solid var(--line-2);border-radius:3px;
+  color:var(--dim);font-family:var(--mono);font-size:10px;letter-spacing:.08em;
+  padding:7px 12px;cursor:pointer
+}
+.testBtn:active{border-color:var(--accent);color:var(--accent)}
+.testStatus{margin-left:9px;font-family:var(--mono);font-size:10px;letter-spacing:.06em}
+.testStatus.ok{color:var(--bull)}
+.testStatus.fehler{color:var(--bear)}
