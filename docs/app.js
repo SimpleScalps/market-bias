@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v42';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v43';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -593,6 +593,14 @@ async function frageStellen(n, text) {
       body: JSON.stringify({
         titel: n.title, text: n.text, frage: text, sprache: lang,
         /*
+         * Die Adresse des Artikels.
+         *
+         * Der Worker holt daraufhin den vollen Text - aber nur hier, beim
+         * Nachfragen. Automatisch fuer alle 240 Meldungen am Tag waere es ein
+         * Vielfaches an Token fuer Text, den fast niemand liest.
+         */
+        url: n.url || '',
+        /*
          * Der bisherige Verlauf faehrt mit.
          *
          * Ohne ihn stand eine Rueckfrage wie "kannst du die Infos nicht
@@ -940,6 +948,19 @@ function render(erzwingen = false) {
         antwort.textContent = erg.fehler;
       } else {
         antwort.textContent = erg.antwort;
+        /*
+         * Sagen, worauf die Antwort beruht.
+         *
+         * Ob der Artikel gelesen werden konnte, entscheidet darüber, wie viel
+         * die Antwort wert ist — bei einer Bot-Sperre stützt sie sich nur auf
+         * Schlagzeile und Anriss. Das gehört sichtbar dazu, nicht ins
+         * Verborgene.
+         */
+        if (erg.artikel) {
+          zeile('fHinweis', erg.artikel === 'gelesen'
+            ? T().artikelGelesen
+            : `${T().artikelFehlt}: ${erg.artikel}`);
+        }
       }
 
       // Merken, damit der Verlauf einen Neuaufbau der Liste übersteht.

@@ -44,6 +44,8 @@ window.I18N = {
     zSchreibHinweis: 'Gezählt werden alle Versuche, auch abgewiesene — die Zahl zeigt also, '
       + 'wie nah das Tageskontingent ist.',
     zBestand: 'Bestand', zGeprueft: 'Geprüfte Meldungen',
+    artikelGelesen: 'Artikel gelesen',
+    artikelFehlt: 'Artikel nicht abrufbar',
     zBudget: 'KI-Budget', zModelle: 'KI-Modelle', zTicks: 'Zuletzt aufgefrischt',
     zJa: 'läuft', zNein: 'blockiert',
     zHinweis: 'Cloudflare erlaubt 1.000 Schreibvorgänge am Tag. Ist das aufgebraucht, '
@@ -160,6 +162,8 @@ window.I18N = {
     nurOffeneApp: 'only while the app is open', zVersand: 'Duplicate guard', zTakt: 'Scheduler', zTaktKeiner: 'none recorded since the last save',
     zVorMin: (m) => (m < 1 ? 'just now' : m < 90 ? `${Math.round(m)} min ago` : `${Math.round(m / 60)} h ago`),
     zBestand: 'Stored stories', zGeprueft: 'Checked stories',
+    artikelGelesen: 'Article read',
+    artikelFehlt: 'Article unavailable',
     zBudget: 'AI budget', zModelle: 'AI models', zTicks: 'Last refreshed',
     zJa: 'working', zNein: 'blocked',
     zHinweis: 'Cloudflare allows 1,000 writes per day. Once used up, notifications are '

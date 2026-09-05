@@ -6,6 +6,7 @@ import { fortschreiben, TAGE_MAX } from '../docs/engine/wochenbuch.mjs';
 import { sendeAn } from './notify.mjs';
 export { Versandbuch } from './versandbuch.mjs';
 import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, fragen, kontingent, verbrauchAbholen, tagesverbrauch, gewaehlteModelle } from './deuten.mjs';
+import { artikelHolen } from './artikel.mjs';
 
 // Cloudflare Worker: holt die Quellen serverseitig (RSS-Feeds senden keine
 // CORS-Header, der Browser kann sie also nicht selbst laden), bewertet sie mit
@@ -423,6 +424,20 @@ function zugangGeprueft(request, url, env) {
   return gleich === 0;
 }
 const LAGE_KEY = 'https://market-bias.internal/lage';
+
+/*
+ * Zwischenspeicher fuer abgerufene Artikel.
+ *
+ * Eine Nachfrage kommt selten allein - wer einmal fragt, fragt meist noch
+ * zweimal nach. Ohne Zwischenspeicher holte jede Rueckfrage denselben Artikel
+ * erneut: ein Abruf beim Anbieter und ein paar Sekunden Wartezeit fuer nichts.
+ *
+ * Sechs Stunden genuegen. Laenger lohnt nicht, weil die Meldung ohnehin nach
+ * 24 Stunden aus dem Bestand faellt.
+ */
+const ARTIKEL_TTL = 6 * 3600;
+const artikelSchluessel = (url) =>
+  'https://market-bias.internal/artikel/' + encodeURIComponent(String(url).slice(0, 300));
 const LAGE_FRISCH_MS = 15 * 60_000;   // Zusammenfassung eine Viertelstunde nutzen
 const SPERRE_KEY = 'https://market-bias.internal/letzterVersand';
 
@@ -1844,22 +1859,53 @@ export default {
     if (url.pathname === '/frage' && request.method === 'POST') {
       if (!env.GROQ_KEY) return json({ fehler: 'kein Schluessel hinterlegt' }, 501);
       try {
-        const { titel, text, frage, sprache, kontext, verlauf } = await request.json();
+        const { titel, text, frage, sprache, kontext, verlauf, url: quelle } = await request.json();
         if (!titel) return json({ fehler: 'keine Meldung' }, 400);
         if (!frage?.trim()) return json({ fehler: 'keine Frage' }, 400);
+
+        /*
+         * Den Artikel holen - nur hier, nur auf Nachfrage.
+         *
+         * Bei rund 240 Meldungen am Tag waere ein Abruf fuer jede ein
+         * Vielfaches an Token fuer Text, den fast niemand liest. Wer eine
+         * Frage stellt, liest dagegen mit Sicherheit.
+         *
+         * Schlaegt der Abruf fehl - Bot-Sperre, Zeitueberschreitung, kein
+         * Fliesstext -, geht die Frage trotzdem raus: Schlagzeile, Anriss und
+         * Bewertung stehen ja weiter zur Verfuegung. Der Grund wandert in die
+         * Antwort, damit nicht raetselhaft bleibt, warum der Artikel fehlt.
+         */
+        let artikel = '';
+        let artikelHinweis = null;
+        if (quelle) {
+          const schluessel = artikelSchluessel(quelle);
+          const gemerkt = await lesen(env, schluessel);
+          if (gemerkt?.text) {
+            artikel = gemerkt.text;
+          } else {
+            const geholt = await artikelHolen(quelle);
+            if (geholt.text) {
+              artikel = geholt.text;
+              ctx.waitUntil(schreiben(env, ctx, schluessel, { text: artikel }, ARTIKEL_TTL));
+            } else {
+              artikelHinweis = geholt.fehler;
+            }
+          }
+        }
 
         const ergebnis = await fragen(titel, text, frage, env,
           sprache === 'en' ? 'en' : 'de', kontext,
           // Nur wohlgeformte Eintraege, und hoechstens drei - der Rest
           // kostete Token, ohne die Rueckfrage verstaendlicher zu machen.
           (Array.isArray(verlauf) ? verlauf : [])
-            .filter((e) => e && e.frage && e.antwort).slice(-3));
+            .filter((e) => e && e.frage && e.antwort).slice(-3),
+          artikel);
 
         // Bei einer Absage den Kontingentstand mitgeben: Ein Minutenlimit ist
         // nach einer Minute vorbei, ein Tageslimit erst morgen.
         tokenBuchen(env, ctx);
         if (ergebnis.fehler) return json({ ...ergebnis, kontingent }, 502);
-        return json(ergebnis);
+        return json({ ...ergebnis, artikel: artikel ? 'gelesen' : artikelHinweis });
       } catch (err) {
         return json({ fehler: err.message.slice(0, 200) }, 400);
       }

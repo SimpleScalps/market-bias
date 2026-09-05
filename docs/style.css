@@ -567,6 +567,9 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
 .fAntwort{background:var(--bg-2);color:var(--dim);border-left:2px solid var(--accent)}
 .fAntwort.laeuft{color:var(--faint);font-style:italic;border-left-color:var(--line-2)}
 .fAntwort.fehler{color:var(--bear);border-left-color:var(--bear)}
+/* Woher die Antwort ihr Wissen hat — leise, aber nachlesbar. */
+.fHinweis{margin:-2px 0 0;padding:0 9px;font-size:10px;letter-spacing:.04em;
+  color:var(--faint);text-transform:uppercase}
 
 .frageZeile{display:flex;gap:6px}
 .frageFeld{flex:1;min-width:0;background:var(--bg-2);border:1px solid var(--line);

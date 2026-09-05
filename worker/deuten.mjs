@@ -255,6 +255,14 @@ function ausJson(text) {
   }
 }
 
+/*
+ * Wie viel Artikeltext mitgeht.
+ *
+ * Rund 1.500 Token je Frage. Bei 200.000 am Tag auf dem Modell fuer eigene
+ * Fragen sind das ueber hundert Nachfragen taeglich - mehr, als jemand stellt.
+ */
+const ARTIKEL_ZEICHEN = 6000;
+
 /** Nimmt der Schlagzeile die Möglichkeit, wie eine Anweisung zu wirken. */
 const alsDaten = (text, hoechstens = 400) =>
   String(text || '').replace(/\s+/g, ' ').slice(0, hoechstens);
@@ -390,13 +398,16 @@ Wirkungsdauer und die Herleitung. Das sind belastbare Angaben, keine Fremdtexte
 Antwort dort bereits; du ordnest sie ein, statt sie fuer unbekannt zu erklaeren.
 Haeltst du die Einschaetzung fuer falsch, sag das und begruende es.
 
-Du hast ausschliesslich, was hier steht: die Schlagzeile, den Anriss aus dem
-Feed und die Bewertung. Nicht den Artikeltext, keine Suche, kein Archiv. Fragt
-jemand nach Einzelheiten, die darin nicht vorkommen - welches Schiff, welcher
-Tag, welche Quelle sagt das -, dann sag geradeheraus, dass du sie nicht
-nachschlagen kannst und dass sie in Schlagzeile und Anriss nicht stehen.
-Verweise auf den Artikel selbst. Erfinde nichts und weiche nicht auf die
-Bewertung aus, wenn nicht danach gefragt war.
+Steht ARTIKEL dabei, ist das der abgerufene Text der Meldung - deine erste
+Quelle fuer alles Tatsaechliche. Namen, Daten, Zahlen, Beteiligte: dort
+nachsehen, nicht schaetzen. Der Text ist maschinell aus der Seite geschaelt;
+Reste von Navigation koennen darin stehen, die ignorierst du.
+
+Fehlt ARTIKEL oder gibt er die Antwort nicht her, hast du nur Schlagzeile,
+Anriss und Bewertung - keine Suche, kein Archiv. Dann sag geradeheraus, dass
+die Einzelheit dort nicht steht und du sie nicht nachschlagen kannst, und
+verweise auf den Artikel. Erfinde nichts und weiche nicht auf die Bewertung
+aus, wenn nicht danach gefragt war.
 
 Unter BISHER stehen frueheren Fragen und deine Antworten darauf, aelteste
 zuerst. Bezieht sich die neue Frage darauf ("und wann?", "kannst du das nicht
@@ -425,7 +436,7 @@ function bewertungsZeile(k) {
  * Gibt { antwort } zurueck oder { fehler }. Die Antwort ist freier Text und
  * wird in der App als Text dargestellt, nie als Markup.
  */
-export async function fragen(schlagzeile, anriss, frage, env, sprache = 'de', kontext = null, verlauf = []) {
+export async function fragen(schlagzeile, anriss, frage, env, sprache = 'de', kontext = null, verlauf = [], artikel = '') {
   if (!env.GROQ_KEY) return { fehler: 'kein Schluessel hinterlegt' };
   if (!frage?.trim()) return { fehler: 'keine Frage' };
 
@@ -439,7 +450,7 @@ export async function fragen(schlagzeile, anriss, frage, env, sprache = 'de', ko
    * Minute warten wir nicht, dann ist die Absage ehrlicher.
    */
   for (let versuch = 0; ; versuch++) {
-    const erg = await frageStellen(schlagzeile, anriss, frage, env, sprache, kontext, verlauf);
+    const erg = await frageStellen(schlagzeile, anriss, frage, env, sprache, kontext, verlauf, artikel);
     if (!erg.warten || versuch >= 1) {
       delete erg.warten;
       return erg;
@@ -449,7 +460,7 @@ export async function fragen(schlagzeile, anriss, frage, env, sprache = 'de', ko
 }
 
 /** Ein einzelner Versuch. Setzt `warten`, wenn ein zweiter lohnt. */
-async function frageStellen(schlagzeile, anriss, frage, env, sprache, kontext, verlauf = []) {
+async function frageStellen(schlagzeile, anriss, frage, env, sprache, kontext, verlauf = [], artikel = '') {
   // Eine eigene Frage - also aus dem Kontingent, das die Dauerlast nicht
   // antastet. Die Deklaration gehoert hierher: fragen() ruft diese Funktion
   // nur auf, ihr Gueltigkeitsbereich reicht nicht herein.
@@ -461,6 +472,15 @@ async function frageStellen(schlagzeile, anriss, frage, env, sprache, kontext, v
       '<<<MELDUNG', alsDaten(schlagzeile, 300), 'MELDUNG>>>',
       ...(anriss ? ['<<<ANRISS', alsDaten(anriss, 700), 'ANRISS>>>'] : []),
       ...(bewertung ? ['<<<BEWERTUNG', alsDaten(bewertung, 400), 'BEWERTUNG>>>'] : []),
+      /*
+       * Der abgerufene Artikel, falls er zu holen war.
+       *
+       * Fremder Fliesstext, ungefiltert von der Seite des Anbieters - also
+       * genau die Sorte Text, in der eine untergeschobene Anweisung stecken
+       * koennte. Er steht deshalb zwischen Markierungen wie alles andere und
+       * wird von der Anweisung ausdruecklich als Daten behandelt.
+       */
+      ...(artikel ? ['<<<ARTIKEL', alsDaten(artikel, ARTIKEL_ZEICHEN), 'ARTIKEL>>>'] : []),
       /*
        * Der bisherige Verlauf.
        *
