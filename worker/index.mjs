@@ -59,6 +59,17 @@ const NACHZIEHEN_MAX = 5;
  */
 const KI_ANFRAGEN_MAX = 150;
 
+/**
+ * Braucht diese Meldung (noch) eine Pruefung durch das Modell?
+ *
+ * Nicht nur ungeprueft zaehlt, sondern auch unvollstaendig geprueft: Aeltere
+ * Antworten tragen nur die Begruendung, seit der Erweiterung gehoert eine
+ * kurze Zusammenfassung dazu. Ohne sie stand bei belanglosen Meldungen bloss
+ * "hat keine Auswirkung auf Bitcoin" - formal richtig und trotzdem nutzlos.
+ * Solche Antworten werden nach und nach nachgeholt, gebremst vom Tagesbudget.
+ */
+const brauchtPruefung = (n) => n.impactLevel !== 'ignore' && !n.ki?.inhalt;
+
 /*
  * Zwischenspeicher der Uebersetzungen.
  *
@@ -323,7 +334,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
    * Durchlauf kommt deshalb ein Teil des Bestands dazu, die gewichtigsten
    * zuerst. Nach einigen Stunden ist alles einmal durch.
    */
-  const nachzuholen = items.filter((n) => !n.ki && n.impactLevel !== 'ignore');
+  const nachzuholen = items.filter(brauchtPruefung);
   const frei = Math.min(NACHZIEHEN_MAX, KI_ANFRAGEN_MAX - budget.verbraucht);
   if (nachzuholen.length) budget.verbraucht += await gegenlesen(nachzuholen, env, frei);
 
@@ -417,7 +428,7 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX) {
   if (!env.GROQ_KEY) return;
 
   const kandidaten = items
-    .filter((n) => n.impactLevel !== 'ignore' && !n.ki)
+    .filter(brauchtPruefung)
     .sort((a, b) => Math.abs(b.scores.crypto) * b.priority
                   - Math.abs(a.scores.crypto) * a.priority)
     .slice(0, hoechstens);
@@ -437,8 +448,18 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX) {
     if (!n.kiWiderspruch) return;
 
     // Urteil korrigieren, die urspruengliche Bewertung aufheben.
-    n.regelScores = n.scores;
-    n.regelLabel = n.label;
+    /*
+     * Die urspruengliche Bewertung nur beim ersten Mal festhalten.
+     *
+     * Wird eine bereits berichtigte Meldung erneut geprueft, steht in n.scores
+     * schon das Urteil des Modells - ohne diese Bedingung ginge die Herleitung
+     * des Regelwerks verloren und die Anzeige "Regel sagte ..." zeigte den
+     * eigenen Wert der KI.
+     */
+    if (!n.kiKorrigiert) {
+      n.regelScores = n.scores;
+      n.regelLabel = n.label;
+    }
     n.kiKorrigiert = true;
 
     const kiWert = deutung.richtung === 'neutral' ? 0

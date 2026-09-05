@@ -79,10 +79,27 @@ richte dich nach ihm — er nennt in der Regel, was tatsächlich geschehen ist.
 
 Antworte ausschließlich mit einem JSON-Objekt, ohne Vorrede und ohne
 Code-Zaun:
-{"richtung":"bullish"|"bearish"|"neutral","staerke":0.0-1.0,"grund":"ein kurzer Satz auf Deutsch"}
+{"richtung":"bullish"|"bearish"|"neutral","staerke":0.0-1.0,"inhalt":"1-2 Sätze","grund":"ein Satz"}
 
 richtung und staerke beziehen sich auf Bitcoin. staerke 0 heißt ohne Wirkung,
-1 heißt marktbewegend. Bei Meldungen ohne Bezug zum Finanzmarkt: neutral, 0.`;
+1 heißt marktbewegend. Bei Meldungen ohne Bezug zum Finanzmarkt: neutral, 0.
+
+inhalt: Worum es in der Meldung geht — ein bis zwei Sätze auf Deutsch, die
+sagen, was geschehen ist, wer beteiligt ist und welche Zahlen genannt werden.
+Dieses Feld füllst du IMMER aus, auch wenn die Meldung für Bitcoin belanglos
+ist. Gerade dann ist es das einzige, was der Leser mitnimmt. Wiederhole nicht
+die Überschrift, sondern gib wieder, was darüber hinaus im Anriss steht; liegt
+kein Anriss vor, fasse die Überschrift in eigenen Worten. Schreibe niemals nur
+"keine Auswirkung" oder Ähnliches — das gehört in grund, nicht hierher.
+
+Begriffe: "rate cut" ist eine Zinssenkung, nie eine "Zinskürzung". "Nonfarm
+payrolls" bleibt so stehen oder wird zu "Beschäftigungsaufbau außerhalb der
+Landwirtschaft", nicht zu "nichtlandwirtschaftlichen Beschäftigungszahlen".
+"hawkish" ist straffer, "dovish" lockerer.
+
+grund: Warum daraus diese Richtung und Stärke folgt — ein Satz, der den Weg
+nennt (Zinsen, Liquidität, Risikoneigung, Dollar). Ist die Meldung ohne
+Marktbezug, sag das hier kurz.`;
 
 /**
  * Liest das Objekt aus der Antwort — auch wenn Text drumherum steht.
@@ -126,7 +143,7 @@ export async function deuten(schlagzeile, env, anriss = '') {
         model: modell,
         temperature: 0.2,
         /*
-         * Reichlich Spielraum, obwohl die Antwort kurz ist.
+         * Reichlich Spielraum fuer eine kurze Antwort.
          *
          * Die gpt-oss-Modelle denken intern nach, bevor sie ausgeben, und
          * verbrauchen dafuer Token. Bei knappem Budget war es aufgebraucht,
@@ -134,7 +151,7 @@ export async function deuten(schlagzeile, env, anriss = '') {
          * Formatfehler mit leerer Ausgabe. Wenig Denkaufwand genuegt hier,
          * die Aufgabe ist eng umrissen.
          */
-        max_tokens: 900,
+        max_tokens: 1200,
         reasoning_effort: 'low',
         response_format: { type: 'json_object' },
         messages: [
@@ -164,9 +181,11 @@ export async function deuten(schlagzeile, env, anriss = '') {
     if (!richtung) throw new Error('unerwartete Richtung');
 
     const staerke = Math.max(0, Math.min(1, Number(geparst.staerke) || 0));
-    const grund = String(geparst.grund || '').replace(/\s+/g, ' ').slice(0, 300);
+    const saubern = (t, max) => String(t || '').replace(/\s+/g, ' ').slice(0, max);
+    const grund = saubern(geparst.grund, 300);
+    const inhalt = saubern(geparst.inhalt, 500);
 
-    return { richtung, staerke: +staerke.toFixed(2), grund, modell };
+    return { richtung, staerke: +staerke.toFixed(2), inhalt, grund, modell };
   } catch (err) {
     return { fehler: err.message.slice(0, 400) };
   }
