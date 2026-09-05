@@ -25,6 +25,29 @@ export const FEEDS = [
   { url: 'https://cointelegraph.com/rss',                          source: 'Cointelegraph',   tags: ['Krypto'], fast: true },
   { url: 'https://decrypt.co/feed',                                source: 'Decrypt',         tags: ['Krypto'] },
   { url: 'https://www.theblock.co/rss.xml',                        source: 'The Block',       tags: ['Krypto'], fast: true },
+
+  /*
+   * Nachgemessene Schnellquellen.
+   *
+   * Ausgewaehlt nach dem, was der Abruf selbst verraet: Wie alt liefert das
+   * CDN die Datei aus, und was sagt die Cache-Vorgabe. Cointelegraph schickt
+   * s-maxage=300, CryptoSlate sogar max-age=3600 - bei denen ist der
+   * Rueckstand eingebaut. Die hier antworten mit Age 0 und
+   * max-age=0, must-revalidate: Jede Anfrage bekommt den aktuellen Stand.
+   *
+   * Blockworks fiel bei der Pruefung durch: Der Feed-Kopf meldet sich als
+   * eben aktualisiert, alle fuenfzig Eintraege stammen aber aus Dezember und
+   * Januar. Wer nur auf den Kopf schaut, nimmt eine tote Quelle auf.
+   *
+   * Nicht aufgenommen wurden die Feeds des US-Arbeitsministeriums, obwohl sie
+   * die Primaerquelle sind und ohne jeden Rueckstand ausliefern: Sie nennen
+   * die Zahl, aber keine Prognose. "Payroll employment increases by 162,000"
+   * ist ohne das erwartete Ergebnis richtungslos - erst der Vergleich mit den
+   * 56.000 der Prognose macht daraus eine Aussage. Nachgeprueft: Das
+   * Regelwerk bewertet diese Schlagzeilen zu Recht als neutral. Diese Arbeit
+   * leistet der Wirtschaftskalender, der Prognose und Vorwert mitliefert.
+   */
+  { url: 'https://thedefiant.io/api/feed',                         source: 'The Defiant',     tags: ['Krypto'], fast: true },
   { url: 'https://beincrypto.com/feed/',                           source: 'BeInCrypto',      tags: ['Krypto'] },
   { url: 'https://u.today/rss',                                    source: 'U.Today',         tags: ['Krypto'] },
 ];
@@ -43,7 +66,40 @@ export const tag = (item, name) => {
   return m ? decode(m[1]).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim() : '';
 };
 
-export const items = (xml) => [...xml.matchAll(/<item>([^]*?)<\/item>/gi)].map((m) => m[1]);
+/*
+ * Ein Eintrag heisst je nach Format <item> (RSS) oder <entry> (Atom).
+ *
+ * Bis hierher kannte der Parser nur RSS und lieferte fuer Atom-Feeds stumm
+ * eine leere Liste - kein Fehler, keine Meldungen, nichts zu sehen. Genau so
+ * waeren Blockworks und die Feeds des US-Arbeitsministeriums durchgefallen,
+ * und letztere sind die Primaerquelle fuer die Zahlen, um die es hier geht.
+ */
+export const items = (xml) => [
+  ...[...xml.matchAll(/<item[\s>][^]*?<\/item>/gi)].map((m) => m[0]),
+  ...[...xml.matchAll(/<entry[\s>][^]*?<\/entry>/gi)].map((m) => m[0]),
+];
+
+/*
+ * Zeitstempel: RSS nennt ihn pubDate, Atom published oder updated.
+ * Ohne den Erscheinungszeitpunkt landet eine Meldung mit "jetzt" im Bestand
+ * und draengt sich faelschlich an die Spitze.
+ */
+export const zeitstempel = (it) =>
+  tag(it, 'pubDate') || tag(it, 'published') || tag(it, 'updated') || tag(it, 'dc:date');
+
+/*
+ * Adresse: RSS schreibt sie in den Inhalt des Elements, Atom in ein Attribut.
+ * Atom kennt mehrere Verweise; gesucht ist der auf die Meldung selbst, also
+ * rel="alternate" oder gar kein rel.
+ */
+export const verweis = (it) => {
+  // tag() loest CDATA und Entitaeten auf - Cointelegraph verpackt die Adresse
+  // in <![CDATA[...]]>, ein Muster auf den blossen Inhalt scheitert daran.
+  const rss = tag(it, 'link');
+  if (rss) return rss;
+  const atom = it.match(/<link\b(?![^>]*rel=["'](?:self|edit|replies)["'])[^>]*href=["']([^"']+)["']/i);
+  return atom ? atom[1].trim() : '';
+};
 
 /*
  * Feed holen - und zwar den aktuellen, nicht den zwischengespeicherten.
@@ -131,6 +187,9 @@ const ANHANGSEL = [
 function beschreibung(eintrag) {
   const roh = (eintrag.match(/<description>([^]*?)<\/description>/i) || [])[1]
     || (eintrag.match(/<content:encoded>([^]*?)<\/content:encoded>/i) || [])[1]
+    // Atom nennt dasselbe summary oder content.
+    || (eintrag.match(/<summary[^>]*>([^]*?)<\/summary>/i) || [])[1]
+    || (eintrag.match(/<content[^>]*>([^]*?)<\/content>/i) || [])[1]
     || '';
   if (!roh) return '';
 
@@ -154,10 +213,24 @@ function beschreibung(eintrag) {
 export async function loadFeed(feed, regime = 'policy') {
   const xml = await get(feed.url);
   const out = [];
-  for (const it of items(xml).slice(0, 30)) {
+  /*
+   * Erst sortieren, dann kuerzen.
+   *
+   * Nicht jeder Feed liefert die neuesten Eintraege zuerst - Blockworks
+   * beginnt mit Meldungen aus dem Januar. Wer stumpf die ersten dreissig
+   * nimmt, bekommt dort ausschliesslich alte Ware und verpasst genau das,
+   * wofuer die Quelle aufgenommen wurde.
+   */
+  const sortiert = items(xml)
+    .map((it) => ({ it, t: new Date(zeitstempel(it) || 0).getTime() || 0 }))
+    .sort((a, b) => b.t - a.t)
+    .slice(0, 30)
+    .map((x) => x.it);
+
+  for (const it of sortiert) {
     const title = tag(it, 'title');
     if (!title || isNoise(title)) continue;
-    const date = new Date(tag(it, 'pubDate') || tag(it, 'dc:date') || Date.now());
+    const date = new Date(zeitstempel(it) || Date.now());
     const scored = scoreHeadline(title, regime);
     const text = beschreibung(it);
     out.push({
@@ -167,7 +240,7 @@ export async function loadFeed(feed, regime = 'policy') {
       // das Sprachmodell liest sie mit, und aufgeklappt steht sie auch da.
       ...(text ? { text } : {}),
       source: feed.source,
-      url: tag(it, 'link'),
+      url: verweis(it),
       date: (isNaN(date) ? new Date() : date).toISOString(),
       tags: feed.tags,
       impact: 'low',
