@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v39';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v40';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -1434,6 +1434,15 @@ async function zustandZeigen() {
     [T_.zBestand, `${d.meldungen ?? '—'} · ${d.alterSekunden ?? '?'} s`, null],
     [T_.zGeprueft, d.geprueft ?? '—', null],
     [T_.zBudget, String(d.kiBudget || '—').split(' (')[0], null],
+    /*
+     * Welches Modell welche Aufgabe traegt.
+     *
+     * Steht hier mehr als ein Modell, ist sichtbar belegt, dass die laufende
+     * Pruefung und eigene Fragen aus getrennten Toepfen bezahlt werden - was
+     * von selbst laeuft, kann das Budget fuer eine eigene Frage nicht mehr
+     * aufbrauchen.
+     */
+    [T_.zModelle, d.kiModelle ?? '—', null],
   ];
 
   /*

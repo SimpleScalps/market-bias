@@ -53,18 +53,37 @@ const GROQ_MODELLE = 'https://api.groq.com/openai/v1/models';
  * das darin vorkommt. Bevorzugt werden groessere Modelle: Die Zahl der
  * Anfragen ist klein, die Genauigkeit zaehlt mehr als das Tempo.
  */
-const WUNSCHMODELLE = [
-  'openai/gpt-oss-120b',
-  'qwen/qwen3.8-27b',
-  'qwen/qwen3.6-27b',
-  'openai/gpt-oss-20b',
-  'groq/compound',
-  'moonshotai/kimi-k2-instruct',
-  'llama-3.3-70b-versatile',
-  'llama-3.1-8b-instant',
-];
+/*
+ * Zwei Toepfe: was von selbst laeuft, und was der Nutzer anstoesst.
+ *
+ * Groq rechnet je Modell ab - 200.000 Token am Tag, fuer jedes einzeln.
+ * Solange alles ueber dasselbe Modell lief, verbrauchte die Dauerlast das
+ * Kontingent, das dann bei einer eigenen Frage fehlte: "Limit 200000, Used
+ * 199710". Die Trennung macht daraus eine Zusicherung. Die laufende Pruefung
+ * und die Uebersetzungen teilen sich ein Modell; eigene Fragen, Zweitmeinung
+ * auf Knopfdruck und Tagesbericht haben ihr eigenes - und damit ein Budget,
+ * das kaum je angetastet wird.
+ *
+ * Beide vorderen Eintraege stammen aus derselben Familie. Das ist Absicht:
+ * Anfrageform und Antwortverhalten sind dort erprobt. Uebersetzt wird
+ * ausschliesslich ueber Groq - DeepL ist kein Schluessel hinterlegt und
+ * MyMemory bliebe ohne Kontaktadresse bei wenigen tausend Zeichen am Tag.
+ * Ein unerprobtes Modell haette hier also keinen Rueckfall hinter sich.
+ * Die qwen-Eintraege stehen nur fuer den Fall bereit, dass Groq ein
+ * gpt-oss-Modell ausmustert - so wie es mit llama schon geschehen ist.
+ */
+const WUNSCHMODELLE = {
+  // Was der Nutzer anstoesst. Selten, dafuer anspruchsvoll.
+  interaktiv: ['openai/gpt-oss-120b', 'qwen/qwen3.8-27b', 'qwen/qwen3.6-27b'],
+  // Die laufende Gegenprobe: grosse Menge, eng umrissene Aufgabe.
+  pruefung: ['openai/gpt-oss-20b', 'qwen/qwen3.8-27b', 'qwen/qwen3.6-27b', 'openai/gpt-oss-120b'],
+  // Uebersetzen laeuft im selben Topf wie die Pruefung - beides Dauerlast.
+  uebersetzung: ['openai/gpt-oss-20b', 'qwen/qwen3.6-27b', 'qwen/qwen3.8-27b', 'openai/gpt-oss-120b'],
+};
 
-let gewaehltesModell = null;   // ueberdauert im Isolat, spart Abfragen
+// je Zweck eines; ueberdauert im Isolat und ist zugleich die Auskunft darueber,
+// welches Modell gerade welche Aufgabe traegt.
+export const gewaehlteModelle = {};
 
 /*
  * Zuletzt gesehener Kontingentstand.
@@ -74,7 +93,43 @@ let gewaehltesModell = null;   // ueberdauert im Isolat, spart Abfragen
  * am naechsten Tag - aus einem blossen "429" geht das nicht hervor, und die
  * Wartezeit unterscheidet sich um den Faktor tausend.
  */
-export let kontingent = null;
+export const kontingent = {};   // modell -> Kontingentstand
+
+/*
+ * Was Groq selbst ueber den Tagesverbrauch sagt.
+ *
+ * Eine Ablehnung nennt die Zahl im Klartext:
+ *
+ *   Rate limit reached ... on tokens per day (TPD):
+ *   Limit 200000, Used 199710, Requested 837
+ *
+ * Das ist die einzige verlaessliche Quelle. Ein eigener Zaehler kennt nur, was
+ * er selbst gesehen hat - nach einem Neustart, einem Umzug der Ablage oder
+ * einem Isolatwechsel faengt er bei null an und meldet 904, waehrend
+ * tatsaechlich 199.710 verbraucht sind. Genau so ist es hier passiert.
+ *
+ * Deshalb: Sobald Groq die Zahl nennt, gilt sie. Der eigene Zaehler fuellt nur
+ * die Luecke zwischen zwei Ablehnungen.
+ *
+ * Gefuehrt wird je Modell, denn jedes hat sein eigenes Tageskontingent. Ein
+ * gemeinsamer Stand waere irrefuehrend: Er wuerde die erschoepfte Pruefung
+ * anzeigen und den Eindruck erwecken, auch eigene Fragen seien blockiert.
+ */
+export const tagesverbrauch = {};   // modell -> { verbraucht, limit, stand }
+
+/** Liest Groqs Tagesabrechnung aus einer Ablehnung. */
+function tagesstandLesen(text, modell) {
+  const t = String(text || '');
+  const m = t.match(/Limit\s+(\d+),\s*Used\s+(\d+)/i);
+  if (!m) return;
+  // Groq nennt das Modell im selben Satz; das ist verlaesslicher als der Aufrufer.
+  const wem = (t.match(/for model `?([\w./-]+)`?/i) || [])[1] || modell || 'unbekannt';
+  tagesverbrauch[wem] = {
+    limit: Number(m[1]),
+    verbraucht: Number(m[2]),
+    stand: new Date().toISOString(),
+  };
+}
 
 /*
  * Was Groq heute wirklich gekostet hat.
@@ -104,9 +159,9 @@ export function verbrauchAbholen() {
   return summe;
 }
 
-function kontingentMerken(res) {
+function kontingentMerken(res, modell) {
   const h = (name) => res.headers.get(name);
-  kontingent = {
+  kontingent[modell] = {
     stand: new Date().toISOString(),
     anfragenUebrig: h('x-ratelimit-remaining-requests'),
     tokenUebrig: h('x-ratelimit-remaining-tokens'),
@@ -127,18 +182,20 @@ export async function verfuegbareModelle(env) {
   return (j.data || []).map((m) => m.id);
 }
 
-/** Waehlt das beste verfuegbare Modell und merkt es sich. */
-export async function modellWaehlen(env) {
+/** Waehlt das beste verfuegbare Modell fuer einen Zweck und merkt es sich. */
+export async function modellWaehlen(env, zweck = 'interaktiv') {
   if (env.GROQ_MODELL) return env.GROQ_MODELL;   // ausdrueckliche Vorgabe
-  if (gewaehltesModell) return gewaehltesModell;
+  if (gewaehlteModelle[zweck]) return gewaehlteModelle[zweck];
 
   const vorhanden = new Set(await verfuegbareModelle(env));
-  gewaehltesModell = WUNSCHMODELLE.find((m) => vorhanden.has(m))
-    // Nichts aus der Wunschliste da: irgendein Textmodell nehmen.
-    || [...vorhanden].find((m) => !/whisper|tts|guard|vision/i.test(m));
+  const liste = WUNSCHMODELLE[zweck] || WUNSCHMODELLE.interaktiv;
 
-  if (!gewaehltesModell) throw new Error('kein nutzbares Modell verfuegbar');
-  return gewaehltesModell;
+  gewaehlteModelle[zweck] = liste.find((m) => vorhanden.has(m))
+    // Nichts aus der Wunschliste da: irgendein Textmodell nehmen.
+    || [...vorhanden].find((m) => !/whisper|tts|guard|vision|orpheus/i.test(m));
+
+  if (!gewaehlteModelle[zweck]) throw new Error('kein nutzbares Modell verfuegbar');
+  return gewaehlteModelle[zweck];
 }
 
 const ANWEISUNG = `Du bewertest Finanznachrichten für einen Krypto-Händler.
@@ -207,11 +264,11 @@ const alsDaten = (text, hoechstens = 400) =>
  * Gibt null zurück, wenn kein Schlüssel hinterlegt ist oder etwas schiefgeht —
  * die regelbasierte Bewertung steht dann unverändert.
  */
-export async function deuten(schlagzeile, env, anriss = '') {
+export async function deuten(schlagzeile, env, anriss = '', zweck = 'pruefung') {
   if (!env.GROQ_KEY) return null;
 
   try {
-    const modell = await modellWaehlen(env);
+    const modell = await modellWaehlen(env, zweck);
     const res = await fetch(GROQ, {
       method: 'POST',
       headers: {
@@ -231,7 +288,8 @@ export async function deuten(schlagzeile, env, anriss = '') {
          * die Aufgabe ist eng umrissen.
          */
         max_tokens: 1200,
-        reasoning_effort: 'low',
+        // Nur gpt-oss kennt diesen Parameter; andere Modelle weisen ihn ab.
+        ...(/gpt-oss/.test(modell) ? { reasoning_effort: 'low' } : {}),
         response_format: { type: 'json_object' },
         messages: [
           { role: 'system', content: ANWEISUNG },
@@ -241,15 +299,15 @@ export async function deuten(schlagzeile, env, anriss = '') {
       signal: AbortSignal.timeout(15000),
     });
 
-    kontingentMerken(res);
+    kontingentMerken(res, modell);
 
     if (!res.ok) {
       // Wurde das Modell zwischenzeitlich ausgemustert, beim naechsten Mal neu waehlen.
-      if (res.status === 404) gewaehltesModell = null;
-      const text = res.status >= 500 || res.status === 429
-        ? '' : await res.text().catch(() => '');
+      if (res.status === 404) delete gewaehlteModelle[zweck];
+      const text = await res.text().catch(() => '');
+      if (res.status === 429) tagesstandLesen(text, modell);
       throw new Error(klartext(res.status, Number(res.headers.get('retry-after')) || 0)
-        + (text ? ': ' + text.slice(0, 300) : ''));
+        + (res.status >= 500 || res.status === 429 ? '' : (text ? ': ' + text.slice(0, 300) : '')));
     }
 
     const j = await res.json();
@@ -356,6 +414,7 @@ function bewertungsZeile(k) {
  * wird in der App als Text dargestellt, nie als Markup.
  */
 export async function fragen(schlagzeile, anriss, frage, env, sprache = 'de', kontext = null) {
+  const zweck = 'interaktiv';
   if (!env.GROQ_KEY) return { fehler: 'kein Schluessel hinterlegt' };
   if (!frage?.trim()) return { fehler: 'keine Frage' };
 
@@ -381,7 +440,7 @@ export async function fragen(schlagzeile, anriss, frage, env, sprache = 'de', ko
 /** Ein einzelner Versuch. Setzt `warten`, wenn ein zweiter lohnt. */
 async function frageStellen(schlagzeile, anriss, frage, env, sprache, kontext) {
   try {
-    const modell = await modellWaehlen(env);
+    const modell = await modellWaehlen(env, zweck);
     const bewertung = bewertungsZeile(kontext);
     const zeilen = [
       '<<<MELDUNG', alsDaten(schlagzeile, 300), 'MELDUNG>>>',
@@ -410,11 +469,12 @@ async function frageStellen(schlagzeile, anriss, frage, env, sprache, kontext) {
       signal: AbortSignal.timeout(25000),
     });
 
-    kontingentMerken(res);
+    kontingentMerken(res, modell);
 
     if (!res.ok) {
-      if (res.status === 404) gewaehltesModell = null;
+      if (res.status === 404) delete gewaehlteModelle[zweck];
       const sek = Number(res.headers.get('retry-after')) || 0;
+      if (res.status === 429) tagesstandLesen(await res.text().catch(() => ''), modell);
       if (res.status === 429 && sek > 0 && sek <= 30) {
         return { fehler: klartext(429, sek), warten: sek * 1000 };
       }
@@ -458,6 +518,7 @@ vorkommen.
 Antworte ausschliesslich mit JSON: {"lage":"dein Text"}`;
 
 export async function tageslage(meldungen, anlageklasse, env) {
+  const zweck = 'interaktiv';
   if (!env.GROQ_KEY) return null;
   if (!meldungen.length) return { fehler: 'keine Meldungen' };
 
@@ -466,7 +527,7 @@ export async function tageslage(meldungen, anlageklasse, env) {
     .join(String.fromCharCode(10));
 
   try {
-    const modell = await modellWaehlen(env);
+    const modell = await modellWaehlen(env, zweck);
     const res = await fetch(GROQ, {
       method: 'POST',
       headers: {
@@ -490,8 +551,10 @@ export async function tageslage(meldungen, anlageklasse, env) {
     });
 
     if (!res.ok) {
-      if (res.status === 404) gewaehltesModell = null;
-      throw new Error(`Groq ${res.status}: ${(await res.text().catch(() => '')).slice(0, 300)}`);
+      if (res.status === 404) delete gewaehlteModelle[zweck];
+      const text = await res.text().catch(() => '');
+      if (res.status === 429) tagesstandLesen(text, modell);
+      throw new Error(`Groq ${res.status}: ${text.slice(0, 300)}`);
     }
 
     const j = await res.json();

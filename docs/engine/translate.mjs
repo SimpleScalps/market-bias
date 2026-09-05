@@ -56,7 +56,9 @@ const UEBERSETZER_ANWEISUNG = [
  * ein Stapel kostet kaum mehr Token als die Summe der Einzeltexte, spart aber
  * den Systemtext bei jedem weiteren.
  */
-async function viaGroq(texte, key, modell = 'openai/gpt-oss-120b') {
+// Standardmaessig das kleine Modell: Uebersetzen braucht kein grosses, und es
+// zaehlt auf ein eigenes Tageskontingent - siehe WUNSCHMODELLE in deuten.mjs.
+async function viaGroq(texte, key, modell = 'openai/gpt-oss-20b') {
   const eingabe = texte
     .map((t, i) => `<<<T${i}` + String.fromCharCode(10)
       + String(t).replace(/[<>]/g, ' ').slice(0, 700) + String.fromCharCode(10) + `T${i}>>>`)
@@ -71,7 +73,8 @@ async function viaGroq(texte, key, modell = 'openai/gpt-oss-120b') {
       // Grob viermal die Eingabelaenge: Deutsch geraet laenger als Englisch,
       // und die gpt-oss-Modelle denken vor der Ausgabe intern nach.
       max_tokens: Math.min(4000, 400 + texte.join(' ').length),
-      reasoning_effort: 'low',
+      // Nur gpt-oss kennt diesen Parameter; andere Modelle weisen ihn ab.
+      ...(/gpt-oss/.test(modell) ? { reasoning_effort: 'low' } : {}),
       response_format: { type: 'json_object' },
       messages: [
         { role: 'system', content: UEBERSETZER_ANWEISUNG },

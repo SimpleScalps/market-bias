@@ -5,7 +5,7 @@ import { uebersetze } from '../docs/engine/translate.mjs';
 import { fortschreiben, TAGE_MAX } from '../docs/engine/wochenbuch.mjs';
 import { sendeAn } from './notify.mjs';
 export { Versandbuch } from './versandbuch.mjs';
-import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, fragen, kontingent, verbrauchAbholen } from './deuten.mjs';
+import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, fragen, kontingent, verbrauchAbholen, tagesverbrauch, gewaehlteModelle } from './deuten.mjs';
 
 // Cloudflare Worker: holt die Quellen serverseitig (RSS-Feeds senden keine
 // CORS-Header, der Browser kann sie also nicht selbst laden), bewertet sie mit
@@ -91,6 +91,32 @@ const NACHZIEHEN_ABSTAND_MS = 10 * 60_000;
  * meldet Groq bei jeder Antwort - geschaetzt wird hier nichts.
  */
 const KI_TOKEN_MAX = 120_000;
+
+/*
+ * Klarnamen fuer die drei Aufgaben, die sich Groq teilen.
+ *
+ * Sie stehen fuer je ein eigenes Modell und damit fuer je ein eigenes
+ * Tageskontingent - siehe WUNSCHMODELLE in deuten.mjs.
+ */
+const AUFGABE = {
+  interaktiv: 'Eigene Fragen',
+  pruefung: 'Laufende Pruefung',
+  uebersetzung: 'Uebersetzung',
+};
+
+/**
+ * Nennt die Aufgabe, die ein Modell gerade traegt.
+ *
+ * Faellt auf den Modellnamen zurueck: In einem frisch gestarteten Isolat ist
+ * die Zuordnung noch leer, weil sie erst bei der ersten Anfrage entsteht.
+ */
+function aufgabeVon(modell, gebucht = null) {
+  const belegung = { ...(gebucht || {}), ...gewaehlteModelle };
+  const zwecke = Object.entries(belegung)
+    .filter(([, m]) => m === modell)
+    .map(([z]) => AUFGABE[z] || z);
+  return zwecke.length ? zwecke.join(' + ') : modell;
+}
 
 /*
  * Wer hat zuletzt getickt?
@@ -693,6 +719,21 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   budget.verbraucht += frisch;
   if (frisch) ctx.waitUntil(zustand(env, { tokens: frisch }));
 
+  /*
+   * Nennt Groq seinen Tagesstand, gilt der - nicht der eigene Zaehler.
+   * Er wird gesetzt, nicht addiert; deshalb ein eigenes Feld.
+   */
+  if (Object.keys(tagesverbrauch).length) {
+    // Das Objekt wird ersetzt, nicht addiert - also selbst zusammenfuehren,
+    // damit ein Stand nicht den eines anderen Modells verdraengt.
+    const bisher = Object.fromEntries(
+      // Nur echte Modellstaende uebernehmen. Frueher lag hier ein einzelner,
+      // modellloser Stand; dessen Felder wuerden sonst dauerhaft mitwandern.
+      Object.entries(z.groqTag || {}).filter(([, g]) => g && typeof g === 'object' && g.stand),
+    );
+    ctx.waitUntil(zustand(env, { groqTag: { ...bisher, ...tagesverbrauch } }));
+  }
+
   if (neueUrteile || budget.verbraucht !== (speicher.tokens || 0)) {
     const ids = Object.keys(speicher.urteile);
     for (const alt of ids.slice(0, Math.max(0, ids.length - URTEILE_MAX))) {
@@ -807,6 +848,16 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * Anzeige auch dann, wenn das Kontingent erschoepft ist.
    */
   const buchung = {
+    /*
+     * Auch die Modellauskunft gehoert hierher.
+     *
+     * Sie entsteht im Arbeitsspeicher desjenigen Prozesses, der gerade Groq
+     * anfragt - und /health antwortet fast immer aus einem anderen. Ohne diese
+     * Buchung stand dort dauerhaft "noch keine Anfrage seit dem Start",
+     * waehrend nebenan der Pruefzaehler stieg.
+     */
+    ...(Object.keys(gewaehlteModelle).length ? { kiModelle: { ...gewaehlteModelle } } : {}),
+    ...(Object.keys(kontingent).length ? { kiKontingent: { ...kontingent } } : {}),
     schreibVersuche: versucheSeitAblage,
     schreibFehler: fehlerSeitAblage,
     // Der Zeitpunkt des letzten Fehlschlags gehoert dorthin, wo ihn jeder
@@ -1223,17 +1274,78 @@ export default {
         versandbuch: env.VERSANDBUCH
           ? (letzterVersandbuchFehler ?? 'bereit')
           : 'NICHT gebunden - Doppelmeldungen moeglich',
-        geprueft: bestand?.items
-          ? `${bestand.items.filter((n) => n.ki).length} von ${bestand.items.length}`
-          : '0',
+        /*
+         * Gemessen an dem, was überhaupt geprüft wird.
+         *
+         * Vorher stand hier "46 von 245" — verglichen mit allen Meldungen,
+         * obwohl 191 davon als "ignorieren" eingestuft sind und nie angefragt
+         * werden. Das las sich wie 19 Prozent, tatsächlich waren 85 Prozent
+         * des Relevanten erledigt. Eine Zahl, die schlechter aussieht als die
+         * Lage, taugt zur Beurteilung so wenig wie eine geschönte.
+         */
+        geprueft: (() => {
+          const alle = bestand?.items || [];
+          const handelbar = alle.filter((n) => n.impactLevel !== 'ignore');
+          const fertig = handelbar.filter((n) => n.ki?.inhalt).length;
+          if (!handelbar.length) return 'nichts Handelbares im Bestand';
+          return `${fertig} von ${handelbar.length} handelbaren`
+            + (fertig < handelbar.length ? ` · ${handelbar.length - fertig} offen` : '')
+            + ` (${alle.length - handelbar.length} ohne Handelsbezug)`;
+        })(),
         berichtigt: bestand?.items?.filter((n) => n.kiKorrigiert).length ?? 0,
-        kiBudget: `${budgetRest({ tag: zNow.tag, tokens: zNow.tokens }).verbraucht.toLocaleString('de-DE')}`
-          + ` von 200.000 Token heute`
-          + ` (alle Wege zusammen; die automatische Pruefung stoppt bei`
-          + ` ${KI_TOKEN_MAX.toLocaleString('de-DE')})`,
+        /*
+         * Groqs eigene Abrechnung, wenn sie vorliegt.
+         *
+         * Der eigene Zaehler kennt nur, was dieses Isolat gesehen hat. Nach
+         * einem Umzug der Ablage stand er bei 904, waehrend Groq 199.710
+         * meldete - die Zahl war unbrauchbar. Groq nennt seinen Stand in jeder
+         * Ablehnung; sobald er vorliegt, gilt er.
+         */
+        kiBudget: (() => {
+          const staende = { ...(zNow.groqTag || {}), ...tagesverbrauch };
+          const frisch = Object.entries(staende)
+            .filter(([, g]) => Date.now() - new Date(g.stand).getTime() < 6 * 3600_000);
+
+          if (!frisch.length) {
+            const eigen = budgetRest({ tag: zNow.tag, tokens: zNow.tokens }).verbraucht;
+            return `mindestens ${eigen.toLocaleString('de-DE')} von 200.000 Token heute`
+              + ` (selbst gezaehlt; Groq nennt seinen Stand erst, wenn ein Limit greift)`;
+          }
+          const zahl = (n) => n.toLocaleString('de-DE');
+          return frisch
+            .map(([m, g]) => `${aufgabeVon(m)}: ${zahl(g.verbraucht)} von ${zahl(g.limit)}`)
+            .join(' · ') + ' Token heute (Angabe von Groq)';
+        })(),
+        /*
+         * Wer gerade was macht.
+         *
+         * Jedes Modell hat bei Groq sein eigenes Tageskontingent. Die Zuordnung
+         * ist der Grund, warum eine erschoepfte Dauerpruefung eine eigene Frage
+         * nicht mehr blockiert - deshalb steht sie hier sichtbar.
+         */
+        kiModelle: (() => {
+          const belegung = { ...(zNow.kiModelle || {}), ...gewaehlteModelle };
+          return Object.keys(belegung).length
+            ? Object.entries(belegung)
+                .map(([zweck, m]) => `${AUFGABE[zweck] || zweck}: ${m}`).join(' · ')
+            : 'noch keine Anfrage seit dem Start';
+        })(),
         urteile: Object.keys(urteilSpeicher?.urteile || {}).length,
         letzterNachlauf: urteilSpeicher?.letzterNachlauf ?? 'noch keiner',
-        kontingent: kontingent ?? 'seit dem Start keine Anfrage an Groq',
+        /*
+         * Minutenfenster je Modell, so wie Groq es in den Kopfzeilen meldet.
+         *
+         * Stehen hier zwei Modelle mit eigenen Restwerten, ist damit belegt,
+         * dass tatsaechlich getrennt abgerechnet wird - das ist keine Annahme,
+         * sondern Groqs eigene Auskunft zu jeder einzelnen Anfrage.
+         */
+        kontingent: (() => {
+          const staende = { ...(zNow.kiKontingent || {}), ...kontingent };
+          return Object.keys(staende).length
+            ? Object.fromEntries(Object.entries(staende)
+                .map(([m, k]) => [`${aufgabeVon(m, zNow.kiModelle)} (${m})`, k]))
+            : 'seit dem Start keine Anfrage an Groq';
+        })(),
         /*
          * Wer den Bestand auffrischt, mit Zeitstempel.
          *
@@ -1444,13 +1556,17 @@ export default {
         /*
          * Groq zuerst. Ein Sprachmodell trifft Boersensprache besser als ein
          * reiner Uebersetzungsdienst - MyMemory machte aus "hawkish bets"
-         * woertlich "Falkenwetten". Der Schluessel liegt ohnehin schon hier,
-         * und ein Anriss kostet ein paar hundert Token gegen ein Tagesbudget
-         * von 200.000.
+         * woertlich "Falkenwetten". Der Schluessel liegt ohnehin schon hier.
+         *
+         * Ausdruecklich auf dem Uebersetzungsmodell: Es hat sein eigenes
+         * Tageskontingent. Was hier verbraucht wird, fehlt damit weder der
+         * laufenden Pruefung noch einer eigenen Frage.
          */
         const frisch = await uebersetze(fehlend, {
           groqKey: env.GROQ_KEY || '',
-          modell: env.GROQ_KEY ? await modellWaehlen(env).catch(() => undefined) : undefined,
+          modell: env.GROQ_KEY
+            ? await modellWaehlen(env, 'uebersetzung').catch(() => undefined)
+            : undefined,
           deeplKey: env.DEEPL_KEY || '',
           email: env.KONTAKT_MAIL || '',
         });
