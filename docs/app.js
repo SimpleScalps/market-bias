@@ -6,7 +6,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v30';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v31';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -507,6 +507,8 @@ function renderWoche() {
 
   wahlVerdrahten(box);
 }
+
+$('#zustandBtn').addEventListener('click', zustandZeigen);
 
 // ---------- Zweitmeinung ----------
 /**
@@ -1016,6 +1018,8 @@ function renderTexte() {
   profilHinweis();
   $('#hQuellen').textContent = T().quellenHinweis;
   $$('#theme button').forEach((b) => { b.textContent = T().designOpt[b.dataset.theme]; });
+  $('#tZustand').textContent = T().zustand;
+  $('#zustandBtn').textContent = T().zustandPruefen;
   $$('#benach button').forEach((b) => { b.textContent = T().benachrichtigungOpt[b.dataset.notify]; });
   hinweisBenachrichtigung();
 }
@@ -1343,6 +1347,65 @@ function starteTakt() {
 }
 
 function alles() { renderCats(); renderTages(); renderFoot(); render(true); }
+
+/**
+ * Zeigt, ob der Worker gesund ist — ohne Konsole.
+ *
+ * Die Zahl, auf die es ankommt, ist das Schreibkontingent: Cloudflare
+ * erlaubt tausend Ablagen am Tag, und ist das aufgebraucht, hört der Worker
+ * still auf zu speichern. Von außen sieht dann alles normal aus, während
+ * Benachrichtigungen ausbleiben. Genau diese Auskunft gehört dorthin, wo man
+ * sie ohne Werkzeug erreicht.
+ */
+async function zustandZeigen() {
+  const box = $('#zustand');
+  const btn = $('#zustandBtn');
+  const T_ = T();
+
+  if (!liveUrl) {
+    box.className = 'zustand fehler';
+    box.textContent = T_.zustandOhneWorker;
+    box.hidden = false;
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = T_.zustandLaeuft;
+
+  let d = null;
+  try {
+    const res = await fetch(`${liveUrl}/health`, { headers: workerKopf() });
+    d = res.ok ? await res.json() : null;
+  } catch { /* unten behandelt */ }
+
+  btn.disabled = false;
+  btn.textContent = T_.zustandPruefen;
+
+  if (!d) {
+    box.className = 'zustand fehler';
+    box.textContent = T_.zustandFehler;
+    box.hidden = false;
+    return;
+  }
+
+  const schreibt = String(d.ablageSchreibt || '').startsWith('ja');
+  const zeilen = [
+    [T_.zSpeichern, schreibt ? T_.zJa : T_.zNein, schreibt ? 'gut' : 'schlecht'],
+    [T_.zSchreib, d.schreibvorgaenge ?? '—', null],
+    [T_.zBestand, `${d.meldungen ?? '—'} · ${d.alterSekunden ?? '?'} s`, null],
+    [T_.zGeprueft, d.geprueft ?? '—', null],
+    [T_.zBudget, String(d.kiBudget || '—').split(' (')[0], null],
+  ];
+
+  box.className = 'zustand';
+  box.innerHTML = zeilen.map(([k, v, art]) =>
+    `<div class="zZeile"><span>${escape(k)}</span><b class="${art || ''}">${escape(String(v))}</b></div>`
+  ).join('')
+    + (d.letzteTicks?.length
+        ? `<p class="zTicks">${escape(T_.zTicks)}: ${escape(d.letzteTicks[0])}</p>` : '')
+    + (schreibt ? '' : `<p class="zWarnung">${escape(T_.zHinweis)}</p>`);
+  box.hidden = false;
+}
 
 // ---------- Quellenliste ----------
 function renderQuellen() {
