@@ -1,8 +1,10 @@
-import { collectNews, loadCalendar, enrich } from '../docs/engine/feeds.mjs';
+import { collectNews, loadCalendar, enrich, imFenster } from '../docs/engine/feeds.mjs';
 import { dedupe } from '../docs/engine/dedupe.mjs';
 import { profilPassung, STANDARD_PROFIL } from '../docs/engine/profile.mjs';
 import { label, LABEL_TEXT } from '../docs/engine/sentiment.mjs';
 import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
+import { uebersetze } from '../docs/engine/translate.mjs';
+import { fortschreiben, TAGE_MAX } from '../docs/engine/wochenbuch.mjs';
 import { sendeAn } from './notify.mjs';
 import { deuten, widerspruch, verfuegbareModelle, tageslage } from './deuten.mjs';
 
@@ -44,6 +46,21 @@ const GEGENPROBE_MAX = 10;
 const NACHZIEHEN_MAX = 5;
 
 /*
+ * Zwischenspeicher der Uebersetzungen.
+ *
+ * Anrisse werden erst uebersetzt, wenn jemand die Meldung aufklappt. Alles
+ * vorab durchzuschicken kostete rund 32.000 Zeichen am Tag - bei 500.000 im
+ * Monat waere das Kontingent nach zehn Tagen aufgebraucht, und zwar fuer Text,
+ * den fast niemand liest. Auf Abruf sind es ein paar hundert Zeichen am Tag.
+ *
+ * Der Speicher liegt beim Worker, nicht beim Geraet: Was einer aufklappt, ist
+ * fuer den naechsten Aufruf schon da, auch am anderen Geraet.
+ */
+const UEBERSETZUNG_KEY = 'uebersetzungen';
+const UEBERSETZUNG_MAX = 800;   // Eintraege, danach fallen die aeltesten raus
+const UEBERSETZUNG_JE_ABRUF = 5;
+
+/*
  * Zugangswort fuer die schreibenden und die kostenpflichtigen Wege.
  *
  * Die Adresse eines Workers ist kein Geheimnis - sie folgt aus Projekt- und
@@ -55,7 +72,8 @@ const NACHZIEHEN_MAX = 5;
  * Ist kein Wort hinterlegt, arbeitet alles wie bisher - damit eine bestehende
  * Einrichtung nicht ueber Nacht stehen bleibt. /health weist dann darauf hin.
  */
-const GESCHUETZT = ['/subscribe', '/notify', '/testpush', '/deuten', '/tageslage', '/modelle', '/tick'];
+const GESCHUETZT = ['/subscribe', '/notify', '/testpush', '/deuten', '/tageslage',
+  '/modelle', '/tick', '/uebersetzen'];
 
 function zugangGeprueft(request, url, env) {
   if (!env.ZUGANG) return true;                       // nicht eingerichtet
@@ -73,6 +91,23 @@ function zugangGeprueft(request, url, env) {
 const LAGE_KEY = 'https://market-bias.internal/lage';
 const LAGE_FRISCH_MS = 15 * 60_000;   // Zusammenfassung eine Viertelstunde nutzen
 const SPERRE_KEY = 'https://market-bias.internal/letzterVersand';
+
+/*
+ * Wochenbuch.
+ *
+ * Der Bestand reicht nur einen Tag zurueck. Damit am Sonntag noch steht, was
+ * am Montag los war, wird jeder Kalendertag festgehalten, bevor er aus dem
+ * Fenster faellt. Aufbewahrt werden zwei Wochen - so bleibt beim Blick am
+ * Montag auch die vergangene Woche vollstaendig.
+ *
+ * Nicht bei jedem Durchlauf geschrieben: Bei einem Takt von einer Minute
+ * waeren das 1.440 Schreibvorgaenge am Tag, und das freie Kontingent von KV
+ * liegt bei 1.000. Alle zehn Minuten genuegt vollauf - ein Tag aendert sich
+ * nicht schneller.
+ */
+const WOCHE_KEY = 'https://market-bias.internal/wochenbuch';
+const WOCHE_TTL = (TAGE_MAX + 2) * 86_400;
+const WOCHE_TAKT_MS = 10 * 60_000;
 
 /*
  * Mindestabstand zwischen Benachrichtigungen — aber nur für Kanäle, die ihn
@@ -135,6 +170,27 @@ async function schreiben(env, ctx, key, data, ttl = 86400) {
 const alterMs = (d) => (d?.updated ? Date.now() - new Date(d.updated).getTime() : Infinity);
 
 /**
+ * Haelt die Kalendertage fest, solange ihre Meldungen noch vorliegen.
+ *
+ * Laeuft neben der Antwort her (waitUntil): Der Abruf soll nicht darauf warten.
+ * Schlaegt es fehl, bleibt der letzte Stand stehen - die Datei im Verzeichnis
+ * (docs/data/woche.json) ist ohnehin die belastbarere Fassung, dieser Weg
+ * liefert nur den frischeren Zwischenstand.
+ */
+async function wochenbuchPflegen(env, ctx, items) {
+  try {
+    const alt = await lesen(env, WOCHE_KEY);
+    if (alt?.updated && Date.now() - new Date(alt.updated).getTime() < WOCHE_TAKT_MS) return;
+
+    const tage = fortschreiben(alt?.tage || {}, items);
+    await schreiben(env, ctx, WOCHE_KEY,
+      { updated: new Date().toISOString(), tage }, WOCHE_TTL);
+  } catch (err) {
+    console.log('Wochenbuch:', err.message);
+  }
+}
+
+/**
  * Führt frische Meldungen mit dem Bestand zusammen.
  *
  * Der Zeitstempel einer bereits bekannten Meldung bleibt stehen. Redaktionen
@@ -178,7 +234,8 @@ function zusammenfuehren(bestand, frische) {
       : n);
   }
 
-  const items = dedupe([...bekannt.values()])
+  // Aelteres faellt heraus: Was gestern galt, hilft beim heutigen Handel nicht.
+  const items = imFenster(dedupe([...bekannt.values()]))
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, 300);
 
@@ -259,6 +316,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
     gesehen: gedaechtnis,
   };
   await schreiben(env, ctx, KEY, data, BESTAND_TTL);
+  ctx.waitUntil(wochenbuchPflegen(env, ctx, items));
   return { data, neue: kandidaten, versand };
 }
 
@@ -302,6 +360,7 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
     gesehen: [...gesehen].slice(-GESEHEN_MAX),
   };
   await schreiben(env, ctx, KEY, data, BESTAND_TTL);
+  ctx.waitUntil(wochenbuchPflegen(env, ctx, items));
   return { data, neue };
 }
 
@@ -477,11 +536,14 @@ export default {
     if (url.pathname === '/health') {
       const bestand = await lesen(env, KEY);
       const abo = await lesen(env, ABO_KEY);
+      const buch = await lesen(env, WOCHE_KEY);
       return json({
         ok: true,
         zeit: new Date().toISOString(),
         ablage: env.STORE ? 'kv' : 'cache',
         zweitmeinung: env.GROQ_KEY ? 'eingerichtet' : 'kein Schluessel',
+        uebersetzung: env.DEEPL_KEY ? 'DeepL' : 'MyMemory (ohne Schluessel)',
+        wochenbuch: buch?.tage ? `${Object.keys(buch.tage).length} Tage` : 'noch leer',
         zugang: env.ZUGANG
           ? 'geschuetzt'
           : 'OFFEN - jeder mit dieser Adresse kann das Abo aendern und das Kontingent verbrauchen',
@@ -591,6 +653,66 @@ export default {
         await schreiben(env, ctx, LAGE_KEY, { ...vorhanden, [klasse]: ergebnis }, BESTAND_TTL);
       }
       return json(ergebnis || { fehler: 'keine Antwort' }, ergebnis?.fehler ? 502 : 200);
+    }
+
+    /**
+     * Uebersetzt Anrisse auf Abruf.
+     *
+     * Die App schickt den Originaltext, nicht eine Kennung: So bleibt der
+     * Worker zustandslos gegenueber dem Bestand, und ein Text, der in zwei
+     * Meldungen gleich lautet, wird nur einmal uebersetzt.
+     */
+    if (url.pathname === '/uebersetzen' && request.method === 'POST') {
+      let eingang;
+      try {
+        const body = await request.json();
+        if (!Array.isArray(body?.texte) || !body.texte.length) {
+          return json({ fehler: 'nichts zu uebersetzen' }, 400);
+        }
+        eingang = body.texte
+          .slice(0, UEBERSETZUNG_JE_ABRUF)
+          .map((t) => String(t).slice(0, 600))
+          .filter(Boolean);
+      } catch (err) {
+        return json({ fehler: 'ungueltige Anfrage' }, 400);
+      }
+      if (!eingang.length) return json({ fehler: 'nichts zu uebersetzen' }, 400);
+
+      const speicher = (await lesen(env, UEBERSETZUNG_KEY)) || {};
+      const fehlend = [...new Set(eingang.filter((t) => !speicher[t]))];
+
+      if (fehlend.length) {
+        const frisch = await uebersetze(fehlend, {
+          deeplKey: env.DEEPL_KEY || '',
+          email: env.KONTAKT_MAIL || '',
+        });
+        fehlend.forEach((t, i) => { if (frisch[i]) speicher[t] = frisch[i]; });
+
+        // Beschneiden, sonst waechst der Eintrag ueber die Groessengrenze von KV.
+        const schluessel = Object.keys(speicher);
+        const zuviel = schluessel.length - UEBERSETZUNG_MAX;
+        if (zuviel > 0) for (const k of schluessel.slice(0, zuviel)) delete speicher[k];
+
+        await schreiben(env, ctx, UEBERSETZUNG_KEY, speicher, BESTAND_TTL);
+      }
+
+      return json({
+        dienst: env.DEEPL_KEY ? 'deepl' : 'mymemory',
+        uebersetzungen: eingang.map((t) => speicher[t] ?? null),
+      });
+    }
+
+    /**
+     * Das Wochenbuch, roh.
+     *
+     * Bewusst unaufbereitet: Die Tage tragen alle vier Anlageklassen bei sich,
+     * also kann die App zwischen Klassen und Wochen wechseln, ohne erneut zu
+     * fragen - und der Worker bleibt weit unter seiner Rechenzeitgrenze.
+     */
+    if (url.pathname === '/woche') {
+      const buch = await lesen(env, WOCHE_KEY);
+      if (!buch?.tage) return json({ fehler: 'noch keine Aufzeichnung' }, 503);
+      return json(buch);
     }
 
     // Zeigt, welche Modelle das hinterlegte Konto nutzen darf. Nuetzlich,

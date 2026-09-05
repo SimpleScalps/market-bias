@@ -193,6 +193,20 @@ export function enrich(list) {
  * Holt alle Quellen, bewertet, entdoppelt und sortiert.
  * `onlyFast` beschränkt auf die schnellen Quellen — dafür im Live-Betrieb.
  */
+/*
+ * Wie weit der Bestand zurueckreicht.
+ *
+ * Was aelter als einen Tag ist, taugt nicht mehr zum Handeln - es verwaessert
+ * nur die Uebersicht und blaeht die Uebertragung auf. Die Zahl der Meldungen
+ * bleibt als Obergrenze bestehen, greift aber in der Regel nicht mehr.
+ */
+export const FENSTER_MS = 24 * 3600 * 1000;
+
+/** Verwirft, was aus dem Zeitfenster gefallen ist. */
+export function imFenster(items, jetzt = Date.now()) {
+  return items.filter((n) => jetzt - new Date(n.date).getTime() < FENSTER_MS);
+}
+
 export async function collectNews({
   regime = 'policy', onlyFast = false, limit = 300, translate = null,
   gruppe = null, gruppen = 1,
@@ -222,7 +236,7 @@ export async function collectNews({
   const seen = new Set();
   all = enrich(all.filter((n) => (seen.has(n.id) ? false : seen.add(n.id))));
 
-  all = dedupe(all)
+  all = imFenster(dedupe(all))
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, limit);
 

@@ -475,3 +475,65 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
   margin:0 0 9px;font-size:12px;line-height:1.5;color:var(--dim);
   padding-left:10px;border-left:1px solid var(--line-2)
 }
+
+/* ── Wochenübersicht ──────────────────────────────────────────────────────
+   Der Bestand reicht 24 Stunden zurück; die Woche kommt aus dem Wochenbuch,
+   das jeden Tag festhält, bevor er herausfällt. */
+
+/* Umschalter Tag/Woche — sitzt dort, wo vorher die Überschrift stand. */
+.ansichtWahl{display:flex;gap:2px;background:var(--bg-2);border:1px solid var(--line);
+  border-radius:4px;padding:2px}
+.ansichtWahl button{background:none;border:0;cursor:pointer;border-radius:3px;
+  padding:3px 10px;font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;
+  color:var(--faint);transition:.12s}
+.ansichtWahl button:hover{color:var(--dim)}
+.ansichtWahl button.aktiv{background:var(--panel-2);color:var(--accent)}
+
+/* Sieben Säulen, eine je Wochentag. Nach oben getragen, nach unten belastet. */
+.wochenGitter{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-bottom:11px}
+.wtag{display:flex;flex-direction:column;align-items:center;gap:4px;
+  background:var(--bg-2);border:1px solid var(--line);border-radius:4px;
+  padding:6px 2px 5px;cursor:pointer;transition:.12s;font:inherit}
+.wtag:hover{border-color:var(--line-2)}
+.wtag.offen{border-color:var(--accent);background:var(--panel-2)}
+.wtag.heute .wtName{color:var(--accent)}
+.wtag.leer{cursor:default;opacity:.45}
+.wtag.leer.kuenftig{border-style:dashed}
+
+.wtName{font-family:var(--mono);font-size:9px;letter-spacing:.08em;color:var(--dim)}
+
+/* Nulllinie in der Mitte: Ein Ausschlag nach unten soll auch nach unten zeigen. */
+.wtSaeule{position:relative;width:100%;height:38px;overflow:hidden}
+.wtSaeule::before{content:"";position:absolute;left:10%;right:10%;top:50%;
+  height:1px;background:var(--line-2)}
+.wtSaeule i{position:absolute;left:50%;transform:translateX(-50%);width:58%;
+  min-height:2px;border-radius:1px}
+.wtSaeule i.auf{bottom:50%}
+.wtSaeule i.ab{top:50%}
+.wtag.strong_bullish .wtSaeule i{background:var(--bull);box-shadow:0 0 6px rgba(16,217,138,.45)}
+.wtag.bullish .wtSaeule i{background:var(--bull-dim)}
+.wtag.neutral .wtSaeule i{background:var(--panel-2)}
+.wtag.bearish .wtSaeule i{background:var(--bear-dim)}
+.wtag.strong_bearish .wtSaeule i{background:var(--bear);box-shadow:0 0 6px rgba(255,77,94,.45)}
+
+.wtZahl{font-family:var(--mono);font-size:9.5px;font-variant-numeric:tabular-nums;
+  color:var(--dim);letter-spacing:-.02em}
+.wtAnzahl{font-family:var(--mono);font-size:8px;color:var(--faint)}
+
+/* Aufgeklappter Tag: die Meldungen, die ihn geprägt haben. */
+.wochenTag{margin-top:4px;border-top:1px solid var(--line);padding-top:8px}
+.wtKopf{margin:0 0 6px;font-family:var(--mono);font-size:9px;letter-spacing:.1em;
+  color:var(--faint);text-transform:uppercase}
+.tkopf{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.treiber li .tz{font-family:var(--mono);font-size:9px;color:var(--faint);
+  font-variant-numeric:tabular-nums}
+.treiber li.leerZeile{padding-left:0;color:var(--faint);font-style:italic}
+.treiber li.leerZeile::before{display:none}
+
+.wochenBlaettern{display:flex;justify-content:space-between;gap:8px;margin-top:10px;
+  border-top:1px solid var(--line);padding-top:8px}
+.wochenBlaettern button{background:none;border:1px solid var(--line);border-radius:3px;
+  padding:4px 9px;font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;
+  color:var(--dim);cursor:pointer;transition:.12s}
+.wochenBlaettern button:hover:not(:disabled){border-color:var(--line-2);color:var(--txt)}
+.wochenBlaettern button:disabled{opacity:.3;cursor:default}

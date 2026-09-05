@@ -23,6 +23,15 @@ window.I18N = {
     neueMeldung: 'NEUE MELDUNG', neueMeldungen: 'NEUE MELDUNGEN',
     mitStarkemSignal: 'MIT STARKEM SIGNAL',
 
+    sichtTag: 'TAG', sichtWoche: 'WOCHE',
+    wochentage: ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'],
+    wocheLaedt: 'Wochenbuch wird geladen …',
+    wocheLeer: 'Noch keine Wochenaufzeichnung. Sie entsteht ab jetzt, Tag für Tag.',
+    wocheHinweis: (tage, meldungen) =>
+      `${tage} von 7 Tagen erfasst · ${meldungen} Meldungen`,
+    wocheTagMeldungen: (n) => `${n} Meldungen`,
+    wocheOhneSignal: 'An diesem Tag nichts mit klarer Richtung.',
+    wocheVorige: 'Vorige Woche', wocheNaechste: 'Diese Woche',
     tagesbild: 'TAGESBILD',
     tagesbildLeer: 'Noch keine bewerteten Meldungen für heute.',
     treiber: 'Wichtigste Meldungen',
@@ -113,6 +122,15 @@ window.I18N = {
     neueMeldung: 'NEW ITEM', neueMeldungen: 'NEW ITEMS',
     mitStarkemSignal: 'WITH STRONG SIGNAL',
 
+    sichtTag: 'DAY', sichtWoche: 'WEEK',
+    wochentage: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+    wocheLaedt: 'Loading the weekly log …',
+    wocheLeer: 'No weekly record yet. It starts building from now, day by day.',
+    wocheHinweis: (tage, meldungen) =>
+      `${tage} of 7 days recorded · ${meldungen} stories`,
+    wocheTagMeldungen: (n) => `${n} stories`,
+    wocheOhneSignal: 'Nothing with a clear direction that day.',
+    wocheVorige: 'Last week', wocheNaechste: 'This week',
     tagesbild: 'DAILY PICTURE',
     tagesbildLeer: 'No scored items for today yet.',
     treiber: 'Top stories',

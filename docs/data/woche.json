@@ -1,0 +1,190 @@
+{
+ "updated": "2026-09-05T00:36:10.654Z",
+ "tage": {
+  "2026-09-05": {
+   "tag": "2026-09-05",
+   "stand": "2026-09-05T00:36:10.698Z",
+   "anzahl": 10,
+   "klassen": {
+    "crypto": {
+     "score": -0.1461,
+     "bull": 0,
+     "bear": 2,
+     "neut": 8
+    },
+    "stocks": {
+     "score": -0.1461,
+     "bull": 0,
+     "bear": 2,
+     "neut": 8
+    },
+    "gold": {
+     "score": 0.073,
+     "bull": 2,
+     "bear": 0,
+     "neut": 8
+    },
+    "usd": {
+     "score": 0.0487,
+     "bull": 0,
+     "bear": 0,
+     "neut": 10
+    }
+   },
+   "top": []
+  },
+  "2026-09-04": {
+   "tag": "2026-09-04",
+   "stand": "2026-09-05T00:36:10.715Z",
+   "anzahl": 202,
+   "klassen": {
+    "crypto": {
+     "score": -0.1064,
+     "bull": 16,
+     "bear": 26,
+     "neut": 160
+    },
+    "stocks": {
+     "score": -0.0851,
+     "bull": 12,
+     "bear": 20,
+     "neut": 170
+    },
+    "gold": {
+     "score": -0.0488,
+     "bull": 13,
+     "bear": 18,
+     "neut": 171
+    },
+    "usd": {
+     "score": 0.0818,
+     "bull": 10,
+     "bear": 2,
+     "neut": 190
+    }
+   },
+   "top": [
+    {
+     "id": "CNBC:2-year yield rises to highest since January 2025 after hot jobs report boosts expectations that the Fed could raise rates",
+     "titel": "2-year yield rises to highest since January 2025 after hot jobs report boosts expectations that the Fed could raise rates",
+     "titelDe": "Die 2-Jahres-Rendite steigt auf den höchsten Stand seit Januar 2025, nachdem der Hot-Jobs-Bericht die Erwartungen steigert, dass die Fed die Zinsen erhöhen könnte",
+     "quelle": "CNBC",
+     "url": "https://www.cnbc.com/2026/09/04/treasurys-bonds-nonfarm-payrolls-unemployment-data.html",
+     "zeit": "2026-09-04T17:38:21.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -0.85,
+      "gold": -0.8,
+      "usd": 1
+     },
+     "priority": 81
+    },
+    {
+     "id": "FXStreet:Gold falls as traders increase Fed hawkish bets after stellar NFP",
+     "titel": "Gold falls as traders increase Fed hawkish bets after stellar NFP",
+     "titelDe": "Gold fällt, da Händler die Falkenwetten der Fed nach dem stellaren NFP erhöhen",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/gold-falls-as-traders-increase-fed-hawkish-bets-after-stellar-nfp-202609041808",
+     "zeit": "2026-09-04T18:08:17.000Z",
+     "scores": {
+      "crypto": -0.6,
+      "stocks": -0.51,
+      "gold": -0.48,
+      "usd": 0.6
+     },
+     "priority": 71
+    },
+    {
+     "id": "CNBC Economy:U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
+     "titel": "U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
+     "titelDe": "US-Gehaltslisten stiegen im August um 162.000, viel mehr als erwartet; Arbeitslosenquote bei 4,1%",
+     "quelle": "CNBC Economy",
+     "url": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html",
+     "zeit": "2026-09-04T17:16:37.000Z",
+     "scores": {
+      "crypto": -0.868,
+      "stocks": -0.738,
+      "gold": -0.694,
+      "usd": 0.868
+     },
+     "priority": 47
+    },
+    {
+     "id": "FXStreet:United States Dollar Index rises as strong NFP revives Fed hike bets",
+     "titel": "United States Dollar Index rises as strong NFP revives Fed hike bets",
+     "titelDe": "Der US-Dollar-Index steigt, da der starke NFP die Zinserhöhungswetten der Fed wiederbelebt",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/united-states-dollar-index-rises-as-strong-nfp-revives-fed-hike-bets-202609041521",
+     "zeit": "2026-09-04T15:21:26.000Z",
+     "scores": {
+      "crypto": -0.6,
+      "stocks": -0.51,
+      "gold": -0.48,
+      "usd": 0.6
+     },
+     "priority": 67
+    },
+    {
+     "id": "Decrypt:Bitcoin Slides as Blowout Jobs Report Revives Fed Hike Odds",
+     "titel": "Bitcoin Slides as Blowout Jobs Report Revives Fed Hike Odds",
+     "titelDe": "Bitcoin rutscht ab, während der Bericht über Blowout-Jobs die Zinserhöhungsquoten der Fed wiederbelebt",
+     "quelle": "Decrypt",
+     "url": "https://decrypt.co/377414/bitcoin-slides-blowout-jobs-report-fed-hike-odds",
+     "zeit": "2026-09-04T15:13:28.000Z",
+     "scores": {
+      "crypto": -0.6,
+      "stocks": -0.51,
+      "gold": -0.48,
+      "usd": 0.6
+     },
+     "priority": 67
+    },
+    {
+     "id": "FXStreet:United States: Solid jobs data support steady Fed – Commerzbank",
+     "titel": "United States: Solid jobs data support steady Fed – Commerzbank",
+     "titelDe": "USA: Solide Daten zur Unterstützung von Arbeitsplätzen stabil Fed – Commerzbank",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/united-states-solid-jobs-data-support-steady-fed-commerzbank-202609041436",
+     "zeit": "2026-09-04T14:36:43.000Z",
+     "scores": {
+      "crypto": -0.6,
+      "stocks": -0.51,
+      "gold": -0.48,
+      "usd": 0.6
+     },
+     "priority": 66
+    },
+    {
+     "id": "U.Today:Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
+     "titel": "Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
+     "titelDe": "Binance Delisting-Warnung: Zwölf Kryptowährungen stehen vor dem Ausstieg",
+     "quelle": "U.Today",
+     "url": "https://u.today/binance-delisting-alert-twelve-cryptocurrencies-face-exit",
+     "zeit": "2026-09-04T16:04:50.000Z",
+     "scores": {
+      "crypto": -0.65,
+      "stocks": 0,
+      "gold": 0,
+      "usd": 0
+     },
+     "priority": 49
+    },
+    {
+     "id": "CNBC World:Diesel hits record high as Ukraine and Iran wars knock out refineries, fueling inflation worries",
+     "titel": "Diesel hits record high as Ukraine and Iran wars knock out refineries, fueling inflation worries",
+     "titelDe": "Diesel erreicht Rekordhöhe, da die Ukraine- und Iran-Kriege Raffinerien ausschalten und die Inflationssorgen anheizen",
+     "quelle": "CNBC World",
+     "url": "https://www.cnbc.com/2026/09/04/diesel-price-record-high-ukraine-iran-inflation.html",
+     "zeit": "2026-09-04T15:10:20.000Z",
+     "scores": {
+      "crypto": -0.518,
+      "stocks": -0.443,
+      "gold": -0.391,
+      "usd": 0.506
+     },
+     "priority": 55
+    }
+   ]
+  }
+ }
+}

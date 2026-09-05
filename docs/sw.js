@@ -1,5 +1,5 @@
 // Hülle offline verfügbar halten; die Nachrichten selbst kommen immer frisch.
-const CACHE = 'market-bias-v26';
+const CACHE = 'market-bias-v27';
 const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'config.js', 'i18n.js', 'manifest.webmanifest', 'icon.png'];
 
 self.addEventListener('install', (e) => {
@@ -16,8 +16,8 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== 'GET' || url.origin !== location.origin) return;
 
-  // news.json: immer Netzwerk zuerst, Cache nur als Rückfallebene
-  if (url.pathname.endsWith('news.json')) {
+  // Daten: immer Netzwerk zuerst, Cache nur als Rückfallebene
+  if (url.pathname.endsWith('news.json') || url.pathname.endsWith('woche.json')) {
     e.respondWith(
       fetch(e.request)
         .then((r) => { caches.open(CACHE).then((c) => c.put(e.request, r.clone())); return r; })

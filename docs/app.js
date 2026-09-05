@@ -2,10 +2,11 @@ import { profilPassung, STANDARD_PROFIL } from './engine/profile.mjs';
 // Die Schwellen kommen aus der Engine, nicht aus einer zweiten Fassung hier:
 // Sonst zeigt die Liste "bullish", während die Benachrichtigung schweigt.
 import { label } from './engine/sentiment.mjs';
+import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/wochenbuch.mjs';
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v26';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v27';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -79,6 +80,65 @@ const titel = (n) => n.title;
 // auf Englisch stellt, will trotzdem die Möglichkeit haben, eine Schlagzeile
 // auf Deutsch nachzulesen. Sie erscheint nur aufgeklappt, nie in der Liste.
 const uebersetzt = (n) => (n.titleDe && n.titleDe !== n.title ? n.titleDe : null);
+// Beim Anriss gilt dasselbe: Wer ihn zum Prüfen liest, soll das auf Deutsch
+// können — sofern eine Übersetzung vorliegt.
+/*
+ * Übersetzte Anrisse.
+ *
+ * Anders als die Titel werden sie nicht vorab übersetzt, sondern erst beim
+ * Aufklappen — vorab wären es rund 32.000 Zeichen am Tag und damit das
+ * Monatskontingent in zehn Tagen, für Text, den man fast nie öffnet. Das
+ * Ergebnis bleibt auf dem Gerät liegen, damit dieselbe Meldung nie zweimal
+ * durchgeschickt wird.
+ */
+const anrissSpeicher = (() => {
+  try { return JSON.parse(localStorage.getItem('anrisseDe') || '{}'); }
+  catch { return {}; }
+})();
+
+function anrissMerken(original, deutsch) {
+  anrissSpeicher[original] = deutsch;
+  const keys = Object.keys(anrissSpeicher);
+  // Der Bestand reicht 24 Stunden zurück; mehr als ein paar hundert Anrisse
+  // kann man in der Zeit nicht aufklappen.
+  if (keys.length > 400) for (const k of keys.slice(0, keys.length - 400)) delete anrissSpeicher[k];
+  try { localStorage.setItem('anrisseDe', JSON.stringify(anrissSpeicher)); } catch { /* voll */ }
+}
+
+const anrissText = (n) => (lang === 'de'
+  ? (n.textDe || anrissSpeicher[n.text] || n.text)
+  : n.text);
+
+/**
+ * Holt die Übersetzung eines Anrisses beim Worker und tauscht sie ein.
+ *
+ * Der englische Text steht schon da — er wird ersetzt, sobald die Antwort
+ * kommt. Ohne Worker bleibt es beim Original: Der Schlüssel liegt dort und
+ * darf die App nie erreichen.
+ */
+async function anrissUebersetzen(n, el) {
+  if (lang !== 'de' || !liveUrl || !n.text) return;
+  if (n.textDe || anrissSpeicher[n.text]) return;
+  if (el.dataset.laeuft) return;
+  el.dataset.laeuft = '1';
+
+  try {
+    const res = await fetch(`${liveUrl}/uebersetzen`, {
+      method: 'POST',
+      headers: workerKopf({ 'Content-Type': 'application/json' }),
+      body: JSON.stringify({ texte: [n.text] }),
+    });
+    const j = await res.json();
+    const deutsch = j?.uebersetzungen?.[0];
+    if (!deutsch) return;
+    anrissMerken(n.text, deutsch);
+    el.textContent = deutsch;
+  } catch {
+    /* Original bleibt stehen */
+  } finally {
+    delete el.dataset.laeuft;
+  }
+}
 
 // ---------- Filterkette ----------
 function matches(n) {
@@ -147,14 +207,66 @@ function tagesbild() {
 let treiberOffen = false;
 let lageText = null;      // Lagebericht des Tages, einmal geholt
 
+/*
+ * Wochenansicht.
+ *
+ * Das Wochenbuch wird einmal je Sitzung geholt und dann hier gerechnet: Es
+ * traegt alle vier Anlageklassen bei sich, also kostet der Wechsel zwischen
+ * Klassen oder Wochen keinen neuen Abruf.
+ */
+let ansicht = P.get('ansicht', 'tag');   // 'tag' | 'woche'
+let wochenbuch = null;                   // { tag: schnappschuss }
+let wochenVersatz = 0;                   // 0 = laufende Woche, -1 = vorige
+let wochenTagOffen = null;               // aufgeklappter Tag
+let wochenFehler = null;
+let wochenLaeuft = false;   // verhindert doppelte Abrufe
+
 const escape = (s) => String(s).replace(/[<>&"]/g, (c) =>
   ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' }[c]));
 
+/** Umschalter Tag/Woche — steht in beiden Ansichten an derselben Stelle. */
+function ansichtWahl() {
+  const T_ = T();
+  return `<div class="ansichtWahl" role="tablist">
+    <button data-ansicht="tag"   role="tab" aria-selected="${ansicht === 'tag'}"
+      class="${ansicht === 'tag' ? 'aktiv' : ''}">${T_.sichtTag}</button>
+    <button data-ansicht="woche" role="tab" aria-selected="${ansicht === 'woche'}"
+      class="${ansicht === 'woche' ? 'aktiv' : ''}">${T_.sichtWoche}</button>
+  </div>`;
+}
+
+/** Hängt den Umschalter an — in jeder Ansicht dieselbe Verdrahtung. */
+function wahlVerdrahten(box) {
+  for (const b of box.querySelectorAll('.ansichtWahl button')) {
+    b.addEventListener('click', async () => {
+      if (b.dataset.ansicht === ansicht) return;
+      ansicht = b.dataset.ansicht;
+      P.set('ansicht', ansicht);
+      renderTages();
+      // Das Wochenbuch wird erst geholt, wenn es gebraucht wird.
+      if (ansicht === 'woche' && !wochenbuch && !wochenLaeuft) {
+        wochenLaeuft = true;
+        wochenbuch = await wochenbuchLaden();
+        wochenLaeuft = false;
+        renderTages();
+      }
+    });
+  }
+}
+
 function renderTages() {
+  return ansicht === 'woche' ? renderWoche() : renderTag();
+}
+
+function renderTag() {
   const t = tagesbild();
   const box = $('#tages');
   const T_ = T();
-  if (!t) { box.innerHTML = `<p class="tagesLeer">${T_.tagesbildLeer}</p>`; return; }
+  if (!t) {
+    box.innerHTML = `${ansichtWahl()}<p class="tagesLeer">${T_.tagesbildLeer}</p>`;
+    wahlVerdrahten(box);
+    return;
+  }
 
   // Für die Tagessicht ist die Skala enger — ein Tagesmittel von 0,3 ist viel.
   const l = label(t.score * 1.8);
@@ -181,7 +293,7 @@ function renderTages() {
 
   box.innerHTML = `
     <div class="tagesKopf">
-      <span class="tagesTitel">${T_.tagesbild}</span>
+      ${ansichtWahl()}
       <span class="tagesDatum">${datum}</span>
     </div>
 
@@ -226,6 +338,144 @@ function renderTages() {
     lageText = await lagebericht();
     renderTages();
   });
+
+  wahlVerdrahten(box);
+}
+
+/**
+ * Die Woche als Säulenreihe.
+ *
+ * Jeder Tag steht für sich: Säule nach oben heißt, der Tag trug die Anlage,
+ * nach unten heißt, er belastete sie. Tage, die noch ausstehen, bleiben leer
+ * statt auf der Nulllinie zu liegen — ein Donnerstag ohne Daten ist nicht
+ * dasselbe wie ein Donnerstag ohne Ausschlag.
+ */
+function renderWoche() {
+  const box = $('#tages');
+  const T_ = T();
+
+  if (!wochenbuch) {
+    box.innerHTML = `${ansichtWahl()}<p class="tagesLeer">${
+      wochenFehler || T_.wocheLaedt}</p>`;
+    wahlVerdrahten(box);
+    return;
+  }
+
+  const w = wochenSicht(wochenbuch, asset, Date.now(), undefined, wochenVersatz);
+  const kurz = (tag) => new Date(`${tag}T12:00:00Z`)
+    .toLocaleDateString(lang === 'en' ? 'en-GB' : 'de-DE', { day: '2-digit', month: 'short' });
+
+  // Die Skala richtet sich nach dem stärksten Tag, sonst bleibt bei ruhiger
+  // Woche alles flach und man sieht keine Unterschiede.
+  const spitze = Math.max(0.15, ...w.tage.filter((d) => !d.leer).map((d) => Math.abs(d.score)));
+
+  const saeulen = w.tage.map((d) => {
+    if (d.leer) {
+      return `<div class="wtag leer${d.kuenftig ? ' kuenftig' : ''}">
+        <span class="wtName">${T_.wochentage[d.wochentag]}</span>
+        <span class="wtSaeule"></span>
+        <span class="wtZahl">–</span>
+      </div>`;
+    }
+    const l = label(d.score * 1.8);
+    // Gemessen wird ab der Mittellinie, also steht der vollen Saeule nur die
+    // halbe Kastenhoehe zur Verfuegung.
+    const hoehe = Math.round((Math.abs(d.score) / spitze) * 50);
+    return `<button class="wtag ${l}${d.heute ? ' heute' : ''}${
+      wochenTagOffen === d.tag ? ' offen' : ''}" data-tag="${d.tag}"
+      aria-expanded="${wochenTagOffen === d.tag}">
+      <span class="wtName">${T_.wochentage[d.wochentag]}</span>
+      <span class="wtSaeule"><i class="${d.score >= 0 ? 'auf' : 'ab'}"
+        style="height:${hoehe}%"></i></span>
+      <span class="wtZahl">${d.score > 0 ? '+' : ''}${d.score.toFixed(2)}</span>
+      <span class="wtAnzahl">${d.anzahl}</span>
+    </button>`;
+  }).join('');
+
+  const lw = label(w.score * 1.8);
+  const g = w.bull + w.bear + w.neut || 1;
+
+  const offen = wochenTagOffen && w.tage.find((d) => d.tag === wochenTagOffen && !d.leer);
+  const liste = (eintraege) => eintraege.map((x) => {
+    const wert = x.scores?.[asset] ?? 0;
+    const ll = label(wert);
+    const zeit = new Date(x.zeit).toLocaleTimeString(lang === 'en' ? 'en-GB' : 'de-DE',
+      { hour: '2-digit', minute: '2-digit' });
+    const ueb = lang === 'de' && x.titelDe && x.titelDe !== x.titel ? x.titelDe : null;
+    return `<li class="${ll}">
+      <span class="tkopf"><span class="tw">${T_.labels[ll]}</span>
+        <span class="tz">${zeit}</span></span>
+      <span class="tt">${escape(x.titel)}</span>
+      ${ueb ? `<span class="tu">${escape(ueb)}</span>` : ''}
+    </li>`;
+  }).join('');
+
+  box.innerHTML = `
+    <div class="tagesKopf">
+      ${ansichtWahl()}
+      <span class="tagesDatum">${kurz(w.von)} – ${kurz(w.bis)}</span>
+    </div>
+
+    <div class="tagesHaupt">
+      <div class="tagesScore">
+        <span class="badge gross ${lw}">${T_.labels[lw]}</span>
+        <span class="tagesZahl">${w.score > 0 ? '+' : ''}${w.score.toFixed(2)}</span>
+      </div>
+      <span class="meter gross"><i style="${meterStyle(w.score * 1.8)}"></i></span>
+      <p class="tagesSub">${T_.wocheHinweis(w.tageBelegt, w.meldungen)} · ${T_.assets[asset]}</p>
+    </div>
+
+    <div class="wochenGitter">${saeulen}</div>
+
+    <div class="band" role="img" aria-label="${T_.verteilung(w.bull, w.neut, w.bear)}">
+      <i class="b" style="width:${(w.bull / g) * 100}%"></i>
+      <i class="n" style="width:${(w.neut / g) * 100}%"></i>
+      <i class="r" style="width:${(w.bear / g) * 100}%"></i>
+    </div>
+    <p class="tagesVerteilung">${T_.verteilung(w.bull, w.neut, w.bear)}</p>
+
+    ${offen ? `
+      <div class="treiber wochenTag">
+        <p class="wtKopf">${kurz(offen.tag)} · ${T_.wocheTagMeldungen(offen.anzahl)}</p>
+        <ul>${offen.top.length ? liste(offen.top) : `<li class="leerZeile">${T_.wocheOhneSignal}</li>`}</ul>
+      </div>` : `
+      ${w.top.length ? `
+        <button class="treiberBtn" aria-expanded="${treiberOffen}">
+          <span class="pfeil">${treiberOffen ? '▾' : '▸'}</span>
+          ${treiberOffen ? T_.treiberVerbergen : T_.treiberZeigen}
+          <b>${w.top.length}</b>
+        </button>
+        <div class="treiber" ${treiberOffen ? '' : 'hidden'}>
+          <ul>${liste(w.top)}</ul>
+        </div>` : ''}`}
+
+    <div class="wochenBlaettern">
+      <button class="wbZurueck" ${wochenVersatz <= -1 ? 'disabled' : ''}>◂ ${T_.wocheVorige}</button>
+      <button class="wbVor" ${wochenVersatz >= 0 ? 'disabled' : ''}>${T_.wocheNaechste} ▸</button>
+    </div>`;
+
+  for (const b of box.querySelectorAll('.wtag[data-tag]')) {
+    b.addEventListener('click', () => {
+      wochenTagOffen = wochenTagOffen === b.dataset.tag ? null : b.dataset.tag;
+      renderWoche();
+    });
+  }
+
+  const tb = $('.treiberBtn', box);
+  if (tb) tb.addEventListener('click', () => { treiberOffen = !treiberOffen; renderWoche(); });
+
+  $('.wbZurueck', box).addEventListener('click', () => {
+    wochenVersatz = Math.max(-1, wochenVersatz - 1);
+    wochenTagOffen = null;
+    renderWoche();
+  });
+  $('.wbVor', box).addEventListener('click', () => {
+    wochenVersatz = Math.min(0, wochenVersatz + 1);
+    wochenTagOffen = null;
+    renderWoche();
+  });
+
+  wahlVerdrahten(box);
 }
 
 // ---------- Zweitmeinung ----------
@@ -357,6 +607,41 @@ async function lagebericht() {
   }
 }
 
+/**
+ * Holt das Wochenbuch — aus der Datei und, wenn vorhanden, vom Worker.
+ *
+ * Beide Wege werden zusammengefuehrt: Die Datei ist die belastbare Fassung
+ * (sie liegt im Verzeichnis und ueberlebt jeden Ausfall), der Worker liefert
+ * den frischeren Stand des laufenden Tages. Faellt einer aus, traegt der andere.
+ */
+async function wochenbuchLaden() {
+  const hole = async (url, kopf) => {
+    try {
+      const res = await fetch(url, kopf ? { headers: kopf } : undefined);
+      if (!res.ok) return null;
+      const j = await res.json();
+      return j?.tage || null;
+    } catch { return null; }
+  };
+
+  const [ausDatei, vomWorker] = await Promise.all([
+    hole(`data/woche.json?t=${Date.now()}`),
+    liveUrl ? hole(`${liveUrl}/woche`, workerKopf()) : Promise.resolve(null),
+  ]);
+
+  if (!ausDatei && !vomWorker) {
+    wochenFehler = T().wocheLeer;
+    return null;
+  }
+
+  const zusammen = { ...(ausDatei || {}) };
+  for (const [tag, schnapp] of Object.entries(vomWorker || {})) {
+    zusammen[tag] = tageZusammenfuehren(zusammen[tag], schnapp);
+  }
+  wochenFehler = null;
+  return zusammen;
+}
+
 // ---------- Darstellung ----------
 function meterStyle(v) {
   const b = Math.max(-1, Math.min(1, v));
@@ -469,9 +754,10 @@ function render(erzwingen = false) {
     if (deutsch) { ueb.textContent = deutsch; ueb.hidden = false; }
 
     // Der Anriss aus dem Feed sagt oft, was die Überschrift verschweigt.
-    if (n.text) {
+    const anriss = anrissText(n);
+    if (anriss) {
       const an = $('.anriss', node);
-      an.textContent = n.text;
+      an.textContent = anriss;
       an.hidden = false;
     }
 
@@ -534,6 +820,7 @@ function render(erzwingen = false) {
       }
       head.setAttribute('aria-expanded', String(an));
       why.hidden = !an;
+      if (an) anrissUebersetzen(n, $('.anriss', node));
       if (!an) detailZeigen(false);
     });
 
@@ -541,6 +828,7 @@ function render(erzwingen = false) {
     if (offen.has(n.id)) {
       head.setAttribute('aria-expanded', 'true');
       why.hidden = false;
+      anrissUebersetzen(n, $('.anriss', node));
       if (detailsOffen.has(n.id)) detailZeigen(true);
     }
 
@@ -907,6 +1195,18 @@ async function load() {
   renderTages();
   renderFoot();
   render();
+
+  /*
+   * Stand die Ansicht beim letzten Mal auf "Woche", wird das Wochenbuch schon
+   * hier geholt - sonst zeigte die App beim Start dauerhaft "wird geladen",
+   * weil der Abruf bislang nur am Umschalter hing.
+   */
+  if (ansicht === 'woche' && !wochenbuch && !wochenLaeuft) {
+    wochenLaeuft = true;
+    wochenbuch = await wochenbuchLaden();
+    wochenLaeuft = false;
+    if (ansicht === 'woche') renderTages();
+  }
 }
 
 function starteTakt() {

@@ -1,6 +1,7 @@
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
 import { collectNews } from '../docs/engine/feeds.mjs';
 import { trimCache } from '../docs/engine/translate.mjs';
+import { fortschreiben } from '../docs/engine/wochenbuch.mjs';
 
 // Grundversorgung über GitHub Actions. Der Live-Betrieb im Minutentakt läuft
 // über den Cloudflare Worker (siehe worker/); diese Datei stellt sicher, dass
@@ -43,11 +44,29 @@ if (existsSync(NEWS_DATEI)) {
   } catch { /* erster Lauf oder beschaedigte Datei */ }
 }
 
+/*
+ * Wochenbuch fortschreiben.
+ *
+ * Der Bestand reicht 24 Stunden zurueck; die Woche braucht laengeren Atem.
+ * Jeder Lauf haelt die betroffenen Tage fest, bevor sie aus dem Fenster
+ * fallen. Weil die Datei im Verzeichnis liegt und mitcommittet wird, ueberlebt
+ * sie auch einen Ausfall des Workers - das ist die verlaessliche Fassung.
+ */
+const WOCHE_DATEI = 'docs/data/woche.json';
+let buch = {};
+if (existsSync(WOCHE_DATEI)) {
+  try { buch = JSON.parse(readFileSync(WOCHE_DATEI, 'utf8')).tage || {}; } catch { buch = {}; }
+}
+const tageVorher = Object.keys(buch).length;
+buch = fortschreiben(buch, data.items);
+
 mkdirSync('docs/data', { recursive: true });
 writeFileSync(NEWS_DATEI, JSON.stringify(data, null, 1));
 writeFileSync(CACHE_DATEI, JSON.stringify(trimCache(cache), null, 0));
+writeFileSync(WOCHE_DATEI, JSON.stringify({ updated: data.updated, tage: buch }, null, 1));
 
 console.log(`${data.count} Meldungen geschrieben.`);
+console.log(`Wochenbuch: ${Object.keys(buch).length} Tage (vorher ${tageVorher}).`);
 console.log(`Übersetzt: ${data.uebersetzung?.uebersetzt ?? 0} neu, ${vorher} aus dem Zwischenspeicher.`);
 if (data.errors.length) console.log('Hinweise:', data.errors.join(' | '));
 

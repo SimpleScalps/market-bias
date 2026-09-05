@@ -41,7 +41,41 @@ async function viaMyMemory(text, email) {
 const istEnglisch = (s) => /[a-z]/i.test(s) && !/[äöüßÄÖÜ]/.test(s);
 
 /**
+ * Übersetzt eine Liste von Texten in einem Rutsch.
+ *
+ * DeepL wenn ein Schlüssel hinterlegt ist, sonst MyMemory. Zurück kommt ein
+ * Eintrag je Eingabe, `null` wo die Übersetzung nicht geklappt hat — die
+ * Aufrufer entscheiden selbst, ob sie das Original stehen lassen.
+ */
+export async function uebersetze(texte, { deeplKey = '', email = '' } = {}) {
+  if (!texte.length) return [];
+
+  if (deeplKey) {
+    try {
+      return await viaDeepL(texte, deeplKey);
+    } catch {
+      // weiter mit MyMemory
+    }
+  }
+
+  const out = [];
+  for (const t of texte) {
+    try {
+      out.push(await viaMyMemory(t, email));
+    } catch {
+      break;                              // Kontingent weg: Rest bleibt offen
+    }
+  }
+  while (out.length < texte.length) out.push(null);
+  return out;
+}
+
+/**
  * Übersetzt fehlende Titel und ergänzt den Zwischenspeicher.
+ *
+ * Nur die Titel — die Anrisse würden das Kontingent sprengen (rund 32.000
+ * Zeichen am Tag gegenüber 15.000 für die Titel) und stehen ohnehin erst
+ * aufgeklappt da. Sie werden auf Abruf übersetzt, siehe /uebersetzen im Worker.
  *
  * @param items   Meldungen; jede bekommt bei Erfolg ein Feld `titleDe`
  * @param cache   Objekt { originaltitel: übersetzung }, wird ergänzt
@@ -65,38 +99,22 @@ export async function translateTitles(items, cache = {}, opts = {}) {
   offen.sort((a, b) => (b.priority ?? 0) - (a.priority ?? 0));
   const arbeit = offen.slice(0, max);
 
+  const ergebnis = await uebersetze(arbeit.map((n) => n.title), { deeplKey, email });
+
   let uebersetzt = 0;
-  let fehler = null;
+  arbeit.forEach((n, i) => {
+    if (!ergebnis[i]) return;
+    n.titleDe = ergebnis[i];
+    cache[n.title] = ergebnis[i];
+    uebersetzt++;
+  });
 
-  if (deeplKey) {
-    try {
-      const ergebnis = await viaDeepL(arbeit.map((n) => n.title), deeplKey);
-      arbeit.forEach((n, i) => {
-        if (!ergebnis[i]) return;
-        n.titleDe = ergebnis[i];
-        cache[n.title] = ergebnis[i];
-        uebersetzt++;
-      });
-      return { uebersetzt, fehler };
-    } catch (err) {
-      fehler = `DeepL: ${err.message}`;   // weiter mit MyMemory
-    }
-  }
-
-  for (const n of arbeit) {
-    try {
-      const de = await viaMyMemory(n.title, email);
-      n.titleDe = de;
-      cache[n.title] = de;
-      uebersetzt++;
-    } catch (err) {
-      fehler = err.message;
-      break;                              // Kontingent oder Dienst weg: abbrechen
-    }
-  }
-
+  const fehler = uebersetzt < arbeit.length
+    ? `Übersetzung unvollständig (${uebersetzt}/${arbeit.length})`
+    : null;
   return { uebersetzt, fehler };
 }
+
 
 /** Hält den Zwischenspeicher klein, damit die Datei nicht unbegrenzt wächst. */
 export function trimCache(cache, max = 4000) {
