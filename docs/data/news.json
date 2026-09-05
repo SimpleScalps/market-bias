@@ -1,45 +1,11 @@
 {
- "updated": "2026-09-05T21:13:56.389Z",
+ "updated": "2026-09-05T21:17:35.849Z",
  "regime": "policy",
- "count": 93,
+ "count": 92,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
-  {
-   "id": "Al Jazeera:Building collapses after heavy rain in northern India",
-   "title": "Building collapses after heavy rain in northern India",
-   "text": "A building collapsed in Muradabad, northern India, tearing through power lines and sending sparks into the street.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/09-05-sv-india-building-collapse-mp4?traffic_source=rss",
-   "date": "2026-09-05T21:11:25.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 32,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "medium",
-   "duration": "long",
-   "eventType": "Insolvenz",
-   "eventTypeEn": "Insolvency",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Gebäude einstürzt nach starkem Regen im Norden Indiens"
-  },
   {
    "id": "Al Jazeera:Why is Argentina reigniting the Falklands dispute?",
    "title": "Why is Argentina reigniting the Falklands dispute?",
@@ -542,7 +508,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -593,6 +559,44 @@
     "CNBC"
    ],
    "titleDe": "Trump steigert die Spannung bei Warsh, während Fed Zinserhöhung droht"
+  },
+  {
+   "id": "Al Jazeera:Russia’s Putin meets US envoys to discuss Trump proposal to end Ukraine war",
+   "title": "Russia’s Putin meets US envoys to discuss Trump proposal to end Ukraine war",
+   "text": "Both Russia and Ukraine vow not to strike each other's capitals for three days during talks in Moscow and Kyiv.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/5/russias-putin-meets-us-envoys-to-discuss-trump-proposal-to-end-ukraine-war?traffic_source=rss",
+   "date": "2026-09-05T18:12:52.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Deeskalation"
+   ],
+   "scores": {
+    "crypto": 0.252,
+    "stocks": 0.252,
+    "gold": -0.126,
+    "usd": -0.084
+   },
+   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Deeskalation)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 61,
+   "label": "bullish",
+   "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Putin trifft US-Botschafter, um Trumps Vorschlag zur Beendigung des Ukraine-Krieges zu besprechen"
   },
   {
    "id": "MarketWatch:7% mortgage rates are already here, some buyers and mortgage experts say",
@@ -926,7 +930,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 55,
+   "priority": 54,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1100,7 +1104,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 43,
+   "priority": 42,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3195,40 +3199,6 @@
    "titleDe": "USD/CHF-Preisprognose: NFP-Rallye stagniert bei 0,8100, Spuren"
   },
   {
-   "id": "Decrypt:G7 Warns Quantum Threat Demands Action as Crypto Industry Weighs Fixes",
-   "title": "G7 Warns Quantum Threat Demands Action as Crypto Industry Weighs Fixes",
-   "text": "The group is urging organizations to adopt post-quantum security before powerful computers can compromise today’s encryption and digital signatures.",
-   "source": "Decrypt",
-   "url": "https://decrypt.co/377486/g7-warns-quantum-threat-crypto-fixes",
-   "date": "2026-09-04T21:16:04.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "G7 warnt vor Quantenbedrohungen, die Maßnahmen erfordern, da die Krypto-Industrie Korrekturen abwägt"
-  },
-  {
    "id": "Cointelegraph:Here’s what happened in crypto today",
    "title": "Here’s what happened in crypto today",
    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
@@ -3264,7 +3234,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
