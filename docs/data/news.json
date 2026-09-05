@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-05T21:33:15.986Z",
+ "updated": "2026-09-05T21:35:13.589Z",
  "regime": "policy",
- "count": 90,
+ "count": 89,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
@@ -39,6 +39,46 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Gebäude einstürzt nach starkem Regen im Norden Indiens"
+  },
+  {
+   "id": "Al Jazeera:US envoys Witkoff, Kushner meet Putin for talks on Ukraine war",
+   "title": "US envoys Witkoff, Kushner meet Putin for talks on Ukraine war",
+   "text": "US envoys Steve Witkoff and Jared Kushner met Russian President Vladimir Putin at the Kremlin on Saturday.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/us-envoys-witkoff-kushner-meet-putin-for-talks-on-ukraine-war?traffic_source=rss",
+   "date": "2026-09-05T20:15:49.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Deeskalation"
+   ],
+   "scores": {
+    "crypto": 0.252,
+    "stocks": 0.252,
+    "gold": -0.126,
+    "usd": -0.084
+   },
+   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Deeskalation)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 66,
+   "label": "bullish",
+   "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "BBC World"
+   ],
+   "titleDe": "US-Botschafter Witkoff, Kushner treffen Putin zu Gesprächen über den Ukraine-Krieg"
   },
   {
    "id": "Al Jazeera:Why is Argentina reigniting the Falklands dispute?",
@@ -202,7 +242,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -440,7 +480,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -451,40 +491,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Zwei Piloten sterben bei Absturz eines griechischen Kampfflugzeugs während einer Luftshow"
-  },
-  {
-   "id": "Al Jazeera:Thousands protest in Croatia to demand government clean up toxic waste",
-   "title": "Thousands protest in Croatia to demand government clean up toxic waste",
-   "text": "Demonstrators in Zagreb accuse Croatia's government of dragging its feet on a hazardous waste scandal.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/5/thousands-protest-in-croatia-to-demand-government-clean-up-toxic-waste?traffic_source=rss",
-   "date": "2026-09-05T18:42:08.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 27,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Tausende demonstrieren in Kroatien, um die Regierung zur Beseitigung von Giftmüll zu drängen"
   },
   {
    "id": "MarketWatch:Will a data center hurt your home’s value? Research says no. Sellers disagree.",
@@ -731,40 +737,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Vielleicht haben die Schneevögel recht? Ein Bundesstaat dominiert diese Liste der besten Ruhestandsorte."
-  },
-  {
-   "id": "BBC World:US envoys meet Putin in Moscow for Ukraine talks",
-   "title": "US envoys meet Putin in Moscow for Ukraine talks",
-   "text": "Footage shows Vladimir Putin greeting Steve Witkoff and Jared Kushner, before saying the current situation \"is not so easy\".",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-05T17:18:31.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 60,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Botschafter treffen Putin in Moskau zu Ukraine-Verhandlungen"
   },
   {
    "id": "Decrypt:Ancient Bitcoin Wallet That Turned $120 Into $3 Million Wakes Up",
@@ -1206,7 +1178,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1240,7 +1212,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1767,7 +1739,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 38,
+   "priority": 37,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2089,7 +2061,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 36,
+   "priority": 35,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2475,7 +2447,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 9,
+   "priority": 8,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3140,7 +3112,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 36,
+   "priority": 35,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3154,7 +3126,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
