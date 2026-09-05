@@ -6,7 +6,7 @@ import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
 import { uebersetze } from '../docs/engine/translate.mjs';
 import { fortschreiben, TAGE_MAX } from '../docs/engine/wochenbuch.mjs';
 import { sendeAn } from './notify.mjs';
-import { deuten, widerspruch, verfuegbareModelle, tageslage } from './deuten.mjs';
+import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen } from './deuten.mjs';
 
 // Cloudflare Worker: holt die Quellen serverseitig (RSS-Feeds senden keine
 // CORS-Header, der Browser kann sie also nicht selbst laden), bewertet sie mit
@@ -29,21 +29,35 @@ const GESEHEN_MAX = 4000;   // Gedächtnis über die Sichtbarkeitsgrenze hinaus
 /*
  * Wie viele Meldungen je Durchlauf gegengelesen werden.
  *
- * Bei rund 36 neuen Meldungen am Tag und einem Kontingent von 14.400 Anfragen
- * liegt die Auslastung im Promillebereich - es gibt keinen Grund zu sparen.
- * Die Zahl begrenzt allein die Laufzeit eines einzelnen Durchlaufs.
+ * Begrenzt die Laufzeit eines einzelnen Durchlaufs; ueber den Tag wacht
+ * KI_ANFRAGEN_MAX.
  */
 const GEGENPROBE_MAX = 10;
 
 /*
  * Wie viele Altbestaende je Durchlauf nachgeprueft werden.
  *
- * Bei einem Durchlauf pro Minute sind das bis zu 7.200 Anfragen am Tag und
- * damit die Haelfte des Kontingents - genug, um einen Bestand von 300
- * Meldungen in gut einer Stunde vollstaendig durchzusehen, ohne an die Grenze
- * zu stossen.
+ * Neue Meldungen werden sofort geprueft, der Rest kommt nach und nach dazu.
+ * Fuenf je Durchlauf holen einen frisch uebernommenen Bestand in einer knappen
+ * Stunde ein und halten ihn danach muehelos aktuell.
  */
 const NACHZIEHEN_MAX = 5;
+
+/*
+ * Tagesbudget fuer das Sprachmodell.
+ *
+ * Die kostenlose Stufe von Groq erlaubt fuer gpt-oss-120b 1.000 Anfragen und
+ * 200.000 Token am Tag; bindend sind die Token. Eine Pruefung kostet grob 800,
+ * also sind rund 250 moeglich. Im Betrieb faellt weniger an - handelbar sind
+ * etwa 90 der rund 280 Meldungen im Tagesfenster, der Rest wird gar nicht erst
+ * angefragt.
+ *
+ * Die Grenze ist trotzdem noetig: Ohne sie koennte ein Fehler, der die
+ * gespeicherte Pruefung verliert, denselben Bestand stuendlich neu durchgehen
+ * und das Kontingent binnen einer Stunde verbrauchen - samt Tagesbericht,
+ * Zweitmeinung auf Knopfdruck und Uebersetzung, die daran haengen.
+ */
+const KI_ANFRAGEN_MAX = 150;
 
 /*
  * Zwischenspeicher der Uebersetzungen.
@@ -170,6 +184,20 @@ async function schreiben(env, ctx, key, data, ttl = 86400) {
 const alterMs = (d) => (d?.updated ? Date.now() - new Date(d.updated).getTime() : Infinity);
 
 /**
+ * Fuehrt den Tageszaehler der Modellanfragen und sagt, wie viele noch frei sind.
+ *
+ * Der Zaehler liegt im Bestand, der ohnehin bei jedem Durchlauf geschrieben
+ * wird - so kostet die Buchfuehrung keinen zusaetzlichen Schreibvorgang. Beim
+ * Datumswechsel faengt er von vorn an.
+ */
+function budgetRest(bestand) {
+  const heute = new Date().toISOString().slice(0, 10);
+  if (!bestand || bestand.kiTag !== heute) return { tag: heute, verbraucht: 0, rest: KI_ANFRAGEN_MAX };
+  const verbraucht = bestand.kiAnfragen || 0;
+  return { tag: heute, verbraucht, rest: Math.max(0, KI_ANFRAGEN_MAX - verbraucht) };
+}
+
+/**
  * Haelt die Kalendertage fest, solange ihre Meldungen noch vorliegen.
  *
  * Laeuft neben der Antwort her (waitUntil): Der Abruf soll nicht darauf warten.
@@ -283,7 +311,8 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
 
   // Vor dem Versand gegenlesen lassen: Ein Widerspruch gehoert in die
   // Benachrichtigung, nicht erst in die spaetere Ansicht.
-  await gegenlesen(kandidaten, env);
+  const budget = budgetRest(bestand);
+  budget.verbraucht += await gegenlesen(kandidaten, env, Math.min(GEGENPROBE_MAX, budget.rest));
 
   /*
    * Den Bestand nachziehen.
@@ -295,7 +324,8 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
    * zuerst. Nach einigen Stunden ist alles einmal durch.
    */
   const nachzuholen = items.filter((n) => !n.ki && n.impactLevel !== 'ignore');
-  if (nachzuholen.length) await gegenlesen(nachzuholen, env, NACHZIEHEN_MAX);
+  const frei = Math.min(NACHZIEHEN_MAX, KI_ANFRAGEN_MAX - budget.verbraucht);
+  if (nachzuholen.length) budget.verbraucht += await gegenlesen(nachzuholen, env, frei);
 
   const versand = bestand
     ? await pushen(env, ctx, kandidaten)
@@ -314,6 +344,8 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
     errors: teil.errors,
     items,
     gesehen: gedaechtnis,
+    kiTag: budget.tag,
+    kiAnfragen: budget.verbraucht,
   };
   await schreiben(env, ctx, KEY, data, BESTAND_TTL);
   ctx.waitUntil(wochenbuchPflegen(env, ctx, items));
@@ -381,6 +413,7 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
  * bleibt sichtbar, damit nachvollziehbar ist, wie es zum ersten Urteil kam.
  */
 async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX) {
+  if (hoechstens <= 0) return 0;
   if (!env.GROQ_KEY) return;
 
   const kandidaten = items
@@ -389,7 +422,7 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX) {
                   - Math.abs(a.scores.crypto) * a.priority)
     .slice(0, hoechstens);
 
-  if (!kandidaten.length) return;
+  if (!kandidaten.length) return 0;
 
   // Nebeneinander abfragen: nacheinander summierte sich die Wartezeit.
   const deutungen = await Promise.all(kandidaten.map((n) => deuten(n.title, env, n.text)));
@@ -422,6 +455,8 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX) {
     n.label = label(kiWert);
     n.labelText = LABEL_TEXT[n.label];
   });
+
+  return kandidaten.length;
 }
 
 // --- Benachrichtigungen ---------------------------------------------------
@@ -542,7 +577,8 @@ export default {
         zeit: new Date().toISOString(),
         ablage: env.STORE ? 'kv' : 'cache',
         zweitmeinung: env.GROQ_KEY ? 'eingerichtet' : 'kein Schluessel',
-        uebersetzung: env.DEEPL_KEY ? 'DeepL' : 'MyMemory (ohne Schluessel)',
+        uebersetzung: env.GROQ_KEY ? 'Groq'
+          : (env.DEEPL_KEY ? 'DeepL' : 'MyMemory (ohne Schluessel)'),
         wochenbuch: buch?.tage ? `${Object.keys(buch.tage).length} Tage` : 'noch leer',
         zugang: env.ZUGANG
           ? 'geschuetzt'
@@ -553,6 +589,7 @@ export default {
           ? `${bestand.items.filter((n) => n.ki).length} von ${bestand.items.length}`
           : '0',
         berichtigt: bestand?.items?.filter((n) => n.kiKorrigiert).length ?? 0,
+        kiBudget: `${budgetRest(bestand).verbraucht} von ${KI_ANFRAGEN_MAX} Anfragen heute`,
         // Ohne hinterlegtes Abo verschickt der Worker nichts. Zeigt nur, ob
         // und wohin - niemals Token oder Themennamen.
         abo: abo ? {
@@ -682,11 +719,20 @@ export default {
       const fehlend = [...new Set(eingang.filter((t) => !speicher[t]))];
 
       if (fehlend.length) {
+        /*
+         * Groq zuerst. Ein Sprachmodell trifft Boersensprache besser als ein
+         * reiner Uebersetzungsdienst - MyMemory machte aus "hawkish bets"
+         * woertlich "Falkenwetten". Der Schluessel liegt ohnehin schon hier,
+         * und ein Anriss kostet ein paar hundert Token gegen ein Tagesbudget
+         * von 200.000.
+         */
         const frisch = await uebersetze(fehlend, {
+          groqKey: env.GROQ_KEY || '',
+          modell: env.GROQ_KEY ? await modellWaehlen(env).catch(() => undefined) : undefined,
           deeplKey: env.DEEPL_KEY || '',
           email: env.KONTAKT_MAIL || '',
         });
-        fehlend.forEach((t, i) => { if (frisch[i]) speicher[t] = frisch[i]; });
+        fehlend.forEach((t, i) => { if (frisch.texte[i]) speicher[t] = frisch.texte[i]; });
 
         // Beschneiden, sonst waechst der Eintrag ueber die Groessengrenze von KV.
         const schluessel = Object.keys(speicher);
@@ -696,10 +742,7 @@ export default {
         await schreiben(env, ctx, UEBERSETZUNG_KEY, speicher, BESTAND_TTL);
       }
 
-      return json({
-        dienst: env.DEEPL_KEY ? 'deepl' : 'mymemory',
-        uebersetzungen: eingang.map((t) => speicher[t] ?? null),
-      });
+      return json({ uebersetzungen: eingang.map((t) => speicher[t] ?? null) });
     }
 
     /**

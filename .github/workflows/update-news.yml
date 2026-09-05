@@ -35,6 +35,7 @@ jobs:
           REGIME: policy
           # Optional, hebt das Übersetzungskontingent an. Beide leer lassen
           # heißt: rund 60 Schlagzeilen pro Tag werden übersetzt.
+          GROQ_KEY: ${{ secrets.GROQ_KEY }}
           DEEPL_KEY: ${{ secrets.DEEPL_KEY }}
           TRANSLATE_EMAIL: ${{ secrets.TRANSLATE_EMAIL }}
 

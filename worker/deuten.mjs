@@ -49,7 +49,7 @@ export async function verfuegbareModelle(env) {
 }
 
 /** Waehlt das beste verfuegbare Modell und merkt es sich. */
-async function modellWaehlen(env) {
+export async function modellWaehlen(env) {
   if (env.GROQ_MODELL) return env.GROQ_MODELL;   // ausdrueckliche Vorgabe
   if (gewaehltesModell) return gewaehltesModell;
 

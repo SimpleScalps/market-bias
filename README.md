@@ -203,18 +203,40 @@ beiden Sprachen — dort ist die Fassung exakt. Echte Schlagzeilen werden
 übersetzt und dauerhaft in `docs/data/translations.json` zwischengespeichert;
 ein einmal übersetzter Titel wird nie erneut angefragt.
 
-Ohne Konfiguration läuft das über MyMemory mit rund 5.000 Zeichen pro Tag —
-das reicht für etwa 60 Schlagzeilen täglich. Zwei Wege, das zu erhöhen:
+Drei Wege, in dieser Reihenfolge:
 
 | Weg | Kontingent | Einrichtung |
 |---|---|---|
-| `TRANSLATE_EMAIL` | 50.000 Zeichen/Tag | eigene E-Mail als Umgebungsvariable |
-| `DEEPL_KEY` | 500.000 Zeichen/Monat, bessere Qualität | kostenloser Schlüssel bei DeepL |
+| `GROQ_KEY` | teilt sich 200.000 Token/Tag mit der Zweitmeinung | derselbe Schlüssel, den die Zweitmeinung nutzt |
+| `DEEPL_KEY` | einmalig 1 Mio. Zeichen, danach kostenpflichtig | Schlüssel bei DeepL |
+| `TRANSLATE_EMAIL` | 50.000 Zeichen/Tag | eigene E-Mail; ohne sie nur rund 5.000 |
 
-Beides wird im Workflow unter *Settings → Secrets and variables → Actions*
-hinterlegt. Schlägt die Übersetzung fehl, bleibt der englische Titel stehen —
-die Bewertung selbst ist davon nie betroffen, weil sie auf dem Originaltext
-arbeitet.
+**Groq ist der empfohlene Weg**, und zwar nicht nur wegen des Kontingents: Ein
+Sprachmodell übersetzt Börsensprache sinngemäß, ein Übersetzungsdienst wörtlich.
+MyMemory machte aus *"hawkish bets"* die *"Falkenwetten"* — die Richtung der
+Meldung ging dabei verloren, also genau das, wofür dieses Werkzeug da ist. Groq
+schreibt *"Wetten auf eine straffere Fed-Politik"*.
+
+DeepLs kostenlose Stufe ist inzwischen **keine monatliche Zuteilung mehr**,
+sondern eine einmalige Gutschrift von einer Million Zeichen. Bei rund 15.000
+Zeichen am Tag ist sie nach gut zwei Monaten aufgebraucht; danach steht die
+Übersetzung still, sofern kein bezahlter Tarif dahinterliegt. Deshalb ist DeepL
+hier nur noch die zweite Wahl.
+
+Alle drei werden unter *Settings → Secrets and variables → Actions* hinterlegt
+und für den Worker zusätzlich mit `npx wrangler secret put`. Schlägt ein Weg
+fehl, rückt der nächste nach; schlagen alle fehl, bleibt der englische Titel
+stehen — die Bewertung ist davon nie betroffen, sie arbeitet auf dem
+Originaltext.
+
+### Anrisse
+
+Die Zusammenfassung unter einer Schlagzeile wird erst übersetzt, **wenn du die
+Meldung aufklappst**. Alle vorab durchzuschicken kostete rund 32.000 Zeichen am
+Tag gegenüber 15.000 für die Titel — mehr als das Doppelte, für Text, den man
+in aller Regel nie öffnet. Der Worker hält die Ergebnisse vor (`/uebersetzen`),
+nicht das Gerät: Was am einen Gerät aufgeklappt wurde, steht am nächsten
+sofort da.
 
 ## Zweitmeinung durch ein Sprachmodell
 

@@ -21,6 +21,8 @@ const data = await collectNews({
   translate: {
     cache,
     max: Number(process.env.TRANSLATE_MAX || 40),
+    // Groq zuerst: uebersetzt Boersensprache sinngemaess statt woertlich.
+    groqKey: process.env.GROQ_KEY || '',
     deeplKey: process.env.DEEPL_KEY || '',
     email: process.env.TRANSLATE_EMAIL || '',
   },
