@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-05T18:04:15.157Z",
+ "updated": "2026-09-05T18:20:55.013Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-05T18:04:15.179Z",
+   "stand": "2026-09-05T18:20:55.039Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -46,6 +46,21 @@
       "usd": 0.3
      },
      "priority": 98
+    },
+    {
+     "id": "CNBC Economy:Trump turns up the heat on Warsh as Fed rate hike looms",
+     "titel": "Trump turns up the heat on Warsh as Fed rate hike looms",
+     "titelDe": "Trump steigert die Spannung bei Warsh, während Fed Zinserhöhung droht",
+     "quelle": "CNBC Economy",
+     "url": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html",
+     "zeit": "2026-09-05T18:18:22.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
     },
     {
      "id": "BBC World:How much can Canada fight back in its trade war with the US?",
@@ -136,27 +151,12 @@
       "usd": -0.4
      },
      "priority": 39
-    },
-    {
-     "id": "Al Jazeera:US imposes sanctions on Turkish bank, prompting legal threat",
-     "titel": "US imposes sanctions on Turkish bank, prompting legal threat",
-     "titelDe": "USA verhängen Sanktionen gegen türkische Bank, was rechtliche Drohungen auslöst",
-     "quelle": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/9/5/us-imposes-sanctions-on-turkish-bank-prompting-legal-threat?traffic_source=rss",
-     "zeit": "2026-09-05T05:19:05.000Z",
-     "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
-     },
-     "priority": 38
     }
    ]
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-05T18:04:15.184Z",
+   "stand": "2026-09-05T18:20:55.045Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
