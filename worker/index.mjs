@@ -541,6 +541,18 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   for (const n of items) gesehen.add(n.id);
   const gedaechtnis = [...gesehen].slice(-GESEHEN_MAX);
 
+  /*
+   * Schreibvorgaenge mitzaehlen.
+   *
+   * KV erlaubt 1.000 am Tag, und die Grenze zu ueberschreiten faellt von
+   * aussen nicht auf - es hoert einfach auf zu speichern. Der Zaehler faehrt
+   * im selben Objekt mit, kostet also nichts, und /health zeigt ihn an. Wer
+   * eine Quelle nachtraegt oder den Takt aendert, sieht am naechsten Tag
+   * unmittelbar, was das gekostet hat.
+   */
+  const heute = new Date().toISOString().slice(0, 10);
+  const zaehlerGilt = bestand?.schreibTag === heute;
+
   const data = {
     updated: new Date().toISOString(),
     regime,
@@ -548,6 +560,8 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     errors: teil.errors,
     items,
     gesehen: gedaechtnis,
+    schreibTag: heute,
+    schreibungen: (zaehlerGilt ? bestand.schreibungen || 0 : 0) + 1,
   };
 
   /*
@@ -863,6 +877,9 @@ export default {
           : 'OFFEN - jeder mit dieser Adresse kann das Abo aendern und das Kontingent verbrauchen',
         meldungen: bestand?.items?.length ?? 0,
         alterSekunden: Math.round(alterMs(bestand) / 1000),
+        schreibvorgaenge: bestand?.schreibTag === new Date().toISOString().slice(0, 10)
+          ? `${bestand.schreibungen} heute (KV erlaubt 1.000)`
+          : 'heute noch keiner',
         geprueft: bestand?.items
           ? `${bestand.items.filter((n) => n.ki).length} von ${bestand.items.length}`
           : '0',
