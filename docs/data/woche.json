@@ -1,41 +1,41 @@
 {
- "updated": "2026-09-05T02:52:41.410Z",
+ "updated": "2026-09-05T03:04:03.496Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-05T02:52:41.452Z",
-   "anzahl": 17,
+   "stand": "2026-09-05T03:04:03.523Z",
+   "anzahl": 18,
    "klassen": {
     "crypto": {
-     "score": -0.0894,
+     "score": -0.0748,
      "bull": 0,
      "bear": 2,
-     "neut": 15
+     "neut": 16
     },
     "stocks": {
-     "score": -0.0894,
+     "score": -0.0748,
      "bull": 0,
      "bear": 2,
-     "neut": 15
+     "neut": 16
     },
     "gold": {
-     "score": 0.0447,
+     "score": 0.0374,
      "bull": 2,
      "bear": 0,
-     "neut": 15
+     "neut": 16
     },
     "usd": {
-     "score": 0.0298,
+     "score": 0.0249,
      "bull": 0,
      "bear": 0,
-     "neut": 17
+     "neut": 18
     }
    },
    "top": []
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-05T02:52:41.469Z",
+   "stand": "2026-09-05T03:04:03.532Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
