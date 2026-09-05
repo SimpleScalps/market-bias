@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { alsWert, widerspruch } from '../worker/deuten.mjs';
+import { alsWert, widerspruch, deuten, fragen, tageslage } from '../worker/deuten.mjs';
 
 test('Einschätzung wird auf dieselbe Skala gebracht', () => {
   assert.equal(alsWert({ richtung: 'bullish', staerke: 0.7 }), 0.7);
@@ -24,4 +24,69 @@ test('Widerspruch meint verschiedene Vorzeichen bei Gewicht', () => {
   // Ohne Antwort bleibt es bei der Regel.
   assert.equal(widerspruch(0.8, { fehler: 'Groq 400' }), false);
   assert.equal(widerspruch(0.8, null), false);
+});
+
+/*
+ * Die drei Wege zu Groq einmal wirklich durchlaufen.
+ *
+ * Anlass war ein Fehler, den keine Pruefung gefunden hat: fragen() reicht die
+ * Arbeit an frageStellen() weiter, und der Zweck stand in der falschen der
+ * beiden Funktionen. Weil jeder Weg seine Fehler abfaengt und als Text
+ * zurueckgibt, kam das nicht als Absturz heraus, sondern als Antwort
+ * "zweck is not defined" - im laufenden Betrieb, beim Nutzer.
+ *
+ * Diese Tests rufen die Wege mit einem vorgetaeuschten fetch auf. Sie pruefen
+ * zweierlei: dass ueberhaupt eine Antwort herauskommt, und dass jeder Weg das
+ * Modell nimmt, das ihm zusteht - daran haengt die Trennung der Kontingente.
+ */
+const ANTWORTEN = {
+  deuten: { richtung: 'bearish', staerke: 0.6, inhalt: 'Test', grund: 'Test' },
+  lage: { lage: 'Ruhiger Tag.' },
+};
+
+/** Ersetzt fetch und merkt sich, welches Modell angefragt wurde. */
+function groqVortaeuschen(inhalt) {
+  const gefragt = [];
+  globalThis.fetch = async (url, opts) => {
+    if (String(url).includes('/models')) {
+      return new Response(JSON.stringify({
+        data: [{ id: 'openai/gpt-oss-120b' }, { id: 'openai/gpt-oss-20b' }],
+      }), { status: 200 });
+    }
+    gefragt.push(JSON.parse(opts.body).model);
+    return new Response(JSON.stringify({
+      choices: [{ message: { content: typeof inhalt === 'string' ? inhalt : JSON.stringify(inhalt) } }],
+      usage: { total_tokens: 42 },
+    }), { status: 200 });
+  };
+  return gefragt;
+}
+
+test('Jeder Weg antwortet und nimmt sein eigenes Modell', async () => {
+  const echt = globalThis.fetch;
+  try {
+    const env = { GROQ_KEY: 'test' };
+
+    // Die laufende Pruefung - auf dem Modell der Dauerlast.
+    const g1 = groqVortaeuschen(ANTWORTEN.deuten);
+    const d = await deuten('US jobless claims jump', env, 'Mehr als erwartet.');
+    assert.equal(d.fehler, undefined, `deuten() scheiterte: ${d.fehler}`);
+    assert.equal(d.richtung, 'bearish');
+    assert.equal(g1[0], 'openai/gpt-oss-20b');
+
+    // Eine eigene Frage - auf dem Modell, das die Dauerlast nicht antastet.
+    const g2 = groqVortaeuschen('Weil die Daten stark ausfielen.');
+    const f = await fragen('US jobless claims jump', 'Anriss', 'Warum bearish?', env);
+    assert.equal(f.fehler, undefined, `fragen() scheiterte: ${f.fehler}`);
+    assert.match(f.antwort, /Daten/);
+    assert.equal(g2[0], 'openai/gpt-oss-120b');
+
+    // Der Tagesbericht gehoert zum selben Topf wie die eigene Frage.
+    const g3 = groqVortaeuschen(ANTWORTEN.lage);
+    const l = await tageslage([{ titel: 'Test', wertung: '0.50' }], 'crypto', env);
+    assert.equal(l.fehler, undefined, `tageslage() scheiterte: ${l.fehler}`);
+    assert.equal(g3[0], 'openai/gpt-oss-120b');
+  } finally {
+    globalThis.fetch = echt;
+  }
 });

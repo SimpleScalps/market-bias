@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v40';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v41';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -47,6 +47,17 @@ let query = '';
 // Aufgeklappte Artikel und geöffnete Langfassungen überdauern das Neuzeichnen.
 let offen = new Set();
 let detailsOffen = new Set();
+/*
+ * Nachfragen überdauern es ebenfalls.
+ *
+ * Sie taten es zuerst nicht — mit der Begründung, die Antworten veralteten mit
+ * der Meldung. Das trifft nicht zu: Die Meldung bleibt stehen, nur die Liste
+ * wird neu gebaut, und zwar jedes Mal, wenn sich irgendwo eine Bewertung
+ * ändert. Wer eine Frage stellte, sah die Antwort deshalb wieder
+ * verschwinden, während er sie noch las.
+ */
+let frageOffen = new Set();
+let frageVerlauf = new Map();   // Meldungskennung -> [{ frage, antwort, fehler }]
 let letzteSignatur = '';
 let kennung = '';   // Inhaltskennung der zuletzt geladenen Daten
 let gesehen = new Set();
@@ -878,8 +889,26 @@ function render(erzwingen = false) {
     frageAb.textContent = T().frageSenden;
     frageFeld.placeholder = T().fragePlatzhalter;
 
+    /** Hängt eine Frage oder Antwort in den sichtbaren Verlauf. */
+    const zeile = (art, text) => {
+      const p = document.createElement('p');
+      p.className = art;
+      p.textContent = text;
+      verlauf.appendChild(p);
+      return p;
+    };
+
+    // Was vor dem Neuaufbau schon dastand, kommt zurück.
+    const bisher = frageVerlauf.get(n.id) || [];
+    for (const e of bisher) {
+      zeile('fEigene', e.frage);
+      zeile(e.fehler ? 'fAntwort fehler' : 'fAntwort', e.fehler || e.antwort);
+    }
+    if (frageOffen.has(n.id)) frageBox.hidden = false;
+
     frageBtn.addEventListener('click', () => {
       frageBox.hidden = !frageBox.hidden;
+      if (frageBox.hidden) frageOffen.delete(n.id); else frageOffen.add(n.id);
       if (!frageBox.hidden) frageFeld.focus();
     });
 
@@ -887,15 +916,8 @@ function render(erzwingen = false) {
       const text = frageFeld.value.trim();
       if (!text || frageAb.disabled) return;
 
-      const eigene = document.createElement('p');
-      eigene.className = 'fEigene';
-      eigene.textContent = text;
-      verlauf.appendChild(eigene);
-
-      const antwort = document.createElement('p');
-      antwort.className = 'fAntwort laeuft';
-      antwort.textContent = T().frageLaeuft;
-      verlauf.appendChild(antwort);
+      zeile('fEigene', text);
+      const antwort = zeile('fAntwort laeuft', T().frageLaeuft);
 
       frageFeld.value = '';
       frageAb.disabled = true;
@@ -908,6 +930,11 @@ function render(erzwingen = false) {
       } else {
         antwort.textContent = erg.antwort;
       }
+
+      // Merken, damit der Verlauf einen Neuaufbau der Liste übersteht.
+      const buch = frageVerlauf.get(n.id) || [];
+      buch.push({ frage: text, antwort: erg.antwort, fehler: erg.fehler });
+      frageVerlauf.set(n.id, buch);
       frageAb.disabled = false;
       frageFeld.focus();
     };

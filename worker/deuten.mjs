@@ -414,7 +414,6 @@ function bewertungsZeile(k) {
  * wird in der App als Text dargestellt, nie als Markup.
  */
 export async function fragen(schlagzeile, anriss, frage, env, sprache = 'de', kontext = null) {
-  const zweck = 'interaktiv';
   if (!env.GROQ_KEY) return { fehler: 'kein Schluessel hinterlegt' };
   if (!frage?.trim()) return { fehler: 'keine Frage' };
 
@@ -439,6 +438,10 @@ export async function fragen(schlagzeile, anriss, frage, env, sprache = 'de', ko
 
 /** Ein einzelner Versuch. Setzt `warten`, wenn ein zweiter lohnt. */
 async function frageStellen(schlagzeile, anriss, frage, env, sprache, kontext) {
+  // Eine eigene Frage - also aus dem Kontingent, das die Dauerlast nicht
+  // antastet. Die Deklaration gehoert hierher: fragen() ruft diese Funktion
+  // nur auf, ihr Gueltigkeitsbereich reicht nicht herein.
+  const zweck = 'interaktiv';
   try {
     const modell = await modellWaehlen(env, zweck);
     const bewertung = bewertungsZeile(kontext);
