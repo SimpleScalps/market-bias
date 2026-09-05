@@ -1,31 +1,31 @@
 {
- "updated": "2026-09-05T09:38:17.700Z",
+ "updated": "2026-09-05T09:45:31.314Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-05T09:38:17.743Z",
+   "stand": "2026-09-05T09:45:31.357Z",
    "anzahl": 49,
    "klassen": {
     "crypto": {
-     "score": 0.0047,
+     "score": 0.0043,
      "bull": 3,
      "bear": 2,
      "neut": 44
     },
     "stocks": {
-     "score": -0.0269,
+     "score": -0.0268,
      "bull": 2,
      "bear": 2,
      "neut": 45
     },
     "gold": {
-     "score": 0.0284,
+     "score": 0.0286,
      "bull": 3,
      "bear": 1,
      "neut": 45
     },
     "usd": {
-     "score": 0.0002,
+     "score": 0.0001,
      "bull": 1,
      "bear": 2,
      "neut": 46
@@ -60,7 +60,7 @@
       "gold": 0,
       "usd": 0
      },
-     "priority": 61
+     "priority": 60
     },
     {
      "id": "U.Today:XRP Pivot Point: Why the $1.25 Price Level Matters Most Before Sept. 15",
@@ -90,7 +90,7 @@
       "gold": 0.203,
       "usd": 0.135
      },
-     "priority": 45
+     "priority": 44
     },
     {
      "id": "Al Jazeera:After Pretoria peace deal, old enemies in Ethiopia’s Tigray find new ground",
@@ -111,7 +111,7 @@
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-05T09:38:17.760Z",
+   "stand": "2026-09-05T09:45:31.373Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
