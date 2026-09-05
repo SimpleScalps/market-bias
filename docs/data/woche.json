@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-05T20:19:01.096Z",
+ "updated": "2026-09-05T20:29:25.122Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-05T20:19:01.127Z",
+   "stand": "2026-09-05T20:29:25.152Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -78,6 +78,21 @@
      "priority": 52
     },
     {
+     "id": "Al Jazeera:Colombian government reports three killed in rebel attack on military post",
+     "titel": "Colombian government reports three killed in rebel attack on military post",
+     "titelDe": "Kolumbianische Regierung meldet drei Tote bei Rebellenschlag auf Militärposten",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/9/5/colombian-government-reports-three-killed-in-rebel-attack-on-military-post?traffic_source=rss",
+     "zeit": "2026-09-05T20:03:29.000Z",
+     "scores": {
+      "crypto": -0.405,
+      "stocks": -0.405,
+      "gold": 0.203,
+      "usd": 0.135
+     },
+     "priority": 94
+    },
+    {
      "id": "Cointelegraph:Bitcoin ETF inflows hit $3.8B in strongest three-week stretch of 2026",
      "titel": "Bitcoin ETF inflows hit $3.8B in strongest three-week stretch of 2026",
      "titelDe": "Bitcoin-ETF-Zuflüsse erreichen 3,8 Mrd. $ im stärksten Dreierwochenabschnitt 2026",
@@ -136,27 +151,12 @@
       "usd": 0.135
      },
      "priority": 51
-    },
-    {
-     "id": "U.Today:XRP Pivot Point: Why the $1.25 Price Level Matters Most Before Sept. 15",
-     "titel": "XRP Pivot Point: Why the $1.25 Price Level Matters Most Before Sept. 15",
-     "titelDe": "XRP-Pivot-Punkt: Warum das Preisniveau von 1,25 $ vor dem 15. September am wichtigsten ist",
-     "quelle": "U.Today",
-     "url": "https://u.today/xrp-pivot-point-why-the-125-price-level-matters-most-before-sept-15",
-     "zeit": "2026-09-05T04:00:00.000Z",
-     "scores": {
-      "crypto": 0.4,
-      "stocks": 0.34,
-      "gold": 0.32,
-      "usd": -0.4
-     },
-     "priority": 39
     }
    ]
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-05T20:19:01.135Z",
+   "stand": "2026-09-05T20:29:25.158Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
