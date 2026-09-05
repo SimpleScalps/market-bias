@@ -17,14 +17,14 @@ export const FEEDS = [
   { url: 'https://www.benzinga.com/feed',                          source: 'Benzinga',        tags: ['US-Märkte'] },
   { url: 'https://feeds.bbci.co.uk/news/world/rss.xml',            source: 'BBC World',       tags: ['Weltlage'] },
   { url: 'https://www.aljazeera.com/xml/rss/all.xml',              source: 'Al Jazeera',      tags: ['Weltlage'] },
-  { url: 'https://www.federalreserve.gov/feeds/press_all.xml',     source: 'Federal Reserve', tags: ['Fed'] },
+  { url: 'https://www.federalreserve.gov/feeds/press_all.xml',     source: 'Federal Reserve', tags: ['Fed'], fast: true },
   { url: 'https://www.cnbc.com/id/100003114/device/rss/rss.html',  source: 'CNBC',            tags: ['Märkte'] },
   { url: 'https://feeds.marketwatch.com/marketwatch/topstories/',  source: 'MarketWatch',     tags: ['Märkte'] },
   // Krypto (dieselben offenen Quellen, die auch CryptoPanic aggregiert)
   { url: 'https://www.coindesk.com/arc/outboundfeeds/rss/',        source: 'CoinDesk',        tags: ['Krypto'], fast: true },
-  { url: 'https://cointelegraph.com/rss',                          source: 'Cointelegraph',   tags: ['Krypto'] },
+  { url: 'https://cointelegraph.com/rss',                          source: 'Cointelegraph',   tags: ['Krypto'], fast: true },
   { url: 'https://decrypt.co/feed',                                source: 'Decrypt',         tags: ['Krypto'] },
-  { url: 'https://www.theblock.co/rss.xml',                        source: 'The Block',       tags: ['Krypto'] },
+  { url: 'https://www.theblock.co/rss.xml',                        source: 'The Block',       tags: ['Krypto'], fast: true },
   { url: 'https://beincrypto.com/feed/',                           source: 'BeInCrypto',      tags: ['Krypto'] },
   { url: 'https://u.today/rss',                                    source: 'U.Today',         tags: ['Krypto'] },
 ];
@@ -45,8 +45,30 @@ export const tag = (item, name) => {
 
 export const items = (xml) => [...xml.matchAll(/<item>([^]*?)<\/item>/gi)].map((m) => m[1]);
 
+/*
+ * Feed holen - und zwar den aktuellen, nicht den zwischengespeicherten.
+ *
+ * Ein blosses fetch() laeuft in Cloudflare Workers durch deren Cache, und der
+ * haelt sich an die Vorgaben der Quelle. Cointelegraph schickt s-maxage=300,
+ * The Block max-age=60 und lieferte trotzdem eine 385 Sekunden alte Fassung.
+ * Der Worker fragte also jede Minute und bekam minutenlang dieselbe Datei:
+ * Eine Meldung von 08:03 erreichte die Benachrichtigung erst um 08:19.
+ *
+ * Was hilft: Cloudflares eigener Zwischenspeicher laesst sich per cf
+ * abschalten, das nimmt bis zu fuenf Minuten heraus.
+ *
+ * Was nicht hilft: Eine wechselnde Kennzahl in der Adresse. Gemessen an beiden
+ * Quellen - der Rueckstand blieb auf die Sekunde gleich, cf-cache-status
+ * meldete weiter HIT. Ihre CDNs vereinheitlichen den Parameter. Der Anteil,
+ * den die Quelle selbst zurueckhaelt, ist von hier aus nicht zu verkuerzen;
+ * die Kopfzeilen unten bittet man trotzdem, es kostet nichts.
+ */
 async function get(url, timeoutMs = 12000) {
-  const res = await fetch(url, { headers: UA, signal: AbortSignal.timeout(timeoutMs) });
+  const res = await fetch(url, {
+    headers: { ...UA, 'cache-control': 'no-cache', 'pragma': 'no-cache' },
+    cf: { cacheTtl: 0, cacheEverything: false },
+    signal: AbortSignal.timeout(timeoutMs),
+  });
   if (!res.ok) throw new Error(`${res.status} ${url}`);
   return res.text();
 }
@@ -218,6 +240,17 @@ export async function collectNews({
   // sich die Arbeit auf mehrere Läufe verteilen: jeder Lauf nimmt eine Gruppe,
   // der Wirtschaftskalender kommt immer mit, weil er zeitkritisch ist.
   if (gruppe !== null && gruppen > 1) {
+    /*
+     * `fast` heisst: bei jedem Durchgang, nicht nur wenn die Gruppe dran ist.
+     *
+     * Die Rotation kostet bis zu drei Minuten, und die fallen genau dort an,
+     * wo es weh tut. Eine ETF-Meldung von Cointelegraph erreichte die
+     * Benachrichtigung sechzehn Minuten nach Erscheinen; ein Teil davon war
+     * diese Wartezeit auf die eigene Gruppe. Notenbank und die grossen
+     * Krypto-Redaktionen laufen deshalb immer mit - dort entscheidet sich, ob
+     * ein Scalp noch etwas bringt. Weltlage und Marktkommentar rotieren
+     * weiter; die halbe Stunde Unterschied macht dort niemanden aermer.
+     */
     feeds = feeds.filter((f, i) => i % gruppen === gruppe || f.fast);
   }
   const results = await Promise.allSettled([

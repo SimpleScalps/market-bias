@@ -313,16 +313,18 @@ async function schreiben(env, ctx, key, data, ttl = 86400) {
      * nicht. Das ist ungleich besser als nichts.
      */
     try {
-      return await env.STORE.put(key, JSON.stringify(data), { expirationTtl: ttl });
+      await env.STORE.put(key, JSON.stringify(data), { expirationTtl: ttl });
+      return true;
     } catch (err) {
       console.log('KV put fehlgeschlagen:', err.message);
-      return null;
+      return false;
     }
   }
   const res = new Response(JSON.stringify(data), {
     headers: { 'content-type': 'application/json', 'cache-control': `max-age=${ttl}` },
   });
   ctx.waitUntil(caches.default.put(key, res));
+  return true;
 }
 
 const alterMs = (d) => (d?.updated ? Date.now() - new Date(d.updated).getTime() : Infinity);
@@ -516,10 +518,6 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     await schreiben(env, ctx, URTEILE_KEY, speicher, BESTAND_TTL);
   }
 
-  const versand = bestand
-    ? await pushen(env, ctx, kandidaten)
-    : { versucht: false, grund: 'erster Lauf' };
-
   // Alles Sichtbare gilt fortan als bekannt, auch das noch nicht Gemeldete:
   // Wandert eine Meldung spaeter aus der Anzeige, soll sie beim Wiederauftauchen
   // keine zweite Benachrichtigung ausloesen.
@@ -534,19 +532,46 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     items,
     gesehen: gedaechtnis,
   };
+
   /*
    * Sichern, wenn es etwas zu sichern gibt.
    *
-   * Zwingend bei neuen Meldungen: Sonst gilt eine schon verschickte beim
-   * naechsten Durchgang wieder als neu und geht ein zweites Mal raus. Sonst
-   * genuegt ein Herzschlag alle fuenf Minuten, damit der Zeitstempel nicht
-   * einfriert. Die uebrigen Durchgaenge liefern ihr Ergebnis aus, ohne es
-   * abzulegen - berechnet wird es ohnehin jedes Mal neu.
+   * Zwingend bei neuen Meldungen und bei frischen Urteilen. Sonst genuegt ein
+   * Herzschlag alle fuenf Minuten, damit der Zeitstempel nicht einfriert; die
+   * uebrigen Durchgaenge liefern ihr Ergebnis aus, ohne es abzulegen -
+   * berechnet wird es ohnehin jedes Mal neu.
    */
-  const gesichert = kandidaten.length > 0
+  const mussSichern = kandidaten.length > 0
     || neueUrteile > 0
     || alterMs(bestand) >= BESTAND_HERZSCHLAG_MS;
-  if (gesichert) await schreiben(env, ctx, KEY, data, BESTAND_TTL);
+  const gesichert = mussSichern
+    ? await schreiben(env, ctx, KEY, data, BESTAND_TTL)
+    : false;
+
+  /*
+   * Erst ablegen, dann benachrichtigen - nicht umgekehrt.
+   *
+   * Vorher ging die Meldung raus, bevor das Gedaechtnis stand. Schlug das
+   * Ablegen danach fehl - etwa weil das Tageskontingent von KV erschoepft war -
+   * galt dieselbe Meldung beim naechsten Durchgang wieder als neu und ging
+   * erneut raus. Genau so kam eine Nachricht dreimal an.
+   *
+   * Laesst sich nichts ablegen, wird lieber nicht gemeldet: Eine verpasste
+   * Nachricht ist aergerlich, dieselbe zum dritten Mal ist schlimmer, und der
+   * naechste Durchgang holt sie nach, sobald wieder geschrieben werden kann.
+   */
+  let versand;
+  if (!bestand) {
+    versand = { versucht: false, grund: 'erster Lauf' };
+  } else if (kandidaten.length && !gesichert) {
+    versand = {
+      versucht: false,
+      grund: 'Ablage nicht moeglich - zurueckgestellt, um Doppelungen zu vermeiden',
+      zurueckgestellt: kandidaten.length,
+    };
+  } else {
+    versand = await pushen(env, ctx, kandidaten);
+  }
 
   ctx.waitUntil(wochenbuchPflegen(env, ctx, items));
   return { data, neue: kandidaten, versand, gesichert };
