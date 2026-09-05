@@ -6,7 +6,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v33';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v34';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -1416,10 +1416,25 @@ async function zustandZeigen() {
     [T_.zBudget, String(d.kiBudget || '—').split(' (')[0], null],
   ];
 
+  /*
+   * Gemeldete Fehler dazu, aber nur wenn es welche gibt.
+   *
+   * Der Worker führt sie ohnehin; sie nicht zu zeigen war derselbe Fehler wie
+   * beim Doppelschutz — gebaut, aber nicht dorthin gebracht, wo man hinsieht.
+   */
+  const stoerungen = [
+    ['Tick', d.letzterTickFehler],
+    [T_.zSpeichern, d.letzterAblageFehler],
+    [T_.zVersand, d.versandbuch],
+  ].filter(([, v]) => v && typeof v === 'object' && v.fehler);
+
   box.className = 'zustand';
   box.innerHTML = zeilen.map(([k, v, art]) =>
     `<div class="zZeile"><span>${escape(k)}</span><b class="${art || ''}">${escape(String(v))}</b></div>`
   ).join('')
+    + stoerungen.map(([k, v]) =>
+        `<p class="zWarnung">${escape(k)}: ${escape(v.fehler)} (${escape(String(v.zeit).slice(11, 16))} UTC)</p>`
+      ).join('')
     + (schreibt ? '' : `<p class="zWarnung">${escape(T_.zHinweis)}</p>`
         + `<p class="zTicks">${escape(T_.zSchreibHinweis)}</p>`);
   box.hidden = false;
@@ -1568,15 +1583,46 @@ $('#dcHook').addEventListener('change', (e) => {
   aboSenden();
 });
 
+/**
+ * Testet den Weg, den die automatischen Meldungen tatsächlich nehmen.
+ *
+ * Vorher schickte der Test an die Ziele aus diesem Formular. Das kann
+ * gelingen, während der Betrieb schweigt — denn nachts verschickt der Worker
+ * an das *gespeicherte* Abo, und wer eine Adresse geändert, aber nicht
+ * gespeichert hat, prüft mit dem Formular etwas anderes als das, was läuft.
+ * Genau diese Verwechslung hat hier schon einmal Stunden gekostet:
+ * „Test senden funktioniert, aber neue News werden nicht gepusht."
+ *
+ * Mit Worker geht der Test deshalb über /testpush — dieselbe Ablage,
+ * dieselben Ziele, derselbe Versandweg wie bei geschlossener App. Ohne
+ * Worker bleibt nur der direkte Weg aus dem Browser, und der wird als
+ * solcher benannt.
+ */
 $('#testSenden').addEventListener('click', async () => {
   const st = $('#testStatus');
   st.textContent = '…';
-  const r = await anKanaele('Market Bias', 'Test — die Verbindung steht.');
+
+  let r;
+  if (liveUrl) {
+    try {
+      const res = await fetch(`${liveUrl}/testpush`, { headers: workerKopf() });
+      const j = await res.json();
+      r = j.ok
+        ? { ok: true, hinweis: (j.kanaele || []).join(', ') }
+        : { ok: false, grund: j.grund || (j.fehler || []).join('; ') || T().fehlgeschlagen };
+    } catch {
+      r = { ok: false, grund: T().zustandFehler };
+    }
+  } else {
+    r = await anKanaele('Market Bias', 'Test — die Verbindung steht.');
+    if (r.ok) r.hinweis = T().nurOffeneApp;
+  }
+
   st.textContent = r.ok
-    ? `${T().gesendet}${r.direkt ? ' (nur bei offener App)' : ''}`
+    ? `${T().gesendet}${r.hinweis ? ' (' + r.hinweis + ')' : ''}`
     : `${T().fehlgeschlagen}${r.grund ? ' (' + r.grund + ')' : ''}`;
   st.className = 'testStatus ' + (r.ok ? 'ok' : 'fehler');
-  setTimeout(() => { st.textContent = ''; st.className = 'testStatus'; }, 6000);
+  setTimeout(() => { st.textContent = ''; st.className = 'testStatus'; }, 9000);
 });
 
 // ---------- Start ----------
