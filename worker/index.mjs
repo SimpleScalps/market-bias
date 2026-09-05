@@ -84,13 +84,21 @@ const NACHZIEHEN_ABSTAND_MS = 10 * 60_000;
  * aufgebraucht. Ein Zaehler, der Anfragen zaehlt, misst also das Falsche - er
  * stand bei 19 von 150, waehrend nichts mehr ging.
  *
- * Aus demselben Topf bezahlen inzwischen vier Dinge: die Pruefung der
- * Meldungen, die Uebersetzung der Titel und Anrisse, der Tagesbericht und die
- * Nachfragen. Nur das erste laeuft von selbst, also bekommt es eine Grenze,
- * die den anderen dreien Luft laesst. Was tatsaechlich verbraucht wurde,
- * meldet Groq bei jeder Antwort - geschaetzt wird hier nichts.
+ * Aus diesem Topf bezahlen zwei Dinge, die von selbst laufen: die Pruefung der
+ * Meldungen und die Uebersetzung der Titel und Anrisse. Beide teilen sich das
+ * Tageskontingent von gpt-oss-20b. Tagesbericht und Nachfragen liegen auf
+ * einem eigenen Modell und damit auf einem eigenen Kontingent - sie brauchen
+ * hier keine Luft mehr.
+ *
+ * Solange alles auf einem Modell lag, musste die Grenze deutlich unter dem
+ * Limit bleiben, damit eine eigene Frage nicht gegen eine leergelaufene
+ * Dauerpruefung lief. Genau das ist heute passiert, bei 199.710 von 200.000.
+ * Seit der Trennung ist der Rest freier Spielraum: 170.000 von 200.000 lassen
+ * 30.000 Puffer, und die Pruefung reicht damit rund drei Stunden weiter in den
+ * Tag. Was tatsaechlich verbraucht wurde, meldet Groq bei jeder Antwort -
+ * geschaetzt wird hier nichts.
  */
-const KI_TOKEN_MAX = 120_000;
+const KI_TOKEN_MAX = 170_000;
 
 /*
  * Klarnamen fuer die drei Aufgaben, die sich Groq teilen.
