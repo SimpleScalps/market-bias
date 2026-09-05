@@ -91,3 +91,53 @@ test('Eine tatsächlich neue Meldung wird gemeldet', () => {
   assert.equal(runde.gemeldet.length, 1, 'echte Neuzugänge kommen durch');
   assert.equal(runde.gemeldet[0].id, 'Quelle:Meldung 999');
 });
+
+// ── Dubletten über Quellen hinweg ────────────────────────────────────────
+
+test('Dieselbe Nachricht in anderen Worten wird zusammengeführt', () => {
+  // Die frühere Fassung verlangte übereinstimmende Stichwörter und erkannte
+  // deshalb keine einzige der Dubletten im echten Bestand.
+  const [zusammen] = dedupe([
+    { id: 'a', title: 'UN votes to adopt new world map that reflects Africa\u2019s true size',
+      source: 'Al Jazeera', date: '2026-09-05T17:26:00Z', priority: 60, scores: { crypto: 0 } },
+    { id: 'b', title: 'UN votes to adopt new world map to reflect Africa\u2019s true size',
+      source: 'BBC World', date: '2026-09-05T17:40:00Z', priority: 50, scores: { crypto: 0 } },
+  ]);
+  assert.equal(zusammen.source, 'Al Jazeera', 'die relevantere Quelle bleibt stehen');
+  assert.deepEqual(zusammen.alsoIn, ['BBC World']);
+  assert.equal(zusammen.date, '2026-09-05T17:26:00Z', 'der frühere Zeitpunkt zählt');
+});
+
+test('Gegensätzliche Aussagen bleiben getrennt', () => {
+  // Beide Titel überlappen stark, sagen aber Entgegengesetztes. Sie zu
+  // verschmelzen hieße, eine der beiden Aussagen zu unterschlagen.
+  const raus = dedupe([
+    { id: 'a', title: 'European Central Bank dovish hold may follow September meeting',
+      source: 'FXStreet', date: '2026-09-05T10:00:00Z', priority: 60, scores: { crypto: 0.5 } },
+    { id: 'b', title: 'European Central Bank September hike path and oil risks meeting',
+      source: 'FXStreet', date: '2026-09-05T10:05:00Z', priority: 60, scores: { crypto: -0.5 } },
+  ]);
+  assert.equal(raus.length, 2);
+});
+
+test('Zu dünne Überschriften werden nicht verschmolzen', () => {
+  // "Best Oil Stocks Right Now" und "Best Gold Stocks Right Now" teilen nach
+  // Abzug der Füllwörter fast alles - und meinen doch Verschiedenes.
+  const raus = dedupe([
+    { id: 'a', title: 'Best Oil Stocks Right Now', source: 'Benzinga',
+      date: '2026-09-05T10:00:00Z', priority: 40, scores: { crypto: 0 } },
+    { id: 'b', title: 'Best Gold Stocks Right Now', source: 'Benzinga',
+      date: '2026-09-05T10:01:00Z', priority: 40, scores: { crypto: 0 } },
+  ]);
+  assert.equal(raus.length, 2);
+});
+
+test('Verschiedene Nachrichten zum selben Land bleiben getrennt', () => {
+  const raus = dedupe([
+    { id: 'a', title: 'US envoys arrive in Moscow ahead of Ukraine talks',
+      source: 'BBC World', date: '2026-09-05T09:00:00Z', priority: 70, scores: { crypto: 0.3 } },
+    { id: 'b', title: 'At least 5 killed in Russian attacks on Ukraine as envoys visit',
+      source: 'Al Jazeera', date: '2026-09-05T09:10:00Z', priority: 70, scores: { crypto: -0.4 } },
+  ]);
+  assert.equal(raus.length, 2, 'Friedensgespraeche sind keine Angriffe');
+});
