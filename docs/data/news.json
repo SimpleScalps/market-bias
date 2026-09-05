@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05T12:15:01.879Z",
+ "updated": "2026-09-05T12:17:55.149Z",
  "regime": "policy",
  "count": 185,
  "errors": [
@@ -295,40 +295,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Der 18-jährige Wohnungsmarktzyklus sagt, dass der nächste Marktcrash nahe ist"
-  },
-  {
-   "id": "Al Jazeera:Pickleball and dining: Why courts are the new food destinations",
-   "title": "Pickleball and dining: Why courts are the new food destinations",
-   "text": "The fastest-growing sport in the US is the 'eatertainment' trend’s new darling. How long will it last?",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/features/longform/2026/9/5/pickleball-and-dining-why-courts-are-the-new-food-destinations?traffic_source=rss",
-   "date": "2026-09-05T11:48:16.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Pickleball und Dining: Warum Gerichte die neuen Food-Destinationen sind"
   },
   {
    "id": "Al Jazeera:LIVE: India vs Pakistan – Women’s T20 Asia Cup",
@@ -864,7 +830,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1724,7 +1690,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2125,6 +2091,40 @@
    "titleDe": "Malaysia erklärt den Notfall in Sarawak, da sich der Dunst aus Indonesien verschlimmert"
   },
   {
+   "id": "Al Jazeera:Did Israel’s destruction of Gaza worsen its water crisis?",
+   "title": "Did Israel’s destruction of Gaza worsen its water crisis?",
+   "text": "Scientists say Israel’s destruction of Gaza’s sewage system may have worsened the Mediterranean's algae bloom crisis.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/did-israels-destruction-of-gaza-worsen-its-water-crisis?traffic_source=rss",
+   "date": "2026-09-05T03:46:20.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 48,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Hat Israels Zerstörung des Gazastreifens seine Wasserkrise verschlimmert?"
+  },
+  {
    "id": "U.Today:+103% in Shiba Inu (SHIB) Most Crucial Metric in 24 Hours: Can It Save the Day?",
    "title": "+103% in Shiba Inu (SHIB) Most Crucial Metric in 24 Hours: Can It Save the Day?",
    "text": "Shiba Inu is staying on the verge of a potential correction, but the outflow dynamic might help the price greatly.",
@@ -2493,7 +2493,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4260,7 +4260,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 44,
+   "priority": 43,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "medium",
@@ -6517,7 +6517,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 4,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
