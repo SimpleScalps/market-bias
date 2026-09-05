@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-05T17:03:49.322Z",
+ "updated": "2026-09-05T17:07:39.439Z",
  "regime": "policy",
- "count": 112,
+ "count": 111,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
@@ -376,7 +376,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 50,
+   "priority": 49,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -446,7 +446,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1278,7 +1278,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1952,7 +1952,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2266,7 +2266,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 34,
+   "priority": 33,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3904,44 +3904,10 @@
    ],
    "alsoIn": [],
    "titleDe": "QuFi startet Post-Quantum-Verifizierungsplattform mit Bitcoin-Testnet-Proof"
-  },
-  {
-   "id": "Cointelegraph:US law enforcement group moves to ‘neutral’ position on CLARITY Act",
-   "title": "US law enforcement group moves to ‘neutral’ position on CLARITY Act",
-   "text": "Despite earlier opposition to the CLARITY Act over consumer protection, the National Sheriffs’ Association says it will now “step back and allow the legislative process to proceed.“",
-   "source": "Cointelegraph",
-   "url": "https://cointelegraph.com/news/national-sheriffs-association-clarity-act-neutral?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "date": "2026-09-04T17:05:34.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 19,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Strafverfolgungsgruppe wechselt zu \"neutraler\" Position zum CLARITY-Act"
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
