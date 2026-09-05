@@ -1,20 +1,20 @@
 {
- "updated": "2026-09-05T12:57:01.032Z",
+ "updated": "2026-09-05T13:06:08.592Z",
  "regime": "policy",
- "count": 175,
+ "count": 173,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
   {
-   "id": "CNBC World:Abel: Two ways Berkshire hopes to cash in on AI",
-   "title": "Abel: Two ways Berkshire hopes to cash in on AI",
-   "text": "Berkshire Hathaway CEO Greg Abel tells CNBC the company is pursuing AI opportunities on two paths.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/05/abel-two-ways-berkshire-hopes-in-cash-in-on-ai.html",
-   "date": "2026-09-05T12:45:44.000Z",
+   "id": "Decrypt:AI Just Solved a 350-Year-Old Math Problem By Writing the Longest Proof Ever",
+   "title": "AI Just Solved a 350-Year-Old Math Problem By Writing the Longest Proof Ever",
+   "text": "Anthropic says Claude spent 11 days turning Fermat's Last Theorem into 13 million lines of code a computer can check itself, no human trust required",
+   "source": "Decrypt",
+   "url": "https://decrypt.co/377491/ai-solved-350-year-old-math-problem",
+   "date": "2026-09-05T13:01:03.000Z",
    "tags": [
-    "Weltwirtschaft"
+    "Krypto"
    ],
    "impact": "low",
    "kind": "headline",
@@ -37,10 +37,189 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
+   "alsoIn": [],
+   "titleDe": "KI hat gerade ein 350 Jahre altes mathematisches Problem gelöst, indem sie den längsten Beweis aller Zeiten geschrieben hat"
+  },
+  {
+   "id": "MarketWatch:Fake job recruiters are getting smarter about scamming job seekers. AI is making it even worse.",
+   "title": "Fake job recruiters are getting smarter about scamming job seekers. AI is making it even worse.",
+   "text": "Scammers are spamming job candidates with emails and LinkedIn messages with offers that are too good to be true.",
+   "source": "MarketWatch",
+   "url": "https://www.marketwatch.com/story/fake-job-recruiters-are-getting-smarter-about-scamming-job-seekers-ai-is-making-it-even-worse-7cbc4cac?mod=mw_rss_topstories",
+   "date": "2026-09-05T13:00:00.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Fake-Job-Recruiter werden immer schlauer, wenn es darum geht, Arbeitssuchende zu betrügen. KI macht es noch schlimmer."
+  },
+  {
+   "id": "Al Jazeera:At least four civilians killed in Houthi missile strike near Yemen’s Taiz",
+   "title": "At least four civilians killed in Houthi missile strike near Yemen’s Taiz",
+   "text": "The attack on a crowded road comes amid fierce clashes across Taiz and Hodeidah and rapid civilian displacement.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/5/at-least-four-killed-in-houthi-missile-strike-near-yemens-taiz?traffic_source=rss",
+   "date": "2026-09-05T12:54:15.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Militärschlag"
+   ],
+   "scores": {
+    "crypto": -0.9,
+    "stocks": -0.9,
+    "gold": 0.45,
+    "usd": 0.3
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Militärschlag)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 100,
+   "label": "strong_bearish",
+   "labelText": "Stark Bearish",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Mindestens vier Zivilisten wurden bei einem Houthi-Raketenangriff in der Nähe von Taiz im Jemen getötet"
+  },
+  {
+   "id": "Al Jazeera:How big is Africa really? Why the UN voted to change the world map",
+   "title": "How big is Africa really? Why the UN voted to change the world map",
+   "text": "The new map makes Africa, Latin America, South Asia and Oceania larger than the traditional Mercator projection.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/5/how-big-is-africa-really-why-the-un-voted-to-change-the-world-map?traffic_source=rss",
+   "date": "2026-09-05T12:49:50.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Wie groß ist Afrika wirklich? Warum die UNO dafür gestimmt hat, die Weltkarte zu verändern"
+  },
+  {
+   "id": "CNBC World:Abel: Two ways Berkshire hopes to cash in on AI",
+   "title": "Abel: Two ways Berkshire hopes to cash in on AI",
+   "text": "Berkshire Hathaway CEO Greg Abel tells CNBC the company is pursuing AI opportunities on two paths.",
+   "source": "CNBC World",
+   "url": "https://www.cnbc.com/2026/09/05/abel-two-ways-berkshire-hopes-in-cash-in-on-ai.html",
+   "date": "2026-09-05T12:45:44.000Z",
+   "tags": [
+    "Weltwirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
    "alsoIn": [
     "CNBC"
    ],
    "titleDe": "Abel: Auf zwei Arten hofft Berkshire, von KI zu profitieren"
+  },
+  {
+   "id": "Al Jazeera:Yemen government launches own air attacks on Houthis: What that means",
+   "title": "Yemen government launches own air attacks on Houthis: What that means",
+   "text": "A major Houthi offensive towards Bab al-Mandeb has triggered some of Yemen’s worst fighting in years.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/5/yemen-government-launches-own-air-attacks-on-houthis-what-that-means?traffic_source=rss",
+   "date": "2026-09-05T12:43:38.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Militärschlag",
+    "Angriff"
+   ],
+   "scores": {
+    "crypto": -0.855,
+    "stocks": -0.855,
+    "gold": 0.427,
+    "usd": 0.285
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Militärschlag, Angriff)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike, attack)",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 45,
+   "label": "strong_bearish",
+   "labelText": "Stark Bearish",
+   "impactLevel": "medium",
+   "duration": "scalp",
+   "eventType": "Produktankündigung",
+   "eventTypeEn": "Product announcement",
+   "scope": "project",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Jemens Regierung startet eigene Luftangriffe auf Houthis: Was das bedeutet"
   },
   {
    "id": "BeInCrypto:Solana Co-Founder Slams Robinhood Chain Fees, Calls Congestion Profits ‘Brain Dead'",
@@ -242,7 +421,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -596,7 +775,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1108,7 +1287,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1420,7 +1599,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 47,
+   "priority": 46,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1768,7 +1947,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 54,
+   "priority": 53,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2127,40 +2306,6 @@
    "titleDe": "USA verhängen Sanktionen gegen türkische Bank, was rechtliche Drohungen auslöst"
   },
   {
-   "id": "Al Jazeera:Families of missing Ecuadorian fishermen allege US involvement",
-   "title": "Families of missing Ecuadorian fishermen allege US involvement",
-   "text": "Families of eight Ecuadorian fishermen who vanished after reporting US surveillance at sea are demanding answers.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/families-of-missing-ecuadorian-fishermen-allege-us-involvement?traffic_source=rss",
-   "date": "2026-09-05T05:08:15.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 32,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Familien vermisster ecuadorianischer Fischer behaupten US‑Beteiligung"
-  },
-  {
    "id": "CNBC World:From Trump’s takeover threats to a ‘northern neighborhood,’ why the EU chief is going to Greenland",
    "title": "From Trump’s takeover threats to a ‘northern neighborhood,’ why the EU chief is going to Greenland",
    "text": "The visit comes as Trump renews his push for greater U.S. control of the self-governing Danish territory.",
@@ -2229,74 +2374,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Krypto‑Finanzierung in Südostasien springt auf 680 Millionen Dollar, da Investoren reifere Unternehmen fokussieren"
-  },
-  {
-   "id": "Al Jazeera:‘I could not save the rest’: Hero nurse remembers Pakistan’s nursery fire",
-   "title": "‘I could not save the rest’: Hero nurse remembers Pakistan’s nursery fire",
-   "text": "The PIMS nurse who saved one newborn recalls the fire, the screams and the 14 babies she could not save.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/features/2026/9/5/i-could-not-save-the-rest-hero-nurse-remembers-pakistans-nursery-fire?traffic_source=rss",
-   "date": "2026-09-05T04:29:33.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 18,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "\"Ich konnte den Rest nicht retten\": Heldenkrankenschwester erinnert sich an Pakistans Kinderzimmerfeuer"
-  },
-  {
-   "id": "Al Jazeera:UN approves new map showing Africa’s true size",
-   "title": "UN approves new map showing Africa’s true size",
-   "text": "The UN General Assembly has backed a resolution to change to maps that more accurately show the true size of Africa.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/un-approves-new-map-showing-africas-true-size?traffic_source=rss",
-   "date": "2026-09-05T04:13:25.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 18,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "UN genehmigt neue Karte, die Afrikas wahre Größe zeigt"
   },
   {
    "id": "BBC World:Is Russia proving better at protecting friends than fighting enemies in West Africa?",
@@ -2569,7 +2646,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 14,
+   "priority": 13,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2949,7 +3026,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2983,7 +3060,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3163,7 +3240,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3522,40 +3599,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Das lohnt sich im September 2026 auf Netflix, Hulu, HBO Max und mehr"
-  },
-  {
-   "id": "MarketWatch:Why Oracle’s stock looks like a compelling buy ahead of earnings",
-   "title": "Why Oracle’s stock looks like a compelling buy ahead of earnings",
-   "text": "While there are long-term debates around Oracle’s stock, analysts say the company looks poised to benefit from upbeat pricing trends and more when it reports results next week.",
-   "source": "MarketWatch",
-   "url": "https://www.marketwatch.com/story/why-oracles-stock-looks-like-a-compelling-buy-ahead-of-earnings-12a04d7b?mod=mw_rss_topstories",
-   "date": "2026-09-04T19:59:00.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Warum Oracle-Aktien einen überzeugenden Kauf vor dem Gewinn darstellen"
   },
   {
    "id": "CNBC:Trump says he will spend up to $500 million of 'my money' to help Republicans in midterms",
@@ -4469,7 +4512,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6053,115 +6096,10 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Token-Rückkäufe boomen. Aber sind sie gut für Krypto-Projekte?"
-  },
-  {
-   "id": "CNBC World:Volkswagen plans 50,000 job cuts as analysts see ‘halo effect’ for German auto industry",
-   "title": "Volkswagen plans 50,000 job cuts as analysts see ‘halo effect’ for German auto industry",
-   "text": "Volkswagen shares jumped on Friday after it announced plans to slash a further 50,000 jobs as part of its transformation plan.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/04/volkswagen-job-cuts-tariffs-china.html",
-   "date": "2026-09-04T13:04:49.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Volkswagen plant 50.000 Stellenabbau, da Analysten den „Halo-Effekt“ für die deutsche Automobilindustrie sehen"
-  },
-  {
-   "id": "BBC World:Body of world's youngest traditional king returns home to Uganda amid succession row",
-   "title": "Body of world's youngest traditional king returns home to Uganda amid succession row",
-   "text": "King Oyo died in the US last week aged 34 after receiving treatment for an aggressive form of cancer.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/clylwgn8jk3o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-04T13:00:44.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Körper des jüngsten traditionellen Königs der Welt kehrt inmitten einer Reihe von Nachfolgern nach Uganda zurück"
-  },
-  {
-   "id": "U.Today:XRP and Solana Cleared in Fresh SEC Nasdaq Order: Main Crypto News This Morning",
-   "title": "XRP and Solana Cleared in Fresh SEC Nasdaq Order: Main Crypto News This Morning",
-   "text": "Key crypto updates for Sep. 4: SEC clears XRP and Solana; a $566M short squeeze hits bears, and Zcash jumps above $1,000 on autonomous AI risks.",
-   "source": "U.Today",
-   "url": "https://u.today/xrp-and-solana-cleared-in-fresh-sec-nasdaq-order-main-crypto-news-this-morning",
-   "date": "2026-09-04T13:00:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "SOL",
-    "XRP"
-   ],
-   "alsoIn": [],
-   "titleDe": "XRP und Solana in Fresh SEC Nasdaq Order gecleart: Wichtigste Krypto-Nachrichten heute Morgen"
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 5,
   "fehler": null
  }
 }
