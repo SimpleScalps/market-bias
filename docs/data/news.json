@@ -1,11 +1,45 @@
 {
- "updated": "2026-09-05T23:34:24.631Z",
+ "updated": "2026-09-05T23:42:19.971Z",
  "regime": "policy",
  "count": 87,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "BBC World:Aviation faces hotter, stormier skies – and passengers might have to accept more disruption",
+   "title": "Aviation faces hotter, stormier skies – and passengers might have to accept more disruption",
+   "text": "Are people going to have to increasingly accept more delays and diversions as the effects of climate change intensify?",
+   "source": "BBC World",
+   "url": "https://www.bbc.co.uk/news/articles/cm274p8m88lo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-05T23:20:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Luftfahrt sieht sich heißeren, stürmischeren Himmel aus – und Passagiere könnten mehr Störungen hinnehmen müssen"
+  },
   {
    "id": "Al Jazeera:Fuel tanker blast in western Iran kills at least 10",
    "title": "Fuel tanker blast in western Iran kills at least 10",
@@ -238,7 +272,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -276,7 +310,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 63,
+   "priority": 62,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -380,7 +414,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -588,7 +622,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -937,7 +971,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1251,7 +1285,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1285,7 +1319,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1572,7 +1606,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 37,
+   "priority": 36,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1846,7 +1880,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 15,
+   "priority": 14,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2412,7 +2446,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2567,40 +2601,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Tate-Brüder offiziell wegen Menschenhandel und Sexualdelikten in Rumänien angeklagt"
-  },
-  {
-   "id": "BBC World:Why did USS Lincoln turn up in Thailand looking so rusty?",
-   "title": "Why did USS Lincoln turn up in Thailand looking so rusty?",
-   "text": "When the USS Abraham Lincoln docked in Thailand this week some people were quick to criticise the condition it was in.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/videos/c4gr9y1ny3xo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-05T06:53:20.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Warum tauchte die USS Lincoln in Thailand auf und sah so verrostet aus"
   },
   {
    "id": "BBC World:Lindsay Clancy murder trial has divided US on whether she's victim or criminal",
@@ -3056,7 +3056,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
