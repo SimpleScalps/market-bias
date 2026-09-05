@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-05T00:49:16.893Z",
+ "updated": "2026-09-05T00:56:22.670Z",
  "regime": "policy",
- "count": 211,
+ "count": 209,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
@@ -174,7 +174,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -344,7 +344,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -382,7 +382,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -658,7 +658,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: hawkish)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -692,7 +692,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -1220,7 +1220,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -1288,7 +1288,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1749,7 +1749,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1783,7 +1783,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1890,7 +1890,7 @@
    "whyEn": "Signal words point to easier policy — positive for risk assets. Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: rate cut, trade conflict)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 73,
+   "priority": 72,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -2376,7 +2376,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -2627,7 +2627,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike, strong labour market)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 81,
+   "priority": 80,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -2748,7 +2748,7 @@
   {
    "id": "BBC World:UN votes to adopt new world map to reflect Africa's true size",
    "title": "UN votes to adopt new world map to reflect Africa's true size",
-   "text": "The Togo-sponsored resolution was backed by 164 nations - the US the only nation to vote against it.",
+   "text": "The Togo-sponsored resolution was backed by 164 nations - with the US as the only nation to vote against it.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/ce30vp55dnlo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T17:26:40.000Z",
@@ -2767,7 +2767,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3053,7 +3053,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3091,7 +3091,7 @@
    "whyEn": "Directly crypto-positive news. (signals: ETF inflows)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "strong_bullish",
    "labelText": "Stark Bullish",
    "impactLevel": "medium",
@@ -3261,7 +3261,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 39,
+   "priority": 38,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3297,7 +3297,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3507,7 +3507,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3755,7 +3755,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3871,7 +3871,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4150,7 +4150,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 36,
+   "priority": 35,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4578,7 +4578,7 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -4895,7 +4895,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5373,7 +5373,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -5442,7 +5442,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5556,7 +5556,7 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 35,
+   "priority": 34,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -5964,7 +5964,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 10,
+   "priority": 9,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6115,7 +6115,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Andreessen Horowitz-gestützte OpenReserve sichert vorläufige OCC-Zulassung für Nationalbank-Charta"
   },
   {
    "id": "U.Today:Shiba Inu (SHIB) Bullish Future Is Questioned Now",
@@ -6148,7 +6149,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Die bullische Zukunft von Shiba Inu (SHIB) wird jetzt in Frage gestellt"
   },
   {
    "id": "CoinDesk:Bitcoin clears $81,000 as privacy coins lead a broad crypto rally",
@@ -6221,7 +6223,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "AMC-Chef kritisiert Robinhoods tokenisierten Aktienplan"
   },
   {
    "id": "CoinDesk:IMF confirms El Salvador’s bitcoin growth was funded by private donations, not public money",
@@ -6290,7 +6293,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Südkorea beginnt ab 2027 mit der Tokenisierung von „allen Arten“ von Wertpapieren in drei Stufen"
   },
   {
    "id": "CoinDesk:South Korea targets February 2027 rollout for full tokenized securities market",
@@ -6323,7 +6327,8 @@
    "eventTypeEn": "Product announcement",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Südkorea plant den Rollout im Februar 2027 für den gesamten tokenisierten Wertpapiermarkt"
   },
   {
    "id": "CNBC World:Nvidia's investments grow to $99 billion as chip giant becomes major backer of AI companies",
@@ -6347,7 +6352,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6356,7 +6361,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Die Investitionen von Nvidia steigen auf 99 Milliarden $, da der Chipriese zum Hauptunterstützer von KI-Unternehmen wird"
   },
   {
    "id": "Decrypt:AMC CEO Calls Robinhood Stock Tokens 'Contemptible' and 'Vile'",
@@ -6389,7 +6395,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "AMC-CEO nennt Robinhood-Aktien-Token \"verachtenswert \" und \"abscheulich\""
   },
   {
    "id": "BBC World:How could US-Iran conflict end? Three experts give their views",
@@ -6532,7 +6539,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "\"Schicht für Schicht von Wundern\", um Tunnelüberlebende zu finden, sagt Nepal Rettungsberater BBC"
   },
   {
    "id": "The Block:AMC stock jumps 21% overnight as CEO slams Robinhood over ‘outrageous’ tokenized shares",
@@ -6603,7 +6611,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Cash Cat (CASHCAT) Hits Another ATH: Robinhood Memes Spike Up"
   },
   {
    "id": "CNBC World:Argentina's Milei escalates Falklands dispute as Trump questions U.S. support for Britain",
@@ -6830,7 +6839,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Der Inflationsgeist könnte aus der Flasche sein — und die Anleihemärkte schlagen Alarm"
   },
   {
    "id": "BBC World:Volkswagen board approves plan to cut another 50,000 jobs",
@@ -6863,7 +6873,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Volkswagen-Vorstand stimmt Plan zu, weitere 50.000 Arbeitsplätze abzubauen"
   },
   {
    "id": "Cointelegraph:El Salvador’s post-review Bitcoin accumulation used no public funds: IMF",
@@ -7010,7 +7021,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Indiens BIP-Druck im Juni-Quartal ist umstritten. Hier ist, warum"
   },
   {
    "id": "CoinDesk:OpenAI puts $1 billion behind cyber defense after unveiling AI that can find zero-days",
@@ -7043,7 +7055,8 @@
    "eventTypeEn": "Product announcement",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "OpenAI steckt 1 Milliarde $ hinter der Cyberabwehr, nachdem es eine KI vorgestellt hat, die Zero-Days finden kann"
   },
   {
    "id": "CoinDesk:One full bitcoin now buys a little more than 18 ounces of gold, the most since January",
@@ -7112,7 +7125,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Shein hat einen wackeligen Börsengang hingelegt. Kann es sein Mojo zurückbekommen?"
   },
   {
    "id": "BBC World:Watch: Moment workers are rescued from Nepal tunnel",
@@ -7145,7 +7159,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Uhr: Momentarbeiter werden aus Nepal-Tunnel gerettet"
   },
   {
    "id": "Cointelegraph:US, UK launch joint alliance targeting crypto scam centers",
@@ -7252,7 +7267,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Steve Irwins Familie feiert \"Superhelden\" -Vater, 20 Jahre nach dem Schocktod"
   },
   {
    "id": "CoinDesk:U.S. banking agency gives blockchain bank OpenReserve initial OK to operate",
@@ -7319,7 +7335,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Der von Trump geförderte Freedom Fuel expandiert nach Detroit, da sich die Klage über den unbezahlten Kraftstoff des Lieferanten aufheizt"
   },
   {
    "id": "CoinDesk:AMC CEO blasts Robinhood for stock token, putting synthetic shares in spotlight",
@@ -7386,82 +7403,12 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
-  },
-  {
-   "id": "BBC World:Watch: Inside court as Lindsay Clancy's lawyer asks judge to remove juror",
-   "title": "Watch: Inside court as Lindsay Clancy's lawyer asks judge to remove juror",
-   "text": "The jury now faces a seventh day of deliberations in the triple-murder trial.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/videos/c36l7jwjg1no?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-04T00:55:45.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
-   "id": "CNBC World:South Korea's AI rally is reshaping romance, reality shows and academic preferences",
-   "title": "South Korea's AI rally is reshaping romance, reality shows and academic preferences",
-   "text": "South Korea rally is changing what Koreans watch, how Koreans date, and what Koreans study.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/04/south-korea-ai-rally-society-impact.html",
-   "date": "2026-09-04T00:55:30.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Kursanstieg"
-   ],
-   "scores": {
-    "crypto": 0.36,
-    "stocks": 0.36,
-    "gold": -0.18,
-    "usd": -0.12
-   },
-   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
-   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 12,
-   "label": "bullish",
-   "labelText": "Bullish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
    "alsoIn": [],
-   "titleDe": "Südkoreas KI-Rallye verändert Romantik, Reality-Shows und akademische Präferenzen"
+   "titleDe": "Nepal sagt, dass es Milliarden an Mitteln benötigen wird, um nach Sturzfluten wieder aufzubauen"
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 40,
+  "uebersetzt": 18,
   "fehler": null
  }
 }
