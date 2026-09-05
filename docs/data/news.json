@@ -1,9 +1,10 @@
 {
- "updated": "2026-09-05T13:43:09.370Z",
+ "updated": "2026-09-05T13:52:18.430Z",
  "regime": "policy",
- "count": 170,
+ "count": 169,
  "errors": [
-  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
+  "Übersetzung: Übersetzung unvollständig (0/1)"
  ],
  "items": [
   {
@@ -39,6 +40,39 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Vanguards S&P‑500‑Indexfonds hat unsere Investment‑Praxis verändert – doch es gibt vielleicht einen klügeren Weg, am Markt teilzuhaben"
+  },
+  {
+   "id": "CNBC:Many truckers don't feel like the rest of America about AI data centers as business booms",
+   "title": "Many truckers don't feel like the rest of America about AI data centers as business booms",
+   "text": "Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/09/05/ai-data-centers-cost-economy.html",
+   "date": "2026-09-05T13:33:08.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
   },
   {
    "id": "Al Jazeera:Arsenal vs Chelsea: Premier League – prediction, teams, lineups",
@@ -270,7 +304,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -451,7 +485,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -487,7 +521,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -523,7 +557,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 43,
+   "priority": 42,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -911,7 +945,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1701,7 +1735,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2151,7 +2185,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2185,7 +2219,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2427,7 +2461,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 47,
+   "priority": 46,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2814,7 +2848,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 9,
+   "priority": 8,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2988,7 +3022,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3022,7 +3056,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5918,82 +5952,10 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Kanadischer Dollar rutscht ab, da Kanada 41.700 Arbeitsplätze abbaut und die US-Gehaltsliste ansteigt"
-  },
-  {
-   "id": "FXStreet:US Dollar: Jobs strength lifts hike odds – ING",
-   "title": "US Dollar: Jobs strength lifts hike odds – ING",
-   "text": "ING’s James Knightley notes that stronger-than-expected US August jobs data, with 162,000 new positions and upward revisions, has increased the perceived likelihood of a September Federal Reserve rate hike.",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/us-dollar-jobs-strength-lifts-hike-odds-ing-202609041349",
-   "date": "2026-09-04T13:49:38.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 19,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Dollar: Beschäftigungsstärke erhöht die Wanderungsquoten – ING"
-  },
-  {
-   "id": "U.Today:XRPL Wallet Breach: Users Urged to Halt Use Amid Security Update",
-   "title": "XRPL Wallet Breach: Users Urged to Halt Use Amid Security Update",
-   "text": "Critical security alert issued as XRP Ledger based wallet users get Hit by unauthorized transactions.",
-   "source": "U.Today",
-   "url": "https://u.today/xrpl-wallet-breach-users-urged-to-halt-use-amid-security-update",
-   "date": "2026-09-04T13:45:45.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Hack/Exploit"
-   ],
-   "scores": {
-    "crypto": -0.7,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "why": "Direkt kryptonegative Nachricht. (Signale: Hack/Exploit)",
-   "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 21,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "XRPL-Wallet-Verletzung: Benutzer werden aufgefordert, die Verwendung inmitten des Sicherheitsupdates einzustellen"
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
-  "fehler": null
+  "uebersetzt": 0,
+  "fehler": "Übersetzung unvollständig (0/1)"
  }
 }
