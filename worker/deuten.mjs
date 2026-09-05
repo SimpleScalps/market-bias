@@ -21,11 +21,20 @@ const GROQ = 'https://api.groq.com/openai/v1/chat/completions';
  * hintereinander reichen dafuer schon. Wichtig ist dann die Auskunft, dass es
  * gleich wieder geht - nicht die Nummer.
  */
+/*
+ * Aus einem Statuscode eine brauchbare Auskunft machen.
+ *
+ * Bei 429 nennt Groq in retry-after, wie lange es dauert - und diese Zahl ist
+ * die eigentliche Information. Sie zu deuten war ein Fehler: Aus 200 Sekunden
+ * wurde "morgen geht es wieder", obwohl es nach gut drei Minuten weiterging.
+ * Jetzt steht die Wartezeit da, in der Einheit, die zu ihr passt.
+ */
 function klartext(status, wiederIn = 0) {
   if (status === 429) {
-    return wiederIn > 120
-      ? 'Das Tageskontingent des Sprachmodells ist aufgebraucht - morgen geht es wieder'
-      : 'Zu viele Anfragen in kurzer Zeit - gleich geht es wieder';
+    if (!wiederIn) return 'Das Kontingent des Sprachmodells ist gerade erschoepft';
+    if (wiederIn <= 90) return `Kontingent erschoepft - in ${Math.ceil(wiederIn)} Sekunden wieder`;
+    if (wiederIn <= 3600) return `Kontingent erschoepft - in ${Math.ceil(wiederIn / 60)} Minuten wieder`;
+    return `Tageskontingent erschoepft - in ${Math.round(wiederIn / 3600)} Stunden wieder`;
   }
   if (status === 401 || status === 403) return 'Der hinterlegte Groq-Schluessel wird abgelehnt';
   if (status === 404) return 'Das Modell gibt es nicht mehr - beim naechsten Versuch wird neu gewaehlt';
@@ -66,6 +75,34 @@ let gewaehltesModell = null;   // ueberdauert im Isolat, spart Abfragen
  * Wartezeit unterscheidet sich um den Faktor tausend.
  */
 export let kontingent = null;
+
+/*
+ * Was Groq heute wirklich gekostet hat.
+ *
+ * Vorher zaehlte allein die automatische Gegenprobe mit. Die Nachfragen des
+ * Nutzers, die Zweitmeinung auf Knopfdruck, der Tagesbericht und saemtliche
+ * Uebersetzungen liefen ebenfalls ueber Groq und tauchten nirgends auf - der
+ * Zaehler stand bei 23.000, waehrend das Tageskontingent von 200.000
+ * nachweislich erschoepft war. Dieselbe Falle wie beim Zaehler fuer die
+ * Ablage: Wer nur einen Weg misst, misst das Falsche.
+ *
+ * Gezaehlt wird deshalb an einer Stelle - hier, aus der Angabe, die Groq jeder
+ * Antwort beilegt. Der Worker holt den Stand beim naechsten Sichern ab und
+ * setzt ihn zurueck.
+ */
+let seitAbholung = 0;
+
+/** Zaehlt den gemeldeten Verbrauch einer Antwort mit. */
+function verbrauchen(j) {
+  seitAbholung += j?.usage?.total_tokens ?? 0;
+}
+
+/** Liefert den aufgelaufenen Verbrauch und beginnt von vorn. */
+export function verbrauchAbholen() {
+  const summe = seitAbholung;
+  seitAbholung = 0;
+  return summe;
+}
 
 function kontingentMerken(res) {
   const h = (name) => res.headers.get(name);
@@ -216,6 +253,7 @@ export async function deuten(schlagzeile, env, anriss = '') {
     }
 
     const j = await res.json();
+    verbrauchen(j);
     const roh = j.choices?.[0]?.message?.content;
     if (!roh) throw new Error('leere Antwort');
 
@@ -384,6 +422,7 @@ async function frageStellen(schlagzeile, anriss, frage, env, sprache, kontext) {
     }
 
     const j = await res.json();
+    verbrauchen(j);
     const antwort = (j.choices?.[0]?.message?.content || '').trim();
     if (!antwort) throw new Error('leere Antwort');
 
@@ -456,6 +495,7 @@ export async function tageslage(meldungen, anlageklasse, env) {
     }
 
     const j = await res.json();
+    verbrauchen(j);
     const geparst = ausJson(j.choices?.[0]?.message?.content || '');
     const lage = String(geparst.lage || '').replace(/\s+/g, ' ').trim();
     if (!lage) throw new Error('leere Zusammenfassung');

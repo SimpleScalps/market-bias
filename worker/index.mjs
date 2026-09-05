@@ -6,7 +6,7 @@ import { uebersetze } from '../docs/engine/translate.mjs';
 import { fortschreiben, TAGE_MAX } from '../docs/engine/wochenbuch.mjs';
 import { sendeAn } from './notify.mjs';
 export { Versandbuch } from './versandbuch.mjs';
-import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, fragen, kontingent } from './deuten.mjs';
+import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, fragen, kontingent, verbrauchAbholen } from './deuten.mjs';
 
 // Cloudflare Worker: holt die Quellen serverseitig (RSS-Feeds senden keine
 // CORS-Header, der Browser kann sie also nicht selbst laden), bewertet sie mit
@@ -542,9 +542,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   // Vor dem Versand gegenlesen lassen: Ein Widerspruch gehoert in die
   // Benachrichtigung, nicht erst in die spaetere Ansicht.
   const budget = budgetRest(speicher);
-  if (budget.rest > 0) {
-    budget.verbraucht += await gegenlesen(kandidaten, env, GEGENPROBE_MAX);
-  }
+  if (budget.rest > 0) await gegenlesen(kandidaten, env, GEGENPROBE_MAX);
 
   /*
    * Den Bestand nachziehen.
@@ -558,8 +556,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   const seitNachlauf = Date.now() - new Date(speicher.letzterNachlauf || 0).getTime();
   if (seitNachlauf > NACHZIEHEN_ABSTAND_MS && budget.verbraucht < KI_TOKEN_MAX) {
     const nachzuholen = items.filter(brauchtPruefung);
-    if (nachzuholen.length) {
-      budget.verbraucht += await gegenlesen(nachzuholen, env, NACHZIEHEN_MAX);
+    if (nachzuholen.length && await gegenlesen(nachzuholen, env, NACHZIEHEN_MAX)) {
       speicher.letzterNachlauf = new Date().toISOString();
     }
   }
@@ -578,6 +575,13 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     speicher.urteile[n.id] = urteilAuslesen(n);
     neueUrteile++;
   }
+
+  /*
+   * Alles, was seit dem letzten Mal an Groq ging - gleich aus welchem Weg.
+   * Der Zaehler steht in deuten.mjs, wo jede Antwort durchlaeuft.
+   */
+  budget.verbraucht += verbrauchAbholen() + uebersetzungsTokens;
+  uebersetzungsTokens = 0;
 
   if (neueUrteile || budget.verbraucht !== (speicher.tokens || 0)) {
     const ids = Object.keys(speicher.urteile);
@@ -806,8 +810,9 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX) {
     n.labelText = LABEL_TEXT[n.label];
   });
 
-  // Was der Durchgang wirklich gekostet hat, nicht wie viele Anfragen es waren.
-  return deutungen.reduce((summe, d) => summe + (d?.tokens || 0), 0);
+  // Der Verbrauch wird zentral in deuten.mjs gefuehrt; hier zaehlt nur, wie
+  // viele Meldungen durchgegangen sind.
+  return kandidaten.length;
 }
 
 // --- Benachrichtigungen ---------------------------------------------------
@@ -844,6 +849,9 @@ function meldenswert(items, abo) {
  * dritten Mal.
  */
 let letzterVersandbuchFehler = null;
+
+// Verbrauch der Uebersetzung, bis der naechste Durchgang ihn mitverbucht.
+let uebersetzungsTokens = 0;
 
 async function nochNichtGemeldet(env, items, nurLesen = false) {
   if (!env.VERSANDBUCH) return items;          // ohne Bindung wie bisher
@@ -1022,9 +1030,9 @@ export default {
           : '0',
         berichtigt: bestand?.items?.filter((n) => n.kiKorrigiert).length ?? 0,
         kiBudget: `${budgetRest(urteilSpeicher).verbraucht.toLocaleString('de-DE')}`
-          + ` von ${KI_TOKEN_MAX.toLocaleString('de-DE')} Token heute`
-          + ` (Groq erlaubt 200.000, der Rest bleibt fuer Uebersetzung,`
-          + ` Tagesbericht und Nachfragen)`,
+          + ` von 200.000 Token heute`
+          + ` (alle Wege zusammen; die automatische Pruefung stoppt bei`
+          + ` ${KI_TOKEN_MAX.toLocaleString('de-DE')})`,
         urteile: Object.keys(urteilSpeicher?.urteile || {}).length,
         letzterNachlauf: urteilSpeicher?.letzterNachlauf ?? 'noch keiner',
         kontingent: kontingent ?? 'seit dem Start keine Anfrage an Groq',
@@ -1232,6 +1240,15 @@ export default {
           email: env.KONTAKT_MAIL || '',
         });
         fehlend.forEach((t, i) => { if (frisch.texte[i]) speicher[t] = frisch.texte[i]; });
+
+        /*
+         * Auch die Uebersetzung zahlt aus demselben Topf.
+         *
+         * Sie laeuft ueber docs/engine, nicht ueber deuten.mjs, und wurde
+         * deshalb vom zentralen Zaehler nicht erfasst. uebersetze() meldet den
+         * Verbrauch zurueck; hier wandert er in dieselbe Rechnung.
+         */
+        uebersetzungsTokens += frisch.tokens || 0;
 
         // Beschneiden, sonst waechst der Eintrag ueber die Groessengrenze von KV.
         const schluessel = Object.keys(speicher);
