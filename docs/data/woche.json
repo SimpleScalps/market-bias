@@ -1,25 +1,25 @@
 {
- "updated": "2026-09-05T08:52:08.321Z",
+ "updated": "2026-09-05T09:03:49.032Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-05T08:52:08.347Z",
+   "stand": "2026-09-05T09:03:49.066Z",
    "anzahl": 47,
    "klassen": {
     "crypto": {
-     "score": -0.0193,
+     "score": -0.0187,
      "bull": 3,
      "bear": 4,
      "neut": 40
     },
     "stocks": {
-     "score": -0.0503,
+     "score": -0.0498,
      "bull": 2,
      "bear": 4,
      "neut": 41
     },
     "gold": {
-     "score": 0.0404,
+     "score": 0.0398,
      "bull": 5,
      "bear": 1,
      "neut": 41
@@ -45,7 +45,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 64
+     "priority": 63
     },
     {
      "id": "Cointelegraph:Bitcoin ETF inflows hit $3.8B in strongest three-week stretch of 2026",
@@ -75,7 +75,7 @@
       "gold": 0.32,
       "usd": -0.4
      },
-     "priority": 51
+     "priority": 50
     },
     {
      "id": "Al Jazeera:US imposes sanctions on Turkish bank, prompting legal threat",
@@ -90,7 +90,7 @@
       "gold": 0.203,
       "usd": 0.135
      },
-     "priority": 46
+     "priority": 45
     },
     {
      "id": "Al Jazeera:After Pretoria peace deal, old enemies in Ethiopia’s Tigray find new ground",
@@ -105,13 +105,13 @@
       "gold": -0.248,
       "usd": -0.165
      },
-     "priority": 31
+     "priority": 30
     }
    ]
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-05T08:52:08.356Z",
+   "stand": "2026-09-05T09:03:49.078Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
