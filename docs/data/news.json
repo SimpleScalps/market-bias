@@ -1,11 +1,83 @@
 {
- "updated": "2026-09-05T11:47:51.959Z",
+ "updated": "2026-09-05T11:52:14.533Z",
  "regime": "policy",
  "count": 183,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "BeInCrypto:The 18-Year Housing Cycle Says the Next Market Crash Is Close",
+   "title": "The 18-Year Housing Cycle Says the Next Market Crash Is Close",
+   "text": "Investors are watching stocks and Bitcoin for the next major peak. Popular macro analyst Jason Pizzino thinks the first warning has already arrived from US housing. His thesis uses an 18-year property cycle drawn from roughly 220 years of US sales data. The current cycle began around 2011–2012 and places the housing peak in 2025–26,",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/18-year-us-housing-cycle-bitcoin-stock-crash/",
+   "date": "2026-09-05T11:48:34.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Kurssturz"
+   ],
+   "scores": {
+    "crypto": -0.45,
+    "stocks": -0.45,
+    "gold": 0.225,
+    "usd": 0.15
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Kurssturz)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 39,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Der 18-jährige Wohnungsmarktzyklus sagt, dass der nächste Marktcrash nahe ist"
+  },
+  {
+   "id": "Al Jazeera:LIVE: India vs Pakistan – Women’s T20 Asia Cup",
+   "title": "LIVE: India vs Pakistan – Women’s T20 Asia Cup",
+   "text": "Follow the updates from our live build-up to our text commentary stream coverage of the Group A match in Dubai.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/liveblog/2026/9/5/live-india-vs-pakistan-womens-t20-asia-cup?traffic_source=rss",
+   "date": "2026-09-05T11:32:07.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "LIVE: Indien vs Pakistan – T20 Asia Cup der Frauen"
+  },
   {
    "id": "U.Today:Ripple's CEO Not Surprised at XRP Ledger's BIS Testing",
    "title": "Ripple's CEO Not Surprised at XRP Ledger's BIS Testing",
@@ -1801,40 +1873,6 @@
    "titleDe": "Hat Israels Zerstörung des Gazastreifens seine Wasserkrise verschlimmert?"
   },
   {
-   "id": "Al Jazeera:Trump sends envoys to Russia, Ukraine with new peace plan",
-   "title": "Trump sends envoys to Russia, Ukraine with new peace plan",
-   "text": "Al Jazeera’s Kimberly Halkett reports that US President Donald Trump is sending envoys Jared Kushner and Steve Witkoff.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/trump-sends-envoys-to-russia-ukraine-with-new-peace-plan?traffic_source=rss",
-   "date": "2026-09-05T03:25:46.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 49,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Trump schickt Gesandte nach Russland, Ukraine mit neuem Friedensplan"
-  },
-  {
    "id": "U.Today:+103% in Shiba Inu (SHIB) Most Crucial Metric in 24 Hours: Can It Save the Day?",
    "title": "+103% in Shiba Inu (SHIB) Most Crucial Metric in 24 Hours: Can It Save the Day?",
    "text": "Shiba Inu is staying on the verge of a potential correction, but the outflow dynamic might help the price greatly.",
@@ -2377,7 +2415,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 10,
+   "priority": 9,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2411,7 +2449,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 10,
+   "priority": 9,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2445,7 +2483,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 10,
+   "priority": 9,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2695,7 +2733,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2729,7 +2767,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4070,7 +4108,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 15,
+   "priority": 14,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4577,40 +4615,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Zcash erreicht den höchsten Preis seit fast einem Jahrzehnt, vernichtende Short-Wetten"
-  },
-  {
-   "id": "BeInCrypto:3 Altcoins That Could Reach All-Time Highs This Weekend",
-   "title": "3 Altcoins That Could Reach All-Time Highs This Weekend",
-   "text": "WBT, HYPE, and RAIN trade just below fresh record highs. See the levels that could trigger new all-time highs this weekend.",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/altcoins-all-time-highs-september-weekend/",
-   "date": "2026-09-04T16:16:32.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "3 Altcoins, die an diesem Wochenende Allzeithochs erreichen könnten"
   },
   {
    "id": "U.Today:Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
@@ -6438,7 +6442,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 2,
   "fehler": null
  }
 }
