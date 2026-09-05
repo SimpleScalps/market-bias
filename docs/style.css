@@ -571,21 +571,7 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
 .fHinweis{margin:-2px 0 0;padding:0 9px;font-size:10px;letter-spacing:.04em;
   color:var(--faint);text-transform:uppercase}
 
-/*
- * Auf Fingergeraeten mindestens 16px in jedem Eingabefeld.
- *
- * iOS zoomt beim Hineintippen automatisch heran, sobald die Schrift kleiner
- * ist - beim Tippen auf "KI fragen" sprang die Ansicht deshalb unvermittelt
- * ins Textfeld hinein. Das laesst sich nicht abschalten, ohne zugleich das
- * Aufziehen mit zwei Fingern zu unterbinden, und das waere der schlechtere
- * Tausch: Wer schlecht sieht, braucht es.
- *
- * 16px ist die Schwelle, ab der iOS nicht mehr zoomt. Am Zeigergeraet bleibt
- * die kompaktere Schrift, dort gibt es das Verhalten nicht.
- */
-@media (pointer: coarse) {
-  .frageFeld, .search input, input, select, textarea { font-size: 16px }
-}
+
 
 .frageZeile{display:flex;gap:6px}
 .frageFeld{flex:1;min-width:0;background:var(--bg-2);border:1px solid var(--line);
@@ -621,3 +607,19 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
   border-left:2px solid var(--bear);padding-left:9px}
 
 .zZeile b.lau{color:#d9a441}
+
+/*
+ * Auf Fingergeraeten mindestens 16px in jedem Eingabefeld.
+ *
+ * iOS zoomt beim Hineintippen automatisch heran, sobald die Schrift kleiner
+ * ist - beim Tippen auf "KI fragen" sprang die Ansicht deshalb unvermittelt
+ * ins Textfeld hinein. Das laesst sich nicht abschalten, ohne zugleich das
+ * Aufziehen mit zwei Fingern zu unterbinden, und das waere der schlechtere
+ * Tausch: Wer schlecht sieht, braucht es.
+ *
+ * 16px ist die Schwelle, ab der iOS nicht mehr zoomt. Am Zeigergeraet bleibt
+ * die kompaktere Schrift, dort gibt es das Verhalten nicht.
+ */
+@media (pointer: coarse) {
+  .frageFeld, .search input, input, select, textarea { font-size: 16px }
+}

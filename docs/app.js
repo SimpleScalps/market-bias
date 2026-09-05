@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v44';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v45';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -1051,12 +1051,22 @@ function render(erzwingen = false) {
    * nur, wenn ueberhaupt gescrollt wurde: Steht man ohnehin oben, gibt es
    * nichts wiederherzustellen.
    */
-  if (anker && window.scrollY > 0) {
-    const el = feed.querySelector(`[data-id="${CSS.escape(anker.id)}"]`);
-    if (el) {
+  if (anker) {
+    /*
+     * Erst im naechsten Bild korrigieren.
+     *
+     * Das Leeren der Liste laesst die Seite auf null zusammenfallen; der
+     * Browser setzt die Bildlaufhoehe daraufhin selbst zurueck - und tut das
+     * nicht zwingend vor der naechsten Zeile. Eine Korrektur an dieser Stelle
+     * wurde dadurch teilweise wieder ueberschrieben, im Versuch um 155 Pixel.
+     * Nach dem naechsten Bild steht der Aufbau, und die Messung stimmt.
+     */
+    requestAnimationFrame(() => {
+      const el = feed.querySelector(`[data-id="${CSS.escape(anker.id)}"]`);
+      if (!el) return;   // Meldung ist weg - jeder Sprung waere geraten
       const versatz = el.getBoundingClientRect().top - anker.oben;
       if (Math.abs(versatz) > 1) window.scrollBy(0, versatz);
-    }
+    });
   }
 }
 
