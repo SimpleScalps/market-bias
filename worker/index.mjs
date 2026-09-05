@@ -23,7 +23,24 @@ import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, frag
 const KEY = 'https://market-bias.internal/news';
 const ABO_KEY = 'https://market-bias.internal/abo';
 const GRUPPEN = 3;
-const KAL_MS = 20_000;      // Kalender im Livebetrieb höchstens alle 20 s
+/*
+ * Wie oft der Lesepfad den Kalender nachzieht.
+ *
+ * Frueher stand hier eine Bedingung auf das Alter des abgelegten Bestands -
+ * und weil das Nachziehen ihn danach neu ablegte, kostete jeder Abruf, der
+ * aelter als zwanzig Sekunden war, einen Schreibvorgang. Bei einer App, die
+ * alle zwoelf Sekunden nachfragt, waren das ueber den Tag mehrere Tausend: mit
+ * Abstand der groesste Posten, deutlich vor allen Ticks zusammen, und der
+ * Grund, warum das Tageskontingent von KV schon am Vormittag erschoepft war.
+ *
+ * Der Schreibvorgang war ausserdem entbehrlich: collectNews holt den Kalender
+ * bei jedem Tick ohnehin mit, er landet also so oder so im Bestand. Der
+ * Lesepfad zieht ihn jetzt nur noch fuer die eine Antwort nach und legt nichts
+ * ab. Gedrosselt wird ueber einen Zeitstempel im Arbeitsspeicher - der reicht
+ * fuer den Zweck und kostet nichts.
+ */
+const KAL_MS = 45_000;
+let kalenderZuletzt = 0;
 const BESTAND_TTL = 86_400; // Bestand einen Tag halten, nicht zehn Minuten
 const GESEHEN_MAX = 4000;   // Gedächtnis über die Sichtbarkeitsgrenze hinaus
 /*
@@ -616,7 +633,10 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
     updated: new Date().toISOString(),
     gesehen: [...gesehen].slice(-GESEHEN_MAX),
   };
-  await schreiben(env, ctx, KEY, data, BESTAND_TTL);
+  /*
+   * Bewusst ohne Ablage: Das Ergebnis gilt nur fuer diese eine Antwort. Der
+   * Tick holt den Kalender ohnehin bei jedem Durchgang mit und legt ihn ab.
+   */
   ctx.waitUntil(wochenbuchPflegen(env, ctx, items));
   return { data, neue };
 }
@@ -1114,9 +1134,11 @@ export default {
       }
 
       // Sonst reicht der Kalender — er trägt die zeitkritischen Zahlen.
-      const stand = alterMs(bestand) > KAL_MS
-        ? (await kalenderNachziehen(env, ctx, regime, bestand)).data
-        : bestand;
+      let stand = bestand;
+      if (Date.now() - kalenderZuletzt > KAL_MS) {
+        kalenderZuletzt = Date.now();
+        stand = (await kalenderNachziehen(env, ctx, regime, bestand)).data;
+      }
 
       const kennung = inhaltsKennung(stand);
 
