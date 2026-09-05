@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-05T19:16:53.219Z",
+ "updated": "2026-09-05T19:25:42.188Z",
  "regime": "policy",
- "count": 106,
+ "count": 105,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
@@ -164,7 +164,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -414,7 +414,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -482,7 +482,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -688,7 +688,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1038,7 +1038,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1074,7 +1074,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1395,7 +1395,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1669,7 +1669,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1777,7 +1777,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1786,7 +1786,9 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "CNBC"
+   ],
    "titleDe": "Von „Mystery-Urlauben“ bis hin zu Hostels - preisbewusste Reisende werden bei steigenden Preisen sparsam"
   },
   {
@@ -2617,7 +2619,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 38,
+   "priority": 37,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3663,40 +3665,6 @@
    "titleDe": "Pineapple Financial legt $ 1B in Hypothekenaufzeichnungen auf Injective"
   },
   {
-   "id": "Cointelegraph:FinCEN ties $13B in crypto scams to non-US operations",
-   "title": "FinCEN ties $13B in crypto scams to non-US operations",
-   "text": "The agency reported that “transnational criminal organizations” based in compounds in Southeast Asia were largely behind digital asset scams targeting US residents.",
-   "source": "Cointelegraph",
-   "url": "https://cointelegraph.com/news/fincen-crypto-overseas-scam-centers-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "date": "2026-09-04T19:22:26.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "FinCEN bindet $ 13B in Krypto-Betrügereien an Nicht-US-Operationen"
-  },
-  {
    "id": "Cointelegraph:Here’s what happened in crypto today",
    "title": "Here’s what happened in crypto today",
    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
@@ -3732,7 +3700,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 3,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
