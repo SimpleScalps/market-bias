@@ -1,6 +1,5 @@
 import { collectNews, loadCalendar, enrich, imFenster } from '../docs/engine/feeds.mjs';
 import { dedupe } from '../docs/engine/dedupe.mjs';
-import { profilPassung, STANDARD_PROFIL } from '../docs/engine/profile.mjs';
 import { label, LABEL_TEXT } from '../docs/engine/sentiment.mjs';
 import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
 import { uebersetze } from '../docs/engine/translate.mjs';
@@ -814,7 +813,6 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX) {
 // --- Benachrichtigungen ---------------------------------------------------
 /** Welche der neuen Meldungen verdienen eine Push-Nachricht? */
 function meldenswert(items, abo) {
-  const profil = abo.profil || STANDARD_PROFIL;
   const asset = abo.asset || 'crypto';
 
   return items.filter((n) => {
@@ -822,7 +820,6 @@ function meldenswert(items, abo) {
     // Benachrichtigung - Kursprognosen und Projektmeldungen etwa erschienen
     // sonst mehrfach am Tag, weil die Redaktionen sie laufend neu fassen.
     if (n.impactLevel === 'ignore') return false;
-    if (profil.aktiv && profilPassung(n, profil) === null) return false;
 
     // Bei "nur starke Signale" zaehlt auch die Handelswirkung, nicht allein
     // die Richtung: Ein starkes Sentiment ohne Marktwirkung weckt niemanden.
@@ -1048,7 +1045,6 @@ export default {
           stufe: abo.stufe,
           kanaele: (abo.ziele || []).map((z) => z.typ + (z.token ? ' (mit Token)' : ' (ohne Token)')),
           anlageklasse: abo.asset,
-          profilAktiv: !!abo.profil?.aktiv,
         } : null,
       });
     }
@@ -1345,10 +1341,23 @@ export default {
     // Abo hinterlegen, damit der Cron auch bei geschlossener App verschickt.
     if (url.pathname === '/subscribe' && request.method === 'POST') {
       try {
-        await schreiben(env, ctx, ABO_KEY, await request.json(), 30 * 86400);
-        return json({ ok: true, dauerhaft: !!env.STORE });
+        /*
+         * Das Ergebnis weiterreichen, nicht verschlucken.
+         *
+         * schreiben() faengt seit Neuestem selbst ab, damit ein erschoepftes
+         * Kontingent nicht den ganzen Aufruf mitreisst - und dadurch meldete
+         * diese Stelle "gespeichert", obwohl nichts abgelegt wurde. Wer eine
+         * neue Webhook-Adresse eintraegt, glaubt sie dann hinterlegt zu haben
+         * und bekommt nachts nichts. Das ist die schlimmste Sorte Fehler:
+         * einer, der sich als Erfolg meldet.
+         */
+        const ok = await schreiben(env, ctx, ABO_KEY, await request.json(), 30 * 86400);
+        return json(ok
+          ? { ok: true, dauerhaft: !!env.STORE }
+          : { ok: false, fehler: letzterAblageFehler?.fehler || 'Ablage fehlgeschlagen' },
+          ok ? 200 : 503);
       } catch (err) {
-        return json({ fehler: err.message }, 400);
+        return json({ ok: false, fehler: err.message }, 400);
       }
     }
 

@@ -409,6 +409,23 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
 .kiBtn:active{border-color:var(--accent);color:var(--accent)}
 .kiBtn:disabled{opacity:.55;cursor:default}
 
+/* Der Knopf fuer die eigene Frage.
+   Abgesetzt in der Akzentfarbe: Er ist der einzige hier, der etwas Neues
+   anstoesst statt Vorhandenes aufzuklappen - und ohne eigene Gestaltung kam er
+   als weisse Schaltflaeche des Browsers daher, die zum Rest nicht passte. */
+.frageBtn{
+  background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.45);
+  border-radius:3px;color:var(--accent);font-family:var(--mono);font-size:9.5px;
+  letter-spacing:.09em;padding:6px 11px;cursor:pointer;text-transform:uppercase;
+  transition:.12s
+}
+.frageBtn:hover{background:rgba(34,211,238,.2);border-color:var(--accent)}
+.frageBtn:active{background:rgba(34,211,238,.28)}
+
+:root[data-theme="light"] .frageBtn{
+  background:rgba(8,145,178,.1);border-color:rgba(8,145,178,.4)
+}
+
 .kiAntwort{
   margin-top:11px;padding:10px;border-radius:3px;
   background:var(--bg-2);border:1px solid var(--line);border-left:2px solid var(--accent);

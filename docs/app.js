@@ -1,4 +1,3 @@
-import { profilPassung, STANDARD_PROFIL } from './engine/profile.mjs';
 // Die Schwellen kommen aus der Engine, nicht aus einer zweiten Fassung hier:
 // Sonst zeigt die Liste "bullish", während die Benachrichtigung schweigt.
 import { label } from './engine/sentiment.mjs';
@@ -6,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v34';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v37';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -39,7 +38,6 @@ let theme = P.get('theme', 'system');
 let notify = P.get('notify', 'off');
 let liveUrl = urlNormalisieren(P.get('liveUrl', '') || window.MARKET_BIAS_LIVE_URL || '');
 let ausQuellen = new Set(JSON.parse(P.get('ausQuellen', '[]')));
-let profil = { ...STANDARD_PROFIL, ...JSON.parse(P.get('profil', '{}')) };
 let kanaele = new Set(JSON.parse(P.get('kanaele', '["browser"]')));
 let tg = JSON.parse(P.get('tg', '{}'));
 let dc = JSON.parse(P.get('dc', '{}'));
@@ -174,7 +172,6 @@ async function anrissAbarbeiten() {
 function matches(n) {
   if (cat !== 'all' && n.category !== cat) return false;
   if (ausQuellen.has(n.source)) return false;
-  if (profilPassung(n, profil) === null) return false;
 
   const l = label(n.scores[asset] ?? 0);
   if (sent === 'strong' && !l.startsWith('strong')) return false;
@@ -192,8 +189,8 @@ function matches(n) {
 function ordered(list) {
   const by = {
     priority: (a, b) => {
-      const fa = (a.priority ?? 0) * (profil.aktiv ? (profilPassung(a, profil) ?? 0) : 1);
-      const fb = (b.priority ?? 0) * (profil.aktiv ? (profilPassung(b, profil) ?? 0) : 1);
+      const fa = a.priority ?? 0;
+      const fb = b.priority ?? 0;
       return fb - fa || new Date(b.date) - new Date(a.date);
     },
     time: (a, b) => new Date(b.date) - new Date(a.date),
@@ -982,10 +979,20 @@ function renderFoot() {
 
 // ---------- Oberflächentexte ----------
 function renderTexte() {
+  /*
+   * Fehlende Elemente ueberspringen statt daran zu scheitern.
+   *
+   * Diese Funktion beschriftet die halbe Oberflaeche. Faellt ein Element weg -
+   * etwa weil ein Abschnitt aus den Einstellungen entfernt wurde -, warf der
+   * direkte Zugriff, und der Rest der Beschriftung lief nie: Die App blieb
+   * leer, ohne dass die Ursache irgendwo sichtbar gewesen waere. Genau das ist
+   * beim Ausbau des Trading-Profils passiert.
+   */
+  const setze = (sel, wert) => { const el = $(sel); if (el) el.textContent = wert; };
   document.documentElement.lang = lang;
   $('#q').placeholder = T().suchePlatzhalter;
-  $('#lblSignal').textContent = T().signal;
-  $('#lblSort').textContent = T().sortieren;
+  setze('#lblSignal', T().signal);
+  setze('#lblSort', T().sortieren);
   $$('.seg button').forEach((b) => { b.textContent = T().assets[b.dataset.asset]; });
 
   $('#sent').innerHTML = Object.entries(T().signalOpt)
@@ -995,58 +1002,25 @@ function renderTexte() {
     .map(([v, txt]) => `<option value="${v}">${txt}</option>`).join('');
   $('#sort').value = sort;
 
-  $('#mTitel').textContent = T().einstellungen;
-  $('#lSprache').textContent = T().sprache;
-  $('#lDesign').textContent = T().design;
-  $('#lBenach').textContent = T().benachrichtigungen;
-  $('#lLive').textContent = T().liveQuelle;
-  $('#lQuellen').textContent = T().quellenListe;
-  $('#hLive').textContent = T().liveHinweis;
+  setze('#mTitel', T().einstellungen);
+  setze('#lSprache', T().sprache);
+  setze('#lDesign', T().design);
+  setze('#lBenach', T().benachrichtigungen);
+  setze('#lLive', T().liveQuelle);
+  setze('#lQuellen', T().quellenListe);
+  setze('#hLive', T().liveHinweis);
   $('#zugangInput').placeholder = T().zugangPlatzhalter;
-  $('#lProfil').textContent = T().profil;
-  $('#lStil').textContent = T().stil;
-  $('#lZeit').textContent = T().zeitrahmen;
-  $('#lCoins').textContent = T().muenzen;
-  $('#lKanaele').textContent = T().kanaele;
-  $('#hTelegram').textContent = T().telegramHinweis;
-  $('#hDiscord').textContent = T().discordHinweis;
-  $('#hNtfy').textContent = T().ntfyHinweis;
-  $('#testSenden').textContent = T().testen;
-  $$('#profilAn button')[0].textContent = T().profilAus;
-  $$('#profilAn button')[1].textContent = T().profilAn;
-  $$('#stil button').forEach((b) => { b.textContent = T().stilOpt[b.dataset.stil]; });
-  profilHinweis();
-  $('#hQuellen').textContent = T().quellenHinweis;
+  setze('#lKanaele', T().kanaele);
+  setze('#hTelegram', T().telegramHinweis);
+  setze('#hDiscord', T().discordHinweis);
+  setze('#hNtfy', T().ntfyHinweis);
+  setze('#testSenden', T().testen);
+  setze('#hQuellen', T().quellenHinweis);
   $$('#theme button').forEach((b) => { b.textContent = T().designOpt[b.dataset.theme]; });
-  $('#tZustand').textContent = T().zustand;
-  $('#zustandBtn').textContent = T().zustandPruefen;
+  setze('#tZustand', T().zustand);
+  setze('#zustandBtn', T().zustandPruefen);
   $$('#benach button').forEach((b) => { b.textContent = T().benachrichtigungOpt[b.dataset.notify]; });
   hinweisBenachrichtigung();
-}
-
-// ---------- Trading-Profil ----------
-function profilHinweis() {
-  const el = $('#hProfil');
-  if (!profil.aktiv) { el.textContent = T().profilHinweis; return; }
-  const passend = data.items.filter((n) => profilPassung(n, profil) !== null).length;
-  el.textContent = `${T().profilAktivHinweis(passend, data.items.length)} ${T().profilHinweis}`;
-}
-
-function profilAnzeigen() {
-  $('#profilDetails').hidden = !profil.aktiv;
-  $$('#profilAn button').forEach((b) =>
-    b.classList.toggle('on', (b.dataset.profil === 'an') === profil.aktiv));
-  $$('#stil button').forEach((b) => b.classList.toggle('on', b.dataset.stil === profil.stil));
-  $$('#tf button').forEach((b) => b.classList.toggle('on', b.dataset.tf === profil.timeframe));
-  $$('#coins button').forEach((b) => b.classList.toggle('on', profil.coins.includes(b.dataset.coin)));
-  profilHinweis();
-}
-
-function profilSpeichern() {
-  P.set('profil', JSON.stringify(profil));
-  profilAnzeigen();
-  aboSenden();
-  alles();
 }
 
 // ---------- Design ----------
@@ -1226,17 +1200,37 @@ async function direktSenden(ziele, titelText, text) {
  * nur gepusht, solange die App offen ist — genau dann braucht man es am
  * wenigsten.
  */
+/*
+ * Meldet die Einstellungen an den Worker.
+ *
+ * Wichtiger als es aussieht: Der Worker benachrichtigt nach seiner eigenen
+ * Kopie dieser Werte, nicht nach denen im Browser. Laufen beide auseinander,
+ * meldet er Dinge, die die App ausblendet - oder schweigt, wo man eine
+ * Meldung erwartet.
+ *
+ * Frueher verschluckte diese Stelle jeden Fehler. Waehrend der Zugangs-Kopf
+ * an der Vorabfrage des Browsers scheiterte, schlug damit jede Uebertragung
+ * lautlos fehl - monatelang haetten sich die beiden Kopien auseinander
+ * entwickeln koennen, ohne dass irgendetwas darauf hingewiesen haette.
+ * Deshalb wird das Ergebnis jetzt festgehalten und im Systemzustand gezeigt.
+ */
+let aboStand = null;   // { ok, zeit, grund }
+
 async function aboSenden() {
-  if (!liveUrl) return;
+  if (!liveUrl) { aboStand = null; return { ok: false, grund: 'keine Live-Quelle' }; }
   const ziele = zielListe();
 
   try {
-    await fetch(`${liveUrl}/subscribe`, {
+    const res = await fetch(`${liveUrl}/subscribe`, {
       method: 'POST',
       headers: workerKopf({ 'Content-Type': 'application/json' }),
-      body: JSON.stringify({ stufe: notify, ziele, profil, asset, lang }),
+      body: JSON.stringify({ stufe: notify, ziele, asset, lang }),
     });
-  } catch { /* Worker gerade nicht erreichbar */ }
+    aboStand = { ok: res.ok, zeit: new Date().toISOString(), grund: res.ok ? null : `HTTP ${res.status}` };
+  } catch (err) {
+    aboStand = { ok: false, zeit: new Date().toISOString(), grund: String(err.message).slice(0, 60) };
+  }
+  return aboStand;
 }
 
 // ---------- Laden ----------
@@ -1323,7 +1317,6 @@ async function load() {
   }
   renderCats();
   renderQuellen();
-  profilHinweis();
   renderTages();
   renderFoot();
   render();
@@ -1406,9 +1399,22 @@ async function zustandZeigen() {
     return [`${T_.zTakt} · ${t.quelle}`, T_.zVorMin(min), art];
   });
 
+  /*
+   * Stimmt die Kopie im Worker mit dem ueberein, was hier eingestellt ist?
+   *
+   * Sie muss es, denn danach wird benachrichtigt. Weicht sie ab, meldet der
+   * Worker nach veralteten Regeln - man bekommt Meldungen, die die App nicht
+   * zeigt, oder umgekehrt keine, die man erwartet.
+   */
+  const a = d.abo || {};
+  const abweichung = [];
+  if (a.stufe && a.stufe !== notify) abweichung.push(`${T_.zBenach}: ${a.stufe} \u2192 ${notify}`);
+  if (a.anlageklasse && a.anlageklasse !== asset) abweichung.push(`${T_.zAsset}: ${a.anlageklasse} \u2192 ${asset}`);
+
   const zeilen = [
     ...(taktZeilen.length ? taktZeilen : [[T_.zTakt, T_.zTaktKeiner, 'lau']]),
     [T_.zVersand, versandOk ? T_.zJa : T_.zNein, versandOk ? 'gut' : 'schlecht'],
+    [T_.zAbo, abweichung.length ? T_.zAbweichend : T_.zGleich, abweichung.length ? 'schlecht' : 'gut'],
     [T_.zSpeichern, schreibt ? T_.zJa : T_.zNein, schreibt ? 'gut' : 'schlecht'],
     [T_.zSchreib, d.schreibvorgaenge ?? '—', null],
     [T_.zBestand, `${d.meldungen ?? '—'} · ${d.alterSekunden ?? '?'} s`, null],
@@ -1432,12 +1438,25 @@ async function zustandZeigen() {
   box.innerHTML = zeilen.map(([k, v, art]) =>
     `<div class="zZeile"><span>${escape(k)}</span><b class="${art || ''}">${escape(String(v))}</b></div>`
   ).join('')
+    + (abweichung.length
+        ? `<p class="zWarnung">${escape(T_.zAboHinweis)}<br>${abweichung.map(escape).join('<br>')}</p>`
+          + `<button class="zustandBtn" id="aboSync">${escape(T_.zAboUeber)}</button>`
+        : '')
     + stoerungen.map(([k, v]) =>
         `<p class="zWarnung">${escape(k)}: ${escape(v.fehler)} (${escape(String(v.zeit).slice(11, 16))} UTC)</p>`
       ).join('')
     + (schreibt ? '' : `<p class="zWarnung">${escape(T_.zHinweis)}</p>`
         + `<p class="zTicks">${escape(T_.zSchreibHinweis)}</p>`);
   box.hidden = false;
+
+  const sync = $('#aboSync', box);
+  if (sync) sync.addEventListener('click', async () => {
+    sync.disabled = true;
+    sync.textContent = T().zustandLaeuft;
+    const r = await aboSenden();
+    if (r.ok) zustandZeigen();
+    else { sync.disabled = false; sync.textContent = `${T().fehlgeschlagen} (${r.grund})`; }
+  });
 }
 
 // ---------- Quellenliste ----------
@@ -1520,33 +1539,6 @@ $('#liveInput').addEventListener('change', (e) => {
   starteTakt();
   load();
 });
-
-
-// Trading-Profil
-$$('#profilAn button').forEach((b) => b.addEventListener('click', () => {
-  profil.aktiv = b.dataset.profil === 'an';
-  profilSpeichern();
-}));
-$$('#stil button').forEach((b) => b.addEventListener('click', () => {
-  profil.stil = b.dataset.stil;
-  profilSpeichern();
-}));
-$$('#tf button').forEach((b) => b.addEventListener('click', () => {
-  profil.timeframe = b.dataset.tf;
-  // Der Zeitrahmen legt den Stil nahe — ein Widerspruch wäre verwirrend.
-  const passend = { '1m': 'scalping', '3m': 'scalping', '5m': 'scalping',
-                    '15m': 'intraday', '1h': 'intraday', '4h': 'swing' }[profil.timeframe];
-  if (passend) profil.stil = passend;
-  profilSpeichern();
-}));
-$$('#coins button').forEach((b) => b.addEventListener('click', () => {
-  const c = b.dataset.coin;
-  profil.coins = profil.coins.includes(c)
-    ? profil.coins.filter((x) => x !== c)
-    : [...profil.coins, c];
-  if (!profil.coins.length) profil.coins = ['BTC'];   // ohne Coin bliebe nichts übrig
-  profilSpeichern();
-}));
 
 // Benachrichtigungskanäle
 $$('#kanalWahl button').forEach((b) => b.addEventListener('click', async () => {
@@ -1632,7 +1624,6 @@ $$('#benach button').forEach((b) => b.classList.toggle('on', b.dataset.notify ==
 $('#liveInput').value = liveUrl;
 $('#zugangInput').value = zugang;
 
-profilAnzeigen();
 kanaeleAnzeigen();
 $('#ver').textContent = VERSION;
 themeAnwenden();

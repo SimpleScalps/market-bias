@@ -23,7 +23,7 @@ window.I18N = {
     neueMeldung: 'NEUE MELDUNG', neueMeldungen: 'NEUE MELDUNGEN',
     mitStarkemSignal: 'MIT STARKEM SIGNAL',
 
-    frage: 'Nachfragen', frageSenden: 'Fragen',
+    frage: 'KI fragen', frageSenden: 'Fragen',
     fragePlatzhalter: 'Was willst du zu dieser Meldung wissen?',
     frageLaeuft: 'wird beantwortet …',
     frageFehler: 'Keine Antwort erhalten',
@@ -34,6 +34,11 @@ window.I18N = {
     zustandOhneWorker: 'Braucht die Live-Quelle oben.',
     zustandFehler: 'Worker antwortet nicht',
     zSpeichern: 'Speichern', zSchreib: 'Ablagen heute (alle)',
+    zAbo: 'Benachrichtigungs-Abo', zGleich: 'stimmt überein', zAbweichend: 'weicht ab',
+    zBenach: 'Stufe', zAsset: 'Anlageklasse', zProfil: 'Profil', zAn: 'an', zAus: 'aus',
+    zAboUeber: 'Einstellungen an den Worker senden',
+    zAboHinweis: 'Der Worker benachrichtigt nach seiner eigenen Kopie dieser Werte. '
+      + 'Solange sie abweicht, bekommst du Meldungen, die die App ausblendet:',
     nurOffeneApp: 'nur bei offener App', zVersand: 'Doppelschutz', zTakt: 'Taktgeber', zTaktKeiner: 'seit dem letzten Speichern keiner erfasst',
     zVorMin: (m) => (m < 1 ? 'gerade eben' : m < 90 ? `vor ${Math.round(m)} Min` : `vor ${Math.round(m / 60)} Std`),
     zSchreibHinweis: 'Gezählt werden nur gelungene Schreibvorgänge — der Zähler liegt selbst '
@@ -77,14 +82,6 @@ window.I18N = {
     tradingImpact: 'Trading Impact', erwarteteDauer: 'Erwartete Dauer',
     impact: { ignore: 'IGNORIEREN', low: 'GERING', medium: 'MITTEL', high: 'HOCH', extreme: 'EXTREM' },
     dauer: { scalp: 'SCALP < 1 STD', intraday: 'INTRADAY 1–24 STD', swing: 'SWING 1–7 TAGE', long: 'LANGFRISTIG > 7 TAGE' },
-
-    profil: 'Trading-Profil',
-    profilAn: 'Nur was für meinen Handel zählt',
-    profilAus: 'Alle Meldungen zeigen',
-    stil: 'Stil', zeitrahmen: 'Zeitrahmen', muenzen: 'Coins',
-    stilOpt: { scalping: 'Scalping', intraday: 'Intraday', swing: 'Swing', longterm: 'Langfristig' },
-    profilHinweis: 'Blendet aus, was auf deinem Zeitrahmen nicht handelbar ist — Projekt-Updates, Kursprognosen und alles, was nur andere Coins betrifft. Extremereignisse kommen immer durch.',
-    profilAktivHinweis: (n, g) => `${n} von ${g} Meldungen passen zu deinem Profil.`,
 
     kanaele: 'Kanäle', browser: 'Browser', telegram: 'Telegram', discord: 'Discord',
     telegramHinweis: 'Bot-Token und Chat-ID. Der Worker verschickt die Nachricht, damit sie auch bei geschlossener App ankommt.',
@@ -143,7 +140,7 @@ window.I18N = {
     neueMeldung: 'NEW ITEM', neueMeldungen: 'NEW ITEMS',
     mitStarkemSignal: 'WITH STRONG SIGNAL',
 
-    frage: 'Ask', frageSenden: 'Send',
+    frage: 'Ask AI', frageSenden: 'Send',
     fragePlatzhalter: 'What do you want to know about this story?',
     frageLaeuft: 'thinking …',
     frageFehler: 'No answer received',
@@ -154,6 +151,11 @@ window.I18N = {
     zustandOhneWorker: 'Requires the live source above.',
     zustandFehler: 'Worker not responding',
     zSpeichern: 'Storage', zSchreib: 'Writes today (all)',
+    zAbo: 'Notification profile', zGleich: 'in sync', zAbweichend: 'out of sync',
+    zBenach: 'Level', zAsset: 'Asset', zProfil: 'Profile', zAn: 'on', zAus: 'off',
+    zAboUeber: 'Send settings to the worker',
+    zAboHinweis: 'The worker notifies based on its own copy of these values. '
+      + 'While it differs, you get alerts the app hides:',
     nurOffeneApp: 'only while the app is open', zVersand: 'Duplicate guard', zTakt: 'Scheduler', zTaktKeiner: 'none recorded since the last save',
     zVorMin: (m) => (m < 1 ? 'just now' : m < 90 ? `${Math.round(m)} min ago` : `${Math.round(m / 60)} h ago`),
     zSchreibHinweis: 'Only successful writes are counted — the counter lives in storage itself. '
@@ -195,14 +197,6 @@ window.I18N = {
     tradingImpact: 'Trading impact', erwarteteDauer: 'Expected duration',
     impact: { ignore: 'IGNORE', low: 'LOW', medium: 'MEDIUM', high: 'HIGH', extreme: 'EXTREME' },
     dauer: { scalp: 'SCALP < 1H', intraday: 'INTRADAY 1–24H', swing: 'SWING 1–7 DAYS', long: 'LONG-TERM > 7 DAYS' },
-
-    profil: 'Trading profile',
-    profilAn: 'Only what matters to my trading',
-    profilAus: 'Show all items',
-    stil: 'Style', zeitrahmen: 'Timeframe', muenzen: 'Coins',
-    stilOpt: { scalping: 'Scalping', intraday: 'Intraday', swing: 'Swing', longterm: 'Long-term' },
-    profilHinweis: 'Hides what is not tradable on your timeframe — project updates, price predictions and anything about other coins. Extreme events always get through.',
-    profilAktivHinweis: (n, g) => `${n} of ${g} items match your profile.`,
 
     kanaele: 'Channels', browser: 'Browser', telegram: 'Telegram', discord: 'Discord',
     telegramHinweis: 'Bot token and chat ID. The worker sends the message so it arrives even when the app is closed.',

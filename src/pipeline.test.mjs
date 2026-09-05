@@ -1,12 +1,11 @@
 // Tests für die Teile der Pipeline, die bisher ohne Absicherung liefen:
-// das Zeitfenster, den Profilfilter, die Handelseinstufung und die
-// Formprüfung der Stapelübersetzung.
+// das Zeitfenster, die Handelseinstufung und die Formprüfung der
+// Stapelübersetzung.
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import { imFenster, FENSTER_MS } from '../docs/engine/feeds.mjs';
-import { profilPassung, STANDARD_PROFIL } from '../docs/engine/profile.mjs';
 import { tradeImpact } from '../docs/engine/tradeimpact.mjs';
 import { uebersetze } from '../docs/engine/translate.mjs';
 
@@ -41,57 +40,6 @@ test('Eine leicht in der Zukunft liegende Meldung bleibt stehen', () => {
   // nicht verschwinden lassen, sie ist ja gerade erst gekommen.
   const drin = imFenster([{ date: new Date(JETZT + 120_000).toISOString() }], JETZT);
   assert.equal(drin.length, 1);
-});
-
-// ────────────────────────────── Profilfilter ─────────────────────────────
-
-const meldung = (extra = {}) => ({
-  title: 'Beliebige Meldung',
-  impactLevel: 'high', duration: 'intraday', scope: 'market', coins: [],
-  priority: 60, scores: { crypto: 0.5 },
-  ...extra,
-});
-
-test('Ohne aktives Profil geht alles durch', () => {
-  const aus = { ...STANDARD_PROFIL, aktiv: false };
-  assert.equal(profilPassung(meldung({ impactLevel: 'low', duration: 'long' }), aus), 1);
-});
-
-test('Projektrauschen fliegt auch mit Profil immer raus', () => {
-  const an = { ...STANDARD_PROFIL, aktiv: true };
-  assert.equal(profilPassung(meldung({ impactLevel: 'ignore' }), an), null);
-});
-
-test('Scalping blendet Schwaches und Langfristiges aus', () => {
-  const an = { ...STANDARD_PROFIL, aktiv: true, stil: 'scalping' };
-  assert.equal(profilPassung(meldung({ impactLevel: 'low' }), an), null,
-    'unter der Mindestwirkung');
-  assert.equal(profilPassung(meldung({ duration: 'long' }), an), null,
-    'wirkt zu lang nach');
-  assert.ok(profilPassung(meldung({ duration: 'scalp' }), an) > 0);
-});
-
-test('Ein Extremereignis wird nie ausgeblendet', () => {
-  const an = { ...STANDARD_PROFIL, aktiv: true, stil: 'scalping' };
-  // Selbst mit der Dauer, die sonst herausfällt.
-  const wert = profilPassung(meldung({ impactLevel: 'extreme', duration: 'long' }), an);
-  assert.ok(wert > 0, 'bleibt sichtbar');
-});
-
-test('Meldungen zu fremden Coins verschwinden, Marktmeldungen nicht', () => {
-  const an = { ...STANDARD_PROFIL, aktiv: true, coins: ['BTC', 'ETH'] };
-  assert.equal(
-    profilPassung(meldung({ coins: ['DOGE'], scope: 'project' }), an), null);
-  assert.ok(
-    profilPassung(meldung({ coins: ['DOGE'], scope: 'market' }), an) > 0,
-    'eine Marktmeldung gilt unabhaengig vom genannten Coin');
-});
-
-test('Ein Coin aus dem Profil wiegt schwerer als einer ohne', () => {
-  const an = { ...STANDARD_PROFIL, aktiv: true, coins: ['BTC'] };
-  const mit = profilPassung(meldung({ coins: ['BTC'], scope: 'market' }), an);
-  const ohne = profilPassung(meldung({ coins: [], scope: 'market' }), an);
-  assert.ok(mit > ohne);
 });
 
 // ───────────────────────────── Handelswirkung ────────────────────────────
