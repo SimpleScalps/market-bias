@@ -224,7 +224,17 @@ export async function loadFeed(feed, regime = 'policy') {
   const sortiert = items(xml)
     .map((it) => ({ it, t: new Date(zeitstempel(it) || 0).getTime() || 0 }))
     .sort((a, b) => b.t - a.t)
-    .slice(0, 30)
+    /*
+     * Zwoelf statt dreissig.
+     *
+     * Jeder Eintrag wird bewertet, eingestuft und einsortiert - das ist der
+     * groesste Posten der Rechenzeit, und Cloudflare gibt davon zehn
+     * Millisekunden. Bei einem Abruf je Minute und einem Fenster von einem Tag
+     * bringen die aelteren achtzehn nichts: Sie standen beim vorigen Durchgang
+     * schon drin. Nur ein Ausfall von zwoelf Minuten am Stueck koennte etwas
+     * verpassen lassen, und dann holt es der naechste Durchgang ohnehin nach.
+     */
+    .slice(0, 12)
     .map((x) => x.it);
 
   for (const it of sortiert) {

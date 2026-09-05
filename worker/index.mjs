@@ -1,5 +1,4 @@
 import { collectNews, loadCalendar, enrich, imFenster } from '../docs/engine/feeds.mjs';
-import { dedupe } from '../docs/engine/dedupe.mjs';
 import { label, LABEL_TEXT } from '../docs/engine/sentiment.mjs';
 import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
 import { uebersetze } from '../docs/engine/translate.mjs';
@@ -379,6 +378,18 @@ async function lesen(env, key) {
 let offeneSchreibungen = 0;
 
 /*
+ * Versuche mitzaehlen, nicht nur Erfolge.
+ *
+ * Der Zaehler lag bisher allein im abgelegten Bestand - und stand damit still,
+ * sobald das Kontingent erschoepft war. Ein niedriger Wert sagte dann nichts
+ * darueber aus, ob noch Kontingent frei ist; genau die Auskunft, um die es
+ * geht. Die Versuche zaehlt deshalb das Isolat selbst mit, und /health zeigt
+ * beide Zahlen.
+ */
+let versucheSeitAblage = 0;
+let fehlerSeitAblage = 0;
+
+/*
  * Wer zuletzt getickt hat - im Arbeitsspeicher gefuehrt.
  *
  * Der Vermerk gehoert an den Tick, nicht an das Speichern. Sonst erscheint
@@ -404,11 +415,13 @@ async function schreiben(env, ctx, key, data, ttl = 86400) {
      * jedem Durchgang neu berechnet und ausgeliefert, er ueberdauert bloss
      * nicht. Das ist ungleich besser als nichts.
      */
+    versucheSeitAblage++;
     try {
       await env.STORE.put(key, JSON.stringify(data), { expirationTtl: ttl });
       offeneSchreibungen++;
       return true;
     } catch (err) {
+      fehlerSeitAblage++;
       console.log('KV put fehlgeschlagen:', err.message);
       letzterAblageFehler = { zeit: new Date().toISOString(), fehler: err.message.slice(0, 120) };
       return false;
@@ -504,7 +517,16 @@ function zusammenfuehren(bestand, frische) {
   }
 
   // Aelteres faellt heraus: Was gestern galt, hilft beim heutigen Handel nicht.
-  const items = imFenster(dedupe([...bekannt.values()]))
+  /*
+   * Kein zweiter Dublettenlauf.
+   *
+   * collectNews hat den frischen Zulauf bereits geprueft, und der Bestand
+   * besteht aus lauter Ergebnissen frueherer Laeufe. Ihn vollstaendig erneut
+   * durchzurechnen kostet Rechenzeit, die der Worker nicht hat - und findet
+   * nichts, was nicht schon gefunden waere. Die Zusammenfuehrung nach Kennung
+   * oben genuegt hier.
+   */
+  const items = imFenster([...bekannt.values()])
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, 300);
 
@@ -588,7 +610,9 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   // Vor dem Versand gegenlesen lassen: Ein Widerspruch gehoert in die
   // Benachrichtigung, nicht erst in die spaetere Ansicht.
   const budget = budgetRest(speicher);
-  if (budget.rest > 0) await gegenlesen(kandidaten, env, GEGENPROBE_MAX);
+  // Der eigene Verbrauch zaehlt mit, auch wenn er nirgends abgelegt werden kann.
+  const restJetzt = budget.rest - tokenSeitStart;
+  if (restJetzt > 0) await gegenlesen(kandidaten, env, GEGENPROBE_MAX);
 
   /*
    * Den Bestand nachziehen.
@@ -599,10 +623,16 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * Durchlauf kommt deshalb ein Teil des Bestands dazu, die gewichtigsten
    * zuerst. Nach einigen Stunden ist alles einmal durch.
    */
-  const seitNachlauf = Date.now() - new Date(speicher.letzterNachlauf || 0).getTime();
-  if (seitNachlauf > NACHZIEHEN_ABSTAND_MS && budget.verbraucht < KI_TOKEN_MAX) {
+  /*
+   * Der spaetere der beiden Zeitpunkte gilt: der abgelegte oder der im
+   * Arbeitsspeicher. So bremst auch ein Isolat, dessen Schreibversuch scheitert.
+   */
+  const letzter = Math.max(nachlaufZuletzt, new Date(speicher.letzterNachlauf || 0).getTime());
+  if (Date.now() - letzter > NACHZIEHEN_ABSTAND_MS && restJetzt > 0) {
     const nachzuholen = items.filter(brauchtPruefung);
-    if (nachzuholen.length && await gegenlesen(nachzuholen, env, NACHZIEHEN_MAX)) {
+    if (nachzuholen.length) {
+      nachlaufZuletzt = Date.now();          // sofort, nicht erst nach Erfolg
+      await gegenlesen(nachzuholen, env, NACHZIEHEN_MAX);
       speicher.letzterNachlauf = new Date().toISOString();
     }
   }
@@ -626,8 +656,10 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * Alles, was seit dem letzten Mal an Groq ging - gleich aus welchem Weg.
    * Der Zaehler steht in deuten.mjs, wo jede Antwort durchlaeuft.
    */
-  budget.verbraucht += verbrauchAbholen() + uebersetzungsTokens;
+  const frisch = verbrauchAbholen() + uebersetzungsTokens;
   uebersetzungsTokens = 0;
+  tokenSeitStart += frisch;
+  budget.verbraucht += frisch;
 
   if (neueUrteile || budget.verbraucht !== (speicher.tokens || 0)) {
     const ids = Object.keys(speicher.urteile);
@@ -674,6 +706,15 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     // Alles seit dem letzten Sichern, plus dieses hier.
     schreibungen: (zaehlerGilt ? bestand.schreibungen || 0 : 0) + offeneSchreibungen + 1,
     /*
+     * Auch die abgewiesenen Versuche wandern mit in den Bestand.
+     *
+     * Im Arbeitsspeicher allein nuetzten sie nichts: /health landet in einem
+     * anderen Isolat als der Tick und sah dort immer null. Abgelegt gibt die
+     * Zahl das, worum es geht - stossen wir an die tausend, oder nicht.
+     */
+    schreibVersuche: (zaehlerGilt ? bestand.schreibVersuche || 0 : 0) + versucheSeitAblage,
+    schreibFehler: (zaehlerGilt ? bestand.schreibFehler || 0 : 0) + fehlerSeitAblage,
+    /*
      * Der Taktgeber gehoert hierher, nicht in den Urteilsspeicher.
      * Dort wurde er nur alle zehn Minuten und nur bei frischen Urteilen
      * erneuert - und stand deshalb stundenlang auf einem alten Eintrag,
@@ -719,7 +760,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ? await schreiben(env, ctx, KEY, data, BESTAND_TTL)
     : false;
   // Die Summe ist verbucht; das Zaehlwerk faengt von vorn an.
-  if (gesichert) offeneSchreibungen = 0;
+  if (gesichert) { offeneSchreibungen = 0; versucheSeitAblage = 0; fehlerSeitAblage = 0; }
 
   /*
    * Melden. Ob das Ablegen gelang, spielt dafuer keine Rolle mehr.
@@ -900,6 +941,24 @@ let letzterVersandbuchFehler = null;
 // Verbrauch der Uebersetzung, bis der naechste Durchgang ihn mitverbucht.
 let uebersetzungsTokens = 0;
 
+/*
+ * Bremsen, die ohne Ablage auskommen.
+ *
+ * Alle Drosseln hingen bisher an Werten aus KV: wann zuletzt nachgeprueft
+ * wurde, wie viele Token der Tag schon gekostet hat. Kann KV nicht schreiben,
+ * bleiben diese Werte stehen - und der Worker haelt bei jedem Durchgang fuer
+ * neu, was er eine Minute zuvor schon getan hat. Aus einer Pruefung alle zehn
+ * Minuten wurden so drei je Minute, und Groq wies dreitausend Anfragen am Tag
+ * ab. Die Absicherung hatte sich selbst ausgehebelt.
+ *
+ * Diese beiden Werte leben im Arbeitsspeicher des Isolats und ueberstehen
+ * einen Ausfall der Ablage. Sie sind nicht exakt - ein neues Isolat faengt bei
+ * null an -, aber sie begrenzen den Schaden auf ein Vielfaches statt auf ein
+ * Vielhundertfaches.
+ */
+let nachlaufZuletzt = 0;
+let tokenSeitStart = 0;
+
 async function nochNichtGemeldet(env, items, nurLesen = false) {
   if (!env.VERSANDBUCH) return items;          // ohne Bindung wie bisher
 
@@ -1065,7 +1124,8 @@ export default {
         meldungen: bestand?.items?.length ?? 0,
         alterSekunden: Math.round(alterMs(bestand) / 1000),
         schreibvorgaenge: bestand?.schreibTag === new Date().toISOString().slice(0, 10)
-          ? `${bestand.schreibungen} von 1.000`
+          ? `${bestand.schreibVersuche ?? bestand.schreibungen} von 1.000`
+            + (bestand.schreibFehler ? ` — ${bestand.schreibFehler} abgewiesen` : '')
           : 'heute noch keiner',
         letzterTickFehler: letzterTickFehler ?? 'keiner seit dem Start',
         letzterAblageFehler: letzterAblageFehler ?? 'keiner seit dem Start',

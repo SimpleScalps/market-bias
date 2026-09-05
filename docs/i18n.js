@@ -33,7 +33,7 @@ window.I18N = {
     zustandLaeuft: 'wird abgerufen …',
     zustandOhneWorker: 'Braucht die Live-Quelle oben.',
     zustandFehler: 'Worker antwortet nicht',
-    zSpeichern: 'Speichern', zSchreib: 'Ablagen heute (alle)',
+    zSpeichern: 'Speichern', zSchreib: 'Ablagen heute',
     zAbo: 'Benachrichtigungs-Abo', zGleich: 'stimmt überein', zAbweichend: 'weicht ab',
     zBenach: 'Stufe', zAsset: 'Anlageklasse', zProfil: 'Profil', zAn: 'an', zAus: 'aus',
     zAboUeber: 'Einstellungen an den Worker senden',
@@ -158,8 +158,6 @@ window.I18N = {
       + 'While it differs, you get alerts the app hides:',
     nurOffeneApp: 'only while the app is open', zVersand: 'Duplicate guard', zTakt: 'Scheduler', zTaktKeiner: 'none recorded since the last save',
     zVorMin: (m) => (m < 1 ? 'just now' : m < 90 ? `${Math.round(m)} min ago` : `${Math.round(m / 60)} h ago`),
-    zSchreibHinweis: 'Only successful writes are counted — the counter lives in storage itself. '
-      + 'While storage is blocked it stands still, so a low number here does not mean quota is left.',
     zBestand: 'Stored stories', zGeprueft: 'Checked stories',
     zBudget: 'AI budget', zTicks: 'Last refreshed',
     zJa: 'working', zNein: 'blocked',
