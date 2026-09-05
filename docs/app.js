@@ -6,7 +6,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v28';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v29';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -529,6 +529,29 @@ function kiDarstellen(box, deutung, regelWert, korrigiert = false) {
   box.hidden = false;
 }
 
+/**
+ * Stellt dem Sprachmodell eine eigene Frage zu einer Meldung.
+ *
+ * Die Zweitmeinung beantwortet immer dieselbe Frage — bullish oder bearish.
+ * Hier geht es um alles andere: was ein Begriff bedeutet, wen es betrifft,
+ * was daraus folgen könnte. Der Schlüssel liegt im Worker und verlässt ihn
+ * nie, deshalb führt der Weg über ihn.
+ */
+async function frageStellen(n, text) {
+  if (!liveUrl) return { fehler: T().frageOhneWorker };
+  try {
+    const res = await fetch(`${liveUrl}/frage`, {
+      method: 'POST',
+      headers: workerKopf({ 'Content-Type': 'application/json' }),
+      body: JSON.stringify({ titel: n.title, text: n.text, frage: text, sprache: lang }),
+    });
+    const j = await res.json();
+    return res.ok && j.antwort ? j : { fehler: j.fehler || T().frageFehler };
+  } catch {
+    return { fehler: T().frageFehler };
+  }
+}
+
 // ---------- Ausführliche Erklärung ----------
 const zeile = (k, v) => `<div class="dz"><span>${k}</span><b>${v}</b></div>`;
 
@@ -789,6 +812,63 @@ function render(erzwingen = false) {
       kiBtn.hidden = !deutung.fehler;
       kiBtn.disabled = false;
       kiBtn.textContent = T().zweitmeinung;
+    });
+
+    /*
+     * Nachfragen.
+     *
+     * Der Verlauf bleibt am geöffneten Eintrag stehen, solange die Zeile
+     * aufgeklappt ist — man fragt selten nur einmal. Über einen Neuaufbau der
+     * Liste hinaus wird er nicht bewahrt: Die Antworten hängen an genau dieser
+     * Meldung und veralten mit ihr.
+     */
+    const frageBtn = $('.frageBtn', node);
+    const frageBox = $('.frageBox', node);
+    const frageFeld = $('.frageFeld', node);
+    const frageAb = $('.frageAb', node);
+    const verlauf = $('.frageVerlauf', node);
+
+    frageBtn.textContent = T().frage;
+    frageAb.textContent = T().frageSenden;
+    frageFeld.placeholder = T().fragePlatzhalter;
+
+    frageBtn.addEventListener('click', () => {
+      frageBox.hidden = !frageBox.hidden;
+      if (!frageBox.hidden) frageFeld.focus();
+    });
+
+    const absenden = async () => {
+      const text = frageFeld.value.trim();
+      if (!text || frageAb.disabled) return;
+
+      const eigene = document.createElement('p');
+      eigene.className = 'fEigene';
+      eigene.textContent = text;
+      verlauf.appendChild(eigene);
+
+      const antwort = document.createElement('p');
+      antwort.className = 'fAntwort laeuft';
+      antwort.textContent = T().frageLaeuft;
+      verlauf.appendChild(antwort);
+
+      frageFeld.value = '';
+      frageAb.disabled = true;
+
+      const erg = await frageStellen(n, text);
+      antwort.classList.remove('laeuft');
+      if (erg.fehler) {
+        antwort.classList.add('fehler');
+        antwort.textContent = erg.fehler;
+      } else {
+        antwort.textContent = erg.antwort;
+      }
+      frageAb.disabled = false;
+      frageFeld.focus();
+    };
+
+    frageAb.addEventListener('click', absenden);
+    frageFeld.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') { e.preventDefault(); absenden(); }
     });
 
     const head = $('.head', node);

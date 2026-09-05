@@ -6,7 +6,7 @@ import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
 import { uebersetze } from '../docs/engine/translate.mjs';
 import { fortschreiben, TAGE_MAX } from '../docs/engine/wochenbuch.mjs';
 import { sendeAn } from './notify.mjs';
-import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen } from './deuten.mjs';
+import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, fragen } from './deuten.mjs';
 
 // Cloudflare Worker: holt die Quellen serverseitig (RSS-Feeds senden keine
 // CORS-Header, der Browser kann sie also nicht selbst laden), bewertet sie mit
@@ -29,19 +29,31 @@ const GESEHEN_MAX = 4000;   // Gedächtnis über die Sichtbarkeitsgrenze hinaus
 /*
  * Wie viele Meldungen je Durchlauf gegengelesen werden.
  *
- * Begrenzt die Laufzeit eines einzelnen Durchlaufs; ueber den Tag wacht
- * KI_ANFRAGEN_MAX.
+ * Die Anfragen laufen nebeneinander, also begrenzt die Zahl auch, wie viele
+ * Token in dieselbe Minute fallen. Die kostenlose Stufe erlaubt 8.000; bei
+ * 1.200 je Antwort sind fuenf sicher, acht waren es nicht - Groq antwortete
+ * dann mit 429, und die ganze Runde war verschenkt. Ueber den Tag wacht
+ * zusaetzlich KI_ANFRAGEN_MAX.
  */
-const GEGENPROBE_MAX = 10;
+const GEGENPROBE_MAX = 5;
 
 /*
- * Wie viele Altbestaende je Durchlauf nachgeprueft werden.
+ * Nachlauf: wie viel je Durchgang, und wie weit die Durchgaenge auseinander.
  *
- * Neue Meldungen werden sofort geprueft, der Rest kommt nach und nach dazu.
- * Fuenf je Durchlauf holen einen frisch uebernommenen Bestand in einer knappen
- * Stunde ein und halten ihn danach muehelos aktuell.
+ * Der Abstand ist der wichtigere Wert. KV gibt einen einmal gelesenen Wert am
+ * Rand bis zu eine Minute lang unveraendert zurueck - wer oefter liest,
+ * aendert und zurueckschreibt, rechnet auf einem alten Stand und macht die
+ * Arbeit des vorigen Durchgangs zunichte. Bei einem Tick je Minute lief der
+ * Nachlauf deshalb ins Leere: Das Budget pendelte zwischen zwei Werten, die
+ * Zahl der offenen Pruefungen blieb bei siebzig stehen, und die Anfragen an
+ * das Modell waren verschenkt.
+ *
+ * Fuenf Minuten Abstand liegen sicher jenseits dieses Fensters. Der Zeitpunkt
+ * des letzten Durchgangs steht im Urteilsspeicher selbst - also in genau dem
+ * Eintrag, den der Nachlauf ohnehin schreibt, und damit konsistent zu ihm.
  */
 const NACHZIEHEN_MAX = 5;
+const NACHZIEHEN_ABSTAND_MS = 5 * 60_000;
 
 /*
  * Tagesbudget fuer das Sprachmodell.
@@ -68,6 +80,45 @@ const KI_ANFRAGEN_MAX = 150;
  * die Feeds werden nicht mehr abgefragt. Deshalb wird jeder echte Tick mit
  * Zeit und Herkunft vermerkt, nachzulesen unter /health.
  */
+/*
+ * Urteile des Modells, getrennt vom Bestand.
+ *
+ * Der Bestand wird bei jedem Tick als Ganzes neu geschrieben. KV liefert einen
+ * Wert am Rand aber bis zu eine Minute lang veraltet aus - bei einem Tick je
+ * Minute liest also fast jeder Durchlauf einen Stand von vorhin, rechnet darauf
+ * und schreibt ihn zurueck. Alles, was der vorige Tick geprueft hatte, war
+ * damit wieder weg: Das Budget lief vor und zurueck, die Zahl der offenen
+ * Pruefungen pendelte, und die Anfragen an das Modell verpufften.
+ *
+ * Die Urteile liegen deshalb in einem eigenen Eintrag, der nur ergaenzt wird.
+ * Ein veralteter Lesestand kostet dann hoechstens die Urteile der letzten
+ * Minute - er macht aber nichts rueckgaengig, was schon feststand.
+ */
+const URTEILE_KEY = 'https://market-bias.internal/urteile';
+const URTEILE_MAX = 700;
+
+/** Felder, die ein Urteil an einer Meldung veraendert. */
+const URTEIL_FELDER = ['ki', 'kiWiderspruch', 'kiKorrigiert',
+  'scores', 'label', 'labelText', 'regelScores', 'regelLabel'];
+
+/** Legt gespeicherte Urteile auf frisch bewertete Meldungen. */
+function urteileAnlegen(items, speicher) {
+  const urteile = speicher?.urteile;
+  if (!urteile) return;
+  for (const n of items) {
+    const u = urteile[n.id];
+    // Was schon am Eintrag haengt, ist mindestens so aktuell wie der Speicher.
+    if (u && !n.ki?.inhalt) Object.assign(n, u);
+  }
+}
+
+/** Zieht aus einer geprueften Meldung heraus, was aufbewahrt werden muss. */
+function urteilAuslesen(n) {
+  const raus = {};
+  for (const f of URTEIL_FELDER) if (n[f] !== undefined) raus[f] = n[f];
+  return raus;
+}
+
 const TICKS_KEY = 'https://market-bias.internal/ticks';
 const TICKS_MAX = 8;
 
@@ -110,7 +161,7 @@ const UEBERSETZUNG_JE_ABRUF = 5;
  * Einrichtung nicht ueber Nacht stehen bleibt. /health weist dann darauf hin.
  */
 const GESCHUETZT = ['/subscribe', '/notify', '/testpush', '/deuten', '/tageslage',
-  '/modelle', '/tick', '/uebersetzen'];
+  '/modelle', '/tick', '/uebersetzen', '/frage'];
 
 function zugangGeprueft(request, url, env) {
   if (!env.ZUGANG) return true;                       // nicht eingerichtet
@@ -158,7 +209,17 @@ const BRAUCHT_RUHE = new Set(['ntfy']);
 const CORS = {
   'access-control-allow-origin': '*',
   'access-control-allow-methods': 'GET, POST, OPTIONS',
-  'access-control-allow-headers': 'Content-Type',
+  /*
+   * X-Zugang muss hier stehen.
+   *
+   * Ein eigener Kopf loest im Browser eine Vorabfrage aus, und die lehnt
+   * jeden Kopf ab, der hier nicht genannt ist. Ohne ihn scheiterte in der App
+   * alles, was das Zugangswort mitschickt - Zweitmeinung, Tagesbericht,
+   * Abo speichern, Uebersetzung, Nachfragen -, und zwar ohne verwertbare
+   * Fehlermeldung: Der Browser bricht schon vor der eigentlichen Anfrage ab.
+   */
+  'access-control-allow-headers': 'Content-Type, X-Zugang, x-quelle',
+  'access-control-max-age': '86400',
   'cache-control': 'no-store',
   'content-type': 'application/json; charset=utf-8',
 };
@@ -209,14 +270,15 @@ const alterMs = (d) => (d?.updated ? Date.now() - new Date(d.updated).getTime() 
 /**
  * Fuehrt den Tageszaehler der Modellanfragen und sagt, wie viele noch frei sind.
  *
- * Der Zaehler liegt im Bestand, der ohnehin bei jedem Durchlauf geschrieben
- * wird - so kostet die Buchfuehrung keinen zusaetzlichen Schreibvorgang. Beim
- * Datumswechsel faengt er von vorn an.
+ * Der Zaehler steht im Urteilsspeicher, nicht im Bestand. Im Bestand lief er
+ * vor und zurueck, weil der bei jedem Tick als Ganzes neu geschrieben wird und
+ * dabei regelmaessig ein veralteter Lesestand gewann. Beim Datumswechsel
+ * faengt er von vorn an.
  */
-function budgetRest(bestand) {
+function budgetRest(speicher) {
   const heute = new Date().toISOString().slice(0, 10);
-  if (!bestand || bestand.kiTag !== heute) return { tag: heute, verbraucht: 0, rest: KI_ANFRAGEN_MAX };
-  const verbraucht = bestand.kiAnfragen || 0;
+  if (!speicher || speicher.tag !== heute) return { tag: heute, verbraucht: 0, rest: KI_ANFRAGEN_MAX };
+  const verbraucht = speicher.anfragen || 0;
   return { tag: heute, verbraucht, rest: Math.max(0, KI_ANFRAGEN_MAX - verbraucht) };
 }
 
@@ -316,6 +378,12 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
   const teil = await collectNews({ regime, gruppe, gruppen: GRUPPEN, limit: 300 });
   const { items, neue } = zusammenfuehren(bestand, teil.items);
 
+  // Urteile aus ihrem eigenen Speicher nachlegen - sie ueberleben dort auch
+  // einen Bestand, der von einem veralteten Lesestand ueberschrieben wurde.
+  const speicher = (await lesen(env, URTEILE_KEY)) || { urteile: {} };
+  speicher.urteile ||= {};
+  urteileAnlegen(items, speicher);
+
   /*
    * Das Gedächtnis überlebt die Sichtbarkeitsgrenze.
    *
@@ -334,7 +402,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
 
   // Vor dem Versand gegenlesen lassen: Ein Widerspruch gehoert in die
   // Benachrichtigung, nicht erst in die spaetere Ansicht.
-  const budget = budgetRest(bestand);
+  const budget = budgetRest(speicher);
   budget.verbraucht += await gegenlesen(kandidaten, env, Math.min(GEGENPROBE_MAX, budget.rest));
 
   /*
@@ -346,9 +414,40 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
    * Durchlauf kommt deshalb ein Teil des Bestands dazu, die gewichtigsten
    * zuerst. Nach einigen Stunden ist alles einmal durch.
    */
-  const nachzuholen = items.filter(brauchtPruefung);
-  const frei = Math.min(NACHZIEHEN_MAX, KI_ANFRAGEN_MAX - budget.verbraucht);
-  if (nachzuholen.length) budget.verbraucht += await gegenlesen(nachzuholen, env, frei);
+  const seitNachlauf = Date.now() - new Date(speicher.letzterNachlauf || 0).getTime();
+  if (seitNachlauf > NACHZIEHEN_ABSTAND_MS) {
+    const nachzuholen = items.filter(brauchtPruefung);
+    const frei = Math.min(NACHZIEHEN_MAX, KI_ANFRAGEN_MAX - budget.verbraucht);
+    if (nachzuholen.length && frei > 0) {
+      budget.verbraucht += await gegenlesen(nachzuholen, env, frei);
+      speicher.letzterNachlauf = new Date().toISOString();
+    }
+  }
+
+  /*
+   * Frische Urteile in ihren Speicher nachtragen.
+   *
+   * Nur ergaenzen, nie ersetzen: Selbst wenn der gelesene Stand veraltet war,
+   * geht dadurch nichts verloren, was ein anderer Durchlauf schon eingetragen
+   * hat - schlimmstenfalls fehlen die Eintraege der letzten Minute und werden
+   * beim naechsten Mal erneut geholt.
+   */
+  let neueUrteile = 0;
+  for (const n of items) {
+    if (!n.ki?.inhalt || speicher.urteile[n.id]?.ki?.inhalt) continue;
+    speicher.urteile[n.id] = urteilAuslesen(n);
+    neueUrteile++;
+  }
+
+  if (neueUrteile || budget.verbraucht !== (speicher.anfragen || 0)) {
+    const ids = Object.keys(speicher.urteile);
+    for (const alt of ids.slice(0, Math.max(0, ids.length - URTEILE_MAX))) {
+      delete speicher.urteile[alt];
+    }
+    speicher.tag = budget.tag;
+    speicher.anfragen = budget.verbraucht;
+    await schreiben(env, ctx, URTEILE_KEY, speicher, BESTAND_TTL);
+  }
 
   const versand = bestand
     ? await pushen(env, ctx, kandidaten)
@@ -367,8 +466,6 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
     errors: teil.errors,
     items,
     gesehen: gedaechtnis,
-    kiTag: budget.tag,
-    kiAnfragen: budget.verbraucht,
   };
   await schreiben(env, ctx, KEY, data, BESTAND_TTL);
   ctx.waitUntil(wochenbuchPflegen(env, ctx, items));
@@ -616,6 +713,7 @@ export default {
       const bestand = await lesen(env, KEY);
       const abo = await lesen(env, ABO_KEY);
       const buch = await lesen(env, WOCHE_KEY);
+      const urteilSpeicher = await lesen(env, URTEILE_KEY);
       return json({
         ok: true,
         zeit: new Date().toISOString(),
@@ -633,7 +731,9 @@ export default {
           ? `${bestand.items.filter((n) => n.ki).length} von ${bestand.items.length}`
           : '0',
         berichtigt: bestand?.items?.filter((n) => n.kiKorrigiert).length ?? 0,
-        kiBudget: `${budgetRest(bestand).verbraucht} von ${KI_ANFRAGEN_MAX} Anfragen heute`,
+        kiBudget: `${budgetRest(urteilSpeicher).verbraucht} von ${KI_ANFRAGEN_MAX} Anfragen heute`,
+        urteile: Object.keys(urteilSpeicher?.urteile || {}).length,
+        letzterNachlauf: urteilSpeicher?.letzterNachlauf ?? 'noch keiner',
         letzteTicks: (await lesen(env, TICKS_KEY).catch(() => null))
           ?.map((t) => `${t.zeit.slice(11, 19)} ${t.quelle} | Budget ${t.budget ?? '?'}`
             + ` | ${t.meldungen ?? '?'} Meldungen | ${t.offen ?? '?'} offen`) ?? [],
@@ -668,7 +768,7 @@ export default {
      */
     if (url.pathname === '/tick') {
       const bestand = await lesen(env, KEY);
-      const vorher = budgetRest(bestand).verbraucht;
+      const vorher = budgetRest(await lesen(env, URTEILE_KEY)).verbraucht;
       const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
       const { data, neue, versand } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
 
@@ -687,7 +787,7 @@ export default {
             quelle: kennung,
             gruppe,
             meldungen: data.count,
-            budget: `${vorher}->${data.kiAnfragen}`,
+            budget: `${vorher}->${budgetRest(await lesen(env, URTEILE_KEY)).verbraucht}`,
             offen: data.items.filter((n) => n.impactLevel !== 'ignore' && !n.ki?.inhalt).length,
           }, ...bisher].slice(0, TICKS_MAX), BESTAND_TTL);
         } catch { /* Nebensache */ }
@@ -852,6 +952,28 @@ export default {
         return json(deutung || { fehler: 'keine Antwort' }, deutung?.fehler ? 502 : 200);
       } catch (err) {
         return json({ fehler: err.message }, 400);
+      }
+    }
+
+    /**
+     * Freie Frage zu einer Meldung, auf Abruf aus der App.
+     *
+     * Anders als die Zweitmeinung laeuft das nie von selbst - es kostet nur
+     * etwas, wenn jemand tatsaechlich fragt. Deshalb zaehlt es auch nicht
+     * gegen das Tagesbudget des Nachlaufs, das den Bestand durchsieht.
+     */
+    if (url.pathname === '/frage' && request.method === 'POST') {
+      if (!env.GROQ_KEY) return json({ fehler: 'kein Schluessel hinterlegt' }, 501);
+      try {
+        const { titel, text, frage, sprache } = await request.json();
+        if (!titel) return json({ fehler: 'keine Meldung' }, 400);
+        if (!frage?.trim()) return json({ fehler: 'keine Frage' }, 400);
+
+        const ergebnis = await fragen(titel, text, frage, env,
+          sprache === 'en' ? 'en' : 'de');
+        return json(ergebnis, ergebnis.fehler ? 502 : 200);
+      } catch (err) {
+        return json({ fehler: err.message.slice(0, 200) }, 400);
       }
     }
 
