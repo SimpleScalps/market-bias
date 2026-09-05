@@ -1,31 +1,31 @@
 {
- "updated": "2026-09-05T15:45:27.715Z",
+ "updated": "2026-09-05T15:52:46.571Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-05T15:45:27.751Z",
+   "stand": "2026-09-05T15:52:46.599Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
-     "score": -0.0629,
+     "score": -0.0635,
      "bull": 3,
      "bear": 5,
      "neut": 83
     },
     "stocks": {
-     "score": -0.076,
+     "score": -0.0767,
      "bull": 2,
      "bear": 5,
      "neut": 84
     },
     "gold": {
-     "score": 0.0441,
+     "score": 0.0442,
      "bull": 6,
      "bear": 1,
      "neut": 84
     },
     "usd": {
-     "score": 0.0218,
+     "score": 0.0221,
      "bull": 3,
      "bear": 1,
      "neut": 87
@@ -60,7 +60,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 53
+     "priority": 52
     },
     {
      "id": "Cointelegraph:Bitcoin ETF inflows hit $3.8B in strongest three-week stretch of 2026",
@@ -120,7 +120,7 @@
       "gold": 0.32,
       "usd": -0.4
      },
-     "priority": 40
+     "priority": 39
     },
     {
      "id": "Al Jazeera:US imposes sanctions on Turkish bank, prompting legal threat",
@@ -156,7 +156,7 @@
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-05T15:45:27.760Z",
+   "stand": "2026-09-05T15:52:46.606Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
