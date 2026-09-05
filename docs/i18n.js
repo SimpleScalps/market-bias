@@ -33,7 +33,7 @@ window.I18N = {
     zustandLaeuft: 'wird abgerufen …',
     zustandOhneWorker: 'Braucht die Live-Quelle oben.',
     zustandFehler: 'Worker antwortet nicht',
-    zSpeichern: 'Speichern', zSchreib: 'Gelungen gespeichert',
+    zSpeichern: 'Speichern', zSchreib: 'Ablagen heute (alle)',
     zTakt: 'Taktgeber', zTaktKeiner: 'seit dem letzten Speichern keiner erfasst',
     zVorMin: (m) => (m < 1 ? 'gerade eben' : m < 90 ? `vor ${Math.round(m)} Min` : `vor ${Math.round(m / 60)} Std`),
     zSchreibHinweis: 'Gezählt werden nur gelungene Schreibvorgänge — der Zähler liegt selbst '
@@ -153,7 +153,7 @@ window.I18N = {
     zustandLaeuft: 'checking …',
     zustandOhneWorker: 'Requires the live source above.',
     zustandFehler: 'Worker not responding',
-    zSpeichern: 'Storage', zSchreib: 'Writes that succeeded',
+    zSpeichern: 'Storage', zSchreib: 'Writes today (all)',
     zTakt: 'Scheduler', zTaktKeiner: 'none recorded since the last save',
     zVorMin: (m) => (m < 1 ? 'just now' : m < 90 ? `${Math.round(m)} min ago` : `${Math.round(m / 60)} h ago`),
     zSchreibHinweis: 'Only successful writes are counted — the counter lives in storage itself. '

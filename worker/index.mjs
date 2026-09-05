@@ -326,6 +326,35 @@ async function lesen(env, key) {
  * der Cron-Takt, sonst verschwindet der Bestand in ruhigen Phasen und der
  * naechste Lauf haelt jede Meldung fuer neu.
  */
+/*
+ * Zaehlwerk fuer die Ablage.
+ *
+ * `offen` sammelt, was seit dem letzten Sichern des Bestands geschrieben wurde
+ * - Urteile, Wochenbuch, Uebersetzungen, das Abo. Beim naechsten Sichern
+ * wandert die Summe in den Bestand und faengt von vorn an. Weil ein Durchgang
+ * seine Schreibvorgaenge alle im selben Isolat erledigt und mit dem Bestand
+ * abschliesst, geht dabei nichts verloren.
+ *
+ * Vorher zaehlte nur der Bestand selbst. Die Zahl war damit systematisch zu
+ * niedrig, und gerade dann irrefuehrend, wenn es darauf ankommt: Wer prueft,
+ * ob er an die tausend stoesst, will alle sehen.
+ */
+let offeneSchreibungen = 0;
+
+/*
+ * Wer zuletzt getickt hat - im Arbeitsspeicher gefuehrt.
+ *
+ * Der Vermerk gehoert an den Tick, nicht an das Speichern. Sonst erscheint
+ * eine Quelle nur, wenn ihr Durchgang zufaellig etwas zu sichern hatte:
+ * cron-job.org lief im Minutentakt und tauchte trotzdem nie auf, weil der
+ * Herzschlag jeweils schon von einem anderen Taktgeber erledigt war.
+ *
+ * Beim naechsten Sichern wird diese Sammlung in den Bestand gemischt, nie
+ * ersetzt - so ergaenzen sich die Isolate gegenseitig.
+ */
+let taktVermerk = {};
+let letzterAblageFehler = null;
+
 async function schreiben(env, ctx, key, data, ttl = 86400) {
   if (env.STORE) {
     /*
@@ -340,9 +369,11 @@ async function schreiben(env, ctx, key, data, ttl = 86400) {
      */
     try {
       await env.STORE.put(key, JSON.stringify(data), { expirationTtl: ttl });
+      offeneSchreibungen++;
       return true;
     } catch (err) {
       console.log('KV put fehlgeschlagen:', err.message);
+      letzterAblageFehler = { zeit: new Date().toISOString(), fehler: err.message.slice(0, 120) };
       return false;
     }
   }
@@ -535,12 +566,6 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     }
     speicher.tag = budget.tag;
     speicher.tokens = budget.verbraucht;
-    // Das Tickprotokoll faehrt hier mit, statt einen eigenen Eintrag zu kosten.
-    speicher.ticks = { ...(speicher.ticks || {}), [quelle]: {
-      zeit: new Date().toISOString(),
-      meldungen: items.length,
-      offen: items.filter(brauchtPruefung).length,
-    } };
     await schreiben(env, ctx, URTEILE_KEY, speicher, BESTAND_TTL);
   }
 
@@ -575,7 +600,37 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     items,
     gesehen: gedaechtnis,
     schreibTag: heute,
-    schreibungen: (zaehlerGilt ? bestand.schreibungen || 0 : 0) + 1,
+    // Alles seit dem letzten Sichern, plus dieses hier.
+    schreibungen: (zaehlerGilt ? bestand.schreibungen || 0 : 0) + offeneSchreibungen + 1,
+    /*
+     * Der Taktgeber gehoert hierher, nicht in den Urteilsspeicher.
+     * Dort wurde er nur alle zehn Minuten und nur bei frischen Urteilen
+     * erneuert - und stand deshalb stundenlang auf einem alten Eintrag,
+     * waehrend der Taktgeber laengst wieder lief.
+     */
+    ticks: (() => {
+      const zusammen = {
+        ...(bestand?.ticks || {}),
+        ...taktVermerk,
+        [quelle]: {
+          zeit: new Date().toISOString(),
+          meldungen: items.length,
+          offen: items.filter(brauchtPruefung).length,
+        },
+      };
+      /*
+       * Verstummte Taktgeber nach zwei Stunden vergessen.
+       *
+       * Sonst sammeln sich Eintraege aus frueheren Fassungen und einmaligen
+       * Aufrufen an, und die Liste wird laenger statt aussagekraeftiger. Wer
+       * zwei Stunden nichts von sich hoeren liess, ist kein Taktgeber mehr.
+       */
+      const grenze = Date.now() - 2 * 3600_000;
+      for (const [q, t] of Object.entries(zusammen)) {
+        if (new Date(t.zeit).getTime() < grenze) delete zusammen[q];
+      }
+      return zusammen;
+    })(),
   };
 
   /*
@@ -592,6 +647,8 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   const gesichert = mussSichern
     ? await schreiben(env, ctx, KEY, data, BESTAND_TTL)
     : false;
+  // Die Summe ist verbucht; das Zaehlwerk faengt von vorn an.
+  if (gesichert) offeneSchreibungen = 0;
 
   /*
    * Erst ablegen, dann benachrichtigen - nicht umgekehrt.
@@ -872,16 +929,22 @@ export default {
         ok: true,
         zeit: new Date().toISOString(),
         ablage: env.STORE ? 'kv' : 'cache',
-        // Ein Probeschreiben verraet, ob das Tageskontingent noch reicht.
-        ablageSchreibt: await (async () => {
-          try {
-            await env.STORE.put('https://market-bias.internal/probe',
-              String(Date.now()), { expirationTtl: 600 });
-            return 'ja';
-          } catch (err) {
-            return `NEIN - ${err.message.slice(0, 80)}`;
-          }
-        })(),
+        /*
+         * Kein Probeschreiben mehr.
+         *
+         * Es schrieb bei jedem Aufruf von /health einen eigenen Eintrag und
+         * verbrauchte damit genau das Kontingent, ueber das es Auskunft geben
+         * sollte - bei einer App, die regelmaessig nachfragt, ein spuerbarer
+         * Posten. Und es log: Es meldete "blockiert", waehrend der Bestand
+         * nachweislich weiter abgelegt wurde.
+         *
+         * Stattdessen zaehlt der letzte tatsaechliche Fehlschlag. Liegt keiner
+         * vor oder ist er alt, laeuft die Ablage.
+         */
+        ablageSchreibt: !letzterAblageFehler
+          || Date.now() - new Date(letzterAblageFehler.zeit).getTime() > 10 * 60_000
+          ? 'ja'
+          : `NEIN - ${letzterAblageFehler.fehler}`,
         zweitmeinung: env.GROQ_KEY ? 'eingerichtet' : 'kein Schluessel',
         uebersetzung: env.GROQ_KEY ? 'Groq'
           : (env.DEEPL_KEY ? 'DeepL' : 'MyMemory (ohne Schluessel)'),
@@ -892,9 +955,10 @@ export default {
         meldungen: bestand?.items?.length ?? 0,
         alterSekunden: Math.round(alterMs(bestand) / 1000),
         schreibvorgaenge: bestand?.schreibTag === new Date().toISOString().slice(0, 10)
-          ? `${bestand.schreibungen} gelungen (KV erlaubt 1.000 am Tag)`
+          ? `${bestand.schreibungen} von 1.000`
           : 'heute noch keiner',
         letzterTickFehler: letzterTickFehler ?? 'keiner seit dem Start',
+        letzterAblageFehler: letzterAblageFehler ?? 'keiner seit dem Start',
         geprueft: bestand?.items
           ? `${bestand.items.filter((n) => n.ki).length} von ${bestand.items.length}`
           : '0',
@@ -914,7 +978,7 @@ export default {
          * Zeile faellt ein stiller Taktgeber erst auf, wenn Meldungen
          * ausbleiben, und dann sucht man an der falschen Stelle.
          */
-        taktgeber: Object.entries(urteilSpeicher?.ticks || {})
+        taktgeber: Object.entries(bestand?.ticks || {})
           .map(([quelle, t]) => ({ quelle, zeit: t.zeit, meldungen: t.meldungen, offen: t.offen }))
           .sort((a, b) => (b.zeit || '').localeCompare(a.zeit || '')),
         // Ohne hinterlegtes Abo verschickt der Worker nichts. Zeigt nur, ob
@@ -967,6 +1031,8 @@ export default {
       const quelle = /cron-job\.org/i.test(roh) ? 'cron-job.org'
         : /github-action/i.test(roh) ? 'github-action'
         : (roh.match(/[A-Za-z][\w.-]{2,}/) || ['unbekannt'])[0].slice(0, 30);
+
+      taktVermerk[quelle] = { zeit: new Date().toISOString() };
 
       try {
         const bestand = await lesen(env, KEY);
@@ -1225,7 +1291,8 @@ export default {
     const bestand = await lesen(env, KEY);
     const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
 
-    const { versand } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
+    // Cloudflares eigener Zeitplan - in wrangler.toml unter [triggers].
+    const { versand } = await teilAbgleich(env, ctx, regime, bestand, gruppe, 'cloudflare-cron');
     if (versand?.fehler?.length) console.log('Versand fehlgeschlagen:', versand.fehler.join(' | '));
   },
 };
