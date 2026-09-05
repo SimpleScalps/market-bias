@@ -45,10 +45,27 @@ jobs:
       - name: Worker anstossen
         if: vars.WORKER_URL != ''
         continue-on-error: true
+        env:
+          WORKER_URL: ${{ vars.WORKER_URL }}
+          ZUGANG: ${{ secrets.ZUGANG }}
         run: |
-          echo "Rufe Worker auf: ${{ vars.WORKER_URL }}"
-          curl -sS -m 90 -H "x-zugang: ${{ secrets.ZUGANG }}" -w 'HTTP %{http_code} in %{time_total}s' "${{ vars.WORKER_URL }}/tick"
+          # Schraegstrich am Ende abschneiden: sonst entstuende //tick, und
+          # darauf antwortet der Worker mit der Meldungsliste statt zu ticken.
+          basis="${WORKER_URL%/}"
+          echo "Rufe Worker auf: $basis/tick"
+          antwort=$(curl -sS -m 90 -H "x-zugang: $ZUGANG" "$basis/tick")
+          echo "$antwort" | head -c 300
           echo
+          # Auf den Inhalt pruefen, nicht auf den Statuscode: Beide falschen
+          # Adressformen liefern ebenfalls 200, nur eben das Falsche.
+          case "$antwort" in
+            *'"ok":true'*)
+              echo "Tick bestaetigt." ;;
+            *'Zugangswort'*)
+              echo "::error::Zugangswort fehlt oder stimmt nicht - Secret ZUGANG pruefen." ;;
+            *)
+              echo "::error::Unerwartete Antwort. Steht in der Variablen WORKER_URL nur die nackte Adresse, ohne Schraegstrich und ohne ?zugang=?" ;;
+          esac
 
       - name: Änderungen committen
         run: |

@@ -562,6 +562,17 @@ export default {
     if (request.method === 'OPTIONS') return new Response(null, { headers: CORS });
 
     const url = new URL(request.url);
+
+    /*
+     * Doppelte Schraegstriche zusammenziehen.
+     *
+     * Traegt die hinterlegte Worker-Adresse einen Schraegstrich am Ende, wird
+     * daraus //tick. Das traf auf keinen der Wege zu und fiel still auf die
+     * Meldungsliste durch - mit HTTP 200, im Protokoll also nicht von einem
+     * Erfolg zu unterscheiden. Der Bestand waere unbemerkt eingefroren.
+     */
+    url.pathname = url.pathname.replace(/\/{2,}/g, '/');
+
     const regime = env.REGIME || 'policy';
 
     if (!zugangGeprueft(request, url, env)) {
