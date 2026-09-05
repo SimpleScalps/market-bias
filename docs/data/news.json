@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-05T15:52:46.571Z",
+ "updated": "2026-09-05T15:55:23.761Z",
  "regime": "policy",
- "count": 143,
+ "count": 112,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
@@ -1075,6 +1075,40 @@
    "titleDe": "Fake-Job-Recruiter werden immer schlauer, wenn es darum geht, Arbeitssuchende zu betrügen. KI macht es noch schlimmer."
   },
   {
+   "id": "U.Today:Robinhood Chain Hits Record $3.7 Billion in 24-Hour DEX Volume",
+   "title": "Robinhood Chain Hits Record $3.7 Billion in 24-Hour DEX Volume",
+   "text": "Robinhood Chain has unlocked a new level in its 24-hour DEX volume, as activity across its DeFi market continues to grow and adoption intensifies.",
+   "source": "U.Today",
+   "url": "https://u.today/robinhood-chain-hits-record-37-billion-in-24-hour-dex-volume",
+   "date": "2026-09-05T12:54:39.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 27,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Robinhood-Kette erreicht Rekordvolumen von 3,7 Milliarden $ im 24-Stunden-Dex-Volumen"
+  },
+  {
    "id": "Al Jazeera:At least four civilians killed in Houthi missile strike near Yemen’s Taiz",
    "title": "At least four civilians killed in Houthi missile strike near Yemen’s Taiz",
    "text": "The attack on a crowded road comes amid fierce clashes across Taiz and Hodeidah and rapid civilian displacement.",
@@ -1366,74 +1400,6 @@
    "titleDe": "Von „Mystery-Urlauben“ bis hin zu Hostels - preisbewusste Reisende werden bei steigenden Preisen sparsam"
   },
   {
-   "id": "Al Jazeera:Costa Rica’s president says US ground forces would boost national security",
-   "title": "Costa Rica’s president says US ground forces would boost national security",
-   "text": "Costa Rican President Laura Fernandez said US ground operations could boost national security.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/costa-ricas-president-says-us-ground-forces-would-boost-national-security?traffic_source=rss",
-   "date": "2026-09-05T12:09:56.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 39,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Costa Ricas Präsident sagt, US-Bodentruppen würden die nationale Sicherheit stärken"
-  },
-  {
-   "id": "Al Jazeera:Israel must protect West Bank’s Palestinians amid settler pogroms: US envoy",
-   "title": "Israel must protect West Bank’s Palestinians amid settler pogroms: US envoy",
-   "text": "Huckabee labels some of the settlers committing violence as 'terrorists' though analysts say his visit is 'symbolic'.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/5/israel-must-guarantee-safety-of-west-bank-population-ambassador?traffic_source=rss",
-   "date": "2026-09-05T12:04:52.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 56,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Israel muss die Palästinenser im Westjordanland angesichts von Siedlergewalttaten schützen: US-Botschafter"
-  },
-  {
    "id": "U.Today:XRP Ledger CTO Calls Attention to Amendment Uptick as XRPL Unveils New Tool",
    "title": "XRP Ledger CTO Calls Attention to Amendment Uptick as XRPL Unveils New Tool",
    "text": "XRP Ledger foundation CTO reveals surprising effect after amendment board goes live.",
@@ -1599,7 +1565,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1650,74 +1616,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Der 18-jährige Wohnungsmarktzyklus sagt, dass der nächste Marktcrash nahe ist"
-  },
-  {
-   "id": "Al Jazeera:Pickleball and dining: Why courts are the new food destinations",
-   "title": "Pickleball and dining: Why courts are the new food destinations",
-   "text": "The fastest-growing sport in the US is the 'eatertainment' trend’s new darling. How long will it last?",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/features/longform/2026/9/5/pickleball-and-dining-why-courts-are-the-new-food-destinations?traffic_source=rss",
-   "date": "2026-09-05T11:48:16.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 25,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Pickleball und Dining: Warum Gerichte die neuen Food-Destinationen sind"
-  },
-  {
-   "id": "Al Jazeera:LIVE: India vs Pakistan – Women’s T20 Asia Cup",
-   "title": "LIVE: India vs Pakistan – Women’s T20 Asia Cup",
-   "text": "Follow the updates from our live build-up to our text commentary stream coverage of the Group A match in Dubai.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/sports/liveblog/2026/9/5/live-india-vs-pakistan-womens-t20-asia-cup?traffic_source=rss",
-   "date": "2026-09-05T11:32:07.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 25,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "LIVE: Indien vs Pakistan – T20 Asia Cup der Frauen"
   },
   {
    "id": "U.Today:Ripple's CEO Not Surprised at XRP Ledger's BIS Testing",
@@ -1858,40 +1756,6 @@
    "titleDe": "SEC Crypto Custody Rewrite tritt in die Überprüfung des Weißen Hauses ein"
   },
   {
-   "id": "Al Jazeera:Mudslide in eastern China kills one, leaves 11 missing",
-   "title": "Mudslide in eastern China kills one, leaves 11 missing",
-   "text": "A mudslide triggered by days of heavy rain in Jiangxi province, China, has killed one person and left 11 missing.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/mudslide-in-eastern-china-kills-one-leaves-11-missing?traffic_source=rss",
-   "date": "2026-09-05T10:49:23.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 54,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Schlammlawine in Ostchina tötet einen, 11 fehlen"
-  },
-  {
    "id": "Cointelegraph:Poland upholds crypto bill veto as Zondacrypto scandal widens",
    "title": "Poland upholds crypto bill veto as Zondacrypto scandal widens",
    "text": "Polish lawmakers failed to overturn a presidential veto of crypto legislation as the Zondacrypto investigation expands and its Estonian operator enters bankruptcy.",
@@ -1996,180 +1860,6 @@
    "titleDe": "Shiba Inu: Shytoshi Kusama macht 'Close' X Location Update, immer noch still"
   },
   {
-   "id": "Al Jazeera:At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow",
-   "title": "At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow",
-   "text": "Ukraine and Russia announce a three-day limited ceasefire as Steve Witkoff and Jared Kushner visit Moscow and Kyiv.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/5/at-least-5-killed-in-russian-attacks-on-ukraine-as-us-envoys-visit-moscow?traffic_source=rss",
-   "date": "2026-09-05T10:27:23.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Angriff"
-   ],
-   "scores": {
-    "crypto": -0.405,
-    "stocks": -0.405,
-    "gold": 0.203,
-    "usd": 0.135
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Angriff)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 86,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Mindestens 5 Tote bei russischen Angriffen auf die Ukraine, während US-Gesandte Moskau besuchen"
-  },
-  {
-   "id": "Al Jazeera:Why is Trump threatening to strike Iran’s Pickaxe Mountain again, now?",
-   "title": "Why is Trump threatening to strike Iran’s Pickaxe Mountain again, now?",
-   "text": "As oil tanker struck off Kharg island, Trump threatens one of the remaining parts of Iran’s nuclear complex.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/5/why-is-trump-threatening-to-strike-irans-pickaxe-mountain-again-now?traffic_source=rss",
-   "date": "2026-09-05T09:56:53.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 79,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Warum droht Trump erneut, den Pickaxe Mountain im Iran anzugreifen?"
-  },
-  {
-   "id": "Al Jazeera:US ambassador to Israel meets Palestinian-Americans in occupied West Bank",
-   "title": "US ambassador to Israel meets Palestinian-Americans in occupied West Bank",
-   "text": "US Ambassador to Israel Mike Huckabee has visited Turmus Ayya in the occupied West Bank.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/us-ambassador-to-israel-meets-palestinian-americans-in-occupied-west-bank?traffic_source=rss",
-   "date": "2026-09-05T09:52:44.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 52,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Botschafter in Israel trifft palästinensisch-amerikanische Gemeinschaft im besetzten Westjordanland"
-  },
-  {
-   "id": "Al Jazeera:Qatar removed from Fitch’s negative watch list as risks to LNG sites ease",
-   "title": "Qatar removed from Fitch’s negative watch list as risks to LNG sites ease",
-   "text": "The global ratings agency has also maintained the country’s sovereign rating at AA.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/economy/2026/9/5/fitch-removes-qatar-from-rating-watch-as-lng-risks-ease?traffic_source=rss",
-   "date": "2026-09-05T09:48:48.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 22,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Katar wurde von der negativen Beobachtungsliste von Fitch gestrichen, da sich die Risiken für LNG-Standorte verringern"
-  },
-  {
-   "id": "Al Jazeera:Fenerbahce’s Greenwood, Guendouzi handed fines and bans after brawl at Lyon",
-   "title": "Fenerbahce’s Greenwood, Guendouzi handed fines and bans after brawl at Lyon",
-   "text": "Fights between players and coaching staff broke out after the Turkish side won the Champions League playoff second leg.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/sports/2026/9/5/fenerbahces-greenwood-guendouzi-handed-fines-and-bans-after-brawl-at-lyon?traffic_source=rss",
-   "date": "2026-09-05T09:44:45.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 22,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Fenerbahces Greenwood, Guendouzi, verhängte nach der Schlägerei in Lyon Geldstrafen und Verbote"
-  },
-  {
    "id": "BeInCrypto:Ripple CEO Slams $11 Billion Gold Move: Can Crypto Do Better?",
    "title": "Ripple CEO Slams $11 Billion Gold Move: Can Crypto Do Better?",
    "text": "Ripple CEO Brad Garlinghouse says an $11 billion gold move shows banks still shift value like it is 1940.",
@@ -2272,108 +1962,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Wie hätte sich der Fall von Lindsay Clancy in einem anderen Land entwickelt?"
-  },
-  {
-   "id": "Al Jazeera:Oil and politics: What Trump’s ‘historic’ deal means for Venezuela",
-   "title": "Oil and politics: What Trump’s ‘historic’ deal means for Venezuela",
-   "text": "Venezuelans are hoping for free and fair elections, but the US may prioritise oil production.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/features/2026/9/5/oil-and-politics-what-trumps-historic-deal-means-for?traffic_source=rss",
-   "date": "2026-09-05T09:11:58.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 21,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Öl und Politik: Was Trumps „historisches“ Abkommen für Venezuela bedeutet"
-  },
-  {
-   "id": "Al Jazeera:Orangutan mother and infant rescued from wildfire-hit forest in Indonesia",
-   "title": "Orangutan mother and infant rescued from wildfire-hit forest in Indonesia",
-   "text": "A mother orangutan and her infant have been rescued from a shrinking patch of forest threatened by wildfires.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/orangutan-mother-and-infant-rescued-from-wildfire-hit-forest-in-indonesia?traffic_source=rss",
-   "date": "2026-09-05T08:44:40.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 21,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Orang-Utan-Mutter und -Junges aus dem von Waldbrand verwüsteten Wald in Indonesien gerettet"
-  },
-  {
-   "id": "Al Jazeera:Mansour Abbas is betting on a Zionist to make Palestinian votes count",
-   "title": "Mansour Abbas is betting on a Zionist to make Palestinian votes count",
-   "text": "By allying with Segalovich in the Israeli vote, Abbas is hoping for greater acceptance in Israeli coalition politics.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/opinions/2026/9/5/mansour-abbas-is-betting-on-a-zionist-to-make-arab-votes-count?traffic_source=rss",
-   "date": "2026-09-05T08:40:53.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 20,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Mansour Abbas setzt darauf, dass ein Zionist die palästinensischen Stimmen zählen lässt"
   },
   {
    "id": "Cointelegraph:Bitcoin ETF inflows hit $3.8B in strongest three-week stretch of 2026",
@@ -2873,108 +2461,6 @@
    "titleDe": "Robinhood Chain bringt Arbitrum-Token zurück aus dem Grab. ARB steigt um 90%"
   },
   {
-   "id": "BBC World:Why are European countries moving their gold out of North America?",
-   "title": "Why are European countries moving their gold out of North America?",
-   "text": "The Netherlands has relocated 86 tonnes of the shiny stuff - what's going on?",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/cvgyn8q8gqxo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-05T01:42:09.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 9,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Warum verlagern europäische Länder ihr Gold aus Nordamerika?"
-  },
-  {
-   "id": "BBC World:How the Lindsay Clancy trial gripped America - and ultimately fell apart",
-   "title": "How the Lindsay Clancy trial gripped America - and ultimately fell apart",
-   "text": "A Massachusetts judge has declared a mistrial in the murder case against the US mother after jurors were unable to reach a unanimous verdict.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/videos/cr7dzr2e789o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-05T01:26:29.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 9,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Wie der Prozess gegen Lindsay Clancy Amerika fesselte – und schließlich zerfiel"
-  },
-  {
-   "id": "BBC World:Flock says its cameras make US safer - so why are they being sabotaged?",
-   "title": "Flock says its cameras make US safer - so why are they being sabotaged?",
-   "text": "The AI-powered cameras have been vandalised across the US, as citizens object to the growing surveillance network.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/cew9kz1kxpvo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-05T01:16:27.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 22,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Flock sagt, seine Kameras machen die USA sicherer – warum werden sie dann sabotiert?"
-  },
-  {
    "id": "BeInCrypto:Zcash Hits $1,000 for the First Time in a Decade. How Far Can It Go?",
    "title": "Zcash Hits $1,000 for the First Time in a Decade. How Far Can It Go?",
    "text": "Zcash is seemingly winning this bullish cycle in the crypto market. ZEC is up nearly 100% over the past month, crossing $1,000 for the first time in almost a decade. ZEC briefly climbed above $1,045 on Friday. The move pushed its market value to roughly $17 billion and brought the privacy coin back to four",
@@ -2996,7 +2482,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 9,
+   "priority": 8,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3045,40 +2531,6 @@
    "titleDe": "Binance Coin (BNB), Uniswap (Uni), Gram (GRAMM) und ChainLink (LINK) Preisanalyse für den 5. September: Die Memecoin- und Altcoin-Saison ist da"
   },
   {
-   "id": "BBC World:Germany's far-right AfD bids for first taste of power in eastern vote",
-   "title": "Germany's far-right AfD bids for first taste of power in eastern vote",
-   "text": "If it wins an outright majority in Saxony-Anhalt, it would be the first time a far-right party has held state-level power in Germany since World War Two.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/cvgypkzgy4wo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-04T23:07:23.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Deutschlands rechtsextreme AfD bewirbt sich um den ersten Vorgeschmack auf die Macht bei der Ostwahl"
-  },
-  {
    "id": "FXStreet:Malaysian Ringgit: Range-bound risks and key levels against US Dollar – OCBC",
    "title": "Malaysian Ringgit: Range-bound risks and key levels against US Dollar – OCBC",
    "text": "OCBC’s Christopher Wong notes that Bank Negara Malaysia (BNM) kept the OPR at 2.75% and struck a slightly firmer tone, with growth expected to stay resilient into 2027. The economist still projects an OPR normalisation to 3.00% in January 2027.",
@@ -3111,40 +2563,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Malaysian Ringgit: Range-bound risks and key levels against US Dollar – OCBC"
-  },
-  {
-   "id": "BBC World:Mistrial declared in Lindsay Clancy murder case, after jury deadlocks",
-   "title": "Mistrial declared in Lindsay Clancy murder case, after jury deadlocks",
-   "text": "The mistrial now puts the murder case - and Clancy's future - in limbo as to whether she will be held criminally liable in the deaths of her three kids.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/cpwlrj2je1po?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-04T22:48:38.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Mistrial im Mordfall Lindsay Clancy erklärt, nachdem die Geschworenen festgefahren waren"
   },
   {
    "id": "BBC World:Nepal bet nearly everything on hydropower - the floods show why that's a problem",
@@ -3637,9 +3055,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Teslas Aktie sinkt um 6 %, da das Cybercab-Update die Wall Street „unterfordert“"
   },
   {
@@ -3675,40 +3091,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Chinesischer Yuan: Services PMI Rebound hält PBoC zurück – Commerzbank"
-  },
-  {
-   "id": "CNBC:Trump says he will spend up to $500 million of 'my money' to help Republicans in midterms",
-   "title": "Trump says he will spend up to $500 million of 'my money' to help Republicans in midterms",
-   "text": "Trump's pledge would dramatically increase MAGA Inc.’s spending after the Trump-aligned PAC kept most of its $403 million war chest on the sidelines.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/04/trump-maga-inc-500-million-republicans-midterm-elections.html",
-   "date": "2026-09-04T19:57:35.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Trump sagt, er werde bis zu 500 Millionen $ von \"meinem Geld\" ausgeben, um Republikanern in der Zwischenzeit zu helfen"
   },
   {
    "id": "FXStreet:Sterling’s rally stalls as US jobs data reopens Fed debate",
@@ -3892,6 +3274,40 @@
    "titleDe": "Pineapple Financial legt $ 1B in Hypothekenaufzeichnungen auf Injective"
   },
   {
+   "id": "Cointelegraph:FinCEN ties $13B in crypto scams to non-US operations",
+   "title": "FinCEN ties $13B in crypto scams to non-US operations",
+   "text": "The agency reported that “transnational criminal organizations” based in compounds in Southeast Asia were largely behind digital asset scams targeting US residents.",
+   "source": "Cointelegraph",
+   "url": "https://cointelegraph.com/news/fincen-crypto-overseas-scam-centers-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "date": "2026-09-04T19:22:26.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 26,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "FinCEN bindet $ 13B in Krypto-Betrügereien an Nicht-US-Operationen"
+  },
+  {
    "id": "CNBC World:Trump doubles down on threat to halt trade with top partners unless Fed cuts rates",
    "title": "Trump doubles down on threat to halt trade with top partners unless Fed cuts rates",
    "text": "President Donald Trump demanded that the Fed slash interest rates or else he will cut off trade with countries with which the U.S. maintains trade deficits.",
@@ -3927,9 +3343,7 @@
    "eventTypeEn": "Partnership",
    "scope": "project",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Trump verdoppelt Drohung, Handel mit wichtigsten Partnern zu stoppen, wenn die Fed die Zinsen nicht senkt"
   },
   {
@@ -3965,44 +3379,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Krypto-Händler koppeln Meme-Münzen mit Aktien auf Robinhood - und es funktioniert (irgendwie)"
-  },
-  {
-   "id": "CNBC:What strong jobs data means for rates — plus, an out-of-favor trade shines this week",
-   "title": "What strong jobs data means for rates — plus, an out-of-favor trade shines this week",
-   "text": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/04/what-strong-jobs-data-means-for-rates-plus-an-out-of-favor-trade-shines-this-week.html",
-   "date": "2026-09-04T18:51:01.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0.6,
-   "signals": [
-    "starker Arbeitsmarkt"
-   ],
-   "scores": {
-    "crypto": -0.6,
-    "stocks": -0.51,
-    "gold": -0.48,
-    "usd": 0.6
-   },
-   "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: starker Arbeitsmarkt)",
-   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: strong labour market)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 16,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Was starke Jobdaten für die Raten bedeuten — und diese Woche glänzt ein unbeliebtes Geschäft"
   },
   {
    "id": "FXStreet:Eurozone: Inflation above target into 2027 – Nordea",
@@ -4069,9 +3445,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Die langjährige Moderatorin von Fox News, Maria Bartiromo, bestreitet Berichte über die Kündigung"
   },
   {
@@ -4107,40 +3481,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Präsident Trump sagt, er möchte, dass Hyperliquid in die USA kommt — so könnte es passieren"
-  },
-  {
-   "id": "CNBC:WNBA Commissioner Cathy Engelbert to retire at the end of 2026",
-   "title": "WNBA Commissioner Cathy Engelbert to retire at the end of 2026",
-   "text": "Engelbert oversaw a period of unprecedented growth for the WNBA, but has faced criticism from players over her leadership.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/04/wbna-commissioner-cathy-engelbert-to-retire-at-the-end-of-2026-.html",
-   "date": "2026-09-04T18:32:55.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "WNBA-Kommissarin Cathy Engelbert geht Ende 2026 in den Ruhestand"
   },
   {
    "id": "Cointelegraph:Here’s what happened in crypto today",
@@ -4207,9 +3547,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Auf Frauen entfielen im August fast alle Stellenzuwächse. Hier ist, warum"
   },
   {
@@ -4285,112 +3623,6 @@
    "titleDe": "Türkei: CBRT wird wahrscheinlich vor zwei Zinssenkungen im vierten Quartal gehalten - ING"
   },
   {
-   "id": "FXStreet:Australian Dollar resumes advance as US Dollar loses post-NFP momentum",
-   "title": "Australian Dollar resumes advance as US Dollar loses post-NFP momentum",
-   "text": "AUD/USD resumes its advance on Friday after a brief bout of weakness following a stronger-than-expected United States (US) employment report.",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/australian-dollar-resumes-advance-as-us-dollar-loses-post-nfp-momentum-202609041810",
-   "date": "2026-09-04T18:10:40.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 19,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Der australische Dollar nimmt seinen Vormarsch wieder auf, da der US-Dollar nach dem NFP an Dynamik verliert"
-  },
-  {
-   "id": "FXStreet:Gold falls as traders increase Fed hawkish bets after stellar NFP",
-   "title": "Gold falls as traders increase Fed hawkish bets after stellar NFP",
-   "text": "Gold (XAU/USD) price retreats by about 0.80% on Friday, after registering losses of over 2% following the release of an upbeat US jobs report.",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/gold-falls-as-traders-increase-fed-hawkish-bets-after-stellar-nfp-202609041808",
-   "date": "2026-09-04T18:08:17.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0.6,
-   "signals": [
-    "hawkisch"
-   ],
-   "scores": {
-    "crypto": -0.6,
-    "stocks": -0.51,
-    "gold": -0.48,
-    "usd": 0.6
-   },
-   "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: hawkisch)",
-   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: hawkish)",
-   "category": "fed",
-   "categoryLabel": "Notenbank",
-   "priority": 56,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Notenbank",
-   "eventTypeEn": "Central bank",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Gold fällt, da Händler stärker auf eine straffere Fed-Politik setzen nach hervorragenden NFP"
-  },
-  {
-   "id": "CNBC:Analysis: Lower Treasury yields could require a weaker economy. Trump won't fix them",
-   "title": "Analysis: Lower Treasury yields could require a weaker economy. Trump won't fix them",
-   "text": "Long-term Treasury yields are being held up by Trump-era policy risk, heavy government borrowing and AI-driven corporate debt.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/04/treasury-bonds-yield-trump-ai-mortgage-rates-analysis.html",
-   "date": "2026-09-04T18:08:16.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "fed",
-   "categoryLabel": "Notenbank",
-   "priority": 46,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "medium",
-   "duration": "swing",
-   "eventType": "Notenbank",
-   "eventTypeEn": "Central bank",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Analyse: Niedrigere Treasury-Renditen könnten eine schwächere Wirtschaft erfordern. Trump wird sie nicht reparieren"
-  },
-  {
    "id": "CNBC World:White House has vetted candidates for key CFTC vacancies, sources tell CNBC. It's unclear if they will be filled",
    "title": "White House has vetted candidates for key CFTC vacancies, sources tell CNBC. It's unclear if they will be filled",
    "text": "Filling open commissioner positions at the regulatory agency has been a sticking point in negotiations over the Clarity Act.",
@@ -4421,150 +3653,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Das Weiße Haus hat Kandidaten für wichtige CFTC-Stellenangebote überprüft, so Quellen gegenüber CNBC. Es ist unklar, ob sie gefüllt werden"
-  },
-  {
-   "id": "FXStreet:Dow Jones Industrial Average falls on a jobs number the president loves",
-   "title": "Dow Jones Industrial Average falls on a jobs number the president loves",
-   "text": "The Dow Jones Industrial Average trades just short of 53,400, roughly 325 points or 0.6% lower on Friday, after August Nonfarm Payrolls (NFP) printed 162K against a 56K forecast at 12:30 GMT and pushed the probability of a September hike above 60%.",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/dow-jones-industrial-average-falls-on-a-jobs-number-the-president-loves-202609041736",
-   "date": "2026-09-04T17:36:34.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Der Dow Jones Industrial Average fällt auf eine Jobnummer, die der Präsident liebt"
-  },
-  {
-   "id": "CNBC:U.S. sanctions Turkish bank accused of enabling Iran as Bessent says he 'hopes for' no further bank penalties",
-   "title": "U.S. sanctions Turkish bank accused of enabling Iran as Bessent says he 'hopes for' no further bank penalties",
-   "text": "President Donald Trump hyped the sanctions plan as \"economic D-Day\" against Iran, but the U.S. has so far taken few steps to implement it.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/04/iran-turkey-sanctions-economy-bessent.html",
-   "date": "2026-09-04T17:34:08.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Handelskonflikt"
-   ],
-   "scores": {
-    "crypto": -0.405,
-    "stocks": -0.405,
-    "gold": 0.203,
-    "usd": 0.135
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Handelskonflikt)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 42,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Sanktionen Die türkische Bank wird beschuldigt, den Iran zu ermöglichen, da Bessent sagt, dass er auf keine weiteren Bankstrafen \"hofft\""
-  },
-  {
-   "id": "CNBC:Labor Day marks the start of 'fallcations' as wealthy travelers avoid summer crowds",
-   "title": "Labor Day marks the start of 'fallcations' as wealthy travelers avoid summer crowds",
-   "text": "Wealthy travelers are moving their typical summer getaways to autumn.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/04/fall-travel-wealthy-europe.html",
-   "date": "2026-09-04T17:31:44.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Der Tag der Arbeit markiert den Beginn der \"Fallkationen\", da wohlhabende Reisende die Sommermassen meiden"
-  },
-  {
-   "id": "BBC World:UN votes to adopt new world map to reflect Africa's true size",
-   "title": "UN votes to adopt new world map to reflect Africa's true size",
-   "text": "The Togo-sponsored resolution was backed by 164 nations - with the US as the only nation to vote against it.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/ce30vp55dnlo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-04T17:26:40.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 8,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Die Vereinten Nationen stimmen für die Annahme einer neuen Weltkarte, die die wahre Größe Afrikas widerspiegelt"
   },
   {
    "id": "Cointelegraph:Crypto Biz: AI took a back seat when Bitcoin started climbing",
@@ -4671,45 +3761,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC World",
-    "CNBC"
-   ],
-   "titleDe": "US-Gehaltslisten stiegen im August um 162.000, viel mehr als erwartet; Arbeitslosenquote bei 4,1%"
-  },
-  {
-   "id": "BBC World:Argentine couple to return Nazi-looted painting to rightful owner",
-   "title": "Argentine couple to return Nazi-looted painting to rightful owner",
-   "text": "The late-baroque Portrait of a Lady was lost for 80 years until it was spotted in photographs of a house for sale near Buenos Aires.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/cy0zxjp50j6o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-04T17:14:21.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
    "alsoIn": [],
-   "titleDe": "Argentinisches Ehepaar, um das von den Nazis geraubte Gemälde an den rechtmäßigen Eigentümer zurückzugeben"
+   "titleDe": "US-Gehaltslisten stiegen im August um 162.000, viel mehr als erwartet; Arbeitslosenquote bei 4,1%"
   },
   {
    "id": "Cointelegraph:QuFi launches post-quantum verification platform with Bitcoin testnet proof",
@@ -4820,40 +3873,6 @@
    "titleDe": "Zcash übersteigt 1.000 $, da die ETF-Zuflüsse ansteigen und sich die Miner häufen"
   },
   {
-   "id": "BBC World:Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
-   "title": "Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
-   "text": "Germany has blamed Russia for an attack on Leipzig airport but there has been a series of suspicious incidents elsewhere.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/c5y4g6meekro?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-04T16:49:15.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 36,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Europa wird von einer Sabotagekampagne heimgesucht - und Russland ist der Hauptverdächtige"
-  },
-  {
    "id": "U.Today:'We Stand Behind Stock Tokens': Robinhood CEO Backs $104 Million Ecosystem Amid Backlash",
    "title": "'We Stand Behind Stock Tokens': Robinhood CEO Backs $104 Million Ecosystem Amid Backlash",
    "text": "Robinhood's Vlad Tenev backs the $104 million \"stock token\" market, defying AMC's legal threats over on-chain trading.",
@@ -4888,42 +3907,6 @@
    "titleDe": "\"Wir stehen hinter Aktien-Token\": Robinhood-CEO unterstützt 104 Millionen $ Ökosystem inmitten von Gegenreaktionen"
   },
   {
-   "id": "U.Today:Ripple Lands Major XRP Sponsorship Deal With Florida Gators",
-   "title": "Ripple Lands Major XRP Sponsorship Deal With Florida Gators",
-   "text": "Ripple has landed a multi-year partnership with the University of Florida’s athletic department.",
-   "source": "U.Today",
-   "url": "https://u.today/ripple-lands-major-xrp-sponsorship-deal-with-florida-gators",
-   "date": "2026-09-04T16:29:03.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "XRP"
-   ],
-   "alsoIn": [],
-   "titleDe": "Ripple landet großen XRP-Sponsoring-Deal mit Florida Gators"
-  },
-  {
    "id": "Decrypt:Zcash Hits Highest Price in Nearly a Decade, Crushing Short Bets",
    "title": "Zcash Hits Highest Price in Nearly a Decade, Crushing Short Bets",
    "text": "The privacy coin's squeeze rode a Fed-driven crypto rally that reversed hours later, when a stronger-than-expected jobs report sent Bitcoin back under $80,000.",
@@ -4956,86 +3939,10 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Zcash erreicht den höchsten Preis seit fast einem Jahrzehnt, vernichtende Short-Wetten"
-  },
-  {
-   "id": "U.Today:Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
-   "title": "Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
-   "text": "Binance has listed twelve cryptocurrencies that it will remove from its crypto trading platform, specifically on Binance Alpha, later today.",
-   "source": "U.Today",
-   "url": "https://u.today/binance-delisting-alert-twelve-cryptocurrencies-face-exit",
-   "date": "2026-09-04T16:04:50.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Verbot/Delisting"
-   ],
-   "scores": {
-    "crypto": -0.65,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "why": "Direkt kryptonegative Nachricht. (Signale: Verbot/Delisting)",
-   "whyEn": "Directly crypto-negative news. (signals: ban or delisting)",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 36,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "high",
-   "duration": "intraday",
-   "eventType": "Listing",
-   "eventTypeEn": "Listing",
-   "scope": "coin",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Binance Delisting-Warnung: Zwölf Kryptowährungen stehen vor dem Ausstieg"
-  },
-  {
-   "id": "BBC World:Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
-   "title": "Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
-   "text": "The unmanned aerial vehicle struck without warning in the heart of the Ukrainian capital.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/c5yep7y48x2o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-04T16:02:32.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Militärschlag"
-   ],
-   "scores": {
-    "crypto": -0.45,
-    "stocks": -0.45,
-    "gold": 0.225,
-    "usd": 0.15
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Militärschlag)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 69,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Russland trifft ukrainisches Sicherheitshauptquartier bei Drohnenangriff, sagt Selenskyj"
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
