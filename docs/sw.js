@@ -1,5 +1,13 @@
 // Hülle offline verfügbar halten; die Nachrichten selbst kommen immer frisch.
-const CACHE = 'market-bias-v39';
+/*
+ * Der Name traegt bewusst keine Versionsnummer mehr.
+ *
+ * Er stand auf 'market-bias-v39', waehrend die Anwendung bei v44 war - eine
+ * Angabe, die niemand mitpflegt, sagt irgendwann das Gegenteil dessen, was
+ * gilt. Fuer die Aufraeumlogik unten genuegt ein fester Name; welche Fassung
+ * darin liegt, entscheidet ohnehin der Abruf.
+ */
+const CACHE = 'market-bias-huelle';
 const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'config.js', 'i18n.js', 'manifest.webmanifest', 'icon.png'];
 
 self.addEventListener('install', (e) => {
@@ -25,12 +33,24 @@ self.addEventListener('fetch', (e) => {
     );
     return;
   }
-  // Programmcode immer zuerst aus dem Netz holen. Sonst haelt der
-  // Zwischenspeicher nach einem Update die alte Fassung fest — auf dem iPhone
-  // hartnaeckig, weil eine installierte PWA selten vollstaendig neu startet.
+  /*
+   * Programmcode immer zuerst aus dem Netz - und zwar wirklich.
+   *
+   * "Netzwerk zuerst" allein genuegte nicht: fetch() benutzt darunter den
+   * HTTP-Zwischenspeicher des Browsers, und GitHub Pages setzt auf diese
+   * Dateien max-age=600. Nach einem Ausrollen lief deshalb bis zu zehn
+   * Minuten weiter die alte Fassung, ohne dass ein Neuladen etwas geaendert
+   * haette - Fehler wirkten dann als seien sie nicht behoben.
+   *
+   * 'no-cache' erzwingt eine Rueckfrage beim Server. Hat sich nichts
+   * geaendert, antwortet er mit 304 und schickt nichts weiter; das kostet
+   * fast nichts. Angefragt wird ueber die Adresse statt ueber die Anfrage
+   * selbst, weil eine Navigationsanfrage sich nicht mit anderen
+   * Zwischenspeicher-Vorgaben nachbilden laesst.
+   */
   if (/\.(js|mjs|css|html)$/.test(url.pathname) || url.pathname.endsWith('/')) {
     e.respondWith(
-      fetch(e.request)
+      fetch(url.href, { cache: 'no-cache', credentials: 'same-origin' })
         .then((r) => {
           const kopie = r.clone();
           caches.open(CACHE).then((c) => c.put(e.request, kopie));
