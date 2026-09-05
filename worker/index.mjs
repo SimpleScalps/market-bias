@@ -6,7 +6,7 @@ import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
 import { uebersetze } from '../docs/engine/translate.mjs';
 import { fortschreiben, TAGE_MAX } from '../docs/engine/wochenbuch.mjs';
 import { sendeAn } from './notify.mjs';
-import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, fragen } from './deuten.mjs';
+import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, fragen, kontingent } from './deuten.mjs';
 
 // Cloudflare Worker: holt die Quellen serverseitig (RSS-Feeds senden keine
 // CORS-Header, der Browser kann sie also nicht selbst laden), bewertet sie mit
@@ -31,11 +31,15 @@ const GESEHEN_MAX = 4000;   // Gedächtnis über die Sichtbarkeitsgrenze hinaus
  *
  * Die Anfragen laufen nebeneinander, also begrenzt die Zahl auch, wie viele
  * Token in dieselbe Minute fallen. Die kostenlose Stufe erlaubt 8.000; bei
- * 1.200 je Antwort sind fuenf sicher, acht waren es nicht - Groq antwortete
- * dann mit 429, und die ganze Runde war verschenkt. Ueber den Tag wacht
- * zusaetzlich KI_ANFRAGEN_MAX.
+ * rund 1.300 je Antwort sind drei unbedenklich.
+ *
+ * Warum nicht mehr: In derselben Minute kann jemand in der App auf
+ * "Nachfragen" tippen. Fuellt der Nachlauf das Minutenkontingent aus, bekommt
+ * der Nutzer eine Absage fuer etwas, das er selbst angestossen hat - das
+ * waere die falsche Reihenfolge. Der Nachlauf laeuft im Hintergrund und hat
+ * Zeit; er tritt zurueck. Ueber den Tag wacht zusaetzlich KI_TOKEN_MAX.
  */
-const GEGENPROBE_MAX = 5;
+const GEGENPROBE_MAX = 3;
 
 /*
  * Nachlauf: wie viel je Durchgang, und wie weit die Durchgaenge auseinander.
@@ -52,24 +56,25 @@ const GEGENPROBE_MAX = 5;
  * des letzten Durchgangs steht im Urteilsspeicher selbst - also in genau dem
  * Eintrag, den der Nachlauf ohnehin schreibt, und damit konsistent zu ihm.
  */
-const NACHZIEHEN_MAX = 5;
+const NACHZIEHEN_MAX = 3;
 const NACHZIEHEN_ABSTAND_MS = 5 * 60_000;
 
 /*
- * Tagesbudget fuer das Sprachmodell.
+ * Tagesbudget fuer das Sprachmodell - gerechnet in Token, nicht in Anfragen.
  *
  * Die kostenlose Stufe von Groq erlaubt fuer gpt-oss-120b 1.000 Anfragen und
- * 200.000 Token am Tag; bindend sind die Token. Eine Pruefung kostet grob 800,
- * also sind rund 250 moeglich. Im Betrieb faellt weniger an - handelbar sind
- * etwa 90 der rund 280 Meldungen im Tagesfenster, der Rest wird gar nicht erst
- * angefragt.
+ * 200.000 Token am Tag. Bindend sind die Token, und zwar deutlich: Als das
+ * Tageslimit erstmals griff, waren noch 436 Anfragen frei, die Token aber
+ * aufgebraucht. Ein Zaehler, der Anfragen zaehlt, misst also das Falsche - er
+ * stand bei 19 von 150, waehrend nichts mehr ging.
  *
- * Die Grenze ist trotzdem noetig: Ohne sie koennte ein Fehler, der die
- * gespeicherte Pruefung verliert, denselben Bestand stuendlich neu durchgehen
- * und das Kontingent binnen einer Stunde verbrauchen - samt Tagesbericht,
- * Zweitmeinung auf Knopfdruck und Uebersetzung, die daran haengen.
+ * Aus demselben Topf bezahlen inzwischen vier Dinge: die Pruefung der
+ * Meldungen, die Uebersetzung der Titel und Anrisse, der Tagesbericht und die
+ * Nachfragen. Nur das erste laeuft von selbst, also bekommt es eine Grenze,
+ * die den anderen dreien Luft laesst. Was tatsaechlich verbraucht wurde,
+ * meldet Groq bei jeder Antwort - geschaetzt wird hier nichts.
  */
-const KI_ANFRAGEN_MAX = 150;
+const KI_TOKEN_MAX = 120_000;
 
 /*
  * Wer hat zuletzt getickt?
@@ -277,9 +282,9 @@ const alterMs = (d) => (d?.updated ? Date.now() - new Date(d.updated).getTime() 
  */
 function budgetRest(speicher) {
   const heute = new Date().toISOString().slice(0, 10);
-  if (!speicher || speicher.tag !== heute) return { tag: heute, verbraucht: 0, rest: KI_ANFRAGEN_MAX };
-  const verbraucht = speicher.anfragen || 0;
-  return { tag: heute, verbraucht, rest: Math.max(0, KI_ANFRAGEN_MAX - verbraucht) };
+  if (!speicher || speicher.tag !== heute) return { tag: heute, verbraucht: 0, rest: KI_TOKEN_MAX };
+  const verbraucht = speicher.tokens || 0;
+  return { tag: heute, verbraucht, rest: Math.max(0, KI_TOKEN_MAX - verbraucht) };
 }
 
 /**
@@ -403,7 +408,9 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
   // Vor dem Versand gegenlesen lassen: Ein Widerspruch gehoert in die
   // Benachrichtigung, nicht erst in die spaetere Ansicht.
   const budget = budgetRest(speicher);
-  budget.verbraucht += await gegenlesen(kandidaten, env, Math.min(GEGENPROBE_MAX, budget.rest));
+  if (budget.rest > 0) {
+    budget.verbraucht += await gegenlesen(kandidaten, env, GEGENPROBE_MAX);
+  }
 
   /*
    * Den Bestand nachziehen.
@@ -415,11 +422,10 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
    * zuerst. Nach einigen Stunden ist alles einmal durch.
    */
   const seitNachlauf = Date.now() - new Date(speicher.letzterNachlauf || 0).getTime();
-  if (seitNachlauf > NACHZIEHEN_ABSTAND_MS) {
+  if (seitNachlauf > NACHZIEHEN_ABSTAND_MS && budget.verbraucht < KI_TOKEN_MAX) {
     const nachzuholen = items.filter(brauchtPruefung);
-    const frei = Math.min(NACHZIEHEN_MAX, KI_ANFRAGEN_MAX - budget.verbraucht);
-    if (nachzuholen.length && frei > 0) {
-      budget.verbraucht += await gegenlesen(nachzuholen, env, frei);
+    if (nachzuholen.length) {
+      budget.verbraucht += await gegenlesen(nachzuholen, env, NACHZIEHEN_MAX);
       speicher.letzterNachlauf = new Date().toISOString();
     }
   }
@@ -439,13 +445,13 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
     neueUrteile++;
   }
 
-  if (neueUrteile || budget.verbraucht !== (speicher.anfragen || 0)) {
+  if (neueUrteile || budget.verbraucht !== (speicher.tokens || 0)) {
     const ids = Object.keys(speicher.urteile);
     for (const alt of ids.slice(0, Math.max(0, ids.length - URTEILE_MAX))) {
       delete speicher.urteile[alt];
     }
     speicher.tag = budget.tag;
-    speicher.anfragen = budget.verbraucht;
+    speicher.tokens = budget.verbraucht;
     await schreiben(env, ctx, URTEILE_KEY, speicher, BESTAND_TTL);
   }
 
@@ -586,7 +592,8 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX) {
     n.labelText = LABEL_TEXT[n.label];
   });
 
-  return kandidaten.length;
+  // Was der Durchgang wirklich gekostet hat, nicht wie viele Anfragen es waren.
+  return deutungen.reduce((summe, d) => summe + (d?.tokens || 0), 0);
 }
 
 // --- Benachrichtigungen ---------------------------------------------------
@@ -731,9 +738,13 @@ export default {
           ? `${bestand.items.filter((n) => n.ki).length} von ${bestand.items.length}`
           : '0',
         berichtigt: bestand?.items?.filter((n) => n.kiKorrigiert).length ?? 0,
-        kiBudget: `${budgetRest(urteilSpeicher).verbraucht} von ${KI_ANFRAGEN_MAX} Anfragen heute`,
+        kiBudget: `${budgetRest(urteilSpeicher).verbraucht.toLocaleString('de-DE')}`
+          + ` von ${KI_TOKEN_MAX.toLocaleString('de-DE')} Token heute`
+          + ` (Groq erlaubt 200.000, der Rest bleibt fuer Uebersetzung,`
+          + ` Tagesbericht und Nachfragen)`,
         urteile: Object.keys(urteilSpeicher?.urteile || {}).length,
         letzterNachlauf: urteilSpeicher?.letzterNachlauf ?? 'noch keiner',
+        kontingent: kontingent ?? 'seit dem Start keine Anfrage an Groq',
         letzteTicks: (await lesen(env, TICKS_KEY).catch(() => null))
           ?.map((t) => `${t.zeit.slice(11, 19)} ${t.quelle} | Budget ${t.budget ?? '?'}`
             + ` | ${t.meldungen ?? '?'} Meldungen | ${t.offen ?? '?'} offen`) ?? [],
@@ -965,13 +976,17 @@ export default {
     if (url.pathname === '/frage' && request.method === 'POST') {
       if (!env.GROQ_KEY) return json({ fehler: 'kein Schluessel hinterlegt' }, 501);
       try {
-        const { titel, text, frage, sprache } = await request.json();
+        const { titel, text, frage, sprache, kontext } = await request.json();
         if (!titel) return json({ fehler: 'keine Meldung' }, 400);
         if (!frage?.trim()) return json({ fehler: 'keine Frage' }, 400);
 
         const ergebnis = await fragen(titel, text, frage, env,
-          sprache === 'en' ? 'en' : 'de');
-        return json(ergebnis, ergebnis.fehler ? 502 : 200);
+          sprache === 'en' ? 'en' : 'de', kontext);
+
+        // Bei einer Absage den Kontingentstand mitgeben: Ein Minutenlimit ist
+        // nach einer Minute vorbei, ein Tageslimit erst morgen.
+        if (ergebnis.fehler) return json({ ...ergebnis, kontingent }, 502);
+        return json(ergebnis);
       } catch (err) {
         return json({ fehler: err.message.slice(0, 200) }, 400);
       }

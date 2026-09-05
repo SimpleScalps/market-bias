@@ -6,7 +6,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v29';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v30';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -109,34 +109,64 @@ const anrissText = (n) => (lang === 'de'
   ? (n.textDe || anrissSpeicher[n.text] || n.text)
   : n.text);
 
-/**
- * Holt die Übersetzung eines Anrisses beim Worker und tauscht sie ein.
+/*
+ * Übersetzung der Anrisse, gesammelt statt einzeln.
  *
- * Der englische Text steht schon da — er wird ersetzt, sobald die Antwort
- * kommt. Ohne Worker bleibt es beim Original: Der Schlüssel liegt dort und
- * darf die App nie erreichen.
+ * Jedes Aufklappen brauchte zuvor eine eigene Anfrage. Wer beim Durchsehen
+ * mehrere Meldungen kurz hintereinander öffnet — auf dem Handy der Normalfall —
+ * löste damit ein Dutzend Anfragen in derselben Minute aus und lief in das
+ * Minutenlimit des Dienstes. Danach bekam er für jede weitere Meldung, und für
+ * eine eigene Nachfrage gleich mit, eine Absage.
+ *
+ * Jetzt sammelt eine Warteschlange, was offen ist, und schickt es in Gruppen
+ * von fünf nacheinander los. Aus zwölf Anfragen werden drei.
  */
-async function anrissUebersetzen(n, el) {
+const anrissWarteschlange = [];
+let anrissLaeuft = false;
+
+function anrissUebersetzen(n, el) {
   if (lang !== 'de' || !liveUrl || !n.text) return;
   if (n.textDe || anrissSpeicher[n.text]) return;
-  if (el.dataset.laeuft) return;
-  el.dataset.laeuft = '1';
+  if (anrissWarteschlange.some((x) => x.n.text === n.text)) return;
+
+  anrissWarteschlange.push({ n, el });
+  anrissAbarbeiten();
+}
+
+async function anrissAbarbeiten() {
+  if (anrissLaeuft) return;
+  anrissLaeuft = true;
 
   try {
-    const res = await fetch(`${liveUrl}/uebersetzen`, {
-      method: 'POST',
-      headers: workerKopf({ 'Content-Type': 'application/json' }),
-      body: JSON.stringify({ texte: [n.text] }),
-    });
-    const j = await res.json();
-    const deutsch = j?.uebersetzungen?.[0];
-    if (!deutsch) return;
-    anrissMerken(n.text, deutsch);
-    el.textContent = deutsch;
-  } catch {
-    /* Original bleibt stehen */
+    while (anrissWarteschlange.length) {
+      // Der Worker nimmt fünf je Aufruf entgegen.
+      const stapel = anrissWarteschlange.splice(0, 5);
+      const texte = stapel.map((x) => x.n.text);
+
+      let ergebnis = [];
+      try {
+        const res = await fetch(`${liveUrl}/uebersetzen`, {
+          method: 'POST',
+          headers: workerKopf({ 'Content-Type': 'application/json' }),
+          body: JSON.stringify({ texte }),
+        });
+        const j = await res.json();
+        ergebnis = j?.uebersetzungen || [];
+      } catch {
+        return;                 // Original bleibt stehen, Rest verwerfen
+      }
+
+      stapel.forEach((x, i) => {
+        const deutsch = ergebnis[i];
+        if (!deutsch) return;
+        anrissMerken(x.n.text, deutsch);
+        // Nur eintragen, wenn die Zeile noch dieselbe Meldung zeigt: Die Liste
+        // kann sich zwischenzeitlich neu aufgebaut haben.
+        if (x.el.isConnected) x.el.textContent = deutsch;
+      });
+    }
   } finally {
-    delete el.dataset.laeuft;
+    anrissLaeuft = false;
   }
 }
 
@@ -543,7 +573,24 @@ async function frageStellen(n, text) {
     const res = await fetch(`${liveUrl}/frage`, {
       method: 'POST',
       headers: workerKopf({ 'Content-Type': 'application/json' }),
-      body: JSON.stringify({ titel: n.title, text: n.text, frage: text, sprache: lang }),
+      /*
+       * Die eigene Einschätzung fährt mit.
+       *
+       * Ohne sie antwortete das Modell auf "wie lange wirkt das nach?" mit
+       * "steht nicht in der Meldung" — obwohl das Werkzeug die Dauer längst
+       * berechnet hat und sie zwei Zeilen darüber steht.
+       */
+      body: JSON.stringify({
+        titel: n.title, text: n.text, frage: text, sprache: lang,
+        kontext: {
+          label: T().labels[n.label] || n.label,
+          wert: n.scores?.[asset],
+          wirkung: T().impact?.[n.impactLevel] || n.impactLevel,
+          dauer: T().dauer?.[n.duration] || n.duration,
+          quelle: n.source,
+          begruendung: grund(n),
+        },
+      }),
     });
     const j = await res.json();
     return res.ok && j.antwort ? j : { fehler: j.fehler || T().frageFehler };
