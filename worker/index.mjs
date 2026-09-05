@@ -168,6 +168,15 @@ function urteilAuslesen(n) {
 const BESTAND_HERZSCHLAG_MS = 5 * 60_000;
 
 /*
+ * Letzter gescheiterte Tick.
+ *
+ * Weil der Taktgeber nun immer 200 bekommt, faellt ein Fehler nicht mehr
+ * ueber den Statuscode auf. Er muss dafuer woanders sichtbar sein - hier, und
+ * damit im Systemzustand der App.
+ */
+let letzterTickFehler = null;
+
+/*
  * Letzter Tick je Herkunft.
  *
  * Zuerst war das eine Liste der letzten acht Ticks - und die litt an genau dem
@@ -880,6 +889,7 @@ export default {
         schreibvorgaenge: bestand?.schreibTag === new Date().toISOString().slice(0, 10)
           ? `${bestand.schreibungen} heute (KV erlaubt 1.000)`
           : 'heute noch keiner',
+        letzterTickFehler: letzterTickFehler ?? 'keiner seit dem Start',
         geprueft: bestand?.items
           ? `${bestand.items.filter((n) => n.ki).length} von ${bestand.items.length}`
           : '0',
@@ -924,32 +934,50 @@ export default {
      * einen kostenlosen Cron-Dienst. Macht genau das, was scheduled() tut:
      * eine Feed-Gruppe abgleichen und fällige Benachrichtigungen verschicken.
      */
+    /*
+     * Der Taktgeber. Antwortet immer mit 200 - auch im Fehlerfall.
+     *
+     * Das ist bewusst so. cron-job.org zaehlt Fehlercodes und schaltet einen
+     * Auftrag nach genuegend Fehlversuchen selbsttaetig ab; genau das ist
+     * passiert, als das Schreibkontingent von KV erschoepft war und der Tick
+     * mit 500 abbrach. Sechsundzwanzig Fehlversuche spaeter war der Taktgeber
+     * still, und niemand hat es gemerkt - die App zeigte weiter Meldungen,
+     * nur eben keine neuen mehr.
+     *
+     * Ein vorruebergehender Fehler darf den Taktgeber nicht kosten. Was
+     * schiefging, steht im Rumpf unter `fehler` und im Systemzustand, nicht
+     * im Statuscode.
+     */
     if (url.pathname === '/tick') {
-      const bestand = await lesen(env, KEY);
-      const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
       // Herkunft kurz benennen: "cron-job.org" statt der ganzen Kennung.
       const roh = request.headers.get('x-quelle')
-        || request.headers.get('user-agent') || 'unbekannt';
-      const quelle = (roh.match(/cron-job\.org|github-action|[\w.-]+/i) || ['unbekannt'])[0]
-        .slice(0, 30);
+        || request.headers.get('user-agent') || '';
+      const quelle = /cron-job\.org/i.test(roh) ? 'cron-job.org'
+        : /github-action/i.test(roh) ? 'github-action'
+        : (roh.match(/[A-Za-z][\w.-]{2,}/) || ['unbekannt'])[0].slice(0, 30);
 
-      const { data, neue, versand, gesichert } =
-        await teilAbgleich(env, ctx, regime, bestand, gruppe, quelle);
+      try {
+        const bestand = await lesen(env, KEY);
+        const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
 
-      /*
-       * Erst jetzt vermerken, mit Ergebnis: Wer getickt hat und was dabei
-       * herauskam. Ein blosser Eingang sagt zu wenig - fremde Ticks landeten
-       * im Protokoll, ohne dass der Nachlauf voranschritt.
-       */
-      return json({
-        ok: true,
-        gruppe,
-        meldungen: data.count,
-        nochNieGemeldet: neue.length,
-        gesichert,
-        versand,
-        errors: data.errors,
-      });
+        const { data, neue, versand, gesichert } =
+          await teilAbgleich(env, ctx, regime, bestand, gruppe, quelle);
+
+        return json({
+          ok: true,
+          quelle,
+          gruppe,
+          meldungen: data.count,
+          nochNieGemeldet: neue.length,
+          gesichert,
+          versand,
+          errors: data.errors,
+        });
+      } catch (err) {
+        console.log('Tick fehlgeschlagen:', err.message);
+        letzterTickFehler = { zeit: new Date().toISOString(), quelle, fehler: err.message.slice(0, 200) };
+        return json({ ok: false, quelle, fehler: err.message.slice(0, 300) });
+      }
     }
 
     /**
