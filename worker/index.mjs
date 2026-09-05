@@ -59,6 +59,18 @@ const NACHZIEHEN_MAX = 5;
  */
 const KI_ANFRAGEN_MAX = 150;
 
+/*
+ * Wer hat zuletzt getickt?
+ *
+ * Ob der Bestand frisch ist, sagt darueber nichts: Der Lesepfad zieht bei
+ * jedem Abruf den Kalender nach und setzt den Zeitstempel dabei neu. Ein
+ * ausgefallener Ticker faellt so gar nicht auf - die Uhrzeit stimmt ja, nur
+ * die Feeds werden nicht mehr abgefragt. Deshalb wird jeder echte Tick mit
+ * Zeit und Herkunft vermerkt, nachzulesen unter /health.
+ */
+const TICKS_KEY = 'https://market-bias.internal/ticks';
+const TICKS_MAX = 8;
+
 /**
  * Braucht diese Meldung (noch) eine Pruefung durch das Modell?
  *
@@ -622,6 +634,8 @@ export default {
           : '0',
         berichtigt: bestand?.items?.filter((n) => n.kiKorrigiert).length ?? 0,
         kiBudget: `${budgetRest(bestand).verbraucht} von ${KI_ANFRAGEN_MAX} Anfragen heute`,
+        letzteTicks: (await lesen(env, TICKS_KEY).catch(() => null))
+          ?.map((t) => `${t.zeit.slice(11, 19)} ${t.quelle}`) ?? [],
         // Ohne hinterlegtes Abo verschickt der Worker nichts. Zeigt nur, ob
         // und wohin - niemals Token oder Themennamen.
         abo: abo ? {
@@ -653,6 +667,18 @@ export default {
      */
     if (url.pathname === '/tick') {
       const bestand = await lesen(env, KEY);
+
+      // Herkunft festhalten, bevor gearbeitet wird.
+      ctx.waitUntil((async () => {
+        try {
+          const bisher = (await lesen(env, TICKS_KEY)) || [];
+          const kennung = request.headers.get('x-quelle')
+            || (request.headers.get('user-agent') || 'unbekannt').slice(0, 60);
+          await schreiben(env, ctx, TICKS_KEY,
+            [{ zeit: new Date().toISOString(), quelle: kennung }, ...bisher].slice(0, TICKS_MAX),
+            BESTAND_TTL);
+        } catch { /* Nebensache, darf den Tick nicht aufhalten */ }
+      })());
       const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
       const { data, neue, versand } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
       return json({
