@@ -1,8 +1,10 @@
 {
- "updated": "2026-09-05T00:42:51.606Z",
+ "updated": "2026-09-05T00:43:28.941Z",
  "regime": "policy",
  "count": 212,
- "errors": [],
+ "errors": [
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
+ ],
  "items": [
   {
    "id": "Al Jazeera:Senior EU official cancels Serbia trip over planned tribute to Mladic",
@@ -35,7 +37,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Leitender EU-Beamter storniert Serbien-Reise wegen geplanter Hommage an Mladic"
   },
   {
    "id": "U.Today:Binance Coin (BNB), Uniswap (UNI), Gram (GRAM) and ChainLink (LINK) Price Analysis for September 5: Memecoin and Altcoin Season Is Here",
@@ -70,7 +73,8 @@
    "coins": [
     "BNB"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Binance Coin (BNB), Uniswap (Uni), Gram (GRAMM) und ChainLink (LINK) Preisanalyse für den 5. September: Die Memecoin- und Altcoin-Saison ist da"
   },
   {
    "id": "Al Jazeera:Iran war live: Trump says US may target Iran’s Pickaxe Mountain ‘very soon’",
@@ -107,7 +111,8 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Iran-Krieg live: Trump sagt, die USA könnten den iranischen Spitzhackenberg \"sehr bald\" ins Visier nehmen"
   },
   {
    "id": "Al Jazeera:‘Small potatoes’: US President Trump downplays war on Iran",
@@ -135,7 +140,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 67,
+   "priority": 66,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -144,7 +149,8 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "\"Kleine Kartoffeln\": US-Präsident Trump spielt Krieg gegen den Iran herunter"
   },
   {
    "id": "Al Jazeera:Tunisia arrests journalist Mohamed Yousfi amid crackdown on critics",
@@ -177,7 +183,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Tunesien verhaftet den Journalisten Mohamed Yousfi inmitten des harten Vorgehens gegen Kritiker"
   },
   {
    "id": "BBC World:Germany's far-right AfD bids for first taste of power in eastern vote",
@@ -210,7 +217,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Deutschlands rechtsextreme AfD bewirbt sich um den ersten Vorgeschmack auf die Macht bei der Ostwahl"
   },
   {
    "id": "Al Jazeera:Mock Republican convention website tops Google, redirects to Epstein files",
@@ -243,7 +251,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Mock Republican Convention Website tops Google, redirects to Epstein files"
   },
   {
    "id": "FXStreet:Malaysian Ringgit: Range-bound risks and key levels against US Dollar – OCBC",
@@ -276,7 +285,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Malaysian Ringgit: Range-bound risks and key levels against US Dollar – OCBC"
   },
   {
    "id": "BBC World:Mistrial declared in Lindsay Clancy murder case, after jury deadlocks",
@@ -309,7 +319,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Mistrial im Mordfall Lindsay Clancy erklärt, nachdem die Geschworenen festgefahren waren"
   },
   {
    "id": "BBC World:Nepal bet nearly everything on hydropower - the floods show why that's a problem",
@@ -342,7 +353,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Nepal hat fast alles auf Wasserkraft gesetzt - die Überschwemmungen zeigen, warum das ein Problem ist"
   },
   {
    "id": "FXStreet:USD/MXN Price Forecast: Peso rally targets April 2024 low",
@@ -379,7 +391,8 @@
    "eventTypeEn": "Price prediction",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "USD/MXN-Preisprognose: Peso-Rallyeziele April 2024 niedrig"
   },
   {
    "id": "Al Jazeera:Israeli police kill Palestinian in Jerusalem as army blocks aid for Qusra",
@@ -412,7 +425,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Die israelische Polizei tötet Palästinenser in Jerusalem, während die Armee die Hilfe für Qusra blockiert"
   },
   {
    "id": "BeInCrypto:Trump is Rebuilding the CFTC, But It Might Not Favor Crypto",
@@ -445,7 +459,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Trump baut die CFTC wieder auf, aber es könnte sein, dass sie Krypto nicht bevorzugt"
   },
   {
    "id": "BeInCrypto:Grayscale Names 3 Blockchains Leading the Tokenized Stock Boom",
@@ -478,7 +493,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Graustufen-Namen 3 Blockketten, die den tokenisierten Aktienboom anführen"
   },
   {
    "id": "Decrypt:TikTok's Parent Company Just Borrowed $30 Billion to Go All-In on AI",
@@ -511,7 +527,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Die Muttergesellschaft von TikTok hat sich gerade 30 Milliarden $ geliehen, um All-In auf KI zu setzen"
   },
   {
    "id": "MarketWatch:Bloom Energy was just named to the S&P 500. These other stocks are joining the index as well.",
@@ -544,7 +561,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Bloom Energy wurde gerade in den S&P 500 aufgenommen. Diese anderen Aktien werden ebenfalls in den Index aufgenommen."
   },
   {
    "id": "Al Jazeera:Costa Rican president signals openness to domestic US military operations",
@@ -577,7 +595,8 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Costa Ricas Präsident signalisiert Offenheit für inländische US-Militäroperationen"
   },
   {
    "id": "Al Jazeera:Betis beat Real Madrid as Mbappe misses penalty in first La Liga defeat",
@@ -610,7 +629,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Betis besiegte Real Madrid, als Mbappe bei der ersten Niederlage in der La Liga den Elfmeter verpasste"
   },
   {
    "id": "FXStreet:Malaysian Ringgit: BNM hawkish tilt supports MYR – Commerzbank",
@@ -647,7 +667,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Malaysian Ringgit: BNM Hawkish Tilt unterstützt MYR – Commerzbank"
   },
   {
    "id": "Al Jazeera:US regulator opens safety investigation as Tesla launches driverless taxis",
@@ -680,7 +701,8 @@
    "eventTypeEn": "Regulatory action",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "US-Regulierungsbehörde leitet Sicherheitsuntersuchung ein, da Tesla fahrerlose Taxis auf den Markt bringt"
   },
   {
    "id": "FXStreet:USD/CHF Price Forecast: NFP rally stalls at 0.8100, retraces",
@@ -717,7 +739,8 @@
    "eventTypeEn": "Price prediction",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "USD/CHF-Preisprognose: NFP-Rallye stagniert bei 0,8100, Spuren"
   },
   {
    "id": "Al Jazeera:Witkoff and Kushner will travel to ‘end’ Russia’s war in Ukraine: Trump",
@@ -754,7 +777,8 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Witkoff und Kushner werden reisen, um Russlands Krieg in der Ukraine zu „beenden“: Trump"
   },
   {
    "id": "Decrypt:G7 Warns Quantum Threat Demands Action as Crypto Industry Weighs Fixes",
@@ -787,7 +811,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "G7 warnt vor Quantenbedrohungen, die Maßnahmen erfordern, da die Krypto-Industrie Korrekturen abwägt"
   },
   {
    "id": "Al Jazeera:Sabalenka interrupts US Open match against Rakhimova over cannabis smell",
@@ -820,7 +845,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Sabalenka unterbricht US Open Spiel gegen Rakhimova wegen Cannabisgeruch"
   },
   {
    "id": "U.Today:Ripple Swell to Feature India's Former Central Bank Governor",
@@ -855,7 +881,8 @@
    "coins": [
     "XRP"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Ripple Swell zeigt Indiens ehemaligen Zentralbankgouverneur"
   },
   {
    "id": "Al Jazeera:Liverpool beat Ipswich as Isak goals hand Iraola first Premier League win",
@@ -888,7 +915,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Liverpool besiegte Ipswich, als Isak-Tore Iraola den ersten Premier-League-Sieg einbrachten"
   },
   {
    "id": "Al Jazeera:Nigel Farage heckled as he denies Reform UK took illegal funding",
@@ -921,7 +949,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Nigel Farage sträubte sich, als er bestritt, dass Reform UK illegale Finanzierung genommen hat"
   },
   {
    "id": "Al Jazeera:Will Europe pay the US to provide military aid to Ukraine?",
@@ -954,7 +983,8 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Wird Europa die USA bezahlen, um der Ukraine militärische Hilfe zu leisten?"
   },
   {
    "id": "FXStreet:Indonesian Rupiah: Two-way risks around support levels – OCBC",
@@ -987,7 +1017,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Indonesische Rupiah: Zwei-Wege-Risiken um Unterstützungsniveaus – OCBC"
   },
   {
    "id": "Decrypt:Polymarket Launches Crypto Perpetual Futures With Up to 20x Leverage",
@@ -1020,7 +1051,8 @@
    "eventTypeEn": "Product announcement",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Polymarket führt Crypto Perpetual Futures mit bis zu 20-facher Hebelwirkung ein"
   },
   {
    "id": "Cointelegraph:Surprise nonfarm payrolls print sends Bitcoin back below 80K",
@@ -1055,7 +1087,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Überraschender Druck von Gehaltsabrechnungen außerhalb der Landwirtschaft sendet Bitcoin unter 80.000 zurück"
   },
   {
    "id": "Al Jazeera:Mexico seizes 17 tonnes of meth in $347 million drug bust",
@@ -1088,7 +1121,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Mexiko beschlagnahmt 17 Tonnen Meth in einem Drogenrausch im Wert von 347 Millionen $"
   },
   {
    "id": "BeInCrypto:Mexican Billionaire Says Bitcoin Will Hit $1.86 Million. What’s His Logic?",
@@ -1123,7 +1157,8 @@
    "coins": [
     "BTC"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Der mexikanische Milliardär sagt, dass Bitcoin 1,86 Millionen $ erreichen wird. Was ist seine Logik?"
   },
   {
    "id": "Al Jazeera:Watchdog report alleges misconduct by Trump’s former labour secretary",
@@ -1156,7 +1191,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Watchdog-Bericht behauptet Fehlverhalten von Trumps ehemaliger Arbeitsministerin"
   },
   {
    "id": "Al Jazeera:Trump calls Iran war ‘small potatoes’, compares US deaths with Vietnam war",
@@ -1193,7 +1229,8 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Trump nennt den Iran-Krieg „kleine Kartoffeln“, vergleicht US-Todesfälle mit Vietnam-Krieg"
   },
   {
    "id": "MarketWatch:Tesla’s stock falls as Cybercab launch lands with a thud",
@@ -1226,7 +1263,8 @@
    "eventTypeEn": "Product announcement",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Teslas Aktie fällt, als der Start von Cybercab mit einem Schlag landet"
   },
   {
    "id": "MarketWatch:Micron is doubling down on AI memory chips. That could pay off big time for investors.",
@@ -1259,7 +1297,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Micron verdoppelt sich auf KI-Speicherchips. Das könnte sich für Investoren sehr auszahlen."
   },
   {
    "id": "CNBC World:Tesla's stock drops 6% as Cybercab update 'underwhelms' Wall Street",
@@ -1331,7 +1370,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Israelische Drohnen werfen Bomben auf Mansouri im Südlibanon"
   },
   {
    "id": "FXStreet:Chinese Yuan: Services PMI rebound keeps PBoC cautious – Commerzbank",
@@ -1533,7 +1573,8 @@
    "eventTypeEn": "Central bank",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Sterlings Rallye stagniert, da die US-Arbeitsmarktdaten die Debatte über die Fed wieder eröffnen"
   },
   {
    "id": "MarketWatch:Maybe the snowbirds are right? One state dominates this list of best places to retire.",
@@ -1603,7 +1644,8 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Israelischer Angriff tötet zwei im Südlibanon inmitten der anhaltenden Eskalation"
   },
   {
    "id": "Al Jazeera:Andrew Tate indicted in Romania for trafficking minors, money laundering",
@@ -2045,7 +2087,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2678,7 +2720,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7412,7 +7454,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 40,
   "fehler": null
  }
 }
