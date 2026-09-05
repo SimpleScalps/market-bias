@@ -76,6 +76,41 @@ const NACHZIEHEN_MAX = 3;
 const NACHZIEHEN_ABSTAND_MS = 10 * 60_000;
 
 /*
+ * Wie oft eine Meldung hoechstens vergeblich geprueft wird.
+ *
+ * Eine fehlgeschlagene Pruefung liess die Meldung unveraendert - sie galt
+ * weiter als offen und wurde beim naechsten Nachlauf erneut angefragt. Da nach
+ * Gewicht sortiert wird, kamen immer dieselben zuerst: Zwei Meldungen, die aus
+ * welchem Grund auch immer nie durchgingen, blockierten zwanzig Minuten lang
+ * jeden Nachlauf und verbrauchten dabei Token, ohne dass die Zahl der
+ * geprueften Meldungen stieg.
+ *
+ * Nach drei Versuchen bleibt die Meldung bei der Bewertung des Regelwerks.
+ * Das ist kein Verlust: Die Regelbewertung ist ohnehin die Grundlage, die
+ * Zweitmeinung nur die Gegenprobe.
+ */
+const PRUEF_VERSUCHE_MAX = 3;
+const PRUEF_BUCH_MAX = 300;   // Eintraege im Fehlerbuch, damit es nicht waechst
+
+/**
+ * Schreibt das Fehlerbuch fort und haelt es klein.
+ *
+ * Nur Meldungen, die noch im Bestand liegen, bleiben vermerkt - was aus dem
+ * 24-Stunden-Fenster gefallen ist, braucht keinen Eintrag mehr. Bleibt es
+ * darueber hinaus zu gross, fallen die aeltesten Eintraege heraus.
+ */
+function fehlerbuchFortschreiben(buch, gescheitert, items) {
+  const imBestand = new Set(items.map((n) => n.id));
+  const neu = {};
+  for (const [id, n] of Object.entries(buch)) if (imBestand.has(id)) neu[id] = n;
+  for (const id of gescheitert) neu[id] = (neu[id] || 0) + 1;
+
+  const ids = Object.keys(neu);
+  for (const alt of ids.slice(0, Math.max(0, ids.length - PRUEF_BUCH_MAX))) delete neu[alt];
+  return neu;
+}
+
+/*
  * Tagesbudget fuer das Sprachmodell - gerechnet in Token, nicht in Anfragen.
  *
  * Die kostenlose Stufe von Groq erlaubt fuer gpt-oss-120b 1.000 Anfragen und
@@ -738,7 +773,20 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   const budget = budgetRest(z.tag ? { tag: z.tag, tokens: z.tokens } : speicher);
   // Der eigene Verbrauch zaehlt mit, auch wenn er nirgends abgelegt werden kann.
   const restJetzt = budget.rest - tokenSeitStart;
-  if (restJetzt > 0) await gegenlesen(kandidaten, env, GEGENPROBE_MAX);
+  /*
+   * Das Fehlerbuch liegt im Durable Object, nicht in KV.
+   *
+   * Es muss gerade dann lesbar und schreibbar sein, wenn KV klemmt - sonst
+   * wiederholt sich der Fehlschlag, dessen Vermerk am selben Hindernis
+   * scheitert.
+   */
+  const pruefBuch = { ...(z.pruefFehler || {}) };
+  const gescheitert = [];
+
+  if (restJetzt > 0) {
+    const r = await gegenlesen(kandidaten, env, GEGENPROBE_MAX, pruefBuch);
+    gescheitert.push(...(r?.gescheitert || []));
+  }
 
   /*
    * Den Bestand nachziehen.
@@ -761,7 +809,8 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     const nachzuholen = items.filter(brauchtPruefung);
     if (nachzuholen.length) {
       nachlaufZuletzt = Date.now();          // sofort, nicht erst nach Erfolg
-      await gegenlesen(nachzuholen, env, NACHZIEHEN_MAX);
+      const r = await gegenlesen(nachzuholen, env, NACHZIEHEN_MAX, pruefBuch);
+      gescheitert.push(...(r?.gescheitert || []));
       speicher.letzterNachlauf = new Date().toISOString();
     }
   }
@@ -948,6 +997,10 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
      */
     ticks: { ...(z.ticks || {}), ...data.ticks },
     verzug: { ...(z.verzug || {}), ...data.verzug },
+    // Wird als Ganzes ersetzt - deshalb hier vollstaendig neu gebildet.
+    ...(gescheitert.length || Object.keys(pruefBuch).length
+      ? { pruefFehler: fehlerbuchFortschreiben(pruefBuch, gescheitert, items) }
+      : {}),
   };
   if (speicher.letzterNachlauf) buchung.letzterNachlauf = speicher.letzterNachlauf;
   ctx.waitUntil(zustand(env, buchung));
@@ -1039,12 +1092,13 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
  * den Satz, das Regelwerk nur die Woerter darin. Die Herleitung der Regel
  * bleibt sichtbar, damit nachvollziehbar ist, wie es zum ersten Urteil kam.
  */
-async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX) {
+async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX, buch = {}) {
   if (hoechstens <= 0) return 0;
   if (!env.GROQ_KEY) return;
 
   const kandidaten = items
-    .filter(brauchtPruefung)
+    // Wer dreimal nicht durchging, kommt nicht wieder an die Reihe.
+    .filter((n) => brauchtPruefung(n) && (buch[n.id] || 0) < PRUEF_VERSUCHE_MAX)
     .sort((a, b) => Math.abs(b.scores.crypto) * b.priority
                   - Math.abs(a.scores.crypto) * a.priority)
     .slice(0, hoechstens);
@@ -1053,6 +1107,11 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX) {
 
   // Nebeneinander abfragen: nacheinander summierte sich die Wartezeit.
   const deutungen = await Promise.all(kandidaten.map((n) => deuten(n.title, env, n.text)));
+
+  // Was nicht durchging, wird vermerkt - sonst wiederholt es sich endlos.
+  const gescheitert = kandidaten
+    .filter((n, i) => !deutungen[i] || deutungen[i].fehler)
+    .map((n) => n.id);
 
   kandidaten.forEach((n, i) => {
     const deutung = deutungen[i];
@@ -1094,8 +1153,8 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX) {
   });
 
   // Der Verbrauch wird zentral in deuten.mjs gefuehrt; hier zaehlt nur, wie
-  // viele Meldungen durchgegangen sind.
-  return kandidaten.length;
+  // viele Meldungen durchgegangen sind - und welche nicht.
+  return { anzahl: kandidaten.length, gescheitert };
 }
 
 // --- Benachrichtigungen ---------------------------------------------------
@@ -1385,8 +1444,20 @@ export default {
           const handelbar = alle.filter((n) => n.impactLevel !== 'ignore');
           const fertig = handelbar.filter((n) => n.ki?.inhalt).length;
           if (!handelbar.length) return 'nichts Handelbares im Bestand';
+          /*
+           * Aufgegebene getrennt ausweisen.
+           *
+           * Sonst stuenden Meldungen, die nach drei Fehlversuchen nicht mehr
+           * angefragt werden, dauerhaft als "offen" da - eine Zahl, die sich
+           * nie bewegt und nichts mehr bedeutet.
+           */
+          const buch = zNow.pruefFehler || {};
+          const offen = handelbar.filter((n) => !n.ki?.inhalt);
+          const aufgegeben = offen.filter((n) => (buch[n.id] || 0) >= PRUEF_VERSUCHE_MAX).length;
+
           return `${fertig} von ${handelbar.length} handelbaren`
-            + (fertig < handelbar.length ? ` · ${handelbar.length - fertig} offen` : '')
+            + (offen.length - aufgegeben > 0 ? ` · ${offen.length - aufgegeben} offen` : '')
+            + (aufgegeben ? ` · ${aufgegeben} aufgegeben (${PRUEF_VERSUCHE_MAX}x vergeblich)` : '')
             + ` (${alle.length - handelbar.length} ohne Handelsbezug)`;
         })(),
         berichtigt: bestand?.items?.filter((n) => n.kiKorrigiert).length ?? 0,
