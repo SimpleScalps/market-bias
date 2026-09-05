@@ -1,11 +1,47 @@
 {
- "updated": "2026-09-05T09:45:31.314Z",
+ "updated": "2026-09-05T09:52:09.588Z",
  "regime": "policy",
- "count": 194,
+ "count": 192,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "BeInCrypto:Ripple CEO Slams $11 Billion Gold Move: Can Crypto Do Better?",
+   "title": "Ripple CEO Slams $11 Billion Gold Move: Can Crypto Do Better?",
+   "text": "Ripple CEO Brad Garlinghouse says an $11 billion gold move shows banks still shift value like it is 1940.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/ripple-ceo-gold-move-crypto-rails/",
+   "date": "2026-09-05T09:32:24.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 51,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "XRP"
+   ],
+   "alsoIn": [],
+   "titleDe": "Ripple-CEO kritisiert 11‑Milliarden‑Dollar‑Goldaktion: Kann Krypto es besser machen?"
+  },
   {
    "id": "BBC World:Trump signs order to remove endangered species protection for grey wolves",
    "title": "Trump signs order to remove endangered species protection for grey wolves",
@@ -232,7 +268,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -686,7 +722,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 38,
+   "priority": 37,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -790,7 +826,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1623,7 +1659,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2009,7 +2045,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 12,
+   "priority": 11,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2463,7 +2499,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 56,
+   "priority": 55,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "medium",
@@ -2991,7 +3027,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3025,7 +3061,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3171,7 +3207,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: hawkish)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 57,
+   "priority": 56,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -3239,7 +3275,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3350,7 +3386,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 48,
+   "priority": 47,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "medium",
@@ -3878,7 +3914,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4027,42 +4063,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "ChatGPT empfahl eine gefälschte Kryptoseite, die mit 2,2 Millionen $ Betrug verbunden ist"
-  },
-  {
-   "id": "BeInCrypto:Will AI Push Bitcoin Mining Out of the Market?",
-   "title": "Will AI Push Bitcoin Mining Out of the Market?",
-   "text": "Bitcoin mining as a profitable business model is becoming harder to justify at the biggest, most expensive sites. Network hashrate, which measures the total computing power securing Bitcoin, climbed above 1.1 ZH/s in October 2025 but has since fallen toward 900 EH/s several times. Mining difficulty also dropped 11.16% in February 2026 and another 10.09%",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/bitcoin-miners-ai-power-war/",
-   "date": "2026-09-04T16:07:49.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "BTC"
-   ],
-   "alsoIn": [],
-   "titleDe": "Wird die KI das Bitcoin-Mining vom Markt verdrängen?"
   },
   {
    "id": "U.Today:Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
@@ -6770,80 +6770,10 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "AMC-Chef kritisiert Robinhoods tokenisierten Aktienplan"
-  },
-  {
-   "id": "CoinDesk:IMF confirms El Salvador’s bitcoin growth was funded by private donations, not public money",
-   "title": "IMF confirms El Salvador’s bitcoin growth was funded by private donations, not public money",
-   "text": "The IMF confirmed that all bitcoin added to official holdings since June 2025 was sourced from private donations, with no public funds used for accumulation.",
-   "source": "CoinDesk",
-   "url": "https://www.coindesk.com/business/2026/09/04/imf-confirms-el-salvador-s-bitcoin-growth-was-funded-by-private-donations-not-public-money",
-   "date": "2026-09-04T09:47:15.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "BTC"
-   ],
-   "alsoIn": [],
-   "titleDe": "Der IWF bestätigt, dass das Bitcoin-Wachstum in El Salvador durch private Spenden und nicht durch öffentliche Gelder finanziert wurde"
-  },
-  {
-   "id": "The Block:South Korea to start tokenizing ‘all types’ of securities in three stages from 2027",
-   "title": "South Korea to start tokenizing ‘all types’ of securities in three stages from 2027",
-   "text": "South Korea ultimately aims to allow participants to settle tokenized securities onchain with stablecoins, as part of a three-stage plan.",
-   "source": "The Block",
-   "url": "https://www.theblock.co/news/regulation/2026-09-04-south-korea-to-start-tokenizing-all-types-of-securities-in-three-stages-from-2027-413523",
-   "date": "2026-09-04T09:46:06.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Südkorea beginnt ab 2027 mit der Tokenisierung von „allen Arten“ von Wertpapieren in drei Stufen"
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
