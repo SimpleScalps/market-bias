@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05T10:49:37.222Z",
+ "updated": "2026-09-05T10:52:19.957Z",
  "regime": "policy",
  "count": 192,
  "errors": [
@@ -75,6 +75,42 @@
    "titleDe": "SEC Crypto Custody Rewrite tritt in die Überprüfung des Weißen Hauses ein"
   },
   {
+   "id": "BeInCrypto:MicroStrategy Drops $250 Bitcoin Jordans. But You Can’t Buy With Crypto",
+   "title": "MicroStrategy Drops $250 Bitcoin Jordans. But You Can’t Buy With Crypto",
+   "text": "Strategy now sells $250 Bitcoin Jordans. Nike stock has lost almost half its value in a year. Can crypto fans help?",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/strategy-bitcoin-jordans-nike-stock/",
+   "date": "2026-09-05T10:41:36.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 52,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "MicroStrategy legt $250 Bitcoin‑Sneaker ab. Aber man kann nicht mit Krypto bezahlen"
+  },
+  {
    "id": "BBC World:Trump envoys arrive in Moscow ahead of Ukraine talks, reports say",
    "title": "Trump envoys arrive in Moscow ahead of Ukraine talks, reports say",
    "text": "Steve Witkoff and Jared Kushner are due to hold talks with Russia before travelling to Ukraine on Sunday.",
@@ -107,40 +143,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Trump-Gesandte kommen in Moskau vor den Ukraine-Gesprächen an, heißt es in Berichten"
-  },
-  {
-   "id": "Al Jazeera:At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow",
-   "title": "At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow",
-   "text": "Ukrainian armed forces were ordered to follow a three-day ceasefire as US envoys visit Moscow, before trip to Kyiv.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/5/at-least-5-killed-in-russian-attacks-on-ukraine-as-us-envoys-visit-moscow?traffic_source=rss",
-   "date": "2026-09-05T10:27:23.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 87,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Mindestens 5 Tote bei russischen Angriffen auf die Ukraine, während US-Gesandte Moskau besuchen"
   },
   {
    "id": "Benzinga:Best Stocks to Day Trade",
@@ -811,7 +813,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1753,7 +1755,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -1832,6 +1834,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Mindestens zwei Tote bei Explosion in bolivianischer Militärkaserne"
+  },
+  {
+   "id": "Al Jazeera:‘To challenge deadly blockade’: New flotilla mission sets sail for Gaza",
+   "title": "‘To challenge deadly blockade’: New flotilla mission sets sail for Gaza",
+   "text": "Human rights advocates call for diplomatic measures to guarantee flotilla safety and end Israel's deadly Gaza blockade.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/5/to-challenge-deadly-blockade-new-flotilla-mission-sets-sail-for-gaza?traffic_source=rss",
+   "date": "2026-09-05T02:43:23.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 75,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "\"Tödliche Blockade herausfordern\": Neue Flottillenmission setzt Segel für Gaza"
   },
   {
    "id": "BBC World:How much can Canada fight back in its trade war with the US?",
@@ -2202,7 +2238,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 12,
+   "priority": 11,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2414,7 +2450,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: hawkish)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3153,7 +3189,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3187,7 +3223,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4542,40 +4578,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "3 Altcoins, die an diesem Wochenende Allzeithochs erreichen könnten"
-  },
-  {
-   "id": "BeInCrypto:ChatGPT Recommended a Fake Crypto Site Linked to $2.2 Million Scam",
-   "title": "ChatGPT Recommended a Fake Crypto Site Linked to $2.2 Million Scam",
-   "text": "A phishing site ChatGPT recommended drained $2.2 million in Flare tokens as OpenAI agents hijacked a German wiki.",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/chatgpt-recommends-scam-crypto-site/",
-   "date": "2026-09-04T16:14:14.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "ChatGPT empfahl eine gefälschte Kryptoseite, die mit 2,2 Millionen $ Betrug verbunden ist"
   },
   {
    "id": "U.Today:Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
@@ -6764,7 +6766,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 5,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
