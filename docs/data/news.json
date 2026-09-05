@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-05T17:07:39.439Z",
+ "updated": "2026-09-05T17:09:34.116Z",
  "regime": "policy",
- "count": 111,
+ "count": 110,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
@@ -109,6 +109,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "US-Botschafter in Moskau vor ukrainischen Gesprächen"
+  },
+  {
+   "id": "Al Jazeera:Haaland heads Man City to the top of Premier League with win over Coventry",
+   "title": "Haaland heads Man City to the top of Premier League with win over Coventry",
+   "text": "Norwegian scores only goal of unconvincing home win against newly promoted Coventry City.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/2026/9/5/haaland-head-man-city-to-the-top-of-premier-league-with-win-over-coventry?traffic_source=rss",
+   "date": "2026-09-05T16:47:17.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Haaland führt Man City mit Sieg über Coventry an die Spitze der Premier League"
   },
   {
    "id": "CoinDesk:Dollar-backed stablecoins can push local currencies lower, Bank of Korea study finds",
@@ -1223,40 +1257,6 @@
    "titleDe": "Cathie Wood sagt, dass die meisten Investoren dieses kritische Krypto-Token nicht schätzen"
   },
   {
-   "id": "Al Jazeera:Arsenal vs Chelsea: Premier League – prediction, teams, lineups",
-   "title": "Arsenal vs Chelsea: Premier League – prediction, teams, lineups",
-   "text": "Arsenal manager Mikel Arteta and Chelsea boss Xabi Alonso do battle in the Premier League for the first time on Sunday.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/sports/2026/9/5/arsenal-vs-chelsea-premier-league-prediction-teams-lineups?traffic_source=rss",
-   "date": "2026-09-05T13:20:42.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Arsenal vs Chelsea: Premier League – Vorhersage, Teams, Aufstellungen"
-  },
-  {
    "id": "Decrypt:AI Just Solved a 350-Year-Old Math Problem By Writing the Longest Proof Ever",
    "title": "AI Just Solved a 350-Year-Old Math Problem By Writing the Longest Proof Ever",
    "text": "Anthropic says Claude spent 11 days turning Fermat's Last Theorem into 13 million lines of code a computer can check itself, no human trust required",
@@ -1704,7 +1704,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2587,7 +2587,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3868,46 +3868,10 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "US-Gehaltslisten stiegen im August um 162.000, viel mehr als erwartet; Arbeitslosenquote bei 4,1%"
-  },
-  {
-   "id": "Cointelegraph:QuFi launches post-quantum verification platform with Bitcoin testnet proof",
-   "title": "QuFi launches post-quantum verification platform with Bitcoin testnet proof",
-   "text": "QuFi’s new platform uses post-quantum cryptography to verify digital asset transactions without requiring changes to existing blockchain settlement networks.",
-   "source": "Cointelegraph",
-   "url": "https://cointelegraph.com/news/qufi-launches-post-quantum-verification-platform-with-bitcoin-testnet-proof?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "date": "2026-09-04T17:09:25.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": "Produktankündigung",
-   "eventTypeEn": "Product announcement",
-   "scope": "project",
-   "coins": [
-    "BTC"
-   ],
-   "alsoIn": [],
-   "titleDe": "QuFi startet Post-Quantum-Verifizierungsplattform mit Bitcoin-Testnet-Proof"
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
