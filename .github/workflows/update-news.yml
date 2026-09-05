@@ -18,11 +18,16 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: '20'
+          node-version: '24'
+          # Das Projekt hat keine Abhaengigkeiten und kein Lockfile. Seit v5
+          # schaltet setup-node das Zwischenspeichern von selbst ein, sobald es
+          # einen Paketmanager erkennt - und bricht dann ab, weil die Sperrdatei
+          # fehlt. Hier ausdruecklich abgeschaltet, damit das so bleibt.
+          package-manager-cache: false
 
       - name: Engine testen
         run: node --test src/*.test.mjs
