@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05T17:24:18.929Z",
+ "updated": "2026-09-05T17:26:03.690Z",
  "regime": "policy",
  "count": 107,
  "errors": [
@@ -586,7 +586,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3763,7 +3763,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
