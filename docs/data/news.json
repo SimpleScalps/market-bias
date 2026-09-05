@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05T15:55:23.761Z",
+ "updated": "2026-09-05T15:56:09.753Z",
  "regime": "policy",
  "count": 112,
  "errors": [
@@ -3942,7 +3942,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
