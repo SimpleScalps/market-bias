@@ -1,11 +1,45 @@
 {
- "updated": "2026-09-05T06:21:48.113Z",
+ "updated": "2026-09-05T06:22:29.936Z",
  "regime": "policy",
  "count": 202,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "Al Jazeera:Bolivian military barracks explosion kills at least 10",
+   "title": "Bolivian military barracks explosion kills at least 10",
+   "text": "An explosion at a military barracks in Viacha, Bolivia, has killed at least 10 people and injured dozens.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/bolivian-military-barracks-explosion-kills-at-least-10?traffic_source=rss",
+   "date": "2026-09-05T06:11:05.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 62,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Explosion in bolivianischer Kaserne tötet mindestens 10"
+  },
   {
    "id": "CNBC World:Italy's Meloni just hit a major political milestone. Former leaders say economic reform must follow",
    "title": "Italy's Meloni just hit a major political milestone. Former leaders say economic reform must follow",
@@ -1671,7 +1705,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1824,40 +1858,6 @@
    ],
    "alsoIn": [],
    "titleDe": "Ripple Swell zeigt Indiens ehemaligen Zentralbankgouverneur"
-  },
-  {
-   "id": "Al Jazeera:Liverpool beat Ipswich as Isak goals hand Iraola first Premier League win",
-   "title": "Liverpool beat Ipswich as Isak goals hand Iraola first Premier League win",
-   "text": "Bradley Barcola makes his debut as Alexander Isak scores both Liverpool goals in 2-0 win at Ipswich Town.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/sports/2026/9/4/liverpool-beat-ipswich-as-isak-goals-hand-iraola-first-premier-league-win?traffic_source=rss",
-   "date": "2026-09-04T20:55:16.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 17,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Liverpool besiegte Ipswich, als Isak-Tore Iraola den ersten Premier-League-Sieg einbrachten"
   },
   {
    "id": "FXStreet:Indonesian Rupiah: Two-way risks around support levels – OCBC",
@@ -2125,7 +2125,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 16,
+   "priority": 15,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2969,7 +2969,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7157,7 +7157,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
