@@ -168,6 +168,23 @@ function urteilAuslesen(n) {
 const BESTAND_HERZSCHLAG_MS = 5 * 60_000;
 
 /*
+ * Verzug je Quelle: von der Veroeffentlichung bis zu uns.
+ *
+ * Eine Meldung von CNBC trug den Zeitstempel 12:00:01 und erreichte den Kanal
+ * um 12:12 - zwoelf Minuten. Eine Stichprobe am Feed zeigte, dass CNBC seine
+ * neueste Meldung erst mit sechseinhalb Minuten Rueckstand ausliefert, aber
+ * damit war die Rechnung nicht geschlossen. Eine Momentaufnahme taugt dafuer
+ * auch nicht: Der Rueckstand schwankt.
+ *
+ * Deshalb wird er laufend mitgeschrieben. Fuer jede erstmals gesehene Meldung
+ * der Abstand zwischen ihrem Zeitstempel und dem Augenblick, in dem wir sie
+ * haben - gemittelt je Quelle. Damit ist belegbar, wo die Zeit verlorengeht:
+ * bei der Quelle oder bei uns. Und es zeigt, welche Quelle sich lohnt.
+ */
+const VERZUG_MAX_MS = 6 * 3600_000;   // darueber ist der Zeitstempel unbrauchbar
+const VERZUG_PROBEN = 30;             // je Quelle, gleitend
+
+/*
  * Ein Haupttaktgeber, der Rest als Reserve.
  *
  * Drei Taktgeber liefen gleichzeitig: Cloudflares eigener Zeitplan alle zwei
@@ -539,6 +556,23 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   // Neu ist, was noch nie im Bestand war - nicht bloss, was gerade fehlt.
   const kandidaten = neue.filter((n) => !gesehen.has(n.id));
 
+  /*
+   * Verzug festhalten, solange die Meldung frisch entdeckt ist.
+   *
+   * Nur hier ist bekannt, dass wir sie zum ersten Mal sehen - eine Zeile
+   * spaeter waere sie nicht mehr von den uebrigen zu unterscheiden.
+   */
+  const verzug = { ...(bestand?.verzug || {}) };
+  for (const n of kandidaten) {
+    const ms = Date.now() - new Date(n.date).getTime();
+    if (!(ms >= 0 && ms < VERZUG_MAX_MS)) continue;   // unbrauchbarer Zeitstempel
+
+    const e = verzug[n.source] || { proben: [], mittel: 0 };
+    e.proben = [...e.proben, Math.round(ms / 1000)].slice(-VERZUG_PROBEN);
+    e.mittel = Math.round(e.proben.reduce((a, b) => a + b, 0) / e.proben.length);
+    verzug[n.source] = e;
+  }
+
   // Vor dem Versand gegenlesen lassen: Ein Widerspruch gehoert in die
   // Benachrichtigung, nicht erst in die spaetere Ansicht.
   const budget = budgetRest(speicher);
@@ -624,6 +658,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     items,
     gesehen: gedaechtnis,
     schreibTag: heute,
+    verzug,
     // Alles seit dem letzten Sichern, plus dieses hier.
     schreibungen: (zaehlerGilt ? bestand.schreibungen || 0 : 0) + offeneSchreibungen + 1,
     /*
@@ -1044,6 +1079,18 @@ export default {
          * Zeile faellt ein stiller Taktgeber erst auf, wenn Meldungen
          * ausbleiben, und dann sucht man an der falschen Stelle.
          */
+        /*
+         * Wo die Zeit verlorengeht.
+         *
+         * Der Wert ist der mittlere Abstand zwischen dem Zeitstempel einer
+         * Meldung und dem Moment, in dem wir sie erstmals sehen - ueber die
+         * letzten dreissig Meldungen der Quelle. Ein hoher Wert liegt an der
+         * Quelle, nicht an uns: Der Tick laeuft jede Minute.
+         */
+        verzug: Object.entries(bestand?.verzug || {})
+          .map(([quelle, e]) => ({ quelle, sekunden: e.mittel, proben: e.proben?.length ?? 0 }))
+          .sort((a, b) => b.sekunden - a.sekunden),
+
         taktgeber: Object.entries(bestand?.ticks || {})
           .map(([quelle, t]) => ({ quelle, zeit: t.zeit, meldungen: t.meldungen, offen: t.offen }))
           .sort((a, b) => (b.zeit || '').localeCompare(a.zeit || '')),
