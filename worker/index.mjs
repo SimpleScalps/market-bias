@@ -267,6 +267,21 @@ const VERZUG_MAX_MS = 6 * 3600_000;   // darueber ist der Zeitstempel unbrauchba
 const VERZUG_PROBEN = 30;             // je Quelle, gleitend
 
 /*
+ * Wie viele Proben es braucht, ehe der Verzug etwas bedeutet.
+ *
+ * Beim ersten Abruf einer Quelle gilt jede Meldung ihres Feeds als neu -
+ * auch die, die dort schon zwei Stunden liegt. Diese Ausreisser beherrschen
+ * den Median, solange wenig anderes danebensteht, und erzeugten ein klares
+ * Muster: je weniger Proben, desto langsamer sah die Quelle aus. CNBC stand
+ * mit drei Proben bei 136 Minuten, Al Jazeera mit achtzehn bei 22.
+ *
+ * Darum wird unterhalb dieser Grenze keine Zahl mehr genannt. Eine Zahl, die
+ * mehr ueber ihren eigenen Zustand aussagt als ueber die Quelle, taugt nicht
+ * zur Auswahl schnellerer Feeds - und genau dafuer ist sie da.
+ */
+const VERZUG_MIN_PROBEN = 8;
+
+/*
  * Ein Haupttaktgeber, der Rest als Reserve.
  *
  * Drei Taktgeber liefen gleichzeitig: Cloudflares eigener Zeitplan alle zwei
@@ -1436,14 +1451,14 @@ export default {
          * letzten dreissig Meldungen der Quelle. Ein hoher Wert liegt an der
          * Quelle, nicht an uns: Der Tick laeuft jede Minute.
          */
-        verzug: Object.entries(zNow.verzug || bestand?.verzug || {})
-          .map(([quelle, e]) => ({
-            quelle,
-            sekunden: e.median ?? e.mittel ?? 0,
-            proben: e.proben?.length ?? 0,
-          }))
-          // Wenige Messungen sagen wenig; das steht als Zahl dabei.
-          .sort((a, b) => b.sekunden - a.sekunden),
+        verzug: Object.entries({ ...(bestand?.verzug || {}), ...(zNow.verzug || {}) })
+          .map(([quelle, e]) => {
+            const proben = e.proben?.length ?? 0;
+            return proben >= VERZUG_MIN_PROBEN
+              ? { quelle, sekunden: e.median ?? e.mittel ?? 0, proben }
+              : { quelle, proben, hinweis: `noch ${VERZUG_MIN_PROBEN - proben} Proben noetig` };
+          })
+          .sort((a, b) => (b.sekunden ?? -1) - (a.sekunden ?? -1)),
 
         taktgeber: Object.entries(zNow.ticks || bestand?.ticks || {})
           .map(([quelle, t]) => ({ quelle, zeit: t.zeit, meldungen: t.meldungen, offen: t.offen }))
