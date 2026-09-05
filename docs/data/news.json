@@ -1,9 +1,10 @@
 {
- "updated": "2026-09-05T11:03:44.785Z",
+ "updated": "2026-09-05T11:05:40.037Z",
  "regime": "policy",
- "count": 192,
+ "count": 184,
  "errors": [
-  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
+  "MarketWatch: fetch failed"
  ],
  "items": [
   {
@@ -73,6 +74,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "SEC Crypto Custody Rewrite tritt in die Überprüfung des Weißen Hauses ein"
+  },
+  {
+   "id": "Al Jazeera:Mudslide in eastern China kills one, leaves 11 missing",
+   "title": "Mudslide in eastern China kills one, leaves 11 missing",
+   "text": "A mudslide triggered by days of heavy rain in Jiangxi province, China, has killed one person and left 11 missing.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/mudslide-in-eastern-china-kills-one-leaves-11-missing?traffic_source=rss",
+   "date": "2026-09-05T10:49:23.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 62,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Schlammlawine in Ostchina tötet einen, 11 fehlen"
   },
   {
    "id": "Cointelegraph:Poland upholds crypto bill veto as Zondacrypto scandal widens",
@@ -1437,7 +1472,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 36,
+   "priority": 35,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1796,44 +1831,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Trump schickt Gesandte nach Russland, Ukraine mit neuem Friedensplan"
-  },
-  {
-   "id": "Al Jazeera:After Pretoria peace deal, old enemies in Ethiopia’s Tigray find new ground",
-   "title": "After Pretoria peace deal, old enemies in Ethiopia’s Tigray find new ground",
-   "text": "The 2022 peace deal ended the war but left key disputes unresolved, giving the TPLF room to regroup as tensions return.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/5/after-pretoria-peace-deal-old-enemies-in-ethiopias-tigray-find-new-ground?traffic_source=rss",
-   "date": "2026-09-05T03:05:28.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Entspannung"
-   ],
-   "scores": {
-    "crypto": 0.495,
-    "stocks": 0.495,
-    "gold": -0.248,
-    "usd": -0.165
-   },
-   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Entspannung)",
-   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 27,
-   "label": "bullish",
-   "labelText": "Bullish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Nach dem Friedensabkommen von Pretoria finden alte Feinde in Äthiopiens Tigray neuen Boden"
   },
   {
    "id": "U.Today:+103% in Shiba Inu (SHIB) Most Crucial Metric in 24 Hours: Can It Save the Day?",
@@ -2425,40 +2422,6 @@
    "titleDe": "Die Muttergesellschaft von TikTok hat sich gerade 30 Milliarden $ geliehen, um All-In auf KI zu setzen"
   },
   {
-   "id": "MarketWatch:Bloom Energy was just named to the S&P 500. These other stocks are joining the index as well.",
-   "title": "Bloom Energy was just named to the S&P 500. These other stocks are joining the index as well.",
-   "text": "Molson Coors Beverage, Builders FirstSource and Trade Desk will be getting the boot from the benchmark index.",
-   "source": "MarketWatch",
-   "url": "https://www.marketwatch.com/story/s-p-500-changes-are-coming-soon-these-stocks-could-be-named-to-the-index-today-2d0d7c14?mod=mw_rss_topstories",
-   "date": "2026-09-04T21:46:00.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 11,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Bloom Energy wurde gerade in den S&P 500 aufgenommen. Diese anderen Aktien werden ebenfalls in den Index aufgenommen."
-  },
-  {
    "id": "FXStreet:Malaysian Ringgit: BNM hawkish tilt supports MYR – Commerzbank",
    "title": "Malaysian Ringgit: BNM hawkish tilt supports MYR – Commerzbank",
    "text": "Commerzbank highlights that Bank Negara Malaysia kept the OPR at 2.75% but shifted to a more hawkish bias, removing language that policy is \"appropriate\" and signalling vigilance on cost pressures.",
@@ -2781,74 +2744,6 @@
    "titleDe": "Der mexikanische Milliardär sagt, dass Bitcoin 1,86 Millionen $ erreichen wird. Was ist seine Logik?"
   },
   {
-   "id": "MarketWatch:Tesla’s stock falls as Cybercab launch lands with a thud",
-   "title": "Tesla’s stock falls as Cybercab launch lands with a thud",
-   "text": "The company’s Cybercab rollout won’t be as broad as some investors had hoped.",
-   "source": "MarketWatch",
-   "url": "https://www.marketwatch.com/story/teslas-stock-falls-as-cybercab-launch-lands-with-a-thud-1108376b?mod=mw_rss_topstories",
-   "date": "2026-09-04T20:18:00.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 8,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": "Produktankündigung",
-   "eventTypeEn": "Product announcement",
-   "scope": "project",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Teslas Aktie fällt, als der Start von Cybercab mit einem Schlag landet"
-  },
-  {
-   "id": "MarketWatch:Micron is doubling down on AI memory chips. That could pay off big time for investors.",
-   "title": "Micron is doubling down on AI memory chips. That could pay off big time for investors.",
-   "text": "Micron is reportedly increasing production capacity of a more profitable memory offering that’s in high demand due to AI.",
-   "source": "MarketWatch",
-   "url": "https://www.marketwatch.com/story/micron-is-doubling-down-on-ai-memory-chips-that-could-pay-off-big-time-for-investors-da9e7f5e?mod=mw_rss_topstories",
-   "date": "2026-09-04T20:12:00.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 8,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Micron verdoppelt sich auf KI-Speicherchips. Das könnte sich für Investoren sehr auszahlen."
-  },
-  {
    "id": "CNBC World:Tesla's stock drops 6% as Cybercab update 'underwhelms' Wall Street",
    "title": "Tesla's stock drops 6% as Cybercab update 'underwhelms' Wall Street",
    "text": "Tesla's long-awaited Cybercab update failed to dazzle investors.",
@@ -2917,108 +2812,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Chinesischer Yuan: Services PMI Rebound hält PBoC zurück – Commerzbank"
-  },
-  {
-   "id": "MarketWatch:Will a data center hurt your home’s value? Research says no. Sellers disagree.",
-   "title": "Will a data center hurt your home’s value? Research says no. Sellers disagree.",
-   "text": "In recent months, Americans have gotten more vocal about their concerns over data centers and the effects they could have on home values.",
-   "source": "MarketWatch",
-   "url": "https://www.marketwatch.com/story/will-a-data-center-hurt-your-homes-value-research-says-no-sellers-disagree-7017ace4?mod=mw_rss_topstories",
-   "date": "2026-09-04T20:03:00.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 8,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Schadet ein Rechenzentrum dem Wert Ihres Hauses? Die Forschung sagt nein. Verkäufer sind anderer Meinung."
-  },
-  {
-   "id": "MarketWatch:Here’s what’s worth streaming in September 2026 on Netflix, Hulu, HBO Max and more",
-   "title": "Here’s what’s worth streaming in September 2026 on Netflix, Hulu, HBO Max and more",
-   "text": "Prices are rising again, but a slew of fan-favorite shows — including Apple’s ‘Slow Horses,’ Netflix’s ‘The Gentlemen’ and Paramount’s ‘MobLand’ — are returning for new seasons",
-   "source": "MarketWatch",
-   "url": "https://www.marketwatch.com/story/heres-whats-worth-streaming-in-september-2026-on-netflix-hulu-hbo-max-and-more-a702e7dd?mod=mw_rss_topstories",
-   "date": "2026-09-04T20:00:00.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 8,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Das lohnt sich im September 2026 auf Netflix, Hulu, HBO Max und mehr"
-  },
-  {
-   "id": "MarketWatch:Why Oracle’s stock looks like a compelling buy ahead of earnings",
-   "title": "Why Oracle’s stock looks like a compelling buy ahead of earnings",
-   "text": "While there are long-term debates around Oracle’s stock, analysts say the company looks poised to benefit from upbeat pricing trends and more when it reports results next week.",
-   "source": "MarketWatch",
-   "url": "https://www.marketwatch.com/story/why-oracles-stock-looks-like-a-compelling-buy-ahead-of-earnings-12a04d7b?mod=mw_rss_topstories",
-   "date": "2026-09-04T19:59:00.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 8,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Warum Oracle-Aktien einen überzeugenden Kauf vor dem Gewinn darstellen"
   },
   {
    "id": "CNBC:Trump says he will spend up to $500 million of 'my money' to help Republicans in midterms",
@@ -3091,40 +2884,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Aufschwung des Pfunds stockt, da US-Arbeitsmarktdaten Fed-Debatte neu entfachen"
-  },
-  {
-   "id": "MarketWatch:Maybe the snowbirds are right? One state dominates this list of best places to retire.",
-   "title": "Maybe the snowbirds are right? One state dominates this list of best places to retire.",
-   "text": "Access to healthcare, recreation, and low taxes lure retirees, new research says",
-   "source": "MarketWatch",
-   "url": "https://www.marketwatch.com/story/maybe-the-snowbirds-are-right-one-state-dominates-this-list-of-best-places-to-retire-ab506160?mod=mw_rss_topstories",
-   "date": "2026-09-04T19:51:00.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 8,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Vielleicht haben die Schneevögel recht? Ein Bundesstaat dominiert diese Liste der besten Ruhestandsorte."
   },
   {
    "id": "The Defiant:August Payrolls Knock Bitcoin Off $81,000",
@@ -6729,44 +6488,10 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Trezor sagt, dass Datenschutzverletzungen weitere 67.000 US-Kunden betreffen"
-  },
-  {
-   "id": "FXStreet:Gold recovers from post-NFP low as US Dollar trims gains",
-   "title": "Gold recovers from post-NFP low as US Dollar trims gains",
-   "text": "Gold (XAU/USD) remains under pressure on Friday after stronger-than-expected United States (US) Nonfarm Payrolls (NFP) data revive expectations of a Federal Reserve (Fed) rate hike.",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/gold-pauses-after-two-day-recovery-as-us-nfp-looms-202609041103",
-   "date": "2026-09-04T11:03:54.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 19,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Gold erholt sich vom Tiefstand nach dem NFP, da der US-Dollar die Gewinne senkt"
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
