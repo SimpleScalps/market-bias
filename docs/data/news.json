@@ -1,11 +1,83 @@
 {
- "updated": "2026-09-05T12:49:21.896Z",
+ "updated": "2026-09-05T12:53:54.803Z",
  "regime": "policy",
- "count": 177,
+ "count": 175,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "CNBC World:Abel: Two ways Berkshire hopes to cash in on AI",
+   "title": "Abel: Two ways Berkshire hopes to cash in on AI",
+   "text": "Berkshire Hathaway CEO Greg Abel tells CNBC the company is pursuing AI opportunities on two paths.",
+   "source": "CNBC World",
+   "url": "https://www.cnbc.com/2026/09/05/abel-two-ways-berkshire-hopes-in-cash-in-on-ai.html",
+   "date": "2026-09-05T12:45:44.000Z",
+   "tags": [
+    "Weltwirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "CNBC"
+   ],
+   "titleDe": "Abel: Auf zwei Arten hofft Berkshire, von KI zu profitieren"
+  },
+  {
+   "id": "BeInCrypto:Solana Co-Founder Slams Robinhood Chain Fees, Calls Congestion Profits ‘Brain Dead'",
+   "title": "Solana Co-Founder Slams Robinhood Chain Fees, Calls Congestion Profits ‘Brain Dead'",
+   "text": "Solana's Anatoly Yakovenko calls Robinhood Chain fees 'brain dead' and says Arbitrum's rev share could cover the cost.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/solana-founder-robinhood-chain-fees-criticism/",
+   "date": "2026-09-05T12:30:00.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 51,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "SOL"
+   ],
+   "alsoIn": [],
+   "titleDe": "Solana-Mitbegründer schlägt Robinhood-Kettengebühren, nennt Congestion Profits \"Brain Dead\""
+  },
   {
    "id": "CNBC World:This enhanced geothermal project aims to unlock gigawatts of power to fuel the data center boom",
    "title": "This enhanced geothermal project aims to unlock gigawatts of power to fuel the data center boom",
@@ -456,7 +528,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 38,
+   "priority": 37,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -558,7 +630,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -811,6 +883,40 @@
    "titleDe": "Beste Solaraktien"
   },
   {
+   "id": "Benzinga:Best Stocks Under $20",
+   "title": "Best Stocks Under $20",
+   "text": "If you’re interested in exploring more stocks under $20 Stocks under $20 offer investors and traders a lower-cost alternative to more expensive stocks. Despite the misperception that lower-priced stocks carry more risk, the risk profile of many stocks under $20 … Continued",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/money/stocks-under-20",
+   "date": "2026-09-05T11:12:41.000Z",
+   "tags": [
+    "US-Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 29,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Beste Aktien unter 20 $"
+  },
+  {
    "id": "Benzinga:Best Oil Stocks Right Now",
    "title": "Best Oil Stocks Right Now",
    "text": "Oil has made headlines during this coronavirus crisis, although not for reasons investors want to see. In addition to issues caused by international events, especially those that impede the safe transport of natural resources. Even in a perfect work, this sector can be quite volatile as supply and demand are constantly shifting. That’s why it’s … Continued",
@@ -843,6 +949,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Beste Ölvorräte im Moment"
+  },
+  {
+   "id": "Benzinga:Best Stocks Under $10",
+   "title": "Best Stocks Under $10",
+   "text": "If you’re interested in exploring more stocks under $10 Investing in stocks under $10 could significantly increase the returns on your portfolio, especially if you pick the right stock. Also, suppose you choose stocks in promising industrial sectors or those … Continued",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/money/stocks-under-10",
+   "date": "2026-09-05T11:12:41.000Z",
+   "tags": [
+    "US-Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 29,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Beste Aktien unter 10 $"
   },
   {
    "id": "BBC World:US envoys arrive in Moscow ahead of Ukraine talks",
@@ -1036,7 +1176,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1592,7 +1732,7 @@
    "whyEn": "Directly crypto-positive news. (signals: ETF inflows)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 56,
+   "priority": 55,
    "label": "strong_bullish",
    "labelText": "Stark Bullish",
    "impactLevel": "high",
@@ -1764,7 +1904,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1832,7 +1972,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 41,
+   "priority": 40,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1900,7 +2040,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2361,7 +2501,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2463,7 +2603,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2531,7 +2671,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2635,7 +2775,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 10,
+   "priority": 9,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3633,40 +3773,6 @@
    "titleDe": "Pineapple Financial legt $ 1B in Hypothekenaufzeichnungen auf Injective"
   },
   {
-   "id": "Cointelegraph:FinCEN ties $13B in crypto scams to non-US operations",
-   "title": "FinCEN ties $13B in crypto scams to non-US operations",
-   "text": "The agency reported that “transnational criminal organizations” based in compounds in Southeast Asia were largely behind digital asset scams targeting US residents.",
-   "source": "Cointelegraph",
-   "url": "https://cointelegraph.com/news/fincen-crypto-overseas-scam-centers-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "date": "2026-09-04T19:22:26.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "FinCEN bindet $ 13B in Krypto-Betrügereien an Nicht-US-Operationen"
-  },
-  {
    "id": "CNBC World:Trump doubles down on threat to halt trade with top partners unless Fed cuts rates",
    "title": "Trump doubles down on threat to halt trade with top partners unless Fed cuts rates",
    "text": "President Donald Trump demanded that the Fed slash interest rates or else he will cut off trade with countries with which the U.S. maintains trade deficits.",
@@ -3884,40 +3990,6 @@
    "titleDe": "Die langjährige Moderatorin von Fox News, Maria Bartiromo, bestreitet Berichte über die Kündigung"
   },
   {
-   "id": "Decrypt:'Send Your Lawyers': Robinhood Isn't Backing Down From AMC Over Stock Tokens",
-   "title": "'Send Your Lawyers': Robinhood Isn't Backing Down From AMC Over Stock Tokens",
-   "text": "Lawyers question AMC’s grounds for a securities-law challenge, but say the tokens’ branding and marketing could leave room for a dispute.",
-   "source": "Decrypt",
-   "url": "https://decrypt.co/377461/send-your-lawyers-robinhood-not-backing-down-amc",
-   "date": "2026-09-04T18:36:41.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "'Schicken Sie Ihre Anwälte': Robinhood zieht sich nicht von AMC über Aktien-Tokens zurück"
-  },
-  {
    "id": "The Block:President Trump says he wants Hyperliquid to enter the US — here’s how it could happen",
    "title": "President Trump says he wants Hyperliquid to enter the US — here’s how it could happen",
    "text": "President Trump says his administration is working to bring Hyperliquid into the U.S., raising a deceptively simple question: How?",
@@ -4007,7 +4079,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4735,40 +4807,6 @@
    "titleDe": "Zcash übersteigt 1.000 $, da die ETF-Zuflüsse ansteigen und sich die Miner häufen"
   },
   {
-   "id": "BeInCrypto:Liquid Mercury Announces Initial Closing of ACQUA1 Offering",
-   "title": "Liquid Mercury Announces Initial Closing of ACQUA1 Offering",
-   "text": "Chicago, United States, September 4th, 2026 – Liquid Mercury today announced that ACQUA1, LLC completed the initial closing of its MERC exchange offering on September 1, 2026. ACQUA1 is a Liquid Mercury subsidiary that operates Liquid Mercury’s Lab Company program, licensing Liquid Mercury technology to companies primarily tokenizing real-world assets and receiving fees plus a",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/liquid-mercury-acqua1-offering-563m-merc-burn/",
-   "date": "2026-09-04T16:50:30.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Liquid Mercury gibt den erstmaligen Abschluss des ACQUA1-Angebots bekannt"
-  },
-  {
    "id": "BBC World:Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
    "title": "Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
    "text": "Germany has blamed Russia for an attack on Leipzig airport but there has been a series of suspicious incidents elsewhere.",
@@ -4975,7 +5013,10 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "Decrypt",
+    "CoinDesk"
+   ],
    "titleDe": "AMCs CEO sagte Robinhood, er solle seinen Aktien-Token stoppen. Robinhood sagte ihm, er solle Anwälte schicken"
   },
   {
@@ -5449,40 +5490,6 @@
    "titleDe": "Das Federal Reserve Board gibt die Beendigung von Vollstreckungsmaßnahmen mit der United Texas Bank, der Quontic Bank Acquisition Corp. und der Quontic Bank Holdings Corp. bekannt."
   },
   {
-   "id": "CoinDesk:Robinhood isn't backing down after AMC CEO demands halt to stock tokens",
-   "title": "Robinhood isn't backing down after AMC CEO demands halt to stock tokens",
-   "text": "AMC boss Adam Aron called Robinhood’s stock tokens “synthetic equity” and threatened legal action. Vlad Tenev says the brokerage stands behind the product.",
-   "source": "CoinDesk",
-   "url": "https://www.coindesk.com/business/2026/09/04/amc-ceo-tells-robinhood-to-stop-issuing-stock-token-as-industry-executives-weigh-in",
-   "date": "2026-09-04T14:56:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 10,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Robinhood gibt nicht nach, nachdem AMC-CEO Stopp der Aktien-Token fordert"
-  },
-  {
    "id": "FXStreet:Swiss Franc loses ground upbeat US Nonfarm Payrolls",
    "title": "Swiss Franc loses ground upbeat US Nonfarm Payrolls",
    "text": "USD/CHF trades higher on Friday as stronger-than-expected United States (US) Nonfarm Payrolls (NFP) data trigger fresh volatility. The pair jumped to 0.8126 following the release before giving back part of its advance. At the time of writing, USD/CHF trades around 0.8102, up nearly 0.34% on the day.",
@@ -5696,74 +5703,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Von der Warnung bis zur Notierung: Großbritanniens größte Retail-Investmentplattform eröffnet Zugang zu Krypto-ETNs"
-  },
-  {
-   "id": "FXStreet:European Central Bank: September hike path and oil risks – Nomura",
-   "title": "European Central Bank: September hike path and oil risks – Nomura",
-   "text": "Nomura’s Global Markets Research team, led by Andrzej Szczepaniak, George Buckley and Josie Anderson, expects the ECB to raise the depo rate by 25bp to 2.50% at the 10 September meeting and then pause.",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/european-central-bank-september-hike-path-and-oil-risks-nomura-202609041421",
-   "date": "2026-09-04T14:21:06.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Europäische Zentralbank: September-Wanderweg und Ölrisiken – Nomura"
-  },
-  {
-   "id": "CNBC World:Adobe names Anil Chakravarthy as CEO, replacing Shantanu Narayen",
-   "title": "Adobe names Anil Chakravarthy as CEO, replacing Shantanu Narayen",
-   "text": "Adobe announced Anil Chakravarthy as its next CEO, replacing Shantanu Narayen, who announced his departure last March.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/03/adobe-anil-chakravarthy-ceo.html",
-   "date": "2026-09-04T14:18:49.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Adobe ernennt Anil Chakravarthy zum CEO und ersetzt Shantanu Narayen"
   },
   {
    "id": "CNBC Economy:The big business of personal protection: How private security became a $50 billion industry",
@@ -6222,7 +6161,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 4,
   "fehler": null
  }
 }
