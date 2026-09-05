@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v43';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v44';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -798,6 +798,27 @@ function render(erzwingen = false) {
   if (!erzwingen && signatur === letzteSignatur && feed.children.length) return;
   letzteSignatur = signatur;
 
+  /*
+   * Die Blickposition festhalten.
+   *
+   * Der Neuaufbau ersetzt alle Karten. Der Browser kann die Bildlaufhoehe
+   * dann nicht halten - man las etwas in der Mitte der Liste und stand
+   * unvermittelt wieder oben, ohne dass man selbst etwas getan haette. Als
+   * Anker dient die oberste noch sichtbare Karte samt ihrem Abstand zum
+   * oberen Rand; danach wird genau dieser Abstand wiederhergestellt.
+   *
+   * Anhand der Kennung, nicht anhand der Bildlaufhoehe: Kommen Meldungen
+   * hinzu oder fallen welche heraus, aendert sich die Hoehe ueber der Karte -
+   * die reine Zahl waere dann wieder daneben.
+   */
+  const anker = (() => {
+    for (const el of feed.children) {
+      const r = el.getBoundingClientRect();
+      if (r.bottom > 0 && el.dataset.id) return { id: el.dataset.id, oben: r.top };
+    }
+    return null;
+  })();
+
   feed.innerHTML = '';
 
   if (!items.length) {
@@ -815,6 +836,7 @@ function render(erzwingen = false) {
     const item = $('.item', node);
 
     item.classList.add(l);
+    item.dataset.id = n.id;   // Ankerpunkt beim Neuaufbau, siehe render()
     if (frischeIds.has(n.id)) item.classList.add('neu');
 
     $('time', node).textContent = zeit(n.date);
@@ -1021,6 +1043,21 @@ function render(erzwingen = false) {
     frag.appendChild(node);
   }
   feed.appendChild(frag);
+
+  /*
+   * Zurueck an dieselbe Stelle.
+   *
+   * Nur wenn die Karte noch da ist - sonst waere jeder Sprung geraten. Und
+   * nur, wenn ueberhaupt gescrollt wurde: Steht man ohnehin oben, gibt es
+   * nichts wiederherzustellen.
+   */
+  if (anker && window.scrollY > 0) {
+    const el = feed.querySelector(`[data-id="${CSS.escape(anker.id)}"]`);
+    if (el) {
+      const versatz = el.getBoundingClientRect().top - anker.oben;
+      if (Math.abs(versatz) > 1) window.scrollBy(0, versatz);
+    }
+  }
 }
 
 function renderFoot() {
