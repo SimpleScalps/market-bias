@@ -84,6 +84,51 @@ export async function loadCalendar(regime = 'policy') {
   return out;
 }
 
+/*
+ * Werbe- und Verweistexte, die viele Feeds an die Zusammenfassung haengen.
+ * Ohne diese Bereinigung bekaeme das Sprachmodell "Visit Benzinga to get more
+ * great content" als Teil der Nachricht zu lesen.
+ */
+const ANHANGSEL = [
+  // Ganze Verweisbloecke, nicht nur ihre Anfaenge: Sonst bleiben Reste wie
+  // "Benzinga . like this." stehen und landen beim Sprachmodell als Inhalt.
+  /The post\s[^]*?appeared first on[^.]*\.\s*/gi,
+  /Visit\s+[A-Za-z ]{2,20}\s+to get more[^.]*\.\s*/gi,
+  /(Read|Continue reading|Learn|Find out)\s+(more|the full story|here)[^.]*\.?\s*/gi,
+  /Click here[^.]*\.?\s*/gi,
+  /Subscribe to[^.]*\.?\s*/gi,
+  /Sign up (for|to)[^.]*\.?\s*/gi,
+  /This (article|story) (was|first|originally)[^.]*\.?\s*/gi,
+  /\((Bloomberg|Reuters|AP|AFP)\)\s*(--|—)?\s*/gi,
+  /(Photo|Image|Getty Images|REUTERS)[:/][^.]*\.?\s*/gi,
+  /Follow us on[^.]*\.?\s*/gi,
+  /Get an edge[^.]*\.?\s*/gi,
+];
+
+/** Holt die Zusammenfassung aus einem Eintrag und raeumt sie auf. */
+function beschreibung(eintrag) {
+  const roh = (eintrag.match(/<description>([^]*?)<\/description>/i) || [])[1]
+    || (eintrag.match(/<content:encoded>([^]*?)<\/content:encoded>/i) || [])[1]
+    || '';
+  if (!roh) return '';
+
+  let text = decode(roh)
+    .replace(/<script[^>]*>[^]*?<\/script>/gi, ' ')
+    .replace(/<style[^>]*>[^]*?<\/style>/gi, ' ')
+    .replace(/<[^>]*>/g, ' ');
+
+  for (const muster of ANHANGSEL) text = text.replace(muster, ' ');
+
+  text = text.replace(/\s+/g, ' ').trim();
+
+  // Was nach der Bereinigung uebrig bleibt, muss noch ein Satz sein. Bei
+  // manchen Quellen besteht die Zusammenfassung fast nur aus Eigenwerbung;
+  // dann ist ein leeres Feld ehrlicher als ein Fragment.
+  if (text.length < 40) return '';
+  if (!/[a-z]{3,}\s+[a-z]{3,}\s+[a-z]{3,}/i.test(text)) return '';
+  return text.slice(0, 500);
+}
+
 export async function loadFeed(feed, regime = 'policy') {
   const xml = await get(feed.url);
   const out = [];
@@ -92,9 +137,13 @@ export async function loadFeed(feed, regime = 'policy') {
     if (!title || isNoise(title)) continue;
     const date = new Date(tag(it, 'pubDate') || tag(it, 'dc:date') || Date.now());
     const scored = scoreHeadline(title, regime);
+    const text = beschreibung(it);
     out.push({
       id: `${feed.source}:${title}`.slice(0, 200),
       title,
+      // Die Zusammenfassung erklaert oft, was die Ueberschrift verschweigt -
+      // das Sprachmodell liest sie mit, und aufgeklappt steht sie auch da.
+      ...(text ? { text } : {}),
       source: feed.source,
       url: tag(it, 'link'),
       date: (isNaN(date) ? new Date() : date).toISOString(),

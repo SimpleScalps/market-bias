@@ -5,7 +5,7 @@ import { label } from './engine/sentiment.mjs';
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v25';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v26';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -236,13 +236,13 @@ function renderTages() {
  * Modell hilft bei Meldungen, deren Wortlaut die Regeln nicht recht fassen.
  * Der Zugangsschlüssel liegt im Worker, deshalb geht die Anfrage über ihn.
  */
-async function zweitmeinung(titelText) {
+async function zweitmeinung(titelText, anriss = '') {
   if (!liveUrl) return { fehler: T().zweitmeinungOhneWorker };
   try {
     const res = await fetch(`${liveUrl}/deuten`, {
       method: 'POST',
       headers: workerKopf({ 'Content-Type': 'application/json' }),
-      body: JSON.stringify({ titel: titelText }),
+      body: JSON.stringify({ titel: titelText, text: anriss }),
     });
     const j = await res.json();
     return res.ok ? j : { fehler: j.fehler || T().zweitmeinungFehler };
@@ -468,6 +468,13 @@ function render(erzwingen = false) {
     const deutsch = uebersetzt(n);
     if (deutsch) { ueb.textContent = deutsch; ueb.hidden = false; }
 
+    // Der Anriss aus dem Feed sagt oft, was die Überschrift verschweigt.
+    if (n.text) {
+      const an = $('.anriss', node);
+      an.textContent = n.text;
+      an.hidden = false;
+    }
+
     $('.reason', node).textContent = grund(n);
     $('.bars', node).innerHTML = bars(n);
 
@@ -490,7 +497,7 @@ function render(erzwingen = false) {
     kiBtn.addEventListener('click', async () => {
       kiBtn.disabled = true;
       kiBtn.textContent = T().zweitmeinungLaeuft;
-      const deutung = await zweitmeinung(n.title);
+      const deutung = await zweitmeinung(n.title, n.text);
       kiDarstellen(kiBox, deutung, score);
       kiBtn.hidden = !deutung.fehler;
       kiBtn.disabled = false;

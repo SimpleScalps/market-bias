@@ -469,3 +469,9 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
    Modell, nicht vom Regelwerk. */
 .item.korrigiert .badge::after{content:" ·"}
 .item.korrigiert .lead::after{content:"KI"}
+
+/* Anriss aus dem Feed: erklärt oft, was die Überschrift zuspitzt. */
+.anriss{
+  margin:0 0 9px;font-size:12px;line-height:1.5;color:var(--dim);
+  padding-left:10px;border-left:1px solid var(--line-2)
+}

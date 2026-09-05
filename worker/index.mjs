@@ -333,7 +333,7 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX) {
   if (!kandidaten.length) return;
 
   // Nebeneinander abfragen: nacheinander summierte sich die Wartezeit.
-  const deutungen = await Promise.all(kandidaten.map((n) => deuten(n.title, env)));
+  const deutungen = await Promise.all(kandidaten.map((n) => deuten(n.title, env, n.text)));
 
   kandidaten.forEach((n, i) => {
     const deutung = deutungen[i];
@@ -611,9 +611,9 @@ export default {
     if (url.pathname === '/deuten' && request.method === 'POST') {
       if (!env.GROQ_KEY) return json({ fehler: 'kein Schluessel hinterlegt' }, 501);
       try {
-        const { titel } = await request.json();
+        const { titel, text } = await request.json();
         if (!titel) return json({ fehler: 'keine Schlagzeile' }, 400);
-        const deutung = await deuten(titel, env);
+        const deutung = await deuten(titel, env, text);
         return json(deutung || { fehler: 'keine Antwort' }, deutung?.fehler ? 502 : 200);
       } catch (err) {
         return json({ fehler: err.message }, 400);
