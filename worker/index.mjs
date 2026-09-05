@@ -167,6 +167,22 @@ function urteilAuslesen(n) {
 const BESTAND_HERZSCHLAG_MS = 5 * 60_000;
 
 /*
+ * Notbremse vor dem Tageslimit.
+ *
+ * KV erlaubt tausend Ablagen am Tag. Bisher merkte der Worker das Erreichen
+ * erst daran, dass put() fehlschlug — und dann war alles betroffen, auch das
+ * Nötigste. Ab dieser Marke fällt zuerst weg, was verzichtbar ist: der
+ * Herzschlag und das Wochenbuch. Neue Meldungen werden bis zuletzt abgelegt,
+ * denn an ihnen hängen die Benachrichtigungen.
+ *
+ * Der Zähler dafür liegt im Durable Object, nicht in KV. Einer in KV konnte
+ * sich genau dann nicht mehr hochzählen, wenn es darauf ankam — die Anzeige
+ * stand auf "0 von 1.000", während daneben "limit exceeded" gemeldet wurde.
+ */
+const ABLAGE_SPARSAM_AB = 800;
+const ABLAGE_TAGESLIMIT = 1000;
+
+/*
  * Verzug je Quelle: von der Veroeffentlichung bis zu uns.
  *
  * Eine Meldung von CNBC trug den Zeitstempel 12:00:01 und erreichte den Kanal
@@ -563,6 +579,17 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   urteileAnlegen(items, speicher);
 
   /*
+   * Betriebszustand aus dem Durable Object.
+   *
+   * Er trägt alle Drosseln — und bleibt lesbar und schreibbar, auch wenn das
+   * Tageskontingent von KV erschöpft ist. Genau daran hat es gefehlt: Ohne
+   * diese Werte hielt der Worker bei jedem Durchgang für neu, was er eine
+   * Minute zuvor schon getan hatte, und Groq wies dreitausend Anfragen ab.
+   */
+  const z = (await zustand(env)) || {};
+  const sparsam = (z.schreibVersuche || 0) >= ABLAGE_SPARSAM_AB;
+
+  /*
    * Das Gedächtnis überlebt die Sichtbarkeitsgrenze.
    *
    * Ein Vermerk an der Meldung selbst reicht nicht: Der angezeigte Bestand
@@ -609,7 +636,8 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
 
   // Vor dem Versand gegenlesen lassen: Ein Widerspruch gehoert in die
   // Benachrichtigung, nicht erst in die spaetere Ansicht.
-  const budget = budgetRest(speicher);
+  // Der Tokenstand kommt aus dem Durable Object; KV kann ihn nicht führen.
+  const budget = budgetRest(z.tag ? { tag: z.tag, tokens: z.tokens } : speicher);
   // Der eigene Verbrauch zaehlt mit, auch wenn er nirgends abgelegt werden kann.
   const restJetzt = budget.rest - tokenSeitStart;
   if (restJetzt > 0) await gegenlesen(kandidaten, env, GEGENPROBE_MAX);
@@ -627,7 +655,10 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * Der spaetere der beiden Zeitpunkte gilt: der abgelegte oder der im
    * Arbeitsspeicher. So bremst auch ein Isolat, dessen Schreibversuch scheitert.
    */
-  const letzter = Math.max(nachlaufZuletzt, new Date(speicher.letzterNachlauf || 0).getTime());
+  const letzter = Math.max(
+    nachlaufZuletzt,
+    new Date(z.letzterNachlauf || speicher.letzterNachlauf || 0).getTime(),
+  );
   if (Date.now() - letzter > NACHZIEHEN_ABSTAND_MS && restJetzt > 0) {
     const nachzuholen = items.filter(brauchtPruefung);
     if (nachzuholen.length) {
@@ -660,6 +691,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   uebersetzungsTokens = 0;
   tokenSeitStart += frisch;
   budget.verbraucht += frisch;
+  if (frisch) ctx.waitUntil(zustand(env, { tokens: frisch }));
 
   if (neueUrteile || budget.verbraucht !== (speicher.tokens || 0)) {
     const ids = Object.keys(speicher.urteile);
@@ -753,14 +785,42 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * uebrigen Durchgaenge liefern ihr Ergebnis aus, ohne es abzulegen -
    * berechnet wird es ohnehin jedes Mal neu.
    */
+  /*
+   * Nahe am Limit nur noch das Nötigste.
+   *
+   * Neue Meldungen müssen abgelegt werden — sonst gelten sie beim nächsten
+   * Durchgang wieder als neu. Der Herzschlag hält dagegen nur den Zeitstempel
+   * frisch und darf warten, bis sich das Kontingent um Mitternacht erneuert.
+   */
   const mussSichern = kandidaten.length > 0
     || neueUrteile > 0
-    || alterMs(bestand) >= BESTAND_HERZSCHLAG_MS;
+    || (!sparsam && alterMs(bestand) >= BESTAND_HERZSCHLAG_MS);
   const gesichert = mussSichern
     ? await schreiben(env, ctx, KEY, data, BESTAND_TTL)
     : false;
   // Die Summe ist verbucht; das Zaehlwerk faengt von vorn an.
-  if (gesichert) { offeneSchreibungen = 0; versucheSeitAblage = 0; fehlerSeitAblage = 0; }
+  /*
+   * Buchfuehrung ins Durable Object, nebenher.
+   *
+   * Zaehler, Taktgeber, Verzug und der Zeitpunkt des letzten Nachlaufs liegen
+   * dort - unabhaengig davon, ob KV gerade schreiben kann. Nur so stimmt die
+   * Anzeige auch dann, wenn das Kontingent erschoepft ist.
+   */
+  const buchung = {
+    schreibVersuche: versucheSeitAblage,
+    schreibFehler: fehlerSeitAblage,
+    // Der Zeitpunkt des letzten Fehlschlags gehoert dorthin, wo ihn jeder
+    // Aufruf sieht - im Isolat sah ihn nur der, in dem er passiert war.
+    ...(letzterAblageFehler ? { letzteAblageStoerung: letzterAblageFehler } : {}),
+    ticks: data.ticks,
+    verzug: data.verzug,
+  };
+  if (speicher.letzterNachlauf) buchung.letzterNachlauf = speicher.letzterNachlauf;
+  ctx.waitUntil(zustand(env, buchung));
+
+  versucheSeitAblage = 0;
+  fehlerSeitAblage = 0;
+  if (gesichert) offeneSchreibungen = 0;
 
   /*
    * Melden. Ob das Ablegen gelang, spielt dafuer keine Rolle mehr.
@@ -777,7 +837,8 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ? await pushen(env, ctx, kandidaten)
     : { versucht: false, grund: 'erster Lauf' };
 
-  ctx.waitUntil(wochenbuchPflegen(env, ctx, items));
+  // Das Wochenbuch ist Chronik, keine Betriebsnotwendigkeit - es tritt zurueck.
+  if (!sparsam) ctx.waitUntil(wochenbuchPflegen(env, ctx, items));
   return { data, neue: kandidaten, versand, gesichert };
 }
 
@@ -959,6 +1020,27 @@ let uebersetzungsTokens = 0;
 let nachlaufZuletzt = 0;
 let tokenSeitStart = 0;
 
+/**
+ * Liest oder ergaenzt den kleinen Betriebszustand im Durable Object.
+ *
+ * Ohne Argument nur lesen. Mit `aenderung` werden Zahlen addiert und alles
+ * andere ersetzt; zurueck kommt der neue Stand. Faellt das Objekt aus, gibt es
+ * null - der Betrieb laeuft dann ohne Buchfuehrung weiter, statt zu scheitern.
+ */
+async function zustand(env, aenderung = null) {
+  if (!env.VERSANDBUCH) return null;
+  try {
+    const stub = env.VERSANDBUCH.get(env.VERSANDBUCH.idFromName('global'));
+    const res = await stub.fetch('https://versandbuch.intern/zustand', aenderung
+      ? { method: 'POST', body: JSON.stringify(aenderung) }
+      : undefined);
+    return res.ok ? await res.json() : null;
+  } catch (err) {
+    console.log('Zustand:', err.message);
+    return null;
+  }
+}
+
 async function nochNichtGemeldet(env, items, nurLesen = false) {
   if (!env.VERSANDBUCH) return items;          // ohne Bindung wie bisher
 
@@ -1094,6 +1176,7 @@ export default {
       const abo = await lesen(env, ABO_KEY);
       const buch = await lesen(env, WOCHE_KEY);
       const urteilSpeicher = await lesen(env, URTEILE_KEY);
+      const zNow = (await zustand(env)) || {};
       return json({
         ok: true,
         zeit: new Date().toISOString(),
@@ -1110,10 +1193,19 @@ export default {
          * Stattdessen zaehlt der letzte tatsaechliche Fehlschlag. Liegt keiner
          * vor oder ist er alt, laeuft die Ablage.
          */
-        ablageSchreibt: !letzterAblageFehler
-          || Date.now() - new Date(letzterAblageFehler.zeit).getTime() > 10 * 60_000
-          ? 'ja'
-          : `NEIN - ${letzterAblageFehler.fehler}`,
+        /*
+         * Aus dem Durable Object, nicht aus diesem Isolat.
+         *
+         * Sonst meldete /health "ja", waehrend der Zaehler daneben abgewiesene
+         * Versuche auswies - der Fehlschlag war in einem anderen Isolat
+         * passiert und hier schlicht unbekannt.
+         */
+        ablageSchreibt: (() => {
+          const st = zNow.letzteAblageStoerung || letzterAblageFehler;
+          if (!st) return 'ja';
+          const her = Date.now() - new Date(st.zeit).getTime();
+          return her > 10 * 60_000 ? 'ja' : `NEIN - ${st.fehler}`;
+        })(),
         zweitmeinung: env.GROQ_KEY ? 'eingerichtet' : 'kein Schluessel',
         uebersetzung: env.GROQ_KEY ? 'Groq'
           : (env.DEEPL_KEY ? 'DeepL' : 'MyMemory (ohne Schluessel)'),
@@ -1123,10 +1215,9 @@ export default {
           : 'OFFEN - jeder mit dieser Adresse kann das Abo aendern und das Kontingent verbrauchen',
         meldungen: bestand?.items?.length ?? 0,
         alterSekunden: Math.round(alterMs(bestand) / 1000),
-        schreibvorgaenge: bestand?.schreibTag === new Date().toISOString().slice(0, 10)
-          ? `${bestand.schreibVersuche ?? bestand.schreibungen} von 1.000`
-            + (bestand.schreibFehler ? ` — ${bestand.schreibFehler} abgewiesen` : '')
-          : 'heute noch keiner',
+        schreibvorgaenge: `${zNow.schreibVersuche ?? 0} von ${ABLAGE_TAGESLIMIT}`
+          + (zNow.schreibFehler ? ` — ${zNow.schreibFehler} abgewiesen` : '')
+          + ((zNow.schreibVersuche ?? 0) >= ABLAGE_SPARSAM_AB ? ' · Sparbetrieb' : ''),
         letzterTickFehler: letzterTickFehler ?? 'keiner seit dem Start',
         letzterAblageFehler: letzterAblageFehler ?? 'keiner seit dem Start',
         versandbuch: env.VERSANDBUCH
@@ -1136,7 +1227,7 @@ export default {
           ? `${bestand.items.filter((n) => n.ki).length} von ${bestand.items.length}`
           : '0',
         berichtigt: bestand?.items?.filter((n) => n.kiKorrigiert).length ?? 0,
-        kiBudget: `${budgetRest(urteilSpeicher).verbraucht.toLocaleString('de-DE')}`
+        kiBudget: `${budgetRest({ tag: zNow.tag, tokens: zNow.tokens }).verbraucht.toLocaleString('de-DE')}`
           + ` von 200.000 Token heute`
           + ` (alle Wege zusammen; die automatische Pruefung stoppt bei`
           + ` ${KI_TOKEN_MAX.toLocaleString('de-DE')})`,
@@ -1159,7 +1250,7 @@ export default {
          * letzten dreissig Meldungen der Quelle. Ein hoher Wert liegt an der
          * Quelle, nicht an uns: Der Tick laeuft jede Minute.
          */
-        verzug: Object.entries(bestand?.verzug || {})
+        verzug: Object.entries(zNow.verzug || bestand?.verzug || {})
           .map(([quelle, e]) => ({
             quelle,
             sekunden: e.median ?? e.mittel ?? 0,
@@ -1168,7 +1259,7 @@ export default {
           // Wenige Messungen sagen wenig; das steht als Zahl dabei.
           .sort((a, b) => b.sekunden - a.sekunden),
 
-        taktgeber: Object.entries(bestand?.ticks || {})
+        taktgeber: Object.entries(zNow.ticks || bestand?.ticks || {})
           .map(([quelle, t]) => ({ quelle, zeit: t.zeit, meldungen: t.meldungen, offen: t.offen }))
           .sort((a, b) => (b.zeit || '').localeCompare(a.zeit || '')),
         // Ohne hinterlegtes Abo verschickt der Worker nichts. Zeigt nur, ob

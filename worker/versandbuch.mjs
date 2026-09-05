@@ -29,6 +29,51 @@ export class Versandbuch {
   }
 
   async fetch(request) {
+    const pfad = new URL(request.url).pathname;
+
+    /*
+     * Kleiner Betriebszustand: Zaehler, Taktgeber, Verzug, Drosselwerte.
+     *
+     * Er lag bisher in KV und war damit genau dann blind, wenn man ihn
+     * braucht: Ist das Tageskontingent erschoepft, kann sich ein Zaehler in KV
+     * nicht mehr selbst hochzaehlen - die Anzeige stand auf "0 von 1.000",
+     * waehrend daneben "limit exceeded" gemeldet wurde.
+     *
+     * Hier gibt es kein Tageslimit. Und weil alle Anfragen nacheinander durch
+     * dieses eine Objekt laufen, koennen zwei Durchgaenge den Zaehler auch
+     * nicht gegenseitig ueberschreiben.
+     */
+    if (pfad === '/zustand') {
+      const jetzt = await this.state.storage.get('zustand') || {};
+
+      if (request.method !== 'POST') {
+        return new Response(JSON.stringify(jetzt),
+          { headers: { 'content-type': 'application/json' } });
+      }
+
+      let aenderung = {};
+      try { aenderung = await request.json(); } catch { /* leer */ }
+
+      // Tageswechsel: Zaehler zuruecksetzen, Verzug und Taktgeber behalten.
+      const heute = new Date().toISOString().slice(0, 10);
+      const basis = jetzt.tag === heute ? jetzt : {
+        tag: heute, schreibVersuche: 0, schreibFehler: 0, tokens: 0,
+        ticks: jetzt.ticks, verzug: jetzt.verzug, letzterNachlauf: jetzt.letzterNachlauf,
+      };
+
+      const neu = { ...basis, tag: heute };
+      // Zahlenfelder werden addiert, alles andere ersetzt.
+      for (const [k, v] of Object.entries(aenderung)) {
+        neu[k] = (typeof v === 'number' && typeof basis[k] === 'number')
+          ? basis[k] + v
+          : v;
+      }
+
+      await this.state.storage.put('zustand', neu);
+      return new Response(JSON.stringify(neu),
+        { headers: { 'content-type': 'application/json' } });
+    }
+
     let ids, nurLesen;
     try {
       ({ ids, nurLesen } = await request.json());
