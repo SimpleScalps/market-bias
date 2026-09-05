@@ -567,9 +567,21 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     const ms = Date.now() - new Date(n.date).getTime();
     if (!(ms >= 0 && ms < VERZUG_MAX_MS)) continue;   // unbrauchbarer Zeitstempel
 
-    const e = verzug[n.source] || { proben: [], mittel: 0 };
+    const e = verzug[n.source] || { proben: [] };
     e.proben = [...e.proben, Math.round(ms / 1000)].slice(-VERZUG_PROBEN);
-    e.mittel = Math.round(e.proben.reduce((a, b) => a + b, 0) / e.proben.length);
+
+    /*
+     * Der Median, nicht der Mittelwert.
+     *
+     * Manche Quellen mischen zeitlose Stuecke unter die Nachrichten -
+     * Benzingas "Best Oil Stocks Right Now" etwa, mit einem Zeitstempel von
+     * vor zwei Stunden. Ein solcher Ausreisser verdirbt einen Mittelwert
+     * vollstaendig: Aus zwei Messungen wurden 102 Minuten, obwohl die Quelle
+     * ihre echten Nachrichten zuegig liefert. Der Median laesst sich davon
+     * nicht beeindrucken.
+     */
+    const sortiert = [...e.proben].sort((a, b) => a - b);
+    e.median = sortiert[Math.floor(sortiert.length / 2)];
     verzug[n.source] = e;
   }
 
@@ -1088,7 +1100,12 @@ export default {
          * Quelle, nicht an uns: Der Tick laeuft jede Minute.
          */
         verzug: Object.entries(bestand?.verzug || {})
-          .map(([quelle, e]) => ({ quelle, sekunden: e.mittel, proben: e.proben?.length ?? 0 }))
+          .map(([quelle, e]) => ({
+            quelle,
+            sekunden: e.median ?? e.mittel ?? 0,
+            proben: e.proben?.length ?? 0,
+          }))
+          // Wenige Messungen sagen wenig; das steht als Zahl dabei.
           .sort((a, b) => b.sekunden - a.sekunden),
 
         taktgeber: Object.entries(bestand?.ticks || {})
