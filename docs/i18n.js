@@ -41,9 +41,8 @@ window.I18N = {
       + 'Solange sie abweicht, bekommst du Meldungen, die die App ausblendet:',
     nurOffeneApp: 'nur bei offener App', zVersand: 'Doppelschutz', zTakt: 'Taktgeber', zTaktKeiner: 'seit dem letzten Speichern keiner erfasst',
     zVorMin: (m) => (m < 1 ? 'gerade eben' : m < 90 ? `vor ${Math.round(m)} Min` : `vor ${Math.round(m / 60)} Std`),
-    zSchreibHinweis: 'Gezählt werden nur gelungene Schreibvorgänge — der Zähler liegt selbst '
-      + 'im Speicher. Ist der blockiert, steht er still. Ein niedriger Wert heißt hier also '
-      + 'nicht, dass noch Kontingent frei wäre.',
+    zSchreibHinweis: 'Gezählt werden alle Versuche, auch abgewiesene — die Zahl zeigt also, '
+      + 'wie nah das Tageskontingent ist.',
     zBestand: 'Bestand', zGeprueft: 'Geprüfte Meldungen',
     zBudget: 'KI-Budget', zTicks: 'Zuletzt aufgefrischt',
     zJa: 'läuft', zNein: 'blockiert',
@@ -150,7 +149,9 @@ window.I18N = {
     zustandLaeuft: 'checking …',
     zustandOhneWorker: 'Requires the live source above.',
     zustandFehler: 'Worker not responding',
-    zSpeichern: 'Storage', zSchreib: 'Writes today (all)',
+    zSpeichern: 'Storage', zSchreib: 'Writes today',
+    zSchreibHinweis: 'All attempts are counted, rejected ones included — so the number '
+      + 'shows how close the daily quota is.',
     zAbo: 'Notification profile', zGleich: 'in sync', zAbweichend: 'out of sync',
     zBenach: 'Level', zAsset: 'Asset', zProfil: 'Profile', zAn: 'on', zAus: 'off',
     zAboUeber: 'Send settings to the worker',
