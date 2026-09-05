@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-05T12:04:39.196Z",
+ "updated": "2026-09-05T12:05:37.953Z",
  "regime": "policy",
- "count": 183,
+ "count": 184,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
@@ -109,6 +109,42 @@
    ],
    "alsoIn": [],
    "titleDe": "Ein britischer Investor glaubte, 2012 2.000 Dollar in Bitcoin verloren zu haben. Nun hat er 4,5 Millionen Dollar zurückerhalten."
+  },
+  {
+   "id": "U.Today:Bitcoin to $85,000 in September: Kalshi Traders Ignore Price Correction",
+   "title": "Bitcoin to $85,000 in September: Kalshi Traders Ignore Price Correction",
+   "text": "Bitcoin has briefly fallen below $80,000 following a recent price correction, but traders on Kalshi have retained bullish sentiment as they bet on Bitcoin hitting $85,000 this month.",
+   "source": "U.Today",
+   "url": "https://u.today/bitcoin-to-85000-in-september-kalshi-traders-ignore-price-correction",
+   "date": "2026-09-05T11:50:24.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 52,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Bitcoin bis September auf 85.000 $: Kalshi‑Händler ignorieren Kurskorrektur"
   },
   {
    "id": "BeInCrypto:The 18-Year Housing Cycle Says the Next Market Crash Is Close",
@@ -1576,7 +1612,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6440,7 +6476,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 3,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
