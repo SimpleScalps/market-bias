@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-05T16:04:03.497Z",
+ "updated": "2026-09-05T16:17:16.023Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-05T16:04:03.522Z",
+   "stand": "2026-09-05T16:17:16.047Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -108,6 +108,21 @@
      "priority": 86
     },
     {
+     "id": "Al Jazeera:US says it hit three Iranian oil tankers after attacks on warships",
+     "titel": "US says it hit three Iranian oil tankers after attacks on warships",
+     "titelDe": "Die USA sagen, dass sie nach Angriffen auf Kriegsschiffe drei iranische Öltanker getroffen haben",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/us-says-it-hit-three-iranian-oil-tankers-after-attacks-on-warships?traffic_source=rss",
+     "zeit": "2026-09-05T15:49:44.000Z",
+     "scores": {
+      "crypto": -0.405,
+      "stocks": -0.405,
+      "gold": 0.203,
+      "usd": 0.135
+     },
+     "priority": 51
+    },
+    {
      "id": "U.Today:XRP Pivot Point: Why the $1.25 Price Level Matters Most Before Sept. 15",
      "titel": "XRP Pivot Point: Why the $1.25 Price Level Matters Most Before Sept. 15",
      "titelDe": "XRP-Pivot-Punkt: Warum das Preisniveau von 1,25 $ vor dem 15. September am wichtigsten ist",
@@ -136,27 +151,12 @@
       "usd": 0.135
      },
      "priority": 38
-    },
-    {
-     "id": "BeInCrypto:The 18-Year Housing Cycle Says the Next Market Crash Is Close",
-     "titel": "The 18-Year Housing Cycle Says the Next Market Crash Is Close",
-     "titelDe": "Der 18-jährige Wohnungsmarktzyklus sagt, dass der nächste Marktcrash nahe ist",
-     "quelle": "BeInCrypto",
-     "url": "https://beincrypto.com/18-year-us-housing-cycle-bitcoin-stock-crash/",
-     "zeit": "2026-09-05T11:48:34.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 33
     }
    ]
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-05T16:04:03.528Z",
+   "stand": "2026-09-05T16:17:16.053Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
