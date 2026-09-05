@@ -848,14 +848,14 @@ function meldenswert(items, abo) {
  */
 let letzterVersandbuchFehler = null;
 
-async function nochNichtGemeldet(env, items) {
+async function nochNichtGemeldet(env, items, nurLesen = false) {
   if (!env.VERSANDBUCH) return items;          // ohne Bindung wie bisher
 
   try {
     const stub = env.VERSANDBUCH.get(env.VERSANDBUCH.idFromName('global'));
     const res = await stub.fetch('https://versandbuch.intern/', {
       method: 'POST',
-      body: JSON.stringify({ ids: items.map((n) => n.id) }),
+      body: JSON.stringify({ ids: items.map((n) => n.id), nurLesen }),
     });
     if (!res.ok) throw new Error(`Versandbuch ${res.status}`);
 
@@ -1264,20 +1264,29 @@ export default {
     /**
      * Pruefstelle fuer das Versandbuch.
      *
-     * Beantwortet fuer eine Kennung, ob sie noch nicht gemeldet war - und
-     * traegt sie dabei ein, denn genau dieser eine Zug ist das Verfahren.
-     * Zum Nachpruefen, ob eine bestimmte Meldung schon hinausging, und um
-     * zu belegen, dass gleichzeitige Durchgaenge sich nicht ins Gehege
-     * kommen: Von beliebig vielen Aufrufen mit derselben Kennung darf genau
-     * einer "neu" melden.
+     * Standardmaessig folgenlos: Sie sieht nach, ob eine Kennung schon
+     * gemeldet wurde, und traegt nichts ein. Andernfalls waere sie eine Falle
+     * - wer die Kennung einer echten Meldung abfragt, haette damit deren
+     * Benachrichtigung unterdrueckt.
+     *
+     * Mit `eintragen=1` wird stattdessen der echte Zug ausgefuehrt, also
+     * nachsehen und im selben Schritt eintragen. Damit laesst sich belegen,
+     * dass gleichzeitige Durchgaenge sich nicht ins Gehege kommen: Von
+     * beliebig vielen Aufrufen mit derselben Kennung meldet genau einer
+     * "neu". Fuer eine Kennung, die im Bestand steht, nie benutzen.
      */
     if (url.pathname === '/versandprobe') {
       const kennung = (url.searchParams.get('id') || '').slice(0, 200);
       if (!kennung) return json({ fehler: 'keine Kennung' }, 400);
       if (!env.VERSANDBUCH) return json({ fehler: 'Versandbuch nicht gebunden' }, 501);
 
-      const gefiltert = await nochNichtGemeldet(env, [{ id: kennung }]);
-      return json({ kennung, neu: gefiltert.length === 1 });
+      const eintragen = url.searchParams.get('eintragen') === '1';
+      const gefiltert = await nochNichtGemeldet(env, [{ id: kennung }], !eintragen);
+      return json({
+        kennung,
+        schonGemeldet: gefiltert.length === 0,
+        eingetragen: eintragen,
+      });
     }
 
     // Zeigt, welche Modelle das hinterlegte Konto nutzen darf. Nuetzlich,

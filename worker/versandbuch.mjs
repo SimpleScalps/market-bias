@@ -29,9 +29,9 @@ export class Versandbuch {
   }
 
   async fetch(request) {
-    let ids;
+    let ids, nurLesen;
     try {
-      ({ ids } = await request.json());
+      ({ ids, nurLesen } = await request.json());
     } catch {
       return new Response('{"fehler":"ungueltig"}', { status: 400 });
     }
@@ -57,6 +57,20 @@ export class Versandbuch {
       if (vorhanden.has(id)) continue;
       neu.push(id);
       eintragen[id] = jetzt;
+    }
+
+    /*
+     * Nachsehen, ohne einzutragen.
+     *
+     * Fuer den Versand ist das Eintragen der Kern des Verfahrens - dort darf
+     * es nicht fehlen. Wer aber nur wissen will, ob eine Meldung schon
+     * hinausging, wuerde sie damit versehentlich als erledigt abhaken und
+     * genau die Benachrichtigung unterdruecken, nach der er fragt.
+     */
+    if (nurLesen) {
+      return new Response(JSON.stringify({ neu, nurGelesen: true }), {
+        headers: { 'content-type': 'application/json' },
+      });
     }
 
     if (neu.length) {

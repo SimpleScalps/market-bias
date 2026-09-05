@@ -6,7 +6,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v32';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v33';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -1389,6 +1389,9 @@ async function zustandZeigen() {
   }
 
   const schreibt = String(d.ablageSchreibt || '').startsWith('ja');
+  // Das Versandbuch verhindert, dass dieselbe Meldung zweimal hinausgeht.
+  // Es meldet 'bereit', sonst steht dort der letzte Fehlschlag.
+  const versandOk = d.versandbuch === 'bereit';
 
   /*
    * Taktgeber zuerst — daran hängt alles andere.
@@ -1405,6 +1408,7 @@ async function zustandZeigen() {
 
   const zeilen = [
     ...(taktZeilen.length ? taktZeilen : [[T_.zTakt, T_.zTaktKeiner, 'lau']]),
+    [T_.zVersand, versandOk ? T_.zJa : T_.zNein, versandOk ? 'gut' : 'schlecht'],
     [T_.zSpeichern, schreibt ? T_.zJa : T_.zNein, schreibt ? 'gut' : 'schlecht'],
     [T_.zSchreib, d.schreibvorgaenge ?? '—', null],
     [T_.zBestand, `${d.meldungen ?? '—'} · ${d.alterSekunden ?? '?'} s`, null],
