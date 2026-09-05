@@ -1,31 +1,31 @@
 {
- "updated": "2026-09-05T00:36:10.654Z",
+ "updated": "2026-09-05T00:42:51.606Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-05T00:36:10.698Z",
+   "stand": "2026-09-05T00:42:51.666Z",
    "anzahl": 10,
    "klassen": {
     "crypto": {
-     "score": -0.1461,
+     "score": -0.147,
      "bull": 0,
      "bear": 2,
      "neut": 8
     },
     "stocks": {
-     "score": -0.1461,
+     "score": -0.147,
      "bull": 0,
      "bear": 2,
      "neut": 8
     },
     "gold": {
-     "score": 0.073,
+     "score": 0.0735,
      "bull": 2,
      "bear": 0,
      "neut": 8
     },
     "usd": {
-     "score": 0.0487,
+     "score": 0.049,
      "bull": 0,
      "bear": 0,
      "neut": 10
@@ -35,29 +35,29 @@
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-05T00:36:10.715Z",
+   "stand": "2026-09-05T00:42:51.684Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
-     "score": -0.1064,
+     "score": -0.1068,
      "bull": 16,
      "bear": 26,
      "neut": 160
     },
     "stocks": {
-     "score": -0.0851,
+     "score": -0.0853,
      "bull": 12,
      "bear": 20,
      "neut": 170
     },
     "gold": {
-     "score": -0.0488,
+     "score": -0.049,
      "bull": 13,
      "bear": 18,
      "neut": 171
     },
     "usd": {
-     "score": 0.0818,
+     "score": 0.0821,
      "bull": 10,
      "bear": 2,
      "neut": 190
@@ -137,7 +137,7 @@
       "gold": -0.48,
       "usd": 0.6
      },
-     "priority": 67
+     "priority": 66
     },
     {
      "id": "FXStreet:United States: Solid jobs data support steady Fed – Commerzbank",
@@ -152,7 +152,7 @@
       "gold": -0.48,
       "usd": 0.6
      },
-     "priority": 66
+     "priority": 65
     },
     {
      "id": "U.Today:Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
