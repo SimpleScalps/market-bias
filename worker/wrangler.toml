@@ -6,8 +6,12 @@ compatibility_date = "2026-01-01"
 # geschlossen ist. Cloudflare wiederholt fehlgeschlagene Laeufe nicht und
 # meldet sie auch nicht, deshalb pingt zusaetzlich die GitHub-Action den
 # Worker an - siehe .github/workflows/update-news.yml.
+#
+# Jede Minute statt jede zweite: Fuer einen Scalper zaehlt die Minute, und
+# seit das Versandbuch ueber Doppelmeldungen wacht, ist ein dichterer Takt
+# unbedenklich. Vorher war jeder zusaetzliche Taktgeber ein Risiko.
 [triggers]
-crons = ["*/2 * * * *"]
+crons = ["* * * * *"]
 
 [vars]
 # 'policy' = Zinskanal (starke Daten sind schlecht für Krypto)
@@ -22,3 +26,18 @@ REGIME = "policy"
 [[kv_namespaces]]
 binding = "STORE"
 id = "baf70d73449c411ca8769f09b735f5d2"
+
+# Versandgedaechtnis mit echter Lese-nach-Schreib-Zusicherung.
+#
+# KV kann das nicht: Es liefert einen Lesestand bis zu einer Minute veraltet
+# aus, weshalb zwei Durchgaenge kurz hintereinander dieselbe Meldung beide fuer
+# neu halten und beide verschicken konnten. Ein Durable Object gibt es genau
+# einmal, Anfragen laufen nacheinander hindurch, und Geschriebenes ist sofort
+# wieder lesbar. Es fuehrt nur die Liste der schon gemeldeten Kennungen.
+[[durable_objects.bindings]]
+name = "VERSANDBUCH"
+class_name = "Versandbuch"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Versandbuch"]

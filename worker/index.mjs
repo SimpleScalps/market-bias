@@ -6,6 +6,7 @@ import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
 import { uebersetze } from '../docs/engine/translate.mjs';
 import { fortschreiben, TAGE_MAX } from '../docs/engine/wochenbuch.mjs';
 import { sendeAn } from './notify.mjs';
+export { Versandbuch } from './versandbuch.mjs';
 import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, fragen, kontingent } from './deuten.mjs';
 
 // Cloudflare Worker: holt die Quellen serverseitig (RSS-Feeds senden keine
@@ -250,7 +251,7 @@ const UEBERSETZUNG_JE_ABRUF = 5;
  * Einrichtung nicht ueber Nacht stehen bleibt. /health weist dann darauf hin.
  */
 const GESCHUETZT = ['/subscribe', '/notify', '/testpush', '/deuten', '/tageslage',
-  '/modelle', '/tick', '/uebersetzen', '/frage'];
+  '/modelle', '/tick', '/uebersetzen', '/frage', '/versandprobe'];
 
 function zugangGeprueft(request, url, env) {
   if (!env.ZUGANG) return true;                       // nicht eingerichtet
@@ -671,29 +672,19 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   if (gesichert) offeneSchreibungen = 0;
 
   /*
-   * Erst ablegen, dann benachrichtigen - nicht umgekehrt.
+   * Melden. Ob das Ablegen gelang, spielt dafuer keine Rolle mehr.
    *
-   * Vorher ging die Meldung raus, bevor das Gedaechtnis stand. Schlug das
-   * Ablegen danach fehl - etwa weil das Tageskontingent von KV erschoepft war -
-   * galt dieselbe Meldung beim naechsten Durchgang wieder als neu und ging
-   * erneut raus. Genau so kam eine Nachricht dreimal an.
+   * Bis eben galt: ohne erfolgreiche Ablage keine Meldung, weil sonst dieselbe
+   * Nachricht beim naechsten Durchgang wieder als neu gegolten haette. Das war
+   * die richtige Vorsicht, solange das Gedaechtnis in KV lag - und es kostete
+   * jede Benachrichtigung, sobald das Schreibkontingent erschoepft war.
    *
-   * Laesst sich nichts ablegen, wird lieber nicht gemeldet: Eine verpasste
-   * Nachricht ist aergerlich, dieselbe zum dritten Mal ist schlimmer, und der
-   * naechste Durchgang holt sie nach, sobald wieder geschrieben werden kann.
+   * Diese Frage beantwortet jetzt das Versandbuch, und zwar verlaesslich. Also
+   * darf wieder gemeldet werden, auch wenn gerade nichts abgelegt werden kann.
    */
-  let versand;
-  if (!bestand) {
-    versand = { versucht: false, grund: 'erster Lauf' };
-  } else if (kandidaten.length && !gesichert) {
-    versand = {
-      versucht: false,
-      grund: 'Ablage nicht moeglich - zurueckgestellt, um Doppelungen zu vermeiden',
-      zurueckgestellt: kandidaten.length,
-    };
-  } else {
-    versand = await pushen(env, ctx, kandidaten);
-  }
+  const versand = bestand
+    ? await pushen(env, ctx, kandidaten)
+    : { versucht: false, grund: 'erster Lauf' };
 
   ctx.waitUntil(wochenbuchPflegen(env, ctx, items));
   return { data, neue: kandidaten, versand, gesichert };
@@ -842,15 +833,62 @@ function meldenswert(items, abo) {
   });
 }
 
+/*
+ * Fragt das Versandbuch, was davon wirklich noch nicht hinausging.
+ *
+ * Der Eintrag geschieht dort im selben Zug wie die Abfrage, und ein zweiter
+ * Aufruf wartet, bis dieser fertig ist. Zwei gleichzeitige Durchgaenge koennen
+ * dieselbe Meldung also nicht beide als neu sehen. Damit sind mehrere
+ * Taktgeber im Minutentakt wieder unbedenklich - die Zusicherung, die KV nicht
+ * geben konnte.
+ *
+ * Faellt das Versandbuch aus, geht nichts hinaus. Das ist Absicht: Bei
+ * dieser Frage ist eine verpasste Meldung das kleinere Uebel als dieselbe zum
+ * dritten Mal.
+ */
+let letzterVersandbuchFehler = null;
+
+async function nochNichtGemeldet(env, items) {
+  if (!env.VERSANDBUCH) return items;          // ohne Bindung wie bisher
+
+  try {
+    const stub = env.VERSANDBUCH.get(env.VERSANDBUCH.idFromName('global'));
+    const res = await stub.fetch('https://versandbuch.intern/', {
+      method: 'POST',
+      body: JSON.stringify({ ids: items.map((n) => n.id) }),
+    });
+    if (!res.ok) throw new Error(`Versandbuch ${res.status}`);
+
+    const { neu } = await res.json();
+    const erlaubt = new Set(neu);
+    return items.filter((n) => erlaubt.has(n.id));
+  } catch (err) {
+    console.log('Versandbuch:', err.message);
+    letzterVersandbuchFehler = { zeit: new Date().toISOString(), fehler: err.message.slice(0, 120) };
+    return [];
+  }
+}
+
 async function pushen(env, ctx, neueItems) {
   const abo = await lesen(env, ABO_KEY);
   if (!abo?.ziele?.length) return { versucht: false, grund: 'kein Abo hinterlegt' };
   if (abo.stufe === 'off') return { versucht: false, grund: 'Benachrichtigungen aus' };
   if (!neueItems?.length) return { versucht: false, grund: 'nichts Neues' };
 
-  const treffer = meldenswert(neueItems, abo);
-  if (!treffer.length) {
+  const vorauswahl = meldenswert(neueItems, abo);
+  if (!vorauswahl.length) {
     return { versucht: false, grund: `${neueItems.length} neu, aber keine mit Richtung` };
+  }
+
+  // Erst hier faellt die Entscheidung, und sie faellt genau einmal je Meldung.
+  const treffer = await nochNichtGemeldet(env, vorauswahl);
+  if (!treffer.length) {
+    return {
+      versucht: false,
+      grund: letzterVersandbuchFehler
+        ? 'Versandbuch nicht erreichbar - nichts gemeldet'
+        : `${vorauswahl.length} bereits gemeldet`,
+    };
   }
 
   /*
@@ -979,6 +1017,9 @@ export default {
           : 'heute noch keiner',
         letzterTickFehler: letzterTickFehler ?? 'keiner seit dem Start',
         letzterAblageFehler: letzterAblageFehler ?? 'keiner seit dem Start',
+        versandbuch: env.VERSANDBUCH
+          ? (letzterVersandbuchFehler ?? 'bereit')
+          : 'NICHT gebunden - Doppelmeldungen moeglich',
         geprueft: bestand?.items
           ? `${bestand.items.filter((n) => n.ki).length} von ${bestand.items.length}`
           : '0',
@@ -1218,6 +1259,25 @@ export default {
       const buch = await lesen(env, WOCHE_KEY);
       if (!buch?.tage) return json({ fehler: 'noch keine Aufzeichnung' }, 503);
       return json(buch);
+    }
+
+    /**
+     * Pruefstelle fuer das Versandbuch.
+     *
+     * Beantwortet fuer eine Kennung, ob sie noch nicht gemeldet war - und
+     * traegt sie dabei ein, denn genau dieser eine Zug ist das Verfahren.
+     * Zum Nachpruefen, ob eine bestimmte Meldung schon hinausging, und um
+     * zu belegen, dass gleichzeitige Durchgaenge sich nicht ins Gehege
+     * kommen: Von beliebig vielen Aufrufen mit derselben Kennung darf genau
+     * einer "neu" melden.
+     */
+    if (url.pathname === '/versandprobe') {
+      const kennung = (url.searchParams.get('id') || '').slice(0, 200);
+      if (!kennung) return json({ fehler: 'keine Kennung' }, 400);
+      if (!env.VERSANDBUCH) return json({ fehler: 'Versandbuch nicht gebunden' }, 501);
+
+      const gefiltert = await nochNichtGemeldet(env, [{ id: kennung }]);
+      return json({ kennung, neu: gefiltert.length === 1 });
     }
 
     // Zeigt, welche Modelle das hinterlegte Konto nutzen darf. Nuetzlich,
