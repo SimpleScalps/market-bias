@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-05T00:43:28.941Z",
+ "updated": "2026-09-05T00:49:16.893Z",
  "regime": "policy",
- "count": 212,
+ "count": 211,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
@@ -102,7 +102,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 67,
+   "priority": 66,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -416,7 +416,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -730,7 +730,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -768,7 +768,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -1008,7 +1008,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1322,7 +1322,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1333,7 +1333,8 @@
    "coins": [],
    "alsoIn": [
     "CNBC"
-   ]
+   ],
+   "titleDe": "Teslas Aktie sinkt um 6 %, da das Cybercab-Update die Wall Street „unterfordert“"
   },
   {
    "id": "Al Jazeera:Israeli drones drop bombs on southern Lebanon’s Mansouri",
@@ -1395,7 +1396,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1404,7 +1405,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Chinesischer Yuan: Services PMI Rebound hält PBoC zurück – Commerzbank"
   },
   {
    "id": "MarketWatch:Will a data center hurt your home’s value? Research says no. Sellers disagree.",
@@ -1428,7 +1430,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1437,7 +1439,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Schadet ein Rechenzentrum dem Wert Ihres Hauses? Die Forschung sagt nein. Verkäufer sind anderer Meinung."
   },
   {
    "id": "MarketWatch:Here’s what’s worth streaming in September 2026 on Netflix, Hulu, HBO Max and more",
@@ -1470,7 +1473,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Das lohnt sich im September 2026 auf Netflix, Hulu, HBO Max und mehr"
   },
   {
    "id": "MarketWatch:Why Oracle’s stock looks like a compelling buy ahead of earnings",
@@ -1503,7 +1507,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Warum Oracle-Aktien einen überzeugenden Kauf vor dem Gewinn darstellen"
   },
   {
    "id": "CNBC:Trump says he will spend up to $500 million of 'my money' to help Republicans in midterms",
@@ -1536,7 +1541,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Trump sagt, er werde bis zu 500 Millionen $ von \"meinem Geld\" ausgeben, um Republikanern in der Zwischenzeit zu helfen"
   },
   {
    "id": "FXStreet:Sterling’s rally stalls as US jobs data reopens Fed debate",
@@ -1607,7 +1613,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Vielleicht haben die Schneevögel recht? Ein Bundesstaat dominiert diese Liste der besten Ruhestandsorte."
   },
   {
    "id": "Al Jazeera:Israeli strike kills two in southern Lebanon amid ongoing escalation",
@@ -1678,7 +1685,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Andrew Tate wird in Rumänien wegen Menschenhandels mit Minderjährigen und Geldwäsche angeklagt"
   },
   {
    "id": "FXStreet:Malaysia: Hawkish pause keeps options open – DBS",
@@ -1716,7 +1724,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Malaysia: Falsche Pause hält Optionen offen – DBS"
   },
   {
    "id": "FXStreet:Indian Rupee: Dollar inflows support INR but impulse may fade – OCBC",
@@ -1749,7 +1758,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Indische Rupie: Dollarzuflüsse unterstützen INR, aber der Impuls kann nachlassen – OCBC"
   },
   {
    "id": "Cointelegraph:Pineapple Financial puts $1B in mortgage records on Injective",
@@ -1782,7 +1792,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Pineapple Financial legt $ 1B in Hypothekenaufzeichnungen auf Injective"
   },
   {
    "id": "Al Jazeera:UN votes to adopt new world map that reflects Africa’s true size",
@@ -1806,7 +1817,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1815,7 +1826,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Die Vereinten Nationen stimmen für die Annahme einer neuen Weltkarte, die die wahre Größe Afrikas widerspiegelt"
   },
   {
    "id": "Cointelegraph:FinCEN ties $13B in crypto scams to non-US operations",
@@ -1923,7 +1935,8 @@
    "eventTypeEn": "Listing",
    "scope": "coin",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Robinhood und AMC kollidieren über tokenisierte Börsennotierung"
   },
   {
    "id": "Decrypt:Crypto Traders Are Pairing Meme Coins With Stocks on Robinhood—And It's Working (Sort Of)",
@@ -1981,7 +1994,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2053,7 +2066,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2225,7 +2238,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2435,7 +2448,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2648,7 +2661,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3214,7 +3227,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3426,7 +3439,7 @@
    "whyEn": "Directly crypto-negative news. (signals: ban or delisting)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -3528,7 +3541,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3562,7 +3575,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3708,7 +3721,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: strong labour market)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 67,
+   "priority": 66,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -3751,7 +3764,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Ungarn: Inflationsanstieg erschwert ZINSSENKUNGSPFAD"
   },
   {
    "id": "Decrypt:Bitcoin Slides as Blowout Jobs Report Revives Fed Hike Odds",
@@ -3866,7 +3880,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "BitMEX-Mitbegründer Ben Delo gibt Farages Reform UK weitere 4 Millionen £"
   },
   {
    "id": "Federal Reserve:Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
@@ -3996,7 +4011,7 @@
    "whyEn": "Signal words point to easier policy — positive for risk assets. (signals: Fed pause)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 43,
+   "priority": 42,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -4042,7 +4057,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Kanada: Aussichten für eine allmähliche Verbesserung des Arbeitsmarktes – RBC"
   },
   {
    "id": "BeInCrypto:Is Craig Wright Satoshi? A $70 Million Movie and a High Court Judge Disagree",
@@ -4075,7 +4091,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Ist Craig Wright Satoshi? Ein 70-Millionen $ -Film und ein Richter am Obersten Gerichtshof sind anderer Meinung"
   },
   {
    "id": "BBC World:'A rare moment of joy': Nepal tunnel rescues bring hope for more flood survivors",
@@ -4108,7 +4125,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "\"Ein seltener Moment der Freude\": Nepal-Tunnelrettungen bringen Hoffnung für mehr Überlebende von Überschwemmungen"
   },
   {
    "id": "CNBC:Bitcoin heads for third winning week in a row as macro pressures mount",
@@ -4452,7 +4470,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 34,
+   "priority": 33,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -4522,7 +4540,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4637,7 +4655,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Zscaler übertrifft die Gewinnerwartungen, gibt optimistische Prognosen heraus, aber die Aktien fallen"
   },
   {
    "id": "Cointelegraph:Revolut, OpenReserve get preliminary US bank approval with crypto plans",
@@ -4740,7 +4759,8 @@
    "coins": [],
    "alsoIn": [
     "CNBC"
-   ]
+   ],
+   "titleDe": "Volkswagen plant 50.000 Stellenabbau, da Analysten den „Halo-Effekt“ für die deutsche Automobilindustrie sehen"
   },
   {
    "id": "BBC World:Body of world's youngest traditional king returns home to Uganda amid succession row",
@@ -4773,7 +4793,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Körper des jüngsten traditionellen Königs der Welt kehrt inmitten einer Reihe von Nachfolgern nach Uganda zurück"
   },
   {
    "id": "U.Today:XRP and Solana Cleared in Fresh SEC Nasdaq Order: Main Crypto News This Morning",
@@ -5067,7 +5088,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Zcash (ZEC) Hits $ 1,000: Analyse der nächsten Schritte rund um die Datenschutzmünze"
   },
   {
    "id": "CNBC World:World's biggest sovereign wealth fund plans to cut U.S. Treasury holdings",
@@ -5241,7 +5263,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 12,
+   "priority": 11,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5250,7 +5272,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "UK-Unterstützung für Falklandinseln \"unerschütterlich\", nachdem Argentinien die Ansprüche neu formuliert hat, sagt Nr. 10"
   },
   {
    "id": "CNBC:The wealth of the world's billionaires reached $15.1 trillion last year, per a new report",
@@ -5283,7 +5306,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Der Reichtum der Milliardäre der Welt erreichte im vergangenen Jahr 15,1 Billionen $, laut einem neuen Bericht"
   },
   {
    "id": "Decrypt:67,000 More Trezor Customers Exposed as Data Breach Widens",
@@ -5394,7 +5418,8 @@
    "coins": [],
    "alsoIn": [
     "CNBC"
-   ]
+   ],
+   "titleDe": "Warum es bei Nvidias \"defensivem Schachzug\" zum Erwerb von Hugging Face um viel mehr als nur Chips geht"
   },
   {
    "id": "CoinDesk:We checked 6 years of bitcoin data. The NFP report isn't big price mover",
@@ -5493,7 +5518,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5574,7 +5599,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Beste Energieaktien"
   },
   {
    "id": "Benzinga:Best Stocks Under $5",
@@ -5607,7 +5633,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Beste Aktien unter 5 $"
   },
   {
    "id": "Benzinga:Best Semiconductor Stocks",
@@ -5640,7 +5667,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Beste Halbleiterbestände"
   },
   {
    "id": "Benzinga:Best Biotech Stocks Right Now",
@@ -5673,7 +5701,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Die besten Biotech-Aktien im Moment"
   },
   {
    "id": "Benzinga:Best Gold Stocks Right Now",
@@ -5706,7 +5735,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Die besten Goldaktien im Moment"
   },
   {
    "id": "Benzinga:Top Financial Stocks for the Week",
@@ -5739,7 +5769,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Top-Finanzaktien der Woche"
   },
   {
    "id": "Benzinga:Best Solar Stocks",
@@ -5772,7 +5803,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Beste Solaraktien"
   },
   {
    "id": "Benzinga:Best Oil Stocks Right Now",
@@ -5805,7 +5837,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Beste Ölvorräte im Moment"
   },
   {
    "id": "FXStreet:Gold recovers from post-NFP low as US Dollar trims gains",
@@ -5872,7 +5905,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "THC-Getränke könnten bald schwieriger zu finden sein, da der Kongress das Hanfverbot erneut verzögert"
   },
   {
    "id": "BBC World:US diesel prices hit an all-time-high",
@@ -5941,7 +5975,8 @@
    "coins": [
     "DOGE"
    ],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Dogecoin, um Null zu löschen? $ 0,12 Ziel taucht auf, wenn die Stierflagge auf mehrere Signale trifft"
   },
   {
    "id": "Cointelegraph:South Korean regulators introduce tokenized securities roadmap",
@@ -5965,7 +6000,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 10,
+   "priority": 9,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5974,7 +6009,8 @@
    "eventTypeEn": "Product announcement",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Südkoreanische Regulierungsbehörden führen Tokenized Securities Roadmap ein"
   },
   {
    "id": "CoinDesk:Zcash jumps 20% to landmark $1,000 level as short sellers lose $34 million",
@@ -6011,7 +6047,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Zcash springt um 20% auf das Niveau von 1.000 $, da Leerverkäufer 34 Millionen $ verlieren"
   },
   {
    "id": "Decrypt:FinCEN Ties $12.7B to Crypto Scams Run From Asian Compounds",
@@ -6102,7 +6139,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 9,
+   "priority": 8,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6343,7 +6380,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6414,7 +6451,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6450,7 +6487,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6532,7 +6569,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "AMC-Aktie springt über Nacht um 21 %, da CEO Robinhood wegen \"unverschämter\" tokenisierter Aktien kritisiert"
   },
   {
    "id": "U.Today:Cash Cat (CASHCAT) Hits Another ATH: Robinhood Memes Spike Up",
@@ -6644,7 +6682,8 @@
    "coins": [],
    "alsoIn": [
     "CNBC"
-   ]
+   ],
+   "titleDe": "Der globale Anleiheverkauf ist wahrscheinlich noch nicht vorbei, sagt Mohamed El-Erian gegenüber CNBC"
   },
   {
    "id": "Cointelegraph:Bitcoin ETF inflows hit $731M, highest since January as BTC reclaims $80K",
@@ -7417,40 +7456,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
-  },
-  {
-   "id": "CNBC World:A 'shakeout' in early-stage AI may be coming as VC money gets pickier on valuations",
-   "title": "A 'shakeout' in early-stage AI may be coming as VC money gets pickier on valuations",
-   "text": "Investors should keep an eye out for excessive valuations and focus on productivity when it comes to investing in AI companies, market watchers say.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/04/ai-bubble-valuations-venture-capital.html",
-   "date": "2026-09-04T00:44:33.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Südkoreas KI-Rallye verändert Romantik, Reality-Shows und akademische Präferenzen"
   }
  ],
  "uebersetzung": {
