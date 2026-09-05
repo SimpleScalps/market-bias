@@ -1,34 +1,34 @@
 {
- "updated": "2026-09-05T08:04:15.005Z",
+ "updated": "2026-09-05T08:19:36.231Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-05T08:04:15.046Z",
-   "anzahl": 43,
+   "stand": "2026-09-05T08:19:36.267Z",
+   "anzahl": 45,
    "klassen": {
     "crypto": {
-     "score": -0.0561,
-     "bull": 2,
+     "score": -0.0198,
+     "bull": 3,
      "bear": 4,
-     "neut": 37
+     "neut": 38
     },
     "stocks": {
-     "score": -0.0583,
+     "score": -0.0528,
      "bull": 2,
      "bear": 4,
-     "neut": 37
+     "neut": 39
     },
     "gold": {
-     "score": 0.0468,
+     "score": 0.0423,
      "bull": 5,
      "bear": 1,
-     "neut": 37
+     "neut": 39
     },
     "usd": {
-     "score": 0.0091,
+     "score": 0.0083,
      "bull": 1,
      "bear": 2,
-     "neut": 40
+     "neut": 42
     }
    },
    "top": [
@@ -45,7 +45,22 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 65
+     "priority": 64
+    },
+    {
+     "id": "Cointelegraph:Bitcoin ETF inflows hit $3.8B in strongest three-week stretch of 2026",
+     "titel": "Bitcoin ETF inflows hit $3.8B in strongest three-week stretch of 2026",
+     "titelDe": "Bitcoin-ETF-Zuflüsse erreichen 3,8 Mrd. $ im stärksten Dreierwochenabschnitt 2026",
+     "quelle": "Cointelegraph",
+     "url": "https://cointelegraph.com/markets/bitcoin-etf-inflows-3-8-billion-strongest-three-week-run-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+     "zeit": "2026-09-05T08:03:06.000Z",
+     "scores": {
+      "crypto": 0.7,
+      "stocks": 0,
+      "gold": 0,
+      "usd": 0
+     },
+     "priority": 63
     },
     {
      "id": "U.Today:XRP Pivot Point: Why the $1.25 Price Level Matters Most Before Sept. 15",
@@ -60,7 +75,7 @@
       "gold": 0.32,
       "usd": -0.4
      },
-     "priority": 52
+     "priority": 51
     },
     {
      "id": "Al Jazeera:US imposes sanctions on Turkish bank, prompting legal threat",
@@ -96,7 +111,7 @@
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-05T08:04:15.064Z",
+   "stand": "2026-09-05T08:19:36.280Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
