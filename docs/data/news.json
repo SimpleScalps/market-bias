@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-05T06:13:29.901Z",
+ "updated": "2026-09-05T06:15:57.095Z",
  "regime": "policy",
- "count": 205,
+ "count": 204,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
@@ -308,7 +308,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -484,7 +484,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -969,7 +969,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1425,7 +1425,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3646,7 +3646,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 41,
+   "priority": 40,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -4426,7 +4426,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 12,
+   "priority": 11,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4745,7 +4745,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7232,42 +7232,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "CNBC Daily Open: Vance sagt, er würde Trumps Krieg mit dem Iran nicht als \"Krieg\" bezeichnen"
-  },
-  {
-   "id": "U.Today:Ripple's Garlinghouse: Making America Crypto Capital of the World Is 'Within Reach'",
-   "title": "Ripple's Garlinghouse: Making America Crypto Capital of the World Is 'Within Reach'",
-   "text": "Ripple CEO Brad Garlinghouse says the United States can still become the global “crypto capital.”.",
-   "source": "U.Today",
-   "url": "https://u.today/ripples-garlinghouse-making-america-crypto-capital-of-the-world-is-within-reach",
-   "date": "2026-09-04T06:15:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "XRP"
-   ],
-   "alsoIn": [],
-   "titleDe": "Ripple's Garlinghouse: Die Krypto-Hauptstadt der Welt ist \"in Reichweite\""
   }
  ],
  "uebersetzung": {
