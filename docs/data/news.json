@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05T21:42:27.721Z",
+ "updated": "2026-09-05T21:52:50.410Z",
  "regime": "policy",
  "count": 90,
  "errors": [
@@ -41,6 +41,40 @@
    "titleDe": "US-Botschafter treffen Putin in Moskau zu Ukraine-Verhandlungen"
   },
   {
+   "id": "U.Today:Zcash Faces 424% Liquidation Imbalance Amid Short Squeeze",
+   "title": "Zcash Faces 424% Liquidation Imbalance Amid Short Squeeze",
+   "text": "Zcash rose above the landmark $1000 price point as a sharp rally forced short traders out of leveraged positions.",
+   "source": "U.Today",
+   "url": "https://u.today/zcash-faces-424-liquidation-imbalance-amid-short-squeeze",
+   "date": "2026-09-05T21:37:00.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": "Liquidationen",
+   "eventTypeEn": "Liquidations",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Zcash sieht sich bei Short‑Squeeze einem Liquidationsungleichgewicht von 424 % gegenüber"
+  },
+  {
    "id": "BBC World:TV presenter among 11 sentenced to death in Egypt drugs case",
    "title": "TV presenter among 11 sentenced to death in Egypt drugs case",
    "text": "Sarah Khalifa is best known for her TV programme Mission Impossible which dealt with crime issues.",
@@ -62,7 +96,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -73,6 +107,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "TV-Moderator unter 11 Verurteilten zum Tode in Ägypten wegen Drogenfall"
+  },
+  {
+   "id": "Al Jazeera:Building collapses after heavy rain in northern India",
+   "title": "Building collapses after heavy rain in northern India",
+   "text": "A building collapsed in Muradabad, northern India, tearing through power lines and sending sparks into the street.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/09-05-sv-india-building-collapse-mp4?traffic_source=rss",
+   "date": "2026-09-05T21:11:25.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "long",
+   "eventType": "Insolvenz",
+   "eventTypeEn": "Insolvency",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Gebäude einstürzt nach starkem Regen im Norden Indiens"
   },
   {
    "id": "BBC World:Prince William to attend King Harald's funeral in Norway",
@@ -130,7 +198,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -338,7 +406,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -440,7 +508,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -610,7 +678,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -658,47 +726,10 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
+    "CNBC World",
     "CNBC"
    ],
    "titleDe": "Trump steigert die Spannung bei Warsh, während Fed Zinserhöhung droht"
-  },
-  {
-   "id": "Al Jazeera:Russia’s Putin meets US envoys to discuss Trump proposal to end Ukraine war",
-   "title": "Russia’s Putin meets US envoys to discuss Trump proposal to end Ukraine war",
-   "text": "Both Russia and Ukraine vow not to strike each other's capitals for three days during talks in Moscow and Kyiv.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/5/russias-putin-meets-us-envoys-to-discuss-trump-proposal-to-end-ukraine-war?traffic_source=rss",
-   "date": "2026-09-05T18:12:52.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Deeskalation"
-   ],
-   "scores": {
-    "crypto": 0.252,
-    "stocks": 0.252,
-    "gold": -0.126,
-    "usd": -0.084
-   },
-   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Deeskalation)",
-   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 60,
-   "label": "bullish",
-   "labelText": "Bullish",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Putin trifft US-Botschafter, um Trumps Vorschlag zur Beendigung des Ukraine-Krieges zu besprechen"
   },
   {
    "id": "MarketWatch:7% mortgage rates are already here, some buyers and mortgage experts say",
@@ -792,7 +823,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -998,7 +1029,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 54,
+   "priority": 53,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1208,7 +1239,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1242,7 +1273,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1492,7 +1523,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1529,7 +1560,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1803,7 +1834,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2369,7 +2400,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3084,40 +3115,6 @@
    "titleDe": "Trump baut die CFTC wieder auf, aber es könnte sein, dass sie Krypto nicht bevorzugt"
   },
   {
-   "id": "Decrypt:TikTok's Parent Company Just Borrowed $30 Billion to Go All-In on AI",
-   "title": "TikTok's Parent Company Just Borrowed $30 Billion to Go All-In on AI",
-   "text": "Nearly 30 banks backed the rare unsecured facility as TikTok’s parent company spends heavily on AI chips, models, and overseas data centers.",
-   "source": "Decrypt",
-   "url": "https://decrypt.co/377489/tiktok-bytedance-loan-ai",
-   "date": "2026-09-04T21:46:03.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Die Muttergesellschaft von TikTok hat sich gerade 30 Milliarden $ geliehen, um All-In auf KI zu setzen"
-  },
-  {
    "id": "Cointelegraph:Here’s what happened in crypto today",
    "title": "Here’s what happened in crypto today",
    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
@@ -3153,7 +3150,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 2,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
