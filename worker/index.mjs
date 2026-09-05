@@ -124,8 +124,20 @@ function urteilAuslesen(n) {
   return raus;
 }
 
+/*
+ * Letzter Tick je Herkunft.
+ *
+ * Zuerst war das eine Liste der letzten acht Ticks - und die litt an genau dem
+ * Problem, das sie aufdecken sollte: gelesen, ergaenzt, zurueckgeschrieben, bei
+ * einem Tick je Minute also fast immer auf veraltetem Stand. Sie zeigte
+ * stundenalte Eintraege, waehrend der Nachlauf nachweislich lief.
+ *
+ * Jetzt schreibt jede Herkunft nur ihr eigenes Feld. Ein veralteter Lesestand
+ * kostet dann hoechstens den Eintrag einer anderen Quelle, und die traegt ihn
+ * beim naechsten eigenen Tick ohnehin neu ein. Fuer die eigentliche Frage -
+ * tickt da noch etwas, und was - genuegt das.
+ */
 const TICKS_KEY = 'https://market-bias.internal/ticks';
-const TICKS_MAX = 8;
 
 /**
  * Braucht diese Meldung (noch) eine Pruefung durch das Modell?
@@ -745,9 +757,11 @@ export default {
         urteile: Object.keys(urteilSpeicher?.urteile || {}).length,
         letzterNachlauf: urteilSpeicher?.letzterNachlauf ?? 'noch keiner',
         kontingent: kontingent ?? 'seit dem Start keine Anfrage an Groq',
-        letzteTicks: (await lesen(env, TICKS_KEY).catch(() => null))
-          ?.map((t) => `${t.zeit.slice(11, 19)} ${t.quelle} | Budget ${t.budget ?? '?'}`
-            + ` | ${t.meldungen ?? '?'} Meldungen | ${t.offen ?? '?'} offen`) ?? [],
+        letzteTicks: Object.entries((await lesen(env, TICKS_KEY).catch(() => null)) || {})
+          .sort((a, b) => (b[1].zeit || '').localeCompare(a[1].zeit || ''))
+          .map(([quelle, t]) => `${quelle}: zuletzt ${t.zeit?.slice(11, 19)}`
+            + ` | ${t.meldungen} Meldungen | ${t.offen} ungeprueft`
+            + ` | ${(t.tokenHeute ?? 0).toLocaleString('de-DE')} Token heute`),
         // Ohne hinterlegtes Abo verschickt der Worker nichts. Zeigt nur, ob
         // und wohin - niemals Token oder Themennamen.
         abo: abo ? {
@@ -779,7 +793,6 @@ export default {
      */
     if (url.pathname === '/tick') {
       const bestand = await lesen(env, KEY);
-      const vorher = budgetRest(await lesen(env, URTEILE_KEY)).verbraucht;
       const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
       const { data, neue, versand } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
 
@@ -790,17 +803,21 @@ export default {
        */
       ctx.waitUntil((async () => {
         try {
-          const bisher = (await lesen(env, TICKS_KEY)) || [];
-          const kennung = request.headers.get('x-quelle')
-            || (request.headers.get('user-agent') || 'unbekannt').slice(0, 40);
-          await schreiben(env, ctx, TICKS_KEY, [{
+          const bisher = (await lesen(env, TICKS_KEY)) || {};
+          const roh = request.headers.get('x-quelle')
+            || request.headers.get('user-agent') || 'unbekannt';
+          // Auf das Erkennbare kuerzen: "cron-job.org" statt der ganzen Kennung.
+          const kennung = (roh.match(/cron-job\.org|github-action|[\w.-]+/i) || ['unbekannt'])[0]
+            .slice(0, 30);
+
+          bisher[kennung] = {
             zeit: new Date().toISOString(),
-            quelle: kennung,
             gruppe,
             meldungen: data.count,
-            budget: `${vorher}->${budgetRest(await lesen(env, URTEILE_KEY)).verbraucht}`,
+            tokenHeute: budgetRest(await lesen(env, URTEILE_KEY)).verbraucht,
             offen: data.items.filter((n) => n.impactLevel !== 'ignore' && !n.ki?.inhalt).length,
-          }, ...bisher].slice(0, TICKS_MAX), BESTAND_TTL);
+          };
+          await schreiben(env, ctx, TICKS_KEY, bisher, BESTAND_TTL);
         } catch { /* Nebensache */ }
       })());
 
