@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-05T11:32:51.838Z",
+ "updated": "2026-09-05T11:34:35.614Z",
  "regime": "policy",
- "count": 184,
+ "count": 183,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
@@ -884,7 +884,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1020,7 +1020,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1230,7 +1230,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1440,7 +1440,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 42,
+   "priority": 41,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -1508,7 +1508,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1544,7 +1544,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6435,44 +6435,10 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "UK-Unterstützung für Falklandinseln \"unerschütterlich\", nachdem Argentinien die Ansprüche neu formuliert hat, sagt Nr. 10"
-  },
-  {
-   "id": "CNBC:The wealth of the world's billionaires reached $15.1 trillion last year, per a new report",
-   "title": "The wealth of the world's billionaires reached $15.1 trillion last year, per a new report",
-   "text": "The global billionaire count hit a record of 3,795 people last year, with the biggest wealth gains for the richest of the rich, per a recent Altrata report.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/04/billionaire-wealth-altrata-report.html",
-   "date": "2026-09-04T11:32:55.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Der Reichtum der Milliardäre der Welt erreichte im vergangenen Jahr 15,1 Billionen $, laut einem neuen Bericht"
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 2,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
