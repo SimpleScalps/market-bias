@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05T10:52:19.957Z",
+ "updated": "2026-09-05T10:54:37.332Z",
  "regime": "policy",
  "count": 192,
  "errors": [
@@ -132,7 +132,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -143,6 +143,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Trump-Gesandte kommen in Moskau vor den Ukraine-Gesprächen an, heißt es in Berichten"
+  },
+  {
+   "id": "Al Jazeera:At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow",
+   "title": "At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow",
+   "text": "Ukrainian armed forces were ordered to follow a three-day ceasefire as US envoys visit Moscow, before trip to Kyiv.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/5/at-least-5-killed-in-russian-attacks-on-ukraine-as-us-envoys-visit-moscow?traffic_source=rss",
+   "date": "2026-09-05T10:27:23.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 87,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Mindestens 5 Tote bei russischen Angriffen auf die Ukraine, während US-Gesandte Moskau besuchen"
   },
   {
    "id": "Benzinga:Best Stocks to Day Trade",
@@ -505,7 +539,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 87,
+   "priority": 86,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "high",
@@ -1227,7 +1261,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 55,
+   "priority": 54,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1823,7 +1857,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1834,40 +1868,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Mindestens zwei Tote bei Explosion in bolivianischer Militärkaserne"
-  },
-  {
-   "id": "Al Jazeera:‘To challenge deadly blockade’: New flotilla mission sets sail for Gaza",
-   "title": "‘To challenge deadly blockade’: New flotilla mission sets sail for Gaza",
-   "text": "Human rights advocates call for diplomatic measures to guarantee flotilla safety and end Israel's deadly Gaza blockade.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/5/to-challenge-deadly-blockade-new-flotilla-mission-sets-sail-for-gaza?traffic_source=rss",
-   "date": "2026-09-05T02:43:23.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 75,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "\"Tödliche Blockade herausfordern\": Neue Flottillenmission setzt Segel für Gaza"
   },
   {
    "id": "BBC World:How much can Canada fight back in its trade war with the US?",
@@ -2066,7 +2066,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2276,7 +2276,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2802,7 +2802,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 9,
+   "priority": 8,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3897,7 +3897,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike, strong labour market)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 65,
+   "priority": 64,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -6766,7 +6766,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
