@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v37';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v38';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -1090,7 +1090,21 @@ function melde(frisch) {
   const kopf = `${T().labels[label(top.scores[asset])]} · ${T().assets[asset]}`;
   const rumpf = `${titel(top)}\n${T().impact[top.impactLevel]} · ${T().dauer[top.duration]}`;
 
-  if (kanaele.has('telegram') || kanaele.has('discord')) anKanaele(kopf, rumpf);
+  /*
+   * Telegram und Discord bedient der Worker - und nur er kennt das Versandbuch.
+   *
+   * Schickte die App zusaetzlich selbst, kaeme dieselbe Meldung mehrfach an:
+   * einmal vom Worker, und einmal von jedem geoeffneten Geraet. Genau so
+   * standen drei Nachrichten im Kanal, zwei davon mit deutschem Titel (die
+   * App uebersetzt die Anlageklasse, der Worker nicht) - daran liessen sich
+   * die Absender auseinanderhalten.
+   *
+   * Ohne Worker bleibt der direkte Weg die einzige Moeglichkeit; dann gibt es
+   * auch keinen zweiten Absender, mit dem er sich ins Gehege kommen koennte.
+   */
+  if (!liveUrl && (kanaele.has('telegram') || kanaele.has('discord'))) {
+    anKanaele(kopf, rumpf);
+  }
 
   if (!kanaele.has('browser') || !('Notification' in window) || Notification.permission !== 'granted') return;
   try {
