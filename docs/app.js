@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v41';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v42';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -592,6 +592,17 @@ async function frageStellen(n, text) {
        */
       body: JSON.stringify({
         titel: n.title, text: n.text, frage: text, sprache: lang,
+        /*
+         * Der bisherige Verlauf faehrt mit.
+         *
+         * Ohne ihn stand eine Rueckfrage wie "kannst du die Infos nicht
+         * herausfinden?" ohne Bezug da, und das Modell antwortete auf etwas
+         * anderes. Fehlgeschlagene Runden bleiben draussen - eine
+         * Fehlermeldung ist kein Gespraechsinhalt.
+         */
+        verlauf: (frageVerlauf.get(n.id) || [])
+          .filter((e) => e.antwort).slice(-3)
+          .map((e) => ({ frage: e.frage, antwort: e.antwort })),
         kontext: {
           label: T().labels[n.label] || n.label,
           wert: n.scores?.[asset],

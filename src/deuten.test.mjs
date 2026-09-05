@@ -90,3 +90,31 @@ test('Jeder Weg antwortet und nimmt sein eigenes Modell', async () => {
     globalThis.fetch = echt;
   }
 });
+
+test('Rueckfragen bekommen den bisherigen Verlauf mit', async () => {
+  const echt = globalThis.fetch;
+  try {
+    let gesendet = '';
+    globalThis.fetch = async (url, opts) => {
+      if (String(url).includes('/models')) {
+        return new Response(JSON.stringify({ data: [{ id: 'openai/gpt-oss-120b' }] }), { status: 200 });
+      }
+      gesendet = JSON.parse(opts.body).messages.map((m) => m.content).join('\n');
+      return new Response(JSON.stringify({
+        choices: [{ message: { content: 'Antwort.' } }], usage: { total_tokens: 9 },
+      }), { status: 200 });
+    };
+
+    await fragen('US hits Iranian tankers', 'Anriss', 'kannst du das nicht herausfinden?',
+      { GROQ_KEY: 'test' }, 'de', null,
+      [{ frage: 'welches warship?', antwort: 'Steht nicht in der Meldung.' }]);
+
+    // Ohne den Bezug beantwortet das Modell eine andere Frage - genau das war
+    // beim Nutzer zu sehen.
+    assert.match(gesendet, /BISHER/);
+    assert.match(gesendet, /welches warship\?/);
+    assert.match(gesendet, /Steht nicht in der Meldung\./);
+  } finally {
+    globalThis.fetch = echt;
+  }
+});

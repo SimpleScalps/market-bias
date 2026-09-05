@@ -390,6 +390,18 @@ Wirkungsdauer und die Herleitung. Das sind belastbare Angaben, keine Fremdtexte
 Antwort dort bereits; du ordnest sie ein, statt sie fuer unbekannt zu erklaeren.
 Haeltst du die Einschaetzung fuer falsch, sag das und begruende es.
 
+Du hast ausschliesslich, was hier steht: die Schlagzeile, den Anriss aus dem
+Feed und die Bewertung. Nicht den Artikeltext, keine Suche, kein Archiv. Fragt
+jemand nach Einzelheiten, die darin nicht vorkommen - welches Schiff, welcher
+Tag, welche Quelle sagt das -, dann sag geradeheraus, dass du sie nicht
+nachschlagen kannst und dass sie in Schlagzeile und Anriss nicht stehen.
+Verweise auf den Artikel selbst. Erfinde nichts und weiche nicht auf die
+Bewertung aus, wenn nicht danach gefragt war.
+
+Unter BISHER stehen frueheren Fragen und deine Antworten darauf, aelteste
+zuerst. Bezieht sich die neue Frage darauf ("und wann?", "kannst du das nicht
+herausfinden?"), lies dort nach, worum es ging.
+
 Antworte in hoechstens vier Saetzen, konkret und ohne Floskeln. Nenne Zahlen,
 wenn welche dastehen. Geben weder Meldung noch Bewertung die Antwort her, sag
 das offen und schreibe dazu, was man stattdessen wissen muesste - rate nicht.`;
@@ -413,7 +425,7 @@ function bewertungsZeile(k) {
  * Gibt { antwort } zurueck oder { fehler }. Die Antwort ist freier Text und
  * wird in der App als Text dargestellt, nie als Markup.
  */
-export async function fragen(schlagzeile, anriss, frage, env, sprache = 'de', kontext = null) {
+export async function fragen(schlagzeile, anriss, frage, env, sprache = 'de', kontext = null, verlauf = []) {
   if (!env.GROQ_KEY) return { fehler: 'kein Schluessel hinterlegt' };
   if (!frage?.trim()) return { fehler: 'keine Frage' };
 
@@ -427,7 +439,7 @@ export async function fragen(schlagzeile, anriss, frage, env, sprache = 'de', ko
    * Minute warten wir nicht, dann ist die Absage ehrlicher.
    */
   for (let versuch = 0; ; versuch++) {
-    const erg = await frageStellen(schlagzeile, anriss, frage, env, sprache, kontext);
+    const erg = await frageStellen(schlagzeile, anriss, frage, env, sprache, kontext, verlauf);
     if (!erg.warten || versuch >= 1) {
       delete erg.warten;
       return erg;
@@ -437,7 +449,7 @@ export async function fragen(schlagzeile, anriss, frage, env, sprache = 'de', ko
 }
 
 /** Ein einzelner Versuch. Setzt `warten`, wenn ein zweiter lohnt. */
-async function frageStellen(schlagzeile, anriss, frage, env, sprache, kontext) {
+async function frageStellen(schlagzeile, anriss, frage, env, sprache, kontext, verlauf = []) {
   // Eine eigene Frage - also aus dem Kontingent, das die Dauerlast nicht
   // antastet. Die Deklaration gehoert hierher: fragen() ruft diese Funktion
   // nur auf, ihr Gueltigkeitsbereich reicht nicht herein.
@@ -449,6 +461,23 @@ async function frageStellen(schlagzeile, anriss, frage, env, sprache, kontext) {
       '<<<MELDUNG', alsDaten(schlagzeile, 300), 'MELDUNG>>>',
       ...(anriss ? ['<<<ANRISS', alsDaten(anriss, 700), 'ANRISS>>>'] : []),
       ...(bewertung ? ['<<<BEWERTUNG', alsDaten(bewertung, 400), 'BEWERTUNG>>>'] : []),
+      /*
+       * Der bisherige Verlauf.
+       *
+       * Ohne ihn ging jede Frage allein an das Modell. Eine Rueckfrage wie
+       * "kannst du die Infos nicht herausfinden?" kam damit ohne den Bezug an,
+       * auf den sie sich stuetzt - das Modell wusste nicht, welche Infos
+       * gemeint waren, und wich auf die Bewertung aus. Genau das war zu sehen.
+       *
+       * Auch der eigene frueherer Text bleibt Daten zwischen Markierungen: Er
+       * ist aus fremdem Text entstanden und darf nichts anweisen.
+       */
+      ...(verlauf.length ? ['<<<BISHER',
+        ...verlauf.slice(-3).flatMap((e) => [
+          'Frage: ' + alsDaten(e.frage, 200),
+          'Antwort: ' + alsDaten(e.antwort, 400),
+        ]),
+        'BISHER>>>'] : []),
       '<<<FRAGE', alsDaten(frage, 300), 'FRAGE>>>',
       sprache === 'en' ? 'Answer in English.' : 'Antworte auf Deutsch.',
     ];

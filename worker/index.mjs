@@ -1844,12 +1844,16 @@ export default {
     if (url.pathname === '/frage' && request.method === 'POST') {
       if (!env.GROQ_KEY) return json({ fehler: 'kein Schluessel hinterlegt' }, 501);
       try {
-        const { titel, text, frage, sprache, kontext } = await request.json();
+        const { titel, text, frage, sprache, kontext, verlauf } = await request.json();
         if (!titel) return json({ fehler: 'keine Meldung' }, 400);
         if (!frage?.trim()) return json({ fehler: 'keine Frage' }, 400);
 
         const ergebnis = await fragen(titel, text, frage, env,
-          sprache === 'en' ? 'en' : 'de', kontext);
+          sprache === 'en' ? 'en' : 'de', kontext,
+          // Nur wohlgeformte Eintraege, und hoechstens drei - der Rest
+          // kostete Token, ohne die Rueckfrage verstaendlicher zu machen.
+          (Array.isArray(verlauf) ? verlauf : [])
+            .filter((e) => e && e.frage && e.antwort).slice(-3));
 
         // Bei einer Absage den Kontingentstand mitgeben: Ein Minutenlimit ist
         // nach einer Minute vorbei, ein Tageslimit erst morgen.
