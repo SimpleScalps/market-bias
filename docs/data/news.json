@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05T16:52:21.872Z",
+ "updated": "2026-09-05T16:54:49.753Z",
  "regime": "policy",
  "count": 112,
  "errors": [
@@ -96,7 +96,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -410,7 +410,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2336,7 +2336,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
