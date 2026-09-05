@@ -190,7 +190,15 @@ function urteilAuslesen(n) {
  * Nachlauf 144, Wochenbuch 48, Uebersetzung und Abo eine Handvoll - zusammen
  * rund 650 von 1.000.
  */
-const BESTAND_HERZSCHLAG_MS = 5 * 60_000;
+/*
+ * Wie oft der Bestand ohne Anlass neu abgelegt wird.
+ *
+ * Nur damit "zuletzt aufgefrischt" frisch aussieht - inhaltlich aendert sich
+ * dabei nichts. Alle fuenf Minuten waren das allein 288 Ablagen am Tag, ein
+ * knappes Drittel des Tageskontingents fuer eine Anzeige. Dass der Taktgeber
+ * laeuft, steht ohnehin im Durable Object, und das kostet kein Kontingent.
+ */
+const BESTAND_HERZSCHLAG_MS = 15 * 60_000;
 
 /*
  * Notbremse vor dem Tageslimit.
