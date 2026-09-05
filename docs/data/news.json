@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05T10:13:54.083Z",
+ "updated": "2026-09-05T10:15:13.554Z",
  "regime": "policy",
  "count": 191,
  "errors": [
@@ -346,40 +346,6 @@
    "titleDe": "Beste KI‑Aktien"
   },
   {
-   "id": "Al Jazeera:US ambassador to Israel meets Palestinian-Americans in occupied West Bank",
-   "title": "US ambassador to Israel meets Palestinian-Americans in occupied West Bank",
-   "text": "US Ambassador to Israel Mike Huckabee has visited Turmus Ayya in the occupied West Bank.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/us-ambassador-to-israel-meets-palestinian-americans-in-occupied-west-bank?traffic_source=rss",
-   "date": "2026-09-05T09:52:44.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 61,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Botschafter in Israel trifft palästinensisch-amerikanische Gemeinschaft im besetzten Westjordanland"
-  },
-  {
    "id": "Al Jazeera:Qatar removed from Fitch’s negative watch list as risks to LNG sites ease",
    "title": "Qatar removed from Fitch’s negative watch list as risks to LNG sites ease",
    "text": "The global ratings agency has also maintained the country’s sovereign rating at AA.",
@@ -641,7 +607,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1021,7 +987,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 56,
+   "priority": 55,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1805,6 +1771,40 @@
    "titleDe": "Warum verlagern europäische Länder ihr Gold aus Nordamerika?"
   },
   {
+   "id": "Al Jazeera:Asylum seekers caught in US immigration crackdown",
+   "title": "Asylum seekers caught in US immigration crackdown",
+   "text": "Dree Collopy argues it could make people who lawfully enter the US more vulnerable to arrest and deportation.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/asylum-seekers-caught-in-us-immigration-crackdown?traffic_source=rss",
+   "date": "2026-09-05T01:27:31.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Asylsuchende, die bei der Razzia der US-Einwanderungsbehörde erwischt wurden"
+  },
+  {
    "id": "BBC World:How the Lindsay Clancy trial gripped America - and ultimately fell apart",
    "title": "How the Lindsay Clancy trial gripped America - and ultimately fell apart",
    "text": "A Massachusetts judge has declared a mistrial in the murder case against the US mother after jurors were unable to reach a unanimous verdict.",
@@ -2066,7 +2066,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6732,7 +6732,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 11,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
