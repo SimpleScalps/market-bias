@@ -1,34 +1,34 @@
 {
- "updated": "2026-09-05T04:03:56.051Z",
+ "updated": "2026-09-05T04:19:28.189Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-05T04:03:56.079Z",
-   "anzahl": 26,
+   "stand": "2026-09-05T04:19:28.231Z",
+   "anzahl": 28,
    "klassen": {
     "crypto": {
-     "score": -0.089,
-     "bull": 1,
+     "score": -0.0597,
+     "bull": 2,
      "bear": 3,
-     "neut": 22
+     "neut": 23
     },
     "stocks": {
-     "score": -0.089,
-     "bull": 1,
+     "score": -0.0628,
+     "bull": 2,
      "bear": 3,
-     "neut": 22
+     "neut": 23
     },
     "gold": {
-     "score": 0.0445,
-     "bull": 3,
+     "score": 0.0569,
+     "bull": 4,
      "bear": 1,
-     "neut": 22
+     "neut": 23
     },
     "usd": {
-     "score": 0.0297,
+     "score": 0.0061,
      "bull": 1,
-     "bear": 1,
-     "neut": 24
+     "bear": 2,
+     "neut": 25
     }
    },
    "top": [
@@ -46,6 +46,21 @@
       "usd": 0.255
      },
      "priority": 71
+    },
+    {
+     "id": "U.Today:XRP Pivot Point: Why the $1.25 Price Level Matters Most Before Sept. 15",
+     "titel": "XRP Pivot Point: Why the $1.25 Price Level Matters Most Before Sept. 15",
+     "titelDe": "XRP-Pivot-Punkt: Warum das Preisniveau von 1,25 $ vor dem 15. September am wichtigsten ist",
+     "quelle": "U.Today",
+     "url": "https://u.today/xrp-pivot-point-why-the-125-price-level-matters-most-before-sept-15",
+     "zeit": "2026-09-05T04:00:00.000Z",
+     "scores": {
+      "crypto": 0.4,
+      "stocks": 0.34,
+      "gold": 0.32,
+      "usd": -0.4
+     },
+     "priority": 58
     },
     {
      "id": "Al Jazeera:After Pretoria peace deal, old enemies in Ethiopia’s Tigray find new ground",
@@ -66,7 +81,7 @@
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-05T04:03:56.090Z",
+   "stand": "2026-09-05T04:19:28.247Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
