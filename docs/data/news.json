@@ -1,13 +1,79 @@
 {
- "updated": "2026-09-05T07:17:42.386Z",
+ "updated": "2026-09-05T07:27:20.147Z",
  "regime": "policy",
- "count": 181,
+ "count": 203,
  "errors": [
-  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
-  "The Block: fetch failed",
-  "BeInCrypto: fetch failed"
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "Al Jazeera:Alcaraz, Sabalenka into US Open last 16 as Williams sisters lose on return",
+   "title": "Alcaraz, Sabalenka into US Open last 16 as Williams sisters lose on return",
+   "text": "Alcaraz beat China's Wu Yibing 6-3, 6-4, 6-1, while Sabalenka defeated Kamilla Rakhimova 6-3, 6-4.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/2026/9/5/alcaraz-sabalenka-into-us-open-last-16-as-williams-sisters-lose-on-return?traffic_source=rss",
+   "date": "2026-09-05T07:15:29.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 45,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Alcaraz und Sabalenka erreichen das Achtelfinale der US Open, während die Williams‑Schwestern bei ihrer Rückkehr verlieren"
+  },
+  {
+   "id": "Al Jazeera:Have scientists discovered a dark matter particle?",
+   "title": "Have scientists discovered a dark matter particle?",
+   "text": "Dark matter is an invisible substance that is said to bind the universe; scientists may have found new signs of it.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/features/2026/9/5/have-scientists-discovered-a-dark-matter-particle?traffic_source=rss",
+   "date": "2026-09-05T07:13:23.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Haben Wissenschaftler ein Dunkle‑Materie‑Teilchen entdeckt?"
+  },
   {
    "id": "BBC World:Why did USS Lincoln turn up in Thailand looking so rusty?",
    "title": "Why did USS Lincoln turn up in Thailand looking so rusty?",
@@ -274,7 +340,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -378,7 +444,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -520,7 +586,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 57,
+   "priority": 56,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -762,7 +828,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 81,
+   "priority": 80,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "high",
@@ -812,6 +878,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Wie viel kann Kanada in seinem Handelskrieg mit den USA zurückschlagen?"
+  },
+  {
+   "id": "BeInCrypto:Robinhood Chain Brings Arbitrum Token Back from the Dead. ARB is Up 90%",
+   "title": "Robinhood Chain Brings Arbitrum Token Back from the Dead. ARB is Up 90%",
+   "text": "Arbitrum price climbs 96% off its record low as Robinhood Chain fees hit $4.45 million and ARB targets $0.15.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/arbitrum-price-robinhood-chain-record-fees/",
+   "date": "2026-09-05T01:53:51.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 43,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Robinhood Chain bringt Arbitrum-Token zurück aus dem Grab. ARB steigt um 90%"
   },
   {
    "id": "Al Jazeera:Ecuador defends US sinking of vessels as joint anti-drug operation",
@@ -903,7 +1003,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 36,
+   "priority": 35,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -937,7 +1037,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -982,6 +1082,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Flock sagt, seine Kameras machen die USA sicherer – warum werden sie dann sabotiert?"
+  },
+  {
+   "id": "BeInCrypto:Zcash Hits $1,000 for the First Time in a Decade. How Far Can It Go?",
+   "title": "Zcash Hits $1,000 for the First Time in a Decade. How Far Can It Go?",
+   "text": "Zcash is seemingly winning this bullish cycle in the crypto market. ZEC is up nearly 100% over the past month, crossing $1,000 for the first time in almost a decade. ZEC briefly climbed above $1,045 on Friday. The move pushed its market value to roughly $17 billion and brought the privacy coin back to four",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/zcash-zec-1000-price-outlook/",
+   "date": "2026-09-05T01:12:19.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 22,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Zcash erreicht zum ersten Mal seit zehn Jahren 1.000 $. Wie weit kann es gehen?"
   },
   {
    "id": "Al Jazeera:Judge declares mistrial in Lindsay Clancy children’s murder case",
@@ -1440,6 +1574,74 @@
    "titleDe": "Die israelische Polizei tötet Palästinenser in Jerusalem, während die Armee die Hilfe für Qusra blockiert"
   },
   {
+   "id": "BeInCrypto:Trump is Rebuilding the CFTC, But It Might Not Favor Crypto",
+   "title": "Trump is Rebuilding the CFTC, But It Might Not Favor Crypto",
+   "text": "The White House vetted four CFTC commissioners. Statute caps one party at three but never forces the minority seats filled.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/crypto-dream-cftc-trump-democrat-picks/",
+   "date": "2026-09-04T21:53:32.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 37,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Trump baut die CFTC wieder auf, aber es könnte sein, dass sie Krypto nicht bevorzugt"
+  },
+  {
+   "id": "BeInCrypto:Grayscale Names 3 Blockchains Leading the Tokenized Stock Boom",
+   "title": "Grayscale Names 3 Blockchains Leading the Tokenized Stock Boom",
+   "text": "Grayscale says Robinhood Chain, BNB Chain and Solana lead tokenized stock trading, with weekly volume near $3 billion.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/grayscale-tokenized-stocks-leading-chains/",
+   "date": "2026-09-04T21:47:24.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 17,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Graustufen-Namen 3 Blockketten, die den tokenisierten Aktienboom anführen"
+  },
+  {
    "id": "Decrypt:TikTok's Parent Company Just Borrowed $30 Billion to Go All-In on AI",
    "title": "TikTok's Parent Company Just Borrowed $30 Billion to Go All-In on AI",
    "text": "Nearly 30 banks backed the rare unsecured facility as TikTok’s parent company spends heavily on AI chips, models, and overseas data centers.",
@@ -1461,7 +1663,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1495,7 +1697,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1529,7 +1731,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 47,
+   "priority": 46,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1563,7 +1765,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1614,40 +1816,6 @@
    "titleDe": "Malaysian Ringgit: BNM Hawkish Tilt unterstützt MYR – Commerzbank"
   },
   {
-   "id": "Al Jazeera:US regulator opens safety investigation as Tesla launches driverless taxis",
-   "title": "US regulator opens safety investigation as Tesla launches driverless taxis",
-   "text": "The US National Highway Traffic Safety Administration has opened up an investigation into Tesla’s new self-driving car.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/us-regulator-opens-safety-investigation-as-tesla-launches-driverless-taxis?traffic_source=rss",
-   "date": "2026-09-04T21:27:26.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 29,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "medium",
-   "duration": "swing",
-   "eventType": "Regulierungsverfahren",
-   "eventTypeEn": "Regulatory action",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Regulierungsbehörde leitet Sicherheitsuntersuchung ein, da Tesla fahrerlose Taxis auf den Markt bringt"
-  },
-  {
    "id": "FXStreet:USD/CHF Price Forecast: NFP rally stalls at 0.8100, retraces",
    "title": "USD/CHF Price Forecast: NFP rally stalls at 0.8100, retraces",
    "text": "The USD/CHF registers modest gains of over 0.30% as the Greenback is boosted by a solid US Nonfarm Payrolls report, pushing the pair above the 50-day Simple Moving Average (SMA) to reach a daily high of 0.8126. At the time of writing, trades at 0.8098.",
@@ -1684,44 +1852,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "USD/CHF-Preisprognose: NFP-Rallye stagniert bei 0,8100, Spuren"
-  },
-  {
-   "id": "Al Jazeera:Witkoff and Kushner will travel to ‘end’ Russia’s war in Ukraine: Trump",
-   "title": "Witkoff and Kushner will travel to ‘end’ Russia’s war in Ukraine: Trump",
-   "text": "Steve Witkoff and Jared Kushner will travel to Ukraine and Russia this weekend to help restart peace negotiations.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/4/witkoff-and-kushner-will-travel-to-end-russias-war-in-ukraine-trump?traffic_source=rss",
-   "date": "2026-09-04T21:19:05.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Deeskalation"
-   ],
-   "scores": {
-    "crypto": 0.252,
-    "stocks": 0.252,
-    "gold": -0.126,
-    "usd": -0.084
-   },
-   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Deeskalation)",
-   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 50,
-   "label": "bullish",
-   "labelText": "Bullish",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Witkoff und Kushner werden reisen, um Russlands Krieg in der Ukraine zu „beenden“: Trump"
   },
   {
    "id": "Decrypt:G7 Warns Quantum Threat Demands Action as Crypto Industry Weighs Fixes",
@@ -1779,7 +1909,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 16,
+   "priority": 15,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1849,7 +1979,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1883,7 +2013,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1896,6 +2026,42 @@
    ],
    "alsoIn": [],
    "titleDe": "Überraschender Druck von Gehaltsabrechnungen außerhalb der Landwirtschaft sendet Bitcoin unter 80.000 zurück"
+  },
+  {
+   "id": "BeInCrypto:Mexican Billionaire Says Bitcoin Will Hit $1.86 Million. What’s His Logic?",
+   "title": "Mexican Billionaire Says Bitcoin Will Hit $1.86 Million. What’s His Logic?",
+   "text": "Mexican billionaire Ricardo Salinas Pliego renewed his long-term Bitcoin thesis this week, pointing to gold’s total market value as the benchmark that could eventually send BTC toward $1.86 million per coin. In a post on X, the Grupo Salinas founder argued that reaching parity with gold’s market capitalization would require exactly that price. He also",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/salinas-pliego-bitcoin-million-gold-benchmark/",
+   "date": "2026-09-04T20:27:50.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 34,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Der mexikanische Milliardär sagt, dass Bitcoin 1,86 Millionen $ erreichen wird. Was ist seine Logik?"
   },
   {
    "id": "MarketWatch:Tesla’s stock falls as Cybercab launch lands with a thud",
@@ -2231,7 +2397,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 14,
+   "priority": 13,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2426,6 +2592,40 @@
    "titleDe": "Trump verdoppelt Drohung, Handel mit wichtigsten Partnern zu stoppen, wenn die Fed die Zinsen nicht senkt"
   },
   {
+   "id": "BeInCrypto:Robinhood and AMC Clash Over Tokenized Stock Listing",
+   "title": "Robinhood and AMC Clash Over Tokenized Stock Listing",
+   "text": "AMC, the world’s largest movie theater chain, wants its tokenized stocks removed from Robinhood, and it’s causing a huge meltdown on social media. AMC wants the tokens removed because they trade on Robinhood using its stock price and branding even though buyers do not actually own AMC shares. CEO Adam Aron argues that investors could",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/robinhood-amc-tokenized-stock-clash/",
+   "date": "2026-09-04T19:16:51.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 13,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Listing",
+   "eventTypeEn": "Listing",
+   "scope": "coin",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Robinhood und AMC kollidieren über tokenisierte Börsennotierung"
+  },
+  {
    "id": "Decrypt:Crypto Traders Are Pairing Meme Coins With Stocks on Robinhood—And It's Working (Sort Of)",
    "title": "Crypto Traders Are Pairing Meme Coins With Stocks on Robinhood—And It's Working (Sort Of)",
    "text": "A meme coin called BONER cornered half of Hims &amp; Hers Health's tokenized shares on Robinhood's new blockchain. It started a new trend that's spreading fast.",
@@ -2447,7 +2647,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2485,7 +2685,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: strong labour market)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -2589,7 +2789,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 12,
+   "priority": 11,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2600,6 +2800,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "'Schicken Sie Ihre Anwälte': Robinhood zieht sich nicht von AMC über Aktien-Tokens zurück"
+  },
+  {
+   "id": "The Block:President Trump says he wants Hyperliquid to enter the US — here’s how it could happen",
+   "title": "President Trump says he wants Hyperliquid to enter the US — here’s how it could happen",
+   "text": "President Trump says his administration is working to bring Hyperliquid into the U.S., raising a deceptively simple question: How?",
+   "source": "The Block",
+   "url": "https://www.theblock.co/news/regulation/2026-09-04-trump-wants-hyperliquid-enter-us-how-it-could-happen-413594",
+   "date": "2026-09-04T18:35:21.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 24,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Präsident Trump sagt, er möchte, dass Hyperliquid in die USA kommt — so könnte es passieren"
   },
   {
    "id": "CNBC:WNBA Commissioner Cathy Engelbert to retire at the end of 2026",
@@ -2657,7 +2891,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2837,7 +3071,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: hawkish)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 61,
+   "priority": 60,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -2905,7 +3139,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 11,
+   "priority": 10,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3084,7 +3318,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3118,7 +3352,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3131,6 +3365,42 @@
    ],
    "alsoIn": [],
    "titleDe": "Crypto Biz: KI trat in den Hintergrund, als Bitcoin zu klettern begann"
+  },
+  {
+   "id": "BeInCrypto:Biggest UK Investment Platform Lists Bitcoin For 2 Million Users",
+   "title": "Biggest UK Investment Platform Lists Bitcoin For 2 Million Users",
+   "text": "Hargreaves Lansdown finally sells Bitcoin, but its clients missed Britain's 180-day window to keep the profits tax-free.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/hargreaves-lansdown-bitcoin-listing/",
+   "date": "2026-09-04T17:21:27.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 29,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Größte britische Investitionsplattform listet Bitcoin für 2 Millionen Nutzer auf"
   },
   {
    "id": "Decrypt:A16z-Backed OpenReserve Gets Approval for Full-Service National Bank",
@@ -3154,7 +3424,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 10,
+   "priority": 9,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3228,7 +3498,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 10,
+   "priority": 9,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3239,6 +3509,42 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Argentinisches Ehepaar, um das von den Nazis geraubte Gemälde an den rechtmäßigen Eigentümer zurückzugeben"
+  },
+  {
+   "id": "BeInCrypto:Quantum Memory: The Device That Breaks Bitcoin and Replaces It",
+   "title": "Quantum Memory: The Device That Breaks Bitcoin and Replaces It",
+   "text": "Stefano Gogioso says quantum memory will power quantum money, built on the same hardware that threatens Bitcoin.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/quantum-memory-breaks-replaces-bitcoin/",
+   "date": "2026-09-04T17:13:46.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 29,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Quantenspeicher: Das Gerät, das Bitcoin bricht und ersetzt"
   },
   {
    "id": "Cointelegraph:QuFi launches post-quantum verification platform with Bitcoin testnet proof",
@@ -3309,6 +3615,78 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "US-Strafverfolgungsgruppe wechselt zu \"neutraler\" Position zum CLARITY-Act"
+  },
+  {
+   "id": "The Block:Zcash tops $1,000 as ETF inflows ramp up and miners pile in",
+   "title": "Zcash tops $1,000 as ETF inflows ramp up and miners pile in",
+   "text": "Grayscale's ZCSH inflows climb as surging network competition cuts into miners’ gains from the ZEC token's rally.",
+   "source": "The Block",
+   "url": "https://www.theblock.co/news/markets/2026-09-04-zcash-tops-1000-etf-inflows-ramp-up-miners-pile-in-413580",
+   "date": "2026-09-04T16:59:34.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "ETF-Zuflüsse"
+   ],
+   "scores": {
+    "crypto": 0.7,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "why": "Direkt kryptopositive Nachricht. (Signale: ETF-Zuflüsse)",
+   "whyEn": "Directly crypto-positive news. (signals: ETF inflows)",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 20,
+   "label": "strong_bullish",
+   "labelText": "Stark Bullish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": "ETF-Flüsse",
+   "eventTypeEn": "ETF flows",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Zcash übersteigt 1.000 $, da die ETF-Zuflüsse ansteigen und sich die Miner häufen"
+  },
+  {
+   "id": "BeInCrypto:Liquid Mercury Announces Initial Closing of ACQUA1 Offering",
+   "title": "Liquid Mercury Announces Initial Closing of ACQUA1 Offering",
+   "text": "Chicago, United States, September 4th, 2026 – Liquid Mercury today announced that ACQUA1, LLC completed the initial closing of its MERC exchange offering on September 1, 2026. ACQUA1 is a Liquid Mercury subsidiary that operates Liquid Mercury’s Lab Company program, licensing Liquid Mercury technology to companies primarily tokenizing real-world assets and receiving fees plus a",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/liquid-mercury-acqua1-offering-563m-merc-burn/",
+   "date": "2026-09-04T16:50:30.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 9,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Liquid Mercury gibt den erstmaligen Abschluss des ACQUA1-Angebots bekannt"
   },
   {
    "id": "BBC World:Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
@@ -3483,6 +3861,110 @@
    "titleDe": "Zcash erreicht den höchsten Preis seit fast einem Jahrzehnt, vernichtende Short-Wetten"
   },
   {
+   "id": "BeInCrypto:3 Altcoins That Could Reach All-Time Highs This Weekend",
+   "title": "3 Altcoins That Could Reach All-Time Highs This Weekend",
+   "text": "WBT, HYPE, and RAIN trade just below fresh record highs. See the levels that could trigger new all-time highs this weekend.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/altcoins-all-time-highs-september-weekend/",
+   "date": "2026-09-04T16:16:32.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 8,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "3 Altcoins, die an diesem Wochenende Allzeithochs erreichen könnten"
+  },
+  {
+   "id": "BeInCrypto:ChatGPT Recommended a Fake Crypto Site Linked to $2.2 Million Scam",
+   "title": "ChatGPT Recommended a Fake Crypto Site Linked to $2.2 Million Scam",
+   "text": "A phishing site ChatGPT recommended drained $2.2 million in Flare tokens as OpenAI agents hijacked a German wiki.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/chatgpt-recommends-scam-crypto-site/",
+   "date": "2026-09-04T16:14:14.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 28,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "ChatGPT empfahl eine gefälschte Kryptoseite, die mit 2,2 Millionen $ Betrug verbunden ist"
+  },
+  {
+   "id": "BeInCrypto:Will AI Push Bitcoin Mining Out of the Market?",
+   "title": "Will AI Push Bitcoin Mining Out of the Market?",
+   "text": "Bitcoin mining as a profitable business model is becoming harder to justify at the biggest, most expensive sites. Network hashrate, which measures the total computing power securing Bitcoin, climbed above 1.1 ZH/s in October 2025 but has since fallen toward 900 EH/s several times. Mining difficulty also dropped 11.16% in February 2026 and another 10.09%",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/bitcoin-miners-ai-power-war/",
+   "date": "2026-09-04T16:07:49.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 27,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Wird die KI das Bitcoin-Mining vom Markt verdrängen?"
+  },
+  {
    "id": "U.Today:Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
    "title": "Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
    "text": "Binance has listed twelve cryptocurrencies that it will remove from its crypto trading platform, specifically on Binance Alpha, later today.",
@@ -3542,7 +4024,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 64,
+   "priority": 63,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "high",
@@ -3655,6 +4137,42 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Brent: Fragwürdige Ströme, fragile Aussichten – Commerzbank"
+  },
+  {
+   "id": "The Block:Ripple expands college sports push with XRP partnership at Florida",
+   "title": "Ripple expands college sports push with XRP partnership at Florida",
+   "text": "The XRP logo will be featured on the field at Ben Hill Griffin Stadium, as well as across Florida Athletics’ digital properties and events.",
+   "source": "The Block",
+   "url": "https://www.theblock.co/news/business/2026-09-04-ripple-college-sports-push-xrp-partnership-florida-gators-413576",
+   "date": "2026-09-04T15:37:17.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 27,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Partnerschaft",
+   "eventTypeEn": "Partnership",
+   "scope": "project",
+   "coins": [
+    "XRP"
+   ],
+   "alsoIn": [],
+   "titleDe": "Ripple erweitert College-Sport-Push mit XRP-Partnerschaft in Florida"
   },
   {
    "id": "Decrypt:OpenAI Agents Hack German Website to Share Rule-Breaking Tactics: Report",
@@ -5131,6 +5649,44 @@
    "titleDe": "7,26 Mrd. $ allein im August: XRP erreicht Sechsmonatshoch im Handelsvolumen"
   },
   {
+   "id": "The Block:Trezor says ShipMonk breach affected another 67,000 customers",
+   "title": "Trezor says ShipMonk breach affected another 67,000 customers",
+   "text": "The newly identified records date from 2019 to 2021 and include names, emails, phone numbers, shipping addresses, and order numbers.",
+   "source": "The Block",
+   "url": "https://www.theblock.co/news/business/2026-09-04-trezor-says-shipmonk-breach-affected-another-67000-customers-413540",
+   "date": "2026-09-04T12:03:16.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Hack/Exploit"
+   ],
+   "scores": {
+    "crypto": -0.7,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "why": "Direkt kryptonegative Nachricht. (Signale: Hack/Exploit)",
+   "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 17,
+   "label": "strong_bearish",
+   "labelText": "Stark Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Trezor sagt, dass ShipMonk weitere 67.000 Kunden betroffen hat"
+  },
+  {
    "id": "BBC World:UK support for Falkland Islands 'unwavering' after Argentina restates claims, No 10 says",
    "title": "UK support for Falkland Islands 'unwavering' after Argentina restates claims, No 10 says",
    "text": "The comments come as Argentinian president Javier Milei says the \"winds of change\" favoured his country's claim on the British overseas territory.",
@@ -5344,6 +5900,80 @@
    ],
    "alsoIn": [],
    "titleDe": "Wir haben 6 Jahre Bitcoin-Daten überprüft. Der NFP-Bericht ist kein großer Preismacher"
+  },
+  {
+   "id": "The Block:El Salvador has not used public funds to accumulate bitcoin since June 2025, IMF says",
+   "title": "El Salvador has not used public funds to accumulate bitcoin since June 2025, IMF says",
+   "text": "IMF says El Salvador used no public funds for bitcoin accumulation since June 2025, with purchases coming from private donations.",
+   "source": "The Block",
+   "url": "https://www.theblock.co/news/regulation/2026-09-04-el-salvador-has-not-used-public-funds-to-accumulate-bitcoin-since-june-2025-imf-says-413535",
+   "date": "2026-09-04T11:28:46.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Akkumulation"
+   ],
+   "scores": {
+    "crypto": 0.45,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "why": "Direkt kryptopositive Nachricht. (Signale: Akkumulation)",
+   "whyEn": "Directly crypto-positive news. (signals: accumulation)",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 33,
+   "label": "bullish",
+   "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "El Salvador hat seit Juni 2025 keine öffentlichen Mittel mehr verwendet, um Bitcoin zu akkumulieren, sagt der IWF"
+  },
+  {
+   "id": "The Block:Crypto firms urge SEC to speed ETF reviews and allow confidential draft filings",
+   "title": "Crypto firms urge SEC to speed ETF reviews and allow confidential draft filings",
+   "text": "In contrast, Jane Street and Charles Schwab raised concerns over rushed ETF launches and confidential filings limiting market scrutiny.",
+   "source": "The Block",
+   "url": "https://www.theblock.co/news/regulation/2026-09-04-crypto-firms-urge-sec-to-speed-etf-reviews-and-allow-confidential-draft-filings-413532",
+   "date": "2026-09-04T11:21:09.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 26,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Kryptofirmen fordern die SEC auf, ETF-Überprüfungen zu beschleunigen und vertrauliche Einreichungsentwürfe zuzulassen"
   },
   {
    "id": "Cointelegraph:Trezor says data breach affects another 67K US customers",
@@ -5866,6 +6496,40 @@
    "titleDe": "FinCEN bindet 12,7 Mrd. $ an Krypto-Betrügereien, die von asiatischen Verbindungen ausgehen"
   },
   {
+   "id": "The Block:Andreessen Horowitz-backed OpenReserve secures preliminary OCC approval for national bank charter",
+   "title": "Andreessen Horowitz-backed OpenReserve secures preliminary OCC approval for national bank charter",
+   "text": "OpenReserve Holdings received preliminary OCC approval for a national bank focused on onchain settlement, following a $25 million seed round.",
+   "source": "The Block",
+   "url": "https://www.theblock.co/news/regulation/2026-09-04-andreessen-horowitz-backed-openreserve-secures-preliminary-occ-approval-for-national-bank-charter-413528",
+   "date": "2026-09-04T10:18:40.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 6,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Andreessen Horowitz-gestützte OpenReserve sichert vorläufige OCC-Zulassung für Nationalbank-Charta"
+  },
+  {
    "id": "U.Today:Shiba Inu (SHIB) Bullish Future Is Questioned Now",
    "title": "Shiba Inu (SHIB) Bullish Future Is Questioned Now",
    "text": "Shiba Inu was close to the recovery, but a severe volume drop leaves the rally unfueled.",
@@ -6008,6 +6672,40 @@
    ],
    "alsoIn": [],
    "titleDe": "Der IWF bestätigt, dass das Bitcoin-Wachstum in El Salvador durch private Spenden und nicht durch öffentliche Gelder finanziert wurde"
+  },
+  {
+   "id": "The Block:South Korea to start tokenizing ‘all types’ of securities in three stages from 2027",
+   "title": "South Korea to start tokenizing ‘all types’ of securities in three stages from 2027",
+   "text": "South Korea ultimately aims to allow participants to settle tokenized securities onchain with stablecoins, as part of a three-stage plan.",
+   "source": "The Block",
+   "url": "https://www.theblock.co/news/regulation/2026-09-04-south-korea-to-start-tokenizing-all-types-of-securities-in-three-stages-from-2027-413523",
+   "date": "2026-09-04T09:46:06.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 6,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Südkorea beginnt ab 2027 mit der Tokenisierung von „allen Arten“ von Wertpapieren in drei Stufen"
   },
   {
    "id": "CoinDesk:South Korea targets February 2027 rollout for full tokenized securities market",
@@ -6186,6 +6884,42 @@
    "titleDe": "Satoshi-Ära Bitcoin-Halter bewegt 2.571.899 % Gewinn, um New Yorker Gerichtsverfahren zu vereiteln"
   },
   {
+   "id": "The Block:US bitcoin ETFs report the largest inflow day since January, worth $731 million",
+   "title": "US bitcoin ETFs report the largest inflow day since January, worth $731 million",
+   "text": "Analysts attributed Fed Governor Christopher Waller’s dovish comments to the significant inflow of capital into bitcoin products.",
+   "source": "The Block",
+   "url": "https://www.theblock.co/news/markets/2026-09-04-us-bitcoin-etfs-largest-inflow-day-since-january-413515",
+   "date": "2026-09-04T08:47:05.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 26,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "US-Bitcoin-ETFs melden den größten Zuflusstag seit Januar im Wert von 731 Mio. $"
+  },
+  {
    "id": "BBC World:'Layer upon layer of miracles' to find tunnel survivors, Nepal rescue adviser tells BBC",
    "title": "'Layer upon layer of miracles' to find tunnel survivors, Nepal rescue adviser tells BBC",
    "text": "From searching for a buried tunnel entrance to blowing up rocks the size of cars, rescuers had to surmount multiple challenges to reach survivors.",
@@ -6218,6 +6952,44 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "\"Schicht für Schicht von Wundern\", um Tunnelüberlebende zu finden, sagt Nepal Rettungsberater BBC"
+  },
+  {
+   "id": "The Block:AMC stock jumps 21% overnight as CEO slams Robinhood over ‘outrageous’ tokenized shares",
+   "title": "AMC stock jumps 21% overnight as CEO slams Robinhood over ‘outrageous’ tokenized shares",
+   "text": "OpenAI had previously made a similar criticism of Robinhood’s tokenized equities, saying it did not approve the transfer of its shares.",
+   "source": "The Block",
+   "url": "https://www.theblock.co/news/business/2026-09-04-amc-ceo-slams-robinhood-413513",
+   "date": "2026-09-04T07:59:34.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Kursanstieg"
+   ],
+   "scores": {
+    "crypto": 0.36,
+    "stocks": 0.36,
+    "gold": -0.18,
+    "usd": -0.12
+   },
+   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 12,
+   "label": "bullish",
+   "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "AMC-Aktie springt über Nacht um 21 %, da CEO Robinhood wegen \"unverschämter\" tokenisierter Aktien kritisiert"
   },
   {
    "id": "U.Today:Cash Cat (CASHCAT) Hits Another ATH: Robinhood Memes Spike Up",
@@ -6415,7 +7187,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
+  "uebersetzt": 2,
   "fehler": null
  }
 }
