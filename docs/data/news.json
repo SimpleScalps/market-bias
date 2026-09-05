@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05T00:06:41.363Z",
+ "updated": "2026-09-05T00:07:42.497Z",
  "regime": "policy",
  "count": 300,
  "errors": [
@@ -9,6 +9,7 @@
   {
    "id": "Al Jazeera:Tunisia arrests journalist amid crackdown on government critics",
    "title": "Tunisia arrests journalist amid crackdown on government critics",
+   "text": "Tunisia faces criticism as prosecutions of journalists continue under President Kais Saied's rule.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/4/tunisia-arrests-journalist-amid-crackdown-on-government-critics?traffic_source=rss",
    "date": "2026-09-04T23:19:43.000Z",
@@ -42,6 +43,7 @@
   {
    "id": "BBC World:Germany's far-right AfD bids for first taste of power in eastern vote",
    "title": "Germany's far-right AfD bids for first taste of power in eastern vote",
+   "text": "If it wins an outright majority in Saxony-Anhalt, it would be the first time a far-right party has held state-level power in Germany since World War Two.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/cvgypkzgy4wo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T23:07:23.000Z",
@@ -75,6 +77,7 @@
   {
    "id": "Al Jazeera:Mock Republican convention website tops Google, redirects to Epstein files",
    "title": "Mock Republican convention website tops Google, redirects to Epstein files",
+   "text": "Democratic lawmakers poke fun at prank website, while Republicans slam 'fake news' and redirect users to real one.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/4/mock-republican-convention-website-redirects-users-to-epstein-files?traffic_source=rss",
    "date": "2026-09-04T22:51:06.000Z",
@@ -108,6 +111,7 @@
   {
    "id": "FXStreet:Malaysian Ringgit: Range-bound risks and key levels against US Dollar – OCBC",
    "title": "Malaysian Ringgit: Range-bound risks and key levels against US Dollar – OCBC",
+   "text": "OCBC’s Christopher Wong notes that Bank Negara Malaysia (BNM) kept the OPR at 2.75% and struck a slightly firmer tone, with growth expected to stay resilient into 2027. The economist still projects an OPR normalisation to 3.00% in January 2027.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/malaysian-ringgit-range-bound-risks-and-key-levels-against-us-dollar-ocbc-202609042251",
    "date": "2026-09-04T22:51:00.000Z",
@@ -141,6 +145,7 @@
   {
    "id": "BBC World:Mistrial declared in Lindsay Clancy murder case, after jury deadlocks",
    "title": "Mistrial declared in Lindsay Clancy murder case, after jury deadlocks",
+   "text": "The mistrial now puts the murder case - and Clancy's future - in limbo as to whether she will be held criminally liable in the deaths of her three kids.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/cpwlrj2je1po?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T22:48:38.000Z",
@@ -174,6 +179,7 @@
   {
    "id": "BBC World:Nepal bet nearly everything on hydropower - the floods show why that's a problem",
    "title": "Nepal bet nearly everything on hydropower - the floods show why that's a problem",
+   "text": "More than 10% of Nepal's energy generation capacity was knocked out by last week's floods.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/cy0zx368prno?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T22:02:52.000Z",
@@ -207,6 +213,7 @@
   {
    "id": "FXStreet:USD/MXN Price Forecast: Peso rally targets April 2024 low",
    "title": "USD/MXN Price Forecast: Peso rally targets April 2024 low",
+   "text": "The Mexican Peso appreciates against the US Dollar, testing two-year highs near 16.85 as the USD/MXN sets aside a strong US Nonfarm Payrolls report, which was ignored by the Peso’s bears.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/usd-mxn-price-forecast-peso-rally-targets-april-2024-low-202609042159",
    "date": "2026-09-04T21:59:40.000Z",
@@ -244,6 +251,7 @@
   {
    "id": "Al Jazeera:Israeli police kill Palestinian in Jerusalem as army blocks aid for Qusra",
    "title": "Israeli police kill Palestinian in Jerusalem as army blocks aid for Qusra",
+   "text": "Israeli forces bar Israeli and Palestinian activists from delivering food and medicine to homes besieged by settlers.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/4/israeli-police-kill-palestinian-in-jerusalem-as-army-blocks-aid-for-qusra?traffic_source=rss",
    "date": "2026-09-04T21:58:47.000Z",
@@ -277,6 +285,7 @@
   {
    "id": "BeInCrypto:Trump is Rebuilding the CFTC, But It Might Not Favor Crypto",
    "title": "Trump is Rebuilding the CFTC, But It Might Not Favor Crypto",
+   "text": "The White House vetted four CFTC commissioners. Statute caps one party at three but never forces the minority seats filled.",
    "source": "BeInCrypto",
    "url": "https://beincrypto.com/crypto-dream-cftc-trump-democrat-picks/",
    "date": "2026-09-04T21:53:32.000Z",
@@ -310,6 +319,7 @@
   {
    "id": "BeInCrypto:Grayscale Names 3 Blockchains Leading the Tokenized Stock Boom",
    "title": "Grayscale Names 3 Blockchains Leading the Tokenized Stock Boom",
+   "text": "Grayscale says Robinhood Chain, BNB Chain and Solana lead tokenized stock trading, with weekly volume near $3 billion.",
    "source": "BeInCrypto",
    "url": "https://beincrypto.com/grayscale-tokenized-stocks-leading-chains/",
    "date": "2026-09-04T21:47:24.000Z",
@@ -343,6 +353,7 @@
   {
    "id": "Decrypt:TikTok's Parent Company Just Borrowed $30 Billion to Go All-In on AI",
    "title": "TikTok's Parent Company Just Borrowed $30 Billion to Go All-In on AI",
+   "text": "Nearly 30 banks backed the rare unsecured facility as TikTok’s parent company spends heavily on AI chips, models, and overseas data centers.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377489/tiktok-bytedance-loan-ai",
    "date": "2026-09-04T21:46:03.000Z",
@@ -376,6 +387,7 @@
   {
    "id": "MarketWatch:Bloom Energy was just named to the S&P 500. These other stocks are joining the index as well.",
    "title": "Bloom Energy was just named to the S&P 500. These other stocks are joining the index as well.",
+   "text": "Molson Coors Beverage, Builders FirstSource and Trade Desk will be getting the boot from the benchmark index.",
    "source": "MarketWatch",
    "url": "https://www.marketwatch.com/story/s-p-500-changes-are-coming-soon-these-stocks-could-be-named-to-the-index-today-2d0d7c14?mod=mw_rss_topstories",
    "date": "2026-09-04T21:46:00.000Z",
@@ -409,6 +421,7 @@
   {
    "id": "Al Jazeera:Costa Rican president signals openness to domestic US military operations",
    "title": "Costa Rican president signals openness to domestic US military operations",
+   "text": "President Laura Fernandez notes that Congress would need to approve any US military operations within the country.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/4/costa-rican-president-signals-openness-to-domestic-us-military-operations?traffic_source=rss",
    "date": "2026-09-04T21:45:56.000Z",
@@ -442,6 +455,7 @@
   {
    "id": "Al Jazeera:Betis beat Real Madrid as Mbappe misses penalty in first La Liga defeat",
    "title": "Betis beat Real Madrid as Mbappe misses penalty in first La Liga defeat",
+   "text": "Jose Mourinho's winning start to his second spell at Real Madrid ends with a 1-0 La Liga defeat at Real Betis.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/sports/2026/9/4/real-madrid-beaten-by-betis-as-mourinho-suffers-first-defeat-on-return?traffic_source=rss",
    "date": "2026-09-04T21:37:56.000Z",
@@ -475,6 +489,7 @@
   {
    "id": "FXStreet:Malaysian Ringgit: BNM hawkish tilt supports MYR – Commerzbank",
    "title": "Malaysian Ringgit: BNM hawkish tilt supports MYR – Commerzbank",
+   "text": "Commerzbank highlights that Bank Negara Malaysia kept the OPR at 2.75% but shifted to a more hawkish bias, removing language that policy is \"appropriate\" and signalling vigilance on cost pressures.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/malaysian-ringgit-bnm-hawkish-tilt-supports-myr-commerzbank-202609042128",
    "date": "2026-09-04T21:28:00.000Z",
@@ -512,6 +527,7 @@
   {
    "id": "Al Jazeera:US regulator opens safety investigation as Tesla launches driverless taxis",
    "title": "US regulator opens safety investigation as Tesla launches driverless taxis",
+   "text": "The US National Highway Traffic Safety Administration has opened up an investigation into Tesla’s new self-driving car.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/us-regulator-opens-safety-investigation-as-tesla-launches-driverless-taxis?traffic_source=rss",
    "date": "2026-09-04T21:27:26.000Z",
@@ -545,6 +561,7 @@
   {
    "id": "FXStreet:USD/CHF Price Forecast: NFP rally stalls at 0.8100, retraces",
    "title": "USD/CHF Price Forecast: NFP rally stalls at 0.8100, retraces",
+   "text": "The USD/CHF registers modest gains of over 0.30% as the Greenback is boosted by a solid US Nonfarm Payrolls report, pushing the pair above the 50-day Simple Moving Average (SMA) to reach a daily high of 0.8126. At the time of writing, trades at 0.8098.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/usd-chf-price-forecast-nfp-rally-stalls-at-08100-retraces-202609042127",
    "date": "2026-09-04T21:27:24.000Z",
@@ -567,7 +584,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 34,
+   "priority": 33,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -582,6 +599,7 @@
   {
    "id": "Al Jazeera:Witkoff and Kushner will travel to ‘end’ Russia’s war in Ukraine: Trump",
    "title": "Witkoff and Kushner will travel to ‘end’ Russia’s war in Ukraine: Trump",
+   "text": "Steve Witkoff and Jared Kushner will travel to Ukraine and Russia this weekend to help restart peace negotiations.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/4/witkoff-and-kushner-will-travel-to-end-russias-war-in-ukraine-trump?traffic_source=rss",
    "date": "2026-09-04T21:19:05.000Z",
@@ -619,6 +637,7 @@
   {
    "id": "Decrypt:G7 Warns Quantum Threat Demands Action as Crypto Industry Weighs Fixes",
    "title": "G7 Warns Quantum Threat Demands Action as Crypto Industry Weighs Fixes",
+   "text": "The group is urging organizations to adopt post-quantum security before powerful computers can compromise today’s encryption and digital signatures.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377486/g7-warns-quantum-threat-crypto-fixes",
    "date": "2026-09-04T21:16:04.000Z",
@@ -652,6 +671,7 @@
   {
    "id": "Al Jazeera:Sabalenka interrupts US Open match against Rakhimova over cannabis smell",
    "title": "Sabalenka interrupts US Open match against Rakhimova over cannabis smell",
+   "text": "World number one Aryna Sabalenka's straight-sets US Open win against Kamilla Rakhimova stopped by smell of cannabis.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/sports/2026/9/4/sabalenka-interrupts-us-open-match-against-rakhimova-over-cannabis-smell?traffic_source=rss",
    "date": "2026-09-04T21:05:03.000Z",
@@ -685,6 +705,7 @@
   {
    "id": "U.Today:Ripple Swell to Feature India's Former Central Bank Governor",
    "title": "Ripple Swell to Feature India's Former Central Bank Governor",
+   "text": "Raghuram Rajan, the former governor of the Reserve Bank of India, will join Ripple’s Swell 2026 conference.",
    "source": "U.Today",
    "url": "https://u.today/ripple-swell-to-feature-indias-former-central-bank-governor",
    "date": "2026-09-04T21:03:19.000Z",
@@ -720,6 +741,7 @@
   {
    "id": "Al Jazeera:Liverpool beat Ipswich as Isak goals hand Iraola first Premier League win",
    "title": "Liverpool beat Ipswich as Isak goals hand Iraola first Premier League win",
+   "text": "Bradley Barcola makes his debut as Alexander Isak scores both Liverpool goals in 2-0 win at Ipswich Town.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/sports/2026/9/4/liverpool-beat-ipswich-as-isak-goals-hand-iraola-first-premier-league-win?traffic_source=rss",
    "date": "2026-09-04T20:55:16.000Z",
@@ -753,6 +775,7 @@
   {
    "id": "Al Jazeera:Nigel Farage heckled as he denies Reform UK took illegal funding",
    "title": "Nigel Farage heckled as he denies Reform UK took illegal funding",
+   "text": "Reform UK leader Nigel Farage was heckled by protesters on Friday, as he addressed the party’s conference in Birmingham.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/nigel-farage-heckled-as-he-denies-reform-uk-took-illegal-funding?traffic_source=rss",
    "date": "2026-09-04T20:53:12.000Z",
@@ -786,6 +809,7 @@
   {
    "id": "Al Jazeera:Will Europe pay the US to provide military aid to Ukraine?",
    "title": "Will Europe pay the US to provide military aid to Ukraine?",
+   "text": "US President Donald Trump laments past financial support for Ukraine's war effort and has vowed to claw the money back.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/video/inside-story/2026/9/4/will-europe-pay-the-us-to-provide-military-aid-to-ukraine?traffic_source=rss",
    "date": "2026-09-04T20:52:55.000Z",
@@ -819,6 +843,7 @@
   {
    "id": "FXStreet:Indonesian Rupiah: Two-way risks around support levels – OCBC",
    "title": "Indonesian Rupiah: Two-way risks around support levels – OCBC",
+   "text": "OCBC’s Christopher Wong notes that USD/IDR has pulled back as a softer Dollar and lower UST yields support the Indonesian Rupiah. He highlights Bank Indonesia Governor Destry Damayanti’s emphasis on a stability-first approach, prioritizing Rupiah and macro stability while still supporting growth.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/indonesian-rupiah-two-way-risks-around-support-levels-ocbc-202609042043",
    "date": "2026-09-04T20:43:00.000Z",
@@ -852,6 +877,7 @@
   {
    "id": "Decrypt:Polymarket Launches Crypto Perpetual Futures With Up to 20x Leverage",
    "title": "Polymarket Launches Crypto Perpetual Futures With Up to 20x Leverage",
+   "text": "The prediction market platform's new Perps product scaled from 10 markets to 67 on its first day—though the 20x leverage ceiling only applies to some of them, and none of it reaches U.S. traders.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377483/polymarket-crypto-perpetual-futures",
    "date": "2026-09-04T20:31:03.000Z",
@@ -885,6 +911,7 @@
   {
    "id": "Cointelegraph:Surprise nonfarm payrolls print sends Bitcoin back below 80K",
    "title": "Surprise nonfarm payrolls print sends Bitcoin back below 80K",
+   "text": "The US economy added far more jobs than expected in August, pressuring Bitcoin lower as traders repriced the odds of a Federal Reserve rate cut this month.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/markets/surprise-labor-market-print-sends-bitcoin-back-below-80k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T20:30:47.000Z",
@@ -920,6 +947,7 @@
   {
    "id": "Al Jazeera:Mexico seizes 17 tonnes of meth in $347 million drug bust",
    "title": "Mexico seizes 17 tonnes of meth in $347 million drug bust",
+   "text": "Mexican authorities seized nearly 17 tonnes of methamphetamine from three clandestine laboratories in Sinaloa",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/mexico-seizes-17-tonnes-of-meth-in-347-million-drug-bust?traffic_source=rss",
    "date": "2026-09-04T20:28:40.000Z",
@@ -953,6 +981,7 @@
   {
    "id": "BeInCrypto:Mexican Billionaire Says Bitcoin Will Hit $1.86 Million. What’s His Logic?",
    "title": "Mexican Billionaire Says Bitcoin Will Hit $1.86 Million. What’s His Logic?",
+   "text": "Mexican billionaire Ricardo Salinas Pliego renewed his long-term Bitcoin thesis this week, pointing to gold’s total market value as the benchmark that could eventually send BTC toward $1.86 million per coin. In a post on X, the Grupo Salinas founder argued that reaching parity with gold’s market capitalization would require exactly that price. He also",
    "source": "BeInCrypto",
    "url": "https://beincrypto.com/salinas-pliego-bitcoin-million-gold-benchmark/",
    "date": "2026-09-04T20:27:50.000Z",
@@ -988,6 +1017,7 @@
   {
    "id": "Al Jazeera:Watchdog report alleges misconduct by Trump’s former labour secretary",
    "title": "Watchdog report alleges misconduct by Trump’s former labour secretary",
+   "text": "Lori Chavez-DeRemer reportedly used staff for personal tasks, drank at work and violated ethics regulations.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/4/watchdog-report-alleges-misconduct-by-trumps-former-labour-secretary?traffic_source=rss",
    "date": "2026-09-04T20:27:11.000Z",
@@ -1021,6 +1051,7 @@
   {
    "id": "Al Jazeera:Trump calls Iran war ‘small potatoes’, compares US deaths with Vietnam war",
    "title": "Trump calls Iran war ‘small potatoes’, compares US deaths with Vietnam war",
+   "text": "US President Donald Trump called the Iran war small potatoes, saying only 18 Americans had been killed.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/09-04-trump-iran-war-small-potatoes-clip?traffic_source=rss",
    "date": "2026-09-04T20:22:42.000Z",
@@ -1058,6 +1089,7 @@
   {
    "id": "MarketWatch:Tesla’s stock falls as Cybercab launch lands with a thud",
    "title": "Tesla’s stock falls as Cybercab launch lands with a thud",
+   "text": "The company’s Cybercab rollout won’t be as broad as some investors had hoped.",
    "source": "MarketWatch",
    "url": "https://www.marketwatch.com/story/teslas-stock-falls-as-cybercab-launch-lands-with-a-thud-1108376b?mod=mw_rss_topstories",
    "date": "2026-09-04T20:18:00.000Z",
@@ -1091,6 +1123,7 @@
   {
    "id": "MarketWatch:Micron is doubling down on AI memory chips. That could pay off big time for investors.",
    "title": "Micron is doubling down on AI memory chips. That could pay off big time for investors.",
+   "text": "Micron is reportedly increasing production capacity of a more profitable memory offering that’s in high demand due to AI.",
    "source": "MarketWatch",
    "url": "https://www.marketwatch.com/story/micron-is-doubling-down-on-ai-memory-chips-that-could-pay-off-big-time-for-investors-da9e7f5e?mod=mw_rss_topstories",
    "date": "2026-09-04T20:12:00.000Z",
@@ -1124,6 +1157,7 @@
   {
    "id": "CNBC World:Tesla's stock drops 6% as Cybercab update 'underwhelms' Wall Street",
    "title": "Tesla's stock drops 6% as Cybercab update 'underwhelms' Wall Street",
+   "text": "Tesla's long-awaited Cybercab update failed to dazzle investors.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/teslas-stock-drops-as-cybercab-update-underwhelms-nhtsa-probe.html",
    "date": "2026-09-04T20:06:13.000Z",
@@ -1159,6 +1193,7 @@
   {
    "id": "Al Jazeera:Israeli drones drop bombs on southern Lebanon’s Mansouri",
    "title": "Israeli drones drop bombs on southern Lebanon’s Mansouri",
+   "text": "Several explosions rocked the southern Lebanese town of Mansouri after Israeli military drones dropped explosives in the",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/04-09-sv-israel-drone-bombs-mansouri-lb-fm?traffic_source=rss",
    "date": "2026-09-04T20:04:13.000Z",
@@ -1196,6 +1231,7 @@
   {
    "id": "FXStreet:Chinese Yuan: Services PMI rebound keeps PBoC cautious – Commerzbank",
    "title": "Chinese Yuan: Services PMI rebound keeps PBoC cautious – Commerzbank",
+   "text": "Commerzbank says China’s August Services PMI rebound highlights some resilience in private-sector activity, but weak retail sales, soft inflation and higher unemployment still point to fragile domestic demand.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/chinese-yuan-services-pmi-rebound-keeps-pboc-cautious-commerzbank-202609042003",
    "date": "2026-09-04T20:03:31.000Z",
@@ -1214,7 +1250,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1223,12 +1259,12 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "titleDe": "Chinesischer Yuan: Services PMI Rebound hält PBoC zurück – Commerzbank"
+   "alsoIn": []
   },
   {
    "id": "MarketWatch:Will a data center hurt your home’s value? Research says no. Sellers disagree.",
    "title": "Will a data center hurt your home’s value? Research says no. Sellers disagree.",
+   "text": "In recent months, Americans have gotten more vocal about their concerns over data centers and the effects they could have on home values.",
    "source": "MarketWatch",
    "url": "https://www.marketwatch.com/story/will-a-data-center-hurt-your-homes-value-research-says-no-sellers-disagree-7017ace4?mod=mw_rss_topstories",
    "date": "2026-09-04T20:03:00.000Z",
@@ -1247,7 +1283,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1256,12 +1292,12 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "titleDe": "Schadet ein Rechenzentrum dem Wert Ihres Hauses? Die Forschung sagt nein. Verkäufer sind anderer Meinung."
+   "alsoIn": []
   },
   {
    "id": "MarketWatch:Here’s what’s worth streaming in September 2026 on Netflix, Hulu, HBO Max and more",
    "title": "Here’s what’s worth streaming in September 2026 on Netflix, Hulu, HBO Max and more",
+   "text": "Prices are rising again, but a slew of fan-favorite shows — including Apple’s ‘Slow Horses,’ Netflix’s ‘The Gentlemen’ and Paramount’s ‘MobLand’ — are returning for new seasons",
    "source": "MarketWatch",
    "url": "https://www.marketwatch.com/story/heres-whats-worth-streaming-in-september-2026-on-netflix-hulu-hbo-max-and-more-a702e7dd?mod=mw_rss_topstories",
    "date": "2026-09-04T20:00:00.000Z",
@@ -1294,6 +1330,7 @@
   {
    "id": "MarketWatch:Why Oracle’s stock looks like a compelling buy ahead of earnings",
    "title": "Why Oracle’s stock looks like a compelling buy ahead of earnings",
+   "text": "While there are long-term debates around Oracle’s stock, analysts say the company looks poised to benefit from upbeat pricing trends and more when it reports results next week.",
    "source": "MarketWatch",
    "url": "https://www.marketwatch.com/story/why-oracles-stock-looks-like-a-compelling-buy-ahead-of-earnings-12a04d7b?mod=mw_rss_topstories",
    "date": "2026-09-04T19:59:00.000Z",
@@ -1326,6 +1363,7 @@
   {
    "id": "CNBC:Trump says he will spend up to $500 million of 'my money' to help Republicans in midterms",
    "title": "Trump says he will spend up to $500 million of 'my money' to help Republicans in midterms",
+   "text": "Trump's pledge would dramatically increase MAGA Inc.’s spending after the Trump-aligned PAC kept most of its $403 million war chest on the sidelines.",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/04/trump-maga-inc-500-million-republicans-midterm-elections.html",
    "date": "2026-09-04T19:57:35.000Z",
@@ -1358,6 +1396,7 @@
   {
    "id": "FXStreet:Sterling’s rally stalls as US jobs data reopens Fed debate",
    "title": "Sterling’s rally stalls as US jobs data reopens Fed debate",
+   "text": "The Pound Sterling (GBP) retreats some 0.09% against the US Dollar (USD) on Friday as the latest US inflation report reaffirmed Federal Reserve (Fed) Chair Kevin Warsh's view that the labor market is “consistent with full employment.” GBP/USD trades near the open at 1.3512.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/sterlings-rally-stalls-as-us-jobs-data-reopens-fed-debate-202609041952",
    "date": "2026-09-04T19:52:26.000Z",
@@ -1395,6 +1434,7 @@
   {
    "id": "MarketWatch:Maybe the snowbirds are right? One state dominates this list of best places to retire.",
    "title": "Maybe the snowbirds are right? One state dominates this list of best places to retire.",
+   "text": "Access to healthcare, recreation, and low taxes lure retirees, new research says",
    "source": "MarketWatch",
    "url": "https://www.marketwatch.com/story/maybe-the-snowbirds-are-right-one-state-dominates-this-list-of-best-places-to-retire-ab506160?mod=mw_rss_topstories",
    "date": "2026-09-04T19:51:00.000Z",
@@ -1427,6 +1467,7 @@
   {
    "id": "Al Jazeera:Israeli strike kills two in southern Lebanon amid ongoing escalation",
    "title": "Israeli strike kills two in southern Lebanon amid ongoing escalation",
+   "text": "Israeli attacks against villages and towns in southern Lebanon continue despite truce agreements and diplomacy.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/4/israeli-strike-kills-two-in-southern-lebanon-amid-ongoing-escalation?traffic_source=rss",
    "date": "2026-09-04T19:48:25.000Z",
@@ -1464,6 +1505,7 @@
   {
    "id": "Al Jazeera:Andrew Tate indicted in Romania for trafficking minors, money laundering",
    "title": "Andrew Tate indicted in Romania for trafficking minors, money laundering",
+   "text": "The influencer and his brother are in a Miami prison pending potential extradition to the UK on rape charges",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/4/andrew-tate-indicted-in-romania-for-trafficking-minors-money-laundering?traffic_source=rss",
    "date": "2026-09-04T19:44:47.000Z",
@@ -1496,6 +1538,7 @@
   {
    "id": "FXStreet:Malaysia: Hawkish pause keeps options open – DBS",
    "title": "Malaysia: Hawkish pause keeps options open – DBS",
+   "text": "DBS Group Research economist Chua Han Teng notes that Bank Negara Malaysia (BNM) held the Overnight Policy Rate at 2.75% while dropping language that the current level is appropriate. DBS expects rates to remain unchanged through 2026 but sees risks tilted towards a one-off policy normalisation.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/malaysia-hawkish-pause-keeps-options-open-dbs-202609041934",
    "date": "2026-09-04T19:34:53.000Z",
@@ -1533,6 +1576,7 @@
   {
    "id": "FXStreet:Indian Rupee: Dollar inflows support INR but impulse may fade – OCBC",
    "title": "Indian Rupee: Dollar inflows support INR but impulse may fade – OCBC",
+   "text": "OCBC’s Christopher Wong notes that strong foreign-currency inflows linked to the RBI’s special measures have bolstered the Indian Rupee (INR) and strengthened the central bank’s FX buffer.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/indian-rupee-dollar-inflows-support-inr-but-impulse-may-fade-ocbc-202609041932",
    "date": "2026-09-04T19:32:00.000Z",
@@ -1565,6 +1609,7 @@
   {
    "id": "Cointelegraph:Pineapple Financial puts $1B in mortgage records on Injective",
    "title": "Pineapple Financial puts $1B in mortgage records on Injective",
+   "text": "The mortgage lender plans to bring more than $10 billion in historical loans onchain, turning thousands of mortgage files into blockchain-based records.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/pineapple-financial-puts-1b-in-mortgage-records-on-injective?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T19:31:38.000Z",
@@ -1597,6 +1642,7 @@
   {
    "id": "Al Jazeera:UN votes to adopt new world map that reflects Africa’s true size",
    "title": "UN votes to adopt new world map that reflects Africa’s true size",
+   "text": "The widely-used Mercator map is often criticised for visually exaggerating and centralising Western nations.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/4/un-votes-to-adopt-new-world-map-that-reflects-africas-true-size?traffic_source=rss",
    "date": "2026-09-04T19:25:08.000Z",
@@ -1615,7 +1661,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1629,6 +1675,7 @@
   {
    "id": "Cointelegraph:FinCEN ties $13B in crypto scams to non-US operations",
    "title": "FinCEN ties $13B in crypto scams to non-US operations",
+   "text": "The agency reported that “transnational criminal organizations” based in compounds in Southeast Asia were largely behind digital asset scams targeting US residents.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/fincen-crypto-overseas-scam-centers-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T19:22:26.000Z",
@@ -1662,6 +1709,7 @@
   {
    "id": "CNBC World:Trump doubles down on threat to halt trade with top partners unless Fed cuts rates",
    "title": "Trump doubles down on threat to halt trade with top partners unless Fed cuts rates",
+   "text": "President Donald Trump demanded that the Fed slash interest rates or else he will cut off trade with countries with which the U.S. maintains trade deficits.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/trump-fed-rates-jobs-trade.html",
    "date": "2026-09-04T19:17:03.000Z",
@@ -1702,6 +1750,7 @@
   {
    "id": "BeInCrypto:Robinhood and AMC Clash Over Tokenized Stock Listing",
    "title": "Robinhood and AMC Clash Over Tokenized Stock Listing",
+   "text": "AMC, the world’s largest movie theater chain, wants its tokenized stocks removed from Robinhood, and it’s causing a huge meltdown on social media. AMC wants the tokens removed because they trade on Robinhood using its stock price and branding even though buyers do not actually own AMC shares. CEO Adam Aron argues that investors could",
    "source": "BeInCrypto",
    "url": "https://beincrypto.com/robinhood-amc-tokenized-stock-clash/",
    "date": "2026-09-04T19:16:51.000Z",
@@ -1734,6 +1783,7 @@
   {
    "id": "Decrypt:Crypto Traders Are Pairing Meme Coins With Stocks on Robinhood—And It's Working (Sort Of)",
    "title": "Crypto Traders Are Pairing Meme Coins With Stocks on Robinhood—And It's Working (Sort Of)",
+   "text": "A meme coin called BONER cornered half of Hims &amp; Hers Health's tokenized shares on Robinhood's new blockchain. It started a new trend that's spreading fast.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377463/crypto-meme-coin-stock-pairs-robinhood",
    "date": "2026-09-04T19:16:03.000Z",
@@ -1767,6 +1817,7 @@
   {
    "id": "Al Jazeera:Five EU nations inch towards deal on migrant ‘return hubs’ by 2027",
    "title": "Five EU nations inch towards deal on migrant ‘return hubs’ by 2027",
+   "text": "Germany, Austria, ⁠Greece, Denmark and the Netherlands did not outline where the centres would be located.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/4/five-eu-nations-inch-towards-deal-on-migrant-return-hubs-by-2027?traffic_source=rss",
    "date": "2026-09-04T18:52:28.000Z",
@@ -1800,6 +1851,7 @@
   {
    "id": "CNBC:What strong jobs data means for rates — plus, an out-of-favor trade shines this week",
    "title": "What strong jobs data means for rates — plus, an out-of-favor trade shines this week",
+   "text": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/04/what-strong-jobs-data-means-for-rates-plus-an-out-of-favor-trade-shines-this-week.html",
    "date": "2026-09-04T18:51:01.000Z",
@@ -1837,6 +1889,7 @@
   {
    "id": "FXStreet:Eurozone: Inflation above target into 2027 – Nordea",
    "title": "Eurozone: Inflation above target into 2027 – Nordea",
+   "text": "Nordea expects Eurozone inflation dynamics to stay persistent, with headline inflation projected above the ECB’s target at least until spring 2027.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/eurozone-inflation-above-target-into-2027-nordea-202609041850",
    "date": "2026-09-04T18:50:36.000Z",
@@ -1870,6 +1923,7 @@
   {
    "id": "Al Jazeera:Brazilian Supreme Court roiled by dispute between justices",
    "title": "Brazilian Supreme Court roiled by dispute between justices",
+   "text": "The country's highest court is considering investigations into two judges who have accused each other of wrongdoing.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/4/brazilian-supreme-court-roiled-by-dispute-between-justices?traffic_source=rss",
    "date": "2026-09-04T18:46:44.000Z",
@@ -1903,6 +1957,7 @@
   {
    "id": "CNBC World:Longtime Fox News host Maria Bartiromo disputes reports of termination",
    "title": "Longtime Fox News host Maria Bartiromo disputes reports of termination",
+   "text": "Maria Bartiromo, the longtime host of Fox News and Fox Business programming, has disputed reports she was fired from the cable TV networks.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/maria-bartiromo-fox-news-termination.html",
    "date": "2026-09-04T18:37:56.000Z",
@@ -1938,6 +1993,7 @@
   {
    "id": "Decrypt:'Send Your Lawyers': Robinhood Isn't Backing Down From AMC Over Stock Tokens",
    "title": "'Send Your Lawyers': Robinhood Isn't Backing Down From AMC Over Stock Tokens",
+   "text": "Lawyers question AMC’s grounds for a securities-law challenge, but say the tokens’ branding and marketing could leave room for a dispute.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377461/send-your-lawyers-robinhood-not-backing-down-amc",
    "date": "2026-09-04T18:36:41.000Z",
@@ -1971,6 +2027,7 @@
   {
    "id": "The Block:President Trump says he wants Hyperliquid to enter the US — here’s how it could happen",
    "title": "President Trump says he wants Hyperliquid to enter the US — here’s how it could happen",
+   "text": "President Trump says his administration is working to bring Hyperliquid into the U.S., raising a deceptively simple question: How?",
    "source": "The Block",
    "url": "https://www.theblock.co/news/regulation/2026-09-04-trump-wants-hyperliquid-enter-us-how-it-could-happen-413594",
    "date": "2026-09-04T18:35:21.000Z",
@@ -2004,6 +2061,7 @@
   {
    "id": "CNBC:WNBA Commissioner Cathy Engelbert to retire at the end of 2026",
    "title": "WNBA Commissioner Cathy Engelbert to retire at the end of 2026",
+   "text": "Engelbert oversaw a period of unprecedented growth for the WNBA, but has faced criticism from players over her leadership.",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/04/wbna-commissioner-cathy-engelbert-to-retire-at-the-end-of-2026-.html",
    "date": "2026-09-04T18:32:55.000Z",
@@ -2037,6 +2095,7 @@
   {
    "id": "Al Jazeera:Villagers vow to rebuild despite devastating mass demolition in West Bank",
    "title": "Villagers vow to rebuild despite devastating mass demolition in West Bank",
+   "text": "Israeli forces' demolition of 12 homes in Khirbet al-Tabban leaves villagers determined to stand firm on their land.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/4/villagers-vow-rebuild-despite-devastating-mass-demolition-west-bank?traffic_source=rss",
    "date": "2026-09-04T18:32:40.000Z",
@@ -2070,6 +2129,7 @@
   {
    "id": "Cointelegraph:Here’s what happened in crypto today",
    "title": "Here’s what happened in crypto today",
+   "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T18:31:34.000Z",
@@ -2103,6 +2163,7 @@
   {
    "id": "CNBC Economy:Women accounted for almost all of job gains in August. Here's why",
    "title": "Women accounted for almost all of job gains in August. Here's why",
+   "text": "Women accounted for virtually all of August's payroll gains, the latest sign of their growing power in the labor market.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/09/04/jobs-report-women-payrolls.html",
    "date": "2026-09-04T18:27:39.000Z",
@@ -2138,6 +2199,7 @@
   {
    "id": "FXStreet:Fed’s Hammack says policy is not restrictive enough",
    "title": "Fed’s Hammack says policy is not restrictive enough",
+   "text": "Cleveland Federal Reserve (Fed) President Beth Hammack said on Friday that the current monetary policy stance is not restrictive, emphasizing that inflation is too high.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/feds-hammack-says-policy-is-not-restrictive-enough-202609041816",
    "date": "2026-09-04T18:16:53.000Z",
@@ -2171,6 +2233,7 @@
   {
    "id": "FXStreet:Turkey: CBRT likely to hold before two Q4 rate cuts - ING",
    "title": "Turkey: CBRT likely to hold before two Q4 rate cuts - ING",
+   "text": "ING’s Muhammet Mercan notes the Central Bank of the Republic of Türkiye (CBRT) has normalised liquidity via weekly repo auctions, bringing effective funding costs down to the 37% policy rate.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/turkey-cbrt-likely-to-hold-before-two-q4-rate-cuts-ing-202609041810",
    "date": "2026-09-04T18:10:56.000Z",
@@ -2208,6 +2271,7 @@
   {
    "id": "FXStreet:Australian Dollar resumes advance as US Dollar loses post-NFP momentum",
    "title": "Australian Dollar resumes advance as US Dollar loses post-NFP momentum",
+   "text": "AUD/USD resumes its advance on Friday after a brief bout of weakness following a stronger-than-expected United States (US) employment report.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/australian-dollar-resumes-advance-as-us-dollar-loses-post-nfp-momentum-202609041810",
    "date": "2026-09-04T18:10:40.000Z",
@@ -2226,7 +2290,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 36,
+   "priority": 35,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2241,6 +2305,7 @@
   {
    "id": "FXStreet:Gold falls as traders increase Fed hawkish bets after stellar NFP",
    "title": "Gold falls as traders increase Fed hawkish bets after stellar NFP",
+   "text": "Gold (XAU/USD) price retreats by about 0.80% on Friday, after registering losses of over 2% following the release of an upbeat US jobs report.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/gold-falls-as-traders-increase-fed-hawkish-bets-after-stellar-nfp-202609041808",
    "date": "2026-09-04T18:08:17.000Z",
@@ -2278,6 +2343,7 @@
   {
    "id": "CNBC:Analysis: Lower Treasury yields could require a weaker economy. Trump won't fix them",
    "title": "Analysis: Lower Treasury yields could require a weaker economy. Trump won't fix them",
+   "text": "Long-term Treasury yields are being held up by Trump-era policy risk, heavy government borrowing and AI-driven corporate debt.",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/04/treasury-bonds-yield-trump-ai-mortgage-rates-analysis.html",
    "date": "2026-09-04T18:08:16.000Z",
@@ -2311,6 +2377,7 @@
   {
    "id": "Al Jazeera:Moment two workers are pulled alive from Nepal tunnel",
    "title": "Moment two workers are pulled alive from Nepal tunnel",
+   "text": "Rescuers pulled two workers alive from a hydropower tunnel in Nepal",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/moment-two-workers-are-pulled-alive-from-nepal-tunnel?traffic_source=rss",
    "date": "2026-09-04T18:02:30.000Z",
@@ -2344,6 +2411,7 @@
   {
    "id": "CNBC World:White House has vetted candidates for key CFTC vacancies, sources tell CNBC. It's unclear if they will be filled",
    "title": "White House has vetted candidates for key CFTC vacancies, sources tell CNBC. It's unclear if they will be filled",
+   "text": "Filling open commissioner positions at the regulatory agency has been a sticking point in negotiations over the Clarity Act.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/white-house-has-vetted-candidates-for-key-cftc-vacancies-sources-tell-cnbc.html",
    "date": "2026-09-04T17:53:07.000Z",
@@ -2377,6 +2445,7 @@
   {
    "id": "Al Jazeera:Indonesia wildfires send toxic haze across Southeast Asia",
    "title": "Indonesia wildfires send toxic haze across Southeast Asia",
+   "text": "Indonesia’s Kalimantan province, sending smoke and toxic haze across Southeast Asia.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/04-09-sv-indonesia-kalimantan-haze-borneo-wildfires-haze-id?traffic_source=rss",
    "date": "2026-09-04T17:38:48.000Z",
@@ -2410,6 +2479,7 @@
   {
    "id": "CNBC:2-year yield rises to highest since January 2025 after hot jobs report boosts expectations that the Fed could raise rates",
    "title": "2-year yield rises to highest since January 2025 after hot jobs report boosts expectations that the Fed could raise rates",
+   "text": "Treasury yields rose as the hot jobs report along with sticky inflation may give the Fed more cover to hike interest rates in September.",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/04/treasurys-bonds-nonfarm-payrolls-unemployment-data.html",
    "date": "2026-09-04T17:38:21.000Z",
@@ -2448,6 +2518,7 @@
   {
    "id": "FXStreet:Dow Jones Industrial Average falls on a jobs number the president loves",
    "title": "Dow Jones Industrial Average falls on a jobs number the president loves",
+   "text": "The Dow Jones Industrial Average trades just short of 53,400, roughly 325 points or 0.6% lower on Friday, after August Nonfarm Payrolls (NFP) printed 162K against a 56K forecast at 12:30 GMT and pushed the probability of a September hike above 60%.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/dow-jones-industrial-average-falls-on-a-jobs-number-the-president-loves-202609041736",
    "date": "2026-09-04T17:36:34.000Z",
@@ -2481,6 +2552,7 @@
   {
    "id": "CNBC:U.S. sanctions Turkish bank accused of enabling Iran as Bessent says he 'hopes for' no further bank penalties",
    "title": "U.S. sanctions Turkish bank accused of enabling Iran as Bessent says he 'hopes for' no further bank penalties",
+   "text": "President Donald Trump hyped the sanctions plan as \"economic D-Day\" against Iran, but the U.S. has so far taken few steps to implement it.",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/04/iran-turkey-sanctions-economy-bessent.html",
    "date": "2026-09-04T17:34:08.000Z",
@@ -2518,6 +2590,7 @@
   {
    "id": "CNBC:Labor Day marks the start of 'fallcations' as wealthy travelers avoid summer crowds",
    "title": "Labor Day marks the start of 'fallcations' as wealthy travelers avoid summer crowds",
+   "text": "Wealthy travelers are moving their typical summer getaways to autumn.",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/04/fall-travel-wealthy-europe.html",
    "date": "2026-09-04T17:31:44.000Z",
@@ -2551,6 +2624,7 @@
   {
    "id": "Al Jazeera:Yemen’s army says recaptured key territory as clashes with Houthis continue",
    "title": "Yemen’s army says recaptured key territory as clashes with Houthis continue",
+   "text": "Two days of fighting between government forces and Houthi fighters has left dozens dead on both sides, sources say.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/4/yemens-army-says-recaptured-key-territory-as-clashes-with-houthis-continue?traffic_source=rss",
    "date": "2026-09-04T17:29:20.000Z",
@@ -2584,6 +2658,7 @@
   {
    "id": "BBC World:UN votes to adopt new world map to reflect Africa's true size",
    "title": "UN votes to adopt new world map to reflect Africa's true size",
+   "text": "The Togo-sponsored resolution was backed by 164 nations - the US the only nation to vote against it.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/ce30vp55dnlo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T17:26:40.000Z",
@@ -2617,6 +2692,7 @@
   {
    "id": "Cointelegraph:Crypto Biz: AI took a back seat when Bitcoin started climbing",
    "title": "Crypto Biz: AI took a back seat when Bitcoin started climbing",
+   "text": "Corporate crypto bets are getting bigger as rising markets reward direct exposure, putting balance-sheet strategies and institutional adoption back in focus.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/crypto-biz-bitcoin-miners-strategy-strive-bitmine-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T17:22:58.000Z",
@@ -2652,6 +2728,7 @@
   {
    "id": "BeInCrypto:Biggest UK Investment Platform Lists Bitcoin For 2 Million Users",
    "title": "Biggest UK Investment Platform Lists Bitcoin For 2 Million Users",
+   "text": "Hargreaves Lansdown finally sells Bitcoin, but its clients missed Britain's 180-day window to keep the profits tax-free.",
    "source": "BeInCrypto",
    "url": "https://beincrypto.com/hargreaves-lansdown-bitcoin-listing/",
    "date": "2026-09-04T17:21:27.000Z",
@@ -2687,6 +2764,7 @@
   {
    "id": "Decrypt:A16z-Backed OpenReserve Gets Approval for Full-Service National Bank",
    "title": "A16z-Backed OpenReserve Gets Approval for Full-Service National Bank",
+   "text": "The a16z-backed startup chose a full national charter over the trust-bank route most crypto firms have taken, clearing a path toward insured deposits and conventional lending alongside stablecoin issuance.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377458/openreserve-occ-approval-full-service-national-bank",
    "date": "2026-09-04T17:19:55.000Z",
@@ -2720,6 +2798,7 @@
   {
    "id": "CNBC Economy:U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
    "title": "U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
+   "text": "Nonfarm payrolls were expected to increase by 53,000 in August while the unemployment rate held at 4.1%, according to the Dow Jones consensus.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html",
    "date": "2026-09-04T17:16:37.000Z",
@@ -2759,6 +2838,7 @@
   {
    "id": "BBC World:Argentine couple to return Nazi-looted painting to rightful owner",
    "title": "Argentine couple to return Nazi-looted painting to rightful owner",
+   "text": "The late-baroque Portrait of a Lady was lost for 80 years until it was spotted in photographs of a house for sale near Buenos Aires.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/cy0zxjp50j6o?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T17:14:21.000Z",
@@ -2792,6 +2872,7 @@
   {
    "id": "BeInCrypto:Quantum Memory: The Device That Breaks Bitcoin and Replaces It",
    "title": "Quantum Memory: The Device That Breaks Bitcoin and Replaces It",
+   "text": "Stefano Gogioso says quantum memory will power quantum money, built on the same hardware that threatens Bitcoin.",
    "source": "BeInCrypto",
    "url": "https://beincrypto.com/quantum-memory-breaks-replaces-bitcoin/",
    "date": "2026-09-04T17:13:46.000Z",
@@ -2827,6 +2908,7 @@
   {
    "id": "Cointelegraph:QuFi launches post-quantum verification platform with Bitcoin testnet proof",
    "title": "QuFi launches post-quantum verification platform with Bitcoin testnet proof",
+   "text": "QuFi’s new platform uses post-quantum cryptography to verify digital asset transactions without requiring changes to existing blockchain settlement networks.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/qufi-launches-post-quantum-verification-platform-with-bitcoin-testnet-proof?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T17:09:25.000Z",
@@ -2862,6 +2944,7 @@
   {
    "id": "Cointelegraph:US law enforcement group moves to ‘neutral’ position on CLARITY Act",
    "title": "US law enforcement group moves to ‘neutral’ position on CLARITY Act",
+   "text": "Despite earlier opposition to the CLARITY Act over consumer protection, the National Sheriffs’ Association says it will now “step back and allow the legislative process to proceed.“",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/national-sheriffs-association-clarity-act-neutral?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T17:05:34.000Z",
@@ -2895,6 +2978,7 @@
   {
    "id": "The Block:Zcash tops $1,000 as ETF inflows ramp up and miners pile in",
    "title": "Zcash tops $1,000 as ETF inflows ramp up and miners pile in",
+   "text": "Grayscale's ZCSH inflows climb as surging network competition cuts into miners’ gains from the ZEC token's rally.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/markets/2026-09-04-zcash-tops-1000-etf-inflows-ramp-up-miners-pile-in-413580",
    "date": "2026-09-04T16:59:34.000Z",
@@ -2932,6 +3016,7 @@
   {
    "id": "BeInCrypto:Liquid Mercury Announces Initial Closing of ACQUA1 Offering",
    "title": "Liquid Mercury Announces Initial Closing of ACQUA1 Offering",
+   "text": "Chicago, United States, September 4th, 2026 – Liquid Mercury today announced that ACQUA1, LLC completed the initial closing of its MERC exchange offering on September 1, 2026. ACQUA1 is a Liquid Mercury subsidiary that operates Liquid Mercury’s Lab Company program, licensing Liquid Mercury technology to companies primarily tokenizing real-world assets and receiving fees plus a",
    "source": "BeInCrypto",
    "url": "https://beincrypto.com/liquid-mercury-acqua1-offering-563m-merc-burn/",
    "date": "2026-09-04T16:50:30.000Z",
@@ -2965,6 +3050,7 @@
   {
    "id": "BBC World:Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
    "title": "Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
+   "text": "Germany has blamed Russia for an attack on Leipzig airport but there has been a series of suspicious incidents elsewhere.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/c5y4g6meekro?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T16:49:15.000Z",
@@ -2998,6 +3084,7 @@
   {
    "id": "Al Jazeera:Rescuers race to save 10-year-old Algerian boy trapped in deep well",
    "title": "Rescuers race to save 10-year-old Algerian boy trapped in deep well",
+   "text": "Rescue teams in Algeria are racing against time to save a 10-year-old boy named Ayoub, after he fell into an deep well.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/rescuers-race-to-save10-year-old-algerian-boy-trapped-in-deep-well?traffic_source=rss",
    "date": "2026-09-04T16:48:50.000Z",
@@ -3031,6 +3118,7 @@
   {
    "id": "U.Today:'We Stand Behind Stock Tokens': Robinhood CEO Backs $104 Million Ecosystem Amid Backlash",
    "title": "'We Stand Behind Stock Tokens': Robinhood CEO Backs $104 Million Ecosystem Amid Backlash",
+   "text": "Robinhood's Vlad Tenev backs the $104 million \"stock token\" market, defying AMC's legal threats over on-chain trading.",
    "source": "U.Today",
    "url": "https://u.today/we-stand-behind-stock-tokens-robinhood-ceo-backs-104-million-ecosystem-amid-backlash",
    "date": "2026-09-04T16:31:45.000Z",
@@ -3064,6 +3152,7 @@
   {
    "id": "BBC World:Trump's peace envoys to visit Moscow and Kyiv over weekend",
    "title": "Trump's peace envoys to visit Moscow and Kyiv over weekend",
+   "text": "Steve Witkoff and Jared Kushner have led President Donald Trump's efforts to end the Russia-Ukraine war - but talks have stalled.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/c23x0z48x0no?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T16:30:50.000Z",
@@ -3097,6 +3186,7 @@
   {
    "id": "U.Today:Ripple Lands Major XRP Sponsorship Deal With Florida Gators",
    "title": "Ripple Lands Major XRP Sponsorship Deal With Florida Gators",
+   "text": "Ripple has landed a multi-year partnership with the University of Florida’s athletic department.",
    "source": "U.Today",
    "url": "https://u.today/ripple-lands-major-xrp-sponsorship-deal-with-florida-gators",
    "date": "2026-09-04T16:29:03.000Z",
@@ -3132,6 +3222,7 @@
   {
    "id": "Decrypt:Zcash Hits Highest Price in Nearly a Decade, Crushing Short Bets",
    "title": "Zcash Hits Highest Price in Nearly a Decade, Crushing Short Bets",
+   "text": "The privacy coin's squeeze rode a Fed-driven crypto rally that reversed hours later, when a stronger-than-expected jobs report sent Bitcoin back under $80,000.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377445/zcash-price-high-decade-shorts-rekt",
    "date": "2026-09-04T16:24:46.000Z",
@@ -3165,6 +3256,7 @@
   {
    "id": "BeInCrypto:3 Altcoins That Could Reach All-Time Highs This Weekend",
    "title": "3 Altcoins That Could Reach All-Time Highs This Weekend",
+   "text": "WBT, HYPE, and RAIN trade just below fresh record highs. See the levels that could trigger new all-time highs this weekend.",
    "source": "BeInCrypto",
    "url": "https://beincrypto.com/altcoins-all-time-highs-september-weekend/",
    "date": "2026-09-04T16:16:32.000Z",
@@ -3198,6 +3290,7 @@
   {
    "id": "BeInCrypto:ChatGPT Recommended a Fake Crypto Site Linked to $2.2 Million Scam",
    "title": "ChatGPT Recommended a Fake Crypto Site Linked to $2.2 Million Scam",
+   "text": "A phishing site ChatGPT recommended drained $2.2 million in Flare tokens as OpenAI agents hijacked a German wiki.",
    "source": "BeInCrypto",
    "url": "https://beincrypto.com/chatgpt-recommends-scam-crypto-site/",
    "date": "2026-09-04T16:14:14.000Z",
@@ -3231,6 +3324,7 @@
   {
    "id": "BeInCrypto:Will AI Push Bitcoin Mining Out of the Market?",
    "title": "Will AI Push Bitcoin Mining Out of the Market?",
+   "text": "Bitcoin mining as a profitable business model is becoming harder to justify at the biggest, most expensive sites. Network hashrate, which measures the total computing power securing Bitcoin, climbed above 1.1 ZH/s in October 2025 but has since fallen toward 900 EH/s several times. Mining difficulty also dropped 11.16% in February 2026 and another 10.09%",
    "source": "BeInCrypto",
    "url": "https://beincrypto.com/bitcoin-miners-ai-power-war/",
    "date": "2026-09-04T16:07:49.000Z",
@@ -3266,6 +3360,7 @@
   {
    "id": "U.Today:Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
    "title": "Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
+   "text": "Binance has listed twelve cryptocurrencies that it will remove from its crypto trading platform, specifically on Binance Alpha, later today.",
    "source": "U.Today",
    "url": "https://u.today/binance-delisting-alert-twelve-cryptocurrencies-face-exit",
    "date": "2026-09-04T16:04:50.000Z",
@@ -3303,6 +3398,7 @@
   {
    "id": "BBC World:Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
    "title": "Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
+   "text": "The unmanned aerial vehicle struck without warning in the heart of the Ukrainian capital.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/c5yep7y48x2o?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T16:02:32.000Z",
@@ -3336,6 +3432,7 @@
   {
    "id": "FXStreet:Silver claws back post-NFP losses after briefly crashing below $65",
    "title": "Silver claws back post-NFP losses after briefly crashing below $65",
+   "text": "Silver (XAG/USD) trades around $66.20 at the time of writing on Friday, down 1.18% on the day, after recovering part of its sharp post-Nonfarm Payrolls (NFP) decline.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/silver-claws-back-post-nfp-losses-after-briefly-crashing-below-65-202609041551",
    "date": "2026-09-04T15:51:31.000Z",
@@ -3369,6 +3466,7 @@
   {
    "id": "FXStreet:EUR/USD Price Forecast: Euro forms potential higher low above 100-day SMA",
    "title": "EUR/USD Price Forecast: Euro forms potential higher low above 100-day SMA",
+   "text": "EUR/USD sees sharp two-way price swings on Friday after a stronger-than-expected United States (US) employment report triggers fresh volatility. The pair initially fell to an intraday low of 1.1585 before recovering as the US Dollar (USD) struggled to sustain its gains.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/eur-usd-price-forecast-euro-forms-potential-higher-low-above-100-day-sma-202609041543",
    "date": "2026-09-04T15:43:41.000Z",
@@ -3402,6 +3500,7 @@
   {
    "id": "FXStreet:Brent: Questionable flows, fragile outlook – Commerzbank",
    "title": "Brent: Questionable flows, fragile outlook – Commerzbank",
+   "text": "Commerzbank’s Commodity Research team, led by Barbara Lambrecht, notes that uncertainty over crude flows through the Strait of Hormuz and conflicting transit data are clouding the outlook for Brent.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/brent-questionable-flows-fragile-outlook-commerzbank-202609041542",
    "date": "2026-09-04T15:42:27.000Z",
@@ -3435,6 +3534,7 @@
   {
    "id": "The Block:Ripple expands college sports push with XRP partnership at Florida",
    "title": "Ripple expands college sports push with XRP partnership at Florida",
+   "text": "The XRP logo will be featured on the field at Ben Hill Griffin Stadium, as well as across Florida Athletics’ digital properties and events.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/business/2026-09-04-ripple-college-sports-push-xrp-partnership-florida-gators-413576",
    "date": "2026-09-04T15:37:17.000Z",
@@ -3470,6 +3570,7 @@
   {
    "id": "Decrypt:OpenAI Agents Hack German Website to Share Rule-Breaking Tactics: Report",
    "title": "OpenAI Agents Hack German Website to Share Rule-Breaking Tactics: Report",
+   "text": "The activity began in May and remained undisclosed until Friday, a day after OpenAI launched Astra and U.S. lawmakers proposed restrictions on advanced AI.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377412/openai-agents-hack-german-website",
    "date": "2026-09-04T15:36:04.000Z",
@@ -3503,6 +3604,7 @@
   {
    "id": "FXStreet:European Central Bank: Dovish hold may follow September hike - Rabobank",
    "title": "European Central Bank: Dovish hold may follow September hike - Rabobank",
+   "text": "Rabobank's Senior Macro Strategist Bas van Geffen expects the European Central Bank (ECB) to hike its deposit rate by 25bp to 2.50% next week and then hold at that level for an extended period.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/european-central-bank-dovish-hold-may-follow-september-hike-rabobank-202609041524",
    "date": "2026-09-04T15:24:06.000Z",
@@ -3540,6 +3642,7 @@
   {
    "id": "FXStreet:United States Dollar Index rises as strong NFP revives Fed hike bets",
    "title": "United States Dollar Index rises as strong NFP revives Fed hike bets",
+   "text": "The United States Dollar Index (DXY) rises some 0.17% on Friday following a stellar Nonfarm Payrolls (NFP) report, with the economy creating nearly three times as many jobs as expected by most economists, as reported by the Bureau of Labor Statistics (BLS).",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/united-states-dollar-index-rises-as-strong-nfp-revives-fed-hike-bets-202609041521",
    "date": "2026-09-04T15:21:26.000Z",
@@ -3577,6 +3680,7 @@
   {
    "id": "FXStreet:Hungary: Inflation uptick complicates rate-cut path – ING",
    "title": "Hungary: Inflation uptick complicates rate-cut path – ING",
+   "text": "ING’s Peter Virovacz expects Hungarian industrial production to rebound in July, helping avoid a third-quarter GDP decline despite August headwinds from heatwave-related energy issues.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/hungary-inflation-uptick-complicates-rate-cut-path-ing-202609041514",
    "date": "2026-09-04T15:14:09.000Z",
@@ -3609,6 +3713,7 @@
   {
    "id": "Decrypt:Bitcoin Slides as Blowout Jobs Report Revives Fed Hike Odds",
    "title": "Bitcoin Slides as Blowout Jobs Report Revives Fed Hike Odds",
+   "text": "The Dow dropped 226 points and Bitcoin erased some of its gains after August payrolls tripled estimates, pushing September rate-hike odds to 58%.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377414/bitcoin-slides-blowout-jobs-report-fed-hike-odds",
    "date": "2026-09-04T15:13:28.000Z",
@@ -3648,6 +3753,7 @@
   {
    "id": "CNBC World:Diesel hits record high as Ukraine and Iran wars knock out refineries, fueling inflation worries",
    "title": "Diesel hits record high as Ukraine and Iran wars knock out refineries, fueling inflation worries",
+   "text": "Higher prices come as Ukraine pounds Russian refineries, forcing Moscow to ban diesel exports.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/diesel-price-record-high-ukraine-iran-inflation.html",
    "date": "2026-09-04T15:10:20.000Z",
@@ -3689,6 +3795,7 @@
   {
    "id": "Decrypt:BitMEX Co-Founder Ben Delo Gives Farage's Reform UK Another £4 Million",
    "title": "BitMEX Co-Founder Ben Delo Gives Farage's Reform UK Another £4 Million",
+   "text": "Two April payments supplied three-quarters of the party's donations for the quarter, where the next largest single gift was £180,000.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377411/bitmex-co-founder-ben-delo-gives-farages-reform-uk-another-4-million",
    "date": "2026-09-04T15:10:00.000Z",
@@ -3721,6 +3828,7 @@
   {
    "id": "Federal Reserve:Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
    "title": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
+   "text": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
    "source": "Federal Reserve",
    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260904a.htm",
    "date": "2026-09-04T15:00:00.000Z",
@@ -3754,6 +3862,7 @@
   {
    "id": "CoinDesk:Robinhood isn't backing down after AMC CEO demands halt to stock tokens",
    "title": "Robinhood isn't backing down after AMC CEO demands halt to stock tokens",
+   "text": "AMC boss Adam Aron called Robinhood’s stock tokens “synthetic equity” and threatened legal action. Vlad Tenev says the brokerage stands behind the product.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/business/2026/09/04/amc-ceo-tells-robinhood-to-stop-issuing-stock-token-as-industry-executives-weigh-in",
    "date": "2026-09-04T14:56:00.000Z",
@@ -3787,6 +3896,7 @@
   {
    "id": "FXStreet:Swiss Franc loses ground upbeat US Nonfarm Payrolls",
    "title": "Swiss Franc loses ground upbeat US Nonfarm Payrolls",
+   "text": "USD/CHF trades higher on Friday as stronger-than-expected United States (US) Nonfarm Payrolls (NFP) data trigger fresh volatility. The pair jumped to 0.8126 following the release before giving back part of its advance. At the time of writing, USD/CHF trades around 0.8102, up nearly 0.34% on the day.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/swiss-franc-loses-ground-upbeat-us-nonfarm-payrolls-202609041453",
    "date": "2026-09-04T14:53:06.000Z",
@@ -3820,6 +3930,7 @@
   {
    "id": "U.Today:Crypto Treasury Fire Sale: Nasdaq's AIXC Dumps Bitcoin, XRP, Others for Robotics Pivot",
    "title": "Crypto Treasury Fire Sale: Nasdaq's AIXC Dumps Bitcoin, XRP, Others for Robotics Pivot",
+   "text": "Nasdaq micro-cap AIXC dumps its crypto treasury for a robotics pivot, locking in a bruising 50% loss.",
    "source": "U.Today",
    "url": "https://u.today/crypto-treasury-fire-sale-nasdaqs-aixc-dumps-bitcoin-xrp-others-for-robotics-pivot",
    "date": "2026-09-04T14:52:30.000Z",
@@ -3860,6 +3971,7 @@
   {
    "id": "FXStreet:Canada: Gradual improvement outlook on labour market – RBC",
    "title": "Canada: Gradual improvement outlook on labour market – RBC",
+   "text": "Royal Bank of Canada (RBC) economist Claire Fan notes Canada’s labour market lost 42,000 jobs in August, partly reversing earlier gains and leaving modest year-to-date job growth. She emphasizes structural factors like demographics and weaker immigration as key drags.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/canada-gradual-improvement-outlook-on-labour-market-rbc-202609041452",
    "date": "2026-09-04T14:52:00.000Z",
@@ -3892,6 +4004,7 @@
   {
    "id": "BeInCrypto:Is Craig Wright Satoshi? A $70 Million Movie and a High Court Judge Disagree",
    "title": "Is Craig Wright Satoshi? A $70 Million Movie and a High Court Judge Disagree",
+   "text": "Bitcoin movie paints Craig Wright as Satoshi. The former Mt. Gox CEO points fans back to the court record.",
    "source": "BeInCrypto",
    "url": "https://beincrypto.com/bitcoin-movie-craig-wright-satoshi/",
    "date": "2026-09-04T14:50:02.000Z",
@@ -3924,6 +4037,7 @@
   {
    "id": "BBC World:'A rare moment of joy': Nepal tunnel rescues bring hope for more flood survivors",
    "title": "'A rare moment of joy': Nepal tunnel rescues bring hope for more flood survivors",
+   "text": "There are still hundreds of workers trapped in a network of tunnels that run along the Trishuli river.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/videos/cd79vp91321o?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T14:40:00.000Z",
@@ -3956,6 +4070,7 @@
   {
    "id": "CNBC:Bitcoin heads for third winning week in a row as macro pressures mount",
    "title": "Bitcoin heads for third winning week in a row as macro pressures mount",
+   "text": "Bitcoin headed for its third straight winning week, as traders searched for refuge amid volatile moves in equities, currencies and bond markets.",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/04/bitcoin-heads-for-third-winning-week-in-a-row-as-macro-pressures-mount.html",
    "date": "2026-09-04T14:36:48.000Z",
@@ -3991,6 +4106,7 @@
   {
    "id": "FXStreet:United States: Solid jobs data support steady Fed – Commerzbank",
    "title": "United States: Solid jobs data support steady Fed – Commerzbank",
+   "text": "Commerzbank’s Dr. Christoph Balz notes that the U.S. labor market surprised to the upside in August, with Nonfarm Payrolls and private sector jobs both rising strongly while the unemployment rate held at 4.1%. Wage growth continued to slow.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/united-states-solid-jobs-data-support-steady-fed-commerzbank-202609041436",
    "date": "2026-09-04T14:36:43.000Z",
@@ -4028,6 +4144,7 @@
   {
    "id": "CoinDesk:From warning to listing: UK’s largest retail investment platform opens access to crypto ETNs",
    "title": "From warning to listing: UK’s largest retail investment platform opens access to crypto ETNs",
+   "text": "The U.K.'s largest retail investment platform, Hargreaves Lansdown, has reversed course following the FCA's decision to lift its retail ban on crypto ETPs in October.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/business/2026/09/04/from-warning-to-listing-uk-s-largest-wealth-platform-opens-access-to-crypto-etns",
    "date": "2026-09-04T14:23:11.000Z",
@@ -4061,6 +4178,7 @@
   {
    "id": "FXStreet:European Central Bank: September hike path and oil risks – Nomura",
    "title": "European Central Bank: September hike path and oil risks – Nomura",
+   "text": "Nomura’s Global Markets Research team, led by Andrzej Szczepaniak, George Buckley and Josie Anderson, expects the ECB to raise the depo rate by 25bp to 2.50% at the 10 September meeting and then pause.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/european-central-bank-september-hike-path-and-oil-risks-nomura-202609041421",
    "date": "2026-09-04T14:21:06.000Z",
@@ -4094,6 +4212,7 @@
   {
    "id": "CNBC World:Adobe names Anil Chakravarthy as CEO, replacing Shantanu Narayen",
    "title": "Adobe names Anil Chakravarthy as CEO, replacing Shantanu Narayen",
+   "text": "Adobe announced Anil Chakravarthy as its next CEO, replacing Shantanu Narayen, who announced his departure last March.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/03/adobe-anil-chakravarthy-ceo.html",
    "date": "2026-09-04T14:18:49.000Z",
@@ -4129,6 +4248,7 @@
   {
    "id": "CNBC Economy:The big business of personal protection: How private security became a $50 billion industry",
    "title": "The big business of personal protection: How private security became a $50 billion industry",
+   "text": "Private security spending and guard employment have climbed as companies and communities respond to high-profile attacks, even as violent crime falls.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/09/04/private-security-spending-crime-allied-universal.html",
    "date": "2026-09-04T14:15:04.000Z",
@@ -4164,6 +4284,7 @@
   {
    "id": "CoinDesk:U.S. Sheriff’s association shifts opposition stance to Clarity Act to 'neutral'",
    "title": "U.S. Sheriff’s association shifts opposition stance to Clarity Act to 'neutral'",
+   "text": "The law enforcement association said it has pivoted its position regarding the Clarity Act to neutral, months after it warned against a law it said would shield crypto crime.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/policy/2026/09/04/u-s-sheriff-s-association-shifts-opposition-stance-to-clarity-act-to-neutral",
    "date": "2026-09-04T14:12:34.000Z",
@@ -4197,6 +4318,7 @@
   {
    "id": "FXStreet:\"Lower the rate or I’ll stop trading\": Trump pressures Fed after strong US jobs report",
    "title": "\"Lower the rate or I’ll stop trading\": Trump pressures Fed after strong US jobs report",
+   "text": "In a post on Truth Social, United States (US) President Donald Trump welcomed the creation of 162K jobs in August, a figure he described as significantly above expectations.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/lower-the-rate-or-ill-stop-trading-trump-pressures-fed-after-strong-us-jobs-report-202609041410",
    "date": "2026-09-04T14:10:55.000Z",
@@ -4230,6 +4352,7 @@
   {
    "id": "FXStreet:Canadian Dollar: Jobs weakness caps gains against US Dollar - TD Securities",
    "title": "Canadian Dollar: Jobs weakness caps gains against US Dollar - TD Securities",
+   "text": "TD Securities strategists note that Canada’s softer August labour report, including weaker employment momentum and slower wage growth, is unlikely to materially change the Bank of Canada’s (BoC) assessment of the labour market.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/canadian-dollar-jobs-weakness-caps-gains-against-us-dollar-td-securities-202609041406",
    "date": "2026-09-04T14:06:57.000Z",
@@ -4263,6 +4386,7 @@
   {
    "id": "FXStreet:Canadian Dollar slides as Canada sheds 41.7K jobs, US payrolls surge",
    "title": "Canadian Dollar slides as Canada sheds 41.7K jobs, US payrolls surge",
+   "text": "USD/CAD accelerates sharply higher on Friday, trading around 1.3850 at the time of writing, up 0.39% on the day.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/canadian-dollar-slides-as-canada-sheds-417k-jobs-us-payrolls-surge-202609041400",
    "date": "2026-09-04T14:00:41.000Z",
@@ -4300,6 +4424,7 @@
   {
    "id": "BeInCrypto:Bitcoin Tests May Highs: Why Is This Time Different for Recent Buyers?",
    "title": "Bitcoin Tests May Highs: Why Is This Time Different for Recent Buyers?",
+   "text": "Bitcoin price returned to its May high, but the on-chain floor beneath it dropped $7,500. See the levels that matter.",
    "source": "BeInCrypto",
    "url": "https://beincrypto.com/bitcoin-price-may-level-onchain-floor/",
    "date": "2026-09-04T14:00:00.000Z",
@@ -4335,6 +4460,7 @@
   {
    "id": "FXStreet:US Dollar: Jobs strength lifts hike odds – ING",
    "title": "US Dollar: Jobs strength lifts hike odds – ING",
+   "text": "ING’s James Knightley notes that stronger-than-expected US August jobs data, with 162,000 new positions and upward revisions, has increased the perceived likelihood of a September Federal Reserve rate hike.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/us-dollar-jobs-strength-lifts-hike-odds-ing-202609041349",
    "date": "2026-09-04T13:49:38.000Z",
@@ -4368,6 +4494,7 @@
   {
    "id": "U.Today:XRPL Wallet Breach: Users Urged to Halt Use Amid Security Update",
    "title": "XRPL Wallet Breach: Users Urged to Halt Use Amid Security Update",
+   "text": "Critical security alert issued as XRP Ledger based wallet users get Hit by unauthorized transactions.",
    "source": "U.Today",
    "url": "https://u.today/xrpl-wallet-breach-users-urged-to-halt-use-amid-security-update",
    "date": "2026-09-04T13:45:45.000Z",
@@ -4405,6 +4532,7 @@
   {
    "id": "U.Today:Headline-Grabbing Robinhood Blockchain Stops Recording New Transactions",
    "title": "Headline-Grabbing Robinhood Blockchain Stops Recording New Transactions",
+   "text": "Robinhood Chain appears to have suffered a network outage on Sept. 4, temporarily halting new block production.",
    "source": "U.Today",
    "url": "https://u.today/headline-grabbing-robinhood-blockchain-stops-recording-new-transactions",
    "date": "2026-09-04T13:37:42.000Z",
@@ -4438,6 +4566,7 @@
   {
    "id": "CNBC World:Zscaler beats earnings expectations, issues upbeat guidance but stock falls",
    "title": "Zscaler beats earnings expectations, issues upbeat guidance but stock falls",
+   "text": "CEO Jay Chaudhry said he's \"very bullish\" on Zscaler's agentic Zero Trust offering, which is gaining early momentum",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/03/zscaler-zs-q4-earnings-2026.html",
    "date": "2026-09-04T13:37:16.000Z",
@@ -4470,6 +4599,7 @@
   {
    "id": "Cointelegraph:Revolut, OpenReserve get preliminary US bank approval with crypto plans",
    "title": "Revolut, OpenReserve get preliminary US bank approval with crypto plans",
+   "text": "Revolut and OpenReserve received preliminary OCC approval to form US national banks, with both planning cryptocurrency and stablecoin-related services.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/revolut-openreserve-occ-approval-national-bank-crypto-plan?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T13:34:30.000Z",
@@ -4503,6 +4633,7 @@
   {
    "id": "Cointelegraph:Token buybacks are booming. But are they good for crypto projects?",
    "title": "Token buybacks are booming. But are they good for crypto projects?",
+   "text": "Crypto projects are spending hundreds of millions buying their own tokens. But are buybacks creating lasting value — or just making tokens look more valuable than they really are?",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/magazine/token-buybacks-are-booming-but-are-they-good-for-crypto-projects?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T13:30:00.000Z",
@@ -4536,6 +4667,7 @@
   {
    "id": "CNBC World:Volkswagen plans 50,000 job cuts as analysts see ‘halo effect’ for German auto industry",
    "title": "Volkswagen plans 50,000 job cuts as analysts see ‘halo effect’ for German auto industry",
+   "text": "Volkswagen shares jumped on Friday after it announced plans to slash a further 50,000 jobs as part of its transformation plan.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/volkswagen-job-cuts-tariffs-china.html",
    "date": "2026-09-04T13:04:49.000Z",
@@ -4570,6 +4702,7 @@
   {
    "id": "BBC World:Body of world's youngest traditional king returns home to Uganda amid succession row",
    "title": "Body of world's youngest traditional king returns home to Uganda amid succession row",
+   "text": "King Oyo died in the US last week aged 34 after receiving treatment for an aggressive form of cancer.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/clylwgn8jk3o?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T13:00:44.000Z",
@@ -4602,6 +4735,7 @@
   {
    "id": "U.Today:XRP and Solana Cleared in Fresh SEC Nasdaq Order: Main Crypto News This Morning",
    "title": "XRP and Solana Cleared in Fresh SEC Nasdaq Order: Main Crypto News This Morning",
+   "text": "Key crypto updates for Sep. 4: SEC clears XRP and Solana; a $566M short squeeze hits bears, and Zcash jumps above $1,000 on autonomous AI risks.",
    "source": "U.Today",
    "url": "https://u.today/xrp-and-solana-cleared-in-fresh-sec-nasdaq-order-main-crypto-news-this-morning",
    "date": "2026-09-04T13:00:00.000Z",
@@ -4638,6 +4772,7 @@
   {
    "id": "CNBC World:Lululemon stock plunges 20% on disappointing earnings and outlook",
    "title": "Lululemon stock plunges 20% on disappointing earnings and outlook",
+   "text": "Lululemon posted another quarter of disappointing results and a sales slowdown as the company struggles to turn its business around.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/03/lululemon-lulu-q2-2026-earnings.html",
    "date": "2026-09-04T12:45:50.000Z",
@@ -4677,6 +4812,7 @@
   {
    "id": "BBC World:'We expect our sons to be killed,' father of teen shot dead in West Bank tells BBC",
    "title": "'We expect our sons to be killed,' father of teen shot dead in West Bank tells BBC",
+   "text": "Palestinian teenagers Omar al-Naasan and Khalil Abu Alia were shot dead when Israeli settlers and soldiers entered a village in the occupied West Bank.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/videos/cn8evz26eyqo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T12:39:05.000Z",
@@ -4710,6 +4846,7 @@
   {
    "id": "U.Today:Binance Adds Four Crypto Assets to Delisting Watch: Full List",
    "title": "Binance Adds Four Crypto Assets to Delisting Watch: Full List",
+   "text": "Four crypto assets added to Binance's delisting roster with another 14 set to be axed on the Binance Alpha platform.",
    "source": "U.Today",
    "url": "https://u.today/binance-adds-four-crypto-assets-to-delisting-watch-full-list",
    "date": "2026-09-04T12:35:10.000Z",
@@ -4747,6 +4884,7 @@
   {
    "id": "CoinDesk:U.S. added stronger than expected 162,000 jobs in August as labor market bounced back",
    "title": "U.S. added stronger than expected 162,000 jobs in August as labor market bounced back",
+   "text": "This morning's report will be key as the Fed considers whether to raise interest rates at its September policy meeting.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/markets/2026/09/04/u-s-added-stronger-than-expected-162-000-jobs-in-august-as-labor-market-bounced-back",
    "date": "2026-09-04T12:31:47.000Z",
@@ -4784,6 +4922,7 @@
   {
    "id": "Decrypt:Morning Minute: Crypto Stages Major Rally on Rate Hopes",
    "title": "Morning Minute: Crypto Stages Major Rally on Rate Hopes",
+   "text": "Bitcoin soared past $81k, HYPE and ZEC hit smashing new ATHs and the onchain rally leveled up. Is this the first stage of the next leg up?",
    "source": "Decrypt",
    "url": "https://decrypt.co/377393/morning-minute-crypto-stages-major-rally-on-rate-hopes",
    "date": "2026-09-04T12:31:31.000Z",
@@ -4821,6 +4960,7 @@
   {
    "id": "Decrypt:IMF Now Says Donations Funded El Salvador's Bitcoin Growth",
    "title": "IMF Now Says Donations Funded El Salvador's Bitcoin Growth",
+   "text": "A year ago the fund claimed the total had not moved, and that the reserve was only shuffling coins between government wallets.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377392/imf-now-says-donations-funded-el-salvadors-bitcoin-growth",
    "date": "2026-09-04T12:26:01.000Z",
@@ -4856,6 +4996,7 @@
   {
    "id": "U.Today:Zcash (ZEC) Hits $1,000: Analyzing Next Steps Around Privacy Coin",
    "title": "Zcash (ZEC) Hits $1,000: Analyzing Next Steps Around Privacy Coin",
+   "text": "ZCash is coming closer to the historic threshold despite the relatively bearish momentum.",
    "source": "U.Today",
    "url": "https://u.today/zcash-zec-hits-1000-analyzing-next-steps-around-privacy-coin",
    "date": "2026-09-04T12:24:00.000Z",
@@ -4888,6 +5029,7 @@
   {
    "id": "CNBC World:World's biggest sovereign wealth fund plans to cut U.S. Treasury holdings",
    "title": "World's biggest sovereign wealth fund plans to cut U.S. Treasury holdings",
+   "text": "Norway's $2.3 trillion investment fund says it can diversify into new areas with greater risk and returns.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/worlds-biggest-sovereign-wealth-fund-plans-to-cut-treasury-holdings.html",
    "date": "2026-09-04T12:22:09.000Z",
@@ -4923,6 +5065,7 @@
   {
    "id": "CNBC World:U.S. 'Economic Outcast’ operation gains momentum as EU joins sanctions; South Korea weighs military backing",
    "title": "U.S. 'Economic Outcast’ operation gains momentum as EU joins sanctions; South Korea weighs military backing",
+   "text": "The EU formally joined the U.S.-led sanctions campaign against Iran, while South Korea said it's weighing a military role to help reopen the Strait of Hormuz.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/us-iran-war-trump-hormuz-operation-economic-outcast-sanctions-campaign.html",
    "date": "2026-09-04T12:20:07.000Z",
@@ -4962,6 +5105,7 @@
   {
    "id": "U.Today:$7.26 Billion in August Alone: XRP Hits Six-Month High in Trading Volume",
    "title": "$7.26 Billion in August Alone: XRP Hits Six-Month High in Trading Volume",
+   "text": "XRP saw a massive rebound in its trading activity as its spot trading volume across all exchanges reached its highest level since February.",
    "source": "U.Today",
    "url": "https://u.today/726-billion-in-august-alone-xrp-hits-six-month-high-in-trading-volume",
    "date": "2026-09-04T12:11:55.000Z",
@@ -4997,6 +5141,7 @@
   {
    "id": "The Block:Trezor says ShipMonk breach affected another 67,000 customers",
    "title": "Trezor says ShipMonk breach affected another 67,000 customers",
+   "text": "The newly identified records date from 2019 to 2021 and include names, emails, phone numbers, shipping addresses, and order numbers.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/business/2026-09-04-trezor-says-shipmonk-breach-affected-another-67000-customers-413540",
    "date": "2026-09-04T12:03:16.000Z",
@@ -5034,6 +5179,7 @@
   {
    "id": "BBC World:UK support for Falkland Islands 'unwavering' after Argentina restates claims, No 10 says",
    "title": "UK support for Falkland Islands 'unwavering' after Argentina restates claims, No 10 says",
+   "text": "The comments come as Argentinian president Javier Milei says the \"winds of change\" favoured his country's claim on the British overseas territory.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/cn45jg3zlz4o?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T11:54:51.000Z",
@@ -5066,6 +5212,7 @@
   {
    "id": "CNBC:The wealth of the world's billionaires reached $15.1 trillion last year, per a new report",
    "title": "The wealth of the world's billionaires reached $15.1 trillion last year, per a new report",
+   "text": "The global billionaire count hit a record of 3,795 people last year, with the biggest wealth gains for the richest of the rich, per a recent Altrata report.",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/04/billionaire-wealth-altrata-report.html",
    "date": "2026-09-04T11:32:55.000Z",
@@ -5098,6 +5245,7 @@
   {
    "id": "Decrypt:67,000 More Trezor Customers Exposed as Data Breach Widens",
    "title": "67,000 More Trezor Customers Exposed as Data Breach Widens",
+   "text": "Some records exposed in the breach date to 2019, years beyond the 90-day retention Trezor said its partners had agreed to.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377389/67000-more-trezor-customers-exposed-as-data-breach-widens",
    "date": "2026-09-04T11:32:49.000Z",
@@ -5135,6 +5283,7 @@
   {
    "id": "Cointelegraph:Kalshi US visits soar 1,500% as regulatory pressure mounts",
    "title": "Kalshi US visits soar 1,500% as regulatory pressure mounts",
+   "text": "Kalshi’s US web traffic climbed more than 1,500% in less than a year, while trading volume grew even faster and legal scrutiny of its sports contracts intensified.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/kalshi-traffic-soars-regulatory-pressure-mounts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T11:32:28.000Z",
@@ -5172,6 +5321,7 @@
   {
    "id": "CNBC World:Why Nvidia's 'defensive move' to acquire Hugging Face is about much more than chips",
    "title": "Why Nvidia's 'defensive move' to acquire Hugging Face is about much more than chips",
+   "text": "Nvidia’s $12.9 billion Hugging Face deal could protect its open AI ecosystem, deepen ties with developers and keep the platform from rivals.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/nvidia-hugging-face-deal-chips.html",
    "date": "2026-09-04T11:31:30.000Z",
@@ -5241,6 +5391,7 @@
   {
    "id": "The Block:El Salvador has not used public funds to accumulate bitcoin since June 2025, IMF says",
    "title": "El Salvador has not used public funds to accumulate bitcoin since June 2025, IMF says",
+   "text": "IMF says El Salvador used no public funds for bitcoin accumulation since June 2025, with purchases coming from private donations.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/regulation/2026-09-04-el-salvador-has-not-used-public-funds-to-accumulate-bitcoin-since-june-2025-imf-says-413535",
    "date": "2026-09-04T11:28:46.000Z",
@@ -5280,6 +5431,7 @@
   {
    "id": "The Block:Crypto firms urge SEC to speed ETF reviews and allow confidential draft filings",
    "title": "Crypto firms urge SEC to speed ETF reviews and allow confidential draft filings",
+   "text": "In contrast, Jane Street and Charles Schwab raised concerns over rushed ETF launches and confidential filings limiting market scrutiny.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/regulation/2026-09-04-crypto-firms-urge-sec-to-speed-etf-reviews-and-allow-confidential-draft-filings-413532",
    "date": "2026-09-04T11:21:09.000Z",
@@ -5313,6 +5465,7 @@
   {
    "id": "Cointelegraph:Trezor says data breach affects another 67K US customers",
    "title": "Trezor says data breach affects another 67K US customers",
+   "text": "Trezor said an additional 67,000 US users were affected by its shipping provider’s data breach, opening the path to potential phishing attacks and social engineering scams.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/trezor-data-breach-affects-67k-us-customers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T11:19:19.000Z",
@@ -5350,6 +5503,7 @@
   {
    "id": "Benzinga:Best Energy Stocks",
    "title": "Best Energy Stocks",
+   "text": "The energy stocks sector is made up of companies that are highly involved in activities relating to the production, exploration, refining, or transportation of consumable fuels, such as coal, oil, and gas. These companies often engage in activities relating to constructing or providing drilling equipment or oil rigs and handling energy-related services. This sector includes … Continued",
    "source": "Benzinga",
    "url": "https://www.benzinga.com/money/best-energy-stocks",
    "date": "2026-09-04T11:12:45.000Z",
@@ -5382,6 +5536,7 @@
   {
    "id": "Benzinga:Best Stocks Under $5",
    "title": "Best Stocks Under $5",
+   "text": "If you’re interested in exploring more stocks under $5 Searching for quality stocks under $5 is a lot like bargain hunting. Low prices allow you to buy these stocks in large quantities without stretching your wallet. The payoffs can be … Continued",
    "source": "Benzinga",
    "url": "https://www.benzinga.com/money/top-stocks-under-5",
    "date": "2026-09-04T11:12:45.000Z",
@@ -5414,6 +5569,7 @@
   {
    "id": "Benzinga:Best Semiconductor Stocks",
    "title": "Best Semiconductor Stocks",
+   "text": "Invest in the best semiconductor stocks with Interactive Brokers today. Information technology is at the forefront of digital transformation. Computers, smartphones and smart TVs have become household items for millions of people around the world, and companies that design and develop semiconductors are the key catalysts driving that change. You can cash in on these … Continued",
    "source": "Benzinga",
    "url": "https://www.benzinga.com/money/best-semiconductor-stocks",
    "date": "2026-09-04T11:12:45.000Z",
@@ -5446,6 +5602,7 @@
   {
    "id": "Benzinga:Best Biotech Stocks Right Now",
    "title": "Best Biotech Stocks Right Now",
+   "text": "Biotech stocks are in the eye of the storm as the world recovers from the global pandemic. Government institutions and professional traders are banking on biotech stocks to continually develop a vaccine and boosters that can eradicate COVID-19. Tilt your stock portfolio toward biotech companies now and you could stand to make substantial profits in … Continued",
    "source": "Benzinga",
    "url": "https://www.benzinga.com/money/best-biotech-stocks",
    "date": "2026-09-04T11:12:45.000Z",
@@ -5478,6 +5635,7 @@
   {
    "id": "Benzinga:Best Gold Stocks Right Now",
    "title": "Best Gold Stocks Right Now",
+   "text": "If you plan to diversify your portfolio in light of recent events, investing in gold stocks could be a good choice. Gold stocks not only track the movements of gold prices that tend to rise in uncertain times, but they also generally gain value in a rising stock market. Gold stocks could serve as a … Continued",
    "source": "Benzinga",
    "url": "https://www.benzinga.com/money/best-gold-stocks",
    "date": "2026-09-04T11:12:45.000Z",
@@ -5510,6 +5668,7 @@
   {
    "id": "Benzinga:Top Financial Stocks for the Week",
    "title": "Top Financial Stocks for the Week",
+   "text": "The financial sector is made up of companies that operate in the various offerings within the finance industry–encompassing everything from insurance and money management to payments and digital banking technology. This sector includes some of the world’s most well-known and largest companies, such as Square, Morgan Stanley, American Express, and Bank of America. Stocks in … Continued",
    "source": "Benzinga",
    "url": "https://www.benzinga.com/money/top-financial-stocks-for-the-week",
    "date": "2026-09-04T11:12:45.000Z",
@@ -5542,6 +5701,7 @@
   {
    "id": "Benzinga:Best Solar Stocks",
    "title": "Best Solar Stocks",
+   "text": "Renewable energy has become a major theme for forward-looking investors and several different niches within the energy sector are looking to enhance it. Water, wind and solar power are the biggest potential sources, all with their various pros and cons. But solar power is front and center in the renewable energy market thanks to the … Continued",
    "source": "Benzinga",
    "url": "https://www.benzinga.com/money/best-solar-stocks",
    "date": "2026-09-04T11:12:45.000Z",
@@ -5574,6 +5734,7 @@
   {
    "id": "Benzinga:Best Oil Stocks Right Now",
    "title": "Best Oil Stocks Right Now",
+   "text": "Oil has made headlines during this coronavirus crisis, although not for reasons investors want to see. In addition to issues caused by international events, especially those that impede the safe transport of natural resources. Even in a perfect work, this sector can be quite volatile as supply and demand are constantly shifting. That’s why it’s … Continued",
    "source": "Benzinga",
    "url": "https://www.benzinga.com/money/best-oil-stocks",
    "date": "2026-09-04T11:12:45.000Z",
@@ -5606,6 +5767,7 @@
   {
    "id": "FXStreet:Gold recovers from post-NFP low as US Dollar trims gains",
    "title": "Gold recovers from post-NFP low as US Dollar trims gains",
+   "text": "Gold (XAU/USD) remains under pressure on Friday after stronger-than-expected United States (US) Nonfarm Payrolls (NFP) data revive expectations of a Federal Reserve (Fed) rate hike.",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/gold-pauses-after-two-day-recovery-as-us-nfp-looms-202609041103",
    "date": "2026-09-04T11:03:54.000Z",
@@ -5639,6 +5801,7 @@
   {
    "id": "CNBC:THC drinks could soon be harder to find as Congress delays hemp ban again",
    "title": "THC drinks could soon be harder to find as Congress delays hemp ban again",
+   "text": "THC drinks are booming as an alcohol alternative, but a looming federal crackdown is squeezing makers, distributors and consumers.",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/04/thc-drinks-congress-hemp-ban.html",
    "date": "2026-09-04T11:00:01.000Z",
@@ -5671,6 +5834,7 @@
   {
    "id": "BBC World:US diesel prices hit an all-time-high",
    "title": "US diesel prices hit an all-time-high",
+   "text": "Fuel prices have soared since the Iran conflict began at the end of February, mirroring the surge in wholesale oil prices.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/c7903r0grx0o?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T10:52:56.000Z",
@@ -5704,6 +5868,7 @@
   {
    "id": "U.Today:Dogecoin to Erase Zero? $0.12 Target Emerges as Bull Flag Meets Multiple Signals",
    "title": "Dogecoin to Erase Zero? $0.12 Target Emerges as Bull Flag Meets Multiple Signals",
+   "text": "$0.12 level has emerged as a key upside target from the current technical setup, potentially removing a zero from Dogecoin's price point.",
    "source": "U.Today",
    "url": "https://u.today/dogecoin-to-erase-zero-012-target-emerges-as-bull-flag-meets-multiple-signals",
    "date": "2026-09-04T10:45:54.000Z",
@@ -5738,6 +5903,7 @@
   {
    "id": "Cointelegraph:South Korean regulators introduce tokenized securities roadmap",
    "title": "South Korean regulators introduce tokenized securities roadmap",
+   "text": "South Korea’s financial regulator introduced a three-phase roadmap for the issuance of tokenized assets, as the country prepares to adopt its first tokenized securities framework in February 2027.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/south-korean-regulators-tokenized-securities-roadmap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T10:42:10.000Z",
@@ -5770,6 +5936,7 @@
   {
    "id": "CoinDesk:Zcash jumps 20% to landmark $1,000 level as short sellers lose $34 million",
    "title": "Zcash jumps 20% to landmark $1,000 level as short sellers lose $34 million",
+   "text": "ZEC briefly traded above $1,020 as a sharp rally forced traders betting against the token out of leveraged positions.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/markets/2026/09/04/zcash-jumps-20-to-landmark-usd1-000-level-as-short-sellers-lose-usd34-million",
    "date": "2026-09-04T10:40:14.000Z",
@@ -5806,6 +5973,7 @@
   {
    "id": "Decrypt:FinCEN Ties $12.7B to Crypto Scams Run From Asian Compounds",
    "title": "FinCEN Ties $12.7B to Crypto Scams Run From Asian Compounds",
+   "text": "Monthly reported sums rose 18% on average, and the compounds now appear to be spreading beyond Southeast Asia.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377386/fincen-ties-12-7b-to-crypto-scams-run-from-asian-compounds",
    "date": "2026-09-04T10:22:57.000Z",
@@ -5839,6 +6007,7 @@
   {
    "id": "The Block:Andreessen Horowitz-backed OpenReserve secures preliminary OCC approval for national bank charter",
    "title": "Andreessen Horowitz-backed OpenReserve secures preliminary OCC approval for national bank charter",
+   "text": "OpenReserve Holdings received preliminary OCC approval for a national bank focused on onchain settlement, following a $25 million seed round.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/regulation/2026-09-04-andreessen-horowitz-backed-openreserve-secures-preliminary-occ-approval-for-national-bank-charter-413528",
    "date": "2026-09-04T10:18:40.000Z",
@@ -5871,6 +6040,7 @@
   {
    "id": "U.Today:Shiba Inu (SHIB) Bullish Future Is Questioned Now",
    "title": "Shiba Inu (SHIB) Bullish Future Is Questioned Now",
+   "text": "Shiba Inu was close to the recovery, but a severe volume drop leaves the rally unfueled.",
    "source": "U.Today",
    "url": "https://u.today/shiba-inu-shib-bullish-future-is-questioned-now",
    "date": "2026-09-04T10:05:00.000Z",
@@ -5903,6 +6073,7 @@
   {
    "id": "CoinDesk:Bitcoin clears $81,000 as privacy coins lead a broad crypto rally",
    "title": "Bitcoin clears $81,000 as privacy coins lead a broad crypto rally",
+   "text": "BTC pushed through the level that capped it in late August, while zcash gained 16% and dash 19%.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/markets/2026/09/04/bitcoin-clears-usd81-000-as-privacy-coins-lead-a-broad-crypto-rally",
    "date": "2026-09-04T09:57:01.000Z",
@@ -5942,6 +6113,7 @@
   {
    "id": "Cointelegraph:AMC chief criticizes Robinhood’s tokenized stock plan",
    "title": "AMC chief criticizes Robinhood’s tokenized stock plan",
+   "text": "AMC’s CEO criticized Robinhood’s tokenized stock offerings for being unregulated in the US and said he will request an investigation from an external securities counsel.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/amc-ceo-criticizes-robinhoods-tokenized-stock?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T09:56:52.000Z",
@@ -5974,6 +6146,7 @@
   {
    "id": "CoinDesk:IMF confirms El Salvador’s bitcoin growth was funded by private donations, not public money",
    "title": "IMF confirms El Salvador’s bitcoin growth was funded by private donations, not public money",
+   "text": "The IMF confirmed that all bitcoin added to official holdings since June 2025 was sourced from private donations, with no public funds used for accumulation.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/business/2026/09/04/imf-confirms-el-salvador-s-bitcoin-growth-was-funded-by-private-donations-not-public-money",
    "date": "2026-09-04T09:47:15.000Z",
@@ -6009,6 +6182,7 @@
   {
    "id": "The Block:South Korea to start tokenizing ‘all types’ of securities in three stages from 2027",
    "title": "South Korea to start tokenizing ‘all types’ of securities in three stages from 2027",
+   "text": "South Korea ultimately aims to allow participants to settle tokenized securities onchain with stablecoins, as part of a three-stage plan.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/regulation/2026-09-04-south-korea-to-start-tokenizing-all-types-of-securities-in-three-stages-from-2027-413523",
    "date": "2026-09-04T09:46:06.000Z",
@@ -6041,6 +6215,7 @@
   {
    "id": "CoinDesk:South Korea targets February 2027 rollout for full tokenized securities market",
    "title": "South Korea targets February 2027 rollout for full tokenized securities market",
+   "text": "Financial regulators unveiled a phased roadmap moving traditional capital markets onto distributed ledgers, concluding with onchain stablecoin settlement.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/business/2026/09/04/south-korea-targets-february-2027-rollout-for-full-tokenized-securities-market",
    "date": "2026-09-04T09:41:31.000Z",
@@ -6073,6 +6248,7 @@
   {
    "id": "CNBC World:Nvidia's investments grow to $99 billion as chip giant becomes major backer of AI companies",
    "title": "Nvidia's investments grow to $99 billion as chip giant becomes major backer of AI companies",
+   "text": "Nvidia reported $99 billion in equity holdings as it backs AI labs, cloud providers and infrastructure companies across the sector.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/nvidia-ai-investments-99-billion.html",
    "date": "2026-09-04T09:32:09.000Z",
@@ -6105,6 +6281,7 @@
   {
    "id": "Decrypt:AMC CEO Calls Robinhood Stock Tokens 'Contemptible' and 'Vile'",
    "title": "AMC CEO Calls Robinhood Stock Tokens 'Contemptible' and 'Vile'",
+   "text": "Adam Aron says AMC Entertainment has no connection to the tokens and is putting outside securities counsel on the case.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377378/amc-ceo-calls-robinhood-stock-tokens-contemptible-and-vile",
    "date": "2026-09-04T09:24:56.000Z",
@@ -6137,6 +6314,7 @@
   {
    "id": "BBC World:How could US-Iran conflict end? Three experts give their views",
    "title": "How could US-Iran conflict end? Three experts give their views",
+   "text": "After renewed strikes this week, does either side have an exit strategy?",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/cgjql614glvo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T09:14:57.000Z",
@@ -6174,6 +6352,7 @@
   {
    "id": "U.Today:Satoshi-Era Bitcoin Holder Moves 2,571,899% Gain to Thwart New York Court Case",
    "title": "Satoshi-Era Bitcoin Holder Moves 2,571,899% Gain to Thwart New York Court Case",
+   "text": "An active Satoshi-era wallet counters a $293B lawsuit by moving 40 BTC with a 2,571,899% gain, challenging claims of abandoned property.",
    "source": "U.Today",
    "url": "https://u.today/satoshi-era-bitcoin-holder-moves-2571899-gain-to-thwart-new-york-court-case",
    "date": "2026-09-04T08:51:05.000Z",
@@ -6209,6 +6388,7 @@
   {
    "id": "The Block:US bitcoin ETFs report the largest inflow day since January, worth $731 million",
    "title": "US bitcoin ETFs report the largest inflow day since January, worth $731 million",
+   "text": "Analysts attributed Fed Governor Christopher Waller’s dovish comments to the significant inflow of capital into bitcoin products.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/markets/2026-09-04-us-bitcoin-etfs-largest-inflow-day-since-january-413515",
    "date": "2026-09-04T08:47:05.000Z",
@@ -6244,6 +6424,7 @@
   {
    "id": "BBC World:'Layer upon layer of miracles' to find tunnel survivors, Nepal rescue adviser tells BBC",
    "title": "'Layer upon layer of miracles' to find tunnel survivors, Nepal rescue adviser tells BBC",
+   "text": "From searching for a buried tunnel entrance to blowing up rocks the size of cars, rescuers had to surmount multiple challenges to reach survivors.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/c9dwjv96qyqo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T08:23:05.000Z",
@@ -6276,6 +6457,7 @@
   {
    "id": "The Block:AMC stock jumps 21% overnight as CEO slams Robinhood over ‘outrageous’ tokenized shares",
    "title": "AMC stock jumps 21% overnight as CEO slams Robinhood over ‘outrageous’ tokenized shares",
+   "text": "OpenAI had previously made a similar criticism of Robinhood’s tokenized equities, saying it did not approve the transfer of its shares.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/business/2026-09-04-amc-ceo-slams-robinhood-413513",
    "date": "2026-09-04T07:59:34.000Z",
@@ -6312,6 +6494,7 @@
   {
    "id": "U.Today:Cash Cat (CASHCAT) Hits Another ATH: Robinhood Memes Spike Up",
    "title": "Cash Cat (CASHCAT) Hits Another ATH: Robinhood Memes Spike Up",
+   "text": "The market is witnessing rise of new generation of memes and Cash Cat is leading the way.",
    "source": "U.Today",
    "url": "https://u.today/cash-cat-cashcat-hits-another-ath-robinhood-memes-spike-up",
    "date": "2026-09-04T07:55:00.000Z",
@@ -6344,6 +6527,7 @@
   {
    "id": "CNBC World:Argentina's Milei escalates Falklands dispute as Trump questions U.S. support for Britain",
    "title": "Argentina's Milei escalates Falklands dispute as Trump questions U.S. support for Britain",
+   "text": "Argentina's President Javier Milei has renewed the country's claim to the Falkland Islands and threatened sanctions on oil companies.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/argentina-milei-falklands-oil-uk-trump.html",
    "date": "2026-09-04T07:50:49.000Z",
@@ -6383,6 +6567,7 @@
   {
    "id": "CNBC World:Global bond sell-off likely not over yet, Mohamed El-Erian tells CNBC",
    "title": "Global bond sell-off likely not over yet, Mohamed El-Erian tells CNBC",
+   "text": "In a wide-ranging interview, the renowned economist also said the U.S. Treasury had taken \"a step too far\" with its market intervention.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/el-erian-government-bond-selloff.html",
    "date": "2026-09-04T07:41:48.000Z",
@@ -6421,6 +6606,7 @@
   {
    "id": "Cointelegraph:Bitcoin ETF inflows hit $731M, highest since January as BTC reclaims $80K",
    "title": "Bitcoin ETF inflows hit $731M, highest since January as BTC reclaims $80K",
+   "text": "US Bitcoin ETFs drew $730.9 million on Thursday as Bitcoin reclaimed $80,000, though CryptoQuant flagged weak fresh demand and a key $83,000 test.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/markets/bitcoin-etf-draw-731-million-highest-january-btc-80k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T07:37:13.000Z",
@@ -6460,6 +6646,7 @@
   {
    "id": "CoinDesk:Live updates: Bitcoin tumbles after blowout August jobs print",
    "title": "Live updates: Bitcoin tumbles after blowout August jobs print",
+   "text": "Net assets in spot bitcoin ETFs crossed $103 billion for the first time, with BlackRock's IBIT accounting for well over half the money.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/business/2026/09/04/live-updates-bitcoin-etfs-take-usd731-million-their-biggest-day-since-january",
    "date": "2026-09-04T07:34:07.000Z",
@@ -6499,6 +6686,7 @@
   {
    "id": "BBC World:100 influencers invited to US Open spark debate on 'tennis etiquette'",
    "title": "100 influencers invited to US Open spark debate on 'tennis etiquette'",
+   "text": "The behaviour of influencers and content creators has become a major talking point at this year's US Open amid incidents of matches being disrupted.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/sport/tennis/articles/cy8zqd4zg14o?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T07:16:07.000Z",
@@ -6532,6 +6720,7 @@
   {
    "id": "CNBC World:The inflation genie could be out of the bottle — and bond markets are sounding the alarm",
    "title": "The inflation genie could be out of the bottle — and bond markets are sounding the alarm",
+   "text": "Global bond yields have surged as investors assess whether rising debt, tariffs, defense spending and energy shocks could keep inflation higher for longer.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/global-bond-selloff-inflation-risk.html",
    "date": "2026-09-04T07:05:29.000Z",
@@ -6564,6 +6753,7 @@
   {
    "id": "BBC World:Volkswagen board approves plan to cut another 50,000 jobs",
    "title": "Volkswagen board approves plan to cut another 50,000 jobs",
+   "text": "The group - which includes Audi, Porsche, Skoda as well as the VW brand - plans to cut a total of 100,000 posts by 2030.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/cx2z0kvy4n4o?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T07:00:10.000Z",
@@ -6596,6 +6786,7 @@
   {
    "id": "Cointelegraph:El Salvador’s post-review Bitcoin accumulation used no public funds: IMF",
    "title": "El Salvador’s post-review Bitcoin accumulation used no public funds: IMF",
+   "text": "The IMF attributed Bitcoin added since June 2025 to private donations, addressing questions raised after El Salvador reported a $100 million acquisition.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/el-salvador-bitcoin-private-donations-imf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T06:16:35.000Z",
@@ -6635,6 +6826,7 @@
   {
    "id": "CNBC World:CNBC Daily Open: Vance says he would not call Trump's war with Iran a 'war'",
    "title": "CNBC Daily Open: Vance says he would not call Trump's war with Iran a 'war'",
+   "text": "U.S. Vice President JD Vance weighs in on Iran and rates, while investors turn their focus towards the August jobs report, due out on Friday.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/cnbc-daily-open-trump-vance-iran-war.html",
    "date": "2026-09-04T06:16:26.000Z",
@@ -6672,6 +6864,7 @@
   {
    "id": "U.Today:Ripple's Garlinghouse: Making America Crypto Capital of the World Is 'Within Reach'",
    "title": "Ripple's Garlinghouse: Making America Crypto Capital of the World Is 'Within Reach'",
+   "text": "Ripple CEO Brad Garlinghouse says the United States can still become the global “crypto capital.”.",
    "source": "U.Today",
    "url": "https://u.today/ripples-garlinghouse-making-america-crypto-capital-of-the-world-is-within-reach",
    "date": "2026-09-04T06:15:00.000Z",
@@ -6707,6 +6900,7 @@
   {
    "id": "CNBC World:India’s June quarter GDP print is courting controversy. Here’s why",
    "title": "India’s June quarter GDP print is courting controversy. Here’s why",
+   "text": "India's forecast-beating economic growth has come under scrutiny after a former government official claimed that the GDP print is overstated.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/india-gdp-controversy-imf-modi.html",
    "date": "2026-09-04T05:52:15.000Z",
@@ -6739,6 +6933,7 @@
   {
    "id": "CoinDesk:OpenAI puts $1 billion behind cyber defense after unveiling AI that can find zero-days",
    "title": "OpenAI puts $1 billion behind cyber defense after unveiling AI that can find zero-days",
+   "text": "The company is subsidizing access to its Daybreak security platform after saying Astra can independently find previously unknown software flaws and turn them into working attacks.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/tech/2026/09/04/openai-puts-usd1-billion-behind-cyber-defense-after-unveiling-ai-that-can-find-zero-days",
    "date": "2026-09-04T05:49:43.000Z",
@@ -6771,6 +6966,7 @@
   {
    "id": "CoinDesk:One full bitcoin now buys a little more than 18 ounces of gold, the most since January",
    "title": "One full bitcoin now buys a little more than 18 ounces of gold, the most since January",
+   "text": "Bitcoin is pulling ahead of gold even as both hard assets rally together, driven by fears that governments will inflate away their debt rather than by bond yields.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/markets/2026/09/04/one-full-bitcoin-now-buys-a-little-more-than-18-ounces-of-gold-the-most-since-january",
    "date": "2026-09-04T05:10:34.000Z",
@@ -6806,6 +7002,7 @@
   {
    "id": "CNBC World:Shein has made a shaky stock market entry. Can it get its mojo back?",
    "title": "Shein has made a shaky stock market entry. Can it get its mojo back?",
+   "text": "Shein’s Hong Kong IPO puts the focus on how the fast-fashion retailer can reaccelerate growth as its low-cost model faces new pressures.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/shein-ipo-fast-fashion-temu-competition.html",
    "date": "2026-09-04T04:49:36.000Z",
@@ -6838,6 +7035,7 @@
   {
    "id": "BBC World:Watch: Moment workers are rescued from Nepal tunnel",
    "title": "Watch: Moment workers are rescued from Nepal tunnel",
+   "text": "Rescuers pull two people from a hydropower tunnel more than a week after a massive flash flood devastated the Nepal-China border.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/videos/cnvl5e6vy8eo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T04:45:54.000Z",
@@ -6870,6 +7068,7 @@
   {
    "id": "Cointelegraph:US, UK launch joint alliance targeting crypto scam centers",
    "title": "US, UK launch joint alliance targeting crypto scam centers",
+   "text": "The agreement includes parallel investigations and information sharing, with US and UK authorities planning a private-sector disruption operation in London in October.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/us-uk-joint-alliance-crypto-scam-centers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-04T04:33:55.000Z",
@@ -6903,6 +7102,7 @@
   {
    "id": "CoinDesk:Bitcoin back above $81,000 as hike odds fade, Zcash leads with 15% jump",
    "title": "Bitcoin back above $81,000 as hike odds fade, Zcash leads with 15% jump",
+   "text": "Every major token gained on Friday as traders cut bets on a September Federal Reserve rate increase to a coin flip, though most of the majors are barely changed on the week.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/markets/2026/09/04/bitcoin-back-above-usd81-000-as-hike-odds-fade-zcash-leads-with-15-jump",
    "date": "2026-09-04T04:22:01.000Z",
@@ -6942,6 +7142,7 @@
   {
    "id": "BBC World:Steve Irwin's family celebrates 'superhero' dad, 20 years after shock death",
    "title": "Steve Irwin's family celebrates 'superhero' dad, 20 years after shock death",
+   "text": "The Australian icon was killed in 2006, after a stingray's barb pierced his chest during filming.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/cjrx75ldydwo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T04:06:41.000Z",
@@ -6974,6 +7175,7 @@
   {
    "id": "CoinDesk:U.S. banking agency gives blockchain bank OpenReserve initial OK to operate",
    "title": "U.S. banking agency gives blockchain bank OpenReserve initial OK to operate",
+   "text": "The Office of the Comptroller of the Currency granted a provisional charter to the new full-service bank, adding it to the growing mix of crypto-native institutions.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/policy/2026/09/03/u-s-banking-agency-gives-blockchain-bank-openreserve-initial-ok-to-operate",
    "date": "2026-09-04T03:26:50.000Z",
@@ -7007,6 +7209,7 @@
   {
    "id": "CNBC:Trump-promoted Freedom Fuel expands to Detroit as lawsuit over supplier's unpaid fuel heats up",
    "title": "Trump-promoted Freedom Fuel expands to Detroit as lawsuit over supplier's unpaid fuel heats up",
+   "text": "Freedom Fuel won free publicity when President Donald Trump urged other gas retailers to emulate its low prices in July.",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/03/freedom-fuel-trump-lawsuit-detroit.html",
    "date": "2026-09-04T03:25:39.000Z",
@@ -7039,6 +7242,7 @@
   {
    "id": "CoinDesk:AMC CEO blasts Robinhood for stock token, putting synthetic shares in spotlight",
    "title": "AMC CEO blasts Robinhood for stock token, putting synthetic shares in spotlight",
+   "text": "Adam Aron said AMC has no connection to Robinhood’s tokenized shares, reviving questions around how stocks are brought onchain.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/business/2026/09/03/amc-ceo-blasts-robinhood-for-stock-token-putting-synthetic-shares-in-spotlight",
    "date": "2026-09-04T03:03:25.000Z",
@@ -7072,6 +7276,7 @@
   {
    "id": "BBC World:Nepal says it will need billions in funding to rebuild after flash floods",
    "title": "Nepal says it will need billions in funding to rebuild after flash floods",
+   "text": "BBC South Asia correspondent Azadeh Moshiri is in Nepal where authorities are trying to begin rebuilding amid the debris.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/videos/ce8x2401zdeo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T02:20:37.000Z",
@@ -7104,6 +7309,7 @@
   {
    "id": "BBC World:Watch: Inside court as Lindsay Clancy's lawyer asks judge to remove juror",
    "title": "Watch: Inside court as Lindsay Clancy's lawyer asks judge to remove juror",
+   "text": "The jury now faces a seventh day of deliberations in the triple-murder trial.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/videos/c36l7jwjg1no?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T00:55:45.000Z",
@@ -7136,6 +7342,7 @@
   {
    "id": "CNBC World:South Korea's AI rally is reshaping romance, reality shows and academic preferences",
    "title": "South Korea's AI rally is reshaping romance, reality shows and academic preferences",
+   "text": "South Korea rally is changing what Koreans watch, how Koreans date, and what Koreans study.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/south-korea-ai-rally-society-impact.html",
    "date": "2026-09-04T00:55:30.000Z",
@@ -7172,6 +7379,7 @@
   {
    "id": "CNBC World:A 'shakeout' in early-stage AI may be coming as VC money gets pickier on valuations",
    "title": "A 'shakeout' in early-stage AI may be coming as VC money gets pickier on valuations",
+   "text": "Investors should keep an eye out for excessive valuations and focus on productivity when it comes to investing in AI companies, market watchers say.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/04/ai-bubble-valuations-venture-capital.html",
    "date": "2026-09-04T00:44:33.000Z",
@@ -7204,6 +7412,7 @@
   {
    "id": "BBC World:Kenya's chai lovers are not happy as the nation's cows run dry",
    "title": "Kenya's chai lovers are not happy as the nation's cows run dry",
+   "text": "Supermarket shelves are emptying, sellers are rationing supplies and prices are rising.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/cgqd9ldegjqo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T00:28:56.000Z",
@@ -7236,6 +7445,7 @@
   {
    "id": "BBC World:Girl group Katseye are missing two members, but their tour still dazzles",
    "title": "Girl group Katseye are missing two members, but their tour still dazzles",
+   "text": "Reduced but resilient, girl group Katseye received a hero's welcome in London.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/cqxv49z84ppo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-04T00:19:53.000Z",
@@ -7268,6 +7478,7 @@
   {
    "id": "U.Today:XRP Jumps 3% on BIS Ledger Test, Ethereum Pre-Golden Cross Points Higher as Tron TVL Hits $28 Billion: Crypto Market Review",
    "title": "XRP Jumps 3% on BIS Ledger Test, Ethereum Pre-Golden Cross Points Higher as Tron TVL Hits $28 Billion: Crypto Market Review",
+   "text": "The crypto market is attempting to extend its recovery, with XRP gaining on BIS-related news, Ethereum approaching a key bullish crossover and Tron reaching $28 billion in TVL.",
    "source": "U.Today",
    "url": "https://u.today/xrp-jumps-3-on-bis-ledger-test-ethereum-pre-golden-cross-points-higher-as-tron-tvl-hits-28-billion",
    "date": "2026-09-04T00:01:00.000Z",
@@ -7308,6 +7519,7 @@
   {
    "id": "Cointelegraph:Tether sued over $42M in frozen coins, 6,600 students get crypto loans: Asia Express",
    "title": "Tether sued over $42M in frozen coins, 6,600 students get crypto loans: Asia Express",
+   "text": "Thai businessmen sue Tether over $42M frozen USDT tied to pig butchering scam, Aussie crypto firms face big fines unless they meet licensing deadline.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/magazine/tether-sued-over-frozen-pig-butcher-coins-6600-students-get-crypto-loans-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T23:40:09.000Z",
@@ -7341,6 +7553,7 @@
   {
    "id": "BBC World:Transplanted pig kidney works in US man's body for record 271 days",
    "title": "Transplanted pig kidney works in US man's body for record 271 days",
+   "text": "A man has lived for a record nine months with a transplanted pig kidney while waiting for a human transplant.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/c305qn2jeggo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-03T22:31:23.000Z",
@@ -7373,6 +7586,7 @@
   {
    "id": "Decrypt:Utah Becomes First State to Target VPNs in Age-Verification Crackdown",
    "title": "Utah Becomes First State to Target VPNs in Age-Verification Crackdown",
+   "text": "Privacy advocates say the law raises First Amendment questions the courts have yet to address.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377370/utah-websites-check-vpn-age-verification",
    "date": "2026-09-03T22:16:04.000Z",
@@ -7405,6 +7619,7 @@
   {
    "id": "CNBC World:OpenAI begins rolling out Astra model after warning of its advanced cyber capabilities",
    "title": "OpenAI begins rolling out Astra model after warning of its advanced cyber capabilities",
+   "text": "OpenAI said companies participating in its application-based cybersecurity program will be first to get access to Astra.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
    "date": "2026-09-03T21:52:38.000Z",
@@ -7437,6 +7652,7 @@
   {
    "id": "Decrypt:Bitcoin Miner Ditches Site for AI Deal That Could Top $1.2 Billion",
    "title": "Bitcoin Miner Ditches Site for AI Deal That Could Top $1.2 Billion",
+   "text": "The projected revenue requires two contract extensions, while an option for more computing capacity could bring the total above $3 billion.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377363/bitcoin-mine-ai-deal-1-2-billion",
    "date": "2026-09-03T21:31:05.000Z",
@@ -7472,6 +7688,7 @@
   {
    "id": "Cointelegraph:CFTC files to dismiss CME lawsuit over crypto perpetual futures",
    "title": "CFTC files to dismiss CME lawsuit over crypto perpetual futures",
+   "text": "The CFTC’s lawyers called the lawsuit “much ado about nothing,“ claiming that the CME Group lacked standing to file and argued against its claims over crypto perpetual futures.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/cftc-dismiss-cme-lawsuit-crypto-perpetual-futures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T21:09:13.000Z",
@@ -7505,6 +7722,7 @@
   {
    "id": "CNBC World:Automakers urge Congress to permanently ban Chinese connected vehicles in U.S.",
    "title": "Automakers urge Congress to permanently ban Chinese connected vehicles in U.S.",
+   "text": "Major automakers in the U.S. are urging Congress to ban the domestic sale, import and manufacturing of Chinese connected vehicles, hardware and software.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/03/chinese-vehicles-congress.html",
    "date": "2026-09-03T20:56:19.000Z",
@@ -7537,6 +7755,7 @@
   {
    "id": "The Block:Coinbase seeks SEC greenlight to list equity perpetuals",
    "title": "Coinbase seeks SEC greenlight to list equity perpetuals",
+   "text": "Coinbase, the largest U.S. based crypto exchange, is seeking to list equity products as perpetual gain momentum.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/regulation/2026-09-03-coinbase-seeks-sec-greenlight-to-list-24-7-equity-perpetuals-413487",
    "date": "2026-09-03T20:46:52.000Z",
@@ -7564,11 +7783,13 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Coinbase sucht SEC-GREENLIGHT, um unbefristete Aktien aufzulisten"
   },
   {
    "id": "Decrypt:What Is Pons? The Robinhood Chain Meme Coin Factory Token Up 18,000% Since July",
    "title": "What Is Pons? The Robinhood Chain Meme Coin Factory Token Up 18,000% Since July",
+   "text": "PONS, the token behind Robinhood Chain's biggest meme coin factory, flipped CASHCAT to become the chain's largest cryptocurrency by market cap—and its chart looks like a hockey stick.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377349/pons-robinhood-chain-meme-coin-token-factory",
    "date": "2026-09-03T20:46:04.000Z",
@@ -7602,6 +7823,7 @@
   {
    "id": "CNBC World:Carney claps back at Lutnick, says Canada will resume trade talks 'when the Americans are ready'",
    "title": "Carney claps back at Lutnick, says Canada will resume trade talks 'when the Americans are ready'",
+   "text": "Canada has retaliated against President Donald Trump's 50% tariffs with \"dollar for dollar\" duties on U.S. goods, which are set to take effect next week.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/03/carney-lutnick-trump-trade-canada.html",
    "date": "2026-09-03T20:42:29.000Z",
@@ -7636,6 +7858,7 @@
   {
    "id": "U.Today:Bitcoin Surges Above Key Moving Average, Key Resistance About to Crack",
    "title": "Bitcoin Surges Above Key Moving Average, Key Resistance About to Crack",
+   "text": "Bitcoin has decisively reclaimed its closely watched 50-week moving average.",
    "source": "U.Today",
    "url": "https://u.today/bitcoin-surges-above-key-moving-average-key-resistance-about-to-crack",
    "date": "2026-09-03T20:39:08.000Z",
@@ -7675,6 +7898,7 @@
   {
    "id": "Decrypt:Bernie Sanders Pushes Bill to Ban Advanced AI Development",
    "title": "Bernie Sanders Pushes Bill to Ban Advanced AI Development",
+   "text": "The forthcoming bill would pause advanced AI development, create a federal regulator, and threaten violators with up to 20 years in prison.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377340/bernie-sanders-ban-advanced-ai",
    "date": "2026-09-03T20:16:04.000Z",
@@ -7707,6 +7931,7 @@
   {
    "id": "The Block:Crypto market cap surges to $2.82 trillion as Zcash leads rally alongside stocks",
    "title": "Crypto market cap surges to $2.82 trillion as Zcash leads rally alongside stocks",
+   "text": "Crypto and related stocks like Strategy rallied as bitcoin topped $80,000 and Fed rate expectations remained split.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/markets/2026-09-03-crypto-market-cap-surges-2-82-trillion-zcash-leads-rally-alongside-stocks-413478",
    "date": "2026-09-03T20:09:25.000Z",
@@ -7744,6 +7969,7 @@
   {
    "id": "CNBC Economy:The big August jobs report is due out Friday. Here's what to expect for what has been a jobless summer",
    "title": "The big August jobs report is due out Friday. Here's what to expect for what has been a jobless summer",
+   "text": "August nonfarm payrolls are expected to rise by 53,000 as a subdued labor market keeps Fed attention focused on inflation.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/09/03/august-2026-jobs-report-payrolls.html",
    "date": "2026-09-03T19:38:09.000Z",
@@ -7776,6 +8002,7 @@
   {
    "id": "Cointelegraph:Mantle adds Paxos’ USDG stablecoin, joins Global Dollar Network",
    "title": "Mantle adds Paxos’ USDG stablecoin, joins Global Dollar Network",
+   "text": "Mantle has added Paxos-issued USDG as a natively minted stablecoin while joining the network’s reward-sharing structure.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/paxos-usdg-goes-live-mantle-network-joins-global-dollar-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T19:36:56.000Z",
@@ -7809,6 +8036,7 @@
   {
    "id": "Decrypt:OpenAI Releases GPT-6 Astra: The Closest AI Model Yet to AGI",
    "title": "OpenAI Releases GPT-6 Astra: The Closest AI Model Yet to AGI",
+   "text": "The model can independently discover and exploit unknown security flaws across hardened systems, triggering a staged rollout and White House review before public access.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377341/openai-releases-gpt-6-astra-agi",
    "date": "2026-09-03T19:24:24.000Z",
@@ -7841,6 +8069,7 @@
   {
    "id": "CNBC:Vance says Fed should lower interest rates: 'Would be nice to have some help'",
    "title": "Vance says Fed should lower interest rates: 'Would be nice to have some help'",
+   "text": "Vice President J.D. Vance's remarks came less than two weeks before the Federal Open Market Committee is set to convene and decide whether to adjust rates.",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/03/vance-fed-interest-rates-trump-bond-yields.html",
    "date": "2026-09-03T19:18:59.000Z",
@@ -7874,6 +8103,7 @@
   {
    "id": "Cointelegraph:Michigan authorities continue pursuit to block Kalshi as Supreme Court fight looms",
    "title": "Michigan authorities continue pursuit to block Kalshi as Supreme Court fight looms",
+   "text": "Kalshi previously said it had been placed in an “impossible position” after federal authorities directed the company to ignore a Michigan restraining order issued in June.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/michigan-block-kalshi-supreme-court-legal-fight?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T19:11:46.000Z",
@@ -7906,6 +8136,7 @@
   {
    "id": "U.Today:Crypto Faces 'Very Bad News' as CLARITY Act Vote Risks Delay",
    "title": "Crypto Faces 'Very Bad News' as CLARITY Act Vote Risks Delay",
+   "text": "House Republicans’ decision to cut the September legislative session short could significantly delay the CLARITY Act.",
    "source": "U.Today",
    "url": "https://u.today/crypto-faces-very-bad-news-as-clarity-act-vote-risks-delay",
    "date": "2026-09-03T19:05:04.000Z",
@@ -7933,11 +8164,13 @@
    "eventTypeEn": "Legislation",
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Krypto steht vor \"sehr schlechten Nachrichten\", da SICH die Abstimmungsrisiken des CLARITY-Gesetzes verzögern"
   },
   {
    "id": "Cointelegraph:Bitcoin reclaims $80K as DXY falls amid continuing suspected yen intervention",
    "title": "Bitcoin reclaims $80K as DXY falls amid continuing suspected yen intervention",
+   "text": "Bitcoin rallied 5% to reclaim $80,000 as the US dollar weakened amid a suspected Bank of Japan currency intervention, though analysts remain split on the impact.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/markets/bitcoin-reclaims-810-dxy-falls-amid-continuing-suspected-yen-intervention?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T18:44:22.000Z",
@@ -7972,6 +8205,7 @@
   {
    "id": "BBC World:AI data centres are booming in Australia - but at what cost?",
    "title": "AI data centres are booming in Australia - but at what cost?",
+   "text": "Advocates say data centres will bring jobs but others worry they will suck up resources while providing little advantage.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/cgl3we7wdr3o?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-03T18:32:03.000Z",
@@ -8004,6 +8238,7 @@
   {
    "id": "The Block:Revolut takes ‘important’ step toward becoming a US bank with conditional OCC approval",
    "title": "Revolut takes ‘important’ step toward becoming a US bank with conditional OCC approval",
+   "text": "Revolut says it has received preliminary approval from a key U.S. banking regulator as it seeks to become a bank in the country.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/regulation/2026-09-03-revolut-takes-important-step-toward-becoming-a-us-bank-with-conditional-occ-approval-413474",
    "date": "2026-09-03T18:23:44.000Z",
@@ -8036,6 +8271,7 @@
   {
    "id": "Decrypt:Bitcoin ETFs Rebound as Ethereum and XRP ETFs End Winning Streaks",
    "title": "Bitcoin ETFs Rebound as Ethereum and XRP ETFs End Winning Streaks",
+   "text": "Ethereum funds broke a 12-day winning run and XRP snapped an 11-session streak on Wednesday, while Bitcoin ETFs bounced back with $101.15 million in one day after their worst outflow since July.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377284/bitcoin-etfs-rebound-ethereum-xrp-end-streaks",
    "date": "2026-09-03T18:15:07.000Z",
@@ -8072,6 +8308,7 @@
   {
    "id": "Decrypt:CFTC Asks Judge to Dismiss CME Lawsuit Over Crypto Perpetual Futures",
    "title": "CFTC Asks Judge to Dismiss CME Lawsuit Over Crypto Perpetual Futures",
+   "text": "The regulator argues that CME cannot challenge its approval of Kalshi’s Bitcoin perpetual contract without showing concrete financial harm.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377315/cftc-dismiss-cme-lawsuit-crypto-perpetual-futures",
    "date": "2026-09-03T17:31:04.000Z",
@@ -8104,6 +8341,7 @@
   {
    "id": "Cointelegraph:Bybit Pay integrates with Mesh to expand crypto payments",
    "title": "Bybit Pay integrates with Mesh to expand crypto payments",
+   "text": "The integration lets Bybit users spend digital assets directly from their exchange balances across Mesh-powered platforms.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/bybit-pay-integrates-with-mesh-to-expand-crypto-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T17:13:04.000Z",
@@ -8136,6 +8374,7 @@
   {
    "id": "Cointelegraph:BitMEX co-founder contributed 75% of Reform UK’s donations in Q2 2026",
    "title": "BitMEX co-founder contributed 75% of Reform UK’s donations in Q2 2026",
+   "text": "The UK political party and its leader, Nigel Farage, have accepted contributions from figures tied to the crypto industry, raising questions about potential influence on policies.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/bitmex-cofounder-ben-delo-reform-uk-donations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T17:06:28.000Z",
@@ -8168,6 +8407,7 @@
   {
    "id": "U.Today:XRP Records Abnormal ETF Imbalance as Select US Funds Outperform Token Surge by 100%",
    "title": "XRP Records Abnormal ETF Imbalance as Select US Funds Outperform Token Surge by 100%",
+   "text": "XRP ETFs outpace the token by 100% amid an abnormal liquidity mismatch in U.S. order books during a $27.2 million trading session.",
    "source": "U.Today",
    "url": "https://u.today/xrp-records-abnormal-etf-imbalance-as-select-us-funds-outperform-token-surge-by-100",
    "date": "2026-09-03T16:45:01.000Z",
@@ -8207,6 +8447,7 @@
   {
    "id": "Decrypt:Bitcoin Pumps as Fed Signals Rate Pause, $415 Million in Shorts Get Rekt",
    "title": "Bitcoin Pumps as Fed Signals Rate Pause, $415 Million in Shorts Get Rekt",
+   "text": "Stocks and crypto rallied together after Governor Christopher Waller said he could back holding rates steady, with short sellers absorbing the brunt of the squeeze.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377314/bitcoin-pump-fed-rate-pause-shorts-get-rekt",
    "date": "2026-09-03T16:38:17.000Z",
@@ -8246,6 +8487,7 @@
   {
    "id": "Decrypt:Sony Dismisses PS5 Buyers' $508M Tariff Refund Claim as 'Illogical'",
    "title": "Sony Dismisses PS5 Buyers' $508M Tariff Refund Claim as 'Illogical'",
+   "text": "The company raised PlayStation prices for a second time in March, five weeks after the tariffs were struck down.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377313/sony-dismisses-ps5-buyers-508m-tariff-refund-claim-as-illogical",
    "date": "2026-09-03T16:28:27.000Z",
@@ -8283,6 +8525,7 @@
   {
    "id": "The Block:Strive CEO says company could end 2026 as second-largest public bitcoin holder as ASST climbs",
    "title": "Strive CEO says company could end 2026 as second-largest public bitcoin holder as ASST climbs",
+   "text": "Strive shares climbed to a year-to-date high of $26.84 on Thursday, placing the stock less than 1% below the warrants’ exercise price.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/markets/2026-09-03-strive-ceo-company-could-end-2026-second-largest-bitcoin-holder-asst-413455",
    "date": "2026-09-03T16:27:35.000Z",
@@ -8317,6 +8560,7 @@
   {
    "id": "U.Today:Bessent Delivers Bitcoin's Best Ad, Scaramucci Claims",
    "title": "Bessent Delivers Bitcoin's Best Ad, Scaramucci Claims",
+   "text": "U.S. Treasury Secretary Scott Bessent’s warning that the world is \"awash in debt\" has inadvertently made the case for Bitcoin.",
    "source": "U.Today",
    "url": "https://u.today/bessent-delivers-bitcoins-best-ad-scaramucci-claims",
    "date": "2026-09-03T16:19:57.000Z",
@@ -8351,6 +8595,7 @@
   {
    "id": "Cointelegraph:Kraken parent Payward partners with SoFi on stablecoin, 24/7 settlement",
    "title": "Kraken parent Payward partners with SoFi on stablecoin, 24/7 settlement",
+   "text": "The deal will bring SoFiUSD to Kraken, connect Payward to SoFi’s 24/7 dollar settlement network and give SoFi access to digital asset liquidity through Kraken Prime.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/kraken-parent-payward-partners-with-sofi-stablecoin-247-settlement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T16:04:11.000Z",
@@ -8383,6 +8628,7 @@
   {
    "id": "The Block:Stablecoin payments infrastructure startup Diameter Pay raises $10 million",
    "title": "Stablecoin payments infrastructure startup Diameter Pay raises $10 million",
+   "text": "Diameter Pay has raised $10 million in a Series A funding round co-led by CMT Digital and Lightspeed Faction.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/deals/2026-09-03-diameter-pay-funding-stablecoin-payments-infrastructure-413454",
    "date": "2026-09-03T16:00:03.000Z",
@@ -8415,6 +8661,7 @@
   {
    "id": "CoinDesk:Standard Chartered brings spot crypto trading to Dubai FX platform",
    "title": "Standard Chartered brings spot crypto trading to Dubai FX platform",
+   "text": "The bank is now offering institutional crypto spot trading in the region, bringing BTC and ETH onto the same eFX rails that institutions use to trade dollars and euros.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae",
    "date": "2026-09-03T15:58:02.000Z",
@@ -8447,6 +8694,7 @@
   {
    "id": "U.Today:Binance Shares Crucial Warning Amid Rising Phishing Text Schemes",
    "title": "Binance Shares Crucial Warning Amid Rising Phishing Text Schemes",
+   "text": "Binance shares new safety measures on how users can protect their funds amid rising phishing attacks from scammers tricking victims.",
    "source": "U.Today",
    "url": "https://u.today/binance-shares-crucial-warning-amid-rising-phishing-text-schemes",
    "date": "2026-09-03T15:47:55.000Z",
@@ -8479,6 +8727,7 @@
   {
    "id": "Decrypt:SoFi Links Banking Network and Stablecoin to Kraken in New Deal",
    "title": "SoFi Links Banking Network and Stablecoin to Kraken in New Deal",
+   "text": "Kraken will list SoFiUSD and gain access to SoFi’s round-the-clock dollar settlement network, while Kraken Prime will execute trades for SoFi’s crypto customers.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377283/sofi-banking-network-stablecoin-kraken",
    "date": "2026-09-03T15:40:08.000Z",
@@ -8543,6 +8792,7 @@
   {
    "id": "CoinDesk:A memecoin making app becomes crypto’s top fee generators as Robinhood Chain activity explodes",
    "title": "A memecoin making app becomes crypto’s top fee generators as Robinhood Chain activity explodes",
+   "text": "Users paid nearly $6 million in a day to create and trade tokens through Pons, more than they paid to use Pump or Hyperliquid, and even more than they paid to use Robinhood Chain itself.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/tech/2026/09/03/a-memecoin-making-app-becomes-crypto-s-top-fee-generators-as-robinhood-chain-activity-explodes",
    "date": "2026-09-03T14:51:39.000Z",
@@ -8575,6 +8825,7 @@
   {
    "id": "CoinDesk:Bitget in talks with Wall Street giants including BlackRock to fuel Asian distribution",
    "title": "Bitget in talks with Wall Street giants including BlackRock to fuel Asian distribution",
+   "text": "Gracy Chen highlighted the world's largest asset manager as one example of such a firm seeking to expand distribution of their tokenized ETFs in the region.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/business/2026/09/03/bitget-in-talks-with-wall-street-giants-including-blackrock-for-asian-distribution",
    "date": "2026-09-03T14:41:25.000Z",
@@ -8607,6 +8858,7 @@
   {
    "id": "U.Today:Pompliano Backs Bitcoin-AI Duo as Ultimate Portfolio for Next Two Decades",
    "title": "Pompliano Backs Bitcoin-AI Duo as Ultimate Portfolio for Next Two Decades",
+   "text": "Bitcoin and AI are the only assets needed for the next two decades: Pompliano $BTC.",
    "source": "U.Today",
    "url": "https://u.today/pompliano-backs-bitcoin-ai-duo-as-ultimate-portfolio-for-next-two-decades",
    "date": "2026-09-03T14:37:45.000Z",
@@ -8641,6 +8893,7 @@
   {
    "id": "CNBC Economy:Fed Governor Waller indicates he will support holding rates steady at September meeting",
    "title": "Fed Governor Waller indicates he will support holding rates steady at September meeting",
+   "text": "In remarks that seem to contrast with statements last week from Chairman Kevin Warsh, Waller expressed confidence in the current inflation trends.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/09/03/fed-governor-waller-indicates-he-will-support-holding-rates-steady-at-september-meeting.html",
    "date": "2026-09-03T14:06:52.000Z",
@@ -8674,6 +8927,7 @@
   {
    "id": "Cointelegraph:Recovery specialists crack $1B crypto wallet... but find just $10",
    "title": "Recovery specialists crack $1B crypto wallet... but find just $10",
+   "text": "Crypto recovery specialists reveal how lost wallets, passwords and seed phrases can sometimes be recovered — but that’s of no help if the money was never there in the first place.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/magazine/recovery-specialists-crack-1b-crypto-wallet-but-find-just-10?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T13:30:00.000Z",
@@ -8706,6 +8960,7 @@
   {
    "id": "U.Today:XRP's Most Important Website Gets Revamp: What Changed?",
    "title": "XRP's Most Important Website Gets Revamp: What Changed?",
+   "text": "XRP community takes notice as key ecosystem site gets redesign.",
    "source": "U.Today",
    "url": "https://u.today/xrps-most-important-website-gets-revamp-what-changed",
    "date": "2026-09-03T13:20:42.000Z",
@@ -8740,6 +8995,7 @@
   {
    "id": "Cointelegraph:VARA, Securitize sign MoU for tokenization innovation in Dubai",
    "title": "VARA, Securitize sign MoU for tokenization innovation in Dubai",
+   "text": "VARA and Securitize signed an MoU to foster more tokenization innovation in Dubai and explore how tokenized financial innovation should be regulated in the region.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/vara-securitize-mou-tokenization-dubai?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T13:00:00.000Z",
@@ -8772,6 +9028,7 @@
   {
    "id": "The Block:SoFi, Payward agree to link banking network with Kraken infrastructure",
    "title": "SoFi, Payward agree to link banking network with Kraken infrastructure",
+   "text": "SoFi Technologies partnered with Payward to connect its banking settlement network with Kraken's digital-asset infrastructure.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/business/2026-09-03-sofi-payward-agree-to-link-banking-network-with-kraken-infrastructure-413432",
    "date": "2026-09-03T12:52:54.000Z",
@@ -8804,6 +9061,7 @@
   {
    "id": "U.Today:Shiba Inu (SHIB): 65% Added in Unexpectedly Negative Outcome for Bulls",
    "title": "Shiba Inu (SHIB): 65% Added in Unexpectedly Negative Outcome for Bulls",
+   "text": "Despite the rising pressure on the market, Shiba Inu successfully absorbed larger part of the pressure.",
    "source": "U.Today",
    "url": "https://u.today/shiba-inu-shib-65-added-in-unexpectedly-negative-outcome-for-bulls",
    "date": "2026-09-03T12:50:00.000Z",
@@ -8836,6 +9094,7 @@
   {
    "id": "Cointelegraph:Nvidia buys Hugging Face for $12.9B in push into AI software",
    "title": "Nvidia buys Hugging Face for $12.9B in push into AI software",
+   "text": "Nvidia agreed to buy Hugging Face for $12.93 billion, gaining a platform used by more than 18 million developers to share and deploy AI models.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/nvidia-buys-hugging-face-12-9-billion-ai-software?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T12:41:11.000Z",
@@ -8868,6 +9127,7 @@
   {
    "id": "CNBC Economy:'Danger zone of extreme weather': UN warns of supersized El Niño set to hit global economy and markets",
    "title": "'Danger zone of extreme weather': UN warns of supersized El Niño set to hit global economy and markets",
+   "text": "Latest modeling shows high risks of floods, drought and extreme heat persisting until February 2027.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/09/03/supersized-el-nino-un-economy.html",
    "date": "2026-09-03T12:25:53.000Z",
@@ -8900,6 +9160,7 @@
   {
    "id": "U.Today:Why Ex-Ripple Vice President Has 'Déjà Vu' Over Goldman Sachs' New Bank-Backed Stablecoin",
    "title": "Why Ex-Ripple Vice President Has 'Déjà Vu' Over Goldman Sachs' New Bank-Backed Stablecoin",
+   "text": "Former Ripple VP Emi Yoshikawa reacts to Goldman's stablecoin bid, highlighting Wall Street's predictable shift and 21-bank governance traps.",
    "source": "U.Today",
    "url": "https://u.today/why-ex-ripple-vice-president-has-deja-vu-over-goldman-sachs-new-bank-backed-stablecoin",
    "date": "2026-09-03T12:21:05.000Z",
@@ -8934,6 +9195,7 @@
   {
    "id": "U.Today:Robinhood Chain Beats Tron in 24-Hour Revenue",
    "title": "Robinhood Chain Beats Tron in 24-Hour Revenue",
+   "text": "Robinhood chain leads all major networks in its 24-hour revenue following a massive surge in the metric, recording over $4 million in just one day.",
    "source": "U.Today",
    "url": "https://u.today/robinhood-chain-beats-tron-in-24-hour-revenue",
    "date": "2026-09-03T12:01:21.000Z",
@@ -8966,6 +9228,7 @@
   {
    "id": "CoinDesk:SoFi, Kraken tie up as crypto and banking push into each other's turf",
    "title": "SoFi, Kraken tie up as crypto and banking push into each other's turf",
+   "text": "Kraken is joining SoFi's settlement network and list SoFiUSD as the companies link traditional banking with crypto markets.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/business/2026/09/03/sofi-kraken-tie-up-as-crypto-and-banking-push-into-each-other-s-turf",
    "date": "2026-09-03T12:00:00.000Z",
@@ -8998,6 +9261,7 @@
   {
    "id": "Decrypt:Morning Minute: Strategy CEO Says Selling The Bottom Was Correct Move",
    "title": "Morning Minute: Strategy CEO Says Selling The Bottom Was Correct Move",
+   "text": "Strategy sold millions in Bitcoin in the low $60k range and just rebought at $80k. Now they’re sharing the rationale behind the moves.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377264/morning-minute-strategy-ceo-says-selling-the-bottom-was-correct-move",
    "date": "2026-09-03T11:43:14.000Z",
@@ -9030,6 +9294,7 @@
   {
    "id": "U.Today:'Rich People Buy Bitcoin': Michael Saylor Likens BTC Strategy to Golf Play",
    "title": "'Rich People Buy Bitcoin': Michael Saylor Likens BTC Strategy to Golf Play",
+   "text": "Michael Saylor likens Bitcoin strategy to golf as Strategy claims the No. 2 S&P 500 reserve spot despite a paradox re-buy.",
    "source": "U.Today",
    "url": "https://u.today/rich-people-buy-bitcoin-michael-saylor-likens-btc-strategy-to-golf-play",
    "date": "2026-09-03T11:42:30.000Z",
@@ -9064,6 +9329,7 @@
   {
    "id": "Decrypt:Mamdani Imposes One-Year Moratorium on Generative AI in NYC Schools",
    "title": "Mamdani Imposes One-Year Moratorium on Generative AI in NYC Schools",
+   "text": "Nearly 600,000 students lose access to generative AI tools, while five named vendors keep metered pilots running in high schools.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377253/mamdani-imposes-one-year-moratorium-on-generative-ai-in-nyc-schools",
    "date": "2026-09-03T11:36:41.000Z",
@@ -9096,6 +9362,7 @@
   {
    "id": "BBC World:How Gloria Steinem changed the lives of generations of women",
    "title": "How Gloria Steinem changed the lives of generations of women",
+   "text": "The trailblazing feminist spoke out for the legalisation of abortion, same-sex marriage and equal pay for women - but her activism was not without backlash.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/cqv5wxyp5xwo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-03T11:26:07.000Z",
@@ -9162,6 +9429,7 @@
   {
    "id": "CoinDesk:The yen is surging and it’s helping bitcoin, for now",
    "title": "The yen is surging and it’s helping bitcoin, for now",
+   "text": "Yen's rise has led to a broad-based USD weakness, driving the Dollar Index lower. BTC and gold are loving it, for now.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/markets/2026/09/03/the-yen-is-surging-and-it-s-helping-bitcoin-for-now",
    "date": "2026-09-03T11:19:56.000Z",
@@ -9196,6 +9464,7 @@
   {
    "id": "The Block:Bitcoin-gold correlation hits six-year high, but analysts question whether equity decoupling will last",
    "title": "Bitcoin-gold correlation hits six-year high, but analysts question whether equity decoupling will last",
+   "text": "Glassnode is less convinced by bitcoin's recent divergence from U.S. equities, saying similar moves have previously been short-lived.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/markets/2026-09-03-bitcoin-gold-correlation-hits-six-year-high-but-analysts-question-whether-equity-decoupling-will-last-413437",
    "date": "2026-09-03T11:01:46.000Z",
@@ -9230,6 +9499,7 @@
   {
    "id": "Cointelegraph:Pencil Finance completes $1M onchain lending cycle for 6.6K students in Southeast Asia",
    "title": "Pencil Finance completes $1M onchain lending cycle for 6.6K students in Southeast Asia",
+   "text": "Pencil Finance said that its first-of-a-kind loan offered financing to 6,600 students in Southeast Asia who were underserved by traditional lenders.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/pencil-finance-1m-onchain-lending-cycle-students?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T10:59:34.000Z",
@@ -9262,6 +9532,7 @@
   {
    "id": "U.Today:New Shibarium Upgrade Revealed by SHIB Veteran: What's Being Added?",
    "title": "New Shibarium Upgrade Revealed by SHIB Veteran: What's Being Added?",
+   "text": "The update gives Shibarium users another piece of infrastructure to work with while improvements to the underlying ecosystem contribute to broader utility over time.",
    "source": "U.Today",
    "url": "https://u.today/new-shibarium-upgrade-revealed-by-shib-veteran-whats-being-added",
    "date": "2026-09-03T10:48:39.000Z",
@@ -9294,6 +9565,7 @@
   {
    "id": "CoinDesk:Live updates: Bitcoin jumps above $81,000 as rates fall, dollar weakens",
    "title": "Live updates: Bitcoin jumps above $81,000 as rates fall, dollar weakens",
+   "text": "The government's employment data (due tomorrow) is usually the main economic report of the month, but this time around it's next week's inflation numbers that will decide Fed policy.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/business/2026/09/03/live-updates-crypto-majors-bounce-while-global-funds-run-their-lowest-dollar-hedges-since-2015",
    "date": "2026-09-03T10:42:15.000Z",
@@ -9333,6 +9605,7 @@
   {
    "id": "U.Today:Solana, XRP, Ethereum ETFs in Red as Bitcoin ETF Adds $100 Million",
    "title": "Solana, XRP, Ethereum ETFs in Red as Bitcoin ETF Adds $100 Million",
+   "text": "Bitcoin ETFs attracted more than $100 million in fresh inflows as Ethereum, XRP and Solana funds slipped into the red.",
    "source": "U.Today",
    "url": "https://u.today/solana-xrp-ethereum-etfs-in-red-as-bitcoin-etf-adds-100-million",
    "date": "2026-09-03T10:35:00.000Z",
@@ -9370,6 +9643,7 @@
   {
    "id": "CoinDesk:Bitcoin recovers toward $78,000 as pons and arbitrum extend Robinhood Chain rally",
    "title": "Bitcoin recovers toward $78,000 as pons and arbitrum extend Robinhood Chain rally",
+   "text": "BTC rose 0.76% since midnight as a softer dollar lifted equities and metals alongside crypto, while ARB and PONS pushed higher for a third session.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/markets/2026/09/03/bitcoin-recovers-toward-usd78-000-as-pons-and-arbitrum-extend-robinhood-chain-rally",
    "date": "2026-09-03T10:29:52.000Z",
@@ -9409,6 +9683,7 @@
   {
    "id": "Cointelegraph:Standard Chartered launches spot Bitcoin and Ether trading in UAE",
    "title": "Standard Chartered launches spot Bitcoin and Ether trading in UAE",
+   "text": "Standard Chartered said it is the first major global bank to offer institutional access to spot Bitcoin and Ether trading in the UAE region.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/standard-chartered-bitcoin-ether-trading-uae?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T10:15:34.000Z",
@@ -9444,6 +9719,7 @@
   {
    "id": "CoinDesk:Australia is cracking down on crypto businesses as its strict new regulatory deadline nears",
    "title": "Australia is cracking down on crypto businesses as its strict new regulatory deadline nears",
+   "text": "Firms that miss the deadline could breach financial services law from Oct. 1 and face civil or criminal penalties.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/business/2026/09/03/australia-is-cracking-down-on-crypto-businesses-as-its-strict-new-regulatory-deadline-nears",
    "date": "2026-09-03T10:09:31.000Z",
@@ -9476,6 +9752,7 @@
   {
    "id": "Decrypt:Ukraine Busts Kyiv Crypto Drainer Ring Moving Up to $1M Monthly",
    "title": "Ukraine Busts Kyiv Crypto Drainer Ring Moving Up to $1M Monthly",
+   "text": "Fake investment ads on Telegram channels funneled EU victims to a lookalike exchange that emptied their wallets.",
    "source": "Decrypt",
    "url": "https://decrypt.co/377245/ukraine-busts-kyiv-crypto-drainer-ring-moving-up-to-1m-monthly",
    "date": "2026-09-03T09:53:41.000Z",
@@ -9509,6 +9786,7 @@
   {
    "id": "Cointelegraph:Coldcard hacker swaps stolen Bitcoin for ETH via THORChain",
    "title": "Coldcard hacker swaps stolen Bitcoin for ETH via THORChain",
+   "text": "The third-wave Coldcard exploiter moved about 10% of stolen funds through THORChain as researchers traced the assets to a new Ethereum address.",
    "source": "Cointelegraph",
    "url": "https://cointelegraph.com/news/coldcard-hacker-swaps-stolen-bitcoin-eth-thorchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
    "date": "2026-09-03T09:31:07.000Z",
@@ -9549,6 +9827,7 @@
   {
    "id": "Decrypt:Michigan Judge Bars Kalshi Sports Bets, Threatens $500K Daily Fine",
    "title": "Michigan Judge Bars Kalshi Sports Bets, Threatens $500K Daily Fine",
+   "text": "The order calls the prediction market platform a sports betting operation \"masquerading as an investment opportunity.\"",
    "source": "Decrypt",
    "url": "https://decrypt.co/377238/michigan-judge-bars-kalshi-sports-bets-threatens-500k-daily-fine",
    "date": "2026-09-03T08:47:34.000Z",
@@ -9581,6 +9860,7 @@
   {
    "id": "CNBC World:China's slowdown pushes New Zealand exporters to diversify away from their top buyer, RBNZ official tells CNBC",
    "title": "China's slowdown pushes New Zealand exporters to diversify away from their top buyer, RBNZ official tells CNBC",
+   "text": "New Zealand exporters are diverting shipments bound for China to new markets, as demand from the country's top buyer cools, a central bank official tells CNBC.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/03/china-new-zealand-dairy-agriculture-exports-slowdown-rbnz.html",
    "date": "2026-09-03T04:44:31.000Z",
@@ -9614,6 +9894,7 @@
   {
    "id": "The Block:Michigan court orders Kalshi to keep blocking sports prediction markets",
    "title": "Michigan court orders Kalshi to keep blocking sports prediction markets",
+   "text": "The injunction converts a temporary restraining order issued in June, and violations would result in a fine of $500,000 per day.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/regulation/2026-09-03-michigan-court-orders-kalshi-sports-prediction-markets-413422",
    "date": "2026-09-03T04:30:32.000Z",
@@ -9646,6 +9927,7 @@
   {
    "id": "CNBC World:The world appears to be entering a higher-rate era. Here’s who will pay the price",
    "title": "The world appears to be entering a higher-rate era. Here’s who will pay the price",
+   "text": "The bond sell-off is owed to a mix of high government debt issuance, an oil-price shock that has reignited inflation concerns, and expectations of higher rates.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/03/global-bond-yields-rising-treasuries-jgb-bunds.html",
    "date": "2026-09-03T04:20:20.000Z",
@@ -9678,6 +9960,7 @@
   {
    "id": "The Block:‘Much ado about nothing’: CFTC files to dismiss CME’s lawsuit over crypto perpetual futures",
    "title": "‘Much ado about nothing’: CFTC files to dismiss CME’s lawsuit over crypto perpetual futures",
+   "text": "The CFTC said CME lacks standing on its competitive-injury claims, as the exchange is free to list perp futures as a DCM.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/regulation/2026-09-02-cftc-dismiss-cme-413416",
    "date": "2026-09-03T03:39:02.000Z",
@@ -9710,6 +9993,7 @@
   {
    "id": "CNBC Economy:South Korea's semiconductor exports just tripled year-over-year. Is it too much of a good thing?",
    "title": "South Korea's semiconductor exports just tripled year-over-year. Is it too much of a good thing?",
+   "text": "If growth were to slow in the semiconductor sector, would the slowdown take the Korean economy with it?",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/09/03/south-korea-semiconductor-exports-surging-concerns.html",
    "date": "2026-09-03T01:11:41.000Z",
@@ -9742,6 +10026,7 @@
   {
    "id": "CNBC World:Why Hilton calls this Asian country the fastest-growing tourism market",
    "title": "Why Hilton calls this Asian country the fastest-growing tourism market",
+   "text": "Hilton says one Asian country is the most exciting global tourism market as regional travel surges.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/03/hilton-hotel-market-expansion-india-china-southeast-asia.html",
    "date": "2026-09-03T00:13:33.000Z",
@@ -9774,6 +10059,7 @@
   {
    "id": "CNBC World:Inside India newsletter: India’s economic growth is smashing forecasts, but its biggest stocks aren't feeling the love",
    "title": "Inside India newsletter: India’s economic growth is smashing forecasts, but its biggest stocks aren't feeling the love",
+   "text": "India's strong economic growth has surprised every quarter for the last year, but the performance of its key stock benchmarks has been deeply disappointing.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/03/india-nifty-sensex-manufacturing-economy-gdp.html",
    "date": "2026-09-03T00:08:50.000Z",
@@ -9806,6 +10092,7 @@
   {
    "id": "The Block:Anthony Armstrong, former CFO at Elon Musk’s xAI and X, joins Coinbase board",
    "title": "Anthony Armstrong, former CFO at Elon Musk’s xAI and X, joins Coinbase board",
+   "text": "Anthony Armstrong — no relation to Coinbase CEO Brian Armstrong — most recently served as CFO across xAI, X.AI Corp., and X Corp.",
    "source": "The Block",
    "url": "https://www.theblock.co/news/business/2026-09-02-anthony-armstrong-former-cfo-elon-musk-xai-x-joins-coinbase-board-413405",
    "date": "2026-09-02T21:03:53.000Z",
@@ -9838,6 +10125,7 @@
   {
    "id": "CNBC Economy:Private payrolls rose by 38,000 in August, less than expected, ADP reports",
    "title": "Private payrolls rose by 38,000 in August, less than expected, ADP reports",
+   "text": "Though job creation held positive, August was the smallest gain since January and reflective of a broader slowdown in the labor market.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/09/02/private-payrolls-rose-by-38000-in-august-fewer-than-expected-adp-reports.html",
    "date": "2026-09-02T14:30:10.000Z",
@@ -9874,6 +10162,7 @@
   {
    "id": "CNBC World:Scaramucci says he had 'Potomac fever' in the White House — and Bessent and Lutnick have it too",
    "title": "Scaramucci says he had 'Potomac fever' in the White House — and Bessent and Lutnick have it too",
+   "text": "\"You think you're smarter than the people that live in Washington, but Washington changes you, you don't change Washington,\" Anthony Scaramucci told CNBC.",
    "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/02/anthony-scaramucci-potomac-fever-bessent-lutnick.html",
    "date": "2026-09-02T06:37:08.000Z",
@@ -9906,6 +10195,7 @@
   {
    "id": "CNBC Economy:Euro zone inflation is back above 3%. Higher interest rates are likely to follow",
    "title": "Euro zone inflation is back above 3%. Higher interest rates are likely to follow",
+   "text": "The European Central Bank is seen hiking rates in September as the Iran war raises energy costs in the region.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/09/01/euro-zone-inflation-rate-hike.html",
    "date": "2026-09-01T10:50:27.000Z",
@@ -9938,6 +10228,7 @@
   {
    "id": "CNBC Economy:Bank of England chief warns new AI models threaten global financial stability",
    "title": "Bank of England chief warns new AI models threaten global financial stability",
+   "text": "Bank of England Governor Andrew Bailey has warned that frontier AI could materially increase cyber risks to the global financial system.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/08/31/bailey-frontier-ai-financial-stability-risk.html",
    "date": "2026-08-31T13:35:11.000Z",
@@ -9970,6 +10261,7 @@
   {
    "id": "CNBC Economy:India’s economy expands 7.8% in fiscal first quarter, beating estimates",
    "title": "India’s economy expands 7.8% in fiscal first quarter, beating estimates",
+   "text": "The economy was driven by a strong performance in the financial, real estate, information technology and professional services sectors.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/08/31/india-economy-gdp-energy-el-nino.html",
    "date": "2026-08-31T11:23:42.000Z",
@@ -10002,6 +10294,7 @@
   {
    "id": "CNBC Economy:China's factory activity shrinks for second straight month, contracting less than expected",
    "title": "China's factory activity shrinks for second straight month, contracting less than expected",
+   "text": "China's manufacturing activity shrank for a second straight month, keeping pressure on Beijing to support the economy as growth loses momentum.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/08/31/china-pmi-august-economy-slowdown.html",
    "date": "2026-08-31T03:15:01.000Z",
@@ -10035,6 +10328,7 @@
   {
    "id": "CNBC Economy:Singapore tackles finances and culture to avert a demographic crisis",
    "title": "Singapore tackles finances and culture to avert a demographic crisis",
+   "text": "One challenge for policy makers is that success on many measures won't show up immediately.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/08/31/singapore-ndr-childcare-incentives-demographic-crisis-.html",
    "date": "2026-08-30T23:31:15.000Z",
@@ -10067,6 +10361,7 @@
   {
    "id": "CNBC Economy:K, C or E? Why economists can’t agree on the shape of today’s economy",
    "title": "K, C or E? Why economists can’t agree on the shape of today’s economy",
+   "text": "Economists have long viewed the post-pandemic economy as \"K\"-shaped. That consensus has now evaporated.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/08/29/k-shaped-economy-c-shaped-e-shape.html",
    "date": "2026-08-29T20:22:12.000Z",
@@ -10099,6 +10394,7 @@
   {
    "id": "CNBC Economy:Fed Chairman Warsh expresses concern about inflation, advocates for 'quieter' central bank",
    "title": "Fed Chairman Warsh expresses concern about inflation, advocates for 'quieter' central bank",
+   "text": "He used the speech to outline his philosophy on policymaking while carefully sidestepping any signals",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html",
    "date": "2026-08-28T16:11:51.000Z",
@@ -10132,6 +10428,7 @@
   {
    "id": "CNBC Economy:Fed's Hammack says 'now is the time to act' on raising interest rates",
    "title": "Fed's Hammack says 'now is the time to act' on raising interest rates",
+   "text": "She still thinks the Fed needs to take action against inflation that is straining household budgets.",
    "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/08/27/feds-hammack-says-now-is-the-time-to-act-on-raising-interest-rates.html",
    "date": "2026-08-27T17:31:09.000Z",
