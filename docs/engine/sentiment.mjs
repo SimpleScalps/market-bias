@@ -1,5 +1,5 @@
 import { matchEvent } from './events.mjs';
-import { KEYWORDS, GEOPOLITICS, DEESKALATION, DEESKALATION_GESCHEITERT, NUR_GEFORDERT } from './keywords.mjs';
+import { KEYWORDS, GEOPOLITICS, DEESKALATION, DEESKALATION_GESCHEITERT, NUR_GEFORDERT, KRIEG_BILDLICH } from './keywords.mjs';
 import { extractNumbers } from './numeric.mjs';
 import { countryRelevance, centralBankWeight, emergingMarketDamping } from './relevance.mjs';
 
@@ -272,7 +272,21 @@ export function scoreHeadline(rohTitel, regime = 'policy') {
   const friedlich = DEESKALATION.test(title) && !DEESKALATION_GESCHEITERT.test(title);
 
   let geoTreffer = false;
+  /*
+   * Ist "Krieg" hier bildlich gemeint?
+   *
+   * Dann traegt die Eskalationsregel nicht - sie stuetzt sich allein auf das
+   * Wort. Andere geopolitische Signale bleiben unberuehrt: Steht neben dem
+   * Bild ein Raketenangriff, ist der Angriff trotzdem einer.
+   */
+  const bildlich = KRIEG_BILDLICH.test(t);
+
   for (const g of GEOPOLITICS) if (g.re.test(t)) {
+    // Die Eskalationsregel ist die einzige, die auf "war" allein anspringt.
+    // Die Eskalationsregel ist die einzige, die auf das blosse Wort anspringt;
+    // andere Signale bleiben unberuehrt. Steht neben dem Bild ein
+    // Raketenangriff, ist der Angriff trotzdem einer.
+    if (bildlich && g.label === 'Eskalation') continue;
     geoTreffer = true;
     if (friedlich) {
       risk += g.weight * 0.7;   // Entspannung wirkt schwächer als eine Eskalation

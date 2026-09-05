@@ -85,11 +85,39 @@ export const DEESKALATION_GESCHEITERT = /\b(fail\w*|collapse[sd]?|break(s|ing)? 
  */
 export const NUR_GEFORDERT = /\b(unless|if\b|should\b|must\b|calls? for|demand(s|ed|ing)?|urges?|urging|pressur(e|es|ing)|push(es|ing)? for|wants?|wanted|insists?|threat(en(s|ed|ing)?)?|hopes? for|expects? (a )?cut|forderung)\b/i;
 
+/*
+ * "Krieg" als Bild, nicht als Krieg.
+ *
+ * Die Eskalationsregel greift auf das blosse Wort "war" - und wertete damit
+ * "Meet the CISO: A new front line star in the AI cybersecurity war" als
+ * bearish fuer Bitcoin. Gemeint ist dort ein Berufsfeld, kein Konflikt.
+ *
+ * Die Wendungen unten sind durchweg uebertragen gebraucht: Preiskampf,
+ * Bieterwettstreit, Formatstreit, Wortgefecht. Sie stehen haeufig in
+ * Wirtschaftsmeldungen und haben mit Risikoaversion nichts zu tun.
+ *
+ * Bewusst nicht dabei: "trade war". Ein Handelskrieg bewegt die Maerkte
+ * tatsaechlich, und dafuer gibt es weiter oben eine eigene Regel.
+ */
+export const KRIEG_BILDLICH =
+  /\b(?:cyber\w*|price|pricing|bidding|talent|hiring|streaming|format|browser|console|chip|ai|tech|meme|marketing|ad|content|patent|turf)[\s-]+wars?\b|\bwars?\s+(?:of\s+words|chest|room)\b|\bwar\s+on\s+(?:drugs|poverty|cash|talent|waste|terror)\b/i;
+
 // Geopolitik wirkt praktisch immer risk-off.
 export const GEOPOLITICS = [
   { re: /\b(missile|air ?strike|airstrike|bomb\w*|shelling)\b/, weight: 0.55, label: 'Militärschlag', labelEn: 'military strike' },
+  /*
+   * Waffengattung plus Wirkung.
+   *
+   * "Russian drone strikes Ukraine's security service headquarters" blieb ohne
+   * Wertung: "drone strike" stand nirgends, "air strike" trifft es nicht. Die
+   * Waffengattung voranzustellen haelt die Regel eng - ein Arbeitskampf
+   * ("dock workers strike") loest sie nicht aus.
+   */
+  { re: /\b(drone|missile|rocket|artillery|air)s?[\s-]+(strike|attack|barrage)s?\b/, weight: 0.5, label: 'Militärschlag', labelEn: 'military strike' },
+  { re: /\bstrike[sd]?\s+(on|against)\s+\w/, weight: 0.45, label: 'Militärschlag', labelEn: 'military strike' },
   { re: /\b(invasion|invade[sd]?|offensive launched)\b/, weight: 0.6, label: 'Invasion', labelEn: 'invasion' },
   { re: /\b(war|conflict|hostilities|escalat\w+)\b/, weight: 0.4, label: 'Eskalation', labelEn: 'escalation' },
   { re: /\b(nuclear|retaliat\w+|preemptive (strike|operation))\b/, weight: 0.5, label: 'Vergeltungsdrohung', labelEn: 'retaliation threat' },
-  { re: /\b(attack|assault) on\b/, weight: 0.45, label: 'Angriff', labelEn: 'attack' },
+  // Mit Plural: "Russian attacks on Ukraine" fiel sonst durch.
+  { re: /\b(attacks?|assaults?|raids?) on\b/, weight: 0.45, label: 'Angriff', labelEn: 'attack' },
 ];

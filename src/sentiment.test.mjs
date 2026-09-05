@@ -196,3 +196,55 @@ test('Gefordert ist nicht beschlossen', () => {
   assert.ok(scoreHeadline('Fed cuts rates by 25 basis points').scores.crypto > 0.5);
   assert.ok(scoreHeadline('Fed signals rate hike in September').scores.crypto < -0.5);
 });
+
+// ── Krieg als Bild, und echte Konflikte, die durchfielen ──────────────────
+
+test('"Krieg" im übertragenen Sinn ist keine Eskalation', () => {
+  // Die Regel griff auf das blosse Wort und wertete eine Meldung über
+  // IT-Sicherheitschefs als bearish für Bitcoin.
+  for (const t of [
+    'Meet the CISO: A new front line star in the AI cybersecurity war',
+    'Netflix and Disney escalate streaming war with price cuts',
+    'Chipmakers locked in a price war over AI accelerators',
+    'Trump and Powell trade a war of words',
+  ]) {
+    const r = scoreHeadline(t, 'policy');
+    assert.equal(label(r?.scores?.crypto ?? 0), 'neutral', t);
+  }
+});
+
+test('Ein echter Krieg bleibt eine Eskalation', () => {
+  const r = scoreHeadline('Iran war live: oil tanker reported hit by missiles', 'policy');
+  assert.ok((r?.scores?.crypto ?? 0) < -0.2, 'muss bearish bleiben');
+});
+
+test('Angriffe im Plural und Drohnenschläge werden erkannt', () => {
+  // Das Muster verlangte den Singular; "Russian attacks on Ukraine" fiel
+  // durch und stand ohne Wertung in der Liste - also unsichtbar.
+  for (const t of [
+    'At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow',
+    'Russian drone strikes Ukraine\u2019s security service headquarters',
+    'Russia hits Ukrainian security headquarters in drone attack',
+  ]) {
+    const r = scoreHeadline(t, 'policy');
+    assert.ok((r?.scores?.crypto ?? 0) < -0.2, t);
+  }
+});
+
+test('Ein Arbeitskampf ist kein Militärschlag', () => {
+  const r = scoreHeadline('Dock workers strike at Los Angeles port enters second week', 'policy');
+  assert.equal(label(r?.scores?.crypto ?? 0), 'neutral');
+});
+
+test('Gewalt ohne Marktbezug bleibt ohne Wertung', () => {
+  // Tragisch, aber für den Kryptomarkt ohne Belang - die Länderrelevanz
+  // muss das auffangen, sonst fluten Regionalmeldungen die Liste.
+  for (const t of [
+    'Bolivian military barracks explosion kills at least 10',
+    'At least five killed in Sudan\u2019s South Kordofan in attack by rebel group',
+    'Mudslide in eastern China kills one, leaves 11 missing',
+  ]) {
+    const r = scoreHeadline(t, 'policy');
+    assert.equal(label(r?.scores?.crypto ?? 0), 'neutral', t);
+  }
+});
