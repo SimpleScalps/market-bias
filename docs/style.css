@@ -179,11 +179,6 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
   color:var(--accent);border:1px solid var(--accent);border-radius:2px;padding:1px 4px
 }
 
-.setup{
-  background:none;border:1px solid var(--line-2);border-radius:2px;color:var(--dim);
-  font-family:var(--mono);font-size:9px;letter-spacing:.1em;
-  padding:4px 9px;margin:7px 0;cursor:pointer
-}
 .setup:active{border-color:var(--accent);color:var(--accent)}
 
 /* ================= Helles Design ================= */
@@ -212,9 +207,7 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
   background:var(--panel);border:1px solid var(--line);border-radius:4px
 }
 .tagesKopf{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
-.tagesTitel{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--accent)}
 .tagesDatum{font-family:var(--mono);font-size:9.5px;color:var(--faint);font-variant-numeric:tabular-nums}
-.tagesWert{display:flex;align-items:center;gap:10px}
 .meter.gross{height:6px;border-radius:3px}
 .tagesZahl{font-family:var(--mono);font-size:12px;color:var(--dim);
   font-variant-numeric:tabular-nums;min-width:44px;text-align:right}
