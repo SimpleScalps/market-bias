@@ -110,6 +110,39 @@ const AUFGABE = {
  * Faellt auf den Modellnamen zurueck: In einem frisch gestarteten Isolat ist
  * die Zuordnung noch leer, weil sie erst bei der ersten Anfrage entsteht.
  */
+/*
+ * Wie lange eine abgelegte Stoerung noch als solche gilt.
+ *
+ * Im Durable Object bleibt sie bis zum Tageswechsel stehen. Ohne Verfallszeit
+ * stuende ein einzelner Aussetzer von heute Morgen noch am Abend in der
+ * Stoerungsliste, obwohl seither alles laeuft - eine Warnung, die nichts mehr
+ * meint, wird schnell zu einer, die man nicht mehr liest.
+ */
+const STOERUNG_GILT_MS = 30 * 60_000;
+
+/**
+ * Bucht, was seit dem letzten Abholen an Groq ging.
+ *
+ * Der Zaehler in deuten.mjs ist prozesslokal. Eine eigene Frage laeuft aber in
+ * einem anderen Isolat als der Abgleich, der ihn frueher als Einziger geleert
+ * hat - was dort verbraucht wurde, tauchte in keiner Rechnung auf. Deshalb
+ * bucht jetzt jeder Weg selbst, unmittelbar nachdem er Groq bemueht hat.
+ */
+function tokenBuchen(env, ctx, zusatz = 0) {
+  const frisch = verbrauchAbholen() + zusatz;
+  if (frisch) ctx.waitUntil(zustand(env, { tokens: frisch }));
+  return frisch;
+}
+
+/** Gibt die Stoerung zurueck, solange sie frisch genug ist - sonst null. */
+function frischeStoerung(...kandidaten) {
+  for (const st of kandidaten) {
+    if (!st || typeof st !== 'object' || !st.zeit) continue;
+    if (Date.now() - new Date(st.zeit).getTime() < STOERUNG_GILT_MS) return st;
+  }
+  return null;
+}
+
 function aufgabeVon(modell, gebucht = null) {
   const belegung = { ...(gebucht || {}), ...gewaehlteModelle };
   const zwecke = Object.entries(belegung)
@@ -645,7 +678,15 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * Nur hier ist bekannt, dass wir sie zum ersten Mal sehen - eine Zeile
    * spaeter waere sie nicht mehr von den uebrigen zu unterscheiden.
    */
-  const verzug = { ...(bestand?.verzug || {}) };
+  /*
+   * Der bisherige Stand kommt aus beiden Ablagen.
+   *
+   * Der Bestand in KV friert ein, sobald das Tageskontingent erschoepft ist;
+   * das Durable Object laeuft weiter. Nur der Bestand als Grundlage hiesse:
+   * Alles, was seit dem letzten gelungenen Schreibvorgang gemessen wurde,
+   * faellt beim naechsten Buchen wieder heraus.
+   */
+  const verzug = { ...(bestand?.verzug || {}), ...(z.verzug || {}) };
   for (const n of kandidaten) {
     const ms = Date.now() - new Date(n.date).getTime();
     if (!(ms >= 0 && ms < VERZUG_MAX_MS)) continue;   // unbrauchbarer Zeitstempel
@@ -721,8 +762,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * Alles, was seit dem letzten Mal an Groq ging - gleich aus welchem Weg.
    * Der Zaehler steht in deuten.mjs, wo jede Antwort durchlaeuft.
    */
-  const frisch = verbrauchAbholen() + uebersetzungsTokens;
-  uebersetzungsTokens = 0;
+  const frisch = verbrauchAbholen();
   tokenSeitStart += frisch;
   budget.verbraucht += frisch;
   if (frisch) ctx.waitUntil(zustand(env, { tokens: frisch }));
@@ -804,6 +844,9 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ticks: (() => {
       const zusammen = {
         ...(bestand?.ticks || {}),
+        // Aus demselben Grund wie beim Verzug: KV kann eingefroren sein.
+        // Sonst verschwand ein Taktgeber aus der Anzeige, obwohl er lief.
+        ...(z.ticks || {}),
         ...taktVermerk,
         [quelle]: {
           zeit: new Date().toISOString(),
@@ -871,8 +914,17 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     // Der Zeitpunkt des letzten Fehlschlags gehoert dorthin, wo ihn jeder
     // Aufruf sieht - im Isolat sah ihn nur der, in dem er passiert war.
     ...(letzterAblageFehler ? { letzteAblageStoerung: letzterAblageFehler } : {}),
-    ticks: data.ticks,
-    verzug: data.verzug,
+    ...(letzterVersandbuchFehler ? { letzteVersandStoerung: letzterVersandbuchFehler } : {}),
+    /*
+     * Zusammenfuehren, nicht ersetzen.
+     *
+     * Diese Felder sind Objekte, und das Durable Object ersetzt Objekte als
+     * Ganzes. Kam der Wert nur aus dem eingefrorenen Bestand, loeschte jede
+     * Buchung die Eintraege wieder, die ein anderes Isolat beigesteuert hatte
+     * - der zweite Taktgeber verschwand so aus der Anzeige, obwohl er lief.
+     */
+    ticks: { ...(z.ticks || {}), ...data.ticks },
+    verzug: { ...(z.verzug || {}), ...data.verzug },
   };
   if (speicher.letzterNachlauf) buchung.letzterNachlauf = speicher.letzterNachlauf;
   ctx.waitUntil(zustand(env, buchung));
@@ -1059,7 +1111,6 @@ function meldenswert(items, abo) {
 let letzterVersandbuchFehler = null;
 
 // Verbrauch der Uebersetzung, bis der naechste Durchgang ihn mitverbucht.
-let uebersetzungsTokens = 0;
 
 /*
  * Bremsen, die ohne Ablage auskommen.
@@ -1117,6 +1168,9 @@ async function nochNichtGemeldet(env, items, nurLesen = false) {
   } catch (err) {
     console.log('Versandbuch:', err.message);
     letzterVersandbuchFehler = { zeit: new Date().toISOString(), fehler: err.message.slice(0, 120) };
+    // Ist das Versandbuch selbst gestoert, kann auch das hier fehlschlagen -
+    // zustand() faengt das ab und liefert null. Dann bleibt der Wert im Isolat.
+    await zustand(env, { letzteVersandStoerung: letzterVersandbuchFehler });
     return [];
   }
 }
@@ -1260,10 +1314,11 @@ export default {
          * passiert und hier schlicht unbekannt.
          */
         ablageSchreibt: (() => {
+          // Kuerzere Frist als bei der Stoerungsliste: Ob gerade geschrieben
+          // werden kann, ist eine Aussage ueber jetzt, keine Chronik.
           const st = zNow.letzteAblageStoerung || letzterAblageFehler;
-          if (!st) return 'ja';
-          const her = Date.now() - new Date(st.zeit).getTime();
-          return her > 10 * 60_000 ? 'ja' : `NEIN - ${st.fehler}`;
+          if (!st || Date.now() - new Date(st.zeit).getTime() > 10 * 60_000) return 'ja';
+          return `NEIN - ${st.fehler}`;
         })(),
         zweitmeinung: env.GROQ_KEY ? 'eingerichtet' : 'kein Schluessel',
         uebersetzung: env.GROQ_KEY ? 'Groq'
@@ -1277,10 +1332,21 @@ export default {
         schreibvorgaenge: `${zNow.schreibVersuche ?? 0} von ${ABLAGE_TAGESLIMIT}`
           + (zNow.schreibFehler ? ` — ${zNow.schreibFehler} abgewiesen` : '')
           + ((zNow.schreibVersuche ?? 0) >= ABLAGE_SPARSAM_AB ? ' · Sparbetrieb' : ''),
-        letzterTickFehler: letzterTickFehler ?? 'keiner seit dem Start',
-        letzterAblageFehler: letzterAblageFehler ?? 'keiner seit dem Start',
+        /*
+         * Alle drei aus dem Durable Object, mit dem eigenen Isolat als Notnagel.
+         *
+         * Vorher lasen sie nur den Arbeitsspeicher dieses Prozesses - und der
+         * hat nie geschrieben, nie getickt, nie gemeldet. Die Anzeige stand
+         * deshalb auf "keiner seit dem Start", waehrend der Zaehler daneben
+         * 25 abgewiesene Schreibvorgaenge auswies. Die Stoerungsliste der App
+         * haengt an genau diesen Feldern und blieb damit dauerhaft leer.
+         */
+        letzterTickFehler: frischeStoerung(zNow.letzteTickStoerung, letzterTickFehler)
+          ?? 'keiner seit dem Start',
+        letzterAblageFehler: frischeStoerung(zNow.letzteAblageStoerung, letzterAblageFehler)
+          ?? 'keiner seit dem Start',
         versandbuch: env.VERSANDBUCH
-          ? (letzterVersandbuchFehler ?? 'bereit')
+          ? (frischeStoerung(zNow.letzteVersandStoerung, letzterVersandbuchFehler) ?? 'bereit')
           : 'NICHT gebunden - Doppelmeldungen moeglich',
         /*
          * Gemessen an dem, was überhaupt geprüft wird.
@@ -1471,6 +1537,9 @@ export default {
       } catch (err) {
         console.log('Tick fehlgeschlagen:', err.message);
         letzterTickFehler = { zeit: new Date().toISOString(), quelle, fehler: err.message.slice(0, 200) };
+        // Auch hierhin, sonst kennt ihn nur dieses Isolat - und /health
+        // antwortet fast immer aus einem anderen.
+        ctx.waitUntil(zustand(env, { letzteTickStoerung: letzterTickFehler }));
         return json({ ok: false, quelle, fehler: err.message.slice(0, 300) });
       }
     }
@@ -1528,6 +1597,7 @@ export default {
         .map((n) => ({ titel: n.title, wertung: (n.scores[klasse] ?? 0).toFixed(2) }));
 
       const ergebnis = await tageslage(auswahl, klasse, env);
+      tokenBuchen(env, ctx);
       if (ergebnis?.lage) {
         await schreiben(env, ctx, LAGE_KEY, { ...vorhanden, [klasse]: ergebnis }, BESTAND_TTL);
       }
@@ -1587,7 +1657,7 @@ export default {
          * deshalb vom zentralen Zaehler nicht erfasst. uebersetze() meldet den
          * Verbrauch zurueck; hier wandert er in dieselbe Rechnung.
          */
-        uebersetzungsTokens += frisch.tokens || 0;
+        tokenBuchen(env, ctx, frisch.tokens || 0);
 
         // Beschneiden, sonst waechst der Eintrag ueber die Groessengrenze von KV.
         const schluessel = Object.keys(speicher);
@@ -1661,7 +1731,9 @@ export default {
       try {
         const { titel, text } = await request.json();
         if (!titel) return json({ fehler: 'keine Schlagzeile' }, 400);
-        const deutung = await deuten(titel, env, text);
+        // Zweitmeinung auf Knopfdruck - also aus dem Topf fuer eigene Fragen.
+        const deutung = await deuten(titel, env, text, 'interaktiv');
+        tokenBuchen(env, ctx);
         return json(deutung || { fehler: 'keine Antwort' }, deutung?.fehler ? 502 : 200);
       } catch (err) {
         return json({ fehler: err.message }, 400);
@@ -1687,6 +1759,7 @@ export default {
 
         // Bei einer Absage den Kontingentstand mitgeben: Ein Minutenlimit ist
         // nach einer Minute vorbei, ein Tageslimit erst morgen.
+        tokenBuchen(env, ctx);
         if (ergebnis.fehler) return json({ ...ergebnis, kontingent }, 502);
         return json(ergebnis);
       } catch (err) {
