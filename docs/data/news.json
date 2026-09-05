@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05T12:35:46.554Z",
+ "updated": "2026-09-05T12:38:04.813Z",
  "regime": "policy",
  "count": 179,
  "errors": [
@@ -1087,7 +1087,7 @@
   {
    "id": "Al Jazeera:At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow",
    "title": "At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow",
-   "text": "Ukraine and Russia announce a three-day limited ceasefire as US envoys visit Moscow, before trip to Kyiv.",
+   "text": "Ukrainian armed forces were ordered to follow a three-day ceasefire as US envoys visit Moscow, before trip to Kyiv.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/5/at-least-5-killed-in-russian-attacks-on-ukraine-as-us-envoys-visit-moscow?traffic_source=rss",
    "date": "2026-09-05T10:27:23.000Z",
@@ -1212,7 +1212,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2919,7 +2919,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 14,
+   "priority": 13,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6296,7 +6296,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 5,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
