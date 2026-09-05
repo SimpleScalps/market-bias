@@ -33,7 +33,12 @@ window.I18N = {
     zustandLaeuft: 'wird abgerufen …',
     zustandOhneWorker: 'Braucht die Live-Quelle oben.',
     zustandFehler: 'Worker antwortet nicht',
-    zSpeichern: 'Speichern', zSchreib: 'Schreibvorgänge heute',
+    zSpeichern: 'Speichern', zSchreib: 'Gelungen gespeichert',
+    zTakt: 'Taktgeber', zTaktKeiner: 'seit dem letzten Speichern keiner erfasst',
+    zVorMin: (m) => (m < 1 ? 'gerade eben' : m < 90 ? `vor ${Math.round(m)} Min` : `vor ${Math.round(m / 60)} Std`),
+    zSchreibHinweis: 'Gezählt werden nur gelungene Schreibvorgänge — der Zähler liegt selbst '
+      + 'im Speicher. Ist der blockiert, steht er still. Ein niedriger Wert heißt hier also '
+      + 'nicht, dass noch Kontingent frei wäre.',
     zBestand: 'Bestand', zGeprueft: 'Geprüfte Meldungen',
     zBudget: 'KI-Budget', zTicks: 'Zuletzt aufgefrischt',
     zJa: 'läuft', zNein: 'blockiert',
@@ -148,7 +153,11 @@ window.I18N = {
     zustandLaeuft: 'checking …',
     zustandOhneWorker: 'Requires the live source above.',
     zustandFehler: 'Worker not responding',
-    zSpeichern: 'Storage', zSchreib: 'Writes today',
+    zSpeichern: 'Storage', zSchreib: 'Writes that succeeded',
+    zTakt: 'Scheduler', zTaktKeiner: 'none recorded since the last save',
+    zVorMin: (m) => (m < 1 ? 'just now' : m < 90 ? `${Math.round(m)} min ago` : `${Math.round(m / 60)} h ago`),
+    zSchreibHinweis: 'Only successful writes are counted — the counter lives in storage itself. '
+      + 'While storage is blocked it stands still, so a low number here does not mean quota is left.',
     zBestand: 'Stored stories', zGeprueft: 'Checked stories',
     zBudget: 'AI budget', zTicks: 'Last refreshed',
     zJa: 'working', zNein: 'blocked',

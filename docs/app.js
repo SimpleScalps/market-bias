@@ -6,7 +6,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v31';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v32';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -1389,7 +1389,22 @@ async function zustandZeigen() {
   }
 
   const schreibt = String(d.ablageSchreibt || '').startsWith('ja');
+
+  /*
+   * Taktgeber zuerst — daran hängt alles andere.
+   *
+   * cron-job.org schaltet einen Auftrag nach genügend Fehlversuchen ab. Bleibt
+   * das unbemerkt, zeigt die App weiter Meldungen, nur keine neuen mehr; man
+   * sucht dann an der falschen Stelle. Älter als fünf Minuten ist auffällig.
+   */
+  const taktZeilen = (d.taktgeber || []).map((t) => {
+    const min = (Date.now() - new Date(t.zeit).getTime()) / 60000;
+    const art = min > 15 ? 'schlecht' : min > 5 ? 'lau' : 'gut';
+    return [`${T_.zTakt} · ${t.quelle}`, T_.zVorMin(min), art];
+  });
+
   const zeilen = [
+    ...(taktZeilen.length ? taktZeilen : [[T_.zTakt, T_.zTaktKeiner, 'lau']]),
     [T_.zSpeichern, schreibt ? T_.zJa : T_.zNein, schreibt ? 'gut' : 'schlecht'],
     [T_.zSchreib, d.schreibvorgaenge ?? '—', null],
     [T_.zBestand, `${d.meldungen ?? '—'} · ${d.alterSekunden ?? '?'} s`, null],
@@ -1401,9 +1416,8 @@ async function zustandZeigen() {
   box.innerHTML = zeilen.map(([k, v, art]) =>
     `<div class="zZeile"><span>${escape(k)}</span><b class="${art || ''}">${escape(String(v))}</b></div>`
   ).join('')
-    + (d.letzteTicks?.length
-        ? `<p class="zTicks">${escape(T_.zTicks)}: ${escape(d.letzteTicks[0])}</p>` : '')
-    + (schreibt ? '' : `<p class="zWarnung">${escape(T_.zHinweis)}</p>`);
+    + (schreibt ? '' : `<p class="zWarnung">${escape(T_.zHinweis)}</p>`
+        + `<p class="zTicks">${escape(T_.zSchreibHinweis)}</p>`);
   box.hidden = false;
 }
 

@@ -555,9 +555,14 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    *
    * KV erlaubt 1.000 am Tag, und die Grenze zu ueberschreiten faellt von
    * aussen nicht auf - es hoert einfach auf zu speichern. Der Zaehler faehrt
-   * im selben Objekt mit, kostet also nichts, und /health zeigt ihn an. Wer
-   * eine Quelle nachtraegt oder den Takt aendert, sieht am naechsten Tag
-   * unmittelbar, was das gekostet hat.
+   * im selben Objekt mit, kostet also nichts.
+   *
+   * Was er zaehlt, muss man wissen: nur GELUNGENE Schreibvorgaenge. Er liegt
+   * ja im abgelegten Bestand, und ihn zu erhoehen braucht selbst einen
+   * Schreibvorgang - ist das Kontingent erschoepft, steht er still. Ein
+   * niedriger Wert bei blockiertem Speichern heisst also nicht, dass noch
+   * Kontingent frei waere; er heisst, dass seit dem Einbau des Zaehlers kaum
+   * noch etwas durchkam. Aussagekraeftig wird er ab dem ersten vollen Tag.
    */
   const heute = new Date().toISOString().slice(0, 10);
   const zaehlerGilt = bestand?.schreibTag === heute;
@@ -887,7 +892,7 @@ export default {
         meldungen: bestand?.items?.length ?? 0,
         alterSekunden: Math.round(alterMs(bestand) / 1000),
         schreibvorgaenge: bestand?.schreibTag === new Date().toISOString().slice(0, 10)
-          ? `${bestand.schreibungen} heute (KV erlaubt 1.000)`
+          ? `${bestand.schreibungen} gelungen (KV erlaubt 1.000 am Tag)`
           : 'heute noch keiner',
         letzterTickFehler: letzterTickFehler ?? 'keiner seit dem Start',
         geprueft: bestand?.items
@@ -901,10 +906,17 @@ export default {
         urteile: Object.keys(urteilSpeicher?.urteile || {}).length,
         letzterNachlauf: urteilSpeicher?.letzterNachlauf ?? 'noch keiner',
         kontingent: kontingent ?? 'seit dem Start keine Anfrage an Groq',
-        letzteTicks: Object.entries(urteilSpeicher?.ticks || {})
-          .sort((a, b) => (b[1].zeit || '').localeCompare(a[1].zeit || ''))
-          .map(([q, t]) => `${q}: zuletzt ${t.zeit?.slice(11, 19)} UTC`
-            + ` | ${t.meldungen} Meldungen | ${t.offen} ungeprueft`),
+        /*
+         * Wer den Bestand auffrischt, mit Zeitstempel.
+         *
+         * cron-job.org schaltet einen Auftrag nach genuegend Fehlversuchen ab
+         * und meldet das per E-Mail - die man auch uebersehen kann. Ohne diese
+         * Zeile faellt ein stiller Taktgeber erst auf, wenn Meldungen
+         * ausbleiben, und dann sucht man an der falschen Stelle.
+         */
+        taktgeber: Object.entries(urteilSpeicher?.ticks || {})
+          .map(([quelle, t]) => ({ quelle, zeit: t.zeit, meldungen: t.meldungen, offen: t.offen }))
+          .sort((a, b) => (b.zeit || '').localeCompare(a.zeit || '')),
         // Ohne hinterlegtes Abo verschickt der Worker nichts. Zeigt nur, ob
         // und wohin - niemals Token oder Themennamen.
         abo: abo ? {
