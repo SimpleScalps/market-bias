@@ -1,15 +1,16 @@
 {
- "updated": "2026-09-05T01:17:17.032Z",
+ "updated": "2026-09-05T01:18:32.033Z",
  "regime": "policy",
- "count": 209,
+ "count": 192,
  "errors": [
-  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
+  "U.Today: fetch failed"
  ],
  "items": [
   {
-   "id": "Al Jazeera:EU official Marta Kos cancels Serbia trip over planned Mladic tribute",
-   "title": "EU official Marta Kos cancels Serbia trip over planned Mladic tribute",
-   "text": "EU enlargement chief condemns Ratko Mladic ‘glorification’ as incompatible with European values.",
+   "id": "Al Jazeera:Senior EU official cancels Serbia trip over planned tribute to Mladic",
+   "title": "Senior EU official cancels Serbia trip over planned tribute to Mladic",
+   "text": "EU's Marta Kos cancels Serbia visit, condemning Ratko Mladic 'glorification' as incompatible with European values.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/9/5/senior-eu-official-cancels-serbia-trip-over-planned-tribute-to-mladic?traffic_source=rss",
    "date": "2026-09-05T00:19:17.000Z",
@@ -38,43 +39,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "EU-Beamtin Marta Kos sagt Serbienreise wegen geplanter Mladic‑Ehrung ab"
-  },
-  {
-   "id": "U.Today:Binance Coin (BNB), Uniswap (UNI), Gram (GRAM) and ChainLink (LINK) Price Analysis for September 5: Memecoin and Altcoin Season Is Here",
-   "title": "Binance Coin (BNB), Uniswap (UNI), Gram (GRAM) and ChainLink (LINK) Price Analysis for September 5: Memecoin and Altcoin Season Is Here",
-   "text": "The current structure of the market might push altcoins and memecoins towards new heights.",
-   "source": "U.Today",
-   "url": "https://u.today/binance-coin-bnb-uniswap-uni-gram-gram-and-chainlink-link-price-analysis-for-september-5-memecoin",
-   "date": "2026-09-05T00:01:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 50,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": "Projekt-Update",
-   "eventTypeEn": "Project update",
-   "scope": "project",
-   "coins": [
-    "BNB"
-   ],
-   "alsoIn": [],
-   "titleDe": "Binance Coin (BNB), Uniswap (Uni), Gram (GRAMM) und ChainLink (LINK) Preisanalyse für den 5. September: Die Memecoin- und Altcoin-Saison ist da"
+   "titleDe": "Leitender EU-Beamter storniert Serbien-Reise wegen geplanter Hommage an Mladic"
   },
   {
    "id": "Al Jazeera:Iran war live: Trump says US may target Iran’s Pickaxe Mountain ‘very soon’",
@@ -849,42 +814,6 @@
    "titleDe": "Sabalenka unterbricht US Open Spiel gegen Rakhimova wegen Cannabisgeruch"
   },
   {
-   "id": "U.Today:Ripple Swell to Feature India's Former Central Bank Governor",
-   "title": "Ripple Swell to Feature India's Former Central Bank Governor",
-   "text": "Raghuram Rajan, the former governor of the Reserve Bank of India, will join Ripple’s Swell 2026 conference.",
-   "source": "U.Today",
-   "url": "https://u.today/ripple-swell-to-feature-indias-former-central-bank-governor",
-   "date": "2026-09-04T21:03:19.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 25,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "XRP"
-   ],
-   "alsoIn": [],
-   "titleDe": "Ripple Swell zeigt Indiens ehemaligen Zentralbankgouverneur"
-  },
-  {
    "id": "Al Jazeera:Liverpool beat Ipswich as Isak goals hand Iraola first Premier League win",
    "title": "Liverpool beat Ipswich as Isak goals hand Iraola first Premier League win",
    "text": "Bradley Barcola makes his debut as Alexander Isak scores both Liverpool goals in 2-0 win at Ipswich Town.",
@@ -1498,7 +1427,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1715,7 +1644,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: hawkish, Fed pause)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3172,40 +3101,6 @@
    "titleDe": "Europa wird von einer Sabotagekampagne heimgesucht - und Russland ist der Hauptverdächtige"
   },
   {
-   "id": "U.Today:'We Stand Behind Stock Tokens': Robinhood CEO Backs $104 Million Ecosystem Amid Backlash",
-   "title": "'We Stand Behind Stock Tokens': Robinhood CEO Backs $104 Million Ecosystem Amid Backlash",
-   "text": "Robinhood's Vlad Tenev backs the $104 million \"stock token\" market, defying AMC's legal threats over on-chain trading.",
-   "source": "U.Today",
-   "url": "https://u.today/we-stand-behind-stock-tokens-robinhood-ceo-backs-104-million-ecosystem-amid-backlash",
-   "date": "2026-09-04T16:31:45.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 18,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "\"Wir stehen hinter Aktien-Token\": Robinhood-CEO unterstützt 104 Millionen $ Ökosystem inmitten von Gegenreaktionen"
-  },
-  {
    "id": "BBC World:Trump's peace envoys to visit Moscow and Kyiv over weekend",
    "title": "Trump's peace envoys to visit Moscow and Kyiv over weekend",
    "text": "Steve Witkoff and Jared Kushner have led President Donald Trump's efforts to end the Russia-Ukraine war - but talks have stalled.",
@@ -3238,42 +3133,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Trumps Friedensgesandte besuchen Moskau und Kiew am Wochenende"
-  },
-  {
-   "id": "U.Today:Ripple Lands Major XRP Sponsorship Deal With Florida Gators",
-   "title": "Ripple Lands Major XRP Sponsorship Deal With Florida Gators",
-   "text": "Ripple has landed a multi-year partnership with the University of Florida’s athletic department.",
-   "source": "U.Today",
-   "url": "https://u.today/ripple-lands-major-xrp-sponsorship-deal-with-florida-gators",
-   "date": "2026-09-04T16:29:03.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 38,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "XRP"
-   ],
-   "alsoIn": [],
-   "titleDe": "Ripple landet großen XRP-Sponsoring-Deal mit Florida Gators"
   },
   {
    "id": "Decrypt:Zcash Hits Highest Price in Nearly a Decade, Crushing Short Bets",
@@ -3365,7 +3224,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 38,
+   "priority": 37,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3412,44 +3271,6 @@
    ],
    "alsoIn": [],
    "titleDe": "Wird die KI das Bitcoin-Mining vom Markt verdrängen?"
-  },
-  {
-   "id": "U.Today:Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
-   "title": "Binance Delisting Alert: Twelve Cryptocurrencies Face Exit",
-   "text": "Binance has listed twelve cryptocurrencies that it will remove from its crypto trading platform, specifically on Binance Alpha, later today.",
-   "source": "U.Today",
-   "url": "https://u.today/binance-delisting-alert-twelve-cryptocurrencies-face-exit",
-   "date": "2026-09-04T16:04:50.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Verbot/Delisting"
-   ],
-   "scores": {
-    "crypto": -0.65,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "why": "Direkt kryptonegative Nachricht. (Signale: Verbot/Delisting)",
-   "whyEn": "Directly crypto-negative news. (signals: ban or delisting)",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 48,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "high",
-   "duration": "intraday",
-   "eventType": "Listing",
-   "eventTypeEn": "Listing",
-   "scope": "coin",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Binance Delisting-Warnung: Zwölf Kryptowährungen stehen vor dem Ausstieg"
   },
   {
    "id": "BBC World:Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
@@ -3609,7 +3430,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 37,
+   "priority": 36,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3645,7 +3466,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3683,7 +3504,7 @@
    "whyEn": "Signal words point to easier policy — positive for risk assets. (signals: dovish)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -3986,47 +3807,6 @@
    "titleDe": "Der Schweizer Franken verliert an Boden bei den Nonfarm Payrolls in den USA"
   },
   {
-   "id": "U.Today:Crypto Treasury Fire Sale: Nasdaq's AIXC Dumps Bitcoin, XRP, Others for Robotics Pivot",
-   "title": "Crypto Treasury Fire Sale: Nasdaq's AIXC Dumps Bitcoin, XRP, Others for Robotics Pivot",
-   "text": "Nasdaq micro-cap AIXC dumps its crypto treasury for a robotics pivot, locking in a bruising 50% loss.",
-   "source": "U.Today",
-   "url": "https://u.today/crypto-treasury-fire-sale-nasdaqs-aixc-dumps-bitcoin-xrp-others-for-robotics-pivot",
-   "date": "2026-09-04T14:52:30.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": -0.4,
-   "signals": [
-    "Fed-Pause"
-   ],
-   "scores": {
-    "crypto": 0.4,
-    "stocks": 0.34,
-    "gold": 0.32,
-    "usd": -0.4
-   },
-   "why": "Signalwörter deuten auf lockerere Geldpolitik — positiv für Risk-Assets. (Signale: Fed-Pause)",
-   "whyEn": "Signal words point to easier policy — positive for risk assets. (signals: Fed pause)",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 42,
-   "label": "bullish",
-   "labelText": "Bullish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "BTC",
-    "XRP"
-   ],
-   "alsoIn": [],
-   "titleDe": "Krypto-Schatzkammer-Feuerverkauf: AIXC von Nasdaq entsorgt Bitcoin, XRP, andere für Robotik-Pivot"
-  },
-  {
    "id": "FXStreet:Canada: Gradual improvement outlook on labour market – RBC",
    "title": "Canada: Gradual improvement outlook on labour market – RBC",
    "text": "Royal Bank of Canada (RBC) economist Claire Fan notes Canada’s labour market lost 42,000 jobs in August, partly reversing earlier gains and leaving modest year-to-date job growth. She emphasizes structural factors like demographics and weaker immigration as key drags.",
@@ -4190,7 +3970,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: strong labour market)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 65,
+   "priority": 64,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -4258,7 +4038,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 15,
+   "priority": 14,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4553,78 +4333,6 @@
    "titleDe": "US-Dollar: Beschäftigungsstärke erhöht die Wanderungsquoten – ING"
   },
   {
-   "id": "U.Today:XRPL Wallet Breach: Users Urged to Halt Use Amid Security Update",
-   "title": "XRPL Wallet Breach: Users Urged to Halt Use Amid Security Update",
-   "text": "Critical security alert issued as XRP Ledger based wallet users get Hit by unauthorized transactions.",
-   "source": "U.Today",
-   "url": "https://u.today/xrpl-wallet-breach-users-urged-to-halt-use-amid-security-update",
-   "date": "2026-09-04T13:45:45.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Hack/Exploit"
-   ],
-   "scores": {
-    "crypto": -0.7,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "why": "Direkt kryptonegative Nachricht. (Signale: Hack/Exploit)",
-   "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 29,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "XRPL-Wallet-Verletzung: Benutzer werden aufgefordert, die Verwendung inmitten des Sicherheitsupdates einzustellen"
-  },
-  {
-   "id": "U.Today:Headline-Grabbing Robinhood Blockchain Stops Recording New Transactions",
-   "title": "Headline-Grabbing Robinhood Blockchain Stops Recording New Transactions",
-   "text": "Robinhood Chain appears to have suffered a network outage on Sept. 4, temporarily halting new block production.",
-   "source": "U.Today",
-   "url": "https://u.today/headline-grabbing-robinhood-blockchain-stops-recording-new-transactions",
-   "date": "2026-09-04T13:37:42.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 33,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Headline-Grabbing Robinhood Blockchain stoppt die Aufzeichnung neuer Transaktionen"
-  },
-  {
    "id": "CNBC World:Zscaler beats earnings expectations, issues upbeat guidance but stock falls",
    "title": "Zscaler beats earnings expectations, issues upbeat guidance but stock falls",
    "text": "CEO Jay Chaudhry said he's \"very bullish\" on Zscaler's agentic Zero Trust offering, which is gaining early momentum",
@@ -4797,43 +4505,6 @@
    "titleDe": "Körper des jüngsten traditionellen Königs der Welt kehrt inmitten einer Reihe von Nachfolgern nach Uganda zurück"
   },
   {
-   "id": "U.Today:XRP and Solana Cleared in Fresh SEC Nasdaq Order: Main Crypto News This Morning",
-   "title": "XRP and Solana Cleared in Fresh SEC Nasdaq Order: Main Crypto News This Morning",
-   "text": "Key crypto updates for Sep. 4: SEC clears XRP and Solana; a $566M short squeeze hits bears, and Zcash jumps above $1,000 on autonomous AI risks.",
-   "source": "U.Today",
-   "url": "https://u.today/xrp-and-solana-cleared-in-fresh-sec-nasdaq-order-main-crypto-news-this-morning",
-   "date": "2026-09-04T13:00:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 32,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "SOL",
-    "XRP"
-   ],
-   "alsoIn": [],
-   "titleDe": "XRP und Solana in Fresh SEC Nasdaq Order gecleart: Wichtigste Krypto-Nachrichten heute Morgen"
-  },
-  {
    "id": "CNBC World:Lululemon stock plunges 20% on disappointing earnings and outlook",
    "title": "Lululemon stock plunges 20% on disappointing earnings and outlook",
    "text": "Lululemon posted another quarter of disappointing results and a sales slowdown as the company struggles to turn its business around.",
@@ -4906,44 +4577,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "\"Wir erwarten, dass unsere Söhne getötet werden\", sagt der Vater eines Teenagers, der in der Westbank erschossen wurde, gegenüber BBC"
-  },
-  {
-   "id": "U.Today:Binance Adds Four Crypto Assets to Delisting Watch: Full List",
-   "title": "Binance Adds Four Crypto Assets to Delisting Watch: Full List",
-   "text": "Four crypto assets added to Binance's delisting roster with another 14 set to be axed on the Binance Alpha platform.",
-   "source": "U.Today",
-   "url": "https://u.today/binance-adds-four-crypto-assets-to-delisting-watch-full-list",
-   "date": "2026-09-04T12:35:10.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Verbot/Delisting"
-   ],
-   "scores": {
-    "crypto": -0.65,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "why": "Direkt kryptonegative Nachricht. (Signale: Verbot/Delisting)",
-   "whyEn": "Directly crypto-negative news. (signals: ban or delisting)",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 42,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "high",
-   "duration": "intraday",
-   "eventType": "Listing",
-   "eventTypeEn": "Listing",
-   "scope": "coin",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Binance fügt vier Krypto-Assets zur Delisting-Überwachung hinzu: Vollständige Liste"
   },
   {
    "id": "CoinDesk:U.S. added stronger than expected 162,000 jobs in August as labor market bounced back",
@@ -5058,40 +4691,6 @@
    "titleDe": "Der IWF sagt jetzt, dass Spenden das Bitcoin-Wachstum in El Salvador finanziert haben"
   },
   {
-   "id": "U.Today:Zcash (ZEC) Hits $1,000: Analyzing Next Steps Around Privacy Coin",
-   "title": "Zcash (ZEC) Hits $1,000: Analyzing Next Steps Around Privacy Coin",
-   "text": "ZCash is coming closer to the historic threshold despite the relatively bearish momentum.",
-   "source": "U.Today",
-   "url": "https://u.today/zcash-zec-hits-1000-analyzing-next-steps-around-privacy-coin",
-   "date": "2026-09-04T12:24:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 11,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Zcash (ZEC) Hits $ 1,000: Analyse der nächsten Schritte rund um die Datenschutzmünze"
-  },
-  {
    "id": "CNBC World:World's biggest sovereign wealth fund plans to cut U.S. Treasury holdings",
    "title": "World's biggest sovereign wealth fund plans to cut U.S. Treasury holdings",
    "text": "Norway's $2.3 trillion investment fund says it can diversify into new areas with greater risk and returns.",
@@ -5166,42 +4765,6 @@
     "CNBC"
    ],
    "titleDe": "Die US-Operation \"Economic Outcast\" gewinnt an Dynamik, da sich die EU den Sanktionen anschließt; Südkorea wiegt militärische Unterstützung"
-  },
-  {
-   "id": "U.Today:$7.26 Billion in August Alone: XRP Hits Six-Month High in Trading Volume",
-   "title": "$7.26 Billion in August Alone: XRP Hits Six-Month High in Trading Volume",
-   "text": "XRP saw a massive rebound in its trading activity as its spot trading volume across all exchanges reached its highest level since February.",
-   "source": "U.Today",
-   "url": "https://u.today/726-billion-in-august-alone-xrp-hits-six-month-high-in-trading-volume",
-   "date": "2026-09-04T12:11:55.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "XRP"
-   ],
-   "alsoIn": [],
-   "titleDe": "7,26 Mrd. $ allein im August: XRP erreicht Sechsmonatshoch im Handelsvolumen"
   },
   {
    "id": "The Block:Trezor says ShipMonk breach affected another 67,000 customers",
@@ -5943,42 +5506,6 @@
    "titleDe": "US-Dieselpreise erreichten ein Allzeithoch"
   },
   {
-   "id": "U.Today:Dogecoin to Erase Zero? $0.12 Target Emerges as Bull Flag Meets Multiple Signals",
-   "title": "Dogecoin to Erase Zero? $0.12 Target Emerges as Bull Flag Meets Multiple Signals",
-   "text": "$0.12 level has emerged as a key upside target from the current technical setup, potentially removing a zero from Dogecoin's price point.",
-   "source": "U.Today",
-   "url": "https://u.today/dogecoin-to-erase-zero-012-target-emerges-as-bull-flag-meets-multiple-signals",
-   "date": "2026-09-04T10:45:54.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 9,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "DOGE"
-   ],
-   "alsoIn": [],
-   "titleDe": "Dogecoin, um Null zu löschen? $ 0,12 Ziel taucht auf, wenn die Stierflagge auf mehrere Signale trifft"
-  },
-  {
    "id": "Cointelegraph:South Korean regulators introduce tokenized securities roadmap",
    "title": "South Korean regulators introduce tokenized securities roadmap",
    "text": "South Korea’s financial regulator introduced a three-phase roadmap for the issuance of tokenized assets, as the country prepares to adopt its first tokenized securities framework in February 2027.",
@@ -6117,40 +5644,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Andreessen Horowitz-gestützte OpenReserve sichert vorläufige OCC-Zulassung für Nationalbank-Charta"
-  },
-  {
-   "id": "U.Today:Shiba Inu (SHIB) Bullish Future Is Questioned Now",
-   "title": "Shiba Inu (SHIB) Bullish Future Is Questioned Now",
-   "text": "Shiba Inu was close to the recovery, but a severe volume drop leaves the rally unfueled.",
-   "source": "U.Today",
-   "url": "https://u.today/shiba-inu-shib-bullish-future-is-questioned-now",
-   "date": "2026-09-04T10:05:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 8,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Die bullische Zukunft von Shiba Inu (SHIB) wird jetzt in Frage gestellt"
   },
   {
    "id": "CoinDesk:Bitcoin clears $81,000 as privacy coins lead a broad crypto rally",
@@ -6437,42 +5930,6 @@
    "titleDe": "Wie könnte der Konflikt zwischen den USA und dem Iran enden? Drei Experten äußern sich"
   },
   {
-   "id": "U.Today:Satoshi-Era Bitcoin Holder Moves 2,571,899% Gain to Thwart New York Court Case",
-   "title": "Satoshi-Era Bitcoin Holder Moves 2,571,899% Gain to Thwart New York Court Case",
-   "text": "An active Satoshi-era wallet counters a $293B lawsuit by moving 40 BTC with a 2,571,899% gain, challenging claims of abandoned property.",
-   "source": "U.Today",
-   "url": "https://u.today/satoshi-era-bitcoin-holder-moves-2571899-gain-to-thwart-new-york-court-case",
-   "date": "2026-09-04T08:51:05.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "BTC"
-   ],
-   "alsoIn": [],
-   "titleDe": "Satoshi-Ära Bitcoin-Halter bewegt 2.571.899 % Gewinn, um New Yorker Gerichtsverfahren zu vereiteln"
-  },
-  {
    "id": "The Block:US bitcoin ETFs report the largest inflow day since January, worth $731 million",
    "title": "US bitcoin ETFs report the largest inflow day since January, worth $731 million",
    "text": "Analysts attributed Fed Governor Christopher Waller’s dovish comments to the significant inflow of capital into bitcoin products.",
@@ -6579,40 +6036,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "AMC-Aktie springt über Nacht um 21 %, da CEO Robinhood wegen \"unverschämter\" tokenisierter Aktien kritisiert"
-  },
-  {
-   "id": "U.Today:Cash Cat (CASHCAT) Hits Another ATH: Robinhood Memes Spike Up",
-   "title": "Cash Cat (CASHCAT) Hits Another ATH: Robinhood Memes Spike Up",
-   "text": "The market is witnessing rise of new generation of memes and Cash Cat is leading the way.",
-   "source": "U.Today",
-   "url": "https://u.today/cash-cat-cashcat-hits-another-ath-robinhood-memes-spike-up",
-   "date": "2026-09-04T07:55:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Cash Cat (CASHCAT) Hits Another ATH: Robinhood Memes Spike Up"
   },
   {
    "id": "CNBC World:Argentina's Milei escalates Falklands dispute as Trump questions U.S. support for Britain",
@@ -6953,42 +6376,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "CNBC Daily Open: Vance sagt, er würde Trumps Krieg mit dem Iran nicht als \"Krieg\" bezeichnen"
-  },
-  {
-   "id": "U.Today:Ripple's Garlinghouse: Making America Crypto Capital of the World Is 'Within Reach'",
-   "title": "Ripple's Garlinghouse: Making America Crypto Capital of the World Is 'Within Reach'",
-   "text": "Ripple CEO Brad Garlinghouse says the United States can still become the global “crypto capital.”.",
-   "source": "U.Today",
-   "url": "https://u.today/ripples-garlinghouse-making-america-crypto-capital-of-the-world-is-within-reach",
-   "date": "2026-09-04T06:15:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "XRP"
-   ],
-   "alsoIn": [],
-   "titleDe": "Ripple's Garlinghouse: Die Krypto-Hauptstadt der Welt ist \"in Reichweite\""
   },
   {
    "id": "CNBC World:India’s June quarter GDP print is courting controversy. Here’s why",
@@ -7408,7 +6795,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
