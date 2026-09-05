@@ -1,9 +1,11 @@
 {
- "updated": "2026-09-05T17:09:34.116Z",
+ "updated": "2026-09-05T17:11:16.418Z",
  "regime": "policy",
- "count": 110,
+ "count": 103,
  "errors": [
-  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
+  "CNBC Economy: fetch failed",
+  "CNBC World: fetch failed"
  ],
  "items": [
   {
@@ -109,40 +111,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "US-Botschafter in Moskau vor ukrainischen Gesprächen"
-  },
-  {
-   "id": "Al Jazeera:Haaland heads Man City to the top of Premier League with win over Coventry",
-   "title": "Haaland heads Man City to the top of Premier League with win over Coventry",
-   "text": "Norwegian scores only goal of unconvincing home win against newly promoted Coventry City.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/sports/2026/9/5/haaland-head-man-city-to-the-top-of-premier-league-with-win-over-coventry?traffic_source=rss",
-   "date": "2026-09-05T16:47:17.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Haaland führt Man City mit Sieg über Coventry an die Spitze der Premier League"
   },
   {
    "id": "CoinDesk:Dollar-backed stablecoins can push local currencies lower, Bank of Korea study finds",
@@ -425,6 +393,40 @@
    "titleDe": "Die USA sagen, dass sie nach Angriffen auf Kriegsschiffe drei iranische Öltanker getroffen haben"
   },
   {
+   "id": "CNBC:U.S. attacks 3 Iranian oil tankers after missiles target Navy warships",
+   "title": "U.S. attacks 3 Iranian oil tankers after missiles target Navy warships",
+   "text": "Three Iranian crude oil carriers were hit by U.S. forces on Saturday near Iran's key oil export hub, Kharg Island, in the Gulf, U.S. Central Command reported.",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/09/05/us-iran-oil-tankers-navy-missile-attack.html",
+   "date": "2026-09-05T15:43:08.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 43,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Die USA greifen 3 iranische Öltanker an, nachdem Raketen auf Kriegsschiffe der Marine gezielt haben"
+  },
+  {
    "id": "Al Jazeera:Israeli campaign of West Bank destruction moves on to region’s food basket",
    "title": "Israeli campaign of West Bank destruction moves on to region’s food basket",
    "text": "Palestinian farmland razed as violent Israeli settler expansion spreads into Area A of the occupied West Bank.",
@@ -446,7 +448,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -563,6 +565,40 @@
    "titleDe": "Der AMC-Kampf verwandelte sich in ein Branchenargument, mit dem das tokenisierte Aktienmodell gewinnt"
   },
   {
+   "id": "CNBC:Trump’s state capitalism comes to the oil industry with his unprecedented Venezuela deal",
+   "title": "Trump’s state capitalism comes to the oil industry with his unprecedented Venezuela deal",
+   "text": "The deal comes eight months after Washington ousted former President Nicolás Maduro in a military raid.",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/09/05/trump-venezuela-oil-north-america-blue-energy-partners-nabep.html",
+   "date": "2026-09-05T15:11:03.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 29,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Trumps Staatskapitalismus erreicht die Ölindustrie mit seinem beispiellosen Venezuela-Deal"
+  },
+  {
    "id": "Decrypt:Update Your Browser: Google Patches Chrome Flaw Hackers Were Already Using",
    "title": "Update Your Browser: Google Patches Chrome Flaw Hackers Were Already Using",
    "text": "The update fixes a high-severity flaw in Chrome’s V8 engine, but Google has not revealed who is using it or whom they targeted.",
@@ -631,42 +667,6 @@
    ],
    "alsoIn": [],
    "titleDe": "Solana dominiert die RWA-Ströme und zieht Nettoströme in Höhe von 348 Millionen $ ein"
-  },
-  {
-   "id": "CNBC World:U.S. attacks 3 Iranian oil tankers after missiles target Navy warships",
-   "title": "U.S. attacks 3 Iranian oil tankers after missiles target Navy warships",
-   "text": "Three Iranian crude oil carriers were hit by U.S. forces on Saturday near Iran's key oil export hub, Kharg Island, in the Gulf, U.S. Central Command reported.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/05/us-iran-oil-tankers-navy-missile-attack.html",
-   "date": "2026-09-05T15:00:03.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 43,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
-   "titleDe": "Die USA greifen 3 iranische Öltanker an, nachdem Raketen auf Kriegsschiffe der Marine gezielt haben"
   },
   {
    "id": "Al Jazeera:Multipolarity gives middle powers more choices, but fewer guarantees",
@@ -1140,7 +1140,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1257,6 +1257,40 @@
    "titleDe": "Cathie Wood sagt, dass die meisten Investoren dieses kritische Krypto-Token nicht schätzen"
   },
   {
+   "id": "Al Jazeera:Arsenal vs Chelsea: Premier League – prediction, teams, lineups",
+   "title": "Arsenal vs Chelsea: Premier League – prediction, teams, lineups",
+   "text": "Arsenal manager Mikel Arteta and Chelsea boss Xabi Alonso do battle in the Premier League for the first time on Sunday.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/2026/9/5/arsenal-vs-chelsea-premier-league-prediction-teams-lineups?traffic_source=rss",
+   "date": "2026-09-05T13:20:42.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 26,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Arsenal vs Chelsea: Premier League – Vorhersage, Teams, Aufstellungen"
+  },
+  {
    "id": "Decrypt:AI Just Solved a 350-Year-Old Math Problem By Writing the Longest Proof Ever",
    "title": "AI Just Solved a 350-Year-Old Math Problem By Writing the Longest Proof Ever",
    "text": "Anthropic says Claude spent 11 days turning Fermat's Last Theorem into 13 million lines of code a computer can check itself, no human trust required",
@@ -1359,14 +1393,14 @@
    "titleDe": "Robinhood-Kette erreicht Rekordvolumen von 3,7 Milliarden $ im 24-Stunden-Dex-Volumen"
   },
   {
-   "id": "CNBC World:Abel: Two ways Berkshire hopes to cash in on AI",
+   "id": "CNBC:Abel: Two ways Berkshire hopes to cash in on AI",
    "title": "Abel: Two ways Berkshire hopes to cash in on AI",
    "text": "Berkshire Hathaway CEO Greg Abel tells CNBC the company is pursuing AI opportunities on two paths.",
-   "source": "CNBC World",
+   "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/05/abel-two-ways-berkshire-hopes-in-cash-in-on-ai.html",
    "date": "2026-09-05T12:45:44.000Z",
    "tags": [
-    "Weltwirtschaft"
+    "Märkte"
    ],
    "impact": "low",
    "kind": "headline",
@@ -1389,9 +1423,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Abel: Auf zwei Arten hofft Berkshire, von KI zu profitieren"
   },
   {
@@ -1416,7 +1448,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 45,
+   "priority": 44,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1431,14 +1463,14 @@
    "titleDe": "Solana-Mitbegründer schlägt Robinhood-Kettengebühren, nennt Congestion Profits \"Brain Dead\""
   },
   {
-   "id": "CNBC World:This enhanced geothermal project aims to unlock gigawatts of power to fuel the data center boom",
+   "id": "CNBC:This enhanced geothermal project aims to unlock gigawatts of power to fuel the data center boom",
    "title": "This enhanced geothermal project aims to unlock gigawatts of power to fuel the data center boom",
    "text": "Power demand in the U.S. is rising. Fervo Energy bets that its project in Utah will prove that enhanced geothermal can be part of the power mix going forward.",
-   "source": "CNBC World",
+   "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/05/fervo-energys-enhanced-geothermal-project-aims-to-power-data-center-boom.html",
    "date": "2026-09-05T12:20:42.000Z",
    "tags": [
-    "Weltwirtschaft"
+    "Märkte"
    ],
    "impact": "low",
    "kind": "headline",
@@ -1461,56 +1493,18 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Dieses erweiterte Geothermieprojekt will Gigawatt an Strom freisetzen, um den Boom der Rechenzentren zu befeuern"
   },
   {
-   "id": "CNBC World:Trump’s state capitalism comes to the oil industry with his unprecedented Venezuela deal",
-   "title": "Trump’s state capitalism comes to the oil industry with his unprecedented Venezuela deal",
-   "text": "The deal comes eight months after Washington ousted former President Nicolás Maduro in a military raid.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/05/trump-venezuela-oil-north-america-blue-energy-partners-nabep.html",
-   "date": "2026-09-05T12:14:38.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 29,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
-   "titleDe": "Trumps Staatskapitalismus erreicht die Ölindustrie mit seinem beispiellosen Venezuela-Deal"
-  },
-  {
-   "id": "CNBC Economy:From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
+   "id": "CNBC:From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
    "title": "From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
    "text": "Despite rising prices and the travel industry focusing on the luxury segment, budget-minded vacationers are still finding ways to get away.",
-   "source": "CNBC Economy",
+   "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/05/budget-travel-vacation-costs.html",
    "date": "2026-09-05T12:14:21.000Z",
    "tags": [
-    "US-Wirtschaft"
+    "Märkte"
    ],
    "impact": "low",
    "kind": "headline",
@@ -1533,9 +1527,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Von „Mystery-Urlauben“ bis hin zu Hostels - preisbewusste Reisende werden bei steigenden Preisen sparsam"
   },
   {
@@ -1575,14 +1567,14 @@
    "titleDe": "XRP-Ledger-CTO weist auf steigende Änderungen hin, während XRPL ein neues Tool vorstellt"
   },
   {
-   "id": "CNBC World:GM vs. Ford: U.S. defense, energy sectors add to automakers' century-old rivalry",
+   "id": "CNBC:GM vs. Ford: U.S. defense, energy sectors add to automakers' century-old rivalry",
    "title": "GM vs. Ford: U.S. defense, energy sectors add to automakers' century-old rivalry",
    "text": "General Motors and Ford are looking for new potential growth areas, including by seeking military contracts and getting into energy storage businesses.",
-   "source": "CNBC World",
+   "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/05/gm-ford-defense-energy.html",
    "date": "2026-09-05T12:00:01.000Z",
    "tags": [
-    "Weltwirtschaft"
+    "Märkte"
    ],
    "impact": "low",
    "kind": "headline",
@@ -1605,20 +1597,18 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "GM vs. Ford: US-Verteidigung, Energiesektoren tragen zur jahrhundertealten Rivalität der Autohersteller bei"
   },
   {
-   "id": "CNBC World:Meet the CISO: A new front line star in the AI cybersecurity war",
+   "id": "CNBC:Meet the CISO: A new front line star in the AI cybersecurity war",
    "title": "Meet the CISO: A new front line star in the AI cybersecurity war",
    "text": "The OpenAI-Hugging Face agent hack sent shockwaves through the business world and helped put the chief information security officer into the spotlight.",
-   "source": "CNBC World",
+   "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/05/ai-cybersecurity-ciso-executive.html",
    "date": "2026-09-05T12:00:01.000Z",
    "tags": [
-    "Weltwirtschaft"
+    "Märkte"
    ],
    "impact": "low",
    "kind": "headline",
@@ -1641,9 +1631,7 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Lernen Sie den CISO kennen: Ein neuer Star an vorderster Front im KI-Cybersicherheitskrieg"
   },
   {
@@ -2211,40 +2199,6 @@
    "titleDe": "Der Mordprozess gegen Lindsay Clancy hat uns gespalten, ob sie Opfer oder Verbrecherin ist"
   },
   {
-   "id": "CNBC World:Italy's Meloni just hit a major political milestone. Former leaders say economic reform must follow",
-   "title": "Italy's Meloni just hit a major political milestone. Former leaders say economic reform must follow",
-   "text": "Italian Prime Minister Giorgia Meloni's government became the country's longest-serving cabinet since World War II on Friday.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/05/italy-meloni-bonds-debt.html",
-   "date": "2026-09-05T05:41:23.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 14,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Italiens Meloni erreicht wichtigen politischen Meilenstein. Ehemalige Politiker fordern wirtschaftliche Reformen"
-  },
-  {
    "id": "CoinDesk:XRP Ledger has fewer active accounts than last year, but bigger trades and more value",
    "title": "XRP Ledger has fewer active accounts than last year, but bigger trades and more value",
    "text": "Daily order-book traders fell about 40% from a year ago while volume rose 79%, as the value held on XRPL climbed above $4 billion.",
@@ -2281,14 +2235,14 @@
    "titleDe": "XRP Ledger hat weniger aktive Konten als im Vorjahr, aber größere Trades und mehr Wert"
   },
   {
-   "id": "CNBC World:From Trump’s takeover threats to a ‘northern neighborhood,’ why the EU chief is going to Greenland",
+   "id": "CNBC:From Trump’s takeover threats to a ‘northern neighborhood,’ why the EU chief is going to Greenland",
    "title": "From Trump’s takeover threats to a ‘northern neighborhood,’ why the EU chief is going to Greenland",
    "text": "The visit comes as Trump renews his push for greater U.S. control of the self-governing Danish territory.",
-   "source": "CNBC World",
+   "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/05/eu-greenland-von-der-leyen-trump-arctic.html",
    "date": "2026-09-05T05:00:01.000Z",
    "tags": [
-    "Weltwirtschaft"
+    "Märkte"
    ],
    "impact": "low",
    "kind": "headline",
@@ -2302,7 +2256,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2311,9 +2265,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Von Trumps Übernahmewarnungen bis zum ‚nördlichen Viertel‘ – warum der EU-Chef nach Grönland reist"
   },
   {
@@ -2338,7 +2290,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3130,40 +3082,6 @@
    "titleDe": "Überraschender Druck von Gehaltsabrechnungen außerhalb der Landwirtschaft sendet Bitcoin unter 80.000 zurück"
   },
   {
-   "id": "CNBC World:Tesla's stock drops 6% as Cybercab update 'underwhelms' Wall Street",
-   "title": "Tesla's stock drops 6% as Cybercab update 'underwhelms' Wall Street",
-   "text": "Tesla's long-awaited Cybercab update failed to dazzle investors.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/04/teslas-stock-drops-as-cybercab-update-underwhelms-nhtsa-probe.html",
-   "date": "2026-09-04T20:06:13.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Teslas Aktie sinkt um 6 %, da das Cybercab-Update die Wall Street „unterfordert“"
-  },
-  {
    "id": "FXStreet:Chinese Yuan: Services PMI rebound keeps PBoC cautious – Commerzbank",
    "title": "Chinese Yuan: Services PMI rebound keeps PBoC cautious – Commerzbank",
    "text": "Commerzbank says China’s August Services PMI rebound highlights some resilience in private-sector activity, but weak retail sales, soft inflation and higher unemployment still point to fragile domestic demand.",
@@ -3413,45 +3331,6 @@
    "titleDe": "FinCEN bindet $ 13B in Krypto-Betrügereien an Nicht-US-Operationen"
   },
   {
-   "id": "CNBC World:Trump doubles down on threat to halt trade with top partners unless Fed cuts rates",
-   "title": "Trump doubles down on threat to halt trade with top partners unless Fed cuts rates",
-   "text": "President Donald Trump demanded that the Fed slash interest rates or else he will cut off trade with countries with which the U.S. maintains trade deficits.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/04/trump-fed-rates-jobs-trade.html",
-   "date": "2026-09-04T19:17:03.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": -0.112,
-   "signals": [
-    "Zinssenkung",
-    "Handelskonflikt"
-   ],
-   "scores": {
-    "crypto": -0.293,
-    "stocks": -0.309,
-    "gold": 0.292,
-    "usd": 0.023
-   },
-   "why": "Signalwörter deuten auf lockerere Geldpolitik — positiv für Risk-Assets. Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Zinssenkung, Handelskonflikt)",
-   "whyEn": "Signal words point to easier policy — positive for risk assets. Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: rate cut, trade conflict)",
-   "category": "fed",
-   "categoryLabel": "Notenbank",
-   "priority": 55,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": "Partnerschaft",
-   "eventTypeEn": "Partnership",
-   "scope": "project",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Trump verdoppelt Drohung, Handel mit wichtigsten Partnern zu stoppen, wenn die Fed die Zinsen nicht senkt"
-  },
-  {
    "id": "Decrypt:Crypto Traders Are Pairing Meme Coins With Stocks on Robinhood—And It's Working (Sort Of)",
    "title": "Crypto Traders Are Pairing Meme Coins With Stocks on Robinhood—And It's Working (Sort Of)",
    "text": "A meme coin called BONER cornered half of Hims &amp; Hers Health's tokenized shares on Robinhood's new blockchain. It started a new trend that's spreading fast.",
@@ -3520,40 +3399,6 @@
    "titleDe": "Eurozone: Inflation über Ziel bis 2027 – Nordea"
   },
   {
-   "id": "CNBC World:Longtime Fox News host Maria Bartiromo disputes reports of termination",
-   "title": "Longtime Fox News host Maria Bartiromo disputes reports of termination",
-   "text": "Maria Bartiromo, the longtime host of Fox News and Fox Business programming, has disputed reports she was fired from the cable TV networks.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/04/maria-bartiromo-fox-news-termination.html",
-   "date": "2026-09-04T18:37:56.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Die langjährige Moderatorin von Fox News, Maria Bartiromo, bestreitet Berichte über die Kündigung"
-  },
-  {
    "id": "The Block:President Trump says he wants Hyperliquid to enter the US — here’s how it could happen",
    "title": "President Trump says he wants Hyperliquid to enter the US — here’s how it could happen",
    "text": "President Trump says his administration is working to bring Hyperliquid into the U.S., raising a deceptively simple question: How?",
@@ -3620,40 +3465,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Folgendes ist heute in Krypto passiert"
-  },
-  {
-   "id": "CNBC Economy:Women accounted for almost all of job gains in August. Here's why",
-   "title": "Women accounted for almost all of job gains in August. Here's why",
-   "text": "Women accounted for virtually all of August's payroll gains, the latest sign of their growing power in the labor market.",
-   "source": "CNBC Economy",
-   "url": "https://www.cnbc.com/2026/09/04/jobs-report-women-payrolls.html",
-   "date": "2026-09-04T18:27:39.000Z",
-   "tags": [
-    "US-Wirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Auf Frauen entfielen im August fast alle Stellenzuwächse. Hier ist, warum"
   },
   {
    "id": "FXStreet:Fed’s Hammack says policy is not restrictive enough",
@@ -3728,40 +3539,6 @@
    "titleDe": "Türkei: CBRT wird wahrscheinlich vor zwei Zinssenkungen im vierten Quartal gehalten - ING"
   },
   {
-   "id": "CNBC World:White House has vetted candidates for key CFTC vacancies, sources tell CNBC. It's unclear if they will be filled",
-   "title": "White House has vetted candidates for key CFTC vacancies, sources tell CNBC. It's unclear if they will be filled",
-   "text": "Filling open commissioner positions at the regulatory agency has been a sticking point in negotiations over the Clarity Act.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/04/white-house-has-vetted-candidates-for-key-cftc-vacancies-sources-tell-cnbc.html",
-   "date": "2026-09-04T17:53:07.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Das Weiße Haus hat Kandidaten für wichtige CFTC-Stellenangebote überprüft, so Quellen gegenüber CNBC. Es ist unklar, ob sie gefüllt werden"
-  },
-  {
    "id": "Cointelegraph:Crypto Biz: AI took a back seat when Bitcoin started climbing",
    "title": "Crypto Biz: AI took a back seat when Bitcoin started climbing",
    "text": "Corporate crypto bets are getting bigger as rising markets reward direct exposure, putting balance-sheet strategies and institutional adoption back in focus.",
@@ -3830,48 +3607,10 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "A16z-gestützte OpenReserve erhält Genehmigung für Full-Service-Nationalbank"
-  },
-  {
-   "id": "CNBC Economy:U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
-   "title": "U.S. payrolls rose 162,000 in August, much more than expected; unemployment rate at 4.1%",
-   "text": "Nonfarm payrolls were expected to increase by 53,000 in August while the unemployment rate held at 4.1%, according to the Dow Jones consensus.",
-   "source": "CNBC Economy",
-   "url": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html",
-   "date": "2026-09-04T17:16:37.000Z",
-   "tags": [
-    "US-Wirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0.868,
-   "signals": [
-    "Arbeitsmarktdaten höher als erwartet"
-   ],
-   "scores": {
-    "crypto": -0.868,
-    "stocks": -0.738,
-    "gold": -0.694,
-    "usd": 0.868
-   },
-   "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: Arbeitsmarktdaten höher als erwartet)",
-   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: labour market data higher than expected)",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 33,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Gehaltslisten stiegen im August um 162.000, viel mehr als erwartet; Arbeitslosenquote bei 4,1%"
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
