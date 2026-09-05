@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05T12:56:35.217Z",
+ "updated": "2026-09-05T12:57:01.032Z",
  "regime": "policy",
  "count": 175,
  "errors": [
@@ -276,7 +276,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1250,7 +1250,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 91,
+   "priority": 90,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "high",
@@ -2148,7 +2148,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
