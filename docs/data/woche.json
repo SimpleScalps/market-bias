@@ -1,34 +1,34 @@
 {
- "updated": "2026-09-05T12:05:37.953Z",
+ "updated": "2026-09-05T12:15:01.879Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-05T12:05:37.992Z",
-   "anzahl": 71,
+   "stand": "2026-09-05T12:15:01.920Z",
+   "anzahl": 74,
    "klassen": {
     "crypto": {
-     "score": -0.008,
+     "score": -0.0192,
      "bull": 2,
-     "bear": 3,
-     "neut": 66
+     "bear": 4,
+     "neut": 68
     },
     "stocks": {
-     "score": -0.0272,
+     "score": -0.0373,
      "bull": 1,
-     "bear": 3,
-     "neut": 67
+     "bear": 4,
+     "neut": 69
     },
     "gold": {
-     "score": 0.0226,
-     "bull": 4,
+     "score": 0.0273,
+     "bull": 5,
      "bear": 0,
-     "neut": 67
+     "neut": 69
     },
     "usd": {
-     "score": 0.0039,
+     "score": 0.0074,
      "bull": 1,
      "bear": 1,
-     "neut": 69
+     "neut": 72
     }
    },
    "top": [
@@ -60,7 +60,7 @@
       "gold": 0,
       "usd": 0
      },
-     "priority": 57
+     "priority": 56
     },
     {
      "id": "U.Today:XRP Pivot Point: Why the $1.25 Price Level Matters Most Before Sept. 15",
@@ -90,7 +90,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 39
+     "priority": 38
     },
     {
      "id": "Al Jazeera:US imposes sanctions on Turkish bank, prompting legal threat",
@@ -105,7 +105,7 @@
       "gold": 0.203,
       "usd": 0.135
      },
-     "priority": 41
+     "priority": 40
     },
     {
      "id": "Al Jazeera:After Pretoria peace deal, old enemies in Ethiopia’s Tigray find new ground",
@@ -126,7 +126,7 @@
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-05T12:05:38.007Z",
+   "stand": "2026-09-05T12:15:01.936Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
