@@ -57,7 +57,7 @@ const GEGENPROBE_MAX = 3;
  * Eintrag, den der Nachlauf ohnehin schreibt, und damit konsistent zu ihm.
  */
 const NACHZIEHEN_MAX = 3;
-const NACHZIEHEN_ABSTAND_MS = 5 * 60_000;
+const NACHZIEHEN_ABSTAND_MS = 10 * 60_000;
 
 /*
  * Tagesbudget fuer das Sprachmodell - gerechnet in Token, nicht in Anfragen.
@@ -125,6 +125,32 @@ function urteilAuslesen(n) {
 }
 
 /*
+ * Schreibhaushalt.
+ *
+ * KV erlaubt im kostenlosen Tarif 1.000 Schreibvorgaenge am Tag - einen alle
+ * 86 Sekunden. Der Worker schrieb bei jedem Tick den Bestand und das
+ * Tickprotokoll, dazu je nach Lage Urteile und Wochenbuch: bei einem Tick je
+ * Minute also das Drei- bis Fuenffache des Erlaubten.
+ *
+ * Aufgefallen ist es spaet, weil der Ausfall leise ist. Ist das Kontingent
+ * erschoepft, wirft put() - der Tick bricht ab, der Bestand bleibt auf dem
+ * letzten Stand stehen, und von aussen sieht alles unveraendert aus. Genau das
+ * lief hier ab 04:27 Uhr, und es erklaert ruecklings alles: das vor- und
+ * zurueckspringende Budget, den Nachlauf, der nicht vorankam, und das
+ * Protokoll mit stundenalten Eintraegen.
+ *
+ * Geschrieben wird deshalb nur noch, wenn es etwas zu sichern gibt, und sonst
+ * im Herzschlagtakt, damit der Zeitstempel nicht einfriert. Der Abruf bleibt
+ * unberuehrt: Der Bestand wird bei jedem Tick neu berechnet und ausgeliefert,
+ * nur nicht jedes Mal abgelegt.
+ *
+ * Grobe Rechnung fuer einen Tag: Herzschlag 288, neue Meldungen ~150,
+ * Nachlauf 144, Wochenbuch 48, Uebersetzung und Abo eine Handvoll - zusammen
+ * rund 650 von 1.000.
+ */
+const BESTAND_HERZSCHLAG_MS = 5 * 60_000;
+
+/*
  * Letzter Tick je Herkunft.
  *
  * Zuerst war das eine Liste der letzten acht Ticks - und die litt an genau dem
@@ -137,7 +163,7 @@ function urteilAuslesen(n) {
  * beim naechsten eigenen Tick ohnehin neu ein. Fuer die eigentliche Frage -
  * tickt da noch etwas, und was - genuegt das.
  */
-const TICKS_KEY = 'https://market-bias.internal/ticks';
+// Liegt im Urteilsspeicher mit, statt einen eigenen Schreibvorgang zu kosten.
 
 /**
  * Braucht diese Meldung (noch) eine Pruefung durch das Modell?
@@ -212,7 +238,7 @@ const SPERRE_KEY = 'https://market-bias.internal/letzterVersand';
  */
 const WOCHE_KEY = 'https://market-bias.internal/wochenbuch';
 const WOCHE_TTL = (TAGE_MAX + 2) * 86_400;
-const WOCHE_TAKT_MS = 10 * 60_000;
+const WOCHE_TAKT_MS = 30 * 60_000;
 
 /*
  * Mindestabstand zwischen Benachrichtigungen — aber nur für Kanäle, die ihn
@@ -275,7 +301,24 @@ async function lesen(env, key) {
  * naechste Lauf haelt jede Meldung fuer neu.
  */
 async function schreiben(env, ctx, key, data, ttl = 86400) {
-  if (env.STORE) return env.STORE.put(key, JSON.stringify(data), { expirationTtl: ttl });
+  if (env.STORE) {
+    /*
+     * Ein fehlgeschlagenes Ablegen darf den Abruf nicht mitreissen.
+     *
+     * Ist das Tageskontingent von KV erschoepft, wirft put(). Weil der Aufruf
+     * im Antwortpfad steckte, brach damit der ganze Tick mit 500 ab - es kamen
+     * also gar keine Nachrichten mehr durch, obwohl das Sammeln und Bewerten
+     * einwandfrei lief. Ohne Ablage ist der Bestand nur fluechtig: Er wird bei
+     * jedem Durchgang neu berechnet und ausgeliefert, er ueberdauert bloss
+     * nicht. Das ist ungleich besser als nichts.
+     */
+    try {
+      return await env.STORE.put(key, JSON.stringify(data), { expirationTtl: ttl });
+    } catch (err) {
+      console.log('KV put fehlgeschlagen:', err.message);
+      return null;
+    }
+  }
   const res = new Response(JSON.stringify(data), {
     headers: { 'content-type': 'application/json', 'cache-control': `max-age=${ttl}` },
   });
@@ -391,7 +434,7 @@ function zusammenfuehren(bestand, frische) {
  * getrennte Einträge konnten deshalb auseinanderlaufen, und dieselbe Meldung
  * ging zweimal raus. Ein Objekt, ein Schreibvorgang, ein Stand.
  */
-async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
+async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekannt') {
   const teil = await collectNews({ regime, gruppe, gruppen: GRUPPEN, limit: 300 });
   const { items, neue } = zusammenfuehren(bestand, teil.items);
 
@@ -464,6 +507,12 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
     }
     speicher.tag = budget.tag;
     speicher.tokens = budget.verbraucht;
+    // Das Tickprotokoll faehrt hier mit, statt einen eigenen Eintrag zu kosten.
+    speicher.ticks = { ...(speicher.ticks || {}), [quelle]: {
+      zeit: new Date().toISOString(),
+      meldungen: items.length,
+      offen: items.filter(brauchtPruefung).length,
+    } };
     await schreiben(env, ctx, URTEILE_KEY, speicher, BESTAND_TTL);
   }
 
@@ -485,9 +534,22 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe) {
     items,
     gesehen: gedaechtnis,
   };
-  await schreiben(env, ctx, KEY, data, BESTAND_TTL);
+  /*
+   * Sichern, wenn es etwas zu sichern gibt.
+   *
+   * Zwingend bei neuen Meldungen: Sonst gilt eine schon verschickte beim
+   * naechsten Durchgang wieder als neu und geht ein zweites Mal raus. Sonst
+   * genuegt ein Herzschlag alle fuenf Minuten, damit der Zeitstempel nicht
+   * einfriert. Die uebrigen Durchgaenge liefern ihr Ergebnis aus, ohne es
+   * abzulegen - berechnet wird es ohnehin jedes Mal neu.
+   */
+  const gesichert = kandidaten.length > 0
+    || neueUrteile > 0
+    || alterMs(bestand) >= BESTAND_HERZSCHLAG_MS;
+  if (gesichert) await schreiben(env, ctx, KEY, data, BESTAND_TTL);
+
   ctx.waitUntil(wochenbuchPflegen(env, ctx, items));
-  return { data, neue: kandidaten, versand };
+  return { data, neue: kandidaten, versand, gesichert };
 }
 
 /**
@@ -737,6 +799,16 @@ export default {
         ok: true,
         zeit: new Date().toISOString(),
         ablage: env.STORE ? 'kv' : 'cache',
+        // Ein Probeschreiben verraet, ob das Tageskontingent noch reicht.
+        ablageSchreibt: await (async () => {
+          try {
+            await env.STORE.put('https://market-bias.internal/probe',
+              String(Date.now()), { expirationTtl: 600 });
+            return 'ja';
+          } catch (err) {
+            return `NEIN - ${err.message.slice(0, 80)}`;
+          }
+        })(),
         zweitmeinung: env.GROQ_KEY ? 'eingerichtet' : 'kein Schluessel',
         uebersetzung: env.GROQ_KEY ? 'Groq'
           : (env.DEEPL_KEY ? 'DeepL' : 'MyMemory (ohne Schluessel)'),
@@ -757,11 +829,10 @@ export default {
         urteile: Object.keys(urteilSpeicher?.urteile || {}).length,
         letzterNachlauf: urteilSpeicher?.letzterNachlauf ?? 'noch keiner',
         kontingent: kontingent ?? 'seit dem Start keine Anfrage an Groq',
-        letzteTicks: Object.entries((await lesen(env, TICKS_KEY).catch(() => null)) || {})
+        letzteTicks: Object.entries(urteilSpeicher?.ticks || {})
           .sort((a, b) => (b[1].zeit || '').localeCompare(a[1].zeit || ''))
-          .map(([quelle, t]) => `${quelle}: zuletzt ${t.zeit?.slice(11, 19)}`
-            + ` | ${t.meldungen} Meldungen | ${t.offen} ungeprueft`
-            + ` | ${(t.tokenHeute ?? 0).toLocaleString('de-DE')} Token heute`),
+          .map(([q, t]) => `${q}: zuletzt ${t.zeit?.slice(11, 19)} UTC`
+            + ` | ${t.meldungen} Meldungen | ${t.offen} ungeprueft`),
         // Ohne hinterlegtes Abo verschickt der Worker nichts. Zeigt nur, ob
         // und wohin - niemals Token oder Themennamen.
         abo: abo ? {
@@ -794,38 +865,26 @@ export default {
     if (url.pathname === '/tick') {
       const bestand = await lesen(env, KEY);
       const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
-      const { data, neue, versand } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
+      // Herkunft kurz benennen: "cron-job.org" statt der ganzen Kennung.
+      const roh = request.headers.get('x-quelle')
+        || request.headers.get('user-agent') || 'unbekannt';
+      const quelle = (roh.match(/cron-job\.org|github-action|[\w.-]+/i) || ['unbekannt'])[0]
+        .slice(0, 30);
+
+      const { data, neue, versand, gesichert } =
+        await teilAbgleich(env, ctx, regime, bestand, gruppe, quelle);
 
       /*
        * Erst jetzt vermerken, mit Ergebnis: Wer getickt hat und was dabei
        * herauskam. Ein blosser Eingang sagt zu wenig - fremde Ticks landeten
        * im Protokoll, ohne dass der Nachlauf voranschritt.
        */
-      ctx.waitUntil((async () => {
-        try {
-          const bisher = (await lesen(env, TICKS_KEY)) || {};
-          const roh = request.headers.get('x-quelle')
-            || request.headers.get('user-agent') || 'unbekannt';
-          // Auf das Erkennbare kuerzen: "cron-job.org" statt der ganzen Kennung.
-          const kennung = (roh.match(/cron-job\.org|github-action|[\w.-]+/i) || ['unbekannt'])[0]
-            .slice(0, 30);
-
-          bisher[kennung] = {
-            zeit: new Date().toISOString(),
-            gruppe,
-            meldungen: data.count,
-            tokenHeute: budgetRest(await lesen(env, URTEILE_KEY)).verbraucht,
-            offen: data.items.filter((n) => n.impactLevel !== 'ignore' && !n.ki?.inhalt).length,
-          };
-          await schreiben(env, ctx, TICKS_KEY, bisher, BESTAND_TTL);
-        } catch { /* Nebensache */ }
-      })());
-
       return json({
         ok: true,
         gruppe,
         meldungen: data.count,
         nochNieGemeldet: neue.length,
+        gesichert,
         versand,
         errors: data.errors,
       });
