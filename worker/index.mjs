@@ -635,7 +635,8 @@ export default {
         berichtigt: bestand?.items?.filter((n) => n.kiKorrigiert).length ?? 0,
         kiBudget: `${budgetRest(bestand).verbraucht} von ${KI_ANFRAGEN_MAX} Anfragen heute`,
         letzteTicks: (await lesen(env, TICKS_KEY).catch(() => null))
-          ?.map((t) => `${t.zeit.slice(11, 19)} ${t.quelle}`) ?? [],
+          ?.map((t) => `${t.zeit.slice(11, 19)} ${t.quelle} | Budget ${t.budget ?? '?'}`
+            + ` | ${t.meldungen ?? '?'} Meldungen | ${t.offen ?? '?'} offen`) ?? [],
         // Ohne hinterlegtes Abo verschickt der Worker nichts. Zeigt nur, ob
         // und wohin - niemals Token oder Themennamen.
         abo: abo ? {
@@ -667,20 +668,31 @@ export default {
      */
     if (url.pathname === '/tick') {
       const bestand = await lesen(env, KEY);
+      const vorher = budgetRest(bestand).verbraucht;
+      const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
+      const { data, neue, versand } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
 
-      // Herkunft festhalten, bevor gearbeitet wird.
+      /*
+       * Erst jetzt vermerken, mit Ergebnis: Wer getickt hat und was dabei
+       * herauskam. Ein blosser Eingang sagt zu wenig - fremde Ticks landeten
+       * im Protokoll, ohne dass der Nachlauf voranschritt.
+       */
       ctx.waitUntil((async () => {
         try {
           const bisher = (await lesen(env, TICKS_KEY)) || [];
           const kennung = request.headers.get('x-quelle')
-            || (request.headers.get('user-agent') || 'unbekannt').slice(0, 60);
-          await schreiben(env, ctx, TICKS_KEY,
-            [{ zeit: new Date().toISOString(), quelle: kennung }, ...bisher].slice(0, TICKS_MAX),
-            BESTAND_TTL);
-        } catch { /* Nebensache, darf den Tick nicht aufhalten */ }
+            || (request.headers.get('user-agent') || 'unbekannt').slice(0, 40);
+          await schreiben(env, ctx, TICKS_KEY, [{
+            zeit: new Date().toISOString(),
+            quelle: kennung,
+            gruppe,
+            meldungen: data.count,
+            budget: `${vorher}->${data.kiAnfragen}`,
+            offen: data.items.filter((n) => n.impactLevel !== 'ignore' && !n.ki?.inhalt).length,
+          }, ...bisher].slice(0, TICKS_MAX), BESTAND_TTL);
+        } catch { /* Nebensache */ }
       })());
-      const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
-      const { data, neue, versand } = await teilAbgleich(env, ctx, regime, bestand, gruppe);
+
       return json({
         ok: true,
         gruppe,
