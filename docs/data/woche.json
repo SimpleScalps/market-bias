@@ -1,31 +1,31 @@
 {
- "updated": "2026-09-05T05:44:45.928Z",
+ "updated": "2026-09-05T05:52:09.617Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-05T05:44:45.965Z",
+   "stand": "2026-09-05T05:52:09.654Z",
    "anzahl": 37,
    "klassen": {
     "crypto": {
-     "score": -0.0626,
+     "score": -0.0627,
      "bull": 2,
      "bear": 4,
      "neut": 31
     },
     "stocks": {
-     "score": -0.065,
+     "score": -0.0652,
      "bull": 2,
      "bear": 4,
      "neut": 31
     },
     "gold": {
-     "score": 0.0528,
+     "score": 0.0526,
      "bull": 5,
      "bear": 1,
      "neut": 31
     },
     "usd": {
-     "score": 0.0098,
+     "score": 0.0101,
      "bull": 1,
      "bear": 2,
      "neut": 34
@@ -45,7 +45,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 69
+     "priority": 68
     },
     {
      "id": "U.Today:XRP Pivot Point: Why the $1.25 Price Level Matters Most Before Sept. 15",
@@ -60,7 +60,7 @@
       "gold": 0.32,
       "usd": -0.4
      },
-     "priority": 56
+     "priority": 55
     },
     {
      "id": "Al Jazeera:US imposes sanctions on Turkish bank, prompting legal threat",
@@ -90,13 +90,13 @@
       "gold": -0.248,
       "usd": -0.165
      },
-     "priority": 36
+     "priority": 35
     }
    ]
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-05T05:44:45.978Z",
+   "stand": "2026-09-05T05:52:09.667Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
