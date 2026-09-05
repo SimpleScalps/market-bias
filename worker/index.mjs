@@ -1513,6 +1513,26 @@ export default {
                 .map(([zweck, m]) => `${AUFGABE[zweck] || zweck}: ${m}`).join(' · ')
             : 'noch keine Anfrage seit dem Start';
         })(),
+        /*
+         * Die abgeschlossenen Tage, neueste zuerst.
+         *
+         * Die laufenden Zaehler springen um Mitternacht UTC auf null. Ohne
+         * dieses Tagebuch muesste man genau den Moment davor treffen, um die
+         * Bilanz eines Tages zu sehen - eine Minute zu spaet, und sie ist weg.
+         */
+        tagebuch: Object.entries(zNow.tage || {})
+          .sort((a, b) => b[0].localeCompare(a[0]))
+          .map(([tag, w]) => {
+            const zahl = (n) => (n ?? 0).toLocaleString('de-DE');
+            const groq = w.groq
+              ? ' · Groq: ' + Object.entries(w.groq)
+                  .map(([m, g]) => `${aufgabeVon(m, zNow.kiModelle)} ${zahl(g.verbraucht)}/${zahl(g.limit)}`)
+                  .join(', ')
+              : '';
+            return `${tag}: ${zahl(w.ablagen)} Ablagen`
+              + (w.abgewiesen ? ` (${zahl(w.abgewiesen)} abgewiesen)` : '')
+              + ` · ${zahl(w.tokens)} Token` + groq;
+          }),
         urteile: Object.keys(urteilSpeicher?.urteile || {}).length,
         letzterNachlauf: urteilSpeicher?.letzterNachlauf ?? 'noch keiner',
         /*

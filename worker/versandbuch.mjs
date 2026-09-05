@@ -55,11 +55,36 @@ export class Versandbuch {
       try { aenderung = await request.json(); } catch { /* leer */ }
 
       // Tageswechsel: Zaehler zuruecksetzen, Verzug und Taktgeber behalten.
+      /*
+       * Tageswechsel: erst Bilanz ziehen, dann zuruecksetzen.
+       *
+       * Die Zaehler springen um Mitternacht UTC auf null. Wer die Bilanz eines
+       * Tages sehen will, muesste also genau den letzten Moment davor treffen -
+       * eine Minute zu spaet, und der Tag ist unwiederbringlich weg. Das ist
+       * eine unzumutbare Bedingung fuer eine Zahl, auf die es ankommt.
+       *
+       * Deshalb wandert der abgeschlossene Tag hier in ein kleines Tagebuch.
+       * Vierzehn Eintraege genuegen: Wer nach zwei Wochen nachsieht, sucht
+       * ohnehin einen Trend und keinen einzelnen Tag.
+       */
       const heute = new Date().toISOString().slice(0, 10);
+      const tage = { ...(jetzt.tage || {}) };
+      if (jetzt.tag && jetzt.tag !== heute) {
+        tage[jetzt.tag] = {
+          ablagen: jetzt.schreibVersuche || 0,
+          abgewiesen: jetzt.schreibFehler || 0,
+          tokens: jetzt.tokens || 0,
+          // Was Groq selbst am Ende des Tages je Modell gemeldet hat.
+          ...(jetzt.groqTag ? { groq: jetzt.groqTag } : {}),
+        };
+        for (const alt of Object.keys(tage).sort().slice(0, -14)) delete tage[alt];
+      }
+
       const basis = jetzt.tag === heute ? jetzt : {
         tag: heute, schreibVersuche: 0, schreibFehler: 0, tokens: 0,
         ticks: jetzt.ticks, verzug: jetzt.verzug, letzterNachlauf: jetzt.letzterNachlauf,
       };
+      basis.tage = tage;
 
       const neu = { ...basis, tag: heute };
       // Zahlenfelder werden addiert, alles andere ersetzt.
