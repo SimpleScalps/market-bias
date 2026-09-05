@@ -168,6 +168,26 @@ function urteilAuslesen(n) {
 const BESTAND_HERZSCHLAG_MS = 5 * 60_000;
 
 /*
+ * Ein Haupttaktgeber, der Rest als Reserve.
+ *
+ * Drei Taktgeber liefen gleichzeitig: Cloudflares eigener Zeitplan alle zwei
+ * Minuten, cron-job.org jede Minute, die GitHub-Action alle zehn. Das war als
+ * Absicherung gedacht und war in Wahrheit die Ursache doppelter Meldungen.
+ *
+ * KV liefert einen Lesestand bis zu einer Minute veraltet aus. Zwei Ticks kurz
+ * hintereinander lesen also womoeglich beide den Stand von vorher, halten
+ * beide dieselbe Meldung fuer neu, speichern beide erfolgreich - und senden
+ * beide. Dass seit Neuestem erst gespeichert und dann gemeldet wird, hilft
+ * dagegen nicht: Der zweite Durchgang weiss vom ersten schlicht noch nichts.
+ *
+ * Ein Durchgang mit `fallback=1` prueft deshalb zuerst, ob ueberhaupt jemand
+ * fehlt: Ist der Bestand jung, bricht er sofort ab - ohne zu holen, zu
+ * speichern oder zu melden. Faellt der Haupttaktgeber aus, springt er nach
+ * dieser Frist ein. Aus drei gleichzeitigen wird so einer mit zwei Reserven.
+ */
+const RESERVE_AB_MS = 6 * 60_000;
+
+/*
  * Letzter gescheiterte Tick.
  *
  * Weil der Taktgeber nun immer 200 bekommt, faellt ein Fehler nicht mehr
@@ -1036,6 +1056,23 @@ export default {
 
       try {
         const bestand = await lesen(env, KEY);
+
+        /*
+         * Reserve-Taktgeber treten zurueck, solange der Bestand frisch ist.
+         *
+         * Das ist der Kern gegen Doppelmeldungen: Wo nur ein Durchgang laeuft,
+         * kann kein zweiter dieselbe Meldung fuer neu halten.
+         */
+        if (url.searchParams.get('fallback') === '1'
+            && alterMs(bestand) < RESERVE_AB_MS) {
+          return json({
+            ok: true,
+            quelle,
+            uebersprungen: true,
+            grund: `Haupttaktgeber laeuft (Bestand ${Math.round(alterMs(bestand) / 1000)} s alt)`,
+          });
+        }
+
         const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
 
         const { data, neue, versand, gesichert } =

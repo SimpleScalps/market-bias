@@ -58,7 +58,7 @@ jobs:
           # darauf antwortet der Worker mit der Meldungsliste statt zu ticken.
           basis="${WORKER_URL%/}"
           echo "Rufe Worker auf: $basis/tick"
-          antwort=$(curl -sS -m 90 -H "x-zugang: $ZUGANG" -H "x-quelle: github-action" "$basis/tick")
+          antwort=$(curl -sS -m 90 -H "x-zugang: $ZUGANG" -H "x-quelle: github-action" "$basis/tick?fallback=1")
           echo "$antwort" | head -c 300
           echo
           # Auf den Inhalt pruefen, nicht auf den Statuscode: Beide falschen
