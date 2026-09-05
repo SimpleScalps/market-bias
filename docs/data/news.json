@@ -1,11 +1,45 @@
 {
- "updated": "2026-09-05T16:47:33.223Z",
+ "updated": "2026-09-05T16:50:19.599Z",
  "regime": "policy",
  "count": 112,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "BBC World:US envoys in Moscow ahead of Ukraine talks",
+   "title": "US envoys in Moscow ahead of Ukraine talks",
+   "text": "President Trump says his envoys Steve Witkoff and Jared Kushner are \"bringing with them a proposal to end the war\".",
+   "source": "BBC World",
+   "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-05T16:48:40.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 62,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Botschafter in Moskau vor ukrainischen Gesprächen"
+  },
   {
    "id": "CoinDesk:Dollar-backed stablecoins can push local currencies lower, Bank of Korea study finds",
    "title": "Dollar-backed stablecoins can push local currencies lower, Bank of Korea study finds",
@@ -73,6 +107,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Jobs und der Iran tragen zu Trumps mittelfristigen Kopfschmerzen bei. Warum das gut für Anleihen und schlecht für Energieaktien ist."
+  },
+  {
+   "id": "Al Jazeera:Gaza teams recover remains of 55 people nearly 3 years after Israeli strike",
+   "title": "Gaza teams recover remains of 55 people nearly 3 years after Israeli strike",
+   "text": "The victims, all from one Palestinian family, had been sheltering at their family home when Israel hit it.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/5/gaza-teams-recover-remains-of-55-people-nearly-3-years-after-israeli-strike?traffic_source=rss",
+   "date": "2026-09-05T16:17:47.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 87,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Gaza-Teams bergen die Überreste von 55 Menschen fast 3 Jahre nach dem israelischen Angriff"
   },
   {
    "id": "Decrypt:What Is Robinhood Chain? The Ethereum Layer-2 Network for Tokenized Stocks and Meme Coins",
@@ -900,7 +968,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 48,
+   "priority": 47,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1153,40 +1221,6 @@
    "titleDe": "Arsenal vs Chelsea: Premier League – Vorhersage, Teams, Aufstellungen"
   },
   {
-   "id": "Al Jazeera:‘Stop the boats’ masked protesters block England’s Port of Dover",
-   "title": "‘Stop the boats’ masked protesters block England’s Port of Dover",
-   "text": "Masked protesters blocked major roads around England’s Port of Dover on Saturday.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/stop-the-boats-masked-protesters-block-englands-port-of-dover?traffic_source=rss",
-   "date": "2026-09-05T13:09:24.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "\"Stoppt die Boote\" maskierte Demonstranten blockieren Englands Hafen von Dover"
-  },
-  {
    "id": "Decrypt:AI Just Solved a 350-Year-Old Math Problem By Writing the Longest Proof Ever",
    "title": "AI Just Solved a 350-Year-Old Math Problem By Writing the Longest Proof Ever",
    "text": "Anthropic says Claude spent 11 days turning Fermat's Last Theorem into 13 million lines of code a computer can check itself, no human trust required",
@@ -1310,7 +1344,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1721,40 +1755,6 @@
    ],
    "alsoIn": [],
    "titleDe": "Der CEO von Ripple ist nicht überrascht von den BIZ-Tests VON XRP Ledger"
-  },
-  {
-   "id": "BBC World:US envoys arrive in Moscow ahead of Ukraine talks",
-   "title": "US envoys arrive in Moscow ahead of Ukraine talks",
-   "text": "Steve Witkoff and Jared Kushner are due to hold talks with Russia before travelling to Ukraine on Sunday.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-05T11:07:08.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 61,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Gesandte treffen in Moskau im Vorfeld der Ukraine-Gespräche ein"
   },
   {
    "id": "The Defiant:Revolut Starts EURR Rollout With Bridge as Regulated Issuer",
