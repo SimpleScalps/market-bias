@@ -198,6 +198,23 @@ export async function modellWaehlen(env, zweck = 'interaktiv') {
   return gewaehlteModelle[zweck];
 }
 
+/*
+ * Stand der Bewertungsregeln.
+ *
+ * Ein Urteil ist nur so gut wie die Anweisung, unter der es entstand. Als die
+ * Regel gegen Erfindungen dazukam, blieben die vorher gefaellten Urteile
+ * stehen - darunter "Bundeskanzler Olaf Merkel", wo die Vorlage "Merz" sagte.
+ * Sie wurden nie neu geprueft, weil das Merkmal dafuer allein war, ob ueberhaupt
+ * ein Urteil vorliegt.
+ *
+ * Deshalb traegt jedes Urteil den Stand mit. Steigt diese Zahl, gelten alle
+ * aelteren als offen und werden nachgezogen. Das kostet einmalig einen
+ * Durchgang - guenstiger, als falsche Saetze stehen zu lassen.
+ *
+ * 2: Regel "ERFINDE NICHTS" - keine ergaenzten Vornamen, Aemter oder Vorgaenge.
+ */
+export const ANWEISUNG_STAND = 2;
+
 const ANWEISUNG = `Du bewertest Finanznachrichten für einen Krypto-Händler.
 
 Marktlage: Der Zinskanal dominiert. Starke US-Wirtschaftsdaten bedeuten, dass
@@ -392,6 +409,7 @@ export async function deuten(schlagzeile, env, anriss = '', zweck = 'pruefung') 
 
     return {
       richtung, staerke: +staerke.toFixed(2), inhalt, grund, modell,
+      stand: ANWEISUNG_STAND,
       // Was der Durchgang wirklich gekostet hat. Das Kontingent rechnet in
       // Token, nicht in Anfragen - eine Schaetzung daneben waere entweder zu
       // vorsichtig oder zu spaet.

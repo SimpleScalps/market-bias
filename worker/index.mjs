@@ -5,7 +5,7 @@ import { uebersetze } from '../docs/engine/translate.mjs';
 import { fortschreiben, TAGE_MAX } from '../docs/engine/wochenbuch.mjs';
 import { sendeAn } from './notify.mjs';
 export { Versandbuch } from './versandbuch.mjs';
-import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, fragen, kontingent, verbrauchAbholen, tagesverbrauch, gewaehlteModelle } from './deuten.mjs';
+import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, fragen, kontingent, verbrauchAbholen, tagesverbrauch, gewaehlteModelle, ANWEISUNG_STAND } from './deuten.mjs';
 import { artikelHolen } from './artikel.mjs';
 
 // Cloudflare Worker: holt die Quellen serverseitig (RSS-Feeds senden keine
@@ -378,7 +378,15 @@ let letzterTickFehler = null;
  * "hat keine Auswirkung auf Bitcoin" - formal richtig und trotzdem nutzlos.
  * Solche Antworten werden nach und nach nachgeholt, gebremst vom Tagesbudget.
  */
-const brauchtPruefung = (n) => n.impactLevel !== 'ignore' && !n.ki?.inhalt;
+/*
+ * Was noch geprueft werden muss.
+ *
+ * Nicht nur, was ueberhaupt kein Urteil hat - auch, was unter aelteren Regeln
+ * gefaellt wurde. Sonst ueberdauert ein Satz wie "Bundeskanzler Olaf Merkel"
+ * die Regel, die ihn kuenftig verhindert, und steht noch einen ganzen Tag da.
+ */
+const brauchtPruefung = (n) => n.impactLevel !== 'ignore'
+  && (!n.ki?.inhalt || (n.ki.stand || 1) < ANWEISUNG_STAND);
 
 /*
  * Zwischenspeicher der Uebersetzungen.
