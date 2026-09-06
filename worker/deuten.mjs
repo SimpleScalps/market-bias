@@ -220,13 +220,31 @@ Code-Zaun:
 richtung und staerke beziehen sich auf Bitcoin. staerke 0 heißt ohne Wirkung,
 1 heißt marktbewegend. Bei Meldungen ohne Bezug zum Finanzmarkt: neutral, 0.
 
-inhalt: Worum es in der Meldung geht — ein bis zwei Sätze auf Deutsch, die
-sagen, was geschehen ist, wer beteiligt ist und welche Zahlen genannt werden.
-Dieses Feld füllst du IMMER aus, auch wenn die Meldung für Bitcoin belanglos
-ist. Gerade dann ist es das einzige, was der Leser mitnimmt. Wiederhole nicht
-die Überschrift, sondern gib wieder, was darüber hinaus im Anriss steht; liegt
-kein Anriss vor, fasse die Überschrift in eigenen Worten. Schreibe niemals nur
-"keine Auswirkung" oder Ähnliches — das gehört in grund, nicht hierher.
+ERFINDE NICHTS. Diese Regel steht über allem anderen.
+
+Du weißt über diese Meldung ausschließlich das, was zwischen den Markierungen
+steht. Was dort nicht steht, existiert für dich nicht — auch wenn du glaubst,
+es aus anderen Zusammenhängen zu kennen.
+
+Namen, Ämter, Orte, Parteien, Organisationen und Zahlen übernimmst du genau so,
+wie sie dastehen. Buchstabengetreu. Du ergänzt keinen Vornamen, keine
+Amtsbezeichnung und keine Landeszugehörigkeit, und du ersetzt keinen Namen
+durch einen ähnlicheren, den du besser kennst. Steht "Merz", schreibst du
+"Merz" — nicht "Merkel", nicht "Olaf Merz", nicht "Bundeskanzler Merz".
+
+Ebenso wenig ergänzt du Vorgänge: Steht "Vorfall", schreibst du nicht
+"Absturz". Steht "Gespräche", schreibst du nicht "Einigung".
+
+Bist du unsicher, was gemeint ist, bleib vage statt genau. Ein Satz, der
+weniger sagt, ist richtig; ein Satz, der mehr sagt, als dasteht, ist falsch.
+
+inhalt: Worum es in der Meldung geht — ein bis zwei Sätze auf Deutsch, nah am
+Wortlaut der Vorlage. Dieses Feld füllst du IMMER aus, auch wenn die Meldung
+für Bitcoin belanglos ist. Gerade dann ist es das einzige, was der Leser
+mitnimmt. Gib wieder, was über die Überschrift hinaus im Anriss steht; liegt
+kein Anriss vor, übersetze die Überschrift und ordne sie ein, ohne etwas
+hinzuzufügen. Schreibe niemals nur "keine Auswirkung" oder Ähnliches — das
+gehört in grund, nicht hierher.
 
 Begriffe: "rate cut" ist eine Zinssenkung, nie eine "Zinskürzung". "Nonfarm
 payrolls" bleibt so stehen oder wird zu "Beschäftigungsaufbau außerhalb der
@@ -262,6 +280,28 @@ function ausJson(text) {
  * Fragen sind das ueber hundert Nachfragen taeglich - mehr, als jemand stellt.
  */
 const ARTIKEL_ZEICHEN = 6000;
+
+/*
+ * Zahlen, die in der Antwort stehen, aber nicht in der Vorlage.
+ *
+ * Anlass war eine erfundene Person: Aus "Merz" wurde "Bundeskanzler Olaf
+ * Merkel", aus einem "Vorfall" ein "Absturz". Namen lassen sich maschinell
+ * schlecht pruefen - die Antwort ist deutsch, die Vorlage englisch, und im
+ * Deutschen ist jedes Substantiv gross geschrieben. Zahlen dagegen ueberstehen
+ * die Uebersetzung unveraendert, und eine erfundene Zahl ist in einem
+ * Handelswerkzeug das Gefaehrlichste, was das Modell produzieren kann.
+ *
+ * Jahreszahlen und Kleinstwerte bleiben aussen vor: Sie stehen oft
+ * berechtigterweise dort ("2026", "ein Prozent") und wuerden nur Fehlalarm
+ * ausloesen.
+ */
+function erfundeneZahlen(antwort, vorlage) {
+  const ziffern = (t) => (String(t).match(/\d[\d.,]*/g) || [])
+    .map((z) => z.replace(/[.,]$/, ''))
+    .filter((z) => z.replace(/[.,]/g, '').length > 1 && !/^(19|20)\d\d$/.test(z));
+  const da = new Set(ziffern(vorlage).map((z) => z.replace(/[.,]/g, '')));
+  return ziffern(antwort).filter((z) => !da.has(z.replace(/[.,]/g, '')));
+}
 
 /** Nimmt der Schlagzeile die Möglichkeit, wie eine Anweisung zu wirken. */
 const alsDaten = (text, hoechstens = 400) =>
@@ -333,7 +373,22 @@ export async function deuten(schlagzeile, env, anriss = '', zweck = 'pruefung') 
     const staerke = Math.max(0, Math.min(1, Number(geparst.staerke) || 0));
     const saubern = (t, max) => String(t || '').replace(/\s+/g, ' ').slice(0, max);
     const grund = saubern(geparst.grund, 300);
-    const inhalt = saubern(geparst.inhalt, 500);
+    let inhalt = saubern(geparst.inhalt, 500);
+
+    /*
+     * Erfundene Zahlen verwerfen den Text, nicht das Urteil.
+     *
+     * Richtung und Staerke sind eine Einschaetzung und bleiben brauchbar; der
+     * Inhaltssatz dagegen wird als Tatsache gelesen. Steht darin eine Zahl,
+     * die in der Vorlage nirgends vorkommt, ist er es nicht wert, angezeigt zu
+     * werden - lieber gar kein Satz als ein falscher.
+     */
+    const vorlage = `${schlagzeile} ${anriss}`;
+    const erfunden = erfundeneZahlen(inhalt, vorlage);
+    if (erfunden.length) {
+      console.log('Erfundene Zahl verworfen:', erfunden.join(', '), '|', schlagzeile.slice(0, 60));
+      inhalt = '';
+    }
 
     return {
       richtung, staerke: +staerke.toFixed(2), inhalt, grund, modell,

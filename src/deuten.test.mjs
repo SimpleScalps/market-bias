@@ -118,3 +118,44 @@ test('Rueckfragen bekommen den bisherigen Verlauf mit', async () => {
     globalThis.fetch = echt;
   }
 });
+
+/*
+ * Erfundene Zahlen dürfen nicht durchgehen.
+ *
+ * Anlass war eine erfundene Person: Aus "Merz" machte das Modell
+ * "Bundeskanzler Olaf Merkel", aus einem "Vorfall" einen "Absturz". Namen
+ * lassen sich maschinell schlecht prüfen — die Antwort ist deutsch, die
+ * Vorlage englisch, und im Deutschen ist jedes Substantiv groß geschrieben.
+ * Zahlen überstehen die Übersetzung dagegen unverändert, und eine erfundene
+ * Zahl ist in einem Handelswerkzeug das Gefährlichste, was herauskommen kann.
+ */
+test('Eine Zahl, die nicht in der Vorlage steht, verwirft den Inhaltssatz', async () => {
+  const echt = globalThis.fetch;
+  try {
+    groqVortaeuschen({
+      richtung: 'bearish', staerke: 0.5,
+      inhalt: 'Die Notenbank senkte den Zins um 75 Basispunkte.',
+      grund: 'Zinskanal.',
+    });
+    const d = await deuten('Fed signals a rate cut', { GROQ_KEY: 'test' }, 'Officials hinted at easing.');
+
+    // Das Urteil bleibt - es ist eine Einschaetzung, keine Tatsachenbehauptung.
+    assert.equal(d.richtung, 'bearish');
+    // Der Satz mit der erfundenen 75 nicht.
+    assert.equal(d.inhalt, '', 'erfundene Zahl haette verworfen werden muessen');
+  } finally { globalThis.fetch = echt; }
+});
+
+test('Zahlen aus der Vorlage bleiben stehen', async () => {
+  const echt = globalThis.fetch;
+  try {
+    groqVortaeuschen({
+      richtung: 'bearish', staerke: 0.5,
+      inhalt: 'Die Beschaeftigung stieg um 162.000 Stellen, mehr als erwartet.',
+      grund: 'Starke Daten.',
+    });
+    const d = await deuten('US payrolls rose 162,000 in August',
+      { GROQ_KEY: 'test' }, 'Much more than the 110,000 expected.');
+    assert.match(d.inhalt, /162/);
+  } finally { globalThis.fetch = echt; }
+});
