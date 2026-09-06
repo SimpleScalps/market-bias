@@ -1,11 +1,45 @@
 {
- "updated": "2026-09-06T11:52:46.781Z",
+ "updated": "2026-09-06T12:04:44.556Z",
  "regime": "policy",
- "count": 89,
+ "count": 87,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "CNBC:Iran warns of ‘more painful’ response to U.S. attacks as economic pressure mounts",
+   "title": "Iran warns of ‘more painful’ response to U.S. attacks as economic pressure mounts",
+   "text": "Iran warned of faster, heavier retaliation against U.S. attacks while acknowledging the war’s mounting toll on its economy.",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html",
+   "date": "2026-09-06T12:02:47.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 62,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iran warnt vor einer „schmerzhafteren“ Reaktion auf US-Angriffe, während der wirtschaftliche Druck zunimmt"
+  },
   {
    "id": "BeInCrypto:Elon Musk Fires Back at Bernie Sanders Over His $900 Billion Fortune",
    "title": "Elon Musk Fires Back at Bernie Sanders Over His $900 Billion Fortune",
@@ -28,7 +62,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -572,7 +606,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -816,7 +850,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -959,7 +993,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1031,7 +1065,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 47,
+   "priority": 46,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1067,7 +1101,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 39,
+   "priority": 38,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1239,7 +1273,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1379,7 +1413,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 20,
+   "priority": 19,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -1515,7 +1549,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 12,
+   "priority": 11,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1691,7 +1725,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2189,9 +2223,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Die USA greifen 3 iranische Öltanker an, nachdem Raketen auf Kriegsschiffe der Marine gezielt haben"
   },
   {
@@ -2936,110 +2968,6 @@
    "titleDe": "Von „Mystery-Urlauben“ bis hin zu Hostels - preisbewusste Reisende werden bei steigenden Preisen sparsam"
   },
   {
-   "id": "CNBC World:Meet the CISO: A new front line star in the AI cybersecurity war",
-   "title": "Meet the CISO: A new front line star in the AI cybersecurity war",
-   "text": "The OpenAI-Hugging Face agent hack sent shockwaves through the business world and helped put the chief information security officer into the spotlight.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/05/ai-cybersecurity-ciso-executive.html",
-   "date": "2026-09-05T12:00:01.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 36,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Lernen Sie den CISO kennen: Ein neuer Star an vorderster Front im KI-Cybersicherheitskrieg"
-  },
-  {
-   "id": "CNBC World:GM vs. Ford: U.S. defense, energy sectors add to automakers' century-old rivalry",
-   "title": "GM vs. Ford: U.S. defense, energy sectors add to automakers' century-old rivalry",
-   "text": "General Motors and Ford are looking for new potential growth areas, including by seeking military contracts and getting into energy storage businesses.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/05/gm-ford-defense-energy.html",
-   "date": "2026-09-05T12:00:01.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 19,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "GM vs. Ford: US-Verteidigung, Energiesektoren tragen zur jahrhundertealten Rivalität der Autohersteller bei"
-  },
-  {
-   "id": "CoinDesk:British investor thought he lost $2,000 in bitcoin in 2012. He just recovered $4.5 million",
-   "title": "British investor thought he lost $2,000 in bitcoin in 2012. He just recovered $4.5 million",
-   "text": "CEL Solicitors says it has identified a wallet holding more than 5,500 BTC linked to former Intersango users.",
-   "source": "CoinDesk",
-   "url": "https://www.coindesk.com/business/2026/09/02/british-investor-thought-he-lost-usd2-000-in-bitcoin-in-2012-he-just-recovered-usd4-5-million",
-   "date": "2026-09-05T12:00:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "BTC"
-   ],
-   "alsoIn": [],
-   "titleDe": "Ein britischer Investor glaubte, 2012 2.000 Dollar in Bitcoin verloren zu haben. Nun hat er 4,5 Millionen Dollar zurückerhalten."
-  },
-  {
    "id": "The Defiant:Revolut Starts EURR Rollout With Bridge as Regulated Issuer",
    "title": "Revolut Starts EURR Rollout With Bridge as Regulated Issuer",
    "text": "Revolut opens EURR to selected customers in three countries; Bridge reported €374 outstanding, compared with €394.5 million of Circle’s EURC.",
@@ -3109,7 +3037,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 2,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
