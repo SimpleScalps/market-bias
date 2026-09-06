@@ -708,8 +708,60 @@ function zusammenfuehren(bestand, frische) {
  * getrennte Einträge konnten deshalb auseinanderlaufen, und dieselbe Meldung
  * ging zweimal raus. Ein Objekt, ein Schreibvorgang, ein Stand.
  */
+/*
+ * Quellen, die dem Rechenzentrum verwehrt sind, ueber die Action beziehen.
+ *
+ * Google News antwortet Cloudflare-Adressen mit 503 - gemessen, wiederholt,
+ * kein Ausrutscher. Die GitHub-Action laeuft in einem anderen Netz und bekommt
+ * dieselbe Datei anstandslos; sie schreibt sie nach docs/data/news.json. Der
+ * Worker liest von dort nach, was er selbst nicht holen kann.
+ *
+ * Bewusst eng gehalten: nur benannte Quellen, und hoechstens alle fuenf
+ * Minuten. Die Action schreibt ohnehin nur alle zehn, oefter nachzusehen
+ * brachte nichts ausser Rechenzeit.
+ */
+const UEBER_AKTION = ['Reuters'];
+const NACHSCHUB_URL = 'https://simplescalps.github.io/market-bias/data/news.json';
+const NACHSCHUB_MS = 5 * 60_000;
+let nachschubZuletzt = 0;
+let nachschubStand = [];
+
+async function nachschub() {
+  if (Date.now() - nachschubZuletzt < NACHSCHUB_MS) return nachschubStand;
+  nachschubZuletzt = Date.now();
+  try {
+    const res = await fetch(NACHSCHUB_URL, { signal: AbortSignal.timeout(8000) });
+    if (!res.ok) return nachschubStand;
+    const j = await res.json();
+    nachschubStand = (j.items || []).filter((n) => UEBER_AKTION.includes(n.source));
+  } catch (err) {
+    // Faellt der Nachschub aus, fehlt nur diese eine Quelle - kein Grund,
+    // den ganzen Durchgang scheitern zu lassen.
+    console.log('Nachschub:', err.message);
+  }
+  return nachschubStand;
+}
+
 async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekannt') {
   const teil = await collectNews({ regime, gruppe, gruppen: GRUPPEN, limit: 300 });
+
+  // Was der Worker selbst nicht erreicht, kommt ueber die Action herein.
+  const dazu = await nachschub();
+  if (dazu.length) {
+    const da = new Set(teil.items.map((n) => n.id));
+    teil.items = [...teil.items, ...dazu.filter((n) => !da.has(n.id))]
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    /*
+     * Den eigenen Fehlschlag zuruecknehmen, wo der Nachschub eingesprungen ist.
+     *
+     * Sonst stuende dauerhaft "Reuters: 503" in der Stoerungsliste, waehrend
+     * die Meldungen einwandfrei ankommen. Eine Warnung, die immer da ist und
+     * nie etwas bedeutet, bringt einem bei, Warnungen zu uebersehen.
+     */
+    const geliefert = new Set(dazu.map((n) => n.source));
+    teil.errors = (teil.errors || []).filter((e) => ![...geliefert].some((q) => e.startsWith(q + ':')));
+  }
   const { items, neue } = zusammenfuehren(bestand, teil.items);
 
   // Urteile aus ihrem eigenen Speicher nachlegen - sie ueberleben dort auch
