@@ -69,8 +69,35 @@ export const KEYWORDS = [
  */
 export const DEESKALATION = /\b(ceasefire|truce|peace (deal|talks|plan|process|summit)?|end(ing)? the war|to end\b[^.]{0,20}\bwar|withdraw\w*|de-?escalat\w+|disengage\w*|armistice|negotiat\w+|talks\b|agreement|accord|summit|resolution)\b/i;
 
-// ... es sei denn, die Bemühungen scheitern.
-export const DEESKALATION_GESCHEITERT = /\b(fail\w*|collapse[sd]?|break(s|ing)? down|broke down|reject\w*|stall\w*|no (deal|agreement)|walks? out|suspend\w*)\b/i;
+/*
+ * ... es sei denn, die Bemühungen scheitern.
+ *
+ * Die Liste war zu eng. "Zelensky says he expects war to continue into winter
+ * after talks with US envoys" enthielt "talks" und galt damit als Entspannung:
+ * Die Eskalationsregel drehte ihr Vorzeichen um, und eine Meldung über einen
+ * weitergehenden Krieg wurde bullish für Krypto und bearish für Gold — das
+ * genaue Gegenteil dessen, was der Markt daraus macht.
+ *
+ * Zwei Lücken steckten darin. "no breakthrough" fehlte, obwohl "no deal" und
+ * "no agreement" dastanden. Und die Fortdauer des Konflikts war überhaupt nicht
+ * erfasst — dabei ist gerade sie die Absage an die Hoffnung, die den
+ * Gesprächen vorausging.
+ *
+ * Die Fortdauer ist bewusst eng gefasst: Es muss um den Konflikt selbst gehen,
+ * nicht um irgendetwas, das weitergeht. "Gespräche werden fortgesetzt" ist
+ * Entspannung, "der Krieg wird fortgesetzt" ist das Gegenteil.
+ */
+export const DEESKALATION_GESCHEITERT = new RegExp([
+  // Abbruch, Ablehnung, Blockade
+  String.raw`\b(fail\w*|collapse[sd]?|break(s|ing)? down|broke down|reject\w*|stall\w*)\b`,
+  String.raw`\b(walks? out|suspend\w*|deadlock\w*|impasse|stalemate|inconclusive)\b`,
+  // Ausbleibender Fortschritt
+  String.raw`\bno (deal|agreement|breakthrough|progress|ceasefire|truce|end in sight)\b`,
+  String.raw`\bwithout (a |any )?(deal|agreement|breakthrough|announcement)\b`,
+  // Der Konflikt geht weiter
+  String.raw`\b(war|fighting|conflict|hostilities|offensive)\b[^.]{0,40}\b(continue\w*|drag\w*|persist\w*|rage[sd]?|prolong\w*|grind\w*)\b`,
+  String.raw`\b(continue\w*|drag\w*|prolong\w*)\b[^.]{0,25}\b(war|fighting|conflict|hostilities)\b`,
+].join('|'), 'i');
 
 /*
  * Gefordert ist nicht beschlossen.
@@ -115,6 +142,18 @@ export const GEOPOLITICS = [
    */
   { re: /\b(drone|missile|rocket|artillery|air)s?[\s-]+(strike|attack|barrage)s?\b/, weight: 0.5, label: 'Militärschlag', labelEn: 'military strike' },
   { re: /\bstrike[sd]?\s+(on|against)\s+\w/, weight: 0.45, label: 'Militärschlag', labelEn: 'military strike' },
+  /*
+   * "strike" ohne Zusatz - aber nur mit Opfern daneben.
+   *
+   * Das Wort allein bleibt zweideutig: Ein Streik ist auch einer, und
+   * "workers strike" darf den Kryptomarkt nicht bewegen. Steht aber im selben
+   * Satz von Getöteten oder Verletzten, ist die Lesart eindeutig.
+   *
+   * Aufgefallen an "Israeli strike kills two in Gaza": Das ergab 0.000,
+   * waehrend "Israeli AIR strike kills two in Gaza" -0.900 ergab. Ein
+   * fehlendes Wort entschied ueber alles oder nichts.
+   */
+  { re: /\bstrikes?\b[^.]{0,40}\b(kill\w*|dead|killed|wounded|injur\w*|casualt\w*)\b/, weight: 0.5, label: 'Militärschlag', labelEn: 'military strike' },
   { re: /\b(invasion|invade[sd]?|offensive launched)\b/, weight: 0.6, label: 'Invasion', labelEn: 'invasion' },
   { re: /\b(war|conflict|hostilities|escalat\w+)\b/, weight: 0.4, label: 'Eskalation', labelEn: 'escalation' },
   { re: /\b(nuclear|retaliat\w+|preemptive (strike|operation))\b/, weight: 0.5, label: 'Vergeltungsdrohung', labelEn: 'retaliation threat' },

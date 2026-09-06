@@ -248,3 +248,54 @@ test('Gewalt ohne Marktbezug bleibt ohne Wertung', () => {
     assert.equal(label(r?.scores?.crypto ?? 0), 'neutral', t);
   }
 });
+
+/*
+ * Gescheiterte Entspannung und der Krieg, der weitergeht.
+ *
+ * Der reale Fall: "Zelensky says he expects war to continue into winter after
+ * talks with US envoys" enthielt "talks" und galt damit als Entspannung. Die
+ * Eskalationsregel drehte ihr Vorzeichen um — die Meldung über einen
+ * weitergehenden Krieg wurde bullish für Krypto und bearish für Gold, also das
+ * Gegenteil dessen, was der Markt daraus macht.
+ */
+test('Ein Krieg, der weitergeht, ist keine Entspannung', () => {
+  const s = scoreHeadline(
+    'Zelensky says he expects war to continue into winter after talks with US envoys', 'policy');
+  assert.ok(s.scores.crypto < -0.05, `sollte bearish sein, ist ${s.scores.crypto}`);
+  assert.ok(s.scores.gold > 0, `Gold sollte stützen, ist ${s.scores.gold}`);
+});
+
+test('Gespräche ohne Durchbruch gelten nicht als Entspannung', () => {
+  const s = scoreHeadline('Peace talks on the war end without a breakthrough', 'policy');
+  assert.ok(s.scores.crypto <= 0, `sollte nicht bullish sein, ist ${s.scores.crypto}`);
+});
+
+test('Echte Entspannung bleibt bullish', () => {
+  const s = scoreHeadline('Ukraine and Russia agree ceasefire after peace talks', 'policy');
+  assert.ok(s.scores.crypto > 0.05, `sollte bullish sein, ist ${s.scores.crypto}`);
+});
+
+/*
+ * "strike" ohne Zusatz — aber nur mit Opfern daneben.
+ *
+ * "Israeli strike kills two in Gaza" ergab 0.000, "Israeli AIR strike kills
+ * two in Gaza" dagegen -0.900. Ein fehlendes Wort entschied über alles oder
+ * nichts. Zugleich darf ein Arbeitskampf den Kryptomarkt nicht bewegen.
+ */
+test('Ein Militärschlag mit Opfern zählt auch ohne Zusatzwort', () => {
+  for (const t of ['Israeli strike kills two in Gaza',
+                   'Russian strike killed 12 civilians overnight']) {
+    assert.ok(scoreHeadline(t, 'policy').scores.crypto < -0.05, t);
+  }
+});
+
+test('Ein Arbeitskampf ist kein Militärschlag', () => {
+  for (const t of ['Boeing workers strike enters third week',
+                   'Autoworkers strike ends with wage deal',
+                   'Dockworkers strike could hit supply chains']) {
+    // null heisst: kein Richtungssignal gefunden - genau das Gewuenschte.
+    const s = scoreHeadline(t, 'policy');
+    const wert = s?.scores?.crypto ?? 0;
+    assert.ok(Math.abs(wert) < 0.15, `${t} -> ${wert}`);
+  }
+});
