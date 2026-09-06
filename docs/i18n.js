@@ -98,6 +98,8 @@ window.I18N = {
     lageFehler: 'Lagebericht nicht verfügbar',
     lageOhneWorker: 'Braucht den Cloudflare Worker mit hinterlegtem Schlüssel.',
     zweitmeinung: 'KI-Analyse', zweitmeinungLaeuft: 'wird geprüft …',
+    // Vermerk, wenn das Urteil nicht nur aus der Schlagzeile stammt.
+    artikelGelesen: 'Artikel gelesen',
     zweitmeinungFehler: 'KI-Analyse nicht verfügbar',
     zweitmeinungOhneWorker: 'Braucht den Cloudflare Worker mit hinterlegtem Schlüssel.',
     kiWidersprichtKurz: 'KI-Analyse weicht ab',
@@ -220,6 +222,7 @@ window.I18N = {
     lageFehler: 'Situation report unavailable',
     lageOhneWorker: 'Requires the Cloudflare Worker with a key set.',
     zweitmeinung: 'AI analysis', zweitmeinungLaeuft: 'checking …',
+    artikelGelesen: 'full article read',
     zweitmeinungFehler: 'AI analysis unavailable',
     zweitmeinungOhneWorker: 'Requires the Cloudflare Worker with a key set.',
     kiWidersprichtKurz: 'AI analysis differs',

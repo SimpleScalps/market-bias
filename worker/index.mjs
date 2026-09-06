@@ -1,4 +1,5 @@
-import { collectNews, loadCalendar, enrich, imFenster } from '../docs/engine/feeds.mjs';
+import { collectNews, loadCalendar, enrich, imFenster, nachbewerten } from '../docs/engine/feeds.mjs';
+import { REGEL_STAND } from '../docs/engine/keywords.mjs';
 import { label, LABEL_TEXT } from '../docs/engine/sentiment.mjs';
 import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
 import { uebersetze } from '../docs/engine/translate.mjs';
@@ -85,6 +86,17 @@ const GEGENPROBE_MAX = 3;
  * setzt das Minutenkontingent des Modells: fuenf Anfragen zu je rund 830 Token
  * sind gut 4.000 von 8.000 je Minute, es bleibt Luft fuer Uebersetzungen.
  */
+/*
+ * Wie viele abgelegte Meldungen je Durchgang neu bewertet werden.
+ *
+ * Gemessen an 300 abgelegten Meldungen: dreissig kosten rund 4 ms - ein
+ * gutes Drittel dessen, was Cloudflare je Aufruf gibt, und der Abruf der
+ * Quellen braucht davon selbst schon einiges. Deshalb zwanzig. Es takten
+ * ohnehin zwei bis drei Geber je Minute; der Bestand ist damit in etwa fuenf
+ * Minuten einmal durch, ohne dass ein einzelner Aufruf ans Limit kommt.
+ */
+const NACHBEWERTEN_MAX = 20;
+
 const NACHZIEHEN_MAX = 8;
 const NACHZIEHEN_ABSTAND_MS = 60_000;
 
@@ -256,7 +268,7 @@ const URTEILE_MAX = 700;
 
 /** Felder, die ein Urteil an einer Meldung veraendert. */
 const URTEIL_FELDER = ['ki', 'kiWiderspruch', 'kiKorrigiert',
-  'scores', 'label', 'labelText', 'regelScores', 'regelLabel'];
+  'scores', 'label', 'labelText', 'regelScores', 'regelLabel', 'regelStand'];
 
 /** Legt gespeicherte Urteile auf frisch bewertete Meldungen. */
 function urteileAnlegen(items, speicher) {
@@ -264,8 +276,26 @@ function urteileAnlegen(items, speicher) {
   if (!urteile) return;
   for (const n of items) {
     const u = urteile[n.id];
-    // Was schon am Eintrag haengt, ist mindestens so aktuell wie der Speicher.
-    if (u && !n.ki?.inhalt) Object.assign(n, u);
+    if (!u || n.ki?.inhalt) continue;   // was dranhaengt, ist mindestens so aktuell
+
+    /*
+     * Nach einer Regelaenderung kommt nur das Urteil zurueck, nicht die Werte.
+     *
+     * Im Speicher liegen neben dem Urteil auch scores und label - bei einer
+     * berichtigten Meldung die der KI, sonst die des Regelwerks. Beides stammt
+     * aus der Fassung, unter der geprueft wurde. Sie ungeprueft
+     * zurueckzuschreiben machte jede Regelaenderung wieder rueckgaengig, sobald
+     * dieselbe Meldung erneut im Feed auftauchte: Die frische Bewertung war da,
+     * und diese Zeile hat sie ueberschrieben.
+     *
+     * Ist die Bewertung neuer als das Urteil, bleibt sie deshalb stehen. Das
+     * Urteil wird nur erneut dagegen gehalten.
+     */
+    if ((u.regelStand || 1) < (n.regelStand || 1)) {
+      if (u.ki?.richtung) urteilAnwenden(n, u.ki);
+      continue;
+    }
+    Object.assign(n, u);
   }
 }
 
@@ -944,13 +974,39 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     const geliefert = new Set(dazu.map((n) => n.source));
     teil.errors = (teil.errors || []).filter((e) => ![...geliefert].some((q) => e.startsWith(q + ':')));
   }
-  const { items, neue } = zusammenfuehren(bestand, teil.items);
+  const zusammen = zusammenfuehren(bestand, teil.items);
+  const { neue } = zusammen;
+  let items = zusammen.items;
 
   // Urteile aus ihrem eigenen Speicher nachlegen - sie ueberleben dort auch
   // einen Bestand, der von einem veralteten Lesestand ueberschrieben wurde.
   const speicher = (await lesen(env, URTEILE_KEY)) || { urteile: {} };
   speicher.urteile ||= {};
   urteileAnlegen(items, speicher);
+
+  /*
+   * Regelaenderungen in den Bestand nachziehen.
+   *
+   * Eine Quelle haelt ein Dutzend Eintraege; was daraus herausgerutscht ist,
+   * wird nie wieder bewertet. Jede Berichtigung am Regelwerk erreichte deshalb
+   * nur den Zulauf, waehrend im Bestand die alten Urteile stehenblieben - unter
+   * einer Meldung stand "Deeskalation", obwohl das Muster zwei Stunden zuvor
+   * enger gefasst worden war.
+   *
+   * Danach wird das Urteil der KI erneut gegen den frischen Regelwert gehalten:
+   * Derselbe Satz kann einer strengeren Regel widersprechen und einer milderen
+   * nicht mehr.
+   */
+  const nachgezogen = nachbewerten(items, regime, NACHBEWERTEN_MAX);
+  items = nachgezogen.items;
+  if (nachgezogen.ids.length) {
+    const frisch = new Set(nachgezogen.ids);
+    for (const n of items) {
+      if (!frisch.has(n.id)) continue;
+      const urteil = n.ki || speicher.urteile[n.id]?.ki;
+      if (urteil?.richtung) urteilAnwenden(n, urteil);
+    }
+  }
 
   /*
    * Betriebszustand aus dem Durable Object.
@@ -1093,6 +1149,26 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   }
 
   /*
+   * Und wo Regelwerk und Modell einander widersprechen: den Artikel lesen.
+   *
+   * Erst nach den beiden Stapeln, damit jede Meldung ihr regulaeres Urteil
+   * hat - strittig ist erst, was beide beurteilt haben. Siehe strittig().
+   */
+  let artikelErgebnis = null;
+  const artikelBuch = buchGilt ? { ...(z.artikelBuch || {}) } : {};
+  if (restJetzt > 0) {
+    const a = await nachlesen(items, env, ARTIKEL_MAX, artikelBuch);
+    if (a) {
+      artikelErgebnis = {
+        zeit: new Date().toISOString(),
+        angefragt: a.angefragt,
+        gelesen: a.gelesen,
+        ...(a.fehler.length ? { fehler: a.fehler.slice(0, 3).join(' | ') } : {}),
+      };
+    }
+  }
+
+  /*
    * Frische Urteile in ihren Speicher nachtragen.
    *
    * Nur ergaenzen, nie ersetzen: Selbst wenn der gelesene Stand veraltet war,
@@ -1114,8 +1190,17 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
      * Zaehler blieb auf 42 stehen, waehrend acht Meldungen je Minute
      * fehlerfrei durchliefen.
      */
+    /*
+     * Und ein gelesenes schlaegt ein ungelesenes desselben Standes.
+     *
+     * Ein Urteil aus dem ganzen Artikel traegt denselben Anweisungsstand wie
+     * eines aus der Schlagzeile - ohne diese Ausnahme haette der Vergleich
+     * oben es jedes Mal verworfen, und das Nachlesen waere fuer nichts
+     * gewesen: Abruf bezahlt, Token bezahlt, Ergebnis weggeworfen.
+     */
     const alt = speicher.urteile[n.id]?.ki;
-    if (alt?.richtung && (alt.stand || 1) >= (n.ki.stand || 1)) continue;
+    if (alt?.richtung && (alt.stand || 1) >= (n.ki.stand || 1)
+        && !(n.ki.gelesen && !alt.gelesen)) continue;
 
     speicher.urteile[n.id] = urteilAuslesen(n);
     neueUrteile++;
@@ -1286,6 +1371,20 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ...(letzterAblageFehler ? { letzteAblageStoerung: letzterAblageFehler } : {}),
     ...(letzterVersandbuchFehler ? { letzteVersandStoerung: letzterVersandbuchFehler } : {}),
     ...(nachlaufErgebnis ? { nachlaufErgebnis } : {}),
+    ...(artikelErgebnis ? { artikelErgebnis } : {}),
+    // Wie beim Pruefbuch: Nur Kennungen behalten, die es noch gibt.
+    ...(Object.keys(artikelBuch).length
+      ? { artikelBuch: fehlerbuchFortschreiben(artikelBuch, [], items) } : {}),
+    // Was das Nachziehen der Regeln bewegt hat - siehe /health.
+    ...(nachgezogen.nachbewertet || nachgezogen.offen
+      ? { nachbewertung: {
+          zeit: new Date().toISOString(),
+          stand: REGEL_STAND,
+          zuletzt: nachgezogen.nachbewertet,
+          offen: nachgezogen.offen,
+          ...(Object.keys(nachgezogen.aussortiert).length ? { aussortiert: nachgezogen.aussortiert } : {}),
+        } }
+      : {}),
     /*
      * Nur den neueren Stand behalten.
      *
@@ -1403,6 +1502,149 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
  * den Satz, das Regelwerk nur die Woerter darin. Die Herleitung der Regel
  * bleibt sichtbar, damit nachvollziehbar ist, wie es zum ersten Urteil kam.
  */
+/**
+ * Traegt ein Urteil der KI an einer Meldung ein - und berichtigt sie, wenn es
+ * dem Regelwerk deutlich widerspricht.
+ *
+ * Steht als eigene Funktion da, weil zwei Wege hierher fuehren: die frische
+ * Pruefung und das Nachbewerten. Aendert sich eine Regel, entsteht ein neuer
+ * Regelwert, und dasselbe Urteil kann ihm auf einmal widersprechen - oder
+ * eben nicht mehr. Beide Wege muessen dabei zum selben Ergebnis kommen.
+ *
+ * Verglichen wird immer mit dem Wert des Regelwerks, nicht mit dem
+ * angezeigten: Bei einer schon berichtigten Meldung stuende dort das Urteil
+ * der KI, und sie widerspraeche sich selbst.
+ */
+function urteilAnwenden(n, deutung) {
+  n.ki = deutung;
+  const regelWert = n.regelScores?.crypto ?? n.scores.crypto;
+  n.kiWiderspruch = widerspruch(regelWert, deutung);
+
+  if (!n.kiWiderspruch) return;
+
+  // Urteil korrigieren, die urspruengliche Bewertung aufheben.
+  /*
+   * Die urspruengliche Bewertung nur beim ersten Mal festhalten.
+   *
+   * Wird eine bereits berichtigte Meldung erneut geprueft, steht in n.scores
+   * schon das Urteil des Modells - ohne diese Bedingung ginge die Herleitung
+   * des Regelwerks verloren und die Anzeige "Regel sagte ..." zeigte den
+   * eigenen Wert der KI.
+   */
+  if (!n.kiKorrigiert) {
+    n.regelScores = n.scores;
+    n.regelLabel = n.label;
+  }
+  n.kiKorrigiert = true;
+
+  const kiWert = deutung.richtung === 'neutral' ? 0
+    : (deutung.richtung === 'bullish' ? 1 : -1) * deutung.staerke;
+
+  // Dieselben Verhaeltnisse zwischen den Anlageklassen wie im Regelwerk:
+  // Was Krypto stuetzt, stuetzt Aktien etwas schwaecher und belastet den Dollar.
+  n.scores = {
+    crypto: +kiWert.toFixed(3),
+    stocks: +(kiWert * 0.85).toFixed(3),
+    gold: +(kiWert * 0.8).toFixed(3),
+    usd: +(-kiWert).toFixed(3),
+  };
+  n.label = label(kiWert);
+  n.labelText = LABEL_TEXT[n.label];
+}
+
+/*
+ * Wenn Schlagzeile und Anriss nicht reichen: den Artikel selbst lesen.
+ *
+ * Das Modell urteilt sonst ueber zwoelf Woerter. Bei den meisten Meldungen
+ * genuegt das - bei den strittigen nicht, und gerade die entscheiden. "Trump
+ * official says there may not be a nuclear agreement with Iran" laesst sich
+ * aus der Ueberschrift so oder so lesen; im Text steht, was gemeint war.
+ *
+ * Nur die strittigen, und davon zwei je Durchgang. Ein Artikel kostet einen
+ * Abruf und rund fuenfzehnhundert Token - das Zwanzigfache einer Meldung im
+ * Stapel. Der Aufwand lohnt genau dort, wo die Einordnung sonst falsch bleibt.
+ */
+const ARTIKEL_MAX = 2;
+const ARTIKEL_VERSUCHE_MAX = 2;
+
+/** Der Rechnername einer Adresse, oder leer. */
+function hostVon(url) {
+  try { return new URL(String(url)).hostname; } catch { return ''; }
+}
+
+/**
+ * Ist die Einordnung dieser Meldung strittig genug fuer den ganzen Artikel?
+ *
+ * Drei Faelle, jeder einzeln beobachtet:
+ *
+ *   1. Die KI sieht keine Marktrelevanz, das Regelwerk ein deutliches Signal.
+ *      Genau hier faellt die Entscheidung, ob eine Meldung gehandelt wird -
+ *      und genau hier stand bisher Wort gegen Satz, ohne dass einer von beiden
+ *      mehr wusste.
+ *   2. Beide sehen eine Richtung, aber entgegengesetzte. Der teuerste Fall.
+ *   3. Es gab nur die Schlagzeile, kein Anriss, und das Regelwerk schlaegt
+ *      kraeftig aus. Dann hat das Modell ueber eine Zeile geurteilt.
+ */
+function strittig(n) {
+  const ki = n.ki;
+  if (!ki?.richtung || ki.gelesen) return false;
+  if (n.impactLevel === 'ignore') return false;
+  // Erst das regulaere Urteil auf dem aktuellen Stand, dann nachschlagen.
+  if ((ki.stand || 1) < ANWEISUNG_STAND) return false;
+  if (!n.url || !/^https?:\/\//i.test(n.url)) return false;
+  /*
+   * Google News liefert nur eine Weiterleitung auf eine Skriptseite. Der Text
+   * dahinter entsteht erst im Browser; abgerufen kommt eine leere Huelle.
+   */
+  if (/(^|\.)google\.com$/i.test(hostVon(n.url))) return false;
+
+  const regel = n.regelScores?.crypto ?? n.scores?.crypto ?? 0;
+  const kiWert = ki.richtung === 'neutral' ? 0
+    : (ki.richtung === 'bullish' ? 1 : -1) * ki.staerke;
+
+  if (kiWert === 0 && Math.abs(regel) >= 0.3) return true;
+  if (kiWert * regel < 0 && Math.abs(kiWert) >= 0.3 && Math.abs(regel) >= 0.3) return true;
+  if (!n.text && Math.abs(regel) >= 0.45) return true;
+  return false;
+}
+
+/**
+ * Holt zu den strittigsten Meldungen den Artikel und laesst neu urteilen.
+ *
+ * Scheitert der Abruf, bleibt das bisherige Urteil stehen - ein Artikel, der
+ * sich nicht laden laesst, darf die Meldung nicht schlechter stellen als
+ * vorher. Jeder Versuch wird gezaehlt, damit eine Quelle mit Bot-Sperre nicht
+ * jede Minute erneut angefragt wird.
+ */
+async function nachlesen(items, env, hoechstens, buch) {
+  if (!env.GROQ_KEY || hoechstens <= 0) return null;
+
+  const kandidaten = items
+    .filter((n) => strittig(n) && (buch[n.id] || 0) < ARTIKEL_VERSUCHE_MAX)
+    .sort((a, b) => Math.abs(b.regelScores?.crypto ?? b.scores?.crypto ?? 0) * (b.priority || 0)
+                  - Math.abs(a.regelScores?.crypto ?? a.scores?.crypto ?? 0) * (a.priority || 0))
+    .slice(0, hoechstens);
+
+  if (!kandidaten.length) return null;
+
+  const ergebnisse = await Promise.all(kandidaten.map(async (n) => {
+    const geholt = await artikelHolen(n.url);
+    if (geholt.fehler) return { n, fehler: geholt.fehler };
+    const d = await deuten(n.title, env, n.text || '', 'nachlauf', geholt.text);
+    if (!d || d.fehler) return { n, fehler: d?.fehler || 'kein Urteil' };
+    return { n, deutung: d, laenge: geholt.laenge };
+  }));
+
+  let gelesen = 0;
+  const fehler = [];
+  for (const r of ergebnisse) {
+    buch[r.n.id] = (buch[r.n.id] || 0) + 1;
+    if (r.deutung) { urteilAnwenden(r.n, r.deutung); gelesen++; }
+    else fehler.push(`${r.n.source}: ${String(r.fehler).slice(0, 60)}`);
+  }
+  return { angefragt: kandidaten.length, gelesen, fehler };
+}
+
 async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX, buch = {}, zweck = 'pruefung') {
   if (hoechstens <= 0) return 0;
   if (!env.GROQ_KEY) return;
@@ -1447,40 +1689,7 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX, buch = {}, zw
   kandidaten.forEach((n, i) => {
     const deutung = deutungen[i];
     if (!deutung || deutung.fehler) return;
-
-    n.ki = deutung;
-    n.kiWiderspruch = widerspruch(n.scores.crypto, deutung);
-
-    if (!n.kiWiderspruch) return;
-
-    // Urteil korrigieren, die urspruengliche Bewertung aufheben.
-    /*
-     * Die urspruengliche Bewertung nur beim ersten Mal festhalten.
-     *
-     * Wird eine bereits berichtigte Meldung erneut geprueft, steht in n.scores
-     * schon das Urteil des Modells - ohne diese Bedingung ginge die Herleitung
-     * des Regelwerks verloren und die Anzeige "Regel sagte ..." zeigte den
-     * eigenen Wert der KI.
-     */
-    if (!n.kiKorrigiert) {
-      n.regelScores = n.scores;
-      n.regelLabel = n.label;
-    }
-    n.kiKorrigiert = true;
-
-    const kiWert = deutung.richtung === 'neutral' ? 0
-      : (deutung.richtung === 'bullish' ? 1 : -1) * deutung.staerke;
-
-    // Dieselben Verhaeltnisse zwischen den Anlageklassen wie im Regelwerk:
-    // Was Krypto stuetzt, stuetzt Aktien etwas schwaecher und belastet den Dollar.
-    n.scores = {
-      crypto: +kiWert.toFixed(3),
-      stocks: +(kiWert * 0.85).toFixed(3),
-      gold: +(kiWert * 0.8).toFixed(3),
-      usd: +(-kiWert).toFixed(3),
-    };
-    n.label = label(kiWert);
-    n.labelText = LABEL_TEXT[n.label];
+    urteilAnwenden(n, deutung);
   });
 
   // Der Verbrauch wird zentral in deuten.mjs gefuehrt; hier zaehlt nur, wie
@@ -1852,6 +2061,21 @@ export default {
         })(),
         berichtigt: bestand?.items?.filter((n) => n.kiKorrigiert).length ?? 0,
         /*
+         * Wie weit die Regeln im Bestand nachgezogen sind.
+         *
+         * Ohne diese Zeile war nicht zu sehen, ob eine Regelaenderung den
+         * Bestand ueberhaupt erreicht - genau daran ist eine Berichtigung
+         * schon einmal unbemerkt haengengeblieben.
+         */
+        regelstand: (() => {
+          const alle = bestand?.items || [];
+          const alt = alle.filter((n) => (n.regelStand || 1) < REGEL_STAND).length;
+          const n = zNow.nachbewertung;
+          return `Regelwerk ${REGEL_STAND} · ${alle.length - alt} von ${alle.length} nachgezogen`
+            + (alt ? ` · ${alt} offen` : '')
+            + (n?.aussortiert ? ` · aussortiert ${JSON.stringify(n.aussortiert)}` : '');
+        })(),
+        /*
          * Groqs eigene Abrechnung, wenn sie vorliegt.
          *
          * Der eigene Zaehler kennt nur, was dieses Isolat gesehen hat. Nach
@@ -1946,6 +2170,14 @@ export default {
         letzterNachlauf: urteilSpeicher?.letzterNachlauf ?? 'noch keiner',
         // Was der letzte Nachlauf tatsaechlich bewirkt hat.
         nachlaufErgebnis: zNow.nachlaufErgebnis ?? 'noch keiner',
+        /*
+         * Was das Nachlesen ganzer Artikel gebracht hat.
+         *
+         * Ein Abruf, der still scheitert - Bot-Sperre, Zustimmungsbanner -,
+         * ist von aussen nicht zu erkennen: Das Urteil bleibt einfach stehen.
+         * Die Fehlermeldung gehoert deshalb hierher.
+         */
+        artikel: zNow.artikelErgebnis ?? 'noch keiner',
         /*
          * Minutenfenster je Modell, so wie Groq es in den Kopfzeilen meldet.
          *

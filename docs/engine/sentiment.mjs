@@ -14,8 +14,34 @@ import { countryRelevance, centralBankWeight, emergingMarketDamping } from './re
  * Der Abstand bleibt eng, und Satzzeichen beenden ihn: Was hinter einem Komma
  * steht, gehört meist zu einem anderen Gedanken. Ohne diese Grenze würde
  * "no decision yet, Fed raises rates" fälschlich verneint.
+ *
+ * Scheitern verneint ebenso. "Israel and Hamas fail to reach ceasefire" galt
+ * als Entspannung und war damit bullish — für die Nachricht, dass die
+ * Waffenruhe eben nicht kommt. Die Formen stehen bewusst mit "to" da: Ein
+ * Bankenzusammenbruch ("bank fails") ist keine Verneinung, sondern selbst die
+ * Meldung.
  */
-const NEGATORS = /\b(no|not|nicht|kein|denies|denied|rules out|unlikely|won't|without|tames?|dampens?|cools?|plays? down|downplays?|pushes? back on|dismisses?|pares?|trims?|scales? back|doubts?|fades?)\b[^.,;:]{0,18}$/;
+/*
+ * Dieselbe Deeskalationsprüfung, aber über alle Fundstellen.
+ *
+ * `DEESKALATION` trägt kein g-Flag, weil es an anderer Stelle mit test()
+ * benutzt wird und ein wanderndes lastIndex dort Treffer verschluckt. Hier
+ * wird eine eigene, globale Fassung gebraucht.
+ */
+const DEESKALATION_ALLE = new RegExp(DEESKALATION.source, 'gi');
+
+/** Trifft das Muster irgendwo, ohne dass eine Verneinung davorsteht? */
+function unverneintTrifft(re, t, tSatz) {
+  re.lastIndex = 0;
+  let m;
+  while ((m = re.exec(t)) !== null) {
+    if (!NEGATORS.test(tSatz.slice(Math.max(0, m.index - 34), m.index))) return true;
+    if (m.index === re.lastIndex) re.lastIndex++;   // Leertreffer nicht endlos wiederholen
+  }
+  return false;
+}
+
+const NEGATORS = /\b(no|not|nicht|kein|denies|denied|rules out|unlikely|won't|without|tames?|dampens?|cools?|plays? down|downplays?|pushes? back on|dismisses?|pares?|trims?|scales? back|doubts?|fades?|fails? to|failed to|failing to|unable to|refuses? to|refused to|stops? short of|falls? short of)\b[^.,;:]{0,18}$/;
 
 /*
  * Krypto-Signalwörter gelten nur für Meldungen, die auch von Krypto handeln.
@@ -296,7 +322,21 @@ export function scoreHeadline(rohTitel, regime = 'policy') {
 
   // Geht es um das Ende eines Konflikts statt um dessen Ausbruch, dreht sich
   // die Wirkung: Der Markt liest Friedensbemühungen als Entspannung.
-  const friedlich = DEESKALATION.test(title) && !DEESKALATION_GESCHEITERT.test(title);
+  /*
+   * ... und die Verneinung gilt hier genauso wie bei den Stichwörtern.
+   *
+   * "Trump official says 'there may not be a nuclear agreement' with Iran"
+   * enthielt das Wort "agreement". Das Regelwerk las darin Entspannung, drehte
+   * eine Eskalationsmeldung auf +0,32 und schrieb "Deeskalation" darunter —
+   * bei einer Meldung, die das Gegenteil sagt. Ein Abkommen, das ausdrücklich
+   * nicht zustande kommt, ist keines.
+   *
+   * Geprüft wird auf allen Fundstellen, nicht nur der ersten: "no ceasefire,
+   * but talks continue" ist verneint an der einen und nicht an der anderen
+   * Stelle — es reicht, wenn eine unverneint dasteht.
+   */
+  const friedlich = unverneintTrifft(DEESKALATION_ALLE, t, tSatz)
+    && !DEESKALATION_GESCHEITERT.test(title);
 
   let geoTreffer = false;
   /*

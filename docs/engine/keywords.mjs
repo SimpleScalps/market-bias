@@ -1,3 +1,21 @@
+/*
+ * Stand des Regelwerks.
+ *
+ * Bewertete Meldungen liegen im Bestand und werden nur dann neu bewertet, wenn
+ * sie erneut im Feed auftauchen. Ein Feed haelt aber nur ein Dutzend Eintraege:
+ * Alles Aeltere behielt sein Urteil fuer immer - auch dann, wenn genau die
+ * Regel, die es erzeugt hat, inzwischen berichtigt war. Genau so blieb
+ * "Deeskalation" unter einer Meldung stehen, die keine ist, obwohl das Muster
+ * schon zwei Stunden vorher enger gefasst worden war.
+ *
+ * Diese Zahl steigt bei jeder Aenderung an Regeln oder Bewertung. Der Worker
+ * bewertet daraufhin nach, was einen aelteren Stand traegt.
+ *
+ * 1  Ausgangsstand
+ * 2  Rubrikpruefung, Verneinung bei der Deeskalation, gescheiterte Diplomatie
+ */
+export const REGEL_STAND = 2;
+
 // Signalwörter für Schlagzeilen ohne Zahlenwerte.
 //
 // type 'hawkish' : + = straffere Geldpolitik erwartet (schlecht für Risk-Assets)
@@ -288,4 +306,18 @@ export const GEOPOLITICS = [
    * Opfer. Übergriffe im Alltag erfüllen weder das eine noch das andere.
    */
   { re: /^(?=[^]*\b(attacks?|assaults?|raids?|strikes?) on\b)(?=[^]*\b(city|cities|town|village|base|port|harbou?r|airport|airfield|border|troops|forces|positions?|infrastructure|convoy|ship|vessel|tanker|pipeline|refinery|grid|capital|region|province|territory|embassy|nuclear|military|army|navy|oil|energy|civilians|warship|kill\w*|dead|wounded|injur\w*|casualt\w*)\b)/, weight: 0.45, label: 'Angriff', labelEn: 'attack' },
+  /*
+   * Gescheiterte Diplomatie ist Eskalation, nicht Entspannung.
+   *
+   * "Trump official says 'there may not be a nuclear agreement' with Iran"
+   * bekam gar kein Signal mehr, seit die Vergeltungsregel einen militaerischen
+   * Zusammenhang verlangt - das blosse Wort "nuclear" traegt zu Recht nicht.
+   * Uebrig blieb "agreement", und das las das Regelwerk als Friedensmeldung.
+   * Beides war falsch: Ein Abkommen, das ausdruecklich nicht zustande kommt,
+   * ist die Absage an die Hoffnung, die davorstand.
+   *
+   * Eng gefasst auf die diplomatischen Formen. "No agreement on the budget"
+   * bewegt keinen Risikowert und darf hier nicht hineinlaufen.
+   */
+  { re: /\b(no|not|never|without|rules? out|ruled out|fail\w* to reach|collapse of|breakdown in|abandon\w*)\b[^.]{0,30}\b(cease-?fire|truce|armistice|peace (deal|plan|agreement|accord|talks)|nuclear (deal|agreement|accord|talks))\b/, weight: 0.35, label: 'Diplomatie gescheitert', labelEn: 'diplomacy failed' },
 ];

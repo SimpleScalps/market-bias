@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v54';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v55';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -566,7 +566,7 @@ function kiDarstellen(box, deutung, regelWert, korrigiert = false) {
   box.className = 'kiAntwort' + (uneins ? ' uneins' : '');
   box.innerHTML = `
     <div class="kiKopf">
-      <span class="kiMarke">${T().zweitmeinung}</span>
+      <span class="kiMarke">${T().zweitmeinung}${deutung.gelesen ? ` · ${T().artikelGelesen}` : ''}</span>
       <span class="kiWert ${deutung.richtung}">${T().kiRichtung[deutung.richtung]} ${deutung.staerke.toFixed(2)}</span>
     </div>
     ${deutung.inhalt ? `<p class="kiInhalt">${escape(deutung.inhalt)}</p>` : ''}

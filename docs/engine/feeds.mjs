@@ -1,5 +1,7 @@
 import { scoreMacroEvent, scoreHeadline, label, LABEL_TEXT } from './sentiment.mjs';
 import { isNoise, categorize, priority, CATEGORY_LABEL } from './priority.mjs';
+import { rubrik } from './rubrik.mjs';
+import { REGEL_STAND } from './keywords.mjs';
 import { dedupe } from './dedupe.mjs';
 import { tradeImpact } from './tradeimpact.mjs';
 import { translateTitles } from './translate.mjs';
@@ -106,6 +108,33 @@ export const FEEDS = [
   { url: 'https://en.mehrnews.com/rss',        source: 'Mehr News',    tags: ['Weltlage'], staatlich: true },
   { url: 'https://www.tehrantimes.com/rss',    source: 'Tehran Times', tags: ['Weltlage'], staatlich: true },
   // Krypto (dieselben offenen Quellen, die auch CryptoPanic aggregiert)
+  /*
+   * Redaktionell unabhaengige Stimmen.
+   *
+   * Der Bestand hing an drei Saeulen: Agentur (Reuters), Wirtschaftspresse
+   * (CNBC, MarketWatch, Benzinga) und Staatsmedien (TASS, IRNA, Mehr News,
+   * Tehran Times). Wo die Staatsmedien die Lage schildern, fehlte bisher eine
+   * Gegenstimme, die keiner Regierung gehoert.
+   *
+   * Ausgewaehlt nach Messung, nicht nach Ruf - Frische des neuesten Eintrags
+   * beim Abruf:
+   *   Guardian World      11 min   unabhaengig (Scott Trust), starke Weltlage
+   *   Guardian Business   21 min   dieselbe Redaktion, Wirtschaftsteil
+   *   SCMP                11 min   Hongkong; Asien und China aus der Naehe
+   *   Times of Israel     35 min   Gegengewicht zu den iranischen Quellen
+   *
+   * Geprueft und verworfen: Crisis Group (neuester Eintrag 9 Tage alt, Titel
+   * wie "Washington 27 August #3" - eine Denkfabrik, keine Nachrichtenquelle),
+   * Global Voices (Rundschau-Feed seit acht Monaten still, Hauptfeed im
+   * Wochentakt ueber Folklore und Fussball), Deutsche Welle (9 Stunden),
+   * NPR (1 Stunde, 10 Eintraege), Al-Monitor (4 Stunden). Unabhaengig ja -
+   * aber zu langsam oder thematisch am Handel vorbei.
+   */
+  { url: 'https://www.theguardian.com/world/rss',                  source: 'Guardian',        tags: ['Weltlage'] },
+  { url: 'https://www.theguardian.com/business/rss',               source: 'Guardian Wirtschaft', tags: ['Weltwirtschaft'] },
+  { url: 'https://www.scmp.com/rss/91/feed',                       source: 'SCMP',            tags: ['Asien'] },
+  { url: 'https://www.timesofisrael.com/feed/',                    source: 'Times of Israel', tags: ['Weltlage'] },
+
   { url: 'https://www.coindesk.com/arc/outboundfeeds/rss/',        source: 'CoinDesk',        tags: ['Krypto'], fast: true },
   { url: 'https://cointelegraph.com/rss',                          source: 'Cointelegraph',   tags: ['Krypto'], fast: true },
   { url: 'https://decrypt.co/feed',                                source: 'Decrypt',         tags: ['Krypto'] },
@@ -295,7 +324,20 @@ function beschreibung(eintrag) {
   return text.slice(0, 500);
 }
 
-export async function loadFeed(feed, regime = 'policy') {
+/*
+ * Was eine Schlagzeile bekommt, in der das Regelwerk nichts findet.
+ *
+ * Steht an einer Stelle, weil auch das Nachbewerten sie braucht: Zwei
+ * Fassungen waeren zwei Wahrheiten, sobald eine davon geaendert wird.
+ */
+export const OHNE_SIGNAL = {
+  kind: 'headline',
+  scores: { crypto: 0, stocks: 0, gold: 0, usd: 0 },
+  signals: [],
+  why: 'Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.',
+};
+
+export async function loadFeed(feed, regime = 'policy', sammler = null) {
   const xml = await get(feed.url);
   const out = [];
   /*
@@ -332,6 +374,19 @@ export async function loadFeed(feed, regime = 'policy') {
       ? tag(it, 'title').replace(feed.titelZusatz, '')
       : tag(it, 'title')).trim();
     if (!title || isNoise(title)) continue;
+
+    /*
+     * Rubrik zuerst, Bewertung danach.
+     *
+     * Ein Spielbericht braucht keine Sentimentanalyse - er braucht gar keine.
+     * Die Pruefung steht deshalb vor scoreHeadline: Sie spart die teuerste
+     * Stelle der Schleife und haelt zugleich fern, was die KI sonst noch
+     * einmal nachlesen wuerde. Siehe rubrik.mjs.
+     */
+    const adresse = verweis(it);
+    const raus = rubrik(title, adresse);
+    if (raus) { if (sammler) sammler[raus] = (sammler[raus] || 0) + 1; continue; }
+
     const date = new Date(zeitstempel(it) || Date.now());
     const scored = scoreHeadline(title, regime);
     const text = beschreibung(it);
@@ -344,16 +399,12 @@ export async function loadFeed(feed, regime = 'policy') {
       source: feed.source,
       // Wer spricht, gehoert zur Meldung - siehe die Begruendung bei den Feeds.
       ...(feed.staatlich ? { staatlich: true } : {}),
-      url: verweis(it),
+      url: adresse,
       date: (isNaN(date) ? new Date() : date).toISOString(),
       tags: feed.tags,
       impact: 'low',
-      ...(scored || {
-        kind: 'headline',
-        scores: { crypto: 0, stocks: 0, gold: 0, usd: 0 },
-        signals: [],
-        why: 'Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.',
-      }),
+      regelStand: REGEL_STAND,
+      ...(scored || OHNE_SIGNAL),
     });
   }
   return out;
@@ -386,6 +437,77 @@ export function enrich(list) {
     }
     return fertig;
   });
+}
+
+/**
+ * Bewertet abgelegte Meldungen neu, deren Regelstand veraltet ist.
+ *
+ * Ohne diesen Schritt erreicht keine Regelaenderung den Bestand. Eine Quelle
+ * haelt ein Dutzend Eintraege; was aus ihrem Feed herausgerutscht ist, wird
+ * nie wieder bewertet und behaelt sein Urteil, bis es aus dem Tagesfenster
+ * faellt. Genau so stand "Deeskalation" noch unter einer Meldung, deren Regel
+ * zwei Stunden zuvor berichtigt worden war.
+ *
+ * Nur ein Teil je Durchgang: Bewerten ist der teuerste Posten der Rechenzeit,
+ * und davon gibt Cloudflare zehn Millisekunden. Bei einem Durchgang je Minute
+ * ist der ganze Bestand in einer Viertelstunde durch.
+ *
+ * Kalendereintraege bleiben unberuehrt - ihre Bewertung stammt aus Zahlen,
+ * nicht aus der Schlagzeile, und liesse sich aus dem Titel nicht wiederholen.
+ */
+export function nachbewerten(items, regime = 'policy', hoechstens = 30) {
+  let offen = 0;
+  for (const n of items) if ((n.regelStand || 1) < REGEL_STAND) offen++;
+  if (!offen) return { items, nachbewertet: 0, aussortiert: {}, offen: 0 };
+
+  const aussortiert = {};
+  const weg = new Set();
+  const frisch = [];
+  let genommen = 0;
+
+  for (const n of items) {
+    if ((n.regelStand || 1) >= REGEL_STAND || genommen >= hoechstens) continue;
+    genommen++;
+
+    // Was heute in keine Rubrik mehr gehoert, gehoerte auch damals nicht hinein.
+    const raus = rubrik(n.title, n.url || '');
+    if (raus) { aussortiert[raus] = (aussortiert[raus] || 0) + 1; weg.add(n.id); continue; }
+
+    if (n.kind === 'macro') { frisch.push({ ...n, regelStand: REGEL_STAND }); continue; }
+
+    /*
+     * Die Berichtigung der KI faellt weg, das Urteil bleibt.
+     *
+     * In scores stand bei einer berichtigten Meldung der Wert der KI. Wer den
+     * stehen liesse, bekaeme aus dem Nachbewerten heraus eine Mischung aus
+     * altem KI-Wert und neuem Regelwert. Hier entsteht deshalb wieder der
+     * reine Regelstand; ob der Widerspruch weiter traegt, entscheidet der
+     * Worker gleich danach neu - mit demselben Urteil, aber gegen die neue
+     * Grundlage.
+     */
+    const { regelScores, regelLabel, kiKorrigiert, kiWiderspruch, ...rest } = n;
+    const scored = scoreHeadline(n.title, regime);
+    frisch.push({ ...rest, ...(scored || OHNE_SIGNAL), regelStand: REGEL_STAND });
+  }
+
+  const fertig = enrich(frisch);
+
+  /*
+   * Die Reihenfolge des Bestands bleibt, wie sie war.
+   *
+   * Sie steht fuer die Sortierung nach Zeit; wer die nachbewerteten Eintraege
+   * hinten anhaengt, wuerfelt die Anzeige durcheinander.
+   */
+  const nachId = new Map(fertig.map((n) => [n.id, n]));
+  return {
+    items: items.filter((n) => !weg.has(n.id)).map((n) => nachId.get(n.id) || n),
+    nachbewertet: fertig.length,
+    // Wer nachbewertet wurde, muss sein KI-Urteil neu gegen den Regelwert
+    // gehalten bekommen - das kann nur der Worker, dort steht widerspruch().
+    ids: fertig.map((n) => n.id),
+    aussortiert,
+    offen: offen - genommen,
+  };
 }
 
 /**
@@ -430,9 +552,17 @@ export async function collectNews({
      */
     feeds = feeds.filter((f, i) => i % gruppen === gruppe || f.fast);
   }
+  /*
+   * Was die Rubrikpruefung aussortiert hat, wird mitgezaehlt.
+   *
+   * Stillschweigend wegwerfen ist die gefaehrlichste Art zu filtern: Ein zu
+   * scharfes Muster laesst eine marktbewegende Meldung verschwinden, ohne dass
+   * es irgendwo auffiele. Die Zahlen stehen deshalb unter /health.
+   */
+  const sammler = {};
   const results = await Promise.allSettled([
     loadCalendar(regime),
-    ...feeds.map((f) => loadFeed(f, regime)),
+    ...feeds.map((f) => loadFeed(f, regime, sammler)),
   ]);
 
   const errors = [];
@@ -473,5 +603,6 @@ export async function collectNews({
   return {
     updated: new Date().toISOString(),
     regime, count: all.length, errors, items: all, uebersetzung,
+    ...(Object.keys(sammler).length ? { rubriken: sammler } : {}),
   };
 }

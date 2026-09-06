@@ -309,3 +309,39 @@ test('Ein Arbeitskampf ist kein Militärschlag', () => {
     assert.ok(Math.abs(wert) < 0.15, `${t} -> ${wert}`);
   }
 });
+
+/*
+ * Verneinte Entspannung.
+ *
+ * "Trump official says 'there may not be a nuclear agreement' with Iran" trug
+ * das Wort "agreement" und galt damit als Friedensmeldung: +0,32 und
+ * "Deeskalation" unter einer Nachricht, die das Gegenteil sagt.
+ */
+test('Ein Abkommen, das nicht zustande kommt, ist keine Entspannung', () => {
+  const r = scoreHeadline("Trump official says 'there may not be a nuclear agreement' with Iran", 'policy');
+  assert.ok(r, 'die Meldung braucht ueberhaupt ein Signal');
+  assert.ok(r.scores.crypto < 0, `erwartet bearish, war ${r.scores.crypto}`);
+  assert.ok(!r.signals.includes('Deeskalation'));
+  assert.ok(r.signals.includes('Diplomatie gescheitert'));
+});
+
+test('Scheitern verneint wie eine Verneinung', () => {
+  const r = scoreHeadline('Israel and Hamas fail to reach ceasefire', 'policy');
+  assert.ok(r.scores.crypto < 0, `erwartet bearish, war ${r.scores.crypto}`);
+
+  // Gegenprobe: Ein Bankenzusammenbruch ist keine Verneinung, sondern selbst
+  // die Meldung - "fails" ohne "to" darf nichts umdrehen.
+  const b = scoreHeadline('Regional bank fails as deposits flee', 'policy');
+  assert.ok(!b || b.scores.crypto <= 0, 'ein Bankenzusammenbruch bleibt bearish');
+});
+
+test('Eine echte Waffenruhe bleibt Entspannung', () => {
+  const r = scoreHeadline('Ukraine and Russia agree ceasefire to end the war', 'policy');
+  assert.ok(r.scores.crypto > 0, `erwartet bullish, war ${r.scores.crypto}`);
+  assert.ok(r.signals.includes('Deeskalation'));
+});
+
+test('Gescheiterte Diplomatie bleibt auf die diplomatischen Formen beschraenkt', () => {
+  // Ein Haushaltsstreit ist kein geopolitisches Risiko.
+  assert.equal(scoreHeadline('No agreement on the federal budget', 'policy'), null);
+});
