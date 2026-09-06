@@ -1,11 +1,45 @@
 {
- "updated": "2026-09-06T17:03:29.838Z",
+ "updated": "2026-09-06T17:13:35.711Z",
  "regime": "policy",
- "count": 129,
+ "count": 127,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "Al Jazeera:Palestinian farmers battle settler sabotage to save Hebron crops, livestock",
+   "title": "Palestinian farmers battle settler sabotage to save Hebron crops, livestock",
+   "text": "West Bank farmers defy daily settler attacks, sheep theft, and military restrictions to protect their land.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/features/2026/9/6/palestinian-farmers-battle-settler-sabotage-to-save-hebron-crops-livestock?traffic_source=rss",
+   "date": "2026-09-06T17:03:20.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Palästinensische Bauern kämpfen gegen Sabotage von Siedlern, um Hebroner Ernten und Vieh zu retten"
+  },
   {
    "id": "Decrypt:OpenAI's GPT-6 Astra Is Shockingly Good at Almost Everything",
    "title": "OpenAI's GPT-6 Astra Is Shockingly Good at Almost Everything",
@@ -75,6 +109,78 @@
    "titleDe": "Deutsche Rechtsextreme erwarten großen Sieg im Ostland – Prognosen"
   },
   {
+   "id": "Al Jazeera:Trump official says ‘there may not be a nuclear agreement’ with Iran",
+   "title": "Trump official says ‘there may not be a nuclear agreement’ with Iran",
+   "text": "US Energy Secretary Chris Wright's comments could signal that US hopes for a nuclear deal are dimming.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/6/trump-official-says-there-may-not-be-a-nuclear-agreement-with-iran?traffic_source=rss",
+   "date": "2026-09-06T16:59:04.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Deeskalation"
+   ],
+   "scores": {
+    "crypto": 0.315,
+    "stocks": 0.315,
+    "gold": -0.158,
+    "usd": -0.105
+   },
+   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Deeskalation)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 93,
+   "label": "bullish",
+   "labelText": "Bullish",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Trump-Beamter sagt, es könnte keine nukleare Vereinbarung mit Iran geben"
+  },
+  {
+   "id": "Al Jazeera:Lamine Yamal and Fermin Lopez star as Barcelona run riot at Valencia",
+   "title": "Lamine Yamal and Fermin Lopez star as Barcelona run riot at Valencia",
+   "text": "Lamine Yamal scored twice and Fermin Lopez shone as Barcelona romped to a 5-0 win at La Liga strugglers Valencia.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/2026/9/6/lamine-yamal-and-fermin-lopez-star-as-barcelona-run-riot-at-valencia?traffic_source=rss",
+   "date": "2026-09-06T16:55:38.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Lamine Yamal und Fermin Lopez glänzen, während Barcelona bei Valencia ausflippt"
+  },
+  {
    "id": "TASS:Ukraine, US, Europe agree to hold another meeting soon — Zelensky",
    "title": "Ukraine, US, Europe agree to hold another meeting soon — Zelensky",
    "text": "According to Zelensky, US special presidential envoy Steve Witkoff and President Donald Trump’s son-in-law Jared Kushner have actually resumed the negotiating process after their meeting with Russian President Vladimir Putin and today’s talks in Kiev",
@@ -97,7 +203,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -131,7 +237,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 52,
+   "priority": 51,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -252,6 +358,40 @@
    "titleDe": "Hackers fordern 2 Millionen Dollar in Bitcoin aus Deutschland. Berlin verweigert Zahlung"
   },
   {
+   "id": "Reuters:Fermin shines for Barcelona in thumping win at Valencia - reuters.com",
+   "title": "Fermin shines for Barcelona in thumping win at Valencia - reuters.com",
+   "text": "Fermin shines for Barcelona in thumping win at Valencia &nbsp;&nbsp; reuters.com",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOb0JfbXJ0dUxFWGkzQTN2bzhRT2pVUEp2WFBQSld2VGFuakNJRUVFZ1Fvc3QzYi1udDhqR3l3MjdPd2U2aG9BR2cxeVNEVVFWVmVOQmhPTlF0c3hyb2loSjFyRVByeDNrWWNqZm1WZEUzb3o5YzNtWFRuMEdRSUZXSE80VWtwN1FKQlRMLVVHNkpmZGhFTG1YYnN4SQ?oc=5",
+   "date": "2026-09-06T16:39:43.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Fermin glänzt für Barcelona bei dominierendem Sieg gegen Valencia"
+  },
+  {
    "id": "Tehran Times:Restoration work continues at Sheikh Safi al-Din Ardabili shrine complex",
    "title": "Restoration work continues at Sheikh Safi al-Din Ardabili shrine complex",
    "text": "TEHRAN – Conservation, restoration and infrastructure projects are underway at the UNESCO-registered Sheikh Safi al-Din Ardabili Khanegah and Shrine Ensemble in northwestern Iran, the head of the World Heritage site said.",
@@ -357,9 +497,9 @@
    "titleDe": "Sayyari: Irans Abschreckungsfähigkeiten haben sich nach den jüngsten Kriegen deutlich erhöht"
   },
   {
-   "id": "Reuters:Trump administration renews Supreme Court bid to limit mail-in voting",
-   "title": "Trump administration renews Supreme Court bid to limit mail-in voting",
-   "text": "Trump administration renews Supreme Court bid to limit mail-in voting &nbsp;&nbsp; Reuters",
+   "id": "Reuters:Trump administration renews Supreme Court bid to limit mail-in voting - reuters.com",
+   "title": "Trump administration renews Supreme Court bid to limit mail-in voting - reuters.com",
+   "text": "Trump administration renews Supreme Court bid to limit mail-in voting &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPLV9pS2hNUzZydVVnTkVQaW9VaGpkWGE0bjZDdzBLaWVzTkZHRW5yX0loS3VGTE5EaEpXSzZGQ1BJRG9aWGxPa1NTMkN6QUhXbGROU3FpV2xMNU02ZnAyWkhveU51R3R2ZGlFRFd1U0dtWjJLNEZVeXY0aDU3TXNxMXM0SmZQaHI5N2E4OERFajBrZ3Y3bjFPOVU2Wm01TFhBLTFnNGxBMVl4QXFtSDBVckxtbnlBZkdSbFJj?oc=5",
    "date": "2026-09-06T16:29:44.000Z",
@@ -388,7 +528,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Trump-Administration erneuert Supreme-Court-Bet, um Briefwahl einzuschränken"
+   "titleDe": "Trump-Administration erneuert Supreme-Court-Bet, um Briefwahl einzuschränken - reuters.com"
   },
   {
    "id": "Tehran Times:Qalibaf warns of faster, heavier Iranian response to any new aggression",
@@ -461,9 +601,9 @@
    "titleDe": "USA will mit Moskau, Kiew an einem 'erneuerten' Friedensvorschlag arbeiten – Medien"
   },
   {
-   "id": "Reuters:Only solo woman in Venice festival says industry remains unequal",
-   "title": "Only solo woman in Venice festival says industry remains unequal",
-   "text": "Only solo woman in Venice festival says industry remains unequal &nbsp;&nbsp; Reuters",
+   "id": "Reuters:Only solo woman in Venice festival says industry remains unequal - reuters.com",
+   "title": "Only solo woman in Venice festival says industry remains unequal - reuters.com",
+   "text": "Only solo woman in Venice festival says industry remains unequal &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNmFZTzVCdHhDYUxpTHNDMW1NbVMxZ2tLQmdMa2s4eERSV1hNcnQ1dTR3UHV4elVBZGtTMFItdDBpWGx6TlRnaE00SU12NlpURVJaRk1GRjktc3o3UzZ2SVBSZ0prc1dYeDBDRThURkRGNDJLU3JxZUZINDFsbHZXdzI5b043aWZmcjM5ZFFqbEYyZFNjekg1WDhVbzBtdEhkd1IzNTVoUXZmYTA?oc=5",
    "date": "2026-09-06T16:25:36.000Z",
@@ -492,7 +632,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Alleinige Frau beim Venedig-Festival sagt, Industrie bleibt ungleich"
+   "titleDe": "Alleinige Frau im Venedig-Festival sagt, Industrie bleibt ungleich"
   },
   {
    "id": "TASS:Yemeni government forces take control over Hays in Hodeida province — TV",
@@ -586,7 +726,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 87,
+   "priority": 86,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "high",
@@ -599,9 +739,9 @@
    "titleDe": "Iran lobt militärische Reaktion, während die USA Blockade fortsetzen und Tanker treffen"
   },
   {
-   "id": "Reuters:German rocket reaches space as Europe enters satellite launch race",
-   "title": "German rocket reaches space as Europe enters satellite launch race",
-   "text": "German rocket reaches space as Europe enters satellite launch race &nbsp;&nbsp; Reuters",
+   "id": "Reuters:German rocket reaches space as Europe enters satellite launch race - reuters.com",
+   "title": "German rocket reaches space as Europe enters satellite launch race - reuters.com",
+   "text": "German rocket reaches space as Europe enters satellite launch race &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBxdzBwRnJCWm9wbHdqeVMwbjUwNG5QMXI1Vnh6TUJXNHJUbFEwbFNkemJGaXBOQlZhTDR6cDlaWkxLaG95cnl1cmpyNlRITjVRRm1yUXU3VmFITy1LX3pvMThQMzc1OUU?oc=5",
    "date": "2026-09-06T16:13:59.000Z",
@@ -620,7 +760,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -630,7 +770,7 @@
    "scope": "project",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Deutsche Rakete erreicht Weltraum, Europa tritt in Satellitenstart-Wettbewerb ein"
+   "titleDe": "Deutscher Raketensystem erreicht Weltraum, während Europa in den Satellitenstartwettbewerb eintritt"
   },
   {
    "id": "CNBC World:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
@@ -713,74 +853,6 @@
    "titleDe": "Bitcoin-OG sagt, er beobachtet den nächsten großen Exploit, während KI-Modelle stärker werden"
   },
   {
-   "id": "Reuters:Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL",
-   "title": "Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL",
-   "text": "Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONEJLZjJzYTl4RFlkRlFmR3M0UDdrNzJLaFFnTkE2OW9IOGxBTzl2eVk1QktFM01aV2YwUmJKQnI3UnktenZhQ2dIVWZjSU5uZi1DQllWazhVY3VMLXltR3plSUhhN2g3U0p3Q3pGZjZqT2NnYzh0SWVmVUZpa0x1TzV5TXMtYjFLOGkwUGExclEzTzlBWUJVQ1RSdjc5UFJQWmhQV25NN0lLYjUxcTZldGFGYTZGazBz?oc=5",
-   "date": "2026-09-06T16:09:57.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Shaw erzielt im zweiten Halbzeit-Doppel, während Manchester City Birmingham 3-1 in der WSL schlägt"
-  },
-  {
-   "id": "Reuters:Far-right AfD posts historic German state election win, exit polls show",
-   "title": "Far-right AfD posts historic German state election win, exit polls show",
-   "text": "Far-right AfD posts historic German state election win, exit polls show &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWkVzWDM5cENTaHhZNmdPZHRJUXd3NzRfQUs3RE1qUEU4UXlrTUJTaHR3VWEtbmVvS21PU0o3bTRuZ1ZiS1c1RU1NTm9EN2lKN1NCVklFRE5XMm9vZXVWWUotLWd5NjNCaUpEbVUtU2p4QkFjZDRNbW9LSmtKUEhyYmtxY3FaV0V6LXBOUDZYOTRpVTNNRC1qTXhaZzdIQ0x1ZXZKYXNBT1Y1U1J3ZlJ6QnJFSi1zVFhKOGRB?oc=5",
-   "date": "2026-09-06T16:09:43.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Rechtsextreme AfD erzielt historischen Sieg bei Landeswahl in Deutschland, Exit‑Umfragen zeigen"
-  },
-  {
    "id": "Al Jazeera:Far-right AfD wins vote in Germany’s Saxony-Anhalt state: Exit polls",
    "title": "Far-right AfD wins vote in Germany’s Saxony-Anhalt state: Exit polls",
    "text": "The party hails 'historic' result, but it is not immediately clear whether it will be able to form a government.",
@@ -813,44 +885,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "AfD gewinnt Wahl in Sachsen-Anhalt: Exit‑Umfragen"
-  },
-  {
-   "id": "Reuters:US envoys make first Kyiv visit amid Ukraine war peace push",
-   "title": "US envoys make first Kyiv visit amid Ukraine war peace push",
-   "text": "US envoys make first Kyiv visit amid Ukraine war peace push &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONnlRblpUWUNHMjMteEdBa0JYZk5MeFJQRjlEa3dUdGtDY0xfZEs5Y2dCcV8yNEhSTHYzem9SVVVYS1NBZnc4U29BSEcydHp4cUx5bFZSUmZ1QXFsNHlFRGgtbGJ2WmZMRTZzdjhrTWY1b1BDMlFnQTlWXzRLU056OGV2TUlRdkdTdjRkMFpTNi02X1Y4MU5sMEF4WF8wcVpDNmNJUmFvXzRZeV91N2dKUDNJN1FWdkg3RHpReHVoNA?oc=5",
-   "date": "2026-09-06T16:05:46.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Deeskalation"
-   ],
-   "scores": {
-    "crypto": 0.252,
-    "stocks": 0.252,
-    "gold": -0.126,
-    "usd": -0.084
-   },
-   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Deeskalation)",
-   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 64,
-   "label": "bullish",
-   "labelText": "Bullish",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Gesandte machen den ersten Besuch in Kiew inmitten des ukrainischen Kriegsfriedensvorstoßes"
   },
   {
    "id": "Mehr News:Israel proven it complies with no ceasefire agreement",
@@ -1157,7 +1191,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 60,
+   "priority": 59,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1191,7 +1225,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1225,7 +1259,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -1261,7 +1295,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 43,
+   "priority": 42,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1295,7 +1329,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 43,
+   "priority": 42,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1432,7 +1466,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1467,7 +1501,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1620,40 +1654,6 @@
    "titleDe": "Schließung des Konsulats in Bonn soll die Wahlvorbereitungen sabotieren – russischer Diplomat"
   },
   {
-   "id": "Al Jazeera:Bosnian Serbs strengthen ties with Israel amid tensions",
-   "title": "Bosnian Serbs strengthen ties with Israel amid tensions",
-   "text": "Opening of Israeli commerce office deepens ties between Republika Srpska and Israel.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/bosnian-serbs-strengthen-ties-with-israel-amid-tensions?traffic_source=rss",
-   "date": "2026-09-06T14:37:40.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 58,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Bosnische Serben vertiefen Beziehungen zu Israel trotz Spannungen"
-  },
-  {
    "id": "U.Today:Peter Brandt Revives His Legendary 2019 Parabolic Target for Bitcoin",
    "title": "Peter Brandt Revives His Legendary 2019 Parabolic Target for Bitcoin",
    "text": "Peter Brandt’s famous 2019 Bitcoin chart returns to the spotlight as BTC eyes $80,000 under an institutional floor.",
@@ -1690,40 +1690,6 @@
    "titleDe": "Peter Brandt erweckt sein legendäres 2019-Parabolziel für Bitcoin wieder"
   },
   {
-   "id": "Al Jazeera:Nepal rescuers search hydropower tunnels for survivors",
-   "title": "Nepal rescuers search hydropower tunnels for survivors",
-   "text": "Rescue teams are searching for survivors trapped inside tunnels at Nepal’s Chilime hydropower plant.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/nepal-rescuers-search-hydropower-tunnels-for-survivors?traffic_source=rss",
-   "date": "2026-09-06T14:32:06.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 28,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Nepalesische Rettungskräfte suchen in Wasserkrafttunneln nach Überlebenden"
-  },
-  {
    "id": "Tehran Times:Iran defeat Vietnam at AFC U20 Asian Cup 2027 qualifier",
    "title": "Iran defeat Vietnam at AFC U20 Asian Cup 2027 qualifier",
    "text": "TEHRAN – Iran finished runners-up in Group C of the AFC U20 Asian Cup China 2027 Qualifiers after coming from behind to defeat hosts Vietnam 3-1 on Sunday.",
@@ -1746,7 +1712,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1795,40 +1761,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Warum spielt Trump den Krieg mit dem Iran herunter?"
-  },
-  {
-   "id": "Al Jazeera:Why potluck parties are making a big comeback in America",
-   "title": "Why potluck parties are making a big comeback in America",
-   "text": "As Americans spend less time socialising, communities are rediscovering an old way of bringing people together.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/features/longform/2026/9/6/why-potluck-parties-are-making-a-big-comeback-in-america?traffic_source=rss",
-   "date": "2026-09-06T14:19:23.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 28,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Warum Potluck-Partys in Amerika wieder aufleben"
   },
   {
    "id": "TASS:Lebanese president calls on US, UN to force Israel to stop attacks on Nabatieh",
@@ -1964,7 +1896,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -2421,7 +2353,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 56,
+   "priority": 55,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2455,7 +2387,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2492,7 +2424,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2526,7 +2458,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2560,7 +2492,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 39,
+   "priority": 38,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3011,7 +2943,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3046,7 +2978,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 53,
+   "priority": 52,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3081,7 +3013,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 53,
+   "priority": 52,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3219,7 +3151,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3256,7 +3188,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 52,
+   "priority": 51,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3325,7 +3257,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3359,7 +3291,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3716,7 +3648,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3853,7 +3785,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4530,7 +4462,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 7,
+  "uebersetzt": 6,
   "fehler": null
  }
 }
