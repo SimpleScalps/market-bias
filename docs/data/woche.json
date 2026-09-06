@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T15:29:22.575Z",
+ "updated": "2026-09-06T15:34:50.652Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T15:29:22.606Z",
+   "stand": "2026-09-06T15:34:50.703Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,32 +309,32 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T15:29:22.601Z",
-   "anzahl": 63,
+   "stand": "2026-09-06T15:34:50.693Z",
+   "anzahl": 112,
    "klassen": {
     "crypto": {
-     "score": -0.0547,
-     "bull": 1,
-     "bear": 2,
-     "neut": 60
+     "score": -0.0462,
+     "bull": 2,
+     "bear": 7,
+     "neut": 103
     },
     "stocks": {
-     "score": -0.0547,
-     "bull": 1,
-     "bear": 2,
-     "neut": 60
+     "score": -0.0462,
+     "bull": 2,
+     "bear": 7,
+     "neut": 103
     },
     "gold": {
-     "score": 0.0273,
-     "bull": 2,
+     "score": 0.0231,
+     "bull": 7,
      "bear": 1,
-     "neut": 60
+     "neut": 104
     },
     "usd": {
-     "score": 0.0182,
+     "score": 0.0154,
      "bull": 1,
      "bear": 0,
-     "neut": 62
+     "neut": 111
     }
    },
    "top": [
@@ -366,7 +366,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 78
+     "priority": 76
     },
     {
      "id": "Al Jazeera:Iran war live: IRGC claims attacks on 3 oil tankers and 3 US-linked ships",
@@ -429,19 +429,34 @@
      "priority": 59
     },
     {
-     "id": "Al Jazeera:Nearly 9,000 killed in Israeli attacks on Lebanon since 2023",
-     "titel": "Nearly 9,000 killed in Israeli attacks on Lebanon since 2023",
-     "titelDe": "Fast 9.000 Menschen wurden seit 2023 bei israelischen Angriffen auf Libanon getötet",
-     "quelle": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/9/6/nearly-9000-killed-in-israeli-attacks-on-lebanon-since-2023?traffic_source=rss",
-     "zeit": "2026-09-06T02:56:31.000Z",
+     "id": "TASS:Lebanese president calls on US, UN to force Israel to stop attacks on Nabatieh",
+     "titel": "Lebanese president calls on US, UN to force Israel to stop attacks on Nabatieh",
+     "titelDe": "Libanesischer Präsident fordert USA und UN auf, Israel zu zwingen, Angriffe auf Nabatieh zu stoppen",
+     "quelle": "TASS",
+     "url": "https://tass.com/world/2183341",
+     "zeit": "2026-09-06T14:17:42.000Z",
      "scores": {
       "crypto": -0.405,
       "stocks": -0.405,
       "gold": 0.203,
       "usd": 0.135
      },
-     "priority": 35
+     "priority": 66
+    },
+    {
+     "id": "Mehr News:OIC denounces US strike on Iranian tanker in Persian Gulf",
+     "titel": "OIC denounces US strike on Iranian tanker in Persian Gulf",
+     "titelDe": "OIC verurteilt US-Angriff auf iranischen Tanker im Persischen Golf",
+     "quelle": "Mehr News",
+     "url": "https://en.mehrnews.com/news/247487/OIC-denounces-US-strike-on-Iranian-tanker-in-Persian-Gulf",
+     "zeit": "2026-09-06T09:13:47.000Z",
+     "scores": {
+      "crypto": -0.405,
+      "stocks": -0.405,
+      "gold": 0.203,
+      "usd": 0.135
+     },
+     "priority": 45
     }
    ]
   }

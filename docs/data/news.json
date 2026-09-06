@@ -1,11 +1,150 @@
 {
- "updated": "2026-09-06T15:29:22.575Z",
+ "updated": "2026-09-06T15:34:50.652Z",
  "regime": "policy",
- "count": 77,
+ "count": 130,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "BBC World:US envoys hold talks with Zelensky in Kyiv after meeting Putin",
+   "title": "US envoys hold talks with Zelensky in Kyiv after meeting Putin",
+   "text": "Steve Witkoff tells reporters the US team felt \"encouraged\" by what he called a \"substantive\" and important discussion.",
+   "source": "BBC World",
+   "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-06T15:32:27.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 45,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Gesandte führen nach einem Treffen mit Putin Gespräche mit Selenskyj in Kiew"
+  },
+  {
+   "id": "Reuters:Maitland-Niles screamer earns Everton 2-2 draw with Man Utd",
+   "title": "Maitland-Niles screamer earns Everton 2-2 draw with Man Utd",
+   "text": "Maitland-Niles screamer earns Everton 2-2 draw with Man Utd &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOV05GcTJicDRHd1lYMXQ0SlVmSUZoUWExTkMxR3diOHk2bmhJdzh5WmVGUmlkNlB4WEhyOVNERGFqeXotYV9XQlJicTZEeXc4YTkwMG41UTh4WGlsSS1CV21DRGk5bGphNjB5Qi1kTXJHUGJkN1FhRWE1MGJOLVA0TDJ0bE4zZnF1UnZmMkxlTTN2MHBtaWhyQXBZSWc3OWFBS1NsaVp5cE1Wd2ZwTWc?oc=5",
+   "date": "2026-09-06T15:18:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "Reuters:US envoys make first Kyiv visit amid Ukraine war peace push",
+   "title": "US envoys make first Kyiv visit amid Ukraine war peace push",
+   "text": "US envoys make first Kyiv visit amid Ukraine war peace push &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONnlRblpUWUNHMjMteEdBa0JYZk5MeFJQRjlEa3dUdGtDY0xfZEs5Y2dCcV8yNEhSTHYzem9SVVVYS1NBZnc4U29BSEcydHp4cUx5bFZSUmZ1QXFsNHlFRGgtbGJ2WmZMRTZzdjhrTWY1b1BDMlFnQTlWXzRLU056OGV2TUlRdkdTdjRkMFpTNi02X1Y4MU5sMEF4WF8wcVpDNmNJUmFvXzRZeV91N2dKUDNJN1FWdkg3RHpReHVoNA?oc=5",
+   "date": "2026-09-06T15:10:42.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Deeskalation"
+   ],
+   "scores": {
+    "crypto": 0.252,
+    "stocks": 0.252,
+    "gold": -0.126,
+    "usd": -0.084
+   },
+   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Deeskalation)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 65,
+   "label": "bullish",
+   "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Gesandte machen den ersten Besuch in Kiew inmitten des ukrainischen Kriegsfriedensvorstoßes"
+  },
+  {
+   "id": "Reuters:Brazilian court suspends licenses for Sigma Lithium mine",
+   "title": "Brazilian court suspends licenses for Sigma Lithium mine",
+   "text": "Brazilian court suspends licenses for Sigma Lithium mine &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQejNnOVRqVVJ2eWppWXNYTFVwREFsSEtNcjRkMkhfbTd0QjZnTGJic21yc3F3V2dwVnU1UERNbGl0bkFCT095TkxETGN5VWhNTGo5X3pHZGd1NmJfckZsMTdZMGJPRHkySElnUjdUVlJDblFZVzJxaE04dzlpQ1IxV2FIZnBoZWVBTy1MQkxhWXN0ZUwyWXRnUEVhVGkyUFlySF9UUG9B?oc=5",
+   "date": "2026-09-06T15:09:43.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 35,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Brasilianisches Gericht setzt Lizenzen für Sigma Lithium Mine aus"
+  },
   {
    "id": "Al Jazeera:Embattled FIFA President Gianni Infantino to stand for re-election",
    "title": "Embattled FIFA President Gianni Infantino to stand for re-election",
@@ -41,6 +180,142 @@
    "titleDe": "Der umstrittene FIFA-Präsident Gianni Infantino kandidiert erneut"
   },
   {
+   "id": "Mehr News:Iran security forces seize shipment of weapons in NW",
+   "title": "Iran security forces seize shipment of weapons in NW",
+   "text": "TEHRAN, Sep. 06 (MNA) – The IRGC Hamzah Sayyid al-Shuhada Base stationed in northwest Iran announced the seizure of a shipment of weapons and ammunition from terrorist separatist groups.",
+   "source": "Mehr News",
+   "staatlich": true,
+   "url": "https://en.mehrnews.com/news/247495/Iran-security-forces-seize-shipment-of-weapons-in-NW",
+   "date": "2026-09-06T15:06:58.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 61,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iranische Sicherheitskräfte beschlagnahmen Waffenlieferungen in Nordwestengland"
+  },
+  {
+   "id": "Reuters:Antonelli takes sensational home Italian GP win from back of grid",
+   "title": "Antonelli takes sensational home Italian GP win from back of grid",
+   "text": "Antonelli takes sensational home Italian GP win from back of grid &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdTlKSVhMVEhIUTlaWUluWkprc2t3emw5c3pKLW5YS1JUQXRqUW1MalRBQzdxZ01vbUo0eFpYOU1ZZ280aEFQS1hBRlF4WTlwUWk2NGdkVDNybm53VGl3RGw3ckhhZ1dtTzJEWU9LRjVJRXpHZVJqQzhoSUs3NDA0MnFBbmxtcnoyQmVOUWJvWEdWZlBQZ1UyVXR4UlVMMzktbHktVHJ4M1R1MGRnNXc?oc=5",
+   "date": "2026-09-06T15:05:44.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "Reuters:Israel's Netanyahu orders West Bank settler outposts to be removed, sources say",
+   "title": "Israel's Netanyahu orders West Bank settler outposts to be removed, sources say",
+   "text": "Israel's Netanyahu orders West Bank settler outposts to be removed, sources say &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN2c0azRZQ0hqbEdRWlhzYlBWRGxQUU9NUmdOUVVtSm1WemlRVnRXd05VT0U4MkcyQjJGWVpHV0hvZHdLb0dIc1FIVDZyYUZ6SjlTYlV0NUtGZnBWckhpaHVYX1JGd3ZNZ1pCRVF4Z213dXk4ZGFNNVZtV19nNDNQOHZVX21Kei16R3pOZzVwS2Y2Zng2eVloNTVmSUx3RnZ2U09Mc1pNTWJGVjFsZ2N5Tm1IVzdOWnU5WWNXOC11SEY1a0poMG53?oc=5",
+   "date": "2026-09-06T15:03:45.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 61,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Israels Netanjahu ordnet die Entfernung von Siedleraußenposten im Westjordanland an, sagen Quellen"
+  },
+  {
+   "id": "Reuters:Israeli strike kills two people in Gaza, medics say",
+   "title": "Israeli strike kills two people in Gaza, medics say",
+   "text": "Israeli strike kills two people in Gaza, medics say &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWXNmc1lpWkNYV0VUaVR4bDNpWTNMcTQ1VkFPYk5tZGFHbzk3Q3pOX0JtRW9Gc01kVnJ4RjRRVVl2aVpfSU1jN1JtelYxZUNIZV9Qb3M1U3J5Y0FMdkN6SV9sd3dPckdaWFFMWktOejFtUldxdUFDd0tMbjBzRzE5R0ZsQ1pPMG1ZNHJWTXQwNWVTT05PNmNFMElJbGVLenhLbEJ3?oc=5",
+   "date": "2026-09-06T15:01:08.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 87,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Israelischer Angriff tötet zwei Menschen in Gaza, sagen Mediziner"
+  },
+  {
    "id": "Decrypt:Stablecoins Won't Scale Without Banks",
    "title": "Stablecoins Won't Scale Without Banks",
    "text": "With a growing number of institutions exploring stablecoins, the bottleneck is regulated infrastructure they can trust.",
@@ -73,6 +348,41 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Stablecoins werden ohne Banken nicht skalieren"
+  },
+  {
+   "id": "TASS:First round of talks with US envoys ends in Kiev",
+   "title": "First round of talks with US envoys ends in Kiev",
+   "text": "According to Reuters, national security advisers to the British, French, and German leaders have arrived in Kiev to take part in the talks",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183351",
+   "date": "2026-09-06T14:56:28.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 44,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Erste Gesprächsrunde mit US-Gesandten endet in Kiew"
   },
   {
    "id": "U.Today:Dogecoin's Ten-Cent Dream Nears Reality as Price Secures Key Breakout",
@@ -111,6 +421,108 @@
    "titleDe": "Der zehncentige Traum von Dogecoin nähert sich der Realität, als der Preis einen wichtigen Ausbruch erreicht"
   },
   {
+   "id": "Tehran Times:Laboratorium. Food irradiation",
+   "title": "Laboratorium. Food irradiation",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529755/Laboratorium-Food-irradiation",
+   "date": "2026-09-06T14:41:47.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "TASS:Russian forces strike two Ukrainian army’s logistics centers in Odessa Region",
+   "title": "Russian forces strike two Ukrainian army’s logistics centers in Odessa Region",
+   "text": "According to the ministry, Geran-4 Seeker drones have state-of-the-art electronic guidance system that makes it possible for the drone to independently adjust its trajectory before hitting a target",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/defense/2183349",
+   "date": "2026-09-06T14:41:33.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 35,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Russische Streitkräfte greifen zwei Logistikzentren der ukrainischen Armee in der Region Odessa an"
+  },
+  {
+   "id": "TASS:Closure of consulate in Bonn meant to derail preparations for elections — Russian diplomat",
+   "title": "Closure of consulate in Bonn meant to derail preparations for elections — Russian diplomat",
+   "text": "According to Zakharova, the German authorities have long been hatching plans to close the Russian consulate general and the Russian House",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/politics/2183343",
+   "date": "2026-09-06T14:40:05.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
    "id": "Al Jazeera:Bosnian Serbs strengthen ties with Israel amid tensions",
    "title": "Bosnian Serbs strengthen ties with Israel amid tensions",
    "text": "Opening of Israeli commerce office deepens ties between Republika Srpska and Israel.",
@@ -132,7 +544,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -166,7 +578,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -179,6 +591,39 @@
    ],
    "alsoIn": [],
    "titleDe": "Peter Brandt erweckt sein legendäres 2019-Parabolziel für Bitcoin wieder"
+  },
+  {
+   "id": "Reuters:Son of EssilorLuxottica founder calls for new strategy for eyewear group",
+   "title": "Son of EssilorLuxottica founder calls for new strategy for eyewear group",
+   "text": "Son of EssilorLuxottica founder calls for new strategy for eyewear group &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOM2hWN1ZvUXE5LUEwb1hpUkxZM2lRVE40YVBDMU4waGhMblhDMGU3b3ZnZXNoTjVXeTJweEtWRDVXcG8wYmNoTnhqN3hiaXB6OHNkb1BXblpVdkU3MjFFV1pTc1JiRXdnbFE0aGNQV0twR0hHVWZnaUdpSzQ0ZHRiU19KWE1zZUIwTjRPSnA1UjFTWU5SVkdHQlZhbmhiaGVZSGw3cDRZRkZ2QQ?oc=5",
+   "date": "2026-09-06T14:35:43.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 30,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
   },
   {
    "id": "Al Jazeera:Nepal rescuers search hydropower tunnels for survivors",
@@ -215,6 +660,79 @@
    "titleDe": "Nepalesische Rettungskräfte suchen in Wasserkrafttunneln nach Überlebenden"
   },
   {
+   "id": "Tehran Times:Iran defeat Vietnam at AFC U20 Asian Cup 2027 qualifier",
+   "title": "Iran defeat Vietnam at AFC U20 Asian Cup 2027 qualifier",
+   "text": "TEHRAN – Iran finished runners-up in Group C of the AFC U20 Asian Cup China 2027 Qualifiers after coming from behind to defeat hosts Vietnam 3-1 on Sunday.",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529754/Iran-defeat-Vietnam-at-AFC-U20-Asian-Cup-2027-qualifier",
+   "date": "2026-09-06T14:24:27.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 60,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iran besiegt Vietnam bei AFC U20 Asian Cup 2027 Qualifikation"
+  },
+  {
+   "id": "Tehran Times:Why does Trump downplay the war with Iran?",
+   "title": "Why does Trump downplay the war with Iran?",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529753/Why-does-Trump-downplay-the-war-with-Iran",
+   "date": "2026-09-06T14:20:09.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Eskalation"
+   ],
+   "scores": {
+    "crypto": -0.36,
+    "stocks": -0.36,
+    "gold": 0.18,
+    "usd": 0.12
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 66,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Warum spielt Trump den Krieg mit dem Iran herunter?"
+  },
+  {
    "id": "Al Jazeera:Why potluck parties are making a big comeback in America",
    "title": "Why potluck parties are making a big comeback in America",
    "text": "As Americans spend less time socialising, communities are rediscovering an old way of bringing people together.",
@@ -247,6 +765,45 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Warum Potluck-Partys in Amerika wieder aufleben"
+  },
+  {
+   "id": "TASS:Lebanese president calls on US, UN to force Israel to stop attacks on Nabatieh",
+   "title": "Lebanese president calls on US, UN to force Israel to stop attacks on Nabatieh",
+   "text": "According to Aoun, Israeli attacks have gone beyond routine bombings as they are intended to paralyze the life in the southern region",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183341",
+   "date": "2026-09-06T14:17:42.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Angriff"
+   ],
+   "scores": {
+    "crypto": -0.405,
+    "stocks": -0.405,
+    "gold": 0.203,
+    "usd": 0.135
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Angriff)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 66,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Libanesischer Präsident fordert USA und UN auf, Israel zu zwingen, Angriffe auf Nabatieh zu stoppen"
   },
   {
    "id": "Al Jazeera:China, Nepal race to find thousands still missing 12 days after floods",
@@ -351,6 +908,45 @@
    "titleDe": "Wie die US-Militärisierung Lateinamerikas aussehen könnte"
   },
   {
+   "id": "Mehr News:VIDEO: Yemeni forces attack on Saudi-backed mercenaries",
+   "title": "VIDEO: Yemeni forces attack on Saudi-backed mercenaries",
+   "text": "TEHRAN, Sep. 06 (MNA) – The Yemeni Ansarullah-led government's forces released a video of their attack on a gathering of the Saudi-backed mercenaries in Taiz with a ballistic missile on Sunday.",
+   "source": "Mehr News",
+   "staatlich": true,
+   "url": "https://en.mehrnews.com/news/247494/VIDEO-Yemeni-forces-attack-Saudi-backed-mercenaries",
+   "date": "2026-09-06T14:09:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Angriff"
+   ],
+   "scores": {
+    "crypto": -0.405,
+    "stocks": -0.405,
+    "gold": 0.203,
+    "usd": 0.135
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Angriff)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 40,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "VIDEO: Jemenitische Streitkräfte greifen von Saudi-Arabien unterstützte Söldner an"
+  },
+  {
    "id": "BBC World:Dozens feared trapped in collapsed building in Delhi",
    "title": "Dozens feared trapped in collapsed building in Delhi",
    "text": "As many as 50 people are thought to have been inside the five-storey hostel when it came down.",
@@ -440,7 +1036,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -474,7 +1070,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -487,6 +1083,40 @@
    ],
    "alsoIn": [],
    "titleDe": "Better und Coinbase’s bitcoin‑gesicherten Hypotheken können die Sicherheiten der Kreditnehmer wiederverwenden"
+  },
+  {
+   "id": "TASS:FIFA confirms Infantino will run for another term as its president at 2027 elections",
+   "title": "FIFA confirms Infantino will run for another term as its president at 2027 elections",
+   "text": "Infantino, 56, was elected FIFA president at a FIFA Extraordinary Congress in February 2016 and has been re-elected twice since then",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/sports/2183339",
+   "date": "2026-09-06T13:49:24.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 29,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
   },
   {
    "id": "Al Jazeera:How significant are the Yemeni government’s military gains against Houthis?",
@@ -591,6 +1221,41 @@
    "titleDe": "'Kein SHIB-ETF noch, aber auf dem richtigen Weg', erklärt ein Shiba‑Inu‑Veteran das Potenzial"
   },
   {
+   "id": "Mehr News:Qatari PM set to visit China",
+   "title": "Qatari PM set to visit China",
+   "text": "TEHRAN, Sep. 06 (MNA) – Qatari Prime Minister and Foreign Minister Sheikh Mohammed bin Abdulrahman Al Thani is set to arrive in Beijing on a two-day visit to China.",
+   "source": "Mehr News",
+   "staatlich": true,
+   "url": "https://en.mehrnews.com/news/247493/Qatari-PM-set-to-visit-China-with",
+   "date": "2026-09-06T13:27:15.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 59,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Qatarischer Premierminister reist nach China"
+  },
+  {
    "id": "Cointelegraph:Here’s what happened in crypto today",
    "title": "Here’s what happened in crypto today",
    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
@@ -646,7 +1311,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -660,6 +1325,41 @@
    ],
    "alsoIn": [],
    "titleDe": "$14,5 Milliarden Injection: Wird das US-Finanzministerium 'Runde 2' für Bitcoin und XRP auslösen?"
+  },
+  {
+   "id": "TASS:OPEC+ nations agree to keep production quotas for October at September level",
+   "title": "OPEC+ nations agree to keep production quotas for October at September level",
+   "text": "As follows from the OPEC table, Russia’s quota in October 2026 will stand at 9.949 mln barrels a day",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/economy/2183335",
+   "date": "2026-09-06T13:17:07.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 58,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "OPEC+ Nationen vereinbaren, die Produktionsquoten für Oktober auf September-Niveau zu halten"
   },
   {
    "id": "Al Jazeera:US envoys meet Putin: What’s behind latest diplomacy on Russia-Ukraine war?",
@@ -696,9 +1396,7 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "BBC World"
-   ],
+   "alsoIn": [],
    "titleDe": "US-Botschafter treffen Putin: Was steckt hinter der neuesten Diplomatie zum Russland-Ukraine-Krieg"
   },
   {
@@ -838,6 +1536,76 @@
    "titleDe": "Palästinenser trauern bei massenhaftem Beerdigungsritual in Gaza-Stadt"
   },
   {
+   "id": "IRNA:Mexico’s ambassador welcomes joint trade cooperation committee with Iran",
+   "title": "Mexico’s ambassador welcomes joint trade cooperation committee with Iran",
+   "text": "Tehran, IRNA – Mexico’s ambassador to Tehran, Guillermo Puente Ordorica, has welcomed the formation of a joint Iran-Mexico committee to expand trade relations, identifying health tourism, the automotive industry and auto parts manufacturing as potential areas of cooperation.",
+   "source": "IRNA",
+   "staatlich": true,
+   "url": "https://en.irna.ir/news/86256598/Mexico-s-ambassador-welcomes-joint-trade-cooperation-committee",
+   "date": "2026-09-06T13:11:02.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 58,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Mexikos Botschafter begrüßt gemeinsames Handelskooperationskomitee mit Iran"
+  },
+  {
+   "id": "IRNA:US military cannot call its ‘barbaric crimes’ against civilians a ‘mistake’: Iran’s OIC mission",
+   "title": "US military cannot call its ‘barbaric crimes’ against civilians a ‘mistake’: Iran’s OIC mission",
+   "text": "Tehran, IRNA –Iran’s mission to the Organization of Islamic Cooperation (OIC) has denounced the US military for proudly acknowledging yet another “cowardly and illegal attack” on an Iranian oil tanker, while evading responsibility for the killing of civilians.",
+   "source": "IRNA",
+   "staatlich": true,
+   "url": "https://en.irna.ir/news/86256611/US-military-cannot-call-its-barbaric-crimes-against-civilians",
+   "date": "2026-09-06T13:03:38.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 58,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Das US-Militär kann seine \"barbarischen Verbrechen\" gegen Zivilisten nicht als \"Fehler\" bezeichnen: Irans OIC-Mission"
+  },
+  {
    "id": "Cointelegraph:Satoshi-era Bitcoin wakes after 16 years of dormancy as 600 BTC moves",
    "title": "Satoshi-era Bitcoin wakes after 16 years of dormancy as 600 BTC moves",
    "text": "Whale Alert identified 12 mining rewards totaling 600 BTC that moved after 16 years of dormancy, with the onchain tracking platform finding no connection to Satoshi Nakamoto.",
@@ -872,6 +1640,40 @@
    ],
    "alsoIn": [],
    "titleDe": "Satoshi-Ära Bitcoin erwacht nach 16 Jahren Inaktivität, als 600 BTC bewegt werden"
+  },
+  {
+   "id": "Mehr News:Opening ceremony of 1st Smart Police High School in Tehran",
+   "title": "Opening ceremony of 1st Smart Police High School in Tehran",
+   "text": "TEHRAN, Sep. 06 (MNA) – The opening ceremony of First Smart Police Boarding High School, aimed at training future police forces in Tehran and six provinces of the country, was held in Tehran on Saturday in the presence of President Masoud Pezeshkian.",
+   "source": "Mehr News",
+   "staatlich": true,
+   "url": "https://en.mehrnews.com/photo/247492/Opening-ceremony-of-1st-Smart-Police-High-School",
+   "date": "2026-09-06T13:01:41.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 28,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
   },
   {
    "id": "Decrypt:This Crypto Project Just Funded 1,000 Student Loans Entirely On-Chain",
@@ -942,6 +1744,41 @@
    "titleDe": "Verlässt die USA seinen Status als sicherer Hafen? Warum globale Zentralbanken Gold aus New York abziehen"
   },
   {
+   "id": "TASS:US redirect 92 ships since resumption of naval blockade of Iran — CENTCOM",
+   "title": "US redirect 92 ships since resumption of naval blockade of Iran — CENTCOM",
+   "text": "The United States resumed the naval blockade of Iran on July 14",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183331",
+   "date": "2026-09-06T12:57:03.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 84,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "USA leiten 92 Schiffe seit Wiederaufnahme der Seeblockade des Iran um — CENTCOM"
+  },
+  {
    "id": "MarketWatch:We’re in our 60s. We earn $345,000 and have $1 million in 403(b)s. Is it too late for Roth conversions?",
    "title": "We’re in our 60s. We earn $345,000 and have $1 million in 403(b)s. Is it too late for Roth conversions?",
    "text": "“Roth assets would provide our children with tax-free distributions.”",
@@ -976,6 +1813,41 @@
    "titleDe": "Wir sind in unseren 60ern. Wir verdienen 345.000 $ und haben 1 Million $ in 403(b)s. Ist es für Roth-Conversions zu spät?"
   },
   {
+   "id": "Tehran Times:Iran pull out of 2026 Wheelchair Basketball World Championships",
+   "title": "Iran pull out of 2026 Wheelchair Basketball World Championships",
+   "text": "TEHRAN - Iran’s national wheelchair basketball team will not travel to Canada for the upcoming Ottawa 2026 IWBF Wheelchair Basketball World Championships after the visas of head coach and assistant coach failed to arrive in time.",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529752/Iran-pulls-out-of-2026-Wheelchair-Basketball-World-Championships",
+   "date": "2026-09-06T12:52:47.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 58,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iran zieht sich aus Rollstuhl-Basketball-Weltmeisterschaften 2026 zurück"
+  },
+  {
    "id": "CNBC World:Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
    "title": "Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
    "text": "The sweetener's prices surged last week, reflecting a sharp deterioration in the global supply outlook.",
@@ -997,7 +1869,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1048,6 +1920,113 @@
    "titleDe": "Neues Ethereum-Upgrade könnte Krypto-Transaktionen und Gebühren grundlegend verändern"
   },
   {
+   "id": "Tehran Times:UNRWA Under Pressure: A Lifeline for Palestinian Refugees",
+   "title": "UNRWA Under Pressure: A Lifeline for Palestinian Refugees",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529751/UNRWA-Under-Pressure-A-Lifeline-for-Palestinian-Refugees",
+   "date": "2026-09-06T12:39:26.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 27,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "TASS:Accusations regarding Leipzig UAV incident incite ‘real war’ — Russian foreign minister",
+   "title": "Accusations regarding Leipzig UAV incident incite ‘real war’ — Russian foreign minister",
+   "text": "Statements made by Merz about making Germany the leading military power in Europe again, they are being put into practice, Sergey Lavrov said",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/politics/2183329",
+   "date": "2026-09-06T12:26:38.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Eskalation"
+   ],
+   "scores": {
+    "crypto": -0.36,
+    "stocks": -0.36,
+    "gold": 0.18,
+    "usd": 0.12
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 63,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Vorwürfe wegen UAV-Vorfall in Leipzig schüren „echten Krieg“ — russischer Außenminister"
+  },
+  {
+   "id": "Tehran Times:Iran basketball hold first training session in Nagoya",
+   "title": "Iran basketball hold first training session in Nagoya",
+   "text": "TEHRAN - Iran’s national basketball team held their first training session in Aichi-Nagoya after arriving in Japan ahead of the 2026 Asian Games.",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529731/Iran-basketball-hold-first-training-session-in-Nagoya",
+   "date": "2026-09-06T12:19:37.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 57,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iran Basketball erste Trainingseinheit in Nagoya"
+  },
+  {
    "id": "CNBC World:‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
    "title": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
    "text": "Anthropic, OpenAI, Meta and Google all released model updates this week, while Nvidia said it's acquiring open-source AI platform Hugging Face.",
@@ -1084,6 +2063,76 @@
    "titleDe": "‘Modellermüdigkeit’ setzt ein, während KI-Labore im rasanten Tempo neue Versionen einführen"
   },
   {
+   "id": "Mehr News:8 Islamic states declare Gaza as eternal Palestinians lands",
+   "title": "8 Islamic states declare Gaza as eternal Palestinians lands",
+   "text": "TEHRAN, Sep. 06 (MNA) – Eight Arab and Islamic countries, including Saudi Arabia, Jordan, the UAE, Indonesia, Pakistan, Turkey, Qatar and Egypt, declared that the Gaza Strip is an integral part of the Palestinian territories.",
+   "source": "Mehr News",
+   "staatlich": true,
+   "url": "https://en.mehrnews.com/news/247491/8-Islamic-states-declare-Gaza-as-Palestinians-lands",
+   "date": "2026-09-06T12:07:02.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 56,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "8 islamische Staaten erklären Gaza zum ewigen palästinensischen Land"
+  },
+  {
+   "id": "Tehran Times:‘Iranian people build Iran's economy, not U.S. Treasury Department’",
+   "title": "‘Iranian people build Iran's economy, not U.S. Treasury Department’",
+   "text": "TEHRAN- The Minister of Economy, reacting to the U.S. Treasury Secretary's remarks about intensifying sanctions and economic pressure on Iran, said: \"The notion that pressure on Iran's economy can change the decisions of a nation is a mistake.\"",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529747/Iranian-people-build-Iran-s-economy-not-U-S-Treasury-Department",
+   "date": "2026-09-06T12:05:32.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 56,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "\"Das iranische Volk baut die iranische Wirtschaft auf, nicht das US-Finanzministerium\""
+  },
+  {
    "id": "CNBC:Many truckers don't feel like the rest of America about AI data centers as business booms",
    "title": "Many truckers don't feel like the rest of America about AI data centers as business booms",
    "text": "Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.",
@@ -1105,7 +2154,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1116,6 +2165,41 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Viele Trucker fühlen sich nicht wie der Rest von Amerika über KI-Rechenzentren, während das Geschäft boomt"
+  },
+  {
+   "id": "Mehr News:US seeking to offset its defeats through economic pressures",
+   "title": "US seeking to offset its defeats through economic pressures",
+   "text": "TEHRAN, Sep. 06 (MNA) – Chief of Staff of the Armed Forces and Commander of Khatam al-Anbiya Central Command Major General Ali Abdollahi says that the United States is seeking to compensate its military defeats by exerting economic pressures on Iran.",
+   "source": "Mehr News",
+   "staatlich": true,
+   "url": "https://en.mehrnews.com/news/247490/US-seeking-to-offset-its-defeats-through-economic-pressures",
+   "date": "2026-09-06T12:02:57.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 39,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Die USA versuchen, ihre Niederlagen durch wirtschaftlichen Druck auszugleichen"
   },
   {
    "id": "CNBC World:Iran warns of ‘more painful’ response to U.S. attacks as economic pressure mounts",
@@ -1188,6 +2272,179 @@
    "titleDe": "KI-Datenzentren verändern ländliche Grundstücksmärkte – und lösen Widerstand aus"
   },
   {
+   "id": "Tehran Times:Iran shakes with 80 earthquakes in a week",
+   "title": "Iran shakes with 80 earthquakes in a week",
+   "text": "TEHRAN – A total of 80 earthquakes have been recorded across the country in a week from August 29 to September 4, according to the seismological networks of the Institute of Geophysics of the University of Tehran.",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529746/Iran-shakes-with-80-earthquakes-in-a-week",
+   "date": "2026-09-06T11:56:08.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 56,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iran schüttelt mit 80 Erdbeben in einer Woche"
+  },
+  {
+   "id": "Tehran Times:Iran hosts over 40% of world’s rare plant species: study",
+   "title": "Iran hosts over 40% of world’s rare plant species: study",
+   "text": "TEHRAN — A comprehensive international study has found that Iran is home to 75 of the world’s 180 known species of Melanocrommyum, underscoring the country’s status as a major global hotspot for plant biodiversity.",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529743/Iran-hosts-over-40-of-world-s-rare-plant-species-study",
+   "date": "2026-09-06T11:54:02.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 56,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iran beherbergt über 40% der weltweit seltenen Pflanzenarten: Studie"
+  },
+  {
+   "id": "TASS:Germany accusing Russia without evidence in Leipzig UAV incident — expert",
+   "title": "Germany accusing Russia without evidence in Leipzig UAV incident — expert",
+   "text": "No concrete evidence of Russia's responsibility has been presented, military expert and editor-in-chief of the Italian portal Analisi Difesa, Gianandrea Gaiani, told TASS",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183327",
+   "date": "2026-09-06T11:53:43.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 56,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Deutschland beschuldigt Russland ohne Beweise bei UAV-Vorfall in Leipzig — Experte"
+  },
+  {
+   "id": "Tehran Times:Iranian, Iraqi universities explore potential to foster ties in AI",
+   "title": "Iranian, Iraqi universities explore potential to foster ties in AI",
+   "text": "TEHRAN – The chancellor of Sharif University of Technology, Masoud Tajrishi, and the president of Al-Zahra University for Women, Zeinab Al-Sultani, have discussed expanding academic cooperation in artificial intelligence (AI) and generative systems, particularly in postgraduate education.",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529740/Iranian-Iraqi-universities-explore-potential-to-foster-ties",
+   "date": "2026-09-06T11:52:09.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 26,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "Tehran Times:Health projects in food and pharmaceutical sectors near completion",
+   "title": "Health projects in food and pharmaceutical sectors near completion",
+   "text": "TEHRAN - Thirteen health development projects in the food and pharmaceutical sectors at medical sciences universities are nearing completion, with priority given to projects that have reached more than 70 percent physical progress.",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529738/Health-projects-in-food-and-pharmaceutical-sectors-near-completion",
+   "date": "2026-09-06T11:50:27.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 26,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
    "id": "BeInCrypto:Elon Musk Fires Back at Bernie Sanders Over His $900 Billion Fortune",
    "title": "Elon Musk Fires Back at Bernie Sanders Over His $900 Billion Fortune",
    "text": "Elon Musk answers Bernie Sanders on X, saying his wealth sits in SpaceX and Tesla stock rather than cash.",
@@ -1222,6 +2479,41 @@
    "titleDe": "Elon Musk schlägt Bernie Sanders zurück wegen seines 900 Milliarden Dollar Vermögens"
   },
   {
+   "id": "TASS:Putin may meet Trump at APEC summit in China — Kremlin aide",
+   "title": "Putin may meet Trump at APEC summit in China — Kremlin aide",
+   "text": "Each of the leaders plans to attend the Asia-Pacific Economic Cooperation summit, Yuri Ushakov said",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/politics/2183325",
+   "date": "2026-09-06T11:30:52.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 56,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Putin kann Trump beim APEC-Gipfel in China treffen — Kreml-Helfer"
+  },
+  {
    "id": "U.Today:Five Days Left: Major XRP Fix Upgrade Set for September Activation",
    "title": "Five Days Left: Major XRP Fix Upgrade Set for September Activation",
    "text": "Countdown begins as key amendment bringing bundled fixes to the XRP Ledger set to activate in days.",
@@ -1243,7 +2535,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1326,6 +2618,145 @@
    "titleDe": "Nike verlässt den S&P 100 Index. Vier Technologiewerte treten ein"
   },
   {
+   "id": "IRNA:Iran Expo 2026 to bring together 1,500 foreign traders, business representatives",
+   "title": "Iran Expo 2026 to bring together 1,500 foreign traders, business representatives",
+   "text": "Tehran, IRNA – More than 1,500 foreign traders are expected to attend the eighth Iran Expo, as organizers seek to expand commercial ties and connect Iranian exporters with target markets.",
+   "source": "IRNA",
+   "staatlich": true,
+   "url": "https://en.irna.ir/news/86256442/Iran-Expo-2026-to-bring-together-1-500-foreign-traders-business",
+   "date": "2026-09-06T11:10:24.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 55,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iran Expo 2026 bringt 1.500 ausländische Händler, Wirtschaftsvertreter"
+  },
+  {
+   "id": "TASS:Putin’s meeting with Witkoff, Kushner shows atmosphere of trust — Kremlin spokesman",
+   "title": "Putin’s meeting with Witkoff, Kushner shows atmosphere of trust — Kremlin spokesman",
+   "text": "Kremlin Spokesman Dmitry Peskov made this statement in an interview with Pavel Zarubin of Vesti",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/politics/2183323",
+   "date": "2026-09-06T11:08:37.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 25,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "IRNA:Iran embassy in Beirut clarifies official position on Lebanon developments",
+   "title": "Iran embassy in Beirut clarifies official position on Lebanon developments",
+   "text": "Tehran, IRNA — Iran’s Embassy in Beirut has stressed that the official positions of the Islamic Republic and the embassy are communicated only through authorized institutions and representatives.",
+   "source": "IRNA",
+   "staatlich": true,
+   "url": "https://en.irna.ir/news/86256484/Iran-embassy-in-Beirut-clarifies-official-position-on-Lebanon",
+   "date": "2026-09-06T11:07:59.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 55,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Die iranische Botschaft in Beirut klärt die offizielle Position zu den Entwicklungen im Libanon"
+  },
+  {
+   "id": "TASS:Witkoff, Kushner arrive in Ukraine — media outlet",
+   "title": "Witkoff, Kushner arrive in Ukraine — media outlet",
+   "text": "It is not specified how long the US representatives will stay in the Ukrainian capital",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183321",
+   "date": "2026-09-06T11:05:54.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 55,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Witkoff, Kushner kommen in der Ukraine an — Medien"
+  },
+  {
    "id": "BeInCrypto:Poland's Crypto Law Fails a Third Time, Leaving the Only Gap in Europe",
    "title": "Poland's Crypto Law Fails a Third Time, Leaving the Only Gap in Europe",
    "text": "Poland remains the only EU member state without a functioning national framework for MiCA, after the Sejm again failed to override President Karol Nawrocki’s veto of crypto regulation. Friday’s vote, the third such attempt, fell 25 votes short of the three-fifths majority required to reverse his decision. Inside Poland’s Third Crypto Veto and Nawrocki’s Reasoning",
@@ -1358,6 +2789,76 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Polen scheitert beim Kryptogesetz zum dritten Mal und lässt die einzige Lücke in Europa offen"
+  },
+  {
+   "id": "IRNA:Iran eyes bigger share of China’s growing copper market",
+   "title": "Iran eyes bigger share of China’s growing copper market",
+   "text": "Tehran, IRNA – Iran’s commercial attaché in Shanghai has stressed the need to expand exports of high-value-added copper products and tap into China’s growing market for copper derivatives.",
+   "source": "IRNA",
+   "staatlich": true,
+   "url": "https://en.irna.ir/news/86256465/Iran-eyes-bigger-share-of-China-s-growing-copper-market",
+   "date": "2026-09-06T11:00:06.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 55,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iran sieht größeren Anteil an Chinas wachsendem Kupfermarkt"
+  },
+  {
+   "id": "IRNA:Pezeshkian orders probe into fatal fuel tanker explosion in western Iran",
+   "title": "Pezeshkian orders probe into fatal fuel tanker explosion in western Iran",
+   "text": "Tehran, IRNA – President Masoud Pezeshkian has ordered an immediate investigation into the causes of a fuel tanker explosion that killed 11 people and injured seven others on the Sanandaj-Hamedan road in western Iran.",
+   "source": "IRNA",
+   "staatlich": true,
+   "url": "https://en.irna.ir/news/86256553/Pezeshkian-orders-probe-into-fatal-fuel-tanker-explosion-in-western",
+   "date": "2026-09-06T10:59:35.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 55,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Pezeshkian ordnet eine Untersuchung der tödlichen Explosion von Kraftstofftankern im Westen des Iran an"
   },
   {
    "id": "U.Today:Two Hot New Cryptos From Robinhood and BNB Officially Listed on Binance Futures: Full Details",
@@ -1394,6 +2895,76 @@
    ],
    "alsoIn": [],
    "titleDe": "Zwei neue Kryptowährungen von Robinhood und BNB werden offiziell auf Binance Futures gelistet: Vollständige Details"
+  },
+  {
+   "id": "IRNA:Ghalibaf: Iran will respond to any aggression with greater force and harsher consequences",
+   "title": "Ghalibaf: Iran will respond to any aggression with greater force and harsher consequences",
+   "text": "Tehran, IRNA — Parliament Speaker Mohammad Bagher Ghalibaf has warned that any aggression against Iran’s interests and security will receive a faster, heavier, and more painful response.",
+   "source": "IRNA",
+   "staatlich": true,
+   "url": "https://en.irna.ir/news/86256429/Ghalibaf-Iran-will-respond-to-any-aggression-with-greater-force",
+   "date": "2026-09-06T10:30:39.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 54,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Ghalibaf: Iran wird auf jede Aggression mit größerer Kraft und härteren Konsequenzen reagieren"
+  },
+  {
+   "id": "Mehr News:Any aggression on Iran's interests to face painful response",
+   "title": "Any aggression on Iran's interests to face painful response",
+   "text": "TEHRAN, Sep. 06 (MNA) – Iranian Parliament Speaker Mohammad Bagher Ghalibaf says that any aggression against Iran’s national interests will face heavier and more painful response.",
+   "source": "Mehr News",
+   "staatlich": true,
+   "url": "https://en.mehrnews.com/news/247488/Any-aggression-on-Iran-s-interests-to-face-painful-response",
+   "date": "2026-09-06T10:10:03.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 53,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Jede Aggression gegen die Interessen des Iran, um eine schmerzhafte Antwort zu erhalten"
   },
   {
    "id": "U.Today:Arbitrum (ARB) Suddenly Up 120%",
@@ -1500,6 +3071,80 @@
    "titleDe": "7 Satoshi‑Era Bitcoin‑Miner erwachen nach 16,5 Jahren"
   },
   {
+   "id": "Mehr News:OIC denounces US strike on Iranian tanker in Persian Gulf",
+   "title": "OIC denounces US strike on Iranian tanker in Persian Gulf",
+   "text": "TEHRAN, Sep. 06 (MNA) – Iran’s mission to the Organization of the Islamic Cooperation (OIC) has strongly condemned the US attack on the Iranian oil tanker, calling it a ‘cowardly attack’.",
+   "source": "Mehr News",
+   "staatlich": true,
+   "url": "https://en.mehrnews.com/news/247487/OIC-denounces-US-strike-on-Iranian-tanker-in-Persian-Gulf",
+   "date": "2026-09-06T09:13:47.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Militärschlag"
+   ],
+   "scores": {
+    "crypto": -0.405,
+    "stocks": -0.405,
+    "gold": 0.203,
+    "usd": 0.135
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Militärschlag)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 45,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "OIC verurteilt US-Angriff auf iranischen Tanker im Persischen Golf"
+  },
+  {
+   "id": "Mehr News:US aircraft carriers within Iran's reach",
+   "title": "US aircraft carriers within Iran's reach",
+   "text": "TEHRAN, Sep. 06 (MNA) – Iran’s ballistic missile attack on a US carrier and destroyer is more than a battlefield event; it signals a shift in regional deterrence and raises the cost of America’s naval presence.",
+   "source": "Mehr News",
+   "staatlich": true,
+   "url": "https://en.mehrnews.com/news/247486/US-aircraft-carriers-within-Iran-s-reach",
+   "date": "2026-09-06T09:09:15.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 52,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Flugzeugträger in Reichweite des Iran"
+  },
+  {
    "id": "Cointelegraph:Tether-backed Orionx to shut down after audit flags $7M custody gap",
    "title": "Tether-backed Orionx to shut down after audit flags $7M custody gap",
    "text": "Tether-backed Orionx is permanently closing after an audit found more than $7 million in customer assets had moved to wallets outside its custody.",
@@ -1532,6 +3177,77 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Tether‑gestützte Orionx schließt nach Audit‑Hinweis auf 7 Mio $ Custody‑Lücke"
+  },
+  {
+   "id": "Mehr News:US attacks against Iranian oil vessels ‘act of desperation’",
+   "title": "US attacks against Iranian oil vessels ‘act of desperation’",
+   "text": "TEHRAN, Sep. 06 (MNA) – Lashing out at the US policy adopted against the Iranian people, it is obvious that the US attacks against the Iranian oil vessels is an act of desperation and hopelessness, Writer and researcher Nick Mottern said.",
+   "source": "Mehr News",
+   "staatlich": true,
+   "url": "https://en.mehrnews.com/news/247485/US-attacks-against-Iranian-oil-vessels-act-of-desperation",
+   "date": "2026-09-06T08:50:24.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 34,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
+   "id": "Tehran Times:Tehran, Baku emphasize development of transit, infrastructure cooperation",
+   "title": "Tehran, Baku emphasize development of transit, infrastructure cooperation",
+   "text": "TEHRAN- Farzaneh Sadegh, Iran's Minister of Transport and Urban Development, and Shahin Mustafayev, Deputy Prime Minister of Azerbaijan, held a telephone conversation to review the latest developments in bilateral relations and explore ways to expand economic ties, particularly in transit, energy, and border infrastructure.",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529749/Tehran-Baku-emphasize-development-of-transit-infrastructure",
+   "date": "2026-09-06T08:42:58.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 27,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "IRNA",
+    "Mehr News"
+   ]
   },
   {
    "id": "U.Today:Buterin Teases Major Advances in Ethereum Transaction Formats",
@@ -1570,6 +3286,145 @@
    "titleDe": "Buterin kündigt bedeutende Fortschritte bei Ethereum-Transaktionsformaten an"
   },
   {
+   "id": "IRNA:In photos: 40th day memorial service for late actor Akbar Abdi held in Iran",
+   "title": "In photos: 40th day memorial service for late actor Akbar Abdi held in Iran",
+   "text": "A memorial marking the 40th day since the passing of the late Iranian actor Akbar Abdi was held at Tehran’s Jam Center in Niavaran, attended by his family members and colleagues on September 5, 2026.",
+   "source": "IRNA",
+   "staatlich": true,
+   "url": "https://en.irna.ir/photo/86256165/In-photos-40th-day-memorial-service-for-late-actor-Akbar-Abdi",
+   "date": "2026-09-06T08:11:42.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 50,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "In Fotos: 40. Gedenktag für den verstorbenen Schauspieler Akbar Abdi im Iran"
+  },
+  {
+   "id": "IRNA:In photos: Int’l congresses on stem cells and biomedicine held in Iran",
+   "title": "In photos: Int’l congresses on stem cells and biomedicine held in Iran",
+   "text": "The “27th Reproductive Biomedicine” and the “22nd Congress on Stem Cell Biology and Technology,” organized by the Royan Institute, were held in Tehran on September 2, 2026. The head of the institution, Abdolhossein Shahverdi, along with professors, researchers, and students in the field, attended the international twin congress.",
+   "source": "IRNA",
+   "staatlich": true,
+   "url": "https://en.irna.ir/photo/86256121/In-photos-Int-l-congresses-on-stem-cells-and-biomedicine-held",
+   "date": "2026-09-06T07:58:48.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 50,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "In Fotos: Internationale Kongresse zu Stammzellen und Biomedizin im Iran"
+  },
+  {
+   "id": "Mehr News:Iran’s deterrence power has significantly increased: Sayyari",
+   "title": "Iran’s deterrence power has significantly increased: Sayyari",
+   "text": "TEHRAN, Sep. 06 (MNA) – Referring to Trump’s recent remarks about putting pressure on Iran, showing Washington’s inability to act on the battlefield, the deputy chief of Iran's Army for Coordination Affairs said Iran’s deterrence power has increased.",
+   "source": "Mehr News",
+   "staatlich": true,
+   "url": "https://en.mehrnews.com/news/247484/Iran-s-deterrence-power-has-significantly-increase-Sayyari",
+   "date": "2026-09-06T07:56:11.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 50,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Die iranische Abschreckungskraft hat deutlich zugenommen: Sayyari"
+  },
+  {
+   "id": "IRNA:Bust honoring iconic Iranian artist Akbar Abdi unveiled",
+   "title": "Bust honoring iconic Iranian artist Akbar Abdi unveiled",
+   "text": "Tehran, IRNA – A memorial ceremony marking the 40th day since the death of acclaimed Iranian actor Akbar Abdi was held in the presence of fellow artists, friends, colleagues and family members, culminating in the unveiling of a bust honoring him.",
+   "source": "IRNA",
+   "staatlich": true,
+   "url": "https://en.irna.ir/news/86256146/Bust-honoring-iconic-Iranian-artist-Akbar-Abdi-unveiled",
+   "date": "2026-09-06T07:38:09.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 19,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Produktankündigung",
+   "eventTypeEn": "Product announcement",
+   "scope": "project",
+   "coins": [],
+   "alsoIn": []
+  },
+  {
    "id": "BBC World:TV presenter among 12 sentenced to death in Egypt drugs case",
    "title": "TV presenter among 12 sentenced to death in Egypt drugs case",
    "text": "Sarah Khalifa is best known for her TV programme Mission Impossible which dealt with crime issues.",
@@ -1604,6 +3459,41 @@
    "titleDe": "TV-Moderator unter 12 Verurteilten zum Tode in Ägypten bei Drogenfall"
   },
   {
+   "id": "IRNA:In photos: Entrepreneurship festival held in Iran",
+   "title": "In photos: Entrepreneurship festival held in Iran",
+   "text": "The second edition of the Alavi Empowerment and Entrepreneurship Festival, along with a ceremony celebrating the launch of 150,000 employment projects, was held on September 5, 2026, at the Imam Khomeini Camp Complex in Lavasan, Tehran Province. Vice President Mohammad Reza Aref was in attendance.",
+   "source": "IRNA",
+   "staatlich": true,
+   "url": "https://en.irna.ir/photo/86256134/In-photos-Entrepreneurship-festival-held-in-Iran",
+   "date": "2026-09-06T07:14:04.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 49,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "In Fotos: Entrepreneurship-Festival im Iran"
+  },
+  {
    "id": "U.Today:Alex Jones Issues Alarming Warning to XRP Holders",
    "title": "Alex Jones Issues Alarming Warning to XRP Holders",
    "text": "Controversial media personality Alex Jones has warned XRP holders that governments could attempt to seize private assets during a severe financial crisis.",
@@ -1625,7 +3515,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 38,
+   "priority": 37,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2513,40 +4403,6 @@
    "titleDe": "Die USA greifen 3 iranische Öltanker an, nachdem Raketen auf Kriegsschiffe der Marine gezielt haben"
   },
   {
-   "id": "CNBC:I'm a nutritionist from Japan: 7 'essential' anti-inflammatory foods that I swear by",
-   "title": "I'm a nutritionist from Japan: 7 'essential' anti-inflammatory foods that I swear by",
-   "text": "Japanese nutritionist and longevity expert Michiko Tomioka shares the inflammation-fighting foods that are always in her kitchen.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/05/nutritionist-from-japan-essential-anti-inflammatory-foods-i-swear-by.html",
-   "date": "2026-09-05T15:30:01.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Ich bin Ernährungsberaterin aus Japan: 7 ‚wesentliche‘ entzündungshemmende Lebensmittel, auf die ich verlass"
-  },
-  {
    "id": "BBC World:What different world maps get right - and what they get wrong",
    "title": "What different world maps get right - and what they get wrong",
    "text": "As the UN adopts a new world map to reflect Africa's true size, let's take a closer look at what different maps get right and wrong.",
@@ -2686,7 +4542,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 2,
+  "uebersetzt": 40,
   "fehler": null
  }
 }
