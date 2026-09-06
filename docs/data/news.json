@@ -1,13 +1,50 @@
 {
- "updated": "2026-09-06T17:43:45.192Z",
+ "updated": "2026-09-06T17:47:24.694Z",
  "regime": "policy",
- "count": 128,
+ "count": 127,
  "errors": [
-  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
-  "CNBC Economy: fetch failed",
-  "CNBC World: fetch failed"
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "TASS:Witkof says parties to Ukraine conflict need to make compromises",
+   "title": "Witkof says parties to Ukraine conflict need to make compromises",
+   "text": "The US President's special envoy noted that Moscow and Kyiv need to narrow the differences between them in order to achieve a peaceful settlement",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183389",
+   "date": "2026-09-06T17:43:05.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Eskalation"
+   ],
+   "scores": {
+    "crypto": -0.36,
+    "stocks": -0.36,
+    "gold": 0.18,
+    "usd": 0.12
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 68,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Witkof sagt, die Parteien des Ukraine-Konflikts müssten Kompromisse eingehen"
+  },
   {
    "id": "Al Jazeera:F1 leader Kimi Antonelli wins Italian GP after epic charge from the back",
    "title": "F1 leader Kimi Antonelli wins Italian GP after epic charge from the back",
@@ -318,7 +355,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -353,7 +390,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -388,7 +425,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -879,7 +916,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -965,14 +1002,14 @@
    "titleDe": "Hackers fordern 2 Millionen Dollar in Bitcoin aus Deutschland. Berlin verweigert Zahlung"
   },
   {
-   "id": "CNBC:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
+   "id": "CNBC World:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
    "title": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
    "text": "Iran warned of faster, heavier retaliation against U.S. attacks while acknowledging the war’s mounting toll on its economy.",
-   "source": "CNBC",
+   "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html",
    "date": "2026-09-06T16:27:03.000Z",
    "tags": [
-    "Märkte"
+    "Weltwirtschaft"
    ],
    "impact": "low",
    "kind": "headline",
@@ -999,7 +1036,9 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "CNBC"
+   ],
    "titleDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen"
   },
   {
@@ -1567,14 +1606,14 @@
    "titleDe": "Tote Fische füllen den verschwindenden Fluss, während Dürre Indonesien erfasst"
   },
   {
-   "id": "CNBC:SEC sues ISS as Trump administration ramps up scrutiny of proxy advisers",
+   "id": "CNBC World:SEC sues ISS as Trump administration ramps up scrutiny of proxy advisers",
    "title": "SEC sues ISS as Trump administration ramps up scrutiny of proxy advisers",
    "text": "The SEC sued Institutional Shareholder Services to enforce a subpoena as the Trump administration increases scrutiny of influential proxy advisers.",
-   "source": "CNBC",
+   "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/06/sec-iss-proxy-adviser-subpoena.html",
    "date": "2026-09-06T15:35:16.000Z",
    "tags": [
-    "Märkte"
+    "Weltwirtschaft"
    ],
    "impact": "low",
    "kind": "headline",
@@ -1588,7 +1627,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -1597,7 +1636,9 @@
    "eventTypeEn": "Regulatory action",
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "CNBC"
+   ],
    "titleDe": "SEC verklagt ISS, während die Trump-Administration die Überwachung von Stellvertreterberatern verstärkt"
   },
   {
@@ -1828,7 +1869,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 41,
+   "priority": 40,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2199,41 +2240,6 @@
    "titleDe": "Better und Coinbase’s bitcoin‑gesicherten Hypotheken können die Sicherheiten der Kreditnehmer wiederverwenden"
   },
   {
-   "id": "TASS:FIFA confirms Infantino will run for another term as its president at 2027 elections",
-   "title": "FIFA confirms Infantino will run for another term as its president at 2027 elections",
-   "text": "Infantino, 56, was elected FIFA president at a FIFA Extraordinary Congress in February 2016 and has been re-elected twice since then",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/sports/2183339",
-   "date": "2026-09-06T13:49:24.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "FIFA bestätigt, dass Infantino bei den Wahlen 2027 erneut für das Amt des Präsidenten kandidieren wird"
-  },
-  {
    "id": "CNBC:Parents who are really good at handling tantrums do 5 things—their kids become more emotionally intelligent, says psychologist",
    "title": "Parents who are really good at handling tantrums do 5 things—their kids become more emotionally intelligent, says psychologist",
    "text": "\"These kids become more emotionally intelligent, which helps them weather setbacks, embrace independence and try new things,\" says Juli Fraga.",
@@ -2408,14 +2414,14 @@
    "titleDe": "$14,5 Milliarden Injection: Wird das US-Finanzministerium 'Runde 2' für Bitcoin und XRP auslösen?"
   },
   {
-   "id": "CNBC:Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
+   "id": "CNBC World:Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
    "title": "Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
    "text": "The sweetener's prices surged last week, reflecting a sharp deterioration in the global supply outlook.",
-   "source": "CNBC",
+   "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/06/sugar-is-outperforming-the-stock-market-this-year-whats-driving-it.html",
    "date": "2026-09-06T13:19:01.000Z",
    "tags": [
-    "Märkte"
+    "Weltwirtschaft"
    ],
    "impact": "low",
    "kind": "headline",
@@ -2438,7 +2444,9 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "CNBC"
+   ],
    "titleDe": "Zucker übertrifft die Börse dieses Jahr. Was treibt das an und wohin kann es gehen"
   },
   {
@@ -2533,7 +2541,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 55,
+   "priority": 54,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2567,7 +2575,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 45,
+   "priority": 44,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2755,14 +2763,14 @@
    "titleDe": "Neues Ethereum-Upgrade könnte Krypto-Transaktionen und Gebühren grundlegend verändern"
   },
   {
-   "id": "CNBC:‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
+   "id": "CNBC World:‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
    "title": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
    "text": "Anthropic, OpenAI, Meta and Google all released model updates this week, while Nvidia said it's acquiring open-source AI platform Hugging Face.",
-   "source": "CNBC",
+   "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
    "date": "2026-09-06T12:13:49.000Z",
    "tags": [
-    "Märkte"
+    "Weltwirtschaft"
    ],
    "impact": "low",
    "kind": "headline",
@@ -2785,7 +2793,9 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "CNBC"
+   ],
    "titleDe": "‘Modellermüdigkeit’ setzt ein, während KI-Labore im rasanten Tempo neue Versionen einführen"
   },
   {
@@ -3087,7 +3097,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 52,
+   "priority": 51,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3757,7 +3767,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3975,14 +3985,14 @@
    "titleDe": "'Er war ein Rettungsanker' – haitianische Pflegekräfte entlassen, Familien im Desaster"
   },
   {
-   "id": "CNBC:From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
+   "id": "CNBC Economy:From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
    "title": "From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
    "text": "Despite rising prices and the travel industry focusing on the luxury segment, budget-minded vacationers are still finding ways to get away.",
-   "source": "CNBC",
+   "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/09/05/budget-travel-vacation-costs.html",
    "date": "2026-09-05T23:55:52.000Z",
    "tags": [
-    "Märkte"
+    "US-Wirtschaft"
    ],
    "impact": "low",
    "kind": "headline",
@@ -4005,7 +4015,9 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "CNBC"
+   ],
    "titleDe": "Von „Mystery-Urlauben“ bis hin zu Hostels - preisbewusste Reisende werden bei steigenden Preisen sparsam"
   },
   {
@@ -4179,14 +4191,14 @@
    "titleDe": "UBS, Jane Street gehören zu den Firmen mit insgesamt 75 Millionen US-Dollar an Hyperliquid-ETF-Anlagen: Bloomberg"
   },
   {
-   "id": "CNBC:Trump turns up the heat on Warsh as Fed rate hike looms",
+   "id": "CNBC Economy:Trump turns up the heat on Warsh as Fed rate hike looms",
    "title": "Trump turns up the heat on Warsh as Fed rate hike looms",
    "text": "Ten days ahead of the next Federal Reserve meeting, the Trump administration looks to be in a full-court press to halt a rate hike in its tracks.",
-   "source": "CNBC",
+   "source": "CNBC Economy",
    "url": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html",
    "date": "2026-09-05T19:12:53.000Z",
    "tags": [
-    "Märkte"
+    "US-Wirtschaft"
    ],
    "impact": "low",
    "kind": "headline",
@@ -4213,7 +4225,10 @@
    "eventTypeEn": "Central bank",
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "CNBC World",
+    "CNBC"
+   ],
    "titleDe": "Trump steigert die Spannung bei Warsh, während Fed Zinserhöhung droht"
   },
   {
@@ -4353,40 +4368,6 @@
    ],
    "alsoIn": [],
    "titleDe": "Das Timing des Bitcoin-Marktes ist spannend, aber nahezu unmöglich – hier die Gründe"
-  },
-  {
-   "id": "BeInCrypto:Polygon CEO Triggers Crypto Community With Vacation Take and Schools Critics",
-   "title": "Polygon CEO Triggers Crypto Community With Vacation Take and Schools Critics",
-   "text": "Polygon CEO triggers the crypto community with a vacation take, then schools critics on Bitcoin maxi mentality.",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/polygon-ceo-vacation-take-bitcoin-maxis/",
-   "date": "2026-09-05T17:46:10.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Polygon-CEO sorgt in der Krypto-Community für Aufsehen, indem er Urlaub macht und Schulkritiker anspricht"
   },
   {
    "id": "BBC World:What different world maps get right - and what they get wrong",
