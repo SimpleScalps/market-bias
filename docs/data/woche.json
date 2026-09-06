@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T23:36:37.897Z",
+ "updated": "2026-09-06T23:43:57.015Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T23:36:37.959Z",
+   "stand": "2026-09-06T23:43:57.081Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T23:36:37.947Z",
+   "stand": "2026-09-06T23:43:57.069Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,35 +462,51 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-06T23:36:37.935Z",
-   "anzahl": 18,
+   "stand": "2026-09-06T23:43:57.056Z",
+   "anzahl": 20,
    "klassen": {
     "crypto": {
-     "score": 0,
+     "score": -0.0283,
      "bull": 0,
-     "bear": 0,
-     "neut": 18
+     "bear": 1,
+     "neut": 19
     },
     "stocks": {
-     "score": 0,
+     "score": -0.0283,
      "bull": 0,
-     "bear": 0,
-     "neut": 18
+     "bear": 1,
+     "neut": 19
     },
     "gold": {
-     "score": 0,
-     "bull": 0,
+     "score": 0.0142,
+     "bull": 1,
      "bear": 0,
-     "neut": 18
+     "neut": 19
     },
     "usd": {
-     "score": 0,
+     "score": 0.0094,
      "bull": 0,
      "bear": 0,
-     "neut": 18
+     "neut": 20
     }
    },
-   "top": []
+   "top": [
+    {
+     "id": "Reuters:Hormuz traffic dips to lowest since May after US, Iranian strikes on ships",
+     "titel": "Hormuz traffic dips to lowest since May after US, Iranian strikes on ships",
+     "titelDe": "Hormuz-Verkehr sinkt auf niedrigsten Stand seit Mai nach US- und iranischen Angriffen auf Schiffe",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNX1Yzd0xQX3FmaWVJVjdQREFrMWR1ZEZfaHlPNmpTY1FJRFRNYmN0YWVTSHB6NVNvTnJ5R0VYaS1RLXg5TUh5cjEzMmFzV0Nyb0FWUmRZSXlBMUlSQjRZbGFzQll1X0kzcXdBdnVsT25ncEhNY2Z3ME5IQTMzSk9TZEdDbGx5RFh2VEJjMzdKMy1uUlBPbWZ0NWgyLTh3cmU0cTA1bTE1Rnh0cWhpd1dKaWZlTDhQeGJKVWxJeHVB?oc=5",
+     "zeit": "2026-09-06T23:29:38.000Z",
+     "scores": {
+      "crypto": -0.405,
+      "stocks": -0.405,
+      "gold": 0.203,
+      "usd": 0.135
+     },
+     "priority": 51
+    }
+   ]
   }
  }
 }
