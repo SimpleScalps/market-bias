@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T17:52:29.412Z",
+ "updated": "2026-09-06T18:04:31.030Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T17:52:29.460Z",
+   "stand": "2026-09-06T18:04:31.071Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,32 +309,32 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T17:52:29.449Z",
-   "anzahl": 119,
+   "stand": "2026-09-06T18:04:31.063Z",
+   "anzahl": 120,
    "klassen": {
     "crypto": {
-     "score": -0.0673,
+     "score": -0.0655,
      "bull": 1,
      "bear": 10,
-     "neut": 108
-    },
-    "stocks": {
-     "score": -0.0567,
-     "bull": 1,
-     "bear": 9,
      "neut": 109
     },
-    "gold": {
-     "score": 0.0284,
-     "bull": 9,
-     "bear": 0,
+    "stocks": {
+     "score": -0.0553,
+     "bull": 1,
+     "bear": 9,
      "neut": 110
     },
+    "gold": {
+     "score": 0.0276,
+     "bull": 9,
+     "bear": 0,
+     "neut": 111
+    },
     "usd": {
-     "score": 0.0189,
+     "score": 0.0184,
      "bull": 0,
      "bear": 0,
-     "neut": 119
+     "neut": 120
     }
    },
    "top": [
@@ -384,21 +384,6 @@
      "priority": 63
     },
     {
-     "id": "Tehran Times:Iran’s retaliatory fire sends US warships fleeing, exposes American vulnerability",
-     "titel": "Iran’s retaliatory fire sends US warships fleeing, exposes American vulnerability",
-     "titelDe": "Iranischer Vergeltungsfeuer lässt US-Kriegsfahrzeuge fliehen, offenbart amerikanische Verwundbarkeit",
-     "quelle": "Tehran Times",
-     "url": "https://www.tehrantimes.com/news/529757/Iran-s-retaliatory-fire-sends-US-warships-fleeing-exposes-American",
-     "zeit": "2026-09-06T17:24:17.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 95
-    },
-    {
      "id": "CNBC:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
      "titel": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
      "titelDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen",
@@ -414,6 +399,21 @@
      "priority": 95
     },
     {
+     "id": "Tehran Times:Iran’s retaliatory fire sends US warships fleeing, exposes American vulnerability",
+     "titel": "Iran’s retaliatory fire sends US warships fleeing, exposes American vulnerability",
+     "titelDe": "Iranischer Vergeltungsfeuer lässt US-Kriegsfahrzeuge fliehen, offenbart amerikanische Verwundbarkeit",
+     "quelle": "Tehran Times",
+     "url": "https://www.tehrantimes.com/news/529757/Iran-s-retaliatory-fire-sends-US-warships-fleeing-exposes-American",
+     "zeit": "2026-09-06T17:24:17.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 94
+    },
+    {
      "id": "U.Today:Bitcoin OG Says He Is Watching for Next Major Exploit as AI Models Get Stronger",
      "titel": "Bitcoin OG Says He Is Watching for Next Major Exploit as AI Models Get Stronger",
      "titelDe": "Bitcoin-OG sagt, er beobachtet den nächsten großen Exploit, während KI-Modelle stärker werden",
@@ -426,7 +426,7 @@
       "gold": 0,
       "usd": 0
      },
-     "priority": 61
+     "priority": 60
     },
     {
      "id": "CNBC World:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
@@ -434,7 +434,7 @@
      "titelDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen",
      "quelle": "CNBC World",
      "url": "https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html",
-     "zeit": "2026-09-06T16:11:09.000Z",
+     "zeit": "2026-09-06T16:27:03.000Z",
      "scores": {
       "crypto": -0.45,
       "stocks": -0.45,
