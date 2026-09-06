@@ -1,11 +1,50 @@
 {
- "updated": "2026-09-06T17:26:03.012Z",
+ "updated": "2026-09-06T17:26:26.674Z",
  "regime": "policy",
- "count": 129,
+ "count": 128,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "Tehran Times:Sydney art exhibition highlights Minab tragedy, voices of war, resilience",
+   "title": "Sydney art exhibition highlights Minab tragedy, voices of war, resilience",
+   "text": "TEHRAN – The “When the Earth Embraces the Sky” art exhibition, featuring works addressing war, loss, displacement and resilience, has opened in Sydney, Australia, with the Iranian section focusing on the Minab school tragedy and commemorating the children who lost their lives in the attack.",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529744/Sydney-art-exhibition-highlights-Minab-tragedy-voices-of-war",
+   "date": "2026-09-06T17:25:50.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Eskalation"
+   ],
+   "scores": {
+    "crypto": -0.36,
+    "stocks": -0.36,
+    "gold": 0.18,
+    "usd": 0.12
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 68,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Sydney-Kunstausstellung beleuchtet die Minab-Tragödie, Stimmen des Krieges, Widerstand"
+  },
   {
    "id": "Tehran Times:Iran’s retaliatory fire sends US warships fleeing, exposes American vulnerability",
    "title": "Iran’s retaliatory fire sends US warships fleeing, exposes American vulnerability",
@@ -774,40 +813,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "USA will mit Moskau, Kiew an einem 'erneuerten' Friedensvorschlag arbeiten – Medien"
-  },
-  {
-   "id": "Reuters:Only solo woman in Venice festival says industry remains unequal",
-   "title": "Only solo woman in Venice festival says industry remains unequal",
-   "text": "Only solo woman in Venice festival says industry remains unequal &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNmFZTzVCdHhDYUxpTHNDMW1NbVMxZ2tLQmdMa2s4eERSV1hNcnQ1dTR3UHV4elVBZGtTMFItdDBpWGx6TlRnaE00SU12NlpURVJaRk1GRjktc3o3UzZ2SVBSZ0prc1dYeDBDRThURkRGNDJLU3JxZUZINDFsbHZXdzI5b043aWZmcjM5ZFFqbEYyZFNjekg1WDhVbzBtdEhkd1IzNTVoUXZmYTA?oc=5",
-   "date": "2026-09-06T16:25:36.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 30,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Alleinige Frau beim Venedig-Festival sagt, Industrie bleibt ungleich"
   },
   {
    "id": "TASS:Yemeni government forces take control over Hays in Hodeida province — TV",
@@ -1816,7 +1821,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1850,7 +1855,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 48,
+   "priority": 47,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2105,7 +2110,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2139,7 +2144,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 47,
+   "priority": 46,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2714,41 +2719,6 @@
    "titleDe": "Wir sind in unseren 60ern. Wir verdienen 345.000 $ und haben 1 Million $ in 403(b)s. Ist es für Roth-Conversions zu spät?"
   },
   {
-   "id": "Tehran Times:Iran pull out of 2026 Wheelchair Basketball World Championships",
-   "title": "Iran pull out of 2026 Wheelchair Basketball World Championships",
-   "text": "TEHRAN - Iran’s national wheelchair basketball team will not travel to Canada for the upcoming Ottawa 2026 IWBF Wheelchair Basketball World Championships after the visas of head coach and assistant coach failed to arrive in time.",
-   "source": "Tehran Times",
-   "staatlich": true,
-   "url": "https://www.tehrantimes.com/news/529752/Iran-pulls-out-of-2026-Wheelchair-Basketball-World-Championships",
-   "date": "2026-09-06T12:52:47.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 55,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Iran zieht sich aus Rollstuhl-Basketball-Weltmeisterschaften 2026 zurück"
-  },
-  {
    "id": "BeInCrypto:New Ethereum Upgrade Could Overhaul Crypto Transactions and Fees",
    "title": "New Ethereum Upgrade Could Overhaul Crypto Transactions and Fees",
    "text": "A new Ethereum upgrade lets apps pay your gas, bundles 64 actions and opens a path past seed phrases.",
@@ -3014,7 +2984,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 43,
+   "priority": 42,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4529,7 +4499,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 6,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
