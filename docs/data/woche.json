@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T18:04:31.030Z",
+ "updated": "2026-09-06T18:12:45.434Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T18:04:31.071Z",
+   "stand": "2026-09-06T18:12:45.482Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,32 +309,32 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T18:04:31.063Z",
-   "anzahl": 120,
+   "stand": "2026-09-06T18:12:45.471Z",
+   "anzahl": 123,
    "klassen": {
     "crypto": {
-     "score": -0.0655,
+     "score": -0.0628,
      "bull": 1,
      "bear": 10,
-     "neut": 109
+     "neut": 112
     },
     "stocks": {
-     "score": -0.0553,
+     "score": -0.0529,
      "bull": 1,
      "bear": 9,
-     "neut": 110
+     "neut": 113
     },
     "gold": {
-     "score": 0.0276,
+     "score": 0.0265,
      "bull": 9,
      "bear": 0,
-     "neut": 111
+     "neut": 114
     },
     "usd": {
-     "score": 0.0184,
+     "score": 0.0176,
      "bull": 0,
      "bear": 0,
-     "neut": 120
+     "neut": 123
     }
    },
    "top": [
@@ -441,7 +441,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 93
+     "priority": 92
     },
     {
      "id": "Al Jazeera:Israeli air attacks on Lebanon kill at least four",
