@@ -484,6 +484,62 @@ const GESCHUETZT = ['/subscribe', '/notify', '/testpush', '/deuten', '/tageslage
   '/modelle', '/tick', '/uebersetzen', '/frage', '/versandprobe'];
 
 /*
+ * Wohin ueberhaupt gemeldet werden darf.
+ *
+ * Das Abo wurde bisher ungeprueft abgelegt: Was gesendet wurde, war das Abo -
+ * samt beliebiger Webhook-Adresse. Wer das Zugangswort haette, koennte den
+ * Worker damit zu zwei Dingen bringen, die er nie tun sollte: die eigenen
+ * Meldungen woanders hin umleiten, und als Absender fuer fremde Anfragen
+ * herhalten. Beides braucht keinen Fehler im Code, nur ein Abo.
+ *
+ * Discord-Webhooks haben feste Adressen; ntfy laesst eigene Instanzen zu, die
+ * aber oeffentlich erreichbar sein muessen. Telegram spricht ohnehin nur mit
+ * api.telegram.org.
+ */
+const DISCORD_HOSTS = new Set([
+  'discord.com', 'discordapp.com', 'ptb.discord.com', 'canary.discord.com',
+]);
+
+const PRIVAT_HOST = [
+  /^localhost$/i, /\.local$/i, /\.internal$/i,
+  /^127\./, /^10\./, /^192\.168\./, /^169\.254\./,
+  /^172\.(1[6-9]|2\d|3[01])\./, /^0\./, /^\[?::1\]?$/,
+  /^\[?f[cd][0-9a-f]{2}:/i, /^\[?fe80:/i,
+];
+
+/** Prueft ein einzelnes Versandziel. Gibt null zurueck oder den Grund. */
+function zielGrund(ziel) {
+  if (!ziel || typeof ziel !== 'object') return 'kein Ziel';
+  const pruefeAdresse = (roh, erlaubt) => {
+    let u;
+    try { u = new URL(String(roh)); } catch { return 'unbrauchbare Adresse'; }
+    if (u.protocol !== 'https:') return 'nur https';
+    if (PRIVAT_HOST.some((r) => r.test(u.hostname))) return 'keine oeffentliche Adresse';
+    if (erlaubt && !erlaubt.has(u.hostname)) return `Adresse nicht erlaubt: ${u.hostname}`;
+    return null;
+  };
+
+  switch (ziel.typ) {
+    case 'discord': return pruefeAdresse(ziel.hook, DISCORD_HOSTS);
+    case 'ntfy':    return ziel.server ? pruefeAdresse(ziel.server, null) : null;
+    case 'telegram':
+      return (ziel.token && ziel.chat) ? null : 'Token oder Chat fehlt';
+    default: return `unbekannter Kanal: ${String(ziel.typ).slice(0, 20)}`;
+  }
+}
+
+/** Prueft alle Ziele eines Abos und nennt den ersten Einwand. */
+function zieleGrund(ziele) {
+  if (!Array.isArray(ziele)) return 'ziele fehlt oder ist keine Liste';
+  if (ziele.length > 6) return 'zu viele Ziele';
+  for (const z of ziele) {
+    const grund = zielGrund(z);
+    if (grund) return grund;
+  }
+  return null;
+}
+
+/*
  * Merkt sich, wer das Zugangswort noch in der Adresse mitschickt.
  *
  * Ein Wort in der Adresse steht in jedem Protokoll: bei Cloudflare, beim
@@ -1908,6 +1964,10 @@ export default {
     if (url.pathname === '/notify' && request.method === 'POST') {
       try {
         const { titel, text, ziele } = await request.json();
+        // Derselbe Massstab wie beim Abo: Auch der Sofortversand darf nicht
+        // zum Absender fuer beliebige Adressen werden.
+        const einwand = zieleGrund(ziele);
+        if (einwand) return json({ fehler: einwand }, 400);
         const r = await sendeAn(ziele, titel || 'Market Bias', text || '');
         return json(r, r.gesendet ? 200 : 502);
       } catch (err) {
@@ -2275,7 +2335,20 @@ export default {
          * und bekommt nachts nichts. Das ist die schlimmste Sorte Fehler:
          * einer, der sich als Erfolg meldet.
          */
-        const ok = await schreiben(env, ctx, ABO_KEY, await request.json(), 30 * 86400);
+        const abo = await request.json();
+
+        /*
+         * Erst pruefen, dann ablegen.
+         *
+         * Ein Abo bestimmt, wohin der Worker von sich aus Verbindungen
+         * aufbaut. Es ungeprueft zu uebernehmen hiess: Wer das Zugangswort
+         * hat, bestimmt das Ziel jeder kuenftigen Meldung - und benutzt den
+         * Worker nebenbei als Absender.
+         */
+        const einwand = zieleGrund(abo?.ziele);
+        if (einwand) return json({ ok: false, fehler: einwand }, 400);
+
+        const ok = await schreiben(env, ctx, ABO_KEY, abo, 30 * 86400);
         return json(ok
           ? { ok: true, dauerhaft: !!env.STORE }
           : { ok: false, fehler: letzterAblageFehler?.fehler || 'Ablage fehlgeschlagen' },

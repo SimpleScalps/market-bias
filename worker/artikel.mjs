@@ -133,6 +133,30 @@ export function textAusHtml(html) {
     .replace(/<br\s*\/?>/gi, '\n'), true);
 }
 
+/*
+ * Adressen, die nur von innen erreichbar waeren.
+ *
+ * Der Abruf nimmt die Adresse aus der Meldung entgegen - und die stammt aus
+ * einem fremden RSS-Feed, den niemand von uns kontrolliert. Ohne diese Sperre
+ * liesse sich der Worker als Handlanger benutzen: Er wuerde interne Adressen
+ * abrufen und deren Inhalt zurueckliefern.
+ *
+ * In Cloudflares Netz ist davon wenig erreichbar, aber "wenig" ist kein
+ * Sicherheitsversprechen. Die Sperre kostet nichts.
+ */
+const PRIVAT = [
+  /^localhost$/i, /\.local$/i, /\.internal$/i, /\.home$/i,
+  /^127\./, /^10\./, /^192\.168\./, /^169\.254\./,
+  /^172\.(1[6-9]|2\d|3[01])\./,
+  /^0\./, /^\[?::1\]?$/, /^\[?f[cd][0-9a-f]{2}:/i, /^\[?fe80:/i,
+];
+
+function oeffentlich(host) {
+  const h = String(host || '').toLowerCase();
+  if (!h) return false;
+  return !PRIVAT.some((r) => r.test(h));
+}
+
 /**
  * Holt den Artikel und gibt seinen Text zurueck.
  *
@@ -150,6 +174,7 @@ export async function artikelHolen(url) {
   if (ziel.protocol !== 'https:' && ziel.protocol !== 'http:') {
     return { fehler: 'nur http und https' };
   }
+  if (!oeffentlich(ziel.hostname)) return { fehler: 'keine oeffentliche Adresse' };
 
   try {
     const res = await fetch(ziel.href, {
