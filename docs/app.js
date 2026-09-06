@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v47';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v48';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -1524,8 +1524,17 @@ async function zustandZeigen() {
    */
   const taktZeilen = (d.taktgeber || []).map((t) => {
     const min = (Date.now() - new Date(t.zeit).getTime()) / 60000;
-    const art = min > 15 ? 'schlecht' : min > 5 ? 'lau' : 'gut';
-    return [`${T_.zTakt} · ${t.quelle}`, T_.zVorMin(min), art];
+    /*
+     * Ein Reservetaktgeber, der zurückgetreten ist, ist kein Fehler.
+     *
+     * Er fragt im Minutentakt an und weicht pflichtgemäß, solange der
+     * Haupttaktgeber frisch ist. Als Ausfall gewertet stand er stundenlang rot
+     * da — eine Warnung für richtiges Verhalten ist schlimmer als keine.
+     */
+    const art = t.zurueckgetreten ? 'gut'
+      : min > 15 ? 'schlecht' : min > 5 ? 'lau' : 'gut';
+    const wert = t.zurueckgetreten ? T_.zReserve : T_.zVorMin(min);
+    return [`${T_.zTakt} · ${t.quelle}`, wert, art];
   });
 
   /*
@@ -1558,6 +1567,14 @@ async function zustandZeigen() {
      * aufbrauchen.
      */
     [T_.zModelle, d.kiModelle ?? '—', null],
+    /*
+     * Verbrauch je Modell, nicht als Summe.
+     *
+     * Die Summe meldete „205.159 von 200.000“, obwohl kein Modell in die Nähe
+     * seiner Grenze kam — die Last verteilt sich auf zwei Kontingente zu je
+     * 200.000.
+     */
+    [T_.zVerbrauch, d.kiJeModell ?? '—', null],
   ];
 
   /*

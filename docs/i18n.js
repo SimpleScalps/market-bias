@@ -47,7 +47,8 @@ window.I18N = {
     staatlich: 'STAATSMEDIUM',
     artikelGelesen: 'Artikel gelesen',
     artikelFehlt: 'Artikel nicht abrufbar',
-    zBudget: 'KI-Budget', zModelle: 'KI-Modelle', zTicks: 'Zuletzt aufgefrischt',
+    zBudget: 'KI-Budget', zModelle: 'KI-Modelle', zVerbrauch: 'Verbrauch je Modell',
+    zReserve: 'Reserve, zurückgetreten', zTicks: 'Zuletzt aufgefrischt',
     zJa: 'läuft', zNein: 'blockiert',
     zHinweis: 'Cloudflare erlaubt 1.000 Schreibvorgänge am Tag. Ist das aufgebraucht, '
       + 'werden Benachrichtigungen zurückgestellt statt doppelt verschickt — das Kontingent '
@@ -166,7 +167,8 @@ window.I18N = {
     staatlich: 'STATE MEDIA',
     artikelGelesen: 'Article read',
     artikelFehlt: 'Article unavailable',
-    zBudget: 'AI budget', zModelle: 'AI models', zTicks: 'Last refreshed',
+    zBudget: 'AI budget', zModelle: 'AI models', zVerbrauch: 'Usage per model',
+    zReserve: 'standby, stood down', zTicks: 'Last refreshed',
     zJa: 'working', zNein: 'blocked',
     zHinweis: 'Cloudflare allows 1,000 writes per day. Once used up, notifications are '
       + 'held back rather than sent twice — the quota refills at midnight UTC.',

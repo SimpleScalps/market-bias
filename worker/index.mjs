@@ -1193,7 +1193,17 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ...(letzterAblageFehler ? { letzteAblageStoerung: letzterAblageFehler } : {}),
     ...(letzterVersandbuchFehler ? { letzteVersandStoerung: letzterVersandbuchFehler } : {}),
     ...(nachlaufErgebnis ? { nachlaufErgebnis } : {}),
-    ...(adressZugangZuletzt ? { adressZugang: adressZugangZuletzt } : {}),
+    /*
+     * Nur den neueren Stand behalten.
+     *
+     * Der Vermerk sprang in der Anzeige hin und her - 1 min, dann 9, dann 4 -,
+     * weil jedes Isolat seinen eigenen Arbeitsspeicher hineinschrieb und dabei
+     * einen neueren Eintrag ueberschrieb. Ein Zeitpunkt, der zurueckspringt,
+     * taugt nicht zur Entscheidung, ob der alte Weg noch benutzt wird.
+     */
+    ...(adressZugangZuletzt
+      && (!z.adressZugang || adressZugangZuletzt.zeit > z.adressZugang.zeit)
+      ? { adressZugang: adressZugangZuletzt } : {}),
     /*
      * Zusammenfuehren, nicht ersetzen.
      *
@@ -1915,6 +1925,19 @@ export default {
          */
         if (url.searchParams.get('fallback') === '1'
             && alterMs(bestand) < RESERVE_AB_MS) {
+          /*
+           * Auch der Rueckzug ist eine Lebenszeichen.
+           *
+           * Bisher meldete sich ein Reservetaktgeber nur an, wenn er
+           * tatsaechlich tickte. Lief der Haupttaktgeber durch, stand er in
+           * der Anzeige stundenlang auf "zuletzt vor 2 h" und wurde rot -
+           * obwohl er im Minutentakt anfragte und pflichtgemaess zurueckwich.
+           * Eine Warnung fuer richtiges Verhalten ist schlimmer als keine.
+           */
+          ctx.waitUntil(zustand(env, {
+            ticks: { ...(((await zustand(env)) || {}).ticks || {}),
+              [quelle]: { zeit: new Date().toISOString(), zurueckgetreten: true } },
+          }));
           return json({
             ok: true,
             quelle,
