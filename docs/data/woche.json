@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T12:50:39.995Z",
+ "updated": "2026-09-06T13:03:41.020Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T12:50:40.032Z",
+   "stand": "2026-09-06T13:03:41.053Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,32 +309,32 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T12:50:40.025Z",
-   "anzahl": 51,
+   "stand": "2026-09-06T13:03:41.048Z",
+   "anzahl": 55,
    "klassen": {
     "crypto": {
-     "score": -0.1155,
+     "score": -0.1042,
      "bull": 1,
      "bear": 4,
-     "neut": 46
+     "neut": 50
     },
     "stocks": {
-     "score": -0.1155,
+     "score": -0.1042,
      "bull": 1,
      "bear": 4,
-     "neut": 46
+     "neut": 50
     },
     "gold": {
-     "score": 0.0578,
+     "score": 0.0521,
      "bull": 4,
      "bear": 1,
-     "neut": 46
+     "neut": 50
     },
     "usd": {
-     "score": 0.0385,
+     "score": 0.0347,
      "bull": 3,
      "bear": 0,
-     "neut": 48
+     "neut": 52
     }
    },
    "top": [
@@ -366,7 +366,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 80
+     "priority": 79
     },
     {
      "id": "Al Jazeera:Iran war live: IRGC claims attacks on 3 oil tankers and 3 US-linked ships",
