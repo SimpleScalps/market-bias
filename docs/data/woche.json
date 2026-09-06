@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T01:03:37.536Z",
+ "updated": "2026-09-06T01:17:35.325Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T01:03:37.573Z",
+   "stand": "2026-09-06T01:17:35.347Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -156,7 +156,7 @@
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-06T01:03:37.580Z",
+   "stand": "2026-09-06T01:17:35.350Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
@@ -309,32 +309,32 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T01:03:37.566Z",
-   "anzahl": 10,
+   "stand": "2026-09-06T01:17:35.343Z",
+   "anzahl": 13,
    "klassen": {
     "crypto": {
-     "score": -0.3884,
+     "score": -0.3428,
      "bull": 1,
-     "bear": 2,
-     "neut": 7
+     "bear": 3,
+     "neut": 9
     },
     "stocks": {
-     "score": -0.3884,
+     "score": -0.3428,
      "bull": 1,
-     "bear": 2,
-     "neut": 7
+     "bear": 3,
+     "neut": 9
     },
     "gold": {
-     "score": 0.1943,
-     "bull": 2,
+     "score": 0.1716,
+     "bull": 3,
      "bear": 1,
-     "neut": 7
+     "neut": 9
     },
     "usd": {
-     "score": 0.1295,
-     "bull": 2,
+     "score": 0.1143,
+     "bull": 3,
      "bear": 0,
-     "neut": 8
+     "neut": 10
     }
    },
    "top": [
@@ -351,7 +351,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 99
+     "priority": 98
     },
     {
      "id": "Al Jazeera:Iran war live: IRGC claims new attacks on US warships over naval blockade",
@@ -367,6 +367,36 @@
       "usd": 0.255
      },
      "priority": 99
+    },
+    {
+     "id": "Al Jazeera:Iran war live: IRGC claims attacks on 3 oil tankers and 3 US-linked ships",
+     "titel": "Iran war live: IRGC claims attacks on 3 oil tankers and 3 US-linked ships",
+     "titelDe": "Iran im Live: IRGC behauptet Angriffe auf 3 Öltanker und 3 US-verknüpfte Schiffe",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/liveblog/2026/9/6/iran-war-live-irgc-claims-new-attacks-on-us-warships-over-naval-blockade?traffic_source=rss",
+     "zeit": "2026-09-06T00:00:00.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 72
+    },
+    {
+     "id": "Al Jazeera:Netanyahu boasts about bombing Qatar, says Gaza funds used for aid",
+     "titel": "Netanyahu boasts about bombing Qatar, says Gaza funds used for aid",
+     "titelDe": "Netanyahu prahlt mit Bombenangriff auf Katar, erklärt, dass Gaza-Gelder für Hilfsmaßnahmen verwendet wurden",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/9/6/netanyahu-boasts-about-bombing-qatar-says-gaza-funds-used-for-aid?traffic_source=rss",
+     "zeit": "2026-09-06T01:02:08.000Z",
+     "scores": {
+      "crypto": -0.495,
+      "stocks": -0.495,
+      "gold": 0.248,
+      "usd": 0.165
+     },
+     "priority": 70
     }
    ]
   }

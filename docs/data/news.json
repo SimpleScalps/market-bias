@@ -1,11 +1,118 @@
 {
- "updated": "2026-09-06T01:03:37.536Z",
+ "updated": "2026-09-06T01:17:35.325Z",
  "regime": "policy",
- "count": 87,
+ "count": 82,
  "errors": [
-  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
+  "CNBC: fetch failed"
  ],
  "items": [
+  {
+   "id": "Al Jazeera:Netanyahu boasts about bombing Qatar, says Gaza funds used for aid",
+   "title": "Netanyahu boasts about bombing Qatar, says Gaza funds used for aid",
+   "text": "Israeli PM says money he facilitated Qatar in sending to Gaza was recommended by Israeli security agencies.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/6/netanyahu-boasts-about-bombing-qatar-says-gaza-funds-used-for-aid?traffic_source=rss",
+   "date": "2026-09-06T01:02:08.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Militärschlag"
+   ],
+   "scores": {
+    "crypto": -0.495,
+    "stocks": -0.495,
+    "gold": 0.248,
+    "usd": 0.165
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Militärschlag)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 70,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Netanyahu prahlt mit Bombenangriff auf Katar, erklärt, dass Gaza-Gelder für Hilfsmaßnahmen verwendet wurden"
+  },
+  {
+   "id": "Al Jazeera:German company launches rocket as Europe enters satellite race",
+   "title": "German company launches rocket as Europe enters satellite race",
+   "text": "Isar Aerospace says its 28-metre-long Spectrum rocket blasted off into space from Andøya spaceport in Arctic Norway.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/6/german-company-launches-rocket-as-europe-enters-satellite-race?traffic_source=rss",
+   "date": "2026-09-06T00:53:23.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Produktankündigung",
+   "eventTypeEn": "Product announcement",
+   "scope": "project",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Deutsches Unternehmen startet Rakete, während Europa in den Satellitenwettbewerb eintritt"
+  },
+  {
+   "id": "BeInCrypto:Machi Big Brother Sent FRIEND Up 1,500%. Then Ditched $1M Deal",
+   "title": "Machi Big Brother Sent FRIEND Up 1,500%. Then Ditched $1M Deal",
+   "text": "Machi Big Brother pulls his $1M Friend.tech bid, points at Paradigm, and tells Racer to relaunch on Robinhood Chain.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/machi-big-brother-friend-tech-bid/",
+   "date": "2026-09-06T00:37:25.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Machi Big Brother steigerte FRIEND um 1.500 %. Danach ließ er einen Deal von 1 Million USD fallen"
+  },
   {
    "id": "U.Today:10.74 Trillion SHIB? Shiba Inu Reclaims Key Level Amid 19% OI Surge",
    "title": "10.74 Trillion SHIB? Shiba Inu Reclaims Key Level Amid 19% OI Surge",
@@ -32,7 +139,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 37,
+   "priority": 36,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -66,7 +173,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -79,9 +186,9 @@
    "titleDe": "'Er war ein Rettungsanker' – haitianische Pflegekräfte entlassen, Familien im Desaster"
   },
   {
-   "id": "Al Jazeera:Iran war live: IRGC claims new attacks on US warships over naval blockade",
-   "title": "Iran war live: IRGC claims new attacks on US warships over naval blockade",
-   "text": "IRGC says it fired ballistic missiles at US aircraft carrier and destroyer as standoff intensifies in Strait of Hormuz.",
+   "id": "Al Jazeera:Iran war live: IRGC claims attacks on 3 oil tankers and 3 US-linked ships",
+   "title": "Iran war live: IRGC claims attacks on 3 oil tankers and 3 US-linked ships",
+   "text": "IRGC launches new strikes after firing missiles at US warships as standoff in Strait of Hormuz intensifies.",
    "source": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/liveblog/2026/9/6/iran-war-live-irgc-claims-new-attacks-on-us-warships-over-naval-blockade?traffic_source=rss",
    "date": "2026-09-06T00:00:00.000Z",
@@ -105,17 +212,17 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation, attack)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 99,
+   "priority": 72,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
-   "impactLevel": "high",
-   "duration": "swing",
+   "impactLevel": "medium",
+   "duration": "intraday",
    "eventType": "Geopolitik",
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "IRGC behauptet neue Angriffe auf US-Schiffe bei Seeblockade"
+   "titleDe": "Iran im Live: IRGC behauptet Angriffe auf 3 Öltanker und 3 US-verknüpfte Schiffe"
   },
   {
    "id": "BBC World:Majority Russian-speaking city in Ukraine considers language ban in the arts",
@@ -275,7 +382,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -315,7 +422,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation, retaliation threat, attack)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 99,
+   "priority": 98,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -430,34 +537,30 @@
    "titleDe": "TV-Moderator unter 11 Verurteilten zum Tode in Ägypten wegen Drogenfall"
   },
   {
-   "id": "Al Jazeera:US envoys Witkoff, Kushner meet Putin for talks on Ukraine war",
-   "title": "US envoys Witkoff, Kushner meet Putin for talks on Ukraine war",
-   "text": "US envoys Steve Witkoff and Jared Kushner met Russian President Vladimir Putin at the Kremlin on Saturday.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/us-envoys-witkoff-kushner-meet-putin-for-talks-on-ukraine-war?traffic_source=rss",
+   "id": "BBC World:US envoys meet Putin in Moscow for Ukraine talks",
+   "title": "US envoys meet Putin in Moscow for Ukraine talks",
+   "text": "Footage shows Vladimir Putin greeting Steve Witkoff and Jared Kushner, before saying the current situation \"is not so easy\".",
+   "source": "BBC World",
+   "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-05T21:23:06.000Z",
    "tags": [
     "Weltlage"
    ],
    "impact": "low",
    "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Deeskalation"
-   ],
    "scores": {
-    "crypto": 0.252,
-    "stocks": 0.252,
-    "gold": -0.126,
-    "usd": -0.084
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
    },
-   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Deeskalation)",
-   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 60,
-   "label": "bullish",
-   "labelText": "Bullish",
+   "priority": 62,
+   "label": "neutral",
+   "labelText": "Neutral",
    "impactLevel": "low",
    "duration": "intraday",
    "eventType": "Geopolitik",
@@ -465,9 +568,9 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
-    "BBC World"
+    "Al Jazeera"
    ],
-   "titleDe": "US-Botschafter Witkoff, Kushner treffen Putin zu Gesprächen über den Ukraine-Krieg"
+   "titleDe": "US-Botschafter treffen Putin in Moskau zu Ukraine-Verhandlungen"
   },
   {
    "id": "Al Jazeera:Building collapses after heavy rain in northern India",
@@ -491,7 +594,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -525,7 +628,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -733,40 +836,6 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Frankreich weist Anschuldigungen wegen angeblicher Anstiftung zum gescheiterten Niger-Mutantenaufstand zurück und bezeichnet die Behauptung als „reine Fantasie“"
-  },
-  {
-   "id": "Al Jazeera:Jerusalem Daily: raids, settlers & sieges",
-   "title": "Jerusalem Daily: raids, settlers & sieges",
-   "text": "Mike Huckabee visits as settlers attack Palestinians, Israeli forces carry out raids and arrests.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/jerusalem-daily-raids-settlers-sieges?traffic_source=rss",
-   "date": "2026-09-05T19:37:10.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
    "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
@@ -777,41 +846,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Jerusalem Daily: Überfälle, Siedler & Belagerungen"
-  },
-  {
-   "id": "Al Jazeera:Cuban and Afghan immigrants deported from US under Trump arrive in Guyana",
-   "title": "Cuban and Afghan immigrants deported from US under Trump arrive in Guyana",
-   "text": "The Trump administration has sought to expand third-country deportations, with more than 30 deals struck so far.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/5/cuban-and-afghan-immigrants-deported-from-us-under-trump-arrive-in-guyana?traffic_source=rss",
-   "date": "2026-09-05T19:19:52.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 36,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Kubane und afghanische Einwanderer, die unter Trump aus den USA abgeschoben wurden, kommen in Guyana an"
+   "titleDe": "Frankreich weist Anschuldigungen wegen angeblicher Anstiftung zum gescheiterten Niger-Mutantenaufstand zurück und bezeichnet die Behauptung als „reine Fantasie“"
   },
   {
    "id": "MarketWatch:Will a data center hurt your home’s value? Research says no. Sellers disagree.",
@@ -835,7 +870,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -907,7 +942,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 75,
+   "priority": 74,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -917,8 +952,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
-    "CNBC World",
-    "CNBC"
+    "CNBC World"
    ],
    "titleDe": "Trump steigert die Spannung bei Warsh, während Fed Zinserhöhung droht"
   },
@@ -978,7 +1012,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 41,
+   "priority": 40,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1048,7 +1082,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 20,
+   "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1131,40 +1165,6 @@
    "titleDe": "„Ich gebe ihm derzeit 1.000 $ pro Monat“: Mein Enkel hat eine schwere psychische Erkrankung. Wie schütze ich ihn, nachdem ich weg bin?"
   },
   {
-   "id": "CNBC:We got more defensive last week as Wall Street raised the bar for AI stocks",
-   "title": "We got more defensive last week as Wall Street raised the bar for AI stocks",
-   "text": "We initiated positions in defensive stocks to balance our AI exposure amid higher oil prices and Treasury yields.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/05/we-got-more-defensive-last-week-as-wall-street-raised-the-bar-for-ai-stocks.html",
-   "date": "2026-09-05T16:45:14.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 19,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Wir wurden letzte Woche defensiver, als Wall Street die Messlatte für KI-Aktien anhebt"
-  },
-  {
    "id": "CoinDesk:Dollar-backed stablecoins can push local currencies lower, Bank of Korea study finds",
    "title": "Dollar-backed stablecoins can push local currencies lower, Bank of Korea study finds",
    "text": "Buying pressure in Binance-paired currencies correlates with local currency depreciation as market makers balance positions.",
@@ -1186,7 +1186,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1254,7 +1254,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 38,
+   "priority": 37,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1299,44 +1299,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
-   "titleDe": "Die USA greifen 3 iranische Öltanker an, nachdem Raketen auf Kriegsschiffe der Marine gezielt haben"
-  },
-  {
-   "id": "CNBC:I'm a nutritionist from Japan: 7 'essential' anti-inflammatory foods that I swear by",
-   "title": "I'm a nutritionist from Japan: 7 'essential' anti-inflammatory foods that I swear by",
-   "text": "Japanese nutritionist and longevity expert Michiko Tomioka shares the inflammation-fighting foods that are always in her kitchen.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/05/nutritionist-from-japan-essential-anti-inflammatory-foods-i-swear-by.html",
-   "date": "2026-09-05T15:30:01.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 17,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
    "alsoIn": [],
-   "titleDe": "Ich bin Ernährungsberaterin aus Japan: 7 ‚wesentliche‘ entzündungshemmende Lebensmittel, auf die ich verlass"
+   "titleDe": "Die USA greifen 3 iranische Öltanker an, nachdem Raketen auf Kriegsschiffe der Marine gezielt haben"
   },
   {
    "id": "BeInCrypto:US Debt Hit $40 Trillion. So Where Is Bitcoin’s Debasement Trade?",
@@ -1439,9 +1403,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Trumps Staatskapitalismus erreicht die Ölindustrie mit seinem beispiellosen Venezuela-Deal"
   },
   {
@@ -1515,40 +1477,6 @@
    "titleDe": "Solana dominiert die RWA-Ströme und zieht Nettoströme in Höhe von 348 Millionen $ ein"
   },
   {
-   "id": "CNBC:Why Walmart is moving in on DoorDash, Uber Eats delivery action, starting with donuts, coffee and sandwiches",
-   "title": "Why Walmart is moving in on DoorDash, Uber Eats delivery action, starting with donuts, coffee and sandwiches",
-   "text": "Walmart's deal to deliver for Dunkin' follows one earlier this year for Subway sandwiches, as the nation's largest retailer targets Uber Eats and DoorDash.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/05/walmart-dunkin-subway-delivery-uber-eats-doordash.html",
-   "date": "2026-09-05T14:46:14.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 16,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Warum Walmart bei DoorDash einzieht, Uber Eats Lieferaktion, beginnend mit Donuts, Kaffee und Sandwiches"
-  },
-  {
    "id": "U.Today:Dogecoin Golden Cross Meets 35 Billion DOGE Support: Potential Scenarios",
    "title": "Dogecoin Golden Cross Meets 35 Billion DOGE Support: Potential Scenarios",
    "text": "Recent buying pressure has reinforced a major on-chain support floor for Dogecoin, where almost 35 billion DOGE were previously traded.",
@@ -1610,7 +1538,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 41,
+   "priority": 40,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -1646,7 +1574,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 15,
+   "priority": 14,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1690,7 +1618,6 @@
    "scope": "project",
    "coins": [],
    "alsoIn": [
-    "CNBC",
     "The Block"
    ],
    "titleDe": "LeBron James deutet Partnerschaft mit Polymarket an"
@@ -1785,7 +1712,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 34,
+   "priority": 33,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1798,40 +1725,6 @@
    ],
    "alsoIn": [],
    "titleDe": "Rekord gebrochen: XRP, RLUSD Agententransaktionen haben 4 Millionen ins Visier genommen"
-  },
-  {
-   "id": "CNBC:Many truckers don't feel like the rest of America about AI data centers as business booms",
-   "title": "Many truckers don't feel like the rest of America about AI data centers as business booms",
-   "text": "Sprawling data center components from HVAC systems to tubing, wiring and semiconductors arrive primarily by truck, a boon for a business hit hard by trade wars.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/05/ai-data-centers-cost-economy.html",
-   "date": "2026-09-05T13:33:08.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 14,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Viele Trucker fühlen sich nicht wie der Rest von Amerika über KI-Rechenzentren, während das Geschäft boomt"
   },
   {
    "id": "BeInCrypto:Cathie Wood Says Most Investors Do Not Appreciate This Critical Crypto Token",
@@ -1855,7 +1748,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 34,
+   "priority": 33,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1889,7 +1782,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1900,40 +1793,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "KI hat gerade ein 350 Jahre altes mathematisches Problem gelöst, indem sie den längsten Beweis aller Zeiten geschrieben hat"
-  },
-  {
-   "id": "CNBC:Icons Dolly Parton and Gloria Steinem never officially retired—why that's a choice for some and requirement for others",
-   "title": "Icons Dolly Parton and Gloria Steinem never officially retired—why that's a choice for some and requirement for others",
-   "text": "The idea of never retiring sounds awful to some, but inspiring to others who want to pursue their passions long after they've left full-time work.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/05/dolly-parton-gloria-steinem-never-retired.html",
-   "date": "2026-09-05T13:00:01.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 13,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Ikonen Dolly Parton und Gloria Steinem sind nie offiziell in Rente gegangen - warum das für einige eine Wahl und für andere eine Anforderung ist"
   },
   {
    "id": "U.Today:Robinhood Chain Hits Record $3.7 Billion in 24-Hour DEX Volume",
@@ -1957,7 +1816,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2000,9 +1859,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Abel: Auf zwei Arten hofft Berkshire, von KI zu profitieren"
   },
   {
@@ -2063,7 +1920,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 12,
+   "priority": 11,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2072,9 +1929,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Dieses erweiterte Geothermieprojekt will Gigawatt an Strom freisetzen, um den Boom der Rechenzentren zu befeuern"
   },
   {
@@ -2108,9 +1963,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "Von „Mystery-Urlauben“ bis hin zu Hostels - preisbewusste Reisende werden bei steigenden Preisen sparsam"
   },
   {
@@ -2275,7 +2128,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2523,7 +2376,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 9,
+   "priority": 8,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2593,7 +2446,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2913,7 +2766,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 47,
+   "priority": 46,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2960,40 +2813,6 @@
    "titleDe": "Robinhood Chain bringt Arbitrum-Token zurück aus dem Grab. ARB steigt um 90%"
   },
   {
-   "id": "BeInCrypto:Zcash Hits $1,000 for the First Time in a Decade. How Far Can It Go?",
-   "title": "Zcash Hits $1,000 for the First Time in a Decade. How Far Can It Go?",
-   "text": "Zcash is seemingly winning this bullish cycle in the crypto market. ZEC is up nearly 100% over the past month, crossing $1,000 for the first time in almost a decade. ZEC briefly climbed above $1,045 on Friday. The move pushed its market value to roughly $17 billion and brought the privacy coin back to four",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/zcash-zec-1000-price-outlook/",
-   "date": "2026-09-05T01:12:19.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Zcash erreicht zum ersten Mal seit zehn Jahren 1.000 $. Wie weit kann es gehen?"
-  },
-  {
    "id": "BBC World:Nepal bet nearly everything on hydropower - the floods show why that's a problem",
    "title": "Nepal bet nearly everything on hydropower - the floods show why that's a problem",
    "text": "More than 10% of Nepal's energy generation capacity was knocked out by last week's floods.",
@@ -3015,7 +2834,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 15,
+   "priority": 14,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3063,7 +2882,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 4,
   "fehler": null
  }
 }
