@@ -1,54 +1,20 @@
 {
- "updated": "2026-09-06T13:28:52.985Z",
+ "updated": "2026-09-06T13:38:59.670Z",
  "regime": "policy",
- "count": 89,
+ "count": 90,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
   {
-   "id": "BBC World:US envoys meet Zelensky in Ukraine after talks with Putin in Russia",
-   "title": "US envoys meet Zelensky in Ukraine after talks with Putin in Russia",
-   "text": "Steve Witkoff and Jared Kushner arrive in Kyiv, having held talks with Putin in Moscow on Saturday.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-06T13:16:21.000Z",
+   "id": "CNBC:Parents who are really good at handling tantrums do 5 things—their kids become more emotionally intelligent, says psychologist",
+   "title": "Parents who are really good at handling tantrums do 5 things—their kids become more emotionally intelligent, says psychologist",
+   "text": "\"These kids become more emotionally intelligent, which helps them weather setbacks, embrace independence and try new things,\" says Juli Fraga.",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/09/06/parents-who-are-really-good-at-handling-tantrums-do-things-psychologist.html",
+   "date": "2026-09-06T13:36:01.000Z",
    "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 62,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Botschafter treffen sich mit Zelensky in der Ukraine nach Gesprächen mit Putin in Russland"
-  },
-  {
-   "id": "BeInCrypto:LeBron James Polymarket Deal: Will Prediction Markets Go Mainstream?",
-   "title": "LeBron James Polymarket Deal: Will Prediction Markets Go Mainstream?",
-   "text": "LeBron James backs Polymarket after his DraftKings deal expired, giving prediction markets their biggest sports name yet as legal fights intensify.",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/lebron-james-polymarket-partnership-deal/",
-   "date": "2026-09-06T13:14:41.000Z",
-   "tags": [
-    "Krypto"
+    "Märkte"
    ],
    "impact": "low",
    "kind": "headline",
@@ -72,7 +38,248 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
+   "titleDe": "Eltern, die bei Wutanfällen besonders geschickt sind, tun fünf Dinge – ihre Kinder werden emotional intelligenter, sagt Psychologe"
+  },
+  {
+   "id": "Cointelegraph:Here’s what happened in crypto today",
+   "title": "Here’s what happened in crypto today",
+   "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+   "source": "Cointelegraph",
+   "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "date": "2026-09-06T13:24:43.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 52,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Folgendes ist heute in Krypto passiert"
+  },
+  {
+   "id": "U.Today:$14.5 Billion Injection: Will U.S. Treasury Trigger 'Round 2' for Bitcoin and XRP?",
+   "title": "$14.5 Billion Injection: Will U.S. Treasury Trigger 'Round 2' for Bitcoin and XRP?",
+   "text": "As the U.S. Treasury preps a $14.5 billion injection, traders brace for a Bitcoin short-squeeze and a pre-Senate XRP rally.",
+   "source": "U.Today",
+   "url": "https://u.today/145-billion-injection-will-us-treasury-trigger-round-2-for-bitcoin-and-xrp",
+   "date": "2026-09-06T13:21:05.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 52,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC",
+    "XRP"
+   ],
+   "alsoIn": [],
+   "titleDe": "$14,5 Milliarden Injection: Wird das US-Finanzministerium 'Runde 2' für Bitcoin und XRP auslösen?"
+  },
+  {
+   "id": "BBC World:US envoys meet Zelensky in Ukraine after talks with Putin in Russia",
+   "title": "US envoys meet Zelensky in Ukraine after talks with Putin in Russia",
+   "text": "Steve Witkoff and Jared Kushner are holding talks in Kyiv, in their first visit to Ukraine since Russia's full-scale invasion.",
+   "source": "BBC World",
+   "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-06T13:16:21.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 61,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Botschafter treffen sich mit Zelensky in der Ukraine nach Gesprächen mit Putin in Russland"
+  },
+  {
+   "id": "Al Jazeera:Seven mouths, one meal: Feeding a family through Gaza’s food crisis",
+   "title": "Seven mouths, one meal: Feeding a family through Gaza’s food crisis",
+   "text": "Families across Gaza struggle to secure food as community kitchens operate irregularly and prices rise.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/features/2026/9/6/seven-mouths-one-meal-feeding-a-family-through-gazas-food-crisis?traffic_source=rss",
+   "date": "2026-09-06T13:15:46.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 61,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Sieben Mägen, ein Mahl: Eine Familie durch die Nahrungsmittelkrise in Gaza ernähren"
+  },
+  {
+   "id": "BeInCrypto:LeBron James Polymarket Deal: Will Prediction Markets Go Mainstream?",
+   "title": "LeBron James Polymarket Deal: Will Prediction Markets Go Mainstream?",
+   "text": "LeBron James backs Polymarket after his DraftKings deal expired, giving prediction markets their biggest sports name yet as legal fights intensify.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/lebron-james-polymarket-partnership-deal/",
+   "date": "2026-09-06T13:14:41.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
    "titleDe": "LeBron James Polymarket-Deal: Werden Vorhersage-Märkte Mainstream?"
+  },
+  {
+   "id": "Al Jazeera:How the West’s promise of freedom created a world of anger",
+   "title": "How the West’s promise of freedom created a world of anger",
+   "text": "In Deja Vu’s next episode, Pankaj Mishra traces today’s political anger to the Enlightenment and empire.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/deja-vu-2/2026/9/6/how-the-wests-promise-of-freedom-created-a-world-of-anger?traffic_source=rss",
+   "date": "2026-09-06T13:14:33.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Wie das Versprechen der Westwelt von Freiheit eine Welt des Zorns schuf"
+  },
+  {
+   "id": "Al Jazeera:Palestinians mourn loved ones in mass funeral in Gaza City",
+   "title": "Palestinians mourn loved ones in mass funeral in Gaza City",
+   "text": "Thousands attended a mass funeral for 100 Palestinians whose bodies were recovered from rubble in Gaza City.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/palestinians-mourn-loved-ones-in-mass-funeral-in-gaza-city?traffic_source=rss",
+   "date": "2026-09-06T13:13:36.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 61,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Palästinenser trauern bei massenhaftem Beerdigungsritual in Gaza-Stadt"
   },
   {
    "id": "Cointelegraph:Satoshi-era Bitcoin wakes after 16 years of dormancy as 600 BTC moves",
@@ -268,7 +475,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -478,7 +685,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 60,
+   "priority": 59,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -514,7 +721,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -652,7 +859,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1166,7 +1373,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 64,
+   "priority": 63,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -1200,7 +1407,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1351,40 +1558,6 @@
    "titleDe": "LIVE: Everton gegen Manchester United – Premier League"
   },
   {
-   "id": "Al Jazeera:Israeli flags become the latest weapon of settlers in West Bank domination",
-   "title": "Israeli flags become the latest weapon of settlers in West Bank domination",
-   "text": "Israel's visual colonisation aims to make Palestinians feel like guests in their own homeland.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/features/2026/9/6/israeli-flags-become-the-latest-weapon-of-settlers-in-west-bank-domination?traffic_source=rss",
-   "date": "2026-09-06T09:40:06.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Israelische Flaggen werden zum neuesten Waffensystem der Siedler bei der Westbank-Dominanz"
-  },
-  {
    "id": "U.Today:7 Satoshi-Era Bitcoin (BTC) Miners Wake Up After 16.5 Years",
    "title": "7 Satoshi-Era Bitcoin (BTC) Miners Wake Up After 16.5 Years",
    "text": "The market witnesses a substantial increase in selling pressure after Bitcoin came closer to $80,000.",
@@ -1421,45 +1594,6 @@
    "titleDe": "7 Satoshi‑Era Bitcoin‑Miner erwachen nach 16,5 Jahren"
   },
   {
-   "id": "Al Jazeera:Israeli air attacks on Lebanon kill at least four",
-   "title": "Israeli air attacks on Lebanon kill at least four",
-   "text": "Two women killed in an air attack on Arab Salim, and two people killed in strike on Nabatieh al-Fawqa.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/israeli-air-attacks-on-lebanon-kill-at-least-four?traffic_source=rss",
-   "date": "2026-09-06T09:15:20.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Militärschlag",
-    "Angriff"
-   ],
-   "scores": {
-    "crypto": -0.855,
-    "stocks": -0.855,
-    "gold": 0.427,
-    "usd": 0.285
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Militärschlag, Angriff)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike, attack)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 39,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Israelische Luftangriffe auf Libanon töten mindestens vier"
-  },
-  {
    "id": "Cointelegraph:Tether-backed Orionx to shut down after audit flags $7M custody gap",
    "title": "Tether-backed Orionx to shut down after audit flags $7M custody gap",
    "text": "Tether-backed Orionx is permanently closing after an audit found more than $7 million in customer assets had moved to wallets outside its custody.",
@@ -1492,44 +1626,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Tether‑gestützte Orionx schließt nach Audit‑Hinweis auf 7 Mio $ Custody‑Lücke"
-  },
-  {
-   "id": "Al Jazeera:Israel bombards several towns in southern Lebanon",
-   "title": "Israel bombards several towns in southern Lebanon",
-   "text": "The Israeli army has blown up several villages in southern Lebanon in violation of a ceasefire agreement reached in June",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/israel-bombards-several-towns-in-southern-lebanon?traffic_source=rss",
-   "date": "2026-09-06T08:44:03.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Militärschlag"
-   ],
-   "scores": {
-    "crypto": -0.495,
-    "stocks": -0.495,
-    "gold": 0.248,
-    "usd": 0.165
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Militärschlag)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 62,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Israel bombardiert mehrere Städte im Süden Libanons"
   },
   {
    "id": "U.Today:Buterin Teases Major Advances in Ethereum Transaction Formats",
@@ -1623,7 +1719,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 41,
+   "priority": 40,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1693,7 +1789,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 34,
+   "priority": 33,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2009,7 +2105,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2043,7 +2139,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2755,40 +2851,6 @@
    "titleDe": "Solana dominiert die RWA-Ströme und zieht Nettoströme in Höhe von 348 Millionen $ ein"
   },
   {
-   "id": "CNBC:Why Walmart is moving in on DoorDash, Uber Eats delivery action, starting with donuts, coffee and sandwiches",
-   "title": "Why Walmart is moving in on DoorDash, Uber Eats delivery action, starting with donuts, coffee and sandwiches",
-   "text": "Walmart's deal to deliver for Dunkin' follows one earlier this year for Subway sandwiches, as the nation's largest retailer targets Uber Eats and DoorDash.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/05/walmart-dunkin-subway-delivery-uber-eats-doordash.html",
-   "date": "2026-09-05T14:46:14.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Warum Walmart bei DoorDash einzieht, Uber Eats Lieferaktion, beginnend mit Donuts, Kaffee und Sandwiches"
-  },
-  {
    "id": "U.Today:Dogecoin Golden Cross Meets 35 Billion DOGE Support: Potential Scenarios",
    "title": "Dogecoin Golden Cross Meets 35 Billion DOGE Support: Potential Scenarios",
    "text": "Recent buying pressure has reinforced a major on-chain support floor for Dogecoin, where almost 35 billion DOGE were previously traded.",
@@ -2970,42 +3032,6 @@
    "titleDe": "Was verschiedene Weltkarten richtig machen - und was nicht"
   },
   {
-   "id": "U.Today:Record Broken: XRP, RLUSD Agentic Transactions Set Sights on 4 Million",
-   "title": "Record Broken: XRP, RLUSD Agentic Transactions Set Sights on 4 Million",
-   "text": "AI agents continue to use XRP and RLUSD to pay for services directly onchain, with transactions on the verge of 4 million.",
-   "source": "U.Today",
-   "url": "https://u.today/record-broken-xrp-rlusd-agentic-transactions-set-sights-on-4-million",
-   "date": "2026-09-05T13:35:14.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "XRP"
-   ],
-   "alsoIn": [],
-   "titleDe": "Rekord gebrochen: XRP, RLUSD Agententransaktionen haben 4 Millionen ins Visier genommen"
-  },
-  {
    "id": "CNBC Economy:From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
    "title": "From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
    "text": "Despite rising prices and the travel industry focusing on the luxury segment, budget-minded vacationers are still finding ways to get away.",
@@ -3111,7 +3137,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 4,
+  "uebersetzt": 5,
   "fehler": null
  }
 }
