@@ -1,21 +1,90 @@
 {
- "updated": "2026-09-06T16:20:14.206Z",
+ "updated": "2026-09-06T16:26:48.426Z",
  "regime": "policy",
- "count": 132,
+ "count": 133,
  "errors": [
-  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
-  "CNBC World: fetch failed"
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
   {
-   "id": "CNBC:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
+   "id": "TASS:Yemeni government forces take control over Hays in Hodeida province — TV",
+   "title": "Yemeni government forces take control over Hays in Hodeida province — TV",
+   "text": "According to the TV channel, the city has strategic importance for operations on the country’s western coast",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183363",
+   "date": "2026-09-06T16:21:29.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Yemenitische Regierungsstreitkräfte übernehmen die Kontrolle über Hays in der Provinz Hodeida — TV"
+  },
+  {
+   "id": "TASS:US negotiators tell Zelensky they want breakthrough in talks before winter — media",
+   "title": "US negotiators tell Zelensky they want breakthrough in talks before winter — media",
+   "text": "According to the sources, Witkoff and Kushner discussed with Zelensky preparations for continuing the war through the winter",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183365",
+   "date": "2026-09-06T16:20:37.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 45,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Verhandlungsführer sagen Zelensky, sie wollen vor dem Winter einen Durchbruch in den Gesprächen erzielen — Medien"
+  },
+  {
+   "id": "CNBC World:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
    "title": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
    "text": "Iran warned of faster, heavier retaliation against U.S. attacks while acknowledging the war’s mounting toll on its economy.",
-   "source": "CNBC",
+   "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html",
    "date": "2026-09-06T16:11:09.000Z",
    "tags": [
-    "Märkte"
+    "Weltwirtschaft"
    ],
    "impact": "low",
    "kind": "headline",
@@ -42,13 +111,55 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "CNBC"
+   ],
    "titleDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen"
   },
   {
-   "id": "Reuters:Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL - reuters.com",
-   "title": "Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL - reuters.com",
-   "text": "Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL &nbsp;&nbsp; reuters.com",
+   "id": "U.Today:Bitcoin OG Says He Is Watching for Next Major Exploit as AI Models Get Stronger",
+   "title": "Bitcoin OG Says He Is Watching for Next Major Exploit as AI Models Get Stronger",
+   "text": "Longtime Bitcoin figure CobraBitcoin has warned that the rapid rise of increasingly autonomous AI models could create a new security threat for Bitcoin.",
+   "source": "U.Today",
+   "url": "https://u.today/bitcoin-og-says-he-is-watching-for-next-major-exploit-as-ai-models-get-stronger",
+   "date": "2026-09-06T16:10:27.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Hack/Exploit"
+   ],
+   "scores": {
+    "crypto": -0.7,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "why": "Direkt kryptonegative Nachricht. (Signale: Hack/Exploit)",
+   "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 63,
+   "label": "strong_bearish",
+   "labelText": "Stark Bearish",
+   "impactLevel": "medium",
+   "duration": "intraday",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "titleDe": "Bitcoin-OG sagt, er beobachtet den nächsten großen Exploit, während KI-Modelle stärker werden"
+  },
+  {
+   "id": "Reuters:Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL",
+   "title": "Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL",
+   "text": "Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONEJLZjJzYTl4RFlkRlFmR3M0UDdrNzJLaFFnTkE2OW9IOGxBTzl2eVk1QktFM01aV2YwUmJKQnI3UnktenZhQ2dIVWZjSU5uZi1DQllWazhVY3VMLXltR3plSUhhN2g3U0p3Q3pGZjZqT2NnYzh0SWVmVUZpa0x1TzV5TXMtYjFLOGkwUGExclEzTzlBWUJVQ1RSdjc5UFJQWmhQV25NN0lLYjUxcTZldGFGYTZGazBz?oc=5",
    "date": "2026-09-06T16:09:57.000Z",
@@ -77,7 +188,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Shaw erzielt Zweiteilzeit-Doppel, Manchester City schlägt Birmingham 3:1 in der WSL"
+   "titleDe": "Shaw erzielt im zweiten Halbzeit-Doppel, während Manchester City Birmingham 3-1 in der WSL schlägt"
   },
   {
    "id": "BBC World:German far-right set for big win in eastern state - exit polls",
@@ -116,9 +227,9 @@
    "titleDe": "Deutsche Rechtspopulisten stehen im Osten vor großem Sieg – Exitpolls"
   },
   {
-   "id": "Reuters:US envoys make first Kyiv visit amid Ukraine war peace push - reuters.com",
-   "title": "US envoys make first Kyiv visit amid Ukraine war peace push - reuters.com",
-   "text": "US envoys make first Kyiv visit amid Ukraine war peace push &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:US envoys make first Kyiv visit amid Ukraine war peace push",
+   "title": "US envoys make first Kyiv visit amid Ukraine war peace push",
+   "text": "US envoys make first Kyiv visit amid Ukraine war peace push &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONnlRblpUWUNHMjMteEdBa0JYZk5MeFJQRjlEa3dUdGtDY0xfZEs5Y2dCcV8yNEhSTHYzem9SVVVYS1NBZnc4U29BSEcydHp4cUx5bFZSUmZ1QXFsNHlFRGgtbGJ2WmZMRTZzdjhrTWY1b1BDMlFnQTlWXzRLU056OGV2TUlRdkdTdjRkMFpTNi02X1Y4MU5sMEF4WF8wcVpDNmNJUmFvXzRZeV91N2dKUDNJN1FWdkg3RHpReHVoNA?oc=5",
    "date": "2026-09-06T16:05:46.000Z",
@@ -141,7 +252,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 66,
+   "priority": 65,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -151,7 +262,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "US-Botschafter besuchen erstmals Kiew im Rahmen des Friedensvorstoßes im Ukraine-Krieg"
+   "titleDe": "US-Gesandte machen den ersten Besuch in Kiew inmitten des ukrainischen Kriegsfriedensvorstoßes"
   },
   {
    "id": "Mehr News:Israel proven it complies with no ceasefire agreement",
@@ -193,9 +304,9 @@
    "titleDe": "Israel hat nachgewiesen, dass es keine Waffenstillstandsvereinbarung einhält"
   },
   {
-   "id": "Reuters:Van Aert triumphs after Vuelta stage shortened - reuters.com",
-   "title": "Van Aert triumphs after Vuelta stage shortened - reuters.com",
-   "text": "Van Aert triumphs after Vuelta stage shortened &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Van Aert triumphs after Vuelta stage shortened",
+   "title": "Van Aert triumphs after Vuelta stage shortened",
+   "text": "Van Aert triumphs after Vuelta stage shortened &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPa0QwMTJTRnAyUWs4bk1yMlNoWS1MUUhZWGRqWDZaMXVITFFCZXJYZVVDWmNiSlVKbGJPYS1iM1cwcXNvUkNlQUx1cjFDeVI3S3hmWjZVSlZ2RzdxbzhqNkhXU0U2ZUpvbUc2QUp0Yy11V016UXBSU2JYbkFqMWhBR2pLdFR4cVh6eHVKR1c0QjJMRm8?oc=5",
    "date": "2026-09-06T16:03:24.000Z",
@@ -214,7 +325,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -249,7 +360,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -262,9 +373,8 @@
    "titleDe": "Weitere Länder werden sich der USA im Golf von Hormus anschließen, um sichere Navigation zu gewährleisten – offizieller Bericht"
   },
   {
-   "id": "Reuters:US Open day eight - reuters.com",
-   "title": "US Open day eight - reuters.com",
-   "text": "US Open day eight &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:US Open day eight",
+   "title": "US Open day eight",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5OM253UXc1dy1VSWZPSzJkaWhLb2RYZGMwS2JDbkNnODJGZnljdmtLQTJUV19GM2xzZ2lSOXR0clk3cGVONVZUU0pHQ1ZkYjRyQTFJOGhBQXd3NFo5YVNKaUh3VzJEd3Jhb2xpVEdNOGNWd1JyaFE?oc=5",
    "date": "2026-09-06T16:02:30.000Z",
@@ -283,7 +393,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 45,
+   "priority": 44,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -293,7 +403,41 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "US Open Tag acht"
+   "titleDe": "US Open, Tag acht"
+  },
+  {
+   "id": "Reuters:Nepali woman found alive days after family began mourning rites",
+   "title": "Nepali woman found alive days after family began mourning rites",
+   "text": "Nepali woman found alive days after family began mourning rites &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbGJhTEdnY3M5SW14Zl9NREdqbGZZNzZnRVVfcFZ3UUVHQXBJZXFRMVBJd1NHQXZfR3RxYWxPSmtXdmJMSmJ4QnNmSFA2eU9Wd0s2TVhWZXB5bVc3aHgzVFRaUWVmQWkzWlRubjNHODRLdmhwZXFIZFd4N09vWTExVlRyLXprd1BULTJuT3J2UjB0OG94eGk5b3RYTkgzT3l4blkwemxkcW9PVVRYbFBzYQ?oc=5",
+   "date": "2026-09-06T16:01:17.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Nepalesische Frau wird lebendig gefunden, Tage nachdem die Familie Beerdigungsrituale begonnen hatte"
   },
   {
    "id": "Decrypt:XRP Gets Another Boost Through Ripple Deal With Florida Athletics",
@@ -366,9 +510,9 @@
    "titleDe": "Vulkanausbruch lässt 170 000 Passagiere in Indonesien stranden"
   },
   {
-   "id": "Reuters:Dozens left behind on French beach after failed Channel crossing - reuters.com",
-   "title": "Dozens left behind on French beach after failed Channel crossing - reuters.com",
-   "text": "Dozens left behind on French beach after failed Channel crossing &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Dozens left behind on French beach after failed Channel crossing",
+   "title": "Dozens left behind on French beach after failed Channel crossing",
+   "text": "Dozens left behind on French beach after failed Channel crossing &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9WWXFVOWFjZmJ3UGdxOTRyQW1CTmc4T3kyZFZCdXdGa05pWEVJdGxTNGhhU2lEUXY2QThXMnNCQ0ptSi1TdUltbHBFV3U0UzJNWVpMNmxqN0xwQzRDUFV6SU9KamQ0X1U?oc=5",
    "date": "2026-09-06T16:00:00.000Z",
@@ -397,7 +541,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Dutzende bleiben auf französischer Küste zurück, nachdem Kanalüberfahrt scheiterte"
+   "titleDe": "Dutzende bleiben auf französischer Küste zurück, nachdem die Kanalüberquerung scheiterte"
   },
   {
    "id": "CoinDesk:Ukrainian police took down a crypto scam that stole up to $1 million a month",
@@ -470,8 +614,8 @@
    "titleDe": "Der US-Dollar hat seit 1913 97 % seines Wertes verloren: Ist Bitcoin die Lösung?"
   },
   {
-   "id": "Reuters:49ers place DT Sam Okuayinonu (foot) on IR - reuters.com",
-   "title": "49ers place DT Sam Okuayinonu (foot) on IR - reuters.com",
+   "id": "Reuters:49ers place DT Sam Okuayinonu (foot) on IR",
+   "title": "49ers place DT Sam Okuayinonu (foot) on IR",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQ0NiRGdKOU55V3M5VVplNzdNM0JEb3V1THo5R0tiV3Q1eTNHY0c3Ti1ON1Fzb050aFAyd3k5R3U2b3JJcHlab01ObG1lUzhUWUNIdERoUGpQdEVSN1JDa29LZGtDRk9EU1ZseU0zT2doeUs4eHpVN1M3LXhUSkJMUUpPeFlrdUNZS1ZUSjln?oc=5",
    "date": "2026-09-06T15:56:07.000Z",
@@ -500,12 +644,12 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "49ers setzen Defensive Tackle Sam Okuayinonu (Fuß) auf die Verletztenliste"
+   "titleDe": "49ers setzen Defensive-Tackle Sam Okuayinonu (Fuß) auf die Verletztenreserve"
   },
   {
-   "id": "Reuters:Maitland-Niles screamer earns Everton 2-2 draw with Man Utd - reuters.com",
-   "title": "Maitland-Niles screamer earns Everton 2-2 draw with Man Utd - reuters.com",
-   "text": "Maitland-Niles screamer earns Everton 2-2 draw with Man Utd &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Maitland-Niles screamer earns Everton 2-2 draw with Man Utd",
+   "title": "Maitland-Niles screamer earns Everton 2-2 draw with Man Utd",
+   "text": "Maitland-Niles screamer earns Everton 2-2 draw with Man Utd &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOV05GcTJicDRHd1lYMXQ0SlVmSUZoUWExTkMxR3diOHk2bmhJdzh5WmVGUmlkNlB4WEhyOVNERGFqeXotYV9XQlJicTZEeXc4YTkwMG41UTh4WGlsSS1CV21DRGk5bGphNjB5Qi1kTXJHUGJkN1FhRWE1MGJOLVA0TDJ0bE4zZnF1UnZmMkxlTTN2MHBtaWhyQXBZSWc3OWFBS1NsaVp5cE1Wd2ZwTWc?oc=5",
    "date": "2026-09-06T15:51:14.000Z",
@@ -534,7 +678,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Maitland-Niles' Schrei sichert Everton 2:2-Unentschieden gegen Manchester United"
+   "titleDe": "Maitland-Niles sorgt für ein 2:2-Unentschieden von Everton gegen Man Utd"
   },
   {
    "id": "Al Jazeera:Niger military accuses France of orchestrating failed mutiny: What to know",
@@ -571,9 +715,9 @@
    "titleDe": "Nigerisches Militär beschuldigt Frankreich, gescheiterten Aufstand orchestriert: Was Sie wissen sollten"
   },
   {
-   "id": "Reuters:Sarandon says she still loses movie roles over support for Palestinians - reuters.com",
-   "title": "Sarandon says she still loses movie roles over support for Palestinians - reuters.com",
-   "text": "Sarandon says she still loses movie roles over support for Palestinians &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Sarandon says she still loses movie roles over support for Palestinians",
+   "title": "Sarandon says she still loses movie roles over support for Palestinians",
+   "text": "Sarandon says she still loses movie roles over support for Palestinians &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbUkxN0ZVU1dKaVd3Nzk4MlB5SHhFS3BiWlc3Q3l3ajRWZy1ib19KUGp0WXFYYkhuNUF1RUFIN2R3V2FUZjFmQkppN05RM0laRjluRGQtV2lWb3RMMks5N213QUs3MUoyakFMa0Z4SnV3dzF0OVFCTjh3ekF0NkdWVnB6YTJJdGdxaGFxNVU5WVhjcE5ZNERCRlZIaXZTa3dGM0F6SHUyYzZ6NWN4Wm5aYzByaw?oc=5",
    "date": "2026-09-06T15:40:10.000Z",
@@ -602,7 +746,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Sarandon sagt, sie verliere immer noch Filmrollen wegen ihrer Unterstützung der Palästinenser"
+   "titleDe": "Sarandon sagt, sie verliert immer noch Filmrollen wegen ihrer Unterstützung der Palästinenser"
   },
   {
    "id": "TASS:Daily oil transit via Strait of Hormuz amounts to around 9 mln barrels — US official",
@@ -640,9 +784,9 @@
    "titleDe": "Täglicher Öltankverkehr durch den Golf von Hormuz beläuft sich auf rund 9 Millionen Barrel – US-Beamter"
   },
   {
-   "id": "Reuters:South Africa beat Zimbabwe by 48 runs to lift Tri-Series trophy - reuters.com",
-   "title": "South Africa beat Zimbabwe by 48 runs to lift Tri-Series trophy - reuters.com",
-   "text": "South Africa beat Zimbabwe by 48 runs to lift Tri-Series trophy &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:South Africa beat Zimbabwe by 48 runs to lift Tri-Series trophy",
+   "title": "South Africa beat Zimbabwe by 48 runs to lift Tri-Series trophy",
+   "text": "South Africa beat Zimbabwe by 48 runs to lift Tri-Series trophy &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWUhHOHRSZ0YxdHVyek9QQkN6M000V2VXYU9hQXRKYXV6WEVfdmk1VFI4RFpSOHZLVGNrT2tldTFFN01kRXhraUtYbkNvaDNPdDQ0cERWbU40SVAtdnNKbGtzbWZWZHB0R09PSTNFdjYzT2o1UVptYzl0T0dpb1ZrNkNvWjFjN0h5ZWFtbG40WlJ2WHlRd2g3bkVJbXA3ZzdBNW9Jb1lkVjNvb25vSXdzNQ?oc=5",
    "date": "2026-09-06T15:36:48.000Z",
@@ -671,7 +815,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Südafrika besiegte Zimbabwe um 48 Runs und holte den Tri-Series-Titel"
+   "titleDe": "Südafrika besiegt Simbabwe mit 48 Runs und gewinnt den Tri‑Series-Titel"
   },
   {
    "id": "Al Jazeera:Dead fish fill vanishing river as drought grips Indonesia",
@@ -708,14 +852,14 @@
    "titleDe": "Tote Fische füllen den verschwindenden Fluss, während Dürre Indonesien erfasst"
   },
   {
-   "id": "CNBC:SEC sues ISS as Trump administration ramps up scrutiny of proxy advisers",
+   "id": "CNBC World:SEC sues ISS as Trump administration ramps up scrutiny of proxy advisers",
    "title": "SEC sues ISS as Trump administration ramps up scrutiny of proxy advisers",
    "text": "The SEC sued Institutional Shareholder Services to enforce a subpoena as the Trump administration increases scrutiny of influential proxy advisers.",
-   "source": "CNBC",
+   "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/06/sec-iss-proxy-adviser-subpoena.html",
    "date": "2026-09-06T15:35:16.000Z",
    "tags": [
-    "Märkte"
+    "Weltwirtschaft"
    ],
    "impact": "low",
    "kind": "headline",
@@ -738,7 +882,9 @@
    "eventTypeEn": "Regulatory action",
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "CNBC"
+   ],
    "titleDe": "SEC verklagt ISS, während die Trump-Administration die Überwachung von Stellvertreterberatern verstärkt"
   },
   {
@@ -1003,7 +1149,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1286,7 +1432,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 65,
+   "priority": 64,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -1393,7 +1539,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1427,7 +1573,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1461,7 +1607,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1707,7 +1853,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1860,14 +2006,14 @@
    "titleDe": "$14,5 Milliarden Injection: Wird das US-Finanzministerium 'Runde 2' für Bitcoin und XRP auslösen?"
   },
   {
-   "id": "CNBC:Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
+   "id": "CNBC World:Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
    "title": "Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
    "text": "The sweetener's prices surged last week, reflecting a sharp deterioration in the global supply outlook.",
-   "source": "CNBC",
+   "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/06/sugar-is-outperforming-the-stock-market-this-year-whats-driving-it.html",
    "date": "2026-09-06T13:19:01.000Z",
    "tags": [
-    "Märkte"
+    "Weltwirtschaft"
    ],
    "impact": "low",
    "kind": "headline",
@@ -1890,7 +2036,9 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "CNBC"
+   ],
    "titleDe": "Zucker übertrifft die Börse dieses Jahr. Was treibt das an und wohin kann es gehen"
   },
   {
@@ -1954,7 +2102,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 66,
+   "priority": 65,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -2197,7 +2345,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2232,7 +2380,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 83,
+   "priority": 82,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "high",
@@ -2266,7 +2414,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2410,7 +2558,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -2445,7 +2593,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 56,
+   "priority": 55,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2458,14 +2606,14 @@
    "titleDe": "Iran Basketball erste Trainingseinheit in Nagoya"
   },
   {
-   "id": "CNBC:‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
+   "id": "CNBC World:‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
    "title": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
    "text": "Anthropic, OpenAI, Meta and Google all released model updates this week, while Nvidia said it's acquiring open-source AI platform Hugging Face.",
-   "source": "CNBC",
+   "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
    "date": "2026-09-06T12:13:49.000Z",
    "tags": [
-    "Märkte"
+    "Weltwirtschaft"
    ],
    "impact": "low",
    "kind": "headline",
@@ -2488,7 +2636,9 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "CNBC"
+   ],
    "titleDe": "‘Modellermüdigkeit’ setzt ein, während KI-Labore im rasanten Tempo neue Versionen einführen"
   },
   {
@@ -2735,41 +2885,6 @@
    "titleDe": "Iran beherbergt über 40% der weltweit seltenen Pflanzenarten: Studie"
   },
   {
-   "id": "TASS:Germany accusing Russia without evidence in Leipzig UAV incident — expert",
-   "title": "Germany accusing Russia without evidence in Leipzig UAV incident — expert",
-   "text": "No concrete evidence of Russia's responsibility has been presented, military expert and editor-in-chief of the Italian portal Analisi Difesa, Gianandrea Gaiani, told TASS",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/world/2183327",
-   "date": "2026-09-06T11:53:43.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 55,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Deutschland beschuldigt Russland ohne Beweise bei UAV-Vorfall in Leipzig — Experte"
-  },
-  {
    "id": "BeInCrypto:Elon Musk Fires Back at Bernie Sanders Over His $900 Billion Fortune",
    "title": "Elon Musk Fires Back at Bernie Sanders Over His $900 Billion Fortune",
    "text": "Elon Musk answers Bernie Sanders on X, saying his wealth sits in SpaceX and Tesla stock rather than cash.",
@@ -2802,41 +2917,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Elon Musk schlägt Bernie Sanders zurück wegen seines 900 Milliarden Dollar Vermögens"
-  },
-  {
-   "id": "TASS:Putin may meet Trump at APEC summit in China — Kremlin aide",
-   "title": "Putin may meet Trump at APEC summit in China — Kremlin aide",
-   "text": "Each of the leaders plans to attend the Asia-Pacific Economic Cooperation summit, Yuri Ushakov said",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/politics/2183325",
-   "date": "2026-09-06T11:30:52.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 54,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Putin kann Trump beim APEC-Gipfel in China treffen — Kreml-Helfer"
   },
   {
    "id": "U.Today:Five Days Left: Major XRP Fix Upgrade Set for September Activation",
@@ -3000,7 +3080,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 54,
+   "priority": 53,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3034,7 +3114,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3354,7 +3434,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3495,7 +3575,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3567,7 +3647,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3741,7 +3821,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 16,
+   "priority": 15,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3854,44 +3934,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Machi Big Brother steigerte FRIEND um 1.500 %. Danach ließ er einen Deal von 1 Million USD fallen"
-  },
-  {
-   "id": "U.Today:10.74 Trillion SHIB? Shiba Inu Reclaims Key Level Amid 19% OI Surge",
-   "title": "10.74 Trillion SHIB? Shiba Inu Reclaims Key Level Amid 19% OI Surge",
-   "text": "Shiba Inu's futures market is seeing a rapid surge in trading activity after its price suddenly flipped positive, surging by nearly 5% over the last 24 hours.",
-   "source": "U.Today",
-   "url": "https://u.today/1074-trillion-shib-shiba-inu-reclaims-key-level-amid-19-oi-surge",
-   "date": "2026-09-06T00:30:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Kursanstieg"
-   ],
-   "scores": {
-    "crypto": 0.36,
-    "stocks": 0.36,
-    "gold": -0.18,
-    "usd": -0.12
-   },
-   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
-   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 12,
-   "label": "bullish",
-   "labelText": "Bullish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "10,74 Billionen SHIB? Shiba Inu holt sich Schlüsselniveau zurück bei 19 % OI‑Anstieg"
   },
   {
    "id": "BBC World:'He was a lifeline' - Families at a loss after Haitian caregivers let go in US",
@@ -4241,6 +4283,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
+    "CNBC World",
     "CNBC"
    ],
    "titleDe": "Trump steigert die Spannung bei Warsh, während Fed Zinserhöhung droht"
@@ -4627,7 +4670,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 13,
+  "uebersetzt": 7,
   "fehler": null
  }
 }
