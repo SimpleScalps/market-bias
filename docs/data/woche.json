@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T01:46:49.777Z",
+ "updated": "2026-09-06T01:54:50.105Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T01:46:49.805Z",
+   "stand": "2026-09-06T01:54:50.131Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -156,7 +156,7 @@
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-06T01:46:49.810Z",
+   "stand": "2026-09-06T01:54:50.134Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
@@ -309,32 +309,32 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T01:46:49.800Z",
-   "anzahl": 13,
+   "stand": "2026-09-06T01:54:50.126Z",
+   "anzahl": 14,
    "klassen": {
     "crypto": {
-     "score": -0.3455,
+     "score": -0.3333,
      "bull": 1,
      "bear": 3,
-     "neut": 9
+     "neut": 10
     },
     "stocks": {
-     "score": -0.3455,
+     "score": -0.3333,
      "bull": 1,
      "bear": 3,
-     "neut": 9
+     "neut": 10
     },
     "gold": {
-     "score": 0.1729,
+     "score": 0.1668,
      "bull": 3,
      "bear": 1,
-     "neut": 9
+     "neut": 10
     },
     "usd": {
-     "score": 0.1152,
+     "score": 0.1111,
      "bull": 3,
      "bear": 0,
-     "neut": 10
+     "neut": 11
     }
    },
    "top": [
@@ -351,7 +351,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 98
+     "priority": 97
     },
     {
      "id": "Al Jazeera:Iran war live: IRGC claims new attacks on US warships over naval blockade",
