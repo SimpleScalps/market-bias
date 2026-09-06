@@ -1,11 +1,45 @@
 {
- "updated": "2026-09-06T17:17:14.010Z",
+ "updated": "2026-09-06T17:17:44.741Z",
  "regime": "policy",
  "count": 126,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "Al Jazeera:Palestinian farmers battle settler sabotage to save Hebron crops, livestock",
+   "title": "Palestinian farmers battle settler sabotage to save Hebron crops, livestock",
+   "text": "West Bank farmers defy daily settler attacks, sheep theft, and military restrictions to protect their land.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/features/2026/9/6/palestinian-farmers-battle-settler-sabotage-to-save-hebron-crops-livestock?traffic_source=rss",
+   "date": "2026-09-06T17:03:20.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Palästinensische Bauern kämpfen gegen Sabotage von Siedlern, um Hebroner Ernten und Vieh zu retten"
+  },
   {
    "id": "Decrypt:OpenAI's GPT-6 Astra Is Shockingly Good at Almost Everything",
    "title": "OpenAI's GPT-6 Astra Is Shockingly Good at Almost Everything",
@@ -324,9 +358,9 @@
    "titleDe": "Hackers fordern 2 Millionen Dollar in Bitcoin aus Deutschland. Berlin verweigert Zahlung"
   },
   {
-   "id": "Reuters:Fermin shines for Barcelona in thumping win at Valencia",
-   "title": "Fermin shines for Barcelona in thumping win at Valencia",
-   "text": "Fermin shines for Barcelona in thumping win at Valencia &nbsp;&nbsp; Reuters",
+   "id": "Reuters:Fermin shines for Barcelona in thumping win at Valencia - reuters.com",
+   "title": "Fermin shines for Barcelona in thumping win at Valencia - reuters.com",
+   "text": "Fermin shines for Barcelona in thumping win at Valencia &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOb0JfbXJ0dUxFWGkzQTN2bzhRT2pVUEp2WFBQSld2VGFuakNJRUVFZ1Fvc3QzYi1udDhqR3l3MjdPd2U2aG9BR2cxeVNEVVFWVmVOQmhPTlF0c3hyb2loSjFyRVByeDNrWWNqZm1WZEUzb3o5YzNtWFRuMEdRSUZXSE80VWtwN1FKQlRMLVVHNkpmZGhFTG1YYnN4SQ?oc=5",
    "date": "2026-09-06T16:39:43.000Z",
@@ -355,7 +389,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Fermin glänzt für Barcelona im runden Sieg gegen Valencia"
+   "titleDe": "Fermin glänzt für Barcelona bei dominierendem Sieg gegen Valencia"
   },
   {
    "id": "Tehran Times:Restoration work continues at Sheikh Safi al-Din Ardabili shrine complex",
@@ -463,9 +497,9 @@
    "titleDe": "Sayyari: Irans Abschreckungsfähigkeiten haben sich nach den jüngsten Kriegen deutlich erhöht"
   },
   {
-   "id": "Reuters:Trump administration renews Supreme Court bid to limit mail-in voting",
-   "title": "Trump administration renews Supreme Court bid to limit mail-in voting",
-   "text": "Trump administration renews Supreme Court bid to limit mail-in voting &nbsp;&nbsp; Reuters",
+   "id": "Reuters:Trump administration renews Supreme Court bid to limit mail-in voting - reuters.com",
+   "title": "Trump administration renews Supreme Court bid to limit mail-in voting - reuters.com",
+   "text": "Trump administration renews Supreme Court bid to limit mail-in voting &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPLV9pS2hNUzZydVVnTkVQaW9VaGpkWGE0bjZDdzBLaWVzTkZHRW5yX0loS3VGTE5EaEpXSzZGQ1BJRG9aWGxPa1NTMkN6QUhXbGROU3FpV2xMNU02ZnAyWkhveU51R3R2ZGlFRFd1U0dtWjJLNEZVeXY0aDU3TXNxMXM0SmZQaHI5N2E4OERFajBrZ3Y3bjFPOVU2Wm01TFhBLTFnNGxBMVl4QXFtSDBVckxtbnlBZkdSbFJj?oc=5",
    "date": "2026-09-06T16:29:44.000Z",
@@ -494,7 +528,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Trump-Administration erneuert Supreme-Court-Bet, um Briefwahl einzuschränken"
+   "titleDe": "Trump-Administration erneuert Supreme-Court-Bet, um Briefwahl einzuschränken - reuters.com"
   },
   {
    "id": "Tehran Times:Qalibaf warns of faster, heavier Iranian response to any new aggression",
@@ -567,9 +601,9 @@
    "titleDe": "USA will mit Moskau, Kiew an einem 'erneuerten' Friedensvorschlag arbeiten – Medien"
   },
   {
-   "id": "Reuters:Only solo woman in Venice festival says industry remains unequal",
-   "title": "Only solo woman in Venice festival says industry remains unequal",
-   "text": "Only solo woman in Venice festival says industry remains unequal &nbsp;&nbsp; Reuters",
+   "id": "Reuters:Only solo woman in Venice festival says industry remains unequal - reuters.com",
+   "title": "Only solo woman in Venice festival says industry remains unequal - reuters.com",
+   "text": "Only solo woman in Venice festival says industry remains unequal &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNmFZTzVCdHhDYUxpTHNDMW1NbVMxZ2tLQmdMa2s4eERSV1hNcnQ1dTR3UHV4elVBZGtTMFItdDBpWGx6TlRnaE00SU12NlpURVJaRk1GRjktc3o3UzZ2SVBSZ0prc1dYeDBDRThURkRGNDJLU3JxZUZINDFsbHZXdzI5b043aWZmcjM5ZFFqbEYyZFNjekg1WDhVbzBtdEhkd1IzNTVoUXZmYTA?oc=5",
    "date": "2026-09-06T16:25:36.000Z",
@@ -598,7 +632,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Alleinige Frau beim Venedig-Festival sagt, Industrie bleibt ungleich"
+   "titleDe": "Alleinige Frau im Venedig-Festival sagt, Industrie bleibt ungleich"
   },
   {
    "id": "TASS:Yemeni government forces take control over Hays in Hodeida province — TV",
@@ -623,7 +657,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1584,40 +1618,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Schließung des Konsulats in Bonn soll die Wahlvorbereitungen sabotieren – russischer Diplomat"
-  },
-  {
-   "id": "Al Jazeera:Bosnian Serbs strengthen ties with Israel amid tensions",
-   "title": "Bosnian Serbs strengthen ties with Israel amid tensions",
-   "text": "Opening of Israeli commerce office deepens ties between Republika Srpska and Israel.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/bosnian-serbs-strengthen-ties-with-israel-amid-tensions?traffic_source=rss",
-   "date": "2026-09-06T14:37:40.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 58,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Bosnische Serben vertiefen Beziehungen zu Israel trotz Spannungen"
   },
   {
    "id": "U.Today:Peter Brandt Revives His Legendary 2019 Parabolic Target for Bitcoin",
@@ -4428,7 +4428,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
