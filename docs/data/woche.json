@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T19:42:34.441Z",
+ "updated": "2026-09-06T19:52:19.715Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T19:42:34.489Z",
+   "stand": "2026-09-06T19:52:19.764Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T19:42:34.479Z",
+   "stand": "2026-09-06T19:52:19.753Z",
    "anzahl": 125,
    "klassen": {
     "crypto": {
@@ -319,19 +319,19 @@
      "neut": 114
     },
     "stocks": {
-     "score": -0.0379,
+     "score": -0.0381,
      "bull": 3,
      "bear": 7,
      "neut": 115
     },
     "gold": {
-     "score": 0.0189,
+     "score": 0.019,
      "bull": 7,
      "bear": 1,
      "neut": 117
     },
     "usd": {
-     "score": 0.0126,
+     "score": 0.0127,
      "bull": 0,
      "bear": 0,
      "neut": 125
@@ -426,7 +426,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 92
+     "priority": 91
     },
     {
      "id": "U.Today:Bitcoin OG Says He Is Watching for Next Major Exploit as AI Models Get Stronger",
@@ -441,7 +441,7 @@
       "gold": 0,
       "usd": 0
      },
-     "priority": 58
+     "priority": 57
     },
     {
      "id": "Al Jazeera:Israeli air attacks on Lebanon kill at least four",
