@@ -159,3 +159,33 @@ test('Zahlen aus der Vorlage bleiben stehen', async () => {
     assert.match(d.inhalt, /162/);
   } finally { globalThis.fetch = echt; }
 });
+
+/*
+ * Ein "keine Marktrelevanz" der KI muss ein schwaches Regelsignal aufheben.
+ *
+ * Vorher konnte nur eine Gegenrichtung widersprechen. Damit gewann bei jedem
+ * Fehlalarm des Regelwerks das bloße Wort: "Can AfD form Germany's first
+ * far-right state government" stand auf bearish −0,36, weil eine Regel
+ * "Eskalation" gesehen hatte — während das Modell den Satz gelesen und richtig
+ * erkannt hatte, dass eine Landtagswahl keinen globalen Risikowert bewegt.
+ *
+ * Starke Signale bleiben unangetastet: Ein Raketenangriff mit −0,9 wird nicht
+ * dadurch harmlos, dass das Modell ihn nicht einordnen konnte.
+ */
+test('Ein neutrales Urteil hebt schwache Regelsignale auf', () => {
+  const neutral = { richtung: 'neutral', staerke: 0 };
+  assert.equal(widerspruch(-0.36, neutral), true, 'schwach bearish');
+  assert.equal(widerspruch(0.36, neutral), true, 'schwach bullish');
+  assert.equal(widerspruch(-0.10, neutral), false, 'zu nah an null');
+});
+
+test('Starke Regelsignale ueberstehen ein neutrales Urteil', () => {
+  const neutral = { richtung: 'neutral', staerke: 0 };
+  assert.equal(widerspruch(-0.90, neutral), false, 'Raketenangriff');
+  assert.equal(widerspruch(0.70, neutral), false, 'starker ETF-Zufluss');
+});
+
+test('Ein Fehlschlag der KI hebt nichts auf', () => {
+  assert.equal(widerspruch(-0.36, { fehler: 'Groq 429' }), false);
+  assert.equal(widerspruch(-0.36, null), false);
+});
