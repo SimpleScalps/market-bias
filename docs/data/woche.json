@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T09:52:29.678Z",
+ "updated": "2026-09-06T10:03:51.705Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T09:52:29.710Z",
+   "stand": "2026-09-06T10:03:51.741Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -156,7 +156,7 @@
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-06T09:52:29.716Z",
+   "stand": "2026-09-06T10:03:51.748Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
@@ -309,50 +309,35 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T09:52:29.705Z",
-   "anzahl": 27,
+   "stand": "2026-09-06T10:03:51.734Z",
+   "anzahl": 28,
    "klassen": {
     "crypto": {
-     "score": -0.2026,
+     "score": -0.193,
      "bull": 1,
      "bear": 3,
-     "neut": 23
+     "neut": 24
     },
     "stocks": {
-     "score": -0.2026,
+     "score": -0.193,
      "bull": 1,
      "bear": 3,
-     "neut": 23
+     "neut": 24
     },
     "gold": {
-     "score": 0.1013,
+     "score": 0.0965,
      "bull": 3,
      "bear": 1,
-     "neut": 23
+     "neut": 24
     },
     "usd": {
-     "score": 0.0675,
+     "score": 0.0643,
      "bull": 3,
      "bear": 0,
-     "neut": 24
+     "neut": 25
     }
    },
    "top": [
-    {
-     "id": "BBC World:US and Iran trade retaliatory attacks on ships as conflict flares",
-     "titel": "US and Iran trade retaliatory attacks on ships as conflict flares",
-     "titelDe": "US und Iran führen racheartige Angriffe auf Schiffe durch, während der Konflikt eskaliert",
-     "quelle": "BBC World",
-     "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
-     "zeit": "2026-09-05T22:35:35.000Z",
-     "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
-     },
-     "priority": 85
-    },
     {
      "id": "Al Jazeera:Iran war live: IRGC claims new attacks on US warships over naval blockade",
      "titel": "Iran war live: IRGC claims new attacks on US warships over naval blockade",
@@ -367,6 +352,21 @@
       "usd": 0.255
      },
      "priority": 99
+    },
+    {
+     "id": "BBC World:US and Iran trade retaliatory attacks on ships as conflict flares",
+     "titel": "US and Iran trade retaliatory attacks on ships as conflict flares",
+     "titelDe": "US und Iran führen racheartige Angriffe auf Schiffe durch, während der Konflikt eskaliert",
+     "quelle": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
+     "zeit": "2026-09-05T22:35:35.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 84
     },
     {
      "id": "Al Jazeera:Iran war live: IRGC claims attacks on 3 oil tankers and 3 US-linked ships",
@@ -396,7 +396,7 @@
       "gold": 0.427,
       "usd": 0.285
      },
-     "priority": 45
+     "priority": 44
     },
     {
      "id": "Al Jazeera:Israel bombards several towns in southern Lebanon",
