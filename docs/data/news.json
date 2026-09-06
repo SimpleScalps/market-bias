@@ -1,11 +1,45 @@
 {
- "updated": "2026-09-06T15:18:46.096Z",
+ "updated": "2026-09-06T15:29:22.575Z",
  "regime": "policy",
- "count": 78,
+ "count": 77,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "Al Jazeera:Embattled FIFA President Gianni Infantino to stand for re-election",
+   "title": "Embattled FIFA President Gianni Infantino to stand for re-election",
+   "text": "FIFA says its chief has not changed his stance on re-election as Infantino faces widespread criticism.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/2026/9/6/embattled-fifa-president-gianni-infantino-to-stand-for-re-election?traffic_source=rss",
+   "date": "2026-09-06T15:07:18.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Der umstrittene FIFA-Präsident Gianni Infantino kandidiert erneut"
+  },
   {
    "id": "Decrypt:Stablecoins Won't Scale Without Banks",
    "title": "Stablecoins Won't Scale Without Banks",
@@ -28,7 +62,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -39,6 +73,42 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Stablecoins werden ohne Banken nicht skalieren"
+  },
+  {
+   "id": "U.Today:Dogecoin's Ten-Cent Dream Nears Reality as Price Secures Key Breakout",
+   "title": "Dogecoin's Ten-Cent Dream Nears Reality as Price Secures Key Breakout",
+   "text": "The immediate question is whether Dogecoin can convert its latest breakout into a sustained move above $0.10.",
+   "source": "U.Today",
+   "url": "https://u.today/dogecoins-ten-cent-dream-nears-reality-as-price-secures-key-breakout",
+   "date": "2026-09-06T14:50:16.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "DOGE"
+   ],
+   "alsoIn": [],
+   "titleDe": "Der zehncentige Traum von Dogecoin nähert sich der Realität, als der Preis einen wichtigen Ausbruch erreicht"
   },
   {
    "id": "Al Jazeera:Bosnian Serbs strengthen ties with Israel amid tensions",
@@ -132,7 +202,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -653,7 +723,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -687,7 +757,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -721,7 +791,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -755,7 +825,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -870,40 +940,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Verlässt die USA seinen Status als sicherer Hafen? Warum globale Zentralbanken Gold aus New York abziehen"
-  },
-  {
-   "id": "Al Jazeera:Algeria civil defence recovers body of 10-year-old boy from well",
-   "title": "Algeria civil defence recovers body of 10-year-old boy from well",
-   "text": "Child found dead after four-day rescue effort in Algeria's western province of el-Bayadh.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/algeria-civil-defence-recovers-body-of-10-year-old-boy-from-well?traffic_source=rss",
-   "date": "2026-09-06T12:55:06.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 28,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Algerisches Zivilschutzteam findet Leichnam eines 10-jährigen Jungen im Brunnen"
   },
   {
    "id": "MarketWatch:We’re in our 60s. We earn $345,000 and have $1 million in 403(b)s. Is it too late for Roth conversions?",
@@ -1103,7 +1139,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 57,
+   "priority": 56,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1139,7 +1175,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1243,7 +1279,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1345,7 +1381,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 45,
+   "priority": 44,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1449,7 +1485,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 43,
+   "priority": 42,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1659,7 +1695,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1693,7 +1729,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 11,
+   "priority": 10,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1986,40 +2022,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Banksy, Star Wars und JPMorgan treffen in einem Museum für 1 Milliarde Dollar"
-  },
-  {
-   "id": "U.Today:Zcash Faces 424% Liquidation Imbalance Amid Short Squeeze",
-   "title": "Zcash Faces 424% Liquidation Imbalance Amid Short Squeeze",
-   "text": "Zcash rose above the landmark $1000 price point as a sharp rally forced short traders out of leveraged positions.",
-   "source": "U.Today",
-   "url": "https://u.today/zcash-faces-424-liquidation-imbalance-amid-short-squeeze",
-   "date": "2026-09-05T21:37:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": "Liquidationen",
-   "eventTypeEn": "Liquidations",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Zcash sieht sich bei Short‑Squeeze einem Liquidationsungleichgewicht von 424 % gegenüber"
   },
   {
    "id": "BBC World:Prince William to attend King Harald's funeral in Norway",
@@ -2545,42 +2547,6 @@
    "titleDe": "Ich bin Ernährungsberaterin aus Japan: 7 ‚wesentliche‘ entzündungshemmende Lebensmittel, auf die ich verlass"
   },
   {
-   "id": "BeInCrypto:US Debt Hit $40 Trillion. So Where Is Bitcoin’s Debasement Trade?",
-   "title": "US Debt Hit $40 Trillion. So Where Is Bitcoin’s Debasement Trade?",
-   "text": "US federal debt has crossed $40 trillion. The government is still running a deficit close to 6% of GDP. Long-term borrowing costs remain high. Yet Bitcoin is trading near $80,000, roughly 37% below its record high from last year. That creates an awkward question for one of Bitcoin’s oldest macro narratives. If rising debt and",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/bitcoin-us-debt-debasement-trade/",
-   "date": "2026-09-05T15:19:47.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "BTC"
-   ],
-   "alsoIn": [],
-   "titleDe": "Die US-Schulden erreichten 40 Billionen $. Also, wo ist Bitcoins Debasement Trade?"
-  },
-  {
    "id": "BBC World:What different world maps get right - and what they get wrong",
    "title": "What different world maps get right - and what they get wrong",
    "text": "As the UN adopts a new world map to reflect Africa's true size, let's take a closer look at what different maps get right and wrong.",
@@ -2720,7 +2686,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
+  "uebersetzt": 2,
   "fehler": null
  }
 }
