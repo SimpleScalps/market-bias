@@ -442,8 +442,16 @@ function ohneAlteSaetze(stand) {
   };
 }
 
+/*
+ * Gemessen wird am Urteil, nicht am Inhaltssatz.
+ *
+ * Der Satz kann berechtigt leer sein - die Zahlenwache verwirft ihn, wenn eine
+ * Zahl darin nicht in der Vorlage steht. Am Inhalt gemessen galt die Meldung
+ * dann fuer immer als offen und wurde endlos erneut geprueft. Die Richtung
+ * dagegen liegt bei jedem gelungenen Urteil vor.
+ */
 const brauchtPruefung = (n) => n.impactLevel !== 'ignore'
-  && (!n.ki?.inhalt || (n.ki.stand || 1) < ANWEISUNG_STAND);
+  && (!n.ki?.richtung || (n.ki.stand || 1) < ANWEISUNG_STAND);
 
 /*
  * Zwischenspeicher der Uebersetzungen.
@@ -475,11 +483,27 @@ const UEBERSETZUNG_JE_ABRUF = 5;
 const GESCHUETZT = ['/subscribe', '/notify', '/testpush', '/deuten', '/tageslage',
   '/modelle', '/tick', '/uebersetzen', '/frage', '/versandprobe'];
 
+/*
+ * Merkt sich, wer das Zugangswort noch in der Adresse mitschickt.
+ *
+ * Ein Wort in der Adresse steht in jedem Protokoll: bei Cloudflare, beim
+ * Taktgeber, in jedem Zwischenknoten. Es gehoert in eine Kopfzeile. Solange
+ * aber noch etwas den alten Weg benutzt, darf er nicht abgeschaltet werden -
+ * sonst steht der Taktgeber still. Dieser Vermerk sagt, wann es soweit ist.
+ */
+let adressZugangZuletzt = null;
+
 function zugangGeprueft(request, url, env) {
   if (!env.ZUGANG) return true;                       // nicht eingerichtet
   if (!GESCHUETZT.includes(url.pathname)) return true; // offener Weg
 
-  const mitgegeben = (request.headers.get('x-zugang') || url.searchParams.get('zugang') || '').trim();
+  const ausKopfzeile = (request.headers.get('x-zugang') || '').trim();
+  const ausAdresse = (url.searchParams.get('zugang') || '').trim();
+  if (!ausKopfzeile && ausAdresse) {
+    adressZugangZuletzt = { zeit: new Date().toISOString(), pfad: url.pathname };
+  }
+
+  const mitgegeben = ausKopfzeile || ausAdresse;
   // Beim Hinterlegen ueber die Kommandozeile haengt leicht ein Zeilenumbruch
   // an; ohne diese Bereinigung stimmt dann nie etwas ueberein.
   const soll = String(env.ZUGANG).trim();
@@ -985,7 +1009,21 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    */
   let neueUrteile = 0;
   for (const n of items) {
-    if (!n.ki?.inhalt || speicher.urteile[n.id]?.ki?.inhalt) continue;
+    if (!n.ki?.richtung) continue;               // gar kein Urteil
+
+    /*
+     * Ein neueres Urteil ersetzt ein aelteres.
+     *
+     * Vorher stand hier: liegt schon eines mit Inhalt vor, ueberspringen. Das
+     * war richtig, solange es nur ein Regelwerk gab - mit dem Regelstand wurde
+     * es zur Falle. Die Neubewertung lief, kostete Token, und ihr Ergebnis
+     * landete jedes Mal im Papierkorb, weil das alte Urteil noch dastand. Der
+     * Zaehler blieb auf 42 stehen, waehrend acht Meldungen je Minute
+     * fehlerfrei durchliefen.
+     */
+    const alt = speicher.urteile[n.id]?.ki;
+    if (alt?.richtung && (alt.stand || 1) >= (n.ki.stand || 1)) continue;
+
     speicher.urteile[n.id] = urteilAuslesen(n);
     neueUrteile++;
   }
@@ -1155,6 +1193,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ...(letzterAblageFehler ? { letzteAblageStoerung: letzterAblageFehler } : {}),
     ...(letzterVersandbuchFehler ? { letzteVersandStoerung: letzterVersandbuchFehler } : {}),
     ...(nachlaufErgebnis ? { nachlaufErgebnis } : {}),
+    ...(adressZugangZuletzt ? { adressZugang: adressZugangZuletzt } : {}),
     /*
      * Zusammenfuehren, nicht ersetzen.
      *
@@ -1601,6 +1640,19 @@ export default {
         uebersetzung: env.GROQ_KEY ? 'Groq'
           : (env.DEEPL_KEY ? 'DeepL' : 'MyMemory (ohne Schluessel)'),
         wochenbuch: buch?.tage ? `${Object.keys(buch.tage).length} Tage` : 'noch leer',
+        /*
+         * Steht das Zugangswort noch in Adressen?
+         *
+         * Dann liegt es in den Protokollen von Cloudflare und des Taktgebers.
+         * Erst wenn hier laengere Zeit nichts mehr auftaucht, kann der Weg
+         * ueber die Adresse gefahrlos geschlossen werden.
+         */
+        zugangInAdresse: (() => {
+          const a = zNow.adressZugang || adressZugangZuletzt;
+          if (!a) return 'nein - nur noch ueber die Kopfzeile';
+          const min = Math.round((Date.now() - new Date(a.zeit).getTime()) / 60000);
+          return `JA - zuletzt vor ${min} min auf ${a.pfad}`;
+        })(),
         zugang: env.ZUGANG
           ? 'geschuetzt'
           : 'OFFEN - jeder mit dieser Adresse kann das Abo aendern und das Kontingent verbrauchen',
