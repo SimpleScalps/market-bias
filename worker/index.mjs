@@ -397,6 +397,30 @@ let letzterTickFehler = null;
  * gefaellt wurde. Sonst ueberdauert ein Satz wie "Bundeskanzler Olaf Merkel"
  * die Regel, die ihn kuenftig verhindert, und steht noch einen ganzen Tag da.
  */
+/**
+ * Nimmt Saetze heraus, die unter aelteren Regeln entstanden sind.
+ *
+ * Die Neubewertung des ganzen Bestands braucht mehr Token, als an einem Tag
+ * zur Verfuegung stehen - gemessen: rund 237.000 fuer die verbliebenen 75
+ * Meldungen, verfuegbar waren 55.000. Bis dahin haette "Bundeskanzler Olaf
+ * Merkel" weiter dort gestanden, wo die Vorlage "Merz" sagt.
+ *
+ * Also andersherum: Der Satz verschwindet sofort und kostet nichts. Richtung,
+ * Staerke und Herleitung bleiben - sie sind eine Einschaetzung, keine
+ * Tatsachenbehauptung. Was fehlt, ist die Nacherzaehlung, und die steht als
+ * Schlagzeile und Anriss ohnehin daneben. Der Nachlauf fuellt sie wieder auf,
+ * sobald er die Meldung erreicht.
+ */
+function ohneAlteSaetze(stand) {
+  if (!stand?.items?.length) return stand;
+  return {
+    ...stand,
+    items: stand.items.map((n) => (n.ki?.inhalt && (n.ki.stand || 1) < ANWEISUNG_STAND
+      ? { ...n, ki: { ...n.ki, inhalt: '' } }
+      : n)),
+  };
+}
+
 const brauchtPruefung = (n) => n.impactLevel !== 'ignore'
   && (!n.ki?.inhalt || (n.ki.stand || 1) < ANWEISUNG_STAND);
 
@@ -2050,7 +2074,7 @@ export default {
       if (!bestand) {
         const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
         const { data } = await teilAbgleich(env, ctx, regime, null, gruppe);
-        return json({ ...data, quelle: 'worker' });
+        return json({ ...ohneAlteSaetze(data), quelle: 'worker' });
       }
 
       // Sonst reicht der Kalender — er trägt die zeitkritischen Zahlen.
@@ -2074,10 +2098,10 @@ export default {
         });
       }
 
-      return json({ ...stand, quelle: 'worker' }, 200, { 'etag': kennung });
+      return json({ ...ohneAlteSaetze(stand), quelle: 'worker' }, 200, { 'etag': kennung });
     } catch (err) {
       const fallback = await lesen(env, KEY);
-      if (fallback) return json({ ...fallback, quelle: 'worker-cache', fehler: err.message });
+      if (fallback) return json({ ...ohneAlteSaetze(fallback), quelle: 'worker-cache', fehler: err.message });
       return json({ fehler: err.message, items: [] }, 502);
     }
   },
