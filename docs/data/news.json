@@ -1,11 +1,182 @@
 {
- "updated": "2026-09-06T15:59:14.516Z",
+ "updated": "2026-09-06T16:02:16.205Z",
  "regime": "policy",
- "count": 130,
+ "count": 134,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "Decrypt:XRP Gets Another Boost Through Ripple Deal With Florida Athletics",
+   "title": "XRP Gets Another Boost Through Ripple Deal With Florida Athletics",
+   "text": "The multi-year deal will place the XRP logo on the field at Ben Hill Griffin Stadium starting this season, extending Ripple's push into college athletics.",
+   "source": "Decrypt",
+   "url": "https://decrypt.co/377512/xrp-boost-ripple-florida-athletics",
+   "date": "2026-09-06T16:01:03.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 52,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "XRP"
+   ],
+   "alsoIn": [],
+   "titleDe": "XRP erhält durch die Ripple-Vereinbarung mit Florida Athletics einen weiteren Aufschwung"
+  },
+  {
+   "id": "BBC World:Volcano eruption leaves 170,000 passengers stranded in Indonesia",
+   "title": "Volcano eruption leaves 170,000 passengers stranded in Indonesia",
+   "text": "More than 170,000 airline passengers are stranded after ash was detected in airspace near Jakarta following the eruptions.",
+   "source": "BBC World",
+   "url": "https://www.bbc.co.uk/news/articles/cvgy5k4n07ko?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-06T16:00:21.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Vulkanausbruch lässt 170 000 Passagiere in Indonesien stranden"
+  },
+  {
+   "id": "Reuters:Dozens left behind on French beach after failed Channel crossing",
+   "title": "Dozens left behind on French beach after failed Channel crossing",
+   "text": "Dozens left behind on French beach after failed Channel crossing &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9WWXFVOWFjZmJ3UGdxOTRyQW1CTmc4T3kyZFZCdXdGa05pWEVJdGxTNGhhU2lEUXY2QThXMnNCQ0ptSi1TdUltbHBFV3U0UzJNWVpMNmxqN0xwQzRDUFV6SU9KamQ0X1U?oc=5",
+   "date": "2026-09-06T16:00:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Dutzende bleiben auf französischer Küste zurück, nachdem die Kanalüberquerung scheiterte"
+  },
+  {
+   "id": "CoinDesk:Ukrainian police took down a crypto scam that stole up to $1 million a month",
+   "title": "Ukrainian police took down a crypto scam that stole up to $1 million a month",
+   "text": "Investigators have identified 62 victims and say more than 46 Ukrainians took part in the alleged operation.",
+   "source": "CoinDesk",
+   "url": "https://www.coindesk.com/business/2026/09/06/ukrainian-police-took-down-a-crypto-scam-that-stole-up-to-usd1-million-a-month",
+   "date": "2026-09-06T16:00:00.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 52,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Ukrainische Polizei zerschlug einen Krypto-Betrug, der bis zu 1 Million USD pro Monat stahl"
+  },
+  {
+   "id": "Reuters:49ers place DT Sam Okuayinonu (foot) on IR",
+   "title": "49ers place DT Sam Okuayinonu (foot) on IR",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQ0NiRGdKOU55V3M5VVplNzdNM0JEb3V1THo5R0tiV3Q1eTNHY0c3Ti1ON1Fzb050aFAyd3k5R3U2b3JJcHlab01ObG1lUzhUWUNIdERoUGpQdEVSN1JDa29LZGtDRk9EU1ZseU0zT2doeUs4eHpVN1M3LXhUSkJMUUpPeFlrdUNZS1ZUSjln?oc=5",
+   "date": "2026-09-06T15:56:07.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "49ers setzen Defensive-Tackle Sam Okuayinonu (Fuß) auf die Verletztenreserve"
+  },
   {
    "id": "CNBC World:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
    "title": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
@@ -45,40 +216,6 @@
     "CNBC"
    ],
    "titleDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen"
-  },
-  {
-   "id": "Al Jazeera:Niger military accuses France of orchestrating failed mutiny: What to know",
-   "title": "Niger military accuses France of orchestrating failed mutiny: What to know",
-   "text": "French officials deny involvement, but tensions between the two countries remain high.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/niger-military-accuses-france-of-orchestrating-failed-mutiny-what-to-know?traffic_source=rss",
-   "date": "2026-09-06T15:42:00.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 62,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Nigerisches Militär beschuldigt Frankreich, gescheiterten Aufstand orchestriert: Was Sie wissen sollten"
   },
   {
    "id": "Reuters:Sarandon says she still loses movie roles over support for Palestinians",
@@ -182,40 +319,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Südafrika besiegt Simbabwe mit 48 Runs und gewinnt den Tri‑Series-Titel"
-  },
-  {
-   "id": "Al Jazeera:Dead fish fill vanishing river as drought grips Indonesia",
-   "title": "Dead fish fill vanishing river as drought grips Indonesia",
-   "text": "A prolonged dry spell has caused millions of fish to die in Indonesia’s Silugonggo River in Central Java.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/dead-fish-fill-vanishing-river-as-drought-grips-indonesia?traffic_source=rss",
-   "date": "2026-09-06T15:36:33.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Tote Fische füllen den verschwindenden Fluss, während Dürre Indonesien erfasst"
   },
   {
    "id": "Reuters:Shaw strikes second-half double as Manchester City beat Birmingham 3-1",
@@ -586,7 +689,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -597,6 +700,39 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Antonelli gewinnt spektakulär den italienischen GP von der Rückbank aus"
+  },
+  {
+   "id": "Reuters:- Reuters",
+   "title": "- Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYVVBaEZMWWU4dTd5ZC0zdDJFV1BMaUU2UnNxUFZ0QVVzanFvbE03cXgyaGZoZkxWS05DUjlUUzdjNWtzRTBlaVpMQXpzZzhhRDc0cHB5YVo5SXpCTWFTek9oOGFTMUlfVmVkelQ5T1ozTlRkcnpSRS1pY3QwRFhlcjA5OGhGSGxxRkRFamZkUkI1dUtPMmsxUzNTdHJycmQyX3ZPbGZRTUZyOURCNlE?oc=5",
+   "date": "2026-09-06T15:04:07.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 30,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Reuters"
   },
   {
    "id": "Reuters:Israel's Netanyahu orders West Bank settler outposts to be removed, sources say",
@@ -620,7 +756,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -631,40 +767,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Israels Netanjahu ordnet die Entfernung von Siedleraußenposten im Westjordanland an, sagen Quellen"
-  },
-  {
-   "id": "Reuters:Israeli strike kills two people in Gaza, medics say",
-   "title": "Israeli strike kills two people in Gaza, medics say",
-   "text": "Israeli strike kills two people in Gaza, medics say &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWXNmc1lpWkNYV0VUaVR4bDNpWTNMcTQ1VkFPYk5tZGFHbzk3Q3pOX0JtRW9Gc01kVnJ4RjRRVVl2aVpfSU1jN1JtelYxZUNIZV9Qb3M1U3J5Y0FMdkN6SV9sd3dPckdaWFFMWktOejFtUldxdUFDd0tMbjBzRzE5R0ZsQ1pPMG1ZNHJWTXQwNWVTT05PNmNFMElJbGVLenhLbEJ3?oc=5",
-   "date": "2026-09-06T15:01:08.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 86,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Israelischer Angriff tötet zwei Menschen in Gaza, sagen Mediziner"
   },
   {
    "id": "Decrypt:Stablecoins Won't Scale Without Banks",
@@ -1254,7 +1356,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 40,
+   "priority": 39,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -1427,7 +1529,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1438,6 +1540,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "FIFA bestätigt, dass Infantino bei den Wahlen 2027 erneut für das Amt des Präsidenten kandidieren wird"
+  },
+  {
+   "id": "Al Jazeera:How significant are the Yemeni government’s military gains against Houthis?",
+   "title": "How significant are the Yemeni government’s military gains against Houthis?",
+   "text": "Government forces make gains as fighting escalates, raising fears of a return to full-scale war.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/6/how-significant-are-the-yemeni-governments-military-gains-against-the-houthis?traffic_source=rss",
+   "date": "2026-09-06T13:41:25.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 58,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Wie bedeutend sind die militärischen Erfolge der yemenitischen Regierung gegen die Houthi?"
   },
   {
    "id": "CNBC:Parents who are really good at handling tantrums do 5 things—their kids become more emotionally intelligent, says psychologist",
@@ -1687,6 +1823,40 @@
    "titleDe": "US-Botschafter treffen Putin: Was steckt hinter der neuesten Diplomatie zum Russland-Ukraine-Krieg"
   },
   {
+   "id": "Al Jazeera:Seven mouths, one meal: Feeding a family through Gaza’s food crisis",
+   "title": "Seven mouths, one meal: Feeding a family through Gaza’s food crisis",
+   "text": "Families across Gaza struggle to secure food as community kitchens operate irregularly and prices rise.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/features/2026/9/6/seven-mouths-one-meal-feeding-a-family-through-gazas-food-crisis?traffic_source=rss",
+   "date": "2026-09-06T13:15:46.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 58,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Sieben Mägen, ein Mahl: Eine Familie durch die Nahrungsmittelkrise in Gaza ernähren"
+  },
+  {
    "id": "BeInCrypto:LeBron James Polymarket Deal: Will Prediction Markets Go Mainstream?",
    "title": "LeBron James Polymarket Deal: Will Prediction Markets Go Mainstream?",
    "text": "LeBron James backs Polymarket after his DraftKings deal expired, giving prediction markets their biggest sports name yet as legal fights intensify.",
@@ -1743,7 +1913,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2445,7 +2615,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 56,
+   "priority": 55,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2654,7 +2824,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3050,40 +3220,6 @@
    "titleDe": "Arbitrum (ARB) Plötzlich um 120 % gestiegen"
   },
   {
-   "id": "BBC World:Volcano eruption leaves 150,000 passengers stranded in Indonesia",
-   "title": "Volcano eruption leaves 150,000 passengers stranded in Indonesia",
-   "text": "More than 150,000 airline passengers are stranded after ash was detected in airspace near Jakarta following the eruptions.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/cvgy5k4n07ko?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-06T09:56:39.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 22,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Vulkanausbruch lässt 150.000 Passagiere in Indonesien stranden"
-  },
-  {
    "id": "U.Today:7 Satoshi-Era Bitcoin (BTC) Miners Wake Up After 16.5 Years",
    "title": "7 Satoshi-Era Bitcoin (BTC) Miners Wake Up After 16.5 Years",
    "text": "The market witnesses a substantial increase in selling pressure after Bitcoin came closer to $80,000.",
@@ -3250,7 +3386,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 34,
+   "priority": 33,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3359,7 +3495,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -4560,7 +4696,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 2,
+  "uebersetzt": 5,
   "fehler": null
  }
 }
