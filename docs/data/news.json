@@ -1,18 +1,57 @@
 {
- "updated": "2026-09-06T17:17:44.741Z",
+ "updated": "2026-09-06T17:26:03.012Z",
  "regime": "policy",
- "count": 126,
+ "count": 129,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
   {
-   "id": "Al Jazeera:Palestinian farmers battle settler sabotage to save Hebron crops, livestock",
-   "title": "Palestinian farmers battle settler sabotage to save Hebron crops, livestock",
-   "text": "West Bank farmers defy daily settler attacks, sheep theft, and military restrictions to protect their land.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/features/2026/9/6/palestinian-farmers-battle-settler-sabotage-to-save-hebron-crops-livestock?traffic_source=rss",
-   "date": "2026-09-06T17:03:20.000Z",
+   "id": "Tehran Times:Iran’s retaliatory fire sends US warships fleeing, exposes American vulnerability",
+   "title": "Iran’s retaliatory fire sends US warships fleeing, exposes American vulnerability",
+   "text": "TEHRAN — Iran’s fresh retaliatory actions against US warships and military infrastructure have underscored Tehran’s unwavering position that its armed forces will never leave aggression unanswered. The Islamic Revolution Guards Corps (IRGC) has deployed heavy ballistic capability, tactical countermeasures, and air defense systems to neutralize Washington’s hostile footprint across the Persian Gulf, the Strait of Hormuz, and broader West Asia airspace.",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529757/Iran-s-retaliatory-fire-sends-US-warships-fleeing-exposes-American",
+   "date": "2026-09-06T17:24:17.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Vergeltungsdrohung"
+   ],
+   "scores": {
+    "crypto": -0.45,
+    "stocks": -0.45,
+    "gold": 0.225,
+    "usd": 0.15
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Vergeltungsdrohung)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: retaliation threat)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 95,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iranischer Vergeltungsfeuer lässt US-Kriegsfahrzeuge fliehen, offenbart amerikanische Verwundbarkeit"
+  },
+  {
+   "id": "Reuters:Rockies C Hunter Goodman denies complaining about tilted cap",
+   "title": "Rockies C Hunter Goodman denies complaining about tilted cap",
+   "text": "Rockies C Hunter Goodman denies complaining about tilted cap &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRkUxR3lVNUNBdkpwa1dXSHZkSGdGckI1Q1lvclpwMUJibG8tbnhpVEdBcjBxNWdVb2dpMFRFdzRaUGRfc0p0SmtKcEFTN0dNT3J5NDVSZnB0ZVd2UEhsbTBxSC1zd0xsRVppNll1WnB6SzNDN05TMWllYnpUcW5YNnNBWFlUUHhDWV9tMXd4aGFhWE5Yd1lWU3N4VUhTeTZkcW5KVjNNZmM5N2Z5?oc=5",
+   "date": "2026-09-06T17:17:12.000Z",
    "tags": [
     "Weltlage"
    ],
@@ -38,17 +77,17 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Palästinensische Bauern kämpfen gegen Sabotage von Siedlern, um Hebroner Ernten und Vieh zu retten"
+   "titleDe": "Rockies-Catcher Hunter Goodman bestreitet, über geneigte Kappe zu klagen"
   },
   {
-   "id": "Decrypt:OpenAI's GPT-6 Astra Is Shockingly Good at Almost Everything",
-   "title": "OpenAI's GPT-6 Astra Is Shockingly Good at Almost Everything",
-   "text": "Early testers spent OpenAI's launch weekend pushing Astra through 3D cities, playable games, Bach chorales and research papers.",
-   "source": "Decrypt",
-   "url": "https://decrypt.co/377514/openai-gpt-6-astra-review-shockingly-good",
-   "date": "2026-09-06T17:01:04.000Z",
+   "id": "Reuters:Mariners' Matt Brash out for season with lat inflammation",
+   "title": "Mariners' Matt Brash out for season with lat inflammation",
+   "text": "Mariners' Matt Brash out for season with lat inflammation &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObUNMbmZzajZNNlZTbjZnSDRlTkJ4Q1p1RFBCdXRLV254R2xOMTZjZllrdnVJTXRVWElBSVJBUEh5NUdFUFVHclBoUHRkTjR5R2VXZFUtUmlnblBWT3Vibm0xenVTSHVxQXQ5VXlFUTM4VzRFVG5JOFhsUkhKak1EenRvTi1mZXExV1VLMnJVajctTGx3d1VzenV5WTdDaWtRTUE?oc=5",
+   "date": "2026-09-06T17:16:09.000Z",
    "tags": [
-    "Krypto"
+    "Weltlage"
    ],
    "impact": "low",
    "kind": "headline",
@@ -72,7 +111,143 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
+   "titleDe": "Mariners-Spieler Matt Brash fehlt die Saison wegen seitlicher Entzündung"
+  },
+  {
+   "id": "Reuters:Carrick hurt by stoppage-time blow in Man United draw at Everton",
+   "title": "Carrick hurt by stoppage-time blow in Man United draw at Everton",
+   "text": "Carrick hurt by stoppage-time blow in Man United draw at Everton &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNUc2UHlJZmItM2JmQUdCSkRmaWhTZDNHakZpTXNVTlFDSDBnX0owRmlnYmhxQlRmZWF6NjZEdlZ6cHZiQXptWXFtbmYwZXdqMllwQnNoY3JpbmtkLVN1YVZoV2kwVUhwaTA5X0w0cmZwbGhyMG51MnRXazhtZ25VX21PNjJ1a21YWjlfRUZReHY4Y2E3SGk5czAzcEZGMVJuVDc2RUdfdUJnaHBv?oc=5",
+   "date": "2026-09-06T17:04:50.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Carrick verletzt durch stoppzeitlichen Schlag bei Unentschieden von Man United gegen Everton"
+  },
+  {
+   "id": "Reuters:Wellens wins Tour of Britain as UAE Team Emirates-XRG dominate final stage",
+   "title": "Wellens wins Tour of Britain as UAE Team Emirates-XRG dominate final stage",
+   "text": "Wellens wins Tour of Britain as UAE Team Emirates-XRG dominate final stage &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOemxVeDhrX1A2Nl9XMnVzTEowTWxxNlFMdTVwTWxXZ2U4TFdzSUhMcGJKM0lzTTBpenB1MVNOendVQk41SHdPd3Z3aG80VFVES0NkSVphV2x1ZmM1aXN3ajliWG1WYjVUWjBOQ2Y1TEE4ZHFfUlpTM0MyTE1XNEJvSnQtZDMzel9CaUlFMkxhS0ZvOHpkVzZmMGI5aVBtYjRMSlh3TjlsYThNVDNxY1JQYQ?oc=5",
+   "date": "2026-09-06T17:04:03.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Wellens gewinnt Tour of Britain, während UAE Team Emirates-XRG die letzte Etappe dominieren"
+  },
+  {
+   "id": "Decrypt:OpenAI's GPT-6 Astra Is Shockingly Good at Almost Everything",
+   "title": "OpenAI's GPT-6 Astra Is Shockingly Good at Almost Everything",
+   "text": "Early testers spent OpenAI's launch weekend pushing Astra through 3D cities, playable games, Bach chorales and research papers.",
+   "source": "Decrypt",
+   "url": "https://decrypt.co/377514/openai-gpt-6-astra-review-shockingly-good",
+   "date": "2026-09-06T17:01:04.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
    "titleDe": "OpenAI’s GPT‑6 Astra ist erstaunlich gut in nahezu allem"
+  },
+  {
+   "id": "BBC World:Iran warns of 'faster, heavier, more painful response' to US attacks",
+   "title": "Iran warns of 'faster, heavier, more painful response' to US attacks",
+   "text": "The comments came a day after Washington said it had struck Iranian oil tankers in response to Tehran's attacks on US warships in the region.",
+   "source": "BBC World",
+   "url": "https://www.bbc.co.uk/news/articles/cp8d56w7d9po?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-06T17:00:56.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 61,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iran warnt vor einer 'schnelleren, schwereren, schmerzhafteren Reaktion' auf US-Angriffe"
   },
   {
    "id": "BBC World:German far-right set for big win in eastern state - projections",
@@ -134,7 +309,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 93,
+   "priority": 92,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "high",
@@ -358,9 +533,9 @@
    "titleDe": "Hackers fordern 2 Millionen Dollar in Bitcoin aus Deutschland. Berlin verweigert Zahlung"
   },
   {
-   "id": "Reuters:Fermin shines for Barcelona in thumping win at Valencia - reuters.com",
-   "title": "Fermin shines for Barcelona in thumping win at Valencia - reuters.com",
-   "text": "Fermin shines for Barcelona in thumping win at Valencia &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Fermin shines for Barcelona in thumping win at Valencia",
+   "title": "Fermin shines for Barcelona in thumping win at Valencia",
+   "text": "Fermin shines for Barcelona in thumping win at Valencia &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOb0JfbXJ0dUxFWGkzQTN2bzhRT2pVUEp2WFBQSld2VGFuakNJRUVFZ1Fvc3QzYi1udDhqR3l3MjdPd2U2aG9BR2cxeVNEVVFWVmVOQmhPTlF0c3hyb2loSjFyRVByeDNrWWNqZm1WZEUzb3o5YzNtWFRuMEdRSUZXSE80VWtwN1FKQlRMLVVHNkpmZGhFTG1YYnN4SQ?oc=5",
    "date": "2026-09-06T16:39:43.000Z",
@@ -389,7 +564,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Fermin glänzt für Barcelona bei dominierendem Sieg gegen Valencia"
+   "titleDe": "Fermin glänzt für Barcelona im runden Sieg gegen Valencia"
   },
   {
    "id": "Tehran Times:Restoration work continues at Sheikh Safi al-Din Ardabili shrine complex",
@@ -497,9 +672,9 @@
    "titleDe": "Sayyari: Irans Abschreckungsfähigkeiten haben sich nach den jüngsten Kriegen deutlich erhöht"
   },
   {
-   "id": "Reuters:Trump administration renews Supreme Court bid to limit mail-in voting - reuters.com",
-   "title": "Trump administration renews Supreme Court bid to limit mail-in voting - reuters.com",
-   "text": "Trump administration renews Supreme Court bid to limit mail-in voting &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Trump administration renews Supreme Court bid to limit mail-in voting",
+   "title": "Trump administration renews Supreme Court bid to limit mail-in voting",
+   "text": "Trump administration renews Supreme Court bid to limit mail-in voting &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPLV9pS2hNUzZydVVnTkVQaW9VaGpkWGE0bjZDdzBLaWVzTkZHRW5yX0loS3VGTE5EaEpXSzZGQ1BJRG9aWGxPa1NTMkN6QUhXbGROU3FpV2xMNU02ZnAyWkhveU51R3R2ZGlFRFd1U0dtWjJLNEZVeXY0aDU3TXNxMXM0SmZQaHI5N2E4OERFajBrZ3Y3bjFPOVU2Wm01TFhBLTFnNGxBMVl4QXFtSDBVckxtbnlBZkdSbFJj?oc=5",
    "date": "2026-09-06T16:29:44.000Z",
@@ -518,7 +693,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -528,7 +703,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Trump-Administration erneuert Supreme-Court-Bet, um Briefwahl einzuschränken - reuters.com"
+   "titleDe": "Trump-Administration erneuert Supreme-Court-Bet, um Briefwahl einzuschränken"
   },
   {
    "id": "Tehran Times:Qalibaf warns of faster, heavier Iranian response to any new aggression",
@@ -553,7 +728,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -588,7 +763,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -601,9 +776,9 @@
    "titleDe": "USA will mit Moskau, Kiew an einem 'erneuerten' Friedensvorschlag arbeiten – Medien"
   },
   {
-   "id": "Reuters:Only solo woman in Venice festival says industry remains unequal - reuters.com",
-   "title": "Only solo woman in Venice festival says industry remains unequal - reuters.com",
-   "text": "Only solo woman in Venice festival says industry remains unequal &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Only solo woman in Venice festival says industry remains unequal",
+   "title": "Only solo woman in Venice festival says industry remains unequal",
+   "text": "Only solo woman in Venice festival says industry remains unequal &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNmFZTzVCdHhDYUxpTHNDMW1NbVMxZ2tLQmdMa2s4eERSV1hNcnQ1dTR3UHV4elVBZGtTMFItdDBpWGx6TlRnaE00SU12NlpURVJaRk1GRjktc3o3UzZ2SVBSZ0prc1dYeDBDRThURkRGNDJLU3JxZUZINDFsbHZXdzI5b043aWZmcjM5ZFFqbEYyZFNjekg1WDhVbzBtdEhkd1IzNTVoUXZmYTA?oc=5",
    "date": "2026-09-06T16:25:36.000Z",
@@ -622,7 +797,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -632,7 +807,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Alleinige Frau im Venedig-Festival sagt, Industrie bleibt ungleich"
+   "titleDe": "Alleinige Frau beim Venedig-Festival sagt, Industrie bleibt ungleich"
   },
   {
    "id": "TASS:Yemeni government forces take control over Hays in Hodeida province — TV",
@@ -879,7 +1054,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: not de-escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1363,7 +1538,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1398,7 +1573,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1620,6 +1795,40 @@
    "titleDe": "Schließung des Konsulats in Bonn soll die Wahlvorbereitungen sabotieren – russischer Diplomat"
   },
   {
+   "id": "Al Jazeera:Bosnian Serbs strengthen ties with Israel amid tensions",
+   "title": "Bosnian Serbs strengthen ties with Israel amid tensions",
+   "text": "Opening of Israeli commerce office deepens ties between Republika Srpska and Israel.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/6/bosnian-serbs-strengthen-ties-with-israel-amid-tensions?traffic_source=rss",
+   "date": "2026-09-06T14:37:40.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 58,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Bosnische Serben vertiefen Beziehungen zu Israel trotz Spannungen"
+  },
+  {
    "id": "U.Today:Peter Brandt Revives His Legendary 2019 Parabolic Target for Bitcoin",
    "title": "Peter Brandt Revives His Legendary 2019 Parabolic Target for Bitcoin",
    "text": "Peter Brandt’s famous 2019 Bitcoin chart returns to the spotlight as BTC eyes $80,000 under an institutional floor.",
@@ -1755,7 +1964,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 64,
+   "priority": 63,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "medium",
@@ -2138,7 +2347,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2175,7 +2384,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2249,7 +2458,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2576,40 +2785,6 @@
    "titleDe": "Neues Ethereum-Upgrade könnte Krypto-Transaktionen und Gebühren grundlegend verändern"
   },
   {
-   "id": "Tehran Times:UNRWA Under Pressure: A Lifeline for Palestinian Refugees",
-   "title": "UNRWA Under Pressure: A Lifeline for Palestinian Refugees",
-   "source": "Tehran Times",
-   "staatlich": true,
-   "url": "https://www.tehrantimes.com/news/529751/UNRWA-Under-Pressure-A-Lifeline-for-Palestinian-Refugees",
-   "date": "2026-09-06T12:39:26.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 25,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "UNRWA unter Druck: Eine Rettungsleine für palästinensische Flüchtlinge"
-  },
-  {
    "id": "CNBC World:‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
    "title": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
    "text": "Anthropic, OpenAI, Meta and Google all released model updates this week, while Nvidia said it's acquiring open-source AI platform Hugging Face.",
@@ -2668,7 +2843,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 54,
+   "priority": 53,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2702,7 +2877,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2737,7 +2912,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 37,
+   "priority": 36,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2771,7 +2946,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3189,7 +3364,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3298,7 +3473,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 43,
+   "priority": 42,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -3580,7 +3755,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3717,7 +3892,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3932,46 +4107,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Warum will sich fast niemand mit älteren Menschen wie mir anfreunden — außer Betrügern?"
-  },
-  {
-   "id": "BBC World:US and Iran trade retaliatory attacks on ships as conflict flares",
-   "title": "US and Iran trade retaliatory attacks on ships as conflict flares",
-   "text": "The US says it hit three Iranian oil tankers, while Iran says it targeted three US-linked ships.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-05T22:35:35.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Eskalation",
-    "Vergeltungsdrohung",
-    "Angriff"
-   ],
-   "scores": {
-    "crypto": -0.9,
-    "stocks": -0.9,
-    "gold": 0.45,
-    "usd": 0.3
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation, Vergeltungsdrohung, Angriff)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation, retaliation threat, attack)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 76,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US und Iran führen racheartige Angriffe auf Schiffe durch, während der Konflikt eskaliert"
   },
   {
    "id": "BeInCrypto:Banksy, Star Wars and JPMorgan Meet in a $1 Billion Museum",
@@ -4255,40 +4390,6 @@
    "titleDe": "Polygon-CEO sorgt in der Krypto-Community für Aufsehen, indem er Urlaub macht und Schulkritiker anspricht"
   },
   {
-   "id": "MarketWatch:Maybe the snowbirds are right? One state dominates this list of best places to retire.",
-   "title": "Maybe the snowbirds are right? One state dominates this list of best places to retire.",
-   "text": "Access to healthcare, recreation, and low taxes lure retirees, new research says",
-   "source": "MarketWatch",
-   "url": "https://www.marketwatch.com/story/maybe-the-snowbirds-are-right-one-state-dominates-this-list-of-best-places-to-retire-ab506160?mod=mw_rss_topstories",
-   "date": "2026-09-05T17:26:00.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Vielleicht haben die Schneevögel recht? Ein Bundesstaat dominiert diese Liste der besten Ruhestandsorte."
-  },
-  {
    "id": "BBC World:What different world maps get right - and what they get wrong",
    "title": "What different world maps get right - and what they get wrong",
    "text": "As the UN adopts a new world map to reflect Africa's true size, let's take a closer look at what different maps get right and wrong.",
@@ -4428,7 +4529,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 6,
   "fehler": null
  }
 }

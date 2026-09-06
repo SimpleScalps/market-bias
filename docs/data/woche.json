@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T17:17:44.741Z",
+ "updated": "2026-09-06T17:26:03.012Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T17:17:44.776Z",
+   "stand": "2026-09-06T17:26:03.061Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T17:17:44.770Z",
+   "stand": "2026-09-06T17:26:03.050Z",
    "anzahl": 119,
    "klassen": {
     "crypto": {
@@ -429,6 +429,21 @@
      "priority": 95
     },
     {
+     "id": "Tehran Times:Iran’s retaliatory fire sends US warships fleeing, exposes American vulnerability",
+     "titel": "Iran’s retaliatory fire sends US warships fleeing, exposes American vulnerability",
+     "titelDe": "Iranischer Vergeltungsfeuer lässt US-Kriegsfahrzeuge fliehen, offenbart amerikanische Verwundbarkeit",
+     "quelle": "Tehran Times",
+     "url": "https://www.tehrantimes.com/news/529757/Iran-s-retaliatory-fire-sends-US-warships-fleeing-exposes-American",
+     "zeit": "2026-09-06T17:24:17.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 95
+    },
+    {
      "id": "Al Jazeera:Israeli air attacks on Lebanon kill at least four",
      "titel": "Israeli air attacks on Lebanon kill at least four",
      "titelDe": "Israelische Luftangriffe auf Libanon töten mindestens vier",
@@ -442,21 +457,6 @@
       "usd": 0.285
      },
      "priority": 39
-    },
-    {
-     "id": "Al Jazeera:Israel bombards several towns in southern Lebanon",
-     "titel": "Israel bombards several towns in southern Lebanon",
-     "titelDe": "Israel bombardiert mehrere Städte im Süden Libanons",
-     "quelle": "Al Jazeera",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/israel-bombards-several-towns-in-southern-lebanon?traffic_source=rss",
-     "zeit": "2026-09-06T08:44:03.000Z",
-     "scores": {
-      "crypto": -0.495,
-      "stocks": -0.495,
-      "gold": 0.248,
-      "usd": 0.165
-     },
-     "priority": 62
     }
    ]
   }
