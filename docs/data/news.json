@@ -1,11 +1,81 @@
 {
- "updated": "2026-09-06T16:35:25.666Z",
+ "updated": "2026-09-06T16:43:53.899Z",
  "regime": "policy",
- "count": 134,
+ "count": 133,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "Tehran Times:From Shiraz to Zanzibar: A look into centuries-old Persian connection",
+   "title": "From Shiraz to Zanzibar: A look into centuries-old Persian connection",
+   "text": "TEHRAN - For centuries, the Indian Ocean served not as a barrier separating Iran from East Africa, but as a maritime corridor linking the two regions.",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529770/From-Shiraz-to-Zanzibar-A-look-into-centuries-old-Persian-connection",
+   "date": "2026-09-06T16:40:18.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Von Shiraz nach Sansibar: Ein Blick auf die jahrhundertelange persische Verbindung"
+  },
+  {
+   "id": "Tehran Times:Restoration work continues at Sheikh Safi al-Din Ardabili shrine complex",
+   "title": "Restoration work continues at Sheikh Safi al-Din Ardabili shrine complex",
+   "text": "TEHRAN – Conservation, restoration and infrastructure projects are underway at the UNESCO-registered Sheikh Safi al-Din Ardabili Khanegah and Shrine Ensemble in northwestern Iran, the head of the World Heritage site said.",
+   "source": "Tehran Times",
+   "staatlich": true,
+   "url": "https://www.tehrantimes.com/news/529769/Restoration-work-continues-at-Sheikh-Safi-al-Din-Ardabili-shrine",
+   "date": "2026-09-06T16:36:16.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Renovierungsarbeiten am Sheikh-Safi-al-Din-Ardabili-Reliktfort fortgesetzt"
+  },
   {
    "id": "Tehran Times:Top Iranian general hails armed forces’ asymmetric response to US, Israel",
    "title": "Top Iranian general hails armed forces’ asymmetric response to US, Israel",
@@ -77,9 +147,9 @@
    "titleDe": "Sayyari: Irans Abschreckungsfähigkeiten haben sich nach den jüngsten Kriegen deutlich erhöht"
   },
   {
-   "id": "Reuters:Trump administration renews Supreme Court bid to limit mail-in voting - reuters.com",
-   "title": "Trump administration renews Supreme Court bid to limit mail-in voting - reuters.com",
-   "text": "Trump administration renews Supreme Court bid to limit mail-in voting &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Trump administration renews Supreme Court bid to limit mail-in voting",
+   "title": "Trump administration renews Supreme Court bid to limit mail-in voting",
+   "text": "Trump administration renews Supreme Court bid to limit mail-in voting &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPLV9pS2hNUzZydVVnTkVQaW9VaGpkWGE0bjZDdzBLaWVzTkZHRW5yX0loS3VGTE5EaEpXSzZGQ1BJRG9aWGxPa1NTMkN6QUhXbGROU3FpV2xMNU02ZnAyWkhveU51R3R2ZGlFRFd1U0dtWjJLNEZVeXY0aDU3TXNxMXM0SmZQaHI5N2E4OERFajBrZ3Y3bjFPOVU2Wm01TFhBLTFnNGxBMVl4QXFtSDBVckxtbnlBZkdSbFJj?oc=5",
    "date": "2026-09-06T16:29:44.000Z",
@@ -108,7 +178,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Trump-Administration erneuert Supreme-Court-Bet, um Briefwahl einzuschränken - reuters.com"
+   "titleDe": "Trump-Administration erneuert Supreme-Court-Bet, um Briefwahl einzuschränken"
   },
   {
    "id": "Tehran Times:Qalibaf warns of faster, heavier Iranian response to any new aggression",
@@ -181,6 +251,40 @@
    "titleDe": "USA will mit Moskau, Kiew an einem 'erneuerten' Friedensvorschlag arbeiten – Medien"
   },
   {
+   "id": "Reuters:Only solo woman in Venice festival says industry remains unequal",
+   "title": "Only solo woman in Venice festival says industry remains unequal",
+   "text": "Only solo woman in Venice festival says industry remains unequal &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNmFZTzVCdHhDYUxpTHNDMW1NbVMxZ2tLQmdMa2s4eERSV1hNcnQ1dTR3UHV4elVBZGtTMFItdDBpWGx6TlRnaE00SU12NlpURVJaRk1GRjktc3o3UzZ2SVBSZ0prc1dYeDBDRThURkRGNDJLU3JxZUZINDFsbHZXdzI5b043aWZmcjM5ZFFqbEYyZFNjekg1WDhVbzBtdEhkd1IzNTVoUXZmYTA?oc=5",
+   "date": "2026-09-06T16:25:36.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Alleinige Frau beim Venedig-Festival sagt, Industrie bleibt ungleich"
+  },
+  {
    "id": "TASS:Yemeni government forces take control over Hays in Hodeida province — TV",
    "title": "Yemeni government forces take control over Hays in Hodeida province — TV",
    "text": "According to the TV channel, the city has strategic importance for operations on the country’s western coast",
@@ -203,7 +307,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -238,7 +342,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 45,
+   "priority": 44,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -249,6 +353,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "US-Verhandlungsführer sagen Zelensky, sie wollen vor dem Winter einen Durchbruch in den Gesprächen erzielen — Medien"
+  },
+  {
+   "id": "Al Jazeera:Iran touts military response as US maintains blockade, hits tankers",
+   "title": "Iran touts military response as US maintains blockade, hits tankers",
+   "text": "Tehran says time for proportionate retaliation is over after a US strike on Iranian tankers inside the blockade line.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/6/iran-touts-military-response-as-us-maintains-blockade-hits-tankers?traffic_source=rss",
+   "date": "2026-09-06T16:17:06.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 87,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iran lobt militärische Reaktion, während die USA Blockade fortsetzen und Tanker treffen"
   },
   {
    "id": "CNBC World:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
@@ -316,7 +454,7 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 63,
+   "priority": 62,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -331,9 +469,9 @@
    "titleDe": "Bitcoin-OG sagt, er beobachtet den nächsten großen Exploit, während KI-Modelle stärker werden"
   },
   {
-   "id": "Reuters:Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL - reuters.com",
-   "title": "Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL - reuters.com",
-   "text": "Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL",
+   "title": "Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL",
+   "text": "Shaw strikes second-half double as Manchester City beat Birmingham 3-1 in WSL &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONEJLZjJzYTl4RFlkRlFmR3M0UDdrNzJLaFFnTkE2OW9IOGxBTzl2eVk1QktFM01aV2YwUmJKQnI3UnktenZhQ2dIVWZjSU5uZi1DQllWazhVY3VMLXltR3plSUhhN2g3U0p3Q3pGZjZqT2NnYzh0SWVmVUZpa0x1TzV5TXMtYjFLOGkwUGExclEzTzlBWUJVQ1RSdjc5UFJQWmhQV25NN0lLYjUxcTZldGFGYTZGazBz?oc=5",
    "date": "2026-09-06T16:09:57.000Z",
@@ -362,7 +500,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Shaw erzielt Zweiteilzeit-Doppel, Manchester City schlägt Birmingham 3:1 in der WSL"
+   "titleDe": "Shaw erzielt im zweiten Halbzeit-Doppel, während Manchester City Birmingham 3-1 in der WSL schlägt"
   },
   {
    "id": "BBC World:German far-right set for big win in eastern state - exit polls",
@@ -386,7 +524,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -434,9 +572,9 @@
    "titleDe": "Rechtsradikale AfD gewinnt Wahl in Sachsen-Anhalt: Exit-Umfragen"
   },
   {
-   "id": "Reuters:US envoys make first Kyiv visit amid Ukraine war peace push - reuters.com",
-   "title": "US envoys make first Kyiv visit amid Ukraine war peace push - reuters.com",
-   "text": "US envoys make first Kyiv visit amid Ukraine war peace push &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:US envoys make first Kyiv visit amid Ukraine war peace push",
+   "title": "US envoys make first Kyiv visit amid Ukraine war peace push",
+   "text": "US envoys make first Kyiv visit amid Ukraine war peace push &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONnlRblpUWUNHMjMteEdBa0JYZk5MeFJQRjlEa3dUdGtDY0xfZEs5Y2dCcV8yNEhSTHYzem9SVVVYS1NBZnc4U29BSEcydHp4cUx5bFZSUmZ1QXFsNHlFRGgtbGJ2WmZMRTZzdjhrTWY1b1BDMlFnQTlWXzRLU056OGV2TUlRdkdTdjRkMFpTNi02X1Y4MU5sMEF4WF8wcVpDNmNJUmFvXzRZeV91N2dKUDNJN1FWdkg3RHpReHVoNA?oc=5",
    "date": "2026-09-06T16:05:46.000Z",
@@ -469,7 +607,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "US-Botschafter besuchen erstmals Kiew im Rahmen des Friedensvorstoßes im Ukraine-Krieg"
+   "titleDe": "US-Gesandte machen den ersten Besuch in Kiew inmitten des ukrainischen Kriegsfriedensvorstoßes"
   },
   {
    "id": "Mehr News:Israel proven it complies with no ceasefire agreement",
@@ -545,9 +683,9 @@
    "titleDe": "Maitland-Niles überrascht Manchester United, Everton sichert letzten Punkt"
   },
   {
-   "id": "Reuters:Van Aert triumphs after Vuelta stage shortened - reuters.com",
-   "title": "Van Aert triumphs after Vuelta stage shortened - reuters.com",
-   "text": "Van Aert triumphs after Vuelta stage shortened &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Van Aert triumphs after Vuelta stage shortened",
+   "title": "Van Aert triumphs after Vuelta stage shortened",
+   "text": "Van Aert triumphs after Vuelta stage shortened &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPa0QwMTJTRnAyUWs4bk1yMlNoWS1MUUhZWGRqWDZaMXVITFFCZXJYZVVDWmNiSlVKbGJPYS1iM1cwcXNvUkNlQUx1cjFDeVI3S3hmWjZVSlZ2RzdxbzhqNkhXU0U2ZUpvbUc2QUp0Yy11V016UXBSU2JYbkFqMWhBR2pLdFR4cVh6eHVKR1c0QjJMRm8?oc=5",
    "date": "2026-09-06T16:03:24.000Z",
@@ -614,9 +752,8 @@
    "titleDe": "Weitere Länder werden sich der USA im Golf von Hormus anschließen, um sichere Navigation zu gewährleisten – offizieller Bericht"
   },
   {
-   "id": "Reuters:US Open day eight - reuters.com",
-   "title": "US Open day eight - reuters.com",
-   "text": "US Open day eight &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:US Open day eight",
+   "title": "US Open day eight",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5OM253UXc1dy1VSWZPSzJkaWhLb2RYZGMwS2JDbkNnODJGZnljdmtLQTJUV19GM2xzZ2lSOXR0clk3cGVONVZUU0pHQ1ZkYjRyQTFJOGhBQXd3NFo5YVNKaUh3VzJEd3Jhb2xpVEdNOGNWd1JyaFE?oc=5",
    "date": "2026-09-06T16:02:30.000Z",
@@ -645,12 +782,12 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "US Open Tag acht"
+   "titleDe": "US Open, Tag acht"
   },
   {
-   "id": "Reuters:Nepali woman found alive days after family began mourning rites - reuters.com",
-   "title": "Nepali woman found alive days after family began mourning rites - reuters.com",
-   "text": "Nepali woman found alive days after family began mourning rites &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Nepali woman found alive days after family began mourning rites",
+   "title": "Nepali woman found alive days after family began mourning rites",
+   "text": "Nepali woman found alive days after family began mourning rites &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbGJhTEdnY3M5SW14Zl9NREdqbGZZNzZnRVVfcFZ3UUVHQXBJZXFRMVBJd1NHQXZfR3RxYWxPSmtXdmJMSmJ4QnNmSFA2eU9Wd0s2TVhWZXB5bVc3aHgzVFRaUWVmQWkzWlRubjNHODRLdmhwZXFIZFd4N09vWTExVlRyLXprd1BULTJuT3J2UjB0OG94eGk5b3RYTkgzT3l4blkwemxkcW9PVVRYbFBzYQ?oc=5",
    "date": "2026-09-06T16:01:17.000Z",
@@ -679,7 +816,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Neuperson aus Nepal lebt, Tage nach Beginn der Trauerzeremonie gefunden - reuters.com"
+   "titleDe": "Nepalesische Frau wird lebendig gefunden, Tage nachdem die Familie Beerdigungsrituale begonnen hatte"
   },
   {
    "id": "Decrypt:XRP Gets Another Boost Through Ripple Deal With Florida Athletics",
@@ -752,9 +889,9 @@
    "titleDe": "Vulkanausbruch lässt 170 000 Passagiere in Indonesien stranden"
   },
   {
-   "id": "Reuters:Dozens left behind on French beach after failed Channel crossing - reuters.com",
-   "title": "Dozens left behind on French beach after failed Channel crossing - reuters.com",
-   "text": "Dozens left behind on French beach after failed Channel crossing &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Dozens left behind on French beach after failed Channel crossing",
+   "title": "Dozens left behind on French beach after failed Channel crossing",
+   "text": "Dozens left behind on French beach after failed Channel crossing &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9WWXFVOWFjZmJ3UGdxOTRyQW1CTmc4T3kyZFZCdXdGa05pWEVJdGxTNGhhU2lEUXY2QThXMnNCQ0ptSi1TdUltbHBFV3U0UzJNWVpMNmxqN0xwQzRDUFV6SU9KamQ0X1U?oc=5",
    "date": "2026-09-06T16:00:00.000Z",
@@ -783,7 +920,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Dutzende bleiben auf französischer Küste zurück, nachdem Kanalüberfahrt scheiterte"
+   "titleDe": "Dutzende bleiben auf französischer Küste zurück, nachdem die Kanalüberquerung scheiterte"
   },
   {
    "id": "CoinDesk:Ukrainian police took down a crypto scam that stole up to $1 million a month",
@@ -856,8 +993,8 @@
    "titleDe": "Der US-Dollar hat seit 1913 97 % seines Wertes verloren: Ist Bitcoin die Lösung?"
   },
   {
-   "id": "Reuters:49ers place DT Sam Okuayinonu (foot) on IR - reuters.com",
-   "title": "49ers place DT Sam Okuayinonu (foot) on IR - reuters.com",
+   "id": "Reuters:49ers place DT Sam Okuayinonu (foot) on IR",
+   "title": "49ers place DT Sam Okuayinonu (foot) on IR",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQ0NiRGdKOU55V3M5VVplNzdNM0JEb3V1THo5R0tiV3Q1eTNHY0c3Ti1ON1Fzb050aFAyd3k5R3U2b3JJcHlab01ObG1lUzhUWUNIdERoUGpQdEVSN1JDa29LZGtDRk9EU1ZseU0zT2doeUs4eHpVN1M3LXhUSkJMUUpPeFlrdUNZS1ZUSjln?oc=5",
    "date": "2026-09-06T15:56:07.000Z",
@@ -886,12 +1023,12 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "49ers setzen Defensive Tackle Sam Okuayinonu (Fuß) auf die Verletztenliste"
+   "titleDe": "49ers setzen Defensive-Tackle Sam Okuayinonu (Fuß) auf die Verletztenreserve"
   },
   {
-   "id": "Reuters:Maitland-Niles screamer earns Everton 2-2 draw with Man Utd - reuters.com",
-   "title": "Maitland-Niles screamer earns Everton 2-2 draw with Man Utd - reuters.com",
-   "text": "Maitland-Niles screamer earns Everton 2-2 draw with Man Utd &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Maitland-Niles screamer earns Everton 2-2 draw with Man Utd",
+   "title": "Maitland-Niles screamer earns Everton 2-2 draw with Man Utd",
+   "text": "Maitland-Niles screamer earns Everton 2-2 draw with Man Utd &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOV05GcTJicDRHd1lYMXQ0SlVmSUZoUWExTkMxR3diOHk2bmhJdzh5WmVGUmlkNlB4WEhyOVNERGFqeXotYV9XQlJicTZEeXc4YTkwMG41UTh4WGlsSS1CV21DRGk5bGphNjB5Qi1kTXJHUGJkN1FhRWE1MGJOLVA0TDJ0bE4zZnF1UnZmMkxlTTN2MHBtaWhyQXBZSWc3OWFBS1NsaVp5cE1Wd2ZwTWc?oc=5",
    "date": "2026-09-06T15:51:14.000Z",
@@ -920,7 +1057,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Maitland-Niles' Schrei sichert Everton 2:2-Unentschieden gegen Manchester United"
+   "titleDe": "Maitland-Niles sorgt für ein 2:2-Unentschieden von Everton gegen Man Utd"
   },
   {
    "id": "Al Jazeera:Niger military accuses France of orchestrating failed mutiny: What to know",
@@ -944,7 +1081,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -955,40 +1092,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Nigerisches Militär beschuldigt Frankreich, gescheiterten Aufstand orchestriert: Was Sie wissen sollten"
-  },
-  {
-   "id": "Reuters:Sarandon says she still loses movie roles over support for Palestinians - reuters.com",
-   "title": "Sarandon says she still loses movie roles over support for Palestinians - reuters.com",
-   "text": "Sarandon says she still loses movie roles over support for Palestinians &nbsp;&nbsp; reuters.com",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbUkxN0ZVU1dKaVd3Nzk4MlB5SHhFS3BiWlc3Q3l3ajRWZy1ib19KUGp0WXFYYkhuNUF1RUFIN2R3V2FUZjFmQkppN05RM0laRjluRGQtV2lWb3RMMks5N213QUs3MUoyakFMa0Z4SnV3dzF0OVFCTjh3ekF0NkdWVnB6YTJJdGdxaGFxNVU5WVhjcE5ZNERCRlZIaXZTa3dGM0F6SHUyYzZ6NWN4Wm5aYzByaw?oc=5",
-   "date": "2026-09-06T15:40:10.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Sarandon sagt, sie verliere immer noch Filmrollen wegen ihrer Unterstützung der Palästinenser"
   },
   {
    "id": "TASS:Daily oil transit via Strait of Hormuz amounts to around 9 mln barrels — US official",
@@ -1024,40 +1127,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Täglicher Öltankverkehr durch den Golf von Hormuz beläuft sich auf rund 9 Millionen Barrel – US-Beamter"
-  },
-  {
-   "id": "Reuters:South Africa beat Zimbabwe by 48 runs to lift Tri-Series trophy - reuters.com",
-   "title": "South Africa beat Zimbabwe by 48 runs to lift Tri-Series trophy - reuters.com",
-   "text": "South Africa beat Zimbabwe by 48 runs to lift Tri-Series trophy &nbsp;&nbsp; reuters.com",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWUhHOHRSZ0YxdHVyek9QQkN6M000V2VXYU9hQXRKYXV6WEVfdmk1VFI4RFpSOHZLVGNrT2tldTFFN01kRXhraUtYbkNvaDNPdDQ0cERWbU40SVAtdnNKbGtzbWZWZHB0R09PSTNFdjYzT2o1UVptYzl0T0dpb1ZrNkNvWjFjN0h5ZWFtbG40WlJ2WHlRd2g3bkVJbXA3ZzdBNW9Jb1lkVjNvb25vSXdzNQ?oc=5",
-   "date": "2026-09-06T15:36:48.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 30,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Südafrika besiegte Zimbabwe um 48 Runs und holte den Tri-Series-Titel"
   },
   {
    "id": "Al Jazeera:Dead fish fill vanishing river as drought grips Indonesia",
@@ -1253,7 +1322,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1288,7 +1357,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 60,
+   "priority": 59,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1601,7 +1670,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1636,7 +1705,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1760,40 +1829,6 @@
    "titleDe": "Libanesischer Präsident fordert USA und UN auf, Israel zu zwingen, Angriffe auf Nabatieh zu stoppen"
   },
   {
-   "id": "Al Jazeera:China, Nepal race to find thousands still missing 12 days after floods",
-   "title": "China, Nepal race to find thousands still missing 12 days after floods",
-   "text": "More than 5,500 people are still missing in China and Nepal after catastrophic floods across the two countries.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/china-nepal-race-to-find-thousands-still-missing-12-days-after-floods?traffic_source=rss",
-   "date": "2026-09-06T14:14:07.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 58,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "China, Nepal rennen, um Tausende noch vermisster 12 Tage nach Überschwemmungen"
-  },
-  {
    "id": "Benzinga:Toncoin (TON) Price Prediction 2025, 2026, 2027-2030",
    "title": "Toncoin (TON) Price Prediction 2025, 2026, 2027-2030",
    "text": "Analysts are saying that Toncoin (TON) could hit $26.17 by 2030. Feeling bullish about TON already? You can buy TON through Coinbase Wallet, Kraken, Gemini, and Paybis. In the cryptocurrency market, staying informed about trends is important for investors. With the Bitcoin (BTC) prices rising this year, investors are also looking for alternative avenues for growth. Meme tokens … Continued",
@@ -1854,7 +1889,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 39,
+   "priority": 38,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -1993,7 +2028,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2238,7 +2273,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 57,
+   "priority": 56,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2310,7 +2345,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2345,7 +2380,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 57,
+   "priority": 56,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2693,7 +2728,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2704,41 +2739,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "UNRWA unter Druck: Eine Rettungsleine für palästinensische Flüchtlinge"
-  },
-  {
-   "id": "Tehran Times:Iran basketball hold first training session in Nagoya",
-   "title": "Iran basketball hold first training session in Nagoya",
-   "text": "TEHRAN - Iran’s national basketball team held their first training session in Aichi-Nagoya after arriving in Japan ahead of the 2026 Asian Games.",
-   "source": "Tehran Times",
-   "staatlich": true,
-   "url": "https://www.tehrantimes.com/news/529731/Iran-basketball-hold-first-training-session-in-Nagoya",
-   "date": "2026-09-06T12:19:37.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 55,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Iran Basketball erste Trainingseinheit in Nagoya"
   },
   {
    "id": "CNBC World:‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
@@ -2902,7 +2902,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3006,7 +3006,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3320,7 +3320,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 52,
+   "priority": 51,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3429,7 +3429,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -3533,7 +3533,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3546,12 +3546,12 @@
    "titleDe": "US greift auf iranische Öltanker als ‚Desperationsakt‘ zurück"
   },
   {
-   "id": "Tehran Times:Tehran, Baku emphasize development of transit, infrastructure cooperation",
-   "title": "Tehran, Baku emphasize development of transit, infrastructure cooperation",
-   "text": "TEHRAN- Farzaneh Sadegh, Iran's Minister of Transport and Urban Development, and Shahin Mustafayev, Deputy Prime Minister of Azerbaijan, held a telephone conversation to review the latest developments in bilateral relations and explore ways to expand economic ties, particularly in transit, energy, and border infrastructure.",
-   "source": "Tehran Times",
+   "id": "Mehr News:Tehran, Baku stress developing transit, infrastructure coop.",
+   "title": "Tehran, Baku stress developing transit, infrastructure coop.",
+   "text": "TEHRAN, Sep. 06 (MNA) – Officials from Iran and the Republic of Azerbaijan have emphasized broadening bilateral relations, expanding transit cooperation, border projects and interacting in the oil and gas sectors.",
+   "source": "Mehr News",
    "staatlich": true,
-   "url": "https://www.tehrantimes.com/news/529749/Tehran-Baku-emphasize-development-of-transit-infrastructure",
+   "url": "https://en.mehrnews.com/news/247489/Iran-Azerbaijan-keen-to-expand-transit-coop-border-projects",
    "date": "2026-09-06T08:42:58.000Z",
    "tags": [
     "Weltlage"
@@ -3568,7 +3568,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3578,10 +3578,9 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
-    "IRNA",
-    "Mehr News"
+    "IRNA"
    ],
-   "titleDe": "Teheran, Baku betonen die Entwicklung von Transit- und Infrastrukturkooperationen"
+   "titleDe": "Teheran, Baku betonen Entwicklung von Transit- und Infrastrukturkooperation"
   },
   {
    "id": "U.Today:Buterin Teases Major Advances in Ethereum Transaction Formats",
@@ -3642,7 +3641,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3712,7 +3711,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3885,7 +3884,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3919,7 +3918,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 9,
+   "priority": 8,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4527,40 +4526,6 @@
    "titleDe": "Wir wurden letzte Woche defensiver, als Wall Street die Messlatte für KI-Aktien anhebt"
   },
   {
-   "id": "CoinDesk:Dollar-backed stablecoins can push local currencies lower, Bank of Korea study finds",
-   "title": "Dollar-backed stablecoins can push local currencies lower, Bank of Korea study finds",
-   "text": "Buying pressure in Binance-paired currencies correlates with local currency depreciation as market makers balance positions.",
-   "source": "CoinDesk",
-   "url": "https://www.coindesk.com/business/2026/09/05/dollar-backed-stablecoins-can-push-local-currencies-lower-bank-of-korea-study-finds",
-   "date": "2026-09-05T16:43:13.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Dollar-gestützte Stablecoins können lokale Währungen abwerten, zeigt Studie der Bank of Korea"
-  },
-  {
    "id": "BBC World:What different world maps get right - and what they get wrong",
    "title": "What different world maps get right - and what they get wrong",
    "text": "As the UN adopts a new world map to reflect Africa's true size, let's take a closer look at what different maps get right and wrong.",
@@ -4700,7 +4665,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 8,
+  "uebersetzt": 6,
   "fehler": null
  }
 }
