@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T19:33:32.980Z",
+ "updated": "2026-09-06T19:42:34.441Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T19:33:33.016Z",
+   "stand": "2026-09-06T19:42:34.489Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,29 +309,29 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T19:33:33.009Z",
+   "stand": "2026-09-06T19:42:34.479Z",
    "anzahl": 125,
    "klassen": {
     "crypto": {
-     "score": -0.0473,
+     "score": -0.0476,
      "bull": 3,
      "bear": 8,
      "neut": 114
     },
     "stocks": {
-     "score": -0.0375,
+     "score": -0.0379,
      "bull": 3,
      "bear": 7,
      "neut": 115
     },
     "gold": {
-     "score": 0.0187,
+     "score": 0.0189,
      "bull": 7,
      "bear": 1,
      "neut": 117
     },
     "usd": {
-     "score": 0.0125,
+     "score": 0.0126,
      "bull": 0,
      "bear": 0,
      "neut": 125
@@ -384,6 +384,21 @@
      "priority": 63
     },
     {
+     "id": "CNBC World:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
+     "titel": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
+     "titelDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen",
+     "quelle": "CNBC World",
+     "url": "https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html",
+     "zeit": "2026-09-06T16:27:03.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 95
+    },
+    {
      "id": "CNBC:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
      "titel": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
      "titelDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen",
@@ -427,21 +442,6 @@
       "usd": 0
      },
      "priority": 58
-    },
-    {
-     "id": "CNBC World:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
-     "titel": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
-     "titelDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html",
-     "zeit": "2026-09-06T16:27:03.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 90
     },
     {
      "id": "Al Jazeera:Israeli air attacks on Lebanon kill at least four",
