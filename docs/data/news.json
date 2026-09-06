@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-06T15:34:50.652Z",
+ "updated": "2026-09-06T15:36:36.716Z",
  "regime": "policy",
  "count": 130,
  "errors": [
@@ -7,9 +7,45 @@
  ],
  "items": [
   {
+   "id": "CNBC World:SEC sues ISS as Trump administration ramps up scrutiny of proxy advisers",
+   "title": "SEC sues ISS as Trump administration ramps up scrutiny of proxy advisers",
+   "text": "The SEC sued Institutional Shareholder Services to enforce a subpoena as the Trump administration increases scrutiny of influential proxy advisers.",
+   "source": "CNBC World",
+   "url": "https://www.cnbc.com/2026/09/06/sec-iss-proxy-adviser-subpoena.html",
+   "date": "2026-09-06T15:35:16.000Z",
+   "tags": [
+    "Weltwirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Regulierungsverfahren",
+   "eventTypeEn": "Regulatory action",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "CNBC"
+   ],
+   "titleDe": "SEC verklagt ISS, während die Trump-Administration die Überwachung von Stellvertreterberatern verstärkt"
+  },
+  {
    "id": "BBC World:US envoys hold talks with Zelensky in Kyiv after meeting Putin",
    "title": "US envoys hold talks with Zelensky in Kyiv after meeting Putin",
-   "text": "Steve Witkoff tells reporters the US team felt \"encouraged\" by what he called a \"substantive\" and important discussion.",
+   "text": "Steve Witkoff tells reporters the US team feels \"encouraged\" by a \"substantive\" and important discussion.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-06T15:32:27.000Z",
@@ -71,7 +107,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Maitland-Niles sorgt für ein 2:2-Unentschieden von Everton gegen Man Utd"
   },
   {
    "id": "Reuters:US envoys make first Kyiv visit amid Ukraine war peace push",
@@ -245,7 +282,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Antonelli gewinnt spektakulär den italienischen GP von der Rückbank aus"
   },
   {
    "id": "Reuters:Israel's Netanyahu orders West Bank settler outposts to be removed, sources say",
@@ -451,7 +489,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Laboratorium. Lebensmittelirradiation"
   },
   {
    "id": "TASS:Russian forces strike two Ukrainian army’s logistics centers in Odessa Region",
@@ -511,7 +550,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -520,7 +559,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Schließung des Konsulats in Bonn soll die Wahlvorbereitungen sabotieren – russischer Diplomat"
   },
   {
    "id": "Al Jazeera:Bosnian Serbs strengthen ties with Israel amid tensions",
@@ -591,39 +631,6 @@
    ],
    "alsoIn": [],
    "titleDe": "Peter Brandt erweckt sein legendäres 2019-Parabolziel für Bitcoin wieder"
-  },
-  {
-   "id": "Reuters:Son of EssilorLuxottica founder calls for new strategy for eyewear group",
-   "title": "Son of EssilorLuxottica founder calls for new strategy for eyewear group",
-   "text": "Son of EssilorLuxottica founder calls for new strategy for eyewear group &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOM2hWN1ZvUXE5LUEwb1hpUkxZM2lRVE40YVBDMU4waGhMblhDMGU3b3ZnZXNoTjVXeTJweEtWRDVXcG8wYmNoTnhqN3hiaXB6OHNkb1BXblpVdkU3MjFFV1pTc1JiRXdnbFE0aGNQV0twR0hHVWZnaUdpSzQ0ZHRiU19KWE1zZUIwTjRPSnA1UjFTWU5SVkdHQlZhbmhiaGVZSGw3cDRZRkZ2QQ?oc=5",
-   "date": "2026-09-06T14:35:43.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 30,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
   },
   {
    "id": "Al Jazeera:Nepal rescuers search hydropower tunnels for survivors",
@@ -1002,7 +1009,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1116,7 +1123,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "FIFA bestätigt, dass Infantino bei den Wahlen 2027 erneut für das Amt des Präsidenten kandidieren wird"
   },
   {
    "id": "Al Jazeera:How significant are the Yemeni government’s military gains against Houthis?",
@@ -1277,7 +1285,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1673,7 +1681,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Eröffnungszeremonie der ersten Smart Police High School in Teheran"
   },
   {
    "id": "Decrypt:This Crypto Project Just Funded 1,000 Student Loans Entirely On-Chain",
@@ -1905,7 +1914,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 48,
+   "priority": 47,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1950,7 +1959,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "UNRWA unter Druck: Eine Rettungsleine für palästinensische Flüchtlinge"
   },
   {
    "id": "TASS:Accusations regarding Leipzig UAV incident incite ‘real war’ — Russian foreign minister",
@@ -2408,7 +2418,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Iranische und irakische Universitäten prüfen Möglichkeiten zur Förderung von KI-Beziehungen"
   },
   {
    "id": "Tehran Times:Health projects in food and pharmaceutical sectors near completion",
@@ -2442,7 +2453,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Gesundheitsprojekte in den Bereichen Lebensmittel und Pharma sind nahezu abgeschlossen"
   },
   {
    "id": "BeInCrypto:Elon Musk Fires Back at Bernie Sanders Over His $900 Billion Fortune",
@@ -2501,7 +2513,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 56,
+   "priority": 55,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2684,7 +2696,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Putins Treffen mit Witkoff, Kushner zeugt von Vertrauen – Kremlsprecher"
   },
   {
    "id": "IRNA:Iran embassy in Beirut clarifies official position on Lebanon developments",
@@ -3210,7 +3223,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "US greift auf iranische Öltanker als ‚Desperationsakt‘ zurück"
   },
   {
    "id": "Tehran Times:Tehran, Baku emphasize development of transit, infrastructure cooperation",
@@ -3235,7 +3249,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3247,7 +3261,8 @@
    "alsoIn": [
     "IRNA",
     "Mehr News"
-   ]
+   ],
+   "titleDe": "Teheran, Baku betonen die Entwicklung von Transit- und Infrastrukturkooperationen"
   },
   {
    "id": "U.Today:Buterin Teases Major Advances in Ethereum Transaction Formats",
@@ -3422,7 +3437,8 @@
    "eventTypeEn": "Product announcement",
    "scope": "project",
    "coins": [],
-   "alsoIn": []
+   "alsoIn": [],
+   "titleDe": "Ein Denkmal zu Ehren des ikonischen iranischen Künstlers Akbar Abdi enthüllt"
   },
   {
    "id": "BBC World:TV presenter among 12 sentenced to death in Egypt drugs case",
@@ -3725,7 +3741,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4424,7 +4440,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4542,7 +4558,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 40,
+  "uebersetzt": 14,
   "fehler": null
  }
 }
