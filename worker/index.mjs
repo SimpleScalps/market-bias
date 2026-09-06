@@ -1661,6 +1661,15 @@ export default {
           const a = zNow.adressZugang || adressZugangZuletzt;
           if (!a) return 'nein - nur noch ueber die Kopfzeile';
           const min = Math.round((Date.now() - new Date(a.zeit).getTime()) / 60000);
+          /*
+           * Nach einer halben Stunde Ruhe gilt der Weg als aufgegeben.
+           *
+           * Der Vermerk bleibt fuer immer stehen - er wird ja nur beim
+           * Benutzen erneuert. Ohne diese Frist stuende dort auf ewig "JA",
+           * auch Stunden nachdem der letzte Aufrufer umgestellt hat, und die
+           * Anzeige koennte nie bestaetigen, dass der Umbau geglueckt ist.
+           */
+          if (min >= 30) return `nein - seit ${min} min nur noch ueber die Kopfzeile`;
           return `JA - zuletzt vor ${min} min auf ${a.pfad}`;
         })(),
         zugang: env.ZUGANG
