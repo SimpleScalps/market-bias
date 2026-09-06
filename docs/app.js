@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v48';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v49';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -1355,7 +1355,20 @@ async function aboSenden() {
       headers: workerKopf({ 'Content-Type': 'application/json' }),
       body: JSON.stringify({ stufe: notify, ziele, asset, lang }),
     });
-    aboStand = { ok: res.ok, zeit: new Date().toISOString(), grund: res.ok ? null : `HTTP ${res.status}` };
+    /*
+     * Den Grund des Servers weiterreichen, nicht nur den Statuscode.
+     *
+     * Seit die Versandziele geprüft werden, kann hier eine Ablehnung mit
+     * Begründung kommen — „Adresse nicht erlaubt: example.com". Als bloßes
+     * „HTTP 400" wäre sie nicht zu deuten, und man suchte den Fehler
+     * anderswo.
+     */
+    let grund = null;
+    if (!res.ok) {
+      const j = await res.json().catch(() => null);
+      grund = (j && (j.fehler || j.grund)) || `HTTP ${res.status}`;
+    }
+    aboStand = { ok: res.ok, zeit: new Date().toISOString(), grund };
   } catch (err) {
     aboStand = { ok: false, zeit: new Date().toISOString(), grund: String(err.message).slice(0, 60) };
   }
@@ -1754,9 +1767,19 @@ $('#testSenden').addEventListener('click', async () => {
     try {
       const res = await fetch(`${liveUrl}/testpush`, { headers: workerKopf() });
       const j = await res.json();
+      /*
+       * Der Grund kann Liste oder Satz sein.
+       *
+       * Der Versand meldet eine Liste („Discord 401"), die Zugangsprüfung
+       * einen Satz. Auf einem Satz .join() aufzurufen wirft — und der
+       * Fehlschlag landete im catch darunter, das „Worker antwortet nicht"
+       * meldete. Genau die Ursache, die dort stand, wurde damit verschluckt:
+       * ein nicht passendes Zugangswort sah aus wie ein toter Worker.
+       */
+      const grundText = (w) => (Array.isArray(w) ? w.join('; ') : (w ? String(w) : ''));
       r = j.ok
         ? { ok: true, hinweis: (j.kanaele || []).join(', ') }
-        : { ok: false, grund: j.grund || (j.fehler || []).join('; ') || T().fehlgeschlagen };
+        : { ok: false, grund: grundText(j.grund) || grundText(j.fehler) || T().fehlgeschlagen };
     } catch {
       r = { ok: false, grund: T().zustandFehler };
     }
