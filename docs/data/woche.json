@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T11:03:53.232Z",
+ "updated": "2026-09-06T11:18:14.348Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T11:03:53.268Z",
+   "stand": "2026-09-06T11:18:14.374Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,29 +309,29 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T11:03:53.261Z",
+   "stand": "2026-09-06T11:18:14.369Z",
    "anzahl": 41,
    "klassen": {
     "crypto": {
-     "score": -0.1497,
+     "score": -0.1475,
      "bull": 1,
      "bear": 4,
      "neut": 36
     },
     "stocks": {
-     "score": -0.1497,
+     "score": -0.1475,
      "bull": 1,
      "bear": 4,
      "neut": 36
     },
     "gold": {
-     "score": 0.0749,
+     "score": 0.0737,
      "bull": 4,
      "bear": 1,
      "neut": 36
     },
     "usd": {
-     "score": 0.0499,
+     "score": 0.0492,
      "bull": 3,
      "bear": 0,
      "neut": 38
@@ -366,7 +366,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 83
+     "priority": 82
     },
     {
      "id": "Al Jazeera:Iran war live: IRGC claims attacks on 3 oil tankers and 3 US-linked ships",
@@ -396,7 +396,7 @@
       "gold": 0.427,
       "usd": 0.285
      },
-     "priority": 43
+     "priority": 42
     },
     {
      "id": "Al Jazeera:Israel bombards several towns in southern Lebanon",
