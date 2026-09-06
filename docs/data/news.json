@@ -1,20 +1,20 @@
 {
- "updated": "2026-09-06T12:23:34.189Z",
+ "updated": "2026-09-06T12:39:46.208Z",
  "regime": "policy",
- "count": 89,
+ "count": 88,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
   {
-   "id": "CNBC:‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
+   "id": "CNBC World:‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
    "title": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
    "text": "Anthropic, OpenAI, Meta and Google all released model updates this week, while Nvidia said it's acquiring open-source AI platform Hugging Face.",
-   "source": "CNBC",
+   "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
    "date": "2026-09-06T12:13:49.000Z",
    "tags": [
-    "Märkte"
+    "Weltwirtschaft"
    ],
    "impact": "low",
    "kind": "headline",
@@ -28,7 +28,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -37,7 +37,9 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "CNBC"
+   ],
    "titleDe": "‘Modellermüdigkeit’ setzt ein, während KI-Labore im rasanten Tempo neue Versionen einführen"
   },
   {
@@ -62,7 +64,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -166,7 +168,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -200,7 +202,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -710,7 +712,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -954,7 +956,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -988,7 +990,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1063,7 +1065,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike, attack)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 41,
+   "priority": 40,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -1097,7 +1099,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1239,7 +1241,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1377,7 +1379,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1517,7 +1519,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -1551,7 +1553,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1653,7 +1655,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 11,
+   "priority": 10,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1693,7 +1695,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation, retaliation threat, attack)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 81,
+   "priority": 80,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -2743,7 +2745,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2962,42 +2964,6 @@
    "titleDe": "Abel: Auf zwei Arten hofft Berkshire, von KI zu profitieren"
   },
   {
-   "id": "BeInCrypto:Solana Co-Founder Slams Robinhood Chain Fees, Calls Congestion Profits ‘Brain Dead'",
-   "title": "Solana Co-Founder Slams Robinhood Chain Fees, Calls Congestion Profits ‘Brain Dead'",
-   "text": "Solana's Anatoly Yakovenko calls Robinhood Chain fees 'brain dead' and says Arbitrum's rev share could cover the cost.",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/solana-founder-robinhood-chain-fees-criticism/",
-   "date": "2026-09-05T12:30:00.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "SOL"
-   ],
-   "alsoIn": [],
-   "titleDe": "Solana-Mitbegründer schlägt Robinhood-Kettengebühren, nennt Congestion Profits \"Brain Dead\""
-  },
-  {
    "id": "CNBC Economy:From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
    "title": "From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
    "text": "Despite rising prices and the travel industry focusing on the luxury segment, budget-minded vacationers are still finding ways to get away.",
@@ -3103,7 +3069,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 2,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
