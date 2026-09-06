@@ -20,6 +20,52 @@ export const FEEDS = [
   { url: 'https://www.federalreserve.gov/feeds/press_all.xml',     source: 'Federal Reserve', tags: ['Fed'], fast: true },
   { url: 'https://www.cnbc.com/id/100003114/device/rss/rss.html',  source: 'CNBC',            tags: ['Märkte'] },
   { url: 'https://feeds.marketwatch.com/marketwatch/topstories/',  source: 'MarketWatch',     tags: ['Märkte'] },
+
+  /*
+   * Reuters - nur ueber den Umweg.
+   *
+   * Die eigenen RSS-Feeds sind abgeschaltet: feeds.reuters.com antwortet gar
+   * nicht mehr, reuters.com/rssFeed/worldNews mit 401, reutersagency.com mit
+   * 404. Nachgemessen, nicht vermutet. Was bleibt, ist die Suche von Google
+   * News, eingegrenzt auf die Domain.
+   *
+   * Ein Nachteil bleibt: Die Verweise zeigen auf eine Weiterleitung von
+   * Google, nicht auf reuters.com. Im Browser landet man richtig, der
+   * Artikelabruf beim Nachfragen scheitert aber - was ohnehin egal ist, weil
+   * Reuters Bots sperrt.
+   *
+   * Das Zeitfenster ist gemessen, nicht geschaetzt. when:1h liefert 7
+   * Eintraege in 10 KB, juengster 14 Minuten alt. when:12h und when:24h
+   * liefern zwar hundert, aber in 111 bzw. 118 KB - und ihre juengste Meldung
+   * ist mit 21 Minuten aelter. Der Grund: Google deckelt bei hundert
+   * Eintraegen und sortiert nach Relevanz, nicht nach Zeit; die neuesten
+   * fallen dabei hinten heraus. Die enge Abfrage ist also frischer und
+   * zugleich elfmal kleiner - was nach dem CPU-Ueberlauf zaehlt.
+   */
+  { url: 'https://news.google.com/rss/search?q=when:1h+site:reuters.com&hl=en-US&gl=US&ceid=US:en',
+    source: 'Reuters', tags: ['Weltlage'], fast: true, titelZusatz: / - Reuters$/ },
+
+  /*
+   * Staatsnahe Quellen.
+   *
+   * Sie stehen hier aus einem klaren Grund: Offizielle Stellungnahmen aus
+   * Moskau und Teheran laufen zuerst ueber die eigenen Agenturen, oft Stunden
+   * vor den westlichen Diensten - und genau solche Saetze bewegen den Markt.
+   *
+   * Ebenso klar ist die Kehrseite. Was hier steht, ist Position, nicht
+   * notwendig Tatsache: "Beginn eines echten Krieges" kann eine Lage
+   * beschreiben oder sie herbeireden. Die Bewertung wird deshalb NICHT
+   * gedaempft - das waere eine stille Entscheidung ueber Handelssignale.
+   * Stattdessen tragen die Meldungen ein sichtbares Kennzeichen, damit vor
+   * dem Handeln erkennbar ist, wer da spricht.
+   *
+   * Press TV und Tasnim sind von hier nicht erreichbar und deshalb nicht
+   * dabei.
+   */
+  { url: 'https://tass.com/rss/v2.xml',        source: 'TASS',         tags: ['Weltlage'], staatlich: true },
+  { url: 'https://en.irna.ir/rss',             source: 'IRNA',         tags: ['Weltlage'], staatlich: true },
+  { url: 'https://en.mehrnews.com/rss',        source: 'Mehr News',    tags: ['Weltlage'], staatlich: true },
+  { url: 'https://www.tehrantimes.com/rss',    source: 'Tehran Times', tags: ['Weltlage'], staatlich: true },
   // Krypto (dieselben offenen Quellen, die auch CryptoPanic aggregiert)
   { url: 'https://www.coindesk.com/arc/outboundfeeds/rss/',        source: 'CoinDesk',        tags: ['Krypto'], fast: true },
   { url: 'https://cointelegraph.com/rss',                          source: 'Cointelegraph',   tags: ['Krypto'], fast: true },
@@ -238,7 +284,14 @@ export async function loadFeed(feed, regime = 'policy') {
     .map((x) => x.it);
 
   for (const it of sortiert) {
-    const title = tag(it, 'title');
+    /*
+     * Google News haengt " - Reuters" an jeden Titel. Das gehoert nicht zur
+     * Schlagzeile: Es verzerrt die Dublettenerkennung, kostet Platz in der
+     * Anzeige und steht ohnehin schon als Quelle daneben.
+     */
+    const title = (feed.titelZusatz
+      ? tag(it, 'title').replace(feed.titelZusatz, '')
+      : tag(it, 'title')).trim();
     if (!title || isNoise(title)) continue;
     const date = new Date(zeitstempel(it) || Date.now());
     const scored = scoreHeadline(title, regime);
@@ -250,6 +303,8 @@ export async function loadFeed(feed, regime = 'policy') {
       // das Sprachmodell liest sie mit, und aufgeklappt steht sie auch da.
       ...(text ? { text } : {}),
       source: feed.source,
+      // Wer spricht, gehoert zur Meldung - siehe die Begruendung bei den Feeds.
+      ...(feed.staatlich ? { staatlich: true } : {}),
       url: verweis(it),
       date: (isNaN(date) ? new Date() : date).toISOString(),
       tags: feed.tags,

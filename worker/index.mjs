@@ -1524,8 +1524,18 @@ export default {
           .sort((a, b) => b[0].localeCompare(a[0]))
           .map(([tag, w]) => {
             const zahl = (n) => (n ?? 0).toLocaleString('de-DE');
-            const groq = w.groq
-              ? ' · Groq: ' + Object.entries(w.groq)
+            /*
+             * Nur echte Modellstaende ausgeben.
+             *
+             * Frueher lag unter groqTag ein einzelner, modellloser Stand. Ohne
+             * diese Pruefung wurden dessen Felder als Modelle gelesen, und im
+             * Tagebuch stand "Groq: limit 0/0, verbraucht 0/0, stand 0/0" -
+             * genau so ist der erste Eintrag herausgekommen.
+             */
+            const staende = Object.entries(w.groq || {})
+              .filter(([, g]) => g && typeof g === 'object' && typeof g.verbraucht === 'number');
+            const groq = staende.length
+              ? ' · Groq: ' + staende
                   .map(([m, g]) => `${aufgabeVon(m, zNow.kiModelle)} ${zahl(g.verbraucht)}/${zahl(g.limit)}`)
                   .join(', ')
               : '';

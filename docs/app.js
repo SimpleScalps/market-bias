@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v45';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v46';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -867,8 +867,17 @@ function render(erzwingen = false) {
 
     const anzahl = n.alsoIn?.length || 0;
     const auch = anzahl ? ` · +${anzahl} ${anzahl > 1 ? T().quellenMehr : T().quellen}` : '';
+    /*
+     * Staatsnahe Quellen ausweisen.
+     *
+     * Steht in der Quellenzeile, nicht als eigenes Abzeichen: Es gehoert zur
+     * Herkunft der Meldung, nicht zu ihrer Bewertung. Wer TASS oder IRNA
+     * liest, soll das sehen, bevor er auf die Einstufung schaut - die
+     * Bewertung selbst wird bewusst nicht gedaempft.
+     */
     $('.src', node).textContent =
-      `${n.source.toUpperCase()}${n.region ? ' · ' + n.region : ''}${auch} · REL ${n.priority}`;
+      `${n.source.toUpperCase()}${n.staatlich ? ' · ' + T().staatlich : ''}`
+      + `${n.region ? ' · ' + n.region : ''}${auch} · REL ${n.priority}`;
 
     // Deutsche Fassung der Schlagzeile, falls vorhanden.
     const ueb = $('.uebersetzung', node);
