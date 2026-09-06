@@ -1,19 +1,126 @@
 {
- "updated": "2026-09-06T18:29:03.565Z",
+ "updated": "2026-09-06T18:36:46.869Z",
  "regime": "policy",
- "count": 129,
+ "count": 117,
  "errors": [
-  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
+  "TASS: fetch failed"
  ],
  "items": [
   {
-   "id": "TASS:Witkoff says settlement talks in Moscow, Kiev were positive",
-   "title": "Witkoff says settlement talks in Moscow, Kiev were positive",
-   "text": "The American leader's special envoy noted that his work, together with the US president's son-in-law Jared Kushner, is to \"bring the parties together,\" narrow the gap in problematic positions, and establish communication channels",
-   "source": "TASS",
+   "id": "BBC World:Zelensky says he expects war to continue into winter after talks with US envoys",
+   "title": "Zelensky says he expects war to continue into winter after talks with US envoys",
+   "text": "Talks finished without an announcement of a major breakthrough, after Steve Witkoff and Jared Kushner travelled to Kyiv.",
+   "source": "BBC World",
+   "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-06T18:33:50.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Deeskalation"
+   ],
+   "scores": {
+    "crypto": 0.252,
+    "stocks": 0.252,
+    "gold": -0.126,
+    "usd": -0.084
+   },
+   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Deeskalation)",
+   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 66,
+   "label": "bullish",
+   "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Zelensky sagt, er rechnet damit, dass der Krieg bis in den Winter hinein andauern wird, nachdem er mit US-Botschaftern gesprochen hat"
+  },
+  {
+   "id": "CoinDesk:Prediction markets inch closer to the Supreme Court: State of Crypto",
+   "title": "Prediction markets inch closer to the Supreme Court: State of Crypto",
+   "text": "New Jersey petitioned for a writ of certiorari in Kalshi's case against it last week, finally throwing the ball to the high court.",
+   "source": "CoinDesk",
+   "url": "https://www.coindesk.com/news-analysis/2026/09/06/prediction-markets-inch-closer-to-the-supreme-court-state-of-crypto",
+   "date": "2026-09-06T18:30:00.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 52,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Prädiktionsmärkte nähern sich dem Obersten Gerichtshof: Der Stand der Krypto-Branche"
+  },
+  {
+   "id": "Mehr News:Ghalibaf mocks $40 oil pbd forecast by US secretary",
+   "title": "Ghalibaf mocks $40 oil pbd forecast by US secretary",
+   "text": "TEHRAN, Sep. 06 (MNA) – Iranian Parliament Speaker Mohammad Bagher Ghalibaf has responded sarcastically to U.S. Treasury Secretary Scott Bessent’s remarks that global oil prices could fall to $40 a barrel after the war with Iran ends.",
+   "source": "Mehr News",
    "staatlich": true,
-   "url": "https://tass.com/world/2183395",
-   "date": "2026-09-06T18:23:26.000Z",
+   "url": "https://en.mehrnews.com/news/247499/Ghalibaf-mocks-40-oil-pbd-forecast-by-US-secretary",
+   "date": "2026-09-06T18:29:38.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 45,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Kursprognose",
+   "eventTypeEn": "Price prediction",
+   "scope": "project",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Ghalibaf verspottet die US-Behörde, die einen Ölpreis von 40 USD pro Barrel prognostiziert"
+  },
+  {
+   "id": "Reuters:White Sox place Tommy Pham on injured list with calf strain - reuters.com",
+   "title": "White Sox place Tommy Pham on injured list with calf strain - reuters.com",
+   "text": "White Sox place Tommy Pham on injured list with calf strain &nbsp;&nbsp; reuters.com",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWHd1ekx5bXAtV1lPNXhCX3Q2S2cwY0REOTNGaEE5RUNDODBKaVVKWmU4cW5oZ1doMThwZnNWU200VXNNMm1zQkhpTjZUNEJZazBZeHNlMEdqNXAxbnQxUHBGb0dPa1JLNURGTkE4UU44elNxNFc5MFBIc1NNSDl2U2ZtQnkzNHlHRnNxM0tmWlBxQ3FCWXFSZ3BYSlNHMHpqZXg4SjBvQQ?oc=5",
+   "date": "2026-09-06T18:24:28.000Z",
    "tags": [
     "Weltlage"
    ],
@@ -39,7 +146,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Witkoff sagt, Verhandlungsversuche in Moskau und Kiew seien positiv"
+   "titleDe": "Die White Sox setzen Tommy Pham auf die verletzte Liste wegen einer Wadeverletzung"
   },
   {
    "id": "Mehr News:Three tankers change course in Hormuz after IRGC warning",
@@ -98,7 +205,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 45,
+   "priority": 44,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -132,7 +239,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -211,41 +318,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Router-Protokoll, unterstützt von Coinbase, soll eingestellt werden und 303 Millionen ROUTE‑Token verbrennen"
-  },
-  {
-   "id": "TASS:US working on ‘peace package’ for Ukrainian settlement — Kushner",
-   "title": "US working on ‘peace package’ for Ukrainian settlement — Kushner",
-   "text": "Many people in the United States government, under the President, Vice President, Secretary of State Marco Rubio and many others, are working to try to create it, the American leader's son-in-law noted",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/world/2183391",
-   "date": "2026-09-06T18:01:49.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 44,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "USA arbeiten an einem 'Friedenspaket' für die ukrainische Lösung — Kushner"
   },
   {
    "id": "Reuters:Mainz thrash Hamburg, Augsburg go top with win in Frankfurt - reuters.com",
@@ -491,45 +563,6 @@
    "titleDe": "Sabalenka überwindet Townsend und erreicht Viertelfinale der US Open"
   },
   {
-   "id": "TASS:Witkof says parties to Ukraine conflict need to make compromises",
-   "title": "Witkof says parties to Ukraine conflict need to make compromises",
-   "text": "The US President's special envoy noted that Moscow and Kyiv need to narrow the differences between them in order to achieve a peaceful settlement",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/world/2183389",
-   "date": "2026-09-06T17:43:05.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Eskalation"
-   ],
-   "scores": {
-    "crypto": -0.36,
-    "stocks": -0.36,
-    "gold": 0.18,
-    "usd": 0.12
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 67,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Witkof sagt, die Parteien des Ukraine-Konflikts müssten Kompromisse eingehen"
-  },
-  {
    "id": "Al Jazeera:F1 leader Kimi Antonelli wins Italian GP after epic charge from the back",
    "title": "F1 leader Kimi Antonelli wins Italian GP after epic charge from the back",
    "text": "Antonelli's sensational race from 19th to the win at Monza makes him the first Italian to claim the title in 60 years.",
@@ -585,7 +618,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -596,40 +629,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Netanyahu beauftragt Entfernung von Siedlungsoutposts im Westjordanland, berichten Quellen"
-  },
-  {
-   "id": "Reuters:Israeli strike kills a man and his daughter in Gaza, medics say - reuters.com",
-   "title": "Israeli strike kills a man and his daughter in Gaza, medics say - reuters.com",
-   "text": "Israeli strike kills a man and his daughter in Gaza, medics say &nbsp;&nbsp; reuters.com",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWXNmc1lpWkNYV0VUaVR4bDNpWTNMcTQ1VkFPYk5tZGFHbzk3Q3pOX0JtRW9Gc01kVnJ4RjRRVVl2aVpfSU1jN1JtelYxZUNIZV9Qb3M1U3J5Y0FMdkN6SV9sd3dPckdaWFFMWktOejFtUldxdUFDd0tMbjBzRzE5R0ZsQ1pPMG1ZNHJWTXQwNWVTT05PNmNFMElJbGVLenhLbEJ3?oc=5",
-   "date": "2026-09-06T17:34:51.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 87,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Israelischer Schlag tötet Mann und Tochter in Gaza, berichten Mediziner"
   },
   {
    "id": "Tehran Times:Shadowy Emirati firm exposed as major oil supplier for Israeli military",
@@ -654,7 +653,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -689,7 +688,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -774,40 +773,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Dennis Ross: Irans Widerstand während des US-Krieges bleibt weiterhin überraschend"
-  },
-  {
-   "id": "Reuters:Red Sox place OF Ceddanne Rafaela (quad) on injured list - reuters.com",
-   "title": "Red Sox place OF Ceddanne Rafaela (quad) on injured list - reuters.com",
-   "text": "Red Sox place OF Ceddanne Rafaela (quad) on injured list &nbsp;&nbsp; reuters.com",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZTZhYm05S1Fhc21hd3JwOG5iSl9KOTFTWWRpLXVkUUZzMENhTVJ0X1I1MHVzckZQY1VRWXRqdTlielFpNFFkX1ZMYW1kQzhQUi1RWjFKcUNiTC1qUXVtTmhnWkFzTGVBcHNQaVMzcDVQd3MzRDFUMXRvcUxsc0RFdHJiUHBlaFBlNXR6WVZWU2I2MjdxZ2xIRm5UUWc?oc=5",
-   "date": "2026-09-06T17:29:31.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 30,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Red Sox setzen OF Ceddanne Rafaela (Quadrizeps) auf die verletzte Liste – Reuters"
   },
   {
    "id": "Tehran Times:Iran FM holds consultations with Turkish, Saudi counterparts",
@@ -1157,7 +1122,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1191,7 +1156,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 60,
+   "priority": 59,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1225,7 +1190,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1263,7 +1228,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 91,
+   "priority": 90,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "high",
@@ -1297,7 +1262,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1308,41 +1273,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Lamine Yamal und Fermin Lopez glänzen, während Barcelona bei Valencia ausflippt"
-  },
-  {
-   "id": "TASS:Ukraine, US, Europe agree to hold another meeting soon — Zelensky",
-   "title": "Ukraine, US, Europe agree to hold another meeting soon — Zelensky",
-   "text": "According to Zelensky, US special presidential envoy Steve Witkoff and President Donald Trump’s son-in-law Jared Kushner have actually resumed the negotiating process after their meeting with Russian President Vladimir Putin and today’s talks in Kiev",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/world/2183377",
-   "date": "2026-09-06T16:51:35.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 59,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Ukraine, USA, Europa vereinbaren bald weiteres Treffen – Zelensky"
   },
   {
    "id": "U.Today:Former Ripple Devs Reveal Critical Red Flags as 4,000 XRP Ledger Wallets Are Affected",
@@ -1379,41 +1309,6 @@
    ],
    "alsoIn": [],
    "titleDe": "Frühere Ripple-Entwickler enthüllen kritische Warnsignale, 4.000 XRP Ledger‑Wallets betroffen"
-  },
-  {
-   "id": "TASS:Houthis say they downed Saudi drone over Yemen",
-   "title": "Houthis say they downed Saudi drone over Yemen",
-   "text": "\"The Yemeni armed forces have shot down a Wing Loong II reconnaissance drone belonging to Saudi Arabia when it was on a hoistile mission,\" Houthi spokesman Yahya Saria said",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/world/2183369",
-   "date": "2026-09-06T16:42:04.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 29,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Houthi-Gruppe erklärt, sie hätten einen saudischen Drohnenflug über Jemen abgeschossen"
   },
   {
    "id": "BeInCrypto:Hackers Demand $2 Million in Bitcoin from Germany. Berlin Refuses to Pay",
@@ -1492,111 +1387,6 @@
    "titleDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen"
   },
   {
-   "id": "TASS:US wants to work with Moscow, Kiev on ‘refreshed’ peace proposal — media",
-   "title": "US wants to work with Moscow, Kiev on ‘refreshed’ peace proposal — media",
-   "text": "\"Things may move in a good direction if there's a follow-up by all parties involved,\" the source told Axios",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/world/2183367",
-   "date": "2026-09-06T16:26:23.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 42,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "USA will mit Moskau, Kiew an einem 'erneuerten' Friedensvorschlag arbeiten – Medien"
-  },
-  {
-   "id": "TASS:Yemeni government forces take control over Hays in Hodeida province — TV",
-   "title": "Yemeni government forces take control over Hays in Hodeida province — TV",
-   "text": "According to the TV channel, the city has strategic importance for operations on the country’s western coast",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/world/2183363",
-   "date": "2026-09-06T16:21:29.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 29,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Yemenitische Regierungsstreitkräfte übernehmen die Kontrolle über Hays in der Provinz Hodeida — TV"
-  },
-  {
-   "id": "TASS:US negotiators tell Zelensky they want breakthrough in talks before winter — media",
-   "title": "US negotiators tell Zelensky they want breakthrough in talks before winter — media",
-   "text": "According to the sources, Witkoff and Kushner discussed with Zelensky preparations for continuing the war through the winter",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/world/2183365",
-   "date": "2026-09-06T16:20:37.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 42,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Verhandlungsführer sagen Zelensky, sie wollen vor dem Winter einen Durchbruch in den Gesprächen erzielen — Medien"
-  },
-  {
    "id": "Al Jazeera:Iran touts military response as US maintains blockade, hits tankers",
    "title": "Iran touts military response as US maintains blockade, hits tankers",
    "text": "Tehran says time for proportionate retaliation is over after a US strike on Iranian tankers inside the blockade line.",
@@ -1656,7 +1446,7 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 60,
+   "priority": 59,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -1776,41 +1566,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Maitland-Niles überrascht Manchester United, Everton sichert letzten Punkt"
-  },
-  {
-   "id": "TASS:Other countries to join US in Strait of Hormuz to ensure safe navigation — official",
-   "title": "Other countries to join US in Strait of Hormuz to ensure safe navigation — official",
-   "text": "Trade is important for the world and should not be the responsibility of the United States alone, said Energy Secretary Chris Wright",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/world/2183361",
-   "date": "2026-09-06T16:03:04.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 58,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Weitere Länder werden sich der USA im Golf von Hormus anschließen, um sichere Navigation zu gewährleisten – offizieller Bericht"
   },
   {
    "id": "Decrypt:XRP Gets Another Boost Through Ripple Deal With Florida Athletics",
@@ -1974,41 +1729,6 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Nigerisches Militär beschuldigt Frankreich, gescheiterten Aufstand orchestriert: Was Sie wissen sollten"
-  },
-  {
-   "id": "TASS:Daily oil transit via Strait of Hormuz amounts to around 9 mln barrels — US official",
-   "title": "Daily oil transit via Strait of Hormuz amounts to around 9 mln barrels — US official",
-   "text": "Energy Secretary Chris Wright says the United States is \"winning the battle\" over the strait despite opposition from Iran",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/world/2183355",
-   "date": "2026-09-06T15:38:58.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
    "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
@@ -2019,7 +1739,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Täglicher Öltankverkehr durch den Golf von Hormuz beläuft sich auf rund 9 Millionen Barrel – US-Beamter"
+   "titleDe": "Nigerisches Militär beschuldigt Frankreich, gescheiterten Aufstand orchestriert: Was Sie wissen sollten"
   },
   {
    "id": "CNBC World:SEC sues ISS as Trump administration ramps up scrutiny of proxy advisers",
@@ -2058,40 +1778,6 @@
    "titleDe": "SEC verklagt ISS, während die Trump-Administration die Überwachung von Stellvertreterberatern verstärkt"
   },
   {
-   "id": "BBC World:US envoys hold talks with Zelensky in Kyiv after meeting Putin",
-   "title": "US envoys hold talks with Zelensky in Kyiv after meeting Putin",
-   "text": "Steve Witkoff tells reporters the US team feels \"encouraged\" by a \"substantive\" and important discussion.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-06T15:32:27.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 40,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Gesandte führen nach einem Treffen mit Putin Gespräche mit Selenskyj in Kiew"
-  },
-  {
    "id": "Mehr News:Iran security forces seize shipment of weapons in NW",
    "title": "Iran security forces seize shipment of weapons in NW",
    "text": "TEHRAN, Sep. 06 (MNA) – The IRGC Hamzah Sayyid al-Shuhada Base stationed in northwest Iran announced the seizure of a shipment of weapons and ammunition from terrorist separatist groups.",
@@ -2114,7 +1800,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 57,
+   "priority": 56,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2161,41 +1847,6 @@
    "titleDe": "Stablecoins werden ohne Banken nicht skalieren"
   },
   {
-   "id": "TASS:First round of talks with US envoys ends in Kiev",
-   "title": "First round of talks with US envoys ends in Kiev",
-   "text": "According to Reuters, national security advisers to the British, French, and German leaders have arrived in Kiev to take part in the talks",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/world/2183351",
-   "date": "2026-09-06T14:56:28.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 39,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Erste Gesprächsrunde mit US-Gesandten endet in Kiew"
-  },
-  {
    "id": "U.Today:Dogecoin's Ten-Cent Dream Nears Reality as Price Secures Key Breakout",
    "title": "Dogecoin's Ten-Cent Dream Nears Reality as Price Secures Key Breakout",
    "text": "The immediate question is whether Dogecoin can convert its latest breakout into a sustained move above $0.10.",
@@ -2230,41 +1881,6 @@
    ],
    "alsoIn": [],
    "titleDe": "Der zehncentige Traum von Dogecoin nähert sich der Realität, als der Preis einen wichtigen Ausbruch erreicht"
-  },
-  {
-   "id": "TASS:Russian forces strike two Ukrainian army’s logistics centers in Odessa Region",
-   "title": "Russian forces strike two Ukrainian army’s logistics centers in Odessa Region",
-   "text": "According to the ministry, Geran-4 Seeker drones have state-of-the-art electronic guidance system that makes it possible for the drone to independently adjust its trajectory before hitting a target",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/defense/2183349",
-   "date": "2026-09-06T14:41:33.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 30,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Russische Streitkräfte greifen zwei Logistikzentren der ukrainischen Armee in der Region Odessa an"
   },
   {
    "id": "U.Today:Peter Brandt Revives His Legendary 2019 Parabolic Target for Bitcoin",
@@ -2363,7 +1979,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 36,
+   "priority": 35,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -2711,7 +2327,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2746,7 +2362,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 54,
+   "priority": 53,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3130,7 +2746,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3164,7 +2780,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3268,7 +2884,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3582,7 +3198,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3663,45 +3279,6 @@
    ],
    "alsoIn": [],
    "titleDe": "7 Satoshi‑Era Bitcoin‑Miner erwachen nach 16,5 Jahren"
-  },
-  {
-   "id": "Mehr News:OIC denounces US strike on Iranian tanker in Persian Gulf",
-   "title": "OIC denounces US strike on Iranian tanker in Persian Gulf",
-   "text": "TEHRAN, Sep. 06 (MNA) – Iran’s mission to the Organization of the Islamic Cooperation (OIC) has strongly condemned the US attack on the Iranian oil tanker, calling it a ‘cowardly attack’.",
-   "source": "Mehr News",
-   "staatlich": true,
-   "url": "https://en.mehrnews.com/news/247487/OIC-denounces-US-strike-on-Iranian-tanker-in-Persian-Gulf",
-   "date": "2026-09-06T09:13:47.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Militärschlag"
-   ],
-   "scores": {
-    "crypto": -0.405,
-    "stocks": -0.405,
-    "gold": 0.203,
-    "usd": 0.135
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Militärschlag)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 41,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "OIC verurteilt US-Angriff auf iranischen Tanker im Persischen Golf"
   },
   {
    "id": "Cointelegraph:Tether-backed Orionx to shut down after audit flags $7M custody gap",
@@ -3833,7 +3410,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3903,7 +3480,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 15,
+   "priority": 14,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4539,7 +4116,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 5,
+  "uebersetzt": 4,
   "fehler": null
  }
 }
