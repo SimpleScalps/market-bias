@@ -73,8 +73,20 @@ const GEGENPROBE_MAX = 3;
  * des letzten Durchgangs steht im Urteilsspeicher selbst - also in genau dem
  * Eintrag, den der Nachlauf ohnehin schreibt, und damit konsistent zu ihm.
  */
-const NACHZIEHEN_MAX = 3;
-const NACHZIEHEN_ABSTAND_MS = 10 * 60_000;
+/*
+ * Wie zuegig der Bestand nachgezogen wird.
+ *
+ * Frueher drei Meldungen alle zehn Minuten - fuer den Zulauf reichte das, denn
+ * neue Meldungen werden ohnehin sofort geprueft. Als aber alle 82 Urteile
+ * wegen verschaerfter Regeln neu zu faellen waren, haette dieser Takt vier
+ * einhalb Stunden gebraucht, in denen ein erfundener Name sichtbar blieb.
+ *
+ * Fuenf alle fuenf Minuten kosten dieselbe Summe - nur schneller. Die Grenze
+ * setzt das Minutenkontingent des Modells: fuenf Anfragen zu je rund 830 Token
+ * sind gut 4.000 von 8.000 je Minute, es bleibt Luft fuer Uebersetzungen.
+ */
+const NACHZIEHEN_MAX = 5;
+const NACHZIEHEN_ABSTAND_MS = 5 * 60_000;
 
 /*
  * Wie oft eine Meldung hoechstens vergeblich geprueft wird.
@@ -1396,8 +1408,8 @@ async function pushen(env, ctx, neueItems) {
     // handelt, soll es vorher wissen.
     top.kiWiderspruch
       ? (sprache === 'de'
-          ? `Zweitmeinung weicht ab: ${top.ki.grund}`
-          : `Second opinion differs: ${top.ki.grund}`)
+          ? `KI-Analyse weicht ab: ${top.ki.grund}`
+          : `AI analysis differs: ${top.ki.grund}`)
       : '',
     treffer.length > 1 ? `+${treffer.length - 1} ${sprache === 'de' ? 'weitere' : 'more'}` : '',
   ].filter(Boolean).join('\n');
