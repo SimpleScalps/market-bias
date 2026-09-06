@@ -1,11 +1,79 @@
 {
- "updated": "2026-09-06T14:18:32.768Z",
+ "updated": "2026-09-06T14:28:50.267Z",
  "regime": "policy",
- "count": 81,
+ "count": 80,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "Al Jazeera:Why potluck parties are making a big comeback in America",
+   "title": "Why potluck parties are making a big comeback in America",
+   "text": "As Americans spend less time socialising, communities are rediscovering an old way of bringing people together.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/features/longform/2026/9/6/why-potluck-parties-are-making-a-big-comeback-in-america?traffic_source=rss",
+   "date": "2026-09-06T14:19:23.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Warum Potluck-Partys in Amerika wieder aufleben"
+  },
+  {
+   "id": "Al Jazeera:China, Nepal race to find thousands still missing 12 days after floods",
+   "title": "China, Nepal race to find thousands still missing 12 days after floods",
+   "text": "More than 5,500 people are still missing in China and Nepal after catastrophic floods across the two countries.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/6/china-nepal-race-to-find-thousands-still-missing-12-days-after-floods?traffic_source=rss",
+   "date": "2026-09-06T14:14:07.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 62,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "China, Nepal rennen, um Tausende noch vermisster 12 Tage nach Überschwemmungen"
+  },
   {
    "id": "Benzinga:Toncoin (TON) Price Prediction 2025, 2026, 2027-2030",
    "title": "Toncoin (TON) Price Prediction 2025, 2026, 2027-2030",
@@ -41,6 +109,40 @@
    "titleDe": "Toncoin (TON) Preisvorhersage 2025, 2026, 2027-2030"
   },
   {
+   "id": "Al Jazeera:What the US militarisation of Latin America could look like",
+   "title": "What the US militarisation of Latin America could look like",
+   "text": "More US military involvement and larger regional defence budgets mean less social spending and worse democracy outcomes.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/opinions/2026/9/6/what-the-us-militarisation-of-latin-america-could-look-like?traffic_source=rss",
+   "date": "2026-09-06T14:10:35.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 45,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Wie die US-Militärisierung Lateinamerikas aussehen könnte"
+  },
+  {
    "id": "BBC World:Dozens feared trapped in collapsed building in Delhi",
    "title": "Dozens feared trapped in collapsed building in Delhi",
    "text": "As many as 50 people are thought to have been inside the five-storey hostel when it came down.",
@@ -62,7 +164,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -73,6 +175,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Dutzende vermutet in eingestürztem Gebäude in Delhi gefangen"
+  },
+  {
+   "id": "Al Jazeera:Reform UK says Britain is broken. Birmingham tells another story",
+   "title": "Reform UK says Britain is broken. Birmingham tells another story",
+   "text": "The party's gains in Britain's most diverse major city are real, but they are not a verdict against multiculturalism.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/opinions/2026/9/6/reform-uk-says-britain-is-broken-birmingham-tells-another-story?traffic_source=rss",
+   "date": "2026-09-06T14:01:39.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Reform UK sagt, Großbritannien sei zerbrochen. Birmingham erzählt eine andere Geschichte"
   },
   {
    "id": "CoinDesk:Better and Coinbase’s bitcoin-backed mortgages can reuse borrowers’ collateral",
@@ -96,7 +232,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 52,
+   "priority": 51,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -200,7 +336,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -234,7 +370,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -613,7 +749,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -683,7 +819,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -719,7 +855,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -787,7 +923,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -927,7 +1063,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -961,7 +1097,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 48,
+   "priority": 47,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1044,40 +1180,6 @@
    "titleDe": "Shiba Inu (SHIB) fügt in 24 Stunden außergewöhnliche 75 Milliarden zu den Börsen hinzu"
   },
   {
-   "id": "Al Jazeera:Can you guess the real size of each country on the new world map?",
-   "title": "Can you guess the real size of each country on the new world map?",
-   "text": "Pick which country is bigger, then watch it morph from Mercator to Equal Earth projection to see how close you were.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/can-you-guess-the-real-size-of-each-country-on-the-new-world-map?traffic_source=rss",
-   "date": "2026-09-06T11:15:09.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 27,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Können Sie die wahre Größe jedes Landes auf der neuen Weltkarte erraten?"
-  },
-  {
    "id": "BeInCrypto:Nike Exits the S&P 100 Index. 4 Tech Stocks Move In",
    "title": "Nike Exits the S&P 100 Index. 4 Tech Stocks Move In",
    "text": "Nike drops out of the S&P 100 on September 21. Dell, Palo Alto, Arista and Sandisk move in.",
@@ -1112,40 +1214,6 @@
    "titleDe": "Nike verlässt den S&P 100 Index. Vier Technologiewerte treten ein"
   },
   {
-   "id": "Al Jazeera:Photos: Gaza holds funeral for 100 Palestinians recovered from rubble",
-   "title": "Photos: Gaza holds funeral for 100 Palestinians recovered from rubble",
-   "text": "Gaza families hold mass funeral for 100 people recovered from rubble in Zeitoun neighbourhood.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/gallery/2026/9/6/photos-gaza-holds-funeral-for-100-palestinians-recovered-from-rubble?traffic_source=rss",
-   "date": "2026-09-06T11:13:50.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 57,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Fotos: Gaza richtet Beerdigung für 100 Palästinenser ein, die aus Trümmern gerettet wurden"
-  },
-  {
    "id": "BeInCrypto:Poland's Crypto Law Fails a Third Time, Leaving the Only Gap in Europe",
    "title": "Poland's Crypto Law Fails a Third Time, Leaving the Only Gap in Europe",
    "text": "Poland remains the only EU member state without a functioning national framework for MiCA, after the Sejm again failed to override President Karol Nawrocki’s veto of crypto regulation. Friday’s vote, the third such attempt, fell 25 votes short of the three-fifths majority required to reverse his decision. Inside Poland’s Third Crypto Veto and Nawrocki’s Reasoning",
@@ -1178,78 +1246,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Polen scheitert beim Kryptogesetz zum dritten Mal und lässt die einzige Lücke in Europa offen"
-  },
-  {
-   "id": "Al Jazeera:US, Iran engaged in tanker war: Where is the months-long conflict headed?",
-   "title": "US, Iran engaged in tanker war: Where is the months-long conflict headed?",
-   "text": "The US and Iran attack tankers in Strait of Hormuz, as the two sides try to exert control over the strategic waterway.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/us-iran-engaged-in-tanker-war-where-is-the-months-long-conflict-headed?traffic_source=rss",
-   "date": "2026-09-06T10:49:22.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Eskalation"
-   ],
-   "scores": {
-    "crypto": -0.36,
-    "stocks": -0.36,
-    "gold": 0.18,
-    "usd": 0.12
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 62,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US, Iran im Tankerkrieg: Wohin geht der monatelange Konflikt?"
-  },
-  {
-   "id": "Al Jazeera:Palestinians in Gaza bury remains of 100 people recovered from rubble",
-   "title": "Palestinians in Gaza bury remains of 100 people recovered from rubble",
-   "text": "The remains of thousands more people are believed to be buried under destroyed and damaged buildings in Gaza.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/palestinians-in-gaza-bury-remains-of-100-people-recovered-from-rubble?traffic_source=rss",
-   "date": "2026-09-06T10:42:14.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 56,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Palästinenser in Gaza begraben Überreste von 100 Personen, die aus Trümmern gefunden wurden"
   },
   {
    "id": "U.Today:Two Hot New Cryptos From Robinhood and BNB Officially Listed on Binance Futures: Full Details",
@@ -1413,7 +1409,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1693,7 +1689,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 16,
+   "priority": 15,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -1727,7 +1723,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1829,7 +1825,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2649,46 +2645,6 @@
    "titleDe": "Solana dominiert die RWA-Ströme und zieht Nettoströme in Höhe von 348 Millionen $ ein"
   },
   {
-   "id": "BeInCrypto:XRP Price Shows the Same Pattern That Sparked a 650% Rally",
-   "title": "XRP Price Shows the Same Pattern That Sparked a 650% Rally",
-   "text": "XRP is drawing renewed attention as its chart structure closely mirrors a formation seen in 2024, just before a sharp upward move. Analysts tracking the altcoin note that the current setup echoes the sequence that preceded that earlier 650% advance. Why This XRP Setup Looks Familiar to Chart Watchers At the time of writing, XRP",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/xrp-price-repeats-pattern-650-percent-rally/",
-   "date": "2026-09-05T14:20:47.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Kursanstieg"
-   ],
-   "scores": {
-    "crypto": 0.36,
-    "stocks": 0.36,
-    "gold": -0.18,
-    "usd": -0.12
-   },
-   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
-   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 32,
-   "label": "bullish",
-   "labelText": "Bullish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "XRP"
-   ],
-   "alsoIn": [],
-   "titleDe": "XRP-Preis zeigt das gleiche Muster, das einen Anstieg von 650 % auslöste"
-  },
-  {
    "id": "BBC World:What different world maps get right - and what they get wrong",
    "title": "What different world maps get right - and what they get wrong",
    "text": "As the UN adopts a new world map to reflect Africa's true size, let's take a closer look at what different maps get right and wrong.",
@@ -2710,7 +2666,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2828,7 +2784,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 2,
+  "uebersetzt": 4,
   "fehler": null
  }
 }
