@@ -1,11 +1,79 @@
 {
- "updated": "2026-09-06T07:54:10.964Z",
+ "updated": "2026-09-06T08:04:24.254Z",
  "regime": "policy",
- "count": 81,
+ "count": 79,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "Al Jazeera:How do you arrest 50,000 people quietly?",
+   "title": "How do you arrest 50,000 people quietly?",
+   "text": "ICE agents arrested an average of one person every 54 seconds in July. AJLabs examines a record month for deportations.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/by-the-numbers-3/2026/9/6/how-do-you-arrest-50000-people-quietly?traffic_source=rss",
+   "date": "2026-09-06T07:45:08.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Wie verhaftet man 50.000 Menschen leise?"
+  },
+  {
+   "id": "Al Jazeera:Ireland’s boxing great Katie Taylor bows out as undisputed champion",
+   "title": "Ireland’s boxing great Katie Taylor bows out as undisputed champion",
+   "text": "The 40-year-old retained her WBA, IBF and WBO super-lightweight belts to become the undisputed champion for third time.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/2026/9/6/irelands-boxing-great-katie-taylor-bows-out-as-undisputed-champion?traffic_source=rss",
+   "date": "2026-09-06T07:37:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Irlands Boxlegende Katie Taylor tritt als uneingeschränkte Meisterin zurück"
+  },
   {
    "id": "Al Jazeera:FIFA’s Infantino avoids questions on his future amid growing uncertainty",
    "title": "FIFA’s Infantino avoids questions on his future amid growing uncertainty",
@@ -96,7 +164,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -166,7 +234,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -177,6 +245,42 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Vulkanausbruch führt zu Flugstopp am wichtigsten Flughafen Indonesiens"
+  },
+  {
+   "id": "Al Jazeera:Egyptian TV presenter Sarah Khalifa sentenced to death in drugs case",
+   "title": "Egyptian TV presenter Sarah Khalifa sentenced to death in drugs case",
+   "text": "Cairo court sentences TV host Sarah Khalifa and 11 others to death over drug trafficking ring.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/6/egyptian-tv-presenter-sentenced-to-death-in-major-drug-case?traffic_source=rss",
+   "date": "2026-09-06T05:04:04.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "BBC World"
+   ],
+   "titleDe": "Ägyptische Fernsehmoderatorin Sarah Khalifa zu Todesstrafe verurteilt wegen Drogenfall"
   },
   {
    "id": "Al Jazeera:Flames burst from Qantas plane engine after New Zealand takeoff",
@@ -302,7 +406,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -383,44 +487,6 @@
    "titleDe": "Indonesiens Hauptflughafen legt Flüge wegen Anak Krakatau-Ausbruch aus"
   },
   {
-   "id": "Al Jazeera:Nearly 9,000 killed in Israeli attacks on Lebanon since 2023",
-   "title": "Nearly 9,000 killed in Israeli attacks on Lebanon since 2023",
-   "text": "More than 179 attacks on ambulance crews recorded since March 2, killing 179 healthcare workers.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/nearly-9000-killed-in-israeli-attacks-on-lebanon-since-2023?traffic_source=rss",
-   "date": "2026-09-06T02:56:31.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Angriff"
-   ],
-   "scores": {
-    "crypto": -0.405,
-    "stocks": -0.405,
-    "gold": 0.203,
-    "usd": 0.135
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Angriff)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 35,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Fast 9.000 Menschen wurden seit 2023 bei israelischen Angriffen auf Libanon getötet"
-  },
-  {
    "id": "BeInCrypto:Alpine F1 Fan Token Rises After Italian GP Drama",
    "title": "Alpine F1 Fan Token Rises After Italian GP Drama",
    "text": "The Alpine F1 Team Fan Token climbed on September 5, trading near $0.3557 with a 24-hour gain of roughly 3.6%. The move coincided with a stunning qualifying result at the Italian Grand Prix in Monza, where Pierre Gasly claimed his first career pole position for Alpine. How Gasly’s Pole Put Alpine Back on the Map",
@@ -442,7 +508,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 43,
+   "priority": 42,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -487,78 +553,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Beobachten: Moment, 64-jährige nepalesische Frau wird lebend in schlammvergrabenen Haus gefunden"
-  },
-  {
-   "id": "Al Jazeera:‘People laughed at me’: Indian youth cleans up a trash-filled river",
-   "title": "‘People laughed at me’: Indian youth cleans up a trash-filled river",
-   "text": "A 21-year-old student in India’s Madhya Pradesh has single-handedly cleaned up a trash-filled river.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/people-laughed-at-me-indian-youth-cleans-up-a-trash-filled-river?traffic_source=rss",
-   "date": "2026-09-06T01:38:52.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 22,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "„Die Leute haben gelacht“: Indisches Jugendlicher säubert einen mit Müll gefüllten Fluss"
-  },
-  {
-   "id": "Al Jazeera:Netanyahu boasts about bombing Qatar, says Gaza funds used for aid",
-   "title": "Netanyahu boasts about bombing Qatar, says Gaza funds used for aid",
-   "text": "Netanyahu has called Qatar a 'hostile' state and boasted that Israel bombed the country.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/netanyahu-boasts-about-bombing-qatar-says-gaza-funds-used-for-aid?traffic_source=rss",
-   "date": "2026-09-06T01:02:08.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Militärschlag"
-   ],
-   "scores": {
-    "crypto": -0.495,
-    "stocks": -0.495,
-    "gold": 0.248,
-    "usd": 0.165
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Militärschlag)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 59,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Netanyahu prahlt mit Bombenangriff auf Katar, erklärt, dass Gaza-Gelder für Hilfsmaßnahmen verwendet wurden"
   },
   {
    "id": "BeInCrypto:Machi Big Brother Sent FRIEND Up 1,500%. Then Ditched $1M Deal",
@@ -796,7 +790,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation, retaliation threat, attack)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 88,
+   "priority": 87,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -830,7 +824,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -864,7 +858,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 16,
+   "priority": 15,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -875,40 +869,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Zcash sieht sich bei Short‑Squeeze einem Liquidationsungleichgewicht von 424 % gegenüber"
-  },
-  {
-   "id": "BBC World:TV presenter among 11 sentenced to death in Egypt drugs case",
-   "title": "TV presenter among 11 sentenced to death in Egypt drugs case",
-   "text": "Sarah Khalifa is best known for her TV programme Mission Impossible which dealt with crime issues.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/c5y7gk9knnlo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-05T21:29:38.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 27,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "TV-Moderator unter 11 Verurteilten zum Tode in Ägypten wegen Drogenfall"
   },
   {
    "id": "BBC World:US envoys set for Ukraine talks after meeting Putin in Russia",
@@ -966,7 +926,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 15,
+   "priority": 14,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1106,7 +1066,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 64,
+   "priority": 63,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -1351,7 +1311,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1385,7 +1345,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1453,7 +1413,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2771,46 +2731,6 @@
    "titleDe": "Ripple-CEO kritisiert 11‑Milliarden‑Dollar‑Goldaktion: Kann Krypto es besser machen?"
   },
   {
-   "id": "Cointelegraph:Bitcoin ETF inflows hit $3.8B in strongest three-week stretch of 2026",
-   "title": "Bitcoin ETF inflows hit $3.8B in strongest three-week stretch of 2026",
-   "text": "US spot Bitcoin ETFs drew nearly $1 billion in the latest week as Friday inflows stayed positive despite Bitcoin briefly falling below $79,000.",
-   "source": "Cointelegraph",
-   "url": "https://cointelegraph.com/markets/bitcoin-etf-inflows-3-8-billion-strongest-three-week-run-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "date": "2026-09-05T08:03:06.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "ETF-Zuflüsse"
-   ],
-   "scores": {
-    "crypto": 0.7,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "why": "Direkt kryptopositive Nachricht. (Signale: ETF-Zuflüsse)",
-   "whyEn": "Directly crypto-positive news. (signals: ETF inflows)",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 37,
-   "label": "strong_bullish",
-   "labelText": "Stark Bullish",
-   "impactLevel": "high",
-   "duration": "intraday",
-   "eventType": "ETF-Flüsse",
-   "eventTypeEn": "ETF flows",
-   "scope": "market",
-   "coins": [
-    "BTC"
-   ],
-   "alsoIn": [],
-   "titleDe": "Bitcoin-ETF-Zuflüsse erreichen 3,8 Mrd. $ im stärksten Dreierwochenabschnitt 2026"
-  },
-  {
    "id": "Cointelegraph:Here’s what happened in crypto today",
    "title": "Here’s what happened in crypto today",
    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
@@ -2846,7 +2766,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 3,
   "fehler": null
  }
 }
