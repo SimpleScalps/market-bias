@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-06T22:18:37.994Z",
+ "updated": "2026-09-06T22:19:14.257Z",
  "regime": "policy",
  "count": 149,
  "errors": [
@@ -65,7 +65,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -100,7 +100,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2775,7 +2775,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 54,
+   "priority": 53,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2810,7 +2810,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4331,7 +4331,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 16,
+   "priority": 15,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5384,7 +5384,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 22,
+  "uebersetzt": 0,
   "fehler": null
  },
  "rubriken": {
