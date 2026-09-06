@@ -1,11 +1,45 @@
 {
- "updated": "2026-09-06T08:04:24.254Z",
+ "updated": "2026-09-06T08:20:34.863Z",
  "regime": "policy",
  "count": 79,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "Al Jazeera:Zverev and Gauff ease into US Open last 16 but Alex Eala falls to Jovic",
+   "title": "Zverev and Gauff ease into US Open last 16 but Alex Eala falls to Jovic",
+   "text": "Filipina Alex Eala lost a three-set thriller to American Iva Jovic, as Naomi Osaka overcame Elise Mertens to progress.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/2026/9/6/zverev-and-gauff-ease-into-us-open-last-16-but-alex-eala-falls-to-jovic?traffic_source=rss",
+   "date": "2026-09-06T07:59:04.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 44,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Zverev und Gauff kommen ins US Open Viertelfinale, Alex Eala verliert gegen Jovic"
+  },
   {
    "id": "Al Jazeera:How do you arrest 50,000 people quietly?",
    "title": "How do you arrest 50,000 people quietly?",
@@ -75,6 +109,42 @@
    "titleDe": "Irlands Boxlegende Katie Taylor tritt als uneingeschränkte Meisterin zurück"
   },
   {
+   "id": "BBC World:TV presenter among 12 sentenced to death in Egypt drugs case",
+   "title": "TV presenter among 12 sentenced to death in Egypt drugs case",
+   "text": "Sarah Khalifa is best known for her TV programme Mission Impossible which dealt with crime issues.",
+   "source": "BBC World",
+   "url": "https://www.bbc.co.uk/news/articles/c5y7gk9knnlo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-06T07:20:37.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "Al Jazeera"
+   ],
+   "titleDe": "TV-Moderator unter 12 Verurteilten zum Tode in Ägypten bei Drogenfall"
+  },
+  {
    "id": "Al Jazeera:FIFA’s Infantino avoids questions on his future amid growing uncertainty",
    "title": "FIFA’s Infantino avoids questions on his future amid growing uncertainty",
    "text": "Upon arrival at the U-20 Women's World Cup, Infantino remained tight-lipped about his re-election as FIFA president.",
@@ -96,7 +166,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -200,7 +270,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -245,42 +315,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Vulkanausbruch führt zu Flugstopp am wichtigsten Flughafen Indonesiens"
-  },
-  {
-   "id": "Al Jazeera:Egyptian TV presenter Sarah Khalifa sentenced to death in drugs case",
-   "title": "Egyptian TV presenter Sarah Khalifa sentenced to death in drugs case",
-   "text": "Cairo court sentences TV host Sarah Khalifa and 11 others to death over drug trafficking ring.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/egyptian-tv-presenter-sentenced-to-death-in-major-drug-case?traffic_source=rss",
-   "date": "2026-09-06T05:04:04.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [
-    "BBC World"
-   ],
-   "titleDe": "Ägyptische Fernsehmoderatorin Sarah Khalifa zu Todesstrafe verurteilt wegen Drogenfall"
   },
   {
    "id": "Al Jazeera:Flames burst from Qantas plane engine after New Zealand takeoff",
@@ -440,7 +474,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -451,40 +485,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Deutsche wählen im Osten, AfD strebt Macht an"
-  },
-  {
-   "id": "Al Jazeera:Indonesia’s main airport suspends flights due to Anak Krakatau eruption",
-   "title": "Indonesia’s main airport suspends flights due to Anak Krakatau eruption",
-   "text": "Volcanic ash from Mount Anak Krakatau disrupts flights at Soekarno-Hatta International airport, near Jakarta.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/indonesias-main-airport-suspends-flights-due-to-anak-krakatoa-eruption?traffic_source=rss",
-   "date": "2026-09-06T03:38:23.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 29,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Indonesiens Hauptflughafen legt Flüge wegen Anak Krakatau-Ausbruch aus"
   },
   {
    "id": "BeInCrypto:Alpine F1 Fan Token Rises After Italian GP Drama",
@@ -614,7 +614,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -648,7 +648,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -682,7 +682,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -750,7 +750,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -892,7 +892,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 53,
+   "priority": 52,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -960,7 +960,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -994,7 +994,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 11,
+   "priority": 10,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1103,7 +1103,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 10,
+   "priority": 9,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1137,7 +1137,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1207,7 +1207,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 9,
+   "priority": 8,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1241,7 +1241,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1277,7 +1277,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1910,7 +1910,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2766,7 +2766,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 3,
+  "uebersetzt": 2,
   "fehler": null
  }
 }
