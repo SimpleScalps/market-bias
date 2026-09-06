@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v50';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v51';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -688,9 +688,31 @@ function detailText(n) {
     ${zeile(t.dRelevanz, `${n.priority}/100`)}
     ${zeile(t.dQuelle, n.source + (n.alsoIn?.length ? ` +${n.alsoIn.length}` : ''))}</div>`);
 
-  // 6) Die Annahme, auf der alles beruht
-  blocks.push(`<div class="dblock"><h4>${t.detailAnnahme}</h4>
-    <p class="dtext">${data.regime === 'growth' ? t.annahmeGrowth : t.annahmePolicy}</p></div>`);
+  /*
+   * 6) Die Annahme, auf der die Bewertung beruht — die zutreffende.
+   *
+   * Hier stand bisher bedingungslos die Zinskanal-Erklärung, auch unter einer
+   * Meldung über Deeskalation in der Ukraine mit geldpolitischem Impuls 0.00.
+   * Das ist nicht bloß überflüssig, sondern irreführend: Es behauptet, die
+   * Einstufung komme über Zinsen und Liquidität zustande, während sie über die
+   * Risikoneigung kam. Wer danach handelt, hält die falsche Ursache für die
+   * richtige.
+   *
+   * Welcher Kanal galt, sagen die Daten selbst: Ein geldpolitischer Impuls
+   * ungleich null oder ein benannter Kanal heißt Zinsweg. Bewegt sich die
+   * Bewertung ohne beides, lief sie über die Risikoneigung. Bewegt sie sich
+   * gar nicht, wurde nichts angenommen — dann bleibt der Block weg.
+   */
+  const ueberZins = !!n.channel || (typeof n.hawkish === 'number' && n.hawkish !== 0);
+  const bewegt = Math.abs(n.scores?.[asset] ?? 0) > 0.001;
+  const annahme = ueberZins
+    ? (data.regime === 'growth' ? t.annahmeGrowth : t.annahmePolicy)
+    : (bewegt ? t.annahmeRisiko : null);
+
+  if (annahme) {
+    blocks.push(`<div class="dblock"><h4>${t.detailAnnahme}</h4>
+      <p class="dtext">${annahme}</p></div>`);
+  }
 
   return blocks.join('');
 }

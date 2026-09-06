@@ -34,6 +34,17 @@ export const FEEDS = [
    * Artikelabruf beim Nachfragen scheitert aber - was ohnehin egal ist, weil
    * Reuters Bots sperrt.
    *
+   * Sport und Lebensart sind ausgeschlossen - gemessen, nicht vermutet: Ohne
+   * den Ausschluss war ueber die Haelfte der Ausbeute Sport (10 von 19), im
+   * Bestand 16 erkennbare Sportmeldungen auf 78 Reuters-Eintraege. Die
+   * Relevanzpruefung sortiert sie zwar aus, aber sie belegen Plaetze im
+   * 300er-Bestand und stoeren die Sortierung nach Eingang.
+   *
+   * Ausgeschlossen statt eingegrenzt: Eine Positivliste aus world, markets und
+   * business lieferte zwar null Sport, verlor aber auch Rubriken, an die
+   * niemand denkt. Der Ausschluss behaelt alles Uebrige - gemessen 8 statt 7
+   * brauchbare Meldungen.
+   *
    * Das Zeitfenster ist gemessen, nicht geschaetzt. when:1h liefert 7
    * Eintraege in 10 KB, juengster 14 Minuten alt. when:12h und when:24h
    * liefern zwar hundert, aber in 111 bzw. 118 KB - und ihre juengste Meldung
@@ -42,7 +53,7 @@ export const FEEDS = [
    * fallen dabei hinten heraus. Die enge Abfrage ist also frischer und
    * zugleich elfmal kleiner - was nach dem CPU-Ueberlauf zaehlt.
    */
-  { url: 'https://news.google.com/rss/search?q=when:1h+site:reuters.com&hl=en-US&gl=US&ceid=US:en',
+  { url: 'https://news.google.com/rss/search?q=when%3A1h+site%3Areuters.com+-site%3Areuters.com%2Fsports+-site%3Areuters.com%2Flifestyle&hl=en-US&gl=US&ceid=US:en',
     source: 'Reuters', tags: ['Weltlage'], fast: true, titelZusatz: / - Reuters$/ },
 
   /*
