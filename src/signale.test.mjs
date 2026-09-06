@@ -188,3 +188,61 @@ test('Kernenergie ist keine Vergeltungsdrohung', () => {
     ['Russia raises nuclear threat level', '-'],
   ]);
 });
+
+/*
+ * Fehlalarme: Alltagsmeldungen, die kein Signal auslösen dürfen.
+ *
+ * Anlass war „Video shows damaged Amazon cargo plane after crash" — das Wort
+ * „crash" allein machte daraus einen Kurssturz. Die Suche danach förderte
+ * neun weitere zutage: ein Autounfall, eine stolpernde Turnerin, eine
+ * militärische Niederlage („rout"), eine Android-Standardeinstellung
+ * („default"), eine Muskelstudie („contraction"), ein Kinoflop („bombs at the
+ * box office"), Übergriffe auf Pflegekräfte, ein Befangenheitsfall („conflict
+ * of interest") und ein beruflicher Neuanfang („career pivot").
+ *
+ * Jedes dieser Wörter ist im Finanzkontext richtig — und außerhalb davon
+ * falsch. Die Regeln verlangen den Zusammenhang jetzt ausdrücklich.
+ */
+test('Unglücke und Alltag lösen kein Marktsignal aus', () => {
+  pruefe([
+    ['Video shows damaged Amazon cargo plane after crash', '0'],
+    ['Car crash kills three on motorway near Lyon', '0'],
+    ['Train crash injures dozens in India', '0'],
+    ['Gymnast tumbles during floor routine', '0'],
+    ['Singer slumps on stage during concert', '0'],
+    ['Army suffers rout at the hands of rebels', '0'],
+    ['Default setting changed in latest Android update', '0'],
+    ['Muscle contraction study published in Nature', '0'],
+    ['Invasion of privacy claim filed against tech firm', '0'],
+    ['Judge cites conflict of interest in recusal', '0'],
+    ['New film bombs at the box office', '0'],
+    ['Bomb threat closes school for the day', '0'],
+    ['Assaults on nurses rise, union warns', '0'],
+    ['Career pivot leads chef to open bakery', '0'],
+    ['Trump holds campaign rally in Ohio', '0'],
+    ['Temperatures hit record high in Athens', '0'],
+    ['Police raids uncover counterfeit workshop', '0'],
+    ['Match paused after floodlight failure', '0'],
+    ['Shark attack closes beach in Australia', '0'],
+    ['Heart attack risk rises with poor sleep, study finds', '0'],
+  ]);
+});
+
+// Die Gegenprobe: Dieselben Wörter im Finanzkontext müssen weiter greifen.
+test('Im Marktzusammenhang greifen dieselben Wörter weiterhin', () => {
+  pruefe([
+    ['Wall Street plunges in broad sell-off', '-'],
+    ['Stocks crash as recession fears bite', '-'],
+    ['Bitcoin tumbles below $60,000', '-'],
+    ['Bond rout deepens as yields spike', '-'],
+    ['Bear market grips European equities', '-'],
+    ['Flash crash hits Treasuries', '-'],
+    ['Moodys downgrades US credit rating', '-'],
+    ['Argentina defaults on sovereign debt', '-'],
+    ['China reports GDP contraction in Q3', '-'],
+    ['Russia launches invasion of neighbouring state', '-'],
+    ['At least 5 killed in Russian attacks on Ukraine', '-'],
+    ['Air raid hits port infrastructure', '-'],
+    ['Fed holds rates steady, signals pause', '+'],
+  ]);
+});

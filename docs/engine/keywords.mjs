@@ -30,7 +30,14 @@ export const KEYWORDS = [
   { re: /\bdovish\b/, type: 'hawkish', weight: -0.6, label: 'dovish', labelEn: 'dovish' },
   { re: /\b(quantitative easing|\bqe\b|stimulus|liquidity injection)\b/, type: 'hawkish', weight: -0.7, label: 'geldpolitische Lockerung', labelEn: 'monetary easing' },
   { re: /\b(disinflation|inflation (cools|eases|slows|falls|declines))\b/, type: 'hawkish', weight: -0.65, label: 'Inflation kühlt ab', labelEn: 'inflation cooling' },
-  { re: /\b(fed )?(pivot|pause)\b/, type: 'hawkish', weight: -0.4, label: 'Fed-Pause', labelEn: 'Fed pause' },
+  /*
+   * Eine Wende in der Geldpolitik, keine im Lebenslauf.
+   *
+   * "Career pivot leads chef to open bakery" wurde als Fed-Pause gewertet und
+   * damit bullish. Auch eine Spielunterbrechung ist eine "pause". Gefordert
+   * ist deshalb die Notenbank in der Nähe.
+   */
+  { re: /\b(fed|fomc|ecb|boe|boj|snb|central bank|policy|rates?|hiking|tightening)\b[^.]{0,32}\b(pivot|pause)\b|\b(pivot|pause)\b[^.]{0,32}\b(fed|fomc|ecb|boe|boj|rate hikes?|tightening|policy)\b/, type: 'hawkish', weight: -0.4, label: 'Fed-Pause', labelEn: 'Fed pause' },
   { re: /\b(weak|soft|weaker.than.expected|cooling) (jobs|payrolls|employment|labou?r market)\b/, type: 'hawkish', weight: -0.55, label: 'schwacher Arbeitsmarkt', labelEn: 'weak labour market' },
 
   // ----- Rohstoff- und Energiepreise -----
@@ -63,8 +70,28 @@ export const KEYWORDS = [
   { re: /\b(stocks?|shares|equities|markets?|wall street|s&p|nasdaq|dow|dax|nikkei|ftse|bitcoin|btc|ether|eth|crypto\w*|gold|risk assets?)\b[^.]{0,28}\b(rally|rallies|surge[sd]?|soar[sd]?|jump[sd]?|record high|all.time high)\b|\b(rally|rallies|surge[sd]?|soar[sd]?|jump[sd]?)\b[^.]{0,28}\b(stocks?|shares|equities|markets?|wall street|s&p|nasdaq|dow|bitcoin|btc|crypto\w*|gold)\b/, type: 'risk', weight: 0.4, label: 'Kursanstieg', labelEn: 'price rally' },
   { re: /\b(ceasefire|truce|peace deal|de.escalat\w+|agreement reached|deal reached)\b/, type: 'risk', weight: 0.55, label: 'Entspannung', labelEn: 'de-escalation' },
   { re: /\b(optimism|risk.on|relief rally)\b/, type: 'risk', weight: 0.4, label: 'Risikofreude', labelEn: 'risk-on' },
-  { re: /\b(crash|plunge[sd]?|slump[sd]?|tumble[sd]?|sell.off|selloff|rout)\b/, type: 'risk', weight: -0.5, label: 'Kurssturz', labelEn: 'sell-off' },
-  { re: /\b(recession|contraction|downgrade[sd]?|default|bankrupt\w*|insolven\w+)\b/, type: 'risk', weight: -0.6, label: 'Konjunktur-/Kreditrisiko', labelEn: 'growth or credit risk' },
+  /*
+   * Ein Kurssturz braucht einen Markt - wie der Kursanstieg auch.
+   *
+   * "Video shows damaged Amazon cargo plane after crash" wurde als Kurssturz
+   * gewertet und damit bearish. Ebenso ein Autounfall, ein Zugunglück, eine
+   * stolpernde Turnerin ("tumbles") und ein Sänger, der auf der Bühne
+   * zusammensackt ("slumps"). Auch eine militärische Niederlage heisst "rout".
+   *
+   * Eindeutig bleiben nur die Fachbegriffe: Ein Ausverkauf oder ein
+   * Baerenmarkt kann nichts anderes meinen. Alles Uebrige verlangt ein
+   * Marktsubjekt in der Naehe.
+   */
+  { re: /\b(sell.?off|selloff|bear market|market rout|flash crash)\b|\b(stocks?|shares|equities|markets?|wall street|s&p|nasdaq|dow|dax|nikkei|ftse|bitcoin|btc|ether|eth|crypto\w*|gold|oil|yields?|bonds?|treasur\w+|dollar|futures|index|indices|risk assets?)\b[^.]{0,28}\b(crash\w*|plunge[sd]?|slump[sd]?|tumble[sd]?|rout|dive[sd]?|slide[sd]?|sink[s]?)\b|\b(crash\w*|plunge[sd]?|slump[sd]?|tumble[sd]?|dive[sd]?|slide[sd]?)\b[^.]{0,28}\b(stocks?|shares|equities|markets?|wall street|s&p|nasdaq|dow|bitcoin|btc|crypto\w*|gold|yields?|bonds?|dollar)\b/, type: 'risk', weight: -0.5, label: 'Kurssturz', labelEn: 'sell-off' },
+  /*
+   * Auch hier trennt der Zusammenhang.
+   *
+   * "Default setting changed in latest Android update" galt als Kreditrisiko,
+   * ebenso eine Studie ueber Muskelkontraktion. Rezession, Pleite und
+   * Zahlungsunfaehigkeit sind eindeutig; Kontraktion, Herabstufung und Ausfall
+   * sind es nur mit ihrem Gegenstand.
+   */
+  { re: /\b(recession|bankrupt\w*|insolven\w+|credit crunch)\b|\b(economic|economy|gdp|output|manufacturing|industrial|activity) contraction\b|\bcontraction in\b|\b(credit|ratings?|debt|sovereign|outlook) (rating )?downgrade[sd]?\b|\bdowngrade[sd]?\b[^.]{0,20}\b(rating|outlook|debt|credit|bond|stock|shares|to junk)\b|\b(debt|bond|loan|sovereign|payment|technical) default\b|\bdefault[s]? on\b/, type: 'risk', weight: -0.6, label: 'Konjunktur-/Kreditrisiko', labelEn: 'growth or credit risk' },
   { re: /\b(tariff[s]?|trade war|export ban|sanction[s]?|halt trade|stop trading with|trade restrictions?|embargo)\b/, type: 'risk', weight: -0.45, label: 'Handelskonflikt', labelEn: 'trade conflict' },
   { re: /\b(government shutdown|debt ceiling)\b/, type: 'risk', weight: -0.4, label: 'US-Haushaltsrisiko', labelEn: 'US fiscal risk' },
   { re: /\b(contagion|bank run|banking crisis|credit crunch)\b/, type: 'risk', weight: -0.7, label: 'Finanzstress', labelEn: 'financial stress' },
@@ -183,7 +210,15 @@ export const KRIEG_BILDLICH =
 
 // Geopolitik wirkt praktisch immer risk-off.
 export const GEOPOLITICS = [
-  { re: /\b(missile|air ?strike|airstrike|bomb\w*|shelling)\b/, weight: 0.55, label: 'Militärschlag', labelEn: 'military strike' },
+  /*
+   * "bomb" allein ist zweideutig.
+   *
+   * "New film bombs at the box office" und eine Bombendrohung an einer Schule
+   * wurden als Militärschlag gewertet, beide mit −0,49. Eindeutig sind nur die
+   * Formen, die militärisch vorkommen: Bombardierung, Luftangriff, Beschuss.
+   * Das bloße Wort braucht ein Ziel.
+   */
+  { re: /\b(missile|air ?strike|airstrike|bombing|bombard\w*|air raid|shelling)\b|\bbombs?\b[^.]{0,24}\b(city|cities|town|village|port|base|border|target\w*|kill\w*|civilians|infrastructure|positions?|troops)\b/, weight: 0.55, label: 'Militärschlag', labelEn: 'military strike' },
   /*
    * Waffengattung plus Wirkung.
    *
@@ -206,8 +241,22 @@ export const GEOPOLITICS = [
    * fehlendes Wort entschied ueber alles oder nichts.
    */
   { re: /\bstrikes?\b[^.]{0,40}\b(kill\w*|dead|killed|wounded|injur\w*|casualt\w*)\b/, weight: 0.5, label: 'Militärschlag', labelEn: 'military strike' },
-  { re: /\b(invasion|invade[sd]?|offensive launched)\b/, weight: 0.6, label: 'Invasion', labelEn: 'invasion' },
-  { re: /\b(war|conflict|hostilities|escalat\w+)\b/, weight: 0.4, label: 'Eskalation', labelEn: 'escalation' },
+  /*
+   * "Invasion of privacy" ist keine.
+   *
+   * Die Wendung ist im englischen Rechtsjournalismus haeufig und wurde als
+   * militaerische Invasion gewertet - stark bearish fuer eine Klage gegen ein
+   * Technikunternehmen. Dasselbe gilt fuer die Invasion von Arten oder
+   * Touristen.
+   */
+  { re: /\binvasion\b(?!\s+of\s+(privacy|species|tourists|ants|insects))|\binvade[sd]?\b|\boffensive launched\b/, weight: 0.6, label: 'Invasion', labelEn: 'invasion' },
+  /*
+   * "Conflict of interest" ist kein Konflikt in diesem Sinn.
+   *
+   * Die Wendung ist in Rechts- und Politikmeldungen häufig und wurde als
+   * Eskalation gewertet — bearish für eine Befangenheitsentscheidung.
+   */
+  { re: /\b(war|hostilities|escalat\w+)\b|\bconflict\b(?!\s+of\s+interest)/, weight: 0.4, label: 'Eskalation', labelEn: 'escalation' },
   /*
    * "nuclear" allein sagt nichts.
    *
@@ -222,5 +271,21 @@ export const GEOPOLITICS = [
    */
   { re: /\bnuclear\b[^.]{0,24}\b(weapon\w*|warhead\w*|strike\w*|attack\w*|test\w*|threat\w*|arsenal|bomb\w*|war\b|escalat\w*)\b|\b(weapon\w*|threat\w*|strike\w*|attack\w*|test\w*)\b[^.]{0,24}\bnuclear\b|\b(retaliat\w+|preemptive (strike|operation))\b/, weight: 0.5, label: 'Vergeltungsdrohung', labelEn: 'retaliation threat' },
   // Mit Plural: "Russian attacks on Ukraine" fiel sonst durch.
-  { re: /\b(attacks?|assaults?|raids?) on\b/, weight: 0.45, label: 'Angriff', labelEn: 'attack' },
+  /*
+   * Ein Angriff braucht ein Ziel von Gewicht.
+   *
+   * "Assaults on nurses rise, union warns" wurde als geopolitischer Angriff
+   * gewertet. Übergriffe im Alltag und Polizeirazzien bewegen keinen Markt —
+   * Angriffe auf Städte, Häfen, Truppen oder Versorgung sehr wohl.
+   */
+  /*
+   * Zwei Wege zum Ziel: ein gewichtiges Objekt — oder Opfer.
+   *
+   * Der Katalog allein reichte nicht. "At least 5 killed in Russian attacks on
+   * Ukraine" nennt ein Land, keinen Hafen, und die Toten stehen im Satz VOR
+   * dem Angriff. Deshalb wird beides im ganzen Titel gesucht statt in einem
+   * Fenster dahinter: irgendwo ein Angriff, irgendwo ein Ziel von Gewicht oder
+   * Opfer. Übergriffe im Alltag erfüllen weder das eine noch das andere.
+   */
+  { re: /^(?=[^]*\b(attacks?|assaults?|raids?|strikes?) on\b)(?=[^]*\b(city|cities|town|village|base|port|harbou?r|airport|airfield|border|troops|forces|positions?|infrastructure|convoy|ship|vessel|tanker|pipeline|refinery|grid|capital|region|province|territory|embassy|nuclear|military|army|navy|oil|energy|civilians|warship|kill\w*|dead|wounded|injur\w*|casualt\w*)\b)/, weight: 0.45, label: 'Angriff', labelEn: 'attack' },
 ];
