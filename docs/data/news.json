@@ -1,11 +1,49 @@
 {
- "updated": "2026-09-06T20:43:32.681Z",
+ "updated": "2026-09-06T20:45:30.062Z",
  "regime": "policy",
  "count": 123,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "BBC World:Video shows damaged Amazon cargo plane after crash",
+   "title": "Video shows damaged Amazon cargo plane after crash",
+   "text": "An Amazon Air cargo plane has overshot the runway while attempting to land at Miami International Airport.",
+   "source": "BBC World",
+   "url": "https://www.bbc.co.uk/news/videos/c62k8dz8r4lo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-06T20:41:48.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Kurssturz"
+   ],
+   "scores": {
+    "crypto": -0.45,
+    "stocks": -0.45,
+    "gold": 0.225,
+    "usd": 0.15
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Kurssturz)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 39,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Video zeigt beschädigten Amazon-Frachtflugzeug nach Absturz"
+  },
   {
    "id": "Tehran Times:15414",
    "title": "15414",
@@ -475,7 +513,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -510,7 +548,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -745,21 +783,21 @@
    "kind": "headline",
    "hawkish": 0,
    "signals": [
-    "Deeskalation"
+    "Eskalation"
    ],
    "scores": {
-    "crypto": 0.252,
-    "stocks": 0.252,
-    "gold": -0.126,
-    "usd": -0.084
+    "crypto": -0.36,
+    "stocks": -0.36,
+    "gold": 0.18,
+    "usd": 0.12
    },
-   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Deeskalation)",
-   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: de-escalation)",
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 66,
-   "label": "bullish",
-   "labelText": "Bullish",
+   "priority": 68,
+   "label": "bearish",
+   "labelText": "Bearish",
    "impactLevel": "low",
    "duration": "intraday",
    "eventType": "Geopolitik",
@@ -791,7 +829,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1135,7 +1173,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1920,7 +1958,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1960,7 +1998,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: retaliation threat)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 94,
+   "priority": 93,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "high",
@@ -3022,7 +3060,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 20,
+   "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4147,40 +4185,6 @@
     "CNBC"
    ],
    "titleDe": "Von „Mystery-Urlauben“ bis hin zu Hostels - preisbewusste Reisende werden bei steigenden Preisen sparsam"
-  },
-  {
-   "id": "BBC World:Majority Russian-speaking city in Ukraine considers language ban in the arts",
-   "title": "Majority Russian-speaking city in Ukraine considers language ban in the arts",
-   "text": "Ukraine's third-biggest city Odesa decides this week whether to ban Russian-language content in music and literature in public.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/c33kzvgn8pyo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-05T23:54:07.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 36,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Mehrheitlich russischsprachige Stadt in der Ukraine prüft Sprachverbot in den Künsten"
   },
   {
    "id": "MarketWatch:Why does almost nobody want to befriend older people like me — except scammers?",
