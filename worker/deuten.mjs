@@ -79,6 +79,21 @@ const WUNSCHMODELLE = {
   pruefung: ['openai/gpt-oss-20b', 'qwen/qwen3.8-27b', 'qwen/qwen3.6-27b', 'openai/gpt-oss-120b'],
   // Uebersetzen laeuft im selben Topf wie die Pruefung - beides Dauerlast.
   uebersetzung: ['openai/gpt-oss-20b', 'qwen/qwen3.6-27b', 'qwen/qwen3.8-27b', 'openai/gpt-oss-120b'],
+  /*
+   * Das Nachziehen des Bestands - auf dem grossen Modell.
+   *
+   * Zwei Gruende. Erstens hat es sein eigenes Tageskontingent, das sonst
+   * brachliegt: Waehrend das kleine bei 135.000 von 200.000 stand, war das
+   * grosse unberuehrt. Der Nachlauf nimmt also niemandem etwas weg, am
+   * wenigsten den Uebersetzungen, die sich das kleine mit der laufenden
+   * Pruefung teilen.
+   *
+   * Zweitens ist es das bessere Modell, und genau hier zaehlt das: Das
+   * Nachziehen behebt Urteile, die unter schwaecheren Regeln entstanden -
+   * "Bundeskanzler Olaf Merkel", wo "Merz" dastand. Es waere widersinnig,
+   * die Berichtigung dem schwaecheren Modell zu ueberlassen.
+   */
+  nachlauf: ['openai/gpt-oss-120b', 'qwen/qwen3.8-27b', 'openai/gpt-oss-20b'],
 };
 
 // je Zweck eines; ueberdauert im Isolat und ist zugleich die Auskunft darueber,
@@ -303,16 +318,141 @@ const ARTIKEL_ZEICHEN = 6000;
  * ausloesen.
  */
 function erfundeneZahlen(antwort, vorlage) {
-  const ziffern = (t) => (String(t).match(/\d[\d.,]*/g) || [])
-    .map((z) => z.replace(/[.,]$/, ''))
-    .filter((z) => z.replace(/[.,]/g, '').length > 1 && !/^(19|20)\d\d$/.test(z));
-  const da = new Set(ziffern(vorlage).map((z) => z.replace(/[.,]/g, '')));
-  return ziffern(antwort).filter((z) => !da.has(z.replace(/[.,]/g, '')));
+  /*
+   * Tausendertrennung zuerst vereinheitlichen.
+   *
+   * Aus dem englischen "9,000" wird im Deutschen "9.000" oder "9 000". Beim
+   * Leerzeichen zerfiel die Zahl in "9" und "000", und "000" galt als
+   * erfunden - der Satz wurde grundlos verworfen. Erst zusammenziehen, dann
+   * vergleichen.
+   */
+  const glatt = (t) => String(t).replace(/(\d)[  .,](?=\d\d\d(?!\d))/g, '$1');
+  const ziffern = (t) => (glatt(t).match(/\d+/g) || [])
+    .filter((z) => z.length > 1 && !/^(19|20)\d\d$/.test(z));
+  const da = new Set(ziffern(vorlage));
+  return ziffern(antwort).filter((z) => !da.has(z));
 }
 
 /** Nimmt der Schlagzeile die Möglichkeit, wie eine Anweisung zu wirken. */
 const alsDaten = (text, hoechstens = 400) =>
   String(text || '').replace(/\s+/g, ' ').slice(0, hoechstens);
+
+/*
+ * Mehrere Meldungen in einer Anfrage.
+ *
+ * Einzeln gefragt kostete jede Pruefung rund 4.800 Token - gemessen, nicht
+ * geschaetzt: 19.263 Token fuer vier Meldungen. Der Grund liegt nicht bei der
+ * Meldung selbst, die sind hundertfuenfzig Token lang. Es ist die Anweisung,
+ * die jedes Mal vollstaendig mitgeht, und der Denkvorgang, den das Modell
+ * jedes Mal neu beginnt.
+ *
+ * Im Stapel faellt beides einmal an statt achtmal. Die Uebersetzung macht es
+ * seit jeher so; die Pruefung tat es nicht, weil sie urspruenglich nur einzeln
+ * nachziehen musste.
+ */
+const STAPEL_MAX = 8;
+
+/** Prueft die Form einer einzelnen Einschaetzung und raeumt sie auf. */
+function urteilPruefen(roh, vorlage, modell) {
+  /*
+   * Grosschreibung und Leerraum nachsehen.
+   *
+   * Im Stapel antwortete das Modell mit "Bearish" statt "bearish" - die
+   * Pruefung verwarf daraufhin fast jeden Eintrag, ohne dass etwas im
+   * Protokoll stand: Der Stapel gelang, nur seine Ergebnisse zaehlten nicht.
+   * Sichtbar war das nur an der Rechnung, 8.477 Token fuer eine einzige
+   * fertige Meldung.
+   */
+  const wort = String(roh?.richtung || '').trim().toLowerCase();
+  const richtung = ['bullish', 'bearish', 'neutral'].includes(wort) ? wort : null;
+  if (!richtung) {
+    console.log('Urteil verworfen, Richtung:', JSON.stringify(roh?.richtung), '|', vorlage.slice(0, 50));
+    return { fehler: 'unerwartete Richtung' };
+  }
+
+  const staerke = Math.max(0, Math.min(1, Number(roh.staerke) || 0));
+  const saubern = (t, max) => String(t || '').replace(/\s+/g, ' ').slice(0, max);
+  let inhalt = saubern(roh.inhalt, 500);
+
+  const erfunden = erfundeneZahlen(inhalt, vorlage);
+  if (erfunden.length) {
+    console.log('Erfundene Zahl verworfen:', erfunden.join(', '), '|', vorlage.slice(0, 60));
+    inhalt = '';
+  }
+  return {
+    richtung, staerke: +staerke.toFixed(2), inhalt,
+    grund: saubern(roh.grund, 300), modell, stand: ANWEISUNG_STAND,
+  };
+}
+
+/**
+ * Bewertet bis zu acht Meldungen in einem Zug.
+ *
+ * Zurueck kommt ein Eintrag je Eingabe, in derselben Reihenfolge - oder bei
+ * jedem Fehler ein `{ fehler }` je Eingabe. Stimmt die Anzahl nicht, wird die
+ * ganze Antwort verworfen: Versetzte Urteile waeren schlimmer als gar keine,
+ * weil sie zur falschen Meldung angezeigt wuerden.
+ */
+export async function deutenStapel(meldungen, env, zweck = 'nachlauf') {
+  if (!env.GROQ_KEY) return meldungen.map(() => null);
+  const n = meldungen.length;
+  if (!n) return [];
+
+  try {
+    const modell = await modellWaehlen(env, zweck);
+    const bloecke = meldungen.map((m, i) => [
+      `<<<MELDUNG${i}`,
+      alsDaten(m.title, 300),
+      ...(m.text ? ['ANRISS: ' + alsDaten(m.text, 500)] : []),
+      `MELDUNG${i}>>>`,
+    ].join(String.fromCharCode(10))).join(String.fromCharCode(10));
+
+    const res = await fetch(GROQ, {
+      method: 'POST',
+      headers: { 'Authorization': `Bearer ${env.GROQ_KEY}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: modell,
+        temperature: 0.2,
+        max_tokens: 600 + 260 * n,
+        ...(/gpt-oss/.test(modell) ? { reasoning_effort: 'low' } : {}),
+        response_format: { type: 'json_object' },
+        messages: [
+          { role: 'system', content: ANWEISUNG + String.fromCharCode(10) + String.fromCharCode(10)
+            + `Es folgen ${n} Meldungen, jede zwischen eigenen Markierungen. Antworte mit `
+            + `{"urteile":[...]} - genau ${n} Eintraege in derselben Reihenfolge, jeder im oben `
+            + `beschriebenen Format. Bewerte jede Meldung fuer sich; sie haben nichts miteinander zu tun.` },
+          { role: 'user', content: bloecke },
+        ],
+      }),
+      signal: AbortSignal.timeout(30000),
+    });
+
+    kontingentMerken(res, modell);
+    if (!res.ok) {
+      if (res.status === 404) delete gewaehlteModelle[zweck];
+      const text = await res.text().catch(() => '');
+      if (res.status === 429) tagesstandLesen(text, modell);
+      throw new Error(klartext(res.status, Number(res.headers.get('retry-after')) || 0));
+    }
+
+    const j = await res.json();
+    verbrauchen(j);
+    const roh = j.choices?.[0]?.message?.content;
+    if (!roh) throw new Error('leere Antwort');
+
+    const liste = ausJson(roh)?.urteile;
+    if (!Array.isArray(liste) || liste.length !== n) throw new Error('Form stimmt nicht');
+
+    return liste.map((u, i) =>
+      urteilPruefen(u, `${meldungen[i].title} ${meldungen[i].text || ''}`, modell));
+  } catch (err) {
+    // Ohne diese Zeile scheitert der Stapel lautlos: Der Zaehler steht,
+    // die Token laufen weiter, und im Protokoll ist nichts zu sehen.
+    console.log(`Stapel (${n}) fehlgeschlagen:`, err.message.slice(0, 200));
+    const fehler = { fehler: err.message.slice(0, 300) };
+    return meldungen.map(() => fehler);
+  }
+}
 
 /**
  * Fragt das Modell nach seiner Einschätzung.

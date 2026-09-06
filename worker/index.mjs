@@ -5,7 +5,7 @@ import { uebersetze } from '../docs/engine/translate.mjs';
 import { fortschreiben, TAGE_MAX } from '../docs/engine/wochenbuch.mjs';
 import { sendeAn } from './notify.mjs';
 export { Versandbuch } from './versandbuch.mjs';
-import { deuten, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, fragen, kontingent, verbrauchAbholen, tagesverbrauch, gewaehlteModelle, ANWEISUNG_STAND } from './deuten.mjs';
+import { deuten, deutenStapel, widerspruch, verfuegbareModelle, tageslage, modellWaehlen, fragen, kontingent, verbrauchAbholen, tagesverbrauch, gewaehlteModelle, ANWEISUNG_STAND } from './deuten.mjs';
 import { artikelHolen } from './artikel.mjs';
 
 // Cloudflare Worker: holt die Quellen serverseitig (RSS-Feeds senden keine
@@ -85,8 +85,8 @@ const GEGENPROBE_MAX = 3;
  * setzt das Minutenkontingent des Modells: fuenf Anfragen zu je rund 830 Token
  * sind gut 4.000 von 8.000 je Minute, es bleibt Luft fuer Uebersetzungen.
  */
-const NACHZIEHEN_MAX = 5;
-const NACHZIEHEN_ABSTAND_MS = 5 * 60_000;
+const NACHZIEHEN_MAX = 8;
+const NACHZIEHEN_ABSTAND_MS = 60_000;
 
 /*
  * Wie oft eine Meldung hoechstens vergeblich geprueft wird.
@@ -146,7 +146,15 @@ function fehlerbuchFortschreiben(buch, gescheitert, items) {
  * Tag. Was tatsaechlich verbraucht wurde, meldet Groq bei jeder Antwort -
  * geschaetzt wird hier nichts.
  */
-const KI_TOKEN_MAX = 170_000;
+/*
+ * Der Deckel zaehlt ueber alle Modelle zusammen.
+ *
+ * Seit der Nachlauf auf dem grossen Modell laeuft, stehen zwei Kontingente zu
+ * je 200.000 offen statt eines. 320.000 laesst beiden Luft und bleibt weit
+ * unter der Summe - die Bremse greift also weiter, nur nicht mehr dort, wo
+ * noch ein ganzes unbenutztes Kontingent danebenliegt.
+ */
+const KI_TOKEN_MAX = 320_000;
 
 /*
  * Klarnamen fuer die drei Aufgaben, die sich Groq teilen.
@@ -891,7 +899,18 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * wiederholt sich der Fehlschlag, dessen Vermerk am selben Hindernis
    * scheitert.
    */
-  const pruefBuch = { ...(z.pruefFehler || {}) };
+  /*
+   * Das Fehlerbuch gilt nur fuer die Regeln, unter denen es entstand.
+   *
+   * Beim schnellen Aufholen zaehlten Kontingentabsagen als Fehlversuche - nach
+   * dreien galt eine Meldung als aufgegeben, obwohl an ihr nichts falsch war.
+   * So blieben 74 Meldungen stehen, waehrend der Zaehler sich nicht mehr
+   * bewegte. Steigt der Regelstand, faellt das Buch deshalb weg: Was unter
+   * alten Bedingungen scheiterte, verdient einen neuen Versuch.
+   */
+  let nachlaufErgebnis = null;
+  const buchGilt = (z.pruefFehlerStand || 0) === ANWEISUNG_STAND;
+  const pruefBuch = buchGilt ? { ...(z.pruefFehler || {}) } : {};
   const gescheitert = [];
 
   if (restJetzt > 0) {
@@ -920,9 +939,26 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     const nachzuholen = items.filter(brauchtPruefung);
     if (nachzuholen.length) {
       nachlaufZuletzt = Date.now();          // sofort, nicht erst nach Erfolg
-      const r = await gegenlesen(nachzuholen, env, NACHZIEHEN_MAX, pruefBuch);
+      // Auf dem grossen Modell: eigenes Kontingent, besseres Urteil.
+      const r = await gegenlesen(nachzuholen, env, NACHZIEHEN_MAX, pruefBuch, 'nachlauf');
       gescheitert.push(...(r?.gescheitert || []));
       speicher.letzterNachlauf = new Date().toISOString();
+
+      /*
+       * Was dabei herauskam, festhalten.
+       *
+       * Das Protokoll von wrangler tail greift bei diesem Verkehr nur
+       * stichprobenartig - zweimal habe ich daraus geschlossen, es gebe keine
+       * Fehler, waehrend der Zaehler stand und Token liefen. Diese Ablage ist
+       * vollstaendig und jederzeit abrufbar.
+       */
+      nachlaufErgebnis = {
+        zeit: new Date().toISOString(),
+        offen: nachzuholen.length,
+        angefragt: r?.anzahl ?? 0,
+        gescheitert: r?.gescheitert?.length ?? 0,
+        ...(r?.fehler ? { fehler: String(r.fehler).slice(0, 200) } : {}),
+      };
     }
   }
 
@@ -1098,6 +1134,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     // Aufruf sieht - im Isolat sah ihn nur der, in dem er passiert war.
     ...(letzterAblageFehler ? { letzteAblageStoerung: letzterAblageFehler } : {}),
     ...(letzterVersandbuchFehler ? { letzteVersandStoerung: letzterVersandbuchFehler } : {}),
+    ...(nachlaufErgebnis ? { nachlaufErgebnis } : {}),
     /*
      * Zusammenfuehren, nicht ersetzen.
      *
@@ -1110,8 +1147,9 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     verzug: { ...(z.verzug || {}), ...data.verzug },
     // Wird als Ganzes ersetzt - deshalb hier vollstaendig neu gebildet.
     ...(gescheitert.length || Object.keys(pruefBuch).length
-      ? { pruefFehler: fehlerbuchFortschreiben(pruefBuch, gescheitert, items) }
-      : {}),
+      ? { pruefFehler: fehlerbuchFortschreiben(pruefBuch, gescheitert, items),
+          pruefFehlerStand: ANWEISUNG_STAND }
+      : { pruefFehlerStand: ANWEISUNG_STAND }),
   };
   if (speicher.letzterNachlauf) buchung.letzterNachlauf = speicher.letzterNachlauf;
   ctx.waitUntil(zustand(env, buchung));
@@ -1203,7 +1241,7 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
  * den Satz, das Regelwerk nur die Woerter darin. Die Herleitung der Regel
  * bleibt sichtbar, damit nachvollziehbar ist, wie es zum ersten Urteil kam.
  */
-async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX, buch = {}) {
+async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX, buch = {}, zweck = 'pruefung') {
   if (hoechstens <= 0) return 0;
   if (!env.GROQ_KEY) return;
 
@@ -1217,11 +1255,31 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX, buch = {}) {
   if (!kandidaten.length) return 0;
 
   // Nebeneinander abfragen: nacheinander summierte sich die Wartezeit.
-  const deutungen = await Promise.all(kandidaten.map((n) => deuten(n.title, env, n.text)));
+  /*
+   * Im Stapel fragen, nicht einzeln.
+   *
+   * Einzeln kostete eine Pruefung rund 4.800 Token, weil die Anweisung jedes
+   * Mal vollstaendig mitging und das Modell jedes Mal neu nachdachte. Bei acht
+   * Meldungen faellt beides einmal an statt achtmal.
+   */
+  const deutungen = await deutenStapel(kandidaten, env, zweck);
 
   // Was nicht durchging, wird vermerkt - sonst wiederholt es sich endlos.
+  /*
+   * Ausgenommen sind Kontingentabsagen.
+   *
+   * Sie sagen nichts ueber die Meldung, sondern nur ueber den Zeitpunkt. Wer
+   * sie mitzaehlt, gibt beim schnellen Aufholen ausgerechnet die Meldungen
+   * auf, die er gerade nachziehen will - nach drei Absagen waeren sie
+   * dauerhaft aussortiert.
+   */
   const gescheitert = kandidaten
-    .filter((n, i) => !deutungen[i] || deutungen[i].fehler)
+    .filter((n, i) => {
+      const d = deutungen[i];
+      if (!d) return true;
+      if (!d.fehler) return false;
+      return !/Kontingent|429|rate limit|zu viele/i.test(d.fehler);
+    })
     .map((n) => n.id);
 
   kandidaten.forEach((n, i) => {
@@ -1265,7 +1323,13 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX, buch = {}) {
 
   // Der Verbrauch wird zentral in deuten.mjs gefuehrt; hier zaehlt nur, wie
   // viele Meldungen durchgegangen sind - und welche nicht.
-  return { anzahl: kandidaten.length, gescheitert };
+  return {
+    anzahl: kandidaten.length,
+    gescheitert,
+    // Der erste Grund, warum etwas nicht durchging - fuer die Ablage unten.
+    fehler: (deutungen.find((d) => d?.fehler) || {}).fehler || null,
+    genommen: kandidaten.filter((n) => n.ki?.inhalt !== undefined && !deutungen[kandidaten.indexOf(n)]?.fehler).length,
+  };
 }
 
 // --- Benachrichtigungen ---------------------------------------------------
@@ -1646,8 +1710,17 @@ export default {
               + (w.abgewiesen ? ` (${zahl(w.abgewiesen)} abgewiesen)` : '')
               + ` · ${zahl(w.tokens)} Token` + groq;
           }),
+        // Wie viele Meldungen der Nachlauf nicht mehr anfasst - ohne das war
+        // nicht zu erkennen, warum der Zaehler stehenblieb.
+        aufgegeben: (() => {
+          const buch = (zNow.pruefFehlerStand || 0) === ANWEISUNG_STAND ? (zNow.pruefFehler || {}) : {};
+          const n = Object.values(buch).filter((v) => v >= PRUEF_VERSUCHE_MAX).length;
+          return n ? `${n} nach ${PRUEF_VERSUCHE_MAX} Fehlversuchen` : 'keine';
+        })(),
         urteile: Object.keys(urteilSpeicher?.urteile || {}).length,
         letzterNachlauf: urteilSpeicher?.letzterNachlauf ?? 'noch keiner',
+        // Was der letzte Nachlauf tatsaechlich bewirkt hat.
+        nachlaufErgebnis: zNow.nachlaufErgebnis ?? 'noch keiner',
         /*
          * Minutenfenster je Modell, so wie Groq es in den Kopfzeilen meldet.
          *
