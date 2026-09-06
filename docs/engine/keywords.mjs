@@ -11,7 +11,15 @@ export const KEYWORDS = [
   { re: /\bhawkish\b/, type: 'hawkish', weight: 0.6, label: 'hawkisch', labelEn: 'hawkish' },
   { re: /\bhigher for longer\b/, type: 'hawkish', weight: 0.6, label: 'higher for longer', labelEn: 'higher for longer' },
   { re: /\b(tightening|quantitative tightening|\bqt\b)\b/, type: 'hawkish', weight: 0.5, label: 'Straffung', labelEn: 'tightening' },
-  { re: /\b(sticky|persistent|hot|accelerat\w+) inflation\b/, type: 'hawkish', weight: 0.6, label: 'hartnäckige Inflation', labelEn: 'sticky inflation' },
+  /*
+   * Auch in umgekehrter Wortstellung.
+   *
+   * "sticky inflation" traf, "inflation proves sticky" nicht - dieselbe
+   * Aussage, nur andersherum gebaut, und die Meldung fiel auf neutral.
+   * Schlagzeilen stellen den Befund gern nach: "inflation remains stubborn",
+   * "inflation stays hot".
+   */
+  { re: /\b(sticky|persistent|stubborn|hot|elevated|accelerat\w+) inflation\b|\binflation\b[^.]{0,20}\b(sticky|persistent|stubborn|hot|elevated|entrenched)\b/, type: 'hawkish', weight: 0.6, label: 'hartnäckige Inflation', labelEn: 'sticky inflation' },
   { re: /\binflation (rises|jumps|accelerates|surges|picks up)\b/, type: 'hawkish', weight: 0.65, label: 'Inflation steigt', labelEn: 'inflation rising' },
   { re: /\b(yields|treasury yields) (surge|jump|rise|climb|spike)\b/, type: 'hawkish', weight: 0.45, label: 'Renditen steigen', labelEn: 'yields rising' },
   { re: /\bbets on (a )?(september |december |november )?(fed )?rate (increase|hike)\b/, type: 'hawkish', weight: 0.7, label: 'Markt preist Zinserhöhung ein', labelEn: 'market prices in a hike' },
@@ -26,10 +34,17 @@ export const KEYWORDS = [
   { re: /\b(weak|soft|weaker.than.expected|cooling) (jobs|payrolls|employment|labou?r market)\b/, type: 'hawkish', weight: -0.55, label: 'schwacher Arbeitsmarkt', labelEn: 'weak labour market' },
 
   // ----- Rohstoff- und Energiepreise -----
-  // Ein Rekordhoch beim Diesel ist keine Rally, sondern ein Preisschock:
-  // er treibt die Inflation und belastet damit Risk-Assets.
-  { re: /\b(oil|crude|diesel|gasoline|petrol|natural gas|energy|food|wheat) (price[s]? )?[a-z ]{0,14}(record|all.time) high\b/, type: 'hawkish', weight: 0.5, label: 'Energiepreisschock', labelEn: 'energy price shock' },
-  { re: /\b(oil|crude|diesel|gasoline|petrol|natural gas|energy|food|wheat) (price[s]? )?[a-z ]{0,14}(record|all.time) high\b/, type: 'risk', weight: -0.42, label: 'Preisdruck', labelEn: 'price pressure' },
+  /*
+   * Ein Rekordhoch beim Diesel ist keine Rally, sondern ein Preisschock: Er
+   * treibt die Inflation und belastet damit Risk-Assets.
+   *
+   * Nicht nur Rekordhochs. "Oil price shock lifts energy costs sharply" ergab
+   * null, weil die Regel ausschliesslich auf "record high" und "all-time high"
+   * ansprang — der Begriff Preisschock selbst stand nicht darin. Auch ein
+   * Sprung ohne Rekord treibt die Inflation.
+   */
+  { re: /\b(oil|crude|diesel|gasoline|petrol|natural gas|energy|food|wheat) (price[s]? )?[a-z ]{0,14}((record|all.time) high|shock|spikes?|surges?|soars?|jumps?)\b/, type: 'hawkish', weight: 0.5, label: 'Energiepreisschock', labelEn: 'energy price shock' },
+  { re: /\b(oil|crude|diesel|gasoline|petrol|natural gas|energy|food|wheat) (price[s]? )?[a-z ]{0,14}((record|all.time) high|shock|spikes?|surges?|soars?|jumps?)\b/, type: 'risk', weight: -0.42, label: 'Preisdruck', labelEn: 'price pressure' },
   { re: /\b(oil|crude|diesel|gas) prices? (surge|soar|spike|jump|climb)\w*/, type: 'hawkish', weight: 0.42, label: 'Energiepreise steigen', labelEn: 'energy prices rising' },
 
   // ----- Risikoneigung -----
@@ -46,16 +61,41 @@ export const KEYWORDS = [
   { re: /\b(talks|negotiations|deal|agreement|summit|ceasefire)\b[^.]{0,24}\b(collapse[sd]?|fail\w*|break(s|ing)? down|broke down|stall\w*|reject\w*|walk(s|ed)? out)\b/, type: 'risk', weight: -0.55, label: 'Verhandlungen gescheitert', labelEn: 'talks collapsed' },
 
   // ----- Krypto-spezifisch positiv -----
-  { re: /\b(etf (approval|approved|inflow[s]?)|spot etf)\b/, type: 'crypto', weight: 0.7, label: 'ETF-Zuflüsse', labelEn: 'ETF inflows' },
+  /*
+   * Zwischen "ETF" und "inflows" darf etwas stehen.
+   *
+   * "Bitcoin ETF sees record inflows of $1.2 billion" ergab null, weil die
+   * Regel die beiden Woerter unmittelbar nebeneinander verlangte. Genau so
+   * schreiben Redaktionen aber selten - "sees record", "posts", "attracts"
+   * stehen regelmaessig dazwischen. ETF-Fluesse sind einer der staerksten
+   * Treiber ueberhaupt; sie zu uebersehen ist teuer.
+   */
+  { re: /\b(etf\b[^.]{0,24}\b(approval|approved|inflow[s]?|net buying)|spot etf)\b/, type: 'crypto', weight: 0.7, label: 'ETF-Zuflüsse', labelEn: 'ETF inflows' },
   { re: /\b(institutional (adoption|inflow|demand)|corporate treasury|strategic (bitcoin )?reserve)\b/, type: 'crypto', weight: 0.6, label: 'institutionelle Nachfrage', labelEn: 'institutional demand' },
-  { re: /\b(accumulat\w+|whale[s]? (buy|bought|accumulat\w+)|adds to holdings)\b/, type: 'crypto', weight: 0.45, label: 'Akkumulation', labelEn: 'accumulation' },
+  /*
+   * Auch der schlichte Kauf zaehlt.
+   *
+   * "MicroStrategy buys another 5,000 BTC" ergab null: Die Regel kannte
+   * "accumulates" und "whales buy", aber nicht das gewoehnlichste Wort dafuer.
+   * Die Menge muss dabeistehen, sonst faengt sie jede Kaufabsicht ein.
+   */
+  { re: /\b(accumulat\w+|whale[s]? (buy|bought|accumulat\w+)|adds to holdings|(buys|bought|purchased|acquired)\b[^.]{0,24}\b(btc|bitcoin|eth|ether)\b)\b/, type: 'crypto', weight: 0.45, label: 'Akkumulation', labelEn: 'accumulation' },
   { re: /\b(halving|network upgrade|mainnet launch)\b/, type: 'crypto', weight: 0.35, label: 'Netzwerk-Katalysator', labelEn: 'network catalyst' },
   { re: /\b(regulatory clarity|approved for listing|pro.crypto)\b/, type: 'crypto', weight: 0.5, label: 'regulatorische Klarheit', labelEn: 'regulatory clarity' },
 
   // ----- Krypto-spezifisch negativ -----
   { re: /\b(hack(ed|s)?|exploit(ed|s)?|stolen|breach|drained)\b/, type: 'crypto', weight: -0.7, label: 'Hack/Exploit', labelEn: 'hack or exploit' },
   { re: /\b(sec (sues|charges|lawsuit)|crackdown|enforcement action|indicted)\b/, type: 'crypto', weight: -0.6, label: 'Regulierungsdruck', labelEn: 'regulatory pressure' },
-  { re: /\b(ban(s|ned)? (crypto|bitcoin)|crypto ban|delisting)\b/, type: 'crypto', weight: -0.65, label: 'Verbot/Delisting', labelEn: 'ban or delisting' },
+  /*
+   * Ein Verbot laesst sich auf viele Arten formulieren.
+   *
+   * "China bans all cryptocurrency transactions" ergab null: Die Regel
+   * verlangte "bans crypto" unmittelbar nebeneinander, hier stand "all"
+   * dazwischen - und "cryptocurrency" endete nicht dort, wo sie eine
+   * Wortgrenze erwartete. Ein Landesverbot gehoert zu den staerksten
+   * Einzelereignissen fuer den Kurs.
+   */
+  { re: /\b(ban(s|ned|ning)?\b[^.]{0,20}\b(crypto\w*|bitcoin|digital asset[s]?|mining)|crypto\w* ban|delisting|outlaw\w*\b[^.]{0,20}\b(crypto\w*|bitcoin))\b/, type: 'crypto', weight: -0.65, label: 'Verbot/Delisting', labelEn: 'ban or delisting' },
   { re: /\b(etf outflow[s]?|outflows)\b/, type: 'crypto', weight: -0.55, label: 'ETF-Abflüsse', labelEn: 'ETF outflows' },
   { re: /\b(liquidation[s]?|forced selling|miner capitulation|whale[s]? (sold|dump\w*))\b/, type: 'crypto', weight: -0.55, label: 'Liquidationen', labelEn: 'liquidations' },
   { re: /\b(seized|confiscat\w+|mt\.? gox|exchange collapse|halts withdrawals)\b/, type: 'crypto', weight: -0.6, label: 'Coin-Überhang/Ausfall', labelEn: 'coin overhang or failure' },

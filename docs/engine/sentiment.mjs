@@ -3,9 +3,19 @@ import { KEYWORDS, GEOPOLITICS, DEESKALATION, DEESKALATION_GESCHEITERT, NUR_GEFO
 import { extractNumbers } from './numeric.mjs';
 import { countryRelevance, centralBankWeight, emergingMarketDamping } from './relevance.mjs';
 
-// Wörter, die eine Erwartung daempfen statt bestaetigen: "Bailey tames rate
-// hike hopes" ist dovish, obwohl "rate hike" darin vorkommt.
-const NEGATORS = /\b(no|not|nicht|kein|denies|denied|rules out|unlikely|won't|without|tames?|dampens?|cools?|plays? down|downplays?|pushes? back on|dismisses?|pares?|trims?|scales? back|doubts?|fades?)\s*$/;
+/*
+ * Wörter, die eine Erwartung dämpfen statt bestätigen: "Bailey tames rate
+ * hike hopes" ist dovish, obwohl "rate hike" darin vorkommt.
+ *
+ * Zwischen Verneinung und Stichwort dürfen ein paar Füllwörter stehen. Vorher
+ * musste die Verneinung unmittelbar davorstehen, und "Analysts unlikely to see
+ * rate hike" galt deshalb als Zinserhöhung — mit −0,75 das glatte Gegenteil.
+ *
+ * Der Abstand bleibt eng, und Satzzeichen beenden ihn: Was hinter einem Komma
+ * steht, gehört meist zu einem anderen Gedanken. Ohne diese Grenze würde
+ * "no decision yet, Fed raises rates" fälschlich verneint.
+ */
+const NEGATORS = /\b(no|not|nicht|kein|denies|denied|rules out|unlikely|won't|without|tames?|dampens?|cools?|plays? down|downplays?|pushes? back on|dismisses?|pares?|trims?|scales? back|doubts?|fades?)\b[^.,;:]{0,18}$/;
 
 /*
  * Krypto-Signalwörter gelten nur für Meldungen, die auch von Krypto handeln.
@@ -245,6 +255,22 @@ export function scoreHeadline(rohTitel, regime = 'policy') {
   }
 
   const t = ' ' + title.toLowerCase().replace(/[^a-z0-9äöüß%$. -]/g, ' ') + ' ';
+
+  /*
+   * Derselbe Text, aber mit erhaltenen Satzzeichen.
+   *
+   * `t` ersetzt jedes Satzzeichen durch ein Leerzeichen, damit die Muster
+   * sauber greifen. Fuer die Verneinung ist das fatal: Sie braucht die
+   * Satzgrenze. Ohne sie las "Without doubt, inflation accelerates further"
+   * das "doubt" als Verneinung ueber das Komma hinweg und machte aus
+   * steigender Inflation ein Kaufsignal - +0,65 statt -0,65.
+   *
+   * Die Ersetzung tauscht Zeichen eins zu eins, die Laenge bleibt also
+   * gleich. Damit passen die Stellen in beiden Fassungen zusammen, und die
+   * Verneinung kann am Komma haltmachen.
+   */
+  const tSatz = ' ' + title.toLowerCase() + ' ';
+
   let macroHawk = 0, cryptoDirect = 0, risk = 0;
   const hits = [];
   const hitsEn = [];
@@ -257,7 +283,8 @@ export function scoreHeadline(rohTitel, regime = 'policy') {
     if (k.type === 'crypto' && !kryptoThema) continue;
     // Verneinung direkt vor dem Treffer dreht das Vorzeichen.
     const idx = t.search(k.re);
-    const before = t.slice(Math.max(0, idx - 22), idx);
+    // Aus der Fassung mit Satzzeichen - siehe tSatz oben.
+    const before = tSatz.slice(Math.max(0, idx - 34), idx);
     const neg = NEGATORS.test(before) ? -1 : 1;
     const w = k.weight * neg;
     if (k.type === 'hawkish') macroHawk += w;
