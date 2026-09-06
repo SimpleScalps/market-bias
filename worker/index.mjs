@@ -1,4 +1,6 @@
-import { collectNews, loadCalendar, enrich, imFenster, nachbewerten } from '../docs/engine/feeds.mjs';
+import { collectNews, loadCalendar, enrich, imFenster, nachbewerten, bestaetigung } from '../docs/engine/feeds.mjs';
+import { dedupe } from '../docs/engine/dedupe.mjs';
+import { kerzenHolen, bewegung, bilanzAddieren } from './kurs.mjs';
 import { REGEL_STAND } from '../docs/engine/keywords.mjs';
 import { label, LABEL_TEXT } from '../docs/engine/sentiment.mjs';
 import { IMPACT_TEXT, DURATION_TEXT } from '../docs/engine/tradeimpact.mjs';
@@ -96,6 +98,27 @@ const GEGENPROBE_MAX = 3;
  * Minuten einmal durch, ohne dass ein einzelner Aufruf ans Limit kommt.
  */
 const NACHBEWERTEN_MAX = 20;
+
+/*
+ * Wie oft der ganze Bestand auf Dubletten durchgesehen wird.
+ *
+ * Siehe die Begruendung an der Aufrufstelle: 1,6 ms je Lauf, zu viel fuer
+ * jede Minute, unerheblich alle fuenf.
+ */
+const DUBLETTEN_TAKT_MS = 5 * 60_000;
+
+/*
+ * Der Rueckkanal vom Markt - siehe kurs.mjs.
+ *
+ * Gemessen wird ab dem Eingang, nicht ab dem Erscheinen: Was vorher passiert
+ * ist, haette niemand handeln koennen. Das Fenster reicht bis 95 Minuten
+ * zurueck, damit auch ein Ausfall von einer Stunde nachgeholt wird; darueber
+ * hinaus zu messen brachte nichts, weil dann kein Zusammenhang zur Meldung
+ * mehr besteht.
+ */
+const WIRKUNG_MINUTEN = 15;
+const WIRKUNG_RUECKBLICK_MIN = 95;
+const WIRKUNG_MAX = 40;
 
 const NACHZIEHEN_MAX = 8;
 const NACHZIEHEN_ABSTAND_MS = 60_000;
@@ -872,6 +895,31 @@ function zusammenfuehren(bestand, frische) {
       ? {
           ...n,
           date: vorhanden.date,
+          /*
+           * Die gemessene Kurswirkung bleibt.
+           *
+           * Sie ist an einen Zeitpunkt gebunden, der vorbei ist - eine zweite
+           * Messung derselben Meldung waere nicht genauer, sondern nur
+           * spaeter. Ohne diese Zeile ginge sie verloren, sobald die Quelle
+           * dieselbe Meldung noch einmal ausliefert.
+           */
+          ...(vorhanden.wirkung ? { wirkung: vorhanden.wirkung } : {}),
+          /*
+           * Ebenso die Zahl der Quellen. Sie entsteht erst im Dublettenlauf
+           * ueber den ganzen Bestand, alle fuenf Minuten - der frische Zulauf
+           * kennt nur die Dubletten seines eigenen Durchgangs.
+           */
+          ...(vorhanden.bestaetigt > (n.bestaetigt || 1) ? {
+            alsoIn: vorhanden.alsoIn,
+            bestaetigt: vorhanden.bestaetigt,
+            unabhaengig: vorhanden.unabhaengig,
+            ...(vorhanden.nurStaatlich ? { nurStaatlich: true } : {}),
+            ...(vorhanden.impactGehoben ? {
+              impactLevel: vorhanden.impactLevel,
+              impactRoh: vorhanden.impactRoh,
+              impactGehoben: true,
+            } : {}),
+          } : {}),
           ...(vorhanden.ki ? {
             ki: vorhanden.ki,
             kiWiderspruch: vorhanden.kiWiderspruch,
@@ -1038,7 +1086,46 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   const gesehen = new Set(bestand?.gesehen || []);
 
   // Neu ist, was noch nie im Bestand war - nicht bloss, was gerade fehlt.
-  const kandidaten = neue.filter((n) => !gesehen.has(n.id));
+  /*
+   * Dublettenlauf ueber den ganzen Bestand - alle fuenf Minuten.
+   *
+   * collectNews entdoppelt nur den frischen Zulauf. Dieselbe Nachricht, die
+   * BBC um 19:05 und der Guardian um 19:11 bringt, faellt in zwei verschiedene
+   * Durchgaenge und stand deshalb zweimal in der Liste - im Bestand waren 49
+   * von 299 Eintraegen Dubletten.
+   *
+   * Der Lauf kostet gemessene 1,6 ms bei dreihundert Meldungen. Jede Minute
+   * waere das neben dem Nachbewerten zu viel; alle fuenf Minuten faellt es
+   * nicht ins Gewicht, und eine Dublette darf ruhig ein paar Minuten
+   * danebenstehen.
+   *
+   * Erst danach steht fest, wie viele Redaktionen eine Meldung tragen -
+   * siehe bestaetigung().
+   */
+  let dublettenLauf = null;
+  if (Date.now() - (z.letzteDubletten || 0) > DUBLETTEN_TAKT_MS) {
+    const vorher = items.length;
+    items = bestaetigung(dedupe(items));
+    dublettenLauf = { zeit: Date.now(), zusammengefasst: vorher - items.length };
+  }
+
+  /*
+   * Was der Dublettenlauf zusammengefasst hat, wird nicht mehr gemeldet.
+   *
+   * Sonst ginge eine Benachrichtigung zu einer Meldung hinaus, die in der
+   * Liste gar nicht mehr steht - der Leser sucht sie dann vergeblich.
+   */
+  /*
+   * Was der Markt zu den Meldungen von vor einer Viertelstunde gesagt hat.
+   *
+   * Steht vor der KI-Arbeit, weil es nichts kostet ausser einem Abruf und
+   * nicht am Tageskontingent haengt - selbst wenn kein Token mehr da ist,
+   * laeuft die Messung weiter.
+   */
+  const wirkung = await wirkungMessen(items, z);
+
+  const nochDa = new Set(items.map((n) => n.id));
+  const kandidaten = neue.filter((n) => !gesehen.has(n.id) && nochDa.has(n.id));
 
   /*
    * Verzug festhalten, solange die Meldung frisch entdeckt ist.
@@ -1395,6 +1482,13 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ...(letzterVersandbuchFehler ? { letzteVersandStoerung: letzterVersandbuchFehler } : {}),
     ...(nachlaufErgebnis ? { nachlaufErgebnis } : {}),
     ...(artikelErgebnis ? { artikelErgebnis } : {}),
+    ...(dublettenLauf ? { letzteDubletten: dublettenLauf.zeit, dubletten: dublettenLauf } : {}),
+    ...(wirkung?.bilanz ? { bilanz: wirkung.bilanz } : {}),
+    ...(wirkung ? { wirkungZuletzt: {
+      zeit: new Date().toISOString(),
+      ...(wirkung.gemessen ? { gemessen: wirkung.gemessen, boerse: wirkung.boerse } : {}),
+      ...(wirkung.fehler ? { fehler: String(wirkung.fehler).slice(0, 120) } : {}),
+    } } : {}),
     // Wie beim Pruefbuch: Nur Kennungen behalten, die es noch gibt.
     ...(Object.keys(artikelBuch).length
       ? { artikelBuch: fehlerbuchFortschreiben(artikelBuch, [], items) } : {}),
@@ -1525,6 +1619,69 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
  * den Satz, das Regelwerk nur die Woerter darin. Die Herleitung der Regel
  * bleibt sichtbar, damit nachvollziehbar ist, wie es zum ersten Urteil kam.
  */
+/**
+ * Ist diese Meldung reif fuer die Wirkungsmessung?
+ *
+ * Reif heisst: Sie traegt eine Richtung, der Eingang liegt mindestens eine
+ * Viertelstunde zurueck, und die Kerzen dazu sind noch abrufbar. Meldungen
+ * ohne Richtung bleiben aussen vor - bei ihnen gibt es nichts, wogegen sich
+ * die Kursbewegung halten liesse.
+ */
+function faelligFuerWirkung(n) {
+  if (n.wirkung) return false;
+  if (n.impactLevel === 'ignore') return false;
+  if (Math.abs(n.scores?.crypto ?? 0) < 0.2) return false;
+  const ab = new Date(n.gesehenAm || n.date).getTime();
+  if (!ab || isNaN(ab)) return false;
+  const alter = Date.now() - ab;
+  return alter > WIRKUNG_MINUTEN * 60_000 && alter < WIRKUNG_RUECKBLICK_MIN * 60_000;
+}
+
+/**
+ * Misst, wie sich Bitcoin nach dem Eingang der Meldung bewegt hat.
+ *
+ * Ein Abruf je Durchgang genuegt fuer alle faelligen Meldungen; die Kerzen
+ * decken das ganze Fenster ab. Faellt die Boerse aus, bleibt es beim
+ * Versuch - die naechste Minute holt es nach.
+ *
+ * Die Bilanz zaehlt je Merkmal, wie oft es recht behalten hat. Merkmal ist
+ * jedes erkannte Signal, dazu die Herkunft des Urteils: Regelwerk allein, von
+ * der KI berichtigt, aus dem Artikel gelesen, mehrfach bestaetigt, nur von
+ * Staatsmedien getragen. Damit laesst sich zum ersten Mal beantworten, ob die
+ * Berichtigung durch die KI ueberhaupt etwas verbessert.
+ */
+async function wirkungMessen(items, z) {
+  const faellig = items.filter(faelligFuerWirkung).slice(0, WIRKUNG_MAX);
+  if (!faellig.length) return null;
+
+  const { kerzen, boerse, fehler } = await kerzenHolen(WIRKUNG_RUECKBLICK_MIN + WIRKUNG_MINUTEN + 5);
+  if (fehler || !kerzen) return { fehler: fehler || 'keine Kerzen' };
+
+  let bilanz = z.bilanz;
+  let gemessen = 0;
+  for (const n of faellig) {
+    const ab = new Date(n.gesehenAm || n.date).getTime();
+    const b = bewegung(kerzen, ab, WIRKUNG_MINUTEN);
+    if (b === null) continue;
+
+    const vorzeichen = Math.sign(n.scores.crypto);
+    n.wirkung = { min15: b, treffer: b * vorzeichen > 0, boerse };
+
+    const merkmale = [
+      ...(n.signals || []).map((x) => `Signal: ${x}`),
+      n.kiKorrigiert ? 'von der KI berichtigt' : 'Regelwerk unverändert',
+      ...(n.ki?.gelesen ? ['Artikel gelesen'] : []),
+      ...((n.unabhaengig ?? n.bestaetigt ?? 1) >= 3 ? ['3+ Quellen'] : []),
+      ...(n.nurStaatlich ? ['nur Staatsmedien'] : []),
+    ];
+    bilanz = bilanzAddieren(bilanz, merkmale, b, vorzeichen);
+    gemessen++;
+  }
+
+  if (!gemessen) return { fehler: 'Kerzen deckten das Fenster nicht ab' };
+  return { gemessen, boerse, bilanz };
+}
+
 /**
  * Traegt ein Urteil der KI an einer Meldung ein - und berichtigt sie, wenn es
  * dem Regelwerk deutlich widerspricht.
@@ -2204,6 +2361,28 @@ export default {
          * Die Fehlermeldung gehoert deshalb hierher.
          */
         artikel: zNow.artikelErgebnis ?? 'noch keiner',
+        wirkung: zNow.wirkungZuletzt ?? 'noch keine Messung',
+        /*
+         * Die Bilanz: Wie oft hat ein Merkmal recht behalten?
+         *
+         * "Treffer" heisst, Bitcoin ging in den fuenfzehn Minuten nach dem
+         * Eingang in die vorhergesagte Richtung. Bei kleinem n sagt das nichts
+         * - fuenfzehn Minuten Bitcoin sind ueberwiegend Rauschen, und eine
+         * Quote von 60 Prozent aus fuenf Faellen ist genau das. Deshalb steht
+         * n dabei, und deshalb wird nach n sortiert statt nach Quote: Sonst
+         * stuende oben immer das, was am wenigsten gemessen wurde.
+         */
+        bilanz: (() => {
+          const b = zNow.bilanz || {};
+          const zeilen = Object.entries(b)
+            .filter(([, e]) => e.n >= 3)
+            .sort((a, b2) => b2[1].n - a[1].n)
+            .slice(0, 24)
+            .map(([m, e]) => `${m}: ${e.treffer}/${e.n}`
+              + ` (${Math.round((e.treffer / e.n) * 100)} %, Ø ${(e.summe / e.n).toFixed(3)} %)`);
+          if (!zeilen.length) return 'noch zu wenige Faelle (ab 3 je Merkmal)';
+          return zeilen;
+        })(),
         /*
          * Minutenfenster je Modell, so wie Groq es in den Kopfzeilen meldet.
          *

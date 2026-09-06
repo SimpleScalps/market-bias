@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v55';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v56';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -917,9 +917,38 @@ function render(erzwingen = false) {
      * liest, soll das sehen, bevor er auf die Einstufung schaut - die
      * Bewertung selbst wird bewusst nicht gedaempft.
      */
+    /*
+     * Mehrfach bestaetigt - oder eben nicht.
+     *
+     * Ob eine Nachricht stattgefunden hat, entscheidet nicht die Wortwahl der
+     * Ueberschrift, sondern ob mehrere voneinander unabhaengige Redaktionen
+     * dasselbe berichten. Quellen derselben Regierung zaehlen dabei als eine;
+     * traegt nur eine solche die Meldung, steht das dabei.
+     */
+    const bestaetigt = (n.unabhaengig ?? 0) >= 3 ? ' · ' + T().bestaetigtLabel : '';
+    const alleinStaatlich = n.nurStaatlich && anzahl ? ' · ' + T().nurStaatlichLabel : '';
+
     $('.src', node).textContent =
       `${n.source.toUpperCase()}${n.staatlich ? ' · ' + T().staatlich : ''}`
-      + `${n.region ? ' · ' + n.region : ''}${auch} · REL ${n.priority}`;
+      + `${n.region ? ' · ' + n.region : ''}${auch}${bestaetigt}${alleinStaatlich} · REL ${n.priority}`;
+
+    /*
+     * Was der Markt danach tatsaechlich gemacht hat.
+     *
+     * Die einzige Zahl auf dieser Karte, die keine Einschaetzung ist. Gemessen
+     * ab dem Eingang der Meldung, nicht ab ihrem Erscheinen: Was davor
+     * passierte, haette niemand handeln koennen. Eine Viertelstunde Bitcoin
+     * ist ueberwiegend Rauschen - ein einzelner Wert beweist nichts, die
+     * Summe ueber viele Meldungen dagegen schon.
+     */
+    const w = $('.wirkung', node);
+    if (n.wirkung && typeof n.wirkung.min15 === 'number') {
+      const v = n.wirkung.min15;
+      w.textContent = `${T().wirkungKopf} ${v > 0 ? '+' : ''}${v.toFixed(2)} %`;
+      w.className = 'wirkung ' + (n.wirkung.treffer ? 'treffer' : 'daneben');
+      w.title = n.wirkung.treffer ? T().wirkungTreffer : T().wirkungDaneben;
+      w.hidden = false;
+    }
 
     // Deutsche Fassung der Schlagzeile, falls vorhanden.
     const ueb = $('.uebersetzung', node);
@@ -1060,6 +1089,8 @@ function render(erzwingen = false) {
       mehr.setAttribute('aria-expanded', String(an));
       mehr.textContent = an ? T().wenigerDetails : T().mehrDetails;
       detail.hidden = !an;
+      // Aufgeklappt wird die Meldung als eigener Block abgesetzt - siehe .item.offen
+      item.classList.toggle('offen', an);
     };
 
     mehr.textContent = T().mehrDetails;

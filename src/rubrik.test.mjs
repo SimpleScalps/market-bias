@@ -101,3 +101,13 @@ test('Nur ein Teil je Durchgang, die Reihenfolge bleibt', () => {
   assert.equal(r.offen, 3);
   assert.deepEqual(r.items.map((n) => n.id), ['Q:0', 'Q:1', 'Q:2', 'Q:3', 'Q:4']);
 });
+
+test('Auch ohne Arbeit liefert nachbewerten die volle Form', () => {
+  // Der Leerfall gab kein ids zurueck; der Worker stuerzte daran ab, sobald
+  // der ganze Bestand nachgezogen war.
+  const r = nachbewerten([meldung({ regelStand: REGEL_STAND })], 'policy', 10);
+  assert.deepEqual(r.ids, []);
+  assert.equal(r.nachbewertet, 0);
+  assert.deepEqual(r.aussortiert, {});
+  assert.equal(r.items.length, 1);
+});

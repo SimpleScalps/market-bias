@@ -97,6 +97,9 @@ window.I18N = {
     lagebericht: 'Lagebericht', lageLaeuft: 'wird erstellt …',
     lageFehler: 'Lagebericht nicht verfügbar',
     lageOhneWorker: 'Braucht den Cloudflare Worker mit hinterlegtem Schlüssel.',
+    // Der Rueckkanal vom Markt: Wie lief Bitcoin nach dem Eingang der Meldung?
+    wirkungKopf: 'BTC 15 MIN', wirkungTreffer: 'wie erwartet', wirkungDaneben: 'gegenläufig',
+    bestaetigtLabel: 'BESTÄTIGT', nurStaatlichLabel: 'nur Staatsmedien',
     zweitmeinung: 'KI-Analyse', zweitmeinungLaeuft: 'wird geprüft …',
     // Vermerk, wenn das Urteil nicht nur aus der Schlagzeile stammt.
     artikelGelesen: 'Artikel gelesen',
@@ -221,6 +224,8 @@ window.I18N = {
     lagebericht: 'Situation report', lageLaeuft: 'writing …',
     lageFehler: 'Situation report unavailable',
     lageOhneWorker: 'Requires the Cloudflare Worker with a key set.',
+    wirkungKopf: 'BTC 15 MIN', wirkungTreffer: 'as expected', wirkungDaneben: 'against',
+    bestaetigtLabel: 'CONFIRMED', nurStaatlichLabel: 'state media only',
     zweitmeinung: 'AI analysis', zweitmeinungLaeuft: 'checking …',
     artikelGelesen: 'full article read',
     zweitmeinungFehler: 'AI analysis unavailable',

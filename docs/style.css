@@ -274,7 +274,7 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
 
 /* ================= Handelswirkung ================= */
 .trade{display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin-top:1px}
-.impact,.dauer,.etyp{
+.impact,.dauer,.etyp,.wirkung{
   font-family:var(--mono);font-size:8.5px;letter-spacing:.1em;
   padding:2px 5px;border-radius:2px;white-space:nowrap
 }
@@ -287,6 +287,14 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
 .dauer{color:var(--dim);background:var(--panel-2)}
 .etyp{color:var(--faint);border:1px dashed var(--line-2)}
 .etyp:empty,.dauer:empty{display:none}
+
+/* Der Rückkanal vom Markt: die einzige Angabe in dieser Zeile, die keine
+   Einschätzung ist, sondern gemessen. Deshalb voll ausgefärbt statt umrandet —
+   und in den Richtungsfarben, damit auf einen Blick erkennbar ist, ob die
+   Bewertung recht behalten hat. */
+.wirkung{font-variant-numeric:tabular-nums;border:1px solid currentColor}
+.wirkung.treffer{color:var(--bull)}
+.wirkung.daneben{color:var(--bear)}
 
 :root[data-theme="light"] .impact[data-lvl="extreme"]{color:#fff}
 
@@ -480,6 +488,37 @@ time{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-nu
    Handy, wo Überschriften über mehrere Zeilen laufen. */
 .item:nth-child(even){background:var(--bg-2)}
 .item:nth-child(even) .head:active{background:var(--panel)}
+
+/* ---- Trennung zwischen den Meldungen ----------------------------------
+   Eine Linie allein reichte nicht. Beim Scrollen laufen mehrzeilige
+   Überschriften ineinander, und aufgeklappt wurde vollends unklar, wo die
+   eine Meldung endet und die nächste beginnt: Der Detailbereich hat selbst
+   Kästen mit Rahmen, und der äußere Rahmen ging darin unter.
+
+   Drei Mittel, zusammen:
+     eine Lücke — das Auge liest Weißraum schneller als jede Linie,
+     eine hellere Kante oben statt einer blassen unten,
+     und die aufgeklappte Meldung als eigener, abgehobener Block. */
+.item{border-bottom:0;border-top:1px solid var(--line-2);margin-top:5px}
+.item:first-child{margin-top:0}
+
+.item.offen{
+  background:var(--panel);
+  border:1px solid var(--line-2);
+  border-radius:5px;
+  margin:12px 6px;
+  box-shadow:0 3px 18px rgba(0,0,0,.5)
+}
+/* Der Richtungsstreifen bleibt am linken Rand und folgt der Rundung. */
+.item.offen::before{width:3px;border-radius:5px 0 0 5px}
+.item.offen .head{padding-left:15px}
+/* Der Streifen der geöffneten Meldung soll gegen den helleren Grund noch
+   erkennbar sein. */
+.item.offen.bullish::before{background:var(--bull)}
+.item.offen.bearish::before{background:var(--bear)}
+
+:root[data-theme="light"] .item.offen{box-shadow:0 3px 14px rgba(17,24,35,.13)}
+:root[data-theme="light"] .item{border-top-color:var(--line)}
 
 /* Eine ersetzte Bewertung wird gekennzeichnet: Das Urteil stammt dann vom
    Modell, nicht vom Regelwerk. */

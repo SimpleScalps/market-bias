@@ -3,7 +3,7 @@ import { isNoise, categorize, priority, CATEGORY_LABEL } from './priority.mjs';
 import { rubrik } from './rubrik.mjs';
 import { REGEL_STAND } from './keywords.mjs';
 import { dedupe } from './dedupe.mjs';
-import { tradeImpact } from './tradeimpact.mjs';
+import { tradeImpact, IMPACT_STUFEN } from './tradeimpact.mjs';
 import { translateTitles } from './translate.mjs';
 
 // Gemeinsame Sammel-Pipeline für das Node-Skript (GitHub Actions) und den
@@ -13,8 +13,8 @@ export const CALENDAR = 'https://www.myfxbook.com/rss/forex-economic-calendar-ev
 
 export const FEEDS = [
   // Schwerpunkt US-Wirtschaft und Weltlage
-  { url: 'https://www.cnbc.com/id/20910258/device/rss/rss.html',   source: 'CNBC Economy',    tags: ['US-Wirtschaft'], fast: true },
-  { url: 'https://www.cnbc.com/id/100727362/device/rss/rss.html',  source: 'CNBC World',      tags: ['Weltwirtschaft'], fast: true },
+  { url: 'https://www.cnbc.com/id/20910258/device/rss/rss.html',   source: 'CNBC Economy',    haus: 'CNBC', tags: ['US-Wirtschaft'], fast: true },
+  { url: 'https://www.cnbc.com/id/100727362/device/rss/rss.html',  source: 'CNBC World',      haus: 'CNBC', tags: ['Weltwirtschaft'], fast: true },
   { url: 'https://www.fxstreet.com/rss/news',                      source: 'FXStreet',        tags: ['Makro'], fast: true },
   { url: 'https://www.benzinga.com/feed',                          source: 'Benzinga',        tags: ['US-Märkte'] },
   { url: 'https://feeds.bbci.co.uk/news/world/rss.xml',            source: 'BBC World',       tags: ['Weltlage'] },
@@ -48,7 +48,7 @@ export const FEEDS = [
   { url: 'https://www.sec.gov/news/pressreleases.rss',             source: 'SEC',             tags: ['Regulierung'], fast: true },
   { url: 'https://www.ecb.europa.eu/rss/press.html',               source: 'EZB',             tags: ['Notenbank'], fast: true },
 
-  { url: 'https://www.cnbc.com/id/100003114/device/rss/rss.html',  source: 'CNBC',            tags: ['Märkte'] },
+  { url: 'https://www.cnbc.com/id/100003114/device/rss/rss.html',  source: 'CNBC',            haus: 'CNBC', tags: ['Märkte'] },
   { url: 'https://feeds.marketwatch.com/marketwatch/topstories/',  source: 'MarketWatch',     tags: ['Märkte'] },
 
   /*
@@ -130,8 +130,8 @@ export const FEEDS = [
    * NPR (1 Stunde, 10 Eintraege), Al-Monitor (4 Stunden). Unabhaengig ja -
    * aber zu langsam oder thematisch am Handel vorbei.
    */
-  { url: 'https://www.theguardian.com/world/rss',                  source: 'Guardian',        tags: ['Weltlage'] },
-  { url: 'https://www.theguardian.com/business/rss',               source: 'Guardian Wirtschaft', tags: ['Weltwirtschaft'] },
+  { url: 'https://www.theguardian.com/world/rss',                  source: 'Guardian',        haus: 'Guardian', tags: ['Weltlage'] },
+  { url: 'https://www.theguardian.com/business/rss',               source: 'Guardian Wirtschaft', haus: 'Guardian', tags: ['Weltwirtschaft'] },
   { url: 'https://www.scmp.com/rss/91/feed',                       source: 'SCMP',            tags: ['Asien'] },
   { url: 'https://www.timesofisrael.com/feed/',                    source: 'Times of Israel', tags: ['Weltlage'] },
 
@@ -439,6 +439,87 @@ export function enrich(list) {
   });
 }
 
+/*
+ * Wer eine Meldung bestaetigt - und wer nicht zaehlt.
+ *
+ * Staatsmedien stehen im Bestand, weil sie schnell und nah dran sind: TASS
+ * meldet im Schnitt drei Minuten nach dem Zeitstempel, Tehran Times zwei.
+ * Als Bestaetigung taugen sie trotzdem nicht fuereinander - vier Quellen
+ * derselben Regierung sind eine Quelle. Deshalb zaehlt hier nur, wie viele
+ * voneinander unabhaengige Redaktionen dieselbe Nachricht tragen.
+ */
+const STAATLICH = new Set(FEEDS.filter((f) => f.staatlich).map((f) => f.source));
+
+/*
+ * Welche Quellen zur selben Redaktion gehoeren.
+ *
+ * "Guardian" und "Guardian Wirtschaft" sind zwei Feeds und ein Haus - als
+ * zwei Bestaetigungen gezaehlt haetten sie eine Meldung angehoben, die
+ * niemand ausserhalb dieser Redaktion aufgegriffen hat. Dasselbe gilt fuer
+ * die drei CNBC-Feeds.
+ */
+const HAUS = new Map(FEEDS.map((f) => [f.source, f.haus || f.source]));
+
+/**
+ * Vermerkt, von wie vielen Quellen eine Meldung getragen wird.
+ *
+ * dedupe() sammelt die weiteren Quellen bereits in `alsoIn` - benutzt wurde
+ * das bisher nur zur Anzeige. Dabei ist es die belastbarste Angabe im ganzen
+ * Bestand: Ob eine Meldung ueberhaupt stattgefunden hat, entscheidet nicht die
+ * Wortwahl der Ueberschrift, sondern ob mehrere Redaktionen unabhaengig
+ * voneinander dasselbe berichten.
+ *
+ * Zwei Folgen:
+ *
+ *   Drei unabhaengige Quellen heben die Handelswirkung um eine Stufe. Was drei
+ *   Redaktionen innerhalb von Minuten aufgreifen, ist keine Randnotiz.
+ *
+ *   Traegt nur eine staatliche Quelle die Meldung, wird das vermerkt - aber
+ *   nichts abgewertet. Eine Abwertung wuerde bestrafen, dass TASS schnell ist;
+ *   die Meldung soll hinaus, der Leser soll nur wissen, wer allein dasteht.
+ */
+export function bestaetigung(items) {
+  return items.map((n) => {
+    const quellen = [n.source, ...(n.alsoIn || [])];
+    const haeuser = new Set(quellen.filter((q) => !STAATLICH.has(q)).map((q) => HAUS.get(q) || q));
+    const unabhaengig = haeuser.size;
+
+    /*
+     * Immer von der ungehobenen Stufe aus rechnen.
+     *
+     * Der Bestand laeuft mehrfach hier durch - bei jedem Dublettenlauf. Wer
+     * auf die schon gehobene Stufe noch einmal eine draufsetzt, treibt eine
+     * Meldung in wenigen Durchgaengen auf EXTREM, ohne dass eine einzige
+     * Quelle dazugekommen waere.
+     */
+    const roh = n.impactRoh || n.impactLevel;
+    let impactLevel = roh;
+    /*
+     * Bestaetigt wird eine Richtung, nicht ein Vorfall.
+     *
+     * Vier Redaktionen berichteten uebereinstimmend, dass Susan Sarandon
+     * etwas gesagt hat. Das macht die Meldung wahr und trotzdem nicht
+     * handelbar. Angehoben wird nur, was ueberhaupt eine Richtung traegt -
+     * sonst wandern bestaetigte Belanglosigkeiten in die Benachrichtigung.
+     */
+    const richtung = Math.abs(n.scores?.crypto ?? 0) >= 0.2;
+    if (unabhaengig >= 3 && richtung && roh && roh !== 'ignore') {
+      const i = IMPACT_STUFEN.indexOf(roh);
+      if (i >= 0 && i < IMPACT_STUFEN.length - 1) impactLevel = IMPACT_STUFEN[i + 1];
+    }
+
+    const { impactRoh, unabhaengig: alt1, nurStaatlich: alt2, impactGehoben: alt3, ...rest } = n;
+    return {
+      ...rest,
+      impactLevel,
+      bestaetigt: quellen.length,
+      ...(unabhaengig !== quellen.length ? { unabhaengig } : {}),
+      ...(unabhaengig === 0 ? { nurStaatlich: true } : {}),
+      ...(impactLevel !== roh ? { impactRoh: roh, impactGehoben: true } : {}),
+    };
+  });
+}
+
 /**
  * Bewertet abgelegte Meldungen neu, deren Regelstand veraltet ist.
  *
@@ -458,7 +539,10 @@ export function enrich(list) {
 export function nachbewerten(items, regime = 'policy', hoechstens = 30) {
   let offen = 0;
   for (const n of items) if ((n.regelStand || 1) < REGEL_STAND) offen++;
-  if (!offen) return { items, nachbewertet: 0, aussortiert: {}, offen: 0 };
+  // Auch der Leerfall liefert die volle Form. Ohne `ids` lief der Aufrufer
+  // in "Cannot read properties of undefined" - und zwar erst, als alles
+  // nachgezogen war, also genau dann, wenn nichts mehr zu tun war.
+  if (!offen) return { items, nachbewertet: 0, ids: [], aussortiert: {}, offen: 0 };
 
   const aussortiert = {};
   const weg = new Set();
@@ -587,7 +671,7 @@ export async function collectNews({
   const seen = new Set();
   all = enrich(all.filter((n) => (seen.has(n.id) ? false : seen.add(n.id))));
 
-  all = imFenster(dedupe(all))
+  all = bestaetigung(imFenster(dedupe(all)))
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, limit);
 

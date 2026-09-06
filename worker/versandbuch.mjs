@@ -83,6 +83,16 @@ export class Versandbuch {
       const basis = jetzt.tag === heute ? jetzt : {
         tag: heute, schreibVersuche: 0, schreibFehler: 0, tokens: 0,
         ticks: jetzt.ticks, verzug: jetzt.verzug, letzterNachlauf: jetzt.letzterNachlauf,
+        /*
+         * Die Bilanz ueberlebt den Tageswechsel.
+         *
+         * Sie zaehlt, wie oft ein Signal recht behalten hat. Fuenfzehn Minuten
+         * Bitcoin sind ueberwiegend Rauschen; erst nach ein paar Dutzend
+         * Faellen je Signal steht dort etwas, das mehr ist als Zufall. Wer sie
+         * jede Nacht wegwirft, kommt nie ueber die Handvoll Faelle hinaus, die
+         * ein einzelner Tag hergibt.
+         */
+        bilanz: jetzt.bilanz,
       };
       basis.tage = tage;
 
