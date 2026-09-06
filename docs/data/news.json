@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-06T16:02:16.205Z",
+ "updated": "2026-09-06T16:04:17.657Z",
  "regime": "policy",
- "count": 134,
+ "count": 132,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
@@ -218,6 +218,40 @@
    "titleDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen"
   },
   {
+   "id": "Al Jazeera:Niger military accuses France of orchestrating failed mutiny: What to know",
+   "title": "Niger military accuses France of orchestrating failed mutiny: What to know",
+   "text": "French officials deny involvement, but tensions between the two countries remain high.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/6/niger-military-accuses-france-of-orchestrating-failed-mutiny-what-to-know?traffic_source=rss",
+   "date": "2026-09-06T15:42:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 61,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Nigerisches Militär beschuldigt Frankreich, gescheiterten Aufstand orchestriert: Was Sie wissen sollten"
+  },
+  {
    "id": "Reuters:Sarandon says she still loses movie roles over support for Palestinians",
    "title": "Sarandon says she still loses movie roles over support for Palestinians",
    "text": "Sarandon says she still loses movie roles over support for Palestinians &nbsp;&nbsp; Reuters",
@@ -319,6 +353,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Südafrika besiegt Simbabwe mit 48 Runs und gewinnt den Tri‑Series-Titel"
+  },
+  {
+   "id": "Al Jazeera:Dead fish fill vanishing river as drought grips Indonesia",
+   "title": "Dead fish fill vanishing river as drought grips Indonesia",
+   "text": "A prolonged dry spell has caused millions of fish to die in Indonesia’s Silugonggo River in Central Java.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/dead-fish-fill-vanishing-river-as-drought-grips-indonesia?traffic_source=rss",
+   "date": "2026-09-06T15:36:33.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Tote Fische füllen den verschwindenden Fluss, während Dürre Indonesien erfasst"
   },
   {
    "id": "Reuters:Shaw strikes second-half double as Manchester City beat Birmingham 3-1",
@@ -620,7 +688,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -655,7 +723,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -700,73 +768,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Antonelli gewinnt spektakulär den italienischen GP von der Rückbank aus"
-  },
-  {
-   "id": "Reuters:- Reuters",
-   "title": "- Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYVVBaEZMWWU4dTd5ZC0zdDJFV1BMaUU2UnNxUFZ0QVVzanFvbE03cXgyaGZoZkxWS05DUjlUUzdjNWtzRTBlaVpMQXpzZzhhRDc0cHB5YVo5SXpCTWFTek9oOGFTMUlfVmVkelQ5T1ozTlRkcnpSRS1pY3QwRFhlcjA5OGhGSGxxRkRFamZkUkI1dUtPMmsxUzNTdHJycmQyX3ZPbGZRTUZyOURCNlE?oc=5",
-   "date": "2026-09-06T15:04:07.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 30,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Reuters"
-  },
-  {
-   "id": "Reuters:Israel's Netanyahu orders West Bank settler outposts to be removed, sources say",
-   "title": "Israel's Netanyahu orders West Bank settler outposts to be removed, sources say",
-   "text": "Israel's Netanyahu orders West Bank settler outposts to be removed, sources say &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN2c0azRZQ0hqbEdRWlhzYlBWRGxQUU9NUmdOUVVtSm1WemlRVnRXd05VT0U4MkcyQjJGWVpHV0hvZHdLb0dIc1FIVDZyYUZ6SjlTYlV0NUtGZnBWckhpaHVYX1JGd3ZNZ1pCRVF4Z213dXk4ZGFNNVZtV19nNDNQOHZVX21Kei16R3pOZzVwS2Y2Zng2eVloNTVmSUx3RnZ2U09Mc1pNTWJGVjFsZ2N5Tm1IVzdOWnU5WWNXOC11SEY1a0poMG53?oc=5",
-   "date": "2026-09-06T15:03:45.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 60,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Israels Netanjahu ordnet die Entfernung von Siedleraußenposten im Westjordanland an, sagen Quellen"
   },
   {
    "id": "Decrypt:Stablecoins Won't Scale Without Banks",
@@ -1542,40 +1543,6 @@
    "titleDe": "FIFA bestätigt, dass Infantino bei den Wahlen 2027 erneut für das Amt des Präsidenten kandidieren wird"
   },
   {
-   "id": "Al Jazeera:How significant are the Yemeni government’s military gains against Houthis?",
-   "title": "How significant are the Yemeni government’s military gains against Houthis?",
-   "text": "Government forces make gains as fighting escalates, raising fears of a return to full-scale war.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/how-significant-are-the-yemeni-governments-military-gains-against-the-houthis?traffic_source=rss",
-   "date": "2026-09-06T13:41:25.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 58,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Wie bedeutend sind die militärischen Erfolge der yemenitischen Regierung gegen die Houthi?"
-  },
-  {
    "id": "CNBC:Parents who are really good at handling tantrums do 5 things—their kids become more emotionally intelligent, says psychologist",
    "title": "Parents who are really good at handling tantrums do 5 things—their kids become more emotionally intelligent, says psychologist",
    "text": "\"These kids become more emotionally intelligent, which helps them weather setbacks, embrace independence and try new things,\" says Juli Fraga.",
@@ -1823,40 +1790,6 @@
    "titleDe": "US-Botschafter treffen Putin: Was steckt hinter der neuesten Diplomatie zum Russland-Ukraine-Krieg"
   },
   {
-   "id": "Al Jazeera:Seven mouths, one meal: Feeding a family through Gaza’s food crisis",
-   "title": "Seven mouths, one meal: Feeding a family through Gaza’s food crisis",
-   "text": "Families across Gaza struggle to secure food as community kitchens operate irregularly and prices rise.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/features/2026/9/6/seven-mouths-one-meal-feeding-a-family-through-gazas-food-crisis?traffic_source=rss",
-   "date": "2026-09-06T13:15:46.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 58,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Sieben Mägen, ein Mahl: Eine Familie durch die Nahrungsmittelkrise in Gaza ernähren"
-  },
-  {
    "id": "BeInCrypto:LeBron James Polymarket Deal: Will Prediction Markets Go Mainstream?",
    "title": "LeBron James Polymarket Deal: Will Prediction Markets Go Mainstream?",
    "text": "LeBron James backs Polymarket after his DraftKings deal expired, giving prediction markets their biggest sports name yet as legal fights intensify.",
@@ -1878,7 +1811,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2580,7 +2513,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3773,7 +3706,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4696,7 +4629,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 5,
+  "uebersetzt": 0,
   "fehler": null
  }
 }
