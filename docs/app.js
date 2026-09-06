@@ -5,7 +5,7 @@ import { wochenSicht, tageZusammenfuehren, tagesSchluessel } from './engine/woch
 
 const CAT_ORDER = ['us-data', 'geopolitics', 'fed', 'crypto', 'us-markets', 'global-data', 'markets'];
 const ASSET_KEYS = ['crypto', 'stocks', 'gold', 'usd'];
-const VERSION = 'v49';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
+const VERSION = 'v50';           // in der Fußzeile sichtbar, erleichtert die Fehlersuche
 const LIVE_INTERVAL = 12000;    // mit Worker: alle 12 Sekunden
 const STATIC_INTERVAL = 60000;  // ohne Worker: news.json einmal pro Minute
 
@@ -205,6 +205,14 @@ function ordered(list) {
       return fb - fa || new Date(b.date) - new Date(a.date);
     },
     time: (a, b) => new Date(b.date) - new Date(a.date),
+    /*
+     * Nach Eingang, nicht nach Erscheinen.
+     *
+     * Entspricht dem, was Discord meldet: die Reihenfolge, in der die
+     * Meldungen bei uns ankamen. Wo der Zeitpunkt fehlt — ältere Einträge —
+     * dient das Erscheinen als Ersatz.
+     */
+    eingang: (a, b) => new Date(b.gesehenAm || b.date) - new Date(a.gesehenAm || a.date),
     impact: (a, b) => Math.abs(b.scores[asset]) - Math.abs(a.scores[asset]) || b.priority - a.priority,
   };
   return [...list].sort(by[sort]);
@@ -839,7 +847,19 @@ function render(erzwingen = false) {
     item.dataset.id = n.id;   // Ankerpunkt beim Neuaufbau, siehe render()
     if (frischeIds.has(n.id)) item.classList.add('neu');
 
-    $('time', node).textContent = zeit(n.date);
+    /*
+     * Erscheinen und Eingang auseinanderhalten.
+     *
+     * Weicht der Eingang um mehr als drei Minuten ab, steht er dabei — sonst
+     * wirkt eine soeben eingetroffene Meldung 15 Minuten alt, weil ihr
+     * Zeitstempel vom Anbieter stammt und nicht von uns.
+     */
+    const zeitEl = $('time', node);
+    zeitEl.textContent = zeit(n.date);
+    if (n.gesehenAm && new Date(n.gesehenAm) - new Date(n.date) > 180000) {
+      zeitEl.textContent = `${zeit(n.date)} · ${T().eingang} ${zeit(n.gesehenAm)}`;
+      zeitEl.title = T().eingangHinweis;
+    }
 
     const c = $('.cat', node);
     c.textContent = T().cats[n.category] || (n.categoryLabel || '').toUpperCase();

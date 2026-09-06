@@ -549,6 +549,20 @@ function zieleGrund(ziele) {
  */
 let adressZugangZuletzt = null;
 
+/*
+ * Abgewiesene Anfragen festhalten.
+ *
+ * Ein falsches Zugangswort war bisher voellig lautlos: Der Aufruf endete mit
+ * 401, bevor irgendetwas vermerkt wurde. Als nach einem Schluesselwechsel
+ * beide externen Taktgeber gleichzeitig verstummten, stand in der Anzeige
+ * weiterhin "letzterTickFehler: keiner seit dem Start" - der Ausfall war nur
+ * daran zu erkennen, dass eine Uhrzeit alt wurde.
+ *
+ * Wer sich meldet, steht in x-quelle. Damit ist auf einen Blick zu sehen,
+ * welcher der drei Wege ein veraltetes Wort mitschickt.
+ */
+let abgewiesenZuletzt = null;
+
 function zugangGeprueft(request, url, env) {
   if (!env.ZUGANG) return true;                       // nicht eingerichtet
   if (!GESCHUETZT.includes(url.pathname)) return true; // offener Weg
@@ -799,6 +813,18 @@ function zusammenfuehren(bestand, frische) {
   for (const n of frische) {
     const vorhanden = bekannt.get(n.id);
     if (!vorhanden) kandidaten.push(n);
+
+    /*
+     * Wann wir sie zum ersten Mal gesehen haben.
+     *
+     * Der Zeitstempel der Meldung sagt, wann sie erschien - nicht, wann sie
+     * bei uns ankam. Zwischen beidem liegen im Mittel eine Viertelstunde, bei
+     * manchen Quellen eine ganze. Discord meldet den Empfang, die Liste zeigte
+     * bisher nur das Erscheinen: Dieselbe Meldung sah dort 15 Minuten aelter
+     * aus und rutschte in der Sortierung nach unten, obwohl sie soeben
+     * eingetroffen war.
+     */
+    n.gesehenAm = vorhanden?.gesehenAm || new Date().toISOString();
     /*
      * Erstsichtung und geprueftes Urteil uebernehmen.
      *
@@ -1674,6 +1700,14 @@ export default {
     const regime = env.REGIME || 'policy';
 
     if (!zugangGeprueft(request, url, env)) {
+      abgewiesenZuletzt = {
+        zeit: new Date().toISOString(),
+        pfad: url.pathname,
+        quelle: (request.headers.get('x-quelle') || 'unbekannt').slice(0, 40),
+        // Nur die Laenge, nie das Wort selbst - es soll in keinem Protokoll landen.
+        laenge: (request.headers.get('x-zugang') || '').trim().length,
+      };
+      ctx.waitUntil(zustand(env, { abgewiesen: abgewiesenZuletzt }));
       return json({ fehler: 'Zugangswort fehlt oder stimmt nicht' }, 401);
     }
 
@@ -1759,6 +1793,21 @@ export default {
          */
         letzterTickFehler: frischeStoerung(zNow.letzteTickStoerung, letzterTickFehler)
           ?? 'keiner seit dem Start',
+        /*
+         * Wer zuletzt mit falschem Wort anklopfte.
+         *
+         * Ohne diese Zeile war ein Schluesselwechsel, der nur halb ankam,
+         * nicht zu erkennen: Der Aufruf endete mit 401, bevor irgendetwas
+         * vermerkt wurde, und die Stoerungsliste blieb leer.
+         */
+        abgewiesen: (() => {
+          const a = zNow.abgewiesen || abgewiesenZuletzt;
+          if (!a) return 'keine seit dem Start';
+          const min = Math.round((Date.now() - new Date(a.zeit).getTime()) / 60000);
+          if (min > 120) return `keine seit ${Math.round(min / 60)} h`;
+          return `${a.quelle} auf ${a.pfad}, vor ${min} min`
+            + (a.laenge ? ` (Wort mit ${a.laenge} Zeichen)` : ' (ganz ohne Wort)');
+        })(),
         letzterAblageFehler: frischeStoerung(zNow.letzteAblageStoerung, letzterAblageFehler)
           ?? 'keiner seit dem Start',
         versandbuch: env.VERSANDBUCH
