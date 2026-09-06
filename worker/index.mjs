@@ -497,13 +497,24 @@ function zugangGeprueft(request, url, env) {
   if (!env.ZUGANG) return true;                       // nicht eingerichtet
   if (!GESCHUETZT.includes(url.pathname)) return true; // offener Weg
 
+  /*
+   * Nur noch die Kopfzeile.
+   *
+   * Ein Wort in der Adresse steht in jedem Protokoll: bei Cloudflare, beim
+   * Taktgeber, in jedem Zwischenknoten. Genau so ist es hier aufgefallen - im
+   * Live-Protokoll des Workers stand es im Klartext.
+   *
+   * Der Adressweg blieb offen, bis nachweislich niemand ihn mehr benutzte:
+   * 38 Minuten Ruhe bei durchlaufendem Taktgeber. Wer es noch dort mitschickt,
+   * wird jetzt abgewiesen - und der Vermerk sagt, dass es daran lag.
+   */
   const ausKopfzeile = (request.headers.get('x-zugang') || '').trim();
-  const ausAdresse = (url.searchParams.get('zugang') || '').trim();
-  if (!ausKopfzeile && ausAdresse) {
-    adressZugangZuletzt = { zeit: new Date().toISOString(), pfad: url.pathname };
+  if (!ausKopfzeile && url.searchParams.get('zugang')) {
+    adressZugangZuletzt = { zeit: new Date().toISOString(), pfad: url.pathname, abgewiesen: true };
+    return false;
   }
 
-  const mitgegeben = ausKopfzeile || ausAdresse;
+  const mitgegeben = ausKopfzeile;
   // Beim Hinterlegen ueber die Kommandozeile haengt leicht ein Zeilenumbruch
   // an; ohne diese Bereinigung stimmt dann nie etwas ueberein.
   const soll = String(env.ZUGANG).trim();
@@ -1669,6 +1680,7 @@ export default {
            * auch Stunden nachdem der letzte Aufrufer umgestellt hat, und die
            * Anzeige koennte nie bestaetigen, dass der Umbau geglueckt ist.
            */
+          if (a.abgewiesen) return `abgeschaltet - vor ${min} min noch ein Versuch auf ${a.pfad}`;
           if (min >= 30) return `nein - seit ${min} min nur noch ueber die Kopfzeile`;
           return `JA - zuletzt vor ${min} min auf ${a.pfad}`;
         })(),
@@ -1868,8 +1880,19 @@ export default {
           })
           .sort((a, b) => (b.sekunden ?? -1) - (a.sekunden ?? -1)),
 
-        taktgeber: Object.entries(zNow.ticks || bestand?.ticks || {})
-          .map(([quelle, t]) => ({ quelle, zeit: t.zeit, meldungen: t.meldungen, offen: t.offen }))
+        /*
+         * Auch der Rueckzug gehoert weitergereicht.
+         *
+         * Diese Zeile pickte nur quelle, zeit, meldungen und offen heraus - das
+         * Kennzeichen fiel dabei weg, und die App konnte einen pflichtgemaess
+         * zurueckgetretenen Reservetaktgeber nicht von einem ausgefallenen
+         * unterscheiden. Sie zeigte ihn weiter rot.
+         */
+        taktgeber: Object.entries({ ...(bestand?.ticks || {}), ...(zNow.ticks || {}) })
+          .map(([quelle, t]) => ({
+            quelle, zeit: t.zeit, meldungen: t.meldungen, offen: t.offen,
+            ...(t.zurueckgetreten ? { zurueckgetreten: true } : {}),
+          }))
           .sort((a, b) => (b.zeit || '').localeCompare(a.zeit || '')),
         // Ohne hinterlegtes Abo verschickt der Worker nichts. Zeigt nur, ob
         // und wohin - niemals Token oder Themennamen.
