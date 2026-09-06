@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T10:30:05.207Z",
+ "updated": "2026-09-06T10:40:28.619Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T10:30:05.244Z",
+   "stand": "2026-09-06T10:40:28.639Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -156,7 +156,7 @@
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-06T10:30:05.250Z",
+   "stand": "2026-09-06T10:40:28.642Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
@@ -309,29 +309,29 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T10:30:05.238Z",
+   "stand": "2026-09-06T10:40:28.636Z",
    "anzahl": 39,
    "klassen": {
     "crypto": {
-     "score": -0.148,
+     "score": -0.1485,
      "bull": 1,
      "bear": 3,
      "neut": 35
     },
     "stocks": {
-     "score": -0.148,
+     "score": -0.1485,
      "bull": 1,
      "bear": 3,
      "neut": 35
     },
     "gold": {
-     "score": 0.074,
+     "score": 0.0743,
      "bull": 3,
      "bear": 1,
      "neut": 35
     },
     "usd": {
-     "score": 0.0493,
+     "score": 0.0495,
      "bull": 3,
      "bear": 0,
      "neut": 36
@@ -366,7 +366,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 84
+     "priority": 83
     },
     {
      "id": "Al Jazeera:Iran war live: IRGC claims attacks on 3 oil tankers and 3 US-linked ships",
@@ -396,7 +396,7 @@
       "gold": 0.427,
       "usd": 0.285
      },
-     "priority": 44
+     "priority": 43
     },
     {
      "id": "Al Jazeera:Israel bombards several towns in southern Lebanon",
