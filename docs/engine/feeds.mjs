@@ -18,6 +18,34 @@ export const FEEDS = [
   { url: 'https://feeds.bbci.co.uk/news/world/rss.xml',            source: 'BBC World',       tags: ['Weltlage'] },
   { url: 'https://www.aljazeera.com/xml/rss/all.xml',              source: 'Al Jazeera',      tags: ['Weltlage'] },
   { url: 'https://www.federalreserve.gov/feeds/press_all.xml',     source: 'Federal Reserve', tags: ['Fed'], fast: true },
+
+  /*
+   * Amtliche Quellen und der Energiepreis.
+   *
+   * Ausgewaehlt nach zwei Messungen, nicht nach Ruf. Zuerst der Anteil
+   * handelbarer Meldungen, gemessen mit der eigenen Bewertung: OilPrice kam
+   * auf 40 Prozent - mit Abstand der hoechste Wert aller getesteten Quellen.
+   * Zum Vergleich: AP ueber Google News 3 Prozent, Yahoo Finance 4, ZeroHedge
+   * 16 - und dessen Treffer waren teils Fehlalarme.
+   *
+   * SEC und EZB kamen an einem Sonntag auf null, was nichts heisst. Sie melden
+   * selten, aber wenn, dann Zulassungen von ETFs, Verfahren gegen Boersen und
+   * Zinsentscheidungen. Gerade deshalb kosten sie kaum Plaetze im Bestand: Wo
+   * nichts erscheint, wird nichts aufgenommen.
+   *
+   * Das Weisse Haus waere inhaltlich der vierte Kandidat gewesen - Zoelle und
+   * Dekrete bewegen den Markt. Sein Feed liefert aber 631 KB, das Vierzigfache
+   * der uebrigen, weil er die Volltexte einbettet. Nach dem CPU-Ueberlauf ist
+   * das kein Handel, den man eingehen sollte; Zoelle stehen ohnehin binnen
+   * Minuten bei Reuters und CNBC.
+   *
+   * Alle drei liefern ohne Rueckstand: OilPrice mit no-store, die SEC mit
+   * max-age=10, die EZB mit max-age=60.
+   */
+  { url: 'https://oilprice.com/rss/main',                          source: 'OilPrice',        tags: ['Energie'], fast: true },
+  { url: 'https://www.sec.gov/news/pressreleases.rss',             source: 'SEC',             tags: ['Regulierung'], fast: true },
+  { url: 'https://www.ecb.europa.eu/rss/press.html',               source: 'EZB',             tags: ['Notenbank'], fast: true },
+
   { url: 'https://www.cnbc.com/id/100003114/device/rss/rss.html',  source: 'CNBC',            tags: ['Märkte'] },
   { url: 'https://feeds.marketwatch.com/marketwatch/topstories/',  source: 'MarketWatch',     tags: ['Märkte'] },
 

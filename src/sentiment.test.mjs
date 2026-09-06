@@ -43,7 +43,17 @@ test('Verbale Überraschungen bekommen die richtige Richtung', () => {
     ['U.S. payrolls rose 162,000 in August, much more than expected', 'strong_bearish'],
     ['US inflation cools more than expected in August', 'strong_bullish'],
     ['Core CPI rises faster than expected', 'strong_bearish'],
-    ['Jobless claims jump higher than expected', 'strong_bullish'],
+    /*
+     * Bullish, nicht stark bullish - und das ist die Berichtigung.
+     *
+     * Frueher kamen hier zwei Regeln zusammen: "schwacher Arbeitsmarkt", der
+     * zu Recht griff, und "Kursanstieg", der auf das Wort "jump" ansprang,
+     * obwohl von Arbeitslosenzahlen die Rede war und nicht von Kursen. Die
+     * Staerke stammte also zur Haelfte aus einem Fehlgriff. Seit ein
+     * Kursanstieg ein Marktsubjekt verlangt, bleibt nur die richtige Regel -
+     * und mit ihr das ehrlichere Ergebnis.
+     */
+    ['Jobless claims jump higher than expected', 'bullish'],
   ];
   for (const [title, want] of cases) assert.equal(dir(scoreHeadline(title)), want, title);
 });

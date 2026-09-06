@@ -161,3 +161,30 @@ test('Der Kanal der Bewertung ist erkennbar', () => {
   assert.equal(kanal('Local council approves new bicycle lane'), 'keiner');
   assert.equal(kanal('Actor wins award at film festival'), 'keiner');
 });
+
+/*
+ * Zwei Fehlalarme, gefunden beim Prüfen neuer Quellen.
+ *
+ * Sie sind das eigentliche Risiko beim Hinzufügen von Feeds: Je mehr Text
+ * durchläuft, desto öfter trifft eine zu weit gefasste Regel etwas, das sie
+ * nicht meint. Beide Regeln verlangen jetzt den Zusammenhang, nicht nur das
+ * Wort.
+ */
+test('Eine einzelne Aktie ist kein Kursanstieg am Markt', () => {
+  pruefe([
+    ['Okta Jumps 20% as AI-Driven Security Features Boost Outlook', '0'],
+    ['Stocks rally to record high as sentiment improves', '+'],
+    ['Bitcoin surges past $80,000', '+'],
+    ['Wall Street jumps after inflation data', '+'],
+  ]);
+});
+
+test('Kernenergie ist keine Vergeltungsdrohung', () => {
+  pruefe([
+    ['Twelve Companies Make DOEs Latest Nuclear Shortlist', '0'],
+    ['France expands nuclear power plant programme', '0'],
+    ['North Korea tests nuclear weapon', '-'],
+    ['Iran threatens nuclear retaliation', '-'],
+    ['Russia raises nuclear threat level', '-'],
+  ]);
+});

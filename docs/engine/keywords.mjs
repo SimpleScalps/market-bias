@@ -48,7 +48,19 @@ export const KEYWORDS = [
   { re: /\b(oil|crude|diesel|gas) prices? (surge|soar|spike|jump|climb)\w*/, type: 'hawkish', weight: 0.42, label: 'Energiepreise steigen', labelEn: 'energy prices rising' },
 
   // ----- Risikoneigung -----
-  { re: /\b(rally|rallies|surge[sd]?|soar[sd]?|record high|all.time high|jump[sd]?)\b/, type: 'risk', weight: 0.4, label: 'Kursanstieg', labelEn: 'price rally' },
+  /*
+   * Ein Kursanstieg braucht einen Markt, nicht irgendein Subjekt.
+   *
+   * Vorher sprang die Regel auf jedes "jumps", "surges" oder "soars" an -
+   * gleich, wovon die Rede war. "Okta Jumps 20% as AI Features Boost Outlook"
+   * wurde damit zu einem Kaufsignal für Bitcoin, und "US jobless claims jump"
+   * bekam die richtige Richtung aus dem falschen Grund: als Kursanstieg
+   * verbucht, obwohl es um Arbeitslosenzahlen ging.
+   *
+   * Eine einzelne Aktie bewegt den Kryptomarkt nicht. Gefordert ist deshalb
+   * ein breites Subjekt in der Nähe - Indizes, Aktien allgemein, Krypto, Gold.
+   */
+  { re: /\b(stocks?|shares|equities|markets?|wall street|s&p|nasdaq|dow|dax|nikkei|ftse|bitcoin|btc|ether|eth|crypto\w*|gold|risk assets?)\b[^.]{0,28}\b(rally|rallies|surge[sd]?|soar[sd]?|jump[sd]?|record high|all.time high)\b|\b(rally|rallies|surge[sd]?|soar[sd]?|jump[sd]?)\b[^.]{0,28}\b(stocks?|shares|equities|markets?|wall street|s&p|nasdaq|dow|bitcoin|btc|crypto\w*|gold)\b/, type: 'risk', weight: 0.4, label: 'Kursanstieg', labelEn: 'price rally' },
   { re: /\b(ceasefire|truce|peace deal|de.escalat\w+|agreement reached|deal reached)\b/, type: 'risk', weight: 0.55, label: 'Entspannung', labelEn: 'de-escalation' },
   { re: /\b(optimism|risk.on|relief rally)\b/, type: 'risk', weight: 0.4, label: 'Risikofreude', labelEn: 'risk-on' },
   { re: /\b(crash|plunge[sd]?|slump[sd]?|tumble[sd]?|sell.off|selloff|rout)\b/, type: 'risk', weight: -0.5, label: 'Kurssturz', labelEn: 'sell-off' },
@@ -196,7 +208,19 @@ export const GEOPOLITICS = [
   { re: /\bstrikes?\b[^.]{0,40}\b(kill\w*|dead|killed|wounded|injur\w*|casualt\w*)\b/, weight: 0.5, label: 'Militärschlag', labelEn: 'military strike' },
   { re: /\b(invasion|invade[sd]?|offensive launched)\b/, weight: 0.6, label: 'Invasion', labelEn: 'invasion' },
   { re: /\b(war|conflict|hostilities|escalat\w+)\b/, weight: 0.4, label: 'Eskalation', labelEn: 'escalation' },
-  { re: /\b(nuclear|retaliat\w+|preemptive (strike|operation))\b/, weight: 0.5, label: 'Vergeltungsdrohung', labelEn: 'retaliation threat' },
+  /*
+   * "nuclear" allein sagt nichts.
+   *
+   * Das Wort steht ebenso in "nuclear power plant", "nuclear energy shortlist"
+   * oder "nuclear talks" - lauter Meldungen ohne militärische Drohung.
+   * "Twelve Companies Make DOEs Latest Nuclear Shortlist" wurde so zu einer
+   * Vergeltungsdrohung und damit stark bearish, obwohl es um die Vergabe von
+   * Aufträgen in der Kernenergie ging.
+   *
+   * Gefordert ist deshalb der militärische Zusammenhang. "Retaliation" und
+   * "preemptive strike" tragen ihn schon im Wort.
+   */
+  { re: /\bnuclear\b[^.]{0,24}\b(weapon\w*|warhead\w*|strike\w*|attack\w*|test\w*|threat\w*|arsenal|bomb\w*|war\b|escalat\w*)\b|\b(weapon\w*|threat\w*|strike\w*|attack\w*|test\w*)\b[^.]{0,24}\bnuclear\b|\b(retaliat\w+|preemptive (strike|operation))\b/, weight: 0.5, label: 'Vergeltungsdrohung', labelEn: 'retaliation threat' },
   // Mit Plural: "Russian attacks on Ukraine" fiel sonst durch.
   { re: /\b(attacks?|assaults?|raids?) on\b/, weight: 0.45, label: 'Angriff', labelEn: 'attack' },
 ];
