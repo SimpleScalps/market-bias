@@ -400,8 +400,19 @@ export async function collectNews({
   let all = [];
   results.forEach((r, i) => {
     const name = i === 0 ? 'Wirtschaftskalender' : feeds[i - 1].source;
-    if (r.status === 'fulfilled') all.push(...r.value);
-    else errors.push(`${name}: ${r.reason.message}`);
+    if (r.status === 'rejected') { errors.push(`${name}: ${r.reason.message}`); return; }
+
+    /*
+     * Eine Quelle, die nichts liefert, ohne zu scheitern.
+     *
+     * IRNA und Mehr News antworten vom Rechenzentrum aus mit 200, aber ohne
+     * verwertbare Eintraege - vermutlich eine Sperrseite. Ohne diesen Vermerk
+     * war das unsichtbar: kein Fehler, keine Meldungen, keine Erklaerung. Eine
+     * Quelle, die stillschweigend ausfaellt, ist schlimmer als eine, die
+     * lautstark scheitert.
+     */
+    if (!r.value.length) errors.push(`${name}: 0 Eintraege (Abruf gelang)`);
+    all.push(...r.value);
   });
 
   const seen = new Set();
