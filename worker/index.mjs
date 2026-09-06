@@ -1516,8 +1516,15 @@ export default {
          */
         geprueft: (() => {
           const alle = bestand?.items || [];
+          /*
+           * Dasselbe Merkmal wie der Nachlauf, nicht ein eigenes.
+           *
+           * Sonst zaehlte die Anzeige ein Urteil aus veralteten Regeln als
+           * erledigt, waehrend es im Hintergrund neu geprueft wurde - und
+           * meldete 68 von 82 fertig, obwohl 82 offen waren.
+           */
           const handelbar = alle.filter((n) => n.impactLevel !== 'ignore');
-          const fertig = handelbar.filter((n) => n.ki?.inhalt).length;
+          const fertig = handelbar.length - handelbar.filter(brauchtPruefung).length;
           if (!handelbar.length) return 'nichts Handelbares im Bestand';
           /*
            * Aufgegebene getrennt ausweisen.
@@ -1527,7 +1534,7 @@ export default {
            * nie bewegt und nichts mehr bedeutet.
            */
           const buch = zNow.pruefFehler || {};
-          const offen = handelbar.filter((n) => !n.ki?.inhalt);
+          const offen = handelbar.filter(brauchtPruefung);
           const aufgegeben = offen.filter((n) => (buch[n.id] || 0) >= PRUEF_VERSUCHE_MAX).length;
 
           return `${fertig} von ${handelbar.length} handelbaren`
