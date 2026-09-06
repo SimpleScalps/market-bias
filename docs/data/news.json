@@ -1,11 +1,82 @@
 {
- "updated": "2026-09-06T22:03:46.335Z",
+ "updated": "2026-09-06T22:18:37.994Z",
  "regime": "policy",
- "count": 132,
+ "count": 149,
  "errors": [
-  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
+  "Times of Israel: 403 https://www.timesofisrael.com/feed/"
  ],
  "items": [
+  {
+   "id": "Guardian:News live: Labor criticises ‘terrible’ One Nation plan to divert super to boost pay; trial for slain Australian surfers to begin in Mexico",
+   "title": "News live: Labor criticises ‘terrible’ One Nation plan to divert super to boost pay; trial for slain Australian surfers to begin in Mexico",
+   "text": "Follow the day’s news live One Nation has come up with a plan to give people their superannuation earlier, reducing the amount they’ll have at retirement in exchange for a current cash boost. Pauline Hanson says under their plan anyone paying rent or a mortgage can take up to a quarter of their super as a “pay boost” for up to three years. Continue reading...",
+   "source": "Guardian",
+   "url": "https://www.theguardian.com/australia-news/live/2026/sep/07/anthony-albanese-labor-lobbying-rules-greens-social-media-fines-ntwnfb",
+   "date": "2026-09-06T22:10:31.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Live-Nachrichten: Arbeiter kritisieren 'schrecklichen' One Nation-Plan, Super zu Gehaltserhöhungen umzuleiten; Prozess für ermordete australische Surfer beginnt in Mexiko"
+  },
+  {
+   "id": "SCMP:Economist Lan Xiaohuan on the balancing act needed to boost China’s consumption",
+   "title": "Economist Lan Xiaohuan on the balancing act needed to boost China’s consumption",
+   "text": "Lan Xiaohuan is a professor of economics at China Europe International Business School. His book, How China Works: An Introduction to China’s State-led Economic Development, has sold millions of copies in China and has been translated into multiple languages. Here, he discusses the economic realities behind China’s record trade surplus, the case for a stronger social safety net, and how public data infrastructure shapes the artificial intelligence race with the United States. This interview...",
+   "source": "SCMP",
+   "url": "https://www.scmp.com/economy/global-economy/article/3366326/economist-lan-xiaohuan-balancing-act-needed-boost-chinas-consumption?utm_source=rss_feed",
+   "date": "2026-09-06T22:00:09.000Z",
+   "tags": [
+    "Asien"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 62,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Wirtschaftswissenschaftler Lan Xiaohuan zum Ausgleich, der Chinas Konsum ankurbeln soll"
+  },
   {
    "id": "OilPrice:Most Critical Minerals Aren’t Going to the Energy Transition",
    "title": "Most Critical Minerals Aren’t Going to the Energy Transition",
@@ -17,6 +88,7 @@
     "Energie"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -41,6 +113,42 @@
    "titleDe": "Wichtigste Rohstoffe für die Energiewende bleiben aus"
   },
   {
+   "id": "TASS:UK authorities intercept boat with 140 undocumented migrants in English Channel — TV",
+   "title": "UK authorities intercept boat with 140 undocumented migrants in English Channel — TV",
+   "text": "According to the TV channel, the vessel was heading toward the coast of the English county of Hampshire",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183419",
+   "date": "2026-09-06T21:45:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "UK-Behörden fangen Boot mit 140 dokumentlosen Migranten im Ärmelkanal – TV"
+  },
+  {
    "id": "BeInCrypto:Nvidia CEO Jensen Huang Says AGI Has Arrived With OpenAI's GPT-6 Astra",
    "title": "Nvidia CEO Jensen Huang Says AGI Has Arrived With OpenAI's GPT-6 Astra",
    "text": "Jensen Huang says AGI has arrived after OpenAI's newest model trained on NVIDIA chips. OpenAI has not said it.",
@@ -51,6 +159,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -75,6 +184,41 @@
    "titleDe": "Nvidia-CEO Jensen Huang erklärt, dass AGI mit OpenAI’s GPT‑6 Astra eingetroffen ist"
   },
   {
+   "id": "Guardian:Far-right protesters descend on Portsmouth after small boat arrival",
+   "title": "Far-right protesters descend on Portsmouth after small boat arrival",
+   "text": "Influencer livestreams event calling for men to travel to port to block coaches carrying asylum seekers from leaving Far-right activists have descended on Portsmouth, where a small boat with 140 asylum seekers on board was intercepted heading towards the Portsmouth coast. It sparked a major response with a helicopter, an aeroplane and lifeboats sent to the scene. It is thought to be the first time such a large boat containing asylum seekers has been brought to Portsmouth. The boat’s occupants ha",
+   "source": "Guardian",
+   "url": "https://www.theguardian.com/uk-news/2026/sep/06/far-right-protesters-descend-on-portsmouth-after-small-boat-arrival",
+   "date": "2026-09-06T21:38:52.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Rechtsradikale Protestierende stürmen Portsmouth nach Ankunft eines kleinen Bootes"
+  },
+  {
    "id": "BBC World:Germany's far-right AfD set for big win in eastern state, just short of majority",
    "title": "Germany's far-right AfD set for big win in eastern state, just short of majority",
    "text": "Germany's AfD has hailed a \"historic result\" and is projected to win 44% of the vote, far ahead of the conservatives on 17%.",
@@ -85,6 +229,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -119,6 +264,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -143,6 +289,41 @@
    "titleDe": "Nordkoreas Kim Jong Un erklärt, dass der neue Zerstörer Teil des nuklearen Reaktionssystems sein wird"
   },
   {
+   "id": "SCMP:Heading to America to bridge the gap in US-China relations",
+   "title": "Heading to America to bridge the gap in US-China relations",
+   "text": "Before boarding my flight to Boston late last month, I spent the better part of three days doing something I never imagined I would do in more than 30 years of covering China: scrubbing my phone. Old emails, screenshots, WeChat threads that might be read the wrong way, anything that could be misconstrued in an airport interview room – all deleted, just in case. I was not being paranoid. I was following advice now routinely passed among Chinese travellers to the United States: carry a clean...",
+   "source": "SCMP",
+   "url": "https://www.scmp.com/opinion/china-opinion/article/3366098/heading-america-bridge-gap-us-china-relations?utm_source=rss_feed",
+   "date": "2026-09-06T21:30:06.000Z",
+   "tags": [
+    "Asien"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 61,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "In die USA reisen, um die Lücke in den US-China-Beziehungen zu schließen"
+  },
+  {
    "id": "MarketWatch:‘I currently give him $1,000 a month’: My grandson has severe mental illness. How do I protect him after I’m gone?",
    "title": "‘I currently give him $1,000 a month’: My grandson has severe mental illness. How do I protect him after I’m gone?",
    "text": "“I’m desperately trying to plan ahead while I’m still able.”",
@@ -153,6 +334,7 @@
     "Märkte"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -187,6 +369,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -221,6 +404,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -232,7 +416,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -256,6 +440,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -267,7 +452,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -277,7 +462,8 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
-    "Reuters"
+    "Guardian",
+    "SCMP"
    ],
    "titleDe": "Amazon-Frachtflugzeug stürzt in den USA beim Landeanflug auf dem Flughafen Miami ab"
   },
@@ -292,6 +478,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -303,7 +490,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -326,6 +513,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -337,7 +525,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -360,6 +548,7 @@
     "Energie"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -394,6 +583,7 @@
     "Märkte"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -429,6 +619,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -463,6 +654,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -497,6 +689,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "hawkish": 0,
    "signals": [
@@ -512,7 +705,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 66,
+   "priority": 65,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -535,6 +728,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "hawkish": 0,
    "signals": [
@@ -550,7 +744,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 56,
+   "priority": 55,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -565,6 +759,41 @@
    "titleDe": "STONK steigt um 250 % auf 140 Millionen $ Marktkapitalisierung, während das Solana-Launchpad StonkFun das Volumen von Raydium und Jupiter anzieht"
   },
   {
+   "id": "SCMP:10 dead, 64 injured in Mexico fireworks explosion at church festival",
+   "title": "10 dead, 64 injured in Mexico fireworks explosion at church festival",
+   "text": "Pyrotechnic material exploded during the festival for a patron saint in a town in Mexico State, collapsing a wall, killing at least 10 people and injuring another 64, Mexican authorities said. The explosion happened on Saturday night next to the Nuestra Senora de la Luz church in Temascalcingo, a municipality in central Mexico with 66,000 residents. Hundreds of them were preparing to watch a fireworks display that is part of a religious festival when the blast happened. The municipality is about",
+   "source": "SCMP",
+   "url": "https://www.scmp.com/news/world/americas/article/3366568/10-dead-64-injured-mexico-fireworks-explosion-church-festival?utm_source=rss_feed",
+   "date": "2026-09-06T20:50:06.000Z",
+   "tags": [
+    "Asien"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 30,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "10 Tote, 64 Verletzte bei Feuerwerksexplosion auf mexikanischem Kirchenfest"
+  },
+  {
    "id": "TASS:Ex-Pentagon chief anticipates US-Iran standoff to continues for six months more",
    "title": "Ex-Pentagon chief anticipates US-Iran standoff to continues for six months more",
    "text": "Leon Panetta noted that there are very few options available to bring this war to an end",
@@ -576,6 +805,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -610,6 +840,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "hawkish": 0,
    "signals": [
@@ -625,7 +856,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 66,
+   "priority": 65,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -650,6 +881,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -661,7 +893,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -684,6 +916,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -695,7 +928,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -708,39 +941,6 @@
    "titleDe": "Susan Sarandon sagt, sie verliere immer noch Filmrollen wegen ihrer Unterstützung Palästinas"
   },
   {
-   "id": "Tehran Times:15414",
-   "title": "15414",
-   "source": "Tehran Times",
-   "staatlich": true,
-   "url": "https://www.tehrantimes.com/photo/529771/15414",
-   "date": "2026-09-06T20:31:00.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 30,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": []
-  },
-  {
    "id": "Al Jazeera:Will Israelis re-elect Benjamin Netanyahu?",
    "title": "Will Israelis re-elect Benjamin Netanyahu?",
    "text": "Recent opinion polls suggest opposition bloc is ahead of PM's coalition.",
@@ -751,6 +951,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -785,6 +986,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -820,6 +1022,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -855,6 +1058,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -866,7 +1070,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -889,6 +1093,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -900,7 +1105,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -924,6 +1129,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -935,7 +1141,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -946,6 +1152,45 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Kushner bleibt zurück, ob die USA den Druck auf Russland verschärfen werden"
+  },
+  {
+   "id": "Guardian:The US now has access to more than half Australia’s military bases – could it drag the country unwillingly into war?",
+   "title": "The US now has access to more than half Australia’s military bases – could it drag the country unwillingly into war?",
+   "text": "Exclusive: US-controlled weapons corporations and forces have control or access to more than 100 facilities across the continent, which some analysts describe as a ‘colonisation’ of Australia’s military. Find a map of them here US military presence in Australia, mapped – video Why can the US access so many Australian military bases? – podcast US military interests control or have access to more than 100 defence facilities on Australian soil, in what some analysts describe as a “saturation” – eve",
+   "source": "Guardian",
+   "url": "https://www.theguardian.com/australia-news/ng-interactive/2026/sep/07/us-military-bases-in-australia-map-list-spy-satellite-pine-gap",
+   "date": "2026-09-06T20:00:14.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Eskalation"
+   ],
+   "scores": {
+    "crypto": -0.36,
+    "stocks": -0.36,
+    "gold": 0.18,
+    "usd": 0.12
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 64,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Die USA haben nun Zugang zu mehr als der Hälfte der australischen Militärbasen – könnte das Land unwillkürlich in einen Krieg ziehen?"
   },
   {
    "id": "Mehr News:Hormuz Strait fully closed; non-compliant ships to be banned",
@@ -959,6 +1204,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -970,7 +1216,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -983,6 +1229,41 @@
    "titleDe": "Der Hormuz-See ist vollständig geschlossen; nicht konforme Schiffe werden verboten"
   },
   {
+   "id": "SCMP:Iran will declare a ‘prohibited zone’ near Hormuz in coming days: security chief",
+   "title": "Iran will declare a ‘prohibited zone’ near Hormuz in coming days: security chief",
+   "text": "Iran’s top security chief Mohsen Rezaei on Sunday said his country would establish a “prohibited zone” near the strategic Strait of Hormuz, state media reported. “In the coming days, a prohibited zone will be announced outside the Strait of Hormuz. This zone will start from the US Navy’s blockade line and include areas of the Persian Gulf. Any ship entering this new zone will be placed on the sanctions list” of Iran, Rezaei told state television. Also on Sunday, Iranian authorities said they...",
+   "source": "SCMP",
+   "url": "https://www.scmp.com/news/world/middle-east/article/3366566/iran-will-declare-prohibited-zone-near-hormuz-coming-days-security-chief?utm_source=rss_feed",
+   "date": "2026-09-06T19:53:02.000Z",
+   "tags": [
+    "Asien"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 58,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Iran wird in den kommenden Tagen eine 'verbotene Zone' in der Nähe von Hormuz erklären: Sicherheitschef"
+  },
+  {
    "id": "Al Jazeera:Abdul El-Sayed uses speech to talk about Muslim faith and American identity",
    "title": "Abdul El-Sayed uses speech to talk about Muslim faith and American identity",
    "text": "Michigan Senate hopeful spoke about his faith and the experiences of Muslim Americans.",
@@ -993,6 +1274,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1028,6 +1310,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1039,7 +1322,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1063,6 +1346,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1074,7 +1358,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1087,6 +1371,41 @@
    "titleDe": "Witkoff sagt, in Moskau sei viel Fortschritt bei den Ukraine-Verhandlungen erzielt worden"
   },
   {
+   "id": "Guardian:Hawaii declares state of emergency as Hurricane Lowell approaches islands",
+   "title": "Hawaii declares state of emergency as Hurricane Lowell approaches islands",
+   "text": "Storm, which may make impact as soon as Monday, is third system in weeks to threaten state during hurricane season Hawaii has declared a state of emergency as powerful Hurricane Lowell makes its way toward the islands, with the first impacts expected as soon as Monday. The storm is the third system in just over three weeks to threaten Hawaii during an active hurricane season in the central Pacific. Lowell remained a category 3 hurricane early on Sunday morning, packing winds of 125 miles per hou",
+   "source": "Guardian",
+   "url": "https://www.theguardian.com/us-news/2026/sep/06/hawaii-hurricane-lowell-state-of-emergency",
+   "date": "2026-09-06T19:12:36.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Hawaii erklärt Notstand, während der Hurrikan Lowell auf die Inseln zusteuert"
+  },
+  {
    "id": "BeInCrypto:Kalshi Paid the Wrong Winners $18.6 Million Before Michigan's Miracle Comeback",
    "title": "Kalshi Paid the Wrong Winners $18.6 Million Before Michigan's Miracle Comeback",
    "text": "Kalshi's settlement error paid the wrong traders on the Michigan game, forcing clawbacks on an $18.6 million market.",
@@ -1097,6 +1416,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1132,6 +1452,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1156,6 +1477,41 @@
    "titleDe": "AfD gewinnt die Parlamentswahlen in Sachsen-Anhalt"
   },
   {
+   "id": "Guardian:Woman laid to rest in coffin made from mushrooms in Australian first",
+   "title": "Woman laid to rest in coffin made from mushrooms in Australian first",
+   "text": "The casket, grown from mycelium and hemp fibres, takes just 45 days to break down, enriching the soil in the process Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast A woman has been buried in a coffin made from mushrooms in New South Wales in an eco-friendly first for Australia. Carolyn, aged in her 70s, was laid to rest on Friday by friends and family at Springwood Cemetery in the Blue Mountains. Continue reading...",
+   "source": "Guardian",
+   "url": "https://www.theguardian.com/australia-news/2026/sep/07/australian-woman-buried-in-mushroom-coffin-blue-mountains",
+   "date": "2026-09-06T19:00:12.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 27,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Frau in Schachtel aus Pilzen bestattet – erste Australien-Variante"
+  },
+  {
    "id": "OilPrice:High Fuel Prices Are Powering an Electric Motorcycle Boom",
    "title": "High Fuel Prices Are Powering an Electric Motorcycle Boom",
    "text": "While electric car and truck sales have grown more slowly than expected in recent years, prompting governments to rethink clean fuel targets and automakers to slow the pace of EV production, electric motorcycles are becoming increasingly popular in certain parts of the world. Two-wheel vehicles have long been popular in busy cities and low-income countries, and now, largely due to rising fuel prices, many are investing in electric two-wheelers. The United States-Israeli attacks on Iran in Februa",
@@ -1166,6 +1522,7 @@
     "Energie"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1200,6 +1557,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1224,16 +1582,17 @@
    "titleDe": "Vulkanausbruch in Indonesien stört Hunderte Flüge"
   },
   {
-   "id": "Al Jazeera:Adidas faces boycott calls over campaign featuring former Israeli soldier",
-   "title": "Adidas faces boycott calls over campaign featuring former Israeli soldier",
-   "text": "Activists slam campaign showing soldier while over 5,000 Palestinians faced amputations due to Israeli attacks in Gaza.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/sports/2026/9/6/adidas-faces-boycott-calls-over-campaign-featuring-former-israeli-soldier?traffic_source=rss",
-   "date": "2026-09-06T18:56:25.000Z",
+   "id": "Guardian:US envoys Kushner and Witkoff visit Kyiv for first time after Putin talks",
+   "title": "US envoys Kushner and Witkoff visit Kyiv for first time after Putin talks",
+   "text": "Witkoff says he hopes trilateral talks involving the US, Ukraine and Europe will be announced ‘in short order’ The US negotiators Jared Kushner and Steve Witkoff travelled to Ukraine for the first time on Sunday for talks with Volodymyr Zelenskyy in an attempt to end the war with Russia. The Ukrainian president announced plans to widen peace discussions to include European countries in the near future, saying he wanted to do “everything to ensure that trilateral meetings take place” with Ukraine",
+   "source": "Guardian",
+   "url": "https://www.theguardian.com/world/2026/sep/06/us-envoys-jared-kushner-steve-witkoff-arrive-kyiv-talks-on-ending-war",
+   "date": "2026-09-06T18:47:59.000Z",
    "tags": [
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1243,9 +1602,9 @@
    },
    "signals": [],
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 27,
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1255,7 +1614,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Adidas steht vor Boykottaufrufen wegen Kampagne mit ehemaligem israelischem Soldaten"
+   "titleDe": "US-Botschafter Kushner und Witkoff besuchen Kyiv zum ersten Mal nach Putin-Gesprächen"
   },
   {
    "id": "U.Today:ZEC Surges Into Top 10, Shorts Getting Absolutely Hammered",
@@ -1268,6 +1627,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1279,7 +1639,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1302,6 +1662,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1313,7 +1674,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1322,7 +1683,9 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
+   "alsoIn": [
+    "Guardian"
+   ],
    "titleDe": "Trump-Regierung reicht erneut Klage beim US Supreme Court wegen Briefwahl ein"
   },
   {
@@ -1337,40 +1700,7 @@
     "Weltlage"
    ],
    "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 27,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Kushner bezeichnete Treffen mit Putin als ‚konstruktiv und substanziell’"
-  },
-  {
-   "id": "Al Jazeera:Why is Argentina reviving the Falklands dispute?",
-   "title": "Why is Argentina reviving the Falklands dispute?",
-   "text": "More than 44 years after Britain and Argentina went to war over the Falkland Islands, Argentina is reasserting its claim",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/why-is-argentina-reviving-the-falklands-dispute?traffic_source=rss",
-   "date": "2026-09-06T18:36:40.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1392,7 +1722,42 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Warum erweckt Argentinien den Falklandstreit neu?"
+   "titleDe": "Kushner bezeichnete Treffen mit Putin als ‚konstruktiv und substanziell’"
+  },
+  {
+   "id": "SCMP:EU Commission chief Von der Leyen visits Greenland to sign new partnership deal",
+   "title": "EU Commission chief Von der Leyen visits Greenland to sign new partnership deal",
+   "text": "The EU plans to deepen its cooperation with Greenland despite US President Donald Trump’s claims of control over the Arctic island, as European Commission President Ursula von der Leyen arrived on Sunday for a two-day visit. Von der Leyen travelled to the resource-rich island, where a new EU-Greenland declaration is to be signed on Monday. Investment pledges running into the hundreds of millions are also expected. On her arrival, von der Leyen said the visit was about further cementing a unique.",
+   "source": "SCMP",
+   "url": "https://www.scmp.com/news/world/europe/article/3366565/eu-commission-chief-von-der-leyen-visits-greenland-sign-new-partnership-deal?utm_source=rss_feed",
+   "date": "2026-09-06T18:44:34.000Z",
+   "tags": [
+    "Asien"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 26,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Partnerschaft",
+   "eventTypeEn": "Partnership",
+   "scope": "project",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "EU-Kommissionspräsidentin Von der Leyen besucht Grönland, um neues Partnerschaftsabkommen zu unterzeichnen"
   },
   {
    "id": "BBC World:Zelensky says he expects war to continue into winter after talks with US envoys",
@@ -1405,6 +1770,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "hawkish": 0,
    "signals": [
@@ -1420,7 +1786,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 66,
+   "priority": 65,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -1443,6 +1809,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1477,6 +1844,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1512,6 +1880,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1547,6 +1916,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1582,6 +1952,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1606,6 +1977,41 @@
    "titleDe": "Drei Tanker ändern Kurs im Hormus nach Warnung der IRGC"
   },
   {
+   "id": "Guardian:Far-right AfD wins key German state election but may fail to secure majority",
+   "title": "Far-right AfD wins key German state election but may fail to secure majority",
+   "text": "Exit poll shows Alternative für Deutschland on 44.4% of vote in Saxony-Anhalt after huge turnout, with votes still being counted The populist, far-right, anti-immigration Alternative für Deutschland (AfD) has emerged as the winner in a crucial state election in Germany, exit polls have projected, securing a historic result and more than doubling its support. The AfD now appear on the brink of becoming the first far-right party to gain power in Germany at state level since the second world war. I",
+   "source": "Guardian",
+   "url": "https://www.theguardian.com/world/2026/sep/06/saxony-anhalt-germany-afd-exit-poll-ulrich-siegmund",
+   "date": "2026-09-06T18:13:29.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 25,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Rechtsradikale AfD gewinnt entscheidende Landeswahl in Deutschland, könnte jedoch die Mehrheit nicht sichern"
+  },
+  {
    "id": "The Block:Coinbase-backed Router Protocol to shut down, burn 303 million ROUTE tokens",
    "title": "Coinbase-backed Router Protocol to shut down, burn 303 million ROUTE tokens",
    "text": "The shutdown comes after attempts to commercialize, license or find a buyer for its technology failed to produce a sustainable business.",
@@ -1616,6 +2022,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1627,7 +2034,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1640,41 +2047,6 @@
    "titleDe": "Router-Protokoll, unterstützt von Coinbase, soll eingestellt werden und 303 Millionen ROUTE‑Token verbrennen"
   },
   {
-   "id": "TASS:US working on ‘peace package’ for Ukrainian settlement — Kushner",
-   "title": "US working on ‘peace package’ for Ukrainian settlement — Kushner",
-   "text": "Many people in the United States government, under the President, Vice President, Secretary of State Marco Rubio and many others, are working to try to create it, the American leader's son-in-law noted",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/world/2183391",
-   "date": "2026-09-06T18:01:49.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 39,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "USA arbeiten an einem 'Friedenspaket' für die ukrainische Lösung — Kushner"
-  },
-  {
    "id": "BeInCrypto:McDonald’s India Drama Erupts While Wall Street Targets 24% Stock Rally",
    "title": "McDonald’s India Drama Erupts While Wall Street Targets 24% Stock Rally",
    "text": "McDonald's India's X account melted into memecoin posts while Wall Street still targets a 24% MCD stock rally.",
@@ -1685,6 +2057,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "hawkish": 0,
    "signals": [
@@ -1724,6 +2097,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1748,6 +2122,83 @@
    "titleDe": "Saudi‑Feindliche 'Wing Loong 2'-Drohne wird über Taiz abgeschossen"
   },
   {
+   "id": "SCMP:Sierra Leone ex-president returns to country after treason case dropped",
+   "title": "Sierra Leone ex-president returns to country after treason case dropped",
+   "text": "Former Sierra Leone president Ernest Bai Koroma returned to his home country on Sunday, where authorities welcomed him after treason charges against him over an alleged coup attempt were dropped. Koroma had left for Nigeria in 2024, days after being charged with treason and other offences over a deadly 2023 army uprising. The former president, who led Sierra Leone from 2007 to 2018, arrived at the international airport in the capital, Freetown, accompanied by Nigerian ex-president Olusegun...",
+   "source": "SCMP",
+   "url": "https://www.scmp.com/news/world/africa/article/3366564/sierra-leone-ex-president-returns-country-after-treason-case-dropped?utm_source=rss_feed",
+   "date": "2026-09-06T17:50:08.000Z",
+   "tags": [
+    "Asien"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 25,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Ex-Präsident von Sierra Leone kehrt nach Land zurück, nachdem Anklage wegen Hochverrats fallen gelassen wurde"
+  },
+  {
+   "id": "Guardian:Energy secretary says US might not reach nuclear agreement with Iran",
+   "title": "Energy secretary says US might not reach nuclear agreement with Iran",
+   "text": "Chris Wright tells ABC there ‘may not’ be an agreement that would prevent Iran from having nuclear weapons US energy secretary Chris Wright said on Sunday morning that the US may not be able to reach a nuclear agreement with Iran that would prevent the country from having nuclear weapons. Asked on ABC on Sunday morning about any sign of such a deal, as negotiations appear stalled and the US-Israel war on Iran continues, Wright said: “There may not be a nuclear agreement.” Continue reading...",
+   "source": "Guardian",
+   "url": "https://www.theguardian.com/world/2026/sep/06/us-iran-nuclear-agreement-chris-wright",
+   "date": "2026-09-06T17:39:10.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Diplomatie gescheitert"
+   ],
+   "scores": {
+    "crypto": -0.315,
+    "stocks": -0.315,
+    "gold": 0.158,
+    "usd": 0.105
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Diplomatie gescheitert)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: diplomacy failed)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 86,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "CNBC",
+    "CNBC World"
+   ],
+   "titleDe": "Energie-Minister sagt, die USA könnten kein nukleares Abkommen mit Iran erreichen"
+  },
+  {
    "id": "Tehran Times:Shadowy Emirati firm exposed as major oil supplier for Israeli military",
    "title": "Shadowy Emirati firm exposed as major oil supplier for Israeli military",
    "text": "TEHRAN — While Israel continues its campaign of mass extermination in Gaza, a newly established Emirati company has quietly stepped out of the shadows to ensure the Israeli war machine never runs out of fuel.",
@@ -1759,6 +2210,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1770,7 +2222,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 55,
+   "priority": 54,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1794,6 +2246,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1805,7 +2258,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 38,
+   "priority": 37,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1829,6 +2282,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1840,7 +2294,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1864,6 +2318,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "hawkish": 0,
    "signals": [
@@ -1903,6 +2358,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1914,7 +2370,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 55,
+   "priority": 54,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1938,6 +2394,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -1949,7 +2406,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1973,6 +2430,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "hawkish": 0,
    "signals": [
@@ -2012,6 +2470,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2023,7 +2482,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2047,6 +2506,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2058,7 +2518,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 55,
+   "priority": 54,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2082,6 +2542,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2093,7 +2554,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2117,6 +2578,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "hawkish": 0,
    "signals": [
@@ -2145,6 +2607,82 @@
    "titleDe": "Sydney-Kunstausstellung beleuchtet die Minab-Tragödie, Stimmen des Krieges, Widerstand"
   },
   {
+   "id": "SCMP:Lebanon’s president appeals to US for help as Israeli strikes kill 7",
+   "title": "Lebanon’s president appeals to US for help as Israeli strikes kill 7",
+   "text": "Lebanese President Joseph Aoun urged Washington and the international community to help stop Israeli attacks, which killed at least seven people on Sunday despite a truce and a framework deal aimed at halting the violence. Israel said it had targeted Hezbollah operatives and sites in response to a drone attack a day earlier by the Iran-backed group on its troops in the vicinity of a strategic south Lebanon ridge. It reported no casualties but accused Hezbollah of a “blatant violation”. Israel...",
+   "source": "SCMP",
+   "url": "https://www.scmp.com/news/world/middle-east/article/3366563/lebanons-president-appeals-us-help-israeli-strikes-kill-7?utm_source=rss_feed",
+   "date": "2026-09-06T17:11:56.000Z",
+   "tags": [
+    "Asien"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Militärschlag"
+   ],
+   "scores": {
+    "crypto": -0.45,
+    "stocks": -0.45,
+    "gold": 0.225,
+    "usd": 0.15
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Militärschlag)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 44,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Der Präsident Libanons bittet die USA um Hilfe, während israelische Angriffe 7 töten"
+  },
+  {
+   "id": "SCMP:Jamaican minister to file slavery reparations petition to King Charles during UK visit",
+   "title": "Jamaican minister to file slavery reparations petition to King Charles during UK visit",
+   "text": "A Jamaican government delegation visiting Britain is set to file a petition addressed to King Charles on Monday, raising the question of slavery reparations, Kingston’s culture ministry said. Culture Minister Olivia Grange will lead the delegation “to advance Jamaica’s push for reparations for the African ancestors who suffered under hundreds of years of enslavement”, the ministry said in a statement. The petition asks the king, who is Jamaica’s head of state, to refer three questions on the...",
+   "source": "SCMP",
+   "url": "https://www.scmp.com/news/world/europe/article/3366569/jamaican-minister-file-slavery-reparations-petition-king-charles-during-uk-visit?utm_source=rss_feed",
+   "date": "2026-09-06T17:05:11.000Z",
+   "tags": [
+    "Asien"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "Guardian"
+   ],
+   "titleDe": "Jamaikanischer Minister reicht während UK-Besuch Klage für Sklavenentschädigungen bei König Charles ein"
+  },
+  {
    "id": "Decrypt:OpenAI's GPT-6 Astra Is Shockingly Good at Almost Everything",
    "title": "OpenAI's GPT-6 Astra Is Shockingly Good at Almost Everything",
    "text": "Early testers spent OpenAI's launch weekend pushing Astra through 3D cities, playable games, Bach chorales and research papers.",
@@ -2155,6 +2693,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2189,6 +2728,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2213,6 +2753,41 @@
    "titleDe": "Iran warnt vor einer 'schnelleren, schwereren, schmerzhafteren Reaktion' auf US-Angriffe"
   },
   {
+   "id": "Guardian:EU faces 300,000 factory job cuts as China ‘colonises’ supply chains, industry warns",
+   "title": "EU faces 300,000 factory job cuts as China ‘colonises’ supply chains, industry warns",
+   "text": "Protest using 10 coffins to symbolise struggling manufacturing industry to take place in Brussels Job losses in EU manufacturing will rapidly increase unless Brussels stops the “colonisation” of industry by Chinese component manufacturers, a leading industry trade body has warned. Eurometal predicts 300,000 job losses in manufacturing in the rest of 2026 because of expanding competition from China, which is now enjoying a record €1bn-a-day trade surplus with the bloc. Continue reading...",
+   "source": "Guardian",
+   "url": "https://www.theguardian.com/business/2026/sep/06/eu-factory-job-cuts-china-colonises-supply-chains-industry-warns",
+   "date": "2026-09-06T17:00:10.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 54,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "EU sieht sich mit 300.000 Fabrikarbeitsplätzen konfrontiert, während China Lieferketten 'kolonisiert', warnt die Industrie"
+  },
+  {
    "id": "OilPrice:Colombia Moves to Reverse Fracking Ban, Eyes $4 Billion in New Oil Investment",
    "title": "Colombia Moves to Reverse Fracking Ban, Eyes $4 Billion in New Oil Investment",
    "text": "A regime change in Colombia’s federal government is poised to usher in an oil and gas renaissance in the South American nation. After a four-year ban on oil and gas exploration under the previous leftist president Gustavo Petro, a new right-wing administration is eager to open the country’s oil and gas reserves up to foreign investors. But while mining and oil companies are ready to pour billions of dollars into the sector, Colombia’s political systems might not actually be ready for the flood. ",
@@ -2223,6 +2798,7 @@
     "Energie"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2257,6 +2833,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2268,7 +2845,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2293,6 +2870,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2319,16 +2897,17 @@
    "titleDe": "Hackers fordern 2 Millionen Dollar in Bitcoin aus Deutschland. Berlin verweigert Zahlung"
   },
   {
-   "id": "CNBC World:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
-   "title": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
-   "text": "Iran warned of faster, heavier retaliation against U.S. attacks while acknowledging the war’s mounting toll on its economy.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html",
-   "date": "2026-09-06T16:27:03.000Z",
+   "id": "SCMP:Germany’s far-right AfD is landslide winner in Saxony-Anhalt vote, exit polls indicate",
+   "title": "Germany’s far-right AfD is landslide winner in Saxony-Anhalt vote, exit polls indicate",
+   "text": "Germany’s far-right Alternative for Germany (AfD) won a landslide victory in a key regional election on Sunday in the ex-communist east, according to exit polls, but it remains unclear whether it can win an absolute majority to govern. “We have made history today,” said a jubilant Ulrich Siegmund, the 35-year-old lead candidate of the anti-immigration AfD in Saxony-Anhalt state, as the vote count continued. The AfD won at least 44 per cent, more than doubling its support, and far ahead of the...",
+   "source": "SCMP",
+   "url": "https://www.scmp.com/news/world/europe/article/3366562/germanys-far-right-afd-landslide-winner-eastern-state-vote-exit-polls-indicate?utm_source=rss_feed",
+   "date": "2026-09-06T16:36:27.000Z",
    "tags": [
-    "Weltwirtschaft"
+    "Asien"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2338,21 +2917,19 @@
    },
    "signals": [],
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 84,
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
-   "titleDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen"
+   "alsoIn": [],
+   "titleDe": "AfD gewinnt landslide in Sachsen-Anhalt, Exit-Umfragen deuten auf Sieg hin"
   },
   {
    "id": "U.Today:Bitcoin OG Says He Is Watching for Next Major Exploit as AI Models Get Stronger",
@@ -2365,6 +2942,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "hawkish": 0,
    "signals": [
@@ -2380,7 +2958,7 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 54,
+   "priority": 53,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -2406,25 +2984,27 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "hawkish": 0,
    "signals": [
-    "nicht Entspannung"
+    "nicht Entspannung",
+    "Diplomatie gescheitert"
    ],
    "scores": {
-    "crypto": -0.099,
-    "stocks": -0.099,
-    "gold": 0.05,
-    "usd": 0.033
+    "crypto": -0.81,
+    "stocks": -0.81,
+    "gold": 0.405,
+    "usd": 0.27
    },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: nicht Entspannung)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: not de-escalation)",
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: nicht Entspannung, Diplomatie gescheitert)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: not de-escalation, diplomacy failed)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 54,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
+   "priority": 65,
+   "label": "strong_bearish",
+   "labelText": "Stark Bearish",
+   "impactLevel": "medium",
    "duration": "intraday",
    "eventType": "Geopolitik",
    "eventTypeEn": "Geopolitics",
@@ -2444,6 +3024,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2480,6 +3061,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2504,6 +3086,41 @@
    "titleDe": "Vulkanausbruch lässt 170 000 Passagiere in Indonesien stranden"
   },
   {
+   "id": "SCMP:Rewriting world history puts China’s image and ‘cultural security’ at risk: party journal",
+   "title": "Rewriting world history puts China’s image and ‘cultural security’ at risk: party journal",
+   "text": "Radically rewriting world and Chinese history without solid proof could threaten China’s international image and national identity, a leading Communist Party journal has warned. There has been a growing trend to promote a less Western-centric view of history in recent years, while Beijing has also been keen to promote the idea that Chinese civilisation has a long and continuous history. But at the same time, the so-called pseudo-historical school – which has cast doubt on the origins of Western.",
+   "source": "SCMP",
+   "url": "https://www.scmp.com/news/china/politics/article/3366546/rewriting-world-history-puts-chinas-image-and-cultural-security-risk-party-journal?utm_source=rss_feed",
+   "date": "2026-09-06T16:00:07.000Z",
+   "tags": [
+    "Asien"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 52,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Umgeschriebenes Weltgeschichte-Programm gefährdet Chinas Image und 'kulturelle Sicherheit': Parteizeitung"
+  },
+  {
    "id": "CoinDesk:Ukrainian police took down a crypto scam that stole up to $1 million a month",
    "title": "Ukrainian police took down a crypto scam that stole up to $1 million a month",
    "text": "Investigators have identified 62 victims and say more than 46 Ukrainians took part in the alleged operation.",
@@ -2514,6 +3131,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2548,6 +3166,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2584,6 +3203,7 @@
     "Weltwirtschaft"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2621,6 +3241,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2632,7 +3253,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2655,6 +3276,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2666,7 +3288,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2679,16 +3301,17 @@
    "titleDe": "Stablecoins werden ohne Banken nicht skalieren"
   },
   {
-   "id": "OilPrice:Oil-Rich Oman Bets Big on Renewable Energy",
-   "title": "Oil-Rich Oman Bets Big on Renewable Energy",
-   "text": "Oman, a major oil and gas producer, plans to expand its renewable energy capacity as part of its energy diversification and green transition goals. The government recently introduced new national policies to expand Oman’s green energy and cleantech industries and to encourage private investment in the sector. This year, Oman’s Ministry of Energy and Minerals launched a revised net-zero emissions strategy and a carbon markets regulatory framework as part of the government’s aims to achieve net-ze",
-   "source": "OilPrice",
-   "url": "https://oilprice.com/Energy/Energy-General/Oil-Rich-Oman-Bets-Big-on-Renewable-Energy.html",
-   "date": "2026-09-06T15:00:00.000Z",
+   "id": "SCMP:Children among at least 25 killed in Cabo Verde bus crash",
+   "title": "Children among at least 25 killed in Cabo Verde bus crash",
+   "text": "At least 25 people, mostly children and teenagers, were killed in a bus crash on Cabo Verde’s Fogo Island, public radio network RCV said on Sunday. Several others were injured in Saturday’s accident, some of them seriously, the head of civil protection for Sao Filipe city, Jose Canuto, told reporters. Such incidents are rare in the west African archipelago, where roads are generally in good condition. Canuto and other local authorities said the bus, which was carrying 32 passengers, veered off..",
+   "source": "SCMP",
+   "url": "https://www.scmp.com/news/world/africa/article/3366561/children-among-least-25-killed-cabo-verde-bus-crash?utm_source=rss_feed",
+   "date": "2026-09-06T15:00:45.000Z",
    "tags": [
-    "Energie"
+    "Asien"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2700,7 +3323,42 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 24,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Mindestens 25 Kinder bei Busunglück in Cabo Verde getötet"
+  },
+  {
+   "id": "OilPrice:Oil-Rich Oman Bets Big on Renewable Energy",
+   "title": "Oil-Rich Oman Bets Big on Renewable Energy",
+   "text": "Oman, a major oil and gas producer, plans to expand its renewable energy capacity as part of its energy diversification and green transition goals. The government recently introduced new national policies to expand Oman’s green energy and cleantech industries and to encourage private investment in the sector. This year, Oman’s Ministry of Energy and Minerals launched a revised net-zero emissions strategy and a carbon markets regulatory framework as part of the government’s aims to achieve net-ze",
+   "source": "OilPrice",
+   "url": "https://oilprice.com/Energy/Energy-General/Oil-Rich-Oman-Bets-Big-on-Renewable-Energy.html",
+   "date": "2026-09-06T15:00:00.000Z",
+   "tags": [
+    "Energie"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2723,6 +3381,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2759,6 +3418,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2795,6 +3455,7 @@
     "US-Märkte"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2830,6 +3491,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "hawkish": 0,
    "signals": [
@@ -2845,7 +3507,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -2868,6 +3530,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2879,7 +3542,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -2902,6 +3565,7 @@
     "Märkte"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2936,6 +3600,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -2972,6 +3637,7 @@
     "Märkte"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3006,6 +3672,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3041,6 +3708,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3075,6 +3743,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3109,6 +3778,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3146,6 +3816,7 @@
     "Weltwirtschaft"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3182,6 +3853,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3193,7 +3865,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3217,6 +3889,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3228,7 +3901,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 48,
+   "priority": 47,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3252,6 +3925,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3263,7 +3937,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 48,
+   "priority": 47,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3286,6 +3960,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3297,7 +3972,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 38,
+   "priority": 37,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3323,6 +3998,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3334,7 +4010,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3357,6 +4033,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3368,7 +4045,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 38,
+   "priority": 37,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3391,6 +4068,7 @@
     "Märkte"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3425,6 +4103,7 @@
     "Märkte"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3459,6 +4138,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3495,6 +4175,7 @@
     "Weltwirtschaft"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3532,6 +4213,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3566,6 +4248,7 @@
     "Märkte"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3601,6 +4284,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3635,6 +4319,7 @@
     "Märkte"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3669,6 +4354,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3703,6 +4389,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3739,6 +4426,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3750,7 +4438,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 15,
+   "priority": 14,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3773,6 +4461,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3784,7 +4473,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 15,
+   "priority": 14,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3808,6 +4497,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3819,7 +4509,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 45,
+   "priority": 44,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3843,6 +4533,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3854,7 +4545,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 45,
+   "priority": 44,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3877,6 +4568,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3912,6 +4604,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3936,6 +4629,41 @@
    "titleDe": "Iran sieht größeren Anteil an Chinas wachsendem Kupfermarkt"
   },
   {
+   "id": "Guardian Wirtschaft:Air conditioners are our best bet in the fight against extreme heat – whether we like it or not",
+   "title": "Air conditioners are our best bet in the fight against extreme heat – whether we like it or not",
+   "text": "Global AC demand will inevitably accelerate as the world continues to warm amid the climate crisis The greenest campaigners against climate change have long suffered from a crippling shortcoming: they too often frame the challenge as a problem of excess consumption. This motivates calls to “degrow” the economy and to curb the population . The claim is that humans consume too many resources, which in the context of climate change means too much energy. Nowhere has the tension between this proposi",
+   "source": "Guardian Wirtschaft",
+   "url": "https://www.theguardian.com/environment/2026/sep/06/climate-crisis-air-conditioning-access",
+   "date": "2026-09-06T11:00:03.000Z",
+   "tags": [
+    "Weltwirtschaft"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 14,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Klimaanlagen sind unser bester Schutz gegen extreme Hitze – ob wir es wollen oder nicht"
+  },
+  {
    "id": "IRNA:Pezeshkian orders probe into fatal fuel tanker explosion in western Iran",
    "title": "Pezeshkian orders probe into fatal fuel tanker explosion in western Iran",
    "text": "Tehran, IRNA – President Masoud Pezeshkian has ordered an immediate investigation into the causes of a fuel tanker explosion that killed 11 people and injured seven others on the Sanandaj-Hamedan road in western Iran.",
@@ -3947,6 +4675,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3981,6 +4710,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -3992,7 +4722,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 34,
+   "priority": 33,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -4018,6 +4748,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4029,7 +4760,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -4052,6 +4783,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4063,7 +4795,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4086,6 +4818,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4097,7 +4830,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4122,6 +4855,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4157,6 +4891,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4194,6 +4929,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4205,7 +4941,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -4229,6 +4965,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4264,6 +5001,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4298,6 +5036,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4309,7 +5048,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 10,
+   "priority": 9,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4333,6 +5072,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4367,6 +5107,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4401,6 +5142,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4435,6 +5177,7 @@
     "US-Wirtschaft"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4471,6 +5214,7 @@
     "Märkte"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4505,6 +5249,7 @@
     "Energie"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "hawkish": 0,
    "signals": [
@@ -4543,6 +5288,7 @@
     "Weltlage"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4577,6 +5323,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4611,6 +5358,7 @@
     "Krypto"
    ],
    "impact": "low",
+   "regelStand": 2,
    "kind": "headline",
    "scores": {
     "crypto": 0,
@@ -4636,7 +5384,11 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 2,
+  "uebersetzt": 22,
   "fehler": null
+ },
+ "rubriken": {
+  "Sport": 2,
+  "Unsinn": 1
  }
 }
