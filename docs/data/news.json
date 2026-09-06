@@ -1,11 +1,45 @@
 {
- "updated": "2026-09-06T11:44:50.043Z",
+ "updated": "2026-09-06T11:52:46.781Z",
  "regime": "policy",
- "count": 88,
+ "count": 89,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "BeInCrypto:Elon Musk Fires Back at Bernie Sanders Over His $900 Billion Fortune",
+   "title": "Elon Musk Fires Back at Bernie Sanders Over His $900 Billion Fortune",
+   "text": "Elon Musk answers Bernie Sanders on X, saying his wealth sits in SpaceX and Tesla stock rather than cash.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/elon-musk-wealth-stock-cash-sanders/",
+   "date": "2026-09-06T11:38:53.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Elon Musk schlägt Bernie Sanders zurück wegen seines 900 Milliarden Dollar Vermögens"
+  },
   {
    "id": "Al Jazeera:Jovic moved to tears after beating ‘incredible’ friend Eala in US Open epic",
    "title": "Jovic moved to tears after beating ‘incredible’ friend Eala in US Open epic",
@@ -28,7 +62,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 45,
+   "priority": 44,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -107,6 +141,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Können Sie die wahre Größe jedes Landes auf der neuen Weltkarte erraten?"
+  },
+  {
+   "id": "BeInCrypto:Nike Exits the S&P 100 Index. 4 Tech Stocks Move In",
+   "title": "Nike Exits the S&P 100 Index. 4 Tech Stocks Move In",
+   "text": "Nike drops out of the S&P 100 on September 21. Dell, Palo Alto, Arista and Sandisk move in.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/nike-sp-100-exit-tech-replacements/",
+   "date": "2026-09-06T11:14:50.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Nike verlässt den S&P 100 Index. Vier Technologiewerte treten ein"
   },
   {
    "id": "Al Jazeera:Photos: Gaza holds funeral for 100 Palestinians recovered from rubble",
@@ -782,7 +850,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -857,7 +925,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike, attack)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 42,
+   "priority": 41,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -1033,7 +1101,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1345,7 +1413,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1487,7 +1555,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation, retaliation threat, attack)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 82,
+   "priority": 81,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -2972,44 +3040,6 @@
    "titleDe": "Ein britischer Investor glaubte, 2012 2.000 Dollar in Bitcoin verloren zu haben. Nun hat er 4,5 Millionen Dollar zurückerhalten."
   },
   {
-   "id": "BeInCrypto:The 18-Year Housing Cycle Says the Next Market Crash Is Close",
-   "title": "The 18-Year Housing Cycle Says the Next Market Crash Is Close",
-   "text": "Investors are watching stocks and Bitcoin for the next major peak. Popular macro analyst Jason Pizzino thinks the first warning has already arrived from US housing. His thesis uses an 18-year property cycle drawn from roughly 220 years of US sales data. The current cycle began around 2011–2012 and places the housing peak in 2025–26,",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/18-year-us-housing-cycle-bitcoin-stock-crash/",
-   "date": "2026-09-05T11:48:34.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Kurssturz"
-   ],
-   "scores": {
-    "crypto": -0.45,
-    "stocks": -0.45,
-    "gold": 0.225,
-    "usd": 0.15
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Kurssturz)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 13,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Der 18-jährige Wohnungsmarktzyklus sagt, dass der nächste Marktcrash nahe ist"
-  },
-  {
    "id": "The Defiant:Revolut Starts EURR Rollout With Bridge as Regulated Issuer",
    "title": "Revolut Starts EURR Rollout With Bridge as Regulated Issuer",
    "text": "Revolut opens EURR to selected customers in three countries; Bridge reported €374 outstanding, compared with €394.5 million of Circle’s EURC.",
@@ -3079,7 +3109,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
+  "uebersetzt": 2,
   "fehler": null
  }
 }
