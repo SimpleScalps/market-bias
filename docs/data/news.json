@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-06T08:36:32.559Z",
+ "updated": "2026-09-06T08:45:51.900Z",
  "regime": "policy",
  "count": 79,
  "errors": [
@@ -62,7 +62,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -166,7 +166,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -234,7 +234,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -304,7 +304,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -648,7 +648,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -790,7 +790,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation, retaliation threat, attack)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 87,
+   "priority": 86,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -994,7 +994,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 10,
+   "priority": 9,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1066,7 +1066,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike)",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 63,
+   "priority": 62,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -1116,8 +1116,8 @@
    "titleDe": "7‑Prozent‑Hypothekenzinsen sind bereits da, so sagen einige Käufer und Hypothekenexperten"
   },
   {
-   "id": "CoinDesk:Why crypto experts say buying and holding bitcoin easily beats trying to time the market",
-   "title": "Why crypto experts say buying and holding bitcoin easily beats trying to time the market",
+   "id": "CoinDesk:Timing the bitcoin market is exciting but nearly impossible. Here's why",
+   "title": "Timing the bitcoin market is exciting but nearly impossible. Here's why",
    "text": "A historical analysis of bitcoin price performance from 2010 through 2026 demonstrates that the vast majority of the asset's annual returns occur during a tiny fraction of the calendar year.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/markets/2026/09/05/why-crypto-experts-say-buying-and-holding-bitcoin-easily-beats-trying-to-time-the-market",
@@ -1149,7 +1149,7 @@
     "BTC"
    ],
    "alsoIn": [],
-   "titleDe": "Krypto-Experten erklären, warum der Kauf und das Halten von Bitcoin deutlich besser ist als das Timing des Marktes"
+   "titleDe": "Das Timing des Bitcoin-Marktes ist spannend, aber nahezu unmöglich – hier die Gründe"
   },
   {
    "id": "BeInCrypto:Polygon CEO Triggers Crypto Community With Vacation Take and Schools Critics",
@@ -1207,7 +1207,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1311,7 +1311,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1345,7 +1345,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2766,7 +2766,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
