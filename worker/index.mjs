@@ -55,7 +55,7 @@ const GESEHEN_MAX = 4000;   // Gedächtnis über die Sichtbarkeitsgrenze hinaus
  * "Nachfragen" tippen. Fuellt der Nachlauf das Minutenkontingent aus, bekommt
  * der Nutzer eine Absage fuer etwas, das er selbst angestossen hat - das
  * waere die falsche Reihenfolge. Der Nachlauf laeuft im Hintergrund und hat
- * Zeit; er tritt zurueck. Ueber den Tag wacht zusaetzlich KI_TOKEN_MAX.
+ * Zeit; er tritt zurueck. Ueber den Tag wacht zusaetzlich KI_TOKEN_MAX_JE_MODELL.
  */
 const GEGENPROBE_MAX = 3;
 
@@ -159,14 +159,20 @@ function fehlerbuchFortschreiben(buch, gescheitert, items) {
  * geschaetzt wird hier nichts.
  */
 /*
- * Der Deckel zaehlt ueber alle Modelle zusammen.
+ * Der Deckel gilt je Modell - nicht ueber alle zusammen.
  *
- * Seit der Nachlauf auf dem grossen Modell laeuft, stehen zwei Kontingente zu
- * je 200.000 offen statt eines. 320.000 laesst beiden Luft und bleibt weit
- * unter der Summe - die Bremse greift also weiter, nur nicht mehr dort, wo
- * noch ein ganzes unbenutztes Kontingent danebenliegt.
+ * Vorher stand hier eine Summe von 320.000 fuer beide Modelle. Sie war zu
+ * knapp und vor allem am falschen Ort: Groq rechnet je Modell ab, und als der
+ * Zaehler 323.113 erreichte, stand daneben "gpt-oss-20b: 737 von 200.000" -
+ * ein praktisch unberuehrtes Kontingent. Trotzdem lief nichts mehr: keine
+ * Pruefung, kein Nachlauf, kein Nachlesen, vier Stunden lang, weil eine
+ * gemeinsame Bremse zog, wo nur eines von zwei Raedern heiss war.
+ *
+ * 170.000 von 200.000 lassen je Modell 30.000 Puffer fuer den Tagesbericht
+ * und die Nachfragen des Nutzers. Der Zaehler im Durable Object faellt am
+ * Tageswechsel von selbst weg - siehe versandbuch.mjs.
  */
-const KI_TOKEN_MAX = 320_000;
+const KI_TOKEN_MAX_JE_MODELL = 170_000;
 
 /*
  * Klarnamen fuer die drei Aufgaben, die sich Groq teilen.
@@ -802,9 +808,8 @@ const alterMs = (d) => (d?.updated ? Date.now() - new Date(d.updated).getTime() 
  */
 function budgetRest(speicher) {
   const heute = new Date().toISOString().slice(0, 10);
-  if (!speicher || speicher.tag !== heute) return { tag: heute, verbraucht: 0, rest: KI_TOKEN_MAX };
-  const verbraucht = speicher.tokens || 0;
-  return { tag: heute, verbraucht, rest: Math.max(0, KI_TOKEN_MAX - verbraucht) };
+  if (!speicher || speicher.tag !== heute) return { tag: heute, verbraucht: 0, jeModell: {} };
+  return { tag: heute, verbraucht: speicher.tokens || 0, jeModell: speicher.tokenJeModell || {} };
 }
 
 /**
@@ -1075,9 +1080,26 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   // Vor dem Versand gegenlesen lassen: Ein Widerspruch gehoert in die
   // Benachrichtigung, nicht erst in die spaetere Ansicht.
   // Der Tokenstand kommt aus dem Durable Object; KV kann ihn nicht führen.
-  const budget = budgetRest(z.tag ? { tag: z.tag, tokens: z.tokens } : speicher);
-  // Der eigene Verbrauch zaehlt mit, auch wenn er nirgends abgelegt werden kann.
-  const restJetzt = budget.rest - tokenSeitStart;
+  const budget = budgetRest(z.tag
+    ? { tag: z.tag, tokens: z.tokens, tokenJeModell: z.tokenJeModell }
+    : speicher);
+
+  /*
+   * Wie viel Tageskontingent die Aufgabe noch hat.
+   *
+   * Jede Aufgabe laeuft auf ihrem eigenen Modell und damit auf ihrem eigenen
+   * Topf - siehe WUNSCHMODELLE in deuten.mjs. Der eigene Verbrauch seit dem
+   * Start des Isolats zaehlt mit: Er ist womoeglich noch nirgends abgelegt.
+   *
+   * Steht noch kein Modell fest, ist auch nichts verbraucht - die erste
+   * Anfrage waehlt es.
+   */
+  const restFuer = (zweck) => {
+    const modell = gewaehlteModelle[zweck];
+    if (!modell) return KI_TOKEN_MAX_JE_MODELL;
+    const schon = (budget.jeModell[modell] || 0) + (tokenSeitStartJeModell[modell] || 0);
+    return KI_TOKEN_MAX_JE_MODELL - schon;
+  };
   /*
    * Das Fehlerbuch liegt im Durable Object, nicht in KV.
    *
@@ -1099,7 +1121,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   const pruefBuch = buchGilt ? { ...(z.pruefFehler || {}) } : {};
   const gescheitert = [];
 
-  if (restJetzt > 0) {
+  if (restFuer('pruefung') > 0) {
     const r = await gegenlesen(kandidaten, env, GEGENPROBE_MAX, pruefBuch);
     gescheitert.push(...(r?.gescheitert || []));
   }
@@ -1121,7 +1143,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     nachlaufZuletzt,
     new Date(z.letzterNachlauf || speicher.letzterNachlauf || 0).getTime(),
   );
-  if (Date.now() - letzter > NACHZIEHEN_ABSTAND_MS && restJetzt > 0) {
+  if (Date.now() - letzter > NACHZIEHEN_ABSTAND_MS && restFuer('nachlauf') > 0) {
     const nachzuholen = items.filter(brauchtPruefung);
     if (nachzuholen.length) {
       nachlaufZuletzt = Date.now();          // sofort, nicht erst nach Erfolg
@@ -1156,7 +1178,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    */
   let artikelErgebnis = null;
   const artikelBuch = buchGilt ? { ...(z.artikelBuch || {}) } : {};
-  if (restJetzt > 0) {
+  if (restFuer('nachlauf') > 0) {
     const a = await nachlesen(items, env, ARTIKEL_MAX, artikelBuch);
     if (a) {
       artikelErgebnis = {
@@ -1213,12 +1235,13 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   const jeModell = verbrauchAbholen();
   const frisch = summe(jeModell);
   tokenSeitStart += frisch;
+  tokenSeitStartJeModell = modelleAddieren(tokenSeitStartJeModell, jeModell);
   budget.verbraucht += frisch;
   if (frisch) {
     // Das Objekt wird ersetzt, nicht addiert - also selbst zusammenfuehren.
     ctx.waitUntil(zustand(env, {
       tokens: frisch,
-      tokenJeModell: modelleAddieren(z.tokenJeModell, jeModell),
+      tokenJeModell: modelleAddieren(budget.jeModell, jeModell),
     }));
   }
 
@@ -1757,6 +1780,8 @@ let letzterVersandbuchFehler = null;
  */
 let nachlaufZuletzt = 0;
 let tokenSeitStart = 0;
+// Dasselbe, aber getrennt nach Modell - der Deckel gilt je Kontingent.
+let tokenSeitStartJeModell = {};
 
 /**
  * Liest oder ergaenzt den kleinen Betriebszustand im Durable Object.
@@ -2107,8 +2132,9 @@ export default {
 
           if (!frisch.length) {
             const eigen = budgetRest({ tag: zNow.tag, tokens: zNow.tokens }).verbraucht;
-            return `mindestens ${eigen.toLocaleString('de-DE')} von 200.000 Token heute`
-              + ` (selbst gezaehlt; Groq nennt seinen Stand erst, wenn ein Limit greift)`;
+            return `mindestens ${eigen.toLocaleString('de-DE')} Token heute ueber alle Modelle`
+              + ` (Deckel: ${KI_TOKEN_MAX_JE_MODELL.toLocaleString('de-DE')} je Modell, siehe Zeile darueber;`
+              + ` selbst gezaehlt - Groq nennt seinen Stand erst, wenn ein Limit greift)`;
           }
           const zahl = (n) => n.toLocaleString('de-DE');
           return frisch
