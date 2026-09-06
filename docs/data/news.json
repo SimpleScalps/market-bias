@@ -1,11 +1,47 @@
 {
- "updated": "2026-09-06T21:03:47.163Z",
+ "updated": "2026-09-06T21:06:25.855Z",
  "regime": "policy",
- "count": 125,
+ "count": 118,
  "errors": [
-  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
+  "Al Jazeera: fetch failed",
+  "SEC: fetch failed"
  ],
  "items": [
+  {
+   "id": "OilPrice:Oil Majors Seek Bigger Bargaining Power in Labor Disputes",
+   "title": "Oil Majors Seek Bigger Bargaining Power in Labor Disputes",
+   "text": "The biggest oil companies in the United States are playing hardball in unionized labor negotiations in a bid to get more concessions from workers’ unions in the new contracts. Over the past few years, some of the top U.S. refining companies have resorted to lockouts to ensure most of the company management’s proposals in new labor contracts are accepted. The trend began earlier this decade with Exxon locking out in 2021 as many as 650 workers out of the Beaumont refinery for 10 months. This was ",
+   "source": "OilPrice",
+   "url": "https://oilprice.com/Energy/Energy-General/Oil-Majors-Seek-Bigger-Bargaining-Power-in-Labor-Disputes.html",
+   "date": "2026-09-06T21:00:00.000Z",
+   "tags": [
+    "Energie"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Ölkonzerne streben bei Arbeitskonflikten mehr Verhandlungsmacht an"
+  },
   {
    "id": "MarketWatch:‘It’s not fair’: My twin brother and I were left houses by our parents. Can I make him pay his share for taxes and upkeep?",
    "title": "‘It’s not fair’: My twin brother and I were left houses by our parents. Can I make him pay his share for taxes and upkeep?",
@@ -137,7 +173,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -259,40 +295,6 @@
    "scope": "market",
    "coins": [],
    "alsoIn": []
-  },
-  {
-   "id": "Al Jazeera:Will Israelis re-elect Benjamin Netanyahu?",
-   "title": "Will Israelis re-elect Benjamin Netanyahu?",
-   "text": "Recent opinion polls suggest opposition bloc is ahead of PM's coalition.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/inside-story/2026/9/6/will-israelis-re-elect-benjamin-netanyahu?traffic_source=rss",
-   "date": "2026-09-06T20:20:47.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Wird Israel Benjamin Netanyahu erneut wählen?"
   },
   {
    "id": "BeInCrypto:Attackers Leave On-chain Message After $320 Million Exits Liquid Network",
@@ -467,40 +469,6 @@
    "titleDe": "Zelensky sagt, die größten Probleme der Ukraine werden im Winter auftreten, Budgetdefizit"
   },
   {
-   "id": "Al Jazeera:At least five killed in New Delhi building collapse",
-   "title": "At least five killed in New Delhi building collapse",
-   "text": "At least five people have been killed and nine rescued after a building housing mostly students collapsed in New Delhi.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/at-least-five-killed-in-new-delhi-building-collapse?traffic_source=rss",
-   "date": "2026-09-06T20:05:32.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 34,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "medium",
-   "duration": "long",
-   "eventType": "Insolvenz",
-   "eventTypeEn": "Insolvency",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Mindestens fünf Tote bei Gebäudeeinsturz in Neu-Delhi"
-  },
-  {
    "id": "TASS:Kushner refrains from saying is US will toughen pressure on Russia",
    "title": "Kushner refrains from saying is US will toughen pressure on Russia",
    "text": "According to US President’s son-in-law, Trump is looking at the Ukrainian conflict through the prism of the \"idea of what the best outcome could be and what benefits all people\"",
@@ -569,40 +537,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Der Hormuz-See ist vollständig geschlossen; nicht konforme Schiffe werden verboten"
-  },
-  {
-   "id": "Al Jazeera:Abdul El-Sayed uses speech to talk about Muslim faith and American identity",
-   "title": "Abdul El-Sayed uses speech to talk about Muslim faith and American identity",
-   "text": "Michigan Senate hopeful spoke about his faith and the experiences of Muslim Americans.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/abdul-el-sayed-uses-speech-to-talk-about-muslim-faith-and-american-identity?traffic_source=rss",
-   "date": "2026-09-06T19:45:36.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 43,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Abdul El‑Sayed nutzt seine Rede, um über muslimischen Glauben und amerikanische Identität zu sprechen"
   },
   {
    "id": "TASS:New trilateral meeting on Ukraine may be announced soon — Witkoff",
@@ -696,7 +630,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -778,14 +712,14 @@
    "titleDe": "AfD gewinnt die Parlamentswahlen in Sachsen-Anhalt"
   },
   {
-   "id": "Al Jazeera:Indonesia volcano eruption disrupts hundreds of flights",
-   "title": "Indonesia volcano eruption disrupts hundreds of flights",
-   "text": "Two new eruptions were recorded as Indonesia’s Anak Krakatau continued to spew volcanic ash.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/indonesia-volcano-eruption-disrupts-hundreds-of-flights?traffic_source=rss",
-   "date": "2026-09-06T18:58:35.000Z",
+   "id": "OilPrice:High Fuel Prices Are Powering an Electric Motorcycle Boom",
+   "title": "High Fuel Prices Are Powering an Electric Motorcycle Boom",
+   "text": "While electric car and truck sales have grown more slowly than expected in recent years, prompting governments to rethink clean fuel targets and automakers to slow the pace of EV production, electric motorcycles are becoming increasingly popular in certain parts of the world. Two-wheel vehicles have long been popular in busy cities and low-income countries, and now, largely due to rising fuel prices, many are investing in electric two-wheelers. The United States-Israeli attacks on Iran in Februa",
+   "source": "OilPrice",
+   "url": "https://oilprice.com/Energy/Energy-General/High-Fuel-Prices-Are-Powering-an-Electric-Motorcycle-Boom.html",
+   "date": "2026-09-06T19:00:00.000Z",
    "tags": [
-    "Weltlage"
+    "Energie"
    ],
    "impact": "low",
    "kind": "headline",
@@ -809,41 +743,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Vulkanausbruch in Indonesien stört Hunderte Flüge"
-  },
-  {
-   "id": "Al Jazeera:Adidas faces boycott calls over campaign featuring former Israeli soldier",
-   "title": "Adidas faces boycott calls over campaign featuring former Israeli soldier",
-   "text": "Activists slam campaign showing soldier while over 5,000 Palestinians faced amputations due to Israeli attacks in Gaza.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/sports/2026/9/6/adidas-faces-boycott-calls-over-campaign-featuring-former-israeli-soldier?traffic_source=rss",
-   "date": "2026-09-06T18:56:25.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 29,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Adidas steht vor Boykottaufrufen wegen Kampagne mit ehemaligem israelischem Soldaten"
+   "titleDe": "Hohe Kraftstoffpreise treiben den Boom elektrischer Motorräder an"
   },
   {
    "id": "U.Today:ZEC Surges Into Top 10, Shorts Getting Absolutely Hammered",
@@ -857,44 +757,6 @@
    ],
    "impact": "low",
    "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Kursanstieg"
-   ],
-   "scores": {
-    "crypto": 0.36,
-    "stocks": 0.36,
-    "gold": -0.18,
-    "usd": -0.12
-   },
-   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
-   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 34,
-   "label": "bullish",
-   "labelText": "Bullish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "ZEC stürmt in die Top 10, Short-Positionen werden massiv getroffen"
-  },
-  {
-   "id": "Al Jazeera:Trump administration appeals again to US Supreme Court over mail-in voting",
-   "title": "Trump administration appeals again to US Supreme Court over mail-in voting",
-   "text": "How the nation's highest court rules could have major implications in this year’s midterm elections.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/trump-administration-appeals-again-to-us-supreme-court-over-mail-in-voting?traffic_source=rss",
-   "date": "2026-09-06T18:47:03.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
    "scores": {
     "crypto": 0,
     "stocks": 0,
@@ -903,9 +765,9 @@
    },
    "signals": [],
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 41,
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -915,7 +777,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Trump-Regierung reicht erneut Klage beim US Supreme Court wegen Briefwahl ein"
+   "titleDe": "ZEC stürmt in die Top 10, Short-Positionen werden massiv getroffen"
   },
   {
    "id": "TASS:Kushner describers meeting with Putin as ‘constructive and substantive’",
@@ -951,40 +813,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Kushner bezeichnete Treffen mit Putin als ‚konstruktiv und substanziell’"
-  },
-  {
-   "id": "Al Jazeera:Why is Argentina reviving the Falklands dispute?",
-   "title": "Why is Argentina reviving the Falklands dispute?",
-   "text": "More than 44 years after Britain and Argentina went to war over the Falkland Islands, Argentina is reasserting its claim",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/why-is-argentina-reviving-the-falklands-dispute?traffic_source=rss",
-   "date": "2026-09-06T18:36:40.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 28,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Warum erweckt Argentinien den Falklandstreit neu?"
   },
   {
    "id": "BBC World:Zelensky says he expects war to continue into winter after talks with US envoys",
@@ -1128,40 +956,6 @@
    "titleDe": "Ghalibaf verspottet die US-Behörde, die einen Ölpreis von 40 USD pro Barrel prognostiziert"
   },
   {
-   "id": "Al Jazeera:Witkoff says peace talks have been ‘very meaningful’ in Ukraine",
-   "title": "Witkoff says peace talks have been ‘very meaningful’ in Ukraine",
-   "text": "Witkoff says peace talks have been ‘very meaningful’ in Ukraine",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/witkoff-says-peace-talks-have-been-very-meaningful-in-ukraine?traffic_source=rss",
-   "date": "2026-09-06T18:28:27.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 58,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Witkoff sagt, dass die Friedensgespräche in der Ukraine ‚sehr bedeutend‘ waren"
-  },
-  {
    "id": "TASS:Witkoff says settlement talks in Moscow, Kiev were positive",
    "title": "Witkoff says settlement talks in Moscow, Kiev were positive",
    "text": "The American leader's special envoy noted that his work, together with the US president's son-in-law Jared Kushner, is to \"bring the parties together,\" narrow the gap in problematic positions, and establish communication channels",
@@ -1232,74 +1026,6 @@
    "titleDe": "Drei Tanker ändern Kurs im Hormus nach Warnung der IRGC"
   },
   {
-   "id": "Al Jazeera:Sabalenka through to US Open quarterfinals",
-   "title": "Sabalenka through to US Open quarterfinals",
-   "text": "Tennis's two-time defending champion Aryna Sabalenka into last-eight at US Open after beating Taylor Townsend 6-4, 6-3.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/sports/2026/9/6/sabalenka-through-to-us-open-quarterfinals?traffic_source=rss",
-   "date": "2026-09-06T18:12:06.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 40,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Sabalenka erreicht US Open Viertelfinale"
-  },
-  {
-   "id": "Al Jazeera:Algerian boy found dead after four days trapped in a well",
-   "title": "Algerian boy found dead after four days trapped in a well",
-   "text": "Rescuers in Algeria have recovered the body of 10-year-old Ayoub, who died after being trapped in a well.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/algerian-boy-found-dead-after-four-days-trapped-in-a-well?traffic_source=rss",
-   "date": "2026-09-06T18:10:49.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 27,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Algerischer Junge nach vier Tagen im Brunnen gefunden, tot"
-  },
-  {
    "id": "The Block:Coinbase-backed Router Protocol to shut down, burn 303 million ROUTE tokens",
    "title": "Coinbase-backed Router Protocol to shut down, burn 303 million ROUTE tokens",
    "text": "The shutdown comes after attempts to commercialize, license or find a buyer for its technology failed to produce a sustainable business.",
@@ -1367,40 +1093,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "USA arbeiten an einem 'Friedenspaket' für die ukrainische Lösung — Kushner"
-  },
-  {
-   "id": "Al Jazeera:Arsenal come from behind to beat Chelsea 2-1 and maintain perfect start",
-   "title": "Arsenal come from behind to beat Chelsea 2-1 and maintain perfect start",
-   "text": "Gunners pass ⁠stiffest test so far in the defence of their Premier ⁠League title as they hit back after going behind.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/sports/2026/9/6/arsenal-come-from-behind-to-beat-chelsea-2-1-and-maintain-perfect-start?traffic_source=rss",
-   "date": "2026-09-06T17:56:13.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 27,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Arsenal holt Rückstand zurück, besiegt Chelsea 2:1 und hält perfekten Start"
   },
   {
    "id": "BeInCrypto:McDonald’s India Drama Erupts While Wall Street Targets 24% Stock Rally",
@@ -1474,40 +1166,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Saudi‑Feindliche 'Wing Loong 2'-Drohne wird über Taiz abgeschossen"
-  },
-  {
-   "id": "Al Jazeera:Photos: UN urges global aid after China, Nepal floods kill over 1,300",
-   "title": "Photos: UN urges global aid after China, Nepal floods kill over 1,300",
-   "text": "UN launches $50m appeal to aid over 84,000 flood survivors in Nepal amid cholera threat and sanitation challenges.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/gallery/2026/9/6/photos-nepal-flood-survivors-face-overwhelming-devastation?traffic_source=rss",
-   "date": "2026-09-06T17:50:17.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 57,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Fotos: UN fordert weltweite Hilfe nach Überschwemmungen in China und Nepal, bei denen mehr als 1.300 Menschen ums Leben kamen"
   },
   {
    "id": "TASS:Witkof says parties to Ukraine conflict need to make compromises",
@@ -1967,7 +1625,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2001,7 +1659,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 56,
+   "priority": 55,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2012,6 +1670,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Iran warnt vor einer 'schnelleren, schwereren, schmerzhafteren Reaktion' auf US-Angriffe"
+  },
+  {
+   "id": "OilPrice:Colombia Moves to Reverse Fracking Ban, Eyes $4 Billion in New Oil Investment",
+   "title": "Colombia Moves to Reverse Fracking Ban, Eyes $4 Billion in New Oil Investment",
+   "text": "A regime change in Colombia’s federal government is poised to usher in an oil and gas renaissance in the South American nation. After a four-year ban on oil and gas exploration under the previous leftist president Gustavo Petro, a new right-wing administration is eager to open the country’s oil and gas reserves up to foreign investors. But while mining and oil companies are ready to pour billions of dollars into the sector, Colombia’s political systems might not actually be ready for the flood. ",
+   "source": "OilPrice",
+   "url": "https://oilprice.com/Energy/Energy-General/Colombia-Moves-to-Reverse-Fracking-Ban-Eyes-4-Billion-in-New-Oil-Investment.html",
+   "date": "2026-09-06T17:00:00.000Z",
+   "tags": [
+    "Energie"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 25,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Kursprognose",
+   "eventTypeEn": "Price prediction",
+   "scope": "project",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Kolumbien kehrt Fracking-Ban um, plant 4 Mrd. USD neue Ölinvestitionen"
   },
   {
    "id": "TASS:Ukraine, US, Europe agree to hold another meeting soon — Zelensky",
@@ -2132,23 +1824,19 @@
    ],
    "impact": "low",
    "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Vergeltungsdrohung"
-   ],
    "scores": {
-    "crypto": -0.45,
-    "stocks": -0.45,
-    "gold": 0.225,
-    "usd": 0.15
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
    },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Vergeltungsdrohung)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: retaliation threat)",
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 93,
-   "label": "bearish",
-   "labelText": "Bearish",
+   "priority": 86,
+   "label": "neutral",
+   "labelText": "Neutral",
    "impactLevel": "high",
    "duration": "swing",
    "eventType": "Geopolitik",
@@ -2483,6 +2171,40 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Stablecoins werden ohne Banken nicht skalieren"
+  },
+  {
+   "id": "OilPrice:Oil-Rich Oman Bets Big on Renewable Energy",
+   "title": "Oil-Rich Oman Bets Big on Renewable Energy",
+   "text": "Oman, a major oil and gas producer, plans to expand its renewable energy capacity as part of its energy diversification and green transition goals. The government recently introduced new national policies to expand Oman’s green energy and cleantech industries and to encourage private investment in the sector. This year, Oman’s Ministry of Energy and Minerals launched a revised net-zero emissions strategy and a carbon markets regulatory framework as part of the government’s aims to achieve net-ze",
+   "source": "OilPrice",
+   "url": "https://oilprice.com/Energy/Energy-General/Oil-Rich-Oman-Bets-Big-on-Renewable-Energy.html",
+   "date": "2026-09-06T15:00:00.000Z",
+   "tags": [
+    "Energie"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 22,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Oman setzt stark auf erneuerbare Energien"
   },
   {
    "id": "U.Today:Dogecoin's Ten-Cent Dream Nears Reality as Price Secures Key Breakout",
@@ -4047,7 +3769,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 11,
+   "priority": 10,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4301,6 +4023,44 @@
    "titleDe": "Warum will sich fast niemand mit älteren Menschen wie mir anfreunden — außer Betrügern?"
   },
   {
+   "id": "OilPrice:Iran War Forces a Rewrite of Global Oil Trade Routes",
+   "title": "Iran War Forces a Rewrite of Global Oil Trade Routes",
+   "text": "Oil prices are about to book yet another weekly gain as the war in the Middle East remains hot, with a pessimistic outlook. Oil exporters from the region are rushing to diversify their export channels, and importers are rushing to diversify their suppliers. The oil market is changing in what may well prove to be an irreversible way. The Strait of Hormuz is one of the biggest export routes for crude oil—and liquefied gas—in the world. Before the first U.S. and Israeli strikes on Iran, the strait ",
+   "source": "OilPrice",
+   "url": "https://oilprice.com/Energy/Crude-Oil/Iran-War-Forces-a-Rewrite-of-Global-Oil-Trade-Routes.html",
+   "date": "2026-09-05T23:00:00.000Z",
+   "tags": [
+    "Energie"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Eskalation"
+   ],
+   "scores": {
+    "crypto": -0.36,
+    "stocks": -0.36,
+    "gold": 0.18,
+    "usd": 0.12
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 42,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Irans Krieg zwingt zu einer Neugestaltung globaler Ölnetzwerke"
+  },
+  {
    "id": "BBC World:What different world maps get right - and what they get wrong",
    "title": "What different world maps get right - and what they get wrong",
    "text": "As the UN adopts a new world map to reflect Africa's true size, let's take a closer look at what different maps get right and wrong.",
@@ -4404,7 +4164,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 2,
+  "uebersetzt": 5,
   "fehler": null
  }
 }
