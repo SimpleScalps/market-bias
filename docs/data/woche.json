@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T09:30:37.154Z",
+ "updated": "2026-09-06T09:44:10.861Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T09:30:37.182Z",
+   "stand": "2026-09-06T09:44:10.895Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -156,7 +156,7 @@
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-06T09:30:37.186Z",
+   "stand": "2026-09-06T09:44:10.902Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
@@ -309,30 +309,30 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T09:30:37.178Z",
-   "anzahl": 26,
+   "stand": "2026-09-06T09:44:10.889Z",
+   "anzahl": 27,
    "klassen": {
     "crypto": {
-     "score": -0.1718,
+     "score": -0.2015,
      "bull": 1,
-     "bear": 2,
+     "bear": 3,
      "neut": 23
     },
     "stocks": {
-     "score": -0.1718,
+     "score": -0.2015,
      "bull": 1,
-     "bear": 2,
+     "bear": 3,
      "neut": 23
     },
     "gold": {
-     "score": 0.086,
-     "bull": 2,
+     "score": 0.1008,
+     "bull": 3,
      "bear": 1,
      "neut": 23
     },
     "usd": {
-     "score": 0.0573,
-     "bull": 2,
+     "score": 0.0672,
+     "bull": 3,
      "bear": 0,
      "neut": 24
     }
@@ -384,6 +384,21 @@
      "priority": 63
     },
     {
+     "id": "Al Jazeera:Israeli air attacks on Lebanon kill at least four",
+     "titel": "Israeli air attacks on Lebanon kill at least four",
+     "titelDe": "Israelische Luftangriffe auf Libanon töten mindestens vier",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/9/6/israeli-air-attacks-on-lebanon-kill-at-least-four?traffic_source=rss",
+     "zeit": "2026-09-06T09:15:20.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 45
+    },
+    {
      "id": "Al Jazeera:Israel bombards several towns in southern Lebanon",
      "titel": "Israel bombards several towns in southern Lebanon",
      "titelDe": "Israel bombardiert mehrere Städte im Süden Libanons",
@@ -396,7 +411,7 @@
       "gold": 0.248,
       "usd": 0.165
      },
-     "priority": 69
+     "priority": 68
     },
     {
      "id": "Al Jazeera:Netanyahu boasts about bombing Qatar, says Gaza funds used for aid",
