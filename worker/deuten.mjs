@@ -160,18 +160,51 @@ function tagesstandLesen(text, modell) {
  * Antwort beilegt. Der Worker holt den Stand beim naechsten Sichern ab und
  * setzt ihn zurueck.
  */
-let seitAbholung = 0;
+let seitAbholung = {};
 
 /** Zaehlt den gemeldeten Verbrauch einer Antwort mit. */
+/*
+ * Verbrauch je Modell, nicht als Summe.
+ *
+ * Eine Summe war irrefuehrend, sobald mehr als ein Modell im Spiel war: Die
+ * Anzeige meldete "205.159 von 200.000", obwohl kein einziges Modell auch nur
+ * in die Naehe seiner Grenze gekommen war - die Last verteilte sich auf zwei
+ * Kontingente zu je 200.000. Eine Zahl, die Erschoepfung meldet, wo keine
+ * ist, ist so schaedlich wie eine, die sie verschweigt.
+ *
+ * Groq nennt das verwendete Modell in jeder Antwort; danach wird gebucht.
+ */
 function verbrauchen(j) {
-  seitAbholung += j?.usage?.total_tokens ?? 0;
+  const m = j?.model || 'unbekannt';
+  seitAbholung[m] = (seitAbholung[m] || 0) + (j?.usage?.total_tokens ?? 0);
 }
 
-/** Liefert den aufgelaufenen Verbrauch und beginnt von vorn. */
+/** Liefert den aufgelaufenen Verbrauch je Modell und beginnt von vorn. */
 export function verbrauchAbholen() {
-  const summe = seitAbholung;
-  seitAbholung = 0;
-  return summe;
+  const stand = seitAbholung;
+  seitAbholung = {};
+  return stand;
+}
+
+/*
+ * Modelle, deren Tageskontingent erschoepft ist.
+ *
+ * Meldet Groq ein Tageslimit, hilft kein Abwarten - der Topf fuellt sich erst
+ * um Mitternacht. Statt bis dahin in dieselbe Wand zu laufen, wird das Modell
+ * fuer den Rest des Tages beiseitegelegt und der naechste Eintrag der
+ * Wunschliste genommen. Genau dafuer stehen dort mehrere.
+ */
+const erschoepft = new Map();   // modell -> Tag (ISO), an dem es leer war
+
+function tagesLimitMerken(modell, text) {
+  if (!/tokens per day|TPD/i.test(String(text))) return;
+  erschoepft.set(modell, new Date().toISOString().slice(0, 10));
+  console.log('Tageskontingent erschoepft, Modell beiseitegelegt:', modell);
+}
+
+/** Ist dieses Modell heute schon leergelaufen? */
+function istErschoepft(modell) {
+  return erschoepft.get(modell) === new Date().toISOString().slice(0, 10);
 }
 
 function kontingentMerken(res, modell) {
@@ -205,7 +238,10 @@ export async function modellWaehlen(env, zweck = 'interaktiv') {
   const vorhanden = new Set(await verfuegbareModelle(env));
   const liste = WUNSCHMODELLE[zweck] || WUNSCHMODELLE.interaktiv;
 
-  gewaehlteModelle[zweck] = liste.find((m) => vorhanden.has(m))
+  gewaehlteModelle[zweck] = liste.find((m) => vorhanden.has(m) && !istErschoepft(m))
+    // Alles aus der Liste heute schon leer: dann eben eines davon, spaeter
+    // hilft nur noch der Tageswechsel.
+    || liste.find((m) => vorhanden.has(m))
     // Nichts aus der Wunschliste da: irgendein Textmodell nehmen.
     || [...vorhanden].find((m) => !/whisper|tts|guard|vision|orpheus/i.test(m));
 
@@ -431,7 +467,12 @@ export async function deutenStapel(meldungen, env, zweck = 'nachlauf') {
     if (!res.ok) {
       if (res.status === 404) delete gewaehlteModelle[zweck];
       const text = await res.text().catch(() => '');
-      if (res.status === 429) tagesstandLesen(text, modell);
+      if (res.status === 429) {
+        tagesstandLesen(text, modell);
+        // Ist der Tagestopf leer, beim naechsten Mal ein anderes Modell.
+        tagesLimitMerken(modell, text);
+        if (istErschoepft(modell)) delete gewaehlteModelle[zweck];
+      }
       throw new Error(klartext(res.status, Number(res.headers.get('retry-after')) || 0));
     }
 
@@ -500,7 +541,12 @@ export async function deuten(schlagzeile, env, anriss = '', zweck = 'pruefung') 
       // Wurde das Modell zwischenzeitlich ausgemustert, beim naechsten Mal neu waehlen.
       if (res.status === 404) delete gewaehlteModelle[zweck];
       const text = await res.text().catch(() => '');
-      if (res.status === 429) tagesstandLesen(text, modell);
+      if (res.status === 429) {
+        tagesstandLesen(text, modell);
+        // Ist der Tagestopf leer, beim naechsten Mal ein anderes Modell.
+        tagesLimitMerken(modell, text);
+        if (istErschoepft(modell)) delete gewaehlteModelle[zweck];
+      }
       throw new Error(klartext(res.status, Number(res.headers.get('retry-after')) || 0)
         + (res.status >= 500 || res.status === 429 ? '' : (text ? ': ' + text.slice(0, 300) : '')));
     }
@@ -808,7 +854,12 @@ export async function tageslage(meldungen, anlageklasse, env) {
     if (!res.ok) {
       if (res.status === 404) delete gewaehlteModelle[zweck];
       const text = await res.text().catch(() => '');
-      if (res.status === 429) tagesstandLesen(text, modell);
+      if (res.status === 429) {
+        tagesstandLesen(text, modell);
+        // Ist der Tagestopf leer, beim naechsten Mal ein anderes Modell.
+        tagesLimitMerken(modell, text);
+        if (istErschoepft(modell)) delete gewaehlteModelle[zweck];
+      }
       throw new Error(`Groq ${res.status}: ${text.slice(0, 300)}`);
     }
 

@@ -192,9 +192,22 @@ const STOERUNG_GILT_MS = 30 * 60_000;
  * hat - was dort verbraucht wurde, tauchte in keiner Rechnung auf. Deshalb
  * bucht jetzt jeder Weg selbst, unmittelbar nachdem er Groq bemueht hat.
  */
-function tokenBuchen(env, ctx, zusatz = 0) {
-  const frisch = verbrauchAbholen() + zusatz;
-  if (frisch) ctx.waitUntil(zustand(env, { tokens: frisch }));
+const summe = (o) => Object.values(o || {}).reduce((a, b) => a + b, 0);
+
+/** Fuehrt die Verbrauchsstaende zweier Zaehlungen zusammen. */
+const modelleAddieren = (a, b) => {
+  const zus = { ...(a || {}) };
+  for (const [m, n] of Object.entries(b || {})) zus[m] = (zus[m] || 0) + n;
+  return zus;
+};
+
+function tokenBuchen(env, ctx, zusatz = 0, zusatzModell = null) {
+  const jeModell = verbrauchAbholen();
+  // Die Uebersetzung laeuft ueber docs/engine und meldet ihren Verbrauch
+  // getrennt zurueck; sie gehoert demselben Modell zugeschlagen.
+  if (zusatz && zusatzModell) jeModell[zusatzModell] = (jeModell[zusatzModell] || 0) + zusatz;
+  const frisch = summe(jeModell) + (zusatz && !zusatzModell ? zusatz : 0);
+  if (frisch) ctx.waitUntil(zustand(env, { tokens: frisch, tokenJeModell: jeModell }));
   return frisch;
 }
 
@@ -981,10 +994,17 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * Alles, was seit dem letzten Mal an Groq ging - gleich aus welchem Weg.
    * Der Zaehler steht in deuten.mjs, wo jede Antwort durchlaeuft.
    */
-  const frisch = verbrauchAbholen();
+  const jeModell = verbrauchAbholen();
+  const frisch = summe(jeModell);
   tokenSeitStart += frisch;
   budget.verbraucht += frisch;
-  if (frisch) ctx.waitUntil(zustand(env, { tokens: frisch }));
+  if (frisch) {
+    // Das Objekt wird ersetzt, nicht addiert - also selbst zusammenfuehren.
+    ctx.waitUntil(zustand(env, {
+      tokens: frisch,
+      tokenJeModell: modelleAddieren(z.tokenJeModell, jeModell),
+    }));
+  }
 
   /*
    * Nennt Groq seinen Tagesstand, gilt der - nicht der eigene Zaehler.
@@ -1651,6 +1671,23 @@ export default {
          * meldete - die Zahl war unbrauchbar. Groq nennt seinen Stand in jeder
          * Ablehnung; sobald er vorliegt, gilt er.
          */
+        /*
+         * Je Modell, nicht als Summe.
+         *
+         * Die Summe meldete "205.159 von 200.000", obwohl kein Modell auch nur
+         * in die Naehe seiner Grenze kam: Die Last verteilte sich auf zwei
+         * Kontingente zu je 200.000. Eine Zahl, die Erschoepfung meldet, wo
+         * keine ist, ist so schaedlich wie eine, die sie verschweigt.
+         */
+        kiJeModell: (() => {
+          const eig = zNow.tokenJeModell || {};
+          if (!Object.keys(eig).length) return 'noch nichts verbraucht';
+          const zahl = (n) => Math.round(n).toLocaleString('de-DE');
+          return Object.entries(eig)
+            .sort((a, b) => b[1] - a[1])
+            .map(([m, n]) => `${aufgabeVon(m, zNow.kiModelle)}: ${zahl(n)} von 200.000`)
+            .join(' · ');
+        })(),
         kiBudget: (() => {
           const staende = { ...(zNow.groqTag || {}), ...tagesverbrauch };
           const frisch = Object.entries(staende)
@@ -1972,7 +2009,8 @@ export default {
          * deshalb vom zentralen Zaehler nicht erfasst. uebersetze() meldet den
          * Verbrauch zurueck; hier wandert er in dieselbe Rechnung.
          */
-        tokenBuchen(env, ctx, frisch.tokens || 0);
+        tokenBuchen(env, ctx, frisch.tokens || 0,
+          await modellWaehlen(env, 'uebersetzung').catch(() => null));
 
         // Beschneiden, sonst waechst der Eintrag ueber die Groessengrenze von KV.
         const schluessel = Object.keys(speicher);
