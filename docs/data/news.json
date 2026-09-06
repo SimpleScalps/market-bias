@@ -1,15 +1,15 @@
 {
- "updated": "2026-09-06T19:03:28.276Z",
+ "updated": "2026-09-06T19:04:56.864Z",
  "regime": "policy",
- "count": 126,
+ "count": 127,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
   {
-   "id": "Reuters:US envoys hope for new Ukraine-Russia talks soon after visits to both capitals",
-   "title": "US envoys hope for new Ukraine-Russia talks soon after visits to both capitals",
-   "text": "US envoys hope for new Ukraine-Russia talks soon after visits to both capitals &nbsp;&nbsp; Reuters",
+   "id": "Reuters:US envoys hope for new Ukraine-Russia talks soon after visits to both capitals - reuters.com",
+   "title": "US envoys hope for new Ukraine-Russia talks soon after visits to both capitals - reuters.com",
+   "text": "US envoys hope for new Ukraine-Russia talks soon after visits to both capitals &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONnlRblpUWUNHMjMteEdBa0JYZk5MeFJQRjlEa3dUdGtDY0xfZEs5Y2dCcV8yNEhSTHYzem9SVVVYS1NBZnc4U29BSEcydHp4cUx5bFZSUmZ1QXFsNHlFRGgtbGJ2WmZMRTZzdjhrTWY1b1BDMlFnQTlWXzRLU056OGV2TUlRdkdTdjRkMFpTNi02X1Y4MU5sMEF4WF8wcVpDNmNJUmFvXzRZeV91N2dKUDNJN1FWdkg3RHpReHVoNA?oc=5",
    "date": "2026-09-06T18:48:09.000Z",
@@ -38,7 +38,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "US-Beamte hoffen auf baldige neue Ukraine-Russland-Verhandlungen nach Besuchen beider Hauptstädte"
+   "titleDe": "US-Botschafter hoffen auf baldige neue Ukraine-Russland-Verhandlungen nach Besuchen beider Hauptstädte - reuters.com"
   },
   {
    "id": "U.Today:ZEC Surges Into Top 10, Shorts Getting Absolutely Hammered",
@@ -114,9 +114,9 @@
    "titleDe": "Kushner bezeichnete Treffen mit Putin als ‚konstruktiv und substanziell’"
   },
   {
-   "id": "Reuters:Hamilton wants written rules of engagement at Ferrari after Leclerc clash",
-   "title": "Hamilton wants written rules of engagement at Ferrari after Leclerc clash",
-   "text": "Hamilton wants written rules of engagement at Ferrari after Leclerc clash &nbsp;&nbsp; Reuters",
+   "id": "Reuters:Hamilton wants written rules of engagement at Ferrari after Leclerc clash - reuters.com",
+   "title": "Hamilton wants written rules of engagement at Ferrari after Leclerc clash - reuters.com",
+   "text": "Hamilton wants written rules of engagement at Ferrari after Leclerc clash &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOb0JKejFZYzlvZ2lrR08td3BkaTZTSXdaejlHZENLbzlyU0YwVl96MlRldXVMTVAzMVJ2LVVQTnl5dzBDOHcxVUtVUjVtYkd6Qzd3WTlyQXpHOXRQeHFqWDVKM3NuLTlLNTMtVFJtVl9BRmxwdUJGUkw0cndlOUQwNEVFUmNnSUdlR0twdGx4YVVWOHRJV25OeVNZTndWTFAyQ0dLaUNaaGJ1c0k3RGc2Q3N2cnpCWUZoSTJZ?oc=5",
    "date": "2026-09-06T18:41:43.000Z",
@@ -145,7 +145,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Hamilton verlangt schriftliche Regeln für den Einsatz bei Ferrari nach dem Konflikt mit Leclerc"
+   "titleDe": "Hamilton fordert schriftliche Einsatzregeln bei Ferrari nach Auseinandersetzung mit Leclerc - reuters.com"
   },
   {
    "id": "Al Jazeera:Why is Argentina reviving the Falklands dispute?",
@@ -323,9 +323,9 @@
    "titleDe": "Witkoff sagt, dass die Friedensgespräche in der Ukraine ‚sehr bedeutend‘ waren"
   },
   {
-   "id": "Reuters:White Sox place Tommy Pham on injured list with calf strain",
-   "title": "White Sox place Tommy Pham on injured list with calf strain",
-   "text": "White Sox place Tommy Pham on injured list with calf strain &nbsp;&nbsp; Reuters",
+   "id": "Reuters:White Sox place Tommy Pham on injured list with calf strain - reuters.com",
+   "title": "White Sox place Tommy Pham on injured list with calf strain - reuters.com",
+   "text": "White Sox place Tommy Pham on injured list with calf strain &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWHd1ekx5bXAtV1lPNXhCX3Q2S2cwY0REOTNGaEE5RUNDODBKaVVKWmU4cW5oZ1doMThwZnNWU200VXNNMm1zQkhpTjZUNEJZazBZeHNlMEdqNXAxbnQxUHBGb0dPa1JLNURGTkE4UU44elNxNFc5MFBIc1NNSDl2U2ZtQnkzNHlHRnNxM0tmWlBxQ3FCWXFSZ3BYSlNHMHpqZXg4SjBvQQ?oc=5",
    "date": "2026-09-06T18:24:28.000Z",
@@ -354,7 +354,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Die White Sox setzen Tommy Pham wegen einer Wadenmuskelzerrung auf die verletzte Liste"
+   "titleDe": "Die White Sox setzen Tommy Pham auf die verletzte Liste wegen einer Wadeverletzung"
   },
   {
    "id": "TASS:Witkoff says settlement talks in Moscow, Kiev were positive",
@@ -427,6 +427,39 @@
    "titleDe": "Drei Tanker ändern Kurs im Hormus nach Warnung der IRGC"
   },
   {
+   "id": "Reuters:(AMZZ.O) | Stock Price & Latest News - reuters.com",
+   "title": "(AMZZ.O) | Stock Price & Latest News - reuters.com",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ndnNva2g3cXZuUjdsZHlWc0tNV0ZRNVRaRzBUaUNzLTZzTWttSmRWNmV6TDBNb1BkaEswbmtmdThSQXJ5ZGMwemlQRDhrU2ZzQTBXX2xIUXJMeldKX3ViSll2VQ?oc=5",
+   "date": "2026-09-06T18:18:56.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "(AMZZ.O) | Aktienkurs & Neueste Nachrichten - reuters.com"
+  },
+  {
    "id": "Al Jazeera:Sabalenka through to US Open quarterfinals",
    "title": "Sabalenka through to US Open quarterfinals",
    "text": "Tennis's two-time defending champion Aryna Sabalenka into last-eight at US Open after beating Taylor Townsend 6-4, 6-3.",
@@ -495,9 +528,9 @@
    "titleDe": "Algerischer Junge nach vier Tagen im Brunnen gefunden, tot"
   },
   {
-   "id": "Reuters:Arsenal pass Chelsea test in style with comeback win",
-   "title": "Arsenal pass Chelsea test in style with comeback win",
-   "text": "Arsenal pass Chelsea test in style with comeback win &nbsp;&nbsp; Reuters",
+   "id": "Reuters:Arsenal pass Chelsea test in style with comeback win - reuters.com",
+   "title": "Arsenal pass Chelsea test in style with comeback win - reuters.com",
+   "text": "Arsenal pass Chelsea test in style with comeback win &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPbGpmQVNaMlNpcnBkSlVBVmtQZjRxR1phcWZZSFhZTjZUekZ2SnJKQzFTQkduOERqd01OR1I2R1pXQ2xVdlg1ZXdadGlha1JiQW9mRkdzajdWcjZqaDRkYldrVGk3QzVScGtaNEN0UUFnZlJuVU44c1F6MmIzVnlQWEFiWnROdkZIMC1iMG5YM0Jmc1BIRmxTamRxLTZFbl9D?oc=5",
    "date": "2026-09-06T18:09:05.000Z",
@@ -526,7 +559,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [],
-   "titleDe": "Arsenal besteht den Chelsea-Test stilvoll mit einem Comeback-Sieg"
+   "titleDe": "Arsenal meistert Chelsea mit stilvollem Comeback-Sieg"
   },
   {
    "id": "The Block:Coinbase-backed Router Protocol to shut down, burn 303 million ROUTE tokens",
@@ -2192,7 +2225,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3311,7 +3344,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 20,
+   "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3519,7 +3552,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 39,
+   "priority": 38,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3625,7 +3658,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3659,7 +3692,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 37,
+   "priority": 36,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4439,7 +4472,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 2,
+  "uebersetzt": 3,
   "fehler": null
  }
 }
