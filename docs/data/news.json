@@ -1,11 +1,79 @@
 {
- "updated": "2026-09-06T11:18:14.348Z",
+ "updated": "2026-09-06T11:28:11.172Z",
  "regime": "policy",
- "count": 86,
+ "count": 87,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "Al Jazeera:Can you guess the real size of each country on the new world map?",
+   "title": "Can you guess the real size of each country on the new world map?",
+   "text": "Pick which country is bigger, then watch it morph from Mercator to Equal Earth projection to see how close you were.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/6/can-you-guess-the-real-size-of-each-country-on-the-new-world-map?traffic_source=rss",
+   "date": "2026-09-06T11:15:09.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Können Sie die wahre Größe jedes Landes auf der neuen Weltkarte erraten?"
+  },
+  {
+   "id": "Al Jazeera:Photos: Gaza holds funeral for 100 Palestinians recovered from rubble",
+   "title": "Photos: Gaza holds funeral for 100 Palestinians recovered from rubble",
+   "text": "Gaza families hold mass funeral for 100 people recovered from rubble in Zeitoun neighbourhood.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/gallery/2026/9/6/photos-gaza-holds-funeral-for-100-palestinians-recovered-from-rubble?traffic_source=rss",
+   "date": "2026-09-06T11:13:50.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 62,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Fotos: Gaza richtet Beerdigung für 100 Palästinenser ein, die aus Trümmern gerettet wurden"
+  },
   {
    "id": "Benzinga:Best Energy Stocks",
    "title": "Best Energy Stocks",
@@ -347,6 +415,40 @@
    "titleDe": "Beste Aktien unter 10 $"
   },
   {
+   "id": "BeInCrypto:Poland's Crypto Law Fails a Third Time, Leaving the Only Gap in Europe",
+   "title": "Poland's Crypto Law Fails a Third Time, Leaving the Only Gap in Europe",
+   "text": "Poland remains the only EU member state without a functioning national framework for MiCA, after the Sejm again failed to override President Karol Nawrocki’s veto of crypto regulation. Friday’s vote, the third such attempt, fell 25 votes short of the three-fifths majority required to reverse his decision. Inside Poland’s Third Crypto Veto and Nawrocki’s Reasoning",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/poland-crypto-regulation-failure/",
+   "date": "2026-09-06T11:04:39.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 51,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Polen scheitert beim Kryptogesetz zum dritten Mal und lässt die einzige Lücke in Europa offen"
+  },
+  {
    "id": "Al Jazeera:US, Iran engaged in tanker war: Where is the months-long conflict headed?",
    "title": "US, Iran engaged in tanker war: Where is the months-long conflict headed?",
    "text": "The US and Iran attack tankers in Strait of Hormuz, as the two sides try to exert control over the strategic waterway.",
@@ -387,7 +489,7 @@
   {
    "id": "BBC World:US envoys arrive in Ukraine for talks after meeting Putin in Russia",
    "title": "US envoys arrive in Ukraine for talks after meeting Putin in Russia",
-   "text": "It is the first trip by Steve Witkoff and Jared Kushner, Trump's top negotiators, to Kyiv.",
+   "text": "Steve Witkoff and Jared Kushner arrived in Kyiv on Sunday, having \"discussed substantive plans for next steps\" with Putin on Saturday, according to the White House.",
    "source": "BBC World",
    "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-06T10:44:26.000Z",
@@ -406,7 +508,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 62,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -578,7 +680,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -721,7 +823,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -793,7 +895,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 48,
+   "priority": 47,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -829,7 +931,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -946,74 +1048,6 @@
    "titleDe": "TV-Moderator unter 12 Verurteilten zum Tode in Ägypten bei Drogenfall"
   },
   {
-   "id": "Al Jazeera:FIFA’s Infantino avoids questions on his future amid growing uncertainty",
-   "title": "FIFA’s Infantino avoids questions on his future amid growing uncertainty",
-   "text": "Upon arrival at the U-20 Women's World Cup, Infantino remained tight-lipped about his re-election as FIFA president.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/sports/2026/9/6/fifas-infantino-avoids-questions-on-his-future-amid-growing-uncertainty?traffic_source=rss",
-   "date": "2026-09-06T07:10:33.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 25,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Infantino von FIFA meidet Fragen zu seiner Zukunft trotz wachsender Unsicherheit"
-  },
-  {
-   "id": "Al Jazeera:UK has billions in contracts with firms tied to illegal Israeli settlements",
-   "title": "UK has billions in contracts with firms tied to illegal Israeli settlements",
-   "text": "Al Jazeera finds 17 settlement-linked companies hold 2.1 billion pounds in UK public contracts.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/uk-has-billions-in-contracts-with-firms-tied-to-illegal-israeli-settlements-4?traffic_source=rss",
-   "date": "2026-09-06T06:52:23.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 25,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "UK hat Milliarden an Verträgen mit Unternehmen, die an illegalen israelischen Siedlungen beteiligt sind"
-  },
-  {
    "id": "U.Today:Alex Jones Issues Alarming Warning to XRP Holders",
    "title": "Alex Jones Issues Alarming Warning to XRP Holders",
    "text": "Controversial media personality Alex Jones has warned XRP holders that governments could attempt to seize private assets during a severe financial crisis.",
@@ -1071,7 +1105,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1279,7 +1313,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1347,7 +1381,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1523,7 +1557,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 8,
+   "priority": 7,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3015,7 +3049,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 3,
   "fehler": null
  }
 }
