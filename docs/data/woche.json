@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T10:40:28.619Z",
+ "updated": "2026-09-06T10:52:29.158Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T10:40:28.639Z",
+   "stand": "2026-09-06T10:52:29.199Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -156,7 +156,7 @@
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-06T10:40:28.642Z",
+   "stand": "2026-09-06T10:52:29.209Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
@@ -309,32 +309,32 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T10:40:28.636Z",
-   "anzahl": 39,
+   "stand": "2026-09-06T10:52:29.192Z",
+   "anzahl": 41,
    "klassen": {
     "crypto": {
-     "score": -0.1485,
+     "score": -0.1341,
      "bull": 1,
      "bear": 3,
-     "neut": 35
+     "neut": 37
     },
     "stocks": {
-     "score": -0.1485,
+     "score": -0.1341,
      "bull": 1,
      "bear": 3,
-     "neut": 35
+     "neut": 37
     },
     "gold": {
-     "score": 0.0743,
+     "score": 0.0671,
      "bull": 3,
      "bear": 1,
-     "neut": 35
+     "neut": 37
     },
     "usd": {
-     "score": 0.0495,
+     "score": 0.0447,
      "bull": 3,
      "bear": 0,
-     "neut": 36
+     "neut": 38
     }
    },
    "top": [
@@ -411,7 +411,7 @@
       "gold": 0.248,
       "usd": 0.165
      },
-     "priority": 67
+     "priority": 66
     },
     {
      "id": "Al Jazeera:Netanyahu boasts about bombing Qatar, says Gaza funds used for aid",

@@ -1,11 +1,81 @@
 {
- "updated": "2026-09-06T10:40:28.619Z",
+ "updated": "2026-09-06T10:52:29.158Z",
  "regime": "policy",
- "count": 89,
+ "count": 87,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "BBC World:US envoys arrive in Ukraine for talks after meeting Putin in Russia",
+   "title": "US envoys arrive in Ukraine for talks after meeting Putin in Russia",
+   "text": "It is the first trip by Steve Witkoff and Jared Kushner, Trump's top negotiators, to Kyiv.",
+   "source": "BBC World",
+   "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-06T10:44:26.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 62,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Botschafter kommen nach Ukraine für Gespräche nach Treffen mit Putin in Russland"
+  },
+  {
+   "id": "U.Today:Two Hot New Cryptos From Robinhood and BNB Officially Listed on Binance Futures: Full Details",
+   "title": "Two Hot New Cryptos From Robinhood and BNB Officially Listed on Binance Futures: Full Details",
+   "text": "Inside Binance's hot new dual listing from BNB and Robinhood chains as one token eyes a $1 billion market cap.",
+   "source": "U.Today",
+   "url": "https://u.today/two-hot-new-cryptos-from-robinhood-and-bnb-officially-listed-on-binance-futures-full-details",
+   "date": "2026-09-06T10:37:45.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 52,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Listing",
+   "eventTypeEn": "Listing",
+   "scope": "coin",
+   "coins": [
+    "BNB"
+   ],
+   "alsoIn": [],
+   "titleDe": "Zwei neue Kryptowährungen von Robinhood und BNB werden offiziell auf Binance Futures gelistet: Vollständige Details"
+  },
   {
    "id": "Benzinga:Top Performing Green Penny Stocks",
    "title": "Top Performing Green Penny Stocks",
@@ -436,7 +506,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -579,7 +649,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -617,7 +687,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 67,
+   "priority": 66,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "medium",
@@ -651,7 +721,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -687,7 +757,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 41,
+   "priority": 40,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -929,7 +999,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1205,7 +1275,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 45,
+   "priority": 44,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1273,7 +1343,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 14,
+   "priority": 13,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1394,40 +1464,6 @@
    "titleDe": "Zcash sieht sich bei Short‑Squeeze einem Liquidationsungleichgewicht von 424 % gegenüber"
   },
   {
-   "id": "BBC World:US envoys set for Ukraine talks after meeting Putin in Russia",
-   "title": "US envoys set for Ukraine talks after meeting Putin in Russia",
-   "text": "It will be the first trip by Steve Witkoff and Jared Kushner, Trump's top negotiators, to Kyiv.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-05T21:23:06.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 49,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "US-Botschafter begeben sich zu Gesprächen über die Ukraine nach Treffen mit Putin in Russland"
-  },
-  {
    "id": "BBC World:Prince William to attend King Harald's funeral in Norway",
    "title": "Prince William to attend King Harald's funeral in Norway",
    "text": "The Prince of Wales will represent the King at the funeral of Harald V in Oslo next week.",
@@ -1483,7 +1519,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 9,
+   "priority": 8,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2713,7 +2749,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 15,
+   "priority": 14,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2868,42 +2904,6 @@
    "titleDe": "Ein britischer Investor glaubte, 2012 2.000 Dollar in Bitcoin verloren zu haben. Nun hat er 4,5 Millionen Dollar zurückerhalten."
   },
   {
-   "id": "U.Today:Bitcoin to $85,000 in September: Kalshi Traders Ignore Price Correction",
-   "title": "Bitcoin to $85,000 in September: Kalshi Traders Ignore Price Correction",
-   "text": "Bitcoin has briefly fallen below $80,000 following a recent price correction, but traders on Kalshi have retained bullish sentiment as they bet on Bitcoin hitting $85,000 this month.",
-   "source": "U.Today",
-   "url": "https://u.today/bitcoin-to-85000-in-september-kalshi-traders-ignore-price-correction",
-   "date": "2026-09-05T11:50:24.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "BTC"
-   ],
-   "alsoIn": [],
-   "titleDe": "Bitcoin bis September auf 85.000 $: Kalshi‑Händler ignorieren Kurskorrektur"
-  },
-  {
    "id": "BeInCrypto:The 18-Year Housing Cycle Says the Next Market Crash Is Close",
    "title": "The 18-Year Housing Cycle Says the Next Market Crash Is Close",
    "text": "Investors are watching stocks and Bitcoin for the next major peak. Popular macro analyst Jason Pizzino thinks the first warning has already arrived from US housing. His thesis uses an 18-year property cycle drawn from roughly 220 years of US sales data. The current cycle began around 2011–2012 and places the housing peak in 2025–26,",
@@ -3010,76 +3010,6 @@
    "titleDe": "SEC Crypto Custody Rewrite tritt in die Überprüfung des Weißen Hauses ein"
   },
   {
-   "id": "Cointelegraph:Poland upholds crypto bill veto as Zondacrypto scandal widens",
-   "title": "Poland upholds crypto bill veto as Zondacrypto scandal widens",
-   "text": "Polish lawmakers failed to overturn a presidential veto of crypto legislation as the Zondacrypto investigation expands and its Estonian operator enters bankruptcy.",
-   "source": "Cointelegraph",
-   "url": "https://cointelegraph.com/news/poland-upholds-crypto-bill-veto-zondacrypto-scandal-widens?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "date": "2026-09-05T10:44:29.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "titleDe": "Polen hält sein Veto gegen das Krypto-Gesetz aufrecht, da sich der Zondacrypto-Skandal ausweitet"
-  },
-  {
-   "id": "BeInCrypto:MicroStrategy Drops $250 Bitcoin Jordans. But You Can’t Buy With Crypto",
-   "title": "MicroStrategy Drops $250 Bitcoin Jordans. But You Can’t Buy With Crypto",
-   "text": "Strategy now sells $250 Bitcoin Jordans. Nike stock has lost almost half its value in a year. Can crypto fans help?",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/strategy-bitcoin-jordans-nike-stock/",
-   "date": "2026-09-05T10:41:36.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "BTC"
-   ],
-   "alsoIn": [],
-   "titleDe": "MicroStrategy legt $250 Bitcoin‑Sneaker ab. Aber man kann nicht mit Krypto bezahlen"
-  },
-  {
    "id": "Cointelegraph:Here’s what happened in crypto today",
    "title": "Here’s what happened in crypto today",
    "text": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
@@ -3115,7 +3045,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 2,
   "fehler": null
  }
 }
