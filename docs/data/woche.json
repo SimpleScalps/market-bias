@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T17:42:40.298Z",
+ "updated": "2026-09-06T17:43:45.192Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T17:42:40.345Z",
+   "stand": "2026-09-06T17:43:45.218Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -61,6 +61,21 @@
       "usd": 0.75
      },
      "priority": 84
+    },
+    {
+     "id": "CNBC:Trump turns up the heat on Warsh as Fed rate hike looms",
+     "titel": "Trump turns up the heat on Warsh as Fed rate hike looms",
+     "titelDe": "Trump steigert die Spannung bei Warsh, während Fed Zinserhöhung droht",
+     "quelle": "CNBC",
+     "url": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html",
+     "zeit": "2026-09-05T19:12:53.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 58
     },
     {
      "id": "BBC World:How much can Canada fight back in its trade war with the US?",
@@ -136,21 +151,6 @@
       "usd": 0.135
      },
      "priority": 86
-    },
-    {
-     "id": "Al Jazeera:US says it hit three Iranian oil tankers after attacks on warships",
-     "titel": "US says it hit three Iranian oil tankers after attacks on warships",
-     "titelDe": "Die USA sagen, dass sie nach Angriffen auf Kriegsschiffe drei iranische Öltanker getroffen haben",
-     "quelle": "Al Jazeera",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/us-says-it-hit-three-iranian-oil-tankers-after-attacks-on-warships?traffic_source=rss",
-     "zeit": "2026-09-05T15:49:44.000Z",
-     "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
-     },
-     "priority": 51
     }
    ]
   },
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T17:42:40.335Z",
+   "stand": "2026-09-06T17:43:45.213Z",
    "anzahl": 119,
    "klassen": {
     "crypto": {

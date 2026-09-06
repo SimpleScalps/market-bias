@@ -1,11 +1,47 @@
 {
- "updated": "2026-09-06T17:42:40.298Z",
+ "updated": "2026-09-06T17:43:45.192Z",
  "regime": "policy",
  "count": 128,
  "errors": [
-  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
+  "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
+  "CNBC Economy: fetch failed",
+  "CNBC World: fetch failed"
  ],
  "items": [
+  {
+   "id": "Al Jazeera:F1 leader Kimi Antonelli wins Italian GP after epic charge from the back",
+   "title": "F1 leader Kimi Antonelli wins Italian GP after epic charge from the back",
+   "text": "Antonelli's sensational race from 19th to the win at Monza makes him the first Italian to claim the title in 60 years.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/sports/2026/9/6/f1-leader-kimi-antonelli-wins-italian-gp-after-epic-charge-from-the-back?traffic_source=rss",
+   "date": "2026-09-06T17:40:41.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Kimi Antonelli gewinnt den italienischen Grand Prix nach epischer Rückwärtscharge"
+  },
   {
    "id": "Tehran Times:Shadowy Emirati firm exposed as major oil supplier for Israeli military",
    "title": "Shadowy Emirati firm exposed as major oil supplier for Israeli military",
@@ -702,7 +738,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -929,6 +965,44 @@
    "titleDe": "Hackers fordern 2 Millionen Dollar in Bitcoin aus Deutschland. Berlin verweigert Zahlung"
   },
   {
+   "id": "CNBC:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
+   "title": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
+   "text": "Iran warned of faster, heavier retaliation against U.S. attacks while acknowledging the war’s mounting toll on its economy.",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html",
+   "date": "2026-09-06T16:27:03.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Vergeltungsdrohung"
+   ],
+   "scores": {
+    "crypto": -0.45,
+    "stocks": -0.45,
+    "gold": 0.225,
+    "usd": 0.15
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Vergeltungsdrohung)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: retaliation threat)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 93,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen"
+  },
+  {
    "id": "TASS:US wants to work with Moscow, Kiev on ‘refreshed’ peace proposal — media",
    "title": "US wants to work with Moscow, Kiev on ‘refreshed’ peace proposal — media",
    "text": "\"Things may move in a good direction if there's a follow-up by all parties involved,\" the source told Axios",
@@ -1066,46 +1140,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Iran lobt militärische Reaktion, während die USA Blockade fortsetzen und Tanker treffen"
-  },
-  {
-   "id": "CNBC World:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
-   "title": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
-   "text": "Iran warned of faster, heavier retaliation against U.S. attacks while acknowledging the war’s mounting toll on its economy.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html",
-   "date": "2026-09-06T16:11:09.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Vergeltungsdrohung"
-   ],
-   "scores": {
-    "crypto": -0.45,
-    "stocks": -0.45,
-    "gold": 0.225,
-    "usd": 0.15
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Vergeltungsdrohung)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: retaliation threat)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 93,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
-   "titleDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen"
   },
   {
    "id": "U.Today:Bitcoin OG Says He Is Watching for Next Major Exploit as AI Models Get Stronger",
@@ -1533,14 +1567,14 @@
    "titleDe": "Tote Fische füllen den verschwindenden Fluss, während Dürre Indonesien erfasst"
   },
   {
-   "id": "CNBC World:SEC sues ISS as Trump administration ramps up scrutiny of proxy advisers",
+   "id": "CNBC:SEC sues ISS as Trump administration ramps up scrutiny of proxy advisers",
    "title": "SEC sues ISS as Trump administration ramps up scrutiny of proxy advisers",
    "text": "The SEC sued Institutional Shareholder Services to enforce a subpoena as the Trump administration increases scrutiny of influential proxy advisers.",
-   "source": "CNBC World",
+   "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/06/sec-iss-proxy-adviser-subpoena.html",
    "date": "2026-09-06T15:35:16.000Z",
    "tags": [
-    "Weltwirtschaft"
+    "Märkte"
    ],
    "impact": "low",
    "kind": "headline",
@@ -1563,9 +1597,7 @@
    "eventTypeEn": "Regulatory action",
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "SEC verklagt ISS, während die Trump-Administration die Überwachung von Stellvertreterberatern verstärkt"
   },
   {
@@ -1590,7 +1622,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1624,7 +1656,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2376,14 +2408,14 @@
    "titleDe": "$14,5 Milliarden Injection: Wird das US-Finanzministerium 'Runde 2' für Bitcoin und XRP auslösen?"
   },
   {
-   "id": "CNBC World:Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
+   "id": "CNBC:Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
    "title": "Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
    "text": "The sweetener's prices surged last week, reflecting a sharp deterioration in the global supply outlook.",
-   "source": "CNBC World",
+   "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/06/sugar-is-outperforming-the-stock-market-this-year-whats-driving-it.html",
    "date": "2026-09-06T13:19:01.000Z",
    "tags": [
-    "Weltwirtschaft"
+    "Märkte"
    ],
    "impact": "low",
    "kind": "headline",
@@ -2406,48 +2438,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
-   "titleDe": "Zucker übertrifft die Börse dieses Jahr. Was treibt das an und wohin kann es gehen"
-  },
-  {
-   "id": "Al Jazeera:US envoys meet Putin: What’s behind latest diplomacy on Russia-Ukraine war?",
-   "title": "US envoys meet Putin: What’s behind latest diplomacy on Russia-Ukraine war?",
-   "text": "Steve Witkoff and Jared Kushner met Putin and headed to Kyiv as part of Trump's new efforts to broker agreement.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/6/putin-meets-us-envoys-whats-behind-latest-diplomacy-on-russia-ukraine-war?traffic_source=rss",
-   "date": "2026-09-06T13:16:21.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Eskalation"
-   ],
-   "scores": {
-    "crypto": -0.36,
-    "stocks": -0.36,
-    "gold": 0.18,
-    "usd": 0.12
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 63,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
    "alsoIn": [],
-   "titleDe": "US-Botschafter treffen Putin: Was steckt hinter der neuesten Diplomatie zum Russland-Ukraine-Krieg"
+   "titleDe": "Zucker übertrifft die Börse dieses Jahr. Was treibt das an und wohin kann es gehen"
   },
   {
    "id": "BeInCrypto:LeBron James Polymarket Deal: Will Prediction Markets Go Mainstream?",
@@ -2612,7 +2604,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2763,14 +2755,14 @@
    "titleDe": "Neues Ethereum-Upgrade könnte Krypto-Transaktionen und Gebühren grundlegend verändern"
   },
   {
-   "id": "CNBC World:‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
+   "id": "CNBC:‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
    "title": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
    "text": "Anthropic, OpenAI, Meta and Google all released model updates this week, while Nvidia said it's acquiring open-source AI platform Hugging Face.",
-   "source": "CNBC World",
+   "source": "CNBC",
    "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
    "date": "2026-09-06T12:13:49.000Z",
    "tags": [
-    "Weltwirtschaft"
+    "Märkte"
    ],
    "impact": "low",
    "kind": "headline",
@@ -2793,9 +2785,7 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
+   "alsoIn": [],
    "titleDe": "‘Modellermüdigkeit’ setzt ein, während KI-Labore im rasanten Tempo neue Versionen einführen"
   },
   {
@@ -3985,6 +3975,40 @@
    "titleDe": "'Er war ein Rettungsanker' – haitianische Pflegekräfte entlassen, Familien im Desaster"
   },
   {
+   "id": "CNBC:From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
+   "title": "From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
+   "text": "Despite rising prices and the travel industry focusing on the luxury segment, budget-minded vacationers are still finding ways to get away.",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/09/05/budget-travel-vacation-costs.html",
+   "date": "2026-09-05T23:55:52.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 6,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Von „Mystery-Urlauben“ bis hin zu Hostels - preisbewusste Reisende werden bei steigenden Preisen sparsam"
+  },
+  {
    "id": "BBC World:Majority Russian-speaking city in Ukraine considers language ban in the arts",
    "title": "Majority Russian-speaking city in Ukraine considers language ban in the arts",
    "text": "Ukraine's third-biggest city Odesa decides this week whether to ban Russian-language content in music and literature in public.",
@@ -4155,6 +4179,44 @@
    "titleDe": "UBS, Jane Street gehören zu den Firmen mit insgesamt 75 Millionen US-Dollar an Hyperliquid-ETF-Anlagen: Bloomberg"
   },
   {
+   "id": "CNBC:Trump turns up the heat on Warsh as Fed rate hike looms",
+   "title": "Trump turns up the heat on Warsh as Fed rate hike looms",
+   "text": "Ten days ahead of the next Federal Reserve meeting, the Trump administration looks to be in a full-court press to halt a rate hike in its tracks.",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html",
+   "date": "2026-09-05T19:12:53.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0.75,
+   "signals": [
+    "Zinserhöhung"
+   ],
+   "scores": {
+    "crypto": -0.75,
+    "stocks": -0.637,
+    "gold": -0.6,
+    "usd": 0.75
+   },
+   "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: Zinserhöhung)",
+   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike)",
+   "category": "fed",
+   "categoryLabel": "Notenbank",
+   "priority": 58,
+   "label": "strong_bearish",
+   "labelText": "Stark Bearish",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "titleDe": "Trump steigert die Spannung bei Warsh, während Fed Zinserhöhung droht"
+  },
+  {
    "id": "MarketWatch:Will a data center hurt your home’s value? Research says no. Sellers disagree.",
    "title": "Will a data center hurt your home’s value? Research says no. Sellers disagree.",
    "text": "In recent months, Americans have gotten more vocal about their concerns over data centers and the effects they could have on home values.",
@@ -4221,47 +4283,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Warum der Stellenbericht eigentlich gut für Anleihen ist"
-  },
-  {
-   "id": "CNBC Economy:Trump turns up the heat on Warsh as Fed rate hike looms",
-   "title": "Trump turns up the heat on Warsh as Fed rate hike looms",
-   "text": "Ten days ahead of the next Federal Reserve meeting, the Trump administration looks to be in a full-court press to halt a rate hike in its tracks.",
-   "source": "CNBC Economy",
-   "url": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html",
-   "date": "2026-09-05T18:18:22.000Z",
-   "tags": [
-    "US-Wirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "hawkish": 0.75,
-   "signals": [
-    "Zinserhöhung"
-   ],
-   "scores": {
-    "crypto": -0.75,
-    "stocks": -0.637,
-    "gold": -0.6,
-    "usd": 0.75
-   },
-   "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. (Signale: Zinserhöhung)",
-   "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike)",
-   "category": "fed",
-   "categoryLabel": "Notenbank",
-   "priority": 58,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Notenbank",
-   "eventTypeEn": "Central bank",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [
-    "CNBC World",
-    "CNBC"
-   ],
-   "titleDe": "Trump steigert die Spannung bei Warsh, während Fed Zinserhöhung droht"
   },
   {
    "id": "MarketWatch:7% mortgage rates are already here, some buyers and mortgage experts say",
@@ -4402,42 +4423,6 @@
    "titleDe": "Was verschiedene Weltkarten richtig machen - und was nicht"
   },
   {
-   "id": "CNBC Economy:From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
-   "title": "From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
-   "text": "Despite rising prices and the travel industry focusing on the luxury segment, budget-minded vacationers are still finding ways to get away.",
-   "source": "CNBC Economy",
-   "url": "https://www.cnbc.com/2026/09/05/budget-travel-vacation-costs.html",
-   "date": "2026-09-05T12:14:21.000Z",
-   "tags": [
-    "US-Wirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
-   "titleDe": "Von „Mystery-Urlauben“ bis hin zu Hostels - preisbewusste Reisende werden bei steigenden Preisen sparsam"
-  },
-  {
    "id": "The Defiant:Revolut Starts EURR Rollout With Bridge as Regulated Issuer",
    "title": "Revolut Starts EURR Rollout With Bridge as Regulated Issuer",
    "text": "Revolut opens EURR to selected customers in three countries; Bridge reported €374 outstanding, compared with €394.5 million of Circle’s EURC.",
@@ -4507,7 +4492,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 2,
+  "uebersetzt": 1,
   "fehler": null
  }
 }
