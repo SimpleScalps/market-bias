@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T02:52:42.220Z",
+ "updated": "2026-09-06T03:04:04.780Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T02:52:42.254Z",
+   "stand": "2026-09-06T03:04:04.818Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -156,7 +156,7 @@
   },
   "2026-09-04": {
    "tag": "2026-09-04",
-   "stand": "2026-09-06T02:52:42.260Z",
+   "stand": "2026-09-06T03:04:04.825Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
@@ -309,29 +309,29 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T02:52:42.249Z",
+   "stand": "2026-09-06T03:04:04.810Z",
    "anzahl": 16,
    "klassen": {
     "crypto": {
-     "score": -0.3047,
+     "score": -0.3034,
      "bull": 1,
      "bear": 3,
      "neut": 12
     },
     "stocks": {
-     "score": -0.3047,
+     "score": -0.3034,
      "bull": 1,
      "bear": 3,
      "neut": 12
     },
     "gold": {
-     "score": 0.1525,
+     "score": 0.1518,
      "bull": 3,
      "bear": 1,
      "neut": 12
     },
     "usd": {
-     "score": 0.1016,
+     "score": 0.1011,
      "bull": 3,
      "bear": 0,
      "neut": 13
@@ -351,7 +351,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 96
+     "priority": 95
     },
     {
      "id": "Al Jazeera:Iran war live: IRGC claims new attacks on US warships over naval blockade",
@@ -381,7 +381,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 70
+     "priority": 69
     },
     {
      "id": "Al Jazeera:Netanyahu boasts about bombing Qatar, says Gaza funds used for aid",
