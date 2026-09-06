@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-06T15:52:08.768Z",
+ "updated": "2026-09-06T15:54:02.468Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-06T15:52:08.810Z",
+   "stand": "2026-09-06T15:54:02.517Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-06T15:52:08.801Z",
+   "stand": "2026-09-06T15:54:02.507Z",
    "anzahl": 113,
    "klassen": {
     "crypto": {
@@ -384,6 +384,21 @@
      "priority": 63
     },
     {
+     "id": "CNBC World:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
+     "titel": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
+     "titelDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen",
+     "quelle": "CNBC World",
+     "url": "https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html",
+     "zeit": "2026-09-06T15:52:07.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 95
+    },
+    {
      "id": "Al Jazeera:Israeli air attacks on Lebanon kill at least four",
      "titel": "Israeli air attacks on Lebanon kill at least four",
      "titelDe": "Israelische Luftangriffe auf Libanon töten mindestens vier",
@@ -442,21 +457,6 @@
       "usd": 0.135
      },
      "priority": 66
-    },
-    {
-     "id": "Mehr News:OIC denounces US strike on Iranian tanker in Persian Gulf",
-     "titel": "OIC denounces US strike on Iranian tanker in Persian Gulf",
-     "titelDe": "OIC verurteilt US-Angriff auf iranischen Tanker im Persischen Golf",
-     "quelle": "Mehr News",
-     "url": "https://en.mehrnews.com/news/247487/OIC-denounces-US-strike-on-Iranian-tanker-in-Persian-Gulf",
-     "zeit": "2026-09-06T09:13:47.000Z",
-     "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
-     },
-     "priority": 45
     }
    ]
   }

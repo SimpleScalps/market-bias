@@ -1,11 +1,51 @@
 {
- "updated": "2026-09-06T15:52:08.768Z",
+ "updated": "2026-09-06T15:54:02.468Z",
  "regime": "policy",
  "count": 128,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events"
  ],
  "items": [
+  {
+   "id": "CNBC World:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
+   "title": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
+   "text": "Iran warned of faster, heavier retaliation against U.S. attacks while acknowledging the war’s mounting toll on its economy.",
+   "source": "CNBC World",
+   "url": "https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html",
+   "date": "2026-09-06T15:52:07.000Z",
+   "tags": [
+    "Weltwirtschaft"
+   ],
+   "impact": "low",
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Vergeltungsdrohung"
+   ],
+   "scores": {
+    "crypto": -0.45,
+    "stocks": -0.45,
+    "gold": 0.225,
+    "usd": 0.15
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Vergeltungsdrohung)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: retaliation threat)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 95,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "CNBC"
+   ],
+   "titleDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen"
+  },
   {
    "id": "Reuters:Sarandon says she still loses movie roles over support for Palestinians",
    "title": "Sarandon says she still loses movie roles over support for Palestinians",
@@ -97,7 +137,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -547,7 +587,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -898,7 +938,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1285,7 +1325,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1670,7 +1710,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2279,42 +2319,6 @@
    "coins": [],
    "alsoIn": [],
    "titleDe": "Die USA versuchen, ihre Niederlagen durch wirtschaftlichen Druck auszugleichen"
-  },
-  {
-   "id": "CNBC World:Iran warns of ‘more painful’ response to U.S. attacks as economic pressure mounts",
-   "title": "Iran warns of ‘more painful’ response to U.S. attacks as economic pressure mounts",
-   "text": "Iran warned of faster, heavier retaliation against U.S. attacks while acknowledging the war’s mounting toll on its economy.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html",
-   "date": "2026-09-06T12:02:47.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 56,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
-   "titleDe": "Iran warnt vor einer „schmerzhafteren“ Reaktion auf US-Angriffe, während der wirtschaftliche Druck zunimmt"
   },
   {
    "id": "CNBC:AI data centers are transforming rural land markets — and fueling a backlash",
@@ -2999,7 +3003,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
