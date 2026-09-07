@@ -120,6 +120,20 @@ const WIRKUNG_MINUTEN = 15;
 const WIRKUNG_RUECKBLICK_MIN = 95;
 const WIRKUNG_MAX = 40;
 
+/*
+ * Wie lange gewartet wird, bevor gemessen wird.
+ *
+ * Nicht fuenfzehn, sondern einundzwanzig Minuten. Coinbase - und aus dem
+ * Rechenzentrum ist Coinbase die Quelle, weil Binance dort nicht antwortet -
+ * liefert die juengsten Kerzen mit rund fuenf Minuten Verzug. Wer nach genau
+ * fuenfzehn Minuten fragt, fragt nach einer Kerze, die es noch nicht gibt:
+ * "Kerzen deckten das Fenster nicht ab", bei jedem Durchgang aufs Neue.
+ *
+ * Gemessen wird trotzdem das Fenster von fuenfzehn Minuten - nur eben etwas
+ * spaeter. Die Zahl bleibt dieselbe, sie kommt bloss ein paar Minuten nach.
+ */
+const WIRKUNG_REIFE_MIN = WIRKUNG_MINUTEN + 6;
+
 const NACHZIEHEN_MAX = 8;
 const NACHZIEHEN_ABSTAND_MS = 60_000;
 
@@ -1682,7 +1696,7 @@ function faelligFuerWirkung(n) {
   const ab = new Date(n.gesehenAm || n.date).getTime();
   if (!ab || isNaN(ab)) return false;
   const alter = Date.now() - ab;
-  return alter > WIRKUNG_MINUTEN * 60_000 && alter < WIRKUNG_RUECKBLICK_MIN * 60_000;
+  return alter > WIRKUNG_REIFE_MIN * 60_000 && alter < WIRKUNG_RUECKBLICK_MIN * 60_000;
 }
 
 /**

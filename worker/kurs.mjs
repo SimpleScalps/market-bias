@@ -79,7 +79,7 @@ export async function kerzenHolen(minuten = 100) {
  * darf die Messung nicht verwerfen. Zwei Minuten Toleranz sind bei einer
  * Viertelstunde Messfenster unerheblich.
  */
-function kursBei(kerzen, ms, toleranz = 2) {
+function kursBei(kerzen, ms, toleranz = 3) {
   const start = aufMinute(ms);
   for (let i = 0; i <= toleranz; i++) {
     const a = kerzen.get(start + i * MINUTE);
