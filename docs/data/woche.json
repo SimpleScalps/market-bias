@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T01:55:03.210Z",
+ "updated": "2026-09-07T01:59:17.096Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T01:55:03.246Z",
+   "stand": "2026-09-07T01:59:17.173Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T01:55:03.240Z",
+   "stand": "2026-09-07T01:59:17.159Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,32 +462,32 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T01:55:03.234Z",
-   "anzahl": 55,
+   "stand": "2026-09-07T01:59:17.144Z",
+   "anzahl": 66,
    "klassen": {
     "crypto": {
-     "score": -0.1563,
+     "score": -0.1521,
      "bull": 1,
-     "bear": 10,
-     "neut": 44
+     "bear": 12,
+     "neut": 53
     },
     "stocks": {
-     "score": -0.1432,
+     "score": -0.1412,
      "bull": 1,
-     "bear": 10,
-     "neut": 44
+     "bear": 12,
+     "neut": 53
     },
     "gold": {
-     "score": -0.0344,
-     "bull": 7,
+     "score": -0.0174,
+     "bull": 9,
      "bear": 4,
-     "neut": 44
+     "neut": 53
     },
     "usd": {
-     "score": 0.1098,
-     "bull": 4,
+     "score": 0.0986,
+     "bull": 6,
      "bear": 1,
-     "neut": 50
+     "neut": 59
     }
    },
    "top": [
@@ -582,34 +582,34 @@
      "priority": 93
     },
     {
-     "id": "Reuters:Hormuz traffic dips to lowest since May after US, Iranian strikes on ships",
-     "titel": "Hormuz traffic dips to lowest since May after US, Iranian strikes on ships",
-     "titelDe": "Hormuz-Verkehr sinkt auf niedrigsten Stand seit Mai nach US- und iranischen Angriffen auf Schiffe",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNX1Yzd0xQX3FmaWVJVjdQREFrMWR1ZEZfaHlPNmpTY1FJRFRNYmN0YWVTSHB6NVNvTnJ5R0VYaS1RLXg5TUh5cjEzMmFzV0Nyb0FWUmRZSXlBMUlSQjRZbGFzQll1X0kzcXdBdnVsT25ncEhNY2Z3ME5IQTMzSk9TZEdDbGx5RFh2VEJjMzdKMy1uUlBPbWZ0NWgyLTh3cmU0cTA1bTE1Rnh0cWhpd1dKaWZlTDhQeGJKVWxJeHVB?oc=5",
-     "zeit": "2026-09-06T23:29:38.000Z",
+     "id": "Anadolu:1 killed, 2 injured in Israeli strike on ambulance in southern Lebanon",
+     "titel": "1 killed, 2 injured in Israeli strike on ambulance in southern Lebanon",
+     "titelDe": "1 getötet, 2 verletzt bei israelischem Angriff auf Krankenwagen im Süden Libanons",
+     "quelle": "Anadolu",
+     "url": "https://www.aa.com.tr/en/middle-east/1-killed-2-injured-in-israeli-strike-on-ambulance-in-southern-lebanon/4049190",
+     "zeit": "2026-09-07T01:54:51.000Z",
      "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
+      "crypto": -0.81,
+      "stocks": -0.81,
+      "gold": 0.405,
+      "usd": 0.27
      },
-     "priority": 50
+     "priority": 49
     },
     {
-     "id": "TASS:States with anti-Russian sanctions taking part in EEF underscore its significance — envoy",
-     "titel": "States with anti-Russian sanctions taking part in EEF underscore its significance — envoy",
-     "titelDe": "Staaten mit anti‑Russischen Sanktionen nehmen an EEF teil, was dessen Bedeutung unterstreicht – Botschafter",
-     "quelle": "TASS",
-     "url": "https://tass.com/politics/2183431",
-     "zeit": "2026-09-07T00:38:00.000Z",
+     "id": "Anadolu:Libya’s unity government dismantles cell behind drone attacks on vital energy facilities",
+     "titel": "Libya’s unity government dismantles cell behind drone attacks on vital energy facilities",
+     "titelDe": "Libysche Einheitsregierung zerschlägt Zelle hinter Drohnenangriffe auf wichtige Energieanlagen",
+     "quelle": "Anadolu",
+     "url": "https://www.aa.com.tr/en/middle-east/libya-s-unity-government-dismantles-cell-behind-drone-attacks-on-vital-energy-facilities/4049170",
+     "zeit": "2026-09-06T23:03:56.000Z",
      "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
      },
-     "priority": 36
+     "priority": 41
     }
    ]
   }
