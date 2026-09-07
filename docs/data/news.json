@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-07T01:59:17.096Z",
+ "updated": "2026-09-07T02:00:36.508Z",
  "regime": "policy",
- "count": 182,
+ "count": 185,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
   "Times of Israel: 403 https://www.timesofisrael.com/feed/"
@@ -47,9 +47,48 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "1 getötet, 2 verletzt bei israelischem Angriff auf Krankenwagen im Süden Libanons"
+  },
+  {
+   "id": "Al Jazeera (GN):Breaking News, World News and Video from Al Jazeera",
+   "title": "Breaking News, World News and Video from Al Jazeera",
+   "text": "Breaking News, World News and Video from Al Jazeera &nbsp;&nbsp; Al Jazeera",
+   "source": "Al Jazeera (GN)",
+   "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTFBPd3h6VGM0TDlnQTJRaHcwMHkxaG5HcFFUY08yOEpFQ3FjZHB3b3h1bGlwSnRkT3k5SXZORXhjYw?oc=5",
+   "date": "2026-09-07T01:50:36.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 36,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Breaking News, World News und Video von Al Jazeera"
   },
   {
    "id": "Anadolu:Israel plans to destroy 2 tunnels in Lebanon, block return of displaced residents: Report",
@@ -86,6 +125,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Israel plant Zerstörung von 2 Tunneln im Libanon, Sperrung der Rückkehr vertriebener Bewohner: Bericht"
@@ -128,6 +168,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Neuseeland-Dollar fällt leicht, da Fed-Hike-Wetten und Iran-Spannungen den US-Dollar stützen"
   },
@@ -165,6 +206,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Australien live: Hume behauptet, das Algorithmusgesetz des Labour gibt zu viel Macht; der umstrittene Entwickler Bathla tritt zurück, 200 Arbeitsplätze betroffen"
   },
@@ -201,6 +243,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Indische Rupie und Anleihen werden durch RBI-Intervention und Liquiditätsmaßnahmen angetrieben"
   },
@@ -238,8 +281,47 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Kanadischer Dollar bleibt unverändert trotz schwächerem US-Dollar und steigenden Ölpreisen"
+  },
+  {
+   "id": "Reuters:Philippines regulator clears Mynt for up to $1.5 billion IPO",
+   "title": "Philippines regulator clears Mynt for up to $1.5 billion IPO",
+   "text": "Philippines regulator clears Mynt for up to $1.5 billion IPO &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaWptWlVTRmpUdjFyWmNxcUtCTTFVVGNSOFpudmJSUzVxSWdSQnMyLXYwd2pXRDNRMEs4cDJfdGtvN0dmeHlVTnFobi03SS0xQWNNaURzQndpY2I0V1Bsb1M5dnNMMVUxWjV5Z3dLVUltbGFiYzZCWTVfdmFjZjZkWk4tLWwwZU9OYWw2TndYRHNEdFRXdGFTbm1NMGNUejZtdm96U1R6WjNtd09FaHUzcVlR?oc=5",
+   "date": "2026-09-07T01:34:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Philippinischer Regulierer genehmigt Mynt für ein Börsengang von bis zu 1,5 Billionen USD"
   },
   {
    "id": "FXStreet:Gold falls below $4,400 as strong US jobs data raise the prospects for Fed rate hike",
@@ -279,6 +361,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Gold fällt unter 4.400 $, starke US-Arbeitsmarktdaten erhöhen die Aussichten auf eine Fed‑Zinserhöhung"
   },
@@ -316,6 +399,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Google-finanzierte indische Raumfahrt-Start-up sammelt in neuester Finanzierungsrunde 100 Millionen US-Dollar"
   },
@@ -355,6 +439,7 @@
     "CNBC"
    ],
    "bestaetigt": 2,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Vulkanausbruch stört Hunderte Flüge am zweitgrößten Flughafen Südostasiens"
   },
@@ -392,6 +477,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Hongkongs lokale Schulen sollten nicht mit dem Schlimmsten rechnen müssen"
   },
@@ -433,6 +519,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "CNBC Daily Open: Trumps ‘kleine Ausflug’ wird zur steilen Herausforderung, während der Iran-Krieg weitergeht"
   },
@@ -472,6 +559,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Die letzte Zeit, als die US-Staatsanleihen 6 % erreichten, Bitcoin gab es noch nicht – was passiert, wenn sie wieder dort sind?"
   },
@@ -509,6 +597,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Der Dollar erhält kaum Auftrieb durch gestiegene Erwartungen an Fed-Hike"
   },
@@ -546,6 +635,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "PBOC legt USD/CNY-Referenzkurs bei 6,7795 fest, gegenüber 6,7787 zuvor"
   },
@@ -583,6 +673,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Nepals 5 Milliarden‑US‑Dollar‑Flutschäden stellen den UN-Klimafonds auf die Probe"
   },
@@ -624,6 +715,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "WTI steigt auf fast 90,00 USD durch eskalierenden US-Iran-Konflikt"
   },
@@ -661,6 +753,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Apple kündigt das erste faltbare iPhone an – John Ternus präsentiert es am 9. September"
   },
@@ -698,6 +791,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Alte Wurzeln: China-Pionierin der Sexualtherapie warnt vor dem Aufstieg des Phänomens „Beziehungsblindheit“"
   },
@@ -735,6 +829,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Acht indonesische Flughäfen bleiben wegen Asche des Anak‑Krakatau-Vulkans geschlossen"
   },
@@ -774,6 +869,7 @@
     "Al Jazeera (GN)"
    ],
    "bestaetigt": 2,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Warum richtet Kenia gegen ausländische Händler und kleine Einzelhändler vor"
   },
@@ -811,6 +907,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Asiatische Aktien steigen, andere bleiben vorsichtig, während Öl steigt"
   },
@@ -852,6 +949,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Der japanische Yen konsolidiert nahe August-Hochs gegenüber dem USD, während BoJ- und Fed-Hawkish-Wetten im Widerspruch stehen"
   },
@@ -879,7 +977,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -890,9 +988,47 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Yemenische Armee sagt, sie habe Positionen in Taiz und Al-Hudaydah zurückerobert im Kampf gegen Houthis"
+  },
+  {
+   "id": "Al Jazeera (GN):- Al Jazeera",
+   "title": "- Al Jazeera",
+   "source": "Al Jazeera (GN)",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPLXRpWGhpNWtEalcyTFY0UG16VGhFSmlOZHllY0lOa3N6NDEzQ1RGODNmVGktVDhiQnJPY2dwWVZLMy1RV1kyLVM4dHkxTk9kcjBKeHBkNU1FZ2xMOXdDT2RybHNMOFBVR1h0cVhLODU1bnhYU0NKUDBONldBc1Q4MWQ0M1JCc0k?oc=5",
+   "date": "2026-09-07T01:03:53.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 30,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "- Al Jazeera"
   },
   {
    "id": "Guardian:Germany’s far-right AfD thanks Elon Musk as France warns state election win a ‘serious moment’",
@@ -917,7 +1053,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -928,6 +1064,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Die rechtsextreme AfD dankt Elon Musk, Frankreich warnt, dass ein Sieg bei der Landeswahl ein „ernstes Ereignis“ sei"
   },
@@ -965,6 +1102,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Sinkende Südkoreanische Korallen sorgen für Besorgnis bei Tauchern, Wissenschaftler untersuchen den Klimawandel"
   },
@@ -1006,6 +1144,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Schiffsspritzzusammenbruch droht, da Raffinerien durch den Krieg auf andere Produkte setzen"
   },
@@ -1043,6 +1182,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Hongkongs Yuan‑Pool wächst. Kann er Liquidität in globale Nachfrage verwandeln"
   },
@@ -1084,6 +1224,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Britisches Pfund steigt, obwohl US-Dollar trotz steigender Fed‑Zinserwartungen schwächer wird"
   },
@@ -1122,6 +1263,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Israelische Besatzung tötet Palästinenser, verletzt 3 weitere bei Angriffen im Westjordanland"
@@ -1161,6 +1303,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Bewaffneter versucht, demokratischen Kandidaten für das Ohio‑Amt zu attackieren – TV"
@@ -1199,6 +1342,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Serbiens Red Star Belgrade ehrt Ratko Mladic mit Tifo"
   },
@@ -1237,6 +1381,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Israeli Angriffe im Gazastreifen töten 5 Palästinenser, darunter 2 Kinder"
@@ -1275,6 +1420,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Euro bleibt über 1,1600 trotz starkem US-Arbeitsmarktdaten, Händler verfolgen ECB-Zinsentscheidung"
   },
@@ -1317,6 +1463,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Staaten mit anti‑Russischen Sanktionen nehmen an EEF teil, was dessen Bedeutung unterstreicht – Botschafter"
@@ -1356,6 +1503,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Kanada verpflichtet sich, wirtschaftlichen Druck auf Iran aufrechtzuerhalten"
@@ -1394,6 +1542,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Europäische Kammerchef in Hongkong reist nach Brüssel, um das Image der Stadt neu zu gestalten"
   },
@@ -1432,6 +1581,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Ehemalige US-Kongressabgeordnete kritisiert politische und kirchliche Führung wegen Gaza"
@@ -1474,6 +1624,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Nordkorea setzt Kriegsschiff ein, das „zur Vernichtung von Vergeltungsangriffen“ fähig ist"
   },
@@ -1512,6 +1663,7 @@
     "CNBC"
    ],
    "bestaetigt": 2,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Datencenter im Weltraum: Vier große Hindernisse und Elon Musks ehrgeiziger Zeitplan"
   },
@@ -1551,6 +1703,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "„Weiße Hüte“ nehmen 4000 BTC von Liquid, ETFs verzeichnen beste Zuflüsse 2026: Hodler’s Digest"
   },
@@ -1589,6 +1742,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Israelische Armee warnt Bewohner im Süden Libanons vor Evakuierung vor geplantem Angriff"
@@ -1627,6 +1781,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Österreichs islamischer Kopftuchverbot bleibt in Kraft, während Kinder unter 14 wieder zur Schule gehen"
   },
@@ -1668,6 +1823,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "XRP, Solana (SOL), Hyperliquid (HYPE) und Bitcoin (BTC) Preisanalyse für 7. September: Unkonventionelles Marktbild"
   },
@@ -1705,6 +1861,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "China erreicht Meilenstein beim Tunnelbau für Zentralasiatische Eisenbahn, die Russland umgeht"
   },
@@ -1742,6 +1899,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Nuklearabfallplan für japanische Kurortstadt löst Widerstand aus: 'Kein Problem für uns'"
   },
@@ -1784,6 +1942,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "BSW sagt, es teile mit der AfD gemeinsame Standpunkte zu Russland und Sanktionen"
@@ -1826,6 +1985,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Iran im Live-Update: Teheran kündigt in den kommenden Tagen neue Hormus-Schifffahrtsroute an"
   },
@@ -1867,6 +2027,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "China steckt 54 Milliarden Dollar in den Finanzsektor, um die Angst vor schleppendem Wachstum zu mildern"
   },
@@ -1904,6 +2065,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "OPEC+ bleibt bei unveränderten Ölproduktionsrichtlinien für Oktober"
   },
@@ -1941,6 +2103,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Australischer Dollar steigt über 0,7200 trotz starkem US-NFP"
   },
@@ -1979,6 +2142,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Yemenische Küstenwache fängt Öltanker nach „unbefugter“ Lieferung an houthi-gehaltenem Hafen ein"
@@ -2019,6 +2183,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Liquid-Sidechain pausiert, nachdem 3.998 BTC aus dem Federation-Wallet abgezogen wurden"
   },
@@ -2056,6 +2221,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Freiwillige riskieren ihr Leben, um Indonesiens Waldbrand-„Kohlenstoffbomben“ zu entschärfen"
   },
@@ -2099,6 +2265,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Libysche Einheitsregierung zerschlägt Zelle hinter Drohnenangriffe auf wichtige Energieanlagen"
@@ -2137,6 +2304,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Indiens hochriskantes Prüfungssystem steht vor einem Vertrauenskrise"
   },
@@ -2174,6 +2342,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "„Gigantisches Raumschiff“: Universitätscampus Bristols Flaggschiff im Wert von 500 Mio £ eröffnet"
   },
@@ -2211,6 +2380,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Russland überarbeitet seine Energiekarte durch die Arktis"
   },
@@ -2249,6 +2419,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Trump erklärt, er verdiene Hunderte Milliarden Dollar aus Aktien für die USA, nicht für sich selbst"
@@ -2287,6 +2458,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Angreifer stürmte bei Ohio gegen den demokratischen Kandidaten für den Gouverneur, sagt Kampagne"
   },
@@ -2324,6 +2496,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Iran, US-Transportschiffe angegriffen, Teheran kündigt 'verbotenen Zone' an"
   },
@@ -2362,6 +2535,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Britische Staatsbürger streiten mit Polizei in Portsmouth über Ankunft von Migranten – Zeitung"
@@ -2401,6 +2575,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Iran erklärt „beschränkten“ Seeweg jenseits des Hormuz-Engpasses: Top-Sicherheitsbeamter"
@@ -2440,6 +2615,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Vorläufige Ergebnisse der deutschen Wahlen demütigen Merz’ Regierungspartei – Dmitriev"
@@ -2478,6 +2654,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Wirtschaftswissenschaftler Lan Xiaohuan zum Ausgleich, der Chinas Konsum ankurbeln soll"
   },
@@ -2515,6 +2692,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Wichtigste Rohstoffe für die Energiewende bleiben aus"
   },
@@ -2552,15 +2730,16 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Top 3 Meme-Coins, die in der zweiten Septemberwoche im Blick bleiben"
   },
   {
-   "id": "Al Jazeera (GN):Jamaica to file slavery reparations petition during UK visit",
+   "id": "Al Jazeera:Jamaica to file slavery reparations petition during UK visit",
    "title": "Jamaica to file slavery reparations petition during UK visit",
-   "text": "Jamaica to file slavery reparations petition during UK visit &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUHpJWS1SOERmb2M5UDJVSW5ya2VSaEdaekxXQmlkZENJSk9yUEZkOVJDX0N3QlMxU0s0YW5aZ3dMalIySjMtQ3dDX1R6a3Y5OU5HMzQ5SWVZcV9vTHNkSFNSY0djc3pBMTFmajVFU18tZktfNnlBb21WY1N4MXJrSlB2cmpBNlk2Zi1JdDNZc0VBU0lRclZVd0ZwVFQwS0lVX0HSAacBQVVfeXFMTWlINW9jdExKVE92UG0zZHM3ZjJCR2tRSHVjRHFZaXRoeFQ5bm1VR3c3RWlsSDFDeFYtcm9FRTI2aGFnZFZfeWV5ams1NWZqbURsQkdBcDloOW5YZTdqcEU3bzhMRHNsVlh2bWh1R3ktRnFkbUJ1MUx6RmVnSTNWV0RscXc5T3oxb2ZsZlFySTdQbWNaazkyTFoxeFdEek5CbTFjSEpfbzA?oc=5",
+   "text": "Petition to King Charles questions the legality of slavery under English law and UK’s responsibility for reparations.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/7/jamaica-to-file-slavery-reparations-petition-during-uk-visit?traffic_source=rss",
    "date": "2026-09-06T21:49:55.000Z",
    "tags": [
     "Weltlage"
@@ -2578,7 +2757,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2588,10 +2767,11 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
-    "Al Jazeera",
+    "Al Jazeera (GN)",
     "SCMP"
    ],
    "bestaetigt": 3,
+   "haeuser": 2,
    "unabhaengig": 2,
    "titleDe": "Jamaika reicht während UK-Besuch Klage für Sklavenentschädigungen ein"
   },
@@ -2630,6 +2810,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "UK-Behörden fangen Boot mit 140 dokumentlosen Migranten im Ärmelkanal – TV"
@@ -2668,6 +2849,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Nvidia-CEO Jensen Huang erklärt, dass AGI mit OpenAI’s GPT‑6 Astra eingetroffen ist"
   },
@@ -2705,6 +2887,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Hunderte rechtsextreme Protestierende strömen nach Portsmouth, nachdem ein kleines Boot ankam"
   },
@@ -2741,6 +2924,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Die rechtsextreme AfD in Deutschland steht kurz vor einer Mehrheitsgewinne im Osten"
   },
@@ -2778,6 +2962,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "In die USA reisen, um die Lücke in den US-China-Beziehungen zu schließen"
   },
@@ -2815,6 +3000,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "„Ich gebe ihm derzeit 1.000 $ pro Monat“: Mein Enkel hat eine schwere psychische Erkrankung. Wie schütze ich ihn, nachdem ich weg bin?"
   },
@@ -2852,6 +3038,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Todeszahl bei Schiffsunglück vor der nördlichen Küste Zyperns auf bis zu 14"
@@ -2892,6 +3079,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Liquid Network pausiert nach angeblichem Rückzug von 320 Millionen USD in Bitcoin durch „White‑Hat“-Hacker"
   },
@@ -2929,6 +3117,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Mindestens 10 Menschen bei einer Feuerwerksexplosion im zentralen Mexiko während eines Festivals getötet"
   },
@@ -2966,6 +3155,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Amazon-Prime-Flugzeug überschreitet die Start- und Landebahn am Flughafen Miami"
   },
@@ -3003,6 +3193,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Ölkonzerne streben bei Arbeitskonflikten mehr Verhandlungsmacht an"
   },
@@ -3040,6 +3231,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "\"Es ist nicht fair\": Mein Zwillingsbruder und ich wurden von unseren Eltern verlassen. Kann ich ihn dazu bringen, seinen Anteil an Steuern und Unterhalt zu zahlen?"
   },
@@ -3078,6 +3270,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "UN begrüßt jegliche Bemühungen um Gespräche zwischen Russland und der Ukraine"
@@ -3116,6 +3309,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Friedensgespräche reich an Symbolik, aber grundlegende Unterschiede zwischen Russland und der Ukraine bleiben"
   },
@@ -3157,6 +3351,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Kann die AfD seit dem Zweiten Weltkrieg die erste rechtsextreme Landesregierung in Deutschland bilden?"
   },
@@ -3200,6 +3395,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "STONK steigt um 250 % auf 140 Millionen $ Marktkapitalisierung, während das Solana-Launchpad StonkFun das Volumen von Raydium und Jupiter anzieht"
   },
@@ -3237,6 +3433,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "10 Tote, 64 Verletzte bei Feuerwerksexplosion auf mexikanischem Kirchenfest"
   },
@@ -3275,6 +3472,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Ehemaliger Pentagon-Chef erwartet, dass der US-Iran-Konflikt noch sechs Monate weitergeht"
@@ -3319,6 +3517,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Bitcoin wird von nichts gestützt? Peter Schiff belebt alte Kriegsgeschichte"
   },
@@ -3345,7 +3544,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3356,6 +3555,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Video zeigt beschädigten Amazon-Frachtflugzeug nach Absturz"
   },
@@ -3382,7 +3582,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3393,6 +3593,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Susan Sarandon sagt, sie verliere immer noch Filmrollen wegen ihrer Unterstützung Palästinas"
   },
@@ -3435,6 +3636,7 @@
     "SCMP"
    ],
    "bestaetigt": 5,
+   "haeuser": 5,
    "unabhaengig": 4,
    "titleDe": "Fünf Tote nach Amazon-Frachtflugzeugabsturz am Flughafen Miami"
   },
@@ -3472,6 +3674,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Wird Israel Benjamin Netanyahu erneut wählen?"
   },
@@ -3509,6 +3712,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Angreifer hinterlassen On-Chain-Nachricht nach 320 Millionen Dollar Abflüssen aus Liquid Network"
   },
@@ -3547,6 +3751,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Nordmazedonien interessiert an Energiekooperation mit Russland – Politiker"
@@ -3589,6 +3794,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Die USA haben nun Zugang zu mehr als der Hälfte der australischen Militärbasen – könnte das Land unwillkürlich in einen Krieg ziehen?"
   },
@@ -3627,6 +3833,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Der Hormuz-See ist vollständig geschlossen; nicht konforme Schiffe werden verboten"
@@ -3667,6 +3874,7 @@
     "CNBC"
    ],
    "bestaetigt": 2,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "US-Energieminister Wright sagt, das Iran-Atomabkommen könnte nie zustande kommen"
   },
@@ -3704,6 +3912,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Hawaii erklärt Notstand, während der Hurrikan Lowell auf die Inseln zusteuert"
   },
@@ -3741,6 +3950,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Kalshi zahlte den falschen Gewinnern 18,6 Millionen Dollar vor Michigans Wunder-Rückkehr"
   },
@@ -3778,6 +3988,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Frau in Schachtel aus Pilzen bestattet – erste Australien-Variante"
   },
@@ -3815,6 +4026,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Hohe Kraftstoffpreise treiben den Boom elektrischer Motorräder an"
   },
@@ -3852,6 +4064,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "US-Botschafter Kushner und Witkoff besuchen Kyiv zum ersten Mal nach Putin-Gesprächen"
   },
@@ -3889,6 +4102,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "ZEC stürmt in die Top 10, Short-Positionen werden massiv getroffen"
   },
@@ -3930,6 +4144,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Zelensky sagt, er rechnet damit, dass der Krieg bis in den Winter hinein andauern wird, nachdem er mit US-Botschaftern gesprochen hat"
   },
@@ -3967,6 +4182,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "AfD feiert prognostizierten Sieg bei Landeswahl"
   },
@@ -4004,6 +4220,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Prädiktionsmärkte nähern sich dem Obersten Gerichtshof: Der Stand der Krypto-Branche"
   },
@@ -4042,6 +4259,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Ghalibaf verspottet die US-Behörde, die einen Ölpreis von 40 USD pro Barrel prognostiziert"
@@ -4081,6 +4299,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Drei Tanker ändern Kurs im Hormus nach Warnung der IRGC"
@@ -4119,6 +4338,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Rechtsradikale AfD gewinnt entscheidende Landeswahl in Deutschland, könnte jedoch die Mehrheit nicht sichern"
   },
@@ -4156,6 +4376,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Router-Protokoll, unterstützt von Coinbase, soll eingestellt werden und 303 Millionen ROUTE‑Token verbrennen"
   },
@@ -4197,6 +4418,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "McDonald’s-Drama in Indien eskaliert, während Wall Street 24 % Aktienanstieg anvisiert"
   },
@@ -4235,6 +4457,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Saudi‑Feindliche 'Wing Loong 2'-Drohne wird über Taiz abgeschossen"
@@ -4263,7 +4486,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -4274,6 +4497,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Verdecktes emiratisches Unternehmen als Hauptlieferant von Öl für das israelische Militär entlarvt"
@@ -4302,7 +4526,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4313,6 +4537,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Folgen regionale Länder blind dem US‑zionistischen Plan?"
@@ -4352,6 +4577,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Israelische Kampfflugzeuge vernichten Zivilisten, zerstören Krankenhaus im Süden Libanon"
@@ -4395,6 +4621,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Dennis Ross: Irans Widerstand während des US-Krieges bleibt weiterhin überraschend"
@@ -4434,6 +4661,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Iranischer Außenminister führt Gespräche mit türkischen und saudischen Kollegen"
@@ -4473,6 +4701,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Ein neues Kapitel in der gerichtlichen Diplomatie"
@@ -4516,6 +4745,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "US-Militär übernimmt israelische 'Totalkrieg'-Taktiken, indem es gezielt Zivilisten angreift"
@@ -4555,6 +4785,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Iranischer Schriftsteller, Dichter und Künstler Javad Mojabi verstorben"
@@ -4594,6 +4825,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Iran nimmt an der 39. Moskauer Internationalen Buchmesse teil"
@@ -4633,6 +4865,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Iranisches Kurzfilm „Warden“ gewinnt bei der 39. Kélibia International Amateur Film Festival"
@@ -4676,6 +4909,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Sydney-Kunstausstellung beleuchtet die Minab-Tragödie, Stimmen des Krieges, Widerstand"
@@ -4714,6 +4948,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "OpenAI’s GPT‑6 Astra ist erstaunlich gut in nahezu allem"
   },
@@ -4751,6 +4986,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Iran warnt vor einer 'schnelleren, schwereren, schmerzhafteren Reaktion' auf US-Angriffe"
   },
@@ -4788,6 +5024,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Kolumbien kehrt Fracking-Ban um, plant 4 Mrd. USD neue Ölinvestitionen"
   },
@@ -4827,6 +5064,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Frühere Ripple-Entwickler enthüllen kritische Warnsignale, 4.000 XRP Ledger‑Wallets betroffen"
   },
@@ -4866,6 +5104,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Hackers fordern 2 Millionen Dollar in Bitcoin aus Deutschland. Berlin verweigert Zahlung"
   },
@@ -4909,6 +5148,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Bitcoin-OG sagt, er beobachtet den nächsten großen Exploit, während KI-Modelle stärker werden"
   },
@@ -4952,6 +5192,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Israel hat nachgewiesen, dass es keine Waffenstillstandsvereinbarung einhält"
@@ -4992,6 +5233,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "XRP erhält durch die Ripple-Vereinbarung mit Florida Athletics einen weiteren Aufschwung"
   },
@@ -5029,6 +5271,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Vulkanausbruch lässt 170 000 Passagiere in Indonesien stranden"
   },
@@ -5066,6 +5309,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Ukrainische Polizei zerschlug einen Krypto-Betrug, der bis zu 1 Million USD pro Monat stahl"
   },
@@ -5105,6 +5349,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Der US-Dollar hat seit 1913 97 % seines Wertes verloren: Ist Bitcoin die Lösung?"
   },
@@ -5144,6 +5389,7 @@
     "CNBC"
    ],
    "bestaetigt": 2,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "SEC verklagt ISS, während die Trump-Administration die Überwachung von Stellvertreterberatern verstärkt"
   },
@@ -5182,6 +5428,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Iranische Sicherheitskräfte beschlagnahmen Waffenlieferungen in Nordwestengland"
@@ -5220,6 +5467,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Stablecoins werden ohne Banken nicht skalieren"
   },
@@ -5257,6 +5505,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Oman setzt stark auf erneuerbare Energien"
   },
@@ -5296,6 +5545,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Der zehncentige Traum von Dogecoin nähert sich der Realität, als der Preis einen wichtigen Ausbruch erreicht"
   },
@@ -5335,6 +5585,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Peter Brandt erweckt sein legendäres 2019-Parabolziel für Bitcoin wieder"
   },
@@ -5372,6 +5623,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Toncoin (TON) Preisvorhersage 2025, 2026, 2027-2030"
   },
@@ -5414,6 +5666,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "VIDEO: Jemenitische Streitkräfte greifen von Saudi-Arabien unterstützte Söldner an"
@@ -5452,6 +5705,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Dutzende vermutet in eingestürztem Gebäude in Delhi gefangen"
   },
@@ -5489,6 +5743,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "„Jeder hat ein KI-Geheimnis“: Dieser Künstler hat ein Jahr damit verbracht, Hunderte anonymer KI-Bekenntnisse zu sammeln und zu teilen"
   },
@@ -5528,6 +5783,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Better und Coinbase’s bitcoin‑gesicherten Hypotheken können die Sicherheiten der Kreditnehmer wiederverwenden"
   },
@@ -5565,6 +5821,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Eltern, die bei Wutanfällen besonders geschickt sind, tun fünf Dinge – ihre Kinder werden emotional intelligenter, sagt Psychologe"
   },
@@ -5602,6 +5859,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "'Kein SHIB-ETF noch, aber auf dem richtigen Weg', erklärt ein Shiba‑Inu‑Veteran das Potenzial"
   },
@@ -5640,6 +5898,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Qatarischer Premierminister reist nach China"
@@ -5678,6 +5937,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Folgendes ist heute in Krypto passiert"
   },
@@ -5718,6 +5978,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "$14,5 Milliarden Injection: Wird das US-Finanzministerium 'Runde 2' für Bitcoin und XRP auslösen?"
   },
@@ -5757,6 +6018,7 @@
     "CNBC"
    ],
    "bestaetigt": 2,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Zucker übertrifft die Börse dieses Jahr. Was treibt das an und wohin kann es gehen"
   },
@@ -5794,6 +6056,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "LeBron James Polymarket-Deal: Werden Vorhersage-Märkte Mainstream?"
   },
@@ -5821,7 +6084,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -5832,6 +6095,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Mexikos Botschafter begrüßt gemeinsames Handelskooperationskomitee mit Iran"
@@ -5871,6 +6135,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Das US-Militär kann seine \"barbarischen Verbrechen\" gegen Zivilisten nicht als \"Fehler\" bezeichnen: Irans OIC-Mission"
@@ -5911,6 +6176,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Satoshi-Ära Bitcoin erwacht nach 16 Jahren Inaktivität, als 600 BTC bewegt werden"
   },
@@ -5949,6 +6215,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Eröffnungszeremonie der ersten Smart Police High School in Teheran"
@@ -5987,6 +6254,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Dieses Krypto-Projekt hat 1.000 Studentendarlehen vollständig on‑Chain finanziert"
   },
@@ -6024,6 +6292,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Verlässt die USA seinen Status als sicherer Hafen? Warum globale Zentralbanken Gold aus New York abziehen"
   },
@@ -6061,6 +6330,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Wir sind in unseren 60ern. Wir verdienen 345.000 $ und haben 1 Million $ in 403(b)s. Ist es für Roth-Conversions zu spät?"
   },
@@ -6100,6 +6370,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Neues Ethereum-Upgrade könnte Krypto-Transaktionen und Gebühren grundlegend verändern"
   },
@@ -6139,6 +6410,7 @@
     "CNBC"
    ],
    "bestaetigt": 2,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "‘Modellermüdigkeit’ setzt ein, während KI-Labore im rasanten Tempo neue Versionen einführen"
   },
@@ -6177,6 +6449,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "8 islamische Staaten erklären Gaza zum ewigen palästinensischen Land"
@@ -6215,6 +6488,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Viele Trucker fühlen sich nicht wie der Rest von Amerika über KI-Rechenzentren, während das Geschäft boomt"
   },
@@ -6253,6 +6527,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Die USA versuchen, ihre Niederlagen durch wirtschaftlichen Druck auszugleichen"
@@ -6291,6 +6566,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "KI-Datenzentren verändern ländliche Grundstücksmärkte – und lösen Widerstand aus"
   },
@@ -6330,6 +6606,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Noch fünf Tage: Große XRP-Fix-Upgrade für September-Aktivierung geplant"
   },
@@ -6367,6 +6644,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Shiba Inu (SHIB) fügt in 24 Stunden außergewöhnliche 75 Milliarden zu den Börsen hinzu"
   },
@@ -6405,6 +6683,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Iran Expo 2026 bringt 1.500 ausländische Händler, Wirtschaftsvertreter"
@@ -6444,6 +6723,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Die iranische Botschaft in Beirut klärt die offizielle Position zu den Entwicklungen im Libanon"
@@ -6483,6 +6763,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Iran sieht größeren Anteil an Chinas wachsendem Kupfermarkt"
@@ -6521,6 +6802,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Klimaanlagen sind unser bester Schutz gegen extreme Hitze – ob wir es wollen oder nicht"
   },
@@ -6559,6 +6841,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Pezeshkian ordnet eine Untersuchung der tödlichen Explosion von Kraftstofftankern im Westen des Iran an"
@@ -6599,6 +6882,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Zwei neue Kryptowährungen von Robinhood und BNB werden offiziell auf Binance Futures gelistet: Vollständige Details"
   },
@@ -6637,6 +6921,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Ghalibaf: Iran wird auf jede Aggression mit größerer Kraft und härteren Konsequenzen reagieren"
@@ -6675,6 +6960,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Arbitrum (ARB) Plötzlich um 120 % gestiegen"
   },
@@ -6712,6 +6998,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Tether‑gestützte Orionx schließt nach Audit‑Hinweis auf 7 Mio $ Custody‑Lücke"
   },
@@ -6752,6 +7039,7 @@
     "IRNA"
    ],
    "bestaetigt": 2,
+   "haeuser": 2,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Teheran, Baku betonen Entwicklung von Transit- und Infrastrukturkooperation"
@@ -6791,6 +7079,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "In Fotos: 40. Gedenktag für den verstorbenen Schauspieler Akbar Abdi im Iran"
@@ -6830,6 +7119,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "In Fotos: Internationale Kongresse zu Stammzellen und Biomedizin im Iran"
@@ -6869,6 +7159,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Ein Denkmal zu Ehren des ikonischen iranischen Künstlers Akbar Abdi enthüllt"
@@ -6908,6 +7199,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "In Fotos: Entrepreneurship-Festival im Iran"
@@ -6946,6 +7238,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Warum will sich fast niemand mit älteren Menschen wie mir anfreunden — außer Betrügern?"
   },
@@ -6983,6 +7276,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Revolut startet EURR-Rollout mit Bridge als reguliertem Emittenten"
   },
@@ -7020,17 +7314,18 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "SEC Crypto Custody Rewrite tritt in die Überprüfung des Weißen Hauses ein"
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 11,
+  "uebersetzt": 3,
   "fehler": null
  },
  "rubriken": {
   "Sport": 2,
-  "Unsinn": 5,
+  "Unsinn": 4,
   "Unterhaltung": 1
  }
 }
