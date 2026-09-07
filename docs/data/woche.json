@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T13:22:32.892Z",
+ "updated": "2026-09-07T13:38:18.922Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T13:22:32.952Z",
+   "stand": "2026-09-07T13:38:18.995Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T13:22:32.941Z",
+   "stand": "2026-09-07T13:38:18.982Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,35 +462,50 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T13:22:32.929Z",
-   "anzahl": 210,
+   "stand": "2026-09-07T13:38:18.968Z",
+   "anzahl": 212,
    "klassen": {
     "crypto": {
-     "score": -0.08,
+     "score": -0.0949,
      "bull": 4,
-     "bear": 23,
+     "bear": 25,
      "neut": 183
     },
     "stocks": {
-     "score": -0.07,
+     "score": -0.0852,
      "bull": 2,
-     "bear": 20,
+     "bear": 22,
      "neut": 188
     },
     "gold": {
-     "score": 0.0174,
-     "bull": 17,
-     "bear": 5,
+     "score": 0.0101,
+     "bull": 18,
+     "bear": 6,
      "neut": 188
     },
     "usd": {
-     "score": 0.0337,
-     "bull": 6,
+     "score": 0.0476,
+     "bull": 7,
      "bear": 1,
-     "neut": 203
+     "neut": 204
     }
    },
    "top": [
+    {
+     "id": "FXStreet:Canadian Dollar finds support from Oil surge despite Fed rate hike bets",
+     "titel": "Canadian Dollar finds support from Oil surge despite Fed rate hike bets",
+     "titelDe": "Kanadischer Dollar findet Unterstützung durch Ölboom trotz Fed-Zinserhöhungsspekulationen",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/canadian-dollar-finds-support-from-oil-surge-despite-fed-rate-hike-bets-202609071322",
+     "zeit": "2026-09-07T13:22:43.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.611,
+      "usd": 1
+     },
+     "priority": 88
+    },
     {
      "id": "Reuters:UBS forecasts two US Fed rate hikes in 2026 after strong jobs report",
      "titel": "UBS forecasts two US Fed rate hikes in 2026 after strong jobs report",
@@ -552,6 +567,21 @@
      "priority": 99
     },
     {
+     "id": "Al Jazeera (GN):Yemen gov’t forces launch air strikes on Houthi targets",
+     "titel": "Yemen gov’t forces launch air strikes on Houthi targets",
+     "titelDe": "Jemenische Regierungstruppen führen Luftangriffe auf Houthi-Ziele durch",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUjhjMUVONTBVTkxsdERuMV9scEZYQ3FKREtuYjB0b0VuTmdKT0c5QkF0Ny01d2JVdlhkaWY2b3hoQWd1WmZZS05ORTB4S3p2a180U3lpWGhjLVAwd0VwZnBPY3RzdElIN1pHVXozcHQ5RmNHR1NXTHo5QTIxdFJpZnE4c1lWTnB1QnNyaUNaVkVmMkxOU2xjMm5R0gGfAUFVX3lxTFBMazExbm5wUzBCc3ZZcTRvWUUyTUlINWZKbWo2WFFFVXRLUUVFLXVuRTBIQlg0eGtibDJxLTl0Q0VmX1pyRDNkdExsSFh1OGdJTVl2djI2OVZUaHVoYlJQT2ZiXzZ6eW1FMHRWMkNzak12MDVJVmtZbHNuazhuTl9WVXJfdml6b2xZc3JwejBiTnlOMmE4TkFHWW1iUTN4RQ?oc=5",
+     "zeit": "2026-09-07T13:08:47.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 76
+    },
+    {
      "id": "Al Jazeera (GN):Yemen gov’t forces launch air strikes on Houthi targets - aljazeera.com",
      "titel": "Yemen gov’t forces launch air strikes on Houthi targets - aljazeera.com",
      "titelDe": "Jemens Regierungstruppen starten Luftangriffe auf Houthi-Ziele - aljazeera.com",
@@ -580,36 +610,6 @@
       "usd": 0.75
      },
      "priority": 82
-    },
-    {
-     "id": "FXStreet:Indonesian Rupiah weakens as Fed rate hike odds lift US Dollar",
-     "titel": "Indonesian Rupiah weakens as Fed rate hike odds lift US Dollar",
-     "titelDe": "Indonesische Rupiah schwächt sich, während die Wahrscheinlichkeit einer Fed‑Erhöhung den US‑Dollar stärkt",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/indonesian-rupiah-weakens-as-fed-rate-hike-odds-lift-us-dollar-202609070443",
-     "zeit": "2026-09-07T04:43:42.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 81
-    },
-    {
-     "id": "FXStreet:Swiss Franc weakens as US Dollar strengthens on Fed rate hike bets",
-     "titel": "Swiss Franc weakens as US Dollar strengthens on Fed rate hike bets",
-     "titelDe": "Schweizer Franken schwächt sich, US-Dollar stärkt sich bei Fed‑Zinserhöhungswetten",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/swiss-franc-weakens-as-us-dollar-strengthens-on-fed-rate-hike-bets-202609070337",
-     "zeit": "2026-09-07T02:25:08.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 80
     }
    ]
   }
