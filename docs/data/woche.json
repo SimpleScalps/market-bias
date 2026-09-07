@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T23:04:52.823Z",
+ "updated": "2026-09-07T23:19:02.973Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T23:04:52.925Z",
+   "stand": "2026-09-07T23:19:03.062Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T23:04:52.908Z",
+   "stand": "2026-09-07T23:19:03.048Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T23:04:52.891Z",
+   "stand": "2026-09-07T23:19:03.033Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,32 +615,32 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-07T23:04:52.873Z",
-   "anzahl": 23,
+   "stand": "2026-09-07T23:19:03.018Z",
+   "anzahl": 30,
    "klassen": {
     "crypto": {
-     "score": -0.0848,
+     "score": -0.0874,
      "bull": 0,
-     "bear": 3,
-     "neut": 20
+     "bear": 4,
+     "neut": 26
     },
     "stocks": {
-     "score": -0.0328,
+     "score": -0.0424,
      "bull": 0,
-     "bear": 2,
-     "neut": 21
+     "bear": 3,
+     "neut": 27
     },
     "gold": {
-     "score": 0.0165,
-     "bull": 2,
+     "score": 0.0212,
+     "bull": 3,
      "bear": 0,
-     "neut": 21
+     "neut": 27
     },
     "usd": {
-     "score": 0.0109,
+     "score": 0.0141,
      "bull": 0,
      "bear": 0,
-     "neut": 23
+     "neut": 30
     }
    },
    "top": [
@@ -657,7 +657,21 @@
       "gold": 0,
       "usd": 0
      },
-     "priority": 66
+     "priority": 65
+    },
+    {
+     "id": "Reuters:COMMENTARY: Asia's next leverage-driven market crash could be brewing",
+     "titel": "COMMENTARY: Asia's next leverage-driven market crash could be brewing",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQcWgzTlRucDRKVzNYRU0xaEV2dHNLSFlsSTY1d2VNZEhCVTRNZTZ3LTg3eDkzWTgtREpoa3ViRDUwTXg5YkRiNjdKYU5VNjJkVm5mQlJKUDNmWjJhRk40VF9sUHI1bGc3Uk1NWEhYVXNwVUtlcjBBZDJORURya0xCTnJHYnN4ZWxibmthQ3FpUDcxZUxsYzBjblRlYXRWd2hXRS1BQTdfZ0dFTTdMUDZXbVNZMEEtUXZLbVN6TXJUNmNtXzU2MlBxT2kxWWt0TnkwbHRUY3E5dGN2Mk8weFlN?oc=5",
+     "zeit": "2026-09-07T23:06:24.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 39
     },
     {
      "id": "BeInCrypto:Lululemon Stock Crashed 80%, and Founders are Now Divorcing",
