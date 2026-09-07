@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T06:09:24.431Z",
+ "updated": "2026-09-07T06:30:55.683Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T06:09:24.473Z",
+   "stand": "2026-09-07T06:30:55.767Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T06:09:24.466Z",
+   "stand": "2026-09-07T06:30:55.750Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,32 +462,32 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T06:09:24.458Z",
-   "anzahl": 119,
+   "stand": "2026-09-07T06:30:55.733Z",
+   "anzahl": 128,
    "klassen": {
     "crypto": {
-     "score": -0.1337,
+     "score": -0.1047,
      "bull": 2,
-     "bear": 16,
-     "neut": 101
+     "bear": 15,
+     "neut": 111
     },
     "stocks": {
-     "score": -0.1213,
+     "score": -0.0968,
      "bull": 1,
-     "bear": 15,
-     "neut": 103
+     "bear": 14,
+     "neut": 113
     },
     "gold": {
-     "score": -0.0228,
-     "bull": 9,
-     "bear": 7,
-     "neut": 103
+     "score": 0.001,
+     "bull": 10,
+     "bear": 5,
+     "neut": 113
     },
     "usd": {
-     "score": 0.0893,
-     "bull": 8,
+     "score": 0.06,
+     "bull": 6,
      "bear": 1,
-     "neut": 110
+     "neut": 121
     }
    },
    "top": [
@@ -507,21 +507,6 @@
      "priority": 100
     },
     {
-     "id": "FXStreet:Indonesian Rupiah weakens as Fed rate hike odds lift US Dollar",
-     "titel": "Indonesian Rupiah weakens as Fed rate hike odds lift US Dollar",
-     "titelDe": "Indonesische Rupiah schwächt sich, während die Wahrscheinlichkeit einer Fed‑Erhöhung den US‑Dollar stärkt",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/indonesian-rupiah-weakens-as-fed-rate-hike-odds-lift-us-dollar-202609070443",
-     "zeit": "2026-09-07T04:43:42.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 82
-    },
-    {
      "id": "FXStreet:United States Dollar Index strengthens above 99.00 as robust US jobs data boosts Fed rate hike bets",
      "titel": "United States Dollar Index strengthens above 99.00 as robust US jobs data boosts Fed rate hike bets",
      "titelDe": "US-Dollar-Index übertrifft 99,00, starke US-Arbeitsmarktdaten treiben Fed-Hike-Wetten",
@@ -537,6 +522,21 @@
      "priority": 82
     },
     {
+     "id": "FXStreet:Indonesian Rupiah weakens as Fed rate hike odds lift US Dollar",
+     "titel": "Indonesian Rupiah weakens as Fed rate hike odds lift US Dollar",
+     "titelDe": "Indonesische Rupiah schwächt sich, während die Wahrscheinlichkeit einer Fed‑Erhöhung den US‑Dollar stärkt",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/indonesian-rupiah-weakens-as-fed-rate-hike-odds-lift-us-dollar-202609070443",
+     "zeit": "2026-09-07T04:43:42.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 81
+    },
+    {
      "id": "FXStreet:Swiss Franc weakens as US Dollar strengthens on Fed rate hike bets",
      "titel": "Swiss Franc weakens as US Dollar strengthens on Fed rate hike bets",
      "titelDe": "Schweizer Franken schwächt sich, US-Dollar stärkt sich bei Fed‑Zinserhöhungswetten",
@@ -550,21 +550,6 @@
       "usd": 0.75
      },
      "priority": 80
-    },
-    {
-     "id": "BeInCrypto:UK Jobs Rebound Meets Hot US Data: More Fuel for a Fed Rate Hike?",
-     "titel": "UK Jobs Rebound Meets Hot US Data: More Fuel for a Fed Rate Hike?",
-     "titelDe": "UK-Jobzuwachs trifft auf starke US-Daten: Mehr Antrieb für Fed‑Zinserhöhung?",
-     "quelle": "BeInCrypto",
-     "url": "https://beincrypto.com/uk-jobs-rebound-fed-rate-hike/",
-     "zeit": "2026-09-07T03:00:00.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 79
     },
     {
      "id": "FXStreet:Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
@@ -610,6 +595,21 @@
       "usd": 0.75
      },
      "priority": 79
+    },
+    {
+     "id": "BeInCrypto:UK Jobs Rebound Meets Hot US Data: More Fuel for a Fed Rate Hike?",
+     "titel": "UK Jobs Rebound Meets Hot US Data: More Fuel for a Fed Rate Hike?",
+     "titelDe": "UK-Jobzuwachs trifft auf starke US-Daten: Mehr Antrieb für Fed‑Zinserhöhung?",
+     "quelle": "BeInCrypto",
+     "url": "https://beincrypto.com/uk-jobs-rebound-fed-rate-hike/",
+     "zeit": "2026-09-07T03:00:00.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 78
     }
    ]
   }
