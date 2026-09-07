@@ -2033,15 +2033,56 @@ const ARTIKEL_MAX = 2;
 const ARTIKEL_VERSUCHE_MAX = 2;
 
 /*
- * Wann eine Quelle fuer den Rest des Tages uebergangen wird.
+ * Wann eine Quelle uebergangen wird - und wann nicht.
  *
- * Manche Redaktionen sperren fremde Abrufe grundsaetzlich - BeInCrypto und
- * The Block antworten mit 403, Tehran Times liefert eine Seite ohne Text.
- * Das kostet nicht nur den Abruf: Es gibt nur zwei Plaetze je Durchgang, und
- * zwei vergebliche Versuche verdraengen die Meldungen, bei denen es
- * funktioniert haette. Nach drei Fehlschlaegen ist der Fall klar.
+ * Es gibt nur zwei Plaetze je Durchgang; zwei vergebliche Versuche
+ * verdraengen die Meldungen, bei denen es funktioniert haette. Eine Sperre ist
+ * also noetig. Die erste Fassung war aber zu grob: Sie zaehlte jeden
+ * Fehlschlag gegen die Quelle, auch "kein Artikeltext gefunden".
+ *
+ * Nachgemessen mit echten Artikeln aller vier gesperrten Quellen:
+ *
+ *   Tehran Times  HTTP 200, 1.445 Zeichen  - gar keine Sperre
+ *   CoinDesk      HTTP 429                 - Drosselung, vorruebergehend
+ *   BeInCrypto    HTTP 403, 6 KB Sperrseite
+ *   The Block     HTTP 403, 6 KB Sperrseite
+ *
+ * Zwei von vier sperrten wirklich. Tehran Times war lediglich dreimal
+ * hintereinander mit einer zu kurzen Meldung an der Reihe - und dafuer einen
+ * Tag lang ausgesperrt. Deshalb zaehlt jetzt nur gegen die Quelle, was auch
+ * eine Aussage ueber sie ist.
  */
 const ARTIKEL_HOST_SPERRE = 3;
+
+/*
+ * Drosselung und Netzfehler sperren nicht, sie vertagen.
+ *
+ * 429 heisst "zu viele Anfragen", nicht "nie wieder"; eine
+ * Zeitueberschreitung heisst gar nichts ueber die Quelle. Eine Stunde spaeter
+ * kann dieselbe Adresse einwandfrei antworten.
+ */
+const ARTIKEL_PAUSE_MS = 60 * 60_000;
+
+/** Wird diese Quelle gerade uebergangen? */
+function hostGesperrt(sperre, host) {
+  const e = sperre[host];
+  if (!e || typeof e !== 'object') return false;   // alte Zaehlform gilt nicht mehr
+  if ((e.abfuhren || 0) >= ARTIKEL_HOST_SPERRE) return true;
+  return e.pauseBis ? new Date(e.pauseBis).getTime() > Date.now() : false;
+}
+
+/** Haelt fest, was ein Fehlschlag ueber die Quelle aussagt - falls etwas. */
+function hostVermerken(sperre, host, art) {
+  if (!host) return;
+  // "inhalt" betrifft den einen Artikel, nicht die Quelle.
+  if (art !== 'abfuhr' && art !== 'drosselung' && art !== 'netz') return;
+
+  const alt = sperre[host];
+  const e = alt && typeof alt === 'object' ? { ...alt } : {};
+  if (art === 'abfuhr') e.abfuhren = (e.abfuhren || 0) + 1;
+  else e.pauseBis = new Date(Date.now() + ARTIKEL_PAUSE_MS).toISOString();
+  sperre[host] = e;
+}
 
 /** Der Rechnername einer Adresse, oder leer. */
 function hostVon(url) {
@@ -2098,7 +2139,7 @@ async function nachlesen(items, env, hoechstens, buch, sperre) {
   const kandidaten = items
     .filter((n) => strittig(n)
       && (buch[n.id] || 0) < ARTIKEL_VERSUCHE_MAX
-      && (sperre[hostVon(n.url)] || 0) < ARTIKEL_HOST_SPERRE)
+      && !hostGesperrt(sperre, hostVon(n.url)))
     .sort((a, b) => Math.abs(b.regelScores?.crypto ?? b.scores?.crypto ?? 0) * (b.priority || 0)
                   - Math.abs(a.regelScores?.crypto ?? a.scores?.crypto ?? 0) * (a.priority || 0))
     .slice(0, hoechstens);
@@ -2107,9 +2148,10 @@ async function nachlesen(items, env, hoechstens, buch, sperre) {
 
   const ergebnisse = await Promise.all(kandidaten.map(async (n) => {
     const geholt = await artikelHolen(n.url);
-    if (geholt.fehler) return { n, fehler: geholt.fehler };
+    if (geholt.fehler) return { n, fehler: geholt.fehler, art: geholt.art };
     const d = await deuten(n.title, env, n.text || '', 'nachlauf', geholt.text);
-    if (!d || d.fehler) return { n, fehler: d?.fehler || 'kein Urteil' };
+    // Ein Fehlschlag beim Modell sagt nichts ueber die Quelle des Artikels.
+    if (!d || d.fehler) return { n, fehler: d?.fehler || 'kein Urteil', art: 'inhalt' };
     return { n, deutung: d, laenge: geholt.laenge };
   }));
 
@@ -2119,9 +2161,8 @@ async function nachlesen(items, env, hoechstens, buch, sperre) {
     buch[r.n.id] = (buch[r.n.id] || 0) + 1;
     if (r.deutung) { urteilAnwenden(r.n, r.deutung); gelesen++; continue; }
 
-    // Der Fehlschlag zaehlt auch gegen die Quelle, nicht nur gegen die Meldung.
-    const host = hostVon(r.n.url);
-    if (host) sperre[host] = (sperre[host] || 0) + 1;
+    // Gegen die Quelle zaehlt nur, was auch eine Aussage ueber sie ist.
+    hostVermerken(sperre, hostVon(r.n.url), r.art);
     fehler.push(`${r.n.source}: ${String(r.fehler).slice(0, 60)}`);
   }
   return { angefragt: kandidaten.length, gelesen, fehler };
@@ -2663,8 +2704,24 @@ export default {
          * Die Fehlermeldung gehoert deshalb hierher.
          */
         artikel: zNow.artikelErgebnis ?? 'noch keiner',
-        ...(Object.keys(zNow.artikelSperre || {}).length ? { artikelSperre: Object.entries(zNow.artikelSperre)
-          .filter(([, n]) => n >= ARTIKEL_HOST_SPERRE).map(([h, n]) => `${h} (${n}x)`).join(' · ') || 'noch keine' } : {}),
+        /*
+         * Gesperrt und vertagt getrennt ausweisen.
+         *
+         * Vorher stand beides als "3x" nebeneinander, und die Anzeige legte
+         * nahe, alle vier Quellen wuerden uns aussperren. Nachgemessen taten
+         * das nur zwei.
+         */
+        ...(Object.keys(zNow.artikelSperre || {}).length ? { artikelSperre: (() => {
+          const zeilen = [];
+          for (const [h, e] of Object.entries(zNow.artikelSperre)) {
+            if (!e || typeof e !== 'object') continue;
+            if ((e.abfuhren || 0) >= ARTIKEL_HOST_SPERRE) zeilen.push(`${h}: weist ab (${e.abfuhren}x)`);
+            else if (e.pauseBis && new Date(e.pauseBis).getTime() > Date.now()) {
+              zeilen.push(`${h}: vertagt bis ${e.pauseBis.slice(11, 16)}`);
+            }
+          }
+          return zeilen.join(' · ') || 'keine';
+        })() } : {}),
         wirkung: zNow.wirkungZuletzt ?? 'noch keine Messung',
         dubletten: (() => {
           const d = zNow.dubletten;

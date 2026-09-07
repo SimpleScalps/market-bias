@@ -160,21 +160,35 @@ function oeffentlich(host) {
 /**
  * Holt den Artikel und gibt seinen Text zurueck.
  *
- * Bei jedem Fehlschlag kommt `{ fehler }` — nie eine Ausnahme. Ein Artikel,
- * der sich nicht abrufen laesst, darf die Frage nicht mitreissen: Schlagzeile
- * und Anriss stehen ja weiterhin zur Verfuegung.
+ * Bei jedem Fehlschlag kommt `{ fehler, art }` — nie eine Ausnahme. Ein
+ * Artikel, der sich nicht abrufen laesst, darf die Frage nicht mitreissen:
+ * Schlagzeile und Anriss stehen ja weiterhin zur Verfuegung.
+ *
+ * `art` sagt, wen der Fehlschlag betrifft. Der Unterschied ist wichtiger, als
+ * er aussieht: Vier Quellen standen als gesperrt in der Anzeige, und beim
+ * Nachmessen sperrten nur zwei davon wirklich. Tehran Times lieferte
+ * einwandfrei 1.445 Zeichen - dort waren bloss drei kurze Meldungen
+ * hintereinander unter die Textschwelle gefallen, und das hat die ganze
+ * Quelle fuer einen Tag ausgesperrt.
+ *
+ *   'abfuhr'      401, 403, 451 - wir sind hier nicht erwuenscht. Eine
+ *                 Aussage ueber die Quelle.
+ *   'drosselung'  429 - zu viele Anfragen. Vorruebergehend, per Definition.
+ *   'netz'        Zeitueberschreitung oder 5xx. Ebenfalls vorruebergehend.
+ *   'inhalt'      Der Text war nicht zu finden oder kein HTML. Eine Aussage
+ *                 ueber diesen einen Artikel, nicht ueber die Quelle.
  */
 export async function artikelHolen(url) {
   let ziel;
   try {
     ziel = new URL(String(url));
   } catch {
-    return { fehler: 'unbrauchbare Adresse' };
+    return { fehler: 'unbrauchbare Adresse', art: 'inhalt' };
   }
   if (ziel.protocol !== 'https:' && ziel.protocol !== 'http:') {
-    return { fehler: 'nur http und https' };
+    return { fehler: 'nur http und https', art: 'inhalt' };
   }
-  if (!oeffentlich(ziel.hostname)) return { fehler: 'keine oeffentliche Adresse' };
+  if (!oeffentlich(ziel.hostname)) return { fehler: 'keine oeffentliche Adresse', art: 'inhalt' };
 
   try {
     const res = await fetch(ziel.href, {
@@ -188,11 +202,17 @@ export async function artikelHolen(url) {
       signal: AbortSignal.timeout(12000),
     });
 
-    if (!res.ok) return { fehler: `Abruf ${res.status}` };
+    if (!res.ok) {
+      const grund = res.status === 429 ? 'drosselung'
+        : [401, 403, 451].includes(res.status) ? 'abfuhr'
+        : res.status >= 500 ? 'netz'
+        : 'inhalt';
+      return { fehler: `Abruf ${res.status}`, art: grund };
+    }
 
-    const art = res.headers.get('content-type') || '';
-    if (art && !/text\/html|xhtml|text\/plain/i.test(art)) {
-      return { fehler: `unerwartetes Format (${art.split(';')[0]})` };
+    const typ = res.headers.get('content-type') || '';
+    if (typ && !/text\/html|xhtml|text\/plain/i.test(typ)) {
+      return { fehler: `unerwartetes Format (${typ.split(';')[0]})`, art: 'inhalt' };
     }
 
     const html = (await res.text()).slice(0, HTML_MAX);
@@ -203,10 +223,10 @@ export async function artikelHolen(url) {
      * Dann ist es ehrlicher, nichts zu liefern, als drei Zeilen Rechtstext
      * als Artikel auszugeben.
      */
-    if (text.length < 400) return { fehler: 'kein Artikeltext gefunden' };
+    if (text.length < 400) return { fehler: 'kein Artikeltext gefunden', art: 'inhalt' };
 
     return { text: text.slice(0, TEXT_MAX), laenge: text.length };
   } catch (err) {
-    return { fehler: err.name === 'TimeoutError' ? 'Abruf dauerte zu lange' : err.message.slice(0, 120) };
+    return { fehler: err.name === 'TimeoutError' ? 'Abruf dauerte zu lange' : err.message.slice(0, 120), art: 'netz' };
   }
 }
