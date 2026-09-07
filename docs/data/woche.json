@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T04:09:31.815Z",
+ "updated": "2026-09-07T04:24:02.534Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T04:09:31.867Z",
+   "stand": "2026-09-07T04:24:02.607Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T04:09:31.858Z",
+   "stand": "2026-09-07T04:24:02.593Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T04:09:31.848Z",
+   "stand": "2026-09-07T04:24:02.579Z",
    "anzahl": 93,
    "klassen": {
     "crypto": {
@@ -582,6 +582,21 @@
      "priority": 79
     },
     {
+     "id": "FXStreet:Gold remains depressed as reviving Fed rate hike bets and Iran risks underpin USD",
+     "titel": "Gold remains depressed as reviving Fed rate hike bets and Iran risks underpin USD",
+     "titelDe": "Gold bleibt gedrückt, während wieder aufkommende Fed‑Zinserhöhungswetten und Iran‑Risiken den USD stützen",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/gold-remains-depressed-as-reviving-fed-rate-hike-bets-and-iran-risks-underpin-usd-202609070419",
+     "zeit": "2026-09-07T04:19:03.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 74
+    },
+    {
      "id": "FXStreet:New Zealand Dollar edges lower as Fed rate hike bets and Iran tensions underpin USD",
      "titel": "New Zealand Dollar edges lower as Fed rate hike bets and Iran tensions underpin USD",
      "titelDe": "Neuseeland-Dollar fällt leicht, da Fed-Hike-Wetten und Iran-Spannungen den US-Dollar stützen",
@@ -595,21 +610,6 @@
       "usd": 0.75
      },
      "priority": 70
-    },
-    {
-     "id": "FXStreet:China injects $54 billion stimulus for financial sector amid fears over sluggish growth",
-     "titel": "China injects $54 billion stimulus for financial sector amid fears over sluggish growth",
-     "titelDe": "China steckt 54 Milliarden Dollar in den Finanzsektor, um die Angst vor schleppendem Wachstum zu mildern",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/china-injects-54-billion-stimulus-for-financial-sector-amid-fears-over-sluggish-growth-202609062351",
-     "zeit": "2026-09-06T23:51:06.000Z",
-     "scores": {
-      "crypto": 0.7,
-      "stocks": 0.595,
-      "gold": 0.56,
-      "usd": -0.7
-     },
-     "priority": 68
     }
    ]
   }
