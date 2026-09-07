@@ -46,6 +46,10 @@ test('Was keine Meldung ist, faellt heraus', () => {
   assert.equal(rubrik('(AMZZ.O) | Stock Price & Latest News', ''), 'Unsinn');
   assert.equal(rubrik('Latam - Reuters', ''), 'Unsinn');
   assert.equal(rubrik('15414', ''), 'Unsinn');
+  // Senderhinweis statt Meldung - kam ueber den Google-News-Feed von Al Jazeera.
+  assert.equal(rubrik('Listen Live to Al Jazeera', ''), 'Unsinn');
+  // Gegenprobe: "live" mitten im Titel ist kein Senderhinweis.
+  assert.equal(rubrik('Live updates: Israel strikes Gaza', ''), null);
 });
 
 // --- Nachbewerten ---------------------------------------------------------

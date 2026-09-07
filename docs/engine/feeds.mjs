@@ -19,6 +19,28 @@ export const FEEDS = [
   { url: 'https://www.benzinga.com/feed',                          source: 'Benzinga',        tags: ['US-Märkte'] },
   { url: 'https://feeds.bbci.co.uk/news/world/rss.xml',            source: 'BBC World',       tags: ['Weltlage'] },
   { url: 'https://www.aljazeera.com/xml/rss/all.xml',              source: 'Al Jazeera',      tags: ['Weltlage'] },
+  /*
+   * Al Jazeera zusaetzlich ueber Google News - und zwar, weil es schneller ist.
+   *
+   * Beim Reuters-Feed ist Google der Flaschenhals: rund zwanzig Minuten, bis
+   * eine Meldung dort auftaucht. Bei Al Jazeera ist es genau umgekehrt. Die
+   * Redaktion erzeugt ihre all.xml selten neu - beim Abruf war die Datei 32
+   * Minuten alt -, und der gemessene Verzug lag bei 17,8 Minuten im Median
+   * ueber dreissig Proben. Direkt gegenuebergestellt:
+   *
+   *   eigener Feed   neuester Eintrag 47,3 min alt
+   *   ueber Google   neuester Eintrag 15,3 min alt
+   *   vier Meldungen der letzten zwei Stunden nur bei Google, eine nur im
+   *   eigenen Feed (ein Live-Blog)
+   *
+   * Beide bleiben drin: Die Dublettenerkennung fasst sie zusammen und behaelt
+   * den frueheren Zeitstempel, es gewinnt also immer der schnellere Weg. Das
+   * gemeinsame `haus` verhindert dabei, dass eine Redaktion sich selbst
+   * bestaetigt.
+   */
+  { url: 'https://news.google.com/rss/search?q=when%3A1h+site%3Aaljazeera.com&hl=en-US&gl=US&ceid=US:en',
+    source: 'Al Jazeera (GN)', haus: 'Al Jazeera', tags: ['Weltlage'], fast: true,
+    titelZusatz: / - Al Jazeera$/ },
   { url: 'https://www.federalreserve.gov/feeds/press_all.xml',     source: 'Federal Reserve', tags: ['Fed'], fast: true },
 
   /*
@@ -107,6 +129,20 @@ export const FEEDS = [
   { url: 'https://en.irna.ir/rss',             source: 'IRNA',         tags: ['Weltlage'], staatlich: true },
   { url: 'https://en.mehrnews.com/rss',        source: 'Mehr News',    tags: ['Weltlage'], staatlich: true },
   { url: 'https://www.tehrantimes.com/rss',    source: 'Tehran Times', tags: ['Weltlage'], staatlich: true },
+  /*
+   * Anadolu - schnell, und deshalb dabei.
+   *
+   * Gemessen wurde nicht der Ruf, sondern der Verzug zwischen Zeitstempel und
+   * erstem Auftauchen. Drei Nahost-Meldungen an einem Abend: 1,3 · 2,1 · 2,2
+   * Minuten - jedes Mal vor allen anderen, den Flugzeugabsturz in Miami
+   * eingeschlossen. Al Jazeera braucht auf derselben Strecke im Median 17,8.
+   *
+   * Die Agentur gehoert dem tuerkischen Staat und ist deshalb als staatlich
+   * gekennzeichnet: Sie liefert schnell, zaehlt aber nicht als unabhaengige
+   * Bestaetigung.
+   */
+  { url: 'https://www.aa.com.tr/en/rss/default?cat=world',
+    source: 'Anadolu', tags: ['Weltlage'], staatlich: true, fast: true },
   // Krypto (dieselben offenen Quellen, die auch CryptoPanic aggregiert)
   /*
    * Redaktionell unabhaengige Stimmen.

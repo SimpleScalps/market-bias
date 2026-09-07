@@ -70,6 +70,8 @@ const UNSINN = [
   /^\s*[-–]\s*[a-z0-9.-]+\.(com|net|org|co\.uk)\s*$/i,
   /^[a-z0-9.-]+\.(com|net|org)\s*$/i,
   /^(latam|world|markets|business|sports|video|live|breaking news)\s*(-\s*reuters)?\s*$/i,
+  // Senderhinweise statt Meldungen: "Listen Live to Al Jazeera".
+  /^(listen|watch)\s+live\b/i,
 ];
 
 /**
