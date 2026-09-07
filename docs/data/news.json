@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-07T01:26:46.186Z",
+ "updated": "2026-09-07T01:30:04.364Z",
  "regime": "policy",
  "count": 165,
  "errors": [
@@ -7,6 +7,45 @@
   "Times of Israel: 403 https://www.timesofisrael.com/feed/"
  ],
  "items": [
+  {
+   "id": "BeInCrypto:The Last Time Treasury Yields Hit 6%, Bitcoin Didn't Exist — What Happens If They Get There Again?",
+   "title": "The Last Time Treasury Yields Hit 6%, Bitcoin Didn't Exist — What Happens If They Get There Again?",
+   "text": "Rick Bensignor expects US 10-year Treasury yields to climb toward 6%. Here's what that could mean for Bitcoin's price.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/treasury-yields-bitcoin-6-percent/",
+   "date": "2026-09-07T01:22:20.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "fed",
+   "categoryLabel": "Notenbank",
+   "priority": 72,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 1,
+   "titleDe": "Die letzte Zeit, als die US-Staatsanleihen 6 % erreichten, Bitcoin gab es noch nicht – was passiert, wenn sie wieder dort sind?"
+  },
   {
    "id": "Reuters:Dollar gets little lift from boost in Fed hike expectations",
    "title": "Dollar gets little lift from boost in Fed hike expectations",
@@ -160,6 +199,43 @@
    "titleDe": "WTI steigt auf fast 90,00 USD durch eskalierenden US-Iran-Konflikt"
   },
   {
+   "id": "BeInCrypto:Apple's First Foldable iPhone Headlines John Ternus's September 9 Keynote",
+   "title": "Apple's First Foldable iPhone Headlines John Ternus's September 9 Keynote",
+   "text": "Apple's foldable iPhone headlines John Ternus's first keynote as CEO, testing his hardware and AI strategy on September 9.",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/apple-foldable-iphone-ternus-keynote/",
+   "date": "2026-09-07T01:12:54.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 1,
+   "titleDe": "Apple kündigt das erste faltbare iPhone an – John Ternus präsentiert es am 9. September"
+  },
+  {
    "id": "SCMP:Ancient roots: China pioneering sex therapist warns of rise of ‘relationship blind’ phenomenon",
    "title": "Ancient roots: China pioneering sex therapist warns of rise of ‘relationship blind’ phenomenon",
    "text": "Behind many sexual difficulties lie questions that extend far beyond the confines of the bedroom. After years of assisting clients in navigating issues of intimacy and relationships, one of China’s pioneering sex therapists has observed how gaps in education and communication shape individuals’ most private struggles. Originally from Taiwan, Tong Songzhen began her career as a nurse before attaining a doctorate in sexology from Shu-Te University. Since 2016, she has established sex therapy...",
@@ -197,6 +273,43 @@
    "titleDe": "Alte Wurzeln: China-Pionierin der Sexualtherapie warnt vor dem Aufstieg des Phänomens „Beziehungsblindheit“"
   },
   {
+   "id": "Reuters:Eight Indonesian airports remain shut due to volcanic ash from Anak Krakatau",
+   "title": "Eight Indonesian airports remain shut due to volcanic ash from Anak Krakatau",
+   "text": "Eight Indonesian airports remain shut due to volcanic ash from Anak Krakatau &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPN3lQYWRaNm1SWnd1TzhrOUJkMHBWVUt2aXJqZ1pmRzF0dERJeHhSYUxJX0w0amVjOGt5NWFhSGhrNTZuSE9vR05NY1JjM3NXZDNVbl9ZYWJON0dHdkIxTS1wWWt5dExNbjlkZkh1THJBbXl3N1huQlJpSFo1cF9XWDhHMElBXzg3UmYzVTlzdmZzZURzTkIxOXBVUnVHSHd2N0pkbHdzZjZtTGZ2MktKcF9kNkMtQnlaT3RVUFNURXVGQS1rMDRV?oc=5",
+   "date": "2026-09-07T01:11:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 1,
+   "titleDe": "Acht indonesische Flughäfen bleiben wegen Asche des Anak‑Krakatau-Vulkans geschlossen"
+  },
+  {
    "id": "Al Jazeera:Why is Kenya cracking down on foreign traders and small retailers?",
    "title": "Why is Kenya cracking down on foreign traders and small retailers?",
    "text": "President Ruto says small businesses should be reserved for Kenyans as his government moves against foreign traders.",
@@ -219,7 +332,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -733,43 +846,6 @@
    "bestaetigt": 1,
    "unabhaengig": 1,
    "titleDe": "Europäische Kammerchef in Hongkong reist nach Brüssel, um das Image der Stadt neu zu gestalten"
-  },
-  {
-   "id": "Reuters:Japan's August foreign reserves post largest-ever drop after record intervention",
-   "title": "Japan's August foreign reserves post largest-ever drop after record intervention",
-   "text": "Japan's August foreign reserves post largest-ever drop after record intervention &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNanBTRWJCMTNGZkYzeS01WDVnOUlYSTdIWU1zdm82WjE3TGxBdlI0ZTlpc1BQTXExdE5ESmExaXFrN2JpOEhJYU0zUGVGdnUyalhqeU5wX0VobHU0bExWLUJLZW5Yc1RjMTdSY1lqaWplSFZOc0JHQ05Rek04RXVSdmc0NG1jZGNQeF9oQnpoTkJOQV9IejkyeUxYdlFtTUM4MnFfQXBoOE1haVNjUFFWdFVOcjhrRTU1c3lqSlB2SzVwdjlPb0RWOEkyZHpYTWM?oc=5",
-   "date": "2026-09-07T00:28:00.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 30,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "unabhaengig": 1,
-   "titleDe": "Japan verzeichnet größten Einmalabfall der Außenreserven nach Rekordintervention"
   },
   {
    "id": "Al Jazeera:North Korea deploys warship ‘capable of annihilating retaliatory strikes’",
@@ -1489,7 +1565,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2398,7 +2474,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 55,
+   "priority": 54,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3947,7 +4023,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3984,7 +4060,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -5486,7 +5562,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5537,43 +5613,6 @@
    "bestaetigt": 1,
    "unabhaengig": 1,
    "titleDe": "KI-Datenzentren verändern ländliche Grundstücksmärkte – und lösen Widerstand aus"
-  },
-  {
-   "id": "BeInCrypto:Elon Musk Fires Back at Bernie Sanders Over His $900 Billion Fortune",
-   "title": "Elon Musk Fires Back at Bernie Sanders Over His $900 Billion Fortune",
-   "text": "Elon Musk answers Bernie Sanders on X, saying his wealth sits in SpaceX and Tesla stock rather than cash.",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/elon-musk-wealth-stock-cash-sanders/",
-   "date": "2026-09-06T11:38:53.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 10,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "unabhaengig": 1,
-   "titleDe": "Elon Musk schlägt Bernie Sanders zurück wegen seines 900 Milliarden Dollar Vermögens"
   },
   {
    "id": "U.Today:Five Days Left: Major XRP Fix Upgrade Set for September Activation",
@@ -5650,43 +5689,6 @@
    "bestaetigt": 1,
    "unabhaengig": 1,
    "titleDe": "Shiba Inu (SHIB) fügt in 24 Stunden außergewöhnliche 75 Milliarden zu den Börsen hinzu"
-  },
-  {
-   "id": "BeInCrypto:Nike Exits the S&P 100 Index. 4 Tech Stocks Move In",
-   "title": "Nike Exits the S&P 100 Index. 4 Tech Stocks Move In",
-   "text": "Nike drops out of the S&P 100 on September 21. Dell, Palo Alto, Arista and Sandisk move in.",
-   "source": "BeInCrypto",
-   "url": "https://beincrypto.com/nike-sp-100-exit-tech-replacements/",
-   "date": "2026-09-06T11:14:50.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 9,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "unabhaengig": 1,
-   "titleDe": "Nike verlässt den S&P 100 Index. Vier Technologiewerte treten ein"
   },
   {
    "id": "IRNA:Iran Expo 2026 to bring together 1,500 foreign traders, business representatives",
@@ -6343,7 +6345,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
+  "uebersetzt": 3,
   "fehler": null
  },
  "rubriken": {
