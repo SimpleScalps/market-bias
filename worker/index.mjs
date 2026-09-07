@@ -1870,12 +1870,30 @@ async function wirkungMessen(items, z, buch) {
    * mehr. (Alte Eintraege sind noch ein blosses 1 - die gelten weiter als
    * gezaehlt, nur ohne Anzeige.)
    */
+  /*
+   * Ein blosser Haken zaehlt nicht als Messung.
+   *
+   * Die alten Eintraege im Buch sind eine 1 ohne Wert. Sie stammen aus der
+   * Zeit, in der die Bilanz sich noch selbst ueberschrieb - gezaehlt wurde
+   * damals also, aber nichts davon ist geblieben. Als Sperre gelesen haetten
+   * sie genau die Meldungen dauerhaft ausgeschlossen, deren Messung verloren
+   * ging. Nur ein Eintrag mit Wert gilt.
+   */
+  const schonGemessen = (id) => {
+    const e = buch[id];
+    return e && typeof e === 'object' ? e : null;
+  };
+
   for (const n of items) {
-    const gebucht = buch[n.id];
-    if (!n.wirkung && gebucht && typeof gebucht === 'object') n.wirkung = gebucht;
+    if (!n.wirkung) {
+      const e = schonGemessen(n.id);
+      if (e) n.wirkung = e;
+    }
   }
 
-  const faellig = items.filter((n) => faelligFuerWirkung(n) && !buch[n.id]).slice(0, WIRKUNG_MAX);
+  const faellig = items
+    .filter((n) => faelligFuerWirkung(n) && !schonGemessen(n.id))
+    .slice(0, WIRKUNG_MAX);
   if (!faellig.length) return null;
 
   const { kerzen, boerse, fehler } = await kerzenHolen(WIRKUNG_RUECKBLICK_MIN + WIRKUNG_MINUTEN + 5);
