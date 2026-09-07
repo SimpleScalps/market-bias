@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T20:59:52.056Z",
+ "updated": "2026-09-07T21:04:32.609Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T20:59:52.129Z",
+   "stand": "2026-09-07T21:04:32.701Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T20:59:52.115Z",
+   "stand": "2026-09-07T21:04:32.682Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T20:59:52.101Z",
+   "stand": "2026-09-07T21:04:32.663Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -491,6 +491,21 @@
     }
    },
    "top": [
+    {
+     "id": "TASS:At least two killed in Houthi missile attack on refugee camp — TV",
+     "titel": "At least two killed in Houthi missile attack on refugee camp — TV",
+     "titelDe": "Mindestens zwei Tote bei Houthi-Raketenangriff auf Flüchtlingslager — TV",
+     "quelle": "TASS",
+     "url": "https://tass.com/world/2183845",
+     "zeit": "2026-09-07T20:59:52.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
     {
      "id": "Reuters:UBS forecasts two US Fed rate hikes in 2026 after strong jobs report",
      "titel": "UBS forecasts two US Fed rate hikes in 2026 after strong jobs report",
@@ -595,21 +610,6 @@
       "usd": 0.3
      },
      "priority": 76
-    },
-    {
-     "id": "Al Jazeera:Yemen gov’t forces launch air strikes on Houthi targets",
-     "titel": "Yemen gov’t forces launch air strikes on Houthi targets",
-     "titelDe": "Jemenische Regierungstruppen führen Luftangriffe auf Houthi-Ziele durch",
-     "quelle": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/9/7/yemen-govt-forces-launch-air-strikes-on-houthi-targets?traffic_source=rss",
-     "zeit": "2026-09-07T13:05:54.000Z",
-     "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
-     },
-     "priority": 73
     }
    ]
   }
