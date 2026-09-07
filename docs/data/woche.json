@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T05:47:59.525Z",
+ "updated": "2026-09-07T05:56:37.813Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T05:47:59.604Z",
+   "stand": "2026-09-07T05:56:37.895Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T05:47:59.589Z",
+   "stand": "2026-09-07T05:56:37.879Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,32 +462,32 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T05:47:59.573Z",
-   "anzahl": 112,
+   "stand": "2026-09-07T05:56:37.862Z",
+   "anzahl": 117,
    "klassen": {
     "crypto": {
-     "score": -0.1231,
+     "score": -0.1088,
      "bull": 2,
      "bear": 14,
-     "neut": 96
+     "neut": 101
     },
     "stocks": {
-     "score": -0.1082,
+     "score": -0.0965,
      "bull": 1,
      "bear": 13,
-     "neut": 98
+     "neut": 103
     },
     "gold": {
-     "score": -0.0495,
-     "bull": 7,
-     "bear": 7,
-     "neut": 98
+     "score": -0.0346,
+     "bull": 8,
+     "bear": 6,
+     "neut": 103
     },
     "usd": {
-     "score": 0.0967,
-     "bull": 7,
+     "score": 0.0806,
+     "bull": 6,
      "bear": 1,
-     "neut": 104
+     "neut": 110
     }
    },
    "top": [
@@ -534,7 +534,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 81
+     "priority": 80
     },
     {
      "id": "BeInCrypto:UK Jobs Rebound Meets Hot US Data: More Fuel for a Fed Rate Hike?",
@@ -549,7 +549,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 80
+     "priority": 79
     },
     {
      "id": "FXStreet:Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
