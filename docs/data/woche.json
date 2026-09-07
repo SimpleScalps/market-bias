@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T04:38:13.675Z",
+ "updated": "2026-09-07T04:49:00.591Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T04:38:13.750Z",
+   "stand": "2026-09-07T04:49:00.658Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T04:38:13.736Z",
+   "stand": "2026-09-07T04:49:00.647Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,35 +462,50 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T04:38:13.721Z",
+   "stand": "2026-09-07T04:49:00.633Z",
    "anzahl": 101,
    "klassen": {
     "crypto": {
-     "score": -0.1651,
+     "score": -0.1764,
      "bull": 1,
      "bear": 17,
      "neut": 83
     },
     "stocks": {
-     "score": -0.136,
+     "score": -0.145,
      "bull": 0,
      "bear": 15,
      "neut": 86
     },
     "gold": {
-     "score": -0.0645,
-     "bull": 7,
-     "bear": 8,
+     "score": -0.0813,
+     "bull": 6,
+     "bear": 9,
      "neut": 86
     },
     "usd": {
-     "score": 0.1229,
-     "bull": 9,
+     "score": 0.1384,
+     "bull": 10,
      "bear": 0,
-     "neut": 92
+     "neut": 91
     }
    },
    "top": [
+    {
+     "id": "FXStreet:Indonesian Rupiah weakens as Fed rate hike odds lift US Dollar",
+     "titel": "Indonesian Rupiah weakens as Fed rate hike odds lift US Dollar",
+     "titelDe": "Indonesische Rupiah schwächt sich, während die Wahrscheinlichkeit einer Fed‑Erhöhung den US‑Dollar stärkt",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/indonesian-rupiah-weakens-as-fed-rate-hike-odds-lift-us-dollar-202609070443",
+     "zeit": "2026-09-07T04:43:42.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
     {
      "id": "FXStreet:Swiss Franc weakens as US Dollar strengthens on Fed rate hike bets",
      "titel": "Swiss Franc weakens as US Dollar strengthens on Fed rate hike bets",
@@ -595,21 +610,6 @@
       "usd": 0.75
      },
      "priority": 73
-    },
-    {
-     "id": "FXStreet:New Zealand Dollar edges lower as Fed rate hike bets and Iran tensions underpin USD",
-     "titel": "New Zealand Dollar edges lower as Fed rate hike bets and Iran tensions underpin USD",
-     "titelDe": "Neuseeland-Dollar fällt leicht, da Fed-Hike-Wetten und Iran-Spannungen den US-Dollar stützen",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/new-zealand-dollar-edges-lower-as-fed-rate-hike-bets-and-iran-tensions-underpin-usd-202609070145",
-     "zeit": "2026-09-07T01:45:00.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 69
     }
    ]
   }
