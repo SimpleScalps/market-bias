@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T21:04:32.609Z",
+ "updated": "2026-09-07T21:20:06.703Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T21:04:32.701Z",
+   "stand": "2026-09-07T21:20:06.792Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T21:04:32.682Z",
+   "stand": "2026-09-07T21:20:06.773Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T21:04:32.663Z",
+   "stand": "2026-09-07T21:20:06.754Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -582,27 +582,27 @@
      "priority": 99
     },
     {
+     "id": "Al Jazeera (GN):Oil prices surge as US-Iran strikes intensify in Strait of Hormuz",
+     "titel": "Oil prices surge as US-Iran strikes intensify in Strait of Hormuz",
+     "titelDe": "Ölpreisanstieg, da sich die Streiks zwischen den USA und dem Iran in der Straße von Hormus verschärfen",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcDlzUXFCcVJvUER3Ym1FeE9mREQ1a3FuaGV6T2hOdlV4WHU1bkRTN3V0eFVfNDJvYTRrSHFoMW9uSlBtaXNoQVJ2Sk42d1BNRmFjejAwaXg4a2swdTR4WFFnaVRBMFkzZUdjQmhfRnZIcGR3Qm9SYVZ5YkZQSDhJcUZOcDE3TlUyZTFaUnkwcWV5dWJOMXEwUGlTOFJhaGE5RXZHOW5qZDV2S0dM0gGyAUFVX3lxTE1xQXhqajhaRnRSRklMaUlJeWFCdU5Gb01qSXd6VmVNLUdaY0w5TTA2Rjk0bk9mdDgyZ0F2QTU4TkRXTzF3OUNnc3NxY2M5ZEVscXZBVXR5YXd4Z0hfVmtDMWQ5YThhMm5yY1RfcTFrTDFJaWFNalEybjk4SE1GRU1WTG5vdDNETEN6U0ZabThTQVdnNFpxR1dWM0VhYVJHSy1WMXo2Z0p1MkMwX1paQ0dpR3c?oc=5",
+     "zeit": "2026-09-07T21:17:23.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.547,
+      "usd": 1
+     },
+     "priority": 78
+    },
+    {
      "id": "Al Jazeera (GN):Yemen gov’t forces launch air strikes on Houthi targets",
      "titel": "Yemen gov’t forces launch air strikes on Houthi targets",
      "titelDe": "Jemenische Regierungstruppen führen Luftangriffe auf Houthi-Ziele durch",
      "quelle": "Al Jazeera (GN)",
      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUjhjMUVONTBVTkxsdERuMV9scEZYQ3FKREtuYjB0b0VuTmdKT0c5QkF0Ny01d2JVdlhkaWY2b3hoQWd1WmZZS05ORTB4S3p2a180U3lpWGhjLVAwd0VwZnBPY3RzdElIN1pHVXozcHQ5RmNHR1NXTHo5QTIxdFJpZnE4c1lWTnB1QnNyaUNaVkVmMkxOU2xjMm5R0gGfAUFVX3lxTFBMazExbm5wUzBCc3ZZcTRvWUUyTUlINWZKbWo2WFFFVXRLUUVFLXVuRTBIQlg0eGtibDJxLTl0Q0VmX1pyRDNkdExsSFh1OGdJTVl2djI2OVZUaHVoYlJQT2ZiXzZ6eW1FMHRWMkNzak12MDVJVmtZbHNuazhuTl9WVXJfdml6b2xZc3JwejBiTnlOMmE4TkFHWW1iUTN4RQ?oc=5",
      "zeit": "2026-09-07T13:08:47.000Z",
-     "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
-     },
-     "priority": 76
-    },
-    {
-     "id": "Al Jazeera (GN):Yemen gov’t forces launch air strikes on Houthi targets - aljazeera.com",
-     "titel": "Yemen gov’t forces launch air strikes on Houthi targets - aljazeera.com",
-     "titelDe": "Jemens Regierungstruppen starten Luftangriffe auf Houthi-Ziele - aljazeera.com",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUjhjMUVONTBVTkxsdERuMV9scEZYQ3FKREtuYjB0b0VuTmdKT0c5QkF0Ny01d2JVdlhkaWY2b3hoQWd1WmZZS05ORTB4S3p2a180U3lpWGhjLVAwd0VwZnBPY3RzdElIN1pHVXozcHQ5RmNHR1NXTHo5QTIxdFJpZnE4c1lWTnB1QnNyaUNaVkVmMkxOU2xjMm5R0gGfAUFVX3lxTFBMazExbm5wUzBCc3ZZcTRvWUUyTUlINWZKbWo2WFFFVXRLUUVFLXVuRTBIQlg0eGtibDJxLTl0Q0VmX1pyRDNkdExsSFh1OGdJTVl2djI2OVZUaHVoYlJQT2ZiXzZ6eW1FMHRWMkNzak12MDVJVmtZbHNuazhuTl9WVXJfdml6b2xZc3JwejBiTnlOMmE4TkFHWW1iUTN4RQ?oc=5",
-     "zeit": "2026-09-07T13:06:17.000Z",
      "scores": {
       "crypto": -0.9,
       "stocks": -0.9,
