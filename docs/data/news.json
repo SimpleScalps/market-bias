@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-07T11:48:21.147Z",
+ "updated": "2026-09-07T11:49:17.376Z",
  "regime": "policy",
  "count": 227,
  "errors": [
@@ -44,6 +44,46 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Iran kündigt an, den neuen Hormuz-Schifffahrtskoridor zu kontrollieren"
+  },
+  {
+   "id": "TASS:DPRK, Russia to strive for new results in cooperation — North Korean premier",
+   "title": "DPRK, Russia to strive for new results in cooperation — North Korean premier",
+   "text": "The ceremony marking the completion of construction of a road bridge across the Tumannaya River on the border between the two countries took place earlier on Monday",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183639",
+   "date": "2026-09-07T11:46:56.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 62,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "Nordkorea und Russland streben nach neuen Ergebnissen in der Zusammenarbeit — Nordkoreas Premier"
   },
   {
    "id": "SCMP:University of Hong Kong suspends professor over past sexual misconduct in Canada",
@@ -532,7 +572,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -626,12 +666,12 @@
    "titleDe": "China greift mit harten Anti-Ausfuhrzollmaßnahmen auf einen kritischen japanischen Chipherstellungschemikalien"
   },
   {
-   "id": "Al Jazeera (GN):Iran and Ukraine wars: Why ship fuel is running short, and why it matters",
+   "id": "Al Jazeera:Iran and Ukraine wars: Why ship fuel is running short, and why it matters",
    "title": "Iran and Ukraine wars: Why ship fuel is running short, and why it matters",
-   "text": "Iran and Ukraine wars: Why ship fuel is running short, and why it matters &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQm00Zy1HeEFXTUZiYXR5cHZNeXBVVnFnUzI0YVdHVW5ya1M3QkFpVDNwLXFnOUpsWUdOX1BGMDVUanlFazU1LTc0Y1I2UFNPazI4TlR0SkZkNGZIMXlMWDJOR25SQmRuTEFNQ1VpbUxsbmpWQi1MeWNEOHJXRW9WdWNzeFkySUlFR1hQS2M2LUVrNy1tYkpzaWZBMVdpNHV3TVlIekRmb2taRXVVbVJvTNIBtgFBVV95cUxQWGtVU0l3aG41TUZvRVJ2NF9yWTBHOWpZM1YyT1BqSFVsdDZyZEZuUmJYRmw3Z3Q4T2tCY3RmSC0tRlRqaVMySXZfdFktTEhsbF9oTGEwX08walNFZzhLYXhQa29JOHMtbC12U2p4czB2eE53MVRfOXZpNDNqTmJnZXRzR2JyU0pRSEc2QXk1LWFsZWlJdGNjSTc1YXMwS3JKc05BRXFEdHFRRHd1T2hqUVNCeTBMQQ?oc=5",
-   "date": "2026-09-07T11:26:41.000Z",
+   "text": "There's less crude in the market, and refiners prefer to produce diesel. The result: Ships are running short of fuel.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/7/iran-and-ukraine-wars-why-ship-fuel-is-running-short-and-why-it-matters?traffic_source=rss",
+   "date": "2026-09-07T11:26:27.000Z",
    "tags": [
     "Weltlage"
    ],
@@ -657,8 +697,10 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "Al Jazeera (GN)"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Kriege gegen den Iran und die Ukraine: Warum Schiffskraftstoff knapp wird und warum es wichtig ist"
@@ -706,7 +748,7 @@
   {
    "id": "Guardian:Elon Musk thanked by German far-right leader after landmark election win praised by Russia | First Thing",
    "title": "Elon Musk thanked by German far-right leader after landmark election win praised by Russia | First Thing",
-   "text": "Populist, far-right, anti-immigration AfD wins vote in eastern state of Saxony-Anhalt. Plus, 50 years since The Muppet Show first hit our screens Good morning. A far-right leader who has won an important state election in Germany has thanked Elon Musk for his support , as voices in Europe warn the result is a serious moment for the continent. No far-right party has led or formed a government in Germany since the defeat of Nazism at the end of the second world war. Ulrich Siegmund, the Alternativ",
+   "text": "Populist, far-right, anti-immigration AfD wins vote in eastern state of Saxony-Anhalt. Plus, 50 years since The Muppet Show first hit our screens Don’t already get First Thing in your inbox? Sign up here Good morning. A far-right leader who has won an important state election in Germany has thanked Elon Musk for his support , as voices in Europe warn the result is a serious moment for the continent. No far-right party has led or formed a government in Germany since the defeat of nazism at the en",
    "source": "Guardian",
    "url": "https://www.theguardian.com/us-news/2026/sep/07/first-thing-elon-musk-german-far-right-afd-election-win-russia",
    "date": "2026-09-07T11:20:53.000Z",
@@ -782,7 +824,7 @@
   {
    "id": "Guardian:Ratko Mladić, the ‘Butcher of Bosnia’, given hero’s funeral in Serbia",
    "title": "Ratko Mladić, the ‘Butcher of Bosnia’, given hero’s funeral in Serbia",
-   "text": "Fanfare at Belgrade funeral of man convicted of genocide raises questions for Serbia’s EU membership plan Europe live – latest updates Thousands of mourners have gathered in Belgrade for the funeral of Ratko Mladić, a Serbian general convicted of orchestrating the worst massacre in Europe since the second world war, and whose hero’s return home has raised international alarm. Known as the “Butcher of Bosnia” for ​his role during the Balkans genocide in the 1990s, Mladić died in prison in late Au",
+   "text": "Fanfare at Belgrade funeral of man convicted of genocide raises questions for Serbia’s EU membership plan Europe live – latest updates Thousands of mourners have gathered in Belgrade for the funeral of Ratko Mladić , a Serbian general convicted of orchestrating the worst massacre in Europe since the second world war, and whose hero’s return home has raised international alarm. Known as the “Butcher of Bosnia” for ​his role during the Balkans genocide in the 1990s, Mladić died in prison in late A",
    "source": "Guardian",
    "url": "https://www.theguardian.com/world/2026/sep/07/ratko-mladic-butcher-of-bosnia-funeral-belgrade-serbia",
    "date": "2026-09-07T11:20:15.000Z",
@@ -2312,7 +2354,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2350,7 +2392,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2389,7 +2431,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2564,6 +2606,43 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Rechtsextremer AfD-Sieg in Deutschland ist \"Grabmoment\" für Europa, warnen Politiker"
+  },
+  {
+   "id": "Al Jazeera (GN):- Al Jazeera",
+   "title": "- Al Jazeera",
+   "source": "Al Jazeera (GN)",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQWjFuaEhKVFRLNWxtSDhyXy1sSldMVHF6bzNicmZaMlhreVVTWVFuRm43WkEyZV9XWk1wVXNjdGNlQ0J6WXhOWkI5b19nZ0JqWHo2RHppVnoyMmZGejVyRVFlN21RWUxOZHNRN1FQMEFrSGd4Y3I3SjY2SS1BbkdVc1RPUTNfOGJtWGY3ZTh4N0djQ1Y5aG91dkRtNE84THNQcnA4R1I0c2JSYWRtTU9fcFU2S1RnU1oyQ1NjRE9raTk?oc=5",
+   "date": "2026-09-07T10:49:49.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 30,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "- Al Jazeera"
   },
   {
    "id": "TASS:Russia takes control of more than 100 sq km of territory in special op over week — expert",
@@ -3657,7 +3736,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 60,
+   "priority": 59,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3752,46 +3831,6 @@
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Hainans Erholungsort Sanya zur Stärkung der Umweltmaßnahmen nach dem neuen chinesischen Kodex"
-  },
-  {
-   "id": "TASS:Russia will not enter into agreements that fail to balance interests — Lavrov",
-   "title": "Russia will not enter into agreements that fail to balance interests — Lavrov",
-   "text": "The Russian foreign minister noted that Russia has been cheated many times throughout its history",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/politics/2183569",
-   "date": "2026-09-07T10:08:03.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 59,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 0,
-   "nurStaatlich": true,
-   "titleDe": "Russland wird keine Vereinbarungen treffen, die keinen Interessenausgleich ermöglichen — Lawrow"
   },
   {
    "id": "FXStreet:154.06: Japanese Yen hits fresh six-month highs amid hopes of steeper BoJ hikes",
@@ -4853,7 +4892,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5497,7 +5536,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 63,
+   "priority": 62,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -6717,7 +6756,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6807,44 +6846,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Schiffungskraftstoffknappheit droht, während Raffinerien Diesel priorisieren"
-  },
-  {
-   "id": "Al Jazeera:Six children among 11 people killed in Indonesian market fire",
-   "title": "Six children among 11 people killed in Indonesian market fire",
-   "text": "A massive fire at a market in the Indonesia village of Babuda has claimed the lives of eleven people.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/aje-onl-nf_11-dead-in-massive-indonesia-market-fire-070926?traffic_source=rss",
-   "date": "2026-09-07T05:37:32.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Sechs Kinder von elf Opfern bei Marktbrand in Indonesien"
   },
   {
    "id": "BBC World:Five killed as Amazon cargo plane crashes at Miami airport",
@@ -7716,7 +7717,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 42,
+   "priority": 41,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -8747,7 +8748,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -8863,7 +8864,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -8956,11 +8957,11 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 1,
   "fehler": null
  },
  "rubriken": {
-  "Sport": 6,
+  "Sport": 7,
   "Unsinn": 1
  }
 }
