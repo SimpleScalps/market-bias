@@ -99,13 +99,7 @@ export class Versandbuch {
       };
       basis.tage = tage;
 
-      const neu = { ...basis, tag: heute };
-      // Zahlenfelder werden addiert, alles andere ersetzt.
-      for (const [k, v] of Object.entries(aenderung)) {
-        neu[k] = (typeof v === 'number' && typeof basis[k] === 'number')
-          ? basis[k] + v
-          : v;
-      }
+      const neu = zustandZusammenfuehren(basis, aenderung, heute);
 
       await this.state.storage.put('zustand', neu);
       return new Response(JSON.stringify(neu),
@@ -176,4 +170,58 @@ export class Versandbuch {
       if (weg.length) await this.state.storage.delete(weg);
     } catch { /* Nebensache */ }
   }
+}
+
+/**
+ * Fuehrt eine Aenderung in den Betriebszustand ein.
+ *
+ * Die Regel ist einfach und hat genau eine Falle: Zahlenfelder werden addiert,
+ * alles andere ersetzt. Das ist fuer Zaehler richtig - Token, Schreibversuche,
+ * Fehler - und fuer alles andere falsch. Dreimal ist mir dieselbe Falle
+ * zugeschnappt: ein Zeitstempel als Zahl landete im Jahr 2077, ein
+ * Versionsstand 2 wurde zu 4, ein zweiter von 5 zu 10. Jedes Mal hoerte danach
+ * etwas lautlos auf zu funktionieren, weil ein Vergleich nie wieder passte.
+ *
+ * Wer hier ein Feld ergaenzt, das keine Summe bilden soll, legt es als Text
+ * ab. Die Tests in src/zustand.test.mjs halten das fest.
+ */
+export function zustandZusammenfuehren(basis, aenderung, heute) {
+  const neu = { ...basis, tag: heute ?? basis.tag };
+
+  for (const [k, v] of Object.entries(aenderung || {})) {
+    /*
+     * Die Bilanz wird aufaddiert, nicht ersetzt.
+     *
+     * Vorher schickte der Worker die ganze Bilanz und ueberschrieb damit, was
+     * ein anderes Isolat in der Zwischenzeit eingetragen hatte: Drei Taktgeber
+     * laufen parallel, jeder liest den Stand zu Beginn seines Durchgangs und
+     * schreibt ihn am Ende zurueck. Die Zahl der Merkmale sprang deshalb
+     * zwischen eins und null hin und her, statt zu wachsen.
+     *
+     * Jetzt kommt nur der Zuwachs eines Durchgangs an, und zusammengezaehlt
+     * wird hier - an der einen Stelle, durch die alle Schreibvorgaenge
+     * nacheinander hindurchlaufen.
+     */
+    if (k === 'bilanzZuwachs') {
+      const weiter = String(aenderung.bilanzStand ?? 1) === String(basis.bilanzStand ?? 1);
+      const zusammen = { ...(weiter ? basis.bilanz || {} : {}) };
+      for (const [merkmal, e] of Object.entries(v || {})) {
+        const a = zusammen[merkmal] || { n: 0, treffer: 0, summe: 0 };
+        zusammen[merkmal] = {
+          n: a.n + (e.n || 0),
+          treffer: a.treffer + (e.treffer || 0),
+          summe: +((a.summe + (e.summe || 0)).toFixed(3)),
+        };
+      }
+      neu.bilanz = zusammen;
+      continue;
+    }
+
+    neu[k] = (typeof v === 'number' && typeof basis[k] === 'number')
+      ? basis[k] + v
+      : v;
+  }
+
+  delete neu.bilanzZuwachs;
+  return neu;
 }

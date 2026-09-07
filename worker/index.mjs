@@ -145,8 +145,13 @@ const WIRKUNG_REIFE_MIN = WIRKUNG_MINUTEN + 6;
  *
  * 1  Erste Fassung: nur die angezeigte Richtung, Treffer aus dem Vorzeichen
  * 2  Neutral zaehlt als eigene Aussage, Regel und KI getrennt gewertet
+ *
+ * Als Text, nicht als Zahl: Das Durable Object addiert Zahlenfelder. Ein
+ * Stand von 2 waere dort in zwei Durchgaengen zu 4 geworden, haette bei jedem
+ * Vergleich nicht mehr gepasst und die Bilanz jedes Mal neu begonnen -
+ * dieselbe Falle wie beim Zeitpunkt des Dublettenlaufs.
  */
-const BILANZ_STAND = 2;
+const BILANZ_STAND = '2';
 
 const NACHZIEHEN_MAX = 8;
 const NACHZIEHEN_ABSTAND_MS = 60_000;
@@ -838,11 +843,12 @@ const TAKT_VERGESSEN_MS = 24 * 3600_000;
 /*
  * Ab wann ein Taktgeber als stumm gilt.
  *
- * Alle drei sollen im Minutentakt schlagen; cron-job.org kommt auf dem
- * kostenlosen Tarif alle fuenf Minuten, die GitHub-Action alle zehn. Zwoelf
- * Minuten Ruhe sind bei keinem von ihnen normal.
+ * cron-job.org kommt auf dem kostenlosen Tarif alle fuenf Minuten, die
+ * GitHub-Action alle zehn - und deren Zeitplan gerät regelmaessig in Verzug,
+ * bei hoher Last auch um mehrere Minuten. Zwoelf Minuten schlugen deshalb
+ * Alarm fuer normalen Betrieb. Zwanzig sind bei keinem der drei normal.
  */
-const TAKT_STUMM_MS = 12 * 60_000;
+const TAKT_STUMM_MS = 20 * 60_000;
 
 /** Wirft Taktgeber weg, von denen seit einem Tag nichts mehr kam. */
 function taktgeberPflegen(ticks) {
@@ -1336,7 +1342,17 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * alten Bedingungen scheiterte, verdient einen neuen Versuch.
    */
   let nachlaufErgebnis = null;
-  const buchGilt = (z.pruefFehlerStand || 0) === ANWEISUNG_STAND;
+  /*
+   * Als Text vergleichen, weil er als Text abgelegt wird.
+   *
+   * Das Durable Object addiert Zahlenfelder. Als Zahl geschrieben wurde aus
+   * dem Anweisungsstand 5 in zwei Durchgaengen 10, danach passte er nie mehr
+   * zu sich selbst: Das Pruefbuch galt bei jedem Durchgang als veraltet und
+   * wurde verworfen. Wer dreimal vergeblich geprueft wurde, kam deshalb
+   * trotzdem immer wieder an die Reihe - die Aufgabegrenze war wirkungslos.
+   * Dieselbe Falle wie beim Dublettenlauf und bei der Bilanz.
+   */
+  const buchGilt = String(z.pruefFehlerStand ?? 0) === String(ANWEISUNG_STAND);
   const pruefBuch = buchGilt ? { ...(z.pruefFehler || {}) } : {};
   const gescheitert = [];
 
@@ -1608,7 +1624,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ...(artikelErgebnis ? { artikelErgebnis } : {}),
     ...(dublettenLauf ? { letzteDubletten: dublettenLauf.zeit, dubletten: dublettenLauf } : {}),
     ...(Object.keys(quellenSeit).length ? { quellenSeit } : {}),
-    ...(wirkung?.bilanz ? { bilanz: wirkung.bilanz, bilanzStand: BILANZ_STAND } : {}),
+    ...(wirkung?.zuwachs ? { bilanzZuwachs: wirkung.zuwachs, bilanzStand: BILANZ_STAND } : {}),
     ...(wirkung?.gemessen ? { wirkungBuch: fehlerbuchFortschreiben(wirkungBuch, [], items) } : {}),
     ...(wirkung ? { wirkungZuletzt: {
       zeit: new Date().toISOString(),
@@ -1661,8 +1677,8 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     // Wird als Ganzes ersetzt - deshalb hier vollstaendig neu gebildet.
     ...(gescheitert.length || Object.keys(pruefBuch).length
       ? { pruefFehler: fehlerbuchFortschreiben(pruefBuch, gescheitert, items),
-          pruefFehlerStand: ANWEISUNG_STAND }
-      : { pruefFehlerStand: ANWEISUNG_STAND }),
+          pruefFehlerStand: String(ANWEISUNG_STAND) }
+      : { pruefFehlerStand: String(ANWEISUNG_STAND) }),
   };
   if (speicher.letzterNachlauf) buchung.letzterNachlauf = speicher.letzterNachlauf;
   ctx.waitUntil(zustand(env, buchung));
@@ -1845,8 +1861,15 @@ async function wirkungMessen(items, z, buch) {
   const { kerzen, boerse, fehler } = await kerzenHolen(WIRKUNG_RUECKBLICK_MIN + WIRKUNG_MINUTEN + 5);
   if (fehler || !kerzen) return { fehler: fehler || 'keine Kerzen' };
 
-  // Nach einer Aenderung an der Wertung faengt die Zaehlung von vorn an.
-  let bilanz = (z.bilanzStand || 1) === BILANZ_STAND ? z.bilanz : {};
+  /*
+   * Nur der Zuwachs dieses Durchgangs, nicht der Gesamtstand.
+   *
+   * Den ganzen Stand zurueckzuschreiben hiess, den Stand zu ueberschreiben,
+   * den ein anderes Isolat in der Zwischenzeit eingetragen hat - bei drei
+   * Taktgebern im Minutentakt geht so staendig etwas verloren. Zusammengezaehlt
+   * wird im Durable Object, wo alle Schreibvorgaenge nacheinander durchlaufen.
+   */
+  let zuwachs = {};
   let gemessen = 0;
   for (const n of faellig) {
     const ab = new Date(n.gesehenAm || n.date).getTime();
@@ -1888,7 +1911,7 @@ async function wirkungMessen(items, z, buch) {
       ...((n.unabhaengig ?? 0) >= 3 ? [eintrag('3+ Quellen', gezeigt)] : []),
       ...(n.nurStaatlich ? [eintrag('nur Staatsmedien', gezeigt)] : []),
     ];
-    bilanz = bilanzAddieren(bilanz, eintraege);
+    zuwachs = bilanzAddieren(zuwachs, eintraege);
     /*
      * Der Vermerk gehoert auch ins Durable Object, nicht nur an die Meldung.
      *
@@ -1903,7 +1926,7 @@ async function wirkungMessen(items, z, buch) {
   }
 
   if (!gemessen) return { fehler: 'Kerzen deckten das Fenster nicht ab' };
-  return { gemessen, boerse, bilanz };
+  return { gemessen, boerse, zuwachs };
 }
 
 /**
@@ -2586,7 +2609,7 @@ export default {
         // Wie viele Meldungen der Nachlauf nicht mehr anfasst - ohne das war
         // nicht zu erkennen, warum der Zaehler stehenblieb.
         aufgegeben: (() => {
-          const buch = (zNow.pruefFehlerStand || 0) === ANWEISUNG_STAND ? (zNow.pruefFehler || {}) : {};
+          const buch = String(zNow.pruefFehlerStand ?? 0) === String(ANWEISUNG_STAND) ? (zNow.pruefFehler || {}) : {};
           const n = Object.values(buch).filter((v) => v >= PRUEF_VERSUCHE_MAX).length;
           return n ? `${n} nach ${PRUEF_VERSUCHE_MAX} Fehlversuchen` : 'keine';
         })(),
