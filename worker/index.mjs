@@ -1111,8 +1111,19 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * Billionen, und die Bedingung unten war nie wieder erfuellt. Der Lauf fand
    * genau einmal statt und danach 79 Minuten lang nicht mehr.
    */
+  /*
+   * Ein Zeitpunkt aus der Zukunft ist immer falsch.
+   *
+   * Der alte Zahlenwert lag nach dem Aufaddieren im Jahr 2077; die Bedingung
+   * "laenger als fuenf Minuten her" konnte damit nie wieder wahr werden, auch
+   * nicht nach der Berichtigung. Wer einen unmoeglichen Stand als "unbekannt"
+   * behandelt, kommt ohne Eingriff von aussen wieder in die Spur.
+   */
+  const letzteD = new Date(z.letzteDubletten || 0).getTime();
+  const standGilt = letzteD > 0 && letzteD <= Date.now();
+
   let dublettenLauf = null;
-  if (Date.now() - new Date(z.letzteDubletten || 0).getTime() > DUBLETTEN_TAKT_MS) {
+  if (!standGilt || Date.now() - letzteD > DUBLETTEN_TAKT_MS) {
     const vorher = items.length;
     items = bestaetigung(dedupe(items));
     dublettenLauf = { zeit: new Date().toISOString(), zusammengefasst: vorher - items.length };
@@ -1274,8 +1285,11 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    */
   let artikelErgebnis = null;
   const artikelBuch = buchGilt ? { ...(z.artikelBuch || {}) } : {};
+  // Die Sperrliste gilt fuer den Tag; das Durable Object raeumt sie um
+  // Mitternacht selbst weg, weil sie im Tageszustand liegt.
+  const artikelSperre = { ...(z.artikelSperre || {}) };
   if (restFuer('nachlauf') > 0) {
-    const a = await nachlesen(items, env, ARTIKEL_MAX, artikelBuch);
+    const a = await nachlesen(items, env, ARTIKEL_MAX, artikelBuch, artikelSperre);
     if (a) {
       artikelErgebnis = {
         zeit: new Date().toISOString(),
@@ -1501,6 +1515,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     // Wie beim Pruefbuch: Nur Kennungen behalten, die es noch gibt.
     ...(Object.keys(artikelBuch).length
       ? { artikelBuch: fehlerbuchFortschreiben(artikelBuch, [], items) } : {}),
+    ...(Object.keys(artikelSperre).length ? { artikelSperre } : {}),
     // Was das Nachziehen der Regeln bewegt hat - siehe /health.
     ...(nachgezogen.nachbewertet || nachgezogen.offen
       ? { nachbewertung: {
@@ -1706,8 +1721,27 @@ async function wirkungMessen(items, z) {
     const eintraege = [
       ...(n.signals || []).map((x) => eintrag(`Signal: ${x}`, regelWert)),
       ...(n.kiKorrigiert
-        // Dieselbe Meldung, zweimal gewertet - der einzige faire Vergleich.
-        ? [eintrag('Regel (überstimmt)', regelWert), eintrag('KI (berichtigt)', gezeigt)]
+        /*
+         * Dieselbe Meldung, zweimal gewertet - und einmal entschieden.
+         *
+         * Die beiden Einzelwertungen koennen gleichzeitig zutreffen: Faellt
+         * Bitcoin um 0,12 Prozent, hatte die bearishe Regel recht und die KI
+         * mit "bewegt den Markt nicht" ebenfalls. Beide standen deshalb bei
+         * 100 Prozent, was wie ein Fehler aussieht und keiner war - es waren
+         * nur lauter unentschiedene Faelle.
+         *
+         * Der dritte Eintrag zaehlt allein die entschiedenen: Er entsteht nur,
+         * wenn genau eine der beiden Seiten recht hatte, und haelt fest,
+         * welche. Erst das ist ein Vergleich.
+         */
+        ? [
+            eintrag('Regel (überstimmt)', regelWert),
+            eintrag('KI (berichtigt)', gezeigt),
+            ...(trifftZu(regelWert, b) !== trifftZu(gezeigt, b)
+              ? [{ name: 'KI schlägt Regel (entschiedene Fälle)',
+                   treffer: trifftZu(gezeigt, b), punkt: 0 }]
+              : []),
+          ]
         : [eintrag('Regel (unberührt)', regelWert)]),
       ...(n.ki?.gelesen ? [eintrag('Artikel gelesen', gezeigt)] : []),
       ...((n.unabhaengig ?? 0) >= 3 ? [eintrag('3+ Quellen', gezeigt)] : []),
@@ -1786,6 +1820,17 @@ function urteilAnwenden(n, deutung) {
 const ARTIKEL_MAX = 2;
 const ARTIKEL_VERSUCHE_MAX = 2;
 
+/*
+ * Wann eine Quelle fuer den Rest des Tages uebergangen wird.
+ *
+ * Manche Redaktionen sperren fremde Abrufe grundsaetzlich - BeInCrypto und
+ * The Block antworten mit 403, Tehran Times liefert eine Seite ohne Text.
+ * Das kostet nicht nur den Abruf: Es gibt nur zwei Plaetze je Durchgang, und
+ * zwei vergebliche Versuche verdraengen die Meldungen, bei denen es
+ * funktioniert haette. Nach drei Fehlschlaegen ist der Fall klar.
+ */
+const ARTIKEL_HOST_SPERRE = 3;
+
 /** Der Rechnername einer Adresse, oder leer. */
 function hostVon(url) {
   try { return new URL(String(url)).hostname; } catch { return ''; }
@@ -1835,11 +1880,13 @@ function strittig(n) {
  * vorher. Jeder Versuch wird gezaehlt, damit eine Quelle mit Bot-Sperre nicht
  * jede Minute erneut angefragt wird.
  */
-async function nachlesen(items, env, hoechstens, buch) {
+async function nachlesen(items, env, hoechstens, buch, sperre) {
   if (!env.GROQ_KEY || hoechstens <= 0) return null;
 
   const kandidaten = items
-    .filter((n) => strittig(n) && (buch[n.id] || 0) < ARTIKEL_VERSUCHE_MAX)
+    .filter((n) => strittig(n)
+      && (buch[n.id] || 0) < ARTIKEL_VERSUCHE_MAX
+      && (sperre[hostVon(n.url)] || 0) < ARTIKEL_HOST_SPERRE)
     .sort((a, b) => Math.abs(b.regelScores?.crypto ?? b.scores?.crypto ?? 0) * (b.priority || 0)
                   - Math.abs(a.regelScores?.crypto ?? a.scores?.crypto ?? 0) * (a.priority || 0))
     .slice(0, hoechstens);
@@ -1858,8 +1905,12 @@ async function nachlesen(items, env, hoechstens, buch) {
   const fehler = [];
   for (const r of ergebnisse) {
     buch[r.n.id] = (buch[r.n.id] || 0) + 1;
-    if (r.deutung) { urteilAnwenden(r.n, r.deutung); gelesen++; }
-    else fehler.push(`${r.n.source}: ${String(r.fehler).slice(0, 60)}`);
+    if (r.deutung) { urteilAnwenden(r.n, r.deutung); gelesen++; continue; }
+
+    // Der Fehlschlag zaehlt auch gegen die Quelle, nicht nur gegen die Meldung.
+    const host = hostVon(r.n.url);
+    if (host) sperre[host] = (sperre[host] || 0) + 1;
+    fehler.push(`${r.n.source}: ${String(r.fehler).slice(0, 60)}`);
   }
   return { angefragt: kandidaten.length, gelesen, fehler };
 }
@@ -2400,6 +2451,8 @@ export default {
          * Die Fehlermeldung gehoert deshalb hierher.
          */
         artikel: zNow.artikelErgebnis ?? 'noch keiner',
+        ...(Object.keys(zNow.artikelSperre || {}).length ? { artikelSperre: Object.entries(zNow.artikelSperre)
+          .filter(([, n]) => n >= ARTIKEL_HOST_SPERRE).map(([h, n]) => `${h} (${n}x)`).join(' · ') || 'noch keine' } : {}),
         wirkung: zNow.wirkungZuletzt ?? 'noch keine Messung',
         dubletten: (() => {
           const d = zNow.dubletten;
