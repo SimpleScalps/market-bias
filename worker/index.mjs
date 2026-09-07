@@ -1220,7 +1220,18 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    */
   const quellenSeit = { ...(z.quellenSeit || {}) };
   for (const n of teil.items) {
-    if (!quellenSeit[n.source]) quellenSeit[n.source] = new Date().toISOString();
+    if (quellenSeit[n.source]) continue;
+    /*
+     * Eine Quelle, die schon Proben hat, faengt nicht gerade erst an.
+     *
+     * Sonst galt nach dem Einbau dieser Zaehlung jede Quelle als neu - auch
+     * Reuters und BBC mit dreissig sauberen Proben standen mit dem Vorbehalt
+     * "im Anlauf" da. Der Nullzeitpunkt heisst: laengst etabliert, nichts
+     * auszuschliessen und nichts einzuschraenken.
+     */
+    quellenSeit[n.source] = verzug[n.source]?.proben?.length
+      ? new Date(0).toISOString()
+      : new Date().toISOString();
   }
 
   for (const n of kandidaten) {
