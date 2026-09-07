@@ -1,10 +1,9 @@
 {
- "updated": "2026-09-07T02:04:23.643Z",
+ "updated": "2026-09-07T02:08:05.142Z",
  "regime": "policy",
- "count": 182,
+ "count": 183,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
-  "Al Jazeera (GN): fetch failed",
   "Times of Israel: 403 https://www.timesofisrael.com/feed/"
  ],
  "items": [
@@ -132,6 +131,44 @@
    "titleDe": "1 getötet, 2 verletzt bei israelischem Angriff auf Krankenwagen im Süden Libanons"
   },
   {
+   "id": "Al Jazeera (GN):Breaking News, World News and Video from Al Jazeera",
+   "title": "Breaking News, World News and Video from Al Jazeera",
+   "text": "Breaking News, World News and Video from Al Jazeera &nbsp;&nbsp; Al Jazeera",
+   "source": "Al Jazeera (GN)",
+   "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTFBPd3h6VGM0TDlnQTJRaHcwMHkxaG5HcFFUY08yOEpFQ3FjZHB3b3h1bGlwSnRkT3k5SXZORXhjYw?oc=5",
+   "date": "2026-09-07T01:50:36.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 36,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Breaking News, World News und Video von Al Jazeera"
+  },
+  {
    "id": "Anadolu:Israel plans to destroy 2 tunnels in Lebanon, block return of displaced residents: Report",
    "title": "Israel plans to destroy 2 tunnels in Lebanon, block return of displaced residents: Report",
    "text": "Army also preparing phased pullback to new line 2-4 kilometers from border, with plans for 20 permanent positions",
@@ -155,7 +192,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -236,7 +273,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -859,7 +896,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -897,44 +934,6 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Warum richtet Kenia gegen ausländische Händler und kleine Einzelhändler vor"
-  },
-  {
-   "id": "Reuters:Asia shares bounce, others cautious as oil rises",
-   "title": "Asia shares bounce, others cautious as oil rises",
-   "text": "Asia shares bounce, others cautious as oil rises &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa0pobHhGSWlxLVNZa2htLURrNldPaHUyOGVyQXVBeGtJOWJDUXpqMXFSTDBCaHNkeFI5Q0Y2NUdFNlJoWUZlVGQwR2pGZk5oc1R5TzFLbUdFMU1aY3NGTXVhOGFTeFZOenRpbUlNc0ZiTjQtMnNaRVUtTVNrWEpLeGprbw?oc=5",
-   "date": "2026-09-07T01:06:00.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
    "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
@@ -944,11 +943,13 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "Al Jazeera (GN)"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Asiatische Aktien steigen, andere bleiben vorsichtig, während Öl steigt"
+   "titleDe": "Warum richtet Kenia gegen ausländische Händler und kleine Einzelhändler vor"
   },
   {
    "id": "FXStreet:Japanese Yen consolidates near August highs vs USD as hawkish BoJ, Fed bets clash",
@@ -1414,7 +1415,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 60,
+   "priority": 59,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1870,11 +1871,11 @@
    "titleDe": "BSW sagt, es teile mit der AfD gemeinsame Standpunkte zu Russland und Sanktionen"
   },
   {
-   "id": "Al Jazeera:Iran war live: Tehran to announce new Hormuz shipping route in coming days",
-   "title": "Iran war live: Tehran to announce new Hormuz shipping route in coming days",
-   "text": "Move comes as Iran's top negotiator warns of heavier responses to new attacks after US strikes on Iranian oil tankers.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/9/7/iran-war-live-tehran-to-announce-new-hormuz-shipping-route-in-coming-days?traffic_source=rss",
+   "id": "Al Jazeera (GN):Iran war live: Tehran to announce new Hormuz shipping route in coming days - Al Jazeera",
+   "title": "Iran war live: Tehran to announce new Hormuz shipping route in coming days - Al Jazeera",
+   "text": "Iran war live: Tehran to announce new Hormuz shipping route in coming days - Al Jazeera &nbsp;&nbsp; Al Jazeera",
+   "source": "Al Jazeera (GN)",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQcmxWcmJIMk14bTNib01adjdzbGFDemdfT1pjTjNGM0FXTWxOeVBWbVdoY0s2WlJQekViQVA4RW5jS3BkdkVUOWdydkg0LTN6cXptN1FSeU5nbzJSYUJOU0ppbC1aYTY3cW9pOWNsR19VaUNLb3JaVHJQbkx4LU9qRHpqZEpxTUZjVUxNWlU2QjNwdEMwSnc3RnNmUXRfeTJ1WVAySnJicUJpSG8zMXdSSWp6UGdJbEprdHE1UGtIUENaT3dUZGw3ZTNmaDRZU3lvWUhn?oc=5",
    "date": "2026-09-07T00:00:00.000Z",
    "tags": [
     "Weltlage"
@@ -1896,7 +1897,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 64,
+   "priority": 66,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -1905,11 +1906,13 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "Al Jazeera"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Iran im Live-Update: Teheran kündigt in den kommenden Tagen neue Hormus-Schifffahrtsroute an"
+   "titleDe": "Iran im Live: Teheran wird in den kommenden Tagen neue Schifffahrtsroute durch den Hormus bekannt geben - Al Jazeera"
   },
   {
    "id": "FXStreet:China injects $54 billion stimulus for financial sector amid fears over sluggish growth",
@@ -2369,7 +2372,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2657,11 +2660,11 @@
    "titleDe": "Top 3 Meme-Coins, die in der zweiten Septemberwoche im Blick bleiben"
   },
   {
-   "id": "Al Jazeera:Jamaica to file slavery reparations petition during UK visit",
+   "id": "Al Jazeera (GN):Jamaica to file slavery reparations petition during UK visit",
    "title": "Jamaica to file slavery reparations petition during UK visit",
-   "text": "Petition to King Charles questions the legality of slavery under English law and UK’s responsibility for reparations.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/7/jamaica-to-file-slavery-reparations-petition-during-uk-visit?traffic_source=rss",
+   "text": "Jamaica to file slavery reparations petition during UK visit &nbsp;&nbsp; Al Jazeera",
+   "source": "Al Jazeera (GN)",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUHpJWS1SOERmb2M5UDJVSW5ya2VSaEdaekxXQmlkZENJSk9yUEZkOVJDX0N3QlMxU0s0YW5aZ3dMalIySjMtQ3dDX1R6a3Y5OU5HMzQ5SWVZcV9vTHNkSFNSY0djc3pBMTFmajVFU18tZktfNnlBb21WY1N4MXJrSlB2cmpBNlk2Zi1JdDNZc0VBU0lRclZVd0ZwVFQwS0lVX0HSAacBQVVfeXFMTWlINW9jdExKVE92UG0zZHM3ZjJCR2tRSHVjRHFZaXRoeFQ5bm1VR3c3RWlsSDFDeFYtcm9FRTI2aGFnZFZfeWV5ams1NWZqbURsQkdBcDloOW5YZTdqcEU3bzhMRHNsVlh2bWh1R3ktRnFkbUJ1MUx6RmVnSTNWV0RscXc5T3oxb2ZsZlFySTdQbWNaazkyTFoxeFdEek5CbTFjSEpfbzA?oc=5",
    "date": "2026-09-06T21:49:55.000Z",
    "tags": [
     "Weltlage"
@@ -3344,7 +3347,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 54,
+   "priority": 53,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3637,6 +3640,44 @@
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Nordmazedonien interessiert an Energiekooperation mit Russland – Politiker"
+  },
+  {
+   "id": "Al Jazeera:At least five killed in New Delhi building collapse",
+   "title": "At least five killed in New Delhi building collapse",
+   "text": "At least five people have been killed and nine rescued after a building housing mostly students collapsed in New Delhi.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/at-least-five-killed-in-new-delhi-building-collapse?traffic_source=rss",
+   "date": "2026-09-06T20:05:32.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 26,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "long",
+   "eventType": "Insolvenz",
+   "eventTypeEn": "Insolvency",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Mindestens fünf Tote bei Gebäudeeinsturz in Neu-Delhi"
   },
   {
    "id": "Guardian:The US now has access to more than half Australia’s military bases – could it drag the country unwillingly into war?",
@@ -4819,7 +4860,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 18,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4857,7 +4898,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 48,
+   "priority": 47,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -5887,7 +5928,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 12,
+   "priority": 11,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6398,7 +6439,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7202,12 +7243,12 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 2,
+  "uebersetzt": 1,
   "fehler": null
  },
  "rubriken": {
   "Sport": 2,
-  "Unterhaltung": 1,
-  "Unsinn": 1
+  "Unsinn": 5,
+  "Unterhaltung": 1
  }
 }
