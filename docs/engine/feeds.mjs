@@ -517,8 +517,20 @@ const HAUS = new Map(FEEDS.map((f) => [f.source, f.haus || f.source]));
 export function bestaetigung(items) {
   return items.map((n) => {
     const quellen = [n.source, ...(n.alsoIn || [])];
-    const haeuser = new Set(quellen.filter((q) => !STAATLICH.has(q)).map((q) => HAUS.get(q) || q));
-    const unabhaengig = haeuser.size;
+    /*
+     * Zwei Zaehlungen, zwei Zwecke.
+     *
+     * `haeuser` sind alle beteiligten Redaktionen, staatliche eingeschlossen -
+     * das ist die Zahl, die in der Anzeige stehen soll. Seit Al Jazeera auch
+     * ueber Google News hereinkommt, stuenden dort sonst "+1 Quellen" unter
+     * einer Meldung, die genau eine Redaktion geschrieben hat.
+     *
+     * `unabhaengig` laesst die staatlichen weg und traegt die Bestaetigung.
+     */
+    const haeuser = new Set(quellen.map((q) => HAUS.get(q) || q)).size;
+    const unabhaengig = new Set(
+      quellen.filter((q) => !STAATLICH.has(q)).map((q) => HAUS.get(q) || q),
+    ).size;
 
     /*
      * Immer von der ungehobenen Stufe aus rechnen.
@@ -549,6 +561,7 @@ export function bestaetigung(items) {
       ...rest,
       impactLevel,
       bestaetigt: quellen.length,
+      haeuser,
       /*
        * Immer mitschreiben, auch wenn die Zahl gleich der Quellenzahl ist.
        *

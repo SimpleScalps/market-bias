@@ -166,3 +166,14 @@ test('Mehrfaches Anwenden hebt nicht mehrfach an', () => {
   assert.equal(liste[0].impactLevel, 'high');
   assert.equal(liste[0].impactRoh, 'medium');
 });
+
+test('Derselbe Feed unter zwei Adressen ist eine Quelle, keine Bestaetigung', () => {
+  // Al Jazeera kommt ueber den eigenen Feed und ueber Google News herein.
+  const [n] = bestaetigung([{
+    ...meldung(), source: 'Al Jazeera', alsoIn: ['Al Jazeera (GN)'],
+    scores: { crypto: -0.6, stocks: 0, gold: 0, usd: 0 }, impactLevel: 'medium',
+  }]);
+  assert.equal(n.bestaetigt, 2, 'zwei Feeds');
+  assert.equal(n.haeuser, 1, 'aber eine Redaktion');
+  assert.equal(n.unabhaengig, 1);
+});

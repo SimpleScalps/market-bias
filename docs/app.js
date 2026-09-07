@@ -907,7 +907,14 @@ function render(erzwingen = false) {
     // Wurde das Urteil ersetzt, gehoert der Hinweis an die Bewertung selbst.
     if (n.kiKorrigiert) item.classList.add('korrigiert');
 
-    const anzahl = n.alsoIn?.length || 0;
+    /*
+     * Gezaehlt werden Redaktionen, nicht Feeds.
+     *
+     * Al Jazeera kommt ueber den eigenen Feed und ueber Google News herein -
+     * derselbe Text aus derselben Redaktion. Als "+1 Quellen" ausgewiesen
+     * behauptete die Zeile eine Bestaetigung, die es nicht gibt.
+     */
+    const anzahl = Math.max(0, (n.haeuser ?? ((n.alsoIn?.length || 0) + 1)) - 1);
     const auch = anzahl ? ` · +${anzahl} ${anzahl > 1 ? T().quellenMehr : T().quellen}` : '';
     /*
      * Staatsnahe Quellen ausweisen.
