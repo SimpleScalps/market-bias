@@ -1,12 +1,90 @@
 {
- "updated": "2026-09-07T01:30:04.364Z",
+ "updated": "2026-09-07T01:30:27.921Z",
  "regime": "policy",
- "count": 165,
+ "count": 166,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
   "Times of Israel: 403 https://www.timesofisrael.com/feed/"
  ],
  "items": [
+  {
+   "id": "SCMP:Hong Kong’s local schools should not have to brace for the worst",
+   "title": "Hong Kong’s local schools should not have to brace for the worst",
+   "text": "The vast majority of Hong Kong’s students are back in school now. With traffic expected to be horrendous last week, it was good that the government sounded the warning early, urging residents to allow more time for their morning commute. The government did more than that, actually. The Emergency Transport Co-ordination Centre was working at its highest operational tier at 6.30am on September 1 to monitor and coordinate public transport and traffic flow. Deployment of staff on the ground ensured.",
+   "source": "SCMP",
+   "url": "https://www.scmp.com/opinion/hong-kong-opinion/article/3366393/hong-kongs-local-schools-should-not-have-brace-worst?utm_source=rss_feed",
+   "date": "2026-09-07T01:30:06.000Z",
+   "tags": [
+    "Asien"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 1,
+   "titleDe": "Hongkongs lokale Schulen sollten nicht mit dem Schlimmsten rechnen müssen"
+  },
+  {
+   "id": "CNBC World:CNBC Daily Open: Trump's ‘little excursion’ becomes an uphill battle as Iran war continues",
+   "title": "CNBC Daily Open: Trump's ‘little excursion’ becomes an uphill battle as Iran war continues",
+   "text": "Comments from U.S. Energy Secretary Chris Wright over suggest those promises may be increasingly difficult to reconcile.",
+   "source": "CNBC World",
+   "url": "https://www.cnbc.com/2026/09/07/cnbc-daily-open-trump-iran-war-oil-prices-nuclear-deal.html",
+   "date": "2026-09-07T01:29:19.000Z",
+   "tags": [
+    "Weltwirtschaft"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Eskalation"
+   ],
+   "scores": {
+    "crypto": -0.36,
+    "stocks": -0.36,
+    "gold": 0.18,
+    "usd": 0.12
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 68,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 1,
+   "titleDe": "CNBC Daily Open: Trumps ‘kleine Ausflug’ wird zur steilen Herausforderung, während der Iran-Krieg weitergeht"
+  },
   {
    "id": "BeInCrypto:The Last Time Treasury Yields Hit 6%, Bitcoin Didn't Exist — What Happens If They Get There Again?",
    "title": "The Last Time Treasury Yields Hit 6%, Bitcoin Didn't Exist — What Happens If They Get There Again?",
@@ -47,9 +125,9 @@
    "titleDe": "Die letzte Zeit, als die US-Staatsanleihen 6 % erreichten, Bitcoin gab es noch nicht – was passiert, wenn sie wieder dort sind?"
   },
   {
-   "id": "Reuters:Dollar gets little lift from boost in Fed hike expectations",
-   "title": "Dollar gets little lift from boost in Fed hike expectations",
-   "text": "Dollar gets little lift from boost in Fed hike expectations &nbsp;&nbsp; Reuters",
+   "id": "Reuters:Dollar gets little lift from boost in Fed hike expectations - reuters.com",
+   "title": "Dollar gets little lift from boost in Fed hike expectations - reuters.com",
+   "text": "Dollar gets little lift from boost in Fed hike expectations &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQd0p6Q2VESkl4T251Z2lzT0UyVXRwRW1MWHRxeHlTV3hISkZPM3R0c1J1ZVljMnRlOEdHNHFpcHdUUFllby1JbzhFWm9KdXc2ZXZuYW9URVQzSExpMGtzeExtRXVmd3IwZ2F6ZUFXZmVzZUtObkNSQy1ZQ1d5SzhqM2lhYm9nbm1vankxRk9ubXB1RHBLWTNOeVFYTlFNYnlGeVhNdEFqQXI2UQ?oc=5",
    "date": "2026-09-07T01:20:00.000Z",
@@ -81,7 +159,7 @@
    "alsoIn": [],
    "bestaetigt": 1,
    "unabhaengig": 1,
-   "titleDe": "Der Dollar erhält kaum Auftrieb durch gestiegene Erwartungen an Fed-Hike"
+   "titleDe": "Dollar erhält wenig Auftrieb durch steigende Fed-Hike-Erwartungen"
   },
   {
    "id": "FXStreet:PBOC sets USD/CNY reference rate at 6.7795 vs. 6.7787 previous",
@@ -273,9 +351,9 @@
    "titleDe": "Alte Wurzeln: China-Pionierin der Sexualtherapie warnt vor dem Aufstieg des Phänomens „Beziehungsblindheit“"
   },
   {
-   "id": "Reuters:Eight Indonesian airports remain shut due to volcanic ash from Anak Krakatau",
-   "title": "Eight Indonesian airports remain shut due to volcanic ash from Anak Krakatau",
-   "text": "Eight Indonesian airports remain shut due to volcanic ash from Anak Krakatau &nbsp;&nbsp; Reuters",
+   "id": "Reuters:Eight Indonesian airports remain shut due to volcanic ash from Anak Krakatau - reuters.com",
+   "title": "Eight Indonesian airports remain shut due to volcanic ash from Anak Krakatau - reuters.com",
+   "text": "Eight Indonesian airports remain shut due to volcanic ash from Anak Krakatau &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPN3lQYWRaNm1SWnd1TzhrOUJkMHBWVUt2aXJqZ1pmRzF0dERJeHhSYUxJX0w0amVjOGt5NWFhSGhrNTZuSE9vR05NY1JjM3NXZDNVbl9ZYWJON0dHdkIxTS1wWWt5dExNbjlkZkh1THJBbXl3N1huQlJpSFo1cF9XWDhHMElBXzg3UmYzVTlzdmZzZURzTkIxOXBVUnVHSHd2N0pkbHdzZjZtTGZ2MktKcF9kNkMtQnlaT3RVUFNURXVGQS1rMDRV?oc=5",
    "date": "2026-09-07T01:11:00.000Z",
@@ -307,7 +385,7 @@
    "alsoIn": [],
    "bestaetigt": 1,
    "unabhaengig": 1,
-   "titleDe": "Acht indonesische Flughäfen bleiben wegen Asche des Anak‑Krakatau-Vulkans geschlossen"
+   "titleDe": "Acht indonesische Flughäfen bleiben wegen Vulkanausstoß von Anak Krakatau geschlossen"
   },
   {
    "id": "Al Jazeera:Why is Kenya cracking down on foreign traders and small retailers?",
@@ -347,9 +425,9 @@
    "titleDe": "Warum richtet Kenia gegen ausländische Händler und kleine Einzelhändler vor"
   },
   {
-   "id": "Reuters:Asia shares bounce, others cautious as oil rises",
-   "title": "Asia shares bounce, others cautious as oil rises",
-   "text": "Asia shares bounce, others cautious as oil rises &nbsp;&nbsp; Reuters",
+   "id": "Reuters:Asia shares bounce, others cautious as oil rises - reuters.com",
+   "title": "Asia shares bounce, others cautious as oil rises - reuters.com",
+   "text": "Asia shares bounce, others cautious as oil rises &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa0pobHhGSWlxLVNZa2htLURrNldPaHUyOGVyQXVBeGtJOWJDUXpqMXFSTDBCaHNkeFI5Q0Y2NUdFNlJoWUZlVGQwR2pGZk5oc1R5TzFLbUdFMU1aY3NGTXVhOGFTeFZOenRpbUlNc0ZiTjQtMnNaRVUtTVNrWEpLeGprbw?oc=5",
    "date": "2026-09-07T01:06:00.000Z",
@@ -381,7 +459,7 @@
    "alsoIn": [],
    "bestaetigt": 1,
    "unabhaengig": 1,
-   "titleDe": "Asiatische Aktien steigen, andere bleiben vorsichtig, während Öl steigt"
+   "titleDe": "Asiatische Aktien steigen, andere bleiben vorsichtig, Öl steigt"
   },
   {
    "id": "FXStreet:Japanese Yen consolidates near August highs vs USD as hawkish BoJ, Fed bets clash",
@@ -462,9 +540,9 @@
    "titleDe": "Die rechtsextreme AfD dankt Elon Musk, Frankreich warnt, dass ein Sieg bei der Landeswahl ein „ernstes Ereignis“ sei"
   },
   {
-   "id": "Reuters:'Slumping' South Korean corals worry divers, scientists studying climate change",
-   "title": "'Slumping' South Korean corals worry divers, scientists studying climate change",
-   "text": "'Slumping' South Korean corals worry divers, scientists studying climate change &nbsp;&nbsp; Reuters",
+   "id": "Reuters:'Slumping' South Korean corals worry divers, scientists studying climate change - reuters.com",
+   "title": "'Slumping' South Korean corals worry divers, scientists studying climate change - reuters.com",
+   "text": "'Slumping' South Korean corals worry divers, scientists studying climate change &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQckVTa1VNM2JwZ2RfQ3d5VGxILTlpT2VYS3NSUlFWNVNJX3RUdGFYV0piM0ptUlZUTUstRm5VTHJPS1BzY1cxaW8yanc4eTNuWjVmTDZ6dEJhcEVwa2dCTXByQWRmcWNFQ25uNE5RZF85c0NBd01YVVhhbWluZnBjM1l2RTRPcGJXRHJZTWRlc3BmQmhlMncyc0JrNXBvMDZLNkhLaEl1UmlMT1ctU0hFUllBT0pZTXNaczNuVGxvN3BpT3VZaGpwbEp1MnR0dw?oc=5",
    "date": "2026-09-07T01:03:00.000Z",
@@ -496,12 +574,12 @@
    "alsoIn": [],
    "bestaetigt": 1,
    "unabhaengig": 1,
-   "titleDe": "Sinkende Südkoreanische Korallen sorgen für Besorgnis bei Tauchern, Wissenschaftler untersuchen den Klimawandel"
+   "titleDe": "Sinkende Südkoreanische Korallen sorgen für Besorgnis bei Tauchern, Wissenschaftler untersuchen Klimawandel"
   },
   {
-   "id": "Reuters:Ship fuel shortage looms as refiners strained by war favour other products",
-   "title": "Ship fuel shortage looms as refiners strained by war favour other products",
-   "text": "Ship fuel shortage looms as refiners strained by war favour other products &nbsp;&nbsp; Reuters",
+   "id": "Reuters:Ship fuel shortage looms as refiners strained by war favour other products - reuters.com",
+   "title": "Ship fuel shortage looms as refiners strained by war favour other products - reuters.com",
+   "text": "Ship fuel shortage looms as refiners strained by war favour other products &nbsp;&nbsp; reuters.com",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcjJsRnYxdWplZmMxWnZxd2JBRjdaR2YtV0VrMEJCNmFTUjF1U1oyaVhiZk5XZ2Rvc1lXVEdhQjd0bWxxZ1R6Sl9Eckl0S3NXSXpjbGZ5QjJ6dnVkbG9tc2RtRl8tNy1heW1RVHh1VlZ2ZUVtQnJTREdYRlJsRFo5VjRoNUhRTEV2c0dwd01fNWphVkg4LW9oeExqdm1jQW9nRFdGYm16WTRkUjkxUmpaN2NPdDZpUVl2Tk1KQ0xZZWY?oc=5",
    "date": "2026-09-07T01:02:00.000Z",
@@ -537,7 +615,7 @@
    "alsoIn": [],
    "bestaetigt": 1,
    "unabhaengig": 1,
-   "titleDe": "Schiffsspritzzusammenbruch droht, da Raffinerien durch den Krieg auf andere Produkte setzen"
+   "titleDe": "Schiffskraftstoffknappheit droht, Raffinerien durch Krieg belastet, bevorzugen andere Produkte"
   },
   {
    "id": "SCMP:Hong Kong’s yuan pool is growing. Can it turn liquidity into global demand?",
@@ -2878,43 +2956,6 @@
    "titleDe": "Der Hormuz-See ist vollständig geschlossen; nicht konforme Schiffe werden verboten"
   },
   {
-   "id": "SCMP:Iran will declare a ‘prohibited zone’ near Hormuz in coming days: security chief",
-   "title": "Iran will declare a ‘prohibited zone’ near Hormuz in coming days: security chief",
-   "text": "Iran’s top security chief Mohsen Rezaei on Sunday said his country would establish a “prohibited zone” near the strategic Strait of Hormuz, state media reported. “In the coming days, a prohibited zone will be announced outside the Strait of Hormuz. This zone will start from the US Navy’s blockade line and include areas of the Persian Gulf. Any ship entering this new zone will be placed on the sanctions list” of Iran, Rezaei told state television. Also on Sunday, Iranian authorities said they...",
-   "source": "SCMP",
-   "url": "https://www.scmp.com/news/world/middle-east/article/3366566/iran-will-declare-prohibited-zone-near-hormuz-coming-days-security-chief?utm_source=rss_feed",
-   "date": "2026-09-06T19:53:02.000Z",
-   "tags": [
-    "Asien"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 53,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "unabhaengig": 1,
-   "titleDe": "Iran wird in den kommenden Tagen eine 'verbotene Zone' in der Nähe von Hormuz erklären: Sicherheitschef"
-  },
-  {
    "id": "CNBC World:U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
    "title": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
    "text": "Iran warned of faster, heavier retaliation against U.S. attacks while acknowledging the war’s mounting toll on its economy.",
@@ -5064,7 +5105,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6345,7 +6386,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 3,
+  "uebersetzt": 7,
   "fehler": null
  },
  "rubriken": {
