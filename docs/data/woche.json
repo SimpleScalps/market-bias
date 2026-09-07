@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T09:26:24.219Z",
+ "updated": "2026-09-07T09:40:37.636Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T09:26:24.316Z",
+   "stand": "2026-09-07T09:40:37.706Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T09:26:24.299Z",
+   "stand": "2026-09-07T09:40:37.693Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,35 +462,50 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T09:26:24.280Z",
-   "anzahl": 159,
+   "stand": "2026-09-07T09:40:37.680Z",
+   "anzahl": 163,
    "klassen": {
     "crypto": {
-     "score": -0.0675,
+     "score": -0.0995,
      "bull": 2,
-     "bear": 12,
-     "neut": 145
+     "bear": 17,
+     "neut": 144
     },
     "stocks": {
-     "score": -0.066,
+     "score": -0.0812,
      "bull": 0,
-     "bear": 11,
-     "neut": 148
+     "bear": 14,
+     "neut": 149
     },
     "gold": {
-     "score": -0.0043,
-     "bull": 7,
+     "score": -0.0027,
+     "bull": 10,
      "bear": 4,
-     "neut": 148
+     "neut": 149
     },
     "usd": {
-     "score": 0.0438,
+     "score": 0.0524,
      "bull": 5,
      "bear": 0,
-     "neut": 154
+     "neut": 158
     }
    },
    "top": [
+    {
+     "id": "Reuters:UBS forecasts two US Fed rate hikes in 2026 after strong jobs report",
+     "titel": "UBS forecasts two US Fed rate hikes in 2026 after strong jobs report",
+     "titelDe": "UBS prognostiziert zwei Zinserhöhungen der US-Notenbank im Jahr 2026 nach einem starken Beschäftigungsbericht",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNXNXbFhiR0xaOTliU21YN051SmZxSndRR1d0WkFHUEFBbHRsSS1EdE1zMUJ6ZlQ2NFRwNFZFWVlSMGx5WUc5RFVhYmE0WnNpTWJfbXRraUVTemlyU0U3ZFMzSGxwZDdMWVloTERkSkdfa2NiX3N2cThqbkRIUzhSVGNaRl9wak9YZVV2YXg0UVVZRWtXaG9PYUllRnl6dnNoY0NIQlZwNkRwVEpDOHIw?oc=5",
+     "zeit": "2026-09-07T09:07:43.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -0.85,
+      "gold": -0.8,
+      "usd": 1
+     },
+     "priority": 87
+    },
     {
      "id": "SCMP:Iranians recount horrors of suspected US missile attack on first day of war",
      "titel": "Iranians recount horrors of suspected US missile attack on first day of war",
@@ -504,7 +519,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 97
+     "priority": 96
     },
     {
      "id": "CoinDesk:No, Friday's jobs report hasn't materially boosted Fed rate hike odds",
@@ -519,7 +534,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 83
+     "priority": 82
     },
     {
      "id": "FXStreet:United States Dollar Index strengthens above 99.00 as robust US jobs data boosts Fed rate hike bets",
@@ -588,21 +603,6 @@
      "quelle": "FXStreet",
      "url": "https://www.fxstreet.com/news/gold-falls-below-4-400-as-strong-us-jobs-data-raise-the-prospects-for-fed-rate-hike-202609070133",
      "zeit": "2026-09-07T01:33:46.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 79
-    },
-    {
-     "id": "FXStreet:British Pound gains as US Dollar weakens despite Fed rate hike odds surge",
-     "titel": "British Pound gains as US Dollar weakens despite Fed rate hike odds surge",
-     "titelDe": "Britisches Pfund steigt, obwohl US-Dollar trotz steigender Fed‑Zinserwartungen schwächer wird",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/british-pound-gains-as-us-dollar-weakens-despite-fed-rate-hike-odds-surge-202609070058",
-     "zeit": "2026-09-07T00:58:07.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
