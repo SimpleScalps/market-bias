@@ -2368,34 +2368,32 @@ async function nochNichtGemeldet(env, items, nurLesen = false) {
  * Melden kann nur, wer selbst laeuft. Das ist kein Mangel, sondern der Grund,
  * warum es funktioniert: Faellt einer aus, sind noch zwei da, die es merken.
  */
-async function taktgeberWachen(env, ctx, ticks, z) {
-  const jetzt = Date.now();
+/**
+ * Entscheidet, was zu melden ist - ohne etwas zu senden.
+ *
+ * Getrennt vom Versand, damit es pruefbar ist: Der Alarm laeuft in
+ * ctx.waitUntil, und was dort scheitert, scheitert lautlos. Auf Code, der nur
+ * im Ausnahmefall laeuft und dann zum ersten Mal, will ich mich nicht
+ * verlassen - genau daran ist der Cron-Ausfall selbst unbemerkt geblieben.
+ */
+export function alarmEntscheiden(ticks, z, jetzt = Date.now()) {
   const stumm = Object.entries(ticks || {})
     .filter(([, t]) => t?.zeit && jetzt - new Date(t.zeit).getTime() > TAKT_STUMM_MS)
     .map(([q]) => q)
     .sort();
 
-  const gemeldet = Array.isArray(z.alarmStumm) ? z.alarmStumm : [];
+  const gemeldet = Array.isArray(z?.alarmStumm) ? z.alarmStumm : [];
   const neuStumm = stumm.filter((q) => !gemeldet.includes(q));
   const wiederDa = gemeldet.filter((q) => !stumm.includes(q));
-  const letzter = new Date(z.alarmZuletzt || 0).getTime();
-  const erinnern = stumm.length && !neuStumm.length && jetzt - letzter > ALARM_ABSTAND_MS;
-
-  if (!neuStumm.length && !wiederDa.length && !erinnern) return null;
-
-  const abo = await lesen(env, ABO_KEY);
-  if (!abo?.ziele?.length || abo.stufe === 'off') {
-    // Ohne Kanal nichts zu melden - der Stand wird trotzdem fortgeschrieben,
-    // sonst stuende beim naechsten Mal wieder alles als neu da.
-    return { stumm, gesendet: 0, grund: 'kein Kanal' };
-  }
-
-  const alter = (q) => Math.round((jetzt - new Date(ticks[q].zeit).getTime()) / 60000);
-  const laufend = Object.keys(ticks || {}).filter((q) => !stumm.includes(q));
+  const letzter = new Date(z?.alarmZuletzt || 0).getTime();
+  const erinnern = stumm.length > 0 && neuStumm.length === 0
+    && jetzt - letzter > ALARM_ABSTAND_MS;
 
   const meldungen = [];
   if (neuStumm.length || erinnern) {
+    const alter = (q) => Math.round((jetzt - new Date(ticks[q].zeit).getTime()) / 60000);
     const wen = (neuStumm.length ? neuStumm : stumm).map((q) => `${q} seit ${alter(q)} min`);
+    const laufend = Object.keys(ticks).filter((q) => !stumm.includes(q));
     meldungen.push([
       'Taktgeber stumm',
       `${wen.join(', ')} ohne Lebenszeichen.`
@@ -2408,12 +2406,55 @@ async function taktgeberWachen(env, ctx, ticks, z) {
     meldungen.push(['Taktgeber wieder da', `${wiederDa.join(', ')} meldet sich wieder.`]);
   }
 
-  let gesendet = 0;
-  for (const [titel, text] of meldungen) {
-    const r = await sendeAn(abo.ziele, titel, text);
-    gesendet += r.gesendet || 0;
+  // Auch ohne Meldung muss der Stand fortgeschrieben werden, sonst gilt beim
+  // naechsten Mal wieder alles als neu.
+  return { stumm, meldungen, aendert: meldungen.length > 0 || stumm.join() !== gemeldet.join() };
+}
+
+/**
+ * Meldet, wenn ein Taktgeber verstummt - und wenn er zurueck ist.
+ *
+ * Cloudflares Cron wurde an einem Tag zweimal stundenlang nicht mehr
+ * aufgerufen. Der Betrieb lief beide Male weiter, weil zwei Ersatztaktgeber
+ * ihn trugen, nur eben im Fuenf-Minuten-Takt statt im Minutentakt. Aufgefallen
+ * ist es beide Male einem Menschen, der Zeitstempel verglichen hat.
+ *
+ * Gemeldet wird ueber denselben Kanal wie die Nachrichten - er ist
+ * eingerichtet, er wird gelesen, und ein zweiter waere ein zweiter, der
+ * ausfallen kann. Steht die Benachrichtigung auf "aus", geht auch das hier
+ * nicht hinaus: Wer keine Nachrichten will, will auch diese nicht.
+ *
+ * Melden kann nur, wer selbst laeuft. Das ist kein Mangel, sondern der Grund,
+ * warum es traegt: Faellt einer aus, sind noch zwei da, die es merken.
+ */
+async function taktgeberWachen(env, ctx, ticks, z) {
+  try {
+    const { stumm, meldungen, aendert } = alarmEntscheiden(ticks, z);
+    if (!aendert) return null;
+
+    if (!meldungen.length) return { stumm, gesendet: 0, gemeldetJetzt: false };
+
+    const abo = await lesen(env, ABO_KEY);
+    if (!abo?.ziele?.length || abo.stufe === 'off') {
+      return { stumm, gesendet: 0, gemeldetJetzt: false, grund: 'kein Kanal' };
+    }
+
+    let gesendet = 0;
+    for (const [titel, text] of meldungen) {
+      const r = await sendeAn(abo.ziele, titel, text);
+      gesendet += r.gesendet || 0;
+    }
+    return { stumm, gesendet, gemeldetJetzt: true };
+  } catch (err) {
+    /*
+     * Ein Fehler beim Alarm darf nicht auch noch lautlos sein.
+     *
+     * Er laeuft in ctx.waitUntil, und dort verschwindet eine Ausnahme
+     * spurlos - der Waechter waere ausgefallen, ohne dass es jemand merkt.
+     */
+    console.log('Taktgeberwache fehlgeschlagen:', err.message);
+    return null;
   }
-  return { stumm, gesendet, gemeldetJetzt: Boolean(meldungen.length) };
 }
 
 async function pushen(env, ctx, neueItems) {
