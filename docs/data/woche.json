@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T02:09:29.630Z",
+ "updated": "2026-09-07T02:20:53.463Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T02:09:29.708Z",
+   "stand": "2026-09-07T02:20:53.538Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T02:09:29.694Z",
+   "stand": "2026-09-07T02:20:53.524Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T02:09:29.679Z",
+   "stand": "2026-09-07T02:20:53.509Z",
    "anzahl": 69,
    "klassen": {
     "crypto": {
@@ -597,19 +597,19 @@
      "priority": 49
     },
     {
-     "id": "Anadolu:Libya’s unity government dismantles cell behind drone attacks on vital energy facilities",
-     "titel": "Libya’s unity government dismantles cell behind drone attacks on vital energy facilities",
-     "titelDe": "Libysche Einheitsregierung zerschlägt Zelle hinter Drohnenangriffe auf wichtige Energieanlagen",
-     "quelle": "Anadolu",
-     "url": "https://www.aa.com.tr/en/middle-east/libya-s-unity-government-dismantles-cell-behind-drone-attacks-on-vital-energy-facilities/4049170",
-     "zeit": "2026-09-06T23:03:56.000Z",
+     "id": "The Block:Spot bitcoin ETFs pull in $987 million last week as institutional demand recovers",
+     "titel": "Spot bitcoin ETFs pull in $987 million last week as institutional demand recovers",
+     "titelDe": "Spot-Bitcoin-ETFs zogen letzte Woche 987 Millionen US-Dollar an, da die institutionelle Nachfrage wieder ansteigt",
+     "quelle": "The Block",
+     "url": "https://www.theblock.co/news/markets/2026-09-06-bitcoin-etfs-987-million-weekly-inflow-413639",
+     "zeit": "2026-09-07T02:15:55.000Z",
      "scores": {
-      "crypto": -0.855,
-      "stocks": -0.855,
-      "gold": 0.427,
-      "usd": 0.285
+      "crypto": 0.6,
+      "stocks": 0,
+      "gold": 0,
+      "usd": 0
      },
-     "priority": 41
+     "priority": 61
     }
    ]
   }
