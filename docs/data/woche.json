@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T14:29:40.736Z",
+ "updated": "2026-09-07T14:42:13.977Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T14:29:40.809Z",
+   "stand": "2026-09-07T14:42:14.068Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T14:29:40.795Z",
+   "stand": "2026-09-07T14:42:14.049Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,50 +462,35 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T14:29:40.781Z",
-   "anzahl": 214,
+   "stand": "2026-09-07T14:42:14.031Z",
+   "anzahl": 215,
    "klassen": {
     "crypto": {
-     "score": -0.1015,
+     "score": -0.099,
      "bull": 4,
-     "bear": 26,
-     "neut": 184
+     "bear": 28,
+     "neut": 183
     },
     "stocks": {
-     "score": -0.0907,
+     "score": -0.0888,
      "bull": 2,
-     "bear": 23,
-     "neut": 189
+     "bear": 25,
+     "neut": 188
     },
     "gold": {
-     "score": 0.0026,
-     "bull": 18,
+     "score": 0.0038,
+     "bull": 20,
      "bear": 7,
-     "neut": 189
+     "neut": 188
     },
     "usd": {
-     "score": 0.0555,
-     "bull": 8,
+     "score": 0.0536,
+     "bull": 7,
      "bear": 1,
-     "neut": 205
+     "neut": 207
     }
    },
    "top": [
-    {
-     "id": "FXStreet:Canadian Dollar finds support from Oil surge despite Fed rate hike bets",
-     "titel": "Canadian Dollar finds support from Oil surge despite Fed rate hike bets",
-     "titelDe": "Kanadischer Dollar findet Unterstützung durch Ölboom trotz Fed-Zinserhöhungsspekulationen",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/canadian-dollar-finds-support-from-oil-surge-despite-fed-rate-hike-bets-202609071322",
-     "zeit": "2026-09-07T13:22:43.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": -0.611,
-      "usd": 1
-     },
-     "priority": 87
-    },
     {
      "id": "Reuters:UBS forecasts two US Fed rate hikes in 2026 after strong jobs report",
      "titel": "UBS forecasts two US Fed rate hikes in 2026 after strong jobs report",
@@ -535,6 +520,21 @@
       "usd": 0.3
      },
      "priority": 96
+    },
+    {
+     "id": "FXStreet:Canadian Dollar finds support from Oil surge despite Fed rate hike bets",
+     "titel": "Canadian Dollar finds support from Oil surge despite Fed rate hike bets",
+     "titelDe": "Kanadischer Dollar findet Unterstützung durch Ölboom trotz Fed-Zinserhöhungsspekulationen",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/canadian-dollar-finds-support-from-oil-surge-despite-fed-rate-hike-bets-202609071322",
+     "zeit": "2026-09-07T13:22:43.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.611,
+      "usd": 1
+     },
+     "priority": 86
     },
     {
      "id": "FXStreet:Silver slips below $66 as strong NFP report revives Fed rate hike bets",
@@ -609,7 +609,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 75
+     "priority": 74
     }
    ]
   }
