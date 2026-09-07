@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T14:55:48.667Z",
+ "updated": "2026-09-07T15:05:09.385Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T14:55:48.759Z",
+   "stand": "2026-09-07T15:05:09.478Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T14:55:48.741Z",
+   "stand": "2026-09-07T15:05:09.458Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,32 +462,32 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T14:55:48.722Z",
-   "anzahl": 217,
+   "stand": "2026-09-07T15:05:09.440Z",
+   "anzahl": 218,
    "klassen": {
     "crypto": {
-     "score": -0.1081,
+     "score": -0.1028,
      "bull": 4,
      "bear": 30,
-     "neut": 183
+     "neut": 184
     },
     "stocks": {
-     "score": -0.098,
+     "score": -0.0929,
      "bull": 2,
      "bear": 27,
-     "neut": 188
+     "neut": 189
     },
     "gold": {
-     "score": 0.0086,
+     "score": 0.0066,
      "bull": 22,
      "bear": 7,
-     "neut": 188
+     "neut": 189
     },
     "usd": {
-     "score": 0.0565,
-     "bull": 8,
+     "score": 0.0545,
+     "bull": 7,
      "bear": 1,
-     "neut": 208
+     "neut": 210
     }
    },
    "top": [
@@ -534,7 +534,7 @@
       "gold": -0.611,
       "usd": 1
      },
-     "priority": 86
+     "priority": 85
     },
     {
      "id": "FXStreet:Silver slips below $66 as strong NFP report revives Fed rate hike bets",
