@@ -822,6 +822,38 @@ let fehlerSeitAblage = 0;
  * Beim naechsten Sichern wird diese Sammlung in den Bestand gemischt, nie
  * ersetzt - so ergaenzen sich die Isolate gegenseitig.
  */
+/*
+ * Wie lange ein verstummter Taktgeber sichtbar bleibt.
+ *
+ * Frueher waren es zwei Stunden - danach verschwand er aus der Anzeige. Das
+ * ist genau die falsche Richtung: Ein Taktgeber, der ausfaellt, soll auffallen
+ * und nicht verschwinden. Als Cloudflares Cron acht Stunden lang nicht mehr
+ * aufgerufen wurde, war der veraltete Eintrag der einzige Hinweis darauf.
+ *
+ * Einen Tag lang bleibt er also stehen und wird sichtbar aelter; erst dann
+ * gilt er als abgeschaltet und nicht mehr als ausgefallen.
+ */
+const TAKT_VERGESSEN_MS = 24 * 3600_000;
+
+/*
+ * Ab wann ein Taktgeber als stumm gilt.
+ *
+ * Alle drei sollen im Minutentakt schlagen; cron-job.org kommt auf dem
+ * kostenlosen Tarif alle fuenf Minuten, die GitHub-Action alle zehn. Zwoelf
+ * Minuten Ruhe sind bei keinem von ihnen normal.
+ */
+const TAKT_STUMM_MS = 12 * 60_000;
+
+/** Wirft Taktgeber weg, von denen seit einem Tag nichts mehr kam. */
+function taktgeberPflegen(ticks) {
+  const grenze = Date.now() - TAKT_VERGESSEN_MS;
+  const raus = {};
+  for (const [q, t] of Object.entries(ticks)) {
+    if (new Date(t.zeit).getTime() >= grenze) raus[q] = t;
+  }
+  return raus;
+}
+
 let taktVermerk = {};
 let letzterAblageFehler = null;
 
@@ -1518,18 +1550,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
           offen: items.filter(brauchtPruefung).length,
         },
       };
-      /*
-       * Verstummte Taktgeber nach zwei Stunden vergessen.
-       *
-       * Sonst sammeln sich Eintraege aus frueheren Fassungen und einmaligen
-       * Aufrufen an, und die Liste wird laenger statt aussagekraeftiger. Wer
-       * zwei Stunden nichts von sich hoeren liess, ist kein Taktgeber mehr.
-       */
-      const grenze = Date.now() - 2 * 3600_000;
-      for (const [q, t] of Object.entries(zusammen)) {
-        if (new Date(t.zeit).getTime() < grenze) delete zusammen[q];
-      }
-      return zusammen;
+      return taktgeberPflegen(zusammen);
     })(),
   };
 
@@ -1623,7 +1644,15 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
      * Buchung die Eintraege wieder, die ein anderes Isolat beigesteuert hatte
      * - der zweite Taktgeber verschwand so aus der Anzeige, obwohl er lief.
      */
-    ticks: { ...(z.ticks || {}), ...data.ticks },
+    /*
+     * Auch hier aufraeumen, nicht nur im Bestand.
+     *
+     * Diese Zusammenfuehrung holte zurueck, was oben gerade entfernt worden
+     * war - ein Taktgeber, der einmal im Zustand stand, kam nie wieder
+     * heraus. Das ist an dieser Stelle sogar nuetzlich (siehe unten), aber es
+     * muss an beiden Stellen dieselbe Regel gelten.
+     */
+    ticks: taktgeberPflegen({ ...(z.ticks || {}), ...data.ticks }),
     verzug: { ...(z.verzug || {}), ...data.verzug },
     // Wird als Ganzes ersetzt - deshalb hier vollstaendig neu gebildet.
     ...(gescheitert.length || Object.keys(pruefBuch).length
@@ -2635,6 +2664,22 @@ export default {
          * zurueckgetretenen Reservetaktgeber nicht von einem ausgefallenen
          * unterscheiden. Sie zeigte ihn weiter rot.
          */
+        /*
+         * Ein stummer Taktgeber gehoert benannt, nicht errechnet.
+         *
+         * Die Liste darunter zeigt die Zeitpunkte, aber wer sie liest, muss
+         * selbst nachrechnen. Cloudflares Cron stand acht Stunden still und
+         * fiel nur auf, weil jemand die Zahlen verglichen hat. Diese Zeile
+         * sagt es geradeheraus.
+         */
+        taktWarnung: (() => {
+          const alle = { ...(bestand?.ticks || {}), ...(zNow.ticks || {}) };
+          const stumm = Object.entries(alle)
+            .filter(([, t]) => Date.now() - new Date(t.zeit).getTime() > TAKT_STUMM_MS)
+            .map(([q, t]) => `${q} seit ${Math.round((Date.now() - new Date(t.zeit).getTime()) / 60000)} min`);
+          if (!Object.keys(alle).length) return 'noch kein Taktgeber gemeldet';
+          return stumm.length ? `STUMM: ${stumm.join(' · ')}` : 'alle Taktgeber frisch';
+        })(),
         taktgeber: Object.entries({ ...(bestand?.ticks || {}), ...(zNow.ticks || {}) })
           .map(([quelle, t]) => ({
             quelle, zeit: t.zeit, meldungen: t.meldungen, offen: t.offen,
@@ -3089,13 +3134,33 @@ export default {
   },
 
   // Cron: rollierend eine Gruppe abarbeiten und über Neues benachrichtigen.
+  /*
+   * Cloudflares eigener Zeitplan - in wrangler.toml unter [triggers].
+   *
+   * Mit Fehlerfang, und das ist der Punkt: Ohne ihn war ein Scheitern hier
+   * unsichtbar. Der Taktgeber wird erst am Ende von teilAbgleich vermerkt;
+   * wirft es vorher, steht in /health weder ein Fehler noch ein frischer
+   * Zeitpunkt - nur ein Eintrag, der immer aelter wird. Genau so stand der
+   * Cloudflare-Takt acht Stunden lang still, waehrend "letzterTickFehler:
+   * keiner seit dem Start" daneben stand und die Ersatztaktgeber den Betrieb
+   * trugen. Der Weg ueber /tick fing seine Fehler laengst ab; dieser nicht.
+   */
   async scheduled(event, env, ctx) {
-    const regime = env.REGIME || 'policy';
-    const bestand = await lesen(env, KEY);
-    const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
+    try {
+      const regime = env.REGIME || 'policy';
+      const bestand = await lesen(env, KEY);
+      const gruppe = Math.floor(Date.now() / 60000) % GRUPPEN;
 
-    // Cloudflares eigener Zeitplan - in wrangler.toml unter [triggers].
-    const { versand } = await teilAbgleich(env, ctx, regime, bestand, gruppe, 'cloudflare-cron');
-    if (versand?.fehler?.length) console.log('Versand fehlgeschlagen:', versand.fehler.join(' | '));
+      const { versand } = await teilAbgleich(env, ctx, regime, bestand, gruppe, 'cloudflare-cron');
+      if (versand?.fehler?.length) console.log('Versand fehlgeschlagen:', versand.fehler.join(' | '));
+    } catch (err) {
+      console.log('Cron fehlgeschlagen:', err.message);
+      letzterTickFehler = {
+        zeit: new Date().toISOString(),
+        quelle: 'cloudflare-cron',
+        fehler: err.message.slice(0, 200),
+      };
+      ctx.waitUntil(zustand(env, { letzteTickStoerung: letzterTickFehler }));
+    }
   },
 };
