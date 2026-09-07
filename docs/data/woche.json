@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T21:31:54.768Z",
+ "updated": "2026-09-07T21:45:13.619Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T21:31:54.855Z",
+   "stand": "2026-09-07T21:45:13.692Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T21:31:54.838Z",
+   "stand": "2026-09-07T21:45:13.679Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T21:31:54.820Z",
+   "stand": "2026-09-07T21:45:13.665Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -597,19 +597,19 @@
      "priority": 78
     },
     {
-     "id": "Al Jazeera (GN):Yemen gov’t forces launch air strikes on Houthi targets",
-     "titel": "Yemen gov’t forces launch air strikes on Houthi targets",
-     "titelDe": "Jemenische Regierungstruppen führen Luftangriffe auf Houthi-Ziele durch",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUjhjMUVONTBVTkxsdERuMV9scEZYQ3FKREtuYjB0b0VuTmdKT0c5QkF0Ny01d2JVdlhkaWY2b3hoQWd1WmZZS05ORTB4S3p2a180U3lpWGhjLVAwd0VwZnBPY3RzdElIN1pHVXozcHQ5RmNHR1NXTHo5QTIxdFJpZnE4c1lWTnB1QnNyaUNaVkVmMkxOU2xjMm5R0gGfAUFVX3lxTFBMazExbm5wUzBCc3ZZcTRvWUUyTUlINWZKbWo2WFFFVXRLUUVFLXVuRTBIQlg0eGtibDJxLTl0Q0VmX1pyRDNkdExsSFh1OGdJTVl2djI2OVZUaHVoYlJQT2ZiXzZ6eW1FMHRWMkNzak12MDVJVmtZbHNuazhuTl9WVXJfdml6b2xZc3JwejBiTnlOMmE4TkFHWW1iUTN4RQ?oc=5",
-     "zeit": "2026-09-07T13:08:47.000Z",
+     "id": "Al Jazeera:Oil prices surge as US-Iran strikes intensify in Strait of Hormuz",
+     "titel": "Oil prices surge as US-Iran strikes intensify in Strait of Hormuz",
+     "titelDe": "Ölpreisanstieg, da sich die Streiks zwischen den USA und dem Iran in der Straße von Hormus verschärfen",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/economy/2026/9/7/oil-prices-surge-as-us-iran-strikes-intensify-in-strait-of-hormuz?traffic_source=rss",
+     "zeit": "2026-09-07T21:17:12.000Z",
      "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.547,
+      "usd": 1
      },
-     "priority": 76
+     "priority": 77
     }
    ]
   }
