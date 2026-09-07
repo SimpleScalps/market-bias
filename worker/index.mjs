@@ -1102,11 +1102,20 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * Erst danach steht fest, wie viele Redaktionen eine Meldung tragen -
    * siehe bestaetigung().
    */
+  /*
+   * Der Zeitpunkt steht als Text da, nicht als Zahl.
+   *
+   * Das Durable Object addiert Zahlenfelder und ersetzt alles andere - so
+   * werden Token und Schreibversuche fortgeschrieben. Ein Zeitstempel als
+   * Zahl geriet dadurch in die ferne Zukunft: 1,7 Billionen plus 1,7
+   * Billionen, und die Bedingung unten war nie wieder erfuellt. Der Lauf fand
+   * genau einmal statt und danach 79 Minuten lang nicht mehr.
+   */
   let dublettenLauf = null;
-  if (Date.now() - (z.letzteDubletten || 0) > DUBLETTEN_TAKT_MS) {
+  if (Date.now() - new Date(z.letzteDubletten || 0).getTime() > DUBLETTEN_TAKT_MS) {
     const vorher = items.length;
     items = bestaetigung(dedupe(items));
-    dublettenLauf = { zeit: Date.now(), zusammengefasst: vorher - items.length };
+    dublettenLauf = { zeit: new Date().toISOString(), zusammengefasst: vorher - items.length };
   }
 
   /*
@@ -2396,7 +2405,7 @@ export default {
           const d = zNow.dubletten;
           const mehrfach = (bestand?.items || []).filter((n) => (n.alsoIn || []).length).length;
           if (!d) return `${mehrfach} Meldungen von mehreren Quellen · noch kein Lauf`;
-          const her = Math.round((Date.now() - d.zeit) / 60000);
+          const her = Math.round((Date.now() - new Date(d.zeit).getTime()) / 60000);
           return `${mehrfach} Meldungen von mehreren Quellen`
             + ` · letzter Lauf vor ${her} min, ${d.zusammengefasst} zusammengefasst`;
         })(),
