@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T03:06:01.116Z",
+ "updated": "2026-09-07T03:21:50.649Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T03:06:01.168Z",
+   "stand": "2026-09-07T03:21:50.715Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T03:06:01.159Z",
+   "stand": "2026-09-07T03:21:50.704Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,32 +462,32 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T03:06:01.149Z",
-   "anzahl": 82,
+   "stand": "2026-09-07T03:21:50.692Z",
+   "anzahl": 83,
    "klassen": {
     "crypto": {
-     "score": -0.1312,
+     "score": -0.1296,
      "bull": 2,
      "bear": 12,
-     "neut": 68
+     "neut": 69
     },
     "stocks": {
-     "score": -0.1266,
+     "score": -0.1253,
      "bull": 1,
      "bear": 12,
-     "neut": 69
+     "neut": 70
     },
     "gold": {
      "score": -0.0519,
      "bull": 7,
      "bear": 6,
-     "neut": 69
+     "neut": 70
     },
     "usd": {
-     "score": 0.1097,
+     "score": 0.1088,
      "bull": 7,
      "bear": 1,
-     "neut": 74
+     "neut": 75
     }
    },
    "top": [
@@ -519,7 +519,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 83
+     "priority": 82
     },
     {
      "id": "FXStreet:Gold falls below $4,400 as strong US jobs data raise the prospects for Fed rate hike",
@@ -534,7 +534,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 82
+     "priority": 81
     },
     {
      "id": "FXStreet:British Pound gains as US Dollar weakens despite Fed rate hike odds surge",
@@ -549,7 +549,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 81
+     "priority": 80
     },
     {
      "id": "FXStreet:New Zealand Dollar edges lower as Fed rate hike bets and Iran tensions underpin USD",
@@ -564,7 +564,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 72
+     "priority": 71
     },
     {
      "id": "FXStreet:China injects $54 billion stimulus for financial sector amid fears over sluggish growth",
