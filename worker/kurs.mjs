@@ -104,18 +104,23 @@ export function bewegung(kerzen, vonMs, minuten = 15) {
 /**
  * Fuehrt die Bilanz je Merkmal fort.
  *
- * Gezaehlt wird `bewegung * vorzeichen`: positiv heisst, der Kurs ging in die
- * vorhergesagte Richtung. So bleibt ein einziges Feld aussagekraeftig, ohne
- * dass bullish und bearish getrennt gefuehrt werden muessten.
+ * Jeder Eintrag bringt seinen eigenen Treffer mit, statt ihn aus dem
+ * Vorzeichen abzuleiten. Noetig, weil "neutral" auch eine Aussage ist - sie
+ * lautet "hier passiert nichts", und ob sie zutraf, entscheidet nicht die
+ * Richtung der Bewegung, sondern ihre Groesse.
+ *
+ * `summe` sammelt die Bewegung in der vorhergesagten Richtung, in Prozent.
+ * Bei einer Aussage ohne Richtung steht dort die Bewegung mit umgekehrtem
+ * Vorzeichen: Je ruhiger der Markt blieb, desto naeher an null - hoeher ist
+ * in beiden Faellen besser.
  */
-export function bilanzAddieren(bisher, merkmale, bewegungProzent, vorzeichen) {
+export function bilanzAddieren(bisher, eintraege) {
   const neu = { ...(bisher || {}) };
-  const punkt = bewegungProzent * vorzeichen;
-  for (const m of merkmale) {
-    const e = neu[m] || { n: 0, treffer: 0, summe: 0 };
-    neu[m] = {
+  for (const { name, treffer, punkt } of eintraege) {
+    const e = neu[name] || { n: 0, treffer: 0, summe: 0 };
+    neu[name] = {
       n: e.n + 1,
-      treffer: e.treffer + (punkt > 0 ? 1 : 0),
+      treffer: e.treffer + (treffer ? 1 : 0),
       summe: +(e.summe + punkt).toFixed(3),
     };
   }

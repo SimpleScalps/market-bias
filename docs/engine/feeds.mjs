@@ -513,7 +513,15 @@ export function bestaetigung(items) {
       ...rest,
       impactLevel,
       bestaetigt: quellen.length,
-      ...(unabhaengig !== quellen.length ? { unabhaengig } : {}),
+      /*
+       * Immer mitschreiben, auch wenn die Zahl gleich der Quellenzahl ist.
+       *
+       * Nur bei Abweichung zu setzen sparte ein Feld und kostete die Aussage:
+       * Drei unabhaengige Haeuser standen dann als "kein Wert" da, und jeder
+       * Leser dieses Feldes musste raten, ob null "keine" oder "nicht
+       * gemessen" heisst.
+       */
+      unabhaengig,
       ...(unabhaengig === 0 ? { nurStaatlich: true } : {}),
       ...(impactLevel !== roh ? { impactRoh: roh, impactGehoben: true } : {}),
     };

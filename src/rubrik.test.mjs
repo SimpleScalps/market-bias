@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { rubrik } from '../docs/engine/rubrik.mjs';
-import { nachbewerten } from '../docs/engine/feeds.mjs';
+import { nachbewerten, bestaetigung } from '../docs/engine/feeds.mjs';
 import { REGEL_STAND } from '../docs/engine/keywords.mjs';
 
 /*
@@ -110,4 +110,55 @@ test('Auch ohne Arbeit liefert nachbewerten die volle Form', () => {
   assert.equal(r.nachbewertet, 0);
   assert.deepEqual(r.aussortiert, {});
   assert.equal(r.items.length, 1);
+});
+
+// --- Mehrfachbestaetigung -------------------------------------------------
+
+test('Quellen derselben Regierung bestaetigen einander nicht', () => {
+  const [n] = bestaetigung([{
+    ...meldung(), source: 'TASS', alsoIn: ['IRNA', 'Mehr News', 'Tehran Times'],
+    scores: { crypto: -0.6, stocks: 0, gold: 0, usd: 0 }, impactLevel: 'medium',
+  }]);
+  assert.equal(n.bestaetigt, 4);
+  assert.equal(n.unabhaengig, 0);
+  assert.equal(n.nurStaatlich, true);
+  assert.equal(n.impactLevel, 'medium', 'ohne unabhaengige Quelle wird nichts angehoben');
+});
+
+test('Zwei Feeds derselben Redaktion zaehlen als eine Quelle', () => {
+  const [n] = bestaetigung([{
+    ...meldung(), source: 'Guardian', alsoIn: ['Guardian Wirtschaft', 'CNBC', 'CNBC World'],
+    scores: { crypto: -0.6, stocks: 0, gold: 0, usd: 0 }, impactLevel: 'medium',
+  }]);
+  assert.equal(n.unabhaengig, 2, 'Guardian und CNBC sind zwei Haeuser, nicht vier');
+  assert.equal(n.impactLevel, 'medium');
+});
+
+test('Drei unabhaengige Haeuser heben die Handelswirkung', () => {
+  const [n] = bestaetigung([{
+    ...meldung(), source: 'Guardian', alsoIn: ['BBC World', 'Reuters'],
+    scores: { crypto: -0.6, stocks: 0, gold: 0, usd: 0 }, impactLevel: 'medium',
+  }]);
+  assert.equal(n.unabhaengig, 3);
+  assert.equal(n.impactLevel, 'high');
+  assert.equal(n.impactRoh, 'medium');
+});
+
+test('Eine bestaetigte Belanglosigkeit wird nicht angehoben', () => {
+  const [n] = bestaetigung([{
+    ...meldung(), source: 'Guardian', alsoIn: ['BBC World', 'Reuters'],
+    scores: { crypto: 0, stocks: 0, gold: 0, usd: 0 }, impactLevel: 'low',
+  }]);
+  assert.equal(n.impactLevel, 'low', 'ohne Richtung gibt es nichts zu bestaetigen');
+});
+
+test('Mehrfaches Anwenden hebt nicht mehrfach an', () => {
+  const roh = {
+    ...meldung(), source: 'Guardian', alsoIn: ['BBC World', 'Reuters'],
+    scores: { crypto: -0.6, stocks: 0, gold: 0, usd: 0 }, impactLevel: 'medium',
+  };
+  let liste = bestaetigung([roh]);
+  for (let i = 0; i < 5; i++) liste = bestaetigung(liste);
+  assert.equal(liste[0].impactLevel, 'high');
+  assert.equal(liste[0].impactRoh, 'medium');
 });

@@ -1619,18 +1619,42 @@ async function kalenderNachziehen(env, ctx, regime, bestand) {
  * den Satz, das Regelwerk nur die Woerter darin. Die Herleitung der Regel
  * bleibt sichtbar, damit nachvollziehbar ist, wie es zum ersten Urteil kam.
  */
+/*
+ * Ab wann eine Bewegung als Bewegung zaehlt.
+ *
+ * "Neutral" ist auch eine Aussage: Sie lautet, dass diese Meldung den Markt
+ * nicht bewegt. Ob sie zutraf, entscheidet nicht die Richtung, sondern die
+ * Groesse - bleibt Bitcoin in einer Viertelstunde unter 0,15 Prozent, ist
+ * nichts passiert, und die Aussage stimmte.
+ */
+const RUHE_SCHWELLE = 0.15;
+
+/** Hat eine Einschaetzung recht behalten? */
+function trifftZu(wert, prozent) {
+  if (Math.abs(wert) < 0.2) return Math.abs(prozent) < RUHE_SCHWELLE;
+  return prozent * Math.sign(wert) > 0;
+}
+
+/** Die Bewegung in der vorhergesagten Richtung; ohne Richtung: ihr Gegenteil. */
+function punktFuer(wert, prozent) {
+  return +(Math.abs(wert) < 0.2 ? -Math.abs(prozent) : prozent * Math.sign(wert)).toFixed(3);
+}
+
 /**
  * Ist diese Meldung reif fuer die Wirkungsmessung?
  *
- * Reif heisst: Sie traegt eine Richtung, der Eingang liegt mindestens eine
- * Viertelstunde zurueck, und die Kerzen dazu sind noch abrufbar. Meldungen
- * ohne Richtung bleiben aussen vor - bei ihnen gibt es nichts, wogegen sich
- * die Kursbewegung halten liesse.
+ * Reif heisst: Der Eingang liegt mindestens eine Viertelstunde zurueck, die
+ * Kerzen dazu sind noch abrufbar, und irgendjemand hat sich festgelegt - das
+ * Regelwerk oder die KI. Auch der Fall zaehlt, in dem die KI eine deutliche
+ * Regel auf neutral gesetzt hat: Gerade dort ist die Frage interessant, wer
+ * von beiden recht hatte, und ohne diesen Fall bliebe sie unbeantwortbar.
  */
 function faelligFuerWirkung(n) {
   if (n.wirkung) return false;
   if (n.impactLevel === 'ignore') return false;
-  if (Math.abs(n.scores?.crypto ?? 0) < 0.2) return false;
+  const regel = Math.abs(n.regelScores?.crypto ?? n.scores?.crypto ?? 0);
+  const gezeigt = Math.abs(n.scores?.crypto ?? 0);
+  if (Math.max(regel, gezeigt) < 0.2) return false;
   const ab = new Date(n.gesehenAm || n.date).getTime();
   if (!ab || isNaN(ab)) return false;
   const alter = Date.now() - ab;
@@ -1644,11 +1668,11 @@ function faelligFuerWirkung(n) {
  * decken das ganze Fenster ab. Faellt die Boerse aus, bleibt es beim
  * Versuch - die naechste Minute holt es nach.
  *
- * Die Bilanz zaehlt je Merkmal, wie oft es recht behalten hat. Merkmal ist
- * jedes erkannte Signal, dazu die Herkunft des Urteils: Regelwerk allein, von
- * der KI berichtigt, aus dem Artikel gelesen, mehrfach bestaetigt, nur von
- * Staatsmedien getragen. Damit laesst sich zum ersten Mal beantworten, ob die
- * Berichtigung durch die KI ueberhaupt etwas verbessert.
+ * Die Bilanz zaehlt je Merkmal, wie oft es recht behalten hat. Der wichtigste
+ * Vergleich steht dabei auf derselben Meldungsmenge: Wo die KI das Regelwerk
+ * ueberstimmt hat, werden beide Einschaetzungen einzeln gewertet. Erst das
+ * beantwortet, ob die Berichtigung ueberhaupt etwas verbessert - bisher war
+ * das eine Glaubensfrage.
  */
 async function wirkungMessen(items, z) {
   const faellig = items.filter(faelligFuerWirkung).slice(0, WIRKUNG_MAX);
@@ -1664,17 +1688,23 @@ async function wirkungMessen(items, z) {
     const b = bewegung(kerzen, ab, WIRKUNG_MINUTEN);
     if (b === null) continue;
 
-    const vorzeichen = Math.sign(n.scores.crypto);
-    n.wirkung = { min15: b, treffer: b * vorzeichen > 0, boerse };
+    const regelWert = n.regelScores?.crypto ?? n.scores.crypto;
+    const gezeigt = n.scores.crypto;
+    n.wirkung = { min15: b, treffer: trifftZu(gezeigt, b), boerse };
 
-    const merkmale = [
-      ...(n.signals || []).map((x) => `Signal: ${x}`),
-      n.kiKorrigiert ? 'von der KI berichtigt' : 'Regelwerk unverändert',
-      ...(n.ki?.gelesen ? ['Artikel gelesen'] : []),
-      ...((n.unabhaengig ?? n.bestaetigt ?? 1) >= 3 ? ['3+ Quellen'] : []),
-      ...(n.nurStaatlich ? ['nur Staatsmedien'] : []),
+    const eintrag = (name, wert) => ({ name, treffer: trifftZu(wert, b), punkt: punktFuer(wert, b) });
+
+    const eintraege = [
+      ...(n.signals || []).map((x) => eintrag(`Signal: ${x}`, regelWert)),
+      ...(n.kiKorrigiert
+        // Dieselbe Meldung, zweimal gewertet - der einzige faire Vergleich.
+        ? [eintrag('Regel (überstimmt)', regelWert), eintrag('KI (berichtigt)', gezeigt)]
+        : [eintrag('Regel (unberührt)', regelWert)]),
+      ...(n.ki?.gelesen ? [eintrag('Artikel gelesen', gezeigt)] : []),
+      ...((n.unabhaengig ?? 0) >= 3 ? [eintrag('3+ Quellen', gezeigt)] : []),
+      ...(n.nurStaatlich ? [eintrag('nur Staatsmedien', gezeigt)] : []),
     ];
-    bilanz = bilanzAddieren(bilanz, merkmale, b, vorzeichen);
+    bilanz = bilanzAddieren(bilanz, eintraege);
     gemessen++;
   }
 
@@ -2362,6 +2392,14 @@ export default {
          */
         artikel: zNow.artikelErgebnis ?? 'noch keiner',
         wirkung: zNow.wirkungZuletzt ?? 'noch keine Messung',
+        dubletten: (() => {
+          const d = zNow.dubletten;
+          const mehrfach = (bestand?.items || []).filter((n) => (n.alsoIn || []).length).length;
+          if (!d) return `${mehrfach} Meldungen von mehreren Quellen · noch kein Lauf`;
+          const her = Math.round((Date.now() - d.zeit) / 60000);
+          return `${mehrfach} Meldungen von mehreren Quellen`
+            + ` · letzter Lauf vor ${her} min, ${d.zusammengefasst} zusammengefasst`;
+        })(),
         /*
          * Die Bilanz: Wie oft hat ein Merkmal recht behalten?
          *
