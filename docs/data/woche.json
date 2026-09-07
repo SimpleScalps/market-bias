@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T02:20:53.463Z",
+ "updated": "2026-09-07T02:36:44.609Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T02:20:53.538Z",
+   "stand": "2026-09-07T02:36:44.684Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T02:20:53.524Z",
+   "stand": "2026-09-07T02:36:44.670Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,35 +462,50 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T02:20:53.509Z",
-   "anzahl": 69,
+   "stand": "2026-09-07T02:36:44.655Z",
+   "anzahl": 75,
    "klassen": {
     "crypto": {
-     "score": -0.1485,
-     "bull": 1,
+     "score": -0.1308,
+     "bull": 2,
      "bear": 12,
-     "neut": 56
+     "neut": 61
     },
     "stocks": {
-     "score": -0.138,
+     "score": -0.1293,
      "bull": 1,
      "bear": 12,
-     "neut": 56
+     "neut": 62
     },
     "gold": {
-     "score": -0.017,
-     "bull": 9,
-     "bear": 4,
-     "neut": 56
+     "score": -0.0359,
+     "bull": 8,
+     "bear": 5,
+     "neut": 62
     },
     "usd": {
-     "score": 0.0963,
-     "bull": 6,
+     "score": 0.1019,
+     "bull": 7,
      "bear": 1,
-     "neut": 62
+     "neut": 67
     }
    },
    "top": [
+    {
+     "id": "FXStreet:United States Dollar Index strengthens above 99.00 as robust US jobs data boosts Fed rate hike bets",
+     "titel": "United States Dollar Index strengthens above 99.00 as robust US jobs data boosts Fed rate hike bets",
+     "titelDe": "US-Dollar-Index übertrifft 99,00, starke US-Arbeitsmarktdaten treiben Fed-Hike-Wetten",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/united-states-dollar-index-strengthens-above-9900-as-robust-us-jobs-data-boosts-fed-rate-hike-bets-202609070225",
+     "zeit": "2026-09-07T02:25:08.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
     {
      "id": "FXStreet:Gold falls below $4,400 as strong US jobs data raise the prospects for Fed rate hike",
      "titel": "Gold falls below $4,400 as strong US jobs data raise the prospects for Fed rate hike",
@@ -504,7 +519,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 83
+     "priority": 82
     },
     {
      "id": "FXStreet:British Pound gains as US Dollar weakens despite Fed rate hike odds surge",
@@ -519,7 +534,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 82
+     "priority": 81
     },
     {
      "id": "FXStreet:New Zealand Dollar edges lower as Fed rate hike bets and Iran tensions underpin USD",
@@ -534,7 +549,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 74
+     "priority": 73
     },
     {
      "id": "FXStreet:China injects $54 billion stimulus for financial sector amid fears over sluggish growth",
@@ -549,7 +564,7 @@
       "gold": 0.56,
       "usd": -0.7
      },
-     "priority": 70
+     "priority": 69
     },
     {
      "id": "FXStreet:Japanese Yen consolidates near August highs vs USD as hawkish BoJ, Fed bets clash",
@@ -564,7 +579,7 @@
       "gold": -0.48,
       "usd": 0.6
      },
-     "priority": 80
+     "priority": 79
     },
     {
      "id": "Al Jazeera:North Korea deploys warship ‘capable of annihilating retaliatory strikes’",
@@ -579,7 +594,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 93
+     "priority": 92
     },
     {
      "id": "Anadolu:1 killed, 2 injured in Israeli strike on ambulance in southern Lebanon",
@@ -594,22 +609,7 @@
       "gold": 0.405,
       "usd": 0.27
      },
-     "priority": 49
-    },
-    {
-     "id": "The Block:Spot bitcoin ETFs pull in $987 million last week as institutional demand recovers",
-     "titel": "Spot bitcoin ETFs pull in $987 million last week as institutional demand recovers",
-     "titelDe": "Spot-Bitcoin-ETFs zogen letzte Woche 987 Millionen US-Dollar an, da die institutionelle Nachfrage wieder ansteigt",
-     "quelle": "The Block",
-     "url": "https://www.theblock.co/news/markets/2026-09-06-bitcoin-etfs-987-million-weekly-inflow-413639",
-     "zeit": "2026-09-07T02:15:55.000Z",
-     "scores": {
-      "crypto": 0.6,
-      "stocks": 0,
-      "gold": 0,
-      "usd": 0
-     },
-     "priority": 61
+     "priority": 48
     }
    ]
   }
