@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T05:56:37.813Z",
+ "updated": "2026-09-07T06:09:24.431Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T05:56:37.895Z",
+   "stand": "2026-09-07T06:09:24.473Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T05:56:37.879Z",
+   "stand": "2026-09-07T06:09:24.466Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,35 +462,50 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T05:56:37.862Z",
-   "anzahl": 117,
+   "stand": "2026-09-07T06:09:24.458Z",
+   "anzahl": 119,
    "klassen": {
     "crypto": {
-     "score": -0.1088,
+     "score": -0.1337,
      "bull": 2,
-     "bear": 14,
+     "bear": 16,
      "neut": 101
     },
     "stocks": {
-     "score": -0.0965,
+     "score": -0.1213,
      "bull": 1,
-     "bear": 13,
+     "bear": 15,
      "neut": 103
     },
     "gold": {
-     "score": -0.0346,
-     "bull": 8,
-     "bear": 6,
+     "score": -0.0228,
+     "bull": 9,
+     "bear": 7,
      "neut": 103
     },
     "usd": {
-     "score": 0.0806,
-     "bull": 6,
+     "score": 0.0893,
+     "bull": 8,
      "bear": 1,
      "neut": 110
     }
    },
    "top": [
+    {
+     "id": "SCMP:Iranians recount horrors of suspected US missile attack on first day of war",
+     "titel": "Iranians recount horrors of suspected US missile attack on first day of war",
+     "titelDe": "Iraner schildern Schrecken eines mutmaßlichen US-Missilangriffs am ersten Kriegstag",
+     "quelle": "SCMP",
+     "url": "https://www.scmp.com/news/world/middle-east/article/3366603/iranians-recount-horrors-suspected-us-missile-attack-first-day-war?utm_source=rss_feed",
+     "zeit": "2026-09-07T05:57:59.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
     {
      "id": "FXStreet:Indonesian Rupiah weakens as Fed rate hike odds lift US Dollar",
      "titel": "Indonesian Rupiah weakens as Fed rate hike odds lift US Dollar",
@@ -595,21 +610,6 @@
       "usd": 0.75
      },
      "priority": 79
-    },
-    {
-     "id": "FXStreet:Gold remains depressed as reviving Fed rate hike bets and Iran risks underpin USD",
-     "titel": "Gold remains depressed as reviving Fed rate hike bets and Iran risks underpin USD",
-     "titelDe": "Gold bleibt gedrückt, während wieder aufkommende Fed‑Zinserhöhungswetten und Iran‑Risiken den USD stützen",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/gold-remains-depressed-as-reviving-fed-rate-hike-bets-and-iran-risks-underpin-usd-202609070419",
-     "zeit": "2026-09-07T04:19:03.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 72
     }
    ]
   }
