@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-07T20:54:27.625Z",
+ "updated": "2026-09-07T20:58:01.329Z",
  "regime": "policy",
- "count": 230,
+ "count": 223,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
   "Reuters: 0 Eintraege (Abruf gelang)",
@@ -169,7 +169,7 @@
   {
    "id": "Guardian:Australia politics live: John Howard warns about limiting immigration; Barnaby Joyce says super plan to have ‘minute’ inflationary effect",
    "title": "Australia politics live: John Howard warns about limiting immigration; Barnaby Joyce says super plan to have ‘minute’ inflationary effect",
-   "text": "Follow the day’s news live The former prime minister John Howard has warned political parties against banning migration from certain countries as the debate over Australia’s immigration settings continues . The 87-year-old was in Canberra last night for an hour-long chat with Australian National University national security professor Rory Medcalf before the 25th anniversary of the September 11 terrorist attacks in the US. But I think the mood is overwhelming that we have to try very hard to stop",
+   "text": "Follow the day’s news live Former prime minister, John Howard , has warned political parties against banning migration from certain countries as the debate over Australia’s immigration settings continues . The 87-year-old was in Canberra last night for an hour-long chat with Australian National University national security professor, Rory Medcalf , ahead of the 25th anniversary of the September 11 terrorist attacks in the US. But I think the mood is overwhelming that we have to try very hard to ",
    "source": "Guardian",
    "url": "https://www.theguardian.com/australia-news/live/2026/sep/08/barnaby-joyce-one-nation-superannuation-plan-john-howard-immigration-anthony-albanese-labor-angus-taylor-coalition-pauline-hanson-ntwnfb",
    "date": "2026-09-07T20:46:41.000Z",
@@ -305,7 +305,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 52,
+   "priority": 51,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -934,7 +934,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -972,7 +972,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -988,11 +988,10 @@
    "titleDe": "Juristische Veteranen führen den Kampf gegen Trumps \"totalen Angriff auf die Demokratie\" an"
   },
   {
-   "id": "Al Jazeera:Cuba says no negotiations with US despite ‘genocidal’ blockade",
+   "id": "Al Jazeera (GN):Cuba says no negotiations with US despite ‘genocidal’ blockade",
    "title": "Cuba says no negotiations with US despite ‘genocidal’ blockade",
-   "text": "Cuba reports record losses from the US embargo as foreign minister describes months of punishing blackouts.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/economy/2026/9/7/cuba-says-no-negotiations-with-us-despite-genocidal-blockade?traffic_source=rss",
+   "source": "Al Jazeera (GN)",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQR1BqQW5Kc3h6Nk84RXJrVlBOLURseEFjaVBtbF9CNFVYTXdCUVA2OUlMWGNhaG84VWwzaUREOXc4OHU4WkZwa0tPUlJKaTJYbGRvTWs0dHRzMmdhN0FvSUlsWGtlRGNObjhBZThnVDB2SzkzaGtuYXRyemhSSFJPOW00a2ZBVVRTZjB2U1lZOWtrYUtHcXlhbFlXTDZSVDV2c3FkWW5B0gGrAUFVX3lxTE1jTVFzTGowTVJ0V1YwaXBPUjZsMTFsRVdhbFMtSG1xX2ZteVNGR0M1Mms0TXJISEoyako0YnplZEJJY0hVY1JnMEdiMlJYcGdtQ3JLQ2FSQ0FrRXNTMTRPTFFqZUJ6NVVGMU1EUEg3ZGpDZmVjZW9TcjdlbzZtMUxIekVnTlV5dkRtcGFfMnRQclRHSXV4X1lwOHhSUzVPdGxQRmlaV1VPcnlhOA?oc=5",
    "date": "2026-09-07T19:58:48.000Z",
    "tags": [
     "Weltlage"
@@ -1020,7 +1019,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
-    "Al Jazeera (GN)"
+    "Al Jazeera"
    ],
    "bestaetigt": 2,
    "haeuser": 1,
@@ -1099,10 +1098,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "Guardian Wirtschaft"
-   ],
-   "bestaetigt": 2,
+   "alsoIn": [],
+   "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Bundesbehörden suchen die Ursache des Amazon-Frachtflugzeugabsturzes, bei dem fünf Menschen starben"
@@ -1177,10 +1174,8 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "Al Jazeera (GN)"
-   ],
-   "bestaetigt": 2,
+   "alsoIn": [],
+   "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "UK-Regierung lehnt Sklavenentschädigungen ab, Jamaika fordert den König zum Handeln auf"
@@ -1462,11 +1457,11 @@
    "titleDe": "Syrien: Reaktor aus der Ära Assad für Atomwaffen konfiguriert, sagt IAEA"
   },
   {
-   "id": "Al Jazeera (GN):Moment shop worker dives into traffic to save child - Al Jazeera",
-   "title": "Moment shop worker dives into traffic to save child - Al Jazeera",
-   "text": "Moment shop worker dives into traffic to save child - Al Jazeera &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRkhBR2xJX0xadExmbVF6Rm8wVTdmS3ZWdS1MaTRPNUlmck54RnBVaHVhR0FMRnVOTUF1bmVoanJXYW1ya2xIb3FjcXdTTFRFNWNkVGpMUjdyQnREY2FhR1hXb20talVhaFM1aWNyVTZzSXFjRy1CcUJySjdmSUl4M2ZIejhxWXFBZnhELUc3amVKTUJYYW80V0hjdHZmT0d6U3lDelN5VU1zdFF2WWg2RWw1YnZiRUNkQmpxRA?oc=5",
+   "id": "Al Jazeera:Moment shop worker dives into traffic to save child",
+   "title": "Moment shop worker dives into traffic to save child",
+   "text": "A shop worker has been hailed a ‘hero’ after CCTV video showed him diving into traffic to save a child",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/moment-shop-worker-dives-into-traffic-to-save-child?traffic_source=rss",
    "date": "2026-09-07T19:27:57.000Z",
    "tags": [
     "Weltlage"
@@ -1484,7 +1479,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1493,13 +1488,11 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "Al Jazeera"
-   ],
-   "bestaetigt": 2,
+   "alsoIn": [],
+   "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Moment-Shop-Mitarbeiter stürzt in den Verkehr, um Kind zu retten – Al Jazeera"
+   "titleDe": "Moment: Einzelhandelsmitarbeiter taucht in den Verkehr ein, um Kind zu retten"
   },
   {
    "id": "FXStreet:Gold bulls flinch as NFP puts Fed hawks back in the driver’s seat",
@@ -2117,7 +2110,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2356,7 +2349,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 64,
+   "priority": 63,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -2979,7 +2972,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 67,
+   "priority": 66,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -3020,7 +3013,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3100,7 +3093,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3140,7 +3133,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3437,44 +3430,6 @@
    "titleDe": "IAF zeigt Jacques Tatis „Playtime“"
   },
   {
-   "id": "Guardian Wirtschaft:Jonathan Reynolds is right, Jaguar Land Rover doesn’t warrant use of public money | Nils Pratley",
-   "title": "Jonathan Reynolds is right, Jaguar Land Rover doesn’t warrant use of public money | Nils Pratley",
-   "text": "The 4,000 job cuts cannot be compared to a VW-like existential crisis and, as JLR presents them, are about staying competitive Jaguar Land Rover confirms plan to cut 4,000 jobs over two years A default reaction to news of job losses in the UK car industry is to ask what the government is going to do about it. So, well done business secretary Jonathan Reynolds for giving the correct response to the question of whether public money will be used to support Jaguar Land Rover , which on Monday confir",
-   "source": "Guardian Wirtschaft",
-   "url": "https://www.theguardian.com/business/nils-pratley-on-finance/2026/sep/07/jaguar-land-rover-job-losses-financial-state-assistance",
-   "date": "2026-09-07T17:22:51.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Jonathan Reynolds hat recht, Jaguar Land Rover rechtfertigt keine öffentliche Finanzierung | Nils Pratley"
-  },
-  {
    "id": "SCMP:King Charles clarifies status of Harry and Meghan after their return to UK",
    "title": "King Charles clarifies status of Harry and Meghan after their return to UK",
    "text": "Britain’s King Charles has reiterated that Prince Harry and his wife, Meghan, remain non-working members of the royal family following their return to the United Kingdom. A letter sent on behalf of the king to senior government officials said the couple will continue to refrain from using their royal titles as they have done since stepping back from official royal duties in 2020. Any charity work the couple undertakes will be carried out in a private capacity and operational security decisions..",
@@ -3577,7 +3532,7 @@
    "whyEn": "Directly crypto-negative news. (signals: liquidations)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 55,
+   "priority": 54,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -3694,7 +3649,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3909,44 +3864,6 @@
    "titleDe": "Syrischer Reaktor hätte zur Fertigstellung für Atomwaffen genutzt werden können, sagt UN"
   },
   {
-   "id": "Guardian Wirtschaft:Painful, unconvincing and boring: welcome to John Healey’s late show | John Crace",
-   "title": "Painful, unconvincing and boring: welcome to John Healey’s late show | John Crace",
-   "text": "Chancellor has the look of a man born to announce the UK is under nuclear attack Meet the new chancellor. Same as the old chancellor. Although, on reflection, that might be a little hard on Rachel Reeves. At least Rachel had given the job some thought before she got it. She had had some experience working at the Bank of England and, whether you liked it or not, she had some kind of plan. John Healey? Not so much. No one can remember him ever having given the economy much thought until Andy Burnh",
-   "source": "Guardian Wirtschaft",
-   "url": "https://www.theguardian.com/politics/2026/sep/07/john-healey-sketch-chancellor-john-crace",
-   "date": "2026-09-07T16:30:50.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 25,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Schmerzhaft, unüberzeugend und langweilig: Willkommen bei John Healeys Spätabendshow | John Crace"
-  },
-  {
    "id": "OilPrice:China Halts New Battery Storage Plant Approvals",
    "title": "China Halts New Battery Storage Plant Approvals",
    "text": "China has paused approvals for new battery storage factories amid a review of existing and planned capacity, Chinese financial news outlet Cailianshe reported this weekend, citing industry sources. The temporary suspension of approvals of plants that have not started construction yet comes amid growing concerns about overcapacity in the sector in the world’s biggest manufacturer of batteries for energy storage. China is the world’s biggest market for electric vehicles and a top player in battery",
@@ -4083,7 +4000,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4121,7 +4038,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4160,7 +4077,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4952,7 +4869,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4990,7 +4907,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5044,44 +4961,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "XRP-Ledger erhält diesen Monat wichtige Änderungen"
-  },
-  {
-   "id": "Guardian Wirtschaft:‘Mistrust’ of Palantir may affect NHS research, says health minister",
-   "title": "‘Mistrust’ of Palantir may affect NHS research, says health minister",
-   "text": "James Frith says patients may be less willing to share data as new figures show a rise in opt-outs Concern is being raised about Palantir’s work with the NHS as new figures showed tens of thousands of patients have withdrawn their data from use in research projects. James Frith, the health innovation minister, said he was worried about “mistrust” of the US defence and health tech company and “the impact it could have on people’s willingness to share data with the NHS”. Continue reading...",
-   "source": "Guardian Wirtschaft",
-   "url": "https://www.theguardian.com/society/2026/sep/07/mistrust-of-ai-palantir-may-affect-nhs-research",
-   "date": "2026-09-07T15:33:44.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 23,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "„Misstrauen“ gegenüber Palantir könnte NHS-Forschung beeinträchtigen, sagt Gesundheitsminister"
   },
   {
    "id": "U.Today:Shiba Inu Prints Bullish Signal With 40 Billion SHIB Moved off Exchanges",
@@ -5238,44 +5117,6 @@
    "titleDe": "Stanleys Labor Day Sale endet heute mit bis zu 40 % Rabatt auf Becher, Flaschen und Tassen"
   },
   {
-   "id": "Guardian Wirtschaft:French winemakers forecast 30-year low harvest after severe drought and heat",
-   "title": "French winemakers forecast 30-year low harvest after severe drought and heat",
-   "text": "Estimates suggest drop in production with vineyards also concerned ‘smoke taint’ from wildfires may affect quality French vineyards hit by severe drought and heatwaves are expected to report a 30-year low in wine production after the country’s hottest ever recorded summer, according to the agriculture ministry. Initial estimates suggest winemakers will produce just under 34m hectolitres from this year’s harvest: a drop of 6% on last year, and 17% less than ‌the 2021-2025 average. Continue readin",
-   "source": "Guardian Wirtschaft",
-   "url": "https://www.theguardian.com/world/2026/sep/07/french-winemakers-forecast-30-year-low-harvest-after-severe-drought-and-heat",
-   "date": "2026-09-07T15:10:51.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 23,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": "Kursprognose",
-   "eventTypeEn": "Price prediction",
-   "scope": "project",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Französische Winzer prognostizieren 30 Jahre niedrige Ernte nach starker Dürre und Hitze"
-  },
-  {
    "id": "Decrypt:Ethereum Proposal Would Let Users Pay Gas Without Holding ETH",
    "title": "Ethereum Proposal Would Let Users Pay Gas Without Holding ETH",
    "text": "EIP-8141 has been a draft since January, and its authors pitch it first as a defense against quantum computers.",
@@ -5338,7 +5179,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 53,
+   "priority": 52,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -5376,7 +5217,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5506,44 +5347,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Tausende versammeln sich in Serbien zur Beerdigung des „Rächers von Bosnien“ Ratko Mladić"
-  },
-  {
-   "id": "Guardian Wirtschaft:Architect of UK’s AI policy quits after Anthropic conflict of interest concerns",
-   "title": "Architect of UK’s AI policy quits after Anthropic conflict of interest concerns",
-   "text": "Matt Clifford forced to stand down amid disquiet from senior MPs over his new full-time job at AI company The chair of the UK government’s “moonshot” science and technology research unit has been forced to stand down after taking a job with the San Francisco AI firm Anthropic, in a move senior MPs called a “clear conflict of interest”. Matt Clifford announced last week that he was taking a full-time job working for the company behind the Claude chatbot, “leading its engagement” with governments ",
-   "source": "Guardian Wirtschaft",
-   "url": "https://www.theguardian.com/technology/2026/sep/07/architect-uk-ai-policy-quits-anthropic-conflict-of-interest-concerns",
-   "date": "2026-09-07T14:42:24.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 52,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Architekt der britischen KI-Politik tritt zurück nach Interessenkonflikt bei Anthropic"
   },
   {
    "id": "OilPrice:American and African Crudes Soar as China's Oil Imports Rebound",
@@ -5960,7 +5763,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6496,44 +6299,6 @@
    "titleDe": "„Bitte lass dir das nicht passieren“: Meine beste Freundin ist ohne Testament gestorben — ihre nachlässige Familie bekommt alles"
   },
   {
-   "id": "Guardian Wirtschaft:John Healey backs growth but says Labour must be honest on spending",
-   "title": "John Healey backs growth but says Labour must be honest on spending",
-   "text": "Chancellor ducks questions on whether he will have to raise taxes but says he will stick firmly to fiscal rules John Healey has said boosting economic growth will be his defining mission as chancellor as he warned Labour had to “be honest” about the need to control public spending at next month’s budget. In his first big speech since taking the job in July, Healey said the top priority for his 28 October budget would be to support stronger growth across the UK while sticking firmly to the govern",
-   "source": "Guardian Wirtschaft",
-   "url": "https://www.theguardian.com/business/2026/sep/07/john-healey-growth-labour-spending-raise-taxes",
-   "date": "2026-09-07T12:54:05.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 19,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "John Healey unterstützt das Wachstum, sagt aber, dass Labour bei den Ausgaben ehrlich sein muss"
-  },
-  {
    "id": "Mehr News:International book fair in Sanandaj",
    "title": "International book fair in Sanandaj",
    "text": "TEHRAN, Sep. 07 (MNA) – The 10th International Book Fair of Kordistan Province began with the participation of 300 publishers from across the country and publishers from the Kurdistan Region of Iraq.",
@@ -6572,44 +6337,6 @@
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Internationale Buchmesse in Sanandaj"
-  },
-  {
-   "id": "Guardian Wirtschaft:Next overturns equal pay ruling that raised basic wages for shop staff",
-   "title": "Next overturns equal pay ruling that raised basic wages for shop staff",
-   "text": "Retailer wins appeal against 2024 decision forcing it to pay shop workers the same as warehouse employees The UK retailer Next has overturned a 2024 court ruling forcing it to pay its shop staff the same higher basic pay rates as its warehouse workers under equal pay rules. The chain, led by the Conservative peer Simon Wolfson, said it had “won a landmark victory in its ongoing equal pay litigation”. It has succeeded in its appeal to the employment appeal tribunal “on the key issue of basic pay”",
-   "source": "Guardian Wirtschaft",
-   "url": "https://www.theguardian.com/business/2026/sep/07/next-overturns-equal-pay-ruling-that-raised-basic-wages-for-shop-staff",
-   "date": "2026-09-07T12:45:59.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 19,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Next kippt das Entgeltgleichheitsurteil, das die Grundlöhne für das Geschäftspersonal erhöht hat"
   },
   {
    "id": "Decrypt:Irish Gangs Are Renting Private Vaults to Hide Crypto Keys",
@@ -6752,7 +6479,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7169,11 +6896,11 @@
    "titleDe": "Ölpreise steigen, nachdem Berichte über saudische Aramco-Raffinerie von Houthi-Rebellen getroffen wurden"
   },
   {
-   "id": "Guardian Wirtschaft:Jaguar Land Rover confirms plan to cut 4,000 jobs over two years",
-   "title": "Jaguar Land Rover confirms plan to cut 4,000 jobs over two years",
-   "text": "Decision by carmaker, which is battling Trump tariffs and fallout from cyber-attack, labelled a ‘body blow for workers’ Nils Pratley: Jonathan Reynolds is right, Jaguar Land Rover doesn’t warrant use of public money Jaguar Land Rover has announced thousands of job cuts in a “body blow for workers” as it grapples with tough trading conditions, Donald Trump’s tariff wars and the fallout from a cyber-attack. Britain’s largest carmaker, which is owned by the Indian conglomerate Tata, confirmed the a",
-   "source": "Guardian Wirtschaft",
-   "url": "https://www.theguardian.com/business/2026/sep/07/jaguar-land-rover-job-trump-tariffs",
+   "id": "CNBC World:Jaguar Land Rover to cut 4,000 jobs over two years in major cost-saving drive",
+   "title": "Jaguar Land Rover to cut 4,000 jobs over two years in major cost-saving drive",
+   "text": "The luxury carmaker is targeting £1.7 billion ($2.3 billion) in savings as it faces Chinese competition, a cyberattack and U.S. tariffs.",
+   "source": "CNBC World",
+   "url": "https://www.cnbc.com/2026/09/07/jaguar-land-rover-jlr-job-cuts-autos.html",
    "date": "2026-09-07T11:50:43.000Z",
    "tags": [
     "Weltwirtschaft"
@@ -7191,7 +6918,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 17,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7201,13 +6928,12 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
-    "CNBC",
-    "CNBC World"
+    "CNBC"
    ],
-   "bestaetigt": 3,
-   "haeuser": 2,
-   "unabhaengig": 2,
-   "titleDe": "Jaguar Land Rover bestätigt Plan zum Abbau von 4.000 Arbeitsplätzen innerhalb von zwei Jahren"
+   "bestaetigt": 2,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Jaguar Land Rover schneidet in zwei Jahren 4.000 Arbeitsplätze als Teil einer großen Kostensenkungsmaßnahme"
   },
   {
    "id": "MarketWatch:Why the launch of OpenAI’s latest Astra model reignited the memory chip trade",
@@ -7288,44 +7014,6 @@
    "titleDe": "Adidas entschuldigt sich nach Kampagne mit ehemaligen israelischen Soldaten, die Boykottaufrufe auslösen"
   },
   {
-   "id": "Guardian Wirtschaft:UK house prices fall for first time since 2023, led by London and south-east",
-   "title": "UK house prices fall for first time since 2023, led by London and south-east",
-   "text": "Average property cost £298,468 in August, down by 0.4% year on year amid higher interest rates, says Lloyds UK house prices have fallen for the first time in almost three years, as prospective buyers were squeezed by higher mortgage rates, geopolitical uncertainty and stretched affordability. Prices have dropped by 0.4% compared with a year ago, the first year-on-year decrease since November 2023, according to the lender Lloyds. That came in below expectations of a 0.2% annual rise, according to",
-   "source": "Guardian Wirtschaft",
-   "url": "https://www.theguardian.com/money/2026/sep/07/uk-house-prices-fall-august-interest-rates-lloyds",
-   "date": "2026-09-07T11:20:36.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 17,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "UK-Immobilienpreise fallen erstmals seit 2023, angeführt von London und Südosten"
-  },
-  {
    "id": "BBC World:Tanzanian President Samia's husband dies in hospital",
    "title": "Tanzanian President Samia's husband dies in hospital",
    "text": "Hafidh Ameir Hassan kept a low profile and was rarely seen in public with the president.",
@@ -7385,7 +7073,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 57,
+   "priority": 56,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -7401,6 +7089,44 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Bitcoin blinkt weniger als Gold, wenn sich die Treasury-Renditen bewegen"
+  },
+  {
+   "id": "Guardian Wirtschaft:‘The most anti-union president’: how Trump turned his back on US workers",
+   "title": "‘The most anti-union president’: how Trump turned his back on US workers",
+   "text": "Labor experts stunned at how anti-worker Trump has been with actions since last Labor Day that have hurt unions Donald Trump has repeatedly vowed to champion US workers. Shortly before Labor Day last year, he said: “Every policy of the Trump administration is designed to lift up the American worker and “promote great-paying blue-collar jobs”. But in the year since last Labor Day, Trump has taken many actions that have hurt US workers and unions, with some labor experts saying they’ve been stunne",
+   "source": "Guardian Wirtschaft",
+   "url": "https://www.theguardian.com/us-news/2026/sep/07/trump-workers-labor-union",
+   "date": "2026-09-07T11:00:49.000Z",
+   "tags": [
+    "Weltwirtschaft"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 29,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "\"Der gewerkschaftsfeindlichste Präsident\": Wie Trump den US-Arbeitern den Rücken kehrte"
   },
   {
    "id": "U.Today:SHIB Clears Key Japan Hurdle as Massive Market Door Opens",
@@ -7625,7 +7351,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 16,
+   "priority": 15,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -8026,7 +7752,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 15,
+   "priority": 14,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -8634,7 +8360,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 11,
+   "priority": 10,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -8994,7 +8720,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -9087,12 +8813,11 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 11,
+  "uebersetzt": 0,
   "fehler": null
  },
  "rubriken": {
   "Sport": 2,
-  "Unsinn": 6,
-  "Unterhaltung": 1
+  "Unsinn": 7
  }
 }
