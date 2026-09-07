@@ -1,13 +1,49 @@
 {
- "updated": "2026-09-07T01:19:06.913Z",
+ "updated": "2026-09-07T01:25:30.627Z",
  "regime": "policy",
- "count": 154,
+ "count": 166,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
-  "TASS: fetch failed",
   "Times of Israel: 403 https://www.timesofisrael.com/feed/"
  ],
  "items": [
+  {
+   "id": "Reuters:Dollar gets little lift from boost in Fed hike expectations",
+   "title": "Dollar gets little lift from boost in Fed hike expectations",
+   "text": "Dollar gets little lift from boost in Fed hike expectations &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQd0p6Q2VESkl4T251Z2lzT0UyVXRwRW1MWHRxeHlTV3hISkZPM3R0c1J1ZVljMnRlOEdHNHFpcHdUUFllby1JbzhFWm9KdXc2ZXZuYW9URVQzSExpMGtzeExtRXVmd3IwZ2F6ZUFXZmVzZUtObkNSQy1ZQ1d5SzhqM2lhYm9nbm1vankxRk9ubXB1RHBLWTNOeVFYTlFNYnlGeVhNdEFqQXI2UQ?oc=5",
+   "date": "2026-09-07T01:20:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "fed",
+   "categoryLabel": "Notenbank",
+   "priority": 72,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "medium",
+   "duration": "swing",
+   "eventType": "Notenbank",
+   "eventTypeEn": "Central bank",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 1,
+   "titleDe": "Der Dollar erhält kaum Auftrieb durch gestiegene Erwartungen an Fed-Hike"
+  },
   {
    "id": "FXStreet:PBOC sets USD/CNY reference rate at 6.7795 vs. 6.7787 previous",
    "title": "PBOC sets USD/CNY reference rate at 6.7795 vs. 6.7787 previous",
@@ -42,6 +78,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "PBOC legt USD/CNY-Referenzkurs bei 6,7795 fest, gegenüber 6,7787 zuvor"
   },
   {
@@ -78,6 +115,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Nepals 5 Milliarden‑US‑Dollar‑Flutschäden stellen den UN-Klimafonds auf die Probe"
   },
   {
@@ -107,7 +145,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 68,
+   "priority": 67,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -118,6 +156,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "WTI steigt auf fast 90,00 USD durch eskalierenden US-Iran-Konflikt"
   },
   {
@@ -154,6 +193,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Alte Wurzeln: China-Pionierin der Sexualtherapie warnt vor dem Aufstieg des Phänomens „Beziehungsblindheit“"
   },
   {
@@ -179,7 +219,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -190,6 +230,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Asiatische Aktien steigen, andere bleiben vorsichtig, während Öl steigt"
   },
   {
@@ -230,6 +271,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Der japanische Yen konsolidiert nahe August-Hochs gegenüber dem USD, während BoJ- und Fed-Hawkish-Wetten im Widerspruch stehen"
   },
   {
@@ -255,7 +297,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -266,6 +308,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Die rechtsextreme AfD dankt Elon Musk, Frankreich warnt, dass ein Sieg bei der Landeswahl ein „ernstes Ereignis“ sei"
   },
   {
@@ -291,7 +334,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -302,6 +345,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Sinkende Südkoreanische Korallen sorgen für Besorgnis bei Tauchern, Wissenschaftler untersuchen den Klimawandel"
   },
   {
@@ -342,6 +386,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Schiffsspritzzusammenbruch droht, da Raffinerien durch den Krieg auf andere Produkte setzen"
   },
   {
@@ -378,6 +423,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Hongkongs Yuan‑Pool wächst. Kann er Liquidität in globale Nachfrage verwandeln"
   },
   {
@@ -418,7 +464,47 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Britisches Pfund steigt, obwohl US-Dollar trotz steigender Fed‑Zinserwartungen schwächer wird"
+  },
+  {
+   "id": "TASS:Armed man attempts to attack Democratic candidate for governor of Ohio — TV",
+   "title": "Armed man attempts to attack Democratic candidate for governor of Ohio — TV",
+   "text": "The assailant rushed toward Amy Acton and injured several people at the event",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/emergencies/2183433",
+   "date": "2026-09-07T00:50:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 35,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "Bewaffneter versucht, demokratischen Kandidaten für das Ohio‑Amt zu attackieren – TV"
   },
   {
    "id": "Al Jazeera:Serbia’s Red Star Belgrade honour Ratko Mladic with tifo",
@@ -454,6 +540,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Serbiens Red Star Belgrade ehrt Ratko Mladic mit Tifo"
   },
   {
@@ -490,6 +577,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Australien live: Chalmers sagt, nächste Wahl sei ein „Referendum über Superannuation“; neue NSW-Gesetze gegen organisierte Kriminalität"
   },
   {
@@ -526,7 +614,51 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Euro bleibt über 1,1600 trotz starkem US-Arbeitsmarktdaten, Händler verfolgen ECB-Zinsentscheidung"
+  },
+  {
+   "id": "TASS:States with anti-Russian sanctions taking part in EEF underscore its significance — envoy",
+   "title": "States with anti-Russian sanctions taking part in EEF underscore its significance — envoy",
+   "text": "These countries realize that it's impossible to imagine a world without Russia or the Arctic today, Deputy Prime Minister and plenipotentiary envoy in the Far Eastern Federal District Yury Trutnev said",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/politics/2183431",
+   "date": "2026-09-07T00:38:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Handelskonflikt"
+   ],
+   "scores": {
+    "crypto": -0.405,
+    "stocks": -0.405,
+    "gold": 0.203,
+    "usd": 0.135
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Handelskonflikt)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 37,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "Staaten mit anti‑Russischen Sanktionen nehmen an EEF teil, was dessen Bedeutung unterstreicht – Botschafter"
   },
   {
    "id": "SCMP:European chamber chief in Hong Kong heads to Brussels to ‘reset city’s image’",
@@ -562,6 +694,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Europäische Kammerchef in Hongkong reist nach Brüssel, um das Image der Stadt neu zu gestalten"
   },
   {
@@ -587,7 +720,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -598,6 +731,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Japan verzeichnet größten Einmalabfall der Außenreserven nach Rekordintervention"
   },
   {
@@ -638,6 +772,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Takaichi's Reflationsberater prognostiziert Zinserhöhung der Bank of Japan im September"
   },
   {
@@ -667,7 +802,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: retaliation threat)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 94,
+   "priority": 93,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "high",
@@ -678,6 +813,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Nordkorea setzt Kriegsschiff ein, das „zur Vernichtung von Vergeltungsangriffen“ fähig ist"
   },
   {
@@ -754,6 +890,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "„Weiße Hüte“ nehmen 4000 BTC von Liquid, ETFs verzeichnen beste Zuflüsse 2026: Hodler’s Digest"
   },
   {
@@ -790,6 +927,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Österreichs islamischer Kopftuchverbot bleibt in Kraft, während Kinder unter 14 wieder zur Schule gehen"
   },
   {
@@ -830,6 +968,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "XRP, Solana (SOL), Hyperliquid (HYPE) und Bitcoin (BTC) Preisanalyse für 7. September: Unkonventionelles Marktbild"
   },
   {
@@ -866,6 +1005,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "China erreicht Meilenstein beim Tunnelbau für Zentralasiatische Eisenbahn, die Russland umgeht"
   },
   {
@@ -902,7 +1042,51 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Nuklearabfallplan für japanische Kurortstadt löst Widerstand aus: 'Kein Problem für uns'"
+  },
+  {
+   "id": "TASS:BSW says it shares common ground with AfD on issues related to Russia, sanctions",
+   "title": "BSW says it shares common ground with AfD on issues related to Russia, sanctions",
+   "text": "According to Thomas Schulze, like the AfD, the BSW advocates for \"affordable energy\"",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183429",
+   "date": "2026-09-07T00:00:01.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Handelskonflikt"
+   ],
+   "scores": {
+    "crypto": -0.081,
+    "stocks": -0.081,
+    "gold": 0.041,
+    "usd": 0.027
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Handelskonflikt)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 61,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "BSW sagt, es teile mit der AfD gemeinsame Standpunkte zu Russland und Sanktionen"
   },
   {
    "id": "Al Jazeera:Iran war live: Tehran to announce new Hormuz shipping route in coming days",
@@ -931,7 +1115,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 66,
+   "priority": 65,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -942,6 +1126,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Iran im Live-Update: Teheran kündigt in den kommenden Tagen neue Hormus-Schifffahrtsroute an"
   },
   {
@@ -982,6 +1167,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "China steckt 54 Milliarden Dollar in den Finanzsektor, um die Angst vor schleppendem Wachstum zu mildern"
   },
   {
@@ -1018,6 +1204,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "OPEC+ bleibt bei unveränderten Ölproduktionsrichtlinien für Oktober"
   },
   {
@@ -1054,6 +1241,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Australischer Dollar steigt über 0,7200 trotz starkem US-NFP"
   },
   {
@@ -1092,6 +1280,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Liquid-Sidechain pausiert, nachdem 3.998 BTC aus dem Federation-Wallet abgezogen wurden"
   },
   {
@@ -1117,7 +1306,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1128,6 +1317,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Freiwillige riskieren ihr Leben, um Indonesiens Waldbrand-„Kohlenstoffbomben“ zu entschärfen"
   },
   {
@@ -1164,6 +1354,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Indiens hochriskantes Prüfungssystem steht vor einem Vertrauenskrise"
   },
   {
@@ -1200,6 +1391,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "„Gigantisches Raumschiff“: Universitätscampus Bristols Flaggschiff im Wert von 500 Mio £ eröffnet"
   },
   {
@@ -1236,7 +1428,47 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Russland überarbeitet seine Energiekarte durch die Arktis"
+  },
+  {
+   "id": "TASS:Trump says he earns hundreds of billions of dollars from stocks for US, not for himself",
+   "title": "Trump says he earns hundreds of billions of dollars from stocks for US, not for himself",
+   "text": "The US leader emphasized that Democrats are criticizing him for this",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/economy/2183425",
+   "date": "2026-09-06T22:52:01.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 41,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "Trump erklärt, er verdiene Hunderte Milliarden Dollar aus Aktien für die USA, nicht für sich selbst"
   },
   {
    "id": "Guardian:Assailant lunged at Democratic candidate for Ohio governor, campaign says",
@@ -1272,6 +1504,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Angreifer stürmte bei Ohio gegen den demokratischen Kandidaten für den Gouverneur, sagt Kampagne"
   },
   {
@@ -1297,7 +1530,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1308,7 +1541,86 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Iran, US-Transportschiffe angegriffen, Teheran kündigt 'verbotenen Zone' an"
+  },
+  {
+   "id": "TASS:British citizens clash with police in Portsmouth over arrival of migrants — newspaper",
+   "title": "British citizens clash with police in Portsmouth over arrival of migrants — newspaper",
+   "text": "On September 6, illegal migrants were brought to Portsmouth from a vessel intercepted by UK authorities in the English Channel",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/emergencies/2183423",
+   "date": "2026-09-06T22:32:25.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 27,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "Britische Staatsbürger streiten mit Polizei in Portsmouth über Ankunft von Migranten – Zeitung"
+  },
+  {
+   "id": "TASS:Preliminary results of German elections humiliate Merz’s ruling party — Dmitriev",
+   "title": "Preliminary results of German elections humiliate Merz’s ruling party — Dmitriev",
+   "text": "The AfD's historic win humiliates the narrow-mindedness of the discredited German ruling coalition, Russian Direct Investment Fund CEO Kirill Dmitriev said",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/politics/2183421",
+   "date": "2026-09-06T22:10:01.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 27,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "Vorläufige Ergebnisse der deutschen Wahlen demütigen Merz’ Regierungspartei – Dmitriev"
   },
   {
    "id": "SCMP:Economist Lan Xiaohuan on the balancing act needed to boost China’s consumption",
@@ -1344,6 +1656,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Wirtschaftswissenschaftler Lan Xiaohuan zum Ausgleich, der Chinas Konsum ankurbeln soll"
   },
   {
@@ -1380,6 +1693,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Wichtigste Rohstoffe für die Energiewende bleiben aus"
   },
   {
@@ -1416,7 +1730,47 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Top 3 Meme-Coins, die in der zweiten Septemberwoche im Blick bleiben"
+  },
+  {
+   "id": "TASS:UK authorities intercept boat with 140 undocumented migrants in English Channel — TV",
+   "title": "UK authorities intercept boat with 140 undocumented migrants in English Channel — TV",
+   "text": "According to the TV channel, the vessel was heading toward the coast of the English county of Hampshire",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183419",
+   "date": "2026-09-06T21:45:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 26,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "UK-Behörden fangen Boot mit 140 dokumentlosen Migranten im Ärmelkanal – TV"
   },
   {
    "id": "BeInCrypto:Nvidia CEO Jensen Huang Says AGI Has Arrived With OpenAI's GPT-6 Astra",
@@ -1452,6 +1806,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Nvidia-CEO Jensen Huang erklärt, dass AGI mit OpenAI’s GPT‑6 Astra eingetroffen ist"
   },
   {
@@ -1488,6 +1843,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Hunderte rechtsextreme Protestierende strömen nach Portsmouth, nachdem ein kleines Boot ankam"
   },
   {
@@ -1523,6 +1879,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Die rechtsextreme AfD in Deutschland steht kurz vor einer Mehrheitsgewinne im Osten"
   },
   {
@@ -1559,6 +1916,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "In die USA reisen, um die Lücke in den US-China-Beziehungen zu schließen"
   },
   {
@@ -1595,7 +1953,46 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "„Ich gebe ihm derzeit 1.000 $ pro Monat“: Mein Enkel hat eine schwere psychische Erkrankung. Wie schütze ich ihn, nachdem ich weg bin?"
+  },
+  {
+   "id": "TASS:Death toll from shipwreck off northern coast of Cyprus up to 14",
+   "title": "Death toll from shipwreck off northern coast of Cyprus up to 14",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/emergencies/2183417",
+   "date": "2026-09-06T21:28:26.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 26,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "Todeszahl bei Schiffsunglück vor der nördlichen Küste Zyperns auf bis zu 14"
   },
   {
    "id": "The Block:Liquid Network pauses after purported ‘white-hat’ hackers withdraw $320 million in bitcoin",
@@ -1633,6 +2030,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Liquid Network pausiert nach angeblichem Rückzug von 320 Millionen USD in Bitcoin durch „White‑Hat“-Hacker"
   },
   {
@@ -1669,6 +2067,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Mindestens 10 Menschen bei einer Feuerwerksexplosion im zentralen Mexiko während eines Festivals getötet"
   },
   {
@@ -1705,6 +2104,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Amazon-Prime-Flugzeug überschreitet die Start- und Landebahn am Flughafen Miami"
   },
   {
@@ -1741,6 +2141,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Ölkonzerne streben bei Arbeitskonflikten mehr Verhandlungsmacht an"
   },
   {
@@ -1777,7 +2178,47 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "\"Es ist nicht fair\": Mein Zwillingsbruder und ich wurden von unseren Eltern verlassen. Kann ich ihn dazu bringen, seinen Anteil an Steuern und Unterhalt zu zahlen?"
+  },
+  {
+   "id": "TASS:UN welcomes any efforts toward talks between Russia, Ukraine",
+   "title": "UN welcomes any efforts toward talks between Russia, Ukraine",
+   "text": "Thus Deputy Spokesperson for the UN Secretary General Farhan Haq commented on the visits by the US negotiators Steve Witkoff and Jared Kushner to Moscow and Kiev",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183415",
+   "date": "2026-09-06T20:55:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 55,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "UN begrüßt jegliche Bemühungen um Gespräche zwischen Russland und der Ukraine"
   },
   {
    "id": "BBC World:Peace talks rich in symbolism but fundamental differences between Russia and Ukraine remain",
@@ -1813,6 +2254,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Friedensgespräche reich an Symbolik, aber grundlegende Unterschiede zwischen Russland und der Ukraine bleiben"
   },
   {
@@ -1842,7 +2284,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -1853,6 +2295,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Kann die AfD seit dem Zweiten Weltkrieg die erste rechtsextreme Landesregierung in Deutschland bilden?"
   },
   {
@@ -1882,7 +2325,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 51,
+   "priority": 50,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -1895,6 +2338,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "STONK steigt um 250 % auf 140 Millionen $ Marktkapitalisierung, während das Solana-Launchpad StonkFun das Volumen von Raydium und Jupiter anzieht"
   },
   {
@@ -1931,7 +2375,47 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "10 Tote, 64 Verletzte bei Feuerwerksexplosion auf mexikanischem Kirchenfest"
+  },
+  {
+   "id": "TASS:Ex-Pentagon chief anticipates US-Iran standoff to continues for six months more",
+   "title": "Ex-Pentagon chief anticipates US-Iran standoff to continues for six months more",
+   "text": "Leon Panetta noted that there are very few options available to bring this war to an end",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2183413",
+   "date": "2026-09-06T20:46:00.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 55,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "Ehemaliger Pentagon-Chef erwartet, dass der US-Iran-Konflikt noch sechs Monate weitergeht"
   },
   {
    "id": "BeInCrypto:Bitcoin Is Backed by Nothing? Peter Schiff Revives Old War",
@@ -1973,6 +2457,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Bitcoin wird von nichts gestützt? Peter Schiff belebt alte Kriegsgeschichte"
   },
   {
@@ -1998,7 +2483,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2009,6 +2494,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Video zeigt beschädigten Amazon-Frachtflugzeug nach Absturz"
   },
   {
@@ -2034,7 +2520,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2045,6 +2531,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Susan Sarandon sagt, sie verliere immer noch Filmrollen wegen ihrer Unterstützung Palästinas"
   },
   {
@@ -2085,6 +2572,7 @@
     "SCMP"
    ],
    "bestaetigt": 4,
+   "unabhaengig": 4,
    "titleDe": "Fünf Tote nach Amazon-Frachtflugzeugabsturz am Flughafen Miami"
   },
   {
@@ -2121,6 +2609,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Wird Israel Benjamin Netanyahu erneut wählen?"
   },
   {
@@ -2157,7 +2646,47 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Angreifer hinterlassen On-Chain-Nachricht nach 320 Millionen Dollar Abflüssen aus Liquid Network"
+  },
+  {
+   "id": "TASS:North Macedonia interested in energy cooperation with Russia — politician",
+   "title": "North Macedonia interested in energy cooperation with Russia — politician",
+   "text": "Marjan Dimitriev emphasized that Macedonia needs stable energy supplies at a good price",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/economy/2183411",
+   "date": "2026-09-06T20:18:01.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 54,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "Nordmazedonien interessiert an Energiekooperation mit Russland – Politiker"
   },
   {
    "id": "Al Jazeera:At least five killed in New Delhi building collapse",
@@ -2182,7 +2711,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -2193,6 +2722,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Mindestens fünf Tote bei Gebäudeeinsturz in Neu-Delhi"
   },
   {
@@ -2233,6 +2763,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Die USA haben nun Zugang zu mehr als der Hälfte der australischen Militärbasen – könnte das Land unwillkürlich in einen Krieg ziehen?"
   },
   {
@@ -2308,6 +2839,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Iran wird in den kommenden Tagen eine 'verbotene Zone' in der Nähe von Hormuz erklären: Sicherheitschef"
   },
   {
@@ -2344,6 +2876,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Abdul El‑Sayed nutzt seine Rede, um über muslimischen Glauben und amerikanische Identität zu sprechen"
   },
   {
@@ -2419,6 +2952,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Hawaii erklärt Notstand, während der Hurrikan Lowell auf die Inseln zusteuert"
   },
   {
@@ -2455,6 +2989,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Kalshi zahlte den falschen Gewinnern 18,6 Millionen Dollar vor Michigans Wunder-Rückkehr"
   },
   {
@@ -2491,6 +3026,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Frau in Schachtel aus Pilzen bestattet – erste Australien-Variante"
   },
   {
@@ -2527,6 +3063,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Hohe Kraftstoffpreise treiben den Boom elektrischer Motorräder an"
   },
   {
@@ -2552,7 +3089,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2563,6 +3100,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "US-Botschafter Kushner und Witkoff besuchen Kyiv zum ersten Mal nach Putin-Gesprächen"
   },
   {
@@ -2588,7 +3126,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2599,6 +3137,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "ZEC stürmt in die Top 10, Short-Positionen werden massiv getroffen"
   },
   {
@@ -2639,6 +3178,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Zelensky sagt, er rechnet damit, dass der Krieg bis in den Winter hinein andauern wird, nachdem er mit US-Botschaftern gesprochen hat"
   },
   {
@@ -2675,6 +3215,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "AfD feiert prognostizierten Sieg bei Landeswahl"
   },
   {
@@ -2711,6 +3252,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Prädiktionsmärkte nähern sich dem Obersten Gerichtshof: Der Stand der Krypto-Branche"
   },
   {
@@ -2814,7 +3356,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2825,6 +3367,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Rechtsradikale AfD gewinnt entscheidende Landeswahl in Deutschland, könnte jedoch die Mehrheit nicht sichern"
   },
   {
@@ -2861,6 +3404,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Router-Protokoll, unterstützt von Coinbase, soll eingestellt werden und 303 Millionen ROUTE‑Token verbrennen"
   },
   {
@@ -2901,6 +3445,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "McDonald’s-Drama in Indien eskaliert, während Wall Street 24 % Aktienanstieg anvisiert"
   },
   {
@@ -2966,7 +3511,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3005,7 +3550,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3044,7 +3589,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 20,
+   "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3417,6 +3962,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Jamaikanischer Minister reicht während UK-Besuch Klage für Sklavenentschädigungen bei König Charles ein"
   },
   {
@@ -3453,6 +3999,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "OpenAI’s GPT‑6 Astra ist erstaunlich gut in nahezu allem"
   },
   {
@@ -3489,6 +4036,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Iran warnt vor einer 'schnelleren, schwereren, schmerzhafteren Reaktion' auf US-Angriffe"
   },
   {
@@ -3525,6 +4073,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Kolumbien kehrt Fracking-Ban um, plant 4 Mrd. USD neue Ölinvestitionen"
   },
   {
@@ -3563,6 +4112,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Frühere Ripple-Entwickler enthüllen kritische Warnsignale, 4.000 XRP Ledger‑Wallets betroffen"
   },
   {
@@ -3601,6 +4151,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Hackers fordern 2 Millionen Dollar in Bitcoin aus Deutschland. Berlin verweigert Zahlung"
   },
   {
@@ -3630,7 +4181,7 @@
    "whyEn": "Directly crypto-negative news. (signals: hack or exploit)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -3643,6 +4194,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Bitcoin-OG sagt, er beobachtet den nächsten großen Exploit, während KI-Modelle stärker werden"
   },
   {
@@ -3725,6 +4277,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "XRP erhält durch die Ripple-Vereinbarung mit Florida Athletics einen weiteren Aufschwung"
   },
   {
@@ -3761,6 +4314,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Vulkanausbruch lässt 170 000 Passagiere in Indonesien stranden"
   },
   {
@@ -3797,6 +4351,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Ukrainische Polizei zerschlug einen Krypto-Betrug, der bis zu 1 Million USD pro Monat stahl"
   },
   {
@@ -3835,6 +4390,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Der US-Dollar hat seit 1913 97 % seines Wertes verloren: Ist Bitcoin die Lösung?"
   },
   {
@@ -3938,7 +4494,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 16,
+   "priority": 15,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3949,6 +4505,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Stablecoins werden ohne Banken nicht skalieren"
   },
   {
@@ -3985,6 +4542,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Oman setzt stark auf erneuerbare Energien"
   },
   {
@@ -4023,6 +4581,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Der zehncentige Traum von Dogecoin nähert sich der Realität, als der Preis einen wichtigen Ausbruch erreicht"
   },
   {
@@ -4061,6 +4620,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Peter Brandt erweckt sein legendäres 2019-Parabolziel für Bitcoin wieder"
   },
   {
@@ -4097,6 +4657,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Toncoin (TON) Preisvorhersage 2025, 2026, 2027-2030"
   },
   {
@@ -4127,7 +4688,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -4165,7 +4726,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 19,
+   "priority": 18,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -4176,6 +4737,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Dutzende vermutet in eingestürztem Gebäude in Delhi gefangen"
   },
   {
@@ -4212,6 +4774,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "„Jeder hat ein KI-Geheimnis“: Dieser Künstler hat ein Jahr damit verbracht, Hunderte anonymer KI-Bekenntnisse zu sammeln und zu teilen"
   },
   {
@@ -4250,6 +4813,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Better und Coinbase’s bitcoin‑gesicherten Hypotheken können die Sicherheiten der Kreditnehmer wiederverwenden"
   },
   {
@@ -4286,6 +4850,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Eltern, die bei Wutanfällen besonders geschickt sind, tun fünf Dinge – ihre Kinder werden emotional intelligenter, sagt Psychologe"
   },
   {
@@ -4322,6 +4887,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "'Kein SHIB-ETF noch, aber auf dem richtigen Weg', erklärt ein Shiba‑Inu‑Veteran das Potenzial"
   },
   {
@@ -4397,6 +4963,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Folgendes ist heute in Krypto passiert"
   },
   {
@@ -4436,6 +5003,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "$14,5 Milliarden Injection: Wird das US-Finanzministerium 'Runde 2' für Bitcoin und XRP auslösen?"
   },
   {
@@ -4511,6 +5079,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "LeBron James Polymarket-Deal: Werden Vorhersage-Märkte Mainstream?"
   },
   {
@@ -4537,7 +5106,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 43,
+   "priority": 42,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -4627,6 +5196,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Satoshi-Ära Bitcoin erwacht nach 16 Jahren Inaktivität, als 600 BTC bewegt werden"
   },
   {
@@ -4702,6 +5272,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Dieses Krypto-Projekt hat 1.000 Studentendarlehen vollständig on‑Chain finanziert"
   },
   {
@@ -4738,6 +5309,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Verlässt die USA seinen Status als sicherer Hafen? Warum globale Zentralbanken Gold aus New York abziehen"
   },
   {
@@ -4774,6 +5346,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Wir sind in unseren 60ern. Wir verdienen 345.000 $ und haben 1 Million $ in 403(b)s. Ist es für Roth-Conversions zu spät?"
   },
   {
@@ -4812,6 +5385,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Neues Ethereum-Upgrade könnte Krypto-Transaktionen und Gebühren grundlegend verändern"
   },
   {
@@ -4926,6 +5500,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Viele Trucker fühlen sich nicht wie der Rest von Amerika über KI-Rechenzentren, während das Geschäft boomt"
   },
   {
@@ -5001,6 +5576,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "KI-Datenzentren verändern ländliche Grundstücksmärkte – und lösen Widerstand aus"
   },
   {
@@ -5037,6 +5613,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Elon Musk schlägt Bernie Sanders zurück wegen seines 900 Milliarden Dollar Vermögens"
   },
   {
@@ -5075,6 +5652,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Noch fünf Tage: Große XRP-Fix-Upgrade für September-Aktivierung geplant"
   },
   {
@@ -5100,7 +5678,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 10,
+   "priority": 9,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5111,6 +5689,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Shiba Inu (SHIB) fügt in 24 Stunden außergewöhnliche 75 Milliarden zu den Börsen hinzu"
   },
   {
@@ -5147,6 +5726,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Nike verlässt den S&P 100 Index. Vier Technologiewerte treten ein"
   },
   {
@@ -5300,6 +5880,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Klimaanlagen sind unser bester Schutz gegen extreme Hitze – ob wir es wollen oder nicht"
   },
   {
@@ -5377,6 +5958,7 @@
    ],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Zwei neue Kryptowährungen von Robinhood und BNB werden offiziell auf Binance Futures gelistet: Vollständige Details"
   },
   {
@@ -5452,6 +6034,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Arbitrum (ARB) Plötzlich um 120 % gestiegen"
   },
   {
@@ -5488,6 +6071,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Tether‑gestützte Orionx schließt nach Audit‑Hinweis auf 7 Mio $ Custody‑Lücke"
   },
   {
@@ -5721,6 +6305,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Warum will sich fast niemand mit älteren Menschen wie mir anfreunden — außer Betrügern?"
   },
   {
@@ -5757,6 +6342,7 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "Revolut startet EURR-Rollout mit Bridge als reguliertem Emittenten"
   },
   {
@@ -5793,15 +6379,16 @@
    "coins": [],
    "alsoIn": [],
    "bestaetigt": 1,
+   "unabhaengig": 1,
    "titleDe": "SEC Crypto Custody Rewrite tritt in die Überprüfung des Weißen Hauses ein"
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 10,
+  "uebersetzt": 1,
   "fehler": null
  },
  "rubriken": {
-  "Sport": 1,
+  "Sport": 2,
   "Unterhaltung": 1,
   "Unsinn": 1
  }
