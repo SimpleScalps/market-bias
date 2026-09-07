@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T11:06:54.156Z",
+ "updated": "2026-09-07T11:21:45.626Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T11:06:54.229Z",
+   "stand": "2026-09-07T11:21:45.699Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T11:06:54.215Z",
+   "stand": "2026-09-07T11:21:45.686Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,32 +462,32 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T11:06:54.201Z",
-   "anzahl": 188,
+   "stand": "2026-09-07T11:21:45.672Z",
+   "anzahl": 189,
    "klassen": {
     "crypto": {
-     "score": -0.1032,
+     "score": -0.0965,
      "bull": 4,
-     "bear": 21,
-     "neut": 163
+     "bear": 20,
+     "neut": 165
     },
     "stocks": {
-     "score": -0.0838,
+     "score": -0.0822,
      "bull": 2,
      "bear": 17,
-     "neut": 169
-    },
-    "gold": {
-     "score": 0.0018,
-     "bull": 13,
-     "bear": 5,
      "neut": 170
     },
+    "gold": {
+     "score": 0.0019,
+     "bull": 13,
+     "bear": 5,
+     "neut": 171
+    },
     "usd": {
-     "score": 0.0514,
+     "score": 0.0504,
      "bull": 6,
      "bear": 0,
-     "neut": 182
+     "neut": 183
     }
    },
    "top": [
@@ -504,7 +504,7 @@
       "gold": -0.8,
       "usd": 1
      },
-     "priority": 88
+     "priority": 87
     },
     {
      "id": "Reuters:UBS forecasts two US Fed rate hikes in 2026 after strong jobs report",
