@@ -1,13 +1,50 @@
 {
- "updated": "2026-09-07T20:58:01.329Z",
+ "updated": "2026-09-07T20:59:52.056Z",
  "regime": "policy",
- "count": 223,
+ "count": 224,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
-  "Reuters: 0 Eintraege (Abruf gelang)",
   "Times of Israel: 403 https://www.timesofisrael.com/feed/"
  ],
  "items": [
+  {
+   "id": "FXStreet:Pound Sterling's rate advantage buys it no say this week",
+   "title": "Pound Sterling's rate advantage buys it no say this week",
+   "text": "GBP/USD holds just under 1.3550 after a Monday that covered 42 pips with American desks shut for Labor Day. The week that follows is not that.",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/pound-sterlings-rate-advantage-buys-it-no-say-this-week-202609072058",
+   "date": "2026-09-07T20:58:45.000Z",
+   "tags": [
+    "Makro"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Der Kursvorteil des Pfund Sterling verschafft ihm diese Woche kein Mitspracherecht"
+  },
   {
    "id": "SCMP:Netanyahu’s main challenger accuses Israeli PM of prioritising survival over security",
    "title": "Netanyahu’s main challenger accuses Israeli PM of prioritising survival over security",
@@ -129,7 +166,7 @@
   {
    "id": "IRNA:Iran: Calls for unconditional IAEA Safeguards compliance meaningless",
    "title": "Iran: Calls for unconditional IAEA Safeguards compliance meaningless",
-   "text": "London, IRNA Iran’s mission to the United Nations in Vienna says calls on Tehran to unconditionally comply with International Atomic Energy Agency (IAEA) Safeguards are “meaningless” under the current “hazardous” circumstances.",
+   "text": "London, IRNA – Iran’s mission to the United Nations in Vienna says calls on Tehran to unconditionally comply with International Atomic Energy Agency (IAEA) Safeguards are “meaningless” under the current “hazardous” circumstances.",
    "source": "IRNA",
    "staatlich": true,
    "url": "https://en.irna.ir/news/86257904/Iran-Calls-for-unconditional-IAEA-Safeguards-compliance-meaningless",
@@ -205,6 +242,44 @@
    "titleDe": "Australische Politik live: John Howard warnt vor Einwanderungsbeschränkungen; Barnaby Joyce nennt Superplan für „kleinen“ inflationswirksamen Effekt"
   },
   {
+   "id": "Reuters:Paris investigates claim women were hidden from Hindu delegation at Eiffel Tower",
+   "title": "Paris investigates claim women were hidden from Hindu delegation at Eiffel Tower",
+   "text": "Paris investigates claim women were hidden from Hindu delegation at Eiffel Tower &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOeHJRcm5FUlpiWGg1OWN3SHEwWk85N1NvRlk4OFN1T24zVmp5d1FyTXhrM3N3ckNuOVV6S0ZkNmFzVUNDQ0g4MXIzOFN3U0haTXVKR0ZOZGJTMXNQb2IyYlJGQjYxRnp6RGZpLXJINk8tNHl4bHkzZDhMdzdlMVJaV2NNR09aWG1yVFZra0wzYXE5YUhUNTNscUdURFI0OWVtdEYwN2NNUjlRQnVJNEhfQ0xJb0FyWjBNZ3dXTkJjR1ZlTENpT2hyM0tjUQ?oc=5",
+   "date": "2026-09-07T20:43:35.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Paris untersucht Behauptung, Frauen wurden der hinduistischen Delegation an der Eiffelturm versteckt"
+  },
+  {
    "id": "TASS:Ukraine’s prosecutor general tenders resignation",
    "title": "Ukraine’s prosecutor general tenders resignation",
    "text": "Ruslan Kravchenko said this was a political decision",
@@ -267,7 +342,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -895,7 +970,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -988,10 +1063,11 @@
    "titleDe": "Juristische Veteranen führen den Kampf gegen Trumps \"totalen Angriff auf die Demokratie\" an"
   },
   {
-   "id": "Al Jazeera (GN):Cuba says no negotiations with US despite ‘genocidal’ blockade",
+   "id": "Al Jazeera:Cuba says no negotiations with US despite ‘genocidal’ blockade",
    "title": "Cuba says no negotiations with US despite ‘genocidal’ blockade",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQR1BqQW5Kc3h6Nk84RXJrVlBOLURseEFjaVBtbF9CNFVYTXdCUVA2OUlMWGNhaG84VWwzaUREOXc4OHU4WkZwa0tPUlJKaTJYbGRvTWs0dHRzMmdhN0FvSUlsWGtlRGNObjhBZThnVDB2SzkzaGtuYXRyemhSSFJPOW00a2ZBVVRTZjB2U1lZOWtrYUtHcXlhbFlXTDZSVDV2c3FkWW5B0gGrAUFVX3lxTE1jTVFzTGowTVJ0V1YwaXBPUjZsMTFsRVdhbFMtSG1xX2ZteVNGR0M1Mms0TXJISEoyako0YnplZEJJY0hVY1JnMEdiMlJYcGdtQ3JLQ2FSQ0FrRXNTMTRPTFFqZUJ6NVVGMU1EUEg3ZGpDZmVjZW9TcjdlbzZtMUxIekVnTlV5dkRtcGFfMnRQclRHSXV4X1lwOHhSUzVPdGxQRmlaV1VPcnlhOA?oc=5",
+   "text": "Cuba reports record losses from the US embargo as foreign minister describes months of punishing blackouts.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/economy/2026/9/7/cuba-says-no-negotiations-with-us-despite-genocidal-blockade?traffic_source=rss",
    "date": "2026-09-07T19:58:48.000Z",
    "tags": [
     "Weltlage"
@@ -1009,7 +1085,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 48,
+   "priority": 47,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1019,7 +1095,7 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
-    "Al Jazeera"
+    "Al Jazeera (GN)"
    ],
    "bestaetigt": 2,
    "haeuser": 1,
@@ -1457,11 +1533,11 @@
    "titleDe": "Syrien: Reaktor aus der Ära Assad für Atomwaffen konfiguriert, sagt IAEA"
   },
   {
-   "id": "Al Jazeera:Moment shop worker dives into traffic to save child",
-   "title": "Moment shop worker dives into traffic to save child",
-   "text": "A shop worker has been hailed a ‘hero’ after CCTV video showed him diving into traffic to save a child",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/moment-shop-worker-dives-into-traffic-to-save-child?traffic_source=rss",
+   "id": "Al Jazeera (GN):Moment shop worker dives into traffic to save child - Al Jazeera",
+   "title": "Moment shop worker dives into traffic to save child - Al Jazeera",
+   "text": "Moment shop worker dives into traffic to save child - Al Jazeera &nbsp;&nbsp; Al Jazeera",
+   "source": "Al Jazeera (GN)",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRkhBR2xJX0xadExmbVF6Rm8wVTdmS3ZWdS1MaTRPNUlmck54RnBVaHVhR0FMRnVOTUF1bmVoanJXYW1ya2xIb3FjcXdTTFRFNWNkVGpMUjdyQnREY2FhR1hXb20talVhaFM1aWNyVTZzSXFjRy1CcUJySjdmSUl4M2ZIejhxWXFBZnhELUc3amVKTUJYYW80V0hjdHZmT0d6U3lDelN5VU1zdFF2WWg2RWw1YnZiRUNkQmpxRA?oc=5",
    "date": "2026-09-07T19:27:57.000Z",
    "tags": [
     "Weltlage"
@@ -1479,7 +1555,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1488,11 +1564,13 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "Al Jazeera"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Moment: Einzelhandelsmitarbeiter taucht in den Verkehr ein, um Kind zu retten"
+   "titleDe": "Moment-Shop-Mitarbeiter stürzt in den Verkehr, um Kind zu retten – Al Jazeera"
   },
   {
    "id": "FXStreet:Gold bulls flinch as NFP puts Fed hawks back in the driver’s seat",
@@ -2892,7 +2970,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3468,44 +3546,6 @@
    "titleDe": "König Charles klärt den Status von Harry und Meghan nach ihrer Rückkehr in das Vereinigte Königreich"
   },
   {
-   "id": "FXStreet:The Japanese Yen has stopped trading the Federal Reserve",
-   "title": "The Japanese Yen has stopped trading the Federal Reserve",
-   "text": "USD/JPY trades just above 154.00 after giving up close to two Yen on Monday, its weakest in six months. Nothing confirms an intervention, and Tokyo has no level left to defend at six-month Yen highs.",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/nobody-has-unwound-the-japanese-yen-carry-trade-yet-202609071701",
-   "date": "2026-09-07T17:01:44.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "fed",
-   "categoryLabel": "Notenbank",
-   "priority": 66,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "medium",
-   "duration": "swing",
-   "eventType": "Notenbank",
-   "eventTypeEn": "Central bank",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Der japanische Yen hat den Handel mit der Federal Reserve eingestellt"
-  },
-  {
    "id": "U.Today:XRP Prints 10,535% Liquidation Imbalance in Mere Hour as Price Dips to $1.38",
    "title": "XRP Prints 10,535% Liquidation Imbalance in Mere Hour as Price Dips to $1.38",
    "text": "XRP derivatives print a rare 10,535% liquidation imbalance inside a Labor Day liquidity dip.",
@@ -3962,7 +4002,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4831,7 +4871,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 24,
+   "priority": 23,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5889,7 +5929,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -6043,7 +6083,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 20,
+   "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6084,7 +6124,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 37,
+   "priority": 36,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -8813,7 +8853,7 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 0,
+  "uebersetzt": 1,
   "fehler": null
  },
  "rubriken": {
