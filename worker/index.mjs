@@ -850,6 +850,15 @@ const TAKT_VERGESSEN_MS = 24 * 3600_000;
  */
 const TAKT_STUMM_MS = 20 * 60_000;
 
+/*
+ * Wie oft hoechstens gemeldet wird, solange ein Taktgeber stumm bleibt.
+ *
+ * Der Ausfall selbst geht sofort hinaus, die Erinnerung daran stuendlich. Wer
+ * jede Minute dieselbe Nachricht bekommt, schaltet den Kanal ab - und dann ist
+ * auch die naechste Meldung weg, auf die es ankommt.
+ */
+const ALARM_ABSTAND_MS = 60 * 60_000;
+
 /** Wirft Taktgeber weg, von denen seit einem Tag nichts mehr kam. */
 function taktgeberPflegen(ticks) {
   const grenze = Date.now() - TAKT_VERGESSEN_MS;
@@ -1702,6 +1711,21 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ? await pushen(env, ctx, kandidaten)
     : { versucht: false, grund: 'erster Lauf' };
 
+  /*
+   * Nach dem Versand die Taktgeber pruefen.
+   *
+   * Laeuft neben der Antwort her: Ein stummer Taktgeber ist wichtig, aber
+   * nicht so wichtig, dass der Durchgang darauf warten muesste.
+   */
+  ctx.waitUntil((async () => {
+    const w = await taktgeberWachen(env, ctx, data.ticks, z);
+    if (!w) return;
+    await zustand(env, {
+      alarmStumm: w.stumm,
+      ...(w.gemeldetJetzt ? { alarmZuletzt: new Date().toISOString() } : {}),
+    });
+  })());
+
   // Das Wochenbuch ist Chronik, keine Betriebsnotwendigkeit - es tritt zurueck.
   if (!sparsam) ctx.waitUntil(wochenbuchPflegen(env, ctx, items));
   return { data, neue: kandidaten, versand, gesichert };
@@ -2328,6 +2352,70 @@ async function nochNichtGemeldet(env, items, nurLesen = false) {
   }
 }
 
+/**
+ * Meldet, wenn ein Taktgeber verstummt - und wenn er zurueck ist.
+ *
+ * Cloudflares Cron wurde acht Stunden lang nicht mehr aufgerufen. Der Betrieb
+ * lief weiter, weil zwei Ersatztaktgeber ihn trugen, nur eben im
+ * Fuenf-Minuten-Takt statt im Minutentakt. Aufgefallen ist es einem Menschen,
+ * der Zeitstempel verglichen hat. Genau das soll nicht noetig sein.
+ *
+ * Gemeldet wird ueber denselben Kanal wie die Nachrichten - er ist
+ * eingerichtet, er wird gelesen, und ein zweiter waere ein zweiter, der
+ * ausfallen kann. Steht die Benachrichtigung auf "aus", geht auch das hier
+ * nicht hinaus: Wer keine Nachrichten will, will auch diese nicht.
+ *
+ * Melden kann nur, wer selbst laeuft. Das ist kein Mangel, sondern der Grund,
+ * warum es funktioniert: Faellt einer aus, sind noch zwei da, die es merken.
+ */
+async function taktgeberWachen(env, ctx, ticks, z) {
+  const jetzt = Date.now();
+  const stumm = Object.entries(ticks || {})
+    .filter(([, t]) => t?.zeit && jetzt - new Date(t.zeit).getTime() > TAKT_STUMM_MS)
+    .map(([q]) => q)
+    .sort();
+
+  const gemeldet = Array.isArray(z.alarmStumm) ? z.alarmStumm : [];
+  const neuStumm = stumm.filter((q) => !gemeldet.includes(q));
+  const wiederDa = gemeldet.filter((q) => !stumm.includes(q));
+  const letzter = new Date(z.alarmZuletzt || 0).getTime();
+  const erinnern = stumm.length && !neuStumm.length && jetzt - letzter > ALARM_ABSTAND_MS;
+
+  if (!neuStumm.length && !wiederDa.length && !erinnern) return null;
+
+  const abo = await lesen(env, ABO_KEY);
+  if (!abo?.ziele?.length || abo.stufe === 'off') {
+    // Ohne Kanal nichts zu melden - der Stand wird trotzdem fortgeschrieben,
+    // sonst stuende beim naechsten Mal wieder alles als neu da.
+    return { stumm, gesendet: 0, grund: 'kein Kanal' };
+  }
+
+  const alter = (q) => Math.round((jetzt - new Date(ticks[q].zeit).getTime()) / 60000);
+  const laufend = Object.keys(ticks || {}).filter((q) => !stumm.includes(q));
+
+  const meldungen = [];
+  if (neuStumm.length || erinnern) {
+    const wen = (neuStumm.length ? neuStumm : stumm).map((q) => `${q} seit ${alter(q)} min`);
+    meldungen.push([
+      'Taktgeber stumm',
+      `${wen.join(', ')} ohne Lebenszeichen.`
+      + (laufend.length
+        ? ` Der Bestand laeuft weiter ueber ${laufend.join(', ')}.`
+        : ' Es laeuft kein weiterer Taktgeber - der Bestand steht.'),
+    ]);
+  }
+  if (wiederDa.length) {
+    meldungen.push(['Taktgeber wieder da', `${wiederDa.join(', ')} meldet sich wieder.`]);
+  }
+
+  let gesendet = 0;
+  for (const [titel, text] of meldungen) {
+    const r = await sendeAn(abo.ziele, titel, text);
+    gesendet += r.gesendet || 0;
+  }
+  return { stumm, gesendet, gemeldetJetzt: Boolean(meldungen.length) };
+}
+
 async function pushen(env, ctx, neueItems) {
   const abo = await lesen(env, ABO_KEY);
   if (!abo?.ziele?.length) return { versucht: false, grund: 'kein Abo hinterlegt' };
@@ -2823,6 +2911,9 @@ export default {
          * fiel nur auf, weil jemand die Zahlen verglichen hat. Diese Zeile
          * sagt es geradeheraus.
          */
+        ...(Array.isArray(zNow.alarmStumm) && zNow.alarmStumm.length
+          ? { alarmGemeldet: `${zNow.alarmStumm.join(', ')} · zuletzt ${zNow.alarmZuletzt || 'nie'}` }
+          : {}),
         taktWarnung: (() => {
           const alle = { ...(bestand?.ticks || {}), ...(zNow.ticks || {}) };
           const stumm = Object.entries(alle)
