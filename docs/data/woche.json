@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T23:29:01.640Z",
+ "updated": "2026-09-07T23:38:27.468Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T23:29:01.728Z",
+   "stand": "2026-09-07T23:38:27.525Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T23:29:01.715Z",
+   "stand": "2026-09-07T23:38:27.517Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T23:29:01.701Z",
+   "stand": "2026-09-07T23:38:27.508Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,35 +615,49 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-07T23:29:01.685Z",
-   "anzahl": 33,
+   "stand": "2026-09-07T23:38:27.498Z",
+   "anzahl": 37,
    "klassen": {
     "crypto": {
-     "score": -0.0964,
+     "score": -0.11,
      "bull": 0,
      "bear": 5,
-     "neut": 28
+     "neut": 32
     },
     "stocks": {
-     "score": -0.057,
+     "score": -0.0739,
      "bull": 0,
      "bear": 4,
-     "neut": 29
+     "neut": 33
     },
     "gold": {
-     "score": 0.0285,
+     "score": 0.037,
      "bull": 4,
      "bear": 0,
-     "neut": 29
+     "neut": 33
     },
     "usd": {
-     "score": 0.019,
-     "bull": 0,
+     "score": 0.0246,
+     "bull": 1,
      "bear": 0,
-     "neut": 33
+     "neut": 36
     }
    },
    "top": [
+    {
+     "id": "Guardian:Canada’s retaliatory US tariffs set to take effect as trade dispute grows",
+     "titel": "Canada’s retaliatory US tariffs set to take effect as trade dispute grows",
+     "quelle": "Guardian",
+     "url": "https://www.theguardian.com/world/2026/sep/07/canada-tariffs-us-trump",
+     "zeit": "2026-09-07T23:20:24.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 62
+    },
     {
      "id": "BeInCrypto:Hackers Return 85% of Stolen Bitcoin from Last Week’s Bridge Attack",
      "titel": "Hackers Return 85% of Stolen Bitcoin from Last Week’s Bridge Attack",
@@ -671,7 +685,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 39
+     "priority": 38
     },
     {
      "id": "BeInCrypto:Lululemon Stock Crashed 80%, and Founders are Now Divorcing",
