@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T07:38:16.847Z",
+ "updated": "2026-09-07T07:50:18.227Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T07:38:16.907Z",
+   "stand": "2026-09-07T07:50:18.296Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T07:38:16.896Z",
+   "stand": "2026-09-07T07:50:18.284Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,32 +462,32 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T07:38:16.885Z",
+   "stand": "2026-09-07T07:50:18.271Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
-     "score": -0.0867,
+     "score": -0.087,
      "bull": 2,
-     "bear": 13,
-     "neut": 128
+     "bear": 14,
+     "neut": 127
     },
     "stocks": {
-     "score": -0.0822,
+     "score": -0.0824,
      "bull": 1,
-     "bear": 12,
-     "neut": 130
+     "bear": 13,
+     "neut": 129
     },
     "gold": {
-     "score": 0.0185,
-     "bull": 10,
+     "score": 0.019,
+     "bull": 11,
      "bear": 3,
-     "neut": 130
+     "neut": 129
     },
     "usd": {
-     "score": 0.0406,
-     "bull": 6,
+     "score": 0.0405,
+     "bull": 5,
      "bear": 1,
-     "neut": 136
+     "neut": 137
     }
    },
    "top": [
@@ -504,7 +504,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 100
+     "priority": 99
     },
     {
      "id": "FXStreet:United States Dollar Index strengthens above 99.00 as robust US jobs data boosts Fed rate hike bets",
@@ -609,7 +609,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 77
+     "priority": 76
     }
    ]
   }
