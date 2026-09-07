@@ -93,6 +93,9 @@ export class Versandbuch {
          * ein einzelner Tag hergibt.
          */
         bilanz: jetzt.bilanz, bilanzStand: jetzt.bilanzStand,
+        // Wann eine Quelle zum ersten Mal geliefert hat - die Grundlage,
+        // auf der der Verzug ueberhaupt gemessen werden kann.
+        quellenSeit: jetzt.quellenSeit,
       };
       basis.tage = tage;
 

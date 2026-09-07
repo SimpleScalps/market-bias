@@ -446,6 +446,15 @@ const VERZUG_PROBEN = 30;             // je Quelle, gleitend
 const VERZUG_MIN_PROBEN = 8;
 
 /*
+ * Wie lange eine Quelle als "im Anlauf" gilt.
+ *
+ * So lange koennen noch Proben aus ihrer Erstbefuellung im gleitenden Fenster
+ * stecken. Sechs Stunden reichen: Bis dahin hat jede brauchbare Quelle
+ * dreissig frische Meldungen geliefert.
+ */
+const VERZUG_ANLAUF_MS = 6 * 3600_000;
+
+/*
  * Ein Haupttaktgeber, der Rest als Reserve.
  *
  * Drei Taktgeber liefen gleichzeitig: Cloudflares eigener Zeitplan alle zwei
@@ -1191,9 +1200,36 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * faellt beim naechsten Buchen wieder heraus.
    */
   const verzug = { ...(bestand?.verzug || {}), ...(z.verzug || {}) };
+
+  /*
+   * Ab wann eine Quelle ueberhaupt beobachtet wird.
+   *
+   * Beim ersten Abruf gilt jede Meldung ihres Feeds als neu - auch die, die
+   * dort seit Stunden liegt. Diese Erstbefuellung ist kein Verzug der Quelle,
+   * sondern eine Aussage darueber, wann wir angefangen haben zuzusehen.
+   *
+   * Die Untergrenze von acht Proben half dagegen nicht: Ein frisch
+   * aufgenommener Feed liefert zwoelf Eintraege je Durchgang und hat die
+   * dreissig Proben in wenigen Minuten voll - alle davon Erstbefuellung.
+   * Anadolu stand deshalb mit 96,9 Minuten in der Anzeige, waehrend die
+   * Aussenmessung 2,2 Minuten ergab. Beide Zahlen stimmten, sie massen nur
+   * Verschiedenes.
+   *
+   * Gezaehlt wird deshalb nur, was nach dem ersten Kontakt mit der Quelle
+   * erschienen ist. Was vorher schon dalag, sagt nichts ueber ihr Tempo.
+   */
+  const quellenSeit = { ...(z.quellenSeit || {}) };
+  for (const n of teil.items) {
+    if (!quellenSeit[n.source]) quellenSeit[n.source] = new Date().toISOString();
+  }
+
   for (const n of kandidaten) {
     const ms = Date.now() - new Date(n.date).getTime();
     if (!(ms >= 0 && ms < VERZUG_MAX_MS)) continue;   // unbrauchbarer Zeitstempel
+
+    // Erschienen, bevor wir die Quelle kannten: Erstbefuellung, keine Probe.
+    const seit = new Date(quellenSeit[n.source] || 0).getTime();
+    if (new Date(n.date).getTime() < seit) continue;
 
     const e = verzug[n.source] || { proben: [] };
     e.proben = [...e.proben, Math.round(ms / 1000)].slice(-VERZUG_PROBEN);
@@ -1535,6 +1571,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ...(nachlaufErgebnis ? { nachlaufErgebnis } : {}),
     ...(artikelErgebnis ? { artikelErgebnis } : {}),
     ...(dublettenLauf ? { letzteDubletten: dublettenLauf.zeit, dubletten: dublettenLauf } : {}),
+    ...(Object.keys(quellenSeit).length ? { quellenSeit } : {}),
     ...(wirkung?.bilanz ? { bilanz: wirkung.bilanz, bilanzStand: BILANZ_STAND } : {}),
     ...(wirkung?.gemessen ? { wirkungBuch: fehlerbuchFortschreiben(wirkungBuch, [], items) } : {}),
     ...(wirkung ? { wirkungZuletzt: {
@@ -2557,9 +2594,25 @@ export default {
         verzug: Object.entries({ ...(bestand?.verzug || {}), ...(zNow.verzug || {}) })
           .map(([quelle, e]) => {
             const proben = e.proben?.length ?? 0;
-            return proben >= VERZUG_MIN_PROBEN
-              ? { quelle, sekunden: e.median ?? e.mittel ?? 0, proben }
-              : { quelle, proben, hinweis: `noch ${VERZUG_MIN_PROBEN - proben} Proben noetig` };
+            /*
+             * Eine junge Quelle traegt noch ihre Erstbefuellung mit sich.
+             *
+             * Die Proben laufen gleitend ueber dreissig Eintraege; bei einer
+             * gerade aufgenommenen Quelle stammen die alle aus dem ersten
+             * Abruf, also aus Meldungen, die im Feed schon lagen. Anadolu stand
+             * so bei 96,9 Minuten, waehrend die Aussenmessung 2,2 ergab. Neue
+             * Proben zaehlen das inzwischen richtig - bis die alten
+             * herausgerutscht sind, gehoert der Vorbehalt dazu.
+             */
+            const seit = new Date(zNow.quellenSeit?.[quelle] || 0).getTime();
+            const jung = seit > 0 && Date.now() - seit < VERZUG_ANLAUF_MS;
+            if (proben < VERZUG_MIN_PROBEN) {
+              return { quelle, proben, hinweis: `noch ${VERZUG_MIN_PROBEN - proben} Proben noetig` };
+            }
+            return {
+              quelle, sekunden: e.median ?? e.mittel ?? 0, proben,
+              ...(jung ? { hinweis: 'im Anlauf - noch Erstbefuellung dabei' } : {}),
+            };
           })
           .sort((a, b) => (b.sekunden ?? -1) - (a.sekunden ?? -1)),
 
