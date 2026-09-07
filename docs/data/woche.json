@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T12:11:17.781Z",
+ "updated": "2026-09-07T12:35:45.912Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T12:11:17.852Z",
+   "stand": "2026-09-07T12:35:46.000Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T12:11:17.839Z",
+   "stand": "2026-09-07T12:35:45.983Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,32 +462,32 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T12:11:17.825Z",
-   "anzahl": 202,
+   "stand": "2026-09-07T12:35:45.965Z",
+   "anzahl": 205,
    "klassen": {
     "crypto": {
-     "score": -0.0925,
+     "score": -0.1047,
      "bull": 3,
-     "bear": 20,
-     "neut": 179
+     "bear": 25,
+     "neut": 177
     },
     "stocks": {
-     "score": -0.0793,
+     "score": -0.0923,
      "bull": 1,
-     "bear": 17,
-     "neut": 184
+     "bear": 22,
+     "neut": 182
     },
     "gold": {
-     "score": 0.0023,
-     "bull": 13,
+     "score": 0.0111,
+     "bull": 18,
      "bear": 5,
-     "neut": 184
+     "neut": 182
     },
     "usd": {
-     "score": 0.0483,
-     "bull": 6,
+     "score": 0.0513,
+     "bull": 8,
      "bear": 0,
-     "neut": 196
+     "neut": 197
     }
    },
    "top": [
@@ -534,7 +534,7 @@
       "gold": -0.8,
       "usd": 1
      },
-     "priority": 86
+     "priority": 85
     },
     {
      "id": "TASS:One casualty, one wounded in strike on Perm, 306 UAVs: aftermath of attacks against Russia",
