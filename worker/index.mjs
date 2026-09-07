@@ -134,6 +134,20 @@ const WIRKUNG_MAX = 40;
  */
 const WIRKUNG_REIFE_MIN = WIRKUNG_MINUTEN + 6;
 
+/*
+ * Stand der Bilanz.
+ *
+ * Aendert sich, wie gewertet wird, sind die alten Zaehlungen nicht mehr
+ * vergleichbar - und weil sie unter ihren alten Namen stehenbleiben, stehen
+ * zwei Wahrheiten nebeneinander: "Regelwerk unveraendert 11/33" aus der
+ * ersten Fassung neben "Regel (unberuehrt) 4/4" aus der zweiten. Eine Bilanz,
+ * die zwei Rechnungen mischt, ist schlechter als gar keine.
+ *
+ * 1  Erste Fassung: nur die angezeigte Richtung, Treffer aus dem Vorzeichen
+ * 2  Neutral zaehlt als eigene Aussage, Regel und KI getrennt gewertet
+ */
+const BILANZ_STAND = 2;
+
 const NACHZIEHEN_MAX = 8;
 const NACHZIEHEN_ABSTAND_MS = 60_000;
 
@@ -1521,7 +1535,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ...(nachlaufErgebnis ? { nachlaufErgebnis } : {}),
     ...(artikelErgebnis ? { artikelErgebnis } : {}),
     ...(dublettenLauf ? { letzteDubletten: dublettenLauf.zeit, dubletten: dublettenLauf } : {}),
-    ...(wirkung?.bilanz ? { bilanz: wirkung.bilanz } : {}),
+    ...(wirkung?.bilanz ? { bilanz: wirkung.bilanz, bilanzStand: BILANZ_STAND } : {}),
     ...(wirkung?.gemessen ? { wirkungBuch: fehlerbuchFortschreiben(wirkungBuch, [], items) } : {}),
     ...(wirkung ? { wirkungZuletzt: {
       zeit: new Date().toISOString(),
@@ -1721,7 +1735,8 @@ async function wirkungMessen(items, z, buch) {
   const { kerzen, boerse, fehler } = await kerzenHolen(WIRKUNG_RUECKBLICK_MIN + WIRKUNG_MINUTEN + 5);
   if (fehler || !kerzen) return { fehler: fehler || 'keine Kerzen' };
 
-  let bilanz = z.bilanz;
+  // Nach einer Aenderung an der Wertung faengt die Zaehlung von vorn an.
+  let bilanz = (z.bilanzStand || 1) === BILANZ_STAND ? z.bilanz : {};
   let gemessen = 0;
   for (const n of faellig) {
     const ab = new Date(n.gesehenAm || n.date).getTime();

@@ -92,7 +92,7 @@ export class Versandbuch {
          * jede Nacht wegwirft, kommt nie ueber die Handvoll Faelle hinaus, die
          * ein einzelner Tag hergibt.
          */
-        bilanz: jetzt.bilanz,
+        bilanz: jetzt.bilanz, bilanzStand: jetzt.bilanzStand,
       };
       basis.tage = tage;
 
