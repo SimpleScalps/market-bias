@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T10:56:37.261Z",
+ "updated": "2026-09-07T11:04:41.261Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T10:56:37.346Z",
+   "stand": "2026-09-07T11:04:41.320Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T10:56:37.330Z",
+   "stand": "2026-09-07T11:04:41.309Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,35 +462,50 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T10:56:37.311Z",
-   "anzahl": 184,
+   "stand": "2026-09-07T11:04:41.298Z",
+   "anzahl": 188,
    "klassen": {
     "crypto": {
-     "score": -0.0795,
+     "score": -0.1019,
      "bull": 4,
-     "bear": 18,
-     "neut": 162
+     "bear": 21,
+     "neut": 163
     },
     "stocks": {
-     "score": -0.0619,
+     "score": -0.0826,
      "bull": 2,
-     "bear": 14,
-     "neut": 168
-    },
-    "gold": {
-     "score": 0.0097,
-     "bull": 11,
-     "bear": 4,
+     "bear": 17,
      "neut": 169
     },
+    "gold": {
+     "score": 0.0012,
+     "bull": 13,
+     "bear": 5,
+     "neut": 170
+    },
     "usd": {
-     "score": 0.0331,
-     "bull": 5,
+     "score": 0.051,
+     "bull": 6,
      "bear": 0,
-     "neut": 179
+     "neut": 182
     }
    },
    "top": [
+    {
+     "id": "FXStreet:Silver slips below $66 as strong NFP report revives Fed rate hike bets",
+     "titel": "Silver slips below $66 as strong NFP report revives Fed rate hike bets",
+     "titelDe": "Silber fällt unter 66 $, da der starke NFP-Bericht die Zinserhöhungswetten der Fed wiederbelebt",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/silver-slips-below-66-as-strong-nfp-report-revives-fed-rate-hike-bets-202609071056",
+     "zeit": "2026-09-07T10:56:38.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -0.85,
+      "gold": -0.8,
+      "usd": 1
+     },
+     "priority": 88
+    },
     {
      "id": "Reuters:UBS forecasts two US Fed rate hikes in 2026 after strong jobs report",
      "titel": "UBS forecasts two US Fed rate hikes in 2026 after strong jobs report",
@@ -595,21 +610,6 @@
       "usd": 0.75
      },
      "priority": 80
-    },
-    {
-     "id": "FXStreet:Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
-     "titel": "Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
-     "titelDe": "Silberpreisprognose: XAG/USD hält Verluste nahe 66,00 $ aufgrund von Fed‑Zinserhöhungswetten",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-holds-losses-near-6600-due-to-fed-rate-hike-bets-202609070244",
-     "zeit": "2026-09-07T02:44:26.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 79
     }
    ]
   }
