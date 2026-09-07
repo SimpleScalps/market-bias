@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T01:30:27.921Z",
+ "updated": "2026-09-07T01:32:46.568Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T01:30:27.992Z",
+   "stand": "2026-09-07T01:32:46.615Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T01:30:27.978Z",
+   "stand": "2026-09-07T01:32:46.606Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,29 +462,29 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T01:30:27.964Z",
+   "stand": "2026-09-07T01:32:46.598Z",
    "anzahl": 49,
    "klassen": {
     "crypto": {
-     "score": -0.1132,
+     "score": -0.114,
      "bull": 1,
      "bear": 8,
      "neut": 40
     },
     "stocks": {
-     "score": -0.108,
+     "score": -0.1087,
      "bull": 1,
      "bear": 8,
      "neut": 40
     },
     "gold": {
-     "score": 0.0114,
+     "score": 0.011,
      "bull": 7,
      "bear": 2,
      "neut": 40
     },
     "usd": {
-     "score": 0.061,
+     "score": 0.0616,
      "bull": 2,
      "bear": 1,
      "neut": 46
@@ -519,7 +519,7 @@
       "gold": 0.56,
       "usd": -0.7
      },
-     "priority": 71
+     "priority": 70
     },
     {
      "id": "FXStreet:Japanese Yen consolidates near August highs vs USD as hawkish BoJ, Fed bets clash",
