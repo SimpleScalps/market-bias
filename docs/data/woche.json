@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T04:24:02.534Z",
+ "updated": "2026-09-07T04:38:13.675Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T04:24:02.607Z",
+   "stand": "2026-09-07T04:38:13.750Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T04:24:02.593Z",
+   "stand": "2026-09-07T04:38:13.736Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,32 +462,32 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T04:24:02.579Z",
-   "anzahl": 93,
+   "stand": "2026-09-07T04:38:13.721Z",
+   "anzahl": 101,
    "klassen": {
     "crypto": {
-     "score": -0.1701,
+     "score": -0.1651,
      "bull": 1,
-     "bear": 16,
-     "neut": 76
+     "bear": 17,
+     "neut": 83
     },
     "stocks": {
-     "score": -0.1496,
+     "score": -0.136,
      "bull": 0,
      "bear": 15,
-     "neut": 78
+     "neut": 86
     },
     "gold": {
-     "score": -0.0739,
+     "score": -0.0645,
      "bull": 7,
      "bear": 8,
-     "neut": 78
+     "neut": 86
     },
     "usd": {
-     "score": 0.1369,
+     "score": 0.1229,
      "bull": 9,
      "bear": 0,
-     "neut": 84
+     "neut": 92
     }
    },
    "top": [
@@ -498,36 +498,6 @@
      "quelle": "FXStreet",
      "url": "https://www.fxstreet.com/news/swiss-franc-weakens-as-us-dollar-strengthens-on-fed-rate-hike-bets-202609070337",
      "zeit": "2026-09-07T02:25:08.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 83
-    },
-    {
-     "id": "BeInCrypto:UK Jobs Rebound Meets Hot US Data: More Fuel for a Fed Rate Hike?",
-     "titel": "UK Jobs Rebound Meets Hot US Data: More Fuel for a Fed Rate Hike?",
-     "titelDe": "UK-Jobzuwachs trifft auf starke US-Daten: Mehr Antrieb für Fed‑Zinserhöhung?",
-     "quelle": "BeInCrypto",
-     "url": "https://beincrypto.com/uk-jobs-rebound-fed-rate-hike/",
-     "zeit": "2026-09-07T03:00:00.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 82
-    },
-    {
-     "id": "FXStreet:Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
-     "titel": "Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
-     "titelDe": "Silberpreisprognose: XAG/USD hält Verluste nahe 66,00 $ aufgrund von Fed‑Zinserhöhungswetten",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-holds-losses-near-6600-due-to-fed-rate-hike-bets-202609070244",
-     "zeit": "2026-09-07T02:44:26.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
@@ -552,6 +522,36 @@
      "priority": 82
     },
     {
+     "id": "BeInCrypto:UK Jobs Rebound Meets Hot US Data: More Fuel for a Fed Rate Hike?",
+     "titel": "UK Jobs Rebound Meets Hot US Data: More Fuel for a Fed Rate Hike?",
+     "titelDe": "UK-Jobzuwachs trifft auf starke US-Daten: Mehr Antrieb für Fed‑Zinserhöhung?",
+     "quelle": "BeInCrypto",
+     "url": "https://beincrypto.com/uk-jobs-rebound-fed-rate-hike/",
+     "zeit": "2026-09-07T03:00:00.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 81
+    },
+    {
+     "id": "FXStreet:Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
+     "titel": "Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
+     "titelDe": "Silberpreisprognose: XAG/USD hält Verluste nahe 66,00 $ aufgrund von Fed‑Zinserhöhungswetten",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-holds-losses-near-6600-due-to-fed-rate-hike-bets-202609070244",
+     "zeit": "2026-09-07T02:44:26.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 81
+    },
+    {
      "id": "FXStreet:Gold falls below $4,400 as strong US jobs data raise the prospects for Fed rate hike",
      "titel": "Gold falls below $4,400 as strong US jobs data raise the prospects for Fed rate hike",
      "titelDe": "Gold fällt unter 4.400 $, starke US-Arbeitsmarktdaten erhöhen die Aussichten auf eine Fed‑Zinserhöhung",
@@ -564,7 +564,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 80
+     "priority": 79
     },
     {
      "id": "FXStreet:British Pound gains as US Dollar weakens despite Fed rate hike odds surge",
@@ -594,7 +594,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 74
+     "priority": 73
     },
     {
      "id": "FXStreet:New Zealand Dollar edges lower as Fed rate hike bets and Iran tensions underpin USD",
@@ -609,7 +609,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 70
+     "priority": 69
     }
    ]
   }
