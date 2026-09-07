@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T03:21:50.649Z",
+ "updated": "2026-09-07T03:38:34.899Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T03:21:50.715Z",
+   "stand": "2026-09-07T03:38:34.964Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T03:21:50.704Z",
+   "stand": "2026-09-07T03:38:34.953Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T03:21:50.692Z",
+   "stand": "2026-09-07T03:38:34.940Z",
    "anzahl": 83,
    "klassen": {
     "crypto": {
@@ -492,12 +492,42 @@
    },
    "top": [
     {
+     "id": "FXStreet:Swiss Franc weakens as US Dollar strengthens on Fed rate hike bets",
+     "titel": "Swiss Franc weakens as US Dollar strengthens on Fed rate hike bets",
+     "titelDe": "Schweizer Franken schwächt sich, US-Dollar stärkt sich bei Fed‑Zinserhöhungswetten",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/swiss-franc-weakens-as-us-dollar-strengthens-on-fed-rate-hike-bets-202609070337",
+     "zeit": "2026-09-07T02:25:08.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "FXStreet:Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
      "titel": "Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
      "titelDe": "Silberpreisprognose: XAG/USD hält Verluste nahe 66,00 $ aufgrund von Fed‑Zinserhöhungswetten",
      "quelle": "FXStreet",
      "url": "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-holds-losses-near-6600-due-to-fed-rate-hike-bets-202609070244",
      "zeit": "2026-09-07T02:44:26.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 83
+    },
+    {
+     "id": "BeInCrypto:UK Jobs Rebound Meets Hot US Data: More Fuel for a Fed Rate Hike?",
+     "titel": "UK Jobs Rebound Meets Hot US Data: More Fuel for a Fed Rate Hike?",
+     "titelDe": "UK-Jobzuwachs trifft auf starke US-Daten: Mehr Antrieb für Fed‑Zinserhöhung?",
+     "quelle": "BeInCrypto",
+     "url": "https://beincrypto.com/uk-jobs-rebound-fed-rate-hike/",
+     "zeit": "2026-09-07T03:00:00.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
@@ -580,36 +610,6 @@
       "usd": -0.7
      },
      "priority": 68
-    },
-    {
-     "id": "FXStreet:Japanese Yen consolidates near August highs vs USD as hawkish BoJ, Fed bets clash",
-     "titel": "Japanese Yen consolidates near August highs vs USD as hawkish BoJ, Fed bets clash",
-     "titelDe": "Der japanische Yen konsolidiert nahe August-Hochs gegenüber dem USD, während BoJ- und Fed-Hawkish-Wetten im Widerspruch stehen",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/japanese-yen-consolidates-near-august-highs-vs-usd-as-hawkish-boj-fed-bets-clash-202609070104",
-     "zeit": "2026-09-07T01:04:25.000Z",
-     "scores": {
-      "crypto": -0.6,
-      "stocks": -0.51,
-      "gold": -0.48,
-      "usd": 0.6
-     },
-     "priority": 78
-    },
-    {
-     "id": "Al Jazeera (GN):North Korea deploys warship 'capable of annihilating retaliatory strikes' - Al Jazeera",
-     "titel": "North Korea deploys warship 'capable of annihilating retaliatory strikes' - Al Jazeera",
-     "titelDe": "Nordkorea setzt Kriegsschiff ein, das in der Lage ist, Gegenangriffe zu vernichten",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOS3pReFB0UjBkSnY0UTZUN2RUZUNXdUZjMXUzZXcyNktPanZzUGNzNzU1UWIxdDJlbmx0VXl1bGdReVFhNy15VDFrakhJYVdhUGgtY2hrdjhobzQ0RW9Rd3ZDajVqQ1VCOUxDRHpFdkVaYzZLTjNLVmlYcjJ2QWxYeXJpU1hFdzlqejZDMUtMZDI0VjZlbTVsclR6WHFHYlZwVlNkWlUzQnhTVjB4Q0dnbHg2bDNfTmdtWHFjb0M4RUhiYUdIc1lNb1ZB?oc=5",
-     "zeit": "2026-09-07T00:20:04.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 94
     }
    ]
   }
