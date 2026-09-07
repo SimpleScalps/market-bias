@@ -1156,7 +1156,8 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * nicht am Tageskontingent haengt - selbst wenn kein Token mehr da ist,
    * laeuft die Messung weiter.
    */
-  const wirkung = await wirkungMessen(items, z);
+  const wirkungBuch = { ...(z.wirkungBuch || {}) };
+  const wirkung = await wirkungMessen(items, z, wirkungBuch);
 
   const nochDa = new Set(items.map((n) => n.id));
   const kandidaten = neue.filter((n) => !gesehen.has(n.id) && nochDa.has(n.id));
@@ -1521,6 +1522,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ...(artikelErgebnis ? { artikelErgebnis } : {}),
     ...(dublettenLauf ? { letzteDubletten: dublettenLauf.zeit, dubletten: dublettenLauf } : {}),
     ...(wirkung?.bilanz ? { bilanz: wirkung.bilanz } : {}),
+    ...(wirkung?.gemessen ? { wirkungBuch: fehlerbuchFortschreiben(wirkungBuch, [], items) } : {}),
     ...(wirkung ? { wirkungZuletzt: {
       zeit: new Date().toISOString(),
       ...(wirkung.gemessen ? { gemessen: wirkung.gemessen, boerse: wirkung.boerse } : {}),
@@ -1712,8 +1714,8 @@ function faelligFuerWirkung(n) {
  * beantwortet, ob die Berichtigung ueberhaupt etwas verbessert - bisher war
  * das eine Glaubensfrage.
  */
-async function wirkungMessen(items, z) {
-  const faellig = items.filter(faelligFuerWirkung).slice(0, WIRKUNG_MAX);
+async function wirkungMessen(items, z, buch) {
+  const faellig = items.filter((n) => faelligFuerWirkung(n) && !buch[n.id]).slice(0, WIRKUNG_MAX);
   if (!faellig.length) return null;
 
   const { kerzen, boerse, fehler } = await kerzenHolen(WIRKUNG_RUECKBLICK_MIN + WIRKUNG_MINUTEN + 5);
@@ -1762,6 +1764,16 @@ async function wirkungMessen(items, z) {
       ...(n.nurStaatlich ? [eintrag('nur Staatsmedien', gezeigt)] : []),
     ];
     bilanz = bilanzAddieren(bilanz, eintraege);
+    /*
+     * Der Vermerk gehoert auch ins Durable Object, nicht nur an die Meldung.
+     *
+     * Der Bestand wird nicht bei jedem Durchgang abgelegt - KV hat ein
+     * Tageskontingent, und ist es knapp, wird gespart. Dann kaeme dieselbe
+     * Meldung ohne ihren Vermerk zurueck und wuerde erneut gemessen: Die
+     * Bilanz zaehlte einen einzigen Fall zwanzigmal und saehe dabei aus wie
+     * eine belastbare Stichprobe.
+     */
+    buch[n.id] = 1;
     gemessen++;
   }
 
