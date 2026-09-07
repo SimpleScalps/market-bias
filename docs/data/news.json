@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-07T02:08:05.142Z",
+ "updated": "2026-09-07T02:09:29.630Z",
  "regime": "policy",
- "count": 183,
+ "count": 182,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
   "Times of Israel: 403 https://www.timesofisrael.com/feed/"
@@ -153,7 +153,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 36,
+   "priority": 35,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -820,7 +820,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -858,7 +858,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1871,11 +1871,11 @@
    "titleDe": "BSW sagt, es teile mit der AfD gemeinsame Standpunkte zu Russland und Sanktionen"
   },
   {
-   "id": "Al Jazeera (GN):Iran war live: Tehran to announce new Hormuz shipping route in coming days - Al Jazeera",
-   "title": "Iran war live: Tehran to announce new Hormuz shipping route in coming days - Al Jazeera",
-   "text": "Iran war live: Tehran to announce new Hormuz shipping route in coming days - Al Jazeera &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQcmxWcmJIMk14bTNib01adjdzbGFDemdfT1pjTjNGM0FXTWxOeVBWbVdoY0s2WlJQekViQVA4RW5jS3BkdkVUOWdydkg0LTN6cXptN1FSeU5nbzJSYUJOU0ppbC1aYTY3cW9pOWNsR19VaUNLb3JaVHJQbkx4LU9qRHpqZEpxTUZjVUxNWlU2QjNwdEMwSnc3RnNmUXRfeTJ1WVAySnJicUJpSG8zMXdSSWp6UGdJbEprdHE1UGtIUENaT3dUZGw3ZTNmaDRZU3lvWUhn?oc=5",
+   "id": "Al Jazeera:Iran war live: Tehran to announce new Hormuz shipping route in coming days",
+   "title": "Iran war live: Tehran to announce new Hormuz shipping route in coming days",
+   "text": "Move comes as Iran's top negotiator warns of heavier responses to new attacks after US strikes on Iranian oil tankers.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/9/7/iran-war-live-tehran-to-announce-new-hormuz-shipping-route-in-coming-days?traffic_source=rss",
    "date": "2026-09-07T00:00:00.000Z",
    "tags": [
     "Weltlage"
@@ -1897,7 +1897,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 66,
+   "priority": 64,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -1906,13 +1906,11 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "Al Jazeera"
-   ],
-   "bestaetigt": 2,
+   "alsoIn": [],
+   "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Iran im Live: Teheran wird in den kommenden Tagen neue Schifffahrtsroute durch den Hormus bekannt geben - Al Jazeera"
+   "titleDe": "Iran im Live-Update: Teheran kündigt in den kommenden Tagen neue Hormus-Schifffahrtsroute an"
   },
   {
    "id": "FXStreet:China injects $54 billion stimulus for financial sector amid fears over sluggish growth",
@@ -2660,11 +2658,11 @@
    "titleDe": "Top 3 Meme-Coins, die in der zweiten Septemberwoche im Blick bleiben"
   },
   {
-   "id": "Al Jazeera (GN):Jamaica to file slavery reparations petition during UK visit",
+   "id": "Al Jazeera:Jamaica to file slavery reparations petition during UK visit",
    "title": "Jamaica to file slavery reparations petition during UK visit",
-   "text": "Jamaica to file slavery reparations petition during UK visit &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUHpJWS1SOERmb2M5UDJVSW5ya2VSaEdaekxXQmlkZENJSk9yUEZkOVJDX0N3QlMxU0s0YW5aZ3dMalIySjMtQ3dDX1R6a3Y5OU5HMzQ5SWVZcV9vTHNkSFNSY0djc3pBMTFmajVFU18tZktfNnlBb21WY1N4MXJrSlB2cmpBNlk2Zi1JdDNZc0VBU0lRclZVd0ZwVFQwS0lVX0HSAacBQVVfeXFMTWlINW9jdExKVE92UG0zZHM3ZjJCR2tRSHVjRHFZaXRoeFQ5bm1VR3c3RWlsSDFDeFYtcm9FRTI2aGFnZFZfeWV5ams1NWZqbURsQkdBcDloOW5YZTdqcEU3bzhMRHNsVlh2bWh1R3ktRnFkbUJ1MUx6RmVnSTNWV0RscXc5T3oxb2ZsZlFySTdQbWNaazkyTFoxeFdEek5CbTFjSEpfbzA?oc=5",
+   "text": "Petition to King Charles questions the legality of slavery under English law and UK’s responsibility for reparations.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/7/jamaica-to-file-slavery-reparations-petition-during-uk-visit?traffic_source=rss",
    "date": "2026-09-06T21:49:55.000Z",
    "tags": [
     "Weltlage"
@@ -2692,9 +2690,10 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
+    "Al Jazeera (GN)",
     "SCMP"
    ],
-   "bestaetigt": 2,
+   "bestaetigt": 3,
    "haeuser": 2,
    "unabhaengig": 2,
    "titleDe": "Jamaika reicht während UK-Besuch Klage für Sklavenentschädigungen ein"
@@ -3640,44 +3639,6 @@
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Nordmazedonien interessiert an Energiekooperation mit Russland – Politiker"
-  },
-  {
-   "id": "Al Jazeera:At least five killed in New Delhi building collapse",
-   "title": "At least five killed in New Delhi building collapse",
-   "text": "At least five people have been killed and nine rescued after a building housing mostly students collapsed in New Delhi.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/at-least-five-killed-in-new-delhi-building-collapse?traffic_source=rss",
-   "date": "2026-09-06T20:05:32.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "medium",
-   "duration": "long",
-   "eventType": "Insolvenz",
-   "eventTypeEn": "Insolvency",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Mindestens fünf Tote bei Gebäudeeinsturz in Neu-Delhi"
   },
   {
    "id": "Guardian:The US now has access to more than half Australia’s military bases – could it drag the country unwillingly into war?",
@@ -6400,7 +6361,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 10,
+   "priority": 9,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7243,12 +7204,12 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 1,
+  "uebersetzt": 0,
   "fehler": null
  },
  "rubriken": {
   "Sport": 2,
-  "Unsinn": 5,
+  "Unsinn": 4,
   "Unterhaltung": 1
  }
 }
