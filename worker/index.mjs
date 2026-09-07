@@ -1855,6 +1855,26 @@ function richtungVermerken(items) {
  * das eine Glaubensfrage.
  */
 async function wirkungMessen(items, z, buch) {
+  /*
+   * Was schon gezaehlt wurde, kommt aus dem Buch zurueck an die Meldung.
+   *
+   * Der Vermerk an der Meldung liegt in KV, das Buch im Durable Object. KV
+   * liefert einen Lesestand bis zu einer Minute veraltet aus - die Meldung kam
+   * also regelmaessig ohne ihren Vermerk zurueck, waehrend das Buch ihn
+   * behielt. Beides zusammen hiess: nicht mehr messen, aber auch nichts mehr
+   * anzeigen. Sechs faellige Meldungen standen so achtzehn Minuten lang da,
+   * ohne dass ein einziger Durchgang sie angefasst haette.
+   *
+   * Deshalb steht im Buch jetzt die Messung selbst und nicht bloss ein Haken.
+   * Sie doppelt zu zaehlen bleibt ausgeschlossen, und verloren geht sie nicht
+   * mehr. (Alte Eintraege sind noch ein blosses 1 - die gelten weiter als
+   * gezaehlt, nur ohne Anzeige.)
+   */
+  for (const n of items) {
+    const gebucht = buch[n.id];
+    if (!n.wirkung && gebucht && typeof gebucht === 'object') n.wirkung = gebucht;
+  }
+
   const faellig = items.filter((n) => faelligFuerWirkung(n) && !buch[n.id]).slice(0, WIRKUNG_MAX);
   if (!faellig.length) return null;
 
@@ -1921,7 +1941,7 @@ async function wirkungMessen(items, z, buch) {
      * Bilanz zaehlte einen einzigen Fall zwanzigmal und saehe dabei aus wie
      * eine belastbare Stichprobe.
      */
-    buch[n.id] = 1;
+    buch[n.id] = n.wirkung;
     gemessen++;
   }
 
