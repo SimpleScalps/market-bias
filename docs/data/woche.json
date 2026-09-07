@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T10:37:10.304Z",
+ "updated": "2026-09-07T10:47:57.040Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T10:37:10.349Z",
+   "stand": "2026-09-07T10:47:57.121Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T10:37:10.340Z",
+   "stand": "2026-09-07T10:47:57.104Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T10:37:10.332Z",
+   "stand": "2026-09-07T10:47:57.088Z",
    "anzahl": 175,
    "klassen": {
     "crypto": {
@@ -520,6 +520,21 @@
       "usd": 0.3
      },
      "priority": 96
+    },
+    {
+     "id": "TASS:One casualty, one wounded in strike on Perm, 306 UAVs: aftermath of attacks against Russia",
+     "titel": "One casualty, one wounded in strike on Perm, 306 UAVs: aftermath of attacks against Russia",
+     "titelDe": "Eine Tote, ein Verletzter bei Angriff auf Perm, 306 UAVs: Nachwirkungen der Angriffe gegen Russland",
+     "quelle": "TASS",
+     "url": "https://tass.com/emergencies/2183609",
+     "zeit": "2026-09-07T10:43:18.000Z",
+     "scores": {
+      "crypto": -0.81,
+      "stocks": -0.81,
+      "gold": 0.405,
+      "usd": 0.27
+     },
+     "priority": 100
     },
     {
      "id": "FXStreet:United States Dollar Index strengthens above 99.00 as robust US jobs data boosts Fed rate hike bets",
@@ -588,21 +603,6 @@
      "quelle": "FXStreet",
      "url": "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-holds-losses-near-6600-due-to-fed-rate-hike-bets-202609070244",
      "zeit": "2026-09-07T02:44:26.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 79
-    },
-    {
-     "id": "FXStreet:Gold falls below $4,400 as strong US jobs data raise the prospects for Fed rate hike",
-     "titel": "Gold falls below $4,400 as strong US jobs data raise the prospects for Fed rate hike",
-     "titelDe": "Gold fällt unter 4.400 $, starke US-Arbeitsmarktdaten erhöhen die Aussichten auf eine Fed‑Zinserhöhung",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/gold-falls-below-4-400-as-strong-us-jobs-data-raise-the-prospects-for-fed-rate-hike-202609070133",
-     "zeit": "2026-09-07T01:33:46.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
