@@ -973,6 +973,8 @@ function zusammenfuehren(bestand, frische) {
            * dieselbe Meldung noch einmal ausliefert.
            */
           ...(vorhanden.wirkung ? { wirkung: vorhanden.wirkung } : {}),
+          // Dasselbe gilt fuer den Zeitpunkt, ab dem gemessen wird.
+          ...(vorhanden.richtungSeit ? { richtungSeit: vorhanden.richtungSeit } : {}),
           /*
            * Ebenso die Zahl der Quellen. Sie entsteht erst im Dublettenlauf
            * ueber den ganzen Bestand, alle fuenf Minuten - der frische Zulauf
@@ -1211,6 +1213,8 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * nicht am Tageskontingent haengt - selbst wenn kein Token mehr da ist,
    * laeuft die Messung weiter.
    */
+  // Erst vermerken, seit wann eine Richtung vorliegt - danach messen.
+  richtungVermerken(items);
   const wirkungBuch = { ...(z.wirkungBuch || {}) };
   const wirkung = await wirkungMessen(items, z, wirkungBuch);
 
@@ -1783,13 +1787,42 @@ function punktFuer(wert, prozent) {
 function faelligFuerWirkung(n) {
   if (n.wirkung) return false;
   if (n.impactLevel === 'ignore') return false;
-  const regel = Math.abs(n.regelScores?.crypto ?? n.scores?.crypto ?? 0);
-  const gezeigt = Math.abs(n.scores?.crypto ?? 0);
-  if (Math.max(regel, gezeigt) < 0.2) return false;
-  const ab = new Date(n.gesehenAm || n.date).getTime();
+  if (!n.richtungSeit) return false;
+  const ab = new Date(n.richtungSeit).getTime();
   if (!ab || isNaN(ab)) return false;
   const alter = Date.now() - ab;
   return alter > WIRKUNG_REIFE_MIN * 60_000 && alter < WIRKUNG_RUECKBLICK_MIN * 60_000;
+}
+
+/**
+ * Haelt fest, seit wann eine Meldung ueberhaupt eine Richtung hat.
+ *
+ * Gemessen wurde bisher ab dem Eingang. Das stimmt, solange das Regelwerk die
+ * Richtung liefert - die steht in derselben Sekunde fest. Kommt sie aber erst
+ * von der KI, liegt zwischen Eingang und Urteil oft mehr als die
+ * eineinhalb Stunden, in denen gemessen wird: Dreizehn von dreiunddreissig
+ * Meldungen mit Richtung fielen so aus dem Fenster, ohne je gemessen worden
+ * zu sein. Und sie fielen nicht zufaellig heraus, sondern genau die, bei
+ * denen die Pruefung laenger brauchte.
+ *
+ * Der Zeitpunkt ist zugleich der ehrlichere: Was die App erst um zehn Uhr
+ * weiss, haette um acht niemand handeln koennen.
+ */
+function richtungVermerken(items) {
+  const jetzt = new Date().toISOString();
+  let neu = 0;
+  for (const n of items) {
+    if (n.richtungSeit || n.impactLevel === 'ignore') continue;
+    const regel = Math.abs(n.regelScores?.crypto ?? n.scores?.crypto ?? 0);
+    const gezeigt = Math.abs(n.scores?.crypto ?? 0);
+    if (Math.max(regel, gezeigt) < 0.2) continue;
+
+    // Eine Richtung aus dem Regelwerk stand schon beim Eingang fest; eine aus
+    // der KI erst jetzt.
+    n.richtungSeit = regel >= 0.2 ? (n.gesehenAm || n.date || jetzt) : jetzt;
+    neu++;
+  }
+  return neu;
 }
 
 /**
