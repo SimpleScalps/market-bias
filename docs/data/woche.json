@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-07T03:38:34.899Z",
+ "updated": "2026-09-07T03:49:30.611Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-07T03:38:34.964Z",
+   "stand": "2026-09-07T03:49:30.687Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-07T03:38:34.953Z",
+   "stand": "2026-09-07T03:49:30.673Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,32 +462,32 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-07T03:38:34.940Z",
-   "anzahl": 83,
+   "stand": "2026-09-07T03:49:30.658Z",
+   "anzahl": 85,
    "klassen": {
     "crypto": {
-     "score": -0.1296,
-     "bull": 2,
-     "bear": 12,
-     "neut": 69
+     "score": -0.1827,
+     "bull": 1,
+     "bear": 16,
+     "neut": 68
     },
     "stocks": {
-     "score": -0.1253,
-     "bull": 1,
-     "bear": 12,
+     "score": -0.1605,
+     "bull": 0,
+     "bear": 15,
      "neut": 70
     },
     "gold": {
-     "score": -0.0519,
+     "score": -0.0786,
      "bull": 7,
-     "bear": 6,
+     "bear": 8,
      "neut": 70
     },
     "usd": {
-     "score": 0.1088,
-     "bull": 7,
-     "bear": 1,
-     "neut": 75
+     "score": 0.1465,
+     "bull": 9,
+     "bear": 0,
+     "neut": 76
     }
    },
    "top": [
@@ -507,21 +507,6 @@
      "priority": 84
     },
     {
-     "id": "FXStreet:Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
-     "titel": "Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
-     "titelDe": "Silberpreisprognose: XAG/USD hält Verluste nahe 66,00 $ aufgrund von Fed‑Zinserhöhungswetten",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-holds-losses-near-6600-due-to-fed-rate-hike-bets-202609070244",
-     "zeit": "2026-09-07T02:44:26.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 83
-    },
-    {
      "id": "BeInCrypto:UK Jobs Rebound Meets Hot US Data: More Fuel for a Fed Rate Hike?",
      "titel": "UK Jobs Rebound Meets Hot US Data: More Fuel for a Fed Rate Hike?",
      "titelDe": "UK-Jobzuwachs trifft auf starke US-Daten: Mehr Antrieb für Fed‑Zinserhöhung?",
@@ -535,6 +520,21 @@
       "usd": 0.75
      },
      "priority": 83
+    },
+    {
+     "id": "FXStreet:Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
+     "titel": "Silver Price Forecast: XAG/USD holds losses near $66.00 due to Fed rate hike bets",
+     "titelDe": "Silberpreisprognose: XAG/USD hält Verluste nahe 66,00 $ aufgrund von Fed‑Zinserhöhungswetten",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-holds-losses-near-6600-due-to-fed-rate-hike-bets-202609070244",
+     "zeit": "2026-09-07T02:44:26.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 82
     },
     {
      "id": "FXStreet:United States Dollar Index strengthens above 99.00 as robust US jobs data boosts Fed rate hike bets",
@@ -564,7 +564,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 81
+     "priority": 80
     },
     {
      "id": "FXStreet:British Pound gains as US Dollar weakens despite Fed rate hike odds surge",
@@ -579,7 +579,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 80
+     "priority": 79
     },
     {
      "id": "FXStreet:New Zealand Dollar edges lower as Fed rate hike bets and Iran tensions underpin USD",
