@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T14:32:26.412Z",
+ "updated": "2026-09-08T14:50:40.718Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T14:32:26.508Z",
+   "stand": "2026-09-08T14:50:40.829Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T14:32:26.493Z",
+   "stand": "2026-09-08T14:50:40.810Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T14:32:26.477Z",
+   "stand": "2026-09-08T14:50:40.791Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T14:32:26.461Z",
+   "stand": "2026-09-08T14:50:40.772Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -719,6 +719,36 @@
      "priority": 74
     },
     {
+     "id": "BBC World:Carney says US trade war 'will come at a cost' as Canada strikes back on tariffs",
+     "titel": "Carney says US trade war 'will come at a cost' as Canada strikes back on tariffs",
+     "titelDe": "Carney sagt, dass der US-Handelskrieg \"seinen Preis haben wird\", da Kanada die Zölle zurückschlägt",
+     "quelle": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
+     "zeit": "2026-09-08T14:46:16.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 74
+    },
+    {
+     "id": "CNBC:U.S. sanctions Iranian airlines in aim to tighten economic squeeze as war spreads, oil rises",
+     "titel": "U.S. sanctions Iranian airlines in aim to tighten economic squeeze as war spreads, oil rises",
+     "titelDe": "US-Sanktionen gegen iranische Fluggesellschaften zielen darauf ab, den wirtschaftlichen Druck zu verschärfen, da sich der Krieg ausbreitet und das Öl steigt",
+     "quelle": "CNBC",
+     "url": "https://www.cnbc.com/2026/09/08/us-sanctions-iran-airlines-oil-economy-war.html",
+     "zeit": "2026-09-08T14:30:01.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 74
+    },
+    {
      "id": "Reuters:Canada's retaliatory tariffs take effect as US trade talks stall",
      "titel": "Canada's retaliatory tariffs take effect as US trade talks stall",
      "quelle": "Reuters",
@@ -731,36 +761,6 @@
       "usd": 0.3
      },
      "priority": 62
-    },
-    {
-     "id": "BeInCrypto:UBS Names Three Places to Put Money as Fed Rate Hike Odds Reach 60%",
-     "titel": "UBS Names Three Places to Put Money as Fed Rate Hike Odds Reach 60%",
-     "titelDe": "UBS nennt drei Orte, an denen man Geld anlegen kann, da die Zinserhöhungsquoten der Fed 60% erreichen",
-     "quelle": "BeInCrypto",
-     "url": "https://beincrypto.com/ubs-fed-hike-odds-portfolio-positioning/",
-     "zeit": "2026-09-08T04:51:16.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 73
-    },
-    {
-     "id": "BBC World:Canada braces for prolonged trade war as counter-tariffs on US take effect",
-     "titel": "Canada braces for prolonged trade war as counter-tariffs on US take effect",
-     "titelDe": "Kanada bereitet sich auf einen längeren Handelskrieg vor, da die Gegenzölle auf die USA in Kraft treten",
-     "quelle": "BBC World",
-     "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
-     "zeit": "2026-09-08T04:00:59.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 71
     }
    ]
   }
