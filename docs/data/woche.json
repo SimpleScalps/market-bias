@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T18:05:09.156Z",
+ "updated": "2026-09-08T18:24:33.165Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T18:05:09.251Z",
+   "stand": "2026-09-08T18:24:33.259Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T18:05:09.236Z",
+   "stand": "2026-09-08T18:24:33.244Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T18:05:09.220Z",
+   "stand": "2026-09-08T18:24:33.229Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T18:05:09.205Z",
+   "stand": "2026-09-08T18:24:33.214Z",
    "anzahl": 238,
    "klassen": {
     "crypto": {
@@ -644,6 +644,21 @@
     }
    },
    "top": [
+    {
+     "id": "Tehran Times:Iran warns against normalizing attacks on nuclear facilities",
+     "titel": "Iran warns against normalizing attacks on nuclear facilities",
+     "titelDe": "Iran warnt vor normalisierenden Angriffen auf Atomanlagen",
+     "quelle": "Tehran Times",
+     "url": "https://www.tehrantimes.com/news/529848/Iran-warns-against-normalizing-attacks-on-nuclear-facilities",
+     "zeit": "2026-09-08T18:10:35.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 100
+    },
     {
      "id": "IRNA:MP: Strike on US warships represents mere fraction of Iran’s military prowess",
      "titel": "MP: Strike on US warships represents mere fraction of Iran’s military prowess",
@@ -747,21 +762,6 @@
       "usd": 0.75
      },
      "priority": 79
-    },
-    {
-     "id": "CNBC World:U.S. sanctions Iranian airlines in aim to tighten economic squeeze as war spreads, oil rises",
-     "titel": "U.S. sanctions Iranian airlines in aim to tighten economic squeeze as war spreads, oil rises",
-     "titelDe": "US-Sanktionen gegen iranische Fluggesellschaften zielen darauf ab, den wirtschaftlichen Druck zu verschärfen, da sich der Krieg ausbreitet und das Öl steigt",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/08/us-sanctions-iran-airlines-oil-economy-war.html",
-     "zeit": "2026-09-08T14:30:01.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 74
     }
    ]
   }
