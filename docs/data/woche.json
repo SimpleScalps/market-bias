@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T22:04:46.640Z",
+ "updated": "2026-09-08T22:19:24.921Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T22:04:46.725Z",
+   "stand": "2026-09-08T22:19:25.031Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T22:04:46.714Z",
+   "stand": "2026-09-08T22:19:25.017Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T22:04:46.702Z",
+   "stand": "2026-09-08T22:19:25.001Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T22:04:46.691Z",
+   "stand": "2026-09-08T22:19:24.986Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,35 +768,51 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-08T22:04:46.678Z",
-   "anzahl": 3,
+   "stand": "2026-09-08T22:19:24.970Z",
+   "anzahl": 10,
    "klassen": {
     "crypto": {
-     "score": -0.1934,
+     "score": -0.338,
      "bull": 0,
-     "bear": 1,
-     "neut": 2
+     "bear": 2,
+     "neut": 8
     },
     "stocks": {
-     "score": -0.1934,
+     "score": -0.338,
      "bull": 0,
-     "bear": 1,
-     "neut": 2
+     "bear": 2,
+     "neut": 8
     },
     "gold": {
-     "score": 0.0967,
-     "bull": 1,
+     "score": 0.169,
+     "bull": 2,
      "bear": 0,
-     "neut": 2
+     "neut": 8
     },
     "usd": {
-     "score": 0.0645,
-     "bull": 0,
+     "score": 0.1127,
+     "bull": 1,
      "bear": 0,
-     "neut": 3
+     "neut": 9
     }
    },
-   "top": []
+   "top": [
+    {
+     "id": "TASS:Iran carries out missile strikes on Jordan airbases hosting US forces — TV",
+     "titel": "Iran carries out missile strikes on Jordan airbases hosting US forces — TV",
+     "titelDe": "Iran führt Luftangriffe auf jordanische Luftwaffenbasen durch, die US-Truppen beherbergen – TV",
+     "quelle": "TASS",
+     "url": "https://tass.com/world/2184517",
+     "zeit": "2026-09-08T22:03:21.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    }
+   ]
   }
  }
 }
