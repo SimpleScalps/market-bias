@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T20:46:07.578Z",
+ "updated": "2026-09-08T20:54:49.513Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T20:46:07.694Z",
+   "stand": "2026-09-08T20:54:49.605Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T20:46:07.673Z",
+   "stand": "2026-09-08T20:54:49.591Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T20:46:07.654Z",
+   "stand": "2026-09-08T20:54:49.576Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T20:46:07.635Z",
+   "stand": "2026-09-08T20:54:49.561Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -644,6 +644,21 @@
     }
    },
    "top": [
+    {
+     "id": "Al Jazeera:Police bodycam captures Russian missile strike on Kyiv",
+     "titel": "Police bodycam captures Russian missile strike on Kyiv",
+     "titelDe": "Polizeibeobachtungskamera fängt russischen Raketenangriff auf Kiew ein",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/police-bodycam-captures-russian-missile-strike-on-kyiv?traffic_source=rss",
+     "zeit": "2026-09-08T20:43:52.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
     {
      "id": "Tehran Times:Iran warns against normalizing attacks on nuclear facilities",
      "titel": "Iran warns against normalizing attacks on nuclear facilities",
@@ -748,21 +763,6 @@
       "usd": 0.3
      },
      "priority": 72
-    },
-    {
-     "id": "Reuters:Fed may hike rates this month on hot CPI, market expert says",
-     "titel": "Fed may hike rates this month on hot CPI, market expert says",
-     "titelDe": "Die Fed könnte diesen Monat die Zinsen für den heißen VPI erhöhen, sagt Marktexperte",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE95Y3FmajdwemluVkVMYlY4eC1HZmlqMVNzeHE5N3BZWHBqS3pqRnBDMGNMRVFwODZKZWlmTGx3LWtzSzIwYWhlSm1RX2NnS3dlS0hVSlMzODAySVU1OUNOQVJIZDBXZW9XRlBJNnVFeXJWOVFZRk50cXR3?oc=5",
-     "zeit": "2026-09-08T20:03:45.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 83
     }
    ]
   }
