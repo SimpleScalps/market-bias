@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T19:20:42.875Z",
+ "updated": "2026-09-08T19:35:10.227Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T19:20:42.970Z",
+   "stand": "2026-09-08T19:35:10.341Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T19:20:42.955Z",
+   "stand": "2026-09-08T19:35:10.322Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T19:20:42.940Z",
+   "stand": "2026-09-08T19:35:10.303Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,32 +615,32 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T19:20:42.924Z",
-   "anzahl": 239,
+   "stand": "2026-09-08T19:35:10.284Z",
+   "anzahl": 240,
    "klassen": {
     "crypto": {
-     "score": -0.0935,
+     "score": -0.0788,
      "bull": 7,
-     "bear": 33,
-     "neut": 199
+     "bear": 27,
+     "neut": 206
     },
     "stocks": {
-     "score": -0.0908,
+     "score": -0.0763,
      "bull": 4,
-     "bear": 31,
-     "neut": 204
+     "bear": 25,
+     "neut": 211
     },
     "gold": {
-     "score": 0.0292,
-     "bull": 29,
+     "score": 0.0242,
+     "bull": 23,
      "bear": 6,
-     "neut": 204
+     "neut": 211
     },
     "usd": {
-     "score": 0.0397,
-     "bull": 9,
+     "score": 0.0336,
+     "bull": 7,
      "bear": 1,
-     "neut": 229
+     "neut": 232
     }
    },
    "top": [
@@ -675,21 +675,6 @@
      "priority": 100
     },
     {
-     "id": "Decrypt:Bitcoin Holds, Wall Street Stalls as Oil Shock Revives Fed Hike Bets",
-     "titel": "Bitcoin Holds, Wall Street Stalls as Oil Shock Revives Fed Hike Bets",
-     "titelDe": "Bitcoin bleibt stabil, Wall Street stagniert, Öl-Schock weckt Fed-Hike-Wetten",
-     "quelle": "Decrypt",
-     "url": "https://decrypt.co/377705/bitcoin-holds-wall-street-stalls-oil-shock-fed-hike",
-     "zeit": "2026-09-08T18:59:35.000Z",
-     "scores": {
-      "crypto": -0.878,
-      "stocks": -0.803,
-      "gold": -0.211,
-      "usd": 0.626
-     },
-     "priority": 86
-    },
-    {
      "id": "IRNA:Senior MP: Strike on US warships represents mere fraction of Iran’s military prowess",
      "titel": "Senior MP: Strike on US warships represents mere fraction of Iran’s military prowess",
      "titelDe": "Leitender Abgeordneter: Der Angriff auf US-Kriegsschiffe stellt nur einen Bruchteil der militärischen Fähigkeiten des Iran dar",
@@ -705,6 +690,21 @@
      "priority": 93
     },
     {
+     "id": "Decrypt:Bitcoin Holds, Wall Street Stalls as Oil Shock Revives Fed Hike Bets",
+     "titel": "Bitcoin Holds, Wall Street Stalls as Oil Shock Revives Fed Hike Bets",
+     "titelDe": "Bitcoin bleibt stabil, Wall Street stagniert, Öl-Schock weckt Fed-Hike-Wetten",
+     "quelle": "Decrypt",
+     "url": "https://decrypt.co/377705/bitcoin-holds-wall-street-stalls-oil-shock-fed-hike",
+     "zeit": "2026-09-08T18:59:35.000Z",
+     "scores": {
+      "crypto": -0.878,
+      "stocks": -0.803,
+      "gold": -0.211,
+      "usd": 0.626
+     },
+     "priority": 85
+    },
+    {
      "id": "FXStreet:Gold price wilts as Oil shock puts CPI in Fed crosshairs",
      "titel": "Gold price wilts as Oil shock puts CPI in Fed crosshairs",
      "titelDe": "Der Goldpreis welkt, da der Ölschock den VPI in das Fadenkreuz der Fed bringt",
@@ -717,22 +717,7 @@
       "gold": -0.211,
       "usd": 0.626
      },
-     "priority": 85
-    },
-    {
-     "id": "MarketWatch:Bombardier’s stock drops as the U.S.-Canada trade war intensifies. Here’s what Trump may target next.",
-     "titel": "Bombardier’s stock drops as the U.S.-Canada trade war intensifies. Here’s what Trump may target next.",
-     "titelDe": "Bombardiers Aktien fallen, da sich der Handelskrieg zwischen den USA und Kanada intensiviert. Das könnte Trump als nächstes ins Visier nehmen.",
-     "quelle": "MarketWatch",
-     "url": "https://www.marketwatch.com/story/bombardiers-stock-drops-as-the-u-s-canada-trade-war-intensifies-heres-what-trump-may-target-next-b389065e?mod=mw_rss_topstories",
-     "zeit": "2026-09-08T15:44:00.000Z",
-     "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
-     },
-     "priority": 75
+     "priority": 84
     },
     {
      "id": "Al Jazeera (GN):Russian strikes on Ukraine’s Kyiv kill at least two people",
@@ -748,6 +733,21 @@
       "usd": 0.3
      },
      "priority": 75
+    },
+    {
+     "id": "MarketWatch:Bombardier’s stock drops as the U.S.-Canada trade war intensifies. Here’s what Trump may target next.",
+     "titel": "Bombardier’s stock drops as the U.S.-Canada trade war intensifies. Here’s what Trump may target next.",
+     "titelDe": "Bombardiers Aktien fallen, da sich der Handelskrieg zwischen den USA und Kanada intensiviert. Das könnte Trump als nächstes ins Visier nehmen.",
+     "quelle": "MarketWatch",
+     "url": "https://www.marketwatch.com/story/bombardiers-stock-drops-as-the-u-s-canada-trade-war-intensifies-heres-what-trump-may-target-next-b389065e?mod=mw_rss_topstories",
+     "zeit": "2026-09-08T15:44:00.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 74
     },
     {
      "id": "FXStreet:The Euro's rate hike does not come with a gas cargo",
