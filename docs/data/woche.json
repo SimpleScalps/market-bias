@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T15:31:32.979Z",
+ "updated": "2026-09-08T15:49:03.646Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T15:31:33.099Z",
+   "stand": "2026-09-08T15:49:03.740Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T15:31:33.080Z",
+   "stand": "2026-09-08T15:49:03.725Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T15:31:33.059Z",
+   "stand": "2026-09-08T15:49:03.710Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,32 +615,32 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T15:31:33.039Z",
+   "stand": "2026-09-08T15:49:03.695Z",
    "anzahl": 235,
    "klassen": {
     "crypto": {
-     "score": -0.0776,
+     "score": -0.0853,
      "bull": 4,
-     "bear": 27,
-     "neut": 204
+     "bear": 28,
+     "neut": 203
     },
     "stocks": {
-     "score": -0.0789,
+     "score": -0.0865,
      "bull": 2,
-     "bear": 26,
-     "neut": 207
+     "bear": 27,
+     "neut": 206
     },
     "gold": {
-     "score": 0.0386,
-     "bull": 25,
+     "score": 0.0425,
+     "bull": 26,
      "bear": 3,
-     "neut": 207
+     "neut": 206
     },
     "usd": {
-     "score": 0.0268,
-     "bull": 6,
+     "score": 0.0293,
+     "bull": 8,
      "bear": 0,
-     "neut": 229
+     "neut": 227
     }
    },
    "top": [
@@ -673,6 +673,21 @@
       "usd": 0.27
      },
      "priority": 93
+    },
+    {
+     "id": "MarketWatch:Bombardier’s stock drops as the U.S.-Canada trade war intensifies. Here’s what Trump may target next.",
+     "titel": "Bombardier’s stock drops as the U.S.-Canada trade war intensifies. Here’s what Trump may target next.",
+     "titelDe": "Bombardiers Aktien fallen, da sich der Handelskrieg zwischen den USA und Kanada intensiviert. Das könnte Trump als nächstes ins Visier nehmen.",
+     "quelle": "MarketWatch",
+     "url": "https://www.marketwatch.com/story/bombardiers-stock-drops-as-the-u-s-canada-trade-war-intensifies-heres-what-trump-may-target-next-b389065e?mod=mw_rss_topstories",
+     "zeit": "2026-09-08T15:44:00.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 76
     },
     {
      "id": "Al Jazeera (GN):Russian strikes on Ukraine’s Kyiv kill at least two people",
@@ -740,21 +755,6 @@
      "quelle": "BBC World",
      "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
      "zeit": "2026-09-08T14:46:16.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 73
-    },
-    {
-     "id": "CNBC World:U.S. sanctions Iranian airlines in aim to tighten economic squeeze as war spreads, oil rises",
-     "titel": "U.S. sanctions Iranian airlines in aim to tighten economic squeeze as war spreads, oil rises",
-     "titelDe": "US-Sanktionen gegen iranische Fluggesellschaften zielen darauf ab, den wirtschaftlichen Druck zu verschärfen, da sich der Krieg ausbreitet und das Öl steigt",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/08/us-sanctions-iran-airlines-oil-economy-war.html",
-     "zeit": "2026-09-08T14:30:01.000Z",
      "scores": {
       "crypto": -0.765,
       "stocks": -0.765,
