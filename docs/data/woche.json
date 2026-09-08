@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T04:29:15.919Z",
+ "updated": "2026-09-08T04:42:39.116Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T04:29:16.007Z",
+   "stand": "2026-09-08T04:42:39.206Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T04:29:15.992Z",
+   "stand": "2026-09-08T04:42:39.192Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T04:29:15.978Z",
+   "stand": "2026-09-08T04:42:39.177Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,32 +615,32 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T04:29:15.964Z",
-   "anzahl": 100,
+   "stand": "2026-09-08T04:42:39.162Z",
+   "anzahl": 106,
    "klassen": {
     "crypto": {
-     "score": -0.1159,
+     "score": -0.1101,
      "bull": 0,
      "bear": 14,
-     "neut": 86
+     "neut": 92
     },
     "stocks": {
-     "score": -0.1025,
+     "score": -0.0976,
      "bull": 0,
      "bear": 13,
-     "neut": 87
+     "neut": 93
     },
     "gold": {
-     "score": 0.0282,
+     "score": 0.0275,
      "bull": 12,
      "bear": 1,
-     "neut": 87
+     "neut": 93
     },
     "usd": {
-     "score": 0.0477,
+     "score": 0.0451,
      "bull": 5,
      "bear": 0,
-     "neut": 95
+     "neut": 101
     }
    },
    "top": [
@@ -671,6 +671,20 @@
       "usd": 0.3
      },
      "priority": 63
+    },
+    {
+     "id": "Al Jazeera:Canada’s retaliatory tariffs on $20bn of US goods take effect",
+     "titel": "Canada’s retaliatory tariffs on $20bn of US goods take effect",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/9/8/canadas-retaliatory-tariffs-on-20bn-of-us-goods-take-effect?traffic_source=rss",
+     "zeit": "2026-09-08T04:00:59.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 62
     },
     {
      "id": "Guardian:Canada’s retaliatory US tariffs set to take effect as trade dispute grows",
@@ -742,20 +756,6 @@
       "usd": 0.3
      },
      "priority": 43
-    },
-    {
-     "id": "Reuters:Saudi-led coalition in Yemen says 73 injured in Houthi attacks on the kingdom",
-     "titel": "Saudi-led coalition in Yemen says 73 injured in Houthi attacks on the kingdom",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbXB6MGlpMW50OElMY1FiZ2hXYlNmbmI0ZG8xT2RLc0FOWG9IazNMVDdfdTdILUJINFYweFF5VFFOQldXU3k2T0NSekpIOVhyT050UXR3TzRGTEk4TGlnLVhJQ2s2LWRmamNyRGwyT3ZyU1gwQVlSYU5hQ3hBUHo2bTBwckJNQXlqSTQySzhhUV9WR0laNjZJVEktLXpiMF93N3hrYmRRejBXRFlPVmNrTTJJZ0w1NlhITEE?oc=5",
-     "zeit": "2026-09-08T04:19:00.000Z",
-     "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
-     },
-     "priority": 68
     }
    ]
   }
