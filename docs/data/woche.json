@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T21:39:24.434Z",
+ "updated": "2026-09-08T21:48:08.834Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T21:39:24.486Z",
+   "stand": "2026-09-08T21:48:08.949Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T21:39:24.478Z",
+   "stand": "2026-09-08T21:48:08.930Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T21:39:24.470Z",
+   "stand": "2026-09-08T21:48:08.910Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T21:39:24.462Z",
+   "stand": "2026-09-08T21:48:08.890Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -651,6 +651,21 @@
      "quelle": "Al Jazeera",
      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/police-bodycam-captures-russian-missile-strike-on-kyiv?traffic_source=rss",
      "zeit": "2026-09-08T20:43:52.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
+    {
+     "id": "SCMP:US strikes Iranian tankers after more attempted missile attacks on Navy warship",
+     "titel": "US strikes Iranian tankers after more attempted missile attacks on Navy warship",
+     "titelDe": "US-Angriffe auf iranische Tanker nach mehr versuchten Raketenangriffen auf Navy-Kriegsschiff",
+     "quelle": "SCMP",
+     "url": "https://www.scmp.com/news/world/middle-east/article/3366837/us-strikes-iranian-tankers-after-more-attempted-missile-attacks-navy-warship?utm_source=rss_feed",
+     "zeit": "2026-09-08T21:42:36.000Z",
      "scores": {
       "crypto": -0.9,
       "stocks": -0.9,
@@ -748,21 +763,6 @@
       "usd": 0.3
      },
      "priority": 76
-    },
-    {
-     "id": "Al Jazeera (GN):Russian strikes on Ukraine’s Kyiv kill at least two people",
-     "titel": "Russian strikes on Ukraine’s Kyiv kill at least two people",
-     "titelDe": "Russische Angriffe auf das ukrainische Kiew töten mindestens zwei Menschen",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNaEhXSHNycHhKQldXbnlyVks3dUh0NDZIbHB2YU43MXkxaXdaZVg2NHZIelJ4emhyZk9PVWZiUzRwcUxONDd2VnRwVC00Z0toeXZvNE84aUpxZ2I2MUdVRFhQT0tqUmJkc3NHRHMtVnE1dmk5dlZvQXBlSVQ2V28xM0NZajhDTFpRdEhKYjcxdlQ2ZFNpRFphalBjMDlQQ2ZTemdhR0ZWR2QxZ9IBrwFBVV95cUxPX0VZRUtqcjA2cWRYN19LdEpzRFJTWlRfdHo4c29qSGloM2hoME5KU01Fb1JhNDl0eDhrN1B1WmxBeVFVMkJ6Z0FVTUZkN0lMXzdVb3JTblJpT0Q5SlRoQVJBTmlzMUFBWDJSTFdUendRYnFXV3JjRXVDZEg4cHRCRF9ENW15Z1VjdG5obkdFV2QtcVVEQi1mVWFrSmlmTVNSMXdWaVRhTkEySkNpc3kw?oc=5",
-     "zeit": "2026-09-08T09:15:46.000Z",
-     "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
-     },
-     "priority": 75
     }
    ]
   }
