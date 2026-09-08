@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T14:50:40.718Z",
+ "updated": "2026-09-08T14:59:38.152Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T14:50:40.829Z",
+   "stand": "2026-09-08T14:59:38.244Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T14:50:40.810Z",
+   "stand": "2026-09-08T14:59:38.230Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T14:50:40.791Z",
+   "stand": "2026-09-08T14:59:38.215Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T14:50:40.772Z",
+   "stand": "2026-09-08T14:59:38.199Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -749,18 +749,19 @@
      "priority": 74
     },
     {
-     "id": "Reuters:Canada's retaliatory tariffs take effect as US trade talks stall",
-     "titel": "Canada's retaliatory tariffs take effect as US trade talks stall",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV2tRQzNWVFljd0NSczFNTXlWRXI0WWtzV1BFNFBURXlDcHRjSHNOcXNzVVMzNFBYbmZpY0l6UU05OU9HSWxVeGRkSlNLS1kxa3J6OXZPcXFCc1RFN1dDdERRakxPaGloYWZqNDFkWEdhOWVZOEdvaF9TWFlEa2dSeHF2LWgzZGttdC1jMDQ4aXpUNDZkT0V0MHlHdnNnTzQxM2l5eUIzWnY5Qjd4bUxDeUNzSUZNVGk0NEx3R1c1SzNOaWZx?oc=5",
-     "zeit": "2026-09-08T04:00:59.000Z",
+     "id": "CNBC World:U.S. sanctions Iranian airlines in aim to tighten economic squeeze as war spreads, oil rises",
+     "titel": "U.S. sanctions Iranian airlines in aim to tighten economic squeeze as war spreads, oil rises",
+     "titelDe": "US-Sanktionen gegen iranische Fluggesellschaften zielen darauf ab, den wirtschaftlichen Druck zu verschärfen, da sich der Krieg ausbreitet und das Öl steigt",
+     "quelle": "CNBC World",
+     "url": "https://www.cnbc.com/2026/09/08/us-sanctions-iran-airlines-oil-economy-war.html",
+     "zeit": "2026-09-08T14:30:01.000Z",
      "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
      },
-     "priority": 62
+     "priority": 73
     }
    ]
   }
