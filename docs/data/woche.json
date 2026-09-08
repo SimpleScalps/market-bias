@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T13:14:46.064Z",
+ "updated": "2026-09-08T13:30:42.701Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T13:14:46.177Z",
+   "stand": "2026-09-08T13:30:42.779Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T13:14:46.159Z",
+   "stand": "2026-09-08T13:30:42.767Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T13:14:46.140Z",
+   "stand": "2026-09-08T13:30:42.756Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,32 +615,32 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T13:14:46.120Z",
-   "anzahl": 211,
+   "stand": "2026-09-08T13:30:42.743Z",
+   "anzahl": 215,
    "klassen": {
     "crypto": {
-     "score": -0.0978,
-     "bull": 2,
-     "bear": 27,
-     "neut": 182
+     "score": -0.0849,
+     "bull": 3,
+     "bear": 24,
+     "neut": 188
     },
     "stocks": {
-     "score": -0.0952,
-     "bull": 1,
-     "bear": 26,
-     "neut": 184
+     "score": -0.0823,
+     "bull": 2,
+     "bear": 23,
+     "neut": 190
     },
     "gold": {
-     "score": 0.0419,
-     "bull": 24,
-     "bear": 3,
-     "neut": 184
+     "score": 0.0355,
+     "bull": 21,
+     "bear": 4,
+     "neut": 190
     },
     "usd": {
-     "score": 0.0351,
-     "bull": 7,
+     "score": 0.0307,
+     "bull": 6,
      "bear": 1,
-     "neut": 203
+     "neut": 208
     }
    },
    "top": [
@@ -672,7 +672,7 @@
       "gold": 0.405,
       "usd": 0.27
      },
-     "priority": 95
+     "priority": 94
     },
     {
      "id": "Al Jazeera (GN):Russian strikes on Ukraine’s Kyiv kill at least two people",
@@ -704,21 +704,6 @@
      "priority": 79
     },
     {
-     "id": "BBC World:Canada braces for prolonged trade war as counter-tariffs on US take effect",
-     "titel": "Canada braces for prolonged trade war as counter-tariffs on US take effect",
-     "titelDe": "Kanada bereitet sich auf einen längeren Handelskrieg vor, da die Gegenzölle auf die USA in Kraft treten",
-     "quelle": "BBC World",
-     "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
-     "zeit": "2026-09-08T04:00:59.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 73
-    },
-    {
      "id": "Reuters:Canada's retaliatory tariffs take effect as US trade talks stall",
      "titel": "Canada's retaliatory tariffs take effect as US trade talks stall",
      "quelle": "Reuters",
@@ -731,6 +716,21 @@
       "usd": 0.3
      },
      "priority": 62
+    },
+    {
+     "id": "BBC World:Canada braces for prolonged trade war as counter-tariffs on US take effect",
+     "titel": "Canada braces for prolonged trade war as counter-tariffs on US take effect",
+     "titelDe": "Kanada bereitet sich auf einen längeren Handelskrieg vor, da die Gegenzölle auf die USA in Kraft treten",
+     "quelle": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
+     "zeit": "2026-09-08T04:00:59.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 72
     },
     {
      "id": "BeInCrypto:UBS Names Three Places to Put Money as Fed Rate Hike Odds Reach 60%",
