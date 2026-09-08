@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T23:04:20.201Z",
+ "updated": "2026-09-08T23:18:34.050Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T23:04:20.332Z",
+   "stand": "2026-09-08T23:18:34.134Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T23:04:20.313Z",
+   "stand": "2026-09-08T23:18:34.124Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T23:04:20.295Z",
+   "stand": "2026-09-08T23:18:34.113Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T23:04:20.276Z",
+   "stand": "2026-09-08T23:18:34.101Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -665,6 +665,21 @@
      "titelDe": "US-Angriffe auf iranische Tanker nach mehr versuchten Raketenangriffen auf Navy-Kriegsschiff",
      "quelle": "SCMP",
      "url": "https://www.scmp.com/news/world/middle-east/article/3366837/us-strikes-iranian-tankers-after-more-attempted-missile-attacks-navy-warship?utm_source=rss_feed",
+     "zeit": "2026-09-08T21:42:36.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
+    {
+     "id": "Guardian:US says Iranian tankers destroyed after missile attacks on American warship",
+     "titel": "US says Iranian tankers destroyed after missile attacks on American warship",
+     "titelDe": "USA erklärt, dass iranische Tanker nach Luftangriffen auf ein amerikanisches Kriegsschiff zerstört wurden",
+     "quelle": "Guardian",
+     "url": "https://www.theguardian.com/us-news/2026/sep/08/iran-underwater-drone-strait-of-hormuz",
      "zeit": "2026-09-08T21:42:36.000Z",
      "scores": {
       "crypto": -0.9,
@@ -748,27 +763,12 @@
       "usd": 0.626
      },
      "priority": 80
-    },
-    {
-     "id": "MarketWatch:Bombardier’s stock drops as the U.S.-Canada trade war intensifies. Here’s what Trump is targeting next.",
-     "titel": "Bombardier’s stock drops as the U.S.-Canada trade war intensifies. Here’s what Trump is targeting next.",
-     "titelDe": "Bombardiers Aktien fallen, da sich der Handelskrieg zwischen den USA und Kanada intensiviert. Hier ist, worauf Trump als nächstes abzielt.",
-     "quelle": "MarketWatch",
-     "url": "https://www.marketwatch.com/story/bombardiers-stock-drops-as-the-u-s-canada-trade-war-intensifies-heres-what-trump-may-target-next-b389065e?mod=mw_rss_topstories",
-     "zeit": "2026-09-08T21:29:00.000Z",
-     "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
-     },
-     "priority": 76
     }
    ]
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-08T23:04:20.256Z",
+   "stand": "2026-09-08T23:18:34.089Z",
    "anzahl": 31,
    "klassen": {
     "crypto": {
