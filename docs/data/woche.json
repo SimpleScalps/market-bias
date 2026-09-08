@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T08:04:44.971Z",
+ "updated": "2026-09-08T08:23:30.508Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T08:04:45.039Z",
+   "stand": "2026-09-08T08:23:30.600Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T08:04:45.028Z",
+   "stand": "2026-09-08T08:23:30.585Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T08:04:45.017Z",
+   "stand": "2026-09-08T08:23:30.571Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,50 +615,35 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T08:04:45.006Z",
-   "anzahl": 136,
+   "stand": "2026-09-08T08:23:30.556Z",
+   "anzahl": 145,
    "klassen": {
     "crypto": {
-     "score": -0.0946,
+     "score": -0.09,
      "bull": 2,
-     "bear": 19,
-     "neut": 115
+     "bear": 20,
+     "neut": 123
     },
     "stocks": {
-     "score": -0.0913,
+     "score": -0.087,
      "bull": 2,
-     "bear": 19,
-     "neut": 115
+     "bear": 20,
+     "neut": 123
     },
     "gold": {
-     "score": 0.0196,
-     "bull": 15,
+     "score": 0.0193,
+     "bull": 16,
      "bear": 6,
-     "neut": 115
+     "neut": 123
     },
     "usd": {
-     "score": 0.0457,
+     "score": 0.0432,
      "bull": 9,
      "bear": 1,
-     "neut": 126
+     "neut": 135
     }
    },
    "top": [
-    {
-     "id": "BeInCrypto:UBS Names Three Places to Put Money as Fed Rate Hike Odds Reach 60%",
-     "titel": "UBS Names Three Places to Put Money as Fed Rate Hike Odds Reach 60%",
-     "titelDe": "UBS nennt drei Orte, an denen man Geld anlegen kann, da die Zinserhöhungsquoten der Fed 60% erreichen",
-     "quelle": "BeInCrypto",
-     "url": "https://beincrypto.com/ubs-fed-hike-odds-portfolio-positioning/",
-     "zeit": "2026-09-08T04:51:16.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 79
-    },
     {
      "id": "FXStreet:Canadian Dollar gains as US Dollar struggles despite rising Fed rate hike bets",
      "titel": "Canadian Dollar gains as US Dollar struggles despite rising Fed rate hike bets",
@@ -672,6 +657,21 @@
       "usd": 0.75
      },
      "priority": 79
+    },
+    {
+     "id": "BeInCrypto:UBS Names Three Places to Put Money as Fed Rate Hike Odds Reach 60%",
+     "titel": "UBS Names Three Places to Put Money as Fed Rate Hike Odds Reach 60%",
+     "titelDe": "UBS nennt drei Orte, an denen man Geld anlegen kann, da die Zinserhöhungsquoten der Fed 60% erreichen",
+     "quelle": "BeInCrypto",
+     "url": "https://beincrypto.com/ubs-fed-hike-odds-portfolio-positioning/",
+     "zeit": "2026-09-08T04:51:16.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 78
     },
     {
      "id": "Reuters:Canada's retaliatory tariffs take effect as US trade talks stall",
@@ -715,7 +715,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 69
+     "priority": 68
     },
     {
      "id": "Mehr News:Canada’s retaliatory tariffs take effects on $20bn of US good",
@@ -730,7 +730,7 @@
       "gold": 0.427,
       "usd": 0.285
      },
-     "priority": 61
+     "priority": 60
     },
     {
      "id": "Al Jazeera:Canada’s retaliatory tariffs on $20bn of US goods take effect",
