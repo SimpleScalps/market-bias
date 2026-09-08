@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T22:31:09.650Z",
+ "updated": "2026-09-08T22:45:10.008Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T22:31:09.740Z",
+   "stand": "2026-09-08T22:45:10.143Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T22:31:09.728Z",
+   "stand": "2026-09-08T22:45:10.124Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T22:31:09.716Z",
+   "stand": "2026-09-08T22:45:10.105Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T22:31:09.704Z",
+   "stand": "2026-09-08T22:45:10.085Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,32 +768,32 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-08T22:31:09.690Z",
-   "anzahl": 18,
+   "stand": "2026-09-08T22:45:10.064Z",
+   "anzahl": 25,
    "klassen": {
     "crypto": {
-     "score": -0.2662,
+     "score": -0.186,
      "bull": 1,
      "bear": 4,
-     "neut": 13
+     "neut": 20
     },
     "stocks": {
-     "score": -0.2613,
+     "score": -0.1826,
      "bull": 1,
      "bear": 4,
-     "neut": 13
+     "neut": 20
     },
     "gold": {
-     "score": 0.0906,
+     "score": 0.0632,
      "bull": 3,
      "bear": 2,
-     "neut": 13
+     "neut": 20
     },
     "usd": {
-     "score": 0.1105,
+     "score": 0.0773,
      "bull": 2,
      "bear": 0,
-     "neut": 16
+     "neut": 23
     }
    },
    "top": [
@@ -841,6 +841,21 @@
       "usd": 0.15
      },
      "priority": 39
+    },
+    {
+     "id": "Reuters:Evommune scraps eczema drug after trial miss, shares plunge",
+     "titel": "Evommune scraps eczema drug after trial miss, shares plunge",
+     "titelDe": "Evommune verschrottet Ekzem-Medikament nach Versuchsfehlschlag, Aktien stürzen ein",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTDl0NXZBejA2OFduRFlSR0l2ZEhvTVllczF1d0NSZWFuT2JBSnpfemJWM2hsRHJvc0xDUXg4SXQtRmZ2aFdtcXhSZmZTTUxDM3l5b1BVNVR4aVBiZTd0Z29ydk5tSS1wZHJzdm1hMDVIWHd6em5fUWNpRW15bmFCZUdHdkRWbUdaVDhGQV9OVWlOQ0FFLWZaYS1RbDdnN0RoRzBycWZ4ekUxWW5PNV9UNENiaEFMTzk5VEpqNkI5dGlXTUVjZGpoeXNn?oc=5",
+     "zeit": "2026-09-08T22:18:31.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 38
     }
    ]
   }
