@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T22:19:24.921Z",
+ "updated": "2026-09-08T22:31:09.650Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T22:19:25.031Z",
+   "stand": "2026-09-08T22:31:09.740Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T22:19:25.017Z",
+   "stand": "2026-09-08T22:31:09.728Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T22:19:25.001Z",
+   "stand": "2026-09-08T22:31:09.716Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T22:19:24.986Z",
+   "stand": "2026-09-08T22:31:09.704Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,32 +768,32 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-08T22:19:24.970Z",
-   "anzahl": 10,
+   "stand": "2026-09-08T22:31:09.690Z",
+   "anzahl": 18,
    "klassen": {
     "crypto": {
-     "score": -0.338,
-     "bull": 0,
-     "bear": 2,
-     "neut": 8
+     "score": -0.2662,
+     "bull": 1,
+     "bear": 4,
+     "neut": 13
     },
     "stocks": {
-     "score": -0.338,
-     "bull": 0,
-     "bear": 2,
-     "neut": 8
+     "score": -0.2613,
+     "bull": 1,
+     "bear": 4,
+     "neut": 13
     },
     "gold": {
-     "score": 0.169,
-     "bull": 2,
-     "bear": 0,
-     "neut": 8
+     "score": 0.0906,
+     "bull": 3,
+     "bear": 2,
+     "neut": 13
     },
     "usd": {
-     "score": 0.1127,
-     "bull": 1,
+     "score": 0.1105,
+     "bull": 2,
      "bear": 0,
-     "neut": 9
+     "neut": 16
     }
    },
    "top": [
@@ -811,6 +811,36 @@
       "usd": 0.3
      },
      "priority": 100
+    },
+    {
+     "id": "FXStreet:The Pound sits still through a hawkish hearing and the priciest gilt sale",
+     "titel": "The Pound sits still through a hawkish hearing and the priciest gilt sale",
+     "titelDe": "Das Pfund steht still durch eine hawkische Anhörung und den teuersten Goldverkauf",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/the-pound-sits-still-through-a-hawkish-hearing-and-the-priciest-gilt-sale-202609082221",
+     "zeit": "2026-09-08T22:21:05.000Z",
+     "scores": {
+      "crypto": -0.6,
+      "stocks": -0.51,
+      "gold": -0.48,
+      "usd": 0.6
+     },
+     "priority": 41
+    },
+    {
+     "id": "Reuters:Evommune scraps eczema drug after trial miss, shares plunge - reuters.com",
+     "titel": "Evommune scraps eczema drug after trial miss, shares plunge - reuters.com",
+     "titelDe": "Evommune verschrottet Ekzem-Medikament nach Versuchsfehlschlag, Aktien-Tauchgang - reuters.com",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTDl0NXZBejA2OFduRFlSR0l2ZEhvTVllczF1d0NSZWFuT2JBSnpfemJWM2hsRHJvc0xDUXg4SXQtRmZ2aFdtcXhSZmZTTUxDM3l5b1BVNVR4aVBiZTd0Z29ydk5tSS1wZHJzdm1hMDVIWHd6em5fUWNpRW15bmFCZUdHdkRWbUdaVDhGQV9OVWlOQ0FFLWZaYS1RbDdnN0RoRzBycWZ4ekUxWW5PNV9UNENiaEFMTzk5VEpqNkI5dGlXTUVjZGpoeXNn?oc=5",
+     "zeit": "2026-09-08T22:18:31.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 39
     }
    ]
   }
