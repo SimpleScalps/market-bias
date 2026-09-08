@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T13:58:58.328Z",
+ "updated": "2026-09-08T14:13:30.359Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T13:58:58.403Z",
+   "stand": "2026-09-08T14:13:30.477Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T13:58:58.391Z",
+   "stand": "2026-09-08T14:13:30.457Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T13:58:58.379Z",
+   "stand": "2026-09-08T14:13:30.437Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,32 +615,32 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T13:58:58.366Z",
-   "anzahl": 222,
+   "stand": "2026-09-08T14:13:30.416Z",
+   "anzahl": 224,
    "klassen": {
     "crypto": {
-     "score": -0.0968,
-     "bull": 3,
-     "bear": 28,
-     "neut": 191
+     "score": -0.0876,
+     "bull": 4,
+     "bear": 26,
+     "neut": 194
     },
     "stocks": {
-     "score": -0.0927,
+     "score": -0.0869,
      "bull": 2,
-     "bear": 27,
-     "neut": 193
+     "bear": 25,
+     "neut": 197
     },
     "gold": {
-     "score": 0.0279,
-     "bull": 22,
-     "bear": 7,
-     "neut": 193
+     "score": 0.0264,
+     "bull": 21,
+     "bear": 6,
+     "neut": 197
     },
     "usd": {
-     "score": 0.0417,
-     "bull": 10,
+     "score": 0.039,
+     "bull": 9,
      "bear": 1,
-     "neut": 211
+     "neut": 214
     }
    },
    "top": [
@@ -733,21 +733,6 @@
      "priority": 62
     },
     {
-     "id": "BBC World:Canada braces for prolonged trade war as counter-tariffs on US take effect",
-     "titel": "Canada braces for prolonged trade war as counter-tariffs on US take effect",
-     "titelDe": "Kanada bereitet sich auf einen längeren Handelskrieg vor, da die Gegenzölle auf die USA in Kraft treten",
-     "quelle": "BBC World",
-     "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
-     "zeit": "2026-09-08T04:00:59.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 72
-    },
-    {
      "id": "BeInCrypto:UBS Names Three Places to Put Money as Fed Rate Hike Odds Reach 60%",
      "titel": "UBS Names Three Places to Put Money as Fed Rate Hike Odds Reach 60%",
      "titelDe": "UBS nennt drei Orte, an denen man Geld anlegen kann, da die Zinserhöhungsquoten der Fed 60% erreichen",
@@ -761,6 +746,21 @@
       "usd": 0.75
      },
      "priority": 73
+    },
+    {
+     "id": "BBC World:Canada braces for prolonged trade war as counter-tariffs on US take effect",
+     "titel": "Canada braces for prolonged trade war as counter-tariffs on US take effect",
+     "titelDe": "Kanada bereitet sich auf einen längeren Handelskrieg vor, da die Gegenzölle auf die USA in Kraft treten",
+     "quelle": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
+     "zeit": "2026-09-08T04:00:59.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 71
     }
    ]
   }
