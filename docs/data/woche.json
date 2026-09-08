@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T00:32:48.737Z",
+ "updated": "2026-09-08T00:52:24.998Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T00:32:48.795Z",
+   "stand": "2026-09-08T00:52:25.083Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T00:32:48.785Z",
+   "stand": "2026-09-08T00:52:25.068Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T00:32:48.777Z",
+   "stand": "2026-09-08T00:52:25.055Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T00:32:48.768Z",
+   "stand": "2026-09-08T00:52:25.041Z",
    "anzahl": 50,
    "klassen": {
     "crypto": {
@@ -657,6 +657,20 @@
       "usd": 0.285
      },
      "priority": 61
+    },
+    {
+     "id": "Al Jazeera:Houthis accuse Saudi Arabia of killing seven in Yemen prison air strike",
+     "titel": "Houthis accuse Saudi Arabia of killing seven in Yemen prison air strike",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/9/7/houthis-accuse-saudi-arabia-of-killing-seven-in-yemen-prison-attack?traffic_source=rss",
+     "zeit": "2026-09-07T23:50:53.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 49
     },
     {
      "id": "BeInCrypto:Hackers Return 85% of Stolen Bitcoin from Last Week’s Bridge Attack",
