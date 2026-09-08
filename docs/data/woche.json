@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T09:05:58.982Z",
+ "updated": "2026-09-08T09:22:39.639Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T09:05:59.050Z",
+   "stand": "2026-09-08T09:22:39.751Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T09:05:59.040Z",
+   "stand": "2026-09-08T09:22:39.733Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T09:05:59.030Z",
+   "stand": "2026-09-08T09:22:39.713Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,35 +615,50 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T09:05:59.019Z",
-   "anzahl": 149,
+   "stand": "2026-09-08T09:22:39.694Z",
+   "anzahl": 158,
    "klassen": {
     "crypto": {
-     "score": -0.0839,
+     "score": -0.0916,
      "bull": 2,
      "bear": 18,
-     "neut": 129
+     "neut": 138
     },
     "stocks": {
-     "score": -0.0814,
+     "score": -0.0896,
      "bull": 2,
      "bear": 18,
-     "neut": 129
+     "neut": 138
     },
     "gold": {
-     "score": 0.0202,
-     "bull": 15,
-     "bear": 5,
-     "neut": 129
+     "score": 0.0284,
+     "bull": 16,
+     "bear": 4,
+     "neut": 138
     },
     "usd": {
-     "score": 0.0391,
+     "score": 0.0395,
      "bull": 7,
      "bear": 1,
-     "neut": 141
+     "neut": 150
     }
    },
    "top": [
+    {
+     "id": "IRNA:MP: Strike on US warships represents mere fraction of Iran’s military prowess",
+     "titel": "MP: Strike on US warships represents mere fraction of Iran’s military prowess",
+     "titelDe": "MP: Angriff auf US-Kriegsschiffe stellt nur einen Bruchteil der militärischen Fähigkeiten des Iran dar",
+     "quelle": "IRNA",
+     "url": "https://en.irna.ir/news/86258329/MP-Strike-on-US-warships-represents-mere-fraction-of-Iran-s",
+     "zeit": "2026-09-08T09:15:19.000Z",
+     "scores": {
+      "crypto": -0.81,
+      "stocks": -0.81,
+      "gold": 0.405,
+      "usd": 0.27
+     },
+     "priority": 100
+    },
     {
      "id": "FXStreet:Canadian Dollar gains as US Dollar struggles despite rising Fed rate hike bets",
      "titel": "Canadian Dollar gains as US Dollar struggles despite rising Fed rate hike bets",
@@ -730,7 +745,7 @@
       "gold": 0.427,
       "usd": 0.285
      },
-     "priority": 59
+     "priority": 58
     },
     {
      "id": "Al Jazeera:Canada’s retaliatory tariffs on $20bn of US goods take effect",
@@ -745,20 +760,6 @@
       "usd": 0.285
      },
      "priority": 58
-    },
-    {
-     "id": "Guardian:Canada’s retaliatory US tariffs set to take effect as trade dispute grows",
-     "titel": "Canada’s retaliatory US tariffs set to take effect as trade dispute grows",
-     "quelle": "Guardian",
-     "url": "https://www.theguardian.com/world/2026/sep/07/canada-tariffs-us-trump",
-     "zeit": "2026-09-07T23:20:24.000Z",
-     "scores": {
-      "crypto": -0.855,
-      "stocks": -0.855,
-      "gold": 0.427,
-      "usd": 0.285
-     },
-     "priority": 56
     }
    ]
   }
