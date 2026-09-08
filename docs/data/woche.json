@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T12:09:04.073Z",
+ "updated": "2026-09-08T12:29:30.196Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T12:09:04.129Z",
+   "stand": "2026-09-08T12:29:30.282Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T12:09:04.121Z",
+   "stand": "2026-09-08T12:29:30.268Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T12:09:04.112Z",
+   "stand": "2026-09-08T12:29:30.254Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T12:09:04.103Z",
+   "stand": "2026-09-08T12:29:30.240Z",
    "anzahl": 200,
    "klassen": {
     "crypto": {
@@ -704,6 +704,21 @@
      "priority": 79
     },
     {
+     "id": "BBC World:Canada braces for prolonged trade war as counter-tariffs on US take effect",
+     "titel": "Canada braces for prolonged trade war as counter-tariffs on US take effect",
+     "titelDe": "Kanada bereitet sich auf einen längeren Handelskrieg vor, da die Gegenzölle auf die USA in Kraft treten",
+     "quelle": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
+     "zeit": "2026-09-08T04:00:59.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 74
+    },
+    {
      "id": "Reuters:Canada's retaliatory tariffs take effect as US trade talks stall",
      "titel": "Canada's retaliatory tariffs take effect as US trade talks stall",
      "quelle": "Reuters",
@@ -744,21 +759,6 @@
       "stocks": -0.765,
       "gold": 0.383,
       "usd": 0.255
-     },
-     "priority": 71
-    },
-    {
-     "id": "TASS:West wants ceasefire in Ukraine only to prepare for new escalation — Russian diplomat",
-     "titel": "West wants ceasefire in Ukraine only to prepare for new escalation — Russian diplomat",
-     "titelDe": "Der Westen will einen Waffenstillstand in der Ukraine, nur um sich auf eine neue Eskalation vorzubereiten — russischer Diplomat",
-     "quelle": "TASS",
-     "url": "https://tass.com/politics/2183973",
-     "zeit": "2026-09-08T07:29:46.000Z",
-     "scores": {
-      "crypto": 0.747,
-      "stocks": 0.747,
-      "gold": -0.374,
-      "usd": -0.249
      },
      "priority": 71
     }
