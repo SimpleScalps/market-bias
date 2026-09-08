@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T03:58:25.961Z",
+ "updated": "2026-09-08T04:10:46.977Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T03:58:26.052Z",
+   "stand": "2026-09-08T04:10:47.090Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T03:58:26.035Z",
+   "stand": "2026-09-08T04:10:47.069Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T03:58:26.021Z",
+   "stand": "2026-09-08T04:10:47.051Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,32 +615,32 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T03:58:26.006Z",
-   "anzahl": 90,
+   "stand": "2026-09-08T04:10:47.032Z",
+   "anzahl": 93,
    "klassen": {
     "crypto": {
-     "score": -0.1124,
+     "score": -0.1143,
      "bull": 0,
-     "bear": 11,
-     "neut": 79
+     "bear": 12,
+     "neut": 81
     },
     "stocks": {
-     "score": -0.0973,
+     "score": -0.0996,
      "bull": 0,
-     "bear": 10,
-     "neut": 80
+     "bear": 11,
+     "neut": 82
     },
     "gold": {
-     "score": 0.023,
-     "bull": 9,
+     "score": 0.0249,
+     "bull": 10,
      "bear": 1,
-     "neut": 80
+     "neut": 82
     },
     "usd": {
-     "score": 0.0475,
+     "score": 0.0477,
      "bull": 6,
      "bear": 0,
-     "neut": 84
+     "neut": 87
     }
    },
    "top": [
@@ -656,7 +656,21 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 82
+     "priority": 80
+    },
+    {
+     "id": "Reuters:Canada's retaliatory tariffs take effect as US trade talks stall",
+     "titel": "Canada's retaliatory tariffs take effect as US trade talks stall",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV2tRQzNWVFljd0NSczFNTXlWRXI0WWtzV1BFNFBURXlDcHRjSHNOcXNzVVMzNFBYbmZpY0l6UU05OU9HSWxVeGRkSlNLS1kxa3J6OXZPcXFCc1RFN1dDdERRakxPaGloYWZqNDFkWEdhOWVZOEdvaF9TWFlEa2dSeHF2LWgzZGttdC1jMDQ4aXpUNDZkT0V0MHlHdnNnTzQxM2l5eUIzWnY5Qjd4bUxDeUNzSUZNVGk0NEx3R1c1SzNOaWZx?oc=5",
+     "zeit": "2026-09-07T23:20:24.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 63
     },
     {
      "id": "Guardian:Canada’s retaliatory US tariffs set to take effect as trade dispute grows",
@@ -699,7 +713,7 @@
       "gold": 0,
       "usd": 0
      },
-     "priority": 59
+     "priority": 58
     },
     {
      "id": "TASS:Reports indicate injuries in drone attack on Saratov",
@@ -713,7 +727,7 @@
       "gold": 0.427,
       "usd": 0.285
      },
-     "priority": 48
+     "priority": 47
     },
     {
      "id": "Al Jazeera:Houthis accuse Saudi Arabia of killing seven in Yemen prison air strike",
@@ -727,35 +741,21 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 45
+     "priority": 43
     },
     {
-     "id": "CNBC World:Bombardier points out U.S. footprint after Trump says aerospace giant must build in America",
-     "titel": "Bombardier points out U.S. footprint after Trump says aerospace giant must build in America",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/07/trump-bombardier-cant-sell-in-us-unless-canada-aerospace-giant-builds-there.html",
-     "zeit": "2026-09-08T02:05:30.000Z",
+     "id": "SCMP:Russia resumes strikes on Kyiv after pause for Trump envoys’ visit",
+     "titel": "Russia resumes strikes on Kyiv after pause for Trump envoys’ visit",
+     "quelle": "SCMP",
+     "url": "https://www.scmp.com/news/world/europe/article/3366714/russia-resumes-strikes-kyiv-after-pause-trump-envoys-visit?utm_source=rss_feed",
+     "zeit": "2026-09-08T03:59:14.000Z",
      "scores": {
-      "crypto": -0.495,
-      "stocks": -0.495,
-      "gold": 0.248,
-      "usd": 0.165
+      "crypto": -0.405,
+      "stocks": -0.405,
+      "gold": 0.203,
+      "usd": 0.135
      },
-     "priority": 51
-    },
-    {
-     "id": "BBC World:Trump threatens to stop sale of Canadian Bombardier jets in US",
-     "titel": "Trump threatens to stop sale of Canadian Bombardier jets in US",
-     "quelle": "BBC World",
-     "url": "https://www.bbc.co.uk/news/articles/c4gj8xx5010o?at_medium=RSS&at_campaign=rss",
-     "zeit": "2026-09-07T23:29:12.000Z",
-     "scores": {
-      "crypto": -0.495,
-      "stocks": -0.495,
-      "gold": 0.248,
-      "usd": 0.165
-     },
-     "priority": 49
+     "priority": 68
     }
    ]
   }
