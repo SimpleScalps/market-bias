@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T01:31:42.868Z",
+ "updated": "2026-09-08T01:47:22.089Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T01:31:42.939Z",
+   "stand": "2026-09-08T01:47:22.143Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T01:31:42.928Z",
+   "stand": "2026-09-08T01:47:22.132Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T01:31:42.917Z",
+   "stand": "2026-09-08T01:47:22.124Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,32 +615,32 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T01:31:42.904Z",
-   "anzahl": 65,
+   "stand": "2026-09-08T01:47:22.116Z",
+   "anzahl": 67,
    "klassen": {
     "crypto": {
-     "score": -0.1007,
+     "score": -0.1044,
      "bull": 0,
-     "bear": 8,
-     "neut": 57
+     "bear": 9,
+     "neut": 58
     },
     "stocks": {
-     "score": -0.0817,
+     "score": -0.0868,
      "bull": 0,
-     "bear": 7,
-     "neut": 58
+     "bear": 8,
+     "neut": 59
     },
     "gold": {
-     "score": 0.0409,
-     "bull": 7,
+     "score": 0.0434,
+     "bull": 8,
      "bear": 0,
-     "neut": 58
+     "neut": 59
     },
     "usd": {
-     "score": 0.0272,
+     "score": 0.0289,
      "bull": 3,
      "bear": 0,
-     "neut": 62
+     "neut": 64
     }
    },
    "top": [
@@ -671,7 +671,7 @@
       "gold": 0,
       "usd": 0
      },
-     "priority": 62
+     "priority": 61
     },
     {
      "id": "Al Jazeera:Houthis accuse Saudi Arabia of killing seven in Yemen prison air strike",
@@ -685,7 +685,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 48
+     "priority": 47
     },
     {
      "id": "BBC World:Trump threatens to stop sale of Canadian Bombardier jets in US",
@@ -699,7 +699,7 @@
       "gold": 0.248,
       "usd": 0.165
      },
-     "priority": 52
+     "priority": 51
     },
     {
      "id": "Reuters:COMMENTARY: Asia's next leverage-driven market crash could be brewing",
