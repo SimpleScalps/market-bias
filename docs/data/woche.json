@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T12:46:41.489Z",
+ "updated": "2026-09-08T12:59:23.508Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T12:46:41.548Z",
+   "stand": "2026-09-08T12:59:23.603Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T12:46:41.539Z",
+   "stand": "2026-09-08T12:59:23.588Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T12:46:41.530Z",
+   "stand": "2026-09-08T12:59:23.573Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,32 +615,32 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T12:46:41.521Z",
-   "anzahl": 204,
+   "stand": "2026-09-08T12:59:23.557Z",
+   "anzahl": 206,
    "klassen": {
     "crypto": {
-     "score": -0.0962,
+     "score": -0.0934,
      "bull": 1,
-     "bear": 22,
-     "neut": 181
+     "bear": 23,
+     "neut": 182
     },
     "stocks": {
-     "score": -0.0897,
+     "score": -0.087,
      "bull": 1,
-     "bear": 21,
-     "neut": 182
+     "bear": 22,
+     "neut": 183
     },
     "gold": {
-     "score": 0.0387,
-     "bull": 19,
+     "score": 0.0374,
+     "bull": 20,
      "bear": 3,
-     "neut": 182
+     "neut": 183
     },
     "usd": {
-     "score": 0.0335,
-     "bull": 8,
+     "score": 0.0326,
+     "bull": 7,
      "bear": 1,
-     "neut": 195
+     "neut": 198
     }
    },
    "top": [
@@ -716,7 +716,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 74
+     "priority": 73
     },
     {
      "id": "Reuters:Canada's retaliatory tariffs take effect as US trade talks stall",
@@ -760,7 +760,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 70
+     "priority": 69
     }
    ]
   }
