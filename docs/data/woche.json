@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T23:46:07.275Z",
+ "updated": "2026-09-08T23:53:08.570Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T23:46:07.405Z",
+   "stand": "2026-09-08T23:53:08.706Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T23:46:07.387Z",
+   "stand": "2026-09-08T23:53:08.687Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T23:46:07.369Z",
+   "stand": "2026-09-08T23:53:08.668Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T23:46:07.350Z",
+   "stand": "2026-09-08T23:53:08.649Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,32 +768,32 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-08T23:46:07.330Z",
-   "anzahl": 44,
+   "stand": "2026-09-08T23:53:08.628Z",
+   "anzahl": 45,
    "klassen": {
     "crypto": {
-     "score": -0.2439,
+     "score": -0.2382,
      "bull": 1,
      "bear": 10,
-     "neut": 33
+     "neut": 34
     },
     "stocks": {
-     "score": -0.2424,
+     "score": -0.2367,
      "bull": 1,
      "bear": 10,
-     "neut": 33
+     "neut": 34
     },
     "gold": {
-     "score": 0.1088,
+     "score": 0.1062,
      "bull": 9,
      "bear": 2,
-     "neut": 33
+     "neut": 34
     },
     "usd": {
-     "score": 0.0881,
+     "score": 0.086,
      "bull": 3,
      "bear": 0,
-     "neut": 41
+     "neut": 42
     }
    },
    "top": [
@@ -825,7 +825,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 100
+     "priority": 99
     },
     {
      "id": "Reuters:How Canada's retaliatory tariffs could impact US midterm elections",
