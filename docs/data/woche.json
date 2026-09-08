@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T17:53:35.842Z",
+ "updated": "2026-09-08T18:05:09.156Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T17:53:35.956Z",
+   "stand": "2026-09-08T18:05:09.251Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T17:53:35.938Z",
+   "stand": "2026-09-08T18:05:09.236Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T17:53:35.919Z",
+   "stand": "2026-09-08T18:05:09.220Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T17:53:35.899Z",
+   "stand": "2026-09-08T18:05:09.205Z",
    "anzahl": 238,
    "klassen": {
     "crypto": {
@@ -658,6 +658,21 @@
       "usd": 0.27
      },
      "priority": 100
+    },
+    {
+     "id": "FXStreet:Gold price wilts as Oil shock puts CPI in Fed crosshairs",
+     "titel": "Gold price wilts as Oil shock puts CPI in Fed crosshairs",
+     "titelDe": "Der Goldpreis welkt, da der Ölschock den VPI in das Fadenkreuz der Fed bringt",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/gold-price-wilts-as-oil-shock-puts-cpi-in-fed-crosshairs-202609081801",
+     "zeit": "2026-09-08T18:01:43.000Z",
+     "scores": {
+      "crypto": -0.878,
+      "stocks": -0.803,
+      "gold": -0.211,
+      "usd": 0.626
+     },
+     "priority": 86
     },
     {
      "id": "IRNA:Senior MP: Strike on US warships represents mere fraction of Iran’s military prowess",
@@ -740,21 +755,6 @@
      "quelle": "CNBC World",
      "url": "https://www.cnbc.com/2026/09/08/us-sanctions-iran-airlines-oil-economy-war.html",
      "zeit": "2026-09-08T14:30:01.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 74
-    },
-    {
-     "id": "Guardian:Miliband says there’s ‘increasing evidence’ of war crimes in Gaza as he announces West Bank sanctions – UK politics live",
-     "titel": "Miliband says there’s ‘increasing evidence’ of war crimes in Gaza as he announces West Bank sanctions – UK politics live",
-     "titelDe": "Miliband sagt, dass es \"zunehmende Beweise\" für Kriegsverbrechen in Gaza gibt, als er Sanktionen gegen das Westjordanland ankündigt – britische Politik lebt",
-     "quelle": "Guardian",
-     "url": "https://www.theguardian.com/politics/live/2026/sep/08/uk-us-trade-israel-sanctions-labour-ed-miliband-farage-latest-news-updates",
-     "zeit": "2026-09-08T13:44:11.000Z",
      "scores": {
       "crypto": -0.765,
       "stocks": -0.765,
