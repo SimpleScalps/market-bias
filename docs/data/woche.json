@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T01:47:22.089Z",
+ "updated": "2026-09-08T01:57:09.977Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T01:47:22.143Z",
+   "stand": "2026-09-08T01:57:10.047Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T01:47:22.132Z",
+   "stand": "2026-09-08T01:57:10.036Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T01:47:22.124Z",
+   "stand": "2026-09-08T01:57:10.025Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,32 +615,32 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T01:47:22.116Z",
-   "anzahl": 67,
+   "stand": "2026-09-08T01:57:10.012Z",
+   "anzahl": 68,
    "klassen": {
     "crypto": {
-     "score": -0.1044,
-     "bull": 0,
-     "bear": 9,
-     "neut": 58
-    },
-    "stocks": {
-     "score": -0.0868,
+     "score": -0.0945,
      "bull": 0,
      "bear": 8,
-     "neut": 59
+     "neut": 60
+    },
+    "stocks": {
+     "score": -0.0775,
+     "bull": 0,
+     "bear": 7,
+     "neut": 61
     },
     "gold": {
-     "score": 0.0434,
-     "bull": 8,
+     "score": 0.0388,
+     "bull": 7,
      "bear": 0,
-     "neut": 59
+     "neut": 61
     },
     "usd": {
-     "score": 0.0289,
+     "score": 0.0258,
      "bull": 3,
      "bear": 0,
-     "neut": 64
+     "neut": 65
     }
    },
    "top": [
@@ -728,7 +728,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 34
+     "priority": 33
     },
     {
      "id": "TASS:Three-day moratorium on strikes on Kiev expires",
@@ -743,7 +743,7 @@
       "gold": 0.203,
       "usd": 0.135
      },
-     "priority": 33
+     "priority": 32
     }
    ]
   }
