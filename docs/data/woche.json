@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T16:12:27.990Z",
+ "updated": "2026-09-08T16:32:06.421Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T16:12:28.084Z",
+   "stand": "2026-09-08T16:32:06.481Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T16:12:28.070Z",
+   "stand": "2026-09-08T16:32:06.472Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T16:12:28.055Z",
+   "stand": "2026-09-08T16:32:06.463Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T16:12:28.039Z",
+   "stand": "2026-09-08T16:32:06.453Z",
    "anzahl": 238,
    "klassen": {
     "crypto": {
@@ -705,6 +705,21 @@
      "priority": 75
     },
     {
+     "id": "FXStreet:The Euro's rate hike does not come with a gas cargo",
+     "titel": "The Euro's rate hike does not come with a gas cargo",
+     "titelDe": "Die Zinserhöhung des Euro kommt nicht mit einer Gasfracht",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/the-euros-rate-hike-does-not-come-with-a-gas-cargo-202609081627",
+     "zeit": "2026-09-08T16:27:06.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "FXStreet:Canadian Dollar gains as US Dollar struggles despite rising Fed rate hike bets",
      "titel": "Canadian Dollar gains as US Dollar struggles despite rising Fed rate hike bets",
      "quelle": "FXStreet",
@@ -740,21 +755,6 @@
      "quelle": "Guardian",
      "url": "https://www.theguardian.com/politics/live/2026/sep/08/uk-us-trade-israel-sanctions-labour-ed-miliband-farage-latest-news-updates",
      "zeit": "2026-09-08T13:44:11.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 74
-    },
-    {
-     "id": "CNBC:U.S. sanctions Iranian airlines in aim to tighten economic squeeze as war spreads, oil rises",
-     "titel": "U.S. sanctions Iranian airlines in aim to tighten economic squeeze as war spreads, oil rises",
-     "titelDe": "US-Sanktionen gegen iranische Fluggesellschaften zielen darauf ab, den wirtschaftlichen Druck zu verschärfen, da sich der Krieg ausbreitet und das Öl steigt",
-     "quelle": "CNBC",
-     "url": "https://www.cnbc.com/2026/09/08/us-sanctions-iran-airlines-oil-economy-war.html",
-     "zeit": "2026-09-08T14:30:01.000Z",
      "scores": {
       "crypto": -0.765,
       "stocks": -0.765,
