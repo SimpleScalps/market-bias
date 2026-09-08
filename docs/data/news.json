@@ -1,12 +1,251 @@
 {
- "updated": "2026-09-08T17:44:48.858Z",
+ "updated": "2026-09-08T17:53:35.842Z",
  "regime": "policy",
- "count": 244,
+ "count": 239,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
   "Times of Israel: 403 https://www.timesofisrael.com/feed/"
  ],
  "items": [
+  {
+   "id": "FXStreet:Euro: Upside bias within defined range against US Dollar – UOB",
+   "title": "Euro: Upside bias within defined range against US Dollar – UOB",
+   "text": "UOB’s Quek Ser Leang and Lee Sue Ann analysts report that EUR/USD was little changed around 1.1620 on Monday, but note a slight pickup in upward momentum.",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/euro-upside-bias-within-defined-range-against-us-dollar-uob-202609081751",
+   "date": "2026-09-08T17:51:16.000Z",
+   "tags": [
+    "Makro"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 45,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Euro: Upside Bias innerhalb eines definierten Bereichs gegenüber US-Dollar – UOB"
+  },
+  {
+   "id": "Reuters:US accuses Chinese AI firms of 'industrial-scale' theft of AI technology",
+   "title": "US accuses Chinese AI firms of 'industrial-scale' theft of AI technology",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUFVxbU42ZUIyUVJ3Zlc4QWJsV1h6bDIzSjBTcHRJX2ZqSXF6SHhacGZsUnR4Z1p5UE1zcWZEY09zN0Y1RFpnVlByU281QWNTeS1KTDhIMUlMU2tCVFZKUU1fUjBsck0yWGpNUTA3dXY0LTV6bG90X2VGanJkbmstOGEzMkhYVC1vOTM2Vzh4OWJieEFkWUVQNUVZVks0OW96OGhWTjBhZldSUlNxcGh4LQ?oc=5",
+   "date": "2026-09-08T17:49:43.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 45,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Die USA beschuldigen chinesische KI-Firmen des Diebstahls von KI-Technologie im industriellen Maßstab"
+  },
+  {
+   "id": "SCMP:New York leaders ‘lied’ about toxic air after 9/11, Mayor Zohran Mamdani says",
+   "title": "New York leaders ‘lied’ about toxic air after 9/11, Mayor Zohran Mamdani says",
+   "text": "New York Mayor Zohran Mamdani announced on Tuesday the release of tens of thousands of documents showing the city did not disclose all it knew about air toxicity after September 11. The release comes ahead of the 25th anniversary of the attacks in 2001 that killed 2,977 people, in the US, mostly in the collapse of the Twin Towers in New York. More than 9,400 have died from illnesses linked to their exposure to the area in the years since, according to a federal medical monitoring...",
+   "source": "SCMP",
+   "url": "https://www.scmp.com/news/world/united-states-canada/article/3366829/new-york-leaders-lied-about-toxic-air-after-9/11-mayor-zohran-mamdani-says?utm_source=rss_feed",
+   "date": "2026-09-08T17:47:43.000Z",
+   "tags": [
+    "Asien"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "New Yorker Führer \"haben gelogen\" über giftige Luft nach dem 11. September, sagt Bürgermeister Zohran Mamdani"
+  },
+  {
+   "id": "TASS:New US sanctions against Russia hardly coherent with sentiments at negotiations — Lavrov",
+   "title": "New US sanctions against Russia hardly coherent with sentiments at negotiations — Lavrov",
+   "text": "The Russian foreign minister pointed out that Washington still continue extending all sanctions imposed by then-President of the US Joe Biden and the Biden Congress",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/politics/2184417",
+   "date": "2026-09-08T17:47:23.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Handelskonflikt"
+   ],
+   "scores": {
+    "crypto": -0.081,
+    "stocks": -0.081,
+    "gold": 0.041,
+    "usd": 0.027
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Handelskonflikt)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 63,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "Neue US-Sanktionen gegen Russland stimmen kaum mit der Verhandlungsstimmung überein — Lawrow"
+  },
+  {
+   "id": "Decrypt:Strive Buys $109 Million in Bitcoin, Pushes Preferred Stock Toward $1 Billion",
+   "title": "Strive Buys $109 Million in Bitcoin, Pushes Preferred Stock Toward $1 Billion",
+   "text": "The Vivek Ramaswamy-founded asset manager added 1,375 BTC last week, its third straight week of 5%-plus growth.",
+   "source": "Decrypt",
+   "url": "https://decrypt.co/377689/strive-buys-109-million-bitcoin-preferred-stock-1-billion",
+   "date": "2026-09-08T17:46:05.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Akkumulation"
+   ],
+   "scores": {
+    "crypto": 0.45,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "why": "Direkt kryptopositive Nachricht. (Signale: Akkumulation)",
+   "whyEn": "Directly crypto-positive news. (signals: accumulation)",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 59,
+   "label": "bullish",
+   "labelText": "Bullish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "BTC"
+   ],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Strive kauft $ 109 Millionen in Bitcoin, schiebt Vorzugsaktien in Richtung $ 1 Milliarde"
+  },
+  {
+   "id": "Guardian:Smithsonian Institution secretary to retire amid Trump attacks on musuem independence",
+   "title": "Smithsonian Institution secretary to retire amid Trump attacks on musuem independence",
+   "text": "‘I have to be honest, it has been stressful,’ Lonnie Bunch III says The Smithsonian Institution’s secretary, Lonnie Bunch III, will retire at the end of the year amid Donald Trump ’s attacks on the museum’s content and independence. Bunch, who was appointed in 2019 as the first African American to lead the museums, cited personal reasons for departing, while acknowledging the pressure that the president’s attacks on the Smithsonian’s depictions of US history had taken. Continue reading...",
+   "source": "Guardian",
+   "url": "https://www.theguardian.com/us-news/2026/sep/08/smithsonian-secretary-lonnie-bunch-retires",
+   "date": "2026-09-08T17:44:49.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Smithsonian Institution Sekretär in den Ruhestand inmitten Trump Angriffe auf musuem Unabhängigkeit"
+  },
   {
    "id": "Mehr News:Iran economic delegation arrives in Kermanshah for Iraq trade",
    "title": "Iran economic delegation arrives in Kermanshah for Iraq trade",
@@ -162,14 +401,14 @@
    "titleDe": "Qualcomms Aktien steigen, da der Amazon-Chip-Deal den Anlegern dringend benötigte gute Nachrichten bietet"
   },
   {
-   "id": "The Defiant:Compound Opens Institutional-Only Lending Market",
-   "title": "Compound Opens Institutional-Only Lending Market",
-   "text": "The market lends USDC against ETH, wstETH, WBTC and cbBTC to whitelisted institutions only, at loan-to-value ratios of up to 87%. Compound says it was oversubscribed at launch, with DeFi Saver, K3/Nexo, KPK and Yearn taking part.",
-   "source": "The Defiant",
-   "url": "https://thedefiant.io/news/defi/compound-institutional-market-launch",
-   "date": "2026-09-08T17:33:14.000Z",
+   "id": "Guardian:More than 600 UK flights cancelled after air traffic control ‘technical issue’ – business live",
+   "title": "More than 600 UK flights cancelled after air traffic control ‘technical issue’ – business live",
+   "text": "National Air Traffic Services apologise for technical issue disrupting departures today, which Flightradar24 say has caused hundreds of cancellations Air traffic control issue causes flight delays and disruption across UK Gas prices are rising this morning, putting pressure on European countries who need to stock up their storage levels before the winter. The month-ahead UK gas price is up around 1% at 184p a therm, close to yesterday’s highs when gas hit its highest since January 2023. Continue",
+   "source": "Guardian",
+   "url": "https://www.theguardian.com/business/live/2026/sep/08/oil-price-approaches-100-a-barrel-saudi-attacks-bank-of-england-latest-news-updates",
+   "date": "2026-09-08T17:37:59.000Z",
    "tags": [
-    "Krypto"
+    "Weltlage"
    ],
    "impact": "low",
    "regelStand": 2,
@@ -197,7 +436,165 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
+   "titleDe": "Mehr als 600 Flüge in Großbritannien wurden nach dem technischen Problem der Flugsicherung storniert – Business Live"
+  },
+  {
+   "id": "Al Jazeera:Yemen’s war is back: A new battle for Sanaa and the Red Sea",
+   "title": "Yemen’s war is back: A new battle for Sanaa and the Red Sea",
+   "text": "This phase of the war could be the start of another protracted conflict rather than a decisive campaign, say analysts.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/features/2026/9/8/yemens-war-is-back-a-new-battle-for-sanaa-and-the-red-sea?traffic_source=rss",
+   "date": "2026-09-08T17:37:35.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Eskalation"
+   ],
+   "scores": {
+    "crypto": -0.36,
+    "stocks": -0.36,
+    "gold": 0.18,
+    "usd": 0.12
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 67,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "Al Jazeera (GN)"
+   ],
+   "bestaetigt": 2,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Jemens Krieg ist zurück: Eine neue Schlacht um Sanaa und das Rote Meer"
+  },
+  {
+   "id": "Guardian:US federal court says no constitutional right to clean water in Mississippi case",
+   "title": "US federal court says no constitutional right to clean water in Mississippi case",
+   "text": "Appeals court dismisses lawsuit from Jackson residents claiming that tainted drinking water violated their rights A US appellate court has decided that the federal constitution does not guarantee a right to clean water. That legal opinion came in the form of a decision on Friday from the fifth circuit court of appeals to uphold a lower court’s dismissal of a 2022 lawsuit from several Jackson, Mississippi, residents claiming that tainted drinking water violated their constitutional rights. Contin",
+   "source": "Guardian",
+   "url": "https://www.theguardian.com/us-news/2026/sep/08/mississippi-clean-water-case-constitutional-right",
+   "date": "2026-09-08T17:37:22.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "us-markets",
+   "categoryLabel": "US-Märkte",
+   "priority": 45,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Das US-Bundesgericht sagt, dass es im Fall Mississippi kein verfassungsmäßiges Recht auf sauberes Wasser gibt"
+  },
+  {
+   "id": "The Defiant:Compound Opens Institutional-Only Lending Market",
+   "title": "Compound Opens Institutional-Only Lending Market",
+   "text": "The market lends USDC against ETH, wstETH, WBTC and cbBTC to whitelisted institutions only, at loan-to-value ratios of up to 87%. Compound says it was oversubscribed at launch, with DeFi Saver, K3/Nexo, KPK and Yearn taking part.",
+   "source": "The Defiant",
+   "url": "https://thedefiant.io/news/defi/compound-institutional-market-launch",
+   "date": "2026-09-08T17:33:14.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
    "titleDe": "Compound eröffnet institutionellen Kreditmarkt"
+  },
+  {
+   "id": "Reuters:Breakingviews - COMMENTARY: Banking mega-merger is glum news for side hustles",
+   "title": "Breakingviews - COMMENTARY: Banking mega-merger is glum news for side hustles",
+   "text": "Breakingviews - COMMENTARY: Banking mega-merger is glum news for side hustles &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQWlzSjlXMW9OWl81Q1BidFdGMFkxTlBJOXYwWnV2WFhjZDg5Y201dERfdXlTU1h0TC1BWXA1SjFXOW1ZeE5kQTNsMG5tdW45RDdKbHJBRzNycndfVTFaclZFZHpLdFM2QmU5NkRxdWo0T19SVnBRMENtNTBsbjRFUDVFa2NXM0lOVE8yZXJxSzRjS0R3MGk2MktHQlBXdzZxVlhranB0RlRSUQ?oc=5",
+   "date": "2026-09-08T17:33:11.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Breakingviews - KOMMENTAR: Banking Mega-Fusion ist düstere Nachricht für Side-Hustles"
   },
   {
    "id": "TASS:Ukraine has lost all signs of independent subject of international relations — Lavrov",
@@ -223,7 +620,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -262,7 +659,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -278,46 +675,8 @@
    "titleDe": "Warum will sich fast niemand mit älteren Menschen wie mir anfreunden — außer Betrügern?"
   },
   {
-   "id": "Al Jazeera (GN):Photos: Palestinians rebuild Gaza’s ruins with mud bricks, scrap",
-   "title": "Photos: Palestinians rebuild Gaza’s ruins with mud bricks, scrap",
-   "text": "Photos: Palestinians rebuild Gaza’s ruins with mud bricks, scrap &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUHh2aUw1a2Z4SzdZaXVyM3FaUXo4WXdaWm9wVFNCZUtQeDZRRlVqQnZEUHBfRGJBMWxjY0ZGdFFLZUhhd1ExX1RXSnU5ME94djF6SXdzRE9HYVppR19ac1RkOHRJZ096cjZFUWZ1Ui1ZRGhrS1FzNVp3MV9RU19xRWkybHFIMnI1M3Q3MFFlcU9GYUFJRjJuMWFVLV9PNHpja1dJQXQxNS1pUTdB0gGyAUFVX3lxTFBEVUl0MFFMT0xWdWt4eHR4QVBTVGR0M2c0Q3oyVGdOSXdPa0dfZ3liMl9yY1I5QXN5MFNQMlBlcTZqVlBEMmdTR1VWUGdURVpEUWJ5QkozdDMwTEU3VW5CVTZiTk9ubXczU3kzWW5EM3ZUN1QtMHhCVTVGRXVwVEFycHdFVFZ2TlVPQ0pCQko5UzRPVXB2QVVybFJ6ODdDT1RtR25FNmdIWURicmJoUzBsZFE?oc=5",
-   "date": "2026-09-08T17:29:27.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 62,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Fotos: Palästinenser bauen die Ruinen des Gazastreifens mit Lehmziegeln und Schrott wieder auf"
-  },
-  {
-   "id": "MarketWatch:A contrarian case for further stock-market gains through the midterm election",
-   "title": "A contrarian case for further stock-market gains through the midterm election",
+   "id": "MarketWatch:A contrarian case for stock-market gains through the midterm election",
+   "title": "A contrarian case for stock-market gains through the midterm election",
    "text": "Yet another lease on life for the bull market, observes Mark Hulbert.",
    "source": "MarketWatch",
    "url": "https://www.marketwatch.com/story/a-contrarian-case-for-further-stock-market-gains-through-the-midterm-election-6f1bf8a9?mod=mw_rss_topstories",
@@ -338,7 +697,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -351,15 +710,15 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Ein konträrer Fall für weitere Kursgewinne durch die Zwischenwahlen"
+   "titleDe": "Ein konträrer Fall für Aktienmarktgewinne durch die Zwischenwahlen"
   },
   {
-   "id": "Al Jazeera (GN):Nicaragua urges ICJ to reject Germany’s bid to throw out Gaza genocide case",
-   "title": "Nicaragua urges ICJ to reject Germany’s bid to throw out Gaza genocide case",
-   "text": "Nicaragua urges ICJ to reject Germany’s bid to throw out Gaza genocide case &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVWppMEpHVHp3RE5QSTVSUGxuYTBvY0Z6RWxLUEJVSE5mbVhxcVpsdUFnemZJU3JpWVBFdHRpYjU1UHp4ZDJxY0l6WWpRR3ZBWlJCSy1QQTFGQUhHdzJkRjdFUkZVdmxYYnZlZmtXa0tOYy10dWJYdndONnlxNVJueTlGclFkSFRVTURCaDdRZGw1NDI1OVBDOG45TDlwUGQtMG9aVzVKYVRtdjhQbjJydk9IMEPSAboBQVVfeXFMT0hrN213eURPazRHNE15SWJ0Z3l4XzNHdXZRb0sxVzZ6bmdTVVlEbjFkcy1rRjk0Sjlla1NRa1BUYlVIMjhTMjFjYXNJZDg3ZE5WQ3o3OHhyY3J3Q0d5ZTNmUHpTWloyRkRJdDhacnNyd0doNm5tNmhNQkNiS2VPR2JCREhmRTNjLXp6NjdnN3NtMFRpa2tQT1A4aVZkcVBUamdIdjJaelBUcGtidFNlUWpTNHpET1hCNy1B?oc=5",
-   "date": "2026-09-08T17:26:58.000Z",
+   "id": "Al Jazeera:Photos: Palestinians rebuild Gaza’s ruins with mud bricks, scrap",
+   "title": "Photos: Palestinians rebuild Gaza’s ruins with mud bricks, scrap",
+   "text": "Over 90 percent of Gaza lies in ruins, forcing thousands to rebuild homes with limited resources like mud and rubble.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/gallery/2026/9/8/photos-palestinians-rebuild-gazas-ruins-with-mud-bricks-and-scrap?traffic_source=rss",
+   "date": "2026-09-08T17:28:50.000Z",
    "tags": [
     "Weltlage"
    ],
@@ -376,7 +735,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -385,8 +744,50 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "Al Jazeera (GN)"
+   ],
+   "bestaetigt": 2,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Fotos: Palästinenser bauen die Ruinen des Gazastreifens mit Lehmziegeln und Schrott wieder auf"
+  },
+  {
+   "id": "Al Jazeera:Nicaragua urges ICJ to reject Germany’s bid to throw out Gaza genocide case",
+   "title": "Nicaragua urges ICJ to reject Germany’s bid to throw out Gaza genocide case",
+   "text": "Nicaragua maintains that German arms exports to Israel facilitated Gaza genocide as Germany's tries to halt the case.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/8/nicaragua-urges-icj-to-reject-germanys-bid-to-throw-out-gaza-genocide-case?traffic_source=rss",
+   "date": "2026-09-08T17:26:33.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 61,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "Al Jazeera (GN)"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Nicaragua fordert den IGH auf, Deutschlands Angebot abzulehnen, den Völkermord im Gazastreifen zu beenden"
@@ -512,6 +913,44 @@
    "titleDe": "Vierzehn gehen wegen der tödlichsten Kanal-Kleinboot-Katastrophe vor Gericht"
   },
   {
+   "id": "Reuters:EasyJet faces $72 million lawsuit over stranded Airbus planes, FT reports",
+   "title": "EasyJet faces $72 million lawsuit over stranded Airbus planes, FT reports",
+   "text": "EasyJet faces $72 million lawsuit over stranded Airbus planes, FT reports &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPXy1wYzNrampYR09qMHpOcUl0ZGJ1TU1JWHdWMkZRU2Nnd0ZHczRPNmlKRjhrN093MlFyRmVjby13SHZHYVBpMENvVUd6eVA0Q1FyU0dXRFNMX1JYU28tUUFqdHhyLUMtZElBNWItUzFZZWdwNXdjaXY2RzVOY3U3R3JfQ3ZtZXZoMnpTU091V1hhb2JuLW9VTVZ6d3FSM0dobXpFZktpT2d4bHczbzVjdVBOdmFiQ0xqNjhuZC1jS3gwbUpGYjNLaElFbFJBM0U?oc=5",
+   "date": "2026-09-08T17:24:02.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "EasyJet steht vor einer Klage in Höhe von 72 Millionen $ wegen gestrandeter Airbus-Flugzeuge, berichtet FT"
+  },
+  {
    "id": "Anadolu:UK, France, Canada say sanctions 'turning point' in approach to protecting 2-state solution",
    "title": "UK, France, Canada say sanctions 'turning point' in approach to protecting 2-state solution",
    "text": "'We will co-chair a meeting at the United Nations General Assembly later this month to advance our efforts and pursue peace,' says statement",
@@ -632,12 +1071,54 @@
    "titleDe": "Chevron verdoppelt Ölbohrinseln in Venezuela im Rahmen des Wachstumsplans"
   },
   {
-   "id": "Al Jazeera (GN):‘A bit too late, but important’: UK bans goods from Israeli settlements",
-   "title": "‘A bit too late, but important’: UK bans goods from Israeli settlements",
-   "text": "‘A bit too late, but important’: UK bans goods from Israeli settlements &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdkM3YU5xUnJOdTlLeW83LU9sS0R3QmhLdmpvTjdkWlVyZl93ZHFaRkFHWHNFX2RRbEtpOWFjV1pyemtLZkxDbDZyTlV1eXRLQ3dvdjA5MHNZaVFCRzg4T1VpNjNGeTVkVUI5U3lBOFVhNWNOalI1bk5tSXZnaGtzSWlyYmxfMnN5RnhVYmhGVUw4cG9vVXk4MHZzaXc1WEM0c3lOT3k0R3RSVkZVOHl3eG4walN2N0Zn0gG-AUFVX3lxTE1XOUltTGpIUUVMWEZIXy1rZ3Rtd1d4X1NKdGJoeXZRcWNhczBkTF9KVkRzTklKRjVHVzhyT2FLNDI4QnhPTkR2dmJ4ajVZYzhNaGRLTC1MZlJPbC1SZXg1cmU5bE55VzI0MzdlZ1pRWVFRWFJqcmhNRXRKcm44MFNpeDVrMmFxcjA1UzQ0U3hYbF9ZcEtIcmg3Y1dzNlp2eGZkdnRta0RsT2JFZ200SWtsSnNZck8wRHZiX1F0RUE?oc=5",
-   "date": "2026-09-08T17:20:09.000Z",
+   "id": "MarketWatch:Is IBM’s selloff an opportunity? Here’s one case for the beaten-down stock.",
+   "title": "Is IBM’s selloff an opportunity? Here’s one case for the beaten-down stock.",
+   "text": "An Evercore ISI analyst thinks investors are getting exposure to IBM’s various quantum-computing initiatives essentially for free.",
+   "source": "MarketWatch",
+   "url": "https://www.marketwatch.com/story/is-ibms-selloff-an-opportunity-heres-one-case-for-the-beaten-down-stock-a3ca92ed?mod=mw_rss_topstories",
+   "date": "2026-09-08T17:19:00.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Kurssturz"
+   ],
+   "scores": {
+    "crypto": -0.45,
+    "stocks": -0.45,
+    "gold": 0.225,
+    "usd": 0.15
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Kurssturz)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 38,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Ist der Ausverkauf von IBM eine Chance? Hier ist ein Fall für den heruntergekommenen Bestand."
+  },
+  {
+   "id": "Reuters:Thieves steal Renoir paintings from French Riviera museum",
+   "title": "Thieves steal Renoir paintings from French Riviera museum",
+   "text": "Thieves steal Renoir paintings from French Riviera museum &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVF9NZ2J0MlphUFRFcXNIX1BPa1pJQXI0RV9ibDJOcmZJTUdHcm9VcmNMQndKY0NmTEZzaThwN3RadGdpWnVVd3JVRkF2SEg3a0FOMk5pRjRMVzhkQnVzVXF5Zk00WEdBUDVjME1NZHgtUjVma3E4b3NKYWJrZFQtOFdPZTVMQi1DNXNqT0lpcVNFaHlEZ2NSYjh5VWZCZUhw?oc=5",
+   "date": "2026-09-08T17:16:43.000Z",
    "tags": [
     "Weltlage"
    ],
@@ -667,49 +1148,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "„Etwas zu spät, aber wichtig“: Großbritannien verbietet Waren aus israelischen Siedlungen"
-  },
-  {
-   "id": "MarketWatch:Is IBM’s selloff an opportunity? Here’s one case for the beaten-down stock.",
-   "title": "Is IBM’s selloff an opportunity? Here’s one case for the beaten-down stock.",
-   "text": "An Evercore ISI analyst thinks investors are getting exposure to IBM’s various quantum-computing initiatives essentially for free.",
-   "source": "MarketWatch",
-   "url": "https://www.marketwatch.com/story/is-ibms-selloff-an-opportunity-heres-one-case-for-the-beaten-down-stock-a3ca92ed?mod=mw_rss_topstories",
-   "date": "2026-09-08T17:19:00.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Kurssturz"
-   ],
-   "scores": {
-    "crypto": -0.45,
-    "stocks": -0.45,
-    "gold": 0.225,
-    "usd": 0.15
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Kurssturz)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 39,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Ist der Ausverkauf von IBM eine Chance? Hier ist ein Fall für den heruntergekommenen Bestand."
+   "titleDe": "Diebstahl von Renoir-Gemälden aus Museum an der französischen Riviera"
   },
   {
    "id": "Guardian:Victims of deadly Amazon cargo plane crash identified, as two more remain critical",
@@ -830,7 +1269,7 @@
    "title": "Air traffic control issue disrupts departing flights at major UK airports",
    "text": "Air traffic control issue disrupts departing flights at major UK airports &nbsp;&nbsp; Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVUxlRzhySmV3NHdzQUgxZ1IzNS11WXVybmw5YXhtNWhjSnBQTE92V05qZXdxeE5HSm9MNGxuZnAxcXF3ZjgtRlRMb3VHTkJTX3B2N2JxRDMycXk2TFZsVlJkalZHd1VXTFcwb3R6UkRwSmFqTV91LTZYckl4emwyeWI2SFZ5alZ4TDk2SVVGUThrajd4d3R5V0JQOElnV2xpbDlmQTRRaWVTalRtNzJPeVlvNExZTXJFSkxPRGlzTHpJV3Zfc1QtMHBXWQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMjFUM1NiblY2enh0S3E5UEZUV0hXby1vNTM3T2twdTVlSEtZeDAyclZmR2dNWHlJdXpDUzVVWXRkWWRLUTZ2WnNYazlQSHRpSU5icjEtZXR0T3A4MW8ySjZCY1ZkNlZ4TGdWOVdseWZ2cXZ4V0lPWjFTV2JlUnVIQnZ0cHdCa3Z6Q05zZHlpUXZuM0dSQU9YV0RyWVF5dnkyRGF2NFczVktWM0lvUHF0dUgwc2ZlZ19VS0E?oc=5",
    "date": "2026-09-08T17:11:43.000Z",
    "tags": [
     "Weltlage"
@@ -862,6 +1301,46 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Probleme mit der Flugsicherung stören abfliegende Flüge an großen britischen Flughäfen"
+  },
+  {
+   "id": "Al Jazeera:‘A bit too late, but important’: UK bans goods from Israeli settlements",
+   "title": "‘A bit too late, but important’: UK bans goods from Israeli settlements",
+   "text": "The UK has announced a ban on the import of all goods produced by illegal Israeli settlements in the occupied West Bank.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/a-bit-too-late-but-important-uk-bans-goods-from-israeli-settlements?traffic_source=rss",
+   "date": "2026-09-08T17:11:16.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 31,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "Al Jazeera (GN)"
+   ],
+   "bestaetigt": 2,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "„Etwas zu spät, aber wichtig“: Großbritannien verbietet Waren aus israelischen Siedlungen"
   },
   {
    "id": "Decrypt:Cronos Erased Two Hours of Transactions to Reverse $111 Million DeFi Exploit",
@@ -970,7 +1449,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 68,
+   "priority": 67,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "medium",
@@ -1008,7 +1487,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1266,48 +1745,6 @@
    "titleDe": "Bombardier verteidigt die US-Fertigung inmitten der Bedrohung durch Trumps Luftfahrtverkäufe"
   },
   {
-   "id": "Reuters:Dyne, Sarepta shares tumble as Novartis setback weighs on muscle disease drug developers",
-   "title": "Dyne, Sarepta shares tumble as Novartis setback weighs on muscle disease drug developers",
-   "text": "Dyne, Sarepta shares tumble as Novartis setback weighs on muscle disease drug developers &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSk83SktsLVh1Q2o4di1zWTNpNF9yd3ZvTUo4NlFDb212LXZGRld4aFh6LXh1M3NPblRuaEM2RkZFT3p4WDFIc1VFSXdRUkVhckxBbGszdlFvMWJ4allmMlFTWEsxSWNGVXZqVDd0Z21sTG96aS1OOWxiUHhvY1R6NUNzTDB0ZEVsZFVJWWFTQklUMVNZbnJsWDRMUm1SU0xGZ1dlY2pxOGhWNnBRN0Z5M0x6MU1rbHFDRndYVDhTdzM?oc=5",
-   "date": "2026-09-08T17:03:43.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Kurssturz"
-   ],
-   "scores": {
-    "crypto": -0.45,
-    "stocks": -0.45,
-    "gold": 0.225,
-    "usd": 0.15
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Kurssturz)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 38,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Dyne, Sarepta Aktien stürzen ab, da der Rückschlag von Novartis die Entwickler von Medikamenten gegen Muskelerkrankungen belastet"
-  },
-  {
    "id": "SCMP:Hong Kong’s first chief executive, Tung Chee-hwa, dies aged 89",
    "title": "Hong Kong’s first chief executive, Tung Chee-hwa, dies aged 89",
    "text": "Tung Chee-hwa, who served as Hong Kong’s first chief executive and oversaw the 1997 return of the city to Chinese rule, has died. The former vice-chairman of China’s top political advisory body, the Chinese People’s Political Consultative Conference (CPPCC), died on Tuesday at the age of 89, according to a statement from his office issued in the early hours on Wednesday. “Mr Tung Chee-hwa was a man of unwavering integrity who devoted himself wholeheartedly to the nation, his noble character and.",
@@ -1344,48 +1781,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Hongkongs erster Chefsekretär Tung Chee-hwa stirbt im Alter von 89"
-  },
-  {
-   "id": "Reuters:Iran-backed Houthis attack four Saudi cities in expansion of Middle East war, 73 hurt",
-   "title": "Iran-backed Houthis attack four Saudi cities in expansion of Middle East war, 73 hurt",
-   "text": "Iran-backed Houthis attack four Saudi cities in expansion of Middle East war, 73 hurt &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNT2RnNWprQ01ScjN2Q05RSHRWdmRqVzh2U01LUVVPVmhiRDVYNER3anQxQlNWV24wS3RZR2ZqS1FxNnFKWFRqSmlYbnQwSFk1eU5Cbnh1SVpxbTZCWUwtelFqbFV6LTNLVHZZbGRaYTVucy1VT1JwNDZPM3gydkZRU2VCWHFoVnpTVU9ILXlfRHpKMnBsT3RJOUlkejRzT1FJa25YekFnMVl6dUJnbERxeXo1UnpOZTVaQ281aFJrbjFEWmN3T2c?oc=5",
-   "date": "2026-09-08T17:00:32.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Eskalation"
-   ],
-   "scores": {
-    "crypto": -0.36,
-    "stocks": -0.36,
-    "gold": 0.18,
-    "usd": 0.12
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 93,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Von Iran unterstützte Houthis greifen vier saudische Städte an, um den Krieg im Nahen Osten auszuweiten, 73 verletzt"
   },
   {
    "id": "Guardian:Ukraine’s prosecutor general quits after anti-corruption agents raid his office",
@@ -1563,7 +1958,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1620,50 +2015,12 @@
    "titleDe": "Smithsonian-Chef Lonnie Bunch III tritt zurück, Trump-Administration übt Druck auf Institution aus – US-Politik live"
   },
   {
-   "id": "Reuters:Netanyahu races to unify Israel's right wing in bid to avert election defeat",
-   "title": "Netanyahu races to unify Israel's right wing in bid to avert election defeat",
-   "text": "Netanyahu races to unify Israel's right wing in bid to avert election defeat &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd1U0enZ0akc2Vjg2ZWg3MjM3T0hiR3dERmRGaGVaVVFzeHhQZS1hY3BXczJ4TzBCUnJjanBGY2FySGI2cmhBWVU3dWlRWktVY0c3SVZtWlotZWw2OHFVSmVmUHlsVGNzb0lVQ0J1TTZIZGZWMTUwWHAzandLcXNvdmdqSkJHZHNBR3Q1UEVJNDZhYkNYc2xMOWtEaDJDUFlwMUxUZklOaUUxX3dSdWdDMkR1VGd0NGdUbVBxcmowUFFxVVZUT0ctRGhhVWFwUQ?oc=5",
-   "date": "2026-09-08T16:53:43.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 61,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Netanjahu versucht, Israels rechten Flügel zu vereinen, um eine Wahlniederlage abzuwenden"
-  },
-  {
-   "id": "TASS:UN General Assembly wraps up its 80th session",
-   "title": "UN General Assembly wraps up its 80th session",
-   "text": "During its 80th session, the UN General Assembly held 116 plenary meetings",
-   "source": "TASS",
+   "id": "Anadolu:Guterres urges countries to stand together as UN General Assembly closes 80th session",
+   "title": "Guterres urges countries to stand together as UN General Assembly closes 80th session",
+   "text": "'In these tumultuous times, all countries need to stand together, work together, and find solutions together,’ says UN chief",
+   "source": "Anadolu",
    "staatlich": true,
-   "url": "https://tass.com/world/2184369",
+   "url": "https://www.aa.com.tr/en/world/guterres-urges-countries-to-stand-together-as-un-general-assembly-closes-80th-session/4051260",
    "date": "2026-09-08T16:51:50.000Z",
    "tags": [
     "Weltlage"
@@ -1691,13 +2048,13 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
-    "Anadolu"
+    "TASS"
    ],
    "bestaetigt": 2,
    "haeuser": 2,
    "unabhaengig": 0,
    "nurStaatlich": true,
-   "titleDe": "UN-Generalversammlung beendet ihre 80. Sitzung"
+   "titleDe": "Guterres fordert die Länder nachdrücklich auf, zusammenzuhalten, während die UN-Generalversammlung die 80. Sitzung abschließt"
   },
   {
    "id": "TASS:Russia's creative economy growing 4.5 times faster than GDP",
@@ -1723,7 +2080,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1738,82 +2095,6 @@
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Russlands kreative Wirtschaft wächst 4,5‑mal schneller als BIP"
-  },
-  {
-   "id": "Reuters:House lawmaker urges Congress to sue Trump to block Washington arch",
-   "title": "House lawmaker urges Congress to sue Trump to block Washington arch",
-   "text": "House lawmaker urges Congress to sue Trump to block Washington arch &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYkFHS0JPMHo3d1dpNUFVQXRSV3RJc2NHY3plYkRHZUR3QWtHdU04RU96VmIyZlJXWl9nSzloVjM2d3NESEFpd1ROa0hLYXFCa0tWbEdhRjhRY2FlTzlxZS1MREc1c0YyVzJtdm5VdzAxVmlkaDBsN09kbEJsNFpMemFxeHJRVzJUUHZLSFRTSjJ2RGJ1NDVYU0xLSldfbjVuZDZVLUxR?oc=5",
-   "date": "2026-09-08T16:49:43.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Abgeordneter fordert Kongress auf, Trump zu verklagen, um Washington-Arch zu blockieren"
-  },
-  {
-   "id": "Guardian:UK air traffic control fix issue that cancelled more than 400 flights but disruption to continue into evening – business live",
-   "title": "UK air traffic control fix issue that cancelled more than 400 flights but disruption to continue into evening – business live",
-   "text": "National Air Traffic Services apologise for technical issue disrupting departures today, which Flightradar24 say has caused hundreds of cancellations Air traffic control issue causes flight delays and disruption across UK Gas prices are rising this morning, putting pressure on European countries who need to stock up their storage levels before the winter. The month-ahead UK gas price is up around 1% at 184p a therm, close to yesterday’s highs when gas hit its highest since January 2023. Continue",
-   "source": "Guardian",
-   "url": "https://www.theguardian.com/business/live/2026/sep/08/oil-price-approaches-100-a-barrel-saudi-attacks-bank-of-england-latest-news-updates",
-   "date": "2026-09-08T16:48:05.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 32,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "UK-Flugverkehrskontrolle behebt Problem, das mehr als 400 Flüge annullierte, Störungen dauern bis in den Abend – Business live"
   },
   {
    "id": "CNBC World:Bombardier points out U.S. footprint after Trump says aerospace giant must build in America",
@@ -2376,7 +2657,7 @@
   {
    "id": "Guardian:Flight disruption across UK continues after air traffic control technical issue",
    "title": "Flight disruption across UK continues after air traffic control technical issue",
-   "text": "London airports worst hit and 300 flights cancelled as airlines call for overhaul of UK air traffic system Flights in and out of the UK have been significantly disrupted due to an air traffic control issue affecting airports including Heathrow and Gatwick, with cancellations and delays continuing into Tuesday evening. About 300 flights have been cancelled so far, flight monitoring website Flightradar24 said. Continue reading...",
+   "text": "London airports worst hit and 300 flights cancelled as airlines call for overhaul of UK air traffic system UK airport disruption: what are your rights? Flights in and out of the UK have been significantly disrupted due to an air traffic control issue affecting airports including Heathrow and Gatwick, with cancellations and delays continuing into Tuesday evening. About 300 flights have been cancelled so far, flight monitoring website Flightradar24 said. Continue reading...",
    "source": "Guardian",
    "url": "https://www.theguardian.com/business/2026/sep/08/air-traffic-control-issue-flights-delays-disruption-uk",
    "date": "2026-09-08T16:25:32.000Z",
@@ -2490,52 +2771,12 @@
    "titleDe": "Britische Witwe droht mit Ausweisung aus Schweden nach 22 Jahren"
   },
   {
-   "id": "Al Jazeera (GN):Israeli strikes transform Lebanese city into ghost town - Al Jazeera",
-   "title": "Israeli strikes transform Lebanese city into ghost town - Al Jazeera",
-   "text": "Israeli strikes transform Lebanese city into ghost town - Al Jazeera &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNmlBbW54RndsZVJNdDhWRmdXWUhscmhCS0xBUHMzMERyZElvQWRwNTQ5N0ZTWW9CV2dWcUVBQjZ6dHhnOTZrWGZrMmh4THg0SFkwM1hnSDdjTHNaMzNkeWQwT0pneEJJVWpaX0NDZjFTSFZ2SHRlZTV3b21iSFVrRlRjbGlNblREaHBkVkFyZ1FBankyajZ5eFJCeDVHblRTQ2FhUU4zeklzT2JSaGF3Skx2ZUFmbVVVNDNtakxfRDFfUQ?oc=5",
+   "id": "Al Jazeera:Israeli strikes transform Lebanese city into ghost town",
+   "title": "Israeli strikes transform Lebanese city into ghost town",
+   "text": "Nabatieh, once southern Lebanon’s economic centre, is now a ghost town as Israel intensifies attacks.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/israeli-strikes-transform-lebanese-city-into-ghost-town?traffic_source=rss",
    "date": "2026-09-08T16:19:52.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [
-    "Al Jazeera"
-   ],
-   "bestaetigt": 2,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Israelische Streiks verwandeln die libanesische Stadt in eine Geisterstadt - Al Jazeera"
-  },
-  {
-   "id": "Guardian:Hurricane Lowell brings threat of floods, mudslides and tornadoes to Hawaii",
-   "title": "Hurricane Lowell brings threat of floods, mudslides and tornadoes to Hawaii",
-   "text": "Islands of Kauai and Ni’ihau are under hurricane warning, while Oahu is under a tropical storm warning Damaging winds and heavy rains from Hurricane Lowell were pelting Hawaii ’s western islands on Tuesday, bringing the threat of floods, mudslides and tornadoes. The islands of Kauai and Ni’ihau are under a hurricane warning, while Oahu, the state’s most populated island with close to 1 million residents, was under a tropical storm warning. Continue reading...",
-   "source": "Guardian",
-   "url": "https://www.theguardian.com/us-news/2026/sep/08/hawaii-hurricane-lowell",
-   "date": "2026-09-08T16:18:29.000Z",
    "tags": [
     "Weltlage"
    ],
@@ -2565,15 +2806,15 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Hurrikan Lowell droht mit Überschwemmungen, Erdrutschen und Tornados in Hawaii"
+   "titleDe": "Israelische Angriffe verwandeln libanesische Stadt in Geisterstadt"
   },
   {
-   "id": "TASS:Iran seizes US Dive-LD underwater drone in Strait of Hormuz — IRGC",
-   "title": "Iran seizes US Dive-LD underwater drone in Strait of Hormuz — IRGC",
-   "text": "The drone has been in service with the US Navy since 2025",
-   "source": "TASS",
+   "id": "IRNA:Iran captures US submarine drone in Strait of Hormuz",
+   "title": "Iran captures US submarine drone in Strait of Hormuz",
+   "text": "Tehran, IRNA – The Islamic Revolution Guards Corps (IRGC) Navy has announced the seizure of an unmanned American submarine in the strategic Strait of Hormuz.",
+   "source": "IRNA",
    "staatlich": true,
-   "url": "https://tass.com/world/2184357",
+   "url": "https://en.irna.ir/news/86258845/Iran-captures-US-submarine-drone-in-Strait-of-Hormuz",
    "date": "2026-09-08T16:17:11.000Z",
    "tags": [
     "Weltlage"
@@ -2601,14 +2842,14 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
-    "IRNA",
+    "TASS",
     "Mehr News"
    ],
    "bestaetigt": 3,
    "haeuser": 3,
    "unabhaengig": 0,
    "nurStaatlich": true,
-   "titleDe": "Iran beschlagnahmt US-Tauch-LD-Unterwasserdrohne in der Straße von Hormus — IRGC"
+   "titleDe": "Iran erfasst US-U-Boot-Drohne im Golf von Hormuz"
   },
   {
    "id": "TASS:Russia’s grain harvest totals 113.5 mln tons year-to-date",
@@ -2634,7 +2875,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 60,
+   "priority": 59,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2673,7 +2914,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2711,7 +2952,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2767,84 +3008,6 @@
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Europa wird bis zum Winter mehr Patriot-Raketen für die Ukraine kaufen — Bloomberg"
-  },
-  {
-   "id": "Guardian:Police overlooked tip-off day before far-right agitators blocked Dover roads",
-   "title": "Police overlooked tip-off day before far-right agitators blocked Dover roads",
-   "text": "Details passed to Kent police after people heard in pub boasting about going to Dover to ‘attack Muslims’ Police were told the night before far-right agitators blocked roads into Dover that those involved had converged on a village 18 miles away and planned to use it as a launchpad, it has emerged. People in Preston-next-Wingham told of how hundreds of men had started to arrive in the village of just over 920 residents on Friday afternoon and in effect “took over” the village. Continue reading..",
-   "source": "Guardian",
-   "url": "https://www.theguardian.com/world/2026/sep/08/kent-police-dover-unrest-far-right-village",
-   "date": "2026-09-08T16:08:01.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 29,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Polizei ignorierte Hinweis am Tag vor dem Blockieren der Doverstraßen durch rechte Agitatoren"
-  },
-  {
-   "id": "TASS:European economy threatened by decline of region’s carmakers — FT",
-   "title": "European economy threatened by decline of region’s carmakers — FT",
-   "text": "The newspaper quoted Francisco Riberas, chair and founder of Gestamp, who said that the automotive industry is the anchor for many other industries",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/economy/2184351",
-   "date": "2026-09-08T16:07:50.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 29,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 0,
-   "nurStaatlich": true,
-   "titleDe": "Europäische Wirtschaft bedroht durch Rückgang der regionalen Automobilhersteller – FT"
   },
   {
    "id": "Al Jazeera:UK sanctions on Israeli settlements a ‘seismic’ shift says Albanese",
@@ -3185,7 +3348,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 36,
+   "priority": 35,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -3505,7 +3668,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3543,7 +3706,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3583,7 +3746,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3989,82 +4152,6 @@
    "titleDe": "ICCIMA-Leiter, mexikanischer Botschafter in Teheran, untersucht Möglichkeiten zum Ausbau der Handelsbeziehungen, gemeinsame Zusammenarbeit"
   },
   {
-   "id": "Al Jazeera:What is BAPS, the Hindu group whose demands led to Eiffel Tower closure?",
-   "title": "What is BAPS, the Hindu group whose demands led to Eiffel Tower closure?",
-   "text": "The Eiffel Tower closed after workers protested the sidelining of women during the BAPS visit.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/8/what-is-baps-the-hindu-group-whose-demands-led-to-eiffel-tower-closure?traffic_source=rss",
-   "date": "2026-09-08T15:21:05.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 28,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Was ist BAPS, die hinduistische Gruppe, deren Forderungen zur Schließung des Eiffelturms führten?"
-  },
-  {
-   "id": "Al Jazeera:The shift in British policy on Israel is palpable",
-   "title": "The shift in British policy on Israel is palpable",
-   "text": "But progress could be threatened if there is a new more diplomatic government in Israel.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/opinions/2026/9/8/the-shift-in-british-policy-on-israel-is-palpable?traffic_source=rss",
-   "date": "2026-09-08T15:20:47.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 58,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Die Veränderung der britischen Politik gegenüber Israel ist spürbar"
-  },
-  {
    "id": "BBC World:Ukrainian TV channel building hit by Russian drone as five killed in Kyiv",
    "title": "Ukrainian TV channel building hit by Russian drone as five killed in Kyiv",
    "text": "President Zelensky describes the daytime drone attack in Ukraine's capital as a \"new page in Russian degradation\"",
@@ -4265,48 +4352,6 @@
    "titleDe": "Die Ölpreise stehen wieder einmal an der Schwelle zu 100 $"
   },
   {
-   "id": "Al Jazeera:Jerusalem Daily: UK announces sanctions on Israeli settlement goods",
-   "title": "Jerusalem Daily: UK announces sanctions on Israeli settlement goods",
-   "text": "The UK’s foreign secretary has announced a ban on trade with goods from Israeli settlements in the occupied West Bank.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/jerusalem-daily-uk-announces-sanctions-on-israeli-settlement-goods?traffic_source=rss",
-   "date": "2026-09-08T15:12:42.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Handelskonflikt"
-   ],
-   "scores": {
-    "crypto": -0.405,
-    "stocks": -0.405,
-    "gold": 0.203,
-    "usd": 0.135
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Handelskonflikt)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 34,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Jerusalem Daily: Großbritannien kündigt Sanktionen gegen israelische Siedlungsgüter an"
-  },
-  {
    "id": "The Block:Strive adds 1,375 bitcoin as SATA approaches ‘billion-dollar’ milestone",
    "title": "Strive adds 1,375 bitcoin as SATA approaches ‘billion-dollar’ milestone",
    "text": "Strive CEO Matt Cole said 70% of the capital raised during the week came from sales of its SATA perpetual preferred stock.",
@@ -4345,44 +4390,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Strive fügt 1.375 Bitcoins hinzu, während sich SATA dem Milliarden-Dollar-Meilenstein nähert"
-  },
-  {
-   "id": "FXStreet:US Dollar: Fed hold tempers dollar rebound – NBC",
-   "title": "US Dollar: Fed hold tempers dollar rebound – NBC",
-   "text": "National Bank of Canada's (NBC) Stéfane Marion and Kyle Dahms note that the US Dollar (USD) has weakened broadly in Q3 even as the United States (US) economy remains at full employment.",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/us-dollar-fed-hold-tempers-dollar-rebound-nbc-202609081511",
-   "date": "2026-09-08T15:11:05.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "fed",
-   "categoryLabel": "Notenbank",
-   "priority": 68,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "medium",
-   "duration": "swing",
-   "eventType": "Notenbank",
-   "eventTypeEn": "Central bank",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "US-Dollar: Fed hält den Dollar zurück – NBC"
   },
   {
    "id": "Tehran Times:1,000-cubic meter desalination plant goes operational in Asaluyeh",
@@ -4662,48 +4669,6 @@
    "titleDe": "Robinhood beteiligt sich an Crypto.com, OG.com an Prediction Markets Deal"
   },
   {
-   "id": "Al Jazeera:EU condemns Serbia’s ministers for attending funeral of war criminal Mladic",
-   "title": "EU condemns Serbia’s ministers for attending funeral of war criminal Mladic",
-   "text": "EU leaders condemn Serbian officials' presence at Ratko Mladic's funeral as a failure to confront past war crimes.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/8/eu-condemns-serbias-ministers-for-attending-funeral-of-war-criminal-mladic?traffic_source=rss",
-   "date": "2026-09-08T15:01:36.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Eskalation"
-   ],
-   "scores": {
-    "crypto": -0.36,
-    "stocks": -0.36,
-    "gold": 0.18,
-    "usd": 0.12
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 63,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "EU verurteilt Serbiens Minister für die Teilnahme an der Beerdigung des Kriegsverbrechers Mladic"
-  },
-  {
    "id": "EZB:Frank Elderson: Fireside chat",
    "title": "Frank Elderson: Fireside chat",
    "source": "EZB",
@@ -4725,7 +4690,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5011,7 +4976,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 63,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -5065,11 +5030,11 @@
    "titleDe": "Qualcomm gibt Amazon Optionsscheine für den Erwerb von Chiphersteller-Aktien im Wert von $ 4 Milliarden im Rahmen eines KI-Infrastruktur-Deals heraus"
   },
   {
-   "id": "Al Jazeera:Hungary expels 10 Russian diplomats, Moscow promises harsh response",
-   "title": "Hungary expels 10 Russian diplomats, Moscow promises harsh response",
-   "text": "Russia promises 'harsh and painful' response following Hungary's expulsion of its diplomats.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/8/hungary-expels-russian-diplomats-over-unacceptable-activities?traffic_source=rss",
+   "id": "BBC World:Hungary expels 10 Russian diplomats as relations worsen",
+   "title": "Hungary expels 10 Russian diplomats as relations worsen",
+   "text": "For years, Hungary was viewed as Russia's closest ally in the EU, but the new government has dropped the pro-Kremlin stance.",
+   "source": "BBC World",
+   "url": "https://www.bbc.co.uk/news/articles/cddvzd1z53lo?at_medium=RSS&at_campaign=rss",
    "date": "2026-09-08T14:38:44.000Z",
    "tags": [
     "Weltlage"
@@ -5087,7 +5052,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5096,13 +5061,11 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "BBC World"
-   ],
-   "bestaetigt": 2,
-   "haeuser": 2,
-   "unabhaengig": 2,
-   "titleDe": "Ungarn weist 10 russische Diplomaten aus, Moskau verspricht harte Reaktion"
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Ungarn weist 10 russische Diplomaten aus, da sich die Beziehungen verschlechtern"
   },
   {
    "id": "BeInCrypto:Kraken Says Withdrawals Are Stuck as Funding Problems Hit 23 Services",
@@ -5369,7 +5332,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 63,
+   "priority": 62,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -5408,7 +5371,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 47,
+   "priority": 46,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5452,7 +5415,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 91,
+   "priority": 90,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "high",
@@ -5937,44 +5900,6 @@
    "titleDe": "100 $ Brent Webstühle als Chinas Ölkauf Rebounds"
   },
   {
-   "id": "BBC World:Saudi Arabia vows to respond after Houthis attack cities and energy facilities",
-   "title": "Saudi Arabia vows to respond after Houthis attack cities and energy facilities",
-   "text": "The Iran-backed Yemeni group's attacks have injured 73 people and caused fires at oil facilities, Saudi authorities say.",
-   "source": "BBC World",
-   "url": "https://www.bbc.co.uk/news/articles/cp849n2nz01o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-09-08T13:58:32.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 30,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Saudi-Arabien gelobt, zu reagieren, nachdem Houthis Städte und Energieanlagen angegriffen haben"
-  },
-  {
    "id": "Decrypt:Strategy's Return to Bitcoin Buying Lasted Exactly One Week",
    "title": "Strategy's Return to Bitcoin Buying Lasted Exactly One Week",
    "text": "The Bitcoin treasury firm spent $176.3 million on its own preferred stock, and doubled the buyback program's authorization to $2 billion.",
@@ -6243,7 +6168,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 63,
+   "priority": 62,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "medium",
@@ -6377,6 +6302,50 @@
    "titleDe": "Großbritannien, Frankreich, Kanada blockieren Importe aus israelischen Siedlungen im Westjordanland"
   },
   {
+   "id": "BBC World:UK announces sanctions on West Bank settlements prompting furious Israeli response",
+   "title": "UK announces sanctions on West Bank settlements prompting furious Israeli response",
+   "text": "Britain's foreign secretary accuses settlers of carrying out the \"ethnic cleansing\" of Palestinians, as Israel responds by shutting the UK consulate in East Jerusalem.",
+   "source": "BBC World",
+   "url": "https://www.bbc.co.uk/news/articles/c4g7zen0vveo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-09-08T13:21:02.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Handelskonflikt"
+   ],
+   "scores": {
+    "crypto": -0.405,
+    "stocks": -0.405,
+    "gold": 0.203,
+    "usd": 0.135
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Handelskonflikt)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 38,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "Anadolu"
+   ],
+   "bestaetigt": 2,
+   "haeuser": 2,
+   "unabhaengig": 1,
+   "titleDe": "Großbritannien kündigt Sanktionen gegen Siedlungen im Westjordanland an, die eine wütende israelische Reaktion auslösen"
+  },
+  {
    "id": "Tehran Times:From sacred spring to stone museum: the long journey of Khusro II's bust",
    "title": "From sacred spring to stone museum: the long journey of Khusro II's bust",
    "text": "Located north of Kermanshah, the Taq-e Bostan archaeological complex is renowned for its magnificent Sasanian rock reliefs and royal grottoes.",
@@ -6443,7 +6412,7 @@
    "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 51,
+   "priority": 50,
    "label": "bullish",
    "labelText": "Bullish",
    "impactLevel": "low",
@@ -6501,11 +6470,11 @@
    "titleDe": "Lavrov teilt dem saudischen Außenminister mit, dass Russland „bereit ist zu vermitteln“ im Nahen Osten"
   },
   {
-   "id": "Al Jazeera (GN):US won’t join UK ban on trade with illegal Israeli settlements",
+   "id": "Al Jazeera:US won’t join UK ban on trade with illegal Israeli settlements",
    "title": "US won’t join UK ban on trade with illegal Israeli settlements",
-   "text": "US won’t join UK ban on trade with illegal Israeli settlements &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNanBoVlQ3bkdXSUpIOE1BblFOazFJXzlmZVR4d3dUOHFyUml1cG9SRkltZ0FrdDRqWEJJNDh5Szc2NnVWYTdya3FqQ0FtU09uS202Q3NacVE3Uk5XX0JtVXVfdU0wTld3dVhTRmJQdmxXUDFCQzFNYVNsM2V2bE9HaldIQjJOTDlIMkN5REZGUE9XcUtvOHc00gGcAUFVX3lxTE5BZk0yaEMzWTA0VzNSbHRZZGdpOGtSVHNvN3RabXNvbGpTRFpFXy1Kc0ZpeDhpc00tQVE0Q1hLdGUyXzBZNEpoQWlhc0ZTdWhtaEJ0bFhkeDJaSzMyTFhxcVRnYjVFVERvMmMxWG5Dc3Y2cTBDR3NKYjVqcU9nOFpsWDlPS2IyZmNfcjdsZXJ0NWhOZHhOQ0J4bU9sRA?oc=5",
+   "text": "Secretary of State Marco Rubio says the US will ‘obviously not’ follow the UK in sanctioning illegal Israeli settlements",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-rubio-comments-uk-sanctions-clip-mp4?traffic_source=rss",
    "date": "2026-09-08T13:15:48.000Z",
    "tags": [
     "Weltlage"
@@ -6533,9 +6502,10 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
+    "Al Jazeera (GN)",
     "Anadolu"
    ],
-   "bestaetigt": 2,
+   "bestaetigt": 3,
    "haeuser": 2,
    "unabhaengig": 1,
    "titleDe": "Die USA werden sich dem britischen Verbot des Handels mit illegalen israelischen Siedlungen nicht anschließen"
@@ -6606,7 +6576,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -6684,7 +6654,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 55,
+   "priority": 54,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -6811,7 +6781,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7141,44 +7111,6 @@
    "titleDe": "Strategie überspringt Bitcoin-Kauf, um STRC-Vorzugsaktien im Wert von $ 176 Mio. zurückzukaufen"
   },
   {
-   "id": "SCMP:12 South Koreans arrested in Thailand scam centre crackdown",
-   "title": "12 South Koreans arrested in Thailand scam centre crackdown",
-   "text": "Thai authorities arrested 12 South Koreans and a Chinese national accused of running a scam call centre from a high-end rented house south of Bangkok, police said on Tuesday. The alleged scammers “entered Thailand from a neighbouring country and were hiding in Samut Prakan province, renting a luxury house”, Thai police said in a statement, without naming the country. Cambodia and Myanmar, which border Thailand, have become hubs for criminal groups operating fake romance, investment and other...",
-   "source": "SCMP",
-   "url": "https://www.scmp.com/news/asia/southeast-asia/article/3366814/12-south-koreans-arrested-thailand-scam-centre-crackdown?utm_source=rss_feed",
-   "date": "2026-09-08T12:46:55.000Z",
-   "tags": [
-    "Asien"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 24,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "12 Südkoreaner in Thailand verhaftet"
-  },
-  {
    "id": "Cointelegraph:Mexico quadruple homicide tied to alleged Bitcoin robbery attempt",
    "title": "Mexico quadruple homicide tied to alleged Bitcoin robbery attempt",
    "text": "Two suspects face a Wednesday hearing over four killings allegedly linked to a crypto wallet believed to hold millions of dollars in Bitcoin.",
@@ -7217,50 +7149,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Mexiko vierfache Tötung im Zusammenhang mit angeblichem Bitcoin-Raubversuch"
-  },
-  {
-   "id": "Anadolu:UK announces sanctions on illegal Israeli settlements in occupied West Bank",
-   "title": "UK announces sanctions on illegal Israeli settlements in occupied West Bank",
-   "text": "Today's measures 'represent clear message' to Israeli government, Palestinians that 'we will not acquiesce in destruction of 2-state solution,' says UK foreign secretary",
-   "source": "Anadolu",
-   "staatlich": true,
-   "url": "https://www.aa.com.tr/en/world/uk-announces-sanctions-on-illegal-israeli-settlements-in-occupied-west-bank/4050927",
-   "date": "2026-09-08T12:34:55.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Handelskonflikt"
-   ],
-   "scores": {
-    "crypto": -0.405,
-    "stocks": -0.405,
-    "gold": 0.203,
-    "usd": 0.135
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Handelskonflikt)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 0,
-   "nurStaatlich": true,
-   "titleDe": "UK kündigt Sanktionen gegen illegale israelische Siedlungen im besetzten Westjordanland an"
   },
   {
    "id": "CoinDesk:Ethereum makes quantum resistance a top priority with a 2029 deadline",
@@ -8254,44 +8142,6 @@
    "titleDe": "Erdogan: Die ganze Welt wird die Kosten des Krieges gegen den Iran bezahlen"
   },
   {
-   "id": "Guardian:Russia says it will give a ‘harsh and painful’ response after Hungary expels 10 diplomats - Europe live",
-   "title": "Russia says it will give a ‘harsh and painful’ response after Hungary expels 10 diplomats - Europe live",
-   "text": "Moscow’s foreign minister issues warning to ‘Russophobic lobby in Budapest’ after diplomats expelled for ‘unacceptable’ activities But the tone coming from Moscow is very different, as Kremlin spokesperson Dmitry Peskov told reporters that Russia was very confident that victory in its war against Ukraine is “very near.” “Yes, we are ​confident, and we ⁠are ​sure that ​victory ​is very near,” ​Peskov ‌said in comments reported by Reuters. Continue reading...",
-   "source": "Guardian",
-   "url": "https://www.theguardian.com/world/live/2026/sep/08/ukraine-russia-war-zelesnkyy-putin-ruslan-kravchenko-prosecutor-general-germany-france-europe-latest-news-updates",
-   "date": "2026-09-08T10:55:51.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 59,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Russland sagt, dass es eine \"harte und schmerzhafte\" Antwort geben wird, nachdem Ungarn 10 Diplomaten ausgewiesen hat - Europa lebt"
-  },
-  {
    "id": "IRNA:Iran will continue resistance until aggressors regret: Pezeshkian",
    "title": "Iran will continue resistance until aggressors regret: Pezeshkian",
    "text": "Tehran, IRNA – President Masoud Pezeshkian says Iran will continue its resistance with strength until the aggressors fully regret their actions, and will safeguard the rights of the Iranian nation.",
@@ -8439,7 +8289,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -8478,7 +8328,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 41,
+   "priority": 40,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -8520,7 +8370,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 48,
+   "priority": 47,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -8757,7 +8607,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 20,
+   "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -8795,7 +8645,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -8833,7 +8683,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -8911,7 +8761,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 39,
+   "priority": 38,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -9478,44 +9328,6 @@
    "titleDe": "Brasilianische Banken erweitern Kryptobiete, während Regulierung Einzug hält"
   },
   {
-   "id": "Decrypt:Will the Crypto Trenches Show Up for Hunter Biden's Meme Coin?",
-   "title": "Will the Crypto Trenches Show Up for Hunter Biden's Meme Coin?",
-   "text": "Biden's LAPTOP meme coin drops this week. Most crypto traders out there so far don't seem too enthused.",
-   "source": "Decrypt",
-   "url": "https://decrypt.co/377613/will-crypto-traders-buy-hunter-biden-meme-coin",
-   "date": "2026-09-07T19:47:27.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": "Projekt-Update",
-   "eventTypeEn": "Project update",
-   "scope": "project",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Wird die Crypto-Trenches für Hunters Meme-Münze auftauchen?"
-  },
-  {
    "id": "Decrypt:What Is LAPTOP? Hunter Biden's Meme Coin Targeting TRUMP Holders",
    "title": "What Is LAPTOP? Hunter Biden's Meme Coin Targeting TRUMP Holders",
    "text": "The LAPTOP token launches in September on Base, with a fifth of the supply earmarked for traders who lost money on TRUMP.",
@@ -9669,11 +9481,12 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 6,
+  "uebersetzt": 13,
   "fehler": null
  },
  "rubriken": {
   "Sport": 4,
+  "Unterhaltung": 1,
   "Unsinn": 2
  }
 }
