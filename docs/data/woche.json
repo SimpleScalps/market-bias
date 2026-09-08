@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T07:30:36.746Z",
+ "updated": "2026-09-08T07:44:21.467Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T07:30:36.836Z",
+   "stand": "2026-09-08T07:44:21.576Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T07:30:36.822Z",
+   "stand": "2026-09-08T07:44:21.559Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T07:30:36.808Z",
+   "stand": "2026-09-08T07:44:21.540Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T07:30:36.794Z",
+   "stand": "2026-09-08T07:44:21.522Z",
    "anzahl": 134,
    "klassen": {
     "crypto": {
@@ -688,6 +688,21 @@
      "priority": 62
     },
     {
+     "id": "TASS:West wants ceasefire in Ukraine only to prepare for new escalation — Russian diplomat",
+     "titel": "West wants ceasefire in Ukraine only to prepare for new escalation — Russian diplomat",
+     "titelDe": "Der Westen will einen Waffenstillstand in der Ukraine, nur um sich auf eine neue Eskalation vorzubereiten — russischer Diplomat",
+     "quelle": "TASS",
+     "url": "https://tass.com/politics/2183973",
+     "zeit": "2026-09-08T07:29:46.000Z",
+     "scores": {
+      "crypto": 0.747,
+      "stocks": 0.747,
+      "gold": -0.374,
+      "usd": -0.249
+     },
+     "priority": 74
+    },
+    {
      "id": "BBC World:Canada braces for prolonged trade war as counter-tariffs on US take effect",
      "titel": "Canada braces for prolonged trade war as counter-tariffs on US take effect",
      "titelDe": "Kanada bereitet sich auf einen längeren Handelskrieg vor, da die Gegenzölle auf die USA in Kraft treten",
@@ -743,20 +758,6 @@
       "usd": 0.285
      },
      "priority": 56
-    },
-    {
-     "id": "Reuters:Hormuz traffic slows after Iran threatens retaliation for US attacks",
-     "titel": "Hormuz traffic slows after Iran threatens retaliation for US attacks",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPLVZqbU1CYlBIcWpOcEhmWWNHbk1PaUxMa1REWVpsUnpHcEgySUVnWDZ5cFJJbG9tZ1IyV1A1UXFocFEzQkRZVmNNWVNkVlEzZWc4TExyVnNvdWJ2Tjg3a0swQUlKbXo3VzlncDNqZ2w2MUJVLVpJRVBFcXdlR3lpSW5CMVZneGtYcG51MWJZSkpLZmhpSzlrLUNoUXFXTlhQSm8xS25kdEhKM1VOa2pFdV85dnBRNENqWXc?oc=5",
-     "zeit": "2026-09-08T02:53:00.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 94
     }
    ]
   }
