@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T18:57:23.144Z",
+ "updated": "2026-09-08T19:07:30.503Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T18:57:23.259Z",
+   "stand": "2026-09-08T19:07:30.615Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T18:57:23.240Z",
+   "stand": "2026-09-08T19:07:30.597Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T18:57:23.220Z",
+   "stand": "2026-09-08T19:07:30.579Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T18:57:23.201Z",
+   "stand": "2026-09-08T19:07:30.561Z",
    "anzahl": 239,
    "klassen": {
     "crypto": {
@@ -673,6 +673,21 @@
       "usd": 0.27
      },
      "priority": 100
+    },
+    {
+     "id": "Decrypt:Bitcoin Holds, Wall Street Stalls as Oil Shock Revives Fed Hike Bets",
+     "titel": "Bitcoin Holds, Wall Street Stalls as Oil Shock Revives Fed Hike Bets",
+     "titelDe": "Bitcoin bleibt stabil, Wall Street stagniert, Öl-Schock weckt Fed-Hike-Wetten",
+     "quelle": "Decrypt",
+     "url": "https://decrypt.co/377705/bitcoin-holds-wall-street-stalls-oil-shock-fed-hike",
+     "zeit": "2026-09-08T18:59:35.000Z",
+     "scores": {
+      "crypto": -0.878,
+      "stocks": -0.803,
+      "gold": -0.211,
+      "usd": 0.626
+     },
+     "priority": 86
     },
     {
      "id": "IRNA:Senior MP: Strike on US warships represents mere fraction of Iran’s military prowess",
@@ -748,20 +763,6 @@
       "usd": 0.75
      },
      "priority": 80
-    },
-    {
-     "id": "FXStreet:Canadian Dollar gains as US Dollar struggles despite rising Fed rate hike bets",
-     "titel": "Canadian Dollar gains as US Dollar struggles despite rising Fed rate hike bets",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/canadian-dollar-gains-as-us-dollar-struggles-despite-rising-fed-rate-hike-bets-202609080157",
-     "zeit": "2026-09-08T01:57:37.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 79
     }
    ]
   }
