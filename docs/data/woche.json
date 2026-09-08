@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T19:53:09.325Z",
+ "updated": "2026-09-08T20:04:29.476Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T19:53:09.438Z",
+   "stand": "2026-09-08T20:04:29.561Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T19:53:09.420Z",
+   "stand": "2026-09-08T20:04:29.546Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T19:53:09.401Z",
+   "stand": "2026-09-08T20:04:29.534Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T19:53:09.381Z",
+   "stand": "2026-09-08T20:04:29.522Z",
    "anzahl": 240,
    "klassen": {
     "crypto": {
@@ -750,19 +750,19 @@
      "priority": 74
     },
     {
-     "id": "FXStreet:The Euro's rate hike does not come with a gas cargo",
-     "titel": "The Euro's rate hike does not come with a gas cargo",
-     "titelDe": "Die Zinserhöhung des Euro kommt nicht mit einer Gasfracht",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/the-euros-rate-hike-does-not-come-with-a-gas-cargo-202609081627",
-     "zeit": "2026-09-08T16:27:06.000Z",
+     "id": "Reuters:Fed may hike rates this month on hot CPI, market expert says",
+     "titel": "Fed may hike rates this month on hot CPI, market expert says",
+     "titelDe": "Die Fed könnte diesen Monat die Zinsen für den heißen VPI erhöhen, sagt Marktexperte",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE05cFBzRURvOHN1UFRCM1dkRTZ4ZWYxOHBCcDFaOGVOS0MxQkotdmhmNzlYUTdWbFluS3h3OGVVRWFVaFNfejRncERNcmRvbVFiajI5WHduSGtZbTdPcHdNcEE4eTZhLUtyay1tWVVpSEItYW9sanFrMkVEWldpZw?oc=5",
+     "zeit": "2026-09-08T19:56:15.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 80
+     "priority": 84
     }
    ]
   }
