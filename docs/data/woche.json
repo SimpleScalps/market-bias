@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T07:00:09.047Z",
+ "updated": "2026-09-08T07:12:41.846Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T07:00:09.119Z",
+   "stand": "2026-09-08T07:12:41.916Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T07:00:09.109Z",
+   "stand": "2026-09-08T07:12:41.906Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T07:00:09.098Z",
+   "stand": "2026-09-08T07:12:41.895Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,32 +615,32 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T07:00:09.087Z",
+   "stand": "2026-09-08T07:12:41.883Z",
    "anzahl": 134,
    "klassen": {
     "crypto": {
-     "score": -0.1059,
-     "bull": 0,
-     "bear": 17,
-     "neut": 117
-    },
-    "stocks": {
-     "score": -0.0946,
+     "score": -0.0931,
      "bull": 0,
      "bear": 16,
      "neut": 118
     },
+    "stocks": {
+     "score": -0.0819,
+     "bull": 0,
+     "bear": 15,
+     "neut": 119
+    },
     "gold": {
-     "score": 0.0169,
-     "bull": 12,
+     "score": 0.0107,
+     "bull": 11,
      "bear": 4,
-     "neut": 118
+     "neut": 119
     },
     "usd": {
-     "score": 0.0493,
-     "bull": 10,
+     "score": 0.045,
+     "bull": 9,
      "bear": 0,
-     "neut": 124
+     "neut": 125
     }
    },
    "top": [
@@ -657,7 +657,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 81
+     "priority": 80
     },
     {
      "id": "FXStreet:Canadian Dollar gains as US Dollar struggles despite rising Fed rate hike bets",
@@ -700,7 +700,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 71
+     "priority": 70
     },
     {
      "id": "Mehr News:Canada’s retaliatory tariffs take effects on $20bn of US good",
