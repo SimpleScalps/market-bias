@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T21:29:01.983Z",
+ "updated": "2026-09-08T21:39:24.434Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T21:29:02.102Z",
+   "stand": "2026-09-08T21:39:24.486Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T21:29:02.082Z",
+   "stand": "2026-09-08T21:39:24.478Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T21:29:02.062Z",
+   "stand": "2026-09-08T21:39:24.470Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,32 +615,32 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T21:29:02.041Z",
-   "anzahl": 242,
+   "stand": "2026-09-08T21:39:24.462Z",
+   "anzahl": 245,
    "klassen": {
     "crypto": {
-     "score": -0.1199,
-     "bull": 6,
-     "bear": 37,
-     "neut": 199
+     "score": -0.1069,
+     "bull": 7,
+     "bear": 31,
+     "neut": 207
     },
     "stocks": {
-     "score": -0.1158,
-     "bull": 3,
-     "bear": 35,
-     "neut": 204
+     "score": -0.1044,
+     "bull": 4,
+     "bear": 29,
+     "neut": 212
     },
     "gold": {
-     "score": 0.0312,
-     "bull": 31,
-     "bear": 7,
-     "neut": 204
+     "score": 0.0384,
+     "bull": 27,
+     "bear": 6,
+     "neut": 212
     },
     "usd": {
-     "score": 0.0543,
+     "score": 0.0429,
      "bull": 9,
      "bear": 0,
-     "neut": 233
+     "neut": 236
     }
    },
    "top": [
@@ -717,7 +717,7 @@
       "gold": -0.211,
       "usd": 0.626
      },
-     "priority": 83
+     "priority": 82
     },
     {
      "id": "FXStreet:Gold price wilts as Oil shock puts CPI in Fed crosshairs",
@@ -732,7 +732,22 @@
       "gold": -0.211,
       "usd": 0.626
      },
-     "priority": 82
+     "priority": 80
+    },
+    {
+     "id": "MarketWatch:Bombardier’s stock drops as the U.S.-Canada trade war intensifies. Here’s what Trump is targeting next.",
+     "titel": "Bombardier’s stock drops as the U.S.-Canada trade war intensifies. Here’s what Trump is targeting next.",
+     "titelDe": "Bombardiers Aktien fallen, da sich der Handelskrieg zwischen den USA und Kanada intensiviert. Hier ist, worauf Trump als nächstes abzielt.",
+     "quelle": "MarketWatch",
+     "url": "https://www.marketwatch.com/story/bombardiers-stock-drops-as-the-u-s-canada-trade-war-intensifies-heres-what-trump-may-target-next-b389065e?mod=mw_rss_topstories",
+     "zeit": "2026-09-08T21:29:00.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 76
     },
     {
      "id": "Al Jazeera (GN):Russian strikes on Ukraine’s Kyiv kill at least two people",
@@ -748,21 +763,6 @@
       "usd": 0.3
      },
      "priority": 75
-    },
-    {
-     "id": "MarketWatch:Bombardier’s stock drops as the U.S.-Canada trade war intensifies. Here’s what Trump may target next.",
-     "titel": "Bombardier’s stock drops as the U.S.-Canada trade war intensifies. Here’s what Trump may target next.",
-     "titelDe": "Bombardiers Aktien fallen, da sich der Handelskrieg zwischen den USA und Kanada intensiviert. Das könnte Trump als nächstes ins Visier nehmen.",
-     "quelle": "MarketWatch",
-     "url": "https://www.marketwatch.com/story/bombardiers-stock-drops-as-the-u-s-canada-trade-war-intensifies-heres-what-trump-may-target-next-b389065e?mod=mw_rss_topstories",
-     "zeit": "2026-09-08T15:44:00.000Z",
-     "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
-     },
-     "priority": 72
     }
    ]
   }
