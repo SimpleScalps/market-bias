@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T10:55:07.650Z",
+ "updated": "2026-09-08T11:04:55.404Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T10:55:07.709Z",
+   "stand": "2026-09-08T11:04:55.473Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T10:55:07.700Z",
+   "stand": "2026-09-08T11:04:55.462Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T10:55:07.691Z",
+   "stand": "2026-09-08T11:04:55.451Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,29 +615,29 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T10:55:07.681Z",
+   "stand": "2026-09-08T11:04:55.439Z",
    "anzahl": 189,
    "klassen": {
     "crypto": {
-     "score": -0.0927,
+     "score": -0.1003,
      "bull": 2,
-     "bear": 21,
-     "neut": 166
+     "bear": 22,
+     "neut": 165
     },
     "stocks": {
-     "score": -0.0911,
+     "score": -0.0986,
      "bull": 2,
-     "bear": 21,
-     "neut": 166
+     "bear": 22,
+     "neut": 165
     },
     "gold": {
-     "score": 0.0323,
-     "bull": 19,
+     "score": 0.0359,
+     "bull": 20,
      "bear": 4,
-     "neut": 166
+     "neut": 165
     },
     "usd": {
-     "score": 0.0381,
+     "score": 0.0407,
      "bull": 8,
      "bear": 0,
      "neut": 181
@@ -704,21 +704,6 @@
      "priority": 79
     },
     {
-     "id": "IRNA:IRGC deputy chief: Siege, sanctions, war failed to sideline Iranian nation",
-     "titel": "IRGC deputy chief: Siege, sanctions, war failed to sideline Iranian nation",
-     "titelDe": "IRGC-Vizechef: Belagerung, Sanktionen, Krieg haben die iranische Nation nicht an den Rand gedrängt",
-     "quelle": "IRNA",
-     "url": "https://en.irna.ir/news/86258395/IRGC-deputy-chief-Siege-sanctions-war-failed-to-sideline-Iranian",
-     "zeit": "2026-09-08T09:58:27.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 73
-    },
-    {
      "id": "Reuters:Canada's retaliatory tariffs take effect as US trade talks stall",
      "titel": "Canada's retaliatory tariffs take effect as US trade talks stall",
      "quelle": "Reuters",
@@ -746,6 +731,21 @@
       "usd": 0.75
      },
      "priority": 74
+    },
+    {
+     "id": "IRNA:IRGC deputy chief: Siege, sanctions, war failed to sideline Iranian nation",
+     "titel": "IRGC deputy chief: Siege, sanctions, war failed to sideline Iranian nation",
+     "titelDe": "IRGC-Vizechef: Belagerung, Sanktionen, Krieg haben die iranische Nation nicht an den Rand gedrängt",
+     "quelle": "IRNA",
+     "url": "https://en.irna.ir/news/86258395/IRGC-deputy-chief-Siege-sanctions-war-failed-to-sideline-Iranian",
+     "zeit": "2026-09-08T09:58:27.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 72
     },
     {
      "id": "TASS:West wants ceasefire in Ukraine only to prepare for new escalation — Russian diplomat",
