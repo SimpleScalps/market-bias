@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T08:38:49.529Z",
+ "updated": "2026-09-08T08:51:25.099Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T08:38:49.638Z",
+   "stand": "2026-09-08T08:51:25.208Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T08:38:49.620Z",
+   "stand": "2026-09-08T08:51:25.189Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T08:38:49.603Z",
+   "stand": "2026-09-08T08:51:25.171Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,29 +615,29 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T08:38:49.583Z",
+   "stand": "2026-09-08T08:51:25.155Z",
    "anzahl": 145,
    "klassen": {
     "crypto": {
-     "score": -0.09,
-     "bull": 2,
-     "bear": 20,
-     "neut": 123
-    },
-    "stocks": {
      "score": -0.087,
      "bull": 2,
-     "bear": 20,
-     "neut": 123
+     "bear": 19,
+     "neut": 124
+    },
+    "stocks": {
+     "score": -0.0841,
+     "bull": 2,
+     "bear": 19,
+     "neut": 124
     },
     "gold": {
-     "score": 0.0193,
-     "bull": 16,
+     "score": 0.0181,
+     "bull": 15,
      "bear": 6,
-     "neut": 123
+     "neut": 124
     },
     "usd": {
-     "score": 0.0432,
+     "score": 0.042,
      "bull": 9,
      "bear": 1,
      "neut": 135
@@ -700,7 +700,7 @@
       "gold": -0.374,
       "usd": -0.249
      },
-     "priority": 73
+     "priority": 72
     },
     {
      "id": "BBC World:Canada braces for prolonged trade war as counter-tariffs on US take effect",
@@ -730,7 +730,7 @@
       "gold": 0.427,
       "usd": 0.285
      },
-     "priority": 60
+     "priority": 59
     },
     {
      "id": "Al Jazeera:Canada’s retaliatory tariffs on $20bn of US goods take effect",
