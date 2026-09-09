@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T04:37:57.321Z",
+ "updated": "2026-09-09T04:48:48.679Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T04:37:57.452Z",
+   "stand": "2026-09-09T04:48:48.807Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-09T04:37:57.433Z",
+   "stand": "2026-09-09T04:48:48.789Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-09T04:37:57.415Z",
+   "stand": "2026-09-09T04:48:48.772Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-09T04:37:57.396Z",
+   "stand": "2026-09-09T04:48:48.754Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,32 +768,32 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T04:37:57.375Z",
-   "anzahl": 105,
+   "stand": "2026-09-09T04:48:48.734Z",
+   "anzahl": 109,
    "klassen": {
     "crypto": {
-     "score": -0.1563,
+     "score": -0.151,
      "bull": 1,
      "bear": 13,
-     "neut": 91
+     "neut": 95
     },
     "stocks": {
-     "score": -0.1518,
+     "score": -0.1451,
      "bull": 1,
      "bear": 13,
-     "neut": 91
+     "neut": 95
     },
     "gold": {
-     "score": 0.0395,
-     "bull": 11,
-     "bear": 3,
-     "neut": 91
+     "score": 0.0241,
+     "bull": 10,
+     "bear": 4,
+     "neut": 95
     },
     "usd": {
-     "score": 0.0719,
+     "score": 0.0767,
      "bull": 6,
      "bear": 0,
-     "neut": 99
+     "neut": 103
     }
    },
    "top": [
@@ -903,19 +903,19 @@
      "priority": 75
     },
     {
-     "id": "FXStreet:United States Dollar Index weakens despite rising inflation concerns, Fed rate hike bets",
-     "titel": "United States Dollar Index weakens despite rising inflation concerns, Fed rate hike bets",
-     "titelDe": "US-Dollar-Index schwächt sich trotz steigender Inflationsbedenken, Fed-Haushaltszinsen-Wetten",
+     "id": "FXStreet:Swiss Franc strengthens as US Dollar holds losses despite Fed rate hike odds",
+     "titel": "Swiss Franc strengthens as US Dollar holds losses despite Fed rate hike odds",
+     "titelDe": "Schweizer Franken stärkt sich, während der US-Dollar trotz Fed-Rate-Hike-Wahrscheinlichkeiten Verluste hält",
      "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/united-states-dollar-index-weakens-despite-rising-inflation-concerns-fed-rate-hike-bets-202609090327",
-     "zeit": "2026-09-09T03:27:02.000Z",
+     "url": "https://www.fxstreet.com/news/swiss-franc-strengthens-as-us-dollar-holds-losses-despite-fed-rate-hike-odds-202609090442",
+     "zeit": "2026-09-09T04:42:56.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 82
+     "priority": 84
     }
    ]
   }
