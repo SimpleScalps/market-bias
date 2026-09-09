@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-08T23:53:08.570Z",
+ "updated": "2026-09-09T00:06:51.680Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-08T23:53:08.706Z",
+   "stand": "2026-09-09T00:06:51.813Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-08T23:53:08.687Z",
+   "stand": "2026-09-09T00:06:51.794Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-08T23:53:08.668Z",
+   "stand": "2026-09-09T00:06:51.775Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-08T23:53:08.649Z",
+   "stand": "2026-09-09T00:06:51.756Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,32 +768,32 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-08T23:53:08.628Z",
-   "anzahl": 45,
+   "stand": "2026-09-09T00:06:51.735Z",
+   "anzahl": 52,
    "klassen": {
     "crypto": {
-     "score": -0.2382,
+     "score": -0.1773,
      "bull": 1,
      "bear": 10,
-     "neut": 34
+     "neut": 41
     },
     "stocks": {
-     "score": -0.2367,
+     "score": -0.176,
      "bull": 1,
      "bear": 10,
-     "neut": 34
+     "neut": 41
     },
     "gold": {
-     "score": 0.1062,
+     "score": 0.077,
      "bull": 9,
      "bear": 2,
-     "neut": 34
+     "neut": 41
     },
     "usd": {
-     "score": 0.086,
+     "score": 0.0651,
      "bull": 3,
      "bear": 0,
-     "neut": 42
+     "neut": 49
     }
    },
    "top": [
@@ -828,6 +828,21 @@
      "priority": 99
     },
     {
+     "id": "Guardian:US bans Canadian dairy, alcohol and motorcycles as trade war with longtime ally escalates",
+     "titel": "US bans Canadian dairy, alcohol and motorcycles as trade war with longtime ally escalates",
+     "titelDe": "Die USA verbieten kanadische Milchprodukte, Alkohol und Motorräder, da der Handelskrieg mit langjährigen Verbündeten eskaliert",
+     "quelle": "Guardian",
+     "url": "https://www.theguardian.com/us-news/2026/sep/08/trump-canada-trade-war-dairy-alcohol",
+     "zeit": "2026-09-08T23:59:37.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 74
+    },
+    {
      "id": "Reuters:How Canada's retaliatory tariffs could impact US midterm elections",
      "titel": "How Canada's retaliatory tariffs could impact US midterm elections",
      "titelDe": "Wie Kanadas Vergeltungstarife die US-Wahlkampfmittel beeinflussen könnten",
@@ -858,19 +873,19 @@
      "priority": 94
     },
     {
-     "id": "FXStreet:Gold slumps to near $4,350 amid oil-driven inflation fears, US inflation data in focus",
-     "titel": "Gold slumps to near $4,350 amid oil-driven inflation fears, US inflation data in focus",
-     "titelDe": "Gold fällt inmitten ölbedingter Inflationsängste auf fast 4.350 $, US-Inflationsdaten im Fokus",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/gold-slumps-to-near-4-350-amid-oil-driven-inflation-fears-us-inflation-data-in-focus-202609082332",
-     "zeit": "2026-09-08T23:32:29.000Z",
+     "id": "Al Jazeera (GN):US increases pressure on Iran with sanctions targeting aviation sector",
+     "titel": "US increases pressure on Iran with sanctions targeting aviation sector",
+     "titelDe": "Die USA erhöhen den Druck auf den Iran mit Sanktionen gegen den Luftfahrtsektor",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdl9VWjlIRndSLUZheEI5V2dxTmw1YVFNcWtQWkVQaDRoZGNGb0pPbm80dFdlQWVsQmlOZi0zZ29VU1dpYXEzQldsNW9Kclh2bFF1QmduQXZWMHJ3Q2lUQlMxckpOdTlEQ0x0WWJjdlJLelhJUnNFLUVaMTk1UkR3THNTazJPNnNZQ3F2STBSVzQyQkxCdW5zbzFNcEVuSkFhclBvTGlxYlBmTTFtcVBZ0gG0AUFVX3lxTE1RZjFwVXNIUFdXRTFKbGgtQUN0Q1ppTTd1eHpmeFB3N25XaEhwSU9TbFp5MWYtNm9FZWQzUVBaYV9vRU5wdWFwZkxPV194M1pfelRDc21ldWhJTVB1cDhzT3U4TjRMZzgwem9iaURYUjlYSjlfWlpfSjdNSmh0RjQwZG9mT2RkLWkyczJoei1FN1Zld0I1MGl6OHNyWVdVemFPaERyWTcxM1RfSGRMU0FtazFHTg?oc=5",
+     "zeit": "2026-09-08T23:56:24.000Z",
      "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
+      "crypto": -0.405,
+      "stocks": -0.405,
+      "gold": 0.203,
+      "usd": 0.135
      },
-     "priority": 52
+     "priority": 68
     },
     {
      "id": "FXStreet:The Pound sits still through a hawkish hearing and the priciest gilt sale",
@@ -888,34 +903,19 @@
      "priority": 39
     },
     {
-     "id": "Reuters:Evommune scraps eczema drug after trial miss, shares plunge - reuters.com",
-     "titel": "Evommune scraps eczema drug after trial miss, shares plunge - reuters.com",
-     "titelDe": "Evommune verschrottet Ekzem-Medikament nach Versuchsfehlschlag, Aktien-Tauchgang - reuters.com",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTDl0NXZBejA2OFduRFlSR0l2ZEhvTVllczF1d0NSZWFuT2JBSnpfemJWM2hsRHJvc0xDUXg4SXQtRmZ2aFdtcXhSZmZTTUxDM3l5b1BVNVR4aVBiZTd0Z29ydk5tSS1wZHJzdm1hMDVIWHd6em5fUWNpRW15bmFCZUdHdkRWbUdaVDhGQV9OVWlOQ0FFLWZaYS1RbDdnN0RoRzBycWZ4ekUxWW5PNV9UNENiaEFMTzk5VEpqNkI5dGlXTUVjZGpoeXNn?oc=5",
-     "zeit": "2026-09-08T22:18:31.000Z",
+     "id": "FXStreet:Gold slumps to near $4,350 amid oil-driven inflation fears, US inflation data in focus",
+     "titel": "Gold slumps to near $4,350 amid oil-driven inflation fears, US inflation data in focus",
+     "titelDe": "Gold fällt inmitten ölbedingter Inflationsängste auf fast 4.350 $, US-Inflationsdaten im Fokus",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/gold-slumps-to-near-4-350-amid-oil-driven-inflation-fears-us-inflation-data-in-focus-202609082332",
+     "zeit": "2026-09-08T23:32:29.000Z",
      "scores": {
       "crypto": -0.45,
       "stocks": -0.45,
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 39
-    },
-    {
-     "id": "Reuters:Evommune scraps eczema drug after trial miss, shares plunge",
-     "titel": "Evommune scraps eczema drug after trial miss, shares plunge",
-     "titelDe": "Evommune verschrottet Ekzem-Medikament nach Versuchsfehlschlag, Aktien stürzen ein",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTDl0NXZBejA2OFduRFlSR0l2ZEhvTVllczF1d0NSZWFuT2JBSnpfemJWM2hsRHJvc0xDUXg4SXQtRmZ2aFdtcXhSZmZTTUxDM3l5b1BVNVR4aVBiZTd0Z29ydk5tSS1wZHJzdm1hMDVIWHd6em5fUWNpRW15bmFCZUdHdkRWbUdaVDhGQV9OVWlOQ0FFLWZaYS1RbDdnN0RoRzBycWZ4ekUxWW5PNV9UNENiaEFMTzk5VEpqNkI5dGlXTUVjZGpoeXNn?oc=5",
-     "zeit": "2026-09-08T22:18:31.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 38
+     "priority": 51
     }
    ]
   }
