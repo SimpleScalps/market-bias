@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T00:51:58.002Z",
+ "updated": "2026-09-09T01:04:19.373Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T00:51:58.125Z",
+   "stand": "2026-09-09T01:04:19.456Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-09T00:51:58.108Z",
+   "stand": "2026-09-09T01:04:19.445Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-09T00:51:58.090Z",
+   "stand": "2026-09-09T01:04:19.434Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-09T00:51:58.072Z",
+   "stand": "2026-09-09T01:04:19.424Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T00:51:58.053Z",
+   "stand": "2026-09-09T01:04:19.413Z",
    "anzahl": 58,
    "klassen": {
     "crypto": {
@@ -804,6 +804,21 @@
      "quelle": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNYkRzd0JMdW1lbUtzRVk1dFpYWGFpVEYwZkVnaVBYd0hINnRNSVdiUXlrVHBBbkExXzNpZTdTT1NFaHpMSVA1Slk1aUl0bFZPc3VhbUVyUE9rZFkzOFZqU0VoQ2ZaZ2lwNm1rNmZEUTU5REZ6WWJmSEp3TWlGLXliZTU4S2pQMVFFY0V0MHQzS1BSa3FJUlJ3RzlqaV9GLVluYzd4MTQ5Yms1eDg5aWM1Mmp1bi1aNk0tS2lJSW40dlJ5cmhkeVd6bWxERQ?oc=5",
      "zeit": "2026-09-08T23:05:45.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
+    {
+     "id": "Al Jazeera:US attacks 5 Iranian oil tankers, Iran retaliates with strikes on Jordan",
+     "titel": "US attacks 5 Iranian oil tankers, Iran retaliates with strikes on Jordan",
+     "titelDe": "US greift fünf iranische Öltanker an, Iran reagiert mit Angriffen auf Jordanien",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/9/9/us-destroys-five-iranian-tankers-iran-retaliates-with-attacks-on-jordan-base?traffic_source=rss",
+     "zeit": "2026-09-09T00:00:00.000Z",
      "scores": {
       "crypto": -0.9,
       "stocks": -0.9,
@@ -901,21 +916,6 @@
       "usd": 0.135
      },
      "priority": 93
-    },
-    {
-     "id": "Al Jazeera (GN):US increases pressure on Iran with sanctions targeting aviation sector",
-     "titel": "US increases pressure on Iran with sanctions targeting aviation sector",
-     "titelDe": "Die USA erhöhen den Druck auf den Iran mit Sanktionen gegen den Luftfahrtsektor",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdl9VWjlIRndSLUZheEI5V2dxTmw1YVFNcWtQWkVQaDRoZGNGb0pPbm80dFdlQWVsQmlOZi0zZ29VU1dpYXEzQldsNW9Kclh2bFF1QmduQXZWMHJ3Q2lUQlMxckpOdTlEQ0x0WWJjdlJLelhJUnNFLUVaMTk1UkR3THNTazJPNnNZQ3F2STBSVzQyQkxCdW5zbzFNcEVuSkFhclBvTGlxYlBmTTFtcVBZ0gG0AUFVX3lxTE1RZjFwVXNIUFdXRTFKbGgtQUN0Q1ppTTd1eHpmeFB3N25XaEhwSU9TbFp5MWYtNm9FZWQzUVBaYV9vRU5wdWFwZkxPV194M1pfelRDc21ldWhJTVB1cDhzT3U4TjRMZzgwem9iaURYUjlYSjlfWlpfSjdNSmh0RjQwZG9mT2RkLWkyczJoei1FN1Zld0I1MGl6OHNyWVdVemFPaERyWTcxM1RfSGRMU0FtazFHTg?oc=5",
-     "zeit": "2026-09-08T23:56:24.000Z",
-     "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
-     },
-     "priority": 68
     }
    ]
   }
