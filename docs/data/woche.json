@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T02:47:53.348Z",
+ "updated": "2026-09-09T02:56:22.441Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T02:47:53.481Z",
+   "stand": "2026-09-09T02:56:22.549Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-09T02:47:53.462Z",
+   "stand": "2026-09-09T02:56:22.535Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-09T02:47:53.444Z",
+   "stand": "2026-09-09T02:56:22.521Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-09T02:47:53.425Z",
+   "stand": "2026-09-09T02:56:22.505Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T02:47:53.406Z",
+   "stand": "2026-09-09T02:56:22.489Z",
    "anzahl": 89,
    "klassen": {
     "crypto": {
@@ -888,6 +888,21 @@
      "priority": 75
     },
     {
+     "id": "FXStreet:Canadian Dollar gains amid elevated oil prices, escalating US trade sanctions",
+     "titel": "Canadian Dollar gains amid elevated oil prices, escalating US trade sanctions",
+     "titelDe": "Kanadischer Dollar steigt bei hohen Ölpreisen, US-Handels-Sanktionen eskalieren",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/canadian-dollar-gains-amid-elevated-oil-prices-escalating-us-trade-sanctions-202609090253",
+     "zeit": "2026-09-09T02:53:57.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 74
+    },
+    {
      "id": "Al Jazeera (GN):US attacks 5 Iranian oil tankers, Tehran retaliates with strikes on Jordan",
      "titel": "US attacks 5 Iranian oil tankers, Tehran retaliates with strikes on Jordan",
      "titelDe": "US greift fünf iranische Öltanker an, Teheran reagiert mit Angriffen auf Jordanien",
@@ -901,21 +916,6 @@
       "usd": 0.3
      },
      "priority": 62
-    },
-    {
-     "id": "Guardian:US bans Canadian dairy, alcohol and motorcycles as trade war with longtime ally escalates",
-     "titel": "US bans Canadian dairy, alcohol and motorcycles as trade war with longtime ally escalates",
-     "titelDe": "Die USA verbieten kanadische Milchprodukte, Alkohol und Motorräder, da der Handelskrieg mit langjährigen Verbündeten eskaliert",
-     "quelle": "Guardian",
-     "url": "https://www.theguardian.com/us-news/2026/sep/08/trump-canada-trade-war-dairy-alcohol",
-     "zeit": "2026-09-08T23:59:37.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 72
     }
    ]
   }
