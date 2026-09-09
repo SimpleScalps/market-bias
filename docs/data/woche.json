@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T22:30:17.757Z",
+ "updated": "2026-09-09T22:44:06.275Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T22:30:17.846Z",
+   "stand": "2026-09-09T22:44:06.367Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T22:30:17.828Z",
+   "stand": "2026-09-09T22:44:06.348Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,32 +921,32 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-09T22:30:17.809Z",
-   "anzahl": 18,
+   "stand": "2026-09-09T22:44:06.329Z",
+   "anzahl": 22,
    "klassen": {
     "crypto": {
-     "score": -0.1913,
+     "score": -0.2098,
      "bull": 0,
-     "bear": 3,
-     "neut": 15
+     "bear": 4,
+     "neut": 18
     },
     "stocks": {
-     "score": -0.19,
+     "score": -0.2087,
      "bull": 0,
-     "bear": 3,
-     "neut": 15
+     "bear": 4,
+     "neut": 18
     },
     "gold": {
-     "score": 0.0838,
-     "bull": 2,
+     "score": 0.096,
+     "bull": 3,
      "bear": 1,
-     "neut": 15
+     "neut": 18
     },
     "usd": {
-     "score": 0.0699,
-     "bull": 2,
+     "score": 0.0745,
+     "bull": 3,
      "bear": 0,
-     "neut": 16
+     "neut": 19
     }
    },
    "top": [
@@ -964,6 +964,21 @@
       "usd": 0.27
      },
      "priority": 100
+    },
+    {
+     "id": "TASS:Over 50 shelling attacks by Ukrainian troops reported in DPR in past day, two killed",
+     "titel": "Over 50 shelling attacks by Ukrainian troops reported in DPR in past day, two killed",
+     "titelDe": "Mehr als 50 Beschussangriffe ukrainischer Truppen im DPR in den vergangenen 24 Stunden gemeldet, zwei getötet",
+     "quelle": "TASS",
+     "url": "https://tass.com/defense/2185143",
+     "zeit": "2026-09-09T22:41:27.000Z",
+     "scores": {
+      "crypto": -0.495,
+      "stocks": -0.495,
+      "gold": 0.248,
+      "usd": 0.165
+     },
+     "priority": 96
     }
    ]
   }
