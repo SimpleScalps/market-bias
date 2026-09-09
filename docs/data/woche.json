@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T15:50:42.297Z",
+ "updated": "2026-09-09T16:04:23.892Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T15:50:42.376Z",
+   "stand": "2026-09-09T16:04:23.948Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-09T15:50:42.361Z",
+   "stand": "2026-09-09T16:04:23.938Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T15:50:42.345Z",
+   "stand": "2026-09-09T16:04:23.927Z",
    "anzahl": 228,
    "klassen": {
     "crypto": {
@@ -888,6 +888,21 @@
      "priority": 100
     },
     {
+     "id": "Al Jazeera:Jerusalem Daily: Israel retaliates over sanctions on illegal settlements",
+     "titel": "Jerusalem Daily: Israel retaliates over sanctions on illegal settlements",
+     "titelDe": "Jerusalem Daily: Israel rächt sich wegen Sanktionen gegen illegale Siedlungen",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/jerusalem-daily-israel-retaliates-over-sanctions-on-illegal-settlements?traffic_source=rss",
+     "zeit": "2026-09-09T15:41:43.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 100
+    },
+    {
      "id": "TASS:Iran carries out missile strikes on Jordan airbases hosting US forces — TV",
      "titel": "Iran carries out missile strikes on Jordan airbases hosting US forces — TV",
      "titelDe": "Iran führt Luftangriffe auf jordanische Luftwaffenbasen durch, die US-Truppen beherbergen – TV",
@@ -901,21 +916,6 @@
       "usd": 0.3
      },
      "priority": 93
-    },
-    {
-     "id": "Mehr News:US missile reserves hit hard by Iran war",
-     "titel": "US missile reserves hit hard by Iran war",
-     "titelDe": "US-Missilreserven stark durch Iran-Krieg getroffen",
-     "quelle": "Mehr News",
-     "url": "https://en.mehrnews.com/news/247597/US-missile-reserves-hit-hard-by-Iran-war",
-     "zeit": "2026-09-09T08:51:02.000Z",
-     "scores": {
-      "crypto": -0.855,
-      "stocks": -0.855,
-      "gold": 0.428,
-      "usd": 0.285
-     },
-     "priority": 91
     }
    ]
   }
