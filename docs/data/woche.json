@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T11:21:02.412Z",
+ "updated": "2026-09-09T11:37:44.518Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T11:21:02.531Z",
+   "stand": "2026-09-09T11:37:44.636Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-09T11:21:02.510Z",
+   "stand": "2026-09-09T11:37:44.616Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-09T11:21:02.490Z",
+   "stand": "2026-09-09T11:37:44.596Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,32 +768,32 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T11:21:02.469Z",
-   "anzahl": 192,
+   "stand": "2026-09-09T11:37:44.575Z",
+   "anzahl": 203,
    "klassen": {
     "crypto": {
-     "score": -0.1473,
+     "score": -0.1585,
      "bull": 1,
-     "bear": 30,
-     "neut": 161
+     "bear": 34,
+     "neut": 168
     },
     "stocks": {
-     "score": -0.1466,
+     "score": -0.1566,
      "bull": 1,
-     "bear": 30,
-     "neut": 161
+     "bear": 34,
+     "neut": 168
     },
     "gold": {
-     "score": 0.0679,
-     "bull": 27,
+     "score": 0.0627,
+     "bull": 31,
      "bear": 3,
-     "neut": 162
+     "neut": 169
     },
     "usd": {
-     "score": 0.0521,
+     "score": 0.0613,
      "bull": 11,
      "bear": 0,
-     "neut": 181
+     "neut": 192
     }
    },
    "top": [
@@ -873,21 +873,6 @@
      "priority": 96
     },
     {
-     "id": "Mehr News:US missile reserves hit hard by Iran war",
-     "titel": "US missile reserves hit hard by Iran war",
-     "titelDe": "US-Missilreserven stark durch Iran-Krieg getroffen",
-     "quelle": "Mehr News",
-     "url": "https://en.mehrnews.com/news/247597/US-missile-reserves-hit-hard-by-Iran-war",
-     "zeit": "2026-09-09T08:51:02.000Z",
-     "scores": {
-      "crypto": -0.855,
-      "stocks": -0.855,
-      "gold": 0.428,
-      "usd": 0.285
-     },
-     "priority": 98
-    },
-    {
      "id": "TASS:Iran carries out missile strikes on Jordan airbases hosting US forces — TV",
      "titel": "Iran carries out missile strikes on Jordan airbases hosting US forces — TV",
      "titelDe": "Iran führt Luftangriffe auf jordanische Luftwaffenbasen durch, die US-Truppen beherbergen – TV",
@@ -901,6 +886,21 @@
       "usd": 0.3
      },
      "priority": 93
+    },
+    {
+     "id": "Mehr News:US missile reserves hit hard by Iran war",
+     "titel": "US missile reserves hit hard by Iran war",
+     "titelDe": "US-Missilreserven stark durch Iran-Krieg getroffen",
+     "quelle": "Mehr News",
+     "url": "https://en.mehrnews.com/news/247597/US-missile-reserves-hit-hard-by-Iran-war",
+     "zeit": "2026-09-09T08:51:02.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.428,
+      "usd": 0.285
+     },
+     "priority": 97
     },
     {
      "id": "Mehr News:US-Israeli attack on Iran cannot destroy nuclear capabilities",
