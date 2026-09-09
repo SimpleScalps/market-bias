@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-09T09:50:38.182Z",
+ "updated": "2026-09-09T09:58:11.547Z",
  "regime": "policy",
  "count": 241,
  "errors": [
@@ -7,6 +7,204 @@
   "Times of Israel: 403 https://www.timesofisrael.com/feed/"
  ],
  "items": [
+  {
+   "id": "TASS:Zelensky's 'aerial blackmail' tantamount to attempt to sow chaos — Russian MFA",
+   "title": "Zelensky's 'aerial blackmail' tantamount to attempt to sow chaos — Russian MFA",
+   "text": "Zelensky's statements exposed the terrorist nature of the Kiev regime, Maria Zakharova said",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/politics/2184711",
+   "date": "2026-09-09T09:56:40.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "Zelenskys „Luftschleimerei“ gleichbedeutend mit Versuch, Chaos zu säen – russisches Außenministerium"
+  },
+  {
+   "id": "Reuters:North Korea nears completion of bridge with China, analytics firm says",
+   "title": "North Korea nears completion of bridge with China, analytics firm says",
+   "text": "North Korea nears completion of bridge with China, analytics firm says &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUDJkQ1JsOEZhZ3NsSWtzbFRMMFJ1QTY4RDJjZ3RLOF9HTXZrNkpxREVEQnhmbHRJVXpNSDdETnVfdWt2NEdud1F0OFRyUURFZm1kVFJLVnMxYzlSVHVKcWpyU2tkOUdXZFN6eURaeTVLWW1XMVBwbC1iUUMza1ItU25tUksxcmNrNERvWkRKMHk0RmlsOUU3QXdBY21zLXNNd2RrcGhsbFFGalVjNTYxa2o1S1Q?oc=5",
+   "date": "2026-09-09T09:55:51.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 62,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Nordkorea nähert sich dem Abschluss der Brücke mit China, sagt Analyseunternehmen"
+  },
+  {
+   "id": "Al Jazeera (GN):Which countries banned goods from settlements but trade with Israel?",
+   "title": "Which countries banned goods from settlements but trade with Israel?",
+   "text": "Which countries banned goods from settlements but trade with Israel? &nbsp;&nbsp; Al Jazeera",
+   "source": "Al Jazeera (GN)",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPanNmOVF0bkhrcERUamhqdTZmOVJYTEgtZ1FmdE9EX3B2a0VnckJIeGF2dEY0RHlKdXh5Y0NySDFTZ2c5bDNhaE0wOFJNYkVVdktad2ZzMzdkR0dHNHpGWGFydDZGNVhlbXRHdkdkLXVFU1FRbEJIQjItLUJnd1JMbmo4aERnX00tZFpOZXlDSllvaXcwWTROUXRrdDREUVRWMmhjTjdWNHRnWlnSAbABQVVfeXFMTV8xbEZyeVhpbTB3ekt2ZUVGdzlQQUhRbFEtOTF2WnU2blpUTTJOV1ZUZkp6ZHZoT1RZQXdYbG90bXpZZHVuSGR2c3ZlZkdMXzNkRzRvMXdyS1lNU0IyOG9IQ1BqTFdSaTEtbFNydHpNZHNaY0U2Q0J3ZUFsR3N5RE1yZUs2NXJiNDl1YTd3QVlEdTFiTHJDOEFxd0Y0alJGUWlNRFAtRVNGenFIWUt0ZTE?oc=5",
+   "date": "2026-09-09T09:53:30.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 62,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "low",
+   "duration": "intraday",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Welche Länder haben Waren aus den Abwicklungen verboten, aber Handel mit Israel fortgesetzt?"
+  },
+  {
+   "id": "Al Jazeera (GN):Israeli parties submit slates for October Knesset elections",
+   "title": "Israeli parties submit slates for October Knesset elections",
+   "text": "Israeli parties submit slates for October Knesset elections &nbsp;&nbsp; Al Jazeera",
+   "source": "Al Jazeera (GN)",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSEdhdE81dHpzS05vUTVPUmNZOUhNR1dmcFVmVTJWQ01nR01RQVdYRFl1Z2ZydFNYcHhJTEd1TUdKWEUtOF9UamI1aE16bVpzT1NrUUZaOXo5Y1dDZkFHTEZGaDVSZnJ6RldhSWd5NmVmamZwS19tUTF2bEd2TlFYbFhpN0tfTnFqNVlkbnZFTGVmSGIwZ1ZNZFhnRlhrN3pG0gGmAUFVX3lxTE1aOVl5UWR1V2xCZU1DX3ZuMHlSbmZQOHJoZU1WNXNGQXRWTnlwMnVlMEdURlVLcnp4NVVZTk1SQ2w1TUQ2czZHUzVUVlc0UWtEazh2NFo0UFR4MEQ3OHBXczFRZTRvUUx4a292OUJWLTBhYnROY2hMWlh1RWZWZmxGWXZVWFlNMW9NTEdsUnJSRExieGVLbG11SHRjX3gxNDlkcGJNNnc?oc=5",
+   "date": "2026-09-09T09:51:19.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Israelische Parteien legen Kandidatenlisten für die Knesset-Wahlen im Oktober vor"
+  },
+  {
+   "id": "TASS:EU court upholds for third time refusal to lift sanctions from Abramovich — ruling",
+   "title": "EU court upholds for third time refusal to lift sanctions from Abramovich — ruling",
+   "text": "The EU court has already taken similar decisions on Abramovich in December 2023 and September 2025",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/economy/2184709",
+   "date": "2026-09-09T09:48:49.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Handelskonflikt"
+   ],
+   "scores": {
+    "crypto": -0.405,
+    "stocks": -0.405,
+    "gold": 0.203,
+    "usd": 0.135
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Handelskonflikt)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 38,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "low",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "EU-Gericht bestätigt zum dritten Mal Ablehnung der Aufhebung der Sanktionen gegen Abramovich – Urteil"
+  },
   {
    "id": "FXStreet:Australian Dollar slips against Japanese Yen as BoJ rate hike bets grow",
    "title": "Australian Dollar slips against Japanese Yen as BoJ rate hike bets grow",
@@ -50,6 +248,84 @@
    "titleDe": "Australischer Dollar rutscht gegen japanischen Yen ab, da die Wetten auf Zinserhöhungen der BoJ steigen"
   },
   {
+   "id": "Reuters:India's Lohum ships first lithium ore from Zimbabwe, starts overseas mining",
+   "title": "India's Lohum ships first lithium ore from Zimbabwe, starts overseas mining",
+   "text": "India's Lohum ships first lithium ore from Zimbabwe, starts overseas mining &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlRQVmlWUElzMmJUMjV6MUtpb2VlQ2FDd3lubFpRZEFXVVJyOTlqdmN0clI1NEtWRncxSDhUZzEtQkExZHU3UFRPTDVvWGQ3bkdGcHhBczBRRmJPUnU3WFFSM2dfZDRCM25WOTF6VGx1bGdMRkJiQmgtNmtod0lOVTcybURmakxOd09kXzZLckhjT3hzWThHUlJhNy1Nclp1Y2NWa29naEpjUEEzMWl0VVktLVNFeWs?oc=5",
+   "date": "2026-09-09T09:45:52.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Indiens Lohum verschifft erstes Lithiumgestein aus Simbabwe, startet ausländische Bergbauaktivität"
+  },
+  {
+   "id": "Al Jazeera:Authorities in India rescue baby orangutans dumped in forest",
+   "title": "Authorities in India rescue baby orangutans dumped in forest",
+   "text": "Authorities in India rescue baby orangutans dumped in forest",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/authorities-in-india-rescue-baby-orangutans-dumped-in-forest?traffic_source=rss",
+   "date": "2026-09-09T09:45:17.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "Al Jazeera (GN)"
+   ],
+   "bestaetigt": 2,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Behörden in Indien retten aus dem Wald geworfene Babyorang-Utans"
+  },
+  {
    "id": "FXStreet:Gold Price Forecast: XAU/USD bounces up to $4,400 with the bearish trend intact",
    "title": "Gold Price Forecast: XAU/USD bounces up to $4,400 with the bearish trend intact",
    "text": "Gold (XAU/USD) trims losses on Wednesday, with price action returning to the $4,400 area during the European morning session, after bouncing from $4,345 lows on Tuesday.",
@@ -86,6 +362,46 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Goldpreisprognose: XAU/USD springt bei intaktem Abwärtstrend auf 4.400 $"
+  },
+  {
+   "id": "Al Jazeera:Pakistan faces new frontier against attacks: Balochistan’s Pashtun areas",
+   "title": "Pakistan faces new frontier against attacks: Balochistan’s Pashtun areas",
+   "text": "A surge in attacks in Balochistan’s Pashtun-majority districts is raising questions about a widening rebellion.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/9/pakistan-faces-new-frontier-against-attacks-balochistans-pashtun-areas?traffic_source=rss",
+   "date": "2026-09-09T09:44:10.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "Al Jazeera (GN)"
+   ],
+   "bestaetigt": 2,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Pakistan steht vor neuer Front gegen Angriffe: Paschtunische Gebiete in Balochistan"
   },
   {
    "id": "IRNA:Iran’s Hormozgan targets harvest 200,000 metric tons of dates; 20% for export",
@@ -166,9 +482,9 @@
    "titleDe": "Polnischer Zloty: Wartende Politik hält PLN gegenüber Euro gestützt – Societe Generale"
   },
   {
-   "id": "Reuters:Wall St futures muted as oil tops $100 for first time since July - reuters.com",
-   "title": "Wall St futures muted as oil tops $100 for first time since July - reuters.com",
-   "text": "Wall St futures muted as oil tops $100 for first time since July &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Wall St futures muted as oil tops $100 for first time since July",
+   "title": "Wall St futures muted as oil tops $100 for first time since July",
+   "text": "Wall St futures muted as oil tops $100 for first time since July &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZExkRWJ1dThFMjNOZWdHdkJuSFd4UENUUko1cUI2aWJNMkQzb3FtYm5kNWUza3hVRVQ2Qlk0WjFGRnlGZWRhbzVMckNacFc4NDRXbzRqTmdyWWxTdVZoQ3pYNjY2Nm9pNHJRTUo0dlhkNkFzN2NSZ3BYR2Rqb1dfYkFjWHI1eW5USFlQd200RzI1cVVYY0VsdEZMbDdNQnZrLThZ?oc=5",
    "date": "2026-09-09T09:40:22.000Z",
@@ -201,7 +517,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Wall St-Futures stummgeschaltet, da Öl zum ersten Mal seit Juli 100 $ übersteigt - reuters.com"
+   "titleDe": "Wall-Street-Futures bleiben gedämpft, Öl steigt über $100 erstmals seit Juli"
   },
   {
    "id": "TASS:Russia-India cooperation reaches new level — Russian Chamber of Commerce",
@@ -267,7 +583,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -284,9 +600,9 @@
    "titleDe": "Die Partnerschaft zwischen Russland und Indien wird gestärkt — indisches Handelsministerium"
   },
   {
-   "id": "Reuters:Furniture rental firm Rentomojo's India IPO fully subscribed on first day of bidding - reuters.com",
-   "title": "Furniture rental firm Rentomojo's India IPO fully subscribed on first day of bidding - reuters.com",
-   "text": "Furniture rental firm Rentomojo's India IPO fully subscribed on first day of bidding &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Furniture rental firm Rentomojo's India IPO fully subscribed on first day of bidding",
+   "title": "Furniture rental firm Rentomojo's India IPO fully subscribed on first day of bidding",
+   "text": "Furniture rental firm Rentomojo's India IPO fully subscribed on first day of bidding &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUDVxMHRGd2hlNGVkVlI4QW40VlBVOXc0c3o5c19HclBOTEpBbzgyRi1wQVV3ZVRVWTVmb0Q0X3RhaXZLTFhmS05ZMDZ5bXZSdkNZNkJpWXdra2N5UlhkMHNTVjNnWncwMk4wcTB0eWM0VXNQNmg2NEJjYjFuQzRBbThDNWRtQXEyN3FkWmVjN0l2bkdCTktPcDNSM3dOeUg0a1FQTnFaOEpiRkdFRmlUYkpNTXNuUjkwSF9kam5Db0dTOW8?oc=5",
    "date": "2026-09-09T09:37:44.000Z",
@@ -306,7 +622,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -319,12 +635,12 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Möbelfirma Rentomojo's India IPO am ersten Tag der Ausschreibung vollständig gezeichnet - reuters.com"
+   "titleDe": "Möbelfirma Rentomojo's India IPO am ersten Tag der Ausschreibung vollständig gezeichnet"
   },
   {
-   "id": "Reuters:UK stocks decline as oil tops $100, fuels inflation fears - reuters.com",
-   "title": "UK stocks decline as oil tops $100, fuels inflation fears - reuters.com",
-   "text": "UK stocks decline as oil tops $100, fuels inflation fears &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:UK stocks decline as oil tops $100, fuels inflation fears",
+   "title": "UK stocks decline as oil tops $100, fuels inflation fears",
+   "text": "UK stocks decline as oil tops $100, fuels inflation fears &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNV1NxUm8tcFYzMExhTUdHdFdsbG1WemhPODZENVc3VWtiQjdoMEdJZFhvVzlDaVVMT054Q3JUdVJ1UTRzcDJiOHlvT3N5R1ZLbEdmZDJkY0szbFcxZFNURHd2c1pSZjFqdDVhc3hkd0pTeGFyTkdnWU51by10UEowWGpPMWh2ZW5oSjFDRlpwVWFjQzBuYjJudXN1Q1FRUQ?oc=5",
    "date": "2026-09-09T09:37:43.000Z",
@@ -344,7 +660,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -357,7 +673,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Britische Aktien sinken, da Öl 100 $ übersteigt, schürt Inflationsängste - reuters.com"
+   "titleDe": "UK-Aktien fallen, Öl über $100, steigende Inflationserwartungen"
   },
   {
    "id": "IRNA:Two million tourists visited Iran over past five months: Official",
@@ -383,7 +699,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -400,9 +716,9 @@
    "titleDe": "Zwei Millionen Touristen besuchten den Iran in den letzten fünf Monaten: Offiziell"
   },
   {
-   "id": "Reuters:Shipping traffic via Strait of Hormuz stays below 10-day average, data shows - reuters.com",
-   "title": "Shipping traffic via Strait of Hormuz stays below 10-day average, data shows - reuters.com",
-   "text": "Shipping traffic via Strait of Hormuz stays below 10-day average, data shows &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Shipping traffic via Strait of Hormuz stays below 10-day average, data shows",
+   "title": "Shipping traffic via Strait of Hormuz stays below 10-day average, data shows",
+   "text": "Shipping traffic via Strait of Hormuz stays below 10-day average, data shows &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQbXlWYlQ0MW1KT1g0U01lVldVbGtRWFU5U1FNVDllbEIwU3U2WElRSmw5QUg2Q2w3TUVUNDBUdWRSNWx1emlYRXdjLXY2NFk2VVgzTWExUHM0TTBHRGxKdlJ6Y0tPSUlvTXFoQzU5THV6b2dLbExKbkxaV1VtamZkRkdkMnpZTlAwNXlxVUxnNkZOdzRwX0MyTUNvN1lWVTV5WmtCX01iSmR2QkdESzl4VWlwbndRVkNfQUVBZm9DdDFFc1BK?oc=5",
    "date": "2026-09-09T09:35:50.000Z",
@@ -422,7 +738,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -435,7 +751,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Schiffstransporte durch den Golf von Hormuz bleiben unter dem 10‑Tage‑Durchschnitt"
+   "titleDe": "Der Schiffsverkehr über die Straße von Hormus bleibt unter dem 10-Tage-Durchschnitt, wie die Daten zeigen"
   },
   {
    "id": "TASS:Logistics centers, cargo terminal, warehouses hit: group strikes by Russian Armed Forces",
@@ -461,7 +777,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -516,8 +832,8 @@
    "titleDe": "Silberpreis heute: Silber steigt laut FXStreet-Daten"
   },
   {
-   "id": "Reuters:PODCAST: Banned in the USA - reuters.com",
-   "title": "PODCAST: Banned in the USA - reuters.com",
+   "id": "Reuters:PODCAST: Banned in the USA",
+   "title": "PODCAST: Banned in the USA",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQN0tGQ3V2RFVJekJ6TkdPREtLMUF2SFFSaDRkWTZfaDVtNEhrLTJkMlMzRVBDY0FBVENvYzg4TnVqSjRnVG1MSW5nYTk0ODBNSnlNM3hDU2hZTmNxTEI2M21zQTllZkdLQWxvSWhWSkkzVFJmSmlGelhRdWQzY1Z4Qg?oc=5",
    "date": "2026-09-09T09:30:07.000Z",
@@ -550,7 +866,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "PODCAST: In den USA verboten - reuters.com"
+   "titleDe": "PODCAST: In den USA verboten"
   },
   {
    "id": "OilPrice:Iraq Pushes OPEC for a Huge Increase in Its Oil Quota",
@@ -591,9 +907,9 @@
    "titleDe": "Irak drängt die OPEC auf eine enorme Erhöhung ihrer Ölquote"
   },
   {
-   "id": "Reuters:Several merchant vessels hit by disabling fire in Gulf and Gulf of Oman - reuters.com",
-   "title": "Several merchant vessels hit by disabling fire in Gulf and Gulf of Oman - reuters.com",
-   "text": "Several merchant vessels hit by disabling fire in Gulf and Gulf of Oman &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Several merchant vessels hit by disabling fire in Gulf and Gulf of Oman",
+   "title": "Several merchant vessels hit by disabling fire in Gulf and Gulf of Oman",
+   "text": "Several merchant vessels hit by disabling fire in Gulf and Gulf of Oman &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNckd4WVFmZEhoNEFkVzRzdE9JMVJ2QVUwMmk3MDRuUTA3NHc3N0xrY2VLZl9GY2Q2WU1ybzBodjhINEQwaV9GQmpKS3FSdXpSY3B3M0VUY3V6NUJvSU1zR1NPYmpLMUtvN3ZrYlZEVlZVNmhZTWZhdnhpM2dEaEZJZzBlbDN3cE42cXNsbDdnYmNkT3ROZTVzVjdBZUJ0NjRCYW4tQUdQQk5NNTV4NFIw?oc=5",
    "date": "2026-09-09T09:29:54.000Z",
@@ -626,7 +942,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Mehrere Handelsschiffe, die von der Deaktivierung des Feuers im Golf und im Golf von Oman getroffen wurden - reuters.com"
+   "titleDe": "Mehrere Handelsschiffe im Golf und Golf von Oman von Feuerlöschern getroffen"
   },
   {
    "id": "Decrypt:Mexico Seizes 300 Crypto Mining Rigs Wired Into a Hydroelectric Dam",
@@ -911,9 +1227,9 @@
    "titleDe": "Brent-Rohöl übersteigt 100 $, da die Streiks zwischen den USA und dem Iran die Sorgen um die Ölversorgung schüren"
   },
   {
-   "id": "Reuters:Roadworks in Georgia's capital uncover rare 10th-century pottery cache - reuters.com",
-   "title": "Roadworks in Georgia's capital uncover rare 10th-century pottery cache - reuters.com",
-   "text": "Roadworks in Georgia's capital uncover rare 10th-century pottery cache &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Roadworks in Georgia's capital uncover rare 10th-century pottery cache",
+   "title": "Roadworks in Georgia's capital uncover rare 10th-century pottery cache",
+   "text": "Roadworks in Georgia's capital uncover rare 10th-century pottery cache &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNblBqU2tabHFOaXBmVGhhZGJ2M0JGREpSeVB6d1p6ZGFnbEg5dm02eWJ4a21XV2VaekkxWGlDN2RLQk9hS2cyTl9uMThNZkdpOWxsR01XdXZDRFl4NzBHTXlEV0hhZ05NTTh4Tko1NVRuTTdXbXIydkRUVGRIakdhMVpSUFhXQjhfN0NfdDlsdUxmem5pS2xOMVpldGhCalpZWTJDWFM1bTk5TFpiT2xV?oc=5",
    "date": "2026-09-09T09:22:23.000Z",
@@ -946,12 +1262,12 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Straßenarbeiten in Georgiens Hauptstadt decken seltene Töpferwaren aus dem 10. Jahrhundert auf - reuters.com"
+   "titleDe": "Straßenbauarbeiten in Georgiens Hauptstadt decken seltenes Töpferlager aus dem 10. Jahrhundert auf"
   },
   {
-   "id": "Reuters:Chime surges 11% as Stride deal puts fintech on path to bank charter - reuters.com",
-   "title": "Chime surges 11% as Stride deal puts fintech on path to bank charter - reuters.com",
-   "text": "Chime surges 11% as Stride deal puts fintech on path to bank charter &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Chime surges 11% as Stride deal puts fintech on path to bank charter",
+   "title": "Chime surges 11% as Stride deal puts fintech on path to bank charter",
+   "text": "Chime surges 11% as Stride deal puts fintech on path to bank charter &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOS1A2VDh4RlAyWURKeWhoY3VsSHAxUEk1OC13RS15eTY3VGRHbGwybk1xVDJQU09OM0lleUkzZEhhSVJ4bjRCT0FpSTZJcEdRMGo0bUFTZUZMTG5PMlRrN0xtcGdtdU5wX2xkeXF5QU5vaG50WEl4NGp2VEtBcms0Sld0dy1Ob0VSRHdlQld5ZlVmYXRHRGdnSWpVQVNmRjlrbjhMZzY5cWVWTTV4UWZQRDBHZTE?oc=5",
    "date": "2026-09-09T09:22:16.000Z",
@@ -984,7 +1300,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Chime steigt um 11 %, da der Stride-Deal Fintech auf den Weg zur Bankcharta bringt - reuters.com"
+   "titleDe": "Chime steigt um 11 %, da der Stride-Deal Fintech auf den Weg zur Bankcharta bringt"
   },
   {
    "id": "BBC World:US to ban imports of some Canadian alcohol, dairy goods and motorbikes",
@@ -1065,9 +1381,9 @@
    "titleDe": "UKMTO meldet mehrere Frachtschiffe, die durch PG-Angriffe deaktiviert wurden"
   },
   {
-   "id": "Reuters:India central bank likely deploys FX swaps to mop up overseas deposit-driven liquidity, traders say - reuters.com",
-   "title": "India central bank likely deploys FX swaps to mop up overseas deposit-driven liquidity, traders say - reuters.com",
-   "text": "India central bank likely deploys FX swaps to mop up overseas deposit-driven liquidity, traders say &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:India central bank likely deploys FX swaps to mop up overseas deposit-driven liquidity, traders say",
+   "title": "India central bank likely deploys FX swaps to mop up overseas deposit-driven liquidity, traders say",
+   "text": "India central bank likely deploys FX swaps to mop up overseas deposit-driven liquidity, traders say &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQckM2NHVsY3lXNWw4QUNUOEhqSjhPdU9CYjhkX2Fsa2tBWnhDWmRSVXlMR3BZYmFIeW5DT0RIQ0E0ekNXREZ6YWJ4MldBbUxfVFpLVGJMM0lmRzRNQVNHQTBJX3dTNnlHb25VOUE1SjlCSmQ3clBkTUxwVnNEVTkwMzA2Ymk0VG9jMDVILWEtNFlnVWJpcnRZUFc4NHRwYmhYaVpvWkZ1d3RibXM0eWFzaE9oOVVmTHZPMFBrUExR?oc=5",
    "date": "2026-09-09T09:17:43.000Z",
@@ -1100,86 +1416,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Die indische Zentralbank setzt wahrscheinlich Devisenswaps ein, um die einlagengesteuerte Liquidität im Ausland zu erhöhen, sagen Händler - reuters.com"
-  },
-  {
-   "id": "Reuters:Business - reuters.com",
-   "title": "Business - reuters.com",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4wV0N6QWFMeHk4Q0ZrZHVUOHZoUnBibW9PRGg0TGlTTHlTemoxb1F5dHUzRmx3dGpTYWU3a3UzT1FoZ0dJMWRwNW9Odk9rUHZs?oc=5",
-   "date": "2026-09-09T09:15:47.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Business - reuters.com"
-  },
-  {
-   "id": "Reuters:Brent crude rises above $100 as Mideast conflict escalates - reuters.com",
-   "title": "Brent crude rises above $100 as Mideast conflict escalates - reuters.com",
-   "text": "Brent crude rises above $100 as Mideast conflict escalates &nbsp;&nbsp; reuters.com",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9KcFExU3IzV0hqRVctRnF0cDJLUFFfN0hGRktMeVQyc0tmVUNrRHd5MVQ4R3RsVG1HS0xET0FjV0NnNU40RnYxLXR5bDhQMC1EczI4?oc=5",
-   "date": "2026-09-09T09:15:47.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Eskalation"
-   ],
-   "scores": {
-    "crypto": -0.36,
-    "stocks": -0.36,
-    "gold": 0.18,
-    "usd": 0.12
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 67,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Brent-Rohöl steigt auf über 100 $, da der Konflikt im Nahen Osten eskaliert - reuters.com"
+   "titleDe": "Die indische Zentralbank setzt wahrscheinlich Devisenswaps ein, um die einlagengesteuerte Liquidität im Ausland zu erhöhen, sagen Händler"
   },
   {
    "id": "TASS:Russia-Turkey agricultural trade up by almost 30% year-on-year in January-July",
@@ -1286,7 +1523,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 38,
+   "priority": 37,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -1300,48 +1537,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Miliband weist die Behauptung des Oberrabbiners zurück, dass Sanktionen im Westjordanland britische Juden gefährden"
-  },
-  {
-   "id": "Reuters:Dutch public transport halted by strike against welfare cuts - reuters.com",
-   "title": "Dutch public transport halted by strike against welfare cuts - reuters.com",
-   "text": "Dutch public transport halted by strike against welfare cuts &nbsp;&nbsp; reuters.com",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNLVg3ekNqWm1aWEIwRHBxUlhWUHJNLURsX0ZPWDlWSG9yZEZZUzlVNDUwaTNZWDBpX2lYb1hSYnk2TWYwZXhuZ1hWRzZ6ek5uVlluUUZDY1ltbXFUc0pBWkoyN051ODN0RkU2MFlQZTVtQk92Z2J6ZVB5V1dETXhIbEp4bzkxdjdfbkxpanI5WDltQk04QUZkeVFwSDZRSW9QdVBMSlZSdjM?oc=5",
-   "date": "2026-09-09T09:14:05.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Militärschlag"
-   ],
-   "scores": {
-    "crypto": -0.405,
-    "stocks": -0.405,
-    "gold": 0.203,
-    "usd": 0.135
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Militärschlag)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 42,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Niederländische öffentliche Verkehrsmittel durch Streik gegen Sozialabbau gestoppt - reuters.com"
   },
   {
    "id": "Guardian:Man shot dead in Sydney community centre carpark",
@@ -1605,7 +1800,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 95,
+   "priority": 94,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "high",
@@ -1682,7 +1877,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 35,
+   "priority": 34,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1722,7 +1917,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1848,7 +2043,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1887,7 +2082,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1926,7 +2121,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1964,7 +2159,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2086,7 +2281,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2344,48 +2539,6 @@
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Vier Tote, 29 Verletzte in Novorossiysk, 596 UAVs: Nachwirkungen eines Angriffs"
-  },
-  {
-   "id": "Al Jazeera (GN):Iran war live - Al Jazeera",
-   "title": "Iran war live - Al Jazeera",
-   "text": "Iran war live - Al Jazeera &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcDlNZG1kWFFmc3o4TGlQTGhSbVE5TTlsSnNmb1BvbGNTeWhIcmJFU1JUTVVIUWxhdzVQZFhPRnVDVHRGOFlZa003QzZuTFRlcUc1Ry01UHFaYUhUbFVGaC1JMGxEbXZ1TWlPLTBwNVJjZC1ZS2tCbXlPN3hhX045bFZhYWF4R3FoQ25fQk1adDZoMUx5ZXU1ZDItTDh1SmNUdkZFS3hPdVl5S2V3ZFB2QmJrVFB6Y292b2gwTU1YVnJIMVhseWJHOVc0aWU?oc=5",
-   "date": "2026-09-09T08:46:45.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Eskalation"
-   ],
-   "scores": {
-    "crypto": -0.36,
-    "stocks": -0.36,
-    "gold": 0.18,
-    "usd": 0.12
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 66,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Iran im Live-Stream - Al Jazeera"
   },
   {
    "id": "FXStreet:Australian Dollar hits fresh four-month highs amid USD weakness, strong Chinese inflation",
@@ -2696,46 +2849,6 @@
    "titleDe": "Waffenbesitzender erschießt und tötet Kindergärtnerin in Thailand"
   },
   {
-   "id": "TASS:US envoys leave Kiev in shock over Zelensky entourage’s behavior — lawmaker",
-   "title": "US envoys leave Kiev in shock over Zelensky entourage’s behavior — lawmaker",
-   "text": "Anna Skorokhod recalled that David Arakhamia, the head of the parliamentary faction of the ruling Servant of the People party, was wearing a \"Kiev regime\" T-shirt while speaking with the US envoys",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/world/2184639",
-   "date": "2026-09-09T08:35:29.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 43,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 0,
-   "nurStaatlich": true,
-   "titleDe": "US-Botschafter verlassen Kiew in Schock über Verhalten von Zelenskys Gefolge – Abgeordneter"
-  },
-  {
    "id": "CNBC:'Patients pay the tariff': Swiss pharma CEO warns of Trump's generic drug tariff threat",
    "title": "'Patients pay the tariff': Swiss pharma CEO warns of Trump's generic drug tariff threat",
    "text": "Sandoz CEO Richard Saynor warns steep U.S. tariffs on imported generic drugs could force manufacturers to raise prices or cut supply.",
@@ -2922,7 +3035,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: retaliation threat, attack)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 100,
+   "priority": 99,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "high",
@@ -3003,7 +3116,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 66,
+   "priority": 65,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -3103,46 +3216,6 @@
    "titleDe": "USA kündigt Importverbot für zahlreiche kanadische Waren an, Handelskrieg eskaliert"
   },
   {
-   "id": "TASS:Russia, China to expand AI cooperation — Russian diplomat",
-   "title": "Russia, China to expand AI cooperation — Russian diplomat",
-   "text": "\"China has established a compelling international platform for interaction, framing it as an 'organization,' and Russia has supported this initiative,\" Maria Zakharova said",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/politics/2184637",
-   "date": "2026-09-09T08:22:15.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 60,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 0,
-   "nurStaatlich": true,
-   "titleDe": "Russland, China wollen KI-Kooperation ausbauen – russischer Diplomat"
-  },
-  {
    "id": "Al Jazeera:‘Totally reliant on Mother Nature’: UK drought raises water security fears",
    "title": "‘Totally reliant on Mother Nature’: UK drought raises water security fears",
    "text": "Record heatwaves have troubled British farmers, raising concerns over reservoir levels and food supply.",
@@ -3165,7 +3238,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3243,7 +3316,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 50,
+   "priority": 49,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3754,7 +3827,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 85,
+   "priority": 84,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "high",
@@ -3793,7 +3866,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3832,7 +3905,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3871,7 +3944,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3909,7 +3982,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3947,7 +4020,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4028,7 +4101,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 59,
+   "priority": 58,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -4321,8 +4394,8 @@
    "titleDe": "Was „rechts“ und „links“ im heutigen Israel bedeuten"
   },
   {
-   "id": "CoinDesk:Live updates: Brent crude hits $100 for first time since July as bitcoin holds above $79,000",
-   "title": "Live updates: Brent crude hits $100 for first time since July as bitcoin holds above $79,000",
+   "id": "CoinDesk:Live updates: Brent crude hits $100 for first time since July as bitcoin trades around $79,000",
+   "title": "Live updates: Brent crude hits $100 for first time since July as bitcoin trades around $79,000",
    "text": "Japanese yen extends its rally against the U.S. dollar, briefly strengthening past 153 per dollar.",
    "source": "CoinDesk",
    "url": "https://www.coindesk.com/business/2026/09/09/live-updates-xrp-funds-stand-out-among-u-s-etfs-as-bitcoin-ether-solana-funds-see-outflows",
@@ -4358,7 +4431,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Live‑Updates: Brent-Öl erreicht 100 $ erstmals seit Juli, Bitcoin bleibt über 79.000 $"
+   "titleDe": "Live-Updates: Brent-Öl erreicht $100 erstmals seit Juli, Bitcoin um $79.000"
   },
   {
    "id": "Al Jazeera:Medicine shortages grow in Iran as US tightens sanctions, blockade",
@@ -4426,7 +4499,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -4505,7 +4578,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4543,7 +4616,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -4582,7 +4655,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -4902,7 +4975,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4941,7 +5014,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 47,
+   "priority": 46,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5026,7 +5099,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5395,44 +5468,6 @@
    "titleDe": "Pakistans Energiekrise wird sich entspannen, da katarisches LNG Hormuz durchbricht"
   },
   {
-   "id": "Al Jazeera:New Hampshire primary results: Key takeaways for US midterm elections",
-   "title": "New Hampshire primary results: Key takeaways for US midterm elections",
-   "text": "The GOP aims to gain a New England foothold as Democrats strive to retain the Senate seat.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/9/us-midterm-elections-key-takeaways-from-new-hampshire-primaries?traffic_source=rss",
-   "date": "2026-09-09T05:50:50.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 39,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Ergebnisse der Vorwahl in New Hampshire: Wichtige Erkenntnisse für die US-Parlamentswahlen"
-  },
-  {
    "id": "Mehr News:Iran inaugurates major desalination plants despite US threats",
    "title": "Iran inaugurates major desalination plants despite US threats",
    "text": "TEHRAN, Sep. 09 (MNA) – Iran has inaugurated two major desalination facilities in the southern province of Bushehr, marking a significant expansion of the country's water infrastructure in a key industrial and energy corridor.",
@@ -5765,7 +5800,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5881,7 +5916,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 36,
+   "priority": 35,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6305,7 +6340,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6495,7 +6530,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 13,
+   "priority": 12,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7094,11 +7129,11 @@
    "titleDe": "Adidas sieht sich globalen Boykottaufrufen zur Kampagne mit ehemaligen israelischen Soldaten gegenüber"
   },
   {
-   "id": "The Block:A 22 year-old crypto ringleader pleads guilty to $245 million racketeering scheme",
-   "title": "A 22 year-old crypto ringleader pleads guilty to $245 million racketeering scheme",
-   "text": "Malone Lam pleaded guilty for his role in leading an international \"social engineering\" scheme, stealing $245 million worth in cryptocurrency.",
-   "source": "The Block",
-   "url": "https://www.theblock.co/news/regulation/2026-09-08-a-22-year-old-crypto-ringleader-pleads-guilty-to-245-million-racketeering-scheme-413911",
+   "id": "CoinDesk:Singaporean 22-year old pleads guilty to being the ringleader in $245 million crypto fraud case",
+   "title": "Singaporean 22-year old pleads guilty to being the ringleader in $245 million crypto fraud case",
+   "text": "Malone Lam, a Miami resident charged with stealing 4,100 bitcoin, led a ring of fraudsters who stole crypto via online scams and home invasions.",
+   "source": "CoinDesk",
+   "url": "https://www.coindesk.com/business/2026/09/09/singaporean-22-year-old-pleads-guilty-to-being-the-ringleader-in-usd245-million-crypto-fraud-case",
    "date": "2026-09-08T19:17:17.000Z",
    "tags": [
     "Krypto"
@@ -7116,7 +7151,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 29,
+   "priority": 52,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7125,11 +7160,13 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Ein 22-jähriger Krypto-Rädelsführer bekennt sich des 245 Millionen $ teuren Erpressungsschemas schuldig"
+   "alsoIn": [
+    "The Block"
+   ],
+   "bestaetigt": 2,
+   "haeuser": 2,
+   "unabhaengig": 2,
+   "titleDe": "Singapurischer 22-Jähriger gesteht Schuld als Anführer bei $245 Millionen Krypto-Betrug"
   },
   {
    "id": "OilPrice:China Adds 650,000 Ounces of Gold in Biggest Monthly Buy Since 2023",
@@ -7313,7 +7350,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -9299,50 +9336,6 @@
    "titleDe": "Satoshis 1,1 Millionen Bitcoin-Hort: Neue Onchain-Aktivität wirft Licht auf legendären Vorrat"
   },
   {
-   "id": "CoinDesk:Bitcoin rally has more room as volatility shorts unwind, Two Prime CEO says",
-   "title": "Bitcoin rally has more room as volatility shorts unwind, Two Prime CEO says",
-   "text": "Alexander Blume said subdued funding rates and continued call selling suggest the rebound is not yet being driven by excessive speculation.",
-   "source": "CoinDesk",
-   "url": "https://www.coindesk.com/markets/2026/09/03/bitcoin-rally-has-more-room-as-volatility-shorts-unwind-two-prime-ceo-says",
-   "date": "2026-09-08T13:18:21.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Kursanstieg"
-   ],
-   "scores": {
-    "crypto": 0.36,
-    "stocks": 0.36,
-    "gold": -0.18,
-    "usd": -0.12
-   },
-   "why": "Risikofreude im Markt: Kapital fließt in Krypto und Aktien. (Signale: Kursanstieg)",
-   "whyEn": "Risk-on tone: capital rotates into crypto and equities. (signals: price rally)",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 32,
-   "label": "bullish",
-   "labelText": "Bullish",
-   "impactLevel": "low",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "BTC"
-   ],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Bitcoin‑Aufschwung hat mehr Spielraum, da Volatilitäts‑Shorts auflösen, sagt CEO von Two Prime"
-  },
-  {
    "id": "CoinDesk:Ethereum makes quantum resistance a top priority with a 2029 deadline",
    "title": "Ethereum makes quantum resistance a top priority with a 2029 deadline",
    "text": "The Foundation wants the network protected before a quantum computer capable of breaking today's cryptography could plausibly arrive, and says upcoming upgrades will be judged against that clock.",
@@ -9443,7 +9436,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -9536,11 +9529,11 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 18,
+  "uebersetzt": 12,
   "fehler": null
  },
  "rubriken": {
   "Sport": 4,
-  "Unsinn": 4
+  "Unsinn": 6
  }
 }
