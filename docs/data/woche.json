@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T01:04:19.373Z",
+ "updated": "2026-09-09T01:19:24.548Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T01:04:19.456Z",
+   "stand": "2026-09-09T01:19:24.677Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-09T01:04:19.445Z",
+   "stand": "2026-09-09T01:19:24.658Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-09T01:04:19.434Z",
+   "stand": "2026-09-09T01:19:24.640Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-09T01:04:19.424Z",
+   "stand": "2026-09-09T01:19:24.621Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,35 +768,50 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T01:04:19.413Z",
-   "anzahl": 58,
+   "stand": "2026-09-09T01:19:24.602Z",
+   "anzahl": 65,
    "klassen": {
     "crypto": {
-     "score": -0.1988,
+     "score": -0.2249,
      "bull": 1,
-     "bear": 11,
-     "neut": 46
+     "bear": 14,
+     "neut": 50
     },
     "stocks": {
-     "score": -0.1949,
+     "score": -0.2216,
      "bull": 1,
-     "bear": 11,
-     "neut": 46
+     "bear": 14,
+     "neut": 50
     },
     "gold": {
-     "score": 0.066,
-     "bull": 9,
+     "score": 0.0842,
+     "bull": 12,
      "bear": 3,
-     "neut": 46
+     "neut": 50
     },
     "usd": {
-     "score": 0.0834,
-     "bull": 4,
+     "score": 0.0895,
+     "bull": 5,
      "bear": 0,
-     "neut": 54
+     "neut": 60
     }
    },
    "top": [
+    {
+     "id": "Al Jazeera (GN):Jordanian air defences intercept Iranian missile barrage",
+     "titel": "Jordanian air defences intercept Iranian missile barrage",
+     "titelDe": "Jordanische Luftverteidigung hält iranische Raketenbarrage ab",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUUdMekdhc3IybnNueGdjNjF4My1lZjM1eldjcmxHbVJJRTZxMDVHd3hkQUk0ZEJBR3pqR3FwY1NEakN0NlBCT0lGUGdOdjZnTWRqaVhZcTgxQXUzcmVyamxXQnEybWd2WmFZdlBQeDBWSXYwVnVPeEhZb1hqWUY0V2FaV3FpZ1lQQks4LWtKQ3B2emNuX3JfQ1c5eEV0YzktR2NHWDFHWVlYQdIBrwFBVV95cUxNZlIxbTQwbjFCd09XSERad1duYmlyUU5ETmZQMFhVWFZRUlFweUVHUkNGNmNZZTBtU0g3d3VUS3dwRkNONkRsU09qMlBtTVVESEppZHdzR2t6WjdMVDFKOGUtbGdydkRadUpSaXVmc1l1M1RZempsT2syNEJOS1d4a1Fpb2szc21iVEZTeUhyVWdvVkszaHJVaVVCdDhRMzVmYS1fQlRmbjF0UHFDWW9F?oc=5",
+     "zeit": "2026-09-09T01:08:41.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
     {
      "id": "Reuters:US military says it destroyed five Iranian oil carriers after attempted missile attacks",
      "titel": "US military says it destroyed five Iranian oil carriers after attempted missile attacks",
@@ -840,7 +855,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 98
+     "priority": 97
     },
     {
      "id": "Reuters:Oil jumps $1 in early trade after Iran launches missiles at Jordan",
@@ -855,7 +870,7 @@
       "gold": -0.211,
       "usd": 0.626
      },
-     "priority": 76
+     "priority": 75
     },
     {
      "id": "Guardian:US bans Canadian dairy, alcohol and motorcycles as trade war with longtime ally escalates",
@@ -870,7 +885,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 73
+     "priority": 72
     },
     {
      "id": "Reuters:How Canada's retaliatory tariffs could impact US midterm elections",
@@ -901,21 +916,6 @@
       "usd": 0.15
      },
      "priority": 95
-    },
-    {
-     "id": "CNBC World:U.S. military destroys five Iranian oil tankers after attempted attack on American warship, Centcom says",
-     "titel": "U.S. military destroys five Iranian oil tankers after attempted attack on American warship, Centcom says",
-     "titelDe": "US-Militär zerstört fünf iranische Öltanker nach gescheiterter Angriff auf amerikanisches Kriegsschiff, sagt Centcom",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/08/iran-us-sub-strait-hormuz.html",
-     "zeit": "2026-09-08T23:03:26.000Z",
-     "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
-     },
-     "priority": 93
     }
    ]
   }
