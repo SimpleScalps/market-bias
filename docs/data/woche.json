@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T01:19:24.548Z",
+ "updated": "2026-09-09T01:32:32.551Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T01:19:24.677Z",
+   "stand": "2026-09-09T01:32:32.632Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-09T01:19:24.658Z",
+   "stand": "2026-09-09T01:32:32.622Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-09T01:19:24.640Z",
+   "stand": "2026-09-09T01:32:32.611Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-09T01:19:24.621Z",
+   "stand": "2026-09-09T01:32:32.601Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -690,6 +690,21 @@
      "priority": 100
     },
     {
+     "id": "Guardian:US says Iranian tankers ‘destroyed’ after missile attacks on American warship",
+     "titel": "US says Iranian tankers ‘destroyed’ after missile attacks on American warship",
+     "titelDe": "US erklärt, dass iranische Tanker nach Luftangriffen auf ein amerikanisches Kriegsschiff 'zerstört' wurden",
+     "quelle": "Guardian",
+     "url": "https://www.theguardian.com/us-news/2026/sep/08/iran-underwater-drone-strait-of-hormuz",
+     "zeit": "2026-09-08T21:42:36.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
+    {
      "id": "Tehran Times:Iran warns against normalizing attacks on nuclear facilities",
      "titel": "Iran warns against normalizing attacks on nuclear facilities",
      "titelDe": "Iran warnt vor normalisierenden Angriffen auf Atomanlagen",
@@ -748,55 +763,55 @@
       "usd": 0.626
      },
      "priority": 82
-    },
-    {
-     "id": "FXStreet:Gold price wilts as Oil shock puts CPI in Fed crosshairs",
-     "titel": "Gold price wilts as Oil shock puts CPI in Fed crosshairs",
-     "titelDe": "Der Goldpreis welkt, da der Ölschock den VPI in das Fadenkreuz der Fed bringt",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/gold-price-wilts-as-oil-shock-puts-cpi-in-fed-crosshairs-202609081801",
-     "zeit": "2026-09-08T18:01:43.000Z",
-     "scores": {
-      "crypto": -0.878,
-      "stocks": -0.803,
-      "gold": -0.211,
-      "usd": 0.626
-     },
-     "priority": 80
     }
    ]
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T01:19:24.602Z",
-   "anzahl": 65,
+   "stand": "2026-09-09T01:32:32.588Z",
+   "anzahl": 66,
    "klassen": {
     "crypto": {
-     "score": -0.2249,
+     "score": -0.2265,
      "bull": 1,
-     "bear": 14,
+     "bear": 15,
      "neut": 50
     },
     "stocks": {
-     "score": -0.2216,
+     "score": -0.2226,
      "bull": 1,
-     "bear": 14,
+     "bear": 15,
      "neut": 50
     },
     "gold": {
-     "score": 0.0842,
-     "bull": 12,
+     "score": 0.0802,
+     "bull": 13,
      "bear": 3,
      "neut": 50
     },
     "usd": {
-     "score": 0.0895,
-     "bull": 5,
+     "score": 0.0925,
+     "bull": 6,
      "bear": 0,
      "neut": 60
     }
    },
    "top": [
+    {
+     "id": "Al Jazeera:Jordanian air defences intercept Iranian missile barrage",
+     "titel": "Jordanian air defences intercept Iranian missile barrage",
+     "titelDe": "Jordanische Luftverteidigung hält iranische Raketenbarrage ab",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/jordanian-air-defences-intercept-iranian-missile-barrage?traffic_source=rss",
+     "zeit": "2026-09-09T01:08:15.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
     {
      "id": "Al Jazeera (GN):Jordanian air defences intercept Iranian missile barrage",
      "titel": "Jordanian air defences intercept Iranian missile barrage",
@@ -888,34 +903,19 @@
      "priority": 72
     },
     {
-     "id": "Reuters:How Canada's retaliatory tariffs could impact US midterm elections",
-     "titel": "How Canada's retaliatory tariffs could impact US midterm elections",
-     "titelDe": "Wie Kanadas Vergeltungstarife die US-Wahlkampfmittel beeinflussen könnten",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWRWdGZnpUcHpGQ1FWUy1XS21EdXdnOFZZV0dmY1BDMHdNYUt6WEVRcktDTEVkdndlMDZVb0V1NDFCQVlCQTIzQkhBdWF2dWxqUkhJS1ZRR3pycXZOYXJIN1Y4TXAwMkU?oc=5",
-     "zeit": "2026-09-08T22:44:47.000Z",
-     "scores": {
-      "crypto": -0.855,
-      "stocks": -0.855,
-      "gold": 0.427,
-      "usd": 0.285
-     },
-     "priority": 61
-    },
-    {
-     "id": "Al Jazeera:US destroys five Iranian tankers, Iran retaliates with attacks on Jordan",
-     "titel": "US destroys five Iranian tankers, Iran retaliates with attacks on Jordan",
-     "titelDe": "US zerstört fünf iranische Tanker, Iran reagiert mit Angriffen auf Jordanien",
+     "id": "Al Jazeera:US attacks 5 Iranian oil tankers, Tehran retaliates with strikes on Jordan",
+     "titel": "US attacks 5 Iranian oil tankers, Tehran retaliates with strikes on Jordan",
+     "titelDe": "US greift fünf iranische Öltanker an, Teheran reagiert mit Angriffen auf Jordanien",
      "quelle": "Al Jazeera",
      "url": "https://www.aljazeera.com/news/2026/9/9/us-destroys-five-iranian-tankers-iran-retaliates-with-attacks-on-jordan-base?traffic_source=rss",
-     "zeit": "2026-09-09T00:00:00.000Z",
+     "zeit": "2026-09-09T00:08:37.000Z",
      "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
      },
-     "priority": 95
+     "priority": 61
     }
    ]
   }
