@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T11:55:49.683Z",
+ "updated": "2026-09-09T12:07:05.891Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T11:55:49.781Z",
+   "stand": "2026-09-09T12:07:06.004Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-09T11:55:49.765Z",
+   "stand": "2026-09-09T12:07:05.991Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-09T11:55:49.749Z",
+   "stand": "2026-09-09T12:07:05.969Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,32 +768,32 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T11:55:49.732Z",
-   "anzahl": 203,
+   "stand": "2026-09-09T12:07:05.953Z",
+   "anzahl": 209,
    "klassen": {
     "crypto": {
-     "score": -0.1555,
+     "score": -0.1404,
      "bull": 1,
-     "bear": 31,
-     "neut": 171
+     "bear": 29,
+     "neut": 179
     },
     "stocks": {
-     "score": -0.1535,
+     "score": -0.1389,
      "bull": 1,
-     "bear": 31,
-     "neut": 171
+     "bear": 29,
+     "neut": 179
     },
     "gold": {
-     "score": 0.0612,
-     "bull": 28,
-     "bear": 3,
-     "neut": 172
+     "score": 0.0573,
+     "bull": 27,
+     "bear": 2,
+     "neut": 180
     },
     "usd": {
-     "score": 0.0603,
-     "bull": 12,
+     "score": 0.0534,
+     "bull": 10,
      "bear": 0,
-     "neut": 191
+     "neut": 199
     }
    },
    "top": [
@@ -900,7 +900,7 @@
       "gold": 0.428,
       "usd": 0.285
      },
-     "priority": 97
+     "priority": 96
     },
     {
      "id": "Mehr News:US-Israeli attack on Iran cannot destroy nuclear capabilities",
