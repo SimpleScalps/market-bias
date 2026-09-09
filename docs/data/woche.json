@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T15:39:22.755Z",
+ "updated": "2026-09-09T15:50:42.297Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T15:39:22.850Z",
+   "stand": "2026-09-09T15:50:42.376Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-09T15:39:22.831Z",
+   "stand": "2026-09-09T15:50:42.361Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T15:39:22.811Z",
+   "stand": "2026-09-09T15:50:42.345Z",
    "anzahl": 228,
    "klassen": {
     "crypto": {
@@ -873,6 +873,21 @@
      "priority": 96
     },
     {
+     "id": "Al Jazeera (GN):Jerusalem Daily: Israel retaliates over sanctions on illegal settlements",
+     "titel": "Jerusalem Daily: Israel retaliates over sanctions on illegal settlements",
+     "titelDe": "Jerusalem Daily: Israel rächt sich wegen Sanktionen gegen illegale Siedlungen",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSlNTeGJybzhSbGx2N1Y4TmREWUwwalJQQk95ZGFqa3czTHlpTlJSYXFTMnpoQm94SWdGYzJvZXJhLVF6RGZyQmNSQUVnTlNqUVpaODlqOVZxVmVZNlhUWXJ2ZTBjWmNaa0pTZTAtRFJUbm8yMl9EclBjV09XS3V3dXRhYVk5cEx0b0RTYldJbEp3WGdfeWF6N01ZYUZrUjEtYVF5cDF1QkU5X3VnVmw0ZHFtLXZ5M20wcmZRRDh30gHDAUFVX3lxTE52RjBwVlg4dDgxQ2ZpU3BjcXZPdU53OV9ZaWZTYWh0dkE5cU5vWk5mNzNPYjBpSHh5enJlOEFuMkJFSmp4SnluTlVsd1VxeUV0MURxa054UnFFbV93NXlPaDQ1QlltWWVyY0JEQjZXT3hTeVhLeEZJQ0k3UVZ1ak0yUEREVXBIWE9LMlJ5cDlsYWRxazFWRERJM2haYW45Z0ZSQUQwX09fT1lVU2tvdDkzY0xFOGFpeFlnRHY5Y016bDNGdw?oc=5",
+     "zeit": "2026-09-09T15:42:34.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 100
+    },
+    {
      "id": "TASS:Iran carries out missile strikes on Jordan airbases hosting US forces — TV",
      "titel": "Iran carries out missile strikes on Jordan airbases hosting US forces — TV",
      "titelDe": "Iran führt Luftangriffe auf jordanische Luftwaffenbasen durch, die US-Truppen beherbergen – TV",
@@ -898,21 +913,6 @@
       "crypto": -0.855,
       "stocks": -0.855,
       "gold": 0.428,
-      "usd": 0.285
-     },
-     "priority": 91
-    },
-    {
-     "id": "Mehr News:US-Israeli attack on Iran cannot destroy nuclear capabilities",
-     "titel": "US-Israeli attack on Iran cannot destroy nuclear capabilities",
-     "titelDe": "US- und israelischer Angriff auf Iran kann nukleare Fähigkeiten nicht zerstören",
-     "quelle": "Mehr News",
-     "url": "https://en.mehrnews.com/news/247596/US-Israeli-attack-on-Iran-cannot-destroy-nuclear-capabilities",
-     "zeit": "2026-09-09T08:30:05.000Z",
-     "scores": {
-      "crypto": -0.855,
-      "stocks": -0.855,
-      "gold": 0.427,
       "usd": 0.285
      },
      "priority": 91
