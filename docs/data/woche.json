@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T08:49:01.688Z",
+ "updated": "2026-09-09T08:58:00.257Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T08:49:01.784Z",
+   "stand": "2026-09-09T08:58:00.370Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-09T08:49:01.769Z",
+   "stand": "2026-09-09T08:58:00.350Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-09T08:49:01.754Z",
+   "stand": "2026-09-09T08:58:00.330Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,32 +768,32 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T08:49:01.737Z",
+   "stand": "2026-09-09T08:58:00.311Z",
    "anzahl": 153,
    "klassen": {
     "crypto": {
-     "score": -0.1265,
+     "score": -0.1381,
      "bull": 1,
      "bear": 22,
      "neut": 130
     },
     "stocks": {
-     "score": -0.1253,
+     "score": -0.1374,
      "bull": 1,
      "bear": 22,
      "neut": 130
     },
     "gold": {
-     "score": 0.0525,
+     "score": 0.0632,
      "bull": 19,
      "bear": 4,
      "neut": 130
     },
     "usd": {
-     "score": 0.0477,
-     "bull": 7,
+     "score": 0.049,
+     "bull": 8,
      "bear": 0,
-     "neut": 146
+     "neut": 145
     }
    },
    "top": [
@@ -873,6 +873,21 @@
      "priority": 96
     },
     {
+     "id": "Mehr News:US missile reserves hit hard by Iran war",
+     "titel": "US missile reserves hit hard by Iran war",
+     "titelDe": "US-Missilreserven stark durch Iran-Krieg getroffen",
+     "quelle": "Mehr News",
+     "url": "https://en.mehrnews.com/news/247597/US-missile-reserves-hit-hard-by-Iran-war",
+     "zeit": "2026-09-09T08:51:02.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.428,
+      "usd": 0.285
+     },
+     "priority": 100
+    },
+    {
      "id": "Mehr News:US-Israeli attack on Iran cannot destroy nuclear capabilities",
      "titel": "US-Israeli attack on Iran cannot destroy nuclear capabilities",
      "titelDe": "US- und israelischer Angriff auf Iran kann nukleare Fähigkeiten nicht zerstören",
@@ -901,21 +916,6 @@
       "usd": 0.3
      },
      "priority": 93
-    },
-    {
-     "id": "Reuters:Oil jumps $1 in early trade after Iran launches missiles at Jordan",
-     "titel": "Oil jumps $1 in early trade after Iran launches missiles at Jordan",
-     "titelDe": "Öl steigt um 1 $ im frühen Handel, nachdem Iran Raketen auf Jordanien abfeuert",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUzVwcURFOW5QT2VTVW5YdFV2a2NPRGh1YkFoaTV2VUE0MXhES2gwR1ptSldNN29OZUZOLUQ2NlFUZUNpYjRFV25nTTR5cW03ZEFmX1BzMzViNGI5VXhWMWhtZHU1SDNxQ1Iyc2lDcEZOYnVpU3JMUVE4Uk9IUkVyYUdjd2ppV01LbDZESEQzWDBaZHZyOEpCem9yRkw0YUhnTVpuSVlzc01jVWszdVJSWg?oc=5",
-     "zeit": "2026-09-09T00:23:00.000Z",
-     "scores": {
-      "crypto": -0.878,
-      "stocks": -0.803,
-      "gold": -0.211,
-      "usd": 0.626
-     },
-     "priority": 75
     }
    ]
   }
