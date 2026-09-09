@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T03:21:53.361Z",
+ "updated": "2026-09-09T03:38:03.477Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T03:21:53.492Z",
+   "stand": "2026-09-09T03:38:03.586Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-09T03:21:53.474Z",
+   "stand": "2026-09-09T03:38:03.572Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-09T03:21:53.456Z",
+   "stand": "2026-09-09T03:38:03.557Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-09T03:21:53.438Z",
+   "stand": "2026-09-09T03:38:03.541Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T03:21:53.417Z",
+   "stand": "2026-09-09T03:38:03.525Z",
    "anzahl": 89,
    "klassen": {
     "crypto": {
@@ -888,6 +888,21 @@
      "priority": 75
     },
     {
+     "id": "FXStreet:United States Dollar Index weakens despite rising inflation concerns, Fed rate hike bets",
+     "titel": "United States Dollar Index weakens despite rising inflation concerns, Fed rate hike bets",
+     "titelDe": "US-Dollar-Index schwächt sich trotz steigender Inflationsbedenken, Fed-Haushaltszinsen-Wetten",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/united-states-dollar-index-weakens-despite-rising-inflation-concerns-fed-rate-hike-bets-202609090327",
+     "zeit": "2026-09-09T03:27:02.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "FXStreet:Canadian Dollar gains amid elevated oil prices, escalating US trade sanctions",
      "titel": "Canadian Dollar gains amid elevated oil prices, escalating US trade sanctions",
      "titelDe": "Kanadischer Dollar steigt bei hohen Ölpreisen, US-Handels-Sanktionen eskalieren",
@@ -901,21 +916,6 @@
       "usd": 0.255
      },
      "priority": 74
-    },
-    {
-     "id": "Al Jazeera (GN):US attacks 5 Iranian oil tankers, Tehran retaliates with strikes on Jordan",
-     "titel": "US attacks 5 Iranian oil tankers, Tehran retaliates with strikes on Jordan",
-     "titelDe": "US greift fünf iranische Öltanker an, Teheran reagiert mit Angriffen auf Jordanien",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSVZkSGpmVEVQUWxwTVJzMktrLWQ1R0RESXZqbktnZlo3SmJGM0prNEs3dVg0UUp3WWlzQVdZaUdONHQwOWFwVFU0R19hbm1zZGIyVVFqWkJ3S2c2dEpQQUJ4SHd4VE52UXBwa2pHSGZjWFd3U0xQeTFLQVIzZFBQdS11Y1VoY3NzVGlsTF9WYTduYVVZaUhlV05ob3c0RWFWY3M2Q19zSnlYdkpOTW13LUZrdFpKclnSAbwBQVVfeXFMT3pFYTcwbEJBMkxXWEEya3hZRFhRbzV0dTg4SkFIay1nWkthZFlEY3pFTUNVMnhuRnpTdTZkSzcwT0tmNjBncmpaNzk1akNsUldnWEZkVXNrejB6UEUtMXRpTXhQbHVQYkRiSDZxclQ0S1BUdVc0d1lUT0FmNGdfdzVLLU80czBXSHIwSXJCT3lqTXBCc29qaE9KZk5xM3JjSXBCSm1XX0JEd0VqNjNnY19DMHo3S2M0aWZQWU8?oc=5",
-     "zeit": "2026-09-09T00:08:37.000Z",
-     "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
-     },
-     "priority": 62
     }
    ]
   }
