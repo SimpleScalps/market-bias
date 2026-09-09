@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T02:37:17.541Z",
+ "updated": "2026-09-09T02:47:53.348Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T02:37:17.624Z",
+   "stand": "2026-09-09T02:47:53.481Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -309,7 +309,7 @@
   },
   "2026-09-06": {
    "tag": "2026-09-06",
-   "stand": "2026-09-09T02:37:17.612Z",
+   "stand": "2026-09-09T02:47:53.462Z",
    "anzahl": 143,
    "klassen": {
     "crypto": {
@@ -462,7 +462,7 @@
   },
   "2026-09-07": {
    "tag": "2026-09-07",
-   "stand": "2026-09-09T02:37:17.602Z",
+   "stand": "2026-09-09T02:47:53.444Z",
    "anzahl": 224,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-09T02:37:17.590Z",
+   "stand": "2026-09-09T02:47:53.425Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,29 +768,29 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T02:37:17.578Z",
+   "stand": "2026-09-09T02:47:53.406Z",
    "anzahl": 89,
    "klassen": {
     "crypto": {
-     "score": -0.1648,
+     "score": -0.1664,
      "bull": 1,
      "bear": 15,
      "neut": 73
     },
     "stocks": {
-     "score": -0.1626,
+     "score": -0.1642,
      "bull": 1,
      "bear": 15,
      "neut": 73
     },
     "gold": {
-     "score": 0.0638,
+     "score": 0.0647,
      "bull": 14,
      "bear": 2,
      "neut": 73
     },
     "usd": {
-     "score": 0.0645,
+     "score": 0.0649,
      "bull": 4,
      "bear": 0,
      "neut": 85
@@ -892,7 +892,7 @@
      "titel": "US attacks 5 Iranian oil tankers, Tehran retaliates with strikes on Jordan",
      "titelDe": "US greift fünf iranische Öltanker an, Teheran reagiert mit Angriffen auf Jordanien",
      "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSVZkSGpmVEVQUWxwTVJzMktrLWQ1R0RESXZqbktnZlo3SmJGM0prNEs3dVg0UUp3WWlzQVdZaUdONHQwOWFwVFU0R19hbm1zZGIyVVFqWkJ3S2c2dEpQQUJ4SHd4VE52UXBwa2pHSGZjWFd3U0xQeTFLQVIzZFBQdS11Y1VoY3NzVGlsTF9WYTduYVVZaUhlV05ob3c0RWFWY3M2Q19zSnlYdkpOTW13LUZrdFpKclk?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSVZkSGpmVEVQUWxwTVJzMktrLWQ1R0RESXZqbktnZlo3SmJGM0prNEs3dVg0UUp3WWlzQVdZaUdONHQwOWFwVFU0R19hbm1zZGIyVVFqWkJ3S2c2dEpQQUJ4SHd4VE52UXBwa2pHSGZjWFd3U0xQeTFLQVIzZFBQdS11Y1VoY3NzVGlsTF9WYTduYVVZaUhlV05ob3c0RWFWY3M2Q19zSnlYdkpOTW13LUZrdFpKclnSAbwBQVVfeXFMT3pFYTcwbEJBMkxXWEEya3hZRFhRbzV0dTg4SkFIay1nWkthZFlEY3pFTUNVMnhuRnpTdTZkSzcwT0tmNjBncmpaNzk1akNsUldnWEZkVXNrejB6UEUtMXRpTXhQbHVQYkRiSDZxclQ0S1BUdVc0d1lUT0FmNGdfdzVLLU80czBXSHIwSXJCT3lqTXBCc29qaE9KZk5xM3JjSXBCSm1XX0JEd0VqNjNnY19DMHo3S2M0aWZQWU8?oc=5",
      "zeit": "2026-09-09T00:08:37.000Z",
      "scores": {
       "crypto": -0.9,
