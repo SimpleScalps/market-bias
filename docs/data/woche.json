@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-09T16:50:42.370Z",
+ "updated": "2026-09-09T17:04:03.044Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-09T16:50:42.462Z",
+   "stand": "2026-09-09T17:04:03.144Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -615,7 +615,7 @@
   },
   "2026-09-08": {
    "tag": "2026-09-08",
-   "stand": "2026-09-09T16:50:42.443Z",
+   "stand": "2026-09-09T17:04:03.124Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -768,32 +768,32 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-09T16:50:42.424Z",
-   "anzahl": 228,
+   "stand": "2026-09-09T17:04:03.105Z",
+   "anzahl": 233,
    "klassen": {
     "crypto": {
-     "score": -0.1003,
+     "score": -0.1082,
      "bull": 2,
-     "bear": 28,
-     "neut": 198
+     "bear": 29,
+     "neut": 202
     },
     "stocks": {
-     "score": -0.1014,
+     "score": -0.1075,
      "bull": 2,
-     "bear": 28,
-     "neut": 198
+     "bear": 29,
+     "neut": 202
     },
     "gold": {
-     "score": 0.0596,
+     "score": 0.0476,
      "bull": 27,
      "bear": 2,
-     "neut": 199
+     "neut": 204
     },
     "usd": {
-     "score": 0.0286,
-     "bull": 8,
+     "score": 0.0394,
+     "bull": 9,
      "bear": 1,
-     "neut": 219
+     "neut": 223
     }
    },
    "top": [
@@ -900,7 +900,7 @@
       "gold": 0.427,
       "usd": 0.285
      },
-     "priority": 100
+     "priority": 99
     },
     {
      "id": "TASS:Iran carries out missile strikes on Jordan airbases hosting US forces — TV",
