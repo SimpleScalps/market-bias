@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T04:09:35.569Z",
+ "updated": "2026-09-10T04:24:16.907Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T04:09:35.660Z",
+   "stand": "2026-09-10T04:24:16.982Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T04:09:35.642Z",
+   "stand": "2026-09-10T04:24:16.968Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T04:09:35.623Z",
+   "stand": "2026-09-10T04:24:16.953Z",
    "anzahl": 93,
    "klassen": {
     "crypto": {
@@ -996,6 +996,21 @@
      "priority": 74
     },
     {
+     "id": "Guardian:Trump claims he will give $5,000 to every American if Republicans win the midterms as he defends Iran war and tariffs– as it happened",
+     "titel": "Trump claims he will give $5,000 to every American if Republicans win the midterms as he defends Iran war and tariffs– as it happened",
+     "titelDe": "Trump kündigt an, er würde jedem Amerikaner 5.000 $ geben, wenn die Republikaner die Zwischenwahlen gewinnen, während er die Iran‑Kriegspolitik und Zölle verteidigt – so geschah es",
+     "quelle": "Guardian",
+     "url": "https://www.theguardian.com/us-news/live/2026/sep/09/donald-trump-rnc-republican-national-convention-jd-vance-midterms-latest-news-updates",
+     "zeit": "2026-09-10T04:04:11.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 74
+    },
+    {
      "id": "TASS:Over 50 shelling attacks by Ukrainian troops reported in DPR in past day, two killed",
      "titel": "Over 50 shelling attacks by Ukrainian troops reported in DPR in past day, two killed",
      "titelDe": "Mehr als 50 Beschussangriffe ukrainischer Truppen im DPR in den vergangenen 24 Stunden gemeldet, zwei getötet",
@@ -1054,21 +1069,6 @@
       "usd": 0.351
      },
      "priority": 54
-    },
-    {
-     "id": "The Block:Trezor says third-party security breach led to phishing emails from legitimate domain",
-     "titel": "Trezor says third-party security breach led to phishing emails from legitimate domain",
-     "titelDe": "Trezor sagt, dass die Sicherheitsverletzung von Drittanbietern zu Phishing-E-Mails von legitimen Domains geführt hat",
-     "quelle": "The Block",
-     "url": "https://www.theblock.co/news/defi/2026-09-09-trezor-phishing-emails-414086",
-     "zeit": "2026-09-10T02:26:58.000Z",
-     "scores": {
-      "crypto": -0.7,
-      "stocks": 0,
-      "gold": 0,
-      "usd": 0
-     },
-     "priority": 42
     }
    ]
   }
