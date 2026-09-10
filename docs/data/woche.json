@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T01:57:02.240Z",
+ "updated": "2026-09-10T02:07:41.351Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T01:57:02.333Z",
+   "stand": "2026-09-10T02:07:41.443Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T01:57:02.315Z",
+   "stand": "2026-09-10T02:07:41.425Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,32 +921,32 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T01:57:02.296Z",
-   "anzahl": 82,
+   "stand": "2026-09-10T02:07:41.405Z",
+   "anzahl": 84,
    "klassen": {
     "crypto": {
-     "score": -0.0967,
+     "score": -0.0875,
      "bull": 1,
-     "bear": 11,
-     "neut": 70
+     "bear": 10,
+     "neut": 73
     },
     "stocks": {
-     "score": -0.0963,
+     "score": -0.087,
      "bull": 1,
-     "bear": 11,
-     "neut": 70
+     "bear": 10,
+     "neut": 73
     },
     "gold": {
-     "score": 0.0447,
-     "bull": 9,
+     "score": 0.0401,
+     "bull": 8,
      "bear": 1,
-     "neut": 72
+     "neut": 75
     },
     "usd": {
-     "score": 0.0341,
+     "score": 0.031,
      "bull": 4,
      "bear": 0,
-     "neut": 78
+     "neut": 80
     }
    },
    "top": [
@@ -978,7 +978,7 @@
       "gold": 0.405,
       "usd": 0.27
      },
-     "priority": 75
+     "priority": 74
     },
     {
      "id": "TASS:Over 50 shelling attacks by Ukrainian troops reported in DPR in past day, two killed",
@@ -993,7 +993,7 @@
       "gold": 0.248,
       "usd": 0.165
      },
-     "priority": 91
+     "priority": 90
     },
     {
      "id": "Reuters:US strikes vessel in Caribbean, killing three",
@@ -1023,7 +1023,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 36
+     "priority": 35
     },
     {
      "id": "MarketWatch:Diesel prices hit another record high. If you’re shocked, wait until you see your grocery bill.",
