@@ -41,10 +41,46 @@ const SCHWELLE = 0.6;
 const MIN_GEMEINSAM = 4;
 const MIN_WOERTER = 4;
 
-/** Bedeutungstragende Wörter einer Überschrift, ab vier Zeichen. */
+/*
+ * Viele gemeinsame Woerter wiegen schwerer als ein guter Anteil.
+ *
+ * Die Quote schuetzt kurze Ueberschriften: Bei fuenf Woertern sind drei
+ * gemeinsame noch keine Dublette. Bei langen dreht sie sich gegen die Sache -
+ * die beiden Anleihe-Schlagzeilen oben teilen sechs Woerter und kommen wegen
+ * ihrer Laenge trotzdem nur auf 0,55. Sechs uebereinstimmende Begriffe sind
+ * fuer sich genommen schon ein Beweis.
+ */
+const STARK_GEMEINSAM = 6;
+
+/*
+ * Wortstamm statt Wortform.
+ *
+ * Verglichen wurden bisher die Woerter, wie sie dastehen. "yield" und
+ * "yields" galten damit als verschiedene Woerter, "high" und "highest"
+ * ebenso - und zwei Fassungen derselben Nachricht standen doppelt in der
+ * Liste:
+ *
+ *   10-year Treasury yield tops 4.9%, highest since 2023, as oil surge ...
+ *   Treasury yields rise to multi-year highs as surging oil outweighs ...
+ *
+ * Zwei gemeinsame Woerter waren es vorher, sechs sind es mit den Staemmen.
+ *
+ * Die Regeln sind bewusst grob: Ein Stammformer, der zu viel weiss, verbindet
+ * am Ende Woerter, die nichts miteinander zu tun haben. Diese hier schneiden
+ * nur die haeufigsten Endungen ab, und beide Seiten des Vergleichs werden
+ * gleich behandelt - was hier zusammenfaellt, faellt ueberall zusammen.
+ */
+const stamm = (w) => w
+  .replace(/ies$/, 'y')
+  .replace(/(sses|shes|ches|xes)$/, (m) => m.slice(0, -2))
+  .replace(/([^s])s$/, '$1')
+  .replace(/(est|ing|ed)$/, '')
+  .replace(/e$/, '');
+
+/** Bedeutungstragende Wortstämme einer Überschrift, ab vier Zeichen. */
 export function woerter(title) {
   const roh = String(title || '').toLowerCase().match(/[a-zäöüß0-9]{4,}/g) || [];
-  return new Set(roh.filter((w) => !STOP.has(w)));
+  return new Set(roh.filter((w) => !STOP.has(w)).map(stamm));
 }
 
 /** Schlüssel aus denselben Wörtern — für Aufrufer, die einen Text erwarten. */
@@ -59,6 +95,36 @@ export function signature(title) {
  * "Dovish hold may follow" und "September hike path" etwa. Sie zu einem
  * Eintrag zu verschmelzen hieße, eine der beiden Aussagen zu unterschlagen.
  */
+/*
+ * Woerter, die einander ausschliessen.
+ *
+ * Zwei Schlagzeilen koennen bis auf ein Wort gleich lauten und das Gegenteil
+ * sagen: "record inflows" gegen "record outflows", "Fed cuts rates" gegen
+ * "Fed hikes rates". Ueber die Wortueberlappung sind sie fast identisch, und
+ * seit Staemme verglichen werden und viele gemeinsame Woerter fuer sich
+ * zaehlen, reichte das zum Verschmelzen.
+ *
+ * gegensatz() faengt das nur ab, wenn die Bewertung bereits verschiedene
+ * Vorzeichen traegt. Genau daran fehlt es hier: Bei einer Meldung ohne
+ * Wertung steht auf beiden Seiten null.
+ *
+ * Die Paare stehen als Wortstamm da, so wie sie verglichen werden.
+ */
+const GEGENWORT = [
+  ['inflow', 'outflow'], ['cut', 'hik'], ['ris', 'fall'], ['gain', 'loss'],
+  ['surg', 'plung'], ['rally', 'crash'], ['approv', 'reject'], ['win', 'los'],
+  ['open', 'clos'], ['rais', 'lower'], ['grow', 'shrink'], ['buy', 'sell'],
+  ['bullish', 'bearish'], ['ceasefir', 'offensiv'],
+];
+
+/** Sagen die beiden Überschriften einander widersprechende Dinge? */
+function gegenwoerter(a, b) {
+  for (const [x, y] of GEGENWORT) {
+    if ((a.has(x) && b.has(y)) || (a.has(y) && b.has(x))) return true;
+  }
+  return false;
+}
+
 function gegensatz(a, b) {
   const x = a.scores?.crypto ?? 0;
   const y = b.scores?.crypto ?? 0;
@@ -99,8 +165,10 @@ export function dedupe(items) {
         if (gemeinsam < MIN_GEMEINSAM) continue;
         const g = gruppen[i];
         if (g.woerter.size < MIN_WOERTER) continue;
-        if (gemeinsam / Math.min(eigene.size, g.woerter.size) < SCHWELLE) continue;
+        if (gemeinsam < STARK_GEMEINSAM
+            && gemeinsam / Math.min(eigene.size, g.woerter.size) < SCHWELLE) continue;
         if (gegensatz(n, g.eintrag)) continue;
+        if (gegenwoerter(eigene, g.woerter)) continue;
 
         treffer = g;
         break;

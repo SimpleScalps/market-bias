@@ -1,5 +1,6 @@
 import { collectNews, loadCalendar, enrich, imFenster, nachbewerten, bestaetigung } from '../docs/engine/feeds.mjs';
 import { dedupe } from '../docs/engine/dedupe.mjs';
+import { IMPACT_STUFEN } from '../docs/engine/tradeimpact.mjs';
 import { kerzenHolen, bewegung, bilanzAddieren } from './kurs.mjs';
 import { REGEL_STAND } from '../docs/engine/keywords.mjs';
 import { label, LABEL_TEXT } from '../docs/engine/sentiment.mjs';
@@ -551,7 +552,37 @@ function ohneAlteSaetze(stand) {
  * dann fuer immer als offen und wurde endlos erneut geprueft. Die Richtung
  * dagegen liegt bei jedem gelungenen Urteil vor.
  */
-const brauchtPruefung = (n) => n.impactLevel !== 'ignore'
+/*
+ * Was von selbst geprueft wird - und was auf den Knopf wartet.
+ *
+ * Bisher lief die Pruefung ueber alles, was nicht als Rauschen eingestuft war:
+ * an einem gewoehnlichen Tag siebzig Meldungen, von denen siebzehn ueberhaupt
+ * eine Richtung tragen und zwei eine hohe Handelswirkung. Das kostete jeden
+ * Topf bei Groq bis zur Neige - und damit ausgerechnet die Fragen, die der
+ * Nutzer selbst stellt. Wer eine Analyse braucht, bekam "Kontingent
+ * erschoepft".
+ *
+ * Gemessen lohnt die Automatik dort, wo etwas auf dem Spiel steht:
+ * Handelswirkung ab MITTEL, oder ein Regelsignal ab 0,3. Das sind dreissig
+ * der siebzig - die Zinsentscheidung der EZB, Oel bei 105 Dollar, die
+ * Rendite zehnjaehriger Anleihen. Draussen bleiben Meldungen wie "Russland
+ * schickt die Gebeine eines Fuersten" oder "Huawei zeigt schnelle Optik": Bei
+ * ihnen sagte die KI ohnehin fast immer neutral.
+ *
+ * Fuer alle uebrigen steht der Knopf in der App bereit. Er war immer da, er
+ * war nur nie noetig - und genau das war das Problem.
+ */
+const AUTOMATIK_STUFE = 'medium';
+const AUTOMATIK_SIGNAL = 0.3;
+
+const lohntAutomatik = (n) => {
+  if (n.impactLevel === 'ignore') return false;
+  const stufe = IMPACT_STUFEN.indexOf(n.impactLevel);
+  if (stufe >= 0 && stufe >= IMPACT_STUFEN.indexOf(AUTOMATIK_STUFE)) return true;
+  return Math.abs(n.regelScores?.crypto ?? n.scores?.crypto ?? 0) >= AUTOMATIK_SIGNAL;
+};
+
+const brauchtPruefung = (n) => lohntAutomatik(n)
   && (!n.ki?.richtung || (n.ki.stand || 1) < ANWEISUNG_STAND);
 
 /*
@@ -1364,10 +1395,12 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
   const buchGilt = String(z.pruefFehlerStand ?? 0) === String(ANWEISUNG_STAND);
   const pruefBuch = buchGilt ? { ...(z.pruefFehler || {}) } : {};
   const gescheitert = [];
+  const versuche = [];
 
   if (restFuer('pruefung') > 0) {
     const r = await gegenlesen(kandidaten, env, GEGENPROBE_MAX, pruefBuch);
     gescheitert.push(...(r?.gescheitert || []));
+    versuche.push(...(r?.versucht || []));
   }
 
   /*
@@ -1394,6 +1427,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
       // Auf dem grossen Modell: eigenes Kontingent, besseres Urteil.
       const r = await gegenlesen(nachzuholen, env, NACHZIEHEN_MAX, pruefBuch, 'nachlauf');
       gescheitert.push(...(r?.gescheitert || []));
+      versuche.push(...(r?.versucht || []));
       speicher.letzterNachlauf = new Date().toISOString();
 
       /*
@@ -1684,8 +1718,8 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ticks: taktgeberPflegen({ ...(z.ticks || {}), ...data.ticks }),
     verzug: { ...(z.verzug || {}), ...data.verzug },
     // Wird als Ganzes ersetzt - deshalb hier vollstaendig neu gebildet.
-    ...(gescheitert.length || Object.keys(pruefBuch).length
-      ? { pruefFehler: fehlerbuchFortschreiben(pruefBuch, gescheitert, items),
+    ...(versuche.length || Object.keys(pruefBuch).length
+      ? { pruefFehler: fehlerbuchFortschreiben(pruefBuch, versuche, items),
           pruefFehlerStand: String(ANWEISUNG_STAND) }
       : { pruefFehlerStand: String(ANWEISUNG_STAND) }),
   };
@@ -2224,13 +2258,36 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX, buch = {}, zw
    * auf, die er gerade nachziehen will - nach drei Absagen waeren sie
    * dauerhaft aussortiert.
    */
+  const kontingentAbsage = (d) => d?.fehler && /Kontingent|429|rate limit|zu viele/i.test(d.fehler);
   const gescheitert = kandidaten
     .filter((n, i) => {
       const d = deutungen[i];
       if (!d) return true;
       if (!d.fehler) return false;
-      return !/Kontingent|429|rate limit|zu viele/i.test(d.fehler);
+      return !kontingentAbsage(d);
     })
+    .map((n) => n.id);
+
+  /*
+   * Jeder Versuch zaehlt, nicht nur der gescheiterte.
+   *
+   * Bisher wurde nur gebucht, was fehlschlug. Ein gelungenes Urteil brauchte
+   * keinen Vermerk - es stand ja an der Meldung. Es steht dort aber nur, wenn
+   * das Ablegen gelingt, und das Tageskontingent von KV war seit dem 7.
+   * September jeden Tag erschoepft: 425 abgewiesene Schreibvorgaenge allein
+   * gestern. Was nicht abgelegt wird, gilt beim naechsten Durchgang wieder als
+   * ungeprueft - und wird erneut angefragt. Endlos.
+   *
+   * Das ist die Erklaerung fuer 533.000 Token am Tag bei siebzig Meldungen:
+   * nicht die Menge, sondern die Wiederholung. Mit diesem Vermerk ist nach
+   * drei Anlaeufen Schluss, gleich ob das Urteil ankam oder nicht. Er liegt im
+   * Durable Object, das immer schreibt - im Gegensatz zu KV.
+   *
+   * Kontingentabsagen bleiben aussen vor: Sie sagen nichts ueber die Meldung,
+   * nur ueber den Zeitpunkt.
+   */
+  const versucht = kandidaten
+    .filter((n, i) => !kontingentAbsage(deutungen[i]))
     .map((n) => n.id);
 
   kandidaten.forEach((n, i) => {
@@ -2244,6 +2301,7 @@ async function gegenlesen(items, env, hoechstens = GEGENPROBE_MAX, buch = {}, zw
   return {
     anzahl: kandidaten.length,
     gescheitert,
+    versucht,
     // Der erste Grund, warum etwas nicht durchging - fuer die Ablage unten.
     fehler: (deutungen.find((d) => d?.fehler) || {}).fehler || null,
     genommen: kandidaten.filter((n) => n.ki?.inhalt !== undefined && !deutungen[kandidaten.indexOf(n)]?.fehler).length,
@@ -2695,7 +2753,10 @@ export default {
            * meldete 68 von 82 fertig, obwohl 82 offen waren.
            */
           const handelbar = alle.filter((n) => n.impactLevel !== 'ignore');
-          const fertig = handelbar.length - handelbar.filter(brauchtPruefung).length;
+          // Automatisch geprueft wird nur, was ins Gewicht faellt - der Rest
+          // wartet auf den Knopf in der App. Siehe lohntAutomatik().
+          const automatisch = alle.filter(lohntAutomatik);
+          const fertig = automatisch.length - automatisch.filter(brauchtPruefung).length;
           if (!handelbar.length) return 'nichts Handelbares im Bestand';
           /*
            * Aufgegebene getrennt ausweisen.
@@ -2705,13 +2766,14 @@ export default {
            * nie bewegt und nichts mehr bedeutet.
            */
           const buch = zNow.pruefFehler || {};
-          const offen = handelbar.filter(brauchtPruefung);
+          const offen = automatisch.filter(brauchtPruefung);
           const aufgegeben = offen.filter((n) => (buch[n.id] || 0) >= PRUEF_VERSUCHE_MAX).length;
 
-          return `${fertig} von ${handelbar.length} handelbaren`
+          return `${fertig} von ${automatisch.length} automatisch`
             + (offen.length - aufgegeben > 0 ? ` · ${offen.length - aufgegeben} offen` : '')
-            + (aufgegeben ? ` · ${aufgegeben} aufgegeben (${PRUEF_VERSUCHE_MAX}x vergeblich)` : '')
-            + ` (${alle.length - handelbar.length} ohne Handelsbezug)`;
+            + (aufgegeben ? ` · ${aufgegeben} aufgegeben (${PRUEF_VERSUCHE_MAX} Anlaeufe)` : '')
+            + ` · ${handelbar.length - automatisch.length} auf Knopfdruck`
+            + ` · ${alle.length - handelbar.length} ohne Handelsbezug`;
         })(),
         berichtigt: bestand?.items?.filter((n) => n.kiKorrigiert).length ?? 0,
         /*
