@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T02:07:41.351Z",
+ "updated": "2026-09-10T02:22:31.444Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T02:07:41.443Z",
+   "stand": "2026-09-10T02:22:31.543Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T02:07:41.425Z",
+   "stand": "2026-09-10T02:22:31.523Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,32 +921,32 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T02:07:41.405Z",
-   "anzahl": 84,
+   "stand": "2026-09-10T02:22:31.503Z",
+   "anzahl": 87,
    "klassen": {
     "crypto": {
-     "score": -0.0875,
+     "score": -0.0781,
      "bull": 1,
      "bear": 10,
-     "neut": 73
+     "neut": 76
     },
     "stocks": {
-     "score": -0.087,
+     "score": -0.0772,
      "bull": 1,
      "bear": 10,
-     "neut": 73
+     "neut": 76
     },
     "gold": {
-     "score": 0.0401,
-     "bull": 8,
+     "score": 0.0308,
+     "bull": 7,
      "bear": 1,
-     "neut": 75
+     "neut": 79
     },
     "usd": {
-     "score": 0.031,
+     "score": 0.0303,
      "bull": 4,
      "bear": 0,
-     "neut": 80
+     "neut": 83
     }
    },
    "top": [
@@ -994,6 +994,21 @@
       "usd": 0.165
      },
      "priority": 90
+    },
+    {
+     "id": "Reuters:Currency markets subdued as oil shock lifts global yields; ECB, U.S. inflation eyed",
+     "titel": "Currency markets subdued as oil shock lifts global yields; ECB, U.S. inflation eyed",
+     "titelDe": "Währungsmärkte gedämpft, da Ölschock die globalen Renditen anhebt; EZB, US-Inflation im Auge",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYU50UmRVNmIyeFBOSmd6azlDeDMxNlh1S0cycHpnYjU4NERYWjhoN2diSmthTngzdWZScmFTdldrTGtUcTh3SDFKbVIySmU2TUx3cnMtOEdKMnFkV3J1d3pYRmdvZDVWb2VPSXNjcG52cEVPTGtLNF9UT1BFSnJ3WlUzOXNuU1FwZmNSdGVTdV9Na1h6M3dPVGVtU0ttYlBlRWc0S1Q0Rl9HSmVCNlZaZXhjMVc0OUduMk1mOGRqVkxjY0d2SGhRbWJsUQ?oc=5",
+     "zeit": "2026-09-10T02:07:00.000Z",
+     "scores": {
+      "crypto": -0.603,
+      "stocks": -0.569,
+      "gold": 0.009,
+      "usd": 0.351
+     },
+     "priority": 54
     },
     {
      "id": "Reuters:US strikes vessel in Caribbean, killing three",
