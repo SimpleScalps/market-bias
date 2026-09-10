@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T13:09:49.504Z",
+ "updated": "2026-09-10T13:22:50.434Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T13:09:49.587Z",
+   "stand": "2026-09-10T13:22:50.537Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T13:09:49.571Z",
+   "stand": "2026-09-10T13:22:50.517Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,29 +921,29 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T13:09:49.555Z",
+   "stand": "2026-09-10T13:22:50.494Z",
    "anzahl": 217,
    "klassen": {
     "crypto": {
-     "score": -0.0993,
+     "score": -0.1058,
      "bull": 0,
      "bear": 23,
      "neut": 194
     },
     "stocks": {
-     "score": -0.0876,
+     "score": -0.0943,
      "bull": 0,
      "bear": 20,
      "neut": 197
     },
     "gold": {
-     "score": 0.0058,
+     "score": 0.0063,
      "bull": 13,
      "bear": 5,
      "neut": 199
     },
     "usd": {
-     "score": 0.0532,
+     "score": 0.0584,
      "bull": 8,
      "bear": 0,
      "neut": 209
@@ -981,6 +981,21 @@
      "priority": 100
     },
     {
+     "id": "Reuters:Oil jumps to $105 a barrel after Middle East tanker attacks escalate",
+     "titel": "Oil jumps to $105 a barrel after Middle East tanker attacks escalate",
+     "titelDe": "Öl steigt auf 105 $ pro Barrel, nachdem die Tankerangriffe im Nahen Osten eskaliert sind",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVTlKVk5vOWlpYndFb2Flck9IczhtU2k5X1I3a0tlMjA2dkRmMEJncVFZdWctZW9wX05NaU9vUzNwMU5ld3UycklJMjhHaHB3WDdZVF81Z0t1WWNZak8tTFFwdDZtTHZvUnozMnVpUmtEanVsN2ZxM1A2QkxZS3IydDByTlQtd3RFYThzVnlwVmR0eGMyT1RQQldPZVp4VE1oSm5TcHBXVTd1dXM?oc=5",
+     "zeit": "2026-09-10T13:05:50.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.031,
+      "usd": 0.746
+     },
+     "priority": 78
+    },
+    {
      "id": "CNBC:10-year Treasury yield tops 4.9%, highest since 2023, as oil surge raises inflation fears",
      "titel": "10-year Treasury yield tops 4.9%, highest since 2023, as oil surge raises inflation fears",
      "titelDe": "Die Rendite zehnjähriger Staatsanleihen liegt bei über 4,9 %, dem höchsten Wert seit 2023, da der Ölanstieg Inflationsängste aufkommen lässt",
@@ -993,7 +1008,7 @@
       "gold": -0.211,
       "usd": 0.626
      },
-     "priority": 86
+     "priority": 85
     },
     {
      "id": "CNBC World:'Saved the day': How China helped keep the lid on oil price surge as Iran war disrupted supplies",
@@ -1052,21 +1067,6 @@
       "stocks": -0.765,
       "gold": 0.383,
       "usd": 0.255
-     },
-     "priority": 72
-    },
-    {
-     "id": "Reuters:VIEW ECB hikes rates as Iran war adds to inflation angst",
-     "titel": "VIEW ECB hikes rates as Iran war adds to inflation angst",
-     "titelDe": "SEHEN SIE sich die Zinserhöhungen der EZB an, da der Iran-Krieg die Inflationsangst verstärkt",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOY0VWcFhfaVg1bHdEUzlqVTlvNlREOFdweDVteVNCVWFCY29MVFJMRVdWeEJuSDAxWlY3cjU4ZGlxdkNremFBTThYSVQ5cFNBaTliSGMwbmJRR0NkNkwtUUhORFFwZ3gwLXJSZnNOR1ZfVDlEanZ5TzFNZ3FsX1hobnkyODI3cE96RkI2S3htVk5LRWNWbmF1c1FvNA?oc=5",
-     "zeit": "2026-09-10T12:38:59.000Z",
-     "scores": {
-      "crypto": -0.698,
-      "stocks": -0.647,
-      "gold": -0.09,
-      "usd": 0.458
      },
      "priority": 72
     }
