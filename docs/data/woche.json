@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T23:27:06.074Z",
+ "updated": "2026-09-10T23:35:22.075Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T23:27:06.174Z",
+   "stand": "2026-09-10T23:35:22.136Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T23:27:06.157Z",
+   "stand": "2026-09-10T23:35:22.126Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T23:27:06.139Z",
+   "stand": "2026-09-10T23:35:22.116Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,29 +1074,29 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-10T23:27:06.120Z",
+   "stand": "2026-09-10T23:35:22.105Z",
    "anzahl": 33,
    "klassen": {
     "crypto": {
-     "score": -0.0702,
+     "score": -0.043,
      "bull": 0,
-     "bear": 3,
-     "neut": 30
+     "bear": 1,
+     "neut": 32
     },
     "stocks": {
-     "score": -0.068,
+     "score": -0.0366,
      "bull": 0,
-     "bear": 3,
-     "neut": 30
+     "bear": 1,
+     "neut": 32
     },
     "gold": {
-     "score": 0.0162,
-     "bull": 2,
+     "score": -0.0344,
+     "bull": 0,
      "bear": 1,
-     "neut": 30
+     "neut": 32
     },
     "usd": {
-     "score": 0.0331,
+     "score": 0.043,
      "bull": 1,
      "bear": 0,
      "neut": 32
@@ -1132,6 +1132,21 @@
       "usd": 0.285
      },
      "priority": 74
+    },
+    {
+     "id": "Reuters:S&P 500 ends down as Treasury yields rise and traders fret about inflation - reuters.com",
+     "titel": "S&P 500 ends down as Treasury yields rise and traders fret about inflation - reuters.com",
+     "titelDe": "S&P 500 schließt im Minus, während die US-Staatsanleihenrenditen steigen und Händler sich über die Inflation sorgen",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVUNZS2ZwczJmM0x1aEM5ZFJMbUhWckRSOE54a1NyTFZjb1NaNFNCZDFwOFJiMk40b1RJelZsVnhKOVNObGNGenNkZzVhUWtZRlktVzhTWk9Qc1EybkRweDk4RFRRUjh2bk1TU0lJazBncUFnUlcwcTlPVWY3NjBzdWVUd3JGTDlLeF9EMU1aTnEzSDctTVcxZVdzT1RZclZjanRhbkl3?oc=5",
+     "zeit": "2026-09-10T22:55:15.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.383,
+      "gold": -0.36,
+      "usd": 0.45
+     },
+     "priority": 78
     },
     {
      "id": "Reuters:Trump administration to sanction unnamed 'large' bank on Monday, Bessent says",
