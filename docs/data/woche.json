@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T07:42:49.341Z",
+ "updated": "2026-09-10T07:55:16.142Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T07:42:49.431Z",
+   "stand": "2026-09-10T07:55:16.237Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T07:42:49.413Z",
+   "stand": "2026-09-10T07:55:16.218Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,32 +921,32 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T07:42:49.394Z",
-   "anzahl": 127,
+   "stand": "2026-09-10T07:55:16.199Z",
+   "anzahl": 131,
    "klassen": {
     "crypto": {
-     "score": -0.1238,
-     "bull": 0,
-     "bear": 20,
-     "neut": 107
+     "score": -0.1033,
+     "bull": 1,
+     "bear": 18,
+     "neut": 112
     },
     "stocks": {
-     "score": -0.1119,
-     "bull": 0,
-     "bear": 18,
-     "neut": 109
+     "score": -0.0918,
+     "bull": 1,
+     "bear": 16,
+     "neut": 114
     },
     "gold": {
-     "score": 0.0306,
-     "bull": 15,
-     "bear": 2,
-     "neut": 110
+     "score": 0.0145,
+     "bull": 12,
+     "bear": 4,
+     "neut": 115
     },
     "usd": {
-     "score": 0.0554,
-     "bull": 4,
+     "score": 0.0519,
+     "bull": 5,
      "bear": 0,
-     "neut": 123
+     "neut": 126
     }
    },
    "top": [
@@ -993,7 +993,7 @@
       "gold": -0.367,
       "usd": 1
      },
-     "priority": 78
+     "priority": 76
     },
     {
      "id": "Reuters:Multiple US military aircraft suffered damage in overnight strikes on Jordan air base, CBS says",
@@ -1056,19 +1056,19 @@
      "priority": 90
     },
     {
-     "id": "Guardian:North Korea has built new uranium facility to expand nuclear arsenal, UN agency says",
-     "titel": "North Korea has built new uranium facility to expand nuclear arsenal, UN agency says",
-     "titelDe": "Nordkorea hat eine neue Urananlage gebaut, um das Atomarsenal zu erweitern, sagt die UN-Agentur",
-     "quelle": "Guardian",
-     "url": "https://www.theguardian.com/world/2026/sep/10/north-korea-has-built-new-uranium-facility-to-expand-nuclear-arsenal-un-agency-says",
-     "zeit": "2026-09-10T05:08:46.000Z",
+     "id": "Reuters:Israeli strike kills parents and two children in Gaza, medics say",
+     "titel": "Israeli strike kills parents and two children in Gaza, medics say",
+     "titelDe": "Israelischer Angriff tötet Eltern und zwei Kinder in Gaza, sagen Mediziner",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQS1BVbUJWZ3BnTEl4XzBYMjByVm0zb3dncFFidmQ4TWlrRVVOTkZYUGpzQllwVzQyUWZKUjBjQk12ZUxTM2FJTFRlb292d1JRZHZXMWREZ2Y4bVdMUGVXczRJa0NuYjZXQXd3dDJrajZFazAtcXNlQld6c0RjekV0N09RSU51Z3Fld1EwdFI5dm5tLU5aMERvTEVtcWlsOE5pS3BGQnRrZUt1U1FVSUZ1Xw?oc=5",
+     "zeit": "2026-09-10T07:34:02.000Z",
      "scores": {
       "crypto": -0.45,
       "stocks": -0.45,
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 93
+     "priority": 95
     }
    ]
   }
