@@ -100,13 +100,6 @@ const GEGENPROBE_MAX = 3;
  */
 const NACHBEWERTEN_MAX = 20;
 
-/*
- * Wie oft der ganze Bestand auf Dubletten durchgesehen wird.
- *
- * Siehe die Begruendung an der Aufrufstelle: 1,6 ms je Lauf, zu viel fuer
- * jede Minute, unerheblich alle fuenf.
- */
-const DUBLETTEN_TAKT_MS = 5 * 60_000;
 
 /*
  * Der Rueckkanal vom Markt - siehe kurs.mjs.
@@ -1229,22 +1222,20 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
    * genau einmal statt und danach 79 Minuten lang nicht mehr.
    */
   /*
-   * Ein Zeitpunkt aus der Zukunft ist immer falsch.
+   * Bei jedem Durchgang, nicht alle fuenf Minuten.
    *
-   * Der alte Zahlenwert lag nach dem Aufaddieren im Jahr 2077; die Bedingung
-   * "laenger als fuenf Minuten her" konnte damit nie wieder wahr werden, auch
-   * nicht nach der Berichtigung. Wer einen unmoeglichen Stand als "unbekannt"
-   * behandelt, kommt ohne Eingriff von aussen wieder in die Spur.
+   * Der Abstand sollte Rechenzeit sparen - 1,6 ms je Lauf schienen zu viel
+   * fuer jede Minute. Er kostete stattdessen die Richtigkeit der Anzeige: In
+   * der Zwischenzeit liefern beide Feeds ihre Fassung erneut, beide Kennungen
+   * stehen wieder im Bestand, und dieselbe Meldung steht doppelt in der Liste.
+   * Gemessen waren es elf Paare gleichzeitig - genau die, ueber die sich
+   * niemand wundern soll.
+   *
+   * 1,6 ms neben vierzig, die ein Durchgang ohnehin braucht, sind es wert.
    */
-  const letzteD = new Date(z.letzteDubletten || 0).getTime();
-  const standGilt = letzteD > 0 && letzteD <= Date.now();
-
-  let dublettenLauf = null;
-  if (!standGilt || Date.now() - letzteD > DUBLETTEN_TAKT_MS) {
-    const vorher = items.length;
-    items = bestaetigung(dedupe(items));
-    dublettenLauf = { zeit: new Date().toISOString(), zusammengefasst: vorher - items.length };
-  }
+  const vorDubletten = items.length;
+  items = bestaetigung(dedupe(items));
+  const dublettenLauf = { zeit: new Date().toISOString(), zusammengefasst: vorDubletten - items.length };
 
   /*
    * Was der Dublettenlauf zusammengefasst hat, wird nicht mehr gemeldet.
@@ -1665,7 +1656,7 @@ async function teilAbgleich(env, ctx, regime, bestand, gruppe, quelle = 'unbekan
     ...(letzterVersandbuchFehler ? { letzteVersandStoerung: letzterVersandbuchFehler } : {}),
     ...(nachlaufErgebnis ? { nachlaufErgebnis } : {}),
     ...(artikelErgebnis ? { artikelErgebnis } : {}),
-    ...(dublettenLauf ? { letzteDubletten: dublettenLauf.zeit, dubletten: dublettenLauf } : {}),
+    ...(dublettenLauf ? { dubletten: dublettenLauf } : {}),
     ...(Object.keys(quellenSeit).length ? { quellenSeit } : {}),
     ...(wirkung?.zuwachs ? { bilanzZuwachs: wirkung.zuwachs, bilanzStand: BILANZ_STAND } : {}),
     ...(wirkung?.gemessen ? { wirkungBuch: fehlerbuchFortschreiben(wirkungBuch, [], items) } : {}),

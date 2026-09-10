@@ -77,3 +77,19 @@ test('Der früheste Zeitpunkt und die weiteren Quellen bleiben erhalten', () => 
   assert.equal(n.date, frueh, 'der frueheste Zeitpunkt zaehlt');
   assert.deepEqual(n.alsoIn, ['CNBC']);
 });
+
+test('Bei gleicher Relevanz gewinnt immer dieselbe Fassung', () => {
+  /*
+   * Sonst gewinnt mal die eine, mal die andere - je nach Reihenfolge im
+   * Durchgang. Beide Kennungen bleiben dann im Bestand, jede mit der anderen
+   * als Zweitquelle, und dieselbe Meldung steht zweimal in der Liste.
+   */
+  const a = { ...meldung('Al Jazeera:Houthis advance along Yemen coast', 'Houthis advance along Yemen southern Red Sea coast'), source: 'Al Jazeera' };
+  const b = { ...meldung('Al Jazeera (GN):Houthis advance along Yemen coast', 'Houthis advance along Yemen southern Red Sea coast'), source: 'Al Jazeera (GN)' };
+
+  const hin = dedupe([a, b]);
+  const zurueck = dedupe([b, a]);
+  assert.equal(hin.length, 1);
+  assert.equal(zurueck.length, 1);
+  assert.equal(hin[0].id, zurueck[0].id, 'die Reihenfolge darf den Sieger nicht bestimmen');
+});

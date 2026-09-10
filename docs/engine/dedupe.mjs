@@ -186,7 +186,18 @@ export function dedupe(items) {
     }
 
     const bisher = treffer.eintrag;
-    const sieger = (n.priority ?? 0) > (bisher.priority ?? 0) ? n : bisher;
+    /*
+     * Bei gleicher Relevanz entscheidet die Kennung, nicht die Reihenfolge.
+     *
+     * Sonst gewinnt mal die eine, mal die andere Fassung - je nachdem, welche
+     * in diesem Durchgang zuerst kam. Beide Kennungen bleiben dann im Bestand,
+     * jede mit der anderen als Zweitquelle, und in der Liste steht dieselbe
+     * Meldung zweimal. Gemessen: elf solcher Paare gleichzeitig, darunter
+     * dreimal dieselbe Al-Jazeera-Meldung ueber zwei Feeds.
+     */
+    const besser = (n.priority ?? 0) - (bisher.priority ?? 0)
+      || String(bisher.id ?? '').localeCompare(String(n.id ?? ''));
+    const sieger = besser > 0 ? n : bisher;
     const verlierer = sieger === n ? bisher : n;
 
     const quellen = [...new Set([...(bisher.alsoIn || []), ...(n.alsoIn || []), verlierer.source])]
