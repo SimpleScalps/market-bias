@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T18:05:02.565Z",
+ "updated": "2026-09-10T18:22:27.439Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T18:05:02.647Z",
+   "stand": "2026-09-10T18:22:27.508Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T18:05:02.629Z",
+   "stand": "2026-09-10T18:22:27.493Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T18:05:02.611Z",
+   "stand": "2026-09-10T18:22:27.479Z",
    "anzahl": 220,
    "klassen": {
     "crypto": {
@@ -950,6 +950,21 @@
     }
    },
    "top": [
+    {
+     "id": "TASS:Dubai airports came under 17 missile strikes during US-Iran conflict",
+     "titel": "Dubai airports came under 17 missile strikes during US-Iran conflict",
+     "titelDe": "Die Flughäfen von Dubai wurden während des US-Iran-Konflikts von 17 Raketen getroffen",
+     "quelle": "TASS",
+     "url": "https://tass.com/world/2185743",
+     "zeit": "2026-09-10T18:12:41.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
     {
      "id": "Reuters:Woman killed in drone attack on Russia's Voronezh region, governor says",
      "titel": "Woman killed in drone attack on Russia's Voronezh region, governor says",
@@ -1054,21 +1069,6 @@
       "usd": 0.626
      },
      "priority": 85
-    },
-    {
-     "id": "CNBC World:'Saved the day': How China helped keep the lid on oil price surge as Iran war disrupted supplies",
-     "titel": "'Saved the day': How China helped keep the lid on oil price surge as Iran war disrupted supplies",
-     "titelDe": "'Rettet den Tag': Wie China dazu beitrug, den Ölpreisanstieg unter Kontrolle zu halten, während der Iran-Krieg die Versorgung unterbrach",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/10/china-crude-oil-iran-hormuz-war-trump-brent-prices-.html",
-     "zeit": "2026-09-10T06:23:14.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": -0.367,
-      "usd": 1
-     },
-     "priority": 66
     }
    ]
   }
