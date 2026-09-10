@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T06:05:40.217Z",
+ "updated": "2026-09-10T06:26:58.131Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T06:05:40.278Z",
+   "stand": "2026-09-10T06:26:58.224Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T06:05:40.266Z",
+   "stand": "2026-09-10T06:26:58.205Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,32 +921,32 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T06:05:40.254Z",
-   "anzahl": 116,
+   "stand": "2026-09-10T06:26:58.186Z",
+   "anzahl": 127,
    "klassen": {
     "crypto": {
-     "score": -0.1185,
+     "score": -0.1238,
      "bull": 0,
-     "bear": 17,
-     "neut": 99
+     "bear": 20,
+     "neut": 107
     },
     "stocks": {
-     "score": -0.1055,
+     "score": -0.1119,
      "bull": 0,
-     "bear": 15,
-     "neut": 101
+     "bear": 18,
+     "neut": 109
     },
     "gold": {
-     "score": 0.0438,
-     "bull": 13,
-     "bear": 1,
-     "neut": 102
+     "score": 0.0306,
+     "bull": 15,
+     "bear": 2,
+     "neut": 110
     },
     "usd": {
-     "score": 0.0404,
+     "score": 0.0554,
      "bull": 4,
      "bear": 0,
-     "neut": 112
+     "neut": 123
     }
    },
    "top": [
@@ -979,6 +979,21 @@
       "usd": 0.27
      },
      "priority": 100
+    },
+    {
+     "id": "CNBC World:'Saved the day': How China helped keep the lid on oil price surge as Iran war disrupted supplies",
+     "titel": "'Saved the day': How China helped keep the lid on oil price surge as Iran war disrupted supplies",
+     "titelDe": "'Rettet den Tag': Wie China dazu beitrug, den Ölpreisanstieg unter Kontrolle zu halten, während der Iran-Krieg die Versorgung unterbrach",
+     "quelle": "CNBC World",
+     "url": "https://www.cnbc.com/2026/09/10/china-crude-oil-iran-hormuz-war-trump-brent-prices-.html",
+     "zeit": "2026-09-10T06:23:14.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.367,
+      "usd": 1
+     },
+     "priority": 78
     },
     {
      "id": "Reuters:Multiple US military aircraft suffered damage in overnight strikes on Jordan air base, CBS says",
@@ -1053,22 +1068,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 94
-    },
-    {
-     "id": "Al Jazeera (GN):Why is Iran bombing Jordan’s Al-Azraq base? - aljazeera.com",
-     "titel": "Why is Iran bombing Jordan’s Al-Azraq base? - aljazeera.com",
-     "titelDe": "Warum bombardiert Iran Jordans Al-Azraq-Basis? - aljazeera.com",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNR2paREx2S2dwbUdORlFiajZmWGExc3dXWkt3SUQxRjBKcTloRXJFTEhDV0UtZk5WVHhVWC1TOFBsNGZCUFExT1NhX2FMNmF6MklwYnAzODJUdW1PM1liTUlTeU5hZ1NZRWZheEpWVl81eGI5UGRQb2R4cjBSZV9DUUh4TEFVdGZrMEE1bjBUQUpWNUxtVE1Z0gGcAUFVX3lxTE1NZkNaU0gzVmxocC1kMzBPSnFJLU5EZHZkcDVQVDUyQm9ncGRNWDBPeWxKSVExLUxWNzljeDVMUkZEZlpKUzVJdXRmTXJtNE43WUc4dmRBRTNlYmFCdldwX1o5anMzODJidHRSQUdSQzZ4RXZCbEhmYjYxX1FDTTJhZWtIOVRRSEZPUnk3aGVBalZfTWNCTHBYdDY1Mg?oc=5",
-     "zeit": "2026-09-10T03:02:47.000Z",
-     "scores": {
-      "crypto": -0.495,
-      "stocks": -0.495,
-      "gold": 0.248,
-      "usd": 0.165
-     },
-     "priority": 69
+     "priority": 93
     }
    ]
   }
