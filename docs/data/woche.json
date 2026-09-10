@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T12:27:24.349Z",
+ "updated": "2026-09-10T12:44:07.266Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T12:27:24.444Z",
+   "stand": "2026-09-10T12:44:07.361Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T12:27:24.425Z",
+   "stand": "2026-09-10T12:44:07.342Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,32 +921,32 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T12:27:24.405Z",
-   "anzahl": 203,
+   "stand": "2026-09-10T12:44:07.321Z",
+   "anzahl": 205,
    "klassen": {
     "crypto": {
-     "score": -0.0807,
+     "score": -0.0977,
      "bull": 0,
-     "bear": 20,
-     "neut": 183
+     "bear": 23,
+     "neut": 182
     },
     "stocks": {
-     "score": -0.0693,
+     "score": -0.0857,
      "bull": 0,
-     "bear": 17,
-     "neut": 186
+     "bear": 20,
+     "neut": 185
     },
     "gold": {
-     "score": 0.0058,
-     "bull": 11,
-     "bear": 5,
-     "neut": 187
+     "score": 0.0089,
+     "bull": 13,
+     "bear": 4,
+     "neut": 188
     },
     "usd": {
-     "score": 0.0419,
-     "bull": 8,
+     "score": 0.0504,
+     "bull": 9,
      "bear": 0,
-     "neut": 195
+     "neut": 196
     }
    },
    "top": [
@@ -1041,6 +1041,21 @@
      "priority": 72
     },
     {
+     "id": "Reuters:VIEW ECB hikes rates as Iran war adds to inflation angst - reuters.com",
+     "titel": "VIEW ECB hikes rates as Iran war adds to inflation angst - reuters.com",
+     "titelDe": "SEHEN SIE sich die Zinserhöhungen der EZB an, während der Iran-Krieg die Inflationsangst verstärkt - reuters.com",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOY0VWcFhfaVg1bHdEUzlqVTlvNlREOFdweDVteVNCVWFCY29MVFJMRVdWeEJuSDAxWlY3cjU4ZGlxdkNremFBTThYSVQ5cFNBaTliSGMwbmJRR0NkNkwtUUhORFFwZ3gwLXJSZnNOR1ZfVDlEanZ5TzFNZ3FsX1hobnkyODI3cE96RkI2S3htVk5LRWNWbmF1c1FvNA?oc=5",
+     "zeit": "2026-09-10T12:38:59.000Z",
+     "scores": {
+      "crypto": -0.698,
+      "stocks": -0.647,
+      "gold": -0.09,
+      "usd": 0.458
+     },
+     "priority": 73
+    },
+    {
      "id": "CNBC:Ryanair CEO says to brace for a 'significant uplift' in airfares as oil prices soar",
      "titel": "Ryanair CEO says to brace for a 'significant uplift' in airfares as oil prices soar",
      "titelDe": "Ryanair-CEO sagt, man solle sich auf einen \"signifikanten Anstieg\" der Flugpreise einstellen, wenn die Ölpreise steigen",
@@ -1054,21 +1069,6 @@
       "usd": 1
      },
      "priority": 48
-    },
-    {
-     "id": "Anadolu:Azerbaijan says 2 citizens killed in drone strike on foreign cargo ship in Black Sea",
-     "titel": "Azerbaijan says 2 citizens killed in drone strike on foreign cargo ship in Black Sea",
-     "titelDe": "Aserbaidschan sagt, dass 2 Bürger bei einem Drohnenangriff auf ein ausländisches Frachtschiff im Schwarzen Meer getötet wurden",
-     "quelle": "Anadolu",
-     "url": "https://www.aa.com.tr/en/world/azerbaijan-says-2-citizens-killed-in-drone-strike-on-foreign-cargo-ship-in-black-sea/4053194",
-     "zeit": "2026-09-10T12:02:34.000Z",
-     "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
-     },
-     "priority": 50
     }
    ]
   }
