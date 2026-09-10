@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T23:03:31.199Z",
+ "updated": "2026-09-10T23:17:09.275Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T23:03:31.281Z",
+   "stand": "2026-09-10T23:17:09.359Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T23:03:31.268Z",
+   "stand": "2026-09-10T23:17:09.345Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T23:03:31.253Z",
+   "stand": "2026-09-10T23:17:09.331Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-10T23:03:31.238Z",
-   "anzahl": 30,
+   "stand": "2026-09-10T23:17:09.316Z",
+   "anzahl": 31,
    "klassen": {
     "crypto": {
-     "score": -0.141,
+     "score": -0.0494,
      "bull": 0,
-     "bear": 4,
-     "neut": 26
+     "bear": 2,
+     "neut": 29
     },
     "stocks": {
-     "score": -0.1387,
+     "score": -0.047,
      "bull": 0,
-     "bear": 4,
-     "neut": 26
+     "bear": 2,
+     "neut": 29
     },
     "gold": {
-     "score": 0.0506,
-     "bull": 3,
+     "score": 0.0038,
+     "bull": 1,
      "bear": 1,
-     "neut": 26
+     "neut": 29
     },
     "usd": {
-     "score": 0.0572,
-     "bull": 3,
+     "score": 0.0272,
+     "bull": 1,
      "bear": 0,
-     "neut": 27
+     "neut": 30
     }
    },
    "top": [
@@ -1183,7 +1183,7 @@
      "titel": "Wall St ends lower as yields rise, inflation concerns mount",
      "titelDe": "Wall St endet niedriger, wenn die Renditen steigen, die Inflationssorgen steigen",
      "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1pck5pMmw5WW1oMVpCQTUwaURLVmtOWE9UYng0cjBNSHBmZ1lwT1JWZ3h0UEZQODV6WDZETzF6Vno4SG1XUXJEUTJwOVpWeld4MlRxRHEzc0JzcVFiNG5ITXhZNVpOZ0pQcDAtME96UGFFcmFuQ1J4QnlEd0FnUQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBvWXJnRlpxVXZYbHNYU29Oa3FSTkNPVDVFZHAyWm0tQmxtbmpQbTduQzhWYjBfc3dWcW9HRWI5WnJ6TkxrdGFILXB3a1pHRzRCc1BwVDlXaTVBbWpRRDNRVGJlUlkyUQ?oc=5",
      "zeit": "2026-09-10T22:53:19.000Z",
      "scores": {
       "crypto": -0.45,
