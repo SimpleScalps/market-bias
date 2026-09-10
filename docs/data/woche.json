@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T14:21:31.090Z",
+ "updated": "2026-09-10T14:38:13.995Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T14:21:31.141Z",
+   "stand": "2026-09-10T14:38:14.089Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T14:21:31.130Z",
+   "stand": "2026-09-10T14:38:14.068Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T14:21:31.120Z",
+   "stand": "2026-09-10T14:38:14.047Z",
    "anzahl": 220,
    "klassen": {
     "crypto": {
@@ -979,6 +979,21 @@
       "usd": 0.27
      },
      "priority": 100
+    },
+    {
+     "id": "SCMP:US producer inflation tops expectations as energy costs jump amid Iran war",
+     "titel": "US producer inflation tops expectations as energy costs jump amid Iran war",
+     "titelDe": "US-Produktionsinflation übertrifft Erwartungen, Energierechnungen steigen durch Iran-Krieg",
+     "quelle": "SCMP",
+     "url": "https://www.scmp.com/news/world/united-states-canada/article/3367099/us-producer-inflation-tops-expectations-energy-costs-jump-amid-iran-war?utm_source=rss_feed",
+     "zeit": "2026-09-10T14:28:45.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.431,
+      "usd": 1
+     },
+     "priority": 78
     },
     {
      "id": "Reuters:Oil jumps to $105 a barrel after Middle East tanker attacks escalate",
@@ -1054,21 +1069,6 @@
       "usd": 0.255
      },
      "priority": 74
-    },
-    {
-     "id": "Guardian:Trump claims he will give $5,000 to every American if Republicans win the midterms as he defends Iran war and tariffs– as it happened",
-     "titel": "Trump claims he will give $5,000 to every American if Republicans win the midterms as he defends Iran war and tariffs– as it happened",
-     "titelDe": "Trump kündigt an, er würde jedem Amerikaner 5.000 $ geben, wenn die Republikaner die Zwischenwahlen gewinnen, während er die Iran‑Kriegspolitik und Zölle verteidigt – so geschah es",
-     "quelle": "Guardian",
-     "url": "https://www.theguardian.com/us-news/live/2026/sep/09/donald-trump-rnc-republican-national-convention-jd-vance-midterms-latest-news-updates",
-     "zeit": "2026-09-10T04:04:11.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 72
     }
    ]
   }
