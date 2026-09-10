@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T05:08:30.461Z",
+ "updated": "2026-09-10T05:21:42.307Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T05:08:30.528Z",
+   "stand": "2026-09-10T05:21:42.401Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T05:08:30.516Z",
+   "stand": "2026-09-10T05:21:42.382Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,32 +921,32 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T05:08:30.503Z",
-   "anzahl": 102,
+   "stand": "2026-09-10T05:21:42.362Z",
+   "anzahl": 105,
    "klassen": {
     "crypto": {
-     "score": -0.0841,
+     "score": -0.0925,
      "bull": 0,
-     "bear": 12,
-     "neut": 90
-    },
-    "stocks": {
-     "score": -0.0779,
-     "bull": 0,
-     "bear": 11,
-     "neut": 91
-    },
-    "gold": {
-     "score": 0.0385,
-     "bull": 10,
-     "bear": 0,
+     "bear": 13,
      "neut": 92
     },
+    "stocks": {
+     "score": -0.0866,
+     "bull": 0,
+     "bear": 12,
+     "neut": 93
+    },
+    "gold": {
+     "score": 0.0429,
+     "bull": 11,
+     "bear": 0,
+     "neut": 94
+    },
     "usd": {
-     "score": 0.0263,
+     "score": 0.0292,
      "bull": 3,
      "bear": 0,
-     "neut": 99
+     "neut": 102
     }
    },
    "top": [
@@ -1008,7 +1008,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 73
+     "priority": 72
     },
     {
      "id": "TASS:Over 50 shelling attacks by Ukrainian troops reported in DPR in past day, two killed",
@@ -1024,6 +1024,21 @@
       "usd": 0.165
      },
      "priority": 90
+    },
+    {
+     "id": "Guardian:North Korea has built new uranium facility to expand nuclear arsenal, UN agency says",
+     "titel": "North Korea has built new uranium facility to expand nuclear arsenal, UN agency says",
+     "titelDe": "Nordkorea hat eine neue Urananlage gebaut, um das Atomarsenal zu erweitern, sagt die UN-Agentur",
+     "quelle": "Guardian",
+     "url": "https://www.theguardian.com/world/2026/sep/10/north-korea-has-built-new-uranium-facility-to-expand-nuclear-arsenal-un-agency-says",
+     "zeit": "2026-09-10T05:08:46.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 95
     },
     {
      "id": "Al Jazeera (GN):Why is Iran bombing Jordan’s Al-Azraq base? - aljazeera.com",
@@ -1053,22 +1068,7 @@
       "gold": 0.248,
       "usd": 0.165
      },
-     "priority": 67
-    },
-    {
-     "id": "Reuters:Currency markets subdued as oil shock lifts global yields; ECB, U.S. inflation eyed",
-     "titel": "Currency markets subdued as oil shock lifts global yields; ECB, U.S. inflation eyed",
-     "titelDe": "Währungsmärkte gedämpft, da Ölschock die globalen Renditen anhebt; EZB, US-Inflation im Auge",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYU50UmRVNmIyeFBOSmd6azlDeDMxNlh1S0cycHpnYjU4NERYWjhoN2diSmthTngzdWZScmFTdldrTGtUcTh3SDFKbVIySmU2TUx3cnMtOEdKMnFkV3J1d3pYRmdvZDVWb2VPSXNjcG52cEVPTGtLNF9UT1BFSnJ3WlUzOXNuU1FwZmNSdGVTdV9Na1h6M3dPVGVtU0ttYlBlRWc0S1Q0Rl9HSmVCNlZaZXhjMVc0OUduMk1mOGRqVkxjY0d2SGhRbWJsUQ?oc=5",
-     "zeit": "2026-09-10T02:07:00.000Z",
-     "scores": {
-      "crypto": -0.603,
-      "stocks": -0.569,
-      "gold": 0.009,
-      "usd": 0.351
-     },
-     "priority": 54
+     "priority": 66
     }
    ]
   }
