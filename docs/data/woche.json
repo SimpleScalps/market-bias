@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T17:29:51.655Z",
+ "updated": "2026-09-10T17:41:01.636Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T17:29:51.738Z",
+   "stand": "2026-09-10T17:41:01.723Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T17:29:51.720Z",
+   "stand": "2026-09-10T17:41:01.704Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T17:29:51.702Z",
+   "stand": "2026-09-10T17:41:01.685Z",
    "anzahl": 220,
    "klassen": {
     "crypto": {
@@ -972,6 +972,21 @@
      "quelle": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcjZSQzBhYjI1ZjJENXhBVjE1dnRIcklQbHROMkFFNDdqMkJWc2dpMlN4Z1A2WUxSNHdzOFBiV3VIUEk0OXBMVlNjc0s5QWp1VjZlS1FXWmgtQ1BuMV81T3g1TFY1aGZiNzA0YU1VUDJUV3FPU0NEOEd2amtncUZiODY4RV8wTXE5NmdHTThDNnZWbUgtcWt3VVhySFpPZlNFVVhEMjdka1YtbnJUV2hZLVJn?oc=5",
      "zeit": "2026-09-09T22:24:09.000Z",
+     "scores": {
+      "crypto": -0.81,
+      "stocks": -0.81,
+      "gold": 0.405,
+      "usd": 0.27
+     },
+     "priority": 100
+    },
+    {
+     "id": "Al Jazeera:Family of four killed as they slept in Israeli strike on Gaza",
+     "titel": "Family of four killed as they slept in Israeli strike on Gaza",
+     "titelDe": "Vierköpfige Familie getötet, als sie im israelischen Angriff auf Gaza schliefen",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/family-of-four-killed-as-they-slept-in-israeli-strike-on-gaza?traffic_source=rss",
+     "zeit": "2026-09-10T17:32:28.000Z",
      "scores": {
       "crypto": -0.81,
       "stocks": -0.81,
@@ -1047,21 +1062,6 @@
      "quelle": "CNBC Economy",
      "url": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html",
      "zeit": "2026-09-10T14:34:55.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 84
-    },
-    {
-     "id": "Reuters:UK's FTSE 100 falls for fifth straight day as rate hike, inflation fears bite",
-     "titel": "UK's FTSE 100 falls for fifth straight day as rate hike, inflation fears bite",
-     "titelDe": "Der britische FTSE 100 fällt auf den fünften Tag in Folge, da die Zinserhöhung und die Inflationsängste zunehmen",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQl9UZS0xU2dSdlFYSngtRTNubzROSlp4Tzgta09TRDJtSW4yQWNJeTBOWjRuSlJlUHk3YTZmRzdyUTd3Smp0MG11aDBXSE5TYVpvblU2U1FONlBhcnVEaGdiZmxNdkkxOGFETFl1VlpxQ2dfWDdjMjkyYUZ5ZUlKMVFWNlV2YkNienl2alNJTEVKUE9vTmZ4N2Voal9jRWVVVVhRaXNNT3lUTHNtMTNLWmQxSG0?oc=5",
-     "zeit": "2026-09-10T16:20:04.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
