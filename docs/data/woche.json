@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T07:55:16.142Z",
+ "updated": "2026-09-10T08:04:27.864Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T07:55:16.237Z",
+   "stand": "2026-09-10T08:04:27.956Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T07:55:16.218Z",
+   "stand": "2026-09-10T08:04:27.937Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,32 +921,32 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T07:55:16.199Z",
-   "anzahl": 131,
+   "stand": "2026-09-10T08:04:27.918Z",
+   "anzahl": 133,
    "klassen": {
     "crypto": {
-     "score": -0.1033,
+     "score": -0.0963,
      "bull": 1,
-     "bear": 18,
-     "neut": 112
+     "bear": 19,
+     "neut": 113
     },
     "stocks": {
-     "score": -0.0918,
+     "score": -0.0852,
      "bull": 1,
-     "bear": 16,
-     "neut": 114
-    },
-    "gold": {
-     "score": 0.0145,
-     "bull": 12,
-     "bear": 4,
+     "bear": 17,
      "neut": 115
     },
+    "gold": {
+     "score": 0.0105,
+     "bull": 12,
+     "bear": 5,
+     "neut": 116
+    },
     "usd": {
-     "score": 0.0519,
+     "score": 0.05,
      "bull": 5,
      "bear": 0,
-     "neut": 126
+     "neut": 128
     }
    },
    "top": [
@@ -993,7 +993,7 @@
       "gold": -0.367,
       "usd": 1
      },
-     "priority": 76
+     "priority": 75
     },
     {
      "id": "Reuters:Multiple US military aircraft suffered damage in overnight strikes on Jordan air base, CBS says",
