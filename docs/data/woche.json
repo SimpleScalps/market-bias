@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T14:38:13.995Z",
+ "updated": "2026-09-10T14:50:25.671Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T14:38:14.089Z",
+   "stand": "2026-09-10T14:50:25.761Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T14:38:14.068Z",
+   "stand": "2026-09-10T14:50:25.742Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T14:38:14.047Z",
+   "stand": "2026-09-10T14:50:25.722Z",
    "anzahl": 220,
    "klassen": {
     "crypto": {
@@ -1041,6 +1041,21 @@
      "priority": 66
     },
     {
+     "id": "CNBC Economy:The likelihood of a Fed interest rate hike next week just got a lot higher",
+     "titel": "The likelihood of a Fed interest rate hike next week just got a lot higher",
+     "titelDe": "Die Wahrscheinlichkeit einer Fed-Zinserhöhung nächste Woche ist deutlich gestiegen",
+     "quelle": "CNBC Economy",
+     "url": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html",
+     "zeit": "2026-09-10T14:34:55.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "Reuters:Multiple US military aircraft suffered damage in overnight strikes on Jordan air base, CBS says",
      "titel": "Multiple US military aircraft suffered damage in overnight strikes on Jordan air base, CBS says",
      "titelDe": "Mehrere US-Militärflugzeuge wurden bei nächtlichen Angriffen auf eine jordanische Luftwaffe beschädigt, berichtet CBS",
@@ -1052,21 +1067,6 @@
       "stocks": -0.81,
       "gold": 0.405,
       "usd": 0.27
-     },
-     "priority": 74
-    },
-    {
-     "id": "Guardian:Trump claims he will give $5,000 to every American if Republicans win the midterms as he defends Iran war and tariffs– live",
-     "titel": "Trump claims he will give $5,000 to every American if Republicans win the midterms as he defends Iran war and tariffs– live",
-     "titelDe": "Trump behauptet, er werde jedem Amerikaner 5.000 $ geben, wenn die Republikaner die Zwischenwahlen gewinnen, während er den Iran-Krieg und die Zölle verteidigt - live",
-     "quelle": "Guardian",
-     "url": "https://www.theguardian.com/us-news/live/2026/sep/09/donald-trump-rnc-republican-national-convention-jd-vance-midterms-latest-news-updates",
-     "zeit": "2026-09-10T02:24:50.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
      },
      "priority": 74
     }
