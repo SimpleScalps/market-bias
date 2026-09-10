@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T16:20:47.010Z",
+ "updated": "2026-09-10T16:36:21.537Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T16:20:47.067Z",
+   "stand": "2026-09-10T16:36:21.626Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T16:20:47.055Z",
+   "stand": "2026-09-10T16:36:21.607Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T16:20:47.043Z",
+   "stand": "2026-09-10T16:36:21.587Z",
    "anzahl": 220,
    "klassen": {
     "crypto": {
@@ -1056,19 +1056,19 @@
      "priority": 84
     },
     {
-     "id": "Al Jazeera (GN):Oil jumps to $105, pushing up chances of a US interest rate increase",
-     "titel": "Oil jumps to $105, pushing up chances of a US interest rate increase",
-     "titelDe": "Öl springt auf 105 $ und erhöht die Wahrscheinlichkeit einer Zinserhöhung in den USA",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPc19jMzJlM0xreS14RUljWjdkMnVWa0NXVW1aMy1mVU5sRTNDdVFxU3pHNXU1blhvZFJCZlBWbnFCN1ZDOEFCZkt3WkFlTFBWLURDRFd5Ql82TWF6bUtkT1pPY0dTa0NyOUR4NGY4S2NNeGl4aXpGSVloenJneWZHbzd4elI5cjM0Vk9ySEs5WXFRMEl0dmV3cEhpZHpzVExkNEVsenVqdy1KRDlwaUdN0gG0AUFVX3lxTFBXcTZ2anZvVEQzRTMtUkpEeVY1bmpnVERpYnRqbWNiMDBad1ZuYkkzRmxHdDF2ZzBWNlNvUG5DaTNhb2E1c3lUSktwS0ctS19HZktKRXdtb3FSWUFsbFlhVlE3R2RkMjNzMF9qMnc4LXFoMndXYTVYdHJzY291eTJqeGZfOHFxS19LVHhtcW1RRUxkUll3dlBURm5pazZSTDFnMF92WHdfc2FyLU9zQ3JvLWdOeA?oc=5",
-     "zeit": "2026-09-10T16:06:19.000Z",
+     "id": "Reuters:UK's FTSE 100 falls for fifth straight day as rate hike, inflation fears bite",
+     "titel": "UK's FTSE 100 falls for fifth straight day as rate hike, inflation fears bite",
+     "titelDe": "Der britische FTSE 100 fällt auf den fünften Tag in Folge, da die Zinserhöhung und die Inflationsängste zunehmen",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQl9UZS0xU2dSdlFYSngtRTNubzROSlp4Tzgta09TRDJtSW4yQWNJeTBOWjRuSlJlUHk3YTZmRzdyUTd3Smp0MG11aDBXSE5TYVpvblU2U1FONlBhcnVEaGdiZmxNdkkxOGFETFl1VlpxQ2dfWDdjMjkyYUZ5ZUlKMVFWNlV2YkNienl2alNJTEVKUE9vTmZ4N2Voal9jRWVVVVhRaXNNT3lUTHNtMTNLWmQxSG0?oc=5",
+     "zeit": "2026-09-10T16:20:04.000Z",
      "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": -0.611,
-      "usd": 1
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
      },
-     "priority": 61
+     "priority": 84
     }
    ]
   }
