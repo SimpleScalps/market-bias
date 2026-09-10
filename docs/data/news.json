@@ -1,12 +1,88 @@
 {
- "updated": "2026-09-10T13:43:14.624Z",
+ "updated": "2026-09-10T13:48:01.497Z",
  "regime": "policy",
- "count": 265,
+ "count": 260,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
   "Times of Israel: 403 https://www.timesofisrael.com/feed/"
  ],
  "items": [
+  {
+   "id": "FXStreet:Copper: Record prices with real constraints – NBC",
+   "title": "Copper: Record prices with real constraints – NBC",
+   "text": "National Bank of Canada's (NBC) Kyle Dahms highlights that Copper has reached a fresh nominal record, driven by AI-related data-centre demand, electricity grid expansion, tariff-driven stockpiling and supply disruptions.",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/copper-record-prices-with-real-constraints-nbc-202609101343",
+   "date": "2026-09-10T13:43:37.000Z",
+   "tags": [
+    "Makro"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Kupfer: Rekordpreise mit realen Einschränkungen – NBC"
+  },
+  {
+   "id": "The Block:Citadel urges SEC to assert oversight of event contracts tied to public firms",
+   "title": "Citadel urges SEC to assert oversight of event contracts tied to public firms",
+   "text": "Citadel Securities urges SEC oversight of equity-linked event contracts, challenging CFTC self-certification.",
+   "source": "The Block",
+   "url": "https://www.theblock.co/news/regulation/2026-09-10-citadel-urges-sec-assert-oversight-event-contracts-tied-public-firms-414140",
+   "date": "2026-09-10T13:43:09.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Citadel fordert die SEC nachdrücklich auf, die Aufsicht über Veranstaltungsverträge zu gewährleisten, die an öffentliche Unternehmen gebunden sind"
+  },
   {
    "id": "SCMP:Lives ‘at serious risk’ as Gaza’s hospitals, homes battle fuel shortages",
    "title": "Lives ‘at serious risk’ as Gaza’s hospitals, homes battle fuel shortages",
@@ -44,6 +120,44 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Lives ‘at serious risk’ as Gaza's hospitals, homes fight fuel shortages"
+  },
+  {
+   "id": "MarketWatch:Apple is walking a ‘tightrope’ when it comes to the prices of its new iPhones",
+   "title": "Apple is walking a ‘tightrope’ when it comes to the prices of its new iPhones",
+   "text": "The company raised prices on its phone but might still have to eat costs itself, analysts say.",
+   "source": "MarketWatch",
+   "url": "https://www.marketwatch.com/story/apples-stock-rises-after-iphone-reveal-the-company-is-walking-a-tightrope-on-pricing-say-analysts-813898ac?mod=mw_rss_topstories",
+   "date": "2026-09-10T13:42:00.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Apple geht einen Drahtseilakt ein, wenn es um die Preise seiner neuen iPhones geht"
   },
   {
    "id": "TASS:Ukraine’s attempt to break out of encirclement disrupted: enemy losses",
@@ -84,6 +198,46 @@
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Der Versuch der Ukraine, aus der Einkreisung auszubrechen, wurde gestört: Feindliche Verluste"
+  },
+  {
+   "id": "CNBC:Coinbase partners with Moov to boost community bank stablecoin capabilities before Clarity vote",
+   "title": "Coinbase partners with Moov to boost community bank stablecoin capabilities before Clarity vote",
+   "text": "A bill to regulate digital assets is due for a preliminary vote in the U.S. Senate next week.",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/09/10/coinbase-clarity-moov-banks-stablecoin.html",
+   "date": "2026-09-10T13:35:23.000Z",
+   "tags": [
+    "Märkte"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "crypto",
+   "categoryLabel": "Krypto",
+   "priority": 52,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": "Partnerschaft",
+   "eventTypeEn": "Partnership",
+   "scope": "project",
+   "coins": [],
+   "alsoIn": [
+    "Cointelegraph"
+   ],
+   "bestaetigt": 2,
+   "haeuser": 2,
+   "unabhaengig": 2,
+   "titleDe": "Coinbase arbeitet mit Moov zusammen, um die Stablecoin-Funktionen der Community-Bank vor der Clarity-Abstimmung zu verbessern"
   },
   {
    "id": "Reuters:Opening day: 1066 comes to life in UK's Bayeux Tapestry exhibition",
@@ -353,12 +507,12 @@
    "titleDe": "HSBC hebt die Brent-Prognose für 2026 auf 90 $ an, da sich die Hormus-Krise hinzieht"
   },
   {
-   "id": "Al Jazeera (GN):Multicultural Malmo: Swedish city loathed by far right braces for election",
+   "id": "Al Jazeera:Multicultural Malmo: Swedish city loathed by far right braces for election",
    "title": "Multicultural Malmo: Swedish city loathed by far right braces for election",
-   "text": "Multicultural Malmo: Swedish city loathed by far right braces for election &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYmFPUFN0TEtlbFFvNGJURWpYOXNtSzJBUWQ2X0Q0aTRZMk5uWVYxSVVYOUtRMl9kMFNsS1V3RlYzcHZKU1BNSnlSVEkzcGxpc2ZCbHRhR0tmNWlvMGNBdVlHNENLMl85eGhfeWFUMnJpZFlxUVRwXzdmQUFDeE1ZakpXYnZ0VEhIQkk4bzNXSE9fSk9mOV9BVTgwT3dnakpBZC00WFB1ckFZZDZSYXZUYjEtUFhXZ9IBuwFBVV95cUxOdHdWTHFMTlNTSEZwMG9CcHNvT1REQ244RjRHUHZWWEpqQU9adXQ0b2xGbDgwdDkwS0wxYjNXTDZDZ2o5bGM1UmkzOG1Ka1RjVUx3V2duZG91dTFJeWlzZkZLMDd2c3Y4VllDSDg3STNMRF9qTmZvYkp4ei1SdjZMRExiLWtEdWJMRTFsNlZXdy1oYWsxVVE2c3NjeC1wSkxaZ3pNTUNsUHdseUQ3S2M0VWNCNmUxZFMxMERB?oc=5",
-   "date": "2026-09-10T13:29:43.000Z",
+   "text": "Al Jazeera speaks to voters in Malmo, a city the far right often singles out for its diversity, ahead of Sweden's vote.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/features/2026/9/10/from-migration-to-wallet-politics-malmo-votes-in-a-knife-edge-election?traffic_source=rss",
+   "date": "2026-09-10T13:29:20.000Z",
    "tags": [
     "Weltlage"
    ],
@@ -384,16 +538,60 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "Al Jazeera (GN)"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Multikulturelle Malmö: Schwedische Stadt wird von rechtsextremen Wahlkampfverbänden verabscheut"
   },
   {
-   "id": "Al Jazeera (GN):Pakistan U19 cricketers mistaken for asylum seekers by protesters in UK",
-   "title": "Pakistan U19 cricketers mistaken for asylum seekers by protesters in UK",
-   "text": "Pakistan U19 cricketers mistaken for asylum seekers by protesters in UK &nbsp;&nbsp; Al Jazeera",
+   "id": "Reuters:Israeli strike kills parents and two children in Gaza, medics say",
+   "title": "Israeli strike kills parents and two children in Gaza, medics say",
+   "text": "Israeli strike kills parents and two children in Gaza, medics say &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQS1BVbUJWZ3BnTEl4XzBYMjByVm0zb3dncFFidmQ4TWlrRVVOTkZYUGpzQllwVzQyUWZKUjBjQk12ZUxTM2FJTFRlb292d1JRZHZXMWREZ2Y4bVdMUGVXczRJa0NuYjZXQXd3dDJrajZFazAtcXNlQld6c0RjekV0N09RSU51Z3Fld1EwdFI5dm5tLU5aMERvTEVtcWlsOE5pS3BGQnRrZUt1U1FVSUZ1Xw?oc=5",
+   "date": "2026-09-10T13:29:09.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "hawkish": 0,
+   "signals": [
+    "Militärschlag"
+   ],
+   "scores": {
+    "crypto": -0.45,
+    "stocks": -0.45,
+    "gold": 0.225,
+    "usd": 0.15
+   },
+   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Militärschlag)",
+   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
+   "category": "geopolitics",
+   "categoryLabel": "Geopolitik",
+   "priority": 95,
+   "label": "bearish",
+   "labelText": "Bearish",
+   "impactLevel": "high",
+   "duration": "swing",
+   "eventType": "Geopolitik",
+   "eventTypeEn": "Geopolitics",
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Israelischer Angriff tötet Eltern und zwei Kinder in Gaza, sagen Mediziner"
+  },
+  {
+   "id": "Al Jazeera (GN):Pakistan U19 cricketers mistaken for asylum seekers by protesters in UK - aljazeera.com",
+   "title": "Pakistan U19 cricketers mistaken for asylum seekers by protesters in UK - aljazeera.com",
+   "text": "Pakistan U19 cricketers mistaken for asylum seekers by protesters in UK &nbsp;&nbsp; aljazeera.com",
    "source": "Al Jazeera (GN)",
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcXViRmhqVnEyX3YyOE9QYWNGWV8tVFctdFJINElmdmFCSkZUbU9XZENEd3RlTHFpZ2dBLThaX19wV0xFX1JzcUdaOGQ1RFktV3BtSHZqTGlYb1ZwQ21LZnFvc3BqUUpvSmpWQklNdGNxWGQ0VlhVWE5GYnFfd21Ta1V1aVFmWG1wa3NfYXlpQVVBczdXM0EtU1lMS2ZuQVo4Wk4yd0VUZmRmWjFEbm04RWk2cljSAboBQVVfeXFMUERBanN0cWtPM3VZUWdBSUNEdUJZWHpMWjRLbFFDRXRNOUE4QThQbjRWVkpqczBIYWtWZnpQcWVvZFg5LVVJSzdmZ0VjQVl4SHBzWmZ3NW9RTEFTS1NKRmJQaWtLdktVb1JWUzNlb1dvRDV3TlZkUzdLaWk2RXJwdGc3dHdCVDY1STRpVjkxM2tPOW91a3hlQWN0QUtKR3dWSnQ2SEJZMk9qbTJjRWFxR3VRWTlMWDhpenRn?oc=5",
    "date": "2026-09-10T13:28:50.000Z",
@@ -413,7 +611,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -426,7 +624,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Pakistanische U19-Kricketspieler werden von Demonstranten in Großbritannien mit Asylbewerbern verwechselt"
+   "titleDe": "Pakistanische U19-Kricketspieler werden von Demonstranten in Großbritannien mit Asylbewerbern verwechselt - aljazeera.com"
   },
   {
    "id": "Reuters:Nestle CEO says Middle East conflict driving inflation, higher supplier costs",
@@ -493,7 +691,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -530,7 +728,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -569,7 +767,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -608,7 +806,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -896,46 +1094,6 @@
    "titleDe": "Kiew verliert am vergangenen Tag rund 1.430 Soldaten entlang der Verlobungslinie — Russlands Spitzenreiter"
   },
   {
-   "id": "Cointelegraph:Coinbase, Moov to provide stablecoin infrastructure for US community banks",
-   "title": "Coinbase, Moov to provide stablecoin infrastructure for US community banks",
-   "text": "The partnership will provide stablecoin acceptance, settlement and real-time funding capabilities to over 1,000 community banks and credit unions.",
-   "source": "Cointelegraph",
-   "url": "https://cointelegraph.com/news/coinbase-moov-stablecoin-infrastructure-banks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-   "date": "2026-09-10T13:17:48.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 52,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [
-    "CNBC"
-   ],
-   "bestaetigt": 2,
-   "haeuser": 2,
-   "unabhaengig": 2,
-   "titleDe": "Coinbase, Moov zur Bereitstellung einer Stablecoin-Infrastruktur für US-Banken"
-  },
-  {
    "id": "FXStreet:Gold: Near-term selling may only delay next leg higher - TD Securities",
    "title": "Gold: Near-term selling may only delay next leg higher - TD Securities",
    "text": "TD Securities’ Ryan McKay and Bart Melek note that Gold is outperforming other precious metals even as higher energy prices and rising Fed hike expectations weigh on the complex.",
@@ -1090,14 +1248,14 @@
    "titleDe": "Houthis marschieren entlang der südlichen Küste des Roten Meeres im Jemen vor"
   },
   {
-   "id": "CNBC:Apple makes biggest change to iPhone release cadence in 7 years in Ternus' first showcase as CEO",
+   "id": "CNBC World:Apple makes biggest change to iPhone release cadence in 7 years in Ternus' first showcase as CEO",
    "title": "Apple makes biggest change to iPhone release cadence in 7 years in Ternus' first showcase as CEO",
    "text": "In John Ternus' first launch event as CEO, Apple announced its first foldable phone and the iPhone 18 Pro.",
-   "source": "CNBC",
+   "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/10/apple-makes-biggest-change-to-iphone-release-cadence-in-7-years.html",
    "date": "2026-09-10T13:13:45.000Z",
    "tags": [
-    "Märkte"
+    "Weltwirtschaft"
    ],
    "impact": "low",
    "regelStand": 2,
@@ -1121,16 +1279,18 @@
    "eventTypeEn": "Product announcement",
    "scope": "project",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "CNBC"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Apple nimmt die größte Änderung an der iPhone-Release-Kadenz seit 7 Jahren in Ternus 'erstem Schaufenster als CEO vor"
   },
   {
-   "id": "Al Jazeera (GN):Manchester United scouted Mbappe but didn’t sign him, says Ryan Giggs",
-   "title": "Manchester United scouted Mbappe but didn’t sign him, says Ryan Giggs",
-   "text": "Manchester United scouted Mbappe but didn’t sign him, says Ryan Giggs &nbsp;&nbsp; Al Jazeera",
+   "id": "Al Jazeera (GN):Manchester United scouted Mbappe but didn’t sign him, says Ryan Giggs - aljazeera.com",
+   "title": "Manchester United scouted Mbappe but didn’t sign him, says Ryan Giggs - aljazeera.com",
+   "text": "Manchester United scouted Mbappe but didn’t sign him, says Ryan Giggs &nbsp;&nbsp; aljazeera.com",
    "source": "Al Jazeera (GN)",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZzZ3OWlTaG1PT3NqWFlrcUh3b0EzTVRRY2h1UnM0TXVUX0s2ZUF1WkthQWF4MkJKc05wZGRHX3hqX0tvZHVyOUowQzl3SUw0My1jT2IzYmFGeTN0YWJ3LUxGejJuSW4wUUxTZFNCdDNuRDZhOUJ4UDQ4NGRvUkVITkhtV2IzNy1Bc3ZFQzd3VjFhb2RrZ09WaVZ1OXJOZFpZbGtoX2piV18zQkFPVWFj0gG0AUFVX3lxTE5zNlBEMGpGckJZVjF4amRmVHpoaXBSZlFIbHFXbE81SGRvdzhYb0xqNW9FWlU3WVM3eGpHYnRNN3U0Ynczbl9JbFFlckdLbkhfQmNxYWozckEteEhsOGdhYVhvSWhDMlc2Qktyb3Y3dTVJQzgyRjhvM1RUSXliZjU2VlYzZHBKRmFGblI5dnVhUFp6R3pIbVN2REtjc0hZYVQwSGZZTUIwLV9QVUJFX3d2bkFxdw?oc=5",
    "date": "2026-09-10T13:13:32.000Z",
@@ -1163,7 +1323,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Manchester United hat Mbappe ausgespäht, ihn aber nicht unter Vertrag genommen, sagt Ryan Giggs"
+   "titleDe": "Manchester United hat Mbappe ausgespäht, ihn aber nicht unter Vertrag genommen, sagt Ryan Giggs - aljazeera.com"
   },
   {
    "id": "Reuters:Explainer: Why is the Bab el-Mandeb Strait so important?",
@@ -1357,44 +1517,6 @@
    "titleDe": "Der türkische Tourismus bleibt trotz regionaler Konflikte auch im Sommer stark"
   },
   {
-   "id": "Reuters:Lagarde comments at ECB press conference",
-   "title": "Lagarde comments at ECB press conference",
-   "text": "Lagarde comments at ECB press conference &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZXpTVnllTXpGQU5QaWxJdnVicjV3MnV2VGVFU2IwXzJiWXBrdDdyc0F3a0NRVkl2ZUNxbWdjLXB0YU41QlRvcmFfUW5lSmhWNTJEX2M1Qjc3bVVfN3p5S1RZSFcyU2dRcTNPdU9GeVYwRl9kdHpYZHZ5aUFoY1dScGlpRUJYRGt5SzlOMQ?oc=5",
-   "date": "2026-09-10T13:10:19.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Lagarde kommentiert auf EZB-Pressekonferenz"
-  },
-  {
    "id": "Guardian Wirtschaft:ECB raises interest rates to 2.5% and warns Iran war is fuelling inflation",
    "title": "ECB raises interest rates to 2.5% and warns Iran war is fuelling inflation",
    "text": "Borrowing costs climb in Europe and oil tops $105 a barrel as bank flags growing price pressures in eurozone Business live – latest updates The European Central Bank has raised interest rates to 2.5% and warned that the risk of higher inflation over the next year has risen following renewed fighting in the Middle East. It came as the interest rate on government bonds soared on a jump in oil and gas prices overnight after the latest US and Iran attacks on ships in the strait of Hormuz. Continue r",
@@ -1436,44 +1558,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Die EZB erhöht die Zinssätze auf 2,5% und warnt davor, dass der Iran-Krieg die Inflation anheizt"
-  },
-  {
-   "id": "Reuters:Bayeux mania peaks as 1,000-year-old tapestry exhibition opens in London",
-   "title": "Bayeux mania peaks as 1,000-year-old tapestry exhibition opens in London",
-   "text": "Bayeux mania peaks as 1,000-year-old tapestry exhibition opens in London &nbsp;&nbsp; Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUWlHRFRQNzlfZ0hCOXd4clQyWU0yV1poNTRnZjVHbVRsYWEydVF6cWFnUHNHUWxXdTB4UmJaYkl2N3ZFa3JLN0kyM2dydzB3cnZ0SUU5My1PYXllX1BiWTVmQmJYZVlVQ0NSUTk0Ujl3ejZHLS11VzhvQ2ZKZkYtNU9RdVd4ZVBsMXJYZ1NNV3lzSU80RTMyclpraTlDNTNyc0JCMFpCUFFyWVVNTHpn?oc=5",
-   "date": "2026-09-10T13:07:20.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Die Bayeux-Manie erreicht ihren Höhepunkt, als die 1.000 Jahre alte Wandteppichausstellung in London eröffnet wird"
   },
   {
    "id": "FXStreet:WTI US Oil rebounds toward $97 as US-Iran conflict escalates",
@@ -2030,11 +2114,11 @@
    "titleDe": "Solana sieht Rekord von 263.000 ausgegebenen Token an einem einzigen Tag"
   },
   {
-   "id": "Al Jazeera:The Trump loyalty test: Will his supporters ever disagree with him?",
-   "title": "The Trump loyalty test: Will his supporters ever disagree with him?",
-   "text": "The Trump loyalty test: Will his supporters ever disagree with him?",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/the-trump-loyalty-test-will-his-supporters-ever-disagree-with-him?traffic_source=rss",
+   "id": "Al Jazeera (GN):The Trump loyalty test: Will his supporters ever disagree with him? - aljazeera.com",
+   "title": "The Trump loyalty test: Will his supporters ever disagree with him? - aljazeera.com",
+   "text": "The Trump loyalty test: Will his supporters ever disagree with him? &nbsp;&nbsp; aljazeera.com",
+   "source": "Al Jazeera (GN)",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPV1Rrek1TS0FpdkJ3MUdaTzRRMmV0TExQWWtxRVVTMnBJMnQ1X09HelNQaHVkeTlYa1RFZ3k2aU9zM0dQTEhVOUE4ZEhQZmFtMFl5ZjZEZWtRMU9sRUxfbG10bG5HT3lHN0xVbXNUazdfdDI2QWlfYTZUTnB5Q3E4TXB4WUlyTW9zdlIwWWVTQUVVc0pLbGxXbUZLMVR6VlFGTm84ZXZnMXlGM19hX2lETjYwRUxZT0nSAbwBQVVfeXFMUFlBSm1QNkhtRkU0Qkl4d2xPSk5XeExxMXJZNmhRc25QUmpyVmNEalVKMlNSeUtnT2t5amprNVhTYnhWRlBSa2ZPa3ZEZGhpQ0VidjRSa0xCTTlla0NLbUViSDkzYlFfQjN1TXhTb1ljYjVFdXJNUnp4d2pOcUZCMU1CNU1rLWFoZmVSVTdTTVFwNEhaZU85c3haUWlyUWU3Vk5fYTZzRFRiLUVlNHplaGlGQmRvaGs2cTFuZHc?oc=5",
    "date": "2026-09-10T12:59:25.000Z",
    "tags": [
     "Weltlage"
@@ -2052,7 +2136,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2062,16 +2146,16 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
-    "Al Jazeera (GN)"
+    "Al Jazeera"
    ],
    "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Der Trump Loyalitätstest: Werden seine Anhänger ihm jemals widersprechen?"
+   "titleDe": "Der Trump-Treue-Test: Werden seine Anhänger ihm jemals widersprechen? - aljazeera.com"
   },
   {
-   "id": "Al Jazeera (GN):United States",
-   "title": "United States",
+   "id": "Al Jazeera (GN):United States - aljazeera.com",
+   "title": "United States - aljazeera.com",
    "source": "Al Jazeera (GN)",
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5kaHlsQVZFMmVDb1pOd00tcUdrY0Z2MktQMml3ZHRSQUFMV1VSVGtzYWxGRzdqNU9ER05qSmdjNTRBUGQyUmIwOFpmZmEzM1FYcUFqVzlpcUdmQQ?oc=5",
    "date": "2026-09-10T12:57:14.000Z",
@@ -2104,7 +2188,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Vereinigte Staaten"
+   "titleDe": "USA – aljazeera.com"
   },
   {
    "id": "FXStreet:Euro weakens despite ECB rate hike as US PPI comes in hot",
@@ -2372,7 +2456,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2388,9 +2472,9 @@
    "titleDe": "Chemieunternehmen erzielen einen Vergleich über 455 Mio. $ mit North Carolina über „Forever Chemicals“ -Ansprüche"
   },
   {
-   "id": "Al Jazeera (GN):Middle East News",
-   "title": "Middle East News",
-   "text": "Middle East News &nbsp;&nbsp; Al Jazeera",
+   "id": "Al Jazeera (GN):Middle East News - aljazeera.com",
+   "title": "Middle East News - aljazeera.com",
+   "text": "Middle East News &nbsp;&nbsp; aljazeera.com",
    "source": "Al Jazeera (GN)",
    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9WM1BnOUpVVENMbU51dzQ3Y1JLZGppeGdpblJXaFh4SEtjekYwS3dsdDBENF9GYkJFdS1KNnhtdFFfN3BFM2lLNGQ1eWROc2s?oc=5",
    "date": "2026-09-10T12:50:13.000Z",
@@ -2410,7 +2494,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2423,7 +2507,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Naher Osten"
+   "titleDe": "Nachrichten aus dem Nahen Osten - aljazeera.com"
   },
   {
    "id": "U.Today:Ripple CTO Emeritus Fires Back at XRP 'Ghost Chain' Claims: 'Weird Thing to Say'",
@@ -2448,7 +2532,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2488,7 +2572,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2526,7 +2610,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2542,11 +2626,11 @@
    "titleDe": "GBA bestätigt vollständige Teilnehmerliste für die Zukunft des Geldes, der Governance und des Gesetzes 2026"
   },
   {
-   "id": "Al Jazeera:Hundreds of thousands lack adequate shelter at Sudan’s Tawila camp",
-   "title": "Hundreds of thousands lack adequate shelter at Sudan’s Tawila camp",
-   "text": "Insufficient aid and shelter increase hardship for displaced in Tawila, as malnutrition and disease spread rapidly.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/features/2026/9/10/hundreds-of-thousands-lack-adequate-shelter-at-sudans-tawila-camp?traffic_source=rss",
+   "id": "Al Jazeera (GN):Hundreds of thousands lack adequate shelter at Sudan’s Tawila camp - aljazeera.com",
+   "title": "Hundreds of thousands lack adequate shelter at Sudan’s Tawila camp - aljazeera.com",
+   "text": "Hundreds of thousands lack adequate shelter at Sudan’s Tawila camp &nbsp;&nbsp; aljazeera.com",
+   "source": "Al Jazeera (GN)",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQM0JVRzdkQzIwaEQzd1NGOXBYcG51blBsSS0xcTlGLVJfNjZPRll0T0xaLXItb3JaNWJfQzhidUNyaERZc21ZQUQyZmdKRGFGRm9sbGN2eko2YkpwaXBMcl8xbWpxT1dBOHVnR2ZXMjItZDlXeG9jYm9lVkZ5R0kxcUlveVowWjJOODRQM09CU1A1SE9uSHJ3eHlBWVdlRW0xRUpJTGtFRHFhdDF1SzdV0gG0AUFVX3lxTE9WVi1TXzJPdUxENW1JSmlwZlVBR2lLYXc4c2FQWWZ5VlFaay1SNlRYb0ZEUjIyTU9JRTlfb05OZ0I4cGh5cW9ZRTBhZTNhcUFnZGs1Tjc4ZGQ5OWFmSURtZ2E5TXdSVl95X1Q4OXptTGJEeW1kQ3pRN2hvTG1RbjdQaDVhdWVMbHN4akVMSzVfbHVIZ1FUNkpSemRicWR3d2NJYUV3Vm1senlBVE9zUWZkY0kzMw?oc=5",
    "date": "2026-09-10T12:47:35.000Z",
    "tags": [
     "Weltlage"
@@ -2574,12 +2658,12 @@
    "scope": "market",
    "coins": [],
    "alsoIn": [
-    "Al Jazeera (GN)"
+    "Al Jazeera"
    ],
    "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Hunderttausende haben keine angemessene Unterkunft im sudanesischen Lager Tawila"
+   "titleDe": "Hunderttausenden fehlt es an angemessener Unterkunft im sudanesischen Lager Tawila - aljazeera.com"
   },
   {
    "id": "TASS:Putin’s talks with Vietnamese President To Lam were success — Kremlin aide",
@@ -2605,7 +2689,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2696,44 +2780,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Warum will sich fast niemand mit älteren Menschen wie mir anfreunden — außer Betrügern?"
-  },
-  {
-   "id": "Al Jazeera (GN):Is Egypt’s Hamza Abdelkarim set to be Barcelona’s next breakout star?",
-   "title": "Is Egypt’s Hamza Abdelkarim set to be Barcelona’s next breakout star?",
-   "text": "Is Egypt’s Hamza Abdelkarim set to be Barcelona’s next breakout star? &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPOTk4SFdWMFlOSzFJZlpNa0t3V2VaMXZqT2NDcUN2Y2RuZzZnNGdlc0J6T0o5OXduX2VEaTF5RkNpWXpHM2hOZ2gtZEVHTGVWMjdQcW9KQXFwN0s3TXJKamk0MTkzVHNQOGM2OUlYc1NqWFBSQndtcVU1VDB4aWFFa0tITEVlUkppMkhJcUR2VnQ2Z0lyLW9icjVqY2ZYamJsZUJ3THRTdEs5NmxfQmfSAbMBQVVfeXFMTktfXzNLdWpRNUhWTUtZNnFfemIxSnVZc1lhcWhGMHJtNWIwUmV1NkJlZFZnVm9sMTZvVGt5cVN6T1pXZ0xUWkRWWHlodDZNbnZhLTdBaThsb2pPdVoxdnFmeFY5emZNS0UzbHZMRHpvdm9ROENIUU9rX3Yyam5SbWxRS1hmcW8tYjFBSDhvVDVadU40dWsxTDlIelQybWVrRUY3aEFtS0p4bnIyaFFqaWU3OHM?oc=5",
-   "date": "2026-09-10T12:44:13.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 30,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Wird Hamza Abdelkarim aus Ägypten Barcelonas nächster Breakout-Star?"
   },
   {
    "id": "FXStreet:US headline Producer Price Index rose by 5.4% in August",
@@ -2996,7 +3042,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 68,
+   "priority": 67,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -3158,7 +3204,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: military strike)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 67,
+   "priority": 66,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "medium",
@@ -3632,8 +3678,10 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "Al Jazeera (GN)"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Israel wird mich nie davon abhalten, für Palästina zu sprechen"
@@ -3714,44 +3762,6 @@
    "titleDe": "Geldpolitische Beschlüsse"
   },
   {
-   "id": "MarketWatch:I’m a single 58-year-old veteran in California with $1.5 million and a VA pension. Can I retire?",
-   "title": "I’m a single 58-year-old veteran in California with $1.5 million and a VA pension. Can I retire?",
-   "text": "“I expect to receive at least $9,000 per month before federal and California state taxes.”",
-   "source": "MarketWatch",
-   "url": "https://www.marketwatch.com/story/im-a-single-58-year-old-veteran-with-1-5-million-in-assets-and-a-va-pension-can-i-afford-to-retire-9fadfd41?mod=mw_rss_topstories",
-   "date": "2026-09-10T12:15:00.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 30,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Ich bin ein 58-jähriger Veteran in Kalifornien mit 1,5 Millionen $ und einer VA-Rente. Kann ich in Rente gehen?"
-  },
-  {
    "id": "FXStreet:Norwegian Krone: Softer inflation trims hike odds – BBH",
    "title": "Norwegian Krone: Softer inflation trims hike odds – BBH",
    "text": "Brown Brothers Harriman's (BBH) Elias Haddad notes Norwegian Krone (NOK) underperformance after Norway’s mixed August Consumer Price Index (CPI) data reduced the perceived likelihood of a near-term Norges Bank hike, with September odds falling from 65% to 38%.",
@@ -3774,7 +3784,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3812,7 +3822,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3828,9 +3838,9 @@
    "titleDe": "Hongkong kann zum KI-Kompetenzzentrum werden, sagen Branchenführer"
   },
   {
-   "id": "Al Jazeera (GN):At least 25 dead after cargo ship catches fire in China",
-   "title": "At least 25 dead after cargo ship catches fire in China",
-   "text": "At least 25 dead after cargo ship catches fire in China &nbsp;&nbsp; Al Jazeera",
+   "id": "Al Jazeera (GN):At least 25 dead after cargo ship catches fire in China - aljazeera.com",
+   "title": "At least 25 dead after cargo ship catches fire in China - aljazeera.com",
+   "text": "At least 25 dead after cargo ship catches fire in China &nbsp;&nbsp; aljazeera.com",
    "source": "Al Jazeera (GN)",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONnBTaDE1SWFWQVlET0RvR0hyQ0huQnJtYUlkeGt6amVDNUtudHpGUW1WdWxZMHo1dFhZTS04SGY2TllEcENxd1VCNFhHRl8wVTd2SEhyOTE1MnBZbnVCZ0ZPNjh6TGUzOFcyMnhtTFBmSlZkekFzZXZmNXhLcVlzQkpwdDdPd3R2d0dVaWlZVDhoUnN1Sk1iWHVqVXPSAaIBQVVfeXFMUC1PNWF5cW1Rb3hQWTNjajgtTENld3AxcGRnbUY3OGdxa2tnaGdfMG4wRFJGUVUtdzhhX2RBZlY3RW93NmFYcVl0a0NzWlRERzlqMzNlOGRUTFd4Q19Yb0ZMb0JWQzhrVF9ka1V4MjkzcW5xalFKV0VhQVdCLW45aWFMeEFzdDJIUS1xMnpKZks0aWtwMVlUWk0wTzJDcUFxaS1B?oc=5",
    "date": "2026-09-10T12:12:19.000Z",
@@ -3867,7 +3877,7 @@
    "bestaetigt": 4,
    "haeuser": 3,
    "unabhaengig": 2,
-   "titleDe": "Mindestens 25 Tote, nachdem das Frachtschiff in China Feuer gefangen hat"
+   "titleDe": "Mindestens 25 Tote, nachdem das Frachtschiff in China Feuer gefangen hat - aljazeera.com"
   },
   {
    "id": "SCMP:China says yuan’s global rise is ‘irreversible’ – and has a strategy to back it up",
@@ -3892,7 +3902,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 60,
+   "priority": 59,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3931,7 +3941,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4342,44 +4352,6 @@
    "titleDe": "Vance zieht Trumps $5.000‑Dividendenangebot zurück, falls Republikaner die Zwischenwahlen gewinnen – US‑Politik live"
   },
   {
-   "id": "FXStreet:Euro: Upside bias within defined band against US Dollar – UOB",
-   "title": "Euro: Upside bias within defined band against US Dollar – UOB",
-   "text": "UOB’s Quek Ser Leang and Lee Sue Ann describe EUR/USD as range-bound near 1.1630, with recent trading contained between 1.1619 and 1.1653. They maintain an upside bias but expect the Euro to stay within 1.1585–1.1670 in the coming weeks.",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/euro-upside-bias-within-defined-band-against-us-dollar-uob-202609101154",
-   "date": "2026-09-10T11:54:03.000Z",
-   "tags": [
-    "Makro"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "us-markets",
-   "categoryLabel": "US-Märkte",
-   "priority": 42,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Euro: Upside Bias innerhalb eines definierten Bandes gegenüber dem US-Dollar – UOB"
-  },
-  {
    "id": "U.Today:Bitwise Buys $107 Million of Solana in 20 Days",
    "title": "Bitwise Buys $107 Million of Solana in 20 Days",
    "text": "Bitwise has bought heavily into Solana after its Solana ETF attracted over $107 million in net inflows, following the resurgence in institutional interest.",
@@ -4485,7 +4457,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 65,
+   "priority": 64,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -4524,7 +4496,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4640,7 +4612,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4682,7 +4654,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. (signals: rate hike)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 41,
+   "priority": 40,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -5505,44 +5477,6 @@
    "titleDe": "Macy's erwirtschaftet starke Ergebnisse und erhöht die Prognose, wenn sich die Trendwende durchsetzt"
   },
   {
-   "id": "Al Jazeera:IAEA accuses Iran of ‘noncompliance’",
-   "title": "IAEA accuses Iran of ‘noncompliance’",
-   "text": "Nuclear watchdog has gone more than a year without inspecting key sites; Iran says US attacks have made access unsafe.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/10/iaea-accuses-iran-of-non-compliance-why-and-what-now?traffic_source=rss",
-   "date": "2026-09-10T10:59:39.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 58,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "IAEO wirft Iran „Nichteinhaltung“ vor"
-  },
-  {
    "id": "BeInCrypto:Kraken Parent Lands $100 Million Nasdaq Bet Before Planned IPO, But Why?",
    "title": "Kraken Parent Lands $100 Million Nasdaq Bet Before Planned IPO, But Why?",
    "text": "Nasdaq is putting $100 million into Kraken parent Payward at a $21 billion valuation to build tokenized stock rails.",
@@ -5565,7 +5499,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5604,7 +5538,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5657,44 +5591,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Warnungen vor dem Aussterben steigen, da immer mehr OpenAI‑ und Anthropic‑Forscher einen KI‑Verlangsamung fordern"
-  },
-  {
-   "id": "Al Jazeera:Hong Kong court rules Dow Jones tried to stop journalist taking union role",
-   "title": "Hong Kong court rules Dow Jones tried to stop journalist taking union role",
-   "text": "Dow Jones was acquitted of the charge of dismissal over Selina Cheng's leadership role.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/10/hong-kong-court-rules-dow-jones-tried-to-stop-journalist-taking-union-role?traffic_source=rss",
-   "date": "2026-09-10T10:48:51.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 27,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Hongkonger Gericht entscheidet, dass Dow Jones versucht hat, Journalisten daran zu hindern, eine Gewerkschaftsrolle einzunehmen"
   },
   {
    "id": "Anadolu:AI pioneer Geoffrey Hinton says 10% risk of human extinction from AI 'not unreasonable'",
@@ -6073,7 +5969,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 27,
+   "priority": 26,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6189,7 +6085,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6387,7 +6283,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 26,
+   "priority": 25,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6823,7 +6719,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 45,
+   "priority": 44,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7337,7 +7233,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 36,
+   "priority": 35,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7421,7 +7317,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 55,
+   "priority": 62,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -7537,7 +7433,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7668,51 +7564,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "DOJ hält $ 52 Millionen in Krypto zurück, die an den chinesischen Betrugsmarkt Xinbi gebunden sind"
-  },
-  {
-   "id": "CNBC World:'Saved the day': How China helped keep the lid on oil price surge as Iran war disrupted supplies",
-   "title": "'Saved the day': How China helped keep the lid on oil price surge as Iran war disrupted supplies",
-   "text": "China's crude stockpiling and subsequent pullback on purchases since the war erupted in late February has helped the world avoid a deeper energy crisis.",
-   "source": "CNBC World",
-   "url": "https://www.cnbc.com/2026/09/10/china-crude-oil-iran-hormuz-war-trump-brent-prices-.html",
-   "date": "2026-09-10T06:23:14.000Z",
-   "tags": [
-    "Weltwirtschaft"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0.92,
-   "signals": [
-    "Energiepreisschock",
-    "Preisdruck",
-    "Energiepreise steigen",
-    "Eskalation"
-   ],
-   "scores": {
-    "crypto": -1,
-    "stocks": -1,
-    "gold": -0.367,
-    "usd": 1
-   },
-   "why": "Signalwörter deuten auf straffere Geldpolitik — negativ für Risk-Assets. Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Energiepreisschock, Preisdruck, Energiepreise steigen, Eskalation)",
-   "whyEn": "Signal words point to tighter policy — negative for risk assets. Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: energy price shock, price pressure, energy prices rising, escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 66,
-   "label": "strong_bearish",
-   "labelText": "Stark Bearish",
-   "impactLevel": "medium",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "'Rettet den Tag': Wie China dazu beitrug, den Ölpreisanstieg unter Kontrolle zu halten, während der Iran-Krieg die Versorgung unterbrach"
   },
   {
    "id": "IRNA:Iran condemns US sanctions on 27 Iranian airlines as ‘economic terrorism’",
@@ -8062,7 +7913,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 48,
+   "priority": 47,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -8455,7 +8306,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 29,
+   "priority": 28,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -10206,46 +10057,6 @@
    "titleDe": "Consensys Software Inc. teilt sich in zwei Teile auf, wird in MetaMask umbenannt"
   },
   {
-   "id": "The Block:Consensys splits MetaMask from institutional and Ethereum infrastructure businesses",
-   "title": "Consensys splits MetaMask from institutional and Ethereum infrastructure businesses",
-   "text": "The separation is expected to be completed by the end of 2026, with the existing entity rebranding as MetaMask under CEO Joe Lubin.",
-   "source": "The Block",
-   "url": "https://www.theblock.co/news/business/2026-09-09-consensys-splits-metamask-institutional-ethereum-infrastructure-businesses-414022",
-   "date": "2026-09-09T14:54:15.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "ETH"
-   ],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Consensys trennt MetaMask von institutionellen und Ethereum-Infrastrukturgeschäften"
-  },
-  {
    "id": "The Defiant:Block Seeks OCC Charter for Uninsured Bitcoin and Stablecoin Custody Bank",
    "title": "Block Seeks OCC Charter for Uninsured Bitcoin and Stablecoin Custody Bank",
    "text": "Builders Bank would operate under direct federal supervision without taking deposits or making loans, but the application still requires OCC approval.",
@@ -10406,12 +10217,12 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 7,
+  "uebersetzt": 8,
   "fehler": null
  },
  "rubriken": {
-  "Sport": 4,
-  "Unsinn": 2,
-  "Lebensart": 1
+  "Sport": 5,
+  "Lebensart": 1,
+  "Unsinn": 1
  }
 }
