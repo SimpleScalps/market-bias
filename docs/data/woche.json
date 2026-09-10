@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T12:44:07.266Z",
+ "updated": "2026-09-10T12:58:11.025Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T12:44:07.361Z",
+   "stand": "2026-09-10T12:58:11.130Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T12:44:07.342Z",
+   "stand": "2026-09-10T12:58:11.110Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,32 +921,32 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T12:44:07.321Z",
-   "anzahl": 205,
+   "stand": "2026-09-10T12:58:11.089Z",
+   "anzahl": 209,
    "klassen": {
     "crypto": {
-     "score": -0.0977,
+     "score": -0.0999,
      "bull": 0,
-     "bear": 23,
-     "neut": 182
+     "bear": 22,
+     "neut": 187
     },
     "stocks": {
-     "score": -0.0857,
+     "score": -0.0876,
      "bull": 0,
-     "bear": 20,
-     "neut": 185
+     "bear": 19,
+     "neut": 190
     },
     "gold": {
-     "score": 0.0089,
-     "bull": 13,
-     "bear": 4,
-     "neut": 188
+     "score": 0.0041,
+     "bull": 12,
+     "bear": 5,
+     "neut": 192
     },
     "usd": {
-     "score": 0.0504,
-     "bull": 9,
+     "score": 0.0543,
+     "bull": 8,
      "bear": 0,
-     "neut": 196
+     "neut": 201
     }
    },
    "top": [
@@ -981,6 +981,21 @@
      "priority": 100
     },
     {
+     "id": "CNBC:10-year Treasury yield tops 4.9%, highest since 2023, as oil surge raises inflation fears",
+     "titel": "10-year Treasury yield tops 4.9%, highest since 2023, as oil surge raises inflation fears",
+     "titelDe": "Die Rendite zehnjähriger Staatsanleihen liegt bei über 4,9 %, dem höchsten Wert seit 2023, da der Ölanstieg Inflationsängste aufkommen lässt",
+     "quelle": "CNBC",
+     "url": "https://www.cnbc.com/2026/09/10/us-treasurys-bonds-yield.html",
+     "zeit": "2026-09-10T12:53:39.000Z",
+     "scores": {
+      "crypto": -0.878,
+      "stocks": -0.803,
+      "gold": -0.211,
+      "usd": 0.626
+     },
+     "priority": 86
+    },
+    {
      "id": "CNBC World:'Saved the day': How China helped keep the lid on oil price surge as Iran war disrupted supplies",
      "titel": "'Saved the day': How China helped keep the lid on oil price surge as Iran war disrupted supplies",
      "titelDe": "'Rettet den Tag': Wie China dazu beitrug, den Ölpreisanstieg unter Kontrolle zu halten, während der Iran-Krieg die Versorgung unterbrach",
@@ -993,7 +1008,7 @@
       "gold": -0.367,
       "usd": 1
      },
-     "priority": 68
+     "priority": 67
     },
     {
      "id": "Reuters:Multiple US military aircraft suffered damage in overnight strikes on Jordan air base, CBS says",
@@ -1041,9 +1056,9 @@
      "priority": 72
     },
     {
-     "id": "Reuters:VIEW ECB hikes rates as Iran war adds to inflation angst - reuters.com",
-     "titel": "VIEW ECB hikes rates as Iran war adds to inflation angst - reuters.com",
-     "titelDe": "SEHEN SIE sich die Zinserhöhungen der EZB an, während der Iran-Krieg die Inflationsangst verstärkt - reuters.com",
+     "id": "Reuters:VIEW ECB hikes rates as Iran war adds to inflation angst",
+     "titel": "VIEW ECB hikes rates as Iran war adds to inflation angst",
+     "titelDe": "SEHEN SIE sich die Zinserhöhungen der EZB an, da der Iran-Krieg die Inflationsangst verstärkt",
      "quelle": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOY0VWcFhfaVg1bHdEUzlqVTlvNlREOFdweDVteVNCVWFCY29MVFJMRVdWeEJuSDAxWlY3cjU4ZGlxdkNremFBTThYSVQ5cFNBaTliSGMwbmJRR0NkNkwtUUhORFFwZ3gwLXJSZnNOR1ZfVDlEanZ5TzFNZ3FsX1hobnkyODI3cE96RkI2S3htVk5LRWNWbmF1c1FvNA?oc=5",
      "zeit": "2026-09-10T12:38:59.000Z",
@@ -1054,21 +1069,6 @@
       "usd": 0.458
      },
      "priority": 73
-    },
-    {
-     "id": "CNBC:Ryanair CEO says to brace for a 'significant uplift' in airfares as oil prices soar",
-     "titel": "Ryanair CEO says to brace for a 'significant uplift' in airfares as oil prices soar",
-     "titelDe": "Ryanair-CEO sagt, man solle sich auf einen \"signifikanten Anstieg\" der Flugpreise einstellen, wenn die Ölpreise steigen",
-     "quelle": "CNBC",
-     "url": "https://www.cnbc.com/2026/09/10/ryanair-airfare-prices-oil-iran-war.html",
-     "zeit": "2026-09-10T09:11:58.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": -0.547,
-      "usd": 1
-     },
-     "priority": 48
     }
    ]
   }
