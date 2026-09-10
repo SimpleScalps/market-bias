@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T17:41:01.636Z",
+ "updated": "2026-09-10T17:54:06.825Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T17:41:01.723Z",
+   "stand": "2026-09-10T17:54:06.906Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T17:41:01.704Z",
+   "stand": "2026-09-10T17:54:06.889Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T17:41:01.685Z",
+   "stand": "2026-09-10T17:54:06.871Z",
    "anzahl": 220,
    "klassen": {
     "crypto": {
@@ -996,6 +996,21 @@
      "priority": 100
     },
     {
+     "id": "Al Jazeera (GN):Family of four killed as they slept in Israeli strike on Gaza",
+     "titel": "Family of four killed as they slept in Israeli strike on Gaza",
+     "titelDe": "Vierköpfige Familie getötet, als sie im israelischen Angriff auf Gaza schliefen",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbXpIMnJQVmszeXNVVU9ESUotc2lzN1FpQ0ZuRFhiNTgxQTc5SGVfTHBOVEE1NmI0QjdQYTlYc0NOZDZtUlBPSmtrOXZYN0lMMERoVnpjTlhTRHotOF8xcEZiVzVYYUpHeENtdFdKbF82MnJGWV9UZTJ4aldiLXRONXUyNGZDdEl2N1BrdVdNZUp5eHhqR2ppb1BhZVpoLTFPTjlWN1R3QUlJMG95UHZLRkhB0gG3AUFVX3lxTE5wcTZCVGlWWlZLNDJlRlljc05jaVZVbk16b3pzb2ZPN2V3d29USUZMRk54eHpJYmtFUnZYb0RnRGp0WjM1UTFPRnNsSS1zZEQyR2puczRLTWI4WUtPdndOVmRyTG9Ka2ZxbENIQ0ZPYlZfRGVuVWduV0QwSlhKcnl5SHJ4b0VYalJEUVB3TDFIdVRiOVAzdG4tTHl1OHdsWFdPVERfc0JEcUVhaU9NYlVaQUczMjNFQQ?oc=5",
+     "zeit": "2026-09-10T17:32:28.000Z",
+     "scores": {
+      "crypto": -0.81,
+      "stocks": -0.81,
+      "gold": 0.405,
+      "usd": 0.27
+     },
+     "priority": 100
+    },
+    {
      "id": "SCMP:US producer inflation tops expectations as energy costs jump amid Iran war",
      "titel": "US producer inflation tops expectations as energy costs jump amid Iran war",
      "titelDe": "US-Produktionsinflation übertrifft Erwartungen, Energierechnungen steigen durch Iran-Krieg",
@@ -1054,21 +1069,6 @@
       "usd": 1
      },
      "priority": 66
-    },
-    {
-     "id": "CNBC Economy:The likelihood of a Fed interest rate hike next week just got a lot higher",
-     "titel": "The likelihood of a Fed interest rate hike next week just got a lot higher",
-     "titelDe": "Die Wahrscheinlichkeit einer Fed-Zinserhöhung nächste Woche ist deutlich gestiegen",
-     "quelle": "CNBC Economy",
-     "url": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html",
-     "zeit": "2026-09-10T14:34:55.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 84
     }
    ]
   }
