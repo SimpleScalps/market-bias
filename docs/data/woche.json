@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T05:21:42.307Z",
+ "updated": "2026-09-10T05:36:27.947Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T05:21:42.401Z",
+   "stand": "2026-09-10T05:36:28.003Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T05:21:42.382Z",
+   "stand": "2026-09-10T05:36:27.993Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,35 +921,50 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T05:21:42.362Z",
-   "anzahl": 105,
+   "stand": "2026-09-10T05:36:27.983Z",
+   "anzahl": 109,
    "klassen": {
     "crypto": {
-     "score": -0.0925,
+     "score": -0.1193,
      "bull": 0,
-     "bear": 13,
-     "neut": 92
-    },
-    "stocks": {
-     "score": -0.0866,
-     "bull": 0,
-     "bear": 12,
-     "neut": 93
-    },
-    "gold": {
-     "score": 0.0429,
-     "bull": 11,
-     "bear": 0,
+     "bear": 15,
      "neut": 94
     },
-    "usd": {
-     "score": 0.0292,
-     "bull": 3,
+    "stocks": {
+     "score": -0.114,
+     "bull": 0,
+     "bear": 14,
+     "neut": 95
+    },
+    "gold": {
+     "score": 0.0566,
+     "bull": 13,
      "bear": 0,
-     "neut": 102
+     "neut": 96
+    },
+    "usd": {
+     "score": 0.0383,
+     "bull": 4,
+     "bear": 0,
+     "neut": 105
     }
    },
    "top": [
+    {
+     "id": "Reuters:Woman killed in drone attack on Russia's Voronezh region, governor says",
+     "titel": "Woman killed in drone attack on Russia's Voronezh region, governor says",
+     "titelDe": "Witwen in Voronezh durch Drohnenangriff getötet, sagt Gouverneur",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRFlhTHNqT0N4RHBESm9reEpZYndPSjNNRWFlcUJsZWZqQjczUnk5dU9Vd2J1TmVPOGtnalJIc1ZvOVhwcVp1R3JNdzlDVWU4eEsxOHJNX3c5dHBYSE9aaHBtOFpUUTJESVZmenhVTHRnZmpvXzI4cWRVTURuYnVndHgybTRCWHJQcTE4ZGtiWmQ2RjFuWkRKTzVuUWMzUFM5Y1FxNTZwTUU?oc=5",
+     "zeit": "2026-09-10T05:30:00.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 100
+    },
     {
      "id": "Reuters:Strike on shopping centre in Sumy in northern Ukraine kills two, governor says",
      "titel": "Strike on shopping centre in Sumy in northern Ukraine kills two, governor says",
@@ -1038,7 +1053,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 95
+     "priority": 94
     },
     {
      "id": "Al Jazeera (GN):Why is Iran bombing Jordan’s Al-Azraq base? - aljazeera.com",
@@ -1054,21 +1069,6 @@
       "usd": 0.165
      },
      "priority": 69
-    },
-    {
-     "id": "Al Jazeera:Why is Iran bombing Jordan’s Al-Azraq base?",
-     "titel": "Why is Iran bombing Jordan’s Al-Azraq base?",
-     "titelDe": "Warum bombardiert Iran Jordaniens Al-Azraq-Basis?",
-     "quelle": "Al Jazeera",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/why-is-iran-bombing-jordans-al-azraq-base?traffic_source=rss",
-     "zeit": "2026-09-10T03:02:18.000Z",
-     "scores": {
-      "crypto": -0.495,
-      "stocks": -0.495,
-      "gold": 0.248,
-      "usd": 0.165
-     },
-     "priority": 66
     }
    ]
   }
