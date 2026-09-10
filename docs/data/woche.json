@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T22:54:49.057Z",
+ "updated": "2026-09-10T23:03:31.199Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T22:54:49.159Z",
+   "stand": "2026-09-10T23:03:31.281Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T22:54:49.141Z",
+   "stand": "2026-09-10T23:03:31.268Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T22:54:49.122Z",
+   "stand": "2026-09-10T23:03:31.253Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,50 +1074,35 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-10T22:54:49.103Z",
-   "anzahl": 26,
+   "stand": "2026-09-10T23:03:31.238Z",
+   "anzahl": 30,
    "klassen": {
     "crypto": {
-     "score": -0.1485,
+     "score": -0.141,
      "bull": 0,
-     "bear": 3,
-     "neut": 23
+     "bear": 4,
+     "neut": 26
     },
     "stocks": {
-     "score": -0.1485,
+     "score": -0.1387,
      "bull": 0,
-     "bear": 3,
-     "neut": 23
+     "bear": 4,
+     "neut": 26
     },
     "gold": {
-     "score": 0.0742,
+     "score": 0.0506,
      "bull": 3,
-     "bear": 0,
-     "neut": 23
+     "bear": 1,
+     "neut": 26
     },
     "usd": {
-     "score": 0.0495,
-     "bull": 2,
+     "score": 0.0572,
+     "bull": 3,
      "bear": 0,
-     "neut": 24
+     "neut": 27
     }
    },
    "top": [
-    {
-     "id": "Reuters:Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region",
-     "titel": "Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region",
-     "titelDe": "Zwei Tote, sieben Verletzte bei ukrainischen Drohnenangriffen auf die russische Region Belgorod",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNamlUQm5ZYm5sdFR4dE9vVjZDbWFNTHlya2FJd3RqYmRvRWF2OFpudm01Mm1CVVpRNVZ3Z2RfY3RqcXplME1IMlV5eGtpbEFzbVd4MHgxZS1ubGIwcEcyVWcxRENDOFlJbWI0OG5ObU54ZFFiQmN3Y2k0QmFVZ3JBeFphYjRzNHJoRjkxX0JwS3BpaG13cDN0b2J5VUFSb1JTZDh0V3pjMDNhTW10eXNPQ2t4S3BrZkFrekRn?oc=5",
-     "zeit": "2026-09-10T22:14:00.000Z",
-     "scores": {
-      "crypto": -0.855,
-      "stocks": -0.855,
-      "gold": 0.427,
-      "usd": 0.285
-     },
-     "priority": 75
-    },
     {
      "id": "Reuters:Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region - reuters.com",
      "titel": "Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region - reuters.com",
@@ -1132,6 +1117,21 @@
       "usd": 0.285
      },
      "priority": 75
+    },
+    {
+     "id": "Reuters:Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region",
+     "titel": "Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region",
+     "titelDe": "Zwei Tote, sieben Verletzte bei ukrainischen Drohnenangriffen auf die russische Region Belgorod",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNamlUQm5ZYm5sdFR4dE9vVjZDbWFNTHlya2FJd3RqYmRvRWF2OFpudm01Mm1CVVpRNVZ3Z2RfY3RqcXplME1IMlV5eGtpbEFzbVd4MHgxZS1ubGIwcEcyVWcxRENDOFlJbWI0OG5ObU54ZFFiQmN3Y2k0QmFVZ3JBeFphYjRzNHJoRjkxX0JwS3BpaG13cDN0b2J5VUFSb1JTZDh0V3pjMDNhTW10eXNPQ2t4S3BrZkFrekRn?oc=5",
+     "zeit": "2026-09-10T22:14:00.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 74
     },
     {
      "id": "Reuters:Trump administration to sanction unnamed 'large' bank on Monday, Bessent says",
@@ -1149,21 +1149,6 @@
      "priority": 68
     },
     {
-     "id": "Reuters:Trustee for bankrupt law firm sues JPMorgan for allegedly aiding lawyers' theft",
-     "titel": "Trustee for bankrupt law firm sues JPMorgan for allegedly aiding lawyers' theft",
-     "titelDe": "Treuhänder einer insolventen Anwaltskanzlei verklagt JPMorgan wegen angeblicher Unterstützung bei Diebstahl von Anwälten",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSUZxSWFZZFVVZDViMjhNTENzRWczTDJCSm82a3Z3SG1wQURJeUJGTlJsM1cwRUpmX3ZNaTNITjVUR1FkMEV5SjNtUktLNlJnNm91YWpYSm5YTW0xZ3htcUR1bTN3UmNselVxWkFyb1lZVW8wRW5IRC00UUp6SXhqWURPSUxoV0tzZE4zX3k5TlhwUXVfWXYzMGN3ZVM2TkFyaTYyQ3J2R0tNRE9tWlR4djJGUmo1T29kcGYtOGNlaTQ?oc=5",
-     "zeit": "2026-09-10T22:15:55.000Z",
-     "scores": {
-      "crypto": -0.54,
-      "stocks": -0.54,
-      "gold": 0.27,
-      "usd": 0.18
-     },
-     "priority": 40
-    },
-    {
      "id": "Reuters:Trustee for bankrupt law firm sues JPMorgan for allegedly aiding lawyers' theft - reuters.com",
      "titel": "Trustee for bankrupt law firm sues JPMorgan for allegedly aiding lawyers' theft - reuters.com",
      "titelDe": "Treuhänder für bankrotte Anwaltskanzlei verklagt JPMorgan wegen angeblicher Beihilfe zum Diebstahl von Anwälten - reuters.com",
@@ -1177,6 +1162,36 @@
       "usd": 0.18
      },
      "priority": 40
+    },
+    {
+     "id": "Reuters:Trustee for bankrupt law firm sues JPMorgan for allegedly aiding lawyers' theft",
+     "titel": "Trustee for bankrupt law firm sues JPMorgan for allegedly aiding lawyers' theft",
+     "titelDe": "Treuhänder einer insolventen Anwaltskanzlei verklagt JPMorgan wegen angeblicher Unterstützung bei Diebstahl von Anwälten",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSUZxSWFZZFVVZDViMjhNTENzRWczTDJCSm82a3Z3SG1wQURJeUJGTlJsM1cwRUpmX3ZNaTNITjVUR1FkMEV5SjNtUktLNlJnNm91YWpYSm5YTW0xZ3htcUR1bTN3UmNselVxWkFyb1lZVW8wRW5IRC00UUp6SXhqWURPSUxoV0tzZE4zX3k5TlhwUXVfWXYzMGN3ZVM2TkFyaTYyQ3J2R0tNRE9tWlR4djJGUmo1T29kcGYtOGNlaTQ?oc=5",
+     "zeit": "2026-09-10T22:15:55.000Z",
+     "scores": {
+      "crypto": -0.54,
+      "stocks": -0.54,
+      "gold": 0.27,
+      "usd": 0.18
+     },
+     "priority": 39
+    },
+    {
+     "id": "Reuters:Wall St ends lower as yields rise, inflation concerns mount",
+     "titel": "Wall St ends lower as yields rise, inflation concerns mount",
+     "titelDe": "Wall St endet niedriger, wenn die Renditen steigen, die Inflationssorgen steigen",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1pck5pMmw5WW1oMVpCQTUwaURLVmtOWE9UYng0cjBNSHBmZ1lwT1JWZ3h0UEZQODV6WDZETzF6Vno4SG1XUXJEUTJwOVpWeld4MlRxRHEzc0JzcVFiNG5ITXhZNVpOZ0pQcDAtME96UGFFcmFuQ1J4QnlEd0FnUQ?oc=5",
+     "zeit": "2026-09-10T22:53:19.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.383,
+      "gold": -0.36,
+      "usd": 0.45
+     },
+     "priority": 39
     }
    ]
   }
