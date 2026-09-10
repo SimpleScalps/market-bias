@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T22:18:41.071Z",
+ "updated": "2026-09-10T22:29:45.450Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T22:18:41.176Z",
+   "stand": "2026-09-10T22:29:45.534Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T22:18:41.157Z",
+   "stand": "2026-09-10T22:29:45.520Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T22:18:41.139Z",
+   "stand": "2026-09-10T22:29:45.505Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,35 +1074,66 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-10T22:18:41.119Z",
-   "anzahl": 7,
+   "stand": "2026-09-10T22:29:45.490Z",
+   "anzahl": 15,
    "klassen": {
     "crypto": {
-     "score": 0,
+     "score": -0.2024,
      "bull": 0,
-     "bear": 0,
-     "neut": 7
+     "bear": 2,
+     "neut": 13
     },
     "stocks": {
-     "score": 0,
+     "score": -0.2024,
      "bull": 0,
-     "bear": 0,
-     "neut": 7
+     "bear": 2,
+     "neut": 13
     },
     "gold": {
-     "score": 0,
-     "bull": 0,
+     "score": 0.1011,
+     "bull": 2,
      "bear": 0,
-     "neut": 7
+     "neut": 13
     },
     "usd": {
-     "score": 0,
-     "bull": 0,
+     "score": 0.0675,
+     "bull": 2,
      "bear": 0,
-     "neut": 7
+     "neut": 13
     }
    },
-   "top": []
+   "top": [
+    {
+     "id": "Reuters:Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region - reuters.com",
+     "titel": "Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region - reuters.com",
+     "titelDe": "Zwei Tote, sieben Verletzte bei ukrainischen Drohnenangriffen auf die russische Region Belgorod - reuters.com",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNamlUQm5ZYm5sdFR4dE9vVjZDbWFNTHlya2FJd3RqYmRvRWF2OFpudm01Mm1CVVpRNVZ3Z2RfY3RqcXplME1IMlV5eGtpbEFzbVd4MHgxZS1ubGIwcEcyVWcxRENDOFlJbWI0OG5ObU54ZFFiQmN3Y2k0QmFVZ3JBeFphYjRzNHJoRjkxX0JwS3BpaG13cDN0b2J5VUFSb1JTZDh0V3pjMDNhTW10eXNPQ2t4S3BrZkFrekRn?oc=5",
+     "zeit": "2026-09-10T22:14:00.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 75
+    },
+    {
+     "id": "Reuters:Trustee for bankrupt law firm sues JPMorgan for allegedly aiding lawyers' theft - reuters.com",
+     "titel": "Trustee for bankrupt law firm sues JPMorgan for allegedly aiding lawyers' theft - reuters.com",
+     "titelDe": "Treuhänder für bankrotte Anwaltskanzlei verklagt JPMorgan wegen angeblicher Beihilfe zum Diebstahl von Anwälten - reuters.com",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSUZxSWFZZFVVZDViMjhNTENzRWczTDJCSm82a3Z3SG1wQURJeUJGTlJsM1cwRUpmX3ZNaTNITjVUR1FkMEV5SjNtUktLNlJnNm91YWpYSm5YTW0xZ3htcUR1bTN3UmNselVxWkFyb1lZVW8wRW5IRC00UUp6SXhqWURPSUxoV0tzZE4zX3k5TlhwUXVfWXYzMGN3ZVM2TkFyaTYyQ3J2R0tNRE9tWlR4djJGUmo1T29kcGYtOGNlaTQ?oc=5",
+     "zeit": "2026-09-10T22:15:55.000Z",
+     "scores": {
+      "crypto": -0.54,
+      "stocks": -0.54,
+      "gold": 0.27,
+      "usd": 0.18
+     },
+     "priority": 40
+    }
+   ]
   }
  }
 }
