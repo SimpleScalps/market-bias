@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-10T09:49:26.522Z",
+ "updated": "2026-09-10T09:57:44.316Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-10T09:49:26.614Z",
+   "stand": "2026-09-10T09:57:44.394Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-10T09:49:26.595Z",
+   "stand": "2026-09-10T09:57:44.379Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,32 +921,32 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-10T09:49:26.577Z",
-   "anzahl": 152,
+   "stand": "2026-09-10T09:57:44.363Z",
+   "anzahl": 156,
    "klassen": {
     "crypto": {
-     "score": -0.0976,
+     "score": -0.0938,
      "bull": 0,
-     "bear": 18,
-     "neut": 134
+     "bear": 17,
+     "neut": 139
     },
     "stocks": {
-     "score": -0.0798,
+     "score": -0.0765,
      "bull": 0,
-     "bear": 15,
-     "neut": 137
+     "bear": 14,
+     "neut": 142
     },
     "gold": {
-     "score": -0.0017,
-     "bull": 9,
+     "score": -0.0022,
+     "bull": 8,
      "bear": 5,
-     "neut": 138
+     "neut": 143
     },
     "usd": {
-     "score": 0.054,
+     "score": 0.052,
      "bull": 6,
      "bear": 0,
-     "neut": 146
+     "neut": 150
     }
    },
    "top": [
@@ -993,7 +993,7 @@
       "gold": -0.367,
       "usd": 1
      },
-     "priority": 73
+     "priority": 72
     },
     {
      "id": "Reuters:Multiple US military aircraft suffered damage in overnight strikes on Jordan air base, CBS says",
@@ -1041,21 +1041,6 @@
      "priority": 72
     },
     {
-     "id": "CNBC World:Ryanair CEO says to brace for a 'significant uplift' in airfares as oil prices soar",
-     "titel": "Ryanair CEO says to brace for a 'significant uplift' in airfares as oil prices soar",
-     "titelDe": "Ryanair-CEO sagt, man solle sich auf einen \"signifikanten Anstieg\" der Flugpreise einstellen, wenn die Ölpreise steigen",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/10/ryanair-airfare-prices-oil-iran-war.html",
-     "zeit": "2026-09-10T09:35:14.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": -0.547,
-      "usd": 1
-     },
-     "priority": 48
-    },
-    {
      "id": "CNBC:Ryanair CEO says to brace for a 'significant uplift' in airfares as oil prices soar",
      "titel": "Ryanair CEO says to brace for a 'significant uplift' in airfares as oil prices soar",
      "titelDe": "Ryanair-CEO sagt, man solle sich auf einen \"signifikanten Anstieg\" der Flugpreise einstellen, wenn die Ölpreise steigen",
@@ -1069,6 +1054,21 @@
       "usd": 1
      },
      "priority": 48
+    },
+    {
+     "id": "CNBC World:Ryanair CEO says to brace for a 'significant uplift' in airfares as oil prices soar",
+     "titel": "Ryanair CEO says to brace for a 'significant uplift' in airfares as oil prices soar",
+     "titelDe": "Ryanair-CEO sagt, man solle sich auf einen \"signifikanten Anstieg\" der Flugpreise einstellen, wenn die Ölpreise steigen",
+     "quelle": "CNBC World",
+     "url": "https://www.cnbc.com/2026/09/10/ryanair-airfare-prices-oil-iran-war.html",
+     "zeit": "2026-09-10T09:35:14.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.547,
+      "usd": 1
+     },
+     "priority": 47
     }
    ]
   }
