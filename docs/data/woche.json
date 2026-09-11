@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T05:31:30.955Z",
+ "updated": "2026-09-11T05:45:41.439Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T05:31:31.038Z",
+   "stand": "2026-09-11T05:45:41.541Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T05:31:31.024Z",
+   "stand": "2026-09-11T05:45:41.524Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T05:31:31.010Z",
+   "stand": "2026-09-11T05:45:41.506Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T05:31:30.995Z",
-   "anzahl": 111,
+   "stand": "2026-09-11T05:45:41.487Z",
+   "anzahl": 115,
    "klassen": {
     "crypto": {
-     "score": -0.1391,
+     "score": -0.1673,
      "bull": 3,
-     "bear": 14,
-     "neut": 94
+     "bear": 15,
+     "neut": 97
     },
     "stocks": {
-     "score": -0.1388,
+     "score": -0.165,
      "bull": 2,
-     "bear": 14,
-     "neut": 95
+     "bear": 15,
+     "neut": 98
     },
     "gold": {
-     "score": 0.0112,
+     "score": 0.0121,
      "bull": 10,
-     "bear": 5,
-     "neut": 96
+     "bear": 6,
+     "neut": 99
     },
     "usd": {
-     "score": 0.0836,
-     "bull": 6,
+     "score": 0.0994,
+     "bull": 8,
      "bear": 0,
-     "neut": 105
+     "neut": 107
     }
    },
    "top": [
@@ -1164,6 +1164,36 @@
      "priority": 78
     },
     {
+     "id": "FXStreet:Indian Rupee extends decline on fresh escalation in hawkish Fed bets",
+     "titel": "Indian Rupee extends decline on fresh escalation in hawkish Fed bets",
+     "titelDe": "Indische Rupie setzt Abwärtstrend fort, da Fed-Hawkish-Wetten eskalieren",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/indian-rupee-extends-decline-on-fresh-escalation-in-hawkish-fed-bets-202609110534",
+     "zeit": "2026-09-11T05:34:21.000Z",
+     "scores": {
+      "crypto": -0.96,
+      "stocks": -0.87,
+      "gold": -0.3,
+      "usd": 0.72
+     },
+     "priority": 77
+    },
+    {
+     "id": "BBC World:Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+     "titel": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
+     "titelDe": "Fünf Tote und 67 Verletzte bei russischem Angriff auf Einkaufszentrum, sagt Ukraine",
+     "quelle": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cpvelrmp1vmo?at_medium=RSS&at_campaign=rss",
+     "zeit": "2026-09-10T22:36:02.000Z",
+     "scores": {
+      "crypto": -0.81,
+      "stocks": -0.81,
+      "gold": 0.405,
+      "usd": 0.27
+     },
+     "priority": 90
+    },
+    {
      "id": "Reuters:Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region - reuters.com",
      "titel": "Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region - reuters.com",
      "titelDe": "Zwei Tote, sieben Verletzte bei ukrainischen Drohnenangriffen auf die russische Region Belgorod - reuters.com",
@@ -1192,36 +1222,6 @@
       "usd": 0.285
      },
      "priority": 74
-    },
-    {
-     "id": "CoinDesk:Bitcoin below $77,000, Zcash leads losses as traders bet on a Fed rate hike",
-     "titel": "Bitcoin below $77,000, Zcash leads losses as traders bet on a Fed rate hike",
-     "titelDe": "Bitcoin unter 77.000 $, Zcash führt Verluste an, Händler setzen auf eine Fed‑Zinserhöhung",
-     "quelle": "CoinDesk",
-     "url": "https://www.coindesk.com/markets/2026/09/11/bitcoin-below-usd77-000-zcash-leads-losses-as-traders-bet-on-a-fed-rate-hike",
-     "zeit": "2026-09-11T04:46:15.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 83
-    },
-    {
-     "id": "Reuters:Market Talk: Mixed data will keep Fed from hiking rates, expert says",
-     "titel": "Market Talk: Mixed data will keep Fed from hiking rates, expert says",
-     "titelDe": "Markttalk: Gemischte Daten lassen die Fed laut Experten nicht zu Zinserhöhungen",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1iNklzS1dmQWlhUHZLbXptX1dTUGZVZmFXbWlLdE05NTJZSWFieWRjS1V3NHlxZFJYQ2tGWldsVXBoTEd5T0s5WXo4b3BQR2duTGR4dXItZzBXOEk4XzN5RWJ4ajdvVm8?oc=5",
-     "zeit": "2026-09-11T02:43:36.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 83
     }
    ]
   },
