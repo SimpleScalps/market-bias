@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T00:42:46.959Z",
+ "updated": "2026-09-11T00:55:23.840Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T00:42:47.034Z",
+   "stand": "2026-09-11T00:55:23.939Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T00:42:47.022Z",
+   "stand": "2026-09-11T00:55:23.922Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T00:42:47.010Z",
+   "stand": "2026-09-11T00:55:23.904Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T00:42:46.996Z",
-   "anzahl": 46,
+   "stand": "2026-09-11T00:55:23.886Z",
+   "anzahl": 48,
    "klassen": {
     "crypto": {
-     "score": -0.1832,
+     "score": -0.1745,
      "bull": 0,
      "bear": 10,
-     "neut": 36
+     "neut": 38
     },
     "stocks": {
-     "score": -0.1694,
+     "score": -0.1614,
      "bull": 0,
      "bear": 10,
-     "neut": 36
+     "neut": 38
     },
     "gold": {
-     "score": -0.028,
+     "score": -0.0264,
      "bull": 6,
      "bear": 3,
-     "neut": 37
+     "neut": 39
     },
     "usd": {
-     "score": 0.1224,
+     "score": 0.1165,
      "bull": 5,
      "bear": 0,
-     "neut": 41
+     "neut": 43
     }
    },
    "top": [
@@ -1117,6 +1117,21 @@
       "usd": 1
      },
      "priority": 88
+    },
+    {
+     "id": "Reuters:Japan's wholesale inflation stays elevated in August, boosts case for rate hike",
+     "titel": "Japan's wholesale inflation stays elevated in August, boosts case for rate hike",
+     "titelDe": "Japanische Großhandelsinflation bleibt im August hoch, stärkt Argument für Zinserhöhung",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNczhnQU9DcjlqYWk5aUdLUm5mNFZ0MXlwLTB1Y1RYMlVtVG1sOEtyTmVJVVgyVHROcnAtRnJSb2hxRndIY3ZSbU5HejBRVk5rejNxbnlKSGtEQWlnSEtDQmZvd3REVTFGWFlrM21Rejg1Q2tCTmpfMkNkdTRldURCbjBXS2tDbWQ1YVpXZXp2ekk0ZXgyZzQxVmJpTzdfdkNWZ185YVJjMGotRHExU01TM1NaY1h4NncxR0xXVFY2cUZoQUk?oc=5",
+     "zeit": "2026-09-11T00:27:00.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -0.85,
+      "gold": -0.8,
+      "usd": 1
+     },
+     "priority": 87
     },
     {
      "id": "Reuters:Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region - reuters.com",
@@ -1197,21 +1212,6 @@
      "id": "Reuters:LIV Golf wins interim court approval to access $14 million in bankruptcy financing - reuters.com",
      "titel": "LIV Golf wins interim court approval to access $14 million in bankruptcy financing - reuters.com",
      "titelDe": "LIV Golf erhält vorläufige Gerichtsgenehmigung für 14 Mio $ Insolvenzfinanzierung",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZ3Q2UEFTTmZnb0x3SVM0c1pQRTZCVTdoT3FDeEtXd3J0S3BZS2oyQ3ZTVGdrUDhpZmU0Z1FPbGxlSzZrN1paTHgyRDdGQ3Q4OEp0ZHhJZW5abzZiYVhhR0xHMy01X2N4M1ZGc1F0QTQ4eGZXWHZuMmlVcFZ0all0QUdOS0lBRklDcTNZREx2bU9TMEtlcnMwS0wzTWN1VEloaEhTSHRJRVVSYzRvem03RmpYQW9UVzlWLWVpWjF1SHRudkR1eWx3?oc=5",
-     "zeit": "2026-09-11T00:12:00.000Z",
-     "scores": {
-      "crypto": -0.54,
-      "stocks": -0.54,
-      "gold": 0.27,
-      "usd": 0.18
-     },
-     "priority": 40
-    },
-    {
-     "id": "Reuters:LIV Golf wins interim court approval to access $14 million in bankruptcy financing",
-     "titel": "LIV Golf wins interim court approval to access $14 million in bankruptcy financing",
-     "titelDe": "LIV Golf erhält vorläufige Gerichtsgenehmigung für 14 Millionen US-Dollar Insolvenzfinanzierung",
      "quelle": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZ3Q2UEFTTmZnb0x3SVM0c1pQRTZCVTdoT3FDeEtXd3J0S3BZS2oyQ3ZTVGdrUDhpZmU0Z1FPbGxlSzZrN1paTHgyRDdGQ3Q4OEp0ZHhJZW5abzZiYVhhR0xHMy01X2N4M1ZGc1F0QTQ4eGZXWHZuMmlVcFZ0all0QUdOS0lBRklDcTNZREx2bU9TMEtlcnMwS0wzTWN1VEloaEhTSHRJRVVSYzRvem03RmpYQW9UVzlWLWVpWjF1SHRudkR1eWx3?oc=5",
      "zeit": "2026-09-11T00:12:00.000Z",
