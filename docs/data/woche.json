@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T06:25:56.825Z",
+ "updated": "2026-09-11T06:41:07.986Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T06:25:56.889Z",
+   "stand": "2026-09-11T06:41:08.087Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T06:25:56.879Z",
+   "stand": "2026-09-11T06:41:08.069Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T06:25:56.868Z",
+   "stand": "2026-09-11T06:41:08.052Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T06:25:56.856Z",
-   "anzahl": 123,
+   "stand": "2026-09-11T06:41:08.033Z",
+   "anzahl": 127,
    "klassen": {
     "crypto": {
-     "score": -0.1551,
+     "score": -0.1516,
      "bull": 3,
-     "bear": 14,
-     "neut": 106
+     "bear": 15,
+     "neut": 109
     },
     "stocks": {
-     "score": -0.1523,
+     "score": -0.1486,
      "bull": 2,
-     "bear": 14,
-     "neut": 107
+     "bear": 15,
+     "neut": 110
     },
     "gold": {
-     "score": 0.0061,
+     "score": 0.0039,
      "bull": 8,
-     "bear": 7,
-     "neut": 108
+     "bear": 8,
+     "neut": 111
     },
     "usd": {
-     "score": 0.0948,
-     "bull": 9,
+     "score": 0.0935,
+     "bull": 10,
      "bear": 0,
-     "neut": 114
+     "neut": 117
     }
    },
    "top": [
@@ -1161,7 +1161,7 @@
       "gold": -0.367,
       "usd": 1
      },
-     "priority": 77
+     "priority": 76
     },
     {
      "id": "FXStreet:Indian Rupee extends decline on fresh escalation in hawkish Fed bets",
