@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T01:18:59.228Z",
+ "updated": "2026-09-11T01:30:30.134Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T01:18:59.290Z",
+   "stand": "2026-09-11T01:30:30.233Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T01:18:59.280Z",
+   "stand": "2026-09-11T01:30:30.216Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T01:18:59.269Z",
+   "stand": "2026-09-11T01:30:30.198Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T01:18:59.258Z",
-   "anzahl": 52,
+   "stand": "2026-09-11T01:30:30.180Z",
+   "anzahl": 53,
    "klassen": {
     "crypto": {
-     "score": -0.1619,
+     "score": -0.1154,
      "bull": 0,
-     "bear": 9,
-     "neut": 43
+     "bear": 8,
+     "neut": 45
     },
     "stocks": {
-     "score": -0.1478,
+     "score": -0.1107,
      "bull": 0,
-     "bear": 9,
-     "neut": 43
+     "bear": 8,
+     "neut": 45
     },
     "gold": {
-     "score": -0.0415,
-     "bull": 4,
-     "bear": 4,
-     "neut": 44
+     "score": 0.017,
+     "bull": 5,
+     "bear": 2,
+     "neut": 46
     },
     "usd": {
-     "score": 0.1168,
-     "bull": 5,
+     "score": 0.0593,
+     "bull": 3,
      "bear": 0,
-     "neut": 47
+     "neut": 50
     }
    },
    "top": [
@@ -1191,7 +1191,7 @@
       "gold": -0.211,
       "usd": 0.626
      },
-     "priority": 46
+     "priority": 45
     },
     {
      "id": "Reuters:S&P 500 ends down as Treasury yields rise and traders fret about inflation - reuters.com",
