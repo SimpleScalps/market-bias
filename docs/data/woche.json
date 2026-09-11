@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T03:37:31.879Z",
+ "updated": "2026-09-11T03:48:18.845Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T03:37:32.012Z",
+   "stand": "2026-09-11T03:48:18.907Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T03:37:31.995Z",
+   "stand": "2026-09-11T03:48:18.896Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T03:37:31.977Z",
+   "stand": "2026-09-11T03:48:18.886Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T03:37:31.960Z",
+   "stand": "2026-09-11T03:48:18.874Z",
    "anzahl": 89,
    "klassen": {
     "crypto": {
@@ -1194,6 +1194,21 @@
      "priority": 54
     },
     {
+     "id": "BeInCrypto:Jeremy Siegel Says Fed Should Raise Rates Next Week Despite Selloff Risk",
+     "titel": "Jeremy Siegel Says Fed Should Raise Rates Next Week Despite Selloff Risk",
+     "titelDe": "Jeremy Siegel sagt, dass die Fed die Zinsen nächste Woche trotz des Verkaufsrisikos erhöhen sollte",
+     "quelle": "BeInCrypto",
+     "url": "https://beincrypto.com/jeremy-siegel-fed-rate-hike-warsh/",
+     "zeit": "2026-09-11T03:25:00.000Z",
+     "scores": {
+      "crypto": -0.563,
+      "stocks": -0.546,
+      "gold": 0.135,
+      "usd": 0.262
+     },
+     "priority": 80
+    },
+    {
      "id": "TASS:Ozon logistics center and delivery hub in Russia's Saratov catches fire after drone attack",
      "titel": "Ozon logistics center and delivery hub in Russia's Saratov catches fire after drone attack",
      "titelDe": "Ozon-Lagerhaus und Lieferzentrum in Sarajow, Russland, brennt nach Drohnenangriff",
@@ -1207,21 +1222,6 @@
       "usd": 0.15
      },
      "priority": 93
-    },
-    {
-     "id": "Reuters:Russian air strikes injure two, cause fire in 9-storey apartment building in Kyiv, officials say",
-     "titel": "Russian air strikes injure two, cause fire in 9-storey apartment building in Kyiv, officials say",
-     "titelDe": "Russische Luftangriffe verletzen zwei, verursachen Feuer im 9-stöckigen Wohnhaus in Kiew, sagen Beamte",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQb0VyT21PWXduMDc2M00ybW03M3pEMXZoX3QxeUZXNjUzcTlVbC1tVm03VEFyZjhkdXBLSlRUc2l1bUZvSTJCWjBLTkdoYzhraEstSEZvMlBkTE1xbVFQNWU4di1lcEFFOWFCMHpTaVNVdDhTbWdvZ1A3amUyRUdYa3FjeGxndVh3ZlkzbmZkUUE2aWhsaVowM1lSMzgybFg2aHgyVHlxcmRHdXczZW5uSUJjODk2clE?oc=5",
-     "zeit": "2026-09-11T01:38:00.000Z",
-     "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
-     },
-     "priority": 45
     }
    ]
   },
