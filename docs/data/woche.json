@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T22:30:10.281Z",
+ "updated": "2026-09-11T22:40:26.929Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T22:30:10.380Z",
+   "stand": "2026-09-11T22:40:27.050Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T22:30:10.365Z",
+   "stand": "2026-09-11T22:40:27.032Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T22:30:10.351Z",
+   "stand": "2026-09-11T22:40:27.014Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T22:30:10.335Z",
+   "stand": "2026-09-11T22:40:26.996Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,32 +1291,32 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-11T22:30:10.320Z",
-   "anzahl": 11,
+   "stand": "2026-09-11T22:40:26.977Z",
+   "anzahl": 15,
    "klassen": {
     "crypto": {
-     "score": -0.0838,
+     "score": -0.1008,
      "bull": 0,
-     "bear": 1,
-     "neut": 10
+     "bear": 2,
+     "neut": 13
     },
     "stocks": {
-     "score": -0.0838,
+     "score": -0.1008,
      "bull": 0,
-     "bear": 1,
-     "neut": 10
+     "bear": 2,
+     "neut": 13
     },
     "gold": {
-     "score": 0.0419,
-     "bull": 1,
+     "score": 0.0505,
+     "bull": 2,
      "bear": 0,
-     "neut": 10
+     "neut": 13
     },
     "usd": {
-     "score": 0.0279,
+     "score": 0.0336,
      "bull": 0,
      "bear": 0,
-     "neut": 11
+     "neut": 15
     }
    },
    "top": [
@@ -1333,7 +1333,22 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 69
+     "priority": 68
+    },
+    {
+     "id": "SCMP:Chinese AI firms shunned US delegation over sanctions fears, commission says",
+     "titel": "Chinese AI firms shunned US delegation over sanctions fears, commission says",
+     "titelDe": "Chinesische KI-Unternehmen meiden US-Delegation aus Angst vor Sanktionen, sagt Kommission",
+     "quelle": "SCMP",
+     "url": "https://www.scmp.com/news/us/article/3367269/chinese-ai-firms-shunned-us-delegation-over-sanctions-fears-commission-says?utm_source=rss_feed",
+     "zeit": "2026-09-11T22:36:20.000Z",
+     "scores": {
+      "crypto": -0.405,
+      "stocks": -0.405,
+      "gold": 0.203,
+      "usd": 0.135
+     },
+     "priority": 51
     }
    ]
   }
