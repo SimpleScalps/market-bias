@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T04:37:41.703Z",
+ "updated": "2026-09-11T04:47:59.966Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T04:37:41.807Z",
+   "stand": "2026-09-11T04:48:00.009Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T04:37:41.789Z",
+   "stand": "2026-09-11T04:48:00.002Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T04:37:41.771Z",
+   "stand": "2026-09-11T04:47:59.995Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T04:37:41.752Z",
-   "anzahl": 100,
+   "stand": "2026-09-11T04:47:59.987Z",
+   "anzahl": 102,
    "klassen": {
     "crypto": {
-     "score": -0.0797,
+     "score": -0.0919,
      "bull": 3,
      "bear": 12,
-     "neut": 85
-    },
-    "stocks": {
-     "score": -0.0832,
-     "bull": 2,
-     "bear": 12,
-     "neut": 86
-    },
-    "gold": {
-     "score": 0.0264,
-     "bull": 9,
-     "bear": 4,
      "neut": 87
     },
+    "stocks": {
+     "score": -0.0932,
+     "bull": 2,
+     "bear": 12,
+     "neut": 88
+    },
+    "gold": {
+     "score": 0.0147,
+     "bull": 9,
+     "bear": 4,
+     "neut": 89
+    },
     "usd": {
-     "score": 0.0366,
+     "score": 0.0497,
      "bull": 4,
      "bear": 0,
-     "neut": 96
+     "neut": 98
     }
    },
    "top": [
@@ -1164,6 +1164,21 @@
      "priority": 74
     },
     {
+     "id": "CoinDesk:Bitcoin below $77,000, Zcash leads losses as traders bet on a Fed rate hike",
+     "titel": "Bitcoin below $77,000, Zcash leads losses as traders bet on a Fed rate hike",
+     "titelDe": "Bitcoin unter 77.000 $, Zcash führt Verluste an, Händler setzen auf eine Fed‑Zinserhöhung",
+     "quelle": "CoinDesk",
+     "url": "https://www.coindesk.com/markets/2026/09/11/bitcoin-below-usd77-000-zcash-leads-losses-as-traders-bet-on-a-fed-rate-hike",
+     "zeit": "2026-09-11T04:46:15.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "Reuters:Market Talk: Mixed data will keep Fed from hiking rates, expert says",
      "titel": "Market Talk: Mixed data will keep Fed from hiking rates, expert says",
      "titelDe": "Markttalk: Gemischte Daten lassen die Fed laut Experten nicht zu Zinserhöhungen",
@@ -1207,21 +1222,6 @@
       "usd": 0.165
      },
      "priority": 95
-    },
-    {
-     "id": "BeInCrypto:Jeremy Siegel Says Fed Should Raise Rates Next Week Despite Selloff Risk",
-     "titel": "Jeremy Siegel Says Fed Should Raise Rates Next Week Despite Selloff Risk",
-     "titelDe": "Jeremy Siegel sagt, dass die Fed die Zinsen nächste Woche trotz des Verkaufsrisikos erhöhen sollte",
-     "quelle": "BeInCrypto",
-     "url": "https://beincrypto.com/jeremy-siegel-fed-rate-hike-warsh/",
-     "zeit": "2026-09-11T03:25:00.000Z",
-     "scores": {
-      "crypto": -0.563,
-      "stocks": -0.546,
-      "gold": 0.135,
-      "usd": 0.262
-     },
-     "priority": 79
     }
    ]
   },
