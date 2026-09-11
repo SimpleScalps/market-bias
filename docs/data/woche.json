@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T01:30:30.134Z",
+ "updated": "2026-09-11T01:46:24.466Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T01:30:30.233Z",
+   "stand": "2026-09-11T01:46:24.564Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T01:30:30.216Z",
+   "stand": "2026-09-11T01:46:24.546Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T01:30:30.198Z",
+   "stand": "2026-09-11T01:46:24.529Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T01:30:30.180Z",
-   "anzahl": 53,
+   "stand": "2026-09-11T01:46:24.511Z",
+   "anzahl": 62,
    "klassen": {
     "crypto": {
-     "score": -0.1154,
-     "bull": 0,
-     "bear": 8,
-     "neut": 45
+     "score": -0.1028,
+     "bull": 1,
+     "bear": 9,
+     "neut": 52
     },
     "stocks": {
-     "score": -0.1107,
-     "bull": 0,
-     "bear": 8,
-     "neut": 45
+     "score": -0.0973,
+     "bull": 1,
+     "bear": 9,
+     "neut": 52
     },
     "gold": {
-     "score": 0.017,
+     "score": 0.0036,
      "bull": 5,
-     "bear": 2,
-     "neut": 46
+     "bear": 4,
+     "neut": 53
     },
     "usd": {
-     "score": 0.0593,
-     "bull": 3,
+     "score": 0.0588,
+     "bull": 5,
      "bear": 0,
-     "neut": 50
+     "neut": 57
     }
    },
    "top": [
@@ -1176,7 +1176,22 @@
       "gold": -0.135,
       "usd": 0.6
      },
-     "priority": 57
+     "priority": 56
+    },
+    {
+     "id": "Reuters:Russian air strikes injure two, cause fire in 9-storey apartment building in Kyiv, officials say",
+     "titel": "Russian air strikes injure two, cause fire in 9-storey apartment building in Kyiv, officials say",
+     "titelDe": "Russische Luftangriffe verletzen zwei, verursachen Feuer im 9-stöckigen Wohnhaus in Kiew, sagen Beamte",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQb0VyT21PWXduMDc2M00ybW03M3pEMXZoX3QxeUZXNjUzcTlVbC1tVm03VEFyZjhkdXBLSlRUc2l1bUZvSTJCWjBLTkdoYzhraEstSEZvMlBkTE1xbVFQNWU4di1lcEFFOWFCMHpTaVNVdDhTbWdvZ1A3amUyRUdYa3FjeGxndVh3ZlkzbmZkUUE2aWhsaVowM1lSMzgybFg2aHgyVHlxcmRHdXczZW5uSUJjODk2clE?oc=5",
+     "zeit": "2026-09-11T01:38:00.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 46
     },
     {
      "id": "Reuters:Dollar holds gains, yen slips as Mideast energy shock deepens",
@@ -1207,21 +1222,6 @@
       "usd": 0.45
      },
      "priority": 78
-    },
-    {
-     "id": "Reuters:Trump administration to sanction unnamed 'large' bank on Monday, Bessent says",
-     "titel": "Trump administration to sanction unnamed 'large' bank on Monday, Bessent says",
-     "titelDe": "Trump-Administration plant am Montag Sanktionen gegen eine unbekannte 'große' Bank, sagt Bessent",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQ203a2pwbUU5aVVPVUtBUHB4dWRXa2YtM2pYZzMtVWU3SXJqZUNZTmtrTWt6dmFsMm82YzJzUERqeExQYzVhXzl4REJpRk54SEZIblVEckJ5M0pVWHhUdDNUUTZiNzdyUlc3b0h2SjBhZFFQRk5pOTlCZlYzeTJkeXhkQURpbnB6Z1JfcFB5bl9walRKZUdfekNPaGVETHc0aTFfb3pZdlBZaXB1SkRSSjFLaUp3aTBXeXgybWFR?oc=5",
-     "zeit": "2026-09-10T22:46:20.000Z",
-     "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
-     },
-     "priority": 67
     }
    ]
   }
