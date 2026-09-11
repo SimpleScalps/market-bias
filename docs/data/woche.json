@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T04:07:25.395Z",
+ "updated": "2026-09-11T04:22:56.879Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T04:07:25.476Z",
+   "stand": "2026-09-11T04:22:56.978Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T04:07:25.463Z",
+   "stand": "2026-09-11T04:22:56.960Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T04:07:25.449Z",
+   "stand": "2026-09-11T04:22:56.943Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T04:07:25.434Z",
-   "anzahl": 90,
+   "stand": "2026-09-11T04:22:56.925Z",
+   "anzahl": 96,
    "klassen": {
     "crypto": {
-     "score": -0.0655,
+     "score": -0.0823,
      "bull": 2,
-     "bear": 9,
-     "neut": 79
+     "bear": 11,
+     "neut": 83
     },
     "stocks": {
-     "score": -0.0633,
+     "score": -0.0803,
      "bull": 2,
-     "bear": 9,
-     "neut": 79
+     "bear": 11,
+     "neut": 83
     },
     "gold": {
-     "score": 0.0139,
-     "bull": 6,
+     "score": 0.0241,
+     "bull": 8,
      "bear": 4,
-     "neut": 80
+     "neut": 84
     },
     "usd": {
-     "score": 0.0314,
-     "bull": 3,
+     "score": 0.0361,
+     "bull": 4,
      "bear": 0,
-     "neut": 87
+     "neut": 92
     }
    },
    "top": [
@@ -1194,6 +1194,21 @@
      "priority": 54
     },
     {
+     "id": "TASS:Debris from intercepted Ukrainian missile lands on industrial site in southern Volgograd",
+     "titel": "Debris from intercepted Ukrainian missile lands on industrial site in southern Volgograd",
+     "titelDe": "Trümmer einer abgefangenen ukrainischen Rakete landen auf Industrieanlage im Süden von Wolgograd",
+     "quelle": "TASS",
+     "url": "https://tass.com/emergencies/2185823",
+     "zeit": "2026-09-11T04:17:43.000Z",
+     "scores": {
+      "crypto": -0.495,
+      "stocks": -0.495,
+      "gold": 0.248,
+      "usd": 0.165
+     },
+     "priority": 96
+    },
+    {
      "id": "BeInCrypto:Jeremy Siegel Says Fed Should Raise Rates Next Week Despite Selloff Risk",
      "titel": "Jeremy Siegel Says Fed Should Raise Rates Next Week Despite Selloff Risk",
      "titelDe": "Jeremy Siegel sagt, dass die Fed die Zinsen nächste Woche trotz des Verkaufsrisikos erhöhen sollte",
@@ -1206,22 +1221,7 @@
       "gold": 0.135,
       "usd": 0.262
      },
-     "priority": 80
-    },
-    {
-     "id": "TASS:Ozon logistics center and delivery hub in Russia's Saratov catches fire after drone attack",
-     "titel": "Ozon logistics center and delivery hub in Russia's Saratov catches fire after drone attack",
-     "titelDe": "Ozon-Lagerhaus und Lieferzentrum in Sarajow, Russland, brennt nach Drohnenangriff",
-     "quelle": "TASS",
-     "url": "https://tass.com/emergencies/2185813",
-     "zeit": "2026-09-11T02:00:08.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 92
+     "priority": 79
     }
    ]
   },
