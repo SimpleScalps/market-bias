@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T11:21:28.034Z",
+ "updated": "2026-09-11T11:37:08.977Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T11:21:28.127Z",
+   "stand": "2026-09-11T11:37:09.094Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T11:21:28.109Z",
+   "stand": "2026-09-11T11:37:09.074Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T11:21:28.094Z",
+   "stand": "2026-09-11T11:37:09.053Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T11:21:28.078Z",
-   "anzahl": 200,
+   "stand": "2026-09-11T11:37:09.030Z",
+   "anzahl": 205,
    "klassen": {
     "crypto": {
-     "score": -0.0695,
+     "score": -0.0817,
      "bull": 2,
-     "bear": 16,
-     "neut": 182
+     "bear": 19,
+     "neut": 184
     },
     "stocks": {
-     "score": -0.0682,
+     "score": -0.0728,
      "bull": 0,
-     "bear": 15,
-     "neut": 185
+     "bear": 17,
+     "neut": 188
     },
     "gold": {
-     "score": -0.002,
-     "bull": 9,
-     "bear": 6,
-     "neut": 185
+     "score": -0.0068,
+     "bull": 10,
+     "bear": 7,
+     "neut": 188
     },
     "usd": {
-     "score": 0.0457,
-     "bull": 6,
+     "score": 0.0513,
+     "bull": 7,
      "bear": 0,
-     "neut": 194
+     "neut": 198
     }
    },
    "top": [
@@ -1164,21 +1164,6 @@
      "priority": 75
     },
     {
-     "id": "OilPrice:Oil Prices Surge to Four-Month Highs as War Risks Mount",
-     "titel": "Oil Prices Surge to Four-Month Highs as War Risks Mount",
-     "titelDe": "Die Ölpreise steigen auf ein Viermonatshoch, da die Kriegsrisiken steigen",
-     "quelle": "OilPrice",
-     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-to-Four-Month-Highs-as-War-Risks-Mount.html",
-     "zeit": "2026-09-11T05:30:00.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": -0.367,
-      "usd": 1
-     },
-     "priority": 69
-    },
-    {
      "id": "BBC World:Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
      "titel": "Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
      "titelDe": "Fünf Tote und 67 Verletzte bei russischem Angriff auf Einkaufszentrum, sagt Ukraine",
@@ -1192,6 +1177,21 @@
       "usd": 0.27
      },
      "priority": 85
+    },
+    {
+     "id": "OilPrice:Oil Prices Surge to Four-Month Highs as War Risks Mount",
+     "titel": "Oil Prices Surge to Four-Month Highs as War Risks Mount",
+     "titelDe": "Die Ölpreise steigen auf ein Viermonatshoch, da die Kriegsrisiken steigen",
+     "quelle": "OilPrice",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-to-Four-Month-Highs-as-War-Risks-Mount.html",
+     "zeit": "2026-09-11T05:30:00.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.367,
+      "usd": 1
+     },
+     "priority": 68
     },
     {
      "id": "Reuters:Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region - reuters.com",
