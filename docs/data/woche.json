@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T09:38:18.806Z",
+ "updated": "2026-09-11T09:47:46.869Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T09:38:18.903Z",
+   "stand": "2026-09-11T09:47:46.931Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T09:38:18.886Z",
+   "stand": "2026-09-11T09:47:46.921Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T09:38:18.869Z",
+   "stand": "2026-09-11T09:47:46.911Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T09:38:18.851Z",
-   "anzahl": 157,
+   "stand": "2026-09-11T09:47:46.900Z",
+   "anzahl": 163,
    "klassen": {
     "crypto": {
-     "score": -0.0792,
-     "bull": 3,
+     "score": -0.0826,
+     "bull": 2,
      "bear": 16,
-     "neut": 138
+     "neut": 145
     },
     "stocks": {
-     "score": -0.0868,
-     "bull": 1,
+     "score": -0.0895,
+     "bull": 0,
      "bear": 16,
-     "neut": 140
+     "neut": 147
     },
     "gold": {
-     "score": 0.008,
+     "score": 0.0106,
      "bull": 11,
-     "bear": 5,
-     "neut": 141
+     "bear": 4,
+     "neut": 148
     },
     "usd": {
-     "score": 0.0519,
+     "score": 0.052,
      "bull": 5,
      "bear": 0,
-     "neut": 152
+     "neut": 158
     }
    },
    "top": [
@@ -1149,21 +1149,6 @@
      "priority": 96
     },
     {
-     "id": "OilPrice:Oil Prices Surge to Four-Month Highs as War Risks Mount",
-     "titel": "Oil Prices Surge to Four-Month Highs as War Risks Mount",
-     "titelDe": "Die Ölpreise steigen auf ein Viermonatshoch, da die Kriegsrisiken steigen",
-     "quelle": "OilPrice",
-     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-to-Four-Month-Highs-as-War-Risks-Mount.html",
-     "zeit": "2026-09-11T05:30:00.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": -0.367,
-      "usd": 1
-     },
-     "priority": 72
-    },
-    {
      "id": "FXStreet:Indian Rupee extends decline on fresh escalation in hawkish Fed bets",
      "titel": "Indian Rupee extends decline on fresh escalation in hawkish Fed bets",
      "titelDe": "Indische Rupie setzt Abwärtstrend fort, da Fed-Hawkish-Wetten eskalieren",
@@ -1177,6 +1162,21 @@
       "usd": 0.72
      },
      "priority": 75
+    },
+    {
+     "id": "OilPrice:Oil Prices Surge to Four-Month Highs as War Risks Mount",
+     "titel": "Oil Prices Surge to Four-Month Highs as War Risks Mount",
+     "titelDe": "Die Ölpreise steigen auf ein Viermonatshoch, da die Kriegsrisiken steigen",
+     "quelle": "OilPrice",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-to-Four-Month-Highs-as-War-Risks-Mount.html",
+     "zeit": "2026-09-11T05:30:00.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.367,
+      "usd": 1
+     },
+     "priority": 71
     },
     {
      "id": "BBC World:Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
