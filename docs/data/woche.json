@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T02:20:53.593Z",
+ "updated": "2026-09-11T02:37:10.246Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T02:20:53.692Z",
+   "stand": "2026-09-11T02:37:10.346Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T02:20:53.675Z",
+   "stand": "2026-09-11T02:37:10.329Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T02:20:53.658Z",
+   "stand": "2026-09-11T02:37:10.312Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T02:20:53.640Z",
-   "anzahl": 74,
+   "stand": "2026-09-11T02:37:10.293Z",
+   "anzahl": 80,
    "klassen": {
     "crypto": {
-     "score": -0.093,
+     "score": -0.0871,
      "bull": 3,
      "bear": 10,
-     "neut": 61
+     "neut": 67
     },
     "stocks": {
-     "score": -0.0896,
+     "score": -0.0839,
      "bull": 3,
      "bear": 10,
-     "neut": 61
+     "neut": 67
     },
     "gold": {
-     "score": 0.0174,
+     "score": 0.0164,
      "bull": 7,
      "bear": 5,
-     "neut": 62
+     "neut": 68
     },
     "usd": {
-     "score": 0.0459,
+     "score": 0.0429,
      "bull": 4,
      "bear": 0,
-     "neut": 70
+     "neut": 76
     }
    },
    "top": [
@@ -1191,7 +1191,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 95
+     "priority": 94
     },
     {
      "id": "Reuters:Russian air strikes injure two, cause fire in 9-storey apartment building in Kyiv, officials say",
