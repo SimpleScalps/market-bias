@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T16:37:34.377Z",
+ "updated": "2026-09-11T16:47:41.851Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T16:37:34.493Z",
+   "stand": "2026-09-11T16:47:41.942Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T16:37:34.473Z",
+   "stand": "2026-09-11T16:47:41.926Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T16:37:34.452Z",
+   "stand": "2026-09-11T16:47:41.910Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,35 +1074,50 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T16:37:34.432Z",
-   "anzahl": 233,
+   "stand": "2026-09-11T16:47:41.894Z",
+   "anzahl": 234,
    "klassen": {
     "crypto": {
-     "score": -0.0997,
+     "score": -0.1126,
      "bull": 2,
-     "bear": 24,
+     "bear": 25,
      "neut": 207
     },
     "stocks": {
-     "score": -0.0783,
+     "score": -0.091,
      "bull": 2,
-     "bear": 20,
+     "bear": 21,
      "neut": 211
     },
     "gold": {
-     "score": -0.0192,
+     "score": -0.0158,
      "bull": 13,
-     "bear": 9,
+     "bear": 10,
      "neut": 211
     },
     "usd": {
-     "score": 0.0602,
-     "bull": 7,
+     "score": 0.0662,
+     "bull": 9,
      "bear": 0,
-     "neut": 226
+     "neut": 225
     }
    },
    "top": [
+    {
+     "id": "Tehran Times:Americans are seeking a pretext for another strike on Iran’s nuclear facilities",
+     "titel": "Americans are seeking a pretext for another strike on Iran’s nuclear facilities",
+     "titelDe": "Die Amerikaner suchen nach einem Vorwand für einen weiteren Angriff auf die iranischen Atomanlagen",
+     "quelle": "Tehran Times",
+     "url": "https://www.tehrantimes.com/news/529900/Americans-are-seeking-a-pretext-for-another-strike-on-Iran-s",
+     "zeit": "2026-09-11T16:46:51.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
     {
      "id": "Reuters:Japan's wholesale inflation stays elevated in August, boosts case for rate hike - reuters.com",
      "titel": "Japan's wholesale inflation stays elevated in August, boosts case for rate hike - reuters.com",
@@ -1207,21 +1222,6 @@
       "usd": 0.285
      },
      "priority": 75
-    },
-    {
-     "id": "Reuters:Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region",
-     "titel": "Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region",
-     "titelDe": "Zwei Tote, sieben Verletzte bei ukrainischen Drohnenangriffen auf die russische Region Belgorod",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNamlUQm5ZYm5sdFR4dE9vVjZDbWFNTHlya2FJd3RqYmRvRWF2OFpudm01Mm1CVVpRNVZ3Z2RfY3RqcXplME1IMlV5eGtpbEFzbVd4MHgxZS1ubGIwcEcyVWcxRENDOFlJbWI0OG5ObU54ZFFiQmN3Y2k0QmFVZ3JBeFphYjRzNHJoRjkxX0JwS3BpaG13cDN0b2J5VUFSb1JTZDh0V3pjMDNhTW10eXNPQ2t4S3BrZkFrekRn?oc=5",
-     "zeit": "2026-09-10T22:14:00.000Z",
-     "scores": {
-      "crypto": -0.855,
-      "stocks": -0.855,
-      "gold": 0.427,
-      "usd": 0.285
-     },
-     "priority": 74
     }
    ]
   },
