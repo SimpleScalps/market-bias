@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T06:05:06.135Z",
+ "updated": "2026-09-11T06:25:56.825Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T06:05:06.218Z",
+   "stand": "2026-09-11T06:25:56.889Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T06:05:06.204Z",
+   "stand": "2026-09-11T06:25:56.879Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T06:05:06.190Z",
+   "stand": "2026-09-11T06:25:56.868Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T06:05:06.175Z",
-   "anzahl": 115,
+   "stand": "2026-09-11T06:25:56.856Z",
+   "anzahl": 123,
    "klassen": {
     "crypto": {
-     "score": -0.161,
+     "score": -0.1551,
      "bull": 3,
      "bear": 14,
-     "neut": 98
+     "neut": 106
     },
     "stocks": {
-     "score": -0.1588,
+     "score": -0.1523,
      "bull": 2,
      "bear": 14,
-     "neut": 99
+     "neut": 107
     },
     "gold": {
-     "score": 0.0104,
-     "bull": 9,
-     "bear": 6,
-     "neut": 100
+     "score": 0.0061,
+     "bull": 8,
+     "bear": 7,
+     "neut": 108
     },
     "usd": {
-     "score": 0.0964,
-     "bull": 8,
+     "score": 0.0948,
+     "bull": 9,
      "bear": 0,
-     "neut": 107
+     "neut": 114
     }
    },
    "top": [
@@ -1116,7 +1116,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 100
+     "priority": 99
     },
     {
      "id": "Reuters:Japan's wholesale inflation stays elevated in August, boosts case for rate hike - reuters.com",
@@ -1176,7 +1176,7 @@
       "gold": -0.3,
       "usd": 0.72
      },
-     "priority": 77
+     "priority": 76
     },
     {
      "id": "BBC World:Five killed and 67 injured in Russian strike on shopping centre, Ukraine says",
@@ -1191,7 +1191,7 @@
       "gold": 0.405,
       "usd": 0.27
      },
-     "priority": 89
+     "priority": 88
     },
     {
      "id": "Reuters:Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region - reuters.com",
