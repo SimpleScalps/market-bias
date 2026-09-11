@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T03:20:56.501Z",
+ "updated": "2026-09-11T03:37:31.879Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T03:20:56.610Z",
+   "stand": "2026-09-11T03:37:32.012Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T03:20:56.597Z",
+   "stand": "2026-09-11T03:37:31.995Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T03:20:56.582Z",
+   "stand": "2026-09-11T03:37:31.977Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T03:20:56.568Z",
+   "stand": "2026-09-11T03:37:31.960Z",
    "anzahl": 89,
    "klassen": {
     "crypto": {
@@ -1164,6 +1164,21 @@
      "priority": 74
     },
     {
+     "id": "Reuters:Market Talk: Mixed data will keep Fed from hiking rates, expert says",
+     "titel": "Market Talk: Mixed data will keep Fed from hiking rates, expert says",
+     "titelDe": "Markttalk: Gemischte Daten lassen die Fed laut Experten nicht zu Zinserhöhungen",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1iNklzS1dmQWlhUHZLbXptX1dTUGZVZmFXbWlLdE05NTJZSWFieWRjS1V3NHlxZFJYQ2tGWldsVXBoTEd5T0s5WXo4b3BQR2duTGR4dXItZzBXOEk4XzN5RWJ4ajdvVm8?oc=5",
+     "zeit": "2026-09-11T02:43:36.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 83
+    },
+    {
      "id": "FXStreet:Australian Dollar slides as US yields jump before pivotal CPI",
      "titel": "Australian Dollar slides as US yields jump before pivotal CPI",
      "titelDe": "Australischer Dollar rutscht ab, da die US-Renditen vor dem entscheidenden VPI steigen",
@@ -1207,27 +1222,12 @@
       "usd": 0.3
      },
      "priority": 45
-    },
-    {
-     "id": "Reuters:Dollar holds gains, yen slips as Mideast energy shock deepens",
-     "titel": "Dollar holds gains, yen slips as Mideast energy shock deepens",
-     "titelDe": "Dollar hält Gewinne, Yen fällt, während Energie-Schock im Nahen Osten zunimmt",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTUI0bHIwbWRHUzNiQmxNam13azJMSHZvUzhkMThQSDJpOGZqOUpfYVMtMG5taXlrRGVBcGViVWpPT20xTm12RnJLT1BIR2luVmZWOEl0TFVyTC1UX25qZU00cTY5UEMyTWpXd3ctZnVCSXVQMEswa21hTl85ZExMMm9xNkNHRDlHQnVTSlZNMFV5U1l3am1BQVprSUJqQ1VONTBOb3dBSnQxTm9YXzU0aldn?oc=5",
-     "zeit": "2026-09-11T01:08:00.000Z",
-     "scores": {
-      "crypto": -0.878,
-      "stocks": -0.803,
-      "gold": -0.211,
-      "usd": 0.626
-     },
-     "priority": 45
     }
    ]
   },
   "2026-12-16": {
    "tag": "2026-12-16",
-   "stand": "2026-09-11T03:20:56.540Z",
+   "stand": "2026-09-11T03:37:31.925Z",
    "anzahl": 1,
    "klassen": {
     "crypto": {
@@ -1259,7 +1259,7 @@
   },
   "2026-11-05": {
    "tag": "2026-11-05",
-   "stand": "2026-09-11T03:20:56.554Z",
+   "stand": "2026-09-11T03:37:31.942Z",
    "anzahl": 1,
    "klassen": {
     "crypto": {
