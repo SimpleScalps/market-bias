@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T02:04:17.979Z",
+ "updated": "2026-09-11T02:20:53.593Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T02:04:18.078Z",
+   "stand": "2026-09-11T02:20:53.692Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T02:04:18.061Z",
+   "stand": "2026-09-11T02:20:53.675Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T02:04:18.043Z",
+   "stand": "2026-09-11T02:20:53.658Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T02:04:18.024Z",
-   "anzahl": 73,
+   "stand": "2026-09-11T02:20:53.640Z",
+   "anzahl": 74,
    "klassen": {
     "crypto": {
-     "score": -0.1061,
+     "score": -0.093,
      "bull": 3,
-     "bear": 11,
-     "neut": 59
+     "bear": 10,
+     "neut": 61
     },
     "stocks": {
-     "score": -0.1017,
+     "score": -0.0896,
      "bull": 3,
-     "bear": 11,
-     "neut": 59
+     "bear": 10,
+     "neut": 61
     },
     "gold": {
-     "score": 0.0142,
+     "score": 0.0174,
      "bull": 7,
-     "bear": 6,
-     "neut": 60
+     "bear": 5,
+     "neut": 62
     },
     "usd": {
-     "score": 0.0553,
-     "bull": 5,
+     "score": 0.0459,
+     "bull": 4,
      "bear": 0,
-     "neut": 68
+     "neut": 70
     }
    },
    "top": [
@@ -1176,7 +1176,7 @@
       "gold": -0.135,
       "usd": 0.6
      },
-     "priority": 56
+     "priority": 55
     },
     {
      "id": "TASS:Ozon logistics center and delivery hub in Russia's Saratov catches fire after drone attack",
@@ -1206,7 +1206,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 46
+     "priority": 45
     },
     {
      "id": "Reuters:Dollar holds gains, yen slips as Mideast energy shock deepens",
