@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T05:54:10.208Z",
+ "updated": "2026-09-11T06:05:06.135Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T05:54:10.310Z",
+   "stand": "2026-09-11T06:05:06.218Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T05:54:10.292Z",
+   "stand": "2026-09-11T06:05:06.204Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T05:54:10.273Z",
+   "stand": "2026-09-11T06:05:06.190Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,29 +1074,29 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T05:54:10.254Z",
+   "stand": "2026-09-11T06:05:06.175Z",
    "anzahl": 115,
    "klassen": {
     "crypto": {
-     "score": -0.1673,
+     "score": -0.161,
      "bull": 3,
-     "bear": 15,
-     "neut": 97
-    },
-    "stocks": {
-     "score": -0.165,
-     "bull": 2,
-     "bear": 15,
+     "bear": 14,
      "neut": 98
     },
-    "gold": {
-     "score": 0.0121,
-     "bull": 10,
-     "bear": 6,
+    "stocks": {
+     "score": -0.1588,
+     "bull": 2,
+     "bear": 14,
      "neut": 99
     },
+    "gold": {
+     "score": 0.0104,
+     "bull": 9,
+     "bear": 6,
+     "neut": 100
+    },
     "usd": {
-     "score": 0.0994,
+     "score": 0.0964,
      "bull": 8,
      "bear": 0,
      "neut": 107
@@ -1161,7 +1161,7 @@
       "gold": -0.367,
       "usd": 1
      },
-     "priority": 78
+     "priority": 77
     },
     {
      "id": "FXStreet:Indian Rupee extends decline on fresh escalation in hawkish Fed bets",
@@ -1191,7 +1191,7 @@
       "gold": 0.405,
       "usd": 0.27
      },
-     "priority": 90
+     "priority": 89
     },
     {
      "id": "Reuters:Two dead, seven injured in Ukrainian drone attacks on Russia's Belgorod region - reuters.com",
