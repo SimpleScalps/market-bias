@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T05:05:51.108Z",
+ "updated": "2026-09-11T05:19:51.535Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T05:05:51.191Z",
+   "stand": "2026-09-11T05:19:51.666Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T05:05:51.177Z",
+   "stand": "2026-09-11T05:19:51.643Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T05:05:51.164Z",
+   "stand": "2026-09-11T05:19:51.625Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T05:05:51.149Z",
+   "stand": "2026-09-11T05:19:51.602Z",
    "anzahl": 104,
    "klassen": {
     "crypto": {
@@ -1103,6 +1103,21 @@
     }
    },
    "top": [
+    {
+     "id": "TASS:Two injured in enemy missile attack on residential building in Russia’s Volgograd",
+     "titel": "Two injured in enemy missile attack on residential building in Russia’s Volgograd",
+     "titelDe": "Zwei Verletzte bei feindlichem Raketenangriff auf Wohngebäude in Volgograd",
+     "quelle": "TASS",
+     "url": "https://tass.com/emergencies/2185823",
+     "zeit": "2026-09-11T04:17:43.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
     {
      "id": "Reuters:Japan's wholesale inflation stays elevated in August, boosts case for rate hike - reuters.com",
      "titel": "Japan's wholesale inflation stays elevated in August, boosts case for rate hike - reuters.com",
@@ -1207,21 +1222,6 @@
       "usd": 0.6
      },
      "priority": 54
-    },
-    {
-     "id": "Al Jazeera (GN):Anthropic claims Claude AI used for missile projects, global espionage",
-     "titel": "Anthropic claims Claude AI used for missile projects, global espionage",
-     "titelDe": "Anthropic behauptet, Claude AI für Raketenprojekte und globale Spionage eingesetzt zu werden",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxON3RoSWgyVENhaXVDdFY0bkU1eDN3T2wwQnRJNXkwMk9RYld5ZVJSS0FPcGhtVXdIb3AyMnJ6c2xHZkNhMFZ1Q1BINDl2NVVIejM1NjFkMnZveExXWnh6Y2JUbXctYUxRX0VTaVFBamJhNjFwZ1BPbkh3a3Z0anRmckpiSlJWNWg1U0I3c1NHNjBma0Z1TlB4WTg5anJ3ZjVyOGF6cnVubm00d0s1LXdJ0gG0AUFVX3lxTE5MRVpJa1BQVnU5TlRCZUstMDNNM0hWZFZPdEd2dFlXNTVqeGNZYmY5VHR4aGpvU3lQeEs2ZE5xekJHNnE3Ni1iT21HU3hEV0tNQ3I1VV95dDhublJndVZUVmQyTU0xUndYWVpzWTdlckp6bnJSYUY0blFibS0wYlFzZUxvMGhWeG5JZFJmVnpYaUt3Ym02bjlGVGRXYm1hcFpOVFdHaGVlbTBocG0wSkk0VlVtSA?oc=5",
-     "zeit": "2026-09-11T04:52:14.000Z",
-     "scores": {
-      "crypto": -0.495,
-      "stocks": -0.495,
-      "gold": 0.248,
-      "usd": 0.165
-     },
-     "priority": 96
     }
    ]
   },
