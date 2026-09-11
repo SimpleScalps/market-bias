@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T04:47:59.966Z",
+ "updated": "2026-09-11T04:56:15.250Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T04:48:00.009Z",
+   "stand": "2026-09-11T04:56:15.352Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T04:48:00.002Z",
+   "stand": "2026-09-11T04:56:15.334Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T04:47:59.995Z",
+   "stand": "2026-09-11T04:56:15.316Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T04:47:59.987Z",
-   "anzahl": 102,
+   "stand": "2026-09-11T04:56:15.297Z",
+   "anzahl": 104,
    "klassen": {
     "crypto": {
-     "score": -0.0919,
+     "score": -0.1076,
      "bull": 3,
-     "bear": 12,
+     "bear": 14,
      "neut": 87
     },
     "stocks": {
-     "score": -0.0932,
+     "score": -0.1091,
      "bull": 2,
-     "bear": 12,
+     "bear": 14,
      "neut": 88
     },
     "gold": {
-     "score": 0.0147,
-     "bull": 9,
+     "score": 0.0253,
+     "bull": 11,
      "bear": 4,
      "neut": 89
     },
     "usd": {
-     "score": 0.0497,
-     "bull": 4,
+     "score": 0.0535,
+     "bull": 5,
      "bear": 0,
-     "neut": 98
+     "neut": 99
     }
    },
    "top": [
@@ -1209,19 +1209,19 @@
      "priority": 54
     },
     {
-     "id": "TASS:Debris from intercepted Ukrainian missile lands on industrial site in southern Volgograd",
-     "titel": "Debris from intercepted Ukrainian missile lands on industrial site in southern Volgograd",
-     "titelDe": "Trümmer einer abgefangenen ukrainischen Rakete landen auf Industrieanlage im Süden von Wolgograd",
-     "quelle": "TASS",
-     "url": "https://tass.com/emergencies/2185823",
-     "zeit": "2026-09-11T04:17:43.000Z",
+     "id": "Al Jazeera (GN):Anthropic claims Claude AI used for missile projects, global espionage",
+     "titel": "Anthropic claims Claude AI used for missile projects, global espionage",
+     "titelDe": "Anthropic behauptet, Claude AI für Raketenprojekte und globale Spionage eingesetzt zu werden",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxON3RoSWgyVENhaXVDdFY0bkU1eDN3T2wwQnRJNXkwMk9RYld5ZVJSS0FPcGhtVXdIb3AyMnJ6c2xHZkNhMFZ1Q1BINDl2NVVIejM1NjFkMnZveExXWnh6Y2JUbXctYUxRX0VTaVFBamJhNjFwZ1BPbkh3a3Z0anRmckpiSlJWNWg1U0I3c1NHNjBma0Z1TlB4WTg5anJ3ZjVyOGF6cnVubm00d0s1LXdJ0gG0AUFVX3lxTE5MRVpJa1BQVnU5TlRCZUstMDNNM0hWZFZPdEd2dFlXNTVqeGNZYmY5VHR4aGpvU3lQeEs2ZE5xekJHNnE3Ni1iT21HU3hEV0tNQ3I1VV95dDhublJndVZUVmQyTU0xUndYWVpzWTdlckp6bnJSYUY0blFibS0wYlFzZUxvMGhWeG5JZFJmVnpYaUt3Ym02bjlGVGRXYm1hcFpOVFdHaGVlbTBocG0wSkk0VlVtSA?oc=5",
+     "zeit": "2026-09-11T04:52:14.000Z",
      "scores": {
       "crypto": -0.495,
       "stocks": -0.495,
       "gold": 0.248,
       "usd": 0.165
      },
-     "priority": 95
+     "priority": 96
     }
    ]
   },
