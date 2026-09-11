@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-11T02:56:07.181Z",
+ "updated": "2026-09-11T03:06:00.711Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-11T02:56:07.295Z",
+   "stand": "2026-09-11T03:06:00.793Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-11T02:56:07.281Z",
+   "stand": "2026-09-11T03:06:00.783Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-11T02:56:07.266Z",
+   "stand": "2026-09-11T03:06:00.773Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,32 +1074,32 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-11T02:56:07.252Z",
+   "stand": "2026-09-11T03:06:00.762Z",
    "anzahl": 89,
    "klassen": {
     "crypto": {
-     "score": -0.0789,
+     "score": -0.0818,
      "bull": 3,
-     "bear": 11,
-     "neut": 75
+     "bear": 12,
+     "neut": 74
     },
     "stocks": {
-     "score": -0.0762,
+     "score": -0.0788,
      "bull": 3,
-     "bear": 11,
-     "neut": 75
+     "bear": 12,
+     "neut": 74
     },
     "gold": {
-     "score": 0.0162,
+     "score": 0.0143,
      "bull": 8,
-     "bear": 5,
-     "neut": 76
+     "bear": 6,
+     "neut": 75
     },
     "usd": {
-     "score": 0.0382,
-     "bull": 3,
+     "score": 0.0409,
+     "bull": 4,
      "bear": 0,
-     "neut": 86
+     "neut": 85
     }
    },
    "top": [
@@ -1191,7 +1191,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 94
+     "priority": 93
     },
     {
      "id": "Reuters:Russian air strikes injure two, cause fire in 9-storey apartment building in Kyiv, officials say",
@@ -1227,7 +1227,7 @@
   },
   "2026-12-16": {
    "tag": "2026-12-16",
-   "stand": "2026-09-11T02:56:07.222Z",
+   "stand": "2026-09-11T03:06:00.741Z",
    "anzahl": 1,
    "klassen": {
     "crypto": {
@@ -1259,7 +1259,7 @@
   },
   "2026-11-05": {
    "tag": "2026-11-05",
-   "stand": "2026-09-11T02:56:07.237Z",
+   "stand": "2026-09-11T03:06:00.752Z",
    "anzahl": 1,
    "klassen": {
     "crypto": {
