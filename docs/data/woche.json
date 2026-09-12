@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-12T05:04:06.429Z",
+ "updated": "2026-09-12T05:18:32.060Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-12T05:04:06.523Z",
+   "stand": "2026-09-12T05:18:32.179Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-12T05:04:06.510Z",
+   "stand": "2026-09-12T05:18:32.161Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-12T05:04:06.496Z",
+   "stand": "2026-09-12T05:18:32.142Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T05:04:06.482Z",
+   "stand": "2026-09-12T05:18:32.124Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,32 +1291,32 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T05:04:06.468Z",
-   "anzahl": 61,
+   "stand": "2026-09-12T05:18:32.106Z",
+   "anzahl": 66,
    "klassen": {
     "crypto": {
-     "score": -0.0768,
+     "score": -0.0622,
      "bull": 1,
-     "bear": 5,
-     "neut": 55
+     "bear": 4,
+     "neut": 61
     },
     "stocks": {
-     "score": -0.0723,
+     "score": -0.0579,
      "bull": 1,
-     "bear": 5,
-     "neut": 55
+     "bear": 4,
+     "neut": 61
     },
     "gold": {
-     "score": -0.0007,
-     "bull": 4,
+     "score": -0.0054,
+     "bull": 3,
      "bear": 2,
-     "neut": 55
+     "neut": 61
     },
     "usd": {
-     "score": 0.0457,
+     "score": 0.0395,
      "bull": 2,
      "bear": 0,
-     "neut": 59
+     "neut": 64
     }
    },
    "top": [
@@ -1333,7 +1333,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 76
+     "priority": 75
     },
     {
      "id": "Al Jazeera (GN):How Canadians are bracing for the impact of Trump’s trade war",
@@ -1363,7 +1363,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 68
+     "priority": 67
     },
     {
      "id": "SCMP:North Korea launches missile salvo after US-South Korea-Japan drills",
@@ -1438,7 +1438,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 39
+     "priority": 38
     }
    ]
   }
