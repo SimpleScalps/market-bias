@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T20:03:57.105Z",
+ "updated": "2026-09-12T20:19:00.536Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T20:03:57.159Z",
+   "stand": "2026-09-12T20:19:00.562Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T20:03:57.144Z",
+   "stand": "2026-09-12T20:19:00.556Z",
    "anzahl": 175,
    "klassen": {
     "crypto": {
@@ -1396,6 +1396,21 @@
      "priority": 74
     },
     {
+     "id": "Al Jazeera (GN):Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran - Al Jazeera",
+     "titel": "Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran - Al Jazeera",
+     "titelDe": "Irak untersucht Drohnenangriffe auf Saudi-Arabien, schließt drei Grenzübergänge zu Iran - Al Jazeera",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPek5OVldxTEM5Umk1bl9oU2ZSaUJUNUdvSVh0dmxFY1pmSUNIR09La003anJrb0taSVhDWGhTTzg1UTEtN0xwNnF0YXJVNDlXTHAwY3MtaFEzczhJMlpOM0ZLMjhqdHR5b2VpSlZGY3pCeGQtZGlNbGhpSHpjS2EwYk4yTXRsRzlqbXVlNk5pNG1sbnBISUNJRXJkdWJsSmp5LWo3MDlsN21CQjN3SHE4cm9BbmJGa0paTFplZ3d2QldRZ05SRHZUMzBfcw?oc=5",
+     "zeit": "2026-09-12T18:53:31.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 74
+    },
+    {
      "id": "IRNA:Why Iran seeks permanent end to war, not temporary ceasefire?",
      "titel": "Why Iran seeks permanent end to war, not temporary ceasefire?",
      "titelDe": "Warum Iran ein dauerhaftes Ende des Krieges, nicht einen vorübergehenden Waffenstillstand, anstrebt",
@@ -1424,21 +1439,6 @@
       "usd": 0.255
      },
      "priority": 73
-    },
-    {
-     "id": "TASS:BRICS nations call for stepped-up efforts to de-escalate tensions in the Middle East",
-     "titel": "BRICS nations call for stepped-up efforts to de-escalate tensions in the Middle East",
-     "titelDe": "BRICS-Länder fordern verstärkte Anstrengungen zur Deeskalation der Spannungen im Nahen Osten",
-     "quelle": "TASS",
-     "url": "https://tass.com/world/2186667",
-     "zeit": "2026-09-12T12:24:58.000Z",
-     "scores": {
-      "crypto": 0.747,
-      "stocks": 0.747,
-      "gold": -0.374,
-      "usd": -0.249
-     },
-     "priority": 72
     }
    ]
   }
