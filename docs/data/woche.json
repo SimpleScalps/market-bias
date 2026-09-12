@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-12T06:23:52.512Z",
+ "updated": "2026-09-12T06:39:05.243Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-12T06:23:52.601Z",
+   "stand": "2026-09-12T06:39:05.354Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-12T06:23:52.588Z",
+   "stand": "2026-09-12T06:39:05.337Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-12T06:23:52.575Z",
+   "stand": "2026-09-12T06:39:05.320Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T06:23:52.562Z",
+   "stand": "2026-09-12T06:39:05.303Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T06:23:52.548Z",
+   "stand": "2026-09-12T06:39:05.285Z",
    "anzahl": 76,
    "klassen": {
     "crypto": {
@@ -1349,6 +1349,21 @@
       "usd": 0.75
      },
      "priority": 74
+    },
+    {
+     "id": "BBC World:Ukraine faces 'toughest winter' since Russia's full-scale invasion, UN official tells BBC",
+     "titel": "Ukraine faces 'toughest winter' since Russia's full-scale invasion, UN official tells BBC",
+     "titelDe": "Ukraine sieht sich seit der groß angelegten Invasion Russlands dem 'schwersten Winter' gegenüber, erklärt UN-Beamter der BBC",
+     "quelle": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cwyz59yyqk4o?at_medium=RSS&at_campaign=rss",
+     "zeit": "2026-09-12T05:55:15.000Z",
+     "scores": {
+      "crypto": -0.54,
+      "stocks": -0.54,
+      "gold": 0.27,
+      "usd": 0.18
+     },
+     "priority": 95
     },
     {
      "id": "Al Jazeera:How Canadians are bracing for the impact of Trump’s trade war",
@@ -1424,21 +1439,6 @@
       "usd": 0.135
      },
      "priority": 45
-    },
-    {
-     "id": "Al Jazeera:Satellite image shows critical Saudi pipeline damaged in drone attack",
-     "titel": "Satellite image shows critical Saudi pipeline damaged in drone attack",
-     "titelDe": "Satellitenbild zeigt kritische saudische Pipeline, die bei Drohnenangriff beschädigt wurde",
-     "quelle": "Al Jazeera",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/saudi-arabia-east-west-oil-pipeline-drone-attack-iraq?traffic_source=rss",
-     "zeit": "2026-09-12T02:18:52.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 37
     }
    ]
   }
