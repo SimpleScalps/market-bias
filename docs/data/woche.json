@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T19:52:12.944Z",
+ "updated": "2026-09-12T20:03:57.105Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T19:52:12.999Z",
+   "stand": "2026-09-12T20:03:57.159Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T19:52:12.983Z",
+   "stand": "2026-09-12T20:03:57.144Z",
    "anzahl": 175,
    "klassen": {
     "crypto": {
@@ -1381,6 +1381,21 @@
      "priority": 75
     },
     {
+     "id": "Al Jazeera:Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran",
+     "titel": "Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran",
+     "titelDe": "Irak untersucht Drohnenangriffe auf Saudi-Arabien, schließt drei Grenzübergänge zu Iran",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/9/12/iraq-probes-drone-strikes-on-saudi-arabia-shuts-three-crossings-to-iran?traffic_source=rss",
+     "zeit": "2026-09-12T18:53:31.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 74
+    },
+    {
      "id": "IRNA:Why Iran seeks permanent end to war, not temporary ceasefire?",
      "titel": "Why Iran seeks permanent end to war, not temporary ceasefire?",
      "titelDe": "Warum Iran ein dauerhaftes Ende des Krieges, nicht einen vorübergehenden Waffenstillstand, anstrebt",
@@ -1424,21 +1439,6 @@
       "usd": -0.249
      },
      "priority": 72
-    },
-    {
-     "id": "SCMP:Iran, UAE leaders discuss de-escalation as oil supply worries spike",
-     "titel": "Iran, UAE leaders discuss de-escalation as oil supply worries spike",
-     "titelDe": "Iran, VAE-Führer diskutieren Deeskalation, Ölversorgungskrise steigt",
-     "quelle": "SCMP",
-     "url": "https://www.scmp.com/news/china/diplomacy/article/3367318/iranian-president-abu-dhabi-crown-prince-meet-sidelines-brics-summit-india?utm_source=rss_feed",
-     "zeit": "2026-09-12T13:59:21.000Z",
-     "scores": {
-      "crypto": 0.747,
-      "stocks": 0.747,
-      "gold": -0.374,
-      "usd": -0.249
-     },
-     "priority": 68
     }
    ]
   }
