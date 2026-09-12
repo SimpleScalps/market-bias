@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T13:52:11.569Z",
+ "updated": "2026-09-12T14:04:02.164Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T13:52:11.631Z",
+   "stand": "2026-09-12T14:04:02.231Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,32 +1291,32 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T13:52:11.614Z",
-   "anzahl": 156,
+   "stand": "2026-09-12T14:04:02.210Z",
+   "anzahl": 165,
    "klassen": {
     "crypto": {
-     "score": -0.0693,
+     "score": -0.0698,
      "bull": 1,
-     "bear": 9,
-     "neut": 146
+     "bear": 10,
+     "neut": 154
     },
     "stocks": {
-     "score": -0.0678,
+     "score": -0.0685,
      "bull": 1,
-     "bear": 9,
-     "neut": 146
+     "bear": 10,
+     "neut": 154
     },
     "gold": {
-     "score": 0.0223,
-     "bull": 8,
+     "score": 0.0236,
+     "bull": 9,
      "bear": 2,
-     "neut": 146
+     "neut": 154
     },
     "usd": {
-     "score": 0.0294,
+     "score": 0.0291,
      "bull": 4,
      "bear": 0,
-     "neut": 152
+     "neut": 161
     }
    },
    "top": [
@@ -1423,7 +1423,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 62
+     "priority": 61
     },
     {
      "id": "BBC World:Ukraine faces 'toughest winter' since Russia's full-scale invasion, UN official tells BBC",
