@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-12T04:04:01.816Z",
+ "updated": "2026-09-12T04:20:00.332Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-12T04:04:01.933Z",
+   "stand": "2026-09-12T04:20:00.402Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-12T04:04:01.916Z",
+   "stand": "2026-09-12T04:20:00.392Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-12T04:04:01.899Z",
+   "stand": "2026-09-12T04:20:00.383Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T04:04:01.882Z",
+   "stand": "2026-09-12T04:20:00.373Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,32 +1291,32 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T04:04:01.864Z",
-   "anzahl": 57,
+   "stand": "2026-09-12T04:20:00.362Z",
+   "anzahl": 59,
    "klassen": {
     "crypto": {
-     "score": -0.1208,
+     "score": -0.1063,
      "bull": 1,
-     "bear": 7,
-     "neut": 49
+     "bear": 6,
+     "neut": 52
     },
     "stocks": {
-     "score": -0.1159,
+     "score": -0.1016,
      "bull": 1,
-     "bear": 7,
-     "neut": 49
+     "bear": 6,
+     "neut": 52
     },
     "gold": {
-     "score": 0.0186,
-     "bull": 6,
+     "score": 0.0126,
+     "bull": 5,
      "bear": 2,
-     "neut": 49
+     "neut": 52
     },
     "usd": {
-     "score": 0.0617,
+     "score": 0.0562,
      "bull": 3,
      "bear": 0,
-     "neut": 54
+     "neut": 56
     }
    },
    "top": [
@@ -1333,7 +1333,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 78
+     "priority": 77
     },
     {
      "id": "Al Jazeera (GN):How Canadians are bracing for the impact of Trump’s trade war",
@@ -1411,21 +1411,6 @@
      "priority": 43
     },
     {
-     "id": "Al Jazeera:Satellite image shows critical Saudi pipeline damaged in drone attack",
-     "titel": "Satellite image shows critical Saudi pipeline damaged in drone attack",
-     "titelDe": "Satellitenbild zeigt kritische saudische Pipeline, die bei Drohnenangriff beschädigt wurde",
-     "quelle": "Al Jazeera",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/saudi-arabia-east-west-oil-pipeline-drone-attack-iraq?traffic_source=rss",
-     "zeit": "2026-09-12T02:18:52.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 41
-    },
-    {
      "id": "SCMP:Chinese AI firms shunned US delegation over sanctions fears, commission says",
      "titel": "Chinese AI firms shunned US delegation over sanctions fears, commission says",
      "titelDe": "Chinesische KI-Unternehmen meiden US-Delegation aus Angst vor Sanktionen, sagt Kommission",
@@ -1439,6 +1424,21 @@
       "usd": 0.135
      },
      "priority": 45
+    },
+    {
+     "id": "Al Jazeera:Satellite image shows critical Saudi pipeline damaged in drone attack",
+     "titel": "Satellite image shows critical Saudi pipeline damaged in drone attack",
+     "titelDe": "Satellitenbild zeigt kritische saudische Pipeline, die bei Drohnenangriff beschädigt wurde",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/saudi-arabia-east-west-oil-pipeline-drone-attack-iraq?traffic_source=rss",
+     "zeit": "2026-09-12T02:18:52.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 40
     }
    ]
   }
