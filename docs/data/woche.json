@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-12T03:45:31.720Z",
+ "updated": "2026-09-12T03:53:48.288Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-12T03:45:31.793Z",
+   "stand": "2026-09-12T03:53:48.385Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-12T03:45:31.783Z",
+   "stand": "2026-09-12T03:53:48.371Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-12T03:45:31.772Z",
+   "stand": "2026-09-12T03:53:48.358Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T03:45:31.762Z",
+   "stand": "2026-09-12T03:53:48.344Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,23 +1291,23 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T03:45:31.750Z",
+   "stand": "2026-09-12T03:53:48.329Z",
    "anzahl": 57,
    "klassen": {
     "crypto": {
-     "score": -0.1211,
+     "score": -0.1208,
      "bull": 1,
      "bear": 7,
      "neut": 49
     },
     "stocks": {
-     "score": -0.1163,
+     "score": -0.1159,
      "bull": 1,
      "bear": 7,
      "neut": 49
     },
     "gold": {
-     "score": 0.0191,
+     "score": 0.0186,
      "bull": 6,
      "bear": 2,
      "neut": 49
@@ -1363,7 +1363,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 70
+     "priority": 69
     },
     {
      "id": "SCMP:North Korea launches missile salvo after US-South Korea-Japan drills",
@@ -1378,7 +1378,7 @@
       "gold": 0.248,
       "usd": 0.165
      },
-     "priority": 92
+     "priority": 91
     },
     {
      "id": "Reuters:Iraqi military commander dismissed after drone attacks against Saudi Arabia, prime minister's office says",
