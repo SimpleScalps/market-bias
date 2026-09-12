@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T10:19:04.796Z",
+ "updated": "2026-09-12T10:30:03.379Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T10:19:04.830Z",
+   "stand": "2026-09-12T10:30:03.444Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,32 +1291,32 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T10:19:04.821Z",
-   "anzahl": 126,
+   "stand": "2026-09-12T10:30:03.426Z",
+   "anzahl": 130,
    "klassen": {
     "crypto": {
-     "score": -0.0676,
+     "score": -0.0901,
      "bull": 1,
-     "bear": 8,
-     "neut": 117
+     "bear": 11,
+     "neut": 118
     },
     "stocks": {
-     "score": -0.0656,
+     "score": -0.0883,
      "bull": 1,
-     "bear": 8,
-     "neut": 117
+     "bear": 11,
+     "neut": 118
     },
     "gold": {
-     "score": 0.0168,
-     "bull": 7,
+     "score": 0.0294,
+     "bull": 10,
      "bear": 2,
-     "neut": 117
+     "neut": 118
     },
     "usd": {
-     "score": 0.0313,
+     "score": 0.0381,
      "bull": 4,
      "bear": 0,
-     "neut": 122
+     "neut": 126
     }
    },
    "top": [
@@ -1378,7 +1378,7 @@
       "gold": 0.27,
       "usd": 0.18
      },
-     "priority": 90
+     "priority": 89
     },
     {
      "id": "SCMP:North Korea launches missile salvo after US-South Korea-Japan drills",
@@ -1408,37 +1408,37 @@
       "gold": 0.248,
       "usd": 0.165
      },
-     "priority": 90
+     "priority": 89
     },
     {
-     "id": "Anadolu:Iraqi, Saudi foreign ministers discuss regional developments after drone strikes on pipeline",
-     "titel": "Iraqi, Saudi foreign ministers discuss regional developments after drone strikes on pipeline",
-     "titelDe": "Irakische und saudische Außenminister diskutieren regionale Entwicklungen nach Drohnenangriffen auf Pipeline",
-     "quelle": "Anadolu",
-     "url": "https://www.aa.com.tr/en/middle-east/iraqi-saudi-foreign-ministers-discuss-regional-developments-after-drone-strikes-on-pipeline/4054947",
-     "zeit": "2026-09-12T07:22:55.000Z",
-     "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
-     },
-     "priority": 42
-    },
-    {
-     "id": "Reuters:Iraqi military commander dismissed after drone attacks against Saudi Arabia, prime minister's office says",
-     "titel": "Iraqi military commander dismissed after drone attacks against Saudi Arabia, prime minister's office says",
-     "titelDe": "Irakischer Militärkommandant nach Drohnenangriffen auf Saudi-Arabien entlassen, sagt Premierministeramt",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOX2R4RE5oY1k0NjdIODFzRjJQRk9WdC1jazVkWWs4UnMxQWdfaS1JSnVNbXRiUHdDUkxFRjhMZ05GMXdoRVgzYXExUW1kUElyeG5ZaUNaRnF0UUE5ejA1aDZ4MURaRHhpWDZNM1AxN3VXX1FZRjd3WVdXbEFVOHhKeXNaZFNIcDdSaW4zbWtXd2xxSGdrb2dEMURrUWtpd1ZYQWJTQUhzVHNRb3RrQ2otM0tmSDh4dkVYaXNKUkZLMjIyOS1XUlN5ag?oc=5",
-     "zeit": "2026-09-11T22:07:39.000Z",
+     "id": "SCMP:China urges US to ‘stop all spying’ or face retaliation, slams ‘gangster logic’",
+     "titel": "China urges US to ‘stop all spying’ or face retaliation, slams ‘gangster logic’",
+     "titelDe": "China fordert US auf, alle Spionage zu stoppen oder mit Vergeltung rechnen, kritisiert „Gangsterlogik”",
+     "quelle": "SCMP",
+     "url": "https://www.scmp.com/news/china/diplomacy/article/3367300/china-urges-us-stop-all-spying-or-face-retaliation-slams-gangster-logic?utm_source=rss_feed",
+     "zeit": "2026-09-12T10:19:16.000Z",
      "scores": {
       "crypto": -0.45,
       "stocks": -0.45,
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 68
+     "priority": 95
+    },
+    {
+     "id": "Reuters:Trump says Iran probably responsible for attack on Saudi pipeline",
+     "titel": "Trump says Iran probably responsible for attack on Saudi pipeline",
+     "titelDe": "Trump sagt, Iran wahrscheinlich verantwortlich für Angriff auf saudischen Pipeline",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMGtZdldMOGgyY3hFdEVnWklzR3dhREVBZTdDeEhPQjlmaUw1QUlGVUZDdUZoaDZWZzBUTXhUb09ieU4zTVZvYkplLVJ1Z1RscUp6TXMtX2RpdFIxY1ctbVo5d1dtMTJpSFVleW8waDhfREEzNGZlUmpuYVlVSEtWeUctYVJpWEVxNjdUNVE5WUpTV2xQYk5ENGRpaXZQZEtrc0NySnNDdzViU1MyampB?oc=5",
+     "zeit": "2026-09-12T10:19:56.000Z",
+     "scores": {
+      "crypto": -0.405,
+      "stocks": -0.405,
+      "gold": 0.203,
+      "usd": 0.135
+     },
+     "priority": 94
     }
    ]
   }
