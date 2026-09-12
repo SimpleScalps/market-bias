@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T17:17:49.022Z",
+ "updated": "2026-09-12T17:27:25.244Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T17:17:49.068Z",
+   "stand": "2026-09-12T17:27:25.302Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,32 +1291,32 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T17:17:49.055Z",
-   "anzahl": 169,
+   "stand": "2026-09-12T17:27:25.286Z",
+   "anzahl": 174,
    "klassen": {
     "crypto": {
-     "score": -0.0255,
+     "score": -0.0294,
      "bull": 4,
-     "bear": 9,
-     "neut": 156
+     "bear": 10,
+     "neut": 160
     },
     "stocks": {
-     "score": -0.0309,
+     "score": -0.0344,
      "bull": 3,
-     "bear": 9,
-     "neut": 157
+     "bear": 10,
+     "neut": 161
     },
     "gold": {
-     "score": 0.0058,
-     "bull": 8,
+     "score": 0.0081,
+     "bull": 9,
      "bear": 4,
-     "neut": 157
+     "neut": 161
     },
     "usd": {
-     "score": 0.0159,
+     "score": 0.0168,
      "bull": 4,
      "bear": 2,
-     "neut": 163
+     "neut": 168
     }
    },
    "top": [
@@ -1408,21 +1408,6 @@
       "gold": -0.374,
       "usd": -0.249
      },
-     "priority": 69
-    },
-    {
-     "id": "Anadolu:Iranian president, Abu Dhabi crown prince discuss regional de-escalation",
-     "titel": "Iranian president, Abu Dhabi crown prince discuss regional de-escalation",
-     "titelDe": "Iranischer Präsident und Kronprinz von Abu Dhabi besprechen regionale Deeskalation",
-     "quelle": "Anadolu",
-     "url": "https://www.aa.com.tr/en/world/-iranian-president-abu-dhabi-crown-prince-discuss-regional-de-escalation/4055226",
-     "zeit": "2026-09-12T13:03:00.000Z",
-     "scores": {
-      "crypto": 0.747,
-      "stocks": 0.747,
-      "gold": -0.374,
-      "usd": -0.249
-     },
      "priority": 68
     },
     {
@@ -1439,6 +1424,21 @@
       "usd": 0.255
      },
      "priority": 66
+    },
+    {
+     "id": "Anadolu:Iranian president, Abu Dhabi crown prince discuss regional de-escalation",
+     "titel": "Iranian president, Abu Dhabi crown prince discuss regional de-escalation",
+     "titelDe": "Iranischer Präsident und Kronprinz von Abu Dhabi besprechen regionale Deeskalation",
+     "quelle": "Anadolu",
+     "url": "https://www.aa.com.tr/en/world/-iranian-president-abu-dhabi-crown-prince-discuss-regional-de-escalation/4055226",
+     "zeit": "2026-09-12T13:03:00.000Z",
+     "scores": {
+      "crypto": 0.747,
+      "stocks": 0.747,
+      "gold": -0.374,
+      "usd": -0.249
+     },
+     "priority": 67
     }
    ]
   }
