@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T16:52:34.960Z",
+ "updated": "2026-09-12T17:03:37.209Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T16:52:35.018Z",
+   "stand": "2026-09-12T17:03:37.245Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,32 +1291,32 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T16:52:35.002Z",
-   "anzahl": 167,
+   "stand": "2026-09-12T17:03:37.236Z",
+   "anzahl": 169,
    "klassen": {
     "crypto": {
-     "score": -0.0376,
-     "bull": 3,
+     "score": -0.0255,
+     "bull": 4,
      "bear": 9,
-     "neut": 155
+     "neut": 156
     },
     "stocks": {
-     "score": -0.0434,
-     "bull": 2,
+     "score": -0.0309,
+     "bull": 3,
      "bear": 9,
-     "neut": 156
+     "neut": 157
     },
     "gold": {
-     "score": 0.0117,
+     "score": 0.0058,
      "bull": 8,
-     "bear": 3,
-     "neut": 156
+     "bear": 4,
+     "neut": 157
     },
     "usd": {
-     "score": 0.0203,
+     "score": 0.0159,
      "bull": 4,
-     "bear": 1,
-     "neut": 162
+     "bear": 2,
+     "neut": 163
     }
    },
    "top": [
@@ -1363,7 +1363,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 67
+     "priority": 66
     },
     {
      "id": "Al Jazeera (GN):How Canadians are bracing for the impact of Trump’s trade war",
@@ -1408,22 +1408,7 @@
       "gold": -0.374,
       "usd": -0.249
      },
-     "priority": 70
-    },
-    {
-     "id": "SCMP:US-China decoupling could benefit other countries, China trade war game suggests",
-     "titel": "US-China decoupling could benefit other countries, China trade war game suggests",
-     "titelDe": "US-China‑Entkoppelung könnte anderen Ländern zugutekommen, deutet China‑Handelskrieg‑Spiel an",
-     "quelle": "SCMP",
-     "url": "https://www.scmp.com/news/china/science/article/3367290/us-china-decoupling-could-benefit-other-countries-china-trade-war-game-suggests?utm_source=rss_feed",
-     "zeit": "2026-09-12T12:00:05.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 67
+     "priority": 69
     },
     {
      "id": "Anadolu:Iranian president, Abu Dhabi crown prince discuss regional de-escalation",
@@ -1439,6 +1424,21 @@
       "usd": -0.249
      },
      "priority": 68
+    },
+    {
+     "id": "SCMP:US-China decoupling could benefit other countries, China trade war game suggests",
+     "titel": "US-China decoupling could benefit other countries, China trade war game suggests",
+     "titelDe": "US-China‑Entkoppelung könnte anderen Ländern zugutekommen, deutet China‑Handelskrieg‑Spiel an",
+     "quelle": "SCMP",
+     "url": "https://www.scmp.com/news/china/science/article/3367290/us-china-decoupling-could-benefit-other-countries-china-trade-war-game-suggests?utm_source=rss_feed",
+     "zeit": "2026-09-12T12:00:05.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 66
     }
    ]
   }
