@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-12T01:46:47.467Z",
+ "updated": "2026-09-12T01:54:38.919Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-12T01:46:47.584Z",
+   "stand": "2026-09-12T01:54:38.998Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-12T01:46:47.567Z",
+   "stand": "2026-09-12T01:54:38.987Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-12T01:46:47.550Z",
+   "stand": "2026-09-12T01:54:38.976Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T01:46:47.531Z",
+   "stand": "2026-09-12T01:54:38.965Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,29 +1291,29 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T01:46:47.513Z",
+   "stand": "2026-09-12T01:54:38.953Z",
    "anzahl": 42,
    "klassen": {
     "crypto": {
-     "score": -0.1358,
+     "score": -0.1381,
      "bull": 1,
      "bear": 6,
      "neut": 35
     },
     "stocks": {
-     "score": -0.1299,
+     "score": -0.132,
      "bull": 1,
      "bear": 6,
      "neut": 35
     },
     "gold": {
-     "score": 0.0164,
+     "score": 0.0163,
      "bull": 5,
      "bear": 2,
      "neut": 35
     },
     "usd": {
-     "score": 0.0717,
+     "score": 0.0731,
      "bull": 3,
      "bear": 0,
      "neut": 39
@@ -1363,7 +1363,7 @@
       "gold": 0.248,
       "usd": 0.165
      },
-     "priority": 95
+     "priority": 94
     },
     {
      "id": "Reuters:Iraqi military commander dismissed after drone attacks against Saudi Arabia, prime minister's office says",
