@@ -1,9 +1,9 @@
 {
- "updated": "2026-09-12T02:20:23.114Z",
+ "updated": "2026-09-12T02:36:01.257Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
-   "stand": "2026-09-12T02:20:23.189Z",
+   "stand": "2026-09-12T02:36:01.335Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -768,7 +768,7 @@
   },
   "2026-09-09": {
    "tag": "2026-09-09",
-   "stand": "2026-09-12T02:20:23.177Z",
+   "stand": "2026-09-12T02:36:01.324Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -921,7 +921,7 @@
   },
   "2026-09-10": {
    "tag": "2026-09-10",
-   "stand": "2026-09-12T02:20:23.167Z",
+   "stand": "2026-09-12T02:36:01.313Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T02:20:23.156Z",
+   "stand": "2026-09-12T02:36:01.302Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,32 +1291,32 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T02:20:23.145Z",
-   "anzahl": 48,
+   "stand": "2026-09-12T02:36:01.290Z",
+   "anzahl": 52,
    "klassen": {
     "crypto": {
-     "score": -0.1282,
+     "score": -0.1258,
      "bull": 1,
-     "bear": 6,
-     "neut": 41
+     "bear": 7,
+     "neut": 44
     },
     "stocks": {
-     "score": -0.1226,
+     "score": -0.1205,
      "bull": 1,
-     "bear": 6,
-     "neut": 41
+     "bear": 7,
+     "neut": 44
     },
     "gold": {
-     "score": 0.0154,
-     "bull": 5,
+     "score": 0.0177,
+     "bull": 6,
      "bear": 2,
-     "neut": 41
+     "neut": 44
     },
     "usd": {
-     "score": 0.0678,
+     "score": 0.0651,
      "bull": 3,
      "bear": 0,
-     "neut": 45
+     "neut": 49
     }
    },
    "top": [
@@ -1363,7 +1363,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 72
+     "priority": 71
     },
     {
      "id": "SCMP:North Korea launches missile salvo after US-South Korea-Japan drills",
@@ -1378,7 +1378,7 @@
       "gold": 0.248,
       "usd": 0.165
      },
-     "priority": 94
+     "priority": 93
     },
     {
      "id": "Reuters:Iraqi military commander dismissed after drone attacks against Saudi Arabia, prime minister's office says",
@@ -1396,6 +1396,21 @@
      "priority": 68
     },
     {
+     "id": "Al Jazeera (GN):Satellite image shows critical Saudi pipeline damaged in drone attack",
+     "titel": "Satellite image shows critical Saudi pipeline damaged in drone attack",
+     "titelDe": "Satellitenbild zeigt kritische saudische Pipeline, die bei Drohnenangriff beschädigt wurde",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS3c4OXRFVU5YUm9hbnh4OGtSYXBaUUFyU1hDM2wxNy15Wi1RZFhvNWduOVBkb2JSdVNmdjl3OWtoeWx1LTFmbmJ0ZUNUWTdpU3VFQzZKQTdWM3hFanBsMEVnZ0JiZlNWdllLRW85SWl3Y0dTdk5YTzFuMTJGcG1ENTZvTDNIdlhaemsyVUdCWGNzSS1pZVFCZ2R0ZnRIelZ4eDZXQmRfTdIBrAFBVV95cUxNdHFTUllodmtnRmR4d2xycnIzWkJlYjZQVjJhV2NXaVRybElReVNYWmhZNGlLSEVfTzZhRzF0LS1lVmhKdjBHWEU0eS1oWDlEVHVWd3RZWFdiZTlVVm9Rdy1nTllQUUNkNTJyY284QmYzdFVJa3BiMzcxZ2dfejRWaFJDR1RyRW1mWWxtZTl6cVJjYkx1X0xGdjVYX05oeVFCdks4dHpQaC1uU2V3?oc=5",
+     "zeit": "2026-09-12T02:19:17.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 43
+    },
+    {
      "id": "SCMP:Chinese AI firms shunned US delegation over sanctions fears, commission says",
      "titel": "Chinese AI firms shunned US delegation over sanctions fears, commission says",
      "titelDe": "Chinesische KI-Unternehmen meiden US-Delegation aus Angst vor Sanktionen, sagt Kommission",
@@ -1408,7 +1423,7 @@
       "gold": 0.203,
       "usd": 0.135
      },
-     "priority": 46
+     "priority": 45
     },
     {
      "id": "Al Jazeera (GN):UN extends partial Sudan arms embargo for a month - aljazeera.com",
