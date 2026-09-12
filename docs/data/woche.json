@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T09:44:19.463Z",
+ "updated": "2026-09-12T09:52:40.126Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T09:44:19.541Z",
+   "stand": "2026-09-12T09:52:40.167Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,32 +1291,32 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T09:44:19.512Z",
-   "anzahl": 109,
+   "stand": "2026-09-12T09:52:40.156Z",
+   "anzahl": 110,
    "klassen": {
     "crypto": {
-     "score": -0.0841,
+     "score": -0.077,
      "bull": 1,
-     "bear": 9,
-     "neut": 99
+     "bear": 8,
+     "neut": 101
     },
     "stocks": {
-     "score": -0.0818,
+     "score": -0.0747,
      "bull": 1,
-     "bear": 9,
-     "neut": 99
+     "bear": 8,
+     "neut": 101
     },
     "gold": {
-     "score": 0.0226,
-     "bull": 8,
+     "score": 0.0189,
+     "bull": 7,
      "bear": 2,
-     "neut": 99
+     "neut": 101
     },
     "usd": {
-     "score": 0.038,
+     "score": 0.0357,
      "bull": 4,
      "bear": 0,
-     "neut": 105
+     "neut": 106
     }
    },
    "top": [
@@ -1378,22 +1378,7 @@
       "gold": 0.27,
       "usd": 0.18
      },
-     "priority": 91
-    },
-    {
-     "id": "Anadolu:North Korea missile launch prompts US assurance to allies",
-     "titel": "North Korea missile launch prompts US assurance to allies",
-     "titelDe": "Nordkoreas Raketenstart veranlasst die USA, den Verbündeten Zusicherungen zu machen",
-     "quelle": "Anadolu",
-     "url": "https://www.aa.com.tr/en/asia-pacific/north-korea-missile-launch-prompts-us-assurance-to-allies/4054914",
-     "zeit": "2026-09-12T06:21:47.000Z",
-     "scores": {
-      "crypto": -0.495,
-      "stocks": -0.495,
-      "gold": 0.248,
-      "usd": 0.165
-     },
-     "priority": 91
+     "priority": 90
     },
     {
      "id": "SCMP:North Korea launches missile salvo after US-South Korea-Japan drills",
@@ -1411,6 +1396,21 @@
      "priority": 91
     },
     {
+     "id": "Anadolu:North Korea missile launch prompts US assurance to allies",
+     "titel": "North Korea missile launch prompts US assurance to allies",
+     "titelDe": "Nordkoreas Raketenstart veranlasst die USA, den Verbündeten Zusicherungen zu machen",
+     "quelle": "Anadolu",
+     "url": "https://www.aa.com.tr/en/asia-pacific/north-korea-missile-launch-prompts-us-assurance-to-allies/4054914",
+     "zeit": "2026-09-12T06:21:47.000Z",
+     "scores": {
+      "crypto": -0.495,
+      "stocks": -0.495,
+      "gold": 0.248,
+      "usd": 0.165
+     },
+     "priority": 90
+    },
+    {
      "id": "Anadolu:Iraqi, Saudi foreign ministers discuss regional developments after drone strikes on pipeline",
      "titel": "Iraqi, Saudi foreign ministers discuss regional developments after drone strikes on pipeline",
      "titelDe": "Irakische und saudische Außenminister diskutieren regionale Entwicklungen nach Drohnenangriffen auf Pipeline",
@@ -1423,7 +1423,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 43
+     "priority": 42
     },
     {
      "id": "Reuters:Iraqi military commander dismissed after drone attacks against Saudi Arabia, prime minister's office says",
