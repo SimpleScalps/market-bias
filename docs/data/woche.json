@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T10:04:26.483Z",
+ "updated": "2026-09-12T10:19:04.796Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T10:04:26.548Z",
+   "stand": "2026-09-12T10:19:04.830Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,32 +1291,32 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T10:04:26.530Z",
-   "anzahl": 113,
+   "stand": "2026-09-12T10:19:04.821Z",
+   "anzahl": 126,
    "klassen": {
     "crypto": {
-     "score": -0.0751,
+     "score": -0.0676,
      "bull": 1,
      "bear": 8,
-     "neut": 104
+     "neut": 117
     },
     "stocks": {
-     "score": -0.0728,
+     "score": -0.0656,
      "bull": 1,
      "bear": 8,
-     "neut": 104
+     "neut": 117
     },
     "gold": {
-     "score": 0.0183,
+     "score": 0.0168,
      "bull": 7,
      "bear": 2,
-     "neut": 104
+     "neut": 117
     },
     "usd": {
-     "score": 0.0349,
+     "score": 0.0313,
      "bull": 4,
      "bear": 0,
-     "neut": 109
+     "neut": 122
     }
    },
    "top": [
@@ -1348,7 +1348,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 68
+     "priority": 67
     },
     {
      "id": "Al Jazeera:How Canadians are bracing for the impact of Trump’s trade war",
