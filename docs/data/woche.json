@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T12:23:17.571Z",
+ "updated": "2026-09-12T12:38:50.965Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T12:23:17.623Z",
+   "stand": "2026-09-12T12:38:51.007Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T12:23:17.609Z",
+   "stand": "2026-09-12T12:38:50.996Z",
    "anzahl": 140,
    "klassen": {
     "crypto": {
@@ -1366,6 +1366,21 @@
      "priority": 73
     },
     {
+     "id": "TASS:BRICS nations call for stepped-up efforts to de-escalate tensions in the Middle East",
+     "titel": "BRICS nations call for stepped-up efforts to de-escalate tensions in the Middle East",
+     "titelDe": "BRICS-Länder fordern verstärkte Anstrengungen zur Deeskalation der Spannungen im Nahen Osten",
+     "quelle": "TASS",
+     "url": "https://tass.com/world/2186667",
+     "zeit": "2026-09-12T12:24:58.000Z",
+     "scores": {
+      "crypto": 0.747,
+      "stocks": 0.747,
+      "gold": -0.374,
+      "usd": -0.249
+     },
+     "priority": 74
+    },
+    {
      "id": "Al Jazeera:How Canadians are bracing for the impact of Trump’s trade war",
      "titel": "How Canadians are bracing for the impact of Trump’s trade war",
      "titelDe": "Kanadier bereiten sich auf die Auswirkungen von Trumps Handelskrieg vor",
@@ -1424,21 +1439,6 @@
       "usd": 0.165
      },
      "priority": 91
-    },
-    {
-     "id": "Anadolu:North Korea missile launch prompts US assurance to allies",
-     "titel": "North Korea missile launch prompts US assurance to allies",
-     "titelDe": "Nordkoreas Raketenstart veranlasst die USA, den Verbündeten Zusicherungen zu machen",
-     "quelle": "Anadolu",
-     "url": "https://www.aa.com.tr/en/asia-pacific/north-korea-missile-launch-prompts-us-assurance-to-allies/4054914",
-     "zeit": "2026-09-12T06:21:47.000Z",
-     "scores": {
-      "crypto": -0.495,
-      "stocks": -0.495,
-      "gold": 0.248,
-      "usd": 0.165
-     },
-     "priority": 86
     }
    ]
   }
