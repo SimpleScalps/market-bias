@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T08:04:22.448Z",
+ "updated": "2026-09-12T08:19:59.297Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T08:04:22.500Z",
+   "stand": "2026-09-12T08:19:59.336Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,32 +1291,32 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T08:04:22.486Z",
-   "anzahl": 94,
+   "stand": "2026-09-12T08:19:59.326Z",
+   "anzahl": 95,
    "klassen": {
     "crypto": {
-     "score": -0.0752,
+     "score": -0.0845,
      "bull": 1,
-     "bear": 6,
+     "bear": 7,
      "neut": 87
     },
     "stocks": {
-     "score": -0.0724,
+     "score": -0.0817,
      "bull": 1,
-     "bear": 6,
+     "bear": 7,
      "neut": 87
     },
     "gold": {
-     "score": 0.0141,
-     "bull": 5,
+     "score": 0.0184,
+     "bull": 6,
      "bear": 2,
      "neut": 87
     },
     "usd": {
-     "score": 0.0371,
+     "score": 0.0404,
      "bull": 4,
      "bear": 0,
-     "neut": 90
+     "neut": 91
     }
    },
    "top": [
@@ -1363,7 +1363,7 @@
       "gold": 0.27,
       "usd": 0.18
      },
-     "priority": 94
+     "priority": 93
     },
     {
      "id": "Al Jazeera:How Canadians are bracing for the impact of Trump’s trade war",
@@ -1393,7 +1393,7 @@
       "gold": 0.248,
       "usd": 0.165
      },
-     "priority": 94
+     "priority": 93
     },
     {
      "id": "SCMP:North Korea launches missile salvo after US-South Korea-Japan drills",
@@ -1423,7 +1423,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 46
+     "priority": 45
     },
     {
      "id": "Reuters:Iraqi military commander dismissed after drone attacks against Saudi Arabia, prime minister's office says",
