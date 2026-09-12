@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T16:43:49.730Z",
+ "updated": "2026-09-12T16:52:34.960Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T16:43:49.789Z",
+   "stand": "2026-09-12T16:52:35.018Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T16:43:49.772Z",
+   "stand": "2026-09-12T16:52:35.002Z",
    "anzahl": 167,
    "klassen": {
     "crypto": {
@@ -1426,19 +1426,19 @@
      "priority": 67
     },
     {
-     "id": "Al Jazeera:How Canadians are bracing for the impact of Trump’s trade war",
-     "titel": "How Canadians are bracing for the impact of Trump’s trade war",
-     "titelDe": "Kanadier bereiten sich auf die Auswirkungen von Trumps Handelskrieg vor",
-     "quelle": "Al Jazeera",
-     "url": "https://www.aljazeera.com/economy/2026/9/12/how-canadians-are-bracing-for-the-impact-of-trumps-trade-war?traffic_source=rss",
-     "zeit": "2026-09-12T00:52:00.000Z",
+     "id": "Anadolu:Iranian president, Abu Dhabi crown prince discuss regional de-escalation",
+     "titel": "Iranian president, Abu Dhabi crown prince discuss regional de-escalation",
+     "titelDe": "Iranischer Präsident und Kronprinz von Abu Dhabi besprechen regionale Deeskalation",
+     "quelle": "Anadolu",
+     "url": "https://www.aa.com.tr/en/world/-iranian-president-abu-dhabi-crown-prince-discuss-regional-de-escalation/4055226",
+     "zeit": "2026-09-12T13:03:00.000Z",
      "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
+      "crypto": 0.747,
+      "stocks": 0.747,
+      "gold": -0.374,
+      "usd": -0.249
      },
-     "priority": 65
+     "priority": 68
     }
    ]
   }
