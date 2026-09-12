@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T08:19:59.297Z",
+ "updated": "2026-09-12T08:31:42.834Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T08:19:59.336Z",
+   "stand": "2026-09-12T08:31:42.886Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,29 +1291,29 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T08:19:59.326Z",
+   "stand": "2026-09-12T08:31:42.872Z",
    "anzahl": 95,
    "klassen": {
     "crypto": {
-     "score": -0.0845,
+     "score": -0.0846,
      "bull": 1,
      "bear": 7,
      "neut": 87
     },
     "stocks": {
-     "score": -0.0817,
+     "score": -0.0819,
      "bull": 1,
      "bear": 7,
      "neut": 87
     },
     "gold": {
-     "score": 0.0184,
+     "score": 0.0187,
      "bull": 6,
      "bear": 2,
      "neut": 87
     },
     "usd": {
-     "score": 0.0404,
+     "score": 0.0403,
      "bull": 4,
      "bear": 0,
      "neut": 91
@@ -1348,22 +1348,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 71
-    },
-    {
-     "id": "BBC World:Ukraine faces 'toughest winter' since Russia's full-scale invasion, UN official tells BBC",
-     "titel": "Ukraine faces 'toughest winter' since Russia's full-scale invasion, UN official tells BBC",
-     "titelDe": "Ukraine sieht sich seit der groß angelegten Invasion Russlands dem 'schwersten Winter' gegenüber, erklärt UN-Beamter der BBC",
-     "quelle": "BBC World",
-     "url": "https://www.bbc.co.uk/news/articles/cwyz59yyqk4o?at_medium=RSS&at_campaign=rss",
-     "zeit": "2026-09-12T05:55:15.000Z",
-     "scores": {
-      "crypto": -0.54,
-      "stocks": -0.54,
-      "gold": 0.27,
-      "usd": 0.18
-     },
-     "priority": 93
+     "priority": 70
     },
     {
      "id": "Al Jazeera:How Canadians are bracing for the impact of Trump’s trade war",
@@ -1381,6 +1366,21 @@
      "priority": 65
     },
     {
+     "id": "BBC World:Ukraine faces 'toughest winter' since Russia's full-scale invasion, UN official tells BBC",
+     "titel": "Ukraine faces 'toughest winter' since Russia's full-scale invasion, UN official tells BBC",
+     "titelDe": "Ukraine sieht sich seit der groß angelegten Invasion Russlands dem 'schwersten Winter' gegenüber, erklärt UN-Beamter der BBC",
+     "quelle": "BBC World",
+     "url": "https://www.bbc.co.uk/news/articles/cwyz59yyqk4o?at_medium=RSS&at_campaign=rss",
+     "zeit": "2026-09-12T05:55:15.000Z",
+     "scores": {
+      "crypto": -0.54,
+      "stocks": -0.54,
+      "gold": 0.27,
+      "usd": 0.18
+     },
+     "priority": 92
+    },
+    {
      "id": "Anadolu:North Korea missile launch prompts US assurance to allies",
      "titel": "North Korea missile launch prompts US assurance to allies",
      "titelDe": "Nordkoreas Raketenstart veranlasst die USA, den Verbündeten Zusicherungen zu machen",
@@ -1393,7 +1393,7 @@
       "gold": 0.248,
       "usd": 0.165
      },
-     "priority": 93
+     "priority": 92
     },
     {
      "id": "SCMP:North Korea launches missile salvo after US-South Korea-Japan drills",
