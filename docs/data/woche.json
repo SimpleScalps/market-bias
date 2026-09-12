@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T13:03:35.370Z",
+ "updated": "2026-09-12T13:18:21.155Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T13:03:35.433Z",
+   "stand": "2026-09-12T13:18:21.208Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T13:03:35.416Z",
+   "stand": "2026-09-12T13:18:21.194Z",
    "anzahl": 147,
    "klassen": {
     "crypto": {
@@ -1320,6 +1320,21 @@
     }
    },
    "top": [
+    {
+     "id": "TASS:BRICS countries concerned about attacks on civilian nuclear facilities — declaration",
+     "titel": "BRICS countries concerned about attacks on civilian nuclear facilities — declaration",
+     "titelDe": "BRICS-Staaten besorgt über Angriffe auf zivile Kernkraftwerke – Erklärung",
+     "quelle": "TASS",
+     "url": "https://tass.com/brics-summit/2186699",
+     "zeit": "2026-09-12T12:31:40.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 100
+    },
     {
      "id": "IRNA:Why Iran seeks permanent end to war, not temporary ceasefire?",
      "titel": "Why Iran seeks permanent end to war, not temporary ceasefire?",
@@ -1424,21 +1439,6 @@
       "usd": 0.18
      },
      "priority": 85
-    },
-    {
-     "id": "SCMP:North Korea launches missile salvo after US-South Korea-Japan drills",
-     "titel": "North Korea launches missile salvo after US-South Korea-Japan drills",
-     "titelDe": "Nordkorea startet Raketenstoß nach US-Südkorea-Japan-Übung",
-     "quelle": "SCMP",
-     "url": "https://www.scmp.com/news/asia/east-asia/article/3367271/north-korea-launches-missile-salvo-after-us-south-korea-japan-drills?utm_source=rss_feed",
-     "zeit": "2026-09-12T01:00:11.000Z",
-     "scores": {
-      "crypto": -0.495,
-      "stocks": -0.495,
-      "gold": 0.248,
-      "usd": 0.165
-     },
-     "priority": 91
     }
    ]
   }
