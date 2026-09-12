@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T22:49:18.126Z",
+ "updated": "2026-09-12T22:56:26.857Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T22:49:18.189Z",
+   "stand": "2026-09-12T22:56:26.911Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T22:49:18.175Z",
+   "stand": "2026-09-12T22:56:26.900Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,35 +1444,51 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-12T22:49:18.160Z",
-   "anzahl": 5,
+   "stand": "2026-09-12T22:56:26.889Z",
+   "anzahl": 10,
    "klassen": {
     "crypto": {
-     "score": 0,
+     "score": -0.1874,
      "bull": 0,
-     "bear": 0,
-     "neut": 5
+     "bear": 1,
+     "neut": 9
     },
     "stocks": {
-     "score": 0,
+     "score": -0.1874,
      "bull": 0,
-     "bear": 0,
-     "neut": 5
+     "bear": 1,
+     "neut": 9
     },
     "gold": {
-     "score": 0,
-     "bull": 0,
+     "score": 0.0936,
+     "bull": 1,
      "bear": 0,
-     "neut": 5
+     "neut": 9
     },
     "usd": {
-     "score": 0,
-     "bull": 0,
+     "score": 0.0625,
+     "bull": 1,
      "bear": 0,
-     "neut": 5
+     "neut": 9
     }
    },
-   "top": []
+   "top": [
+    {
+     "id": "Al Jazeera (GN):Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran",
+     "titel": "Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran",
+     "titelDe": "Irak untersucht Drohnenangriffe auf Saudi-Arabien, schließt drei Grenzübergänge zu Iran",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSEVTcUVKTUpBQnAwT0wzS3EwYlhlQ1VEZzhiaUEyc0czQ1NIOWRXVWZoVDIxQXV0Y1ZFWnc1ZXFhdERrMGVhZS1ER3JsWG5nOG0zM195SzBsTmNJSWlDNlJVNW9kTDFvVURkOVdFUDVpLUVGYnhqR2tHaTVjNkFibzJ4emhjbWoyTnNiZVN2Y256ZElLODBTOHVaVDluMlFTNEdZallKVnNXVlhxVml3Ykt30gG3AUFVX3lxTE9wdDJScDJXV3F4bFV0STZfd3NhcTAxYmdxQ2ZrazlvUGZlYmN0WnNpYmdXMm9VTmc5N3d6bkVRa1l0WDVUTjJGR3g0WHJ3R2pNMXV3XzBtTDd0LVNGUlZfNTZmZ216dThzWURDcm1iU05DaFlVdVEwMlhMZFA5d0twQTRJNklkVU9qNzNXc0dtRi03SHN0RDhhUHBNZmVtTjN4Ul9YTnktOHF6eGdMUDI1QW9GQWVsSQ?oc=5",
+     "zeit": "2026-09-12T22:07:30.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 74
+    }
+   ]
   }
  }
 }
