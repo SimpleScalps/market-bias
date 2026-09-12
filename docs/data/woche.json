@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T13:18:21.155Z",
+ "updated": "2026-09-12T13:28:28.836Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T13:18:21.208Z",
+   "stand": "2026-09-12T13:28:28.881Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,32 +1291,32 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T13:18:21.194Z",
-   "anzahl": 147,
+   "stand": "2026-09-12T13:28:28.869Z",
+   "anzahl": 150,
    "klassen": {
     "crypto": {
-     "score": -0.0852,
+     "score": -0.0922,
      "bull": 2,
-     "bear": 12,
-     "neut": 133
+     "bear": 13,
+     "neut": 135
     },
     "stocks": {
-     "score": -0.0837,
+     "score": -0.0908,
      "bull": 2,
-     "bear": 12,
-     "neut": 133
+     "bear": 13,
+     "neut": 135
     },
     "gold": {
-     "score": 0.0298,
-     "bull": 11,
+     "score": 0.034,
+     "bull": 12,
      "bear": 3,
-     "neut": 133
+     "neut": 135
     },
     "usd": {
-     "score": 0.035,
+     "score": 0.0369,
      "bull": 6,
      "bear": 1,
-     "neut": 140
+     "neut": 143
     }
    },
    "top": [
@@ -1348,22 +1348,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 73
-    },
-    {
-     "id": "SCMP:US-China decoupling could benefit other countries, China trade war game suggests",
-     "titel": "US-China decoupling could benefit other countries, China trade war game suggests",
-     "titelDe": "US-China‑Entkoppelung könnte anderen Ländern zugutekommen, deutet China‑Handelskrieg‑Spiel an",
-     "quelle": "SCMP",
-     "url": "https://www.scmp.com/news/china/science/article/3367290/us-china-decoupling-could-benefit-other-countries-china-trade-war-game-suggests?utm_source=rss_feed",
-     "zeit": "2026-09-12T12:00:05.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 73
+     "priority": 72
     },
     {
      "id": "Al Jazeera (GN):How Canadians are bracing for the impact of Trump’s trade war",
@@ -1381,6 +1366,21 @@
      "priority": 73
     },
     {
+     "id": "SCMP:US-China decoupling could benefit other countries, China trade war game suggests",
+     "titel": "US-China decoupling could benefit other countries, China trade war game suggests",
+     "titelDe": "US-China‑Entkoppelung könnte anderen Ländern zugutekommen, deutet China‑Handelskrieg‑Spiel an",
+     "quelle": "SCMP",
+     "url": "https://www.scmp.com/news/china/science/article/3367290/us-china-decoupling-could-benefit-other-countries-china-trade-war-game-suggests?utm_source=rss_feed",
+     "zeit": "2026-09-12T12:00:05.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 72
+    },
+    {
      "id": "TASS:BRICS nations call for stepped-up efforts to de-escalate tensions in the Middle East",
      "titel": "BRICS nations call for stepped-up efforts to de-escalate tensions in the Middle East",
      "titelDe": "BRICS-Länder fordern verstärkte Anstrengungen zur Deeskalation der Spannungen im Nahen Osten",
@@ -1393,7 +1393,7 @@
       "gold": -0.374,
       "usd": -0.249
      },
-     "priority": 73
+     "priority": 72
     },
     {
      "id": "Al Jazeera:How Canadians are bracing for the impact of Trump’s trade war",
@@ -1423,7 +1423,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 63
+     "priority": 62
     },
     {
      "id": "BBC World:Ukraine faces 'toughest winter' since Russia's full-scale invasion, UN official tells BBC",
