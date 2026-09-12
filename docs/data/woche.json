@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T12:50:16.533Z",
+ "updated": "2026-09-12T13:03:35.370Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T12:50:16.576Z",
+   "stand": "2026-09-12T13:03:35.433Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,32 +1291,32 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T12:50:16.564Z",
-   "anzahl": 140,
+   "stand": "2026-09-12T13:03:35.416Z",
+   "anzahl": 147,
    "klassen": {
     "crypto": {
-     "score": -0.0898,
+     "score": -0.0852,
      "bull": 2,
      "bear": 12,
-     "neut": 126
+     "neut": 133
     },
     "stocks": {
-     "score": -0.0883,
+     "score": -0.0837,
      "bull": 2,
      "bear": 12,
-     "neut": 126
+     "neut": 133
     },
     "gold": {
-     "score": 0.0314,
+     "score": 0.0298,
      "bull": 11,
      "bear": 3,
-     "neut": 126
+     "neut": 133
     },
     "usd": {
-     "score": 0.0369,
+     "score": 0.035,
      "bull": 6,
      "bear": 1,
-     "neut": 133
+     "neut": 140
     }
    },
    "top": [
@@ -1423,7 +1423,7 @@
       "gold": 0.27,
       "usd": 0.18
      },
-     "priority": 86
+     "priority": 85
     },
     {
      "id": "SCMP:North Korea launches missile salvo after US-South Korea-Japan drills",
