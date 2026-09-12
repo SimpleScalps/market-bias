@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T15:03:42.239Z",
+ "updated": "2026-09-12T15:18:22.964Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-12T15:03:42.279Z",
+   "stand": "2026-09-12T15:18:23.014Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-12T15:03:42.269Z",
+   "stand": "2026-09-12T15:18:23.001Z",
    "anzahl": 165,
    "klassen": {
     "crypto": {
@@ -1320,6 +1320,21 @@
     }
    },
    "top": [
+    {
+     "id": "Al Jazeera (GN):Three killed in Russian air strikes on 10 regions of Ukraine",
+     "titel": "Three killed in Russian air strikes on 10 regions of Ukraine",
+     "titelDe": "Drei Menschen bei russischen Luftangriffen auf 10 ukrainische Regionen getötet",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWVZZYUw3SGx6TDJld21TNnJ2Z0I3YmMzc2FDcmRuX3d5UXRJQkVFSGpZazdUMmxrWjBuN0lhd0Nxc1lpRDhzbTdHOHJoSkxLNXY0X0o5eXlQSk16WVFjekpOU0JQc2JSRTNCNURQald1NzhHT295QVJNa0I4QlJlVzI4eTk1Z2VnNDFTUFdUajJ6ZE9rT0tPeGU4OHVFd9IBowFBVV95cUxNQUc4ZzBSSTNwMTZreGNGQWVoMnBxd0lRZ002UzdySk1xQ2tQVlA2OVN2djBRVk5IUEtjTUNoNG13ZW5rQ2w3bVpzT2xXdW4xTTA2Q3p0ZUJvVVh0a285Nm9kOUlUT21qWEotcFRQTUhCOGQ3ckNkTGswSmxZdWpNUk1Ybkk5MGtmeEdIay1RVWdlMVZDYkM0My1iMnFDeXdOb2tn?oc=5",
+     "zeit": "2026-09-12T14:40:34.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
     {
      "id": "TASS:BRICS countries concerned about attacks on civilian nuclear facilities — declaration",
      "titel": "BRICS countries concerned about attacks on civilian nuclear facilities — declaration",
@@ -1424,21 +1439,6 @@
       "usd": 0.255
      },
      "priority": 65
-    },
-    {
-     "id": "MarketWatch:The Fed could raise interest rates three times. Here’s where the market could face the stiffest test.",
-     "titel": "The Fed could raise interest rates three times. Here’s where the market could face the stiffest test.",
-     "titelDe": "Die Fed könnte die Zinsen dreimal erhöhen. Hier könnte der Markt die härteste Prüfung erleben",
-     "quelle": "MarketWatch",
-     "url": "https://www.marketwatch.com/story/the-fed-could-raise-interest-rates-three-times-heres-where-the-market-could-face-the-stiffest-test-757872a1?mod=mw_rss_topstories",
-     "zeit": "2026-09-11T23:54:00.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 61
     }
    ]
   }
