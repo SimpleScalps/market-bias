@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T02:04:17.785Z",
+ "updated": "2026-09-13T02:19:51.338Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T02:04:17.847Z",
+   "stand": "2026-09-13T02:19:51.401Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T02:04:17.834Z",
+   "stand": "2026-09-13T02:19:51.388Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,32 +1444,32 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T02:04:17.821Z",
-   "anzahl": 38,
+   "stand": "2026-09-13T02:19:51.374Z",
+   "anzahl": 40,
    "klassen": {
     "crypto": {
-     "score": -0.1061,
+     "score": -0.1001,
      "bull": 0,
      "bear": 6,
-     "neut": 32
+     "neut": 34
     },
     "stocks": {
-     "score": -0.1061,
+     "score": -0.1001,
      "bull": 0,
      "bear": 6,
-     "neut": 32
+     "neut": 34
     },
     "gold": {
-     "score": 0.0531,
+     "score": 0.0501,
      "bull": 6,
      "bear": 0,
-     "neut": 32
+     "neut": 34
     },
     "usd": {
-     "score": 0.0354,
+     "score": 0.0334,
      "bull": 0,
      "bear": 0,
-     "neut": 38
+     "neut": 40
     }
    },
    "top": [
@@ -1493,7 +1493,7 @@
      "titel": "Three DPR civilians killed, 13 wounded in Ukraine’s attacks on DPR in past day",
      "titelDe": "Drei Zivilisten der DDR wurden getötet, 13 verletzt bei ukrainischen Angriffen auf die DDR im vergangenen Tag",
      "quelle": "TASS",
-     "url": "https://tass.com/defense/2186827",
+     "url": "https://tass.com/emergencies/2186827",
      "zeit": "2026-09-13T01:50:43.000Z",
      "scores": {
       "crypto": -0.405,
@@ -1516,7 +1516,7 @@
       "gold": 0.203,
       "usd": 0.135
      },
-     "priority": 42
+     "priority": 41
     }
    ]
   }
