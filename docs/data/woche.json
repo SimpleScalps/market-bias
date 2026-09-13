@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T10:02:50.452Z",
+ "updated": "2026-09-13T10:22:49.416Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T10:02:50.496Z",
+   "stand": "2026-09-13T10:22:49.482Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T10:02:50.488Z",
+   "stand": "2026-09-13T10:22:49.468Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,32 +1444,32 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T10:02:50.479Z",
-   "anzahl": 95,
+   "stand": "2026-09-13T10:22:49.453Z",
+   "anzahl": 96,
    "klassen": {
     "crypto": {
-     "score": -0.0509,
-     "bull": 2,
-     "bear": 8,
-     "neut": 85
-    },
-    "stocks": {
-     "score": -0.0454,
+     "score": -0.024,
      "bull": 2,
      "bear": 7,
-     "neut": 86
+     "neut": 87
+    },
+    "stocks": {
+     "score": -0.0186,
+     "bull": 2,
+     "bear": 6,
+     "neut": 88
     },
     "gold": {
-     "score": 0.0227,
-     "bull": 7,
+     "score": 0.0093,
+     "bull": 6,
      "bear": 2,
-     "neut": 86
+     "neut": 88
     },
     "usd": {
-     "score": 0.0151,
-     "bull": 2,
+     "score": 0.0062,
+     "bull": 1,
      "bear": 1,
-     "neut": 92
+     "neut": 94
     }
    },
    "top": [
@@ -1546,7 +1546,7 @@
       "gold": -0.374,
       "usd": -0.249
      },
-     "priority": 65
+     "priority": 64
     },
     {
      "id": "Reuters:Russian drone attack injures five in Ukraine's Odesa, officials say",
