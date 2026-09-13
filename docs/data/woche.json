@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T06:07:01.668Z",
+ "updated": "2026-09-13T06:29:17.824Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T06:07:01.732Z",
+   "stand": "2026-09-13T06:29:17.876Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T06:07:01.719Z",
+   "stand": "2026-09-13T06:29:17.866Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,30 +1444,30 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T06:07:01.705Z",
-   "anzahl": 67,
+   "stand": "2026-09-13T06:29:17.855Z",
+   "anzahl": 68,
    "klassen": {
     "crypto": {
-     "score": -0.1167,
+     "score": -0.1316,
      "bull": 1,
-     "bear": 9,
+     "bear": 10,
      "neut": 57
     },
     "stocks": {
-     "score": -0.1167,
+     "score": -0.1316,
      "bull": 1,
-     "bear": 9,
+     "bear": 10,
      "neut": 57
     },
     "gold": {
-     "score": 0.0424,
-     "bull": 8,
+     "score": 0.0503,
+     "bull": 9,
      "bear": 2,
      "neut": 57
     },
     "usd": {
-     "score": 0.0491,
-     "bull": 3,
+     "score": 0.0538,
+     "bull": 4,
      "bear": 1,
      "neut": 63
     }
@@ -1561,7 +1561,22 @@
       "gold": -0.547,
       "usd": 1
      },
-     "priority": 44
+     "priority": 43
+    },
+    {
+     "id": "TASS:Two killed, 12 injured in drone attack on Nizhnekamsk — authorities",
+     "titel": "Two killed, 12 injured in drone attack on Nizhnekamsk — authorities",
+     "titelDe": "Zwei Tote, 12 Verletzte bei Drohnenangriff auf Nizhnekamsk – Behörden",
+     "quelle": "TASS",
+     "url": "https://tass.com/emergencies/2186897",
+     "zeit": "2026-09-13T06:17:28.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 49
     },
     {
      "id": "Reuters:New report of attack on Strait of Hormuz shipping fans fears of threats to oil supplies",
@@ -1577,21 +1592,6 @@
       "usd": 0.135
      },
      "priority": 93
-    },
-    {
-     "id": "TASS:Over 60 UAVs destroyed while repelling attack on Russia’s Rostov Region",
-     "titel": "Over 60 UAVs destroyed while repelling attack on Russia’s Rostov Region",
-     "titelDe": "Mehr als 60 Drohnen zerstört, während der Angriff auf die russische Region Rostow abgewehrt wurde",
-     "quelle": "TASS",
-     "url": "https://tass.com/emergencies/2186881",
-     "zeit": "2026-09-13T04:43:56.000Z",
-     "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
-     },
-     "priority": 92
     }
    ]
   }
