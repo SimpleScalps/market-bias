@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T12:38:57.799Z",
+ "updated": "2026-09-13T12:50:28.552Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T12:38:57.864Z",
+   "stand": "2026-09-13T12:50:28.618Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T12:38:57.851Z",
+   "stand": "2026-09-13T12:50:28.604Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T12:38:57.836Z",
+   "stand": "2026-09-13T12:50:28.590Z",
    "anzahl": 124,
    "klassen": {
     "crypto": {
@@ -1473,6 +1473,21 @@
     }
    },
    "top": [
+    {
+     "id": "TASS:Zelensky’s statement on retaliation for energy strikes escalatory — Kremlin",
+     "titel": "Zelensky’s statement on retaliation for energy strikes escalatory — Kremlin",
+     "titelDe": "Zelenskys Aussage über Vergeltung für Energiestrikes eskaliert – Kreml",
+     "quelle": "TASS",
+     "url": "https://tass.com/politics/2187021",
+     "zeit": "2026-09-13T12:42:01.000Z",
+     "scores": {
+      "crypto": -0.81,
+      "stocks": -0.81,
+      "gold": 0.405,
+      "usd": 0.27
+     },
+     "priority": 100
+    },
     {
      "id": "TASS:Strike on Iranian civilian vessel in Strait of Hormuz kills one — local official",
      "titel": "Strike on Iranian civilian vessel in Strait of Hormuz kills one — local official",
@@ -1577,21 +1592,6 @@
       "usd": 0.15
      },
      "priority": 94
-    },
-    {
-     "id": "Mehr News:Iran would not have joined NPT if had sought nuclear weapons",
-     "titel": "Iran would not have joined NPT if had sought nuclear weapons",
-     "titelDe": "Iran wäre dem NPT nicht beigetreten, wenn er nach Atomwaffen gesucht hätte",
-     "quelle": "Mehr News",
-     "url": "https://en.mehrnews.com/news/247706/Iran-would-not-have-joined-NPT-if-had-sought-nuclear-weapons",
-     "zeit": "2026-09-13T10:43:30.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 93
     }
    ]
   }
