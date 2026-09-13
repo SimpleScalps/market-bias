@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T14:04:16.502Z",
+ "updated": "2026-09-13T14:18:49.583Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T14:04:16.569Z",
+   "stand": "2026-09-13T14:18:49.650Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T14:04:16.554Z",
+   "stand": "2026-09-13T14:18:49.636Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T14:04:16.540Z",
+   "stand": "2026-09-13T14:18:49.622Z",
    "anzahl": 141,
    "klassen": {
     "crypto": {
@@ -1549,6 +1549,21 @@
      "priority": 75
     },
     {
+     "id": "Al Jazeera:Ukraine drone strikes kill four as Russia attacks close to Poland border",
+     "titel": "Ukraine drone strikes kill four as Russia attacks close to Poland border",
+     "titelDe": "Ukraine-Drohnenangriffe töten vier, Russland greift nahe der polnischen Grenze an",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/9/13/ukraine-drone-strikes-kill-four-as-russia-attacks-close-to-poland-border?traffic_source=rss",
+     "zeit": "2026-09-13T13:05:40.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 74
+    },
+    {
      "id": "Al Jazeera (GN):Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran",
      "titel": "Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran",
      "titelDe": "Irak untersucht Drohnenangriffe auf Saudi-Arabien, schließt drei Grenzübergänge zu Iran",
@@ -1577,21 +1592,6 @@
       "usd": 0.75
      },
      "priority": 83
-    },
-    {
-     "id": "Mehr News:Iran, Turkey FMs discuss regional de-escalation",
-     "titel": "Iran, Turkey FMs discuss regional de-escalation",
-     "titelDe": "Iran, Türkei-Finanzminister besprechen regionale Deeskalation",
-     "quelle": "Mehr News",
-     "url": "https://en.mehrnews.com/news/247694/Iran-Turkey-FMs-discuss-regional-de-escalation",
-     "zeit": "2026-09-13T04:25:24.000Z",
-     "scores": {
-      "crypto": 0.747,
-      "stocks": 0.747,
-      "gold": -0.374,
-      "usd": -0.249
-     },
-     "priority": 72
     }
    ]
   }
