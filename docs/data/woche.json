@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T02:53:16.690Z",
+ "updated": "2026-09-13T03:03:48.771Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T02:53:16.724Z",
+   "stand": "2026-09-13T03:03:48.835Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T02:53:16.717Z",
+   "stand": "2026-09-13T03:03:48.822Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,29 +1444,29 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T02:53:16.710Z",
+   "stand": "2026-09-13T03:03:48.808Z",
    "anzahl": 45,
    "klassen": {
     "crypto": {
-     "score": -0.1127,
+     "score": -0.1105,
      "bull": 0,
      "bear": 7,
      "neut": 38
     },
     "stocks": {
-     "score": -0.1127,
+     "score": -0.1105,
      "bull": 0,
      "bear": 7,
      "neut": 38
     },
     "gold": {
-     "score": 0.0564,
+     "score": 0.0553,
      "bull": 7,
      "bear": 0,
      "neut": 38
     },
     "usd": {
-     "score": 0.0376,
+     "score": 0.0368,
      "bull": 0,
      "bear": 0,
      "neut": 45
@@ -1501,7 +1501,7 @@
       "gold": 0.203,
       "usd": 0.135
      },
-     "priority": 94
+     "priority": 93
     },
     {
      "id": "TASS:Three DPR civilians killed, 13 wounded in Ukraine’s attacks on DPR in past day",
