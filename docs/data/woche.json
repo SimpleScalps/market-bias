@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T10:36:20.444Z",
+ "updated": "2026-09-13T10:45:55.387Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T10:36:20.484Z",
+   "stand": "2026-09-13T10:45:55.442Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T10:36:20.476Z",
+   "stand": "2026-09-13T10:45:55.430Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T10:36:20.467Z",
+   "stand": "2026-09-13T10:45:55.419Z",
    "anzahl": 98,
    "klassen": {
     "crypto": {
@@ -1549,6 +1549,21 @@
      "priority": 64
     },
     {
+     "id": "Mehr News:Iran would not have joined NPT if had sought nuclear weapons",
+     "titel": "Iran would not have joined NPT if had sought nuclear weapons",
+     "titelDe": "Iran wäre dem NPT nicht beigetreten, wenn er nach Atomwaffen gesucht hätte",
+     "quelle": "Mehr News",
+     "url": "https://en.mehrnews.com/news/247706/Iran-would-not-have-joined-NPT-if-had-sought-nuclear-weapons",
+     "zeit": "2026-09-13T10:43:30.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 95
+    },
+    {
      "id": "Reuters:Russian drone attack injures five in Ukraine's Odesa, officials say",
      "titel": "Russian drone attack injures five in Ukraine's Odesa, officials say",
      "titelDe": "Russischer Drohnenangriff verletzt fünf in Odesa, so berichten Behörden",
@@ -1577,21 +1592,6 @@
       "usd": 0.15
      },
      "priority": 94
-    },
-    {
-     "id": "Mehr News:BRICS agrees to safeguard energy flows as oil prices soar",
-     "titel": "BRICS agrees to safeguard energy flows as oil prices soar",
-     "titelDe": "BRICS will Energieflüsse schützen, während Ölpreise steigen",
-     "quelle": "Mehr News",
-     "url": "https://en.mehrnews.com/news/247692/BRICS-agrees-to-safeguard-energy-flows-as-oil-prices-soar",
-     "zeit": "2026-09-13T03:39:03.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": -0.547,
-      "usd": 1
-     },
-     "priority": 40
     }
    ]
   }
