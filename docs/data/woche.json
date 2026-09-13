@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T07:06:43.036Z",
+ "updated": "2026-09-13T07:19:37.928Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T07:06:43.102Z",
+   "stand": "2026-09-13T07:19:37.968Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T07:06:43.088Z",
+   "stand": "2026-09-13T07:19:37.960Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,32 +1444,32 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T07:06:43.073Z",
-   "anzahl": 75,
+   "stand": "2026-09-13T07:19:37.952Z",
+   "anzahl": 78,
    "klassen": {
     "crypto": {
-     "score": -0.1136,
+     "score": -0.1317,
      "bull": 1,
-     "bear": 10,
-     "neut": 64
+     "bear": 12,
+     "neut": 65
     },
     "stocks": {
-     "score": -0.1136,
+     "score": -0.124,
      "bull": 1,
-     "bear": 10,
-     "neut": 64
+     "bear": 11,
+     "neut": 66
     },
     "gold": {
-     "score": 0.0436,
-     "bull": 9,
+     "score": 0.0496,
+     "bull": 10,
      "bear": 2,
-     "neut": 64
+     "neut": 66
     },
     "usd": {
-     "score": 0.0463,
+     "score": 0.0492,
      "bull": 4,
      "bear": 1,
-     "neut": 70
+     "neut": 73
     }
    },
    "top": [
@@ -1504,21 +1504,6 @@
      "priority": 74
     },
     {
-     "id": "TASS:Canada seeks EU associate membership after escalation of trade war with US — WSJ",
-     "titel": "Canada seeks EU associate membership after escalation of trade war with US — WSJ",
-     "titelDe": "Kanada strebt EU-Partnerstatus an, nachdem Handelskrieg mit den USA eskaliert ist — WSJ",
-     "quelle": "TASS",
-     "url": "https://tass.com/world/2186887",
-     "zeit": "2026-09-13T04:57:02.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 71
-    },
-    {
      "id": "Mehr News:Iran, Turkey FMs discuss regional de-escalation",
      "titel": "Iran, Turkey FMs discuss regional de-escalation",
      "titelDe": "Iran, Türkei-Finanzminister besprechen regionale Deeskalation",
@@ -1534,6 +1519,21 @@
      "priority": 72
     },
     {
+     "id": "TASS:Canada seeks EU associate membership after escalation of trade war with US — WSJ",
+     "titel": "Canada seeks EU associate membership after escalation of trade war with US — WSJ",
+     "titelDe": "Kanada strebt EU-Partnerstatus an, nachdem Handelskrieg mit den USA eskaliert ist — WSJ",
+     "quelle": "TASS",
+     "url": "https://tass.com/world/2186887",
+     "zeit": "2026-09-13T04:57:02.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 70
+    },
+    {
      "id": "Mehr News:Araghchi, Fidan discuss regional de-escalation",
      "titel": "Araghchi, Fidan discuss regional de-escalation",
      "titelDe": "Araghchi, Fidan erörtern regionale Deeskalation",
@@ -1546,7 +1546,22 @@
       "gold": -0.374,
       "usd": -0.249
      },
-     "priority": 70
+     "priority": 69
+    },
+    {
+     "id": "Reuters:Russian nuclear head says Ukraine attacked fuel trucks, endangered Zaporizhzhia plant",
+     "titel": "Russian nuclear head says Ukraine attacked fuel trucks, endangered Zaporizhzhia plant",
+     "titelDe": "Russischer Nuklearchef sagt, Ukraine hat Treibstoffwagen angegriffen und die Zaporizhzhia-Anlage gefährdet",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSFYySWw1NWJ0UTM5Nk9pckRNeE5Ka3JIcHVuN0JFZEtmTUJKekZyT2NXSlBVdTJPeUZrc1Q5R0o3V0hPS3dlbkZHNUpxckFJZEQ3VWVQNFVnMVYwN0dXR0lBNXpkcEdJTlVoZG9yVi1aUmoyUDdrN3VDWmxkRnF6TDZNdm9TLUhha3d3R1cySFpWd0lBMmlPcTAxZktuZFVOc1cxZExwUFBLVHNRaG1YLWZkS0JWalU0V0JJWkE1T2xDOXR4Z3p4LTR3?oc=5",
+     "zeit": "2026-09-13T07:07:07.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 95
     },
     {
      "id": "Mehr News:BRICS agrees to safeguard energy flows as oil prices soar",
@@ -1577,21 +1592,6 @@
       "usd": 0.285
      },
      "priority": 48
-    },
-    {
-     "id": "Reuters:New report of attack on Strait of Hormuz shipping fans fears of threats to oil supplies",
-     "titel": "New report of attack on Strait of Hormuz shipping fans fears of threats to oil supplies",
-     "titelDe": "Neuer Bericht über einen Angriff auf den Hormusstraßenschiffverkehr befeuert Befürchtungen über Bedrohungen der Ölvorräte",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUGctZFpGTW5Zd0h2OFl3V0FMR3o0MHVxNW5uSmN6cHpfNWRYRS1Sd0dibnUwUDRCY3VHejJlbUdNVkx6VmN3WTJQVGYtRjRHX1dWQllyQWl3TzEyWWoxY0JRaU45U0RMUTd0SHBvYmRLZmN4bjl3VF82emtKY1JiQzlsN3NqLThWcDk0UEdmaTlHWjJWd0k1b1VtVmVVUFpSZnFhSEZPUk9oeFlTeU5ZcTJKUlJUZjd6d3d2QWJiYmR2UQ?oc=5",
-     "zeit": "2026-09-13T02:23:04.000Z",
-     "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
-     },
-     "priority": 93
     }
    ]
   }
