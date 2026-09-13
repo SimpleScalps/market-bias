@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T04:52:59.134Z",
+ "updated": "2026-09-13T05:03:56.500Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T04:52:59.176Z",
+   "stand": "2026-09-13T05:03:56.562Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T04:52:59.168Z",
+   "stand": "2026-09-13T05:03:56.549Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T04:52:59.159Z",
+   "stand": "2026-09-13T05:03:56.536Z",
    "anzahl": 54,
    "klassen": {
     "crypto": {
@@ -1485,6 +1485,21 @@
       "stocks": -0.855,
       "gold": 0.427,
       "usd": 0.285
+     },
+     "priority": 74
+    },
+    {
+     "id": "TASS:Canada seeks EU associate membership after escalation of trade war with US — WSJ",
+     "titel": "Canada seeks EU associate membership after escalation of trade war with US — WSJ",
+     "titelDe": "Kanada strebt EU-Partnerstatus an, nachdem Handelskrieg mit den USA eskaliert ist — WSJ",
+     "quelle": "TASS",
+     "url": "https://tass.com/world/2186887",
+     "zeit": "2026-09-13T04:57:02.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
      },
      "priority": 74
     },
