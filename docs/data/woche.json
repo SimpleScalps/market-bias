@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T04:04:19.142Z",
+ "updated": "2026-09-13T04:20:04.837Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T04:04:19.188Z",
+   "stand": "2026-09-13T04:20:04.882Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T04:04:19.179Z",
+   "stand": "2026-09-13T04:20:04.874Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,29 +1444,29 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T04:04:19.170Z",
+   "stand": "2026-09-13T04:20:04.864Z",
    "anzahl": 52,
    "klassen": {
     "crypto": {
-     "score": -0.1096,
+     "score": -0.1102,
      "bull": 0,
      "bear": 8,
      "neut": 44
     },
     "stocks": {
-     "score": -0.1096,
+     "score": -0.1102,
      "bull": 0,
      "bear": 8,
      "neut": 44
     },
     "gold": {
-     "score": 0.0326,
+     "score": 0.0325,
      "bull": 7,
      "bear": 1,
      "neut": 44
     },
     "usd": {
-     "score": 0.0507,
+     "score": 0.0511,
      "bull": 1,
      "bear": 0,
      "neut": 51
@@ -1531,7 +1531,7 @@
       "gold": 0.203,
       "usd": 0.135
      },
-     "priority": 91
+     "priority": 90
     },
     {
      "id": "Guardian:Houthis claim attack on Saudi base as fighting flares with Yemeni forces",
