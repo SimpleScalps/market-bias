@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T07:41:12.035Z",
+ "updated": "2026-09-13T07:54:30.880Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T07:41:12.089Z",
+   "stand": "2026-09-13T07:54:30.927Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T07:41:12.078Z",
+   "stand": "2026-09-13T07:54:30.918Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,32 +1444,32 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T07:41:12.067Z",
-   "anzahl": 81,
+   "stand": "2026-09-13T07:54:30.909Z",
+   "anzahl": 82,
    "klassen": {
     "crypto": {
-     "score": -0.1357,
+     "score": -0.1314,
      "bull": 1,
      "bear": 14,
-     "neut": 66
+     "neut": 67
     },
     "stocks": {
-     "score": -0.1288,
+     "score": -0.1247,
      "bull": 1,
      "bear": 13,
-     "neut": 67
+     "neut": 68
     },
     "gold": {
-     "score": 0.0529,
+     "score": 0.0516,
      "bull": 12,
      "bear": 2,
-     "neut": 67
+     "neut": 68
     },
     "usd": {
-     "score": 0.0503,
+     "score": 0.0484,
      "bull": 4,
      "bear": 1,
-     "neut": 76
+     "neut": 77
     }
    },
    "top": [
@@ -1546,7 +1546,7 @@
       "gold": -0.374,
       "usd": -0.249
      },
-     "priority": 69
+     "priority": 68
     },
     {
      "id": "Reuters:Russian nuclear head says Ukraine attacked fuel trucks, endangered Zaporizhzhia plant",
@@ -1576,7 +1576,7 @@
       "gold": -0.547,
       "usd": 1
      },
-     "priority": 42
+     "priority": 41
     },
     {
      "id": "TASS:Two killed, 12 injured in drone attack on Nizhnekamsk — authorities",
