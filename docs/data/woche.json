@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T03:53:49.480Z",
+ "updated": "2026-09-13T04:04:19.142Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T03:53:49.535Z",
+   "stand": "2026-09-13T04:04:19.188Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T03:53:49.524Z",
+   "stand": "2026-09-13T04:04:19.179Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,29 +1444,29 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T03:53:49.513Z",
+   "stand": "2026-09-13T04:04:19.170Z",
    "anzahl": 52,
    "klassen": {
     "crypto": {
-     "score": -0.1004,
+     "score": -0.1096,
      "bull": 0,
-     "bear": 7,
-     "neut": 45
+     "bear": 8,
+     "neut": 44
     },
     "stocks": {
-     "score": -0.1004,
+     "score": -0.1096,
      "bull": 0,
-     "bear": 7,
-     "neut": 45
+     "bear": 8,
+     "neut": 44
     },
     "gold": {
-     "score": 0.0267,
-     "bull": 6,
+     "score": 0.0326,
+     "bull": 7,
      "bear": 1,
-     "neut": 45
+     "neut": 44
     },
     "usd": {
-     "score": 0.0485,
+     "score": 0.0507,
      "bull": 1,
      "bear": 0,
      "neut": 51
@@ -1501,7 +1501,7 @@
       "gold": -0.547,
       "usd": 1
      },
-     "priority": 48
+     "priority": 47
     },
     {
      "id": "Reuters:New report of attack on Strait of Hormuz shipping fans fears of threats to oil supplies",
@@ -1546,7 +1546,7 @@
       "gold": 0.203,
       "usd": 0.135
      },
-     "priority": 39
+     "priority": 38
     }
    ]
   }
