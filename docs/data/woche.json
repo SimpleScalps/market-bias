@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T13:53:16.328Z",
+ "updated": "2026-09-13T14:04:16.502Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T13:53:16.396Z",
+   "stand": "2026-09-13T14:04:16.569Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T13:53:16.382Z",
+   "stand": "2026-09-13T14:04:16.554Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T13:53:16.367Z",
+   "stand": "2026-09-13T14:04:16.540Z",
    "anzahl": 141,
    "klassen": {
     "crypto": {
@@ -1487,6 +1487,21 @@
       "usd": 0.27
      },
      "priority": 99
+    },
+    {
+     "id": "CNBC:Up 3,600%, this freight fund has posted the biggest gains of all on Iran war oil shock",
+     "titel": "Up 3,600%, this freight fund has posted the biggest gains of all on Iran war oil shock",
+     "titelDe": "Der Frachtfonds verzeichnet mit 3 600 % den größten Anstieg aller Zeiten nach dem Öl‑Schock durch den Iran",
+     "quelle": "CNBC",
+     "url": "https://www.cnbc.com/2026/09/13/iran-war-oil-prices-freight-tankers-shipping.html",
+     "zeit": "2026-09-13T13:50:00.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.031,
+      "usd": 0.746
+     },
+     "priority": 78
     },
     {
      "id": "TASS:Strike on Iranian civilian vessel in Strait of Hormuz kills one — local official",
@@ -1577,21 +1592,6 @@
       "usd": -0.249
      },
      "priority": 72
-    },
-    {
-     "id": "TASS:Canada seeks EU associate membership after escalation of trade war with US — WSJ",
-     "titel": "Canada seeks EU associate membership after escalation of trade war with US — WSJ",
-     "titelDe": "Kanada strebt EU-Partnerstatus an, nachdem Handelskrieg mit den USA eskaliert ist — WSJ",
-     "quelle": "TASS",
-     "url": "https://tass.com/world/2186887",
-     "zeit": "2026-09-13T04:57:02.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 68
     }
    ]
   }
