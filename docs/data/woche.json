@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T11:53:23.195Z",
+ "updated": "2026-09-13T12:04:41.132Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T11:53:23.236Z",
+   "stand": "2026-09-13T12:04:41.203Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T11:53:23.228Z",
+   "stand": "2026-09-13T12:04:41.189Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,32 +1444,32 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T11:53:23.220Z",
-   "anzahl": 118,
+   "stand": "2026-09-13T12:04:41.173Z",
+   "anzahl": 124,
    "klassen": {
     "crypto": {
-     "score": -0.0605,
+     "score": -0.0618,
      "bull": 1,
-     "bear": 10,
-     "neut": 107
+     "bear": 11,
+     "neut": 112
     },
     "stocks": {
-     "score": -0.0563,
+     "score": -0.0581,
      "bull": 1,
-     "bear": 9,
-     "neut": 108
+     "bear": 10,
+     "neut": 113
     },
     "gold": {
-     "score": 0.0282,
-     "bull": 9,
+     "score": 0.0291,
+     "bull": 10,
      "bear": 1,
-     "neut": 108
+     "neut": 113
     },
     "usd": {
-     "score": 0.0188,
+     "score": 0.0194,
      "bull": 0,
      "bear": 0,
-     "neut": 118
+     "neut": 124
     }
    },
    "top": [
@@ -1549,21 +1549,6 @@
      "priority": 64
     },
     {
-     "id": "Mehr News:Iran would not have joined NPT if had sought nuclear weapons",
-     "titel": "Iran would not have joined NPT if had sought nuclear weapons",
-     "titelDe": "Iran wäre dem NPT nicht beigetreten, wenn er nach Atomwaffen gesucht hätte",
-     "quelle": "Mehr News",
-     "url": "https://en.mehrnews.com/news/247706/Iran-would-not-have-joined-NPT-if-had-sought-nuclear-weapons",
-     "zeit": "2026-09-13T10:43:30.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 94
-    },
-    {
      "id": "Reuters:Russian drone attack injures five in Ukraine's Odesa, officials say",
      "titel": "Russian drone attack injures five in Ukraine's Odesa, officials say",
      "titelDe": "Russischer Drohnenangriff verletzt fünf in Odesa, so berichten Behörden",
@@ -1592,6 +1577,21 @@
       "usd": 0.15
      },
      "priority": 94
+    },
+    {
+     "id": "Mehr News:Iran would not have joined NPT if had sought nuclear weapons",
+     "titel": "Iran would not have joined NPT if had sought nuclear weapons",
+     "titelDe": "Iran wäre dem NPT nicht beigetreten, wenn er nach Atomwaffen gesucht hätte",
+     "quelle": "Mehr News",
+     "url": "https://en.mehrnews.com/news/247706/Iran-would-not-have-joined-NPT-if-had-sought-nuclear-weapons",
+     "zeit": "2026-09-13T10:43:30.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 93
     }
    ]
   }
