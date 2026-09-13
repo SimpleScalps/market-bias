@@ -1,12 +1,90 @@
 {
- "updated": "2026-09-13T13:45:57.767Z",
+ "updated": "2026-09-13T13:53:16.328Z",
  "regime": "policy",
- "count": 186,
+ "count": 184,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
   "Times of Israel: 403 https://www.timesofisrael.com/feed/"
  ],
  "items": [
+  {
+   "id": "TASS:Lebanon asks UNSC to extend peacekeeping mission’s mandate — media",
+   "title": "Lebanon asks UNSC to extend peacekeeping mission’s mandate — media",
+   "text": "According to The Financial Times, France and the majority of other Security Council members have supported Beirut's request",
+   "source": "TASS",
+   "staatlich": true,
+   "url": "https://tass.com/world/2187031",
+   "date": "2026-09-13T13:47:09.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 0,
+   "nurStaatlich": true,
+   "titleDe": "Libanon bittet UN-Sicherheitsrat, Mandat der Friedensmission zu verlängern – Medien"
+  },
+  {
+   "id": "Reuters:Kosovo parliament re-elects Albin Kurti as prime minister",
+   "title": "Kosovo parliament re-elects Albin Kurti as prime minister",
+   "text": "Kosovo parliament re-elects Albin Kurti as prime minister &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYUJlelpFdUZqRVRxdDJ6c3ZhQzE5RmNXTmp2ME8tWG80WWxPcGhDU194V2lyM2tNXzhxY1c5clo4dUZOdmItRk5jTGdMRXlwR3dNS25uZk5pejNDVGFTbzlRc2V3Y0ZQSDlYRUcyaFA4OGhMOVMzcXlSUlhSMlZCeThPX0ozTVhWQW1lYmpHMWJmejB2YVN0T1BLV0s?oc=5",
+   "date": "2026-09-13T13:45:43.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Kosovo-Parlament wählt Albin Kurti erneut zum Premierminister"
+  },
   {
    "id": "IRNA:Muscat meeting to focus on new maritime arrangements in Strait of Hormuz: Araghchi",
    "title": "Muscat meeting to focus on new maritime arrangements in Strait of Hormuz: Araghchi",
@@ -128,14 +206,14 @@
    "titleDe": "USA unter den Ersten, die wirtschaftliche Beziehungen zu Russland wiederherstellen – RDIF-CEO"
   },
   {
-   "id": "CNBC:Vessel struck in Strait of Hormuz, UKMTO says, as prospects for U.S.-Iran diplomacy appear elusive",
+   "id": "CNBC World:Vessel struck in Strait of Hormuz, UKMTO says, as prospects for U.S.-Iran diplomacy appear elusive",
    "title": "Vessel struck in Strait of Hormuz, UKMTO says, as prospects for U.S.-Iran diplomacy appear elusive",
    "text": "The latest strike happened ahead of an expected meeting between Iranian and Gulf officials in Oman to sign an agreement for shipping through the strait.",
-   "source": "CNBC",
+   "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/13/vessel-struck-strait-of-hormuz-ukmto.html",
    "date": "2026-09-13T13:38:23.000Z",
    "tags": [
-    "Märkte"
+    "Weltwirtschaft"
    ],
    "impact": "low",
    "regelStand": 2,
@@ -159,8 +237,10 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "CNBC"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Schiff im Hormus getroffen, UKMTO meldet, Aussichten auf US-Iran-Diplomatie bleiben aus"
@@ -273,8 +353,10 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "Al Jazeera"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Indische Dorfbewohner fesseln Techniker an Mobilfunkmast wegen 5G-Ausfall"
@@ -303,7 +385,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -342,7 +424,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -351,8 +433,10 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "Al Jazeera"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Erneute Kämpfe verschärfen humanitäre Krise in Jemen"
@@ -380,7 +464,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 62,
+   "priority": 61,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -660,7 +744,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -936,7 +1020,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 67,
+   "priority": 66,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -952,9 +1036,9 @@
    "titleDe": "Braucht Peking KI-Talente für den 'Meinungskrieg' im Südchinesischen Meer?"
   },
   {
-   "id": "Guardian:Naomi Klein and Astra Taylor: the future according to end times fascism",
-   "title": "Naomi Klein and Astra Taylor: the future according to end times fascism",
-   "text": "In a new video, Klein and Taylor outline a ominous evolution taking shape on the far right – and how to stay loyal to this planet and each other The end times fascists are plotting their escape from our world. Our mission is clear An ominous evolution is under way on the far right. It is a dangerous shift that is linked to our era of existential crises, defined by its pandemics, climate emergencies, resource wars and rogue tech. Today’s fascists are part of a dangerous and fractious alliance – f",
+   "id": "Guardian:Naomi Klein and Astra Taylor: the future according to end times fascism – video",
+   "title": "Naomi Klein and Astra Taylor: the future according to end times fascism – video",
+   "text": "In a new video, Klein and Taylor outline a ominous evolution taking shape on the far right – and how to stay loyal to this planet and each other Featured essay: The end times fascists are plotting their escape from our world. Our mission is clear An ominous evolution is under way on the far right. It is a dangerous shift that is linked to our era of existential crises, defined by its pandemics, climate emergencies, resource wars and rogue tech. Today’s fascists are part of a dangerous and fracti",
    "source": "Guardian",
    "url": "https://www.theguardian.com/us-news/2026/sep/13/naomi-klein-astra-taylor-end-times-fascism-video",
    "date": "2026-09-13T13:00:03.000Z",
@@ -987,7 +1071,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Naomi Klein und Astra Taylor: Die Zukunft laut Endzeit-Faschismus"
+   "titleDe": "Naomi Klein und Astra Taylor: Die Zukunft laut Endzeit-Faschismus – Video"
   },
   {
    "id": "MarketWatch:The price of almost everything on your dinner table is climbing at once — and Wall Street is taking notice",
@@ -1253,7 +1337,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 61,
+   "priority": 60,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1268,48 +1352,6 @@
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "Ukraine führt seit Samstagabend mehr als zehn Angriffe auf das Trainingszentrum der Kernkraftanlage Zaporozhje durch"
-  },
-  {
-   "id": "Al Jazeera (GN):Iran war live - Al Jazeera - aljazeera.com",
-   "title": "Iran war live - Al Jazeera - aljazeera.com",
-   "text": "Iran war live - Al Jazeera &nbsp;&nbsp; aljazeera.com",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPS2k0R2lCcVpqamlVSjZUX3ZrSjk2djlnaDFVSDZSZE90ZGFEcWRtalJwRE1Mb2hiMm9rOGNYWW0tSHlzb0FlM0xuWUE4WHhIclRzNVlnV01oTVVPc1A4WVBRUUxMWkpLZlYtd2NBZ2Nwcklka2lvS2psU0FqeVhRTThvSkhGTUV3T0s5UnJhb1VWWjJWMTZkXzNkOU84WFQyRUE3QTRwbVpDREktc21FaU4zX3Q5TTRuaVJENWJ1SmE5Q3dtakprSlBPejA5ZnJBdUE?oc=5",
-   "date": "2026-09-13T12:55:32.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Eskalation"
-   ],
-   "scores": {
-    "crypto": -0.36,
-    "stocks": -0.36,
-    "gold": 0.18,
-    "usd": 0.12
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 66,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Iran-Krieg live - Al Jazeera - aljazeera.com"
   },
   {
    "id": "Reuters:Saudi pipeline outage threatens loss of 4% of global oil supply",
@@ -1334,7 +1376,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1350,11 +1392,48 @@
    "titleDe": "Saudi-Pipeline-Ausfall droht Verlust von 4 % des weltweiten Ölangebots"
   },
   {
-   "id": "Al Jazeera (GN):The Iran war reveals the limits of BRICS - aljazeera.com",
-   "title": "The Iran war reveals the limits of BRICS - aljazeera.com",
-   "text": "The Iran war reveals the limits of BRICS &nbsp;&nbsp; aljazeera.com",
+   "id": "Al Jazeera (GN):India vs Sri Lanka - Al Jazeera - aljazeera.com",
+   "title": "India vs Sri Lanka - Al Jazeera - aljazeera.com",
    "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNX0Q3eEEtNnBfMDlyVTZNZjU0MXRpd0I3X1RzSkl2bFdJWUpIRGxjamN3MDlvQS1nOVpOM2U0YzFSdXNCdkx5MFhQeXlibnV0RlVDNG11emcxMWRXNmFVc2U3ek5EbDV1M25ET0VNd3JRTHlxWXVmbFRRaVN4YUNaOE5BMmp1d9IBiwFBVV95cUxPYV9SWXdINDBrdGMtN1dNcGxfZzFwRFc3ck9pd2kxa1Rqd1QzQXB0V2FJWWdObVd5U0szdzk1aVdscmF1SlVGeUE4QW9PVEFqWnJDcjZSbnpWOV9hRVJUTk5IVEIwcHo4bzM4dXU5c0VMdWxSblpaZTJpNVFYbEVtd0RTSWJQYjhiSE1j?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObElEc3NLVkhzd05sVXBPcWlQRDZMVlpXQjZCeFNHQnJFYWV0NlZPYzl5Wlh3QTRJNVRQQ09CWlFQRVFWWnBZTW1OQ0xlOGhpMzhIYmZWTkNSR3Jrc1N4NEJqY0ZvTVUtMlBOZnUydDJHZkU4QnhvSDk1N29KeTJmR3Q5ZGtMMGFiUlVMZ1lvOXZkQklQWVhmTGNVS0xsY3RzX0dGcVZjWks?oc=5",
+   "date": "2026-09-13T12:54:02.000Z",
+   "tags": [
+    "Weltlage"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 30,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Indien gegen Sri Lanka – Al Jazeera – aljazeera.com"
+  },
+  {
+   "id": "Al Jazeera:The Iran war reveals the limits of BRICS",
+   "title": "The Iran war reveals the limits of BRICS",
+   "text": "The bloc struggles to translate its economic weight into geopolitical sway. But there may be a silver lining to it.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/opinions/2026/9/13/the-iran-war-reveals-the-limits-of?traffic_source=rss",
    "date": "2026-09-13T12:46:58.000Z",
    "tags": [
     "Weltlage"
@@ -1385,13 +1464,11 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "Al Jazeera"
-   ],
-   "bestaetigt": 2,
+   "alsoIn": [],
+   "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Der Iran-Krieg zeigt die Grenzen des BRICS"
+   "titleDe": "Der Iran-Krieg zeigt die Grenzen der BRICS auf"
   },
   {
    "id": "Mehr News:Oman deal will not mean reopening of Hormuz: Araghchi",
@@ -1505,7 +1582,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 67,
+   "priority": 66,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -1677,6 +1754,46 @@
    "titleDe": "Trump führt geheime CLARITY‑Gesetzes‑Versammlung durch. Worüber sprach er?"
   },
   {
+   "id": "U.Today:Dogecoin Developer Turns to Community for Next Core Upgrade Tests",
+   "title": "Dogecoin Developer Turns to Community for Next Core Upgrade Tests",
+   "text": "Dogecoin core seeks Japanese speakers and Mac developers for new tests.",
+   "source": "U.Today",
+   "url": "https://u.today/dogecoin-developer-turns-to-community-for-next-core-upgrade-tests",
+   "date": "2026-09-13T12:30:08.000Z",
+   "tags": [
+    "Krypto"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 30,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [
+    "DOGE"
+   ],
+   "alsoIn": [],
+   "bestaetigt": 1,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Dogecoin-Entwickler wendet sich an Community für nächste Kern-Upgrades"
+  },
+  {
    "id": "SCMP:US-Israeli failure to bomb Iran into submission was preordained",
    "title": "US-Israeli failure to bomb Iran into submission was preordained",
    "text": "Winston Churchill famously praised the resilience of the British people during the Blitz, describing the nightly bombings of London as a “cruel, wanton, indiscriminate” attempt by Adolf Hitler to break the spirit of a tough “island race”. He was not wrong about the toughness and courage of his fellow citizens. But as one of the United Kingdom’s greatest leaders and historical writers, he created a false impression of the uniqueness of the British wartime experience. Strategic bombing alone,...",
@@ -1777,7 +1894,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1875,11 +1992,11 @@
    "titleDe": "Iranische Universitäten und Malaysien UKM diskutieren gemeinsame Hochtechnologie‑Forschungsprojekte"
   },
   {
-   "id": "Al Jazeera (GN):BRICS summit 2026: What are the key takeaways? - aljazeera.com",
-   "title": "BRICS summit 2026: What are the key takeaways? - aljazeera.com",
-   "text": "BRICS summit 2026: What are the key takeaways? &nbsp;&nbsp; aljazeera.com",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOHdIU3AyUEhvMjljZ1ZvWmZMdHN3OWRUVmtXZnk3d2VEQ2I3Y0RwUzU3TlVtSV9sYjViU0V6TnFHX25CanpzMFFXZFFnM1RseDZITVFEN1FaYzljUjYtU1lJSUliU3VZR1JyMm82aDVvQ1JLM1BIa1BiNHo3eUpsdUpzeWdwczd1OHdrQmV30gGTAUFVX3lxTE80QVRsbWJlZkpHbTJUSGV6MzlMeUN0QWc1SHYtQVNKOWxzODQyTDNURlp1amZHN2dFeE16dG0yWGQycG9XLTE1bnZBc0M5RHVua2R1elRqaVFrQS1qRUxELWp3ZFlCVkhoY2VNVGVJUlZaVHQ1UmFtZVpLZll2cnNBUXlKSEhWRlp4MWwtLWNCV0k2UQ?oc=5",
+   "id": "Al Jazeera:BRICS summit 2026: What are the key takeaways?",
+   "title": "BRICS summit 2026: What are the key takeaways?",
+   "text": "The 11-nation bloc avoids condemning the US-Israel war on Iran, showing the divisions among the members.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/13/brics-summit-2026-what-are-the-key-takeaways?traffic_source=rss",
    "date": "2026-09-13T12:04:39.000Z",
    "tags": [
     "Weltlage"
@@ -1897,7 +2014,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 30,
+   "priority": 29,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1906,13 +2023,11 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [
-    "Al Jazeera"
-   ],
-   "bestaetigt": 2,
+   "alsoIn": [],
+   "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "BRICS-Gipfel 2026: Was sind die wichtigsten Erkenntnisse"
+   "titleDe": "BRICS‑Gipfel 2026: Was sind die wichtigsten Erkenntnisse?"
   },
   {
    "id": "SCMP:China’s FAST telescope maps neutral hydrogen, the cosmic gas for making stars",
@@ -2212,7 +2327,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 65,
+   "priority": 64,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -2250,7 +2365,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 49,
+   "priority": 48,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3109,7 +3224,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3148,7 +3263,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3186,7 +3301,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3224,7 +3339,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3262,7 +3377,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3300,7 +3415,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 48,
+   "priority": 47,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3340,7 +3455,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3378,7 +3493,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3695,7 +3810,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 57,
+   "priority": 56,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -3710,88 +3825,6 @@
    "unabhaengig": 0,
    "nurStaatlich": true,
    "titleDe": "China veranstaltet 2027 das BRICS-Forum zum Dienstleistungs-Handel — Xi"
-  },
-  {
-   "id": "Al Jazeera:Israeli attack on Gaza kills two Palestinians",
-   "title": "Israeli attack on Gaza kills two Palestinians",
-   "text": "Israeli strikes on Palestinian territory persist despite a 'ceasefire' brokered by the United States.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/13/israeli-attack-on-gaza-kills-two-palestinians?traffic_source=rss",
-   "date": "2026-09-13T10:22:01.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Angriff"
-   ],
-   "scores": {
-    "crypto": -0.405,
-    "stocks": -0.405,
-    "gold": 0.203,
-    "usd": 0.135
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Angriff)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: attack)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 89,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Israelischer Angriff auf Gaza tötet zwei Palästinenser"
-  },
-  {
-   "id": "TASS:Putin briefly updates Modi on Ukraine situation — Kremlin",
-   "title": "Putin briefly updates Modi on Ukraine situation — Kremlin",
-   "text": "The Russian president briefly outlined the situation on the ground, Dmitry Peskov said",
-   "source": "TASS",
-   "staatlich": true,
-   "url": "https://tass.com/politics/2187007",
-   "date": "2026-09-13T10:21:55.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 57,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 0,
-   "nurStaatlich": true,
-   "titleDe": "Putin informiert Modi kurzzeitig über Ukraine-Situation — Kreml"
   },
   {
    "id": "U.Today:Solana Founder Links Elon Musk and Altman's AI Slowdown to 'Profitability at $1 Trillion Market Cap'",
@@ -3860,7 +3893,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 54,
+   "priority": 53,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -3876,44 +3909,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "MicroStrategies Bitcoin-Leitfaden warnt Investoren vor einem 93%igen Crash"
-  },
-  {
-   "id": "Al Jazeera:A kingdom within a republic: Inside Uganda’s Buganda",
-   "title": "A kingdom within a republic: Inside Uganda’s Buganda",
-   "text": "The kingdom’s traditions and institutions have endured through colonial rule, independence and decades of upheaval.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/13/a-kingdom-within-a-republic-inside-ugandas-buganda?traffic_source=rss",
-   "date": "2026-09-13T10:12:15.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Ein Königreich innerhalb einer Republik: Ein Blick hinter die Kulissen von Buganda in Uganda"
   },
   {
    "id": "U.Today:42% Shiba Inu (SHIB) On-Chain Increase Is Not Yet Bullish: Explaining Why",
@@ -4411,7 +4406,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 37,
+   "priority": 36,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4615,7 +4610,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: trade conflict)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 29,
+   "priority": 28,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -4822,7 +4817,7 @@
    "whyEn": "Directly crypto-negative news. (signals: ban or delisting)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 32,
+   "priority": 31,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -4901,7 +4896,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -4941,7 +4936,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -5101,7 +5096,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 20,
+   "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5299,7 +5294,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 16,
+   "priority": 15,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5378,7 +5373,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 12,
+   "priority": 11,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5650,7 +5645,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 7,
+   "priority": 6,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6333,14 +6328,14 @@
    "titleDe": "Elon Musk unterstützt Anthropics Aufruf, die KI-Entwicklung zu verlangsamen, bevor bösartige Bots das gesamte Internet übernehmen"
   },
   {
-   "id": "CNBC:Larry Ellison nixes plan to offload up to $7.5 billion worth of Oracle stock",
+   "id": "CNBC World:Larry Ellison nixes plan to offload up to $7.5 billion worth of Oracle stock",
    "title": "Larry Ellison nixes plan to offload up to $7.5 billion worth of Oracle stock",
    "text": "Oracle founder Larry Ellison has canceled his plan to sell up to $7.5 billion worth of stock in the software company.",
-   "source": "CNBC",
+   "source": "CNBC World",
    "url": "https://www.cnbc.com/2026/09/12/larry-ellison-nixes-plan-to-offload-up-to-7point5-billion-worth-of-oracle-stock-.html",
    "date": "2026-09-12T17:14:56.000Z",
    "tags": [
-    "Märkte"
+    "Weltwirtschaft"
    ],
    "impact": "low",
    "regelStand": 2,
@@ -6364,8 +6359,10 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "CNBC"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Larry Ellison streicht Plan, bis zu 7,5 Mrd. USD Oracle-Aktien abzuwickeln"
@@ -6913,46 +6910,6 @@
    "titleDe": "Aktien fallen bei Inflationsangst, aber zwei unserer Namen geben Gründe, bullish zu bleiben"
   },
   {
-   "id": "U.Today:Solana Defies Death Cross as SOL Climbs Above $100: Bear Trap Ahead?",
-   "title": "Solana Defies Death Cross as SOL Climbs Above $100: Bear Trap Ahead?",
-   "text": "A sharp price rebound took bears who had expected a further drop by surprise, with Solana returning above $100.",
-   "source": "U.Today",
-   "url": "https://u.today/solana-defies-death-cross-as-sol-climbs-above-100-bear-trap-ahead",
-   "date": "2026-09-12T14:30:25.000Z",
-   "tags": [
-    "Krypto"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "crypto",
-   "categoryLabel": "Krypto",
-   "priority": 26,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [
-    "SOL"
-   ],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Solana trotzt Death Cross, SOL steigt über $100: Bärenfalle in Sicht?"
-  },
-  {
    "id": "CoinDesk:Nigel Farage’s Reform UK lands $97 million donations from two crypto billionaires in 24 hours",
    "title": "Nigel Farage’s Reform UK lands $97 million donations from two crypto billionaires in 24 hours",
    "text": "The combined haul equals the largest individual political donations in U.K. history, sharply scaling up crypto industry backing.",
@@ -7070,44 +7027,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Staked Ether sollte als Maßstab der dezentralen Wirtschaft gesehen werden"
-  },
-  {
-   "id": "CNBC:Construction robots are tackling America's housing shortage, but we're a long way from humanoid homebuilders",
-   "title": "Construction robots are tackling America's housing shortage, but we're a long way from humanoid homebuilders",
-   "text": "America's housing market is short inventory and workers, pressuring home affordability. Constructions robots are reality, but to date not humanoid homebuilders.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/12/housing-shortage-home-construction-robots.html",
-   "date": "2026-09-12T13:50:58.000Z",
-   "tags": [
-    "Märkte"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 6,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Bauroboter bekämpfen den Wohnungsmangel in den USA, aber wir sind noch weit von humanoiden Hausbauern entfernt"
   },
   {
    "id": "MarketWatch:‘I still don’t have my MRI’: My health insurer canceled my plan without warning. Is that legal?",
@@ -7339,11 +7258,11 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 12,
+  "uebersetzt": 5,
   "fehler": null
  },
  "rubriken": {
   "Sport": 7,
-  "Unsinn": 2
+  "Unsinn": 1
  }
 }
