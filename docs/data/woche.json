@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T22:03:58.630Z",
+ "updated": "2026-09-13T22:20:01.271Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T22:03:58.697Z",
+   "stand": "2026-09-13T22:20:01.337Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,32 +1444,32 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T22:03:58.683Z",
-   "anzahl": 165,
+   "stand": "2026-09-13T22:20:01.323Z",
+   "anzahl": 166,
    "klassen": {
     "crypto": {
-     "score": -0.1082,
-     "bull": 1,
-     "bear": 21,
-     "neut": 143
-    },
-    "stocks": {
-     "score": -0.0981,
+     "score": -0.1045,
      "bull": 1,
      "bear": 20,
-     "neut": 144
-    },
-    "gold": {
-     "score": 0.0217,
-     "bull": 17,
-     "bear": 3,
      "neut": 145
     },
+    "stocks": {
+     "score": -0.0943,
+     "bull": 1,
+     "bear": 19,
+     "neut": 146
+    },
+    "gold": {
+     "score": 0.0197,
+     "bull": 16,
+     "bear": 3,
+     "neut": 147
+    },
     "usd": {
-     "score": 0.0516,
+     "score": 0.0504,
      "bull": 4,
      "bear": 0,
-     "neut": 161
+     "neut": 162
     }
    },
    "top": [
@@ -1534,21 +1534,6 @@
      "priority": 75
     },
     {
-     "id": "CNBC:Up 3,600%, this freight fund has posted the biggest gains of all on Iran war oil shock",
-     "titel": "Up 3,600%, this freight fund has posted the biggest gains of all on Iran war oil shock",
-     "titelDe": "Der Frachtfonds verzeichnet mit 3 600 % den größten Anstieg aller Zeiten nach dem Öl‑Schock durch den Iran",
-     "quelle": "CNBC",
-     "url": "https://www.cnbc.com/2026/09/13/iran-war-oil-prices-freight-tankers-shipping.html",
-     "zeit": "2026-09-13T13:50:00.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": -0.031,
-      "usd": 0.746
-     },
-     "priority": 65
-    },
-    {
      "id": "Al Jazeera:Ukraine drone strikes kill four as Russia attacks close to Poland border",
      "titel": "Ukraine drone strikes kill four as Russia attacks close to Poland border",
      "titelDe": "Ukraine-Drohnenangriffe töten vier, Russland greift nahe der polnischen Grenze an",
@@ -1562,6 +1547,21 @@
       "usd": 0.3
      },
      "priority": 72
+    },
+    {
+     "id": "CNBC:Up 3,600%, this freight fund has posted the biggest gains of all on Iran war oil shock",
+     "titel": "Up 3,600%, this freight fund has posted the biggest gains of all on Iran war oil shock",
+     "titelDe": "Der Frachtfonds verzeichnet mit 3 600 % den größten Anstieg aller Zeiten nach dem Öl‑Schock durch den Iran",
+     "quelle": "CNBC",
+     "url": "https://www.cnbc.com/2026/09/13/iran-war-oil-prices-freight-tankers-shipping.html",
+     "zeit": "2026-09-13T13:50:00.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.031,
+      "usd": 0.746
+     },
+     "priority": 64
     },
     {
      "id": "Al Jazeera (GN):Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran",
@@ -1591,38 +1591,38 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 70
+     "priority": 69
     }
    ]
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-13T22:03:58.669Z",
-   "anzahl": 1,
+   "stand": "2026-09-13T22:20:01.308Z",
+   "anzahl": 6,
    "klassen": {
     "crypto": {
      "score": 0,
      "bull": 0,
      "bear": 0,
-     "neut": 1
+     "neut": 6
     },
     "stocks": {
      "score": 0,
      "bull": 0,
      "bear": 0,
-     "neut": 1
+     "neut": 6
     },
     "gold": {
      "score": 0,
      "bull": 0,
      "bear": 0,
-     "neut": 1
+     "neut": 6
     },
     "usd": {
      "score": 0,
      "bull": 0,
      "bear": 0,
-     "neut": 1
+     "neut": 6
     }
    },
    "top": []
