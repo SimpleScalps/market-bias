@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T04:32:02.429Z",
+ "updated": "2026-09-13T04:45:19.163Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T04:32:02.475Z",
+   "stand": "2026-09-13T04:45:19.209Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T04:32:02.466Z",
+   "stand": "2026-09-13T04:45:19.201Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T04:32:02.457Z",
+   "stand": "2026-09-13T04:45:19.191Z",
    "anzahl": 54,
    "klassen": {
     "crypto": {
@@ -1517,6 +1517,21 @@
       "usd": 1
      },
      "priority": 47
+    },
+    {
+     "id": "TASS:Over 60 UAVs destroyed while repelling attack on Russia’s Rostov Region",
+     "titel": "Over 60 UAVs destroyed while repelling attack on Russia’s Rostov Region",
+     "titelDe": "Mehr als 60 Drohnen zerstört, während der Angriff auf die russische Region Rostow abgewehrt wurde",
+     "quelle": "TASS",
+     "url": "https://tass.com/emergencies/2186881",
+     "zeit": "2026-09-13T04:43:56.000Z",
+     "scores": {
+      "crypto": -0.405,
+      "stocks": -0.405,
+      "gold": 0.203,
+      "usd": 0.135
+     },
+     "priority": 94
     },
     {
      "id": "Reuters:New report of attack on Strait of Hormuz shipping fans fears of threats to oil supplies",
