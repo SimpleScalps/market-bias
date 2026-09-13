@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T12:50:28.552Z",
+ "updated": "2026-09-13T13:03:44.059Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T12:50:28.618Z",
+   "stand": "2026-09-13T13:03:44.115Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T12:50:28.604Z",
+   "stand": "2026-09-13T13:03:44.104Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,32 +1444,32 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T12:50:28.590Z",
-   "anzahl": 124,
+   "stand": "2026-09-13T13:03:44.092Z",
+   "anzahl": 129,
    "klassen": {
     "crypto": {
-     "score": -0.0614,
+     "score": -0.108,
      "bull": 1,
-     "bear": 11,
+     "bear": 16,
      "neut": 112
     },
     "stocks": {
-     "score": -0.0576,
+     "score": -0.1023,
      "bull": 1,
-     "bear": 10,
+     "bear": 15,
      "neut": 113
     },
     "gold": {
-     "score": 0.0288,
-     "bull": 10,
-     "bear": 1,
+     "score": 0.0322,
+     "bull": 14,
+     "bear": 2,
      "neut": 113
     },
     "usd": {
-     "score": 0.0192,
-     "bull": 0,
+     "score": 0.0452,
+     "bull": 2,
      "bear": 0,
-     "neut": 124
+     "neut": 127
     }
    },
    "top": [
@@ -1517,6 +1517,21 @@
       "usd": 0.285
      },
      "priority": 74
+    },
+    {
+     "id": "CoinDesk:Fed rate hike is about Wall Street, not inflation, says economist",
+     "titel": "Fed rate hike is about Wall Street, not inflation, says economist",
+     "titelDe": "Fed-Anhebung dreht sich nach Ansicht eines Ökonomen um Wall Street, nicht um Inflation",
+     "quelle": "CoinDesk",
+     "url": "https://www.coindesk.com/markets/2026/09/13/fed-rate-hike-is-about-wall-street-not-inflation-says-economist",
+     "zeit": "2026-09-13T13:00:00.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
     },
     {
      "id": "Mehr News:Iran, Turkey FMs discuss regional de-escalation",
@@ -1570,21 +1585,6 @@
      "quelle": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZFIyUS1HT3JDbGVMeFdxNzBQcHB0TFJXRlRGRnNuYjgwVGpUWW9CWER1QlJIUFZhT3l5LVlzQThxdTRlbXpPbWlucXYtSE9GRkpyOG5FNS12TkhfaTJNdmNIb25rYUZObThRM1ZadDEzSVlNelY1Zm12SHgxZkNUZXhuRHZzVERQZXp0ZE5qQjFNbExmTUZud2RJbkFac1FUdm1uN3ZqakFfbHJBWkN4Sg?oc=5",
      "zeit": "2026-09-13T07:53:43.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 94
-    },
-    {
-     "id": "Reuters:Russian nuclear head says Ukraine attacked fuel trucks, endangered Zaporizhzhia plant",
-     "titel": "Russian nuclear head says Ukraine attacked fuel trucks, endangered Zaporizhzhia plant",
-     "titelDe": "Russischer Nuklearchef sagt, Ukraine hat Treibstoffwagen angegriffen und die Zaporizhzhia-Anlage gefährdet",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSFYySWw1NWJ0UTM5Nk9pckRNeE5Ka3JIcHVuN0JFZEtmTUJKekZyT2NXSlBVdTJPeUZrc1Q5R0o3V0hPS3dlbkZHNUpxckFJZEQ3VWVQNFVnMVYwN0dXR0lBNXpkcEdJTlVoZG9yVi1aUmoyUDdrN3VDWmxkRnF6TDZNdm9TLUhha3d3R1cySFpWd0lBMmlPcTAxZktuZFVOc1cxZExwUFBLVHNRaG1YLWZkS0JWalU0V0JJWkE1T2xDOXR4Z3p4LTR3?oc=5",
-     "zeit": "2026-09-13T07:48:57.000Z",
      "scores": {
       "crypto": -0.45,
       "stocks": -0.45,
