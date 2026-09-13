@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T15:04:21.011Z",
+ "updated": "2026-09-13T15:19:06.165Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1074,7 +1074,7 @@
   },
   "2026-09-11": {
    "tag": "2026-09-11",
-   "stand": "2026-09-13T15:04:21.075Z",
+   "stand": "2026-09-13T15:19:06.200Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-13T15:04:21.062Z",
+   "stand": "2026-09-13T15:19:06.194Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,32 +1444,32 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-13T15:04:21.048Z",
-   "anzahl": 144,
+   "stand": "2026-09-13T15:19:06.186Z",
+   "anzahl": 146,
    "klassen": {
     "crypto": {
-     "score": -0.1507,
+     "score": -0.1315,
      "bull": 1,
-     "bear": 24,
-     "neut": 119
+     "bear": 20,
+     "neut": 125
     },
     "stocks": {
-     "score": -0.1461,
+     "score": -0.1272,
      "bull": 1,
-     "bear": 23,
-     "neut": 120
+     "bear": 19,
+     "neut": 126
     },
     "gold": {
-     "score": 0.0485,
-     "bull": 21,
+     "score": 0.0395,
+     "bull": 17,
      "bear": 2,
-     "neut": 121
+     "neut": 127
     },
     "usd": {
-     "score": 0.0647,
+     "score": 0.0581,
      "bull": 4,
      "bear": 0,
-     "neut": 140
+     "neut": 142
     }
    },
    "top": [
@@ -1486,7 +1486,7 @@
       "gold": 0.405,
       "usd": 0.27
      },
-     "priority": 98
+     "priority": 97
     },
     {
      "id": "TASS:Strike on Iranian civilian vessel in Strait of Hormuz kills one — local official",
@@ -1561,7 +1561,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 74
+     "priority": 73
     },
     {
      "id": "Al Jazeera (GN):Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran",
@@ -1591,7 +1591,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 81
+     "priority": 80
     }
    ]
   }
