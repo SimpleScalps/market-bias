@@ -1,12 +1,53 @@
 {
- "updated": "2026-09-13T23:44:55.518Z",
+ "updated": "2026-09-13T23:52:42.514Z",
  "regime": "policy",
- "count": 179,
+ "count": 176,
  "errors": [
   "Wirtschaftskalender: 403 https://www.myfxbook.com/rss/forex-economic-calendar-events",
+  "Federal Reserve: 404 https://www.federalreserve.gov/feeds/press_all.xml",
   "Times of Israel: 403 https://www.timesofisrael.com/feed/"
  ],
  "items": [
+  {
+   "id": "CNBC World:Jim Cramer questions Anthropic CEO's slowdown manifesto and puts forth an action plan",
+   "title": "Jim Cramer questions Anthropic CEO's slowdown manifesto and puts forth an action plan",
+   "text": "While I have grown tired of his endless proclamations, Dario Amodei does raise points that will impact many stocks if the spending curb proceeds.",
+   "source": "CNBC World",
+   "url": "https://www.cnbc.com/2026/09/13/cramer-questions-anthropic-ceos-slowdown-manifesto-puts-forth-an-action-plan.html",
+   "date": "2026-09-13T23:47:14.000Z",
+   "tags": [
+    "Weltwirtschaft"
+   ],
+   "impact": "low",
+   "regelStand": 2,
+   "kind": "headline",
+   "scores": {
+    "crypto": 0,
+    "stocks": 0,
+    "gold": 0,
+    "usd": 0
+   },
+   "signals": [],
+   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
+   "category": "markets",
+   "categoryLabel": "Märkte",
+   "priority": 32,
+   "label": "neutral",
+   "labelText": "Neutral",
+   "impactLevel": "ignore",
+   "duration": "scalp",
+   "eventType": null,
+   "eventTypeEn": null,
+   "scope": "market",
+   "coins": [],
+   "alsoIn": [
+    "CNBC"
+   ],
+   "bestaetigt": 2,
+   "haeuser": 1,
+   "unabhaengig": 1,
+   "titleDe": "Jim Cramer hinterfragt das verlangsamte Manifest des Anthropic-CEO und präsentiert einen Aktionsplan"
+  },
   {
    "id": "FXStreet:Australian Dollar declines to near 0.7150 as hot US inflation data boost case for Fed rate hike",
    "title": "Australian Dollar declines to near 0.7150 as hot US inflation data boost case for Fed rate hike",
@@ -50,9 +91,9 @@
    "titleDe": "Australischer Dollar fällt knapp auf 0,7150, da starke US-Inflationszahlen die Argumente für eine Fed-Zinserhöhung stärken"
   },
   {
-   "id": "Reuters:US EPA poised to repeal carbon standards for gas, coal power plants, Bloomberg News reports - reuters.com",
-   "title": "US EPA poised to repeal carbon standards for gas, coal power plants, Bloomberg News reports - reuters.com",
-   "text": "US EPA poised to repeal carbon standards for gas, coal power plants, Bloomberg News reports &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:US EPA poised to repeal carbon standards for gas, coal power plants, Bloomberg News reports",
+   "title": "US EPA poised to repeal carbon standards for gas, coal power plants, Bloomberg News reports",
+   "text": "US EPA poised to repeal carbon standards for gas, coal power plants, Bloomberg News reports &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPajRPT3A5aVpPWGdQNzRQemZrQUhUcGh4YVRZR1ROMlZpQjlxMU55a1ZEYzJ0aUhfaHhKUWhOeks5bmNyN1FoczZaVXIxY3hKMGJIa0hSNHpHU2o1RldXNUp0Y2pyeWdNZ1FyOGxQRGRxVEhkUDUxSV9ReTRUT2t6Q3R5V1ptOTFrVlFHa1dQck4tSmtsN2dNbHZmTXFTNTB2VTJPcTZwZ25ucWxpSG41aUFjQU5DMEtqM2JpOEFOaFd0SjVo?oc=5",
    "date": "2026-09-13T23:38:43.000Z",
@@ -85,7 +126,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "US-Umweltbehörde plant Aufhebung der CO₂-Standards für Gas- und Kohlekraftwerke, berichtet Bloomberg News"
+   "titleDe": "US EPA steht kurz davor, die CO₂-Standards für Gas- und Kohlekraftwerke zu widerrufen, berichtet Bloomberg News"
   },
   {
    "id": "Al Jazeera (GN):Israeli quadcopter terrorises homes in Gaza City",
@@ -119,8 +160,10 @@
    "eventTypeEn": "Geopolitics",
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "Al Jazeera"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Israelischer Quadrocopter terrorisiert Häuser in Gaza-Stadt"
@@ -157,8 +200,10 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
+   "alsoIn": [
+    "Al Jazeera"
+   ],
+   "bestaetigt": 2,
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Trump lehnt Forderungen führender Tech-CEOs zur Verlangsamung von KI ab"
@@ -204,9 +249,9 @@
    "titleDe": "Experten aus über 80 Ländern nehmen an Forum für Fake‑News‑Dialog teil – GFCN‑Chef"
   },
   {
-   "id": "Reuters:Okinawa election win may give Tokyo freer hand on military build-up - reuters.com",
-   "title": "Okinawa election win may give Tokyo freer hand on military build-up - reuters.com",
-   "text": "Okinawa election win may give Tokyo freer hand on military build-up &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Okinawa election win may give Tokyo freer hand on military build-up",
+   "title": "Okinawa election win may give Tokyo freer hand on military build-up",
+   "text": "Okinawa election win may give Tokyo freer hand on military build-up &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdm1vbHFDZjQtdkR6ZTdqOHNyb3dGM0RPN2FDWlBrZGJVTXZTZU03bHZFVkZ0RjhscUFXRDFza244R0l3T2NfMUVYSkdral8wYmlCdmg0d3hVYjllSHVoLVBxZl9DemNXNGdKUFEtUUk0cnNKeUx6TjRNVl9nb1NTSUZFYU05blpMcWRucy1lSmNtb2J0Y0ZfbEtnMFdzRVBJTjhjUHk0Z1ZOZXpIN1Z5WFl3?oc=5",
    "date": "2026-09-13T23:25:18.000Z",
@@ -239,12 +284,12 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Okinawa-Wahlgewinn könnte Tokio mehr Spielraum für militärische Aufrüstung geben"
+   "titleDe": "Der Wahlsieg in Okinawa könnte Tokio mehr Spielraum für den militärischen Ausbau geben"
   },
   {
-   "id": "Reuters:Michael Dell's DFO Management nears take-private deal for Baldwin Insurance Group, FT reports - reuters.com",
-   "title": "Michael Dell's DFO Management nears take-private deal for Baldwin Insurance Group, FT reports - reuters.com",
-   "text": "Michael Dell's DFO Management nears take-private deal for Baldwin Insurance Group, FT reports &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Michael Dell's DFO Management nears take-private deal for Baldwin Insurance Group, FT reports",
+   "title": "Michael Dell's DFO Management nears take-private deal for Baldwin Insurance Group, FT reports",
+   "text": "Michael Dell's DFO Management nears take-private deal for Baldwin Insurance Group, FT reports &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVXlYaEYtXzhTdzVfRGtmTHo3UHNZUWM1UUk1eGlnYldSaGc4d25QTG4wcEVQT0xJdWNKS25uRWRtYXdYSWVhTldFZFBPdGZIWm9lTHV0VXdDemZlWUZteG9kM2tMU21uaWhtdW15LUpoR090Y2Nmb2Q5VExXZnNuS251aU1zMG9wck9aOG56VmhvcHJYblRfdnB3a2NQN0M1RHB3ZW9BUWI4QVl4NDIxc2ZEQ0NPZmlzYzVrYkVjZTZzUQ?oc=5",
    "date": "2026-09-13T23:24:21.000Z",
@@ -277,12 +322,12 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "DFO Management von Michael Dell nähert sich Kaufvertrag für Baldwin Insurance Group, berichtet FT"
+   "titleDe": "Michael Dells DFO Management nähert sich einem Take‑Private‑Deal für die Baldwin Insurance Group, berichtet die FT"
   },
   {
-   "id": "Reuters:Diplomacy stumbles with postponement of meeting on Strait of Hormuz proposal - reuters.com",
-   "title": "Diplomacy stumbles with postponement of meeting on Strait of Hormuz proposal - reuters.com",
-   "text": "Diplomacy stumbles with postponement of meeting on Strait of Hormuz proposal &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Diplomacy stumbles with postponement of meeting on Strait of Hormuz proposal",
+   "title": "Diplomacy stumbles with postponement of meeting on Strait of Hormuz proposal",
+   "text": "Diplomacy stumbles with postponement of meeting on Strait of Hormuz proposal &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNUmxSZmUzZzdYUkJrQ2l3RzRTQklHdjFOWmVYZ2NDcmZmOW9UUVBoZkk0bC0wcHhveWNHNldiU2E0WV9PYkFtWGVaUUdMVUlieFBZMVRjVHFkTTZ6YjVWXzVLUlA2QXE2LURQczRJN010RGR1Y3Jkb0JpS1lhdF9fZVdJT0hMV3A5QXNNcllfalNoem0wS3VMNUlNQUgwbG9sUU1XN2R1aUpkaXZDekZ6bnlqN2RiN0t3X3d3?oc=5",
    "date": "2026-09-13T23:17:27.000Z",
@@ -315,7 +360,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Diplomatie stockt bei Verschiebung des Treffens zur Hormus‑Vorschlag – reuters.com"
+   "titleDe": "Diplomatie stockt bei Verschiebung des Treffens zur Hormuz-Proposal"
   },
   {
    "id": "Guardian:Missing US hiker, 70, found injured on remote island after week-long search",
@@ -356,9 +401,9 @@
    "titleDe": "Verlorener US‑Wanderer, 70, auf abgelegener Insel verletzt gefunden nach einwöchiger Suche"
   },
   {
-   "id": "Reuters:Canadian shoppers shun US products: 'I'm a little bit mad with America' - reuters.com",
-   "title": "Canadian shoppers shun US products: 'I'm a little bit mad with America' - reuters.com",
-   "text": "Canadian shoppers shun US products: 'I'm a little bit mad with America' &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Canadian shoppers shun US products: 'I'm a little bit mad with America'",
+   "title": "Canadian shoppers shun US products: 'I'm a little bit mad with America'",
+   "text": "Canadian shoppers shun US products: 'I'm a little bit mad with America' &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4wV0N6QWFMeHk4Q0ZrZHVUOHZoUnBibW9PRGg0TGlTTHlTemoxb1F5dHUzRmx3dGpTYWU3a3UzT1FoZ0dJMWRwNW9Odk9rUHZs?oc=5",
    "date": "2026-09-13T23:11:20.000Z",
@@ -391,12 +436,12 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Kanadische Käufer meiden US-Produkte: 'Ich bin ein wenig wütend auf Amerika' - reuters.com"
+   "titleDe": "Kanadische Käufer meiden US-Produkte: 'Ich bin ein wenig wütend auf Amerika'"
   },
   {
-   "id": "Reuters:Spanish police move hundreds of migrants to new Ceuta camp - reuters.com",
-   "title": "Spanish police move hundreds of migrants to new Ceuta camp - reuters.com",
-   "text": "Spanish police move hundreds of migrants to new Ceuta camp &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Spanish police move hundreds of migrants to new Ceuta camp",
+   "title": "Spanish police move hundreds of migrants to new Ceuta camp",
+   "text": "Spanish police move hundreds of migrants to new Ceuta camp &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9KcFExU3IzV0hqRVctRnF0cDJLUFFfN0hGRktMeVQyc0tmVUNrRHd5MVQ4R3RsVG1HS0xET0FjV0NnNU40RnYxLXR5bDhQMC1EczI4?oc=5",
    "date": "2026-09-13T23:11:20.000Z",
@@ -429,12 +474,12 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Spanische Polizei verlegt Hunderte Migranten in neuen Ceuta‑Lager – reuters.com"
+   "titleDe": "Spanische Polizei verlegt Hunderte Migranten in neuen Ceuta-Camp"
   },
   {
-   "id": "Reuters:Firefighting crews on the ground as the Lucas Fire burns in California - reuters.com",
-   "title": "Firefighting crews on the ground as the Lucas Fire burns in California - reuters.com",
-   "text": "Firefighting crews on the ground as the Lucas Fire burns in California &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Firefighting crews on the ground as the Lucas Fire burns in California",
+   "title": "Firefighting crews on the ground as the Lucas Fire burns in California",
+   "text": "Firefighting crews on the ground as the Lucas Fire burns in California &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9yUGZEdklDMFVGeHNrY2xhVElyN1FqWW1la2FZeGVQNVl1R2IzeXIwSFFZRGI0SlJIb2xzX0duZlhmeGotaVlJVkVBcEo2aUE?oc=5",
    "date": "2026-09-13T23:11:20.000Z",
@@ -467,12 +512,12 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Feuerwehrkräfte vor Ort, während der Lucas‑Brand in Kalifornien brennt – reuters.com"
+   "titleDe": "Feuerwehrkräfte vor Ort, während der Lucas-Brand in Kalifornien brennt"
   },
   {
-   "id": "Reuters:Shares slip in Asia as oil climbs, rate hikes loom - reuters.com",
-   "title": "Shares slip in Asia as oil climbs, rate hikes loom - reuters.com",
-   "text": "Shares slip in Asia as oil climbs, rate hikes loom &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Shares slip in Asia as oil climbs, rate hikes loom",
+   "title": "Shares slip in Asia as oil climbs, rate hikes loom",
+   "text": "Shares slip in Asia as oil climbs, rate hikes loom &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOXzFkaEptQk9Gc2REWUZ3MHpYU1ZjbFpqSVp2cFV6b21TMU9pSUNnRWlqajdrYnAwN2FZTzRvNzJvUVlSTkYzcWxDMFlVZ1Ftb2V6OVhURC1haHFyS0NLcnRZUHhpSFRCb3VuQUt4SFFGTHJnVEg4eW0wSHgxcVlmR0JoRQ?oc=5",
    "date": "2026-09-13T23:11:20.000Z",
@@ -509,12 +554,12 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Aktien fallen in Asien, Öl steigt, Zinserhöhungen im Blick – reuters.com"
+   "titleDe": "Aktien fallen in Asien, Öl steigt, Zinserhöhungen drohen"
   },
   {
-   "id": "Reuters:COMMENTARY: How obscure yttrium became a global flashpoint - reuters.com",
-   "title": "COMMENTARY: How obscure yttrium became a global flashpoint - reuters.com",
-   "text": "COMMENTARY: How obscure yttrium became a global flashpoint &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:COMMENTARY: How obscure yttrium became a global flashpoint",
+   "title": "COMMENTARY: How obscure yttrium became a global flashpoint",
+   "text": "COMMENTARY: How obscure yttrium became a global flashpoint &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQd2JsTWZCSjFGVHJFWHJNeGF0Y0pqU0pCa2MyZWhUWHpnRnhEZF8wREQ4cWh6UGdIQ1Q2NXVnUmVrenFfU0ZKb3BkVlpWbW55V204d0VvYVQxZlhseTZfNi1NTkthbWZnUUZIOU8zU1dOLVRDZTg1eUJGNThCM3l5UWgtRVpXb2V6RXVvU0ZobkZEc3VzQW5oVTVOMGdlOVZrM0hQOU9oNksyVHBxcXluMUdYSQ?oc=5",
    "date": "2026-09-13T23:07:52.000Z",
@@ -547,7 +592,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Kommentar: Wie das seltene Yttrium zu einem globalen Brennpunkt wurde – reuters.com"
+   "titleDe": "Kommentar: Wie das seltene Yttrium zu einem globalen Brennpunkt wurde"
   },
   {
    "id": "Guardian:Queensland woman falls to her death at Bali cliff popular with tourists",
@@ -586,48 +631,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Queensland-Frau fällt von Bali-Klippe, die bei Touristen beliebt ist"
-  },
-  {
-   "id": "Al Jazeera (GN):Iran war live - Al Jazeera",
-   "title": "Iran war live - Al Jazeera",
-   "text": "Iran war live - Al Jazeera &nbsp;&nbsp; Al Jazeera",
-   "source": "Al Jazeera (GN)",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPOTlBRHZuMHFwUUM1bW1FeGRWd3AtRERBQXRsNVhrdnI1VkJmMEtWMlIxMXVXdVU3WnN6djB5OXU2VjhpTFVNZ0JVSEh0bUZtX1NfUWxmWExkWmtqRFBYVnU3Q3l2RTdIVkp4QjBMR3IyRng3aUVNLVljUnZTanc3RnpBOHVSckNfaktfTVhfcXpUSDEzaWpNSG5ULUZlaXQ2eUhPX0k4WHBVSUhYc21GOEZiRUxjdTVibnllc3FsekxJY0ZxTV9oeGlhSjR0dmw3OEE?oc=5",
-   "date": "2026-09-13T23:01:51.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "hawkish": 0,
-   "signals": [
-    "Eskalation"
-   ],
-   "scores": {
-    "crypto": -0.36,
-    "stocks": -0.36,
-    "gold": 0.18,
-    "usd": 0.12
-   },
-   "why": "Risikoaversion im Markt: Kapital fließt aus Krypto und Aktien in sichere Häfen. (Signale: Eskalation)",
-   "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 67,
-   "label": "bearish",
-   "labelText": "Bearish",
-   "impactLevel": "low",
-   "duration": "intraday",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Iran im Live-Übertrag – Al Jazeera"
   },
   {
    "id": "Guardian:Hidden history of royal staff uncovered in Buckingham Palace restoration",
@@ -784,9 +787,9 @@
    "titleDe": "Bitcoin steht vor 87 % Wahrscheinlichkeit einer Fed‑Erhöhung am Mittwoch: Wird der Schatz das Rallye retten?"
   },
   {
-   "id": "Reuters:Anthropic tells investors it will be profitable for second straight quarter, FT reports - reuters.com",
-   "title": "Anthropic tells investors it will be profitable for second straight quarter, FT reports - reuters.com",
-   "text": "Anthropic tells investors it will be profitable for second straight quarter, FT reports &nbsp;&nbsp; reuters.com",
+   "id": "Reuters:Anthropic tells investors it will be profitable for second straight quarter, FT reports",
+   "title": "Anthropic tells investors it will be profitable for second straight quarter, FT reports",
+   "text": "Anthropic tells investors it will be profitable for second straight quarter, FT reports &nbsp;&nbsp; Reuters",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWDlyZmc0bTdPci16TFF0TjNaY2lKWWlaamhvMWhjNDU3UmJ3S0cxbmdnSUZFTEQyeHNsSnJOZ1owbVpQZWlDYk04VUlhampOSWNibUFyRTExbGJMSFlndzRtRGJTMlh0b3JaVi1JRXZ6elJyUWl6MlY4cG52LTVIWW5uNWtLMDl3MEl5OTdNWS0tRC1HT2w2d0pBcEgxNlR5S0RDdHpiUGhZY04tcGRZMkpWd3NsbjdfWHV0SW1QeVdCUjZkZTlkc3lJMlphbUxN?oc=5",
    "date": "2026-09-13T22:54:53.000Z",
@@ -806,7 +809,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -819,7 +822,7 @@
    "bestaetigt": 1,
    "haeuser": 1,
    "unabhaengig": 1,
-   "titleDe": "Anthropic teilt Investoren mit, dass es im zweiten aufeinanderfolgenden Quartal profitabel sein wird, berichtet die FT"
+   "titleDe": "Anthropic teilt Investoren mit, dass es bereits zum zweiten Mal in Folge profitabel sein wird, berichtet die FT"
   },
   {
    "id": "Guardian:Swedish election: centre-left parties lead by just a single seat with most votes counted",
@@ -844,7 +847,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 30,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -858,44 +861,6 @@
    "haeuser": 1,
    "unabhaengig": 1,
    "titleDe": "Schwedische Wahl: Mitte-linksparteien führen um einen einzigen Sitz mit den meisten Stimmen"
-  },
-  {
-   "id": "Reuters:Houthis' Yemen advance leaves Gulf states with uncomfortable choice - reuters.com",
-   "title": "Houthis' Yemen advance leaves Gulf states with uncomfortable choice - reuters.com",
-   "text": "Houthis' Yemen advance leaves Gulf states with uncomfortable choice &nbsp;&nbsp; reuters.com",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOX0JoY2VGb08xV0N2bWR6cnNzaFZoVm9MMGZ4WW1aa292SHNWTVBoVERfLW96ZVllX2thQjdUU1RMOTBvRkRoMGpDd2ZyMXVyb0t2bEFabVBJczM2SnhwM0w5c3diVnZiT1E4QnBxZ3YxaEVnYjE1cVJndExhaUloWENHQjlWdmtvUHRmNG1sSWtWQ3ZIRTJQUU5wQTFDaEw0MDVIdThHdnl5NnVCSTdHUmUwR3RPU0tXalFfSA?oc=5",
-   "date": "2026-09-13T22:51:07.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 31,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Der Vormarsch der Houthi in Jemen lässt Golfstaaten vor einer unangenehmen Wahl stehen"
   },
   {
    "id": "Guardian:Politics live: Joyce backs Hanson on comments about Albanese’s mother; electrifying push for Australians to save $5,000 a year",
@@ -958,7 +923,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 31,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1072,7 +1037,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 43,
+   "priority": 42,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1111,7 +1076,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 60,
+   "priority": 59,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1348,7 +1313,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 36,
+   "priority": 35,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1618,7 +1583,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 64,
+   "priority": 63,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -1694,7 +1659,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -1739,7 +1704,7 @@
    "whyEn": "Signal words point to tighter policy — negative for risk assets. Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: energy price shock, price pressure, energy prices rising, growth or credit risk)",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 44,
+   "priority": 43,
    "label": "strong_bearish",
    "labelText": "Stark Bearish",
    "impactLevel": "medium",
@@ -1777,7 +1742,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1815,7 +1780,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -1909,82 +1874,6 @@
    "titleDe": "Oppositionsblock führt die Parlamentswahlen in Schweden an – Exit-Umfragen"
   },
   {
-   "id": "Al Jazeera:Jerusalem Daily: Pregnant woman killed in Gaza",
-   "title": "Jerusalem Daily: Pregnant woman killed in Gaza",
-   "text": "Israeli forces kill a pregnant Palestinian woman in Gaza and settler pogroms intensify across the occupied West Bank.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/jerusalem-daily-pregnant-woman-killed-in-gaza?traffic_source=rss",
-   "date": "2026-09-13T20:46:34.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "geopolitics",
-   "categoryLabel": "Geopolitik",
-   "priority": 83,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "high",
-   "duration": "swing",
-   "eventType": "Geopolitik",
-   "eventTypeEn": "Geopolitics",
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Jerusalem Daily: Schwangere in Gaza getötet"
-  },
-  {
-   "id": "Al Jazeera:Can a warming Arctic become an important commercial highway?",
-   "title": "Can a warming Arctic become an important commercial highway?",
-   "text": "The conflict in the Middle East raises security concerns about traditional shipping routes.",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/video/inside-story/2026/9/13/can-a-warming-arctic-become-an-important-commercial-highway?traffic_source=rss",
-   "date": "2026-09-13T20:44:51.000Z",
-   "tags": [
-    "Weltlage"
-   ],
-   "impact": "low",
-   "regelStand": 2,
-   "kind": "headline",
-   "scores": {
-    "crypto": 0,
-    "stocks": 0,
-    "gold": 0,
-    "usd": 0
-   },
-   "signals": [],
-   "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
-   "category": "markets",
-   "categoryLabel": "Märkte",
-   "priority": 27,
-   "label": "neutral",
-   "labelText": "Neutral",
-   "impactLevel": "ignore",
-   "duration": "scalp",
-   "eventType": null,
-   "eventTypeEn": null,
-   "scope": "market",
-   "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Kann ein aufwärmendes Arktis ein wichtiges kommerzielles Verkehrsweg werden?"
-  },
-  {
    "id": "Anadolu:Microsoft chief backs pacing AI, independent evaluators for superintelligence",
    "title": "Microsoft chief backs pacing AI, independent evaluators for superintelligence",
    "text": "'If the AI we build is not helping humanity and under human control, it's not worth pursuing,' says Satya Nadella",
@@ -2047,7 +1936,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 28,
+   "priority": 27,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2319,7 +2208,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 46,
+   "priority": 45,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2398,7 +2287,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 56,
+   "priority": 55,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -2596,7 +2485,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 25,
+   "priority": 24,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2791,7 +2680,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 39,
+   "priority": 38,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -2832,7 +2721,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 44,
+   "priority": 43,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3154,7 +3043,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "fed",
    "categoryLabel": "Notenbank",
-   "priority": 63,
+   "priority": 62,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "medium",
@@ -3435,7 +3324,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: escalation)",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 58,
+   "priority": 57,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -3639,7 +3528,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -3678,7 +3567,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 22,
+   "priority": 21,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4064,7 +3953,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 23,
+   "priority": 22,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4158,14 +4047,14 @@
    "titleDe": "Anthropic-Chef fordert KI-Taktik, Rüstungskontrollrahmen mit China"
   },
   {
-   "id": "SCMP:Carney pushes idea of making Canada an ‘associate member’ of the EU: reports",
-   "title": "Carney pushes idea of making Canada an ‘associate member’ of the EU: reports",
-   "text": "Canada’s Prime ⁠Minister Mark Carney wants a closer ⁠relationship with the European Union and is ⁠exploring whether his country could become an “associate member” of the bloc, the Wall Street Journal reported on Sunday. The EU, which has not been flexible about membership rules in the past, is open to the idea of granting Canada a yet-to-be-created status of associate membership, ‌the newspaper reported, citing unnamed officials both from the EU and Canada. Canada’s embassy in Brussels and...",
-   "source": "SCMP",
-   "url": "https://www.scmp.com/news/world/united-states-canada/article/3367369/carney-pushes-idea-making-canada-associate-member-eu-reports?utm_source=rss_feed",
+   "id": "Reuters:Carney pushes idea of making Canada 'associate member' of EU, WSJ reports",
+   "title": "Carney pushes idea of making Canada 'associate member' of EU, WSJ reports",
+   "text": "Carney pushes idea of making Canada 'associate member' of EU, WSJ reports &nbsp;&nbsp; Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQY1Y5U2xFbGpBM1ppYU9rcmhrdVk5b2hKTkNNZHdyakV6Y0UzS2lJenNKS0s2SjFZdVY0cDBDUm42MnNib1BlYzZLWENheHpobzhOanc1LXVnblVHNFo1MDNtUEFjcE93T0ZIOW85VmcwWk1zOEMtcGh4NXpOSk94dVowaVlya1IzWkJxX2NOcDhtZWhVRURzeGRCWUhHV1FuNGRzSUI0bS1ERVZ3TUdhbUZGOWpwZw?oc=5",
    "date": "2026-09-13T16:48:55.000Z",
    "tags": [
-    "Asien"
+    "Weltlage"
    ],
    "impact": "low",
    "regelStand": 2,
@@ -4180,7 +4069,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 21,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4189,11 +4078,13 @@
    "eventTypeEn": null,
    "scope": "market",
    "coins": [],
-   "alsoIn": [],
-   "bestaetigt": 1,
-   "haeuser": 1,
-   "unabhaengig": 1,
-   "titleDe": "Carney befürwortet Idee, Kanada als ‚assoziiertes Mitglied‘ der EU zu machen: Berichte"
+   "alsoIn": [
+    "SCMP"
+   ],
+   "bestaetigt": 2,
+   "haeuser": 2,
+   "unabhaengig": 2,
+   "titleDe": "Carney befürwortet die Idee, Kanada als 'assoziiertes Mitglied' der EU zu machen, berichtet die WSJ"
   },
   {
    "id": "Cointelegraph:Here’s what happened in crypto today",
@@ -4418,7 +4309,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 20,
+   "priority": 19,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -4456,7 +4347,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -4891,7 +4782,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 17,
+   "priority": 16,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5731,7 +5622,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 16,
+   "priority": 15,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -5884,7 +5775,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 33,
+   "priority": 32,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6044,7 +5935,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 51,
+   "priority": 50,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -6122,7 +6013,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 12,
+   "priority": 11,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6160,7 +6051,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 32,
+   "priority": 31,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6366,7 +6257,7 @@
    "whyEn": "Risk-off tone: capital rotates out of crypto and equities into safe havens. (signals: sell-off)",
    "category": "crypto",
    "categoryLabel": "Krypto",
-   "priority": 38,
+   "priority": 37,
    "label": "bearish",
    "labelText": "Bearish",
    "impactLevel": "low",
@@ -6444,7 +6335,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "geopolitics",
    "categoryLabel": "Geopolitik",
-   "priority": 40,
+   "priority": 39,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "low",
@@ -6522,7 +6413,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "markets",
    "categoryLabel": "Märkte",
-   "priority": 9,
+   "priority": 8,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -6643,7 +6534,7 @@
    "why": "Keine eindeutigen Richtungssignale in der Schlagzeile — Einordnung neutral.",
    "category": "us-markets",
    "categoryLabel": "US-Märkte",
-   "priority": 21,
+   "priority": 20,
    "label": "neutral",
    "labelText": "Neutral",
    "impactLevel": "ignore",
@@ -7053,12 +6944,12 @@
   }
  ],
  "uebersetzung": {
-  "uebersetzt": 6,
+  "uebersetzt": 2,
   "fehler": null
  },
  "rubriken": {
   "Sport": 7,
-  "Unsinn": 6,
+  "Unsinn": 7,
   "Unterhaltung": 1
  }
 }
