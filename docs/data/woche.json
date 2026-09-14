@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T09:05:58.155Z",
+ "updated": "2026-09-14T09:23:32.870Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T09:05:58.236Z",
+   "stand": "2026-09-14T09:23:32.930Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T09:05:58.214Z",
+   "stand": "2026-09-14T09:23:32.918Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,32 +1597,32 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T09:05:58.197Z",
-   "anzahl": 154,
+   "stand": "2026-09-14T09:23:32.905Z",
+   "anzahl": 156,
    "klassen": {
     "crypto": {
-     "score": -0.1064,
+     "score": -0.1049,
      "bull": 0,
-     "bear": 15,
-     "neut": 139
+     "bear": 16,
+     "neut": 140
     },
     "stocks": {
-     "score": -0.1042,
+     "score": -0.1013,
      "bull": 0,
-     "bear": 15,
-     "neut": 139
+     "bear": 16,
+     "neut": 140
     },
     "gold": {
-     "score": 0.0284,
-     "bull": 13,
-     "bear": 2,
-     "neut": 139
+     "score": 0.0155,
+     "bull": 11,
+     "bear": 4,
+     "neut": 141
     },
     "usd": {
-     "score": 0.0489,
-     "bull": 7,
+     "score": 0.0546,
+     "bull": 10,
      "bear": 0,
-     "neut": 147
+     "neut": 146
     }
    },
    "top": [
@@ -1640,21 +1640,6 @@
       "usd": 0.3
      },
      "priority": 100
-    },
-    {
-     "id": "BBC World:Watch: Why a Russian strike on train near Ukraine-Poland border could mark an escalation",
-     "titel": "Watch: Why a Russian strike on train near Ukraine-Poland border could mark an escalation",
-     "titelDe": "Warum ein russischer Angriff auf einen Zug nahe der Ukraine-Polen-Grenze eine Eskalation markieren könnte",
-     "quelle": "BBC World",
-     "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss",
-     "zeit": "2026-09-14T01:12:20.000Z",
-     "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
-     },
-     "priority": 90
     },
     {
      "id": "Reuters:Russian strike on train Ukraine-Poland border sought to intimidate, divide Europeans, says France's Barrot",
@@ -1685,6 +1670,21 @@
       "usd": 0.285
      },
      "priority": 94
+    },
+    {
+     "id": "BBC World:Watch: Why a Russian strike on train near Ukraine-Poland border could mark an escalation",
+     "titel": "Watch: Why a Russian strike on train near Ukraine-Poland border could mark an escalation",
+     "titelDe": "Warum ein russischer Angriff auf einen Zug nahe der Ukraine-Polen-Grenze eine Eskalation markieren könnte",
+     "quelle": "BBC World",
+     "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss",
+     "zeit": "2026-09-14T01:12:20.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 89
     },
     {
      "id": "Reuters:Oil prices jump more than 2% after new strikes on Saudi, Strait of Hormuz",
