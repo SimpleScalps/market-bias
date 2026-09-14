@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T03:08:39.243Z",
+ "updated": "2026-09-14T03:23:53.212Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T03:08:39.280Z",
+   "stand": "2026-09-14T03:23:53.284Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T03:08:39.273Z",
+   "stand": "2026-09-14T03:23:53.269Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,32 +1597,32 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T03:08:39.265Z",
-   "anzahl": 76,
+   "stand": "2026-09-14T03:23:53.253Z",
+   "anzahl": 78,
    "klassen": {
     "crypto": {
-     "score": -0.1575,
+     "score": -0.1774,
      "bull": 1,
-     "bear": 9,
-     "neut": 66
-    },
-    "stocks": {
-     "score": -0.1439,
-     "bull": 1,
-     "bear": 9,
-     "neut": 66
-    },
-    "gold": {
-     "score": -0.0528,
-     "bull": 4,
-     "bear": 5,
+     "bear": 10,
      "neut": 67
     },
+    "stocks": {
+     "score": -0.1605,
+     "bull": 1,
+     "bear": 10,
+     "neut": 67
+    },
+    "gold": {
+     "score": -0.0706,
+     "bull": 4,
+     "bear": 6,
+     "neut": 68
+    },
     "usd": {
-     "score": 0.1217,
-     "bull": 7,
+     "score": 0.1425,
+     "bull": 8,
      "bear": 0,
-     "neut": 69
+     "neut": 70
     }
    },
    "top": [
@@ -1687,6 +1687,36 @@
      "priority": 77
     },
     {
+     "id": "FXStreet:United States Dollar Index rises to near 99.50 as Fed rate hike bets increase",
+     "titel": "United States Dollar Index rises to near 99.50 as Fed rate hike bets increase",
+     "titelDe": "US-Dollar-Index steigt auf fast 99,50, da die Erwartungen an eine Fed-Zinserhöhung zunehmen",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/united-states-dollar-index-rises-to-near-9950-as-fed-rate-hike-bets-increase-202609140309",
+     "zeit": "2026-09-14T03:09:51.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
+     "id": "Reuters:Goldman Sachs now expects Fed to hike rates in September - reuters.com",
+     "titel": "Goldman Sachs now expects Fed to hike rates in September - reuters.com",
+     "titelDe": "Goldman Sachs erwartet nun, dass die Fed im September die Zinsen anhebt - reuters.com",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTnlqS1c0ZUI3VGExTWl4c3VCbXVLUi1NMFZZNUNaMmdLYzR2RnRDZjFPbGhPVG83M2ZBSms4YTc0b04wMUtNTG9GWmJnM29BU1ZzOWpHTjVxWXhjNHd6TmhndFV0VWJEc2ZkVm45OWtTMEktQ2NBMEdsd3J0XzNTWE1SNXVUQ3hKWFQ1WUJKLVc1bjRVWlg5NnFyaw?oc=5",
+     "zeit": "2026-09-14T02:49:00.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 83
+    },
+    {
      "id": "Reuters:Goldman Sachs now expects Fed to hike rates in September",
      "titel": "Goldman Sachs now expects Fed to hike rates in September",
      "titelDe": "Goldman Sachs erwartet nun, dass die Fed im September die Zinsen anhebt",
@@ -1715,36 +1745,6 @@
       "usd": 0.75
      },
      "priority": 82
-    },
-    {
-     "id": "FXStreet:Euro softens below 1.1600 as markets price in Fed rate hike",
-     "titel": "Euro softens below 1.1600 as markets price in Fed rate hike",
-     "titelDe": "Euro schwächt sich unter 1,1600, während die Märkte eine Fed-Zinserhöhung einpreisen",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/euro-softens-below-11600-as-markets-price-in-fed-rate-hike-202609140047",
-     "zeit": "2026-09-14T00:47:22.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 80
-    },
-    {
-     "id": "FXStreet:Australian Dollar declines to near 0.7150 as hot US inflation data boost case for Fed rate hike",
-     "titel": "Australian Dollar declines to near 0.7150 as hot US inflation data boost case for Fed rate hike",
-     "titelDe": "Australischer Dollar fällt knapp auf 0,7150, da starke US-Inflationszahlen die Argumente für eine Fed-Zinserhöhung stärken",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/australian-dollar-declines-to-near-07150-as-hot-us-inflation-data-boost-case-for-fed-rate-hike-202609132339",
-     "zeit": "2026-09-13T23:39:47.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 78
     }
    ]
   }
