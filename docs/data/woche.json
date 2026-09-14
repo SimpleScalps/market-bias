@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T01:56:43.890Z",
+ "updated": "2026-09-14T02:07:38.637Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T01:56:43.947Z",
+   "stand": "2026-09-14T02:07:38.705Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T01:56:43.936Z",
+   "stand": "2026-09-14T02:07:38.691Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,32 +1597,32 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T01:56:43.924Z",
-   "anzahl": 54,
+   "stand": "2026-09-14T02:07:38.676Z",
+   "anzahl": 58,
    "klassen": {
     "crypto": {
-     "score": -0.111,
+     "score": -0.128,
      "bull": 1,
-     "bear": 3,
-     "neut": 50
+     "bear": 4,
+     "neut": 53
     },
     "stocks": {
-     "score": -0.1009,
+     "score": -0.1145,
      "bull": 1,
-     "bear": 3,
-     "neut": 50
+     "bear": 4,
+     "neut": 53
     },
     "gold": {
-     "score": -0.0317,
+     "score": -0.0525,
      "bull": 1,
-     "bear": 2,
-     "neut": 51
+     "bear": 3,
+     "neut": 54
     },
     "usd": {
-     "score": 0.0817,
-     "bull": 3,
+     "score": 0.1024,
+     "bull": 4,
      "bear": 0,
-     "neut": 51
+     "neut": 54
     }
    },
    "top": [
@@ -1687,6 +1687,21 @@
      "priority": 77
     },
     {
+     "id": "FXStreet:Gold edges lower below $4,350 on imminent Fed rate hike",
+     "titel": "Gold edges lower below $4,350 on imminent Fed rate hike",
+     "titelDe": "Gold schwappt knapp unter 4.350 US-Dollar bei drohender Fed‑Zinserhöhung",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/gold-edges-lower-below-4-350-on-imminent-fed-rate-hike-202609140200",
+     "zeit": "2026-09-14T02:00:32.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "FXStreet:Euro softens below 1.1600 as markets price in Fed rate hike",
      "titel": "Euro softens below 1.1600 as markets price in Fed rate hike",
      "titelDe": "Euro schwächt sich unter 1,1600, während die Märkte eine Fed-Zinserhöhung einpreisen",
@@ -1720,21 +1735,6 @@
      "id": "Reuters:Shares slip in Asia as oil climbs, rate hikes loom",
      "titel": "Shares slip in Asia as oil climbs, rate hikes loom",
      "titelDe": "Aktien fallen in Asien, Öl steigt, Zinserhöhungen drohen",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOXzFkaEptQk9Gc2REWUZ3MHpYU1ZjbFpqSVp2cFV6b21TMU9pSUNnRWlqajdrYnAwN2FZTzRvNzJvUVlSTkYzcWxDMFlVZ1Ftb2V6OVhURC1haHFyS0NLcnRZUHhpSFRCb3VuQUt4SFFGTHJnVEg4eW0wSHgxcVlmR0JoRQ?oc=5",
-     "zeit": "2026-09-13T23:11:20.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 43
-    },
-    {
-     "id": "Reuters:Shares slip in Asia as oil climbs, rate hikes loom - reuters.com",
-     "titel": "Shares slip in Asia as oil climbs, rate hikes loom - reuters.com",
-     "titelDe": "Aktien fallen in Asien, Öl steigt, Zinserhöhungen im Blick – reuters.com",
      "quelle": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOXzFkaEptQk9Gc2REWUZ3MHpYU1ZjbFpqSVp2cFV6b21TMU9pSUNnRWlqajdrYnAwN2FZTzRvNzJvUVlSTkYzcWxDMFlVZ1Ftb2V6OVhURC1haHFyS0NLcnRZUHhpSFRCb3VuQUt4SFFGTHJnVEg4eW0wSHgxcVlmR0JoRQ?oc=5",
      "zeit": "2026-09-13T23:11:20.000Z",
