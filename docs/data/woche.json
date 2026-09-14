@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T11:23:45.120Z",
+ "updated": "2026-09-14T11:38:17.478Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T11:23:45.188Z",
+   "stand": "2026-09-14T11:38:17.576Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T11:23:45.174Z",
+   "stand": "2026-09-14T11:38:17.559Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T11:23:45.160Z",
+   "stand": "2026-09-14T11:38:17.542Z",
    "anzahl": 193,
    "klassen": {
     "crypto": {
@@ -1648,6 +1648,21 @@
      "quelle": "Anadolu",
      "url": "https://www.aa.com.tr/en/middle-east/houthis-claim-large-scale-missile-drone-attack-on-king-khalid-air-base-in-saudi-arabia/4056511",
      "zeit": "2026-09-14T09:02:30.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
+    {
+     "id": "Reuters:Drone strike on train is calculated escalation by Putin, German minister says",
+     "titel": "Drone strike on train is calculated escalation by Putin, German minister says",
+     "titelDe": "Drohnenangriff im Zug wird von Putin als Eskalation berechnet, sagt der deutsche Minister",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOSlFpU29qaEEtX2JOVTNyM19aY3VuN2NYQmtPUHRqS1hvOEZ5NG9MajZOcWxBbEtIVmkweXZjMkNwNWhKcjNucHBiZVNUanNwZjdUNWctOFdNXzZYVTdkcENKcVlxdnN1eElDbEVfUk1tN3hwUDg2bjN3Z3o2Vm1wUVFxTjdHYW5qSGZjeGRRd1hOMDd2cWMtZ0d4aXN4djVtSnJjZGFCMjVlNWpKVGd1ZVZ4c0N6OV82SXdjVlhLUDgzVFVKdEdoVHM2YzZZVjUtTEE?oc=5",
+     "zeit": "2026-09-14T11:31:44.000Z",
      "scores": {
       "crypto": -0.9,
       "stocks": -0.9,
@@ -1730,21 +1745,6 @@
       "usd": 0.3
      },
      "priority": 86
-    },
-    {
-     "id": "Reuters:Oil prices jump more than 2% after new strikes on Saudi, Strait of Hormuz",
-     "titel": "Oil prices jump more than 2% after new strikes on Saudi, Strait of Hormuz",
-     "titelDe": "Ölkurse steigen um mehr als 2 % nach neuen Streiks in Saudi-Arabien und im Golf von Hormus",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcXNvWlpHUEh2bzNITUYtX04zUG1vclFCeDZ1NVdQTkNXUk5OTmRESElsUXUyQjNsYVU1d2tEMFlNRjB1VXVnenR4UHZzd3F3dEZWR2tWSVZMREFiZXF6NjR5SlB5VmdaNXpTWHQ3UF9POFRGanpoR0NxZUV3ZUU4alAycW9mcGdLak5lQ2NXdlpHQ3I3eDVRM3JDWmI3SGdYUjZsbnJSaUVySHk3UFl4Y3AxVGFZbmg5?oc=5",
-     "zeit": "2026-09-13T22:28:04.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": 0.303,
-      "usd": 0.484
-     },
-     "priority": 77
     }
    ]
   }
