@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T12:37:18.274Z",
+ "updated": "2026-09-14T12:53:49.424Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T12:37:18.327Z",
+   "stand": "2026-09-14T12:53:49.478Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T12:37:18.317Z",
+   "stand": "2026-09-14T12:53:49.467Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T12:37:18.306Z",
+   "stand": "2026-09-14T12:53:49.456Z",
    "anzahl": 202,
    "klassen": {
     "crypto": {
@@ -1732,19 +1732,19 @@
      "priority": 94
     },
     {
-     "id": "BBC World:Watch: Why a Russian strike on train near Ukraine-Poland border could mark an escalation",
-     "titel": "Watch: Why a Russian strike on train near Ukraine-Poland border could mark an escalation",
-     "titelDe": "Warum ein russischer Angriff auf einen Zug nahe der Ukraine-Polen-Grenze eine Eskalation markieren könnte",
-     "quelle": "BBC World",
-     "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss",
-     "zeit": "2026-09-14T01:12:20.000Z",
+     "id": "CNBC:Up 3,600%, this freight fund has posted the biggest gains of all on Iran war oil shock",
+     "titel": "Up 3,600%, this freight fund has posted the biggest gains of all on Iran war oil shock",
+     "titelDe": "Der Frachtfonds verzeichnet mit 3 600 % den größten Anstieg aller Zeiten nach dem Öl‑Schock durch den Iran",
+     "quelle": "CNBC",
+     "url": "https://www.cnbc.com/2026/09/13/iran-war-oil-prices-freight-tankers-shipping.html",
+     "zeit": "2026-09-14T12:39:26.000Z",
      "scores": {
-      "crypto": -0.9,
-      "stocks": -0.9,
-      "gold": 0.45,
-      "usd": 0.3
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.031,
+      "usd": 0.746
      },
-     "priority": 85
+     "priority": 78
     }
    ]
   }
