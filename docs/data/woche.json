@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T09:23:32.870Z",
+ "updated": "2026-09-14T09:38:34.852Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T09:23:32.930Z",
+   "stand": "2026-09-14T09:38:34.939Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T09:23:32.918Z",
+   "stand": "2026-09-14T09:38:34.921Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,32 +1597,32 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T09:23:32.905Z",
-   "anzahl": 156,
+   "stand": "2026-09-14T09:38:34.902Z",
+   "anzahl": 169,
    "klassen": {
     "crypto": {
-     "score": -0.1049,
+     "score": -0.1138,
      "bull": 0,
-     "bear": 16,
-     "neut": 140
+     "bear": 20,
+     "neut": 149
     },
     "stocks": {
-     "score": -0.1013,
+     "score": -0.1087,
      "bull": 0,
-     "bear": 16,
-     "neut": 140
+     "bear": 20,
+     "neut": 149
     },
     "gold": {
-     "score": 0.0155,
-     "bull": 11,
-     "bear": 4,
-     "neut": 141
+     "score": 0.0079,
+     "bull": 13,
+     "bear": 5,
+     "neut": 151
     },
     "usd": {
-     "score": 0.0546,
+     "score": 0.0637,
      "bull": 10,
      "bear": 0,
-     "neut": 146
+     "neut": 159
     }
    },
    "top": [
@@ -1732,19 +1732,19 @@
      "priority": 77
     },
     {
-     "id": "FXStreet:New Zealand Dollar declines as US Dollar gains on Fed rate hike bets",
-     "titel": "New Zealand Dollar declines as US Dollar gains on Fed rate hike bets",
-     "titelDe": "Der neuseeländische Dollar sinkt, da der US-Dollar bei Wetten auf Zinserhöhungen der Fed gewinnt",
+     "id": "FXStreet:Swiss Franc nears yearly lows as Fed rate hike bets boost US Dollar",
+     "titel": "Swiss Franc nears yearly lows as Fed rate hike bets boost US Dollar",
+     "titelDe": "Der Schweizer Franken nähert sich den jährlichen Tiefstständen, da die Zinserhöhungswetten der Fed den US-Dollar ankurbeln",
      "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/indonesian-rupiah-slips-due-to-stronger-us-dollar-soaring-oil-prices-202609140723",
-     "zeit": "2026-09-14T07:23:09.000Z",
+     "url": "https://www.fxstreet.com/news/swiss-franc-nears-yearly-lows-as-fed-rate-hike-bets-boost-us-dollar-202609140932",
+     "zeit": "2026-09-14T09:32:02.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 83
+     "priority": 84
     }
    ]
   }
