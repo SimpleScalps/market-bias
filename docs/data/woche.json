@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T00:46:01.789Z",
+ "updated": "2026-09-14T00:57:48.214Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T00:46:01.854Z",
+   "stand": "2026-09-14T00:57:48.278Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T00:46:01.840Z",
+   "stand": "2026-09-14T00:57:48.265Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,32 +1597,32 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T00:46:01.826Z",
-   "anzahl": 41,
+   "stand": "2026-09-14T00:57:48.250Z",
+   "anzahl": 43,
    "klassen": {
     "crypto": {
-     "score": -0.1349,
+     "score": -0.1614,
      "bull": 1,
      "bear": 5,
-     "neut": 35
+     "neut": 37
     },
     "stocks": {
-     "score": -0.1286,
+     "score": -0.1488,
      "bull": 1,
      "bear": 5,
-     "neut": 35
+     "neut": 37
     },
     "gold": {
-     "score": 0.0134,
-     "bull": 4,
-     "bear": 1,
-     "neut": 36
+     "score": -0.0283,
+     "bull": 3,
+     "bear": 2,
+     "neut": 38
     },
     "usd": {
-     "score": 0.0727,
-     "bull": 3,
+     "score": 0.1097,
+     "bull": 4,
      "bear": 0,
-     "neut": 38
+     "neut": 39
     }
    },
    "top": [
@@ -1687,6 +1687,21 @@
      "priority": 77
     },
     {
+     "id": "FXStreet:Euro softens below 1.1600 as markets price in Fed rate hike",
+     "titel": "Euro softens below 1.1600 as markets price in Fed rate hike",
+     "titelDe": "Euro schwächt sich unter 1,1600, während die Märkte eine Fed-Zinserhöhung einpreisen",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/euro-softens-below-11600-as-markets-price-in-fed-rate-hike-202609140047",
+     "zeit": "2026-09-14T00:47:22.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "FXStreet:Australian Dollar declines to near 0.7150 as hot US inflation data boost case for Fed rate hike",
      "titel": "Australian Dollar declines to near 0.7150 as hot US inflation data boost case for Fed rate hike",
      "titelDe": "Australischer Dollar fällt knapp auf 0,7150, da starke US-Inflationszahlen die Argumente für eine Fed-Zinserhöhung stärken",
@@ -1730,21 +1745,6 @@
       "usd": 0.75
      },
      "priority": 43
-    },
-    {
-     "id": "Reuters:Kennedy Center on brink of bankruptcy, could close as early as Tuesday, Washington Post reports",
-     "titel": "Kennedy Center on brink of bankruptcy, could close as early as Tuesday, Washington Post reports",
-     "titelDe": "Kennedy Center am Rande der Insolvenz, könnte bereits am Dienstag schließen, Washington Post berichtet",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQc0REdkNSSWNNc2twQ3U5NW1Sbjl3bUF5dS1abzJaM19rbHdQNnNYbFNQamVKbm44RF9uWTV2Ml90ckFSaUkyRDZMTDNnZ1pkd2NFa0FjMzZ1Vm5TS0RUWks1NDJNVmludGNzOFRjdXVMamVwMS1YR1hROVI4SUVINjVoUXp1WE0zMktPcGVxRXBUUVJmVUh2NF9SU1lDb1JFVjE1cFotcllwWjlxdlM1RGVQRkdfNmZ3b3c?oc=5",
-     "zeit": "2026-09-14T00:10:00.000Z",
-     "scores": {
-      "crypto": -0.54,
-      "stocks": -0.54,
-      "gold": 0.27,
-      "usd": 0.18
-     },
-     "priority": 40
     }
    ]
   }
