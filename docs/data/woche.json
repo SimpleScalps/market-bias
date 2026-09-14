@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T09:51:03.581Z",
+ "updated": "2026-09-14T10:04:45.628Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T09:51:03.661Z",
+   "stand": "2026-09-14T10:04:45.704Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T09:51:03.644Z",
+   "stand": "2026-09-14T10:04:45.688Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,32 +1597,32 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T09:51:03.626Z",
+   "stand": "2026-09-14T10:04:45.671Z",
    "anzahl": 169,
    "klassen": {
     "crypto": {
-     "score": -0.1104,
+     "score": -0.1042,
      "bull": 0,
-     "bear": 19,
-     "neut": 150
-    },
-    "stocks": {
-     "score": -0.1053,
-     "bull": 0,
-     "bear": 19,
-     "neut": 150
-    },
-    "gold": {
-     "score": 0.0063,
-     "bull": 12,
-     "bear": 5,
+     "bear": 17,
      "neut": 152
     },
+    "stocks": {
+     "score": -0.0996,
+     "bull": 0,
+     "bear": 17,
+     "neut": 152
+    },
+    "gold": {
+     "score": 0.0073,
+     "bull": 11,
+     "bear": 5,
+     "neut": 153
+    },
     "usd": {
-     "score": 0.0624,
-     "bull": 10,
+     "score": 0.0583,
+     "bull": 9,
      "bear": 0,
-     "neut": 159
+     "neut": 160
     }
    },
    "top": [
@@ -1684,7 +1684,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 89
+     "priority": 88
     },
     {
      "id": "Reuters:Oil prices jump more than 2% after new strikes on Saudi, Strait of Hormuz",
