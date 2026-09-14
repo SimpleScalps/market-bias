@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T11:50:07.821Z",
+ "updated": "2026-09-14T11:59:03.320Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T11:50:07.906Z",
+   "stand": "2026-09-14T11:59:03.430Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T11:50:07.888Z",
+   "stand": "2026-09-14T11:59:03.412Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,32 +1597,32 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T11:50:07.870Z",
-   "anzahl": 195,
+   "stand": "2026-09-14T11:59:03.388Z",
+   "anzahl": 196,
    "klassen": {
     "crypto": {
-     "score": -0.1606,
-     "bull": 0,
-     "bear": 25,
-     "neut": 170
-    },
-    "stocks": {
-     "score": -0.1488,
+     "score": -0.1576,
      "bull": 0,
      "bear": 24,
-     "neut": 171
-    },
-    "gold": {
-     "score": 0.0179,
-     "bull": 17,
-     "bear": 6,
      "neut": 172
     },
+    "stocks": {
+     "score": -0.146,
+     "bull": 0,
+     "bear": 23,
+     "neut": 173
+    },
+    "gold": {
+     "score": 0.0178,
+     "bull": 17,
+     "bear": 6,
+     "neut": 173
+    },
     "usd": {
-     "score": 0.0828,
+     "score": 0.0812,
      "bull": 14,
      "bear": 0,
-     "neut": 181
+     "neut": 182
     }
    },
    "top": [
@@ -1684,7 +1684,7 @@
       "gold": 0.427,
       "usd": 0.285
      },
-     "priority": 100
+     "priority": 99
     },
     {
      "id": "Anadolu:EXPLAINER - US-Iran war ushers in new era of missile warfare",
@@ -1699,7 +1699,7 @@
       "gold": 0.428,
       "usd": 0.285
      },
-     "priority": 100
+     "priority": 99
     },
     {
      "id": "Reuters:Russian strike on train Ukraine-Poland border sought to intimidate, divide Europeans, says France's Barrot",
