@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T20:47:09.657Z",
+ "updated": "2026-09-14T20:56:32.432Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T20:47:09.732Z",
+   "stand": "2026-09-14T20:56:32.479Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T20:47:09.716Z",
+   "stand": "2026-09-14T20:56:32.470Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T20:47:09.700Z",
+   "stand": "2026-09-14T20:56:32.461Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1687,6 +1687,21 @@
      "priority": 100
     },
     {
+     "id": "MarketWatch:10-year Treasury yield hits 5% as oil prices jump and Fed meeting looms",
+     "titel": "10-year Treasury yield hits 5% as oil prices jump and Fed meeting looms",
+     "titelDe": "10-jährige Treasury-Rendite erreicht 5%, da Ölpreise springen und Fed-Meetings drohen",
+     "quelle": "MarketWatch",
+     "url": "https://www.marketwatch.com/story/10-year-treasury-yield-tops-5-for-the-first-time-since-2007-as-bond-market-selloff-deepens-14c81f75?mod=mw_rss_topstories",
+     "zeit": "2026-09-14T20:06:25.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.547,
+      "usd": 1
+     },
+     "priority": 88
+    },
+    {
      "id": "Anadolu:EXPLAINER - US-Iran war ushers in new era of missile warfare",
      "titel": "EXPLAINER - US-Iran war ushers in new era of missile warfare",
      "titelDe": "ERKLÄRUNG - Der US-Iran-Krieg läutet eine neue Ära der Raketenkriegsführung ein",
@@ -1730,21 +1745,6 @@
       "usd": 0.285
      },
      "priority": 94
-    },
-    {
-     "id": "IRNA:Iran’s nuclear policy unchanged; deterrence debate natural after attacks on nuclear sites: Iran",
-     "titel": "Iran’s nuclear policy unchanged; deterrence debate natural after attacks on nuclear sites: Iran",
-     "titelDe": "Irans Atompolitik unverändert; Abschreckungsdebatte nach Angriffen auf Atomanlagen selbstverständlich: Iran",
-     "quelle": "IRNA",
-     "url": "https://en.irna.ir/news/86263740/Iran-s-nuclear-policy-unchanged-deterrence-debate-natural-after",
-     "zeit": "2026-09-14T10:33:36.000Z",
-     "scores": {
-      "crypto": -0.855,
-      "stocks": -0.855,
-      "gold": 0.427,
-      "usd": 0.285
-     },
-     "priority": 86
     }
    ]
   }
