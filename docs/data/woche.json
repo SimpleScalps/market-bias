@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T08:23:05.908Z",
+ "updated": "2026-09-14T08:38:42.811Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T08:23:05.956Z",
+   "stand": "2026-09-14T08:38:42.858Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T08:23:05.946Z",
+   "stand": "2026-09-14T08:38:42.849Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,29 +1597,29 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T08:23:05.936Z",
+   "stand": "2026-09-14T08:38:42.839Z",
    "anzahl": 149,
    "klassen": {
     "crypto": {
-     "score": -0.0992,
+     "score": -0.0935,
      "bull": 0,
-     "bear": 17,
-     "neut": 132
+     "bear": 16,
+     "neut": 133
     },
     "stocks": {
-     "score": -0.0971,
+     "score": -0.0915,
      "bull": 0,
-     "bear": 17,
-     "neut": 132
+     "bear": 16,
+     "neut": 133
     },
     "gold": {
-     "score": 0.0254,
-     "bull": 15,
+     "score": 0.0237,
+     "bull": 14,
      "bear": 2,
-     "neut": 132
+     "neut": 133
     },
     "usd": {
-     "score": 0.0462,
+     "score": 0.0437,
      "bull": 6,
      "bear": 0,
      "neut": 143
@@ -1640,6 +1640,21 @@
       "usd": 0.3
      },
      "priority": 91
+    },
+    {
+     "id": "Reuters:Russian strike on train Ukraine-Poland border sought to intimidate, divide Europeans, says France's Barrot",
+     "titel": "Russian strike on train Ukraine-Poland border sought to intimidate, divide Europeans, says France's Barrot",
+     "titelDe": "Russischer Angriff auf Zug ukrainisch-polnische Grenze versuchte Europäer einzuschüchtern, zu spalten, sagt Frankreichs Barrot",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPV3YwTFlZNHl1RC0yZDZPMU1iWU5BUUNwSE9yOFREYnFVNlF4cC1qekNSQm5yZktUQXVvRk9JQXhiWXhhYm5uODdTRGhxU0xFSHVJMzNpTkJ4Y2dzYzE3cDlzZC1peGMyUEdCQkdqTy1Ra3daNkZHcGhucUI3WEYzRDVjM0c0Q0Nkc0tGTzhJcm85WGJ1bDZRMmh0TkRWaERpb2lWQWlpbUVvaC1kN3JteXNnLWxwb1FXMncw?oc=5",
+     "zeit": "2026-09-14T01:12:20.000Z",
+     "scores": {
+      "crypto": -0.81,
+      "stocks": -0.81,
+      "gold": 0.405,
+      "usd": 0.27
+     },
+     "priority": 100
     },
     {
      "id": "TASS:North Korea stepping up readiness for swift retaliatory strike against enemy — news agency",
@@ -1723,21 +1738,6 @@
      "quelle": "FXStreet",
      "url": "https://www.fxstreet.com/news/indonesian-rupiah-slips-due-to-stronger-us-dollar-soaring-oil-prices-202609140723",
      "zeit": "2026-09-14T07:23:09.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 83
-    },
-    {
-     "id": "Reuters:Goldman Sachs flips forecast, now sees September Fed rate hike",
-     "titel": "Goldman Sachs flips forecast, now sees September Fed rate hike",
-     "titelDe": "Goldman Sachs ändert Prognose, sieht nun Zinserhöhung der Fed im September",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTnlqS1c0ZUI3VGExTWl4c3VCbXVLUi1NMFZZNUNaMmdLYzR2RnRDZjFPbGhPVG83M2ZBSms4YTc0b04wMUtNTG9GWmJnM29BU1ZzOWpHTjVxWXhjNHd6TmhndFV0VWJEc2ZkVm45OWtTMEktQ2NBMEdsd3J0XzNTWE1SNXVUQ3hKWFQ1WUJKLVc1bjRVWlg5NnFyaw?oc=5",
-     "zeit": "2026-09-14T02:49:00.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
