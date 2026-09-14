@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T06:29:30.722Z",
+ "updated": "2026-09-14T06:48:13.819Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T06:29:30.769Z",
+   "stand": "2026-09-14T06:48:13.892Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T06:29:30.759Z",
+   "stand": "2026-09-14T06:48:13.876Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,32 +1597,32 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T06:29:30.749Z",
-   "anzahl": 129,
+   "stand": "2026-09-14T06:48:13.860Z",
+   "anzahl": 131,
    "klassen": {
     "crypto": {
-     "score": -0.1051,
+     "score": -0.0786,
      "bull": 0,
-     "bear": 12,
-     "neut": 117
+     "bear": 10,
+     "neut": 121
     },
     "stocks": {
-     "score": -0.0966,
+     "score": -0.0744,
      "bull": 0,
-     "bear": 12,
-     "neut": 117
+     "bear": 10,
+     "neut": 121
     },
     "gold": {
-     "score": -0.0294,
+     "score": -0.0046,
      "bull": 5,
-     "bear": 7,
-     "neut": 117
+     "bear": 5,
+     "neut": 121
     },
     "usd": {
-     "score": 0.0781,
-     "bull": 9,
+     "score": 0.0497,
+     "bull": 7,
      "bear": 0,
-     "neut": 120
+     "neut": 124
     }
    },
    "top": [
@@ -1639,7 +1639,7 @@
       "gold": 0.45,
       "usd": 0.3
      },
-     "priority": 94
+     "priority": 93
     },
     {
      "id": "TASS:North Korea stepping up readiness for swift retaliatory strike against enemy — news agency",
@@ -1744,7 +1744,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 82
+     "priority": 81
     }
    ]
   }
