@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T10:49:39.279Z",
+ "updated": "2026-09-14T10:57:27.516Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T10:49:39.330Z",
+   "stand": "2026-09-14T10:57:27.601Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T10:49:39.320Z",
+   "stand": "2026-09-14T10:57:27.582Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,35 +1597,50 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T10:49:39.309Z",
-   "anzahl": 184,
+   "stand": "2026-09-14T10:57:27.563Z",
+   "anzahl": 185,
    "klassen": {
     "crypto": {
-     "score": -0.1546,
+     "score": -0.1635,
      "bull": 0,
-     "bear": 25,
+     "bear": 26,
      "neut": 159
     },
     "stocks": {
-     "score": -0.147,
+     "score": -0.1545,
      "bull": 0,
-     "bear": 25,
+     "bear": 26,
      "neut": 159
     },
     "gold": {
-     "score": 0.0078,
+     "score": -0.0004,
      "bull": 16,
-     "bear": 8,
+     "bear": 9,
      "neut": 160
     },
     "usd": {
-     "score": 0.0877,
-     "bull": 14,
+     "score": 0.0971,
+     "bull": 15,
      "bear": 0,
      "neut": 170
     }
    },
    "top": [
+    {
+     "id": "TASS:Houthis claim drone, missile strikes on airbase in Saudi Arabia",
+     "titel": "Houthis claim drone, missile strikes on airbase in Saudi Arabia",
+     "titelDe": "Houthis behaupten Drohne, Raketenangriffe auf Luftwaffenstützpunkt in Saudi-Arabien",
+     "quelle": "TASS",
+     "url": "https://tass.com/world/2187241",
+     "zeit": "2026-09-14T09:02:30.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
     {
      "id": "Anadolu:Houthis claim large-scale missile, drone attack on King Khalid Air Base in Saudi Arabia",
      "titel": "Houthis claim large-scale missile, drone attack on King Khalid Air Base in Saudi Arabia",
@@ -1720,21 +1735,6 @@
      "id": "Reuters:Oil prices jump more than 2% after new strikes on Saudi, Strait of Hormuz",
      "titel": "Oil prices jump more than 2% after new strikes on Saudi, Strait of Hormuz",
      "titelDe": "Ölkurse steigen um mehr als 2 % nach neuen Streiks in Saudi-Arabien und im Golf von Hormus",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcXNvWlpHUEh2bzNITUYtX04zUG1vclFCeDZ1NVdQTkNXUk5OTmRESElsUXUyQjNsYVU1d2tEMFlNRjB1VXVnenR4UHZzd3F3dEZWR2tWSVZMREFiZXF6NjR5SlB5VmdaNXpTWHQ3UF9POFRGanpoR0NxZUV3ZUU4alAycW9mcGdLak5lQ2NXdlpHQ3I3eDVRM3JDWmI3SGdYUjZsbnJSaUVySHk3UFl4Y3AxVGFZbmg5?oc=5",
-     "zeit": "2026-09-13T22:28:04.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": 0.303,
-      "usd": 0.484
-     },
-     "priority": 77
-    },
-    {
-     "id": "Reuters:Oil prices jump more than $3 after new strikes on Saudi, Strait of Hormuz",
-     "titel": "Oil prices jump more than $3 after new strikes on Saudi, Strait of Hormuz",
-     "titelDe": "Ölpreise steigen um mehr als 3 $ nach neuen Streiks in Saudi-Arabien und dem Golf von Hormuz",
      "quelle": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcXNvWlpHUEh2bzNITUYtX04zUG1vclFCeDZ1NVdQTkNXUk5OTmRESElsUXUyQjNsYVU1d2tEMFlNRjB1VXVnenR4UHZzd3F3dEZWR2tWSVZMREFiZXF6NjR5SlB5VmdaNXpTWHQ3UF9POFRGanpoR0NxZUV3ZUU4alAycW9mcGdLak5lQ2NXdlpHQ3I3eDVRM3JDWmI3SGdYUjZsbnJSaUVySHk3UFl4Y3AxVGFZbmg5?oc=5",
      "zeit": "2026-09-13T22:28:04.000Z",
