@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T13:25:08.457Z",
+ "updated": "2026-09-14T13:38:42.938Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T13:25:08.541Z",
+   "stand": "2026-09-14T13:38:43.022Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T13:25:08.523Z",
+   "stand": "2026-09-14T13:38:43.004Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,35 +1597,50 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T13:25:08.504Z",
-   "anzahl": 215,
+   "stand": "2026-09-14T13:38:42.984Z",
+   "anzahl": 217,
    "klassen": {
     "crypto": {
-     "score": -0.0823,
+     "score": -0.0993,
      "bull": 1,
-     "bear": 15,
-     "neut": 199
+     "bear": 16,
+     "neut": 200
     },
     "stocks": {
-     "score": -0.078,
+     "score": -0.0951,
      "bull": 1,
-     "bear": 15,
-     "neut": 199
+     "bear": 16,
+     "neut": 200
     },
     "gold": {
-     "score": -0.0057,
-     "bull": 8,
+     "score": 0.0047,
+     "bull": 9,
      "bear": 5,
-     "neut": 202
+     "neut": 203
     },
     "usd": {
-     "score": 0.0535,
-     "bull": 9,
+     "score": 0.0581,
+     "bull": 10,
      "bear": 0,
-     "neut": 206
+     "neut": 207
     }
    },
    "top": [
+    {
+     "id": "Reuters:Two killed in missile strike on ArcelorMittal Ukraine plant, company says",
+     "titel": "Two killed in missile strike on ArcelorMittal Ukraine plant, company says",
+     "titelDe": "Zwei Tote bei Raketenangriff auf das Werk von ArcelorMittal in der Ukraine, sagt das Unternehmen",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWWpHN0xTT1YwY00xZ1NraUtIMUp6SDd0MlFBSFFDYXhETHI4SEZONDBUQ0laY1BpZU9WekFwV1oxRV9HSkZ5TlRWd0hob3FYTGY2ZlB2UmVOb1Z6dGRVekdxeTRhQkNUSVVkb1hpN0JWVEJJS1hFRFpUZU9oOVIyN2VPd3o5M2lQWFZtT1NHbGs2WnlSWlktdVVjbjFqMlE2M0ZOZnBUanNLZm5KQ1FFYkRPOTBpdVI5SXc?oc=5",
+     "zeit": "2026-09-14T13:20:58.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
     {
      "id": "Reuters:Drone strike on train is calculated escalation by Putin, German minister says",
      "titel": "Drone strike on train is calculated escalation by Putin, German minister says",
@@ -1730,21 +1745,6 @@
       "usd": 0.285
      },
      "priority": 94
-    },
-    {
-     "id": "CNBC:Up 3,600%, this freight fund has posted the biggest gains of all on Iran war oil shock",
-     "titel": "Up 3,600%, this freight fund has posted the biggest gains of all on Iran war oil shock",
-     "titelDe": "Der Frachtfonds verzeichnet mit 3 600 % den größten Anstieg aller Zeiten nach dem Öl‑Schock durch den Iran",
-     "quelle": "CNBC",
-     "url": "https://www.cnbc.com/2026/09/13/iran-war-oil-prices-freight-tankers-shipping.html",
-     "zeit": "2026-09-14T12:39:26.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": -0.031,
-      "usd": 0.746
-     },
-     "priority": 77
     }
    ]
   }
