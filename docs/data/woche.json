@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T02:07:38.637Z",
+ "updated": "2026-09-14T02:22:44.740Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T02:07:38.705Z",
+   "stand": "2026-09-14T02:22:44.796Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T02:07:38.691Z",
+   "stand": "2026-09-14T02:22:44.785Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,32 +1597,32 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T02:07:38.676Z",
-   "anzahl": 58,
+   "stand": "2026-09-14T02:22:44.773Z",
+   "anzahl": 63,
    "klassen": {
     "crypto": {
-     "score": -0.128,
+     "score": -0.1187,
      "bull": 1,
      "bear": 4,
-     "neut": 53
+     "neut": 58
     },
     "stocks": {
-     "score": -0.1145,
+     "score": -0.1062,
      "bull": 1,
      "bear": 4,
-     "neut": 53
+     "neut": 58
     },
     "gold": {
-     "score": -0.0525,
+     "score": -0.0487,
      "bull": 1,
      "bear": 3,
-     "neut": 54
+     "neut": 59
     },
     "usd": {
-     "score": 0.1024,
+     "score": 0.095,
      "bull": 4,
      "bear": 0,
-     "neut": 54
+     "neut": 59
     }
    },
    "top": [
@@ -1639,7 +1639,7 @@
       "gold": 0.427,
       "usd": 0.285
      },
-     "priority": 99
+     "priority": 98
     },
     {
      "id": "Reuters:Oil prices jump more than 2% after new strikes on Saudi, Strait of Hormuz",
@@ -1699,7 +1699,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 84
+     "priority": 83
     },
     {
      "id": "FXStreet:Euro softens below 1.1600 as markets price in Fed rate hike",
@@ -1714,7 +1714,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 82
+     "priority": 81
     },
     {
      "id": "FXStreet:Australian Dollar declines to near 0.7150 as hot US inflation data boost case for Fed rate hike",
