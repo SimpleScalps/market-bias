@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T10:04:45.628Z",
+ "updated": "2026-09-14T10:21:34.183Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-14T10:04:45.704Z",
+   "stand": "2026-09-14T10:21:34.266Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-14T10:04:45.688Z",
+   "stand": "2026-09-14T10:21:34.249Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,32 +1597,32 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-14T10:04:45.671Z",
-   "anzahl": 169,
+   "stand": "2026-09-14T10:21:34.231Z",
+   "anzahl": 179,
    "klassen": {
     "crypto": {
-     "score": -0.1042,
+     "score": -0.125,
      "bull": 0,
-     "bear": 17,
-     "neut": 152
+     "bear": 21,
+     "neut": 158
     },
     "stocks": {
-     "score": -0.0996,
+     "score": -0.1178,
      "bull": 0,
-     "bear": 17,
-     "neut": 152
+     "bear": 21,
+     "neut": 158
     },
     "gold": {
-     "score": 0.0073,
-     "bull": 11,
-     "bear": 5,
-     "neut": 153
+     "score": -0.0037,
+     "bull": 13,
+     "bear": 7,
+     "neut": 159
     },
     "usd": {
-     "score": 0.0583,
-     "bull": 9,
+     "score": 0.0761,
+     "bull": 12,
      "bear": 0,
-     "neut": 160
+     "neut": 167
     }
    },
    "top": [
@@ -1732,19 +1732,19 @@
      "priority": 77
     },
     {
-     "id": "FXStreet:Swiss Franc nears yearly lows as Fed rate hike bets boost US Dollar",
-     "titel": "Swiss Franc nears yearly lows as Fed rate hike bets boost US Dollar",
-     "titelDe": "Der Schweizer Franken nähert sich den jährlichen Tiefstständen, da die Zinserhöhungswetten der Fed den US-Dollar ankurbeln",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/swiss-franc-nears-yearly-lows-as-fed-rate-hike-bets-boost-us-dollar-202609140932",
-     "zeit": "2026-09-14T09:32:02.000Z",
+     "id": "Reuters:Fed's table is set for a rate hike, a first under Warsh",
+     "titel": "Fed's table is set for a rate hike, a first under Warsh",
+     "titelDe": "Fed's table is set for a rate hike, a first under Warsh",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTmR4eUlzVVZXLUFSSEpiLUs3UkxJMDYwVVpsU2o1REJIOUFSTlN3U2VBV2NRZ3hUTUNzSy1KRTNlODFaTmh6bGgtTFpCM3BCWE13c250dlBDTW5XaS1rWHpUMjV0cFJiSkxqN3g4OTVVZmJKN1dKSXZhRHZ2bW1Lbndrc3UxRGhjNG9LY01lZklaajE4?oc=5",
+     "zeit": "2026-09-14T10:06:18.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 83
+     "priority": 84
     }
    ]
   }
