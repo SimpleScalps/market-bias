@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T05:29:12.432Z",
+ "updated": "2026-09-15T05:42:31.503Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T05:29:12.522Z",
+   "stand": "2026-09-15T05:42:31.614Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T05:29:12.507Z",
+   "stand": "2026-09-15T05:42:31.595Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T05:29:12.492Z",
+   "stand": "2026-09-15T05:42:31.575Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,32 +1750,32 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T05:29:12.476Z",
-   "anzahl": 131,
+   "stand": "2026-09-15T05:42:31.555Z",
+   "anzahl": 140,
    "klassen": {
     "crypto": {
-     "score": -0.0655,
+     "score": -0.0738,
      "bull": 2,
-     "bear": 11,
-     "neut": 118
+     "bear": 12,
+     "neut": 126
     },
     "stocks": {
-     "score": -0.0622,
+     "score": -0.0708,
      "bull": 2,
-     "bear": 11,
-     "neut": 118
+     "bear": 12,
+     "neut": 126
     },
     "gold": {
-     "score": 0.0041,
-     "bull": 8,
+     "score": 0.0111,
+     "bull": 9,
      "bear": 5,
-     "neut": 118
+     "neut": 126
     },
     "usd": {
-     "score": 0.0365,
-     "bull": 4,
+     "score": 0.0378,
+     "bull": 5,
      "bear": 1,
-     "neut": 126
+     "neut": 134
     }
    },
    "top": [
@@ -1795,6 +1795,21 @@
      "priority": 85
     },
     {
+     "id": "Anadolu:Poland ends air operations after Russian drone strikes on Ukraine",
+     "titel": "Poland ends air operations after Russian drone strikes on Ukraine",
+     "titelDe": "Polen beendet den Luftbetrieb nach russischen Drohnenangriffen auf die Ukraine",
+     "quelle": "Anadolu",
+     "url": "https://www.aa.com.tr/en/europe/poland-ends-air-operations-after-russian-drone-strikes-on-ukraine/4057300",
+     "zeit": "2026-09-15T05:26:00.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 75
+    },
+    {
      "id": "FXStreet:United States Dollar Index strengthens above 99.50 as Fed rate hike bets rise",
      "titel": "United States Dollar Index strengthens above 99.50 as Fed rate hike bets rise",
      "titelDe": "US-Dollar-Index stärkt sich über 99,50, da die Erwartungen an Fed-Hike steigen",
@@ -1807,22 +1822,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 80
-    },
-    {
-     "id": "CNBC World:Oil extends gains following Houthi strikes on Saudi Arabia",
-     "titel": "Oil extends gains following Houthi strikes on Saudi Arabia",
-     "titelDe": "Öl setzt Kurs nach Houthi-Angriffen auf Saudi-Arabien fort",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html",
-     "zeit": "2026-09-15T01:55:53.000Z",
-     "scores": {
-      "crypto": -0.81,
-      "stocks": -0.81,
-      "gold": 0.405,
-      "usd": 0.27
-     },
-     "priority": 74
+     "priority": 79
     },
     {
      "id": "FXStreet:Japanese Yen weakens as Fed rate hike looms",
@@ -1855,6 +1855,21 @@
      "priority": 79
     },
     {
+     "id": "CNBC World:Oil extends gains following Houthi strikes on Saudi Arabia",
+     "titel": "Oil extends gains following Houthi strikes on Saudi Arabia",
+     "titelDe": "Öl setzt Kurs nach Houthi-Angriffen auf Saudi-Arabien fort",
+     "quelle": "CNBC World",
+     "url": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html",
+     "zeit": "2026-09-15T01:55:53.000Z",
+     "scores": {
+      "crypto": -0.81,
+      "stocks": -0.81,
+      "gold": 0.405,
+      "usd": 0.27
+     },
+     "priority": 73
+    },
+    {
      "id": "SCMP:Zelensky says Ukraine is ready for ‘de-escalatory steps’ if Russia does the same",
      "titel": "Zelensky says Ukraine is ready for ‘de-escalatory steps’ if Russia does the same",
      "titelDe": "Selenskyj sagt, die Ukraine sei bereit für \"deeskalierende Schritte\", wenn Russland dasselbe tut",
@@ -1883,21 +1898,6 @@
       "usd": 0.75
      },
      "priority": 56
-    },
-    {
-     "id": "Reuters:Asian shares waver as oil and yields rise ahead of Fed, BOJ meetings",
-     "titel": "Asian shares waver as oil and yields rise ahead of Fed, BOJ meetings",
-     "titelDe": "Asiatische Börsen schwanken, Öl und Renditen steigen vor Fed- und BOJ-Treffen",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNa2swZ0ZXMUlmM25iamJCQWM5NWV1OG1yUHA0MWZwVkVyempxRGlyWGdXeDRuN25IYXdGb1J0a05HazdLSEtsZUNBNzlBWVA3cmtJVElCREdQeWx2amlXZnAxNHBFN1pZdnFVQ3NhYTBrbF9sMVhZM1Z2djlBUWdCcnkxNHJMMFJTOHJRSQ?oc=5",
-     "zeit": "2026-09-15T01:44:00.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.383,
-      "gold": -0.36,
-      "usd": 0.45
-     },
-     "priority": 78
     }
    ]
   }
