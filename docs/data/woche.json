@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T20:54:04.057Z",
+ "updated": "2026-09-15T21:04:16.238Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T20:54:04.142Z",
+   "stand": "2026-09-15T21:04:16.333Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T20:54:04.124Z",
+   "stand": "2026-09-15T21:04:16.312Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T20:54:04.105Z",
+   "stand": "2026-09-15T21:04:16.287Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1840,6 +1840,21 @@
      "priority": 85
     },
     {
+     "id": "Reuters:Wall Street ends lower as oil spikes and the benchmark Treasury yield breaches 5%",
+     "titel": "Wall Street ends lower as oil spikes and the benchmark Treasury yield breaches 5%",
+     "titelDe": "Die Wall Street endet niedriger, wenn der Ölpreis ansteigt und die Benchmark-Treasury-Rendite 5 % durchbricht",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQM1BPdzlzdEkxaTg2MURwV0psdFNmbUZ0ZnZreDZEZkFfT0JXSGUxcU9lZ0JGc09LMkRZYTMxYVNwU2hVYjdfcnl1UzhnS0M5eHF1bVdwWFh2Rmp6SmlZMUo2MjlaODdFRHBBVGQ2OHVtcjBQVTFIekZjdkdKbkh5dVhTRUVtOEE1cjRwM21UVXNlV25LUzhiMFNEeWd4a3hGMExiczlZNC1pN2tpQmhPTFJn?oc=5",
+     "zeit": "2026-09-15T20:34:42.000Z",
+     "scores": {
+      "crypto": -0.878,
+      "stocks": -0.803,
+      "gold": -0.211,
+      "usd": 0.626
+     },
+     "priority": 85
+    },
+    {
      "id": "TASS:Ukrainian strikes on Russia kill 48 civilians, including three children, over week — MFA",
      "titel": "Ukrainian strikes on Russia kill 48 civilians, including three children, over week — MFA",
      "titelDe": "Ukrainische Angriffe auf Russland töten 48 Zivilisten, darunter drei Kinder, in einer Woche — MFA",
@@ -1876,21 +1891,6 @@
      "quelle": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeHNxc1dNQ0FDbWx0OTVSNjN6R1V2VE9yYlFKYW1lZFd2Nm5xdURHazhHQ2FlLTJQdjVHWmFqWEJ5c2RYc0I0Z2kwMzJMQmF2ZzZMNmtXNXlfbmxPeWg4V1RUZFJ5c05fVWctNm56emtHQ2YzM3RhRDJpMUsweHBOekZxNlNUWm11T0VXazhBVHJWTlZUOWxQekFaLVRWY1hEVFhuOUxsT1NLSmtSZTE4OUpmMA?oc=5",
      "zeit": "2026-09-15T10:39:43.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 84
-    },
-    {
-     "id": "MarketWatch:How many rate hikes are on tap? Wall Street hopes to connect the Fed’s dots.",
-     "titel": "How many rate hikes are on tap? Wall Street hopes to connect the Fed’s dots.",
-     "titelDe": "Wie viele Zinserhöhungen stehen an? Wall Street hofft, die Fed‑Punkte zu verbinden",
-     "quelle": "MarketWatch",
-     "url": "https://www.marketwatch.com/story/how-many-rate-hikes-are-on-tap-wall-street-hopes-to-connect-the-feds-dots-6b1ac5dc?mod=mw_rss_topstories",
-     "zeit": "2026-09-15T15:16:00.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
