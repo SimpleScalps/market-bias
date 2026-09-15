@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T13:43:18.896Z",
+ "updated": "2026-09-15T13:55:24.894Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T13:43:19.009Z",
+   "stand": "2026-09-15T13:55:25.002Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T13:43:18.989Z",
+   "stand": "2026-09-15T13:55:24.983Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T13:43:18.969Z",
+   "stand": "2026-09-15T13:55:24.963Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,32 +1750,32 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T13:43:18.949Z",
-   "anzahl": 215,
+   "stand": "2026-09-15T13:55:24.944Z",
+   "anzahl": 219,
    "klassen": {
     "crypto": {
-     "score": -0.0721,
+     "score": -0.0673,
      "bull": 3,
      "bear": 19,
-     "neut": 193
+     "neut": 197
     },
     "stocks": {
-     "score": -0.073,
+     "score": -0.0644,
      "bull": 2,
-     "bear": 19,
-     "neut": 194
+     "bear": 18,
+     "neut": 199
     },
     "gold": {
-     "score": 0.0056,
+     "score": 0.0128,
      "bull": 15,
-     "bear": 4,
-     "neut": 196
+     "bear": 3,
+     "neut": 201
     },
     "usd": {
-     "score": 0.0439,
-     "bull": 6,
+     "score": 0.0342,
+     "bull": 5,
      "bear": 0,
-     "neut": 209
+     "neut": 214
     }
    },
    "top": [
@@ -1837,7 +1837,7 @@
       "gold": -0.211,
       "usd": 0.626
      },
-     "priority": 76
+     "priority": 75
     },
     {
      "id": "TASS:Ukrainian strikes on Russia kill 48 civilians, including three children, over week — MFA",
