@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T13:11:24.893Z",
+ "updated": "2026-09-15T13:29:52.840Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T13:11:25.005Z",
+   "stand": "2026-09-15T13:29:52.948Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T13:11:24.985Z",
+   "stand": "2026-09-15T13:29:52.929Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T13:11:24.964Z",
+   "stand": "2026-09-15T13:29:52.910Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,32 +1750,32 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T13:11:24.944Z",
+   "stand": "2026-09-15T13:29:52.891Z",
    "anzahl": 213,
    "klassen": {
     "crypto": {
-     "score": -0.0787,
-     "bull": 4,
-     "bear": 22,
-     "neut": 187
-    },
-    "stocks": {
-     "score": -0.0798,
+     "score": -0.0722,
      "bull": 3,
-     "bear": 22,
-     "neut": 188
-    },
-    "gold": {
-     "score": 0.007,
-     "bull": 18,
-     "bear": 5,
+     "bear": 20,
      "neut": 190
     },
+    "stocks": {
+     "score": -0.0732,
+     "bull": 2,
+     "bear": 20,
+     "neut": 191
+    },
+    "gold": {
+     "score": 0.0052,
+     "bull": 16,
+     "bear": 4,
+     "neut": 193
+    },
     "usd": {
-     "score": 0.0473,
+     "score": 0.0442,
      "bull": 6,
-     "bear": 1,
-     "neut": 206
+     "bear": 0,
+     "neut": 207
     }
    },
    "top": [
@@ -1822,7 +1822,7 @@
       "gold": -0.031,
       "usd": 0.746
      },
-     "priority": 70
+     "priority": 69
     },
     {
      "id": "TASS:Ukrainian strikes on Russia kill 48 civilians, including three children, over week — MFA",
@@ -1882,7 +1882,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 82
+     "priority": 81
     },
     {
      "id": "Al Jazeera (GN):Benchmark US government bond yield hits 19-year peak as oil prices surge",
