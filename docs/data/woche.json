@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T10:49:09.235Z",
+ "updated": "2026-09-15T10:57:27.372Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T10:49:09.345Z",
+   "stand": "2026-09-15T10:57:27.445Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T10:49:09.325Z",
+   "stand": "2026-09-15T10:57:27.432Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T10:49:09.305Z",
+   "stand": "2026-09-15T10:57:27.420Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T10:49:09.285Z",
+   "stand": "2026-09-15T10:57:27.407Z",
    "anzahl": 199,
    "klassen": {
     "crypto": {
@@ -1840,6 +1840,21 @@
      "priority": 73
     },
     {
+     "id": "Reuters:Sterling pinned at one-month lows as oil stays high, Fed rate hike expected",
+     "titel": "Sterling pinned at one-month lows as oil stays high, Fed rate hike expected",
+     "titelDe": "Sterling bleibt bei einmonatigen Tiefstständen, Öl bleibt hoch, Fed Zinserhöhung erwartet",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeHNxc1dNQ0FDbWx0OTVSNjN6R1V2VE9yYlFKYW1lZFd2Nm5xdURHazhHQ2FlLTJQdjVHWmFqWEJ5c2RYc0I0Z2kwMzJMQmF2ZzZMNmtXNXlfbmxPeWg4V1RUZFJ5c05fVWctNm56emtHQ2YzM3RhRDJpMUsweHBOekZxNlNUWm11T0VXazhBVHJWTlZUOWxQekFaLVRWY1hEVFhuOUxsT1NLSmtSZTE4OUpmMA?oc=5",
+     "zeit": "2026-09-15T10:39:43.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "Reuters:PODCAST: Trump's mail-in voting defeat, self-improving AI and possible rate hike",
      "titel": "PODCAST: Trump's mail-in voting defeat, self-improving AI and possible rate hike",
      "titelDe": "PODCAST: Trumps Niederlage bei Briefwahl, selbstverbessernde KI und mögliche Zinserhöhung",
@@ -1876,21 +1891,6 @@
      "quelle": "FXStreet",
      "url": "https://www.fxstreet.com/news/united-states-dollar-index-strengthens-above-9950-as-fed-rate-hike-bets-rise-202609150240",
      "zeit": "2026-09-15T02:40:36.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 79
-    },
-    {
-     "id": "FXStreet:Japanese Yen weakens as Fed rate hike looms",
-     "titel": "Japanese Yen weakens as Fed rate hike looms",
-     "titelDe": "Japanischer Yen schwächt sich, während Fed Zinserhöhung droht",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/japanese-yen-weakens-as-fed-rate-hike-looms-202609150041",
-     "zeit": "2026-09-15T00:41:37.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
