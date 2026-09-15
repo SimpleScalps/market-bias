@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T15:12:32.739Z",
+ "updated": "2026-09-15T15:28:26.901Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T15:12:32.828Z",
+   "stand": "2026-09-15T15:28:27.009Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T15:12:32.813Z",
+   "stand": "2026-09-15T15:28:26.991Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T15:12:32.798Z",
+   "stand": "2026-09-15T15:28:26.971Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T15:12:32.782Z",
+   "stand": "2026-09-15T15:28:26.952Z",
    "anzahl": 227,
    "klassen": {
     "crypto": {
@@ -1870,6 +1870,21 @@
      "priority": 84
     },
     {
+     "id": "MarketWatch:How many rate hikes are on tap? Wall Street hopes to connect the Fed’s dots.",
+     "titel": "How many rate hikes are on tap? Wall Street hopes to connect the Fed’s dots.",
+     "titelDe": "Wie viele Zinserhöhungen stehen an? Wall Street hofft, die Fed‑Punkte zu verbinden",
+     "quelle": "MarketWatch",
+     "url": "https://www.marketwatch.com/story/how-many-rate-hikes-are-on-tap-wall-street-hopes-to-connect-the-feds-dots-6b1ac5dc?mod=mw_rss_topstories",
+     "zeit": "2026-09-15T15:16:00.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "Reuters:PODCAST: Trump's mail-in voting defeat, self-improving AI and possible rate hike",
      "titel": "PODCAST: Trump's mail-in voting defeat, self-improving AI and possible rate hike",
      "titelDe": "PODCAST: Trumps Niederlage bei Briefwahl, selbstverbessernde KI und mögliche Zinserhöhung",
@@ -1883,21 +1898,6 @@
       "usd": 0.75
      },
      "priority": 83
-    },
-    {
-     "id": "CNBC World:10-year Treasury yield hits highest level since 2007 as traders bet a Fed rate hike is coming",
-     "titel": "10-year Treasury yield hits highest level since 2007 as traders bet a Fed rate hike is coming",
-     "titelDe": "10-jährige Treasury-Rendite erreicht den höchsten Stand seit 2007, da Händler darauf wetten, dass eine Zinserhöhung der Fed bevorsteht",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/15/10-year-treasury-yield-rises-to-highest-since-2007.html",
-     "zeit": "2026-09-15T14:01:22.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 82
     }
    ]
   }
