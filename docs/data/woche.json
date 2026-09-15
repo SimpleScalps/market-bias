@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T13:29:52.840Z",
+ "updated": "2026-09-15T13:43:18.896Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T13:29:52.948Z",
+   "stand": "2026-09-15T13:43:19.009Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T13:29:52.929Z",
+   "stand": "2026-09-15T13:43:18.989Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T13:29:52.910Z",
+   "stand": "2026-09-15T13:43:18.969Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,32 +1750,32 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T13:29:52.891Z",
-   "anzahl": 213,
+   "stand": "2026-09-15T13:43:18.949Z",
+   "anzahl": 215,
    "klassen": {
     "crypto": {
-     "score": -0.0722,
+     "score": -0.0721,
      "bull": 3,
-     "bear": 20,
-     "neut": 190
-    },
-    "stocks": {
-     "score": -0.0732,
-     "bull": 2,
-     "bear": 20,
-     "neut": 191
-    },
-    "gold": {
-     "score": 0.0052,
-     "bull": 16,
-     "bear": 4,
+     "bear": 19,
      "neut": 193
     },
+    "stocks": {
+     "score": -0.073,
+     "bull": 2,
+     "bear": 19,
+     "neut": 194
+    },
+    "gold": {
+     "score": 0.0056,
+     "bull": 15,
+     "bear": 4,
+     "neut": 196
+    },
     "usd": {
-     "score": 0.0442,
+     "score": 0.0439,
      "bull": 6,
      "bear": 0,
-     "neut": 207
+     "neut": 209
     }
    },
    "top": [
@@ -1823,6 +1823,21 @@
       "usd": 0.746
      },
      "priority": 69
+    },
+    {
+     "id": "OilPrice:China’s Yuan Crude Oil Futures Jump to Record High",
+     "titel": "China’s Yuan Crude Oil Futures Jump to Record High",
+     "titelDe": "Chinas Yuan-Rohöl-Futures springen auf Rekordhoch",
+     "quelle": "OilPrice",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Yuan-Crude-Oil-Futures-Jump-to-Record-High.html",
+     "zeit": "2026-09-15T13:30:00.000Z",
+     "scores": {
+      "crypto": -0.878,
+      "stocks": -0.803,
+      "gold": -0.211,
+      "usd": 0.626
+     },
+     "priority": 76
     },
     {
      "id": "TASS:Ukrainian strikes on Russia kill 48 civilians, including three children, over week — MFA",
@@ -1882,22 +1897,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 81
-    },
-    {
-     "id": "Al Jazeera (GN):Benchmark US government bond yield hits 19-year peak as oil prices surge",
-     "titel": "Benchmark US government bond yield hits 19-year peak as oil prices surge",
-     "titelDe": "Leistungswert der US-Staatsanleihen erreicht 19‑jährige Hochs, während Ölpreise steigen",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQM2VpQm11OEEyTl9EanlSQXd2eDQ3MkZTV3FfOEQ4Y2RlS3RzWkhDS2psWkViaFQ4akx1SzVOSS0tVVJjb1lsbVZrTHR1SmJUQ0lWTU9RZkFBaUQzMktYdE5aT2x1LXZsNmNXVU9uOG91dnNZY3dJVUlRa1BfNkNkNkNRZmdNczJWUG1qQVVGd2tmMF9BWDZxdDBkYkJFcGFFajZ6ZDZza0dKS2h3VUhBaDBZQ1FRNVHSAbwBQVVfeXFMT1R3bnNNRTF0RDRnTTVlaFJmSGNZWVdnMEhtSF9CemVQODhXZVFyd3JzQnJxU1BnNnlFb09jdXBHUlFKT1BIeF8zaVVTY2hzbnAydlBpZFJzVklwLWk1VnhzQnVHQndlM1A4NnRPc2VMZnRSODJjeVBqY19jczdyOUlyOVVQbktINlFVaDllYnUyZld4RVBpc3RzZXM1NXJ4TXg1UGJIT1JtU3ZyREFBQW9aakNEMjdyNExNNGM?oc=5",
-     "zeit": "2026-09-15T11:37:14.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": -0.547,
-      "usd": 1
-     },
-     "priority": 60
+     "priority": 80
     }
    ]
   }
