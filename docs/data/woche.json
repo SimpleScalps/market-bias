@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T01:58:35.049Z",
+ "updated": "2026-09-15T02:12:55.085Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T01:58:35.155Z",
+   "stand": "2026-09-15T02:12:55.191Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T01:58:35.136Z",
+   "stand": "2026-09-15T02:12:55.173Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T01:58:35.117Z",
+   "stand": "2026-09-15T02:12:55.154Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,35 +1750,50 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T01:58:35.097Z",
-   "anzahl": 70,
+   "stand": "2026-09-15T02:12:55.135Z",
+   "anzahl": 76,
    "klassen": {
     "crypto": {
-     "score": -0.0666,
+     "score": -0.1095,
      "bull": 3,
-     "bear": 7,
-     "neut": 60
+     "bear": 9,
+     "neut": 64
     },
     "stocks": {
-     "score": -0.0572,
+     "score": -0.0986,
      "bull": 3,
-     "bear": 7,
-     "neut": 60
+     "bear": 9,
+     "neut": 64
     },
     "gold": {
-     "score": -0.0478,
-     "bull": 4,
-     "bear": 6,
-     "neut": 60
+     "score": -0.0389,
+     "bull": 5,
+     "bear": 7,
+     "neut": 64
     },
     "usd": {
-     "score": 0.0638,
-     "bull": 3,
+     "score": 0.0845,
+     "bull": 5,
      "bear": 2,
-     "neut": 65
+     "neut": 69
     }
    },
    "top": [
+    {
+     "id": "Reuters:Dollar near two-week high as oil surge lifts yields, Fed hike bets",
+     "titel": "Dollar near two-week high as oil surge lifts yields, Fed hike bets",
+     "titelDe": "Dollar nahe zweitägiger Höchststand, Ölboom treibt Renditen an, Fed-Hike-Wetten",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeGtqRlJ4LWF3TVM5VklxS09fMU16eHE3bWRLZ3lRS3NuS18wWGcyY3cwRWg2eEtzS3dFRVZGWHB6Z21NNGpzUUcydm10VXpIU29Ca3RnRDRrRUxsVWlNbE5yV0x6ejVQUTZXR1FHRHgtTUExOC1VazhaaGo0b3p0dTNVcDJ5YWdjeWkyQVZRRlhOUUZYUkpmdWsyeHJjNTF6QjlYdEtRcy1NVUg2RWNmOA?oc=5",
+     "zeit": "2026-09-15T01:58:00.000Z",
+     "scores": {
+      "crypto": -0.878,
+      "stocks": -0.803,
+      "gold": -0.211,
+      "usd": 0.626
+     },
+     "priority": 86
+    },
     {
      "id": "FXStreet:Japanese Yen weakens as Fed rate hike looms",
      "titel": "Japanese Yen weakens as Fed rate hike looms",
@@ -1795,6 +1810,21 @@
      "priority": 82
     },
     {
+     "id": "CNBC World:Oil extends gains following Houthi strikes on Saudi Arabia",
+     "titel": "Oil extends gains following Houthi strikes on Saudi Arabia",
+     "titelDe": "Öl setzt Kurs nach Houthi-Angriffen auf Saudi-Arabien fort",
+     "quelle": "CNBC World",
+     "url": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html",
+     "zeit": "2026-09-15T01:55:53.000Z",
+     "scores": {
+      "crypto": -0.81,
+      "stocks": -0.81,
+      "gold": 0.405,
+      "usd": 0.27
+     },
+     "priority": 75
+    },
+    {
      "id": "FXStreet:Gold falls below $4,300 as higher US yields bolster Fed rate hike bets",
      "titel": "Gold falls below $4,300 as higher US yields bolster Fed rate hike bets",
      "titelDe": "Gold fällt unter 4.300 $, da höhere US-Renditen die Zinserhöhungswetten der Fed stärken",
@@ -1807,7 +1837,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 80
+     "priority": 79
     },
     {
      "id": "SCMP:Zelensky says Ukraine is ready for ‘de-escalatory steps’ if Russia does the same",
@@ -1822,7 +1852,7 @@
       "gold": -0.374,
       "usd": -0.249
      },
-     "priority": 70
+     "priority": 69
     },
     {
      "id": "Reuters:COMMENTARY: US yield curve sends stark warning - consumers can’t handle rate hikes",
@@ -1852,7 +1882,7 @@
       "gold": -0.36,
       "usd": 0.45
      },
-     "priority": 79
+     "priority": 78
     },
     {
      "id": "Anadolu:US sanctions Russia's VTB Bank for allegedly helping Iran evade sanctions",
@@ -1868,36 +1898,6 @@
       "usd": 0.135
      },
      "priority": 67
-    },
-    {
-     "id": "FXStreet:Australian Dollar gets caught between AI selloff and 5% US yields",
-     "titel": "Australian Dollar gets caught between AI selloff and 5% US yields",
-     "titelDe": "Australischer Dollar zwischen KI-Verkauf und 5 % US-Renditen",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/australian-dollar-gets-caught-between-ai-selloff-and-5-us-yields-202609142246",
-     "zeit": "2026-09-14T22:46:21.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 47
-    },
-    {
-     "id": "Al Jazeera (GN):Geneva talks put Rwanda-DRC peace deal to the test",
-     "titel": "Geneva talks put Rwanda-DRC peace deal to the test",
-     "titelDe": "Genfer Gespräche stellen den Friedensdeal zwischen Ruanda und DRC auf die Probe",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMy1Vek5jOFlRWDl1dDJNbjliVUJUbFBsOXBLeGFQVDYtNUFWa3JyVU4zLVFSemRFWm5KZ3hpTHVLaEVWQ2FLTlMydFZ2QWhZdjFJc0JQN0hSMVU2OEpDYmtPLXFGLU11SDRMWGE0c1cxaE12V1pBUmRCZ0VhVjRiM24zaEo5Z1R4Qlg2R2JHTk9lMWhNVWfSAZsBQVVfeXFMTjhUYk9IUWstWDY3cllLSExISWJBV0cxUTE5alZKNlljSjJjR3NGaF9rSGdIcHRINWpERkZ5Vzd4cFlWb1BtVFlXeGg5N3E3cmxMVTRCbW81MU1MOHhDQXo0SE0xbXJLMGNxSmQ1aGZjM1hac001Y09OZFQxT0t3dEtDZXpLQzU0RUtBcWk2Vjg4dkdqazBiZWxxOTQ?oc=5",
-     "zeit": "2026-09-15T00:26:06.000Z",
-     "scores": {
-      "crypto": 0.495,
-      "stocks": 0.495,
-      "gold": -0.248,
-      "usd": -0.165
-     },
-     "priority": 39
     }
    ]
   }
