@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T14:59:15.029Z",
+ "updated": "2026-09-15T15:12:32.739Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T14:59:15.120Z",
+   "stand": "2026-09-15T15:12:32.828Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T14:59:15.105Z",
+   "stand": "2026-09-15T15:12:32.813Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T14:59:15.090Z",
+   "stand": "2026-09-15T15:12:32.798Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,32 +1750,32 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T14:59:15.073Z",
-   "anzahl": 223,
+   "stand": "2026-09-15T15:12:32.782Z",
+   "anzahl": 227,
    "klassen": {
     "crypto": {
-     "score": -0.0875,
-     "bull": 4,
+     "score": -0.0865,
+     "bull": 3,
      "bear": 22,
-     "neut": 197
+     "neut": 202
     },
     "stocks": {
-     "score": -0.0822,
-     "bull": 3,
+     "score": -0.0814,
+     "bull": 2,
      "bear": 21,
-     "neut": 199
+     "neut": 204
     },
     "gold": {
-     "score": 0.0105,
+     "score": 0.0107,
      "bull": 17,
-     "bear": 5,
-     "neut": 201
+     "bear": 4,
+     "neut": 206
     },
     "usd": {
-     "score": 0.0463,
+     "score": 0.0456,
      "bull": 7,
      "bear": 0,
-     "neut": 216
+     "neut": 220
     }
    },
    "top": [
@@ -1822,7 +1822,7 @@
       "gold": -0.031,
       "usd": 0.746
      },
-     "priority": 67
+     "priority": 66
     },
     {
      "id": "TASS:Ukrainian strikes on Russia kill 48 civilians, including three children, over week — MFA",
@@ -1852,7 +1852,7 @@
       "gold": -0.211,
       "usd": 0.626
      },
-     "priority": 74
+     "priority": 73
     },
     {
      "id": "Reuters:Sterling pinned at one-month lows as oil stays high, Fed rate hike expected",
