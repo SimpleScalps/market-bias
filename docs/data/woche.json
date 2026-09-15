@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T04:30:24.570Z",
+ "updated": "2026-09-15T04:48:52.181Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T04:30:24.643Z",
+   "stand": "2026-09-15T04:48:52.288Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T04:30:24.631Z",
+   "stand": "2026-09-15T04:48:52.269Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T04:30:24.619Z",
+   "stand": "2026-09-15T04:48:52.250Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,32 +1750,32 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T04:30:24.606Z",
-   "anzahl": 116,
+   "stand": "2026-09-15T04:48:52.229Z",
+   "anzahl": 121,
    "klassen": {
     "crypto": {
-     "score": -0.0635,
-     "bull": 3,
-     "bear": 10,
-     "neut": 103
+     "score": -0.0577,
+     "bull": 4,
+     "bear": 9,
+     "neut": 108
     },
     "stocks": {
-     "score": -0.0598,
-     "bull": 3,
-     "bear": 10,
-     "neut": 103
+     "score": -0.0545,
+     "bull": 4,
+     "bear": 9,
+     "neut": 108
     },
     "gold": {
-     "score": -0.0001,
+     "score": 0.0016,
      "bull": 7,
      "bear": 6,
-     "neut": 103
+     "neut": 108
     },
     "usd": {
-     "score": 0.0375,
-     "bull": 4,
+     "score": 0.0332,
+     "bull": 3,
      "bear": 1,
-     "neut": 111
+     "neut": 117
     }
    },
    "top": [
@@ -1793,6 +1793,21 @@
       "usd": 0.626
      },
      "priority": 85
+    },
+    {
+     "id": "CNBC World:Oil extends gains following Houthi strikes on Saudi Arabia",
+     "titel": "Oil extends gains following Houthi strikes on Saudi Arabia",
+     "titelDe": "Öl setzt Kurs nach Houthi-Angriffen auf Saudi-Arabien fort",
+     "quelle": "CNBC World",
+     "url": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html",
+     "zeit": "2026-09-15T01:55:53.000Z",
+     "scores": {
+      "crypto": -0.81,
+      "stocks": -0.81,
+      "gold": 0.405,
+      "usd": 0.27
+     },
+     "priority": 75
     },
     {
      "id": "FXStreet:United States Dollar Index strengthens above 99.50 as Fed rate hike bets rise",
@@ -1838,21 +1853,6 @@
       "usd": 0.75
      },
      "priority": 79
-    },
-    {
-     "id": "CNBC World:Oil extends gains following Houthi strikes on Saudi Arabia",
-     "titel": "Oil extends gains following Houthi strikes on Saudi Arabia",
-     "titelDe": "Öl setzt Kurs nach Houthi-Angriffen auf Saudi-Arabien fort",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html",
-     "zeit": "2026-09-15T01:55:53.000Z",
-     "scores": {
-      "crypto": -0.81,
-      "stocks": -0.81,
-      "gold": 0.405,
-      "usd": 0.27
-     },
-     "priority": 71
     },
     {
      "id": "SCMP:Zelensky says Ukraine is ready for ‘de-escalatory steps’ if Russia does the same",
