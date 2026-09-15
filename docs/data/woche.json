@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T02:30:44.977Z",
+ "updated": "2026-09-15T02:48:41.596Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T02:30:45.090Z",
+   "stand": "2026-09-15T02:48:41.701Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T02:30:45.071Z",
+   "stand": "2026-09-15T02:48:41.681Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T02:30:45.051Z",
+   "stand": "2026-09-15T02:48:41.662Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,32 +1750,32 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T02:30:45.031Z",
-   "anzahl": 82,
+   "stand": "2026-09-15T02:48:41.643Z",
+   "anzahl": 85,
    "klassen": {
     "crypto": {
-     "score": -0.1066,
+     "score": -0.0769,
      "bull": 3,
-     "bear": 9,
-     "neut": 70
+     "bear": 8,
+     "neut": 74
     },
     "stocks": {
-     "score": -0.0962,
+     "score": -0.0705,
      "bull": 3,
-     "bear": 9,
-     "neut": 70
+     "bear": 8,
+     "neut": 74
     },
     "gold": {
-     "score": -0.0365,
-     "bull": 5,
-     "bear": 7,
-     "neut": 70
+     "score": -0.0167,
+     "bull": 6,
+     "bear": 5,
+     "neut": 74
     },
     "usd": {
-     "score": 0.0816,
-     "bull": 5,
+     "score": 0.0539,
+     "bull": 3,
      "bear": 2,
-     "neut": 75
+     "neut": 80
     }
    },
    "top": [
@@ -1793,6 +1793,21 @@
       "usd": 0.626
      },
      "priority": 85
+    },
+    {
+     "id": "FXStreet:United States Dollar Index strengthens above 99.50 as Fed rate hike bets rise",
+     "titel": "United States Dollar Index strengthens above 99.50 as Fed rate hike bets rise",
+     "titelDe": "US-Dollar-Index stärkt sich über 99,50, da die Erwartungen an Fed-Hike steigen",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/united-states-dollar-index-strengthens-above-9950-as-fed-rate-hike-bets-rise-202609150240",
+     "zeit": "2026-09-15T02:40:36.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
     },
     {
      "id": "FXStreet:Japanese Yen weakens as Fed rate hike looms",
@@ -1852,7 +1867,7 @@
       "gold": -0.374,
       "usd": -0.249
      },
-     "priority": 69
+     "priority": 68
     },
     {
      "id": "Reuters:COMMENTARY: US yield curve sends stark warning - consumers can’t handle rate hikes",
@@ -1883,21 +1898,6 @@
       "usd": 0.45
      },
      "priority": 78
-    },
-    {
-     "id": "Anadolu:US sanctions Russia's VTB Bank for allegedly helping Iran evade sanctions",
-     "titel": "US sanctions Russia's VTB Bank for allegedly helping Iran evade sanctions",
-     "titelDe": "US verhängt Sanktionen gegen Russlands VTB Bank wegen angeblicher Unterstützung Irans bei der Umgehung von Sanktionen",
-     "quelle": "Anadolu",
-     "url": "https://www.aa.com.tr/en/world/us-sanctions-russias-vtb-bank-for-allegedly-helping-iran-evade-sanctions/4057259",
-     "zeit": "2026-09-15T01:21:14.000Z",
-     "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
-     },
-     "priority": 67
     }
    ]
   }
