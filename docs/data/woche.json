@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T01:12:36.929Z",
+ "updated": "2026-09-15T01:30:58.873Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T01:12:36.999Z",
+   "stand": "2026-09-15T01:30:58.974Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T01:12:36.988Z",
+   "stand": "2026-09-15T01:30:58.957Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T01:12:36.977Z",
+   "stand": "2026-09-15T01:30:58.939Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,32 +1750,32 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T01:12:36.965Z",
-   "anzahl": 53,
+   "stand": "2026-09-15T01:30:58.920Z",
+   "anzahl": 59,
    "klassen": {
     "crypto": {
-     "score": -0.0479,
+     "score": -0.0555,
      "bull": 3,
-     "bear": 4,
-     "neut": 46
+     "bear": 5,
+     "neut": 51
     },
     "stocks": {
-     "score": -0.0375,
+     "score": -0.0463,
      "bull": 3,
-     "bear": 4,
-     "neut": 46
+     "bear": 5,
+     "neut": 51
     },
     "gold": {
-     "score": -0.0654,
-     "bull": 2,
+     "score": -0.0513,
+     "bull": 3,
      "bear": 5,
-     "neut": 46
+     "neut": 51
     },
     "usd": {
-     "score": 0.0617,
+     "score": 0.0591,
      "bull": 2,
      "bear": 2,
-     "neut": 49
+     "neut": 55
     }
    },
    "top": [
@@ -1807,7 +1807,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 81
+     "priority": 80
     },
     {
      "id": "SCMP:Zelensky says Ukraine is ready for ‘de-escalatory steps’ if Russia does the same",
@@ -1822,7 +1822,7 @@
       "gold": -0.374,
       "usd": -0.249
      },
-     "priority": 71
+     "priority": 70
     },
     {
      "id": "Reuters:COMMENTARY: US yield curve sends stark warning - consumers can’t handle rate hikes",
@@ -1838,6 +1838,21 @@
       "usd": 0.75
      },
      "priority": 56
+    },
+    {
+     "id": "Anadolu:US sanctions Russia's VTB Bank for allegedly helping Iran evade sanctions",
+     "titel": "US sanctions Russia's VTB Bank for allegedly helping Iran evade sanctions",
+     "titelDe": "US verhängt Sanktionen gegen Russlands VTB Bank wegen angeblicher Unterstützung Irans bei der Umgehung von Sanktionen",
+     "quelle": "Anadolu",
+     "url": "https://www.aa.com.tr/en/world/us-sanctions-russias-vtb-bank-for-allegedly-helping-iran-evade-sanctions/4057259",
+     "zeit": "2026-09-15T01:21:14.000Z",
+     "scores": {
+      "crypto": -0.405,
+      "stocks": -0.405,
+      "gold": 0.203,
+      "usd": 0.135
+     },
+     "priority": 68
     },
     {
      "id": "FXStreet:Australian Dollar gets caught between AI selloff and 5% US yields",
@@ -1868,6 +1883,21 @@
       "usd": -0.165
      },
      "priority": 39
+    },
+    {
+     "id": "Al Jazeera:Geneva talks put Rwanda-DRC peace deal to the test",
+     "titel": "Geneva talks put Rwanda-DRC peace deal to the test",
+     "titelDe": "Genfer Gespräche stellen den Friedensdeal zwischen Ruanda und DRC auf die Probe",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/9/15/geneva-talks-put-rwanda-drc-peace-deal-to-the-test?traffic_source=rss",
+     "zeit": "2026-09-15T00:26:06.000Z",
+     "scores": {
+      "crypto": 0.495,
+      "stocks": 0.495,
+      "gold": -0.248,
+      "usd": -0.165
+     },
+     "priority": 38
     }
    ]
   }
