@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T11:37:25.924Z",
+ "updated": "2026-09-15T11:46:17.783Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T11:37:26.035Z",
+   "stand": "2026-09-15T11:46:17.893Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T11:37:26.016Z",
+   "stand": "2026-09-15T11:46:17.873Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T11:37:25.996Z",
+   "stand": "2026-09-15T11:46:17.854Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T11:37:25.976Z",
+   "stand": "2026-09-15T11:46:17.834Z",
    "anzahl": 210,
    "klassen": {
     "crypto": {
@@ -1885,19 +1885,19 @@
      "priority": 83
     },
     {
-     "id": "CNBC World:Oil extends gains following Houthi strikes on Saudi Arabia",
-     "titel": "Oil extends gains following Houthi strikes on Saudi Arabia",
-     "titelDe": "Öl setzt Kurs nach Houthi-Angriffen auf Saudi-Arabien fort",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html",
-     "zeit": "2026-09-15T01:55:53.000Z",
+     "id": "Al Jazeera (GN):Benchmark US government bond yield hits 19-year peak as oil prices surge",
+     "titel": "Benchmark US government bond yield hits 19-year peak as oil prices surge",
+     "titelDe": "Leistungswert der US-Staatsanleihen erreicht 19‑jährige Hochs, während Ölpreise steigen",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQM2VpQm11OEEyTl9EanlSQXd2eDQ3MkZTV3FfOEQ4Y2RlS3RzWkhDS2psWkViaFQ4akx1SzVOSS0tVVJjb1lsbVZrTHR1SmJUQ0lWTU9RZkFBaUQzMktYdE5aT2x1LXZsNmNXVU9uOG91dnNZY3dJVUlRa1BfNkNkNkNRZmdNczJWUG1qQVVGd2tmMF9BWDZxdDBkYkJFcGFFajZ6ZDZza0dKS2h3VUhBaDBZQ1FRNVHSAbwBQVVfeXFMT1R3bnNNRTF0RDRnTTVlaFJmSGNZWVdnMEhtSF9CemVQODhXZVFyd3JzQnJxU1BnNnlFb09jdXBHUlFKT1BIeF8zaVVTY2hzbnAydlBpZFJzVklwLWk1VnhzQnVHQndlM1A4NnRPc2VMZnRSODJjeVBqY19jczdyOUlyOVVQbktINlFVaDllYnUyZld4RVBpc3RzZXM1NXJ4TXg1UGJIT1JtU3ZyREFBQW9aakNEMjdyNExNNGM?oc=5",
+     "zeit": "2026-09-15T11:37:14.000Z",
      "scores": {
-      "crypto": -0.81,
-      "stocks": -0.81,
-      "gold": 0.405,
-      "usd": 0.27
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.547,
+      "usd": 1
      },
-     "priority": 74
+     "priority": 61
     }
    ]
   }
