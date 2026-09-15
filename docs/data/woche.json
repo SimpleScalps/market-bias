@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T05:11:15.516Z",
+ "updated": "2026-09-15T05:29:12.432Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T05:11:15.582Z",
+   "stand": "2026-09-15T05:29:12.522Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T05:11:15.571Z",
+   "stand": "2026-09-15T05:29:12.507Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T05:11:15.560Z",
+   "stand": "2026-09-15T05:29:12.492Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,32 +1750,32 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T05:11:15.548Z",
-   "anzahl": 123,
+   "stand": "2026-09-15T05:29:12.476Z",
+   "anzahl": 131,
    "klassen": {
     "crypto": {
-     "score": -0.0601,
-     "bull": 4,
-     "bear": 10,
-     "neut": 109
+     "score": -0.0655,
+     "bull": 2,
+     "bear": 11,
+     "neut": 118
     },
     "stocks": {
-     "score": -0.0566,
-     "bull": 4,
-     "bear": 10,
-     "neut": 109
+     "score": -0.0622,
+     "bull": 2,
+     "bear": 11,
+     "neut": 118
     },
     "gold": {
-     "score": -0.0005,
-     "bull": 7,
-     "bear": 7,
-     "neut": 109
+     "score": 0.0041,
+     "bull": 8,
+     "bear": 5,
+     "neut": 118
     },
     "usd": {
-     "score": 0.0357,
+     "score": 0.0365,
      "bull": 4,
      "bear": 1,
-     "neut": 118
+     "neut": 126
     }
    },
    "top": [
@@ -1795,21 +1795,6 @@
      "priority": 85
     },
     {
-     "id": "CNBC World:Oil extends gains following Houthi strikes on Saudi Arabia",
-     "titel": "Oil extends gains following Houthi strikes on Saudi Arabia",
-     "titelDe": "Öl setzt Kurs nach Houthi-Angriffen auf Saudi-Arabien fort",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html",
-     "zeit": "2026-09-15T01:55:53.000Z",
-     "scores": {
-      "crypto": -0.81,
-      "stocks": -0.81,
-      "gold": 0.405,
-      "usd": 0.27
-     },
-     "priority": 75
-    },
-    {
      "id": "FXStreet:United States Dollar Index strengthens above 99.50 as Fed rate hike bets rise",
      "titel": "United States Dollar Index strengthens above 99.50 as Fed rate hike bets rise",
      "titelDe": "US-Dollar-Index stärkt sich über 99,50, da die Erwartungen an Fed-Hike steigen",
@@ -1823,6 +1808,21 @@
       "usd": 0.75
      },
      "priority": 80
+    },
+    {
+     "id": "CNBC World:Oil extends gains following Houthi strikes on Saudi Arabia",
+     "titel": "Oil extends gains following Houthi strikes on Saudi Arabia",
+     "titelDe": "Öl setzt Kurs nach Houthi-Angriffen auf Saudi-Arabien fort",
+     "quelle": "CNBC World",
+     "url": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html",
+     "zeit": "2026-09-15T01:55:53.000Z",
+     "scores": {
+      "crypto": -0.81,
+      "stocks": -0.81,
+      "gold": 0.405,
+      "usd": 0.27
+     },
+     "priority": 74
     },
     {
      "id": "FXStreet:Japanese Yen weakens as Fed rate hike looms",
