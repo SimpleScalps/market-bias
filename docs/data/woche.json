@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T04:11:30.651Z",
+ "updated": "2026-09-15T04:30:24.570Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T04:11:30.732Z",
+   "stand": "2026-09-15T04:30:24.643Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T04:11:30.718Z",
+   "stand": "2026-09-15T04:30:24.631Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T04:11:30.704Z",
+   "stand": "2026-09-15T04:30:24.619Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,32 +1750,32 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T04:11:30.690Z",
-   "anzahl": 97,
+   "stand": "2026-09-15T04:30:24.606Z",
+   "anzahl": 116,
    "klassen": {
     "crypto": {
-     "score": -0.0683,
-     "bull": 2,
-     "bear": 8,
-     "neut": 87
+     "score": -0.0635,
+     "bull": 3,
+     "bear": 10,
+     "neut": 103
     },
     "stocks": {
-     "score": -0.0646,
-     "bull": 2,
-     "bear": 8,
-     "neut": 87
+     "score": -0.0598,
+     "bull": 3,
+     "bear": 10,
+     "neut": 103
     },
     "gold": {
-     "score": 0.0017,
-     "bull": 6,
-     "bear": 4,
-     "neut": 87
+     "score": -0.0001,
+     "bull": 7,
+     "bear": 6,
+     "neut": 103
     },
     "usd": {
-     "score": 0.0394,
-     "bull": 3,
+     "score": 0.0375,
+     "bull": 4,
      "bear": 1,
-     "neut": 93
+     "neut": 111
     }
    },
    "top": [
@@ -1807,7 +1807,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 82
+     "priority": 81
     },
     {
      "id": "FXStreet:Japanese Yen weakens as Fed rate hike looms",
@@ -1852,7 +1852,7 @@
       "gold": 0.405,
       "usd": 0.27
      },
-     "priority": 72
+     "priority": 71
     },
     {
      "id": "SCMP:Zelensky says Ukraine is ready for ‘de-escalatory steps’ if Russia does the same",
