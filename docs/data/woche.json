@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T21:39:53.990Z",
+ "updated": "2026-09-15T21:47:36.159Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T21:39:54.060Z",
+   "stand": "2026-09-15T21:47:36.214Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T21:39:54.045Z",
+   "stand": "2026-09-15T21:47:36.202Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T21:39:54.031Z",
+   "stand": "2026-09-15T21:47:36.191Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1793,6 +1793,21 @@
       "usd": 0.3
      },
      "priority": 98
+    },
+    {
+     "id": "Decrypt:Wall Street Bets on Fed Rate Hike: Here's What It Means for Bitcoin, Bonds and Trump",
+     "titel": "Wall Street Bets on Fed Rate Hike: Here's What It Means for Bitcoin, Bonds and Trump",
+     "titelDe": "Wall Street setzt auf Fed‑Zinserhöhung: Was das für Bitcoin, Anleihen und Trump bedeutet",
+     "quelle": "Decrypt",
+     "url": "https://decrypt.co/378306/wall-street-fed-rate-hike-bitcoin-bonds-trump",
+     "zeit": "2026-09-15T21:46:03.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -0.85,
+      "gold": -0.8,
+      "usd": 1
+     },
+     "priority": 88
     },
     {
      "id": "Reuters:Angola delivers another big rate cut as inflation falls to single digits",
@@ -1883,21 +1898,6 @@
       "usd": 0.746
      },
      "priority": 63
-    },
-    {
-     "id": "Reuters:Sterling pinned at one-month lows as oil stays high, Fed rate hike expected",
-     "titel": "Sterling pinned at one-month lows as oil stays high, Fed rate hike expected",
-     "titelDe": "Sterling bleibt bei einmonatigen Tiefstständen, Öl bleibt hoch, Fed Zinserhöhung erwartet",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeHNxc1dNQ0FDbWx0OTVSNjN6R1V2VE9yYlFKYW1lZFd2Nm5xdURHazhHQ2FlLTJQdjVHWmFqWEJ5c2RYc0I0Z2kwMzJMQmF2ZzZMNmtXNXlfbmxPeWg4V1RUZFJ5c05fVWctNm56emtHQ2YzM3RhRDJpMUsweHBOekZxNlNUWm11T0VXazhBVHJWTlZUOWxQekFaLVRWY1hEVFhuOUxsT1NLSmtSZTE4OUpmMA?oc=5",
-     "zeit": "2026-09-15T10:39:43.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 84
     }
    ]
   }
