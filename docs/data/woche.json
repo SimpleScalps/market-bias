@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T06:06:38.302Z",
+ "updated": "2026-09-15T06:28:51.717Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T06:06:38.375Z",
+   "stand": "2026-09-15T06:28:51.783Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T06:06:38.362Z",
+   "stand": "2026-09-15T06:28:51.771Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T06:06:38.350Z",
+   "stand": "2026-09-15T06:28:51.760Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,32 +1750,32 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T06:06:38.337Z",
-   "anzahl": 141,
+   "stand": "2026-09-15T06:28:51.748Z",
+   "anzahl": 144,
    "klassen": {
     "crypto": {
-     "score": -0.073,
+     "score": -0.0672,
      "bull": 2,
-     "bear": 12,
-     "neut": 127
+     "bear": 14,
+     "neut": 128
     },
     "stocks": {
-     "score": -0.07,
+     "score": -0.0663,
      "bull": 2,
-     "bear": 12,
-     "neut": 127
+     "bear": 14,
+     "neut": 128
     },
     "gold": {
-     "score": 0.0108,
-     "bull": 9,
-     "bear": 5,
-     "neut": 127
+     "score": 0.0256,
+     "bull": 12,
+     "bear": 4,
+     "neut": 128
     },
     "usd": {
-     "score": 0.0375,
-     "bull": 5,
+     "score": 0.0265,
+     "bull": 4,
      "bear": 1,
-     "neut": 135
+     "neut": 139
     }
    },
    "top": [
@@ -1807,7 +1807,7 @@
       "gold": 0.427,
       "usd": 0.285
      },
-     "priority": 75
+     "priority": 74
     },
     {
      "id": "FXStreet:United States Dollar Index strengthens above 99.50 as Fed rate hike bets rise",
@@ -1867,7 +1867,7 @@
       "gold": 0.405,
       "usd": 0.27
      },
-     "priority": 73
+     "priority": 72
     },
     {
      "id": "SCMP:Zelensky says Ukraine is ready for ‘de-escalatory steps’ if Russia does the same",
