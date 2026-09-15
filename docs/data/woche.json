@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T02:12:55.085Z",
+ "updated": "2026-09-15T02:30:44.977Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T02:12:55.191Z",
+   "stand": "2026-09-15T02:30:45.090Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T02:12:55.173Z",
+   "stand": "2026-09-15T02:30:45.071Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T02:12:55.154Z",
+   "stand": "2026-09-15T02:30:45.051Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,32 +1750,32 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T02:12:55.135Z",
-   "anzahl": 76,
+   "stand": "2026-09-15T02:30:45.031Z",
+   "anzahl": 82,
    "klassen": {
     "crypto": {
-     "score": -0.1095,
+     "score": -0.1066,
      "bull": 3,
      "bear": 9,
-     "neut": 64
+     "neut": 70
     },
     "stocks": {
-     "score": -0.0986,
+     "score": -0.0962,
      "bull": 3,
      "bear": 9,
-     "neut": 64
+     "neut": 70
     },
     "gold": {
-     "score": -0.0389,
+     "score": -0.0365,
      "bull": 5,
      "bear": 7,
-     "neut": 64
+     "neut": 70
     },
     "usd": {
-     "score": 0.0845,
+     "score": 0.0816,
      "bull": 5,
      "bear": 2,
-     "neut": 69
+     "neut": 75
     }
    },
    "top": [
@@ -1792,7 +1792,7 @@
       "gold": -0.211,
       "usd": 0.626
      },
-     "priority": 86
+     "priority": 85
     },
     {
      "id": "FXStreet:Japanese Yen weakens as Fed rate hike looms",
@@ -1807,7 +1807,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 82
+     "priority": 81
     },
     {
      "id": "CNBC World:Oil extends gains following Houthi strikes on Saudi Arabia",
@@ -1822,7 +1822,7 @@
       "gold": 0.405,
       "usd": 0.27
      },
-     "priority": 75
+     "priority": 74
     },
     {
      "id": "FXStreet:Gold falls below $4,300 as higher US yields bolster Fed rate hike bets",
