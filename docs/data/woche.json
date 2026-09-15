@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T00:29:40.046Z",
+ "updated": "2026-09-15T00:47:01.116Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T00:29:40.147Z",
+   "stand": "2026-09-15T00:47:01.217Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T00:29:40.129Z",
+   "stand": "2026-09-15T00:47:01.200Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T00:29:40.111Z",
+   "stand": "2026-09-15T00:47:01.182Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,35 +1750,50 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T00:29:40.093Z",
-   "anzahl": 44,
+   "stand": "2026-09-15T00:47:01.163Z",
+   "anzahl": 49,
    "klassen": {
     "crypto": {
-     "score": -0.0489,
-     "bull": 2,
+     "score": -0.0574,
+     "bull": 3,
      "bear": 4,
-     "neut": 38
+     "neut": 42
     },
     "stocks": {
-     "score": -0.039,
-     "bull": 2,
+     "score": -0.0464,
+     "bull": 3,
      "bear": 4,
-     "neut": 38
+     "neut": 42
     },
     "gold": {
-     "score": -0.061,
+     "score": -0.0666,
      "bull": 2,
-     "bear": 4,
-     "neut": 38
+     "bear": 5,
+     "neut": 42
     },
     "usd": {
-     "score": 0.0602,
+     "score": 0.068,
      "bull": 2,
-     "bear": 1,
-     "neut": 41
+     "bear": 2,
+     "neut": 45
     }
    },
    "top": [
+    {
+     "id": "FXStreet:Japanese Yen weakens as Fed rate hike looms",
+     "titel": "Japanese Yen weakens as Fed rate hike looms",
+     "titelDe": "Japanischer Yen schwächt sich, während Fed Zinserhöhung droht",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/japanese-yen-weakens-as-fed-rate-hike-looms-202609150041",
+     "zeit": "2026-09-15T00:41:37.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
     {
      "id": "FXStreet:Gold falls below $4,300 as higher US yields bolster Fed rate hike bets",
      "titel": "Gold falls below $4,300 as higher US yields bolster Fed rate hike bets",
@@ -1792,7 +1807,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 83
+     "priority": 82
     },
     {
      "id": "SCMP:Zelensky says Ukraine is ready for ‘de-escalatory steps’ if Russia does the same",
@@ -1807,7 +1822,7 @@
       "gold": -0.374,
       "usd": -0.249
      },
-     "priority": 73
+     "priority": 71
     },
     {
      "id": "Reuters:COMMENTARY: US yield curve sends stark warning - consumers can’t handle rate hikes",
@@ -1837,7 +1852,22 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 50
+     "priority": 49
+    },
+    {
+     "id": "Al Jazeera (GN):Geneva talks put Rwanda-DRC peace deal to the test",
+     "titel": "Geneva talks put Rwanda-DRC peace deal to the test",
+     "titelDe": "Genfer Gespräche stellen den Friedensdeal zwischen Ruanda und DRC auf die Probe",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMy1Vek5jOFlRWDl1dDJNbjliVUJUbFBsOXBLeGFQVDYtNUFWa3JyVU4zLVFSemRFWm5KZ3hpTHVLaEVWQ2FLTlMydFZ2QWhZdjFJc0JQN0hSMVU2OEpDYmtPLXFGLU11SDRMWGE0c1cxaE12V1pBUmRCZ0VhVjRiM24zaEo5Z1R4Qlg2R2JHTk9lMWhNVWfSAZsBQVVfeXFMTjhUYk9IUWstWDY3cllLSExISWJBV0cxUTE5alZKNlljSjJjR3NGaF9rSGdIcHRINWpERkZ5Vzd4cFlWb1BtVFlXeGg5N3E3cmxMVTRCbW81MU1MOHhDQXo0SE0xbXJLMGNxSmQ1aGZjM1hac001Y09OZFQxT0t3dEtDZXpLQzU0RUtBcWk2Vjg4dkdqazBiZWxxOTQ?oc=5",
+     "zeit": "2026-09-15T00:26:06.000Z",
+     "scores": {
+      "crypto": 0.495,
+      "stocks": 0.495,
+      "gold": -0.248,
+      "usd": -0.165
+     },
+     "priority": 39
     }
    ]
   }
