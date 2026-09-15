@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15T13:55:24.894Z",
+ "updated": "2026-09-15T14:04:29.956Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-15T13:55:25.002Z",
+   "stand": "2026-09-15T14:04:30.063Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1444,7 +1444,7 @@
   },
   "2026-09-13": {
    "tag": "2026-09-13",
-   "stand": "2026-09-15T13:55:24.983Z",
+   "stand": "2026-09-15T14:04:30.044Z",
    "anzahl": 166,
    "klassen": {
     "crypto": {
@@ -1597,7 +1597,7 @@
   },
   "2026-09-14": {
    "tag": "2026-09-14",
-   "stand": "2026-09-15T13:55:24.963Z",
+   "stand": "2026-09-15T14:04:30.026Z",
    "anzahl": 249,
    "klassen": {
     "crypto": {
@@ -1750,30 +1750,30 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-15T13:55:24.944Z",
-   "anzahl": 219,
+   "stand": "2026-09-15T14:04:30.007Z",
+   "anzahl": 220,
    "klassen": {
     "crypto": {
-     "score": -0.0673,
-     "bull": 3,
-     "bear": 19,
-     "neut": 197
+     "score": -0.0753,
+     "bull": 4,
+     "bear": 20,
+     "neut": 196
     },
     "stocks": {
-     "score": -0.0644,
-     "bull": 2,
-     "bear": 18,
-     "neut": 199
+     "score": -0.071,
+     "bull": 3,
+     "bear": 19,
+     "neut": 198
     },
     "gold": {
-     "score": 0.0128,
+     "score": 0.0044,
      "bull": 15,
-     "bear": 3,
-     "neut": 201
+     "bear": 5,
+     "neut": 200
     },
     "usd": {
-     "score": 0.0342,
-     "bull": 5,
+     "score": 0.0432,
+     "bull": 6,
      "bear": 0,
      "neut": 214
     }
@@ -1822,7 +1822,7 @@
       "gold": -0.031,
       "usd": 0.746
      },
-     "priority": 69
+     "priority": 68
     },
     {
      "id": "OilPrice:China’s Yuan Crude Oil Futures Jump to Record High",
@@ -1855,6 +1855,21 @@
      "priority": 73
     },
     {
+     "id": "CNBC World:10-year Treasury yield hits highest level since 2007 as traders bet a Fed rate hike is coming",
+     "titel": "10-year Treasury yield hits highest level since 2007 as traders bet a Fed rate hike is coming",
+     "titelDe": "10-jährige Treasury-Rendite erreicht den höchsten Stand seit 2007, da Händler darauf wetten, dass eine Zinserhöhung der Fed bevorsteht",
+     "quelle": "CNBC World",
+     "url": "https://www.cnbc.com/2026/09/15/10-year-treasury-yield-rises-to-highest-since-2007.html",
+     "zeit": "2026-09-15T14:01:22.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "Reuters:Sterling pinned at one-month lows as oil stays high, Fed rate hike expected",
      "titel": "Sterling pinned at one-month lows as oil stays high, Fed rate hike expected",
      "titelDe": "Sterling bleibt bei einmonatigen Tiefstständen, Öl bleibt hoch, Fed Zinserhöhung erwartet",
@@ -1883,21 +1898,6 @@
       "usd": 0.75
      },
      "priority": 83
-    },
-    {
-     "id": "FXStreet:Gold bears retain control as markets brace for Fed rate hike",
-     "titel": "Gold bears retain control as markets brace for Fed rate hike",
-     "titelDe": "Goldbären behalten die Kontrolle, während sich die Märkte auf eine Zinserhöhung der Fed vorbereiten",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/gold-bears-retain-control-as-markets-brace-for-fed-rate-hike-202609151131",
-     "zeit": "2026-09-15T11:31:53.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 80
     }
    ]
   }
