@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T06:27:48.783Z",
+ "updated": "2026-09-16T06:44:31.645Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T06:27:48.855Z",
+   "stand": "2026-09-16T06:44:31.680Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T06:27:48.840Z",
+   "stand": "2026-09-16T06:44:31.673Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,32 +1903,32 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T06:27:48.825Z",
-   "anzahl": 125,
+   "stand": "2026-09-16T06:44:31.666Z",
+   "anzahl": 131,
    "klassen": {
     "crypto": {
-     "score": -0.1014,
+     "score": -0.0968,
      "bull": 3,
      "bear": 12,
-     "neut": 110
+     "neut": 116
     },
     "stocks": {
-     "score": -0.0928,
+     "score": -0.0887,
      "bull": 3,
      "bear": 12,
-     "neut": 110
+     "neut": 116
     },
     "gold": {
-     "score": -0.0329,
+     "score": -0.031,
      "bull": 6,
      "bear": 6,
-     "neut": 113
+     "neut": 119
     },
     "usd": {
-     "score": 0.0775,
+     "score": 0.0738,
      "bull": 7,
      "bear": 0,
-     "neut": 118
+     "neut": 124
     }
    },
    "top": [
@@ -1975,7 +1975,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 81
+     "priority": 80
     },
     {
      "id": "BeInCrypto:Bank of Japan, Fed Rate Hikes Expected Same Week: Will Yen Rally?",
@@ -1990,7 +1990,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 78
+     "priority": 77
     },
     {
      "id": "BeInCrypto:White House Adviser Phelan Warns Fed Rate Hike Today Would Be a Mistake",
@@ -2005,7 +2005,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 77
+     "priority": 76
     },
     {
      "id": "Reuters:Carney visits Europe to seek closer ties amid worsening trade war with Trump",
