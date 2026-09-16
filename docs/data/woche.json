@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T09:21:26.805Z",
+ "updated": "2026-09-16T09:37:27.058Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T09:21:26.893Z",
+   "stand": "2026-09-16T09:37:27.128Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T09:21:26.873Z",
+   "stand": "2026-09-16T09:37:27.114Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,32 +1903,32 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T09:21:26.854Z",
+   "stand": "2026-09-16T09:37:27.099Z",
    "anzahl": 168,
    "klassen": {
     "crypto": {
-     "score": -0.0947,
+     "score": -0.0769,
      "bull": 3,
-     "bear": 18,
-     "neut": 147
-    },
-    "stocks": {
-     "score": -0.0928,
-     "bull": 2,
-     "bear": 18,
-     "neut": 148
-    },
-    "gold": {
-     "score": -0.0059,
-     "bull": 11,
-     "bear": 8,
+     "bear": 16,
      "neut": 149
     },
+    "stocks": {
+     "score": -0.0776,
+     "bull": 2,
+     "bear": 16,
+     "neut": 150
+    },
+    "gold": {
+     "score": 0.0079,
+     "bull": 11,
+     "bear": 6,
+     "neut": 151
+    },
     "usd": {
-     "score": 0.0616,
-     "bull": 10,
+     "score": 0.044,
+     "bull": 8,
      "bear": 0,
-     "neut": 158
+     "neut": 160
     }
    },
    "top": [
@@ -2005,7 +2005,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 79
+     "priority": 78
     },
     {
      "id": "CNBC World:Canada invited to become EU’s first ‘associate member’ as Trump trade war intensifies",
