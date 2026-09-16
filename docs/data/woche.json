@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T19:04:01.196Z",
+ "updated": "2026-09-16T19:19:08.929Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T19:04:01.284Z",
+   "stand": "2026-09-16T19:19:09.018Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T19:04:01.265Z",
+   "stand": "2026-09-16T19:19:08.999Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T19:04:01.245Z",
+   "stand": "2026-09-16T19:19:08.979Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -1978,6 +1978,20 @@
      "priority": 88
     },
     {
+     "id": "FXStreet:Silver slides as hawkish Fed lifts US Dollar and Treasury yields",
+     "titel": "Silver slides as hawkish Fed lifts US Dollar and Treasury yields",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/silver-slides-as-hawkish-fed-lifts-us-dollar-and-treasury-yields-202609161916",
+     "zeit": "2026-09-16T19:16:07.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -0.96,
+      "gold": -0.255,
+      "usd": 0.75
+     },
+     "priority": 88
+    },
+    {
      "id": "Reuters:Russian drone attack on bus kills five in Ukraine's southeast, governor says",
      "titel": "Russian drone attack on bus kills five in Ukraine's southeast, governor says",
      "titelDe": "Russischer Drohnenangriff auf Bus tötet fünf im Südosten der Ukraine, sagt Gouverneur",
@@ -2029,21 +2043,6 @@
      "quelle": "CNBC",
      "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
      "zeit": "2026-09-16T18:04:22.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 84
-    },
-    {
-     "id": "CoinDesk:Fed raises rates by 25 basis points in first hike since July 2023",
-     "titel": "Fed raises rates by 25 basis points in first hike since July 2023",
-     "titelDe": "Fed erhöht die Zinsen um 25 Basispunkte bei der ersten Erhöhung seit Juli 2023",
-     "quelle": "CoinDesk",
-     "url": "https://www.coindesk.com/markets/2026/09/16/fed-raises-rates-by-25-basis-points-in-first-hike-since-july-2023",
-     "zeit": "2026-09-16T17:54:55.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
