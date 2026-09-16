@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T23:04:11.171Z",
+ "updated": "2026-09-16T23:18:38.213Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T23:04:11.225Z",
+   "stand": "2026-09-16T23:18:38.285Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T23:04:11.214Z",
+   "stand": "2026-09-16T23:18:38.270Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -2056,30 +2056,30 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-16T23:04:11.203Z",
-   "anzahl": 37,
+   "stand": "2026-09-16T23:18:38.255Z",
+   "anzahl": 39,
    "klassen": {
     "crypto": {
-     "score": -0.262,
+     "score": -0.2588,
      "bull": 0,
-     "bear": 9,
-     "neut": 28
+     "bear": 8,
+     "neut": 31
     },
     "stocks": {
-     "score": -0.2305,
+     "score": -0.224,
      "bull": 0,
-     "bear": 9,
-     "neut": 28
+     "bear": 8,
+     "neut": 31
     },
     "gold": {
-     "score": -0.1412,
-     "bull": 4,
-     "bear": 5,
-     "neut": 28
+     "score": -0.1708,
+     "bull": 1,
+     "bear": 6,
+     "neut": 32
     },
     "usd": {
-     "score": 0.227,
-     "bull": 5,
+     "score": 0.2403,
+     "bull": 7,
      "bear": 0,
      "neut": 32
     }
@@ -2101,6 +2101,36 @@
      "priority": 87
     },
     {
+     "id": "Reuters:Hong Kong Monetary Authority raises interest rates, tracking Fed move - reuters.com",
+     "titel": "Hong Kong Monetary Authority raises interest rates, tracking Fed move - reuters.com",
+     "titelDe": "Hongkong-Monetärbehörde erhöht Zinssätze, folgt Fed-Bewegung",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMEcybmViazFiTVpzdkxQWGVQMWFnR053ZjhkeHpXQ0JWbDZNOThDWVhqQnlwcE5HMG9HZGVDUGhrOG9sazJlb2kxNjBqN004Ml81b3AySVktNVI0cTkzWUhhUXhrazByMEZvcVN4SFpSTkgxZVFDUWVMWi1yN0FUdXgtUVZJS1RuZUZsMFIzUHNydUZ1dTJqcHN2aHVYMk9EOTdub2NFT25UbnVrMHlvZi1keUZDYmdISnp1S05wQXQ?oc=5",
+     "zeit": "2026-09-16T23:10:15.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
+     "id": "Guardian:IMF downgrades Australian economic forecast amid fears of interest rate hike",
+     "titel": "IMF downgrades Australian economic forecast amid fears of interest rate hike",
+     "titelDe": "IMF senkt Aussichten für australische Wirtschaft aus Angst vor Zinserhöhung",
+     "quelle": "Guardian",
+     "url": "https://www.theguardian.com/australia-news/2026/sep/17/imf-downgrades-australian-economic-forecast-amid-fears-of-interest-rate-hike",
+     "zeit": "2026-09-16T23:00:33.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "Reuters:Market Talk: First Fed rate hike in three years no 'panacea' for inflation",
      "titel": "Market Talk: First Fed rate hike in three years no 'panacea' for inflation",
      "titelDe": "Markttalk: Erste Fed‑Erhöhung in drei Jahren ist keine 'Panzerlösung' für die Inflation",
@@ -2114,6 +2144,21 @@
       "usd": 0.75
      },
      "priority": 84
+    },
+    {
+     "id": "Reuters:Market Talk: First Fed rate hike in three years no 'panacea' for inflation - reuters.com",
+     "titel": "Market Talk: First Fed rate hike in three years no 'panacea' for inflation - reuters.com",
+     "titelDe": "Marktgespräch: Erste Fed-Zinserhöhung in drei Jahren ist keine Allheilmittel für Inflation",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5GakllY0ZKMGpySTZCRng3SDFvclVFT1dhN093OUFrWEFXVXJuclR0RmJ3VTJ2eU5rbGxoaWpqT2gxb3VtQ0FfSkZueW5VS0NTTkRyQjJtOWcxSXBEYWV6UXluNXhWRkk?oc=5",
+     "zeit": "2026-09-16T22:58:16.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 83
     },
     {
      "id": "The Defiant:Bitcoin Round-Trips the First Fed Rate Increase Since 2023 as Zcash Runs to $1,383",
@@ -2159,36 +2204,6 @@
       "usd": 0.75
      },
      "priority": 82
-    },
-    {
-     "id": "TASS:Anti-Russian sanctions bill gets enough votes to be adopted by US Congress",
-     "titel": "Anti-Russian sanctions bill gets enough votes to be adopted by US Congress",
-     "titelDe": "Antirussisches Sanktionsgesetz erhält genügend Stimmen, um vom US-Kongress angenommen zu werden",
-     "quelle": "TASS",
-     "url": "https://tass.com/world/2188707",
-     "zeit": "2026-09-16T22:43:13.000Z",
-     "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
-     },
-     "priority": 51
-    },
-    {
-     "id": "Reuters:Boeing CEO says increasing 737 MAX output is taking longer than expected, shares slide",
-     "titel": "Boeing CEO says increasing 737 MAX output is taking longer than expected, shares slide",
-     "titelDe": "Boeing-CEO sagt, dass die Steigerung der 737 MAX-Produktion länger dauert als erwartet, Aktien fallen",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPakJFOC1fcDkxU25NckppM3JJSEdqV2hqOGl5U2lqQTdhTTlxLVNWR2tuV0x5Q1dsQzY5WGd6aFk4X3lrSlJHT2VhZzJJVjY4eGotb3dFRDRNTmp5c3QxMzNkSmdXZlczMzE4dWZrNXBWemV4R1FZZmVncmVGVHhDeWpLRnJ4bzNMYVFpWkxDMGxWNDEzT3BBYTFzWlkxdGZ2NVNUcTdJX1NmdnZIcFpkemdXZnJJZ3J5TVNGcXdxS0l6LV9W?oc=5",
-     "zeit": "2026-09-16T22:23:19.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 38
     }
    ]
   }
