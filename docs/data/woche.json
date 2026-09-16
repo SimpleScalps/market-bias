@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T02:47:49.646Z",
+ "updated": "2026-09-16T02:56:40.804Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T02:47:49.715Z",
+   "stand": "2026-09-16T02:56:40.886Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T02:47:49.700Z",
+   "stand": "2026-09-16T02:56:40.869Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,35 +1903,50 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T02:47:49.686Z",
+   "stand": "2026-09-16T02:56:40.850Z",
    "anzahl": 92,
    "klassen": {
     "crypto": {
-     "score": -0.08,
+     "score": -0.1019,
      "bull": 1,
-     "bear": 10,
-     "neut": 81
+     "bear": 12,
+     "neut": 79
     },
     "stocks": {
-     "score": -0.0764,
+     "score": -0.0949,
      "bull": 1,
-     "bear": 10,
-     "neut": 81
+     "bear": 12,
+     "neut": 79
     },
     "gold": {
-     "score": 0.0089,
+     "score": -0.0101,
      "bull": 8,
-     "bear": 2,
-     "neut": 82
+     "bear": 4,
+     "neut": 80
     },
     "usd": {
-     "score": 0.0426,
-     "bull": 2,
+     "score": 0.0653,
+     "bull": 4,
      "bear": 0,
-     "neut": 90
+     "neut": 88
     }
    },
    "top": [
+    {
+     "id": "BeInCrypto:Bank of Japan, Fed Rate Hikes Expected Same Week: Will Yen Rally?",
+     "titel": "Bank of Japan, Fed Rate Hikes Expected Same Week: Will Yen Rally?",
+     "titelDe": "Bank of Japan, Fed Rate Hikes Expected Same Week: Will Yen Rally?",
+     "quelle": "BeInCrypto",
+     "url": "https://beincrypto.com/boj-fed-rate-hikes-this-week/",
+     "zeit": "2026-09-16T02:31:37.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 83
+    },
     {
      "id": "BeInCrypto:White House Adviser Phelan Warns Fed Rate Hike Today Would Be a Mistake",
      "titel": "White House Adviser Phelan Warns Fed Rate Hike Today Would Be a Mistake",
@@ -1945,7 +1960,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 83
+     "priority": 82
     },
     {
      "id": "Reuters:Wall Street ends lower as oil spikes, the 10-year Treasury breaches 5%",
@@ -2034,21 +2049,6 @@
       "stocks": -0.45,
       "gold": 0.225,
       "usd": 0.15
-     },
-     "priority": 38
-    },
-    {
-     "id": "Al Jazeera (GN):Attacks on Saudi oil expose Iraqi PM’s struggle to control armed factions - aljazeera.com",
-     "titel": "Attacks on Saudi oil expose Iraqi PM’s struggle to control armed factions - aljazeera.com",
-     "titelDe": "Angriffe auf saudisches Öl zeigen, wie der irakische Premierminister versucht, bewaffnete Fraktionen zu kontrollieren",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTW5Ud19MQ29Ed0w4V2xWOTlxcEhyOWwzQWRYMzBXakYzeDY3Q19kTlE3eF9aVGYxbm5YdHlEd19QOTg2V1hKWFNfLUlkamdmZWdxY2dXMmdWanNUam1LNDZ2S2tTY1ZMYjYtWlpWQm5zSVdQc1JVakFBOEszNTRQdXZ6NUh1YUU3R2pvT2FTN0N2MmVIZ0REbjVmQ0NkR0xJejcyRHlIYy01R0cyX0VQUi14bTN5ay1QTWhIbXBZZ9IBxAFBVV95cUxOZ3NydWszRF9CYmZUX25aSVQzZjdkcEVHcXl5U1hiLTlwLTBqV3ZOTVlDUW44dWE2WndDamZmTE5CUW9pdElpeVF5T3MzSlpCRndjUTJJQ3NtZXo3OUlDNkFaODBUUHdQelk3UHhCVzB5b0V0UEdTNUhVN1o1aXFHUExoSF9GVGtzTE10UTBoSkxxdnNxTVoxM3E3aEdfZG00a1RYektyQkhtUXlvT19GcndYYVZfdTdnYzVSeU1zclZFdnJ5?oc=5",
-     "zeit": "2026-09-16T01:35:14.000Z",
-     "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
      },
      "priority": 38
     }
