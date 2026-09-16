@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T01:35:03.645Z",
+ "updated": "2026-09-16T01:45:31.092Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T01:35:03.696Z",
+   "stand": "2026-09-16T01:45:31.175Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T01:35:03.686Z",
+   "stand": "2026-09-16T01:45:31.157Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,32 +1903,32 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T01:35:03.675Z",
-   "anzahl": 82,
+   "stand": "2026-09-16T01:45:31.139Z",
+   "anzahl": 86,
    "klassen": {
     "crypto": {
-     "score": -0.0753,
+     "score": -0.075,
      "bull": 0,
-     "bear": 9,
-     "neut": 73
+     "bear": 10,
+     "neut": 76
     },
     "stocks": {
-     "score": -0.0731,
+     "score": -0.0729,
      "bull": 0,
-     "bear": 9,
-     "neut": 73
+     "bear": 10,
+     "neut": 76
     },
     "gold": {
-     "score": 0.0187,
-     "bull": 7,
+     "score": 0.0195,
+     "bull": 8,
      "bear": 2,
-     "neut": 73
+     "neut": 76
     },
     "usd": {
-     "score": 0.0348,
+     "score": 0.0343,
      "bull": 2,
      "bear": 0,
-     "neut": 80
+     "neut": 84
     }
    },
    "top": [
@@ -2004,6 +2004,21 @@
       "stocks": -0.45,
       "gold": 0.225,
       "usd": 0.15
+     },
+     "priority": 38
+    },
+    {
+     "id": "Al Jazeera:Attacks on Saudi oil expose Iraqi PM’s struggle to control armed factions",
+     "titel": "Attacks on Saudi oil expose Iraqi PM’s struggle to control armed factions",
+     "titelDe": "Angriffe auf saudisches Öl zeigen, wie der irakische Premierminister versucht, bewaffnete Fraktionen zu kontrollieren",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news-analysis/2026/9/16/attacks-on-saudi-oil-expose-iraqi-pms-struggle-to-control-armed-factions?traffic_source=rss",
+     "zeit": "2026-09-16T01:35:14.000Z",
+     "scores": {
+      "crypto": -0.405,
+      "stocks": -0.405,
+      "gold": 0.203,
+      "usd": 0.135
      },
      "priority": 38
     }
