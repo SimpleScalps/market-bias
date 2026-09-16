@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T17:46:01.061Z",
+ "updated": "2026-09-16T17:53:59.103Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T17:46:01.117Z",
+   "stand": "2026-09-16T17:53:59.183Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T17:46:01.106Z",
+   "stand": "2026-09-16T17:53:59.168Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,32 +1903,32 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T17:46:01.094Z",
-   "anzahl": 242,
+   "stand": "2026-09-16T17:53:59.152Z",
+   "anzahl": 245,
    "klassen": {
     "crypto": {
-     "score": -0.0645,
+     "score": -0.0771,
      "bull": 6,
-     "bear": 25,
+     "bear": 28,
      "neut": 211
     },
     "stocks": {
-     "score": -0.0608,
+     "score": -0.0723,
      "bull": 3,
-     "bear": 23,
+     "bear": 26,
      "neut": 216
     },
     "gold": {
-     "score": 0.0127,
-     "bull": 19,
-     "bear": 6,
+     "score": 0.0083,
+     "bull": 21,
+     "bear": 7,
      "neut": 217
     },
     "usd": {
-     "score": 0.0307,
-     "bull": 7,
+     "score": 0.0405,
+     "bull": 8,
      "bear": 2,
-     "neut": 233
+     "neut": 235
     }
    },
    "top": [
@@ -2008,6 +2008,21 @@
      "priority": 84
     },
     {
+     "id": "Guardian Wirtschaft:Federal Reserve expected to announce interest rate increase – live",
+     "titel": "Federal Reserve expected to announce interest rate increase – live",
+     "titelDe": "Es wird erwartet, dass die Federal Reserve die Zinserhöhung live ankündigt",
+     "quelle": "Guardian Wirtschaft",
+     "url": "https://www.theguardian.com/business/live/2026/sep/16/federal-reserve-interest-rate-increase-live-updates",
+     "zeit": "2026-09-16T17:44:04.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "Reuters:Live: Fed rate hike expected as inflation worries push up bond yields",
      "titel": "Live: Fed rate hike expected as inflation worries push up bond yields",
      "titelDe": "Live: Fed rate hike expected as inflation worries push up bond yields",
@@ -2036,21 +2051,6 @@
       "usd": 0.75
      },
      "priority": 82
-    },
-    {
-     "id": "MarketWatch:Why a Federal Reserve rate hike could be a ‘rare win’ for your retirement money",
-     "titel": "Why a Federal Reserve rate hike could be a ‘rare win’ for your retirement money",
-     "titelDe": "Warum eine Zinserhöhung der Fed ein seltener Gewinn für Ihre Altersvorsorge sein könnte",
-     "quelle": "MarketWatch",
-     "url": "https://www.marketwatch.com/story/why-a-federal-reserve-rate-hike-could-be-a-rare-win-for-your-retirement-money-3ae337df?mod=mw_rss_topstories",
-     "zeit": "2026-09-16T14:01:00.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 78
     }
    ]
   }
