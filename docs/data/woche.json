@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T16:05:05.763Z",
+ "updated": "2026-09-16T16:21:18.370Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T16:05:05.819Z",
+   "stand": "2026-09-16T16:21:18.456Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T16:05:05.808Z",
+   "stand": "2026-09-16T16:21:18.437Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T16:05:05.796Z",
+   "stand": "2026-09-16T16:21:18.419Z",
    "anzahl": 238,
    "klassen": {
     "crypto": {
@@ -1938,6 +1938,21 @@
      "titelDe": "Israelischer \"Doppelschlag\" -Luftangriff, der für die Tötung eines Schuljungen in Gaza verantwortlich ist",
      "quelle": "Al Jazeera (GN)",
      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWXVLNnJRdjhaRjdjaDNvT1NFRGxxMUFZU2I5MlBlYTdrOTFhVUVYRW5mMVJwc2wyWTlGeldKQ2dYbF9sZjF1dlRMZS1ZQTdWcjB4dC16Rzc5VFF0V1pzSFNGS05JdjkxN05FcmxCMS1aQkFWS2FmNFloRi11SzF4OXF3MV9RSmdkamJZTTM1RG93MER2dXhIQ0YzS3NGdzdqZ042NElNeFk0aHdoSEZmLUhR0gG3AUFVX3lxTE12WXgwR1h1T1FBOHZMUDZINlp1am9ja0ZTbkE3SEY0TC0tZ0JUa3V5VC1CeGlWVFFDWm96Q0ZqTGVsMEdGUUdIZjlEQ1ltRk9uRDFCeGZHY0MxZGlfdUx1alhad3ZHOEdCVkNlM0xvdFJNYlZkdk51U28yV21PR2c5d1FVb0hQa0swR0MzUUVzREhGQWhmb3MzVF9mR3RSakRzREZnN1ZEallMWS1VZUVmZjJaVFh3MA?oc=5",
+     "zeit": "2026-09-16T15:00:20.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
+    {
+     "id": "Al Jazeera:Israeli ‘double-tap’ air strike responsible for killing schoolboy in Gaza",
+     "titel": "Israeli ‘double-tap’ air strike responsible for killing schoolboy in Gaza",
+     "titelDe": "Israelischer \"Doppelschlag\" -Luftangriff, der für die Tötung eines Schuljungen in Gaza verantwortlich ist",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/9/16/israeli-double-tap-air-strike-responsible-for-killing-schoolboy-in-gaza?traffic_source=rss",
      "zeit": "2026-09-16T15:00:20.000Z",
      "scores": {
       "crypto": -0.9,
@@ -2029,21 +2044,6 @@
      "quelle": "FXStreet",
      "url": "https://www.fxstreet.com/news/euro-trades-cautiously-against-us-dollar-ahead-of-expected-fed-rate-hike-202609161345",
      "zeit": "2026-09-16T13:45:51.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 82
-    },
-    {
-     "id": "FXStreet:Silver price rebounds ahead of expected Fed rate hike, Warsh press conference",
-     "titel": "Silver price rebounds ahead of expected Fed rate hike, Warsh press conference",
-     "titelDe": "Silberpreis erholt sich vor erwarteter Zinserhöhung der Fed, Warsh-Pressekonferenz",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/silver-price-rebounds-ahead-of-expected-fed-rate-hike-warsh-press-conference-202609161341",
-     "zeit": "2026-09-16T13:41:38.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
