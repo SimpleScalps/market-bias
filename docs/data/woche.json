@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T06:07:25.681Z",
+ "updated": "2026-09-16T06:27:48.783Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T06:07:25.750Z",
+   "stand": "2026-09-16T06:27:48.855Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T06:07:25.736Z",
+   "stand": "2026-09-16T06:27:48.840Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,35 +1903,65 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T06:07:25.721Z",
-   "anzahl": 118,
+   "stand": "2026-09-16T06:27:48.825Z",
+   "anzahl": 125,
    "klassen": {
     "crypto": {
-     "score": -0.0568,
-     "bull": 4,
-     "bear": 9,
-     "neut": 105
+     "score": -0.1014,
+     "bull": 3,
+     "bear": 12,
+     "neut": 110
     },
     "stocks": {
-     "score": -0.05,
-     "bull": 4,
-     "bear": 9,
-     "neut": 105
+     "score": -0.0928,
+     "bull": 3,
+     "bear": 12,
+     "neut": 110
     },
     "gold": {
-     "score": -0.0302,
-     "bull": 5,
-     "bear": 4,
-     "neut": 109
+     "score": -0.0329,
+     "bull": 6,
+     "bear": 6,
+     "neut": 113
     },
     "usd": {
-     "score": 0.049,
-     "bull": 4,
+     "score": 0.0775,
+     "bull": 7,
      "bear": 0,
-     "neut": 114
+     "neut": 118
     }
    },
    "top": [
+    {
+     "id": "Reuters:Focus: Ukraine war drives European demand for bigger, cheaper missile arsenals",
+     "titel": "Focus: Ukraine war drives European demand for bigger, cheaper missile arsenals",
+     "titelDe": "Krieg in der Ukraine treibt die Nachfrage Europas nach größeren, günstigeren Munitionsarsenalen an",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPelZPWTd0UlVkWjZ3cWlqaWdQRHZ2dzhJUEx0TE1TWTNieTFrN19tZUt0OHFUY3Aya29PU2FaWjZsbWFCc29nRjdHOEUtYXMycGtnZUFaeUJMMDA3NXVMSDZMaUVZTGN2LUl2bjMzQlFvcW93UEJOWl9WTFdrM2huQUxLVEYyUkpwTV9BUU82YjBLZTRtVldoMUI5UlhXZ3lDMWFXSG1zaUFYODVOX0hRYy1BbzZWdGd5bjF3dHZ2aTNFLVlBX2hyUA?oc=5",
+     "zeit": "2026-09-16T06:08:00.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.428,
+      "usd": 0.285
+     },
+     "priority": 100
+    },
+    {
+     "id": "BeInCrypto:Tom Lee Sees Fed Rate Hike Today: Predicts a Big Equity Rally",
+     "titel": "Tom Lee Sees Fed Rate Hike Today: Predicts a Big Equity Rally",
+     "titelDe": "Tom Lee sieht heute einen Fed-Zinserhöhung: Vorhersage eines großen Aktienrallys",
+     "quelle": "BeInCrypto",
+     "url": "https://beincrypto.com/tom-lee-fed-rate-hike-rally/",
+     "zeit": "2026-09-16T06:00:00.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 83
+    },
     {
      "id": "FXStreet:Swiss Franc edges higher as US Dollar declines despite Fed rate hike bets",
      "titel": "Swiss Franc edges higher as US Dollar declines despite Fed rate hike bets",
@@ -2008,49 +2038,19 @@
      "priority": 73
     },
     {
-     "id": "Reuters:Wall Street ends lower as oil spikes, the 10-year Treasury breaches 5%",
-     "titel": "Wall Street ends lower as oil spikes, the 10-year Treasury breaches 5%",
-     "titelDe": "Die Wall Street endet niedriger, wenn der Ölpreis steigt, das 10-jährige Finanzministerium durchbricht 5 %",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4wV0N6QWFMeHk4Q0ZrZHVUOHZoUnBibW9PRGg0TGlTTHlTemoxb1F5dHUzRmx3dGpTYWU3a3UzT1FoZ0dJMWRwNW9Odk9rUHZs?oc=5",
-     "zeit": "2026-09-16T02:43:05.000Z",
+     "id": "CNBC Economy:UK inflation jumps to 3.1% as energy costs soar",
+     "titel": "UK inflation jumps to 3.1% as energy costs soar",
+     "titelDe": "UK-Inflation steigt auf 3,1 % durch steigende Energiepreise",
+     "quelle": "CNBC Economy",
+     "url": "https://www.cnbc.com/2026/09/16/uk-august-inflation-energy-gasoline.html",
+     "zeit": "2026-09-16T06:18:30.000Z",
      "scores": {
-      "crypto": -0.878,
-      "stocks": -0.803,
-      "gold": -0.211,
-      "usd": 0.626
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.611,
+      "usd": 1
      },
-     "priority": 45
-    },
-    {
-     "id": "Reuters:Indian shares seen opening higher after selloff; higher oil, Fed caution to cap gains",
-     "titel": "Indian shares seen opening higher after selloff; higher oil, Fed caution to cap gains",
-     "titelDe": "Indische Aktien sollen mit höherem Kurs eröffnen nach Verkaufsdruck; steigende Ölpreise, Fed‑Vorsicht begrenzt Gewinne",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTGZwNnhJd2VnRFVFRzkxTlFVSl9CM2NDVXduY3V6c21DMnFjNThSTkR2OFFTNUR6aVdabVBybkZ0TEVCTS1yR0p5YlZCYlR6dTl2NnhVRnRvcVJPeXU1NWFNVWNESW8yRld2c1JLanJsdXh2d1V1R0lId2RuQXU0cUVIb1g4RW1rMUJHZ1hSMGM1Y2JXTnhnLURBTkRKNlFzM3JqVmlZU21xRXlReG5GdG5sMFhCX0czb2ZNSmlsT0ZKX3lfNVVn?oc=5",
-     "zeit": "2026-09-16T02:32:00.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 78
-    },
-    {
-     "id": "FXStreet:Gold declines below $4,300 as US yields climb, Fed rate decision looms",
-     "titel": "Gold declines below $4,300 as US yields climb, Fed rate decision looms",
-     "titelDe": "Gold fällt unter 4.300 $, US-Renditen steigen, Fed-Entscheidung naht",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/gold-declines-below-4-300-as-us-yields-climb-fed-rate-decision-looms-202609152313",
-     "zeit": "2026-09-15T23:13:14.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.383,
-      "gold": -0.36,
-      "usd": 0.45
-     },
-     "priority": 75
+     "priority": 48
     }
    ]
   }
