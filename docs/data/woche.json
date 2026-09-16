@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T13:44:09.406Z",
+ "updated": "2026-09-16T13:56:21.251Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T13:44:09.483Z",
+   "stand": "2026-09-16T13:56:21.331Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T13:44:09.467Z",
+   "stand": "2026-09-16T13:56:21.316Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T13:44:09.449Z",
+   "stand": "2026-09-16T13:56:21.298Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -2038,19 +2038,19 @@
      "priority": 84
     },
     {
-     "id": "MarketWatch:Traders are betting Trump may soon turn on Fed chair Kevin Warsh as interest-rate hikes loom",
-     "titel": "Traders are betting Trump may soon turn on Fed chair Kevin Warsh as interest-rate hikes loom",
-     "titelDe": "Händler wetten, dass Trump bald den Fed-Vorsitzenden Kevin Warsh einschalten könnte, da sich Zinserhöhungen abzeichnen",
-     "quelle": "MarketWatch",
-     "url": "https://www.marketwatch.com/story/traders-are-betting-trump-may-soon-turn-on-fed-chair-kevin-warsh-as-interest-rate-hikes-loom-b0dfff2a?mod=mw_rss_topstories",
-     "zeit": "2026-09-16T12:53:00.000Z",
+     "id": "FXStreet:Euro trades cautiously against US Dollar ahead of expected Fed rate hike",
+     "titel": "Euro trades cautiously against US Dollar ahead of expected Fed rate hike",
+     "titelDe": "Euro handelt vorsichtig gegen den US-Dollar vor erwarteter Fed-Zinserhöhung",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/euro-trades-cautiously-against-us-dollar-ahead-of-expected-fed-rate-hike-202609161345",
+     "zeit": "2026-09-16T13:45:51.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 83
+     "priority": 84
     }
    ]
   }
