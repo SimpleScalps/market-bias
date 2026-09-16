@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T01:20:25.321Z",
+ "updated": "2026-09-16T01:35:03.645Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T01:20:25.366Z",
+   "stand": "2026-09-16T01:35:03.696Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T01:20:25.357Z",
+   "stand": "2026-09-16T01:35:03.686Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,32 +1903,32 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T01:20:25.347Z",
-   "anzahl": 79,
+   "stand": "2026-09-16T01:35:03.675Z",
+   "anzahl": 82,
    "klassen": {
     "crypto": {
-     "score": -0.0726,
+     "score": -0.0753,
      "bull": 0,
-     "bear": 8,
-     "neut": 71
+     "bear": 9,
+     "neut": 73
     },
     "stocks": {
-     "score": -0.0702,
+     "score": -0.0731,
      "bull": 0,
-     "bear": 8,
-     "neut": 71
+     "bear": 9,
+     "neut": 73
     },
     "gold": {
-     "score": 0.015,
-     "bull": 6,
+     "score": 0.0187,
+     "bull": 7,
      "bear": 2,
-     "neut": 71
+     "neut": 73
     },
     "usd": {
-     "score": 0.0351,
+     "score": 0.0348,
      "bull": 2,
      "bear": 0,
-     "neut": 77
+     "neut": 80
     }
    },
    "top": [
@@ -1960,7 +1960,22 @@
       "gold": -0.36,
       "usd": 0.45
      },
-     "priority": 76
+     "priority": 75
+    },
+    {
+     "id": "SCMP:Neither tariffs nor export controls will stop China’s industrial engine",
+     "titel": "Neither tariffs nor export controls will stop China’s industrial engine",
+     "titelDe": "Zölle und Exportkontrollen stoppen Chinas Industrie nicht",
+     "quelle": "SCMP",
+     "url": "https://www.scmp.com/opinion/china-opinion/article/3367200/neither-tariffs-nor-export-controls-will-stop-chinas-industrial-engine?utm_source=rss_feed",
+     "zeit": "2026-09-16T01:30:05.000Z",
+     "scores": {
+      "crypto": -0.405,
+      "stocks": -0.405,
+      "gold": 0.203,
+      "usd": 0.135
+     },
+     "priority": 68
     },
     {
      "id": "BeInCrypto:Why Did the CLARITY Act Fail and Will Crypto Prices Crash Further?",
