@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T23:18:38.213Z",
+ "updated": "2026-09-16T23:30:01.796Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T23:18:38.285Z",
+   "stand": "2026-09-16T23:30:01.870Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T23:18:38.270Z",
+   "stand": "2026-09-16T23:30:01.855Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-16T23:18:38.255Z",
-   "anzahl": 39,
+   "stand": "2026-09-16T23:30:01.839Z",
+   "anzahl": 42,
    "klassen": {
     "crypto": {
-     "score": -0.2588,
+     "score": -0.2603,
      "bull": 0,
-     "bear": 8,
-     "neut": 31
+     "bear": 9,
+     "neut": 33
     },
     "stocks": {
-     "score": -0.224,
+     "score": -0.2248,
      "bull": 0,
-     "bear": 8,
-     "neut": 31
+     "bear": 9,
+     "neut": 33
     },
     "gold": {
-     "score": -0.1708,
+     "score": -0.1766,
      "bull": 1,
-     "bear": 6,
-     "neut": 32
+     "bear": 7,
+     "neut": 34
     },
     "usd": {
-     "score": 0.2403,
-     "bull": 7,
+     "score": 0.2441,
+     "bull": 8,
      "bear": 0,
-     "neut": 32
+     "neut": 34
     }
    },
    "top": [
@@ -2101,6 +2101,21 @@
      "priority": 87
     },
     {
+     "id": "FXStreet:Gold falls to near $4,250 after Fed delivers rate hike",
+     "titel": "Gold falls to near $4,250 after Fed delivers rate hike",
+     "titelDe": "Gold fällt auf knapp 4.250 US-Dollar, nachdem Fed Zinserhöhung ankündigt",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/gold-falls-to-near-4-250-after-fed-delivers-rate-hike-202609162325",
+     "zeit": "2026-09-16T23:25:30.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "Reuters:Hong Kong Monetary Authority raises interest rates, tracking Fed move - reuters.com",
      "titel": "Hong Kong Monetary Authority raises interest rates, tracking Fed move - reuters.com",
      "titelDe": "Hongkong-Monetärbehörde erhöht Zinssätze, folgt Fed-Bewegung",
@@ -2116,6 +2131,21 @@
      "priority": 84
     },
     {
+     "id": "Reuters:Hong Kong Monetary Authority raises interest rates, tracking Fed move",
+     "titel": "Hong Kong Monetary Authority raises interest rates, tracking Fed move",
+     "titelDe": "Hongkong-Monetary Authority erhöht Zinsen, folgt Fed-Move",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMEcybmViazFiTVpzdkxQWGVQMWFnR053ZjhkeHpXQ0JWbDZNOThDWVhqQnlwcE5HMG9HZGVDUGhrOG9sazJlb2kxNjBqN004Ml81b3AySVktNVI0cTkzWUhhUXhrazByMEZvcVN4SFpSTkgxZVFDUWVMWi1yN0FUdXgtUVZJS1RuZUZsMFIzUHNydUZ1dTJqcHN2aHVYMk9EOTdub2NFT25UbnVrMHlvZi1keUZDYmdISnp1S05wQXQ?oc=5",
+     "zeit": "2026-09-16T23:10:15.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 83
+    },
+    {
      "id": "Guardian:IMF downgrades Australian economic forecast amid fears of interest rate hike",
      "titel": "IMF downgrades Australian economic forecast amid fears of interest rate hike",
      "titelDe": "IMF senkt Aussichten für australische Wirtschaft aus Angst vor Zinserhöhung",
@@ -2128,7 +2158,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 84
+     "priority": 83
     },
     {
      "id": "Reuters:Market Talk: First Fed rate hike in three years no 'panacea' for inflation",
@@ -2143,7 +2173,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 84
+     "priority": 83
     },
     {
      "id": "Reuters:Market Talk: First Fed rate hike in three years no 'panacea' for inflation - reuters.com",
@@ -2167,36 +2197,6 @@
      "quelle": "The Defiant",
      "url": "https://thedefiant.io/news/markets/bitcoin-round-trips-fed-rate-increase-zcash-sep-16-2026",
      "zeit": "2026-09-16T22:33:10.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 83
-    },
-    {
-     "id": "MarketWatch:As Fed rolls out its first interest-rate hike in 3 years, market braces for more increases",
-     "titel": "As Fed rolls out its first interest-rate hike in 3 years, market braces for more increases",
-     "titelDe": "Die Fed führt die erste Zinserhöhung seit drei Jahren ein, der Markt bereitet sich auf weitere Erhöhungen vor",
-     "quelle": "MarketWatch",
-     "url": "https://www.marketwatch.com/story/warshs-fed-rolls-out-first-interest-rate-hike-in-3-years-with-one-more-increase-expected-cde3060d?mod=mw_rss_topstories",
-     "zeit": "2026-09-16T22:25:00.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 83
-    },
-    {
-     "id": "FXStreet:The Euro's losing streak runs on as the Fed matches the ECB's rate hike",
-     "titel": "The Euro's losing streak runs on as the Fed matches the ECB's rate hike",
-     "titelDe": "Der Euro verliert weiter, während die Fed die Zinserhöhung der EZB nachahmt",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/the-euros-losing-streak-runs-on-as-the-fed-matches-the-ecbs-rate-hike-202609162201",
-     "zeit": "2026-09-16T22:01:20.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
