@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T19:44:01.659Z",
+ "updated": "2026-09-16T19:52:08.195Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T19:44:01.719Z",
+   "stand": "2026-09-16T19:52:08.253Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T19:44:01.707Z",
+   "stand": "2026-09-16T19:52:08.241Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,32 +1903,32 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T19:44:01.695Z",
+   "stand": "2026-09-16T19:52:08.229Z",
    "anzahl": 247,
    "klassen": {
     "crypto": {
-     "score": -0.1616,
+     "score": -0.1532,
      "bull": 4,
-     "bear": 39,
-     "neut": 204
+     "bear": 38,
+     "neut": 205
     },
     "stocks": {
-     "score": -0.1445,
+     "score": -0.1373,
      "bull": 2,
-     "bear": 37,
-     "neut": 208
-    },
-    "gold": {
-     "score": -0.0493,
-     "bull": 21,
-     "bear": 17,
+     "bear": 36,
      "neut": 209
     },
+    "gold": {
+     "score": -0.0434,
+     "bull": 21,
+     "bear": 16,
+     "neut": 210
+    },
     "usd": {
-     "score": 0.1194,
-     "bull": 18,
+     "score": 0.1114,
+     "bull": 17,
      "bear": 1,
-     "neut": 228
+     "neut": 229
     }
    },
    "top": [
@@ -1963,21 +1963,6 @@
      "priority": 99
     },
     {
-     "id": "FXStreet:Silver slides as hawkish Fed lifts US Dollar and Treasury yields",
-     "titel": "Silver slides as hawkish Fed lifts US Dollar and Treasury yields",
-     "titelDe": "Silber rutscht ab, da die hawkische Fed die Renditen von US-Dollar und Staatsanleihen erhöht",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/silver-slides-as-hawkish-fed-lifts-us-dollar-and-treasury-yields-202609161916",
-     "zeit": "2026-09-16T19:16:07.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -0.96,
-      "gold": -0.255,
-      "usd": 0.75
-     },
-     "priority": 88
-    },
-    {
      "id": "FXStreet:Australian Dollar falls against US Dollar after hawkish Fed rate hike",
      "titel": "Australian Dollar falls against US Dollar after hawkish Fed rate hike",
      "titelDe": "Australischer Dollar fällt gegenüber US-Dollar nach hawkischer Zinserhöhung der Fed",
@@ -1991,6 +1976,21 @@
       "usd": 1
      },
      "priority": 88
+    },
+    {
+     "id": "FXStreet:Silver slides as hawkish Fed lifts US Dollar and Treasury yields",
+     "titel": "Silver slides as hawkish Fed lifts US Dollar and Treasury yields",
+     "titelDe": "Silber rutscht ab, da die hawkische Fed die Renditen von US-Dollar und Staatsanleihen erhöht",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/silver-slides-as-hawkish-fed-lifts-us-dollar-and-treasury-yields-202609161916",
+     "zeit": "2026-09-16T19:16:07.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -0.96,
+      "gold": -0.255,
+      "usd": 0.75
+     },
+     "priority": 87
     },
     {
      "id": "Reuters:Russian drone attack on bus kills five in Ukraine's southeast, governor says",
@@ -2038,12 +2038,11 @@
      "priority": 84
     },
     {
-     "id": "Guardian Wirtschaft:‘Inflation is too high and has been for too long,’ says Kevin Warsh as Fed announces rate hikes – live",
-     "titel": "‘Inflation is too high and has been for too long,’ says Kevin Warsh as Fed announces rate hikes – live",
-     "titelDe": "\"Die Inflation ist zu hoch und schon zu lange\", sagt Kevin Warsh, als die Fed Zinserhöhungen ankündigt – live",
-     "quelle": "Guardian Wirtschaft",
-     "url": "https://www.theguardian.com/business/live/2026/sep/16/federal-reserve-interest-rate-increase-live-updates",
-     "zeit": "2026-09-16T18:46:59.000Z",
+     "id": "Decrypt:Fed Chair Implies Trump Is Only Half Right on the Economy Following Rate Hike",
+     "titel": "Fed Chair Implies Trump Is Only Half Right on the Economy Following Rate Hike",
+     "quelle": "Decrypt",
+     "url": "https://decrypt.co/378433/fed-hikes-rates-warsh-implies-trump-only-half-right",
+     "zeit": "2026-09-16T19:43:24.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
