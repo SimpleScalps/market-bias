@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T04:22:44.283Z",
+ "updated": "2026-09-16T04:37:48.300Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T04:22:44.362Z",
+   "stand": "2026-09-16T04:37:48.382Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T04:22:44.345Z",
+   "stand": "2026-09-16T04:37:48.365Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T04:22:44.327Z",
+   "stand": "2026-09-16T04:37:48.346Z",
    "anzahl": 103,
    "klassen": {
     "crypto": {
@@ -1932,6 +1932,21 @@
     }
    },
    "top": [
+    {
+     "id": "FXStreet:Swiss Franc edges higher as US Dollar declines despite Fed rate hike bets",
+     "titel": "Swiss Franc edges higher as US Dollar declines despite Fed rate hike bets",
+     "titelDe": "Schweizer Franken steigt leicht, obwohl der US-Dollar trotz Fed‑Zinserhöhung fällt",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/swiss-franc-edges-higher-as-us-dollar-declines-despite-fed-rate-hike-bets-202609160430",
+     "zeit": "2026-09-16T04:30:40.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
     {
      "id": "BeInCrypto:Bank of Japan, Fed Rate Hikes Expected Same Week: Will Yen Rally?",
      "titel": "Bank of Japan, Fed Rate Hikes Expected Same Week: Will Yen Rally?",
@@ -2036,21 +2051,6 @@
       "usd": 0.135
      },
      "priority": 64
-    },
-    {
-     "id": "BeInCrypto:Why Did the CLARITY Act Fail and Will Crypto Prices Crash Further?",
-     "titel": "Why Did the CLARITY Act Fail and Will Crypto Prices Crash Further?",
-     "titelDe": "Warum das CLARITY‑Gesetz scheiterte und ob Kryptopreise weiter fallen werden",
-     "quelle": "BeInCrypto",
-     "url": "https://beincrypto.com/clarity-act-failure-crypto-price-crash/",
-     "zeit": "2026-09-16T00:50:10.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 54
     }
    ]
   }
