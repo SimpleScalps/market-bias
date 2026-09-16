@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T18:23:08.978Z",
+ "updated": "2026-09-16T18:40:09.895Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T18:23:09.050Z",
+   "stand": "2026-09-16T18:40:09.984Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T18:23:09.035Z",
+   "stand": "2026-09-16T18:40:09.964Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T18:23:09.019Z",
+   "stand": "2026-09-16T18:40:09.945Z",
    "anzahl": 245,
    "klassen": {
     "crypto": {
@@ -1961,6 +1961,21 @@
       "usd": 0.3
      },
      "priority": 99
+    },
+    {
+     "id": "FXStreet:Australian Dollar falls against US Dollar after hawkish Fed rate hike",
+     "titel": "Australian Dollar falls against US Dollar after hawkish Fed rate hike",
+     "titelDe": "Australischer Dollar fällt gegenüber US-Dollar nach hawkischer Zinserhöhung der Fed",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/australian-dollar-falls-against-us-dollar-after-hawkish-fed-rate-hike-202609161823",
+     "zeit": "2026-09-16T18:23:34.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -0.85,
+      "gold": -0.8,
+      "usd": 1
+     },
+     "priority": 88
     },
     {
      "id": "Reuters:Russian drone attack on bus kills five in Ukraine's southeast, governor says",
@@ -2029,21 +2044,6 @@
      "quelle": "CoinDesk",
      "url": "https://www.coindesk.com/markets/2026/09/16/fed-raises-rates-by-25-basis-points-in-first-hike-since-july-2023",
      "zeit": "2026-09-16T17:54:55.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 84
-    },
-    {
-     "id": "Guardian Wirtschaft:Federal Reserve expected to announce interest rate increase – live",
-     "titel": "Federal Reserve expected to announce interest rate increase – live",
-     "titelDe": "Es wird erwartet, dass die Federal Reserve die Zinserhöhung live ankündigt",
-     "quelle": "Guardian Wirtschaft",
-     "url": "https://www.theguardian.com/business/live/2026/sep/16/federal-reserve-interest-rate-increase-live-updates",
-     "zeit": "2026-09-16T17:44:04.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
