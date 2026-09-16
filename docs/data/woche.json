@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T05:55:57.683Z",
+ "updated": "2026-09-16T06:07:25.681Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T05:55:57.761Z",
+   "stand": "2026-09-16T06:07:25.750Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T05:55:57.745Z",
+   "stand": "2026-09-16T06:07:25.736Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,32 +1903,32 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T05:55:57.727Z",
-   "anzahl": 114,
+   "stand": "2026-09-16T06:07:25.721Z",
+   "anzahl": 118,
    "klassen": {
     "crypto": {
-     "score": -0.0624,
+     "score": -0.0568,
      "bull": 4,
      "bear": 9,
-     "neut": 101
-    },
-    "stocks": {
-     "score": -0.0552,
-     "bull": 4,
-     "bear": 9,
-     "neut": 101
-    },
-    "gold": {
-     "score": -0.0306,
-     "bull": 5,
-     "bear": 4,
      "neut": 105
     },
-    "usd": {
-     "score": 0.0525,
+    "stocks": {
+     "score": -0.05,
+     "bull": 4,
+     "bear": 9,
+     "neut": 105
+    },
+    "gold": {
+     "score": -0.0302,
      "bull": 5,
-     "bear": 0,
+     "bear": 4,
      "neut": 109
+    },
+    "usd": {
+     "score": 0.049,
+     "bull": 4,
+     "bear": 0,
+     "neut": 114
     }
    },
    "top": [
@@ -1945,7 +1945,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 82
+     "priority": 81
     },
     {
      "id": "BeInCrypto:Bank of Japan, Fed Rate Hikes Expected Same Week: Will Yen Rally?",
@@ -1960,7 +1960,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 79
+     "priority": 78
     },
     {
      "id": "BeInCrypto:White House Adviser Phelan Warns Fed Rate Hike Today Would Be a Mistake",
@@ -1975,7 +1975,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 78
+     "priority": 77
     },
     {
      "id": "Reuters:Carney visits Europe to seek closer ties amid worsening trade war with Trump",
