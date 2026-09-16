@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T02:20:51.394Z",
+ "updated": "2026-09-16T02:37:00.330Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T02:20:51.474Z",
+   "stand": "2026-09-16T02:37:00.398Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T02:20:51.457Z",
+   "stand": "2026-09-16T02:37:00.384Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T02:20:51.439Z",
+   "stand": "2026-09-16T02:37:00.369Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -1932,6 +1932,21 @@
     }
    },
    "top": [
+    {
+     "id": "BeInCrypto:White House Adviser Phelan Warns Fed Rate Hike Today Would Be a Mistake",
+     "titel": "White House Adviser Phelan Warns Fed Rate Hike Today Would Be a Mistake",
+     "titelDe": "Weihnachtsberater Phelan warnt: Ein Fed‑Zinserhöhung heute wäre ein Fehler",
+     "quelle": "BeInCrypto",
+     "url": "https://beincrypto.com/phelan-fed-rate-hike-mistake/",
+     "zeit": "2026-09-16T02:00:00.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 83
+    },
     {
      "id": "Reuters:Wall Street ends lower as oil spikes, the 10-year Treasury breaches 5%",
      "titel": "Wall Street ends lower as oil spikes, the 10-year Treasury breaches 5%",
@@ -2036,21 +2051,6 @@
       "usd": 0.135
      },
      "priority": 38
-    },
-    {
-     "id": "Al Jazeera (GN):Attacks on Saudi oil expose Iraqi PM’s struggle to control armed factions",
-     "titel": "Attacks on Saudi oil expose Iraqi PM’s struggle to control armed factions",
-     "titelDe": "Angriffe auf saudisches Öl zeigen, wie der irakische Premierminister versucht, bewaffnete Fraktionen zu kontrollieren",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTW5Ud19MQ29Ed0w4V2xWOTlxcEhyOWwzQWRYMzBXakYzeDY3Q19kTlE3eF9aVGYxbm5YdHlEd19QOTg2V1hKWFNfLUlkamdmZWdxY2dXMmdWanNUam1LNDZ2S2tTY1ZMYjYtWlpWQm5zSVdQc1JVakFBOEszNTRQdXZ6NUh1YUU3R2pvT2FTN0N2MmVIZ0REbjVmQ0NkR0xJejcyRHlIYy01R0cyX0VQUi14bTN5ay1QTWhIbXBZZ9IBxAFBVV95cUxOZ3NydWszRF9CYmZUX25aSVQzZjdkcEVHcXl5U1hiLTlwLTBqV3ZOTVlDUW44dWE2WndDamZmTE5CUW9pdElpeVF5T3MzSlpCRndjUTJJQ3NtZXo3OUlDNkFaODBUUHdQelk3UHhCVzB5b0V0UEdTNUhVN1o1aXFHUExoSF9GVGtzTE10UTBoSkxxdnNxTVoxM3E3aEdfZG00a1RYektyQkhtUXlvT19GcndYYVZfdTdnYzVSeU1zclZFdnJ5?oc=5",
-     "zeit": "2026-09-16T01:35:14.000Z",
-     "scores": {
-      "crypto": -0.405,
-      "stocks": -0.405,
-      "gold": 0.203,
-      "usd": 0.135
-     },
-     "priority": 37
     }
    ]
   }
