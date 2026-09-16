@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T09:37:27.058Z",
+ "updated": "2026-09-16T09:48:56.907Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T09:37:27.128Z",
+   "stand": "2026-09-16T09:48:56.958Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T09:37:27.114Z",
+   "stand": "2026-09-16T09:48:56.948Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,32 +1903,32 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T09:37:27.099Z",
-   "anzahl": 168,
+   "stand": "2026-09-16T09:48:56.938Z",
+   "anzahl": 171,
    "klassen": {
     "crypto": {
-     "score": -0.0769,
+     "score": -0.0873,
      "bull": 3,
-     "bear": 16,
-     "neut": 149
-    },
-    "stocks": {
-     "score": -0.0776,
-     "bull": 2,
-     "bear": 16,
+     "bear": 18,
      "neut": 150
     },
-    "gold": {
-     "score": 0.0079,
-     "bull": 11,
-     "bear": 6,
+    "stocks": {
+     "score": -0.0874,
+     "bull": 2,
+     "bear": 18,
      "neut": 151
     },
+    "gold": {
+     "score": 0.0092,
+     "bull": 12,
+     "bear": 7,
+     "neut": 152
+    },
     "usd": {
-     "score": 0.044,
-     "bull": 8,
+     "score": 0.0494,
+     "bull": 9,
      "bear": 0,
-     "neut": 160
+     "neut": 162
     }
    },
    "top": [
@@ -1975,7 +1975,7 @@
       "gold": -0.211,
       "usd": 0.626
      },
-     "priority": 85
+     "priority": 84
     },
     {
      "id": "FXStreet:Swiss Franc edges higher as US Dollar declines despite Fed rate hike bets",
@@ -2008,21 +2008,6 @@
      "priority": 78
     },
     {
-     "id": "CNBC World:Canada invited to become EU’s first ‘associate member’ as Trump trade war intensifies",
-     "titel": "Canada invited to become EU’s first ‘associate member’ as Trump trade war intensifies",
-     "titelDe": "Kanada wurde eingeladen, das erste „assoziierte Mitglied“ der EU zu werden, da sich der Handelskrieg mit Trump verschärft",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/16/canada-eu-associate-member-von-der-leyen.html",
-     "zeit": "2026-09-16T08:45:10.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 74
-    },
-    {
      "id": "Reuters:Portugal's regulator raises power tariffs 2.7%, blames US-Iran conflict",
      "titel": "Portugal's regulator raises power tariffs 2.7%, blames US-Iran conflict",
      "titelDe": "Portugal erhöht Stromtarife um 2,7 %, legt US-Iran-Konflikt die Schuld zu",
@@ -2036,6 +2021,21 @@
       "usd": 0.255
      },
      "priority": 74
+    },
+    {
+     "id": "CNBC World:Canada invited to become EU’s first ‘associate member’ as Trump trade war intensifies",
+     "titel": "Canada invited to become EU’s first ‘associate member’ as Trump trade war intensifies",
+     "titelDe": "Kanada wurde eingeladen, das erste „assoziierte Mitglied“ der EU zu werden, da sich der Handelskrieg mit Trump verschärft",
+     "quelle": "CNBC World",
+     "url": "https://www.cnbc.com/2026/09/16/canada-eu-associate-member-von-der-leyen.html",
+     "zeit": "2026-09-16T08:45:10.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 73
     },
     {
      "id": "Reuters:Carney visits Europe to seek closer ties amid worsening trade war with Trump",
