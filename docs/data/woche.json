@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T13:30:11.976Z",
+ "updated": "2026-09-16T13:44:09.406Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T13:30:12.072Z",
+   "stand": "2026-09-16T13:44:09.483Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T13:30:12.052Z",
+   "stand": "2026-09-16T13:44:09.467Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T13:30:12.030Z",
+   "stand": "2026-09-16T13:44:09.449Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -2008,6 +2008,36 @@
      "priority": 84
     },
     {
+     "id": "FXStreet:Silver price rebounds ahead of expected Fed rate hike, Warsh press conference",
+     "titel": "Silver price rebounds ahead of expected Fed rate hike, Warsh press conference",
+     "titelDe": "Silberpreis erholt sich vor erwarteter Zinserhöhung der Fed, Warsh-Pressekonferenz",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/silver-price-rebounds-ahead-of-expected-fed-rate-hike-warsh-press-conference-202609161341",
+     "zeit": "2026-09-16T13:41:38.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
+     "id": "BeInCrypto:93% Chance of a Fed Rate Hike Today. What Happens to Bitcoin Now?",
+     "titel": "93% Chance of a Fed Rate Hike Today. What Happens to Bitcoin Now?",
+     "titelDe": "93% ige Chance auf eine Zinserhöhung der Fed heute. Was passiert jetzt mit Bitcoin?",
+     "quelle": "BeInCrypto",
+     "url": "https://beincrypto.com/fed-rate-hike-bitcoin-gold-warsh/",
+     "zeit": "2026-09-16T13:33:14.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "MarketWatch:Traders are betting Trump may soon turn on Fed chair Kevin Warsh as interest-rate hikes loom",
      "titel": "Traders are betting Trump may soon turn on Fed chair Kevin Warsh as interest-rate hikes loom",
      "titelDe": "Händler wetten, dass Trump bald den Fed-Vorsitzenden Kevin Warsh einschalten könnte, da sich Zinserhöhungen abzeichnen",
@@ -2021,36 +2051,6 @@
       "usd": 0.75
      },
      "priority": 83
-    },
-    {
-     "id": "Reuters:Warsh's words may matter more than the anticipated Fed rate hike",
-     "titel": "Warsh's words may matter more than the anticipated Fed rate hike",
-     "titelDe": "Warshs Worte könnten wichtiger sein als die erwartete Zinserhöhung der Fed",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPd0VZMTZPMGRVWVVTY0lVRERxMHhQdlNnb2NBOHROMDJETXBLVmJFTW12SmFybUloWGRfYm1ueDhEZHJuOWNPQXh3RHpDVllhRVpSUVFVeDJmMGFNNTM2RTRqMkVFaXdwTmM1eG1UeVhqLXNuYW5LMjZGYUFCYUV0djFqUTUxRkF2Vk9NeTh5VU44bENZYi1kaTBnS1NuVngtX1dIeEVtaw?oc=5",
-     "zeit": "2026-09-16T11:17:35.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 83
-    },
-    {
-     "id": "CoinDesk:Live updates: Bitcoin holds near $76,000 as traders brace for first Fed rate hike in three years",
-     "titel": "Live updates: Bitcoin holds near $76,000 as traders brace for first Fed rate hike in three years",
-     "titelDe": "Live-Updates: Bitcoin hält sich in der Nähe von 76.000 $, da sich die Händler auf die erste Zinserhöhung der Fed in drei Jahren vorbereiten",
-     "quelle": "CoinDesk",
-     "url": "https://www.coindesk.com/business/2026/09/16/live-updates-zcash-climbs-6-as-majors-slide-ahead-of-fed-rate-decision",
-     "zeit": "2026-09-16T10:37:46.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 80
     }
    ]
   }
