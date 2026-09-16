@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T03:56:55.065Z",
+ "updated": "2026-09-16T04:07:43.588Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T03:56:55.107Z",
+   "stand": "2026-09-16T04:07:43.637Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T03:56:55.099Z",
+   "stand": "2026-09-16T04:07:43.628Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,32 +1903,32 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T03:56:55.090Z",
-   "anzahl": 99,
+   "stand": "2026-09-16T04:07:43.617Z",
+   "anzahl": 100,
    "klassen": {
     "crypto": {
-     "score": -0.0725,
+     "score": -0.0683,
      "bull": 2,
      "bear": 9,
-     "neut": 88
+     "neut": 89
     },
     "stocks": {
-     "score": -0.0659,
+     "score": -0.0623,
      "bull": 2,
      "bear": 9,
-     "neut": 88
+     "neut": 89
     },
     "gold": {
-     "score": -0.0206,
+     "score": -0.0183,
      "bull": 6,
      "bear": 3,
-     "neut": 90
+     "neut": 91
     },
     "usd": {
-     "score": 0.0533,
+     "score": 0.0497,
      "bull": 3,
      "bear": 0,
-     "neut": 96
+     "neut": 97
     }
    },
    "top": [
@@ -1945,7 +1945,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 82
+     "priority": 81
     },
     {
      "id": "BeInCrypto:White House Adviser Phelan Warns Fed Rate Hike Today Would Be a Mistake",
@@ -2020,7 +2020,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 59
+     "priority": 58
     },
     {
      "id": "SCMP:Neither tariffs nor export controls will stop China’s industrial engine",
@@ -2035,7 +2035,7 @@
       "gold": 0.203,
       "usd": 0.135
      },
-     "priority": 65
+     "priority": 64
     },
     {
      "id": "BeInCrypto:Why Did the CLARITY Act Fail and Will Crypto Prices Crash Further?",
