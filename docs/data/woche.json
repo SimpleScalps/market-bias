@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T14:59:02.688Z",
+ "updated": "2026-09-16T15:12:13.587Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T14:59:02.777Z",
+   "stand": "2026-09-16T15:12:13.680Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T14:59:02.758Z",
+   "stand": "2026-09-16T15:12:13.659Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,32 +1903,32 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T14:59:02.738Z",
-   "anzahl": 235,
+   "stand": "2026-09-16T15:12:13.639Z",
+   "anzahl": 238,
    "klassen": {
     "crypto": {
-     "score": -0.1096,
-     "bull": 5,
+     "score": -0.1014,
+     "bull": 4,
      "bear": 27,
-     "neut": 203
+     "neut": 207
     },
     "stocks": {
-     "score": -0.0988,
-     "bull": 2,
+     "score": -0.0927,
+     "bull": 1,
      "bear": 25,
-     "neut": 208
+     "neut": 212
     },
     "gold": {
-     "score": -0.0269,
-     "bull": 15,
-     "bear": 11,
-     "neut": 209
+     "score": -0.0121,
+     "bull": 16,
+     "bear": 10,
+     "neut": 212
     },
     "usd": {
-     "score": 0.0776,
-     "bull": 13,
+     "score": 0.0652,
+     "bull": 11,
      "bear": 0,
-     "neut": 222
+     "neut": 227
     }
    },
    "top": [
@@ -1978,21 +1978,6 @@
      "priority": 84
     },
     {
-     "id": "MarketWatch:Why a Federal Reserve rate hike could be a ‘rare win’ for your retirement money",
-     "titel": "Why a Federal Reserve rate hike could be a ‘rare win’ for your retirement money",
-     "titelDe": "Warum eine Zinserhöhung der Fed ein seltener Gewinn für Ihre Altersvorsorge sein könnte",
-     "quelle": "MarketWatch",
-     "url": "https://www.marketwatch.com/story/why-a-federal-reserve-rate-hike-could-be-a-rare-win-for-your-retirement-money-3ae337df?mod=mw_rss_topstories",
-     "zeit": "2026-09-16T14:01:00.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 84
-    },
-    {
      "id": "Reuters:Live: Fed rate hike expected as inflation worries push up bond yields",
      "titel": "Live: Fed rate hike expected as inflation worries push up bond yields",
      "titelDe": "Live: Fed rate hike expected as inflation worries push up bond yields",
@@ -2008,6 +1993,21 @@
      "priority": 84
     },
     {
+     "id": "MarketWatch:Why a Federal Reserve rate hike could be a ‘rare win’ for your retirement money",
+     "titel": "Why a Federal Reserve rate hike could be a ‘rare win’ for your retirement money",
+     "titelDe": "Warum eine Zinserhöhung der Fed ein seltener Gewinn für Ihre Altersvorsorge sein könnte",
+     "quelle": "MarketWatch",
+     "url": "https://www.marketwatch.com/story/why-a-federal-reserve-rate-hike-could-be-a-rare-win-for-your-retirement-money-3ae337df?mod=mw_rss_topstories",
+     "zeit": "2026-09-16T14:01:00.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 82
+    },
+    {
      "id": "FXStreet:Euro trades cautiously against US Dollar ahead of expected Fed rate hike",
      "titel": "Euro trades cautiously against US Dollar ahead of expected Fed rate hike",
      "titelDe": "Euro handelt vorsichtig gegen den US-Dollar vor erwarteter Fed-Zinserhöhung",
@@ -2020,7 +2020,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 83
+     "priority": 82
     },
     {
      "id": "FXStreet:Silver price rebounds ahead of expected Fed rate hike, Warsh press conference",
@@ -2035,7 +2035,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 83
+     "priority": 82
     },
     {
      "id": "BeInCrypto:93% Chance of a Fed Rate Hike Today. What Happens to Bitcoin Now?",
@@ -2050,7 +2050,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 83
+     "priority": 81
     }
    ]
   }
