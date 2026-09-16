@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T06:58:30.656Z",
+ "updated": "2026-09-16T07:11:54.334Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T06:58:30.740Z",
+   "stand": "2026-09-16T07:11:54.399Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T06:58:30.721Z",
+   "stand": "2026-09-16T07:11:54.386Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T06:58:30.702Z",
+   "stand": "2026-09-16T07:11:54.372Z",
    "anzahl": 136,
    "klassen": {
     "crypto": {
@@ -1943,6 +1943,21 @@
       "crypto": -0.855,
       "stocks": -0.855,
       "gold": 0.428,
+      "usd": 0.285
+     },
+     "priority": 100
+    },
+    {
+     "id": "Reuters:Russian drone attack on bus kills five in Ukraine's southeast, governor says",
+     "titel": "Russian drone attack on bus kills five in Ukraine's southeast, governor says",
+     "titelDe": "Russischer Drohnenangriff auf Bus tötet fünf im Südosten der Ukraine, sagt Gouverneur",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbDNXZ2lkM0J6Q3h2bTlrR2xaeWNKbTUxOUgya1lMOUlubXItalZ6eWxkb2hBYW5SOS1RdElHRkRZZWQ0MjdDZm56ODYyTU5kN3JyalNXdmdheDU3VjNQMXZxQVBHdVJseC0tNktZS3k2Z1ZOaWNoQ2QzTkRfOVJkb0lTS1dSMXlUWDVIT1RiWXBaanBjRzRHaElUWG9SV2U3dGt6Zm5JU2NKbEY1azYtY1VNUlRGdEN4?oc=5",
+     "zeit": "2026-09-16T06:57:00.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
       "usd": 0.285
      },
      "priority": 100
@@ -2036,21 +2051,6 @@
       "usd": 0.255
      },
      "priority": 73
-    },
-    {
-     "id": "CNBC Economy:UK inflation jumps to 3.1% as energy costs soar",
-     "titel": "UK inflation jumps to 3.1% as energy costs soar",
-     "titelDe": "UK-Inflation steigt auf 3,1 % durch steigende Energiepreise",
-     "quelle": "CNBC Economy",
-     "url": "https://www.cnbc.com/2026/09/16/uk-august-inflation-energy-gasoline.html",
-     "zeit": "2026-09-16T06:18:30.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": -0.611,
-      "usd": 1
-     },
-     "priority": 48
     }
    ]
   }
