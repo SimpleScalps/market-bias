@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T04:37:48.300Z",
+ "updated": "2026-09-16T04:48:34.168Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T04:37:48.382Z",
+   "stand": "2026-09-16T04:48:34.248Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T04:37:48.365Z",
+   "stand": "2026-09-16T04:48:34.231Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,32 +1903,32 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T04:37:48.346Z",
-   "anzahl": 103,
+   "stand": "2026-09-16T04:48:34.213Z",
+   "anzahl": 106,
    "klassen": {
     "crypto": {
-     "score": -0.0658,
-     "bull": 2,
-     "bear": 9,
+     "score": -0.077,
+     "bull": 3,
+     "bear": 11,
      "neut": 92
     },
     "stocks": {
-     "score": -0.0599,
-     "bull": 2,
-     "bear": 9,
+     "score": -0.0684,
+     "bull": 3,
+     "bear": 11,
      "neut": 92
     },
     "gold": {
-     "score": -0.0175,
+     "score": -0.0358,
      "bull": 6,
-     "bear": 3,
-     "neut": 94
+     "bear": 5,
+     "neut": 95
     },
     "usd": {
-     "score": 0.0478,
-     "bull": 3,
+     "score": 0.0638,
+     "bull": 5,
      "bear": 0,
-     "neut": 100
+     "neut": 101
     }
    },
    "top": [
@@ -1960,7 +1960,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 81
+     "priority": 80
     },
     {
      "id": "BeInCrypto:White House Adviser Phelan Warns Fed Rate Hike Today Would Be a Mistake",
@@ -2035,7 +2035,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 58
+     "priority": 57
     },
     {
      "id": "SCMP:Neither tariffs nor export controls will stop China’s industrial engine",
@@ -2050,7 +2050,7 @@
       "gold": 0.203,
       "usd": 0.135
      },
-     "priority": 64
+     "priority": 63
     }
    ]
   }
