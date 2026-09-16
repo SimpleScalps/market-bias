@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T21:54:40.603Z",
+ "updated": "2026-09-16T22:03:48.233Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T21:54:40.670Z",
+   "stand": "2026-09-16T22:03:48.286Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T21:54:40.651Z",
+   "stand": "2026-09-16T22:03:48.275Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -2049,6 +2049,54 @@
       "stocks": -0.803,
       "gold": -0.211,
       "usd": 0.626
+     },
+     "priority": 84
+    }
+   ]
+  },
+  "2026-09-17": {
+   "tag": "2026-09-17",
+   "stand": "2026-09-16T22:03:48.264Z",
+   "anzahl": 4,
+   "klassen": {
+    "crypto": {
+     "score": -0.2421,
+     "bull": 0,
+     "bear": 1,
+     "neut": 3
+    },
+    "stocks": {
+     "score": -0.2056,
+     "bull": 0,
+     "bear": 1,
+     "neut": 3
+    },
+    "gold": {
+     "score": -0.1936,
+     "bull": 0,
+     "bear": 1,
+     "neut": 3
+    },
+    "usd": {
+     "score": 0.2421,
+     "bull": 1,
+     "bear": 0,
+     "neut": 3
+    }
+   },
+   "top": [
+    {
+     "id": "FXStreet:The Euro's losing streak runs on as the Fed matches the ECB's rate hike",
+     "titel": "The Euro's losing streak runs on as the Fed matches the ECB's rate hike",
+     "titelDe": "Der Euro verliert weiter, während die Fed die Zinserhöhung der EZB nachahmt",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/the-euros-losing-streak-runs-on-as-the-fed-matches-the-ecbs-rate-hike-202609162201",
+     "zeit": "2026-09-16T22:01:20.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
      },
      "priority": 84
     }
