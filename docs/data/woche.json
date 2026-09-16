@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T13:14:45.677Z",
+ "updated": "2026-09-16T13:30:11.976Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T13:14:45.770Z",
+   "stand": "2026-09-16T13:30:12.072Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T13:14:45.750Z",
+   "stand": "2026-09-16T13:30:12.052Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T13:14:45.729Z",
+   "stand": "2026-09-16T13:30:12.030Z",
    "anzahl": 234,
    "klassen": {
     "crypto": {
@@ -1993,6 +1993,21 @@
      "priority": 84
     },
     {
+     "id": "Reuters:Live: Fed rate hike expected as inflation worries push up bond yields",
+     "titel": "Live: Fed rate hike expected as inflation worries push up bond yields",
+     "titelDe": "Live: Fed rate hike expected as inflation worries push up bond yields",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWldUM2tiQkhMQjAxbkhkN2VNbTFJd21NVWxjX0tKTmo4dV9yNGtGSXkzelotaDZJM3l1MURqOUplaHAyeF9XanhXQVJ6cEJfbFVwYm1RaDIxUHFVdWZkZTcyUTdLQl9KNWNqWW1MLVR2ZkNqWW5NX3NjTjhfWmhEZ2VpOERtbGxvbmRTcHR0Q041TjU1OHIwQkhUYXNlcnBOQ1JmMjQwWXVwQQ?oc=5",
+     "zeit": "2026-09-16T13:14:09.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "MarketWatch:Traders are betting Trump may soon turn on Fed chair Kevin Warsh as interest-rate hikes loom",
      "titel": "Traders are betting Trump may soon turn on Fed chair Kevin Warsh as interest-rate hikes loom",
      "titelDe": "Händler wetten, dass Trump bald den Fed-Vorsitzenden Kevin Warsh einschalten könnte, da sich Zinserhöhungen abzeichnen",
@@ -2029,21 +2044,6 @@
      "quelle": "CoinDesk",
      "url": "https://www.coindesk.com/business/2026/09/16/live-updates-zcash-climbs-6-as-majors-slide-ahead-of-fed-rate-decision",
      "zeit": "2026-09-16T10:37:46.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 80
-    },
-    {
-     "id": "FXStreet:Swiss Franc edges higher as US Dollar declines despite Fed rate hike bets",
-     "titel": "Swiss Franc edges higher as US Dollar declines despite Fed rate hike bets",
-     "titelDe": "Schweizer Franken steigt leicht, obwohl der US-Dollar trotz Fed‑Zinserhöhung fällt",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/swiss-franc-edges-higher-as-us-dollar-declines-despite-fed-rate-hike-bets-202609160430",
-     "zeit": "2026-09-16T04:30:40.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
