@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T22:52:49.332Z",
+ "updated": "2026-09-16T23:04:11.171Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T22:52:49.422Z",
+   "stand": "2026-09-16T23:04:11.225Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T22:52:49.402Z",
+   "stand": "2026-09-16T23:04:11.214Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-16T22:52:49.382Z",
-   "anzahl": 32,
+   "stand": "2026-09-16T23:04:11.203Z",
+   "anzahl": 37,
    "klassen": {
     "crypto": {
-     "score": -0.2548,
+     "score": -0.262,
      "bull": 0,
-     "bear": 7,
-     "neut": 25
+     "bear": 9,
+     "neut": 28
     },
     "stocks": {
-     "score": -0.2231,
+     "score": -0.2305,
      "bull": 0,
-     "bear": 7,
-     "neut": 25
+     "bear": 9,
+     "neut": 28
     },
     "gold": {
-     "score": -0.1462,
-     "bull": 3,
-     "bear": 4,
-     "neut": 25
+     "score": -0.1412,
+     "bull": 4,
+     "bear": 5,
+     "neut": 28
     },
     "usd": {
-     "score": 0.2253,
-     "bull": 4,
+     "score": 0.227,
+     "bull": 5,
      "bear": 0,
-     "neut": 28
+     "neut": 32
     }
    },
    "top": [
@@ -2098,7 +2098,22 @@
       "gold": -0.8,
       "usd": 1
      },
-     "priority": 88
+     "priority": 87
+    },
+    {
+     "id": "Reuters:Market Talk: First Fed rate hike in three years no 'panacea' for inflation",
+     "titel": "Market Talk: First Fed rate hike in three years no 'panacea' for inflation",
+     "titelDe": "Markttalk: Erste Fed‑Erhöhung in drei Jahren ist keine 'Panzerlösung' für die Inflation",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5GakllY0ZKMGpySTZCRng3SDFvclVFT1dhN093OUFrWEFXVXJuclR0RmJ3VTJ2eU5rbGxoaWpqT2gxb3VtQ0FfSkZueW5VS0NTTkRyQjJtOWcxSXBEYWV6UXluNXhWRkk?oc=5",
+     "zeit": "2026-09-16T22:58:16.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
     },
     {
      "id": "The Defiant:Bitcoin Round-Trips the First Fed Rate Increase Since 2023 as Zcash Runs to $1,383",
@@ -2143,7 +2158,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 83
+     "priority": 82
     },
     {
      "id": "TASS:Anti-Russian sanctions bill gets enough votes to be adopted by US Congress",
