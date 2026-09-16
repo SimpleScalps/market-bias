@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T07:55:23.346Z",
+ "updated": "2026-09-16T08:04:43.202Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T07:55:23.431Z",
+   "stand": "2026-09-16T08:04:43.290Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T07:55:23.413Z",
+   "stand": "2026-09-16T08:04:43.271Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,32 +1903,32 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T07:55:23.394Z",
-   "anzahl": 142,
+   "stand": "2026-09-16T08:04:43.251Z",
+   "anzahl": 145,
    "klassen": {
     "crypto": {
-     "score": -0.0815,
-     "bull": 3,
+     "score": -0.0828,
+     "bull": 2,
      "bear": 15,
-     "neut": 124
+     "neut": 128
     },
     "stocks": {
-     "score": -0.0759,
-     "bull": 3,
+     "score": -0.0774,
+     "bull": 2,
      "bear": 15,
-     "neut": 124
+     "neut": 128
     },
     "gold": {
-     "score": -0.0167,
+     "score": -0.013,
      "bull": 9,
      "bear": 6,
-     "neut": 127
+     "neut": 130
     },
     "usd": {
-     "score": 0.0574,
+     "score": 0.0562,
      "bull": 7,
      "bear": 0,
-     "neut": 135
+     "neut": 138
     }
    },
    "top": [
@@ -2023,21 +2023,6 @@
      "priority": 75
     },
     {
-     "id": "BeInCrypto:White House Adviser Phelan Warns Fed Rate Hike Today Would Be a Mistake",
-     "titel": "White House Adviser Phelan Warns Fed Rate Hike Today Would Be a Mistake",
-     "titelDe": "Weihnachtsberater Phelan warnt: Ein Fed‑Zinserhöhung heute wäre ein Fehler",
-     "quelle": "BeInCrypto",
-     "url": "https://beincrypto.com/phelan-fed-rate-hike-mistake/",
-     "zeit": "2026-09-16T02:00:00.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 75
-    },
-    {
      "id": "Reuters:Carney visits Europe to seek closer ties amid worsening trade war with Trump",
      "titel": "Carney visits Europe to seek closer ties amid worsening trade war with Trump",
      "titelDe": "Carney besucht Europa, um angesichts des sich verschärfenden Handelskrieges mit Trump engere Beziehungen zu suchen",
@@ -2051,6 +2036,21 @@
       "usd": 0.255
      },
      "priority": 73
+    },
+    {
+     "id": "BeInCrypto:White House Adviser Phelan Warns Fed Rate Hike Today Would Be a Mistake",
+     "titel": "White House Adviser Phelan Warns Fed Rate Hike Today Would Be a Mistake",
+     "titelDe": "Weihnachtsberater Phelan warnt: Ein Fed‑Zinserhöhung heute wäre ein Fehler",
+     "quelle": "BeInCrypto",
+     "url": "https://beincrypto.com/phelan-fed-rate-hike-mistake/",
+     "zeit": "2026-09-16T02:00:00.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 74
     }
    ]
   }
