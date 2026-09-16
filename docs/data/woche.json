@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T12:29:53.799Z",
+ "updated": "2026-09-16T12:47:11.530Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-16T12:29:53.856Z",
+   "stand": "2026-09-16T12:47:11.577Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1750,7 +1750,7 @@
   },
   "2026-09-15": {
    "tag": "2026-09-15",
-   "stand": "2026-09-16T12:29:53.845Z",
+   "stand": "2026-09-16T12:47:11.568Z",
    "anzahl": 242,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-16T12:29:53.833Z",
+   "stand": "2026-09-16T12:47:11.559Z",
    "anzahl": 219,
    "klassen": {
     "crypto": {
@@ -1993,6 +1993,21 @@
      "priority": 83
     },
     {
+     "id": "CoinDesk:Live updates: Bitcoin holds near $76,000 as traders brace for first Fed rate hike in three years",
+     "titel": "Live updates: Bitcoin holds near $76,000 as traders brace for first Fed rate hike in three years",
+     "titelDe": "Live-Updates: Bitcoin hält sich in der Nähe von 76.000 $, da sich die Händler auf die erste Zinserhöhung der Fed in drei Jahren vorbereiten",
+     "quelle": "CoinDesk",
+     "url": "https://www.coindesk.com/business/2026/09/16/live-updates-zcash-climbs-6-as-majors-slide-ahead-of-fed-rate-decision",
+     "zeit": "2026-09-16T10:37:46.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 81
+    },
+    {
      "id": "FXStreet:Swiss Franc edges higher as US Dollar declines despite Fed rate hike bets",
      "titel": "Swiss Franc edges higher as US Dollar declines despite Fed rate hike bets",
      "titelDe": "Schweizer Franken steigt leicht, obwohl der US-Dollar trotz Fed‑Zinserhöhung fällt",
@@ -2036,21 +2051,6 @@
       "usd": 0.75
      },
      "priority": 75
-    },
-    {
-     "id": "CNBC World:Canada invited to become EU’s first ‘associate member’ as Trump trade war intensifies",
-     "titel": "Canada invited to become EU’s first ‘associate member’ as Trump trade war intensifies",
-     "titelDe": "Kanada wurde eingeladen, das erste „assoziierte Mitglied“ der EU zu werden, da sich der Handelskrieg mit Trump verschärft",
-     "quelle": "CNBC World",
-     "url": "https://www.cnbc.com/2026/09/16/canada-eu-associate-member-von-der-leyen.html",
-     "zeit": "2026-09-16T08:45:10.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 72
     }
    ]
   }
