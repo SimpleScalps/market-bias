@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17T11:06:46.185Z",
+ "updated": "2026-09-17T11:21:29.508Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-17T11:06:46.276Z",
+   "stand": "2026-09-17T11:21:29.601Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-17T11:06:46.256Z",
+   "stand": "2026-09-17T11:21:29.580Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -2056,30 +2056,30 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-17T11:06:46.236Z",
-   "anzahl": 185,
+   "stand": "2026-09-17T11:21:29.560Z",
+   "anzahl": 186,
    "klassen": {
     "crypto": {
-     "score": -0.1015,
-     "bull": 4,
-     "bear": 17,
-     "neut": 164
+     "score": -0.1004,
+     "bull": 5,
+     "bear": 19,
+     "neut": 162
     },
     "stocks": {
-     "score": -0.0918,
-     "bull": 2,
-     "bear": 16,
-     "neut": 167
+     "score": -0.0911,
+     "bull": 3,
+     "bear": 18,
+     "neut": 165
     },
     "gold": {
-     "score": -0.0662,
-     "bull": 6,
-     "bear": 12,
-     "neut": 167
+     "score": -0.0609,
+     "bull": 8,
+     "bear": 13,
+     "neut": 165
     },
     "usd": {
-     "score": 0.0963,
-     "bull": 11,
+     "score": 0.0928,
+     "bull": 12,
      "bear": 1,
      "neut": 173
     }
@@ -2188,7 +2188,7 @@
       "gold": -0.8,
       "usd": 1
      },
-     "priority": 75
+     "priority": 74
     },
     {
      "id": "Reuters:Wall St futures rise as Fed rate hike lifts long-standing overhang",
