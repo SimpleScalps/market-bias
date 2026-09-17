@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17T00:57:53.523Z",
+ "updated": "2026-09-17T01:09:43.561Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-17T00:57:53.595Z",
+   "stand": "2026-09-17T01:09:43.646Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-17T00:57:53.580Z",
+   "stand": "2026-09-17T01:09:43.627Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-17T00:57:53.564Z",
-   "anzahl": 70,
+   "stand": "2026-09-17T01:09:43.608Z",
+   "anzahl": 71,
    "klassen": {
     "crypto": {
-     "score": -0.1388,
+     "score": -0.1241,
      "bull": 2,
-     "bear": 10,
-     "neut": 58
-    },
-    "stocks": {
-     "score": -0.1356,
-     "bull": 1,
-     "bear": 10,
-     "neut": 59
-    },
-    "gold": {
-     "score": -0.0609,
-     "bull": 5,
-     "bear": 5,
+     "bear": 9,
      "neut": 60
     },
+    "stocks": {
+     "score": -0.1214,
+     "bull": 1,
+     "bear": 9,
+     "neut": 61
+    },
+    "gold": {
+     "score": -0.06,
+     "bull": 4,
+     "bear": 5,
+     "neut": 62
+    },
     "usd": {
-     "score": 0.1205,
+     "score": 0.1111,
      "bull": 5,
      "bear": 0,
-     "neut": 65
+     "neut": 66
     }
    },
    "top": [
@@ -2161,21 +2161,6 @@
      "priority": 83
     },
     {
-     "id": "FXStreet:Gold falls to near $4,250 after Fed delivers rate hike",
-     "titel": "Gold falls to near $4,250 after Fed delivers rate hike",
-     "titelDe": "Gold fällt auf knapp 4.250 US-Dollar, nachdem Fed Zinserhöhung ankündigt",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/gold-falls-to-near-4-250-after-fed-delivers-rate-hike-202609162325",
-     "zeit": "2026-09-16T23:25:30.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 82
-    },
-    {
      "id": "Guardian:IMF downgrades Australian economic forecast amid fears of interest rate hike",
      "titel": "IMF downgrades Australian economic forecast amid fears of interest rate hike",
      "titelDe": "IMF senkt Aussichten für australische Wirtschaft aus Angst vor Zinserhöhung",
@@ -2189,6 +2174,21 @@
       "usd": 0.75
      },
      "priority": 82
+    },
+    {
+     "id": "FXStreet:Gold falls to near $4,250 after Fed delivers rate hike",
+     "titel": "Gold falls to near $4,250 after Fed delivers rate hike",
+     "titelDe": "Gold fällt auf knapp 4.250 US-Dollar, nachdem Fed Zinserhöhung ankündigt",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/gold-falls-to-near-4-250-after-fed-delivers-rate-hike-202609162325",
+     "zeit": "2026-09-16T23:25:30.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 81
     },
     {
      "id": "The Defiant:Bitcoin Round-Trips the First Fed Rate Increase Since 2023 as Zcash Runs to $1,383",
