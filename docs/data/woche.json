@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17T23:32:51.695Z",
+ "updated": "2026-09-17T23:42:39.130Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1750,7 +1750,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-17T23:32:51.751Z",
+   "stand": "2026-09-17T23:42:39.213Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-17T23:32:51.740Z",
+   "stand": "2026-09-17T23:42:39.196Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-17T23:32:51.729Z",
-   "anzahl": 29,
+   "stand": "2026-09-17T23:42:39.177Z",
+   "anzahl": 37,
    "klassen": {
     "crypto": {
-     "score": -0.0524,
+     "score": -0.0422,
      "bull": 0,
      "bear": 2,
-     "neut": 27
+     "neut": 35
     },
     "stocks": {
-     "score": -0.0445,
+     "score": -0.0359,
      "bull": 0,
      "bear": 2,
-     "neut": 27
+     "neut": 35
     },
     "gold": {
-     "score": -0.0419,
+     "score": -0.0338,
      "bull": 0,
      "bear": 2,
-     "neut": 27
+     "neut": 35
     },
     "usd": {
-     "score": 0.0524,
+     "score": 0.0422,
      "bull": 2,
      "bear": 0,
-     "neut": 27
+     "neut": 35
     }
    },
    "top": [
@@ -2098,7 +2098,7 @@
       "gold": -0.4,
       "usd": 0.5
      },
-     "priority": 80
+     "priority": 79
     },
     {
      "id": "Reuters:Goldman's October hike call underscores renewed Fed tightening risks - reuters.com",
