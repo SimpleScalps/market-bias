@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17T06:05:24.026Z",
+ "updated": "2026-09-17T06:26:46.000Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-17T06:05:24.093Z",
+   "stand": "2026-09-17T06:26:46.092Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-17T06:05:24.079Z",
+   "stand": "2026-09-17T06:26:46.073Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-17T06:05:24.065Z",
-   "anzahl": 120,
+   "stand": "2026-09-17T06:26:46.052Z",
+   "anzahl": 125,
    "klassen": {
     "crypto": {
-     "score": -0.1706,
+     "score": -0.1656,
      "bull": 3,
-     "bear": 16,
-     "neut": 101
+     "bear": 15,
+     "neut": 107
     },
     "stocks": {
-     "score": -0.1645,
+     "score": -0.1595,
      "bull": 1,
-     "bear": 16,
-     "neut": 103
+     "bear": 15,
+     "neut": 109
     },
     "gold": {
-     "score": -0.085,
-     "bull": 7,
+     "score": -0.0881,
+     "bull": 6,
      "bear": 10,
-     "neut": 103
+     "neut": 109
     },
     "usd": {
-     "score": 0.1527,
+     "score": 0.1514,
      "bull": 11,
      "bear": 0,
-     "neut": 109
+     "neut": 114
     }
    },
    "top": [
@@ -2101,21 +2101,6 @@
      "priority": 87
     },
     {
-     "id": "TASS:Zaporozhye NPP chief urges world not to treat attacks on nuclear sites as norm",
-     "titel": "Zaporozhye NPP chief urges world not to treat attacks on nuclear sites as norm",
-     "titelDe": "Der Leiter des Kernkraftwerks Saporoschje fordert die Welt auf, Angriffe auf Kernkraftwerke nicht als Norm zu behandeln",
-     "quelle": "TASS",
-     "url": "https://tass.com/society/2188771",
-     "zeit": "2026-09-17T05:02:27.000Z",
-     "scores": {
-      "crypto": -0.855,
-      "stocks": -0.855,
-      "gold": 0.427,
-      "usd": 0.285
-     },
-     "priority": 100
-    },
-    {
      "id": "FXStreet:Canadian Dollar slides to five-week low after Fed’s hawkish decision",
      "titel": "Canadian Dollar slides to five-week low after Fed’s hawkish decision",
      "titelDe": "Kanadischer Dollar fällt auf fünfwöchiges Tief nach hawkisher Fed-Entscheidung",
@@ -2131,6 +2116,21 @@
      "priority": 85
     },
     {
+     "id": "TASS:Zaporozhye NPP chief urges world not to treat attacks on nuclear sites as norm",
+     "titel": "Zaporozhye NPP chief urges world not to treat attacks on nuclear sites as norm",
+     "titelDe": "Der Leiter des Kernkraftwerks Saporoschje fordert die Welt auf, Angriffe auf Kernkraftwerke nicht als Norm zu behandeln",
+     "quelle": "TASS",
+     "url": "https://tass.com/society/2188771",
+     "zeit": "2026-09-17T05:02:27.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 99
+    },
+    {
      "id": "Cointelegraph:Bitcoin absorbs Fed rate hike as officials see more tightening",
      "titel": "Bitcoin absorbs Fed rate hike as officials see more tightening",
      "titelDe": "Bitcoin absorbiert die Fed-Zinserhöhung, während Beamte weitere Straffungen erwarten",
@@ -2143,7 +2143,7 @@
       "gold": -0.8,
       "usd": 1
      },
-     "priority": 83
+     "priority": 82
     },
     {
      "id": "TASS:US, allies boost potential for nuclear war — North Korea’s deputy defense minsiter",
@@ -2188,7 +2188,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 83
+     "priority": 82
     },
     {
      "id": "FXStreet:US 10-Year Treasury Yield nears 5% after Fed rate hike, Middle East tensions raise inflation fears",
