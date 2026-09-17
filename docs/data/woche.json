@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17T12:06:06.924Z",
+ "updated": "2026-09-17T12:26:55.341Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-17T12:06:07.005Z",
+   "stand": "2026-09-17T12:26:55.404Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-17T12:06:06.989Z",
+   "stand": "2026-09-17T12:26:55.392Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -2056,7 +2056,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-17T12:06:06.968Z",
+   "stand": "2026-09-17T12:26:55.379Z",
    "anzahl": 194,
    "klassen": {
     "crypto": {
@@ -2085,6 +2085,21 @@
     }
    },
    "top": [
+    {
+     "id": "SCMP:UN says US strikes on Iran school that killed over 150 may amount to war crimes",
+     "titel": "UN says US strikes on Iran school that killed over 150 may amount to war crimes",
+     "titelDe": "UN sagt, dass US-Angriffe auf die iranische Schule, bei denen über 150 Menschen getötet wurden, Kriegsverbrechen darstellen können",
+     "quelle": "SCMP",
+     "url": "https://www.scmp.com/news/world/middle-east/article/3367887/un-says-us-strikes-iran-school-killed-over-150-may-amount-war-crimes?utm_source=rss_feed",
+     "zeit": "2026-09-17T12:16:05.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
     {
      "id": "FXStreet:Gold recovers after Fed-led sell-off, but hawkish outlook caps gains",
      "titel": "Gold recovers after Fed-led sell-off, but hawkish outlook caps gains",
@@ -2189,21 +2204,6 @@
       "usd": 0.27
      },
      "priority": 96
-    },
-    {
-     "id": "Cointelegraph:Bitcoin absorbs Fed rate hike as officials see more tightening",
-     "titel": "Bitcoin absorbs Fed rate hike as officials see more tightening",
-     "titelDe": "Bitcoin absorbiert die Fed-Zinserhöhung, während Beamte weitere Straffungen erwarten",
-     "quelle": "Cointelegraph",
-     "url": "https://cointelegraph.com/markets/bitcoin-absorbs-fed-rate-hike-as-officials-see-more-tightening?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-     "zeit": "2026-09-17T02:52:08.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -0.85,
-      "gold": -0.8,
-      "usd": 1
-     },
-     "priority": 73
     }
    ]
   }
