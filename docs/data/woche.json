@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17T09:06:22.130Z",
+ "updated": "2026-09-17T09:22:10.663Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-17T09:06:22.221Z",
+   "stand": "2026-09-17T09:22:10.752Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-17T09:06:22.201Z",
+   "stand": "2026-09-17T09:22:10.733Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -2056,50 +2056,35 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-17T09:06:22.181Z",
-   "anzahl": 154,
+   "stand": "2026-09-17T09:22:10.713Z",
+   "anzahl": 160,
    "klassen": {
     "crypto": {
-     "score": -0.1417,
+     "score": -0.1341,
      "bull": 4,
-     "bear": 21,
-     "neut": 129
+     "bear": 20,
+     "neut": 136
     },
     "stocks": {
-     "score": -0.1386,
+     "score": -0.1304,
      "bull": 2,
-     "bear": 21,
-     "neut": 131
+     "bear": 20,
+     "neut": 138
     },
     "gold": {
-     "score": -0.0687,
-     "bull": 10,
+     "score": -0.069,
+     "bull": 9,
      "bear": 13,
-     "neut": 131
+     "neut": 138
     },
     "usd": {
-     "score": 0.1281,
-     "bull": 11,
+     "score": 0.1231,
+     "bull": 12,
      "bear": 1,
-     "neut": 142
+     "neut": 147
     }
    },
    "top": [
-    {
-     "id": "FXStreet:Dow Jones futures gain as oil slide offsets Fed rate hike jitters",
-     "titel": "Dow Jones futures gain as oil slide offsets Fed rate hike jitters",
-     "titelDe": "Dow Jones-Futures steigen, Ölpreisrückgang kompensiert Fed-Hochzinsen-Bedenken",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/dow-jones-futures-gain-as-oil-slide-offsets-fed-rate-hike-jitters-202609170813",
-     "zeit": "2026-09-17T08:13:40.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -1,
-      "gold": -0.375,
-      "usd": 0.9
-     },
-     "priority": 87
-    },
     {
      "id": "Reuters:Fed raises rates in search of 'timelier' drop in inflation, sees more tightening ahead",
      "titel": "Fed raises rates in search of 'timelier' drop in inflation, sees more tightening ahead",
@@ -2114,6 +2099,21 @@
       "usd": 1
      },
      "priority": 87
+    },
+    {
+     "id": "FXStreet:Dow Jones futures gain as oil slide offsets Fed rate hike jitters",
+     "titel": "Dow Jones futures gain as oil slide offsets Fed rate hike jitters",
+     "titelDe": "Dow Jones-Futures steigen, Ölpreisrückgang kompensiert Fed-Hochzinsen-Bedenken",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/dow-jones-futures-gain-as-oil-slide-offsets-fed-rate-hike-jitters-202609170813",
+     "zeit": "2026-09-17T08:13:40.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.375,
+      "usd": 0.9
+     },
+     "priority": 86
     },
     {
      "id": "FXStreet:Canadian Dollar slides to five-week low after Fed’s hawkish decision",
@@ -2191,12 +2191,12 @@
      "priority": 96
     },
     {
-     "id": "CoinDesk:Bitcoin faces 2022 parallels as federal reserve resumes rate hikes",
-     "titel": "Bitcoin faces 2022 parallels as federal reserve resumes rate hikes",
-     "titelDe": "Bitcoin sieht sich 2022 Parallelen gegenüber, da die Federal Reserve die Zinserhöhungen wieder aufnimmt",
-     "quelle": "CoinDesk",
-     "url": "https://www.coindesk.com/markets/2026/09/17/bitcoin-faces-2022-parallels-as-federal-reserve-resumes-rate-hikes",
-     "zeit": "2026-09-17T08:41:48.000Z",
+     "id": "Reuters:Gold rises as traders reassess positions after Fed rate hike, oil rally eases",
+     "titel": "Gold rises as traders reassess positions after Fed rate hike, oil rally eases",
+     "titelDe": "Gold steigt, da Händler ihre Positionen nach der Zinserhöhung der Fed neu bewerten und die Ölrally nachlässt",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdmRrQzlscmZjQ08wVi1BSUZCTEU4d0xkdFpFelAzQURMS0VyS21Gb1VWUkV2OEIzRTVUWmJQTXkxRXJnTEltLXR6dWJiWW9UV1pzZWJQOEdJRGpkMnhXV0lIWUlHUEdHNVIzYmU2UTY3OHAwczNsVmpuRDNUVlpkeVl5emEtTlJoWFJrUnhWSUxFTkZqMGxSYUd5M05GVHA0bGZ6eWZ5YWpLWFMy?oc=5",
+     "zeit": "2026-09-17T09:04:51.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
