@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17T23:25:47.454Z",
+ "updated": "2026-09-17T23:32:51.695Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1750,7 +1750,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-17T23:25:47.538Z",
+   "stand": "2026-09-17T23:32:51.751Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-17T23:25:47.520Z",
+   "stand": "2026-09-17T23:32:51.740Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,29 +2056,29 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-17T23:25:47.501Z",
+   "stand": "2026-09-17T23:32:51.729Z",
    "anzahl": 29,
    "klassen": {
     "crypto": {
-     "score": -0.0549,
+     "score": -0.0524,
      "bull": 0,
      "bear": 2,
      "neut": 27
     },
     "stocks": {
-     "score": -0.0467,
+     "score": -0.0445,
      "bull": 0,
      "bear": 2,
      "neut": 27
     },
     "gold": {
-     "score": -0.0439,
+     "score": -0.0419,
      "bull": 0,
      "bear": 2,
      "neut": 27
     },
     "usd": {
-     "score": 0.0549,
+     "score": 0.0524,
      "bull": 2,
      "bear": 0,
      "neut": 27
@@ -2099,6 +2099,21 @@
       "usd": 0.5
      },
      "priority": 80
+    },
+    {
+     "id": "Reuters:Goldman's October hike call underscores renewed Fed tightening risks - reuters.com",
+     "titel": "Goldman's October hike call underscores renewed Fed tightening risks - reuters.com",
+     "titelDe": "Goldmans Ankündigung eines Preisanstiegs im Oktober unterstreicht erneute Risiken einer Fed-Strafpolitik",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNnA4bVp0ZlNGeVVZRGJvNmIwcVdmSHN3N1I1WlpaYldOaDdGUEoxUkxJNjd3ZkFkNkxhN09iR0RJbzU0VnQxdHdqUHhhVHRsZ3B4cnl0dHE5VHh1WHFBbjRFNnhpQ2NtRjlNQXRtUUVHN0w3azFuS2VxMEJ1NHB3SG5MVWl0NzVDcGNNVmlwYXJsMzZoNWpr?oc=5",
+     "zeit": "2026-09-17T23:08:14.000Z",
+     "scores": {
+      "crypto": -0.5,
+      "stocks": -0.425,
+      "gold": -0.4,
+      "usd": 0.5
+     },
+     "priority": 79
     }
    ]
   }
