@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17T04:10:51.397Z",
+ "updated": "2026-09-17T04:29:11.000Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-17T04:10:51.458Z",
+   "stand": "2026-09-17T04:29:11.037Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-17T04:10:51.446Z",
+   "stand": "2026-09-17T04:29:11.030Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -2056,50 +2056,35 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-17T04:10:51.433Z",
-   "anzahl": 97,
+   "stand": "2026-09-17T04:29:11.022Z",
+   "anzahl": 98,
    "klassen": {
     "crypto": {
-     "score": -0.1563,
-     "bull": 2,
-     "bear": 10,
-     "neut": 85
-    },
-    "stocks": {
-     "score": -0.1501,
+     "score": -0.1633,
      "bull": 1,
-     "bear": 10,
+     "bear": 11,
      "neut": 86
     },
+    "stocks": {
+     "score": -0.1576,
+     "bull": 0,
+     "bear": 11,
+     "neut": 87
+    },
     "gold": {
-     "score": -0.0545,
-     "bull": 4,
+     "score": -0.0469,
+     "bull": 5,
      "bear": 6,
      "neut": 87
     },
     "usd": {
-     "score": 0.1258,
+     "score": 0.1261,
      "bull": 7,
      "bear": 0,
-     "neut": 90
+     "neut": 91
     }
    },
    "top": [
-    {
-     "id": "FXStreet:Canadian Dollar slides to five-week low after Fed’s hawkish decision",
-     "titel": "Canadian Dollar slides to five-week low after Fed’s hawkish decision",
-     "titelDe": "Kanadischer Dollar fällt auf fünfwöchiges Tief nach hawkisher Fed-Entscheidung",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/canadian-dollar-slides-to-five-week-low-after-feds-hawkish-decision-202609170320",
-     "zeit": "2026-09-17T03:20:04.000Z",
-     "scores": {
-      "crypto": -1,
-      "stocks": -0.96,
-      "gold": -0.255,
-      "usd": 0.75
-     },
-     "priority": 87
-    },
     {
      "id": "Reuters:Fed raises rates in search of 'timelier' drop in inflation, sees more tightening ahead",
      "titel": "Fed raises rates in search of 'timelier' drop in inflation, sees more tightening ahead",
@@ -2116,6 +2101,21 @@
      "priority": 87
     },
     {
+     "id": "FXStreet:Canadian Dollar slides to five-week low after Fed’s hawkish decision",
+     "titel": "Canadian Dollar slides to five-week low after Fed’s hawkish decision",
+     "titelDe": "Kanadischer Dollar fällt auf fünfwöchiges Tief nach hawkisher Fed-Entscheidung",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/canadian-dollar-slides-to-five-week-low-after-feds-hawkish-decision-202609170320",
+     "zeit": "2026-09-17T03:20:04.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -0.96,
+      "gold": -0.255,
+      "usd": 0.75
+     },
+     "priority": 86
+    },
+    {
      "id": "Cointelegraph:Bitcoin absorbs Fed rate hike as officials see more tightening",
      "titel": "Bitcoin absorbs Fed rate hike as officials see more tightening",
      "titelDe": "Bitcoin absorbiert die Fed-Zinserhöhung, während Beamte weitere Straffungen erwarten",
@@ -2128,7 +2128,7 @@
       "gold": -0.8,
       "usd": 1
      },
-     "priority": 86
+     "priority": 85
     },
     {
      "id": "TASS:US, allies boost potential for nuclear war — North Korea’s deputy defense minsiter",
