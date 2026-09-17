@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17T05:32:18.180Z",
+ "updated": "2026-09-17T05:46:27.559Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-17T05:32:18.269Z",
+   "stand": "2026-09-17T05:46:27.649Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-17T05:32:18.249Z",
+   "stand": "2026-09-17T05:46:27.630Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-17T05:32:18.230Z",
-   "anzahl": 110,
+   "stand": "2026-09-17T05:46:27.609Z",
+   "anzahl": 117,
    "klassen": {
     "crypto": {
-     "score": -0.2156,
+     "score": -0.2217,
      "bull": 2,
-     "bear": 18,
-     "neut": 90
+     "bear": 20,
+     "neut": 95
     },
     "stocks": {
-     "score": -0.1984,
+     "score": -0.2038,
      "bull": 1,
-     "bear": 18,
-     "neut": 91
+     "bear": 20,
+     "neut": 96
     },
     "gold": {
      "score": -0.0953,
-     "bull": 7,
-     "bear": 12,
-     "neut": 91
+     "bull": 8,
+     "bear": 13,
+     "neut": 96
     },
     "usd": {
-     "score": 0.18,
-     "bull": 14,
+     "score": 0.1834,
+     "bull": 15,
      "bear": 0,
-     "neut": 96
+     "neut": 102
     }
    },
    "top": [
@@ -2143,7 +2143,7 @@
       "gold": -0.8,
       "usd": 1
      },
-     "priority": 84
+     "priority": 83
     },
     {
      "id": "TASS:US, allies boost potential for nuclear war — North Korea’s deputy defense minsiter",
@@ -2188,7 +2188,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 84
+     "priority": 83
     },
     {
      "id": "FXStreet:US 10-Year Treasury Yield nears 5% after Fed rate hike, Middle East tensions raise inflation fears",
