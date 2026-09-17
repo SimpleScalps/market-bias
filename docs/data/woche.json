@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17T16:22:40.168Z",
+ "updated": "2026-09-17T16:36:52.775Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-17T16:22:40.258Z",
+   "stand": "2026-09-17T16:36:52.859Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-17T16:22:40.238Z",
+   "stand": "2026-09-17T16:36:52.841Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -2056,7 +2056,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-17T16:22:40.218Z",
+   "stand": "2026-09-17T16:36:52.822Z",
    "anzahl": 223,
    "klassen": {
     "crypto": {
@@ -2131,6 +2131,21 @@
      "priority": 87
     },
     {
+     "id": "Reuters:Wall St rises as oil slide offers respite after Fed rate hike - reuters.com",
+     "titel": "Wall St rises as oil slide offers respite after Fed rate hike - reuters.com",
+     "titelDe": "Wall Street steigt, während Ölpreisrückgang Erleichterung nach Fed-Zinserhöhung bietet",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORkVra0Q0cjNkbjlDN0N2SENMZHYyeVVFSU1tcG5LOXhBTk5leFlZNjFNRGpad3NoWmhnaWZVd2I3N19oa2hQSERYZzBQWFcxaUJQNDZaSHMwVjFrNGlKbGRUNjg5TEt2WENpMUJiUFRVTjR6WlQyc0IzY2V2M05FanNlWExPdUZ2bTJFUlp4YW5HdTAwTExfNTI3MWkwVEVTMTRZUURlR01lVHA5?oc=5",
+     "zeit": "2026-09-17T16:12:50.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -1,
+      "gold": -0.375,
+      "usd": 0.9
+     },
+     "priority": 87
+    },
+    {
      "id": "FXStreet:Dow Jones futures gain as oil slide offsets Fed rate hike jitters",
      "titel": "Dow Jones futures gain as oil slide offsets Fed rate hike jitters",
      "titelDe": "Dow Jones-Futures steigen, Ölpreisrückgang kompensiert Fed-Hochzinsen-Bedenken",
@@ -2189,21 +2204,6 @@
       "usd": 0.27
      },
      "priority": 100
-    },
-    {
-     "id": "TASS:US, allies boost potential for nuclear war — North Korea’s deputy defense minister",
-     "titel": "US, allies boost potential for nuclear war — North Korea’s deputy defense minister",
-     "titelDe": "USA und Verbündete erhöhen das Potenzial für einen Atomkrieg – Nordkoreas stellvertretender Verteidigungsminister",
-     "quelle": "TASS",
-     "url": "https://tass.com/world/2188733",
-     "zeit": "2026-09-17T02:27:38.000Z",
-     "scores": {
-      "crypto": -0.81,
-      "stocks": -0.81,
-      "gold": 0.405,
-      "usd": 0.27
-     },
-     "priority": 96
     }
    ]
   }
