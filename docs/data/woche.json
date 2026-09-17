@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17T02:57:15.897Z",
+ "updated": "2026-09-17T03:08:19.646Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1291,7 +1291,7 @@
   },
   "2026-09-12": {
    "tag": "2026-09-12",
-   "stand": "2026-09-17T02:57:15.984Z",
+   "stand": "2026-09-17T03:08:19.684Z",
    "anzahl": 179,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-17T02:57:15.966Z",
+   "stand": "2026-09-17T03:08:19.676Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -2056,7 +2056,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-17T02:57:15.946Z",
+   "stand": "2026-09-17T03:08:19.668Z",
    "anzahl": 95,
    "klassen": {
     "crypto": {
@@ -2085,6 +2085,21 @@
     }
    },
    "top": [
+    {
+     "id": "Cointelegraph:Bitcoin absorbs Fed rate hike as officials see more tightening",
+     "titel": "Bitcoin absorbs Fed rate hike as officials see more tightening",
+     "titelDe": "Bitcoin absorbiert die Fed-Zinserhöhung, während Beamte weitere Straffungen erwarten",
+     "quelle": "Cointelegraph",
+     "url": "https://cointelegraph.com/markets/bitcoin-absorbs-fed-rate-hike-as-officials-see-more-tightening?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+     "zeit": "2026-09-17T02:52:08.000Z",
+     "scores": {
+      "crypto": -1,
+      "stocks": -0.85,
+      "gold": -0.8,
+      "usd": 1
+     },
+     "priority": 88
+    },
     {
      "id": "Reuters:Fed raises rates in search of 'timelier' drop in inflation, sees more tightening ahead",
      "titel": "Fed raises rates in search of 'timelier' drop in inflation, sees more tightening ahead",
@@ -2182,21 +2197,6 @@
      "quelle": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMEcybmViazFiTVpzdkxQWGVQMWFnR053ZjhkeHpXQ0JWbDZNOThDWVhqQnlwcE5HMG9HZGVDUGhrOG9sazJlb2kxNjBqN004Ml81b3AySVktNVI0cTkzWUhhUXhrazByMEZvcVN4SFpSTkgxZVFDUWVMWi1yN0FUdXgtUVZJS1RuZUZsMFIzUHNydUZ1dTJqcHN2aHVYMk9EOTdub2NFT25UbnVrMHlvZi1keUZDYmdISnp1S05wQXQ?oc=5",
      "zeit": "2026-09-16T23:10:15.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 83
-    },
-    {
-     "id": "Reuters:Market Talk: First Fed rate hike in three years no 'panacea' for inflation - reuters.com",
-     "titel": "Market Talk: First Fed rate hike in three years no 'panacea' for inflation - reuters.com",
-     "titelDe": "Marktgespräch: Erste Fed-Zinserhöhung in drei Jahren ist keine Allheilmittel für Inflation",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5GakllY0ZKMGpySTZCRng3SDFvclVFT1dhN093OUFrWEFXVXJuclR0RmJ3VTJ2eU5rbGxoaWpqT2gxb3VtQ0FfSkZueW5VS0NTTkRyQjJtOWcxSXBEYWV6UXluNXhWRkk?oc=5",
-     "zeit": "2026-09-16T22:58:16.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
