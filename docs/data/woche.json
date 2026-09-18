@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T03:04:06.011Z",
+ "updated": "2026-09-18T03:19:57.114Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1750,7 +1750,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-18T03:04:06.080Z",
+   "stand": "2026-09-18T03:19:57.199Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T03:04:06.065Z",
+   "stand": "2026-09-18T03:19:57.181Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T03:04:06.051Z",
-   "anzahl": 93,
+   "stand": "2026-09-18T03:19:57.162Z",
+   "anzahl": 98,
    "klassen": {
     "crypto": {
-     "score": -0.1433,
+     "score": -0.1637,
      "bull": 0,
-     "bear": 12,
+     "bear": 17,
      "neut": 81
     },
     "stocks": {
-     "score": -0.1395,
+     "score": -0.1565,
      "bull": 0,
-     "bear": 12,
+     "bear": 17,
      "neut": 81
     },
     "gold": {
-     "score": 0.0385,
-     "bull": 10,
-     "bear": 2,
+     "score": 0.0193,
+     "bull": 12,
+     "bear": 5,
      "neut": 81
     },
     "usd": {
-     "score": 0.0648,
-     "bull": 4,
+     "score": 0.0867,
+     "bull": 7,
      "bear": 0,
-     "neut": 89
+     "neut": 91
     }
    },
    "top": [
@@ -2099,6 +2099,21 @@
       "usd": 0.62
      },
      "priority": 74
+    },
+    {
+     "id": "BeInCrypto:Jim Cramer Ranks Winning and Losing Stock Sectors During Fed Rate Hikes",
+     "titel": "Jim Cramer Ranks Winning and Losing Stock Sectors During Fed Rate Hikes",
+     "titelDe": "Jim Cramer zählt gewinnende und verlierende Aktiensektoren bei Zinserhöhungen der Fed",
+     "quelle": "BeInCrypto",
+     "url": "https://beincrypto.com/cramer-stock-sectors-fed-hikes/",
+     "zeit": "2026-09-18T02:43:00.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 83
     },
     {
      "id": "Reuters:COMMENTARY: Trump may not see another rate cut as president",
@@ -2158,7 +2173,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 73
+     "priority": 72
     },
     {
      "id": "FXStreet:Canadian Dollar bears retain control near August 7 low amid US-Canada rate gap/trade war",
@@ -2179,21 +2194,6 @@
      "id": "Al Jazeera (GN):Iran expels Swedish diplomat in retaliatory move",
      "titel": "Iran expels Swedish diplomat in retaliatory move",
      "titelDe": "Iran weist schwedischen Diplomaten als Vergeltungsmaßnahme aus",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPako1QWFTVHUtLUwtSUM1LTVSN3MzQ0dWUUZUQ1ZrSGJpZjdTZk9saHNiRnFBOFRWeE9NeVlmejRGSFFTQS1ESTdnVjVPWHhFaXpFWjUxM2I0aHlFS3NmUi1TTy1lcE04bjFTQVN3Q3kwWlp5VzIwVnJXdkRyemdKR1VDRGh5U0tKQ1lwbWNrQWxqVGPSAZgBQVVfeXFMT21sZGJJUGxTM1kwWGNmVjV6RFM5T1V3WXVLbXltdUNRcE02S1M1ZkI3WmRIN015ZXR5cW0yNUlOMUl4cUNXV3R6N05qVHFzN2ZDOV9qNHNfSFFrbVJ5U1NjVkFMN3pOeVVwV244RnBFcDFtX0JWdl9rV2RNMWZhdy1LczBQUE1HNkZ4N3ZPU2dwR3d3cTQ0dkc?oc=5",
-     "zeit": "2026-09-18T00:09:32.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 94
-    },
-    {
-     "id": "Al Jazeera (GN):Iran expels Swedish diplomat in retaliatory move - aljazeera.com",
-     "titel": "Iran expels Swedish diplomat in retaliatory move - aljazeera.com",
-     "titelDe": "Iran vertreibt schwedischen Diplomaten als Vergeltungsmaßnahme",
      "quelle": "Al Jazeera (GN)",
      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPako1QWFTVHUtLUwtSUM1LTVSN3MzQ0dWUUZUQ1ZrSGJpZjdTZk9saHNiRnFBOFRWeE9NeVlmejRGSFFTQS1ESTdnVjVPWHhFaXpFWjUxM2I0aHlFS3NmUi1TTy1lcE04bjFTQVN3Q3kwWlp5VzIwVnJXdkRyemdKR1VDRGh5U0tKQ1lwbWNrQWxqVGPSAZgBQVVfeXFMT21sZGJJUGxTM1kwWGNmVjV6RFM5T1V3WXVLbXltdUNRcE02S1M1ZkI3WmRIN015ZXR5cW0yNUlOMUl4cUNXV3R6N05qVHFzN2ZDOV9qNHNfSFFrbVJ5U1NjVkFMN3pOeVVwV244RnBFcDFtX0JWdl9rV2RNMWZhdy1LczBQUE1HNkZ4N3ZPU2dwR3d3cTQ0dkc?oc=5",
      "zeit": "2026-09-18T00:09:32.000Z",
