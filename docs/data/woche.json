@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T05:03:48.432Z",
+ "updated": "2026-09-18T05:18:40.641Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1750,7 +1750,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-18T05:03:48.517Z",
+   "stand": "2026-09-18T05:18:40.725Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T05:03:48.499Z",
+   "stand": "2026-09-18T05:18:40.707Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,29 +2056,29 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T05:03:48.480Z",
+   "stand": "2026-09-18T05:18:40.688Z",
    "anzahl": 103,
    "klassen": {
     "crypto": {
-     "score": -0.1395,
-     "bull": 0,
-     "bear": 16,
-     "neut": 87
-    },
-    "stocks": {
-     "score": -0.1219,
+     "score": -0.1277,
      "bull": 0,
      "bear": 15,
      "neut": 88
     },
+    "stocks": {
+     "score": -0.1109,
+     "bull": 0,
+     "bear": 14,
+     "neut": 89
+    },
     "gold": {
-     "score": -0.0047,
-     "bull": 9,
+     "score": -0.0082,
+     "bull": 8,
      "bear": 6,
-     "neut": 88
+     "neut": 89
     },
     "usd": {
-     "score": 0.0791,
+     "score": 0.0742,
      "bull": 7,
      "bear": 0,
      "neut": 96
@@ -2113,7 +2113,7 @@
       "gold": -0.22,
       "usd": 0.62
      },
-     "priority": 71
+     "priority": 70
     },
     {
      "id": "BeInCrypto:Jim Cramer Ranks Winning and Losing Stock Sectors During Fed Rate Hikes",
@@ -2161,21 +2161,6 @@
      "priority": 73
     },
     {
-     "id": "Al Jazeera:UN findings show US strikes on Minab could be war crimes",
-     "titel": "UN findings show US strikes on Minab could be war crimes",
-     "titelDe": "UN-Ergebnisse deuten darauf hin, dass US-Stöße auf Minab Kriegsverbrechen darstellen",
-     "quelle": "Al Jazeera",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/18/un-findings-show-us-strikes-on-minab-could-be-war-crimes?traffic_source=rss",
-     "zeit": "2026-09-18T01:58:53.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 70
-    },
-    {
      "id": "FXStreet:Canadian Dollar bears retain control near August 7 low amid US-Canada rate gap/trade war",
      "titel": "Canadian Dollar bears retain control near August 7 low amid US-Canada rate gap/trade war",
      "titelDe": "Kanadischer Dollar behält Kontrolle nahe dem August-7-Tief trotz US‑Kanada‑Zinsunterschied/Handelskrieg",
@@ -2189,6 +2174,21 @@
       "usd": 0.255
      },
      "priority": 70
+    },
+    {
+     "id": "Al Jazeera:UN findings show US strikes on Minab could be war crimes",
+     "titel": "UN findings show US strikes on Minab could be war crimes",
+     "titelDe": "UN-Ergebnisse deuten darauf hin, dass US-Stöße auf Minab Kriegsverbrechen darstellen",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/18/un-findings-show-us-strikes-on-minab-could-be-war-crimes?traffic_source=rss",
+     "zeit": "2026-09-18T01:58:53.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 69
     },
     {
      "id": "FXStreet:Gold bulls seem hesitant as hawkish Fed and Middle East jitters limit USD downside",
