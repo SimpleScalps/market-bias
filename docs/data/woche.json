@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T03:19:57.114Z",
+ "updated": "2026-09-18T03:32:07.102Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1750,7 +1750,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-18T03:19:57.199Z",
+   "stand": "2026-09-18T03:32:07.162Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T03:19:57.181Z",
+   "stand": "2026-09-18T03:32:07.150Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,7 +2056,7 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T03:19:57.162Z",
+   "stand": "2026-09-18T03:32:07.137Z",
    "anzahl": 98,
    "klassen": {
     "crypto": {
@@ -2191,19 +2191,19 @@
      "priority": 72
     },
     {
-     "id": "Al Jazeera (GN):Iran expels Swedish diplomat in retaliatory move",
-     "titel": "Iran expels Swedish diplomat in retaliatory move",
-     "titelDe": "Iran weist schwedischen Diplomaten als Vergeltungsmaßnahme aus",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPako1QWFTVHUtLUwtSUM1LTVSN3MzQ0dWUUZUQ1ZrSGJpZjdTZk9saHNiRnFBOFRWeE9NeVlmejRGSFFTQS1ESTdnVjVPWHhFaXpFWjUxM2I0aHlFS3NmUi1TTy1lcE04bjFTQVN3Q3kwWlp5VzIwVnJXdkRyemdKR1VDRGh5U0tKQ1lwbWNrQWxqVGPSAZgBQVVfeXFMT21sZGJJUGxTM1kwWGNmVjV6RFM5T1V3WXVLbXltdUNRcE02S1M1ZkI3WmRIN015ZXR5cW0yNUlOMUl4cUNXV3R6N05qVHFzN2ZDOV9qNHNfSFFrbVJ5U1NjVkFMN3pOeVVwV244RnBFcDFtX0JWdl9rV2RNMWZhdy1LczBQUE1HNkZ4N3ZPU2dwR3d3cTQ0dkc?oc=5",
-     "zeit": "2026-09-18T00:09:32.000Z",
+     "id": "FXStreet:Gold bulls seem hesitant as hawkish Fed and Middle East jitters limit USD downside",
+     "titel": "Gold bulls seem hesitant as hawkish Fed and Middle East jitters limit USD downside",
+     "titelDe": "Gold-Bullen wirken zögerlich, da hawkige Fed und Spannungen im Nahen Osten den Abwärtstrend des USD begrenzen",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/gold-bulls-seem-hesitant-as-hawkish-fed-and-middle-east-jitters-limit-usd-downside-202609180321",
+     "zeit": "2026-09-18T03:21:07.000Z",
      "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
+      "crypto": -0.6,
+      "stocks": -0.51,
+      "gold": -0.48,
+      "usd": 0.6
      },
-     "priority": 94
+     "priority": 81
     }
    ]
   }
