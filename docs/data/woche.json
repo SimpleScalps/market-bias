@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T16:31:04.141Z",
+ "updated": "2026-09-18T16:44:48.437Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T16:31:04.198Z",
+   "stand": "2026-09-18T16:44:48.487Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,7 +2056,7 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T16:31:04.183Z",
+   "stand": "2026-09-18T16:44:48.475Z",
    "anzahl": 230,
    "klassen": {
     "crypto": {
@@ -2146,6 +2146,36 @@
      "priority": 84
     },
     {
+     "id": "MarketWatch:Why investors’ best move in reaction to Fed’s rate hike is doing nothing at all",
+     "titel": "Why investors’ best move in reaction to Fed’s rate hike is doing nothing at all",
+     "titelDe": "Die beste Reaktion der Anleger auf die Fed‑Erhöhung ist, nichts zu tun",
+     "quelle": "MarketWatch",
+     "url": "https://www.marketwatch.com/story/why-investors-best-move-in-reaction-to-feds-rate-hike-is-doing-nothing-at-all-6ff56b4c?mod=mw_rss_topstories",
+     "zeit": "2026-09-18T16:39:00.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
+     "id": "CNBC World:Three words from Kevin Warsh have Wall Street wondering how far the Fed will go with rate hikes",
+     "titel": "Three words from Kevin Warsh have Wall Street wondering how far the Fed will go with rate hikes",
+     "titelDe": "Drei Worte von Kevin Warsh lassen Wall Street spekulieren, wie weit die Fed mit Zinserhöhungen gehen wird",
+     "quelle": "CNBC World",
+     "url": "https://www.cnbc.com/2026/09/18/three-words-from-kevin-warsh-have-wall-street-wondering-how-far-the-fed-will-go-with-rate-hikes.html",
+     "zeit": "2026-09-18T16:33:43.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
      "id": "Reuters:Why did Japan just get a rate hike, and why isn't it helping the yen?",
      "titel": "Why did Japan just get a rate hike, and why isn't it helping the yen?",
      "titelDe": "Warum hat Japan gerade die Zinsen erhöht, und warum hilft das nicht dem Yen?",
@@ -2174,36 +2204,6 @@
       "usd": 0.75
      },
      "priority": 83
-    },
-    {
-     "id": "Reuters:COMMENTARY: Trump may not see another rate cut as president",
-     "titel": "COMMENTARY: Trump may not see another rate cut as president",
-     "titelDe": "KOMMENTAR: Trump sieht möglicherweise keine weitere Zinssenkung als Präsident",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRmhpZjd0OXp0VTFXb2tTdlVJMnRoeTNEb2Nfa1FqQXB0ckR1X0c1el9wUFlrdjZwRWc3ekwtdFBVQVZXR2hsWkhQemZpM1pRNUdKOHJGNXV6YnVXR0Z3d2E5eEhvR0RhYXI4clZxeWdPbDd6cm5SVjMzYVFIcDJ4aU91MG1SQjRzRjNFT0lrX2o2TWFpd3RQVzA2YnZodm4yeWV3c1BTaWQ1Rk5pRXk0Q1FkNXpoNUhrOXM2RV9wNA?oc=5",
-     "zeit": "2026-09-17T23:36:46.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 83
-    },
-    {
-     "id": "FXStreet:Forex Today: Japanese Yen falls despite BoJ's rate hike; Fedspeak in focus",
-     "titel": "Forex Today: Japanese Yen falls despite BoJ's rate hike; Fedspeak in focus",
-     "titelDe": "Devisen heute: Yen fällt trotz BoJ Zinserhöhung; Fed-Sprache im Fokus",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/forex-today-us-dollar-holds-gains-as-markets-weigh-fed-rate-hike-boj-move-in-focus-202609180549",
-     "zeit": "2026-09-18T05:49:53.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 82
     }
    ]
   }
