@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T04:46:55.549Z",
+ "updated": "2026-09-18T04:54:52.248Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1750,7 +1750,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-18T04:46:55.629Z",
+   "stand": "2026-09-18T04:54:52.299Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T04:46:55.612Z",
+   "stand": "2026-09-18T04:54:52.289Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T04:46:55.594Z",
+   "stand": "2026-09-18T04:54:52.278Z",
    "anzahl": 103,
    "klassen": {
     "crypto": {
-     "score": -0.1586,
+     "score": -0.1395,
      "bull": 0,
-     "bear": 17,
-     "neut": 86
+     "bear": 16,
+     "neut": 87
     },
     "stocks": {
-     "score": -0.1502,
+     "score": -0.1219,
      "bull": 0,
-     "bear": 17,
-     "neut": 86
+     "bear": 15,
+     "neut": 88
     },
     "gold": {
-     "score": 0.0062,
-     "bull": 11,
+     "score": -0.0047,
+     "bull": 9,
      "bear": 6,
-     "neut": 86
+     "neut": 88
     },
     "usd": {
-     "score": 0.0904,
-     "bull": 8,
+     "score": 0.0791,
+     "bull": 7,
      "bear": 0,
-     "neut": 95
+     "neut": 96
     }
    },
    "top": [
@@ -2113,7 +2113,7 @@
       "gold": -0.22,
       "usd": 0.62
      },
-     "priority": 72
+     "priority": 71
     },
     {
      "id": "BeInCrypto:Jim Cramer Ranks Winning and Losing Stock Sectors During Fed Rate Hikes",
@@ -2128,7 +2128,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 81
+     "priority": 80
     },
     {
      "id": "Al Jazeera (GN):UN findings show US strikes on Minab could be war crimes",
@@ -2203,7 +2203,7 @@
       "gold": -0.48,
       "usd": 0.6
      },
-     "priority": 80
+     "priority": 79
     }
    ]
   }
