@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T00:55:52.362Z",
+ "updated": "2026-09-18T01:05:23.844Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1750,7 +1750,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-18T00:55:52.444Z",
+   "stand": "2026-09-18T01:05:23.911Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T00:55:52.426Z",
+   "stand": "2026-09-18T01:05:23.897Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T00:55:52.409Z",
-   "anzahl": 58,
+   "stand": "2026-09-18T01:05:23.883Z",
+   "anzahl": 59,
    "klassen": {
     "crypto": {
-     "score": -0.0865,
+     "score": -0.0856,
      "bull": 0,
      "bear": 5,
-     "neut": 53
+     "neut": 54
     },
     "stocks": {
-     "score": -0.0865,
+     "score": -0.0856,
      "bull": 0,
      "bear": 5,
-     "neut": 53
+     "neut": 54
     },
     "gold": {
-     "score": 0.0433,
+     "score": 0.0428,
      "bull": 5,
      "bear": 0,
-     "neut": 53
+     "neut": 54
     },
     "usd": {
-     "score": 0.0288,
+     "score": 0.0285,
      "bull": 0,
      "bear": 0,
-     "neut": 58
+     "neut": 59
     }
    },
    "top": [
@@ -2101,9 +2101,9 @@
      "priority": 83
     },
     {
-     "id": "Al Jazeera (GN):Iran expels Swedish diplomat in retaliatory move - aljazeera.com",
-     "titel": "Iran expels Swedish diplomat in retaliatory move - aljazeera.com",
-     "titelDe": "Iran vertreibt schwedischen Diplomaten als Vergeltungsmaßnahme",
+     "id": "Al Jazeera (GN):Iran expels Swedish diplomat in retaliatory move",
+     "titel": "Iran expels Swedish diplomat in retaliatory move",
+     "titelDe": "Iran weist schwedischen Diplomaten als Vergeltungsmaßnahme aus",
      "quelle": "Al Jazeera (GN)",
      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPako1QWFTVHUtLUwtSUM1LTVSN3MzQ0dWUUZUQ1ZrSGJpZjdTZk9saHNiRnFBOFRWeE9NeVlmejRGSFFTQS1ESTdnVjVPWHhFaXpFWjUxM2I0aHlFS3NmUi1TTy1lcE04bjFTQVN3Q3kwWlp5VzIwVnJXdkRyemdKR1VDRGh5U0tKQ1lwbWNrQWxqVGPSAZgBQVVfeXFMT21sZGJJUGxTM1kwWGNmVjV6RFM5T1V3WXVLbXltdUNRcE02S1M1ZkI3WmRIN015ZXR5cW0yNUlOMUl4cUNXV3R6N05qVHFzN2ZDOV9qNHNfSFFrbVJ5U1NjVkFMN3pOeVVwV244RnBFcDFtX0JWdl9rV2RNMWZhdy1LczBQUE1HNkZ4N3ZPU2dwR3d3cTQ0dkc?oc=5",
      "zeit": "2026-09-18T00:09:32.000Z",
@@ -2116,9 +2116,9 @@
      "priority": 94
     },
     {
-     "id": "Al Jazeera (GN):Iran expels Swedish diplomat in retaliatory move",
-     "titel": "Iran expels Swedish diplomat in retaliatory move",
-     "titelDe": "Iran weist schwedischen Diplomaten als Vergeltungsmaßnahme aus",
+     "id": "Al Jazeera (GN):Iran expels Swedish diplomat in retaliatory move - aljazeera.com",
+     "titel": "Iran expels Swedish diplomat in retaliatory move - aljazeera.com",
+     "titelDe": "Iran vertreibt schwedischen Diplomaten als Vergeltungsmaßnahme",
      "quelle": "Al Jazeera (GN)",
      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPako1QWFTVHUtLUwtSUM1LTVSN3MzQ0dWUUZUQ1ZrSGJpZjdTZk9saHNiRnFBOFRWeE9NeVlmejRGSFFTQS1ESTdnVjVPWHhFaXpFWjUxM2I0aHlFS3NmUi1TTy1lcE04bjFTQVN3Q3kwWlp5VzIwVnJXdkRyemdKR1VDRGh5U0tKQ1lwbWNrQWxqVGPSAZgBQVVfeXFMT21sZGJJUGxTM1kwWGNmVjV6RFM5T1V3WXVLbXltdUNRcE02S1M1ZkI3WmRIN015ZXR5cW0yNUlOMUl4cUNXV3R6N05qVHFzN2ZDOV9qNHNfSFFrbVJ5U1NjVkFMN3pOeVVwV244RnBFcDFtX0JWdl9rV2RNMWZhdy1LczBQUE1HNkZ4N3ZPU2dwR3d3cTQ0dkc?oc=5",
      "zeit": "2026-09-18T00:09:32.000Z",
