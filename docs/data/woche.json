@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T02:47:02.855Z",
+ "updated": "2026-09-18T02:54:42.406Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1750,7 +1750,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-18T02:47:02.909Z",
+   "stand": "2026-09-18T02:54:42.469Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T02:47:02.898Z",
+   "stand": "2026-09-18T02:54:42.457Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T02:47:02.886Z",
-   "anzahl": 91,
+   "stand": "2026-09-18T02:54:42.445Z",
+   "anzahl": 93,
    "klassen": {
     "crypto": {
-     "score": -0.1477,
+     "score": -0.1433,
      "bull": 0,
      "bear": 12,
-     "neut": 79
+     "neut": 81
     },
     "stocks": {
-     "score": -0.1437,
+     "score": -0.1395,
      "bull": 0,
      "bear": 12,
-     "neut": 79
+     "neut": 81
     },
     "gold": {
-     "score": 0.0394,
+     "score": 0.0385,
      "bull": 10,
      "bear": 2,
-     "neut": 79
+     "neut": 81
     },
     "usd": {
-     "score": 0.0669,
+     "score": 0.0648,
      "bull": 4,
      "bear": 0,
-     "neut": 87
+     "neut": 89
     }
    },
    "top": [
@@ -2098,7 +2098,7 @@
       "gold": -0.22,
       "usd": 0.62
      },
-     "priority": 75
+     "priority": 74
     },
     {
      "id": "Reuters:COMMENTARY: Trump may not see another rate cut as president",
@@ -2114,6 +2114,21 @@
       "usd": 0.75
      },
      "priority": 83
+    },
+    {
+     "id": "Al Jazeera (GN):UN findings show US strikes on Minab could be war crimes",
+     "titel": "UN findings show US strikes on Minab could be war crimes",
+     "titelDe": "UN-Ergebnisse deuten darauf hin, dass US-Stöße auf Minab Kriegsverbrechen darstellen",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNEY5LVl2VUN1TnNFM3NsSkJ5bTg0NjRieUplb1VXbURfZ0dUdzFhVU8xY2sxNGdweWcxWUNoeVZscjdjUUF1TjFoVGZlWld2T1Nla3pZUjhCX0NGbzB5dTZZYW5Wb0tYdFFGNGtURS1rOEJULVpaVWJwWjhnMzY0eXpBaGNoWEhVSmVhVEg0cW41dFlXcC02a3ZseWJBajRubGI4X1YzMTRsaUXSAbABQVVfeXFMT29TYmFqU0NfX3JOWTNaSjFBdk1Ea2hRZmhncFk0QkdpZmZkSkxBQ1VnQ0NGajItRG1XcUhacVhXZjZQeHp6QUtJZkd4S1RSNDFwdGlVVWlCbENGaTZmbENoSnJDM1lKN2owdkNQX292R0hkeGdrekZreTlrUExuV2FqRGU2a3ppMGR5YzAtY3l0UUZLZWhuY1pibHduUl9pT3BuejFlMU82eDZiUHMwZ1k?oc=5",
+     "zeit": "2026-09-18T01:58:53.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 73
     },
     {
      "id": "Al Jazeera (GN):UN findings show US strikes on Minab could be war crimes - aljazeera.com",
@@ -2143,22 +2158,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 73
-    },
-    {
-     "id": "Al Jazeera (GN):UN findings show US strikes on Minab could be war crimes",
-     "titel": "UN findings show US strikes on Minab could be war crimes",
-     "titelDe": "UN-Ergebnisse deuten darauf hin, dass US-Stöße auf Minab Kriegsverbrechen darstellen",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNEY5LVl2VUN1TnNFM3NsSkJ5bTg0NjRieUplb1VXbURfZ0dUdzFhVU8xY2sxNGdweWcxWUNoeVZscjdjUUF1TjFoVGZlWld2T1Nla3pZUjhCX0NGbzB5dTZZYW5Wb0tYdFFGNGtURS1rOEJULVpaVWJwWjhnMzY0eXpBaGNoWEhVSmVhVEg0cW41dFlXcC02a3ZseWJBajRubGI4X1YzMTRsaUXSAbABQVVfeXFMT29TYmFqU0NfX3JOWTNaSjFBdk1Ea2hRZmhncFk0QkdpZmZkSkxBQ1VnQ0NGajItRG1XcUhacVhXZjZQeHp6QUtJZkd4S1RSNDFwdGlVVWlCbENGaTZmbENoSnJDM1lKN2owdkNQX292R0hkeGdrekZreTlrUExuV2FqRGU2a3ppMGR5YzAtY3l0UUZLZWhuY1pibHduUl9pT3BuejFlMU82eDZiUHMwZ1k?oc=5",
-     "zeit": "2026-09-18T01:58:53.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 73
+     "priority": 72
     },
     {
      "id": "Al Jazeera (GN):Iran expels Swedish diplomat in retaliatory move",
