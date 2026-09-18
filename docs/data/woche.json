@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T02:36:59.237Z",
+ "updated": "2026-09-18T02:47:02.855Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1750,7 +1750,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-18T02:36:59.329Z",
+   "stand": "2026-09-18T02:47:02.909Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T02:36:59.310Z",
+   "stand": "2026-09-18T02:47:02.898Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,7 +2056,7 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T02:36:59.291Z",
+   "stand": "2026-09-18T02:47:02.886Z",
    "anzahl": 91,
    "klassen": {
     "crypto": {
@@ -2146,6 +2146,21 @@
      "priority": 73
     },
     {
+     "id": "Al Jazeera (GN):UN findings show US strikes on Minab could be war crimes",
+     "titel": "UN findings show US strikes on Minab could be war crimes",
+     "titelDe": "UN-Ergebnisse deuten darauf hin, dass US-Stöße auf Minab Kriegsverbrechen darstellen",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNEY5LVl2VUN1TnNFM3NsSkJ5bTg0NjRieUplb1VXbURfZ0dUdzFhVU8xY2sxNGdweWcxWUNoeVZscjdjUUF1TjFoVGZlWld2T1Nla3pZUjhCX0NGbzB5dTZZYW5Wb0tYdFFGNGtURS1rOEJULVpaVWJwWjhnMzY0eXpBaGNoWEhVSmVhVEg0cW41dFlXcC02a3ZseWJBajRubGI4X1YzMTRsaUXSAbABQVVfeXFMT29TYmFqU0NfX3JOWTNaSjFBdk1Ea2hRZmhncFk0QkdpZmZkSkxBQ1VnQ0NGajItRG1XcUhacVhXZjZQeHp6QUtJZkd4S1RSNDFwdGlVVWlCbENGaTZmbENoSnJDM1lKN2owdkNQX292R0hkeGdrekZreTlrUExuV2FqRGU2a3ppMGR5YzAtY3l0UUZLZWhuY1pibHduUl9pT3BuejFlMU82eDZiUHMwZ1k?oc=5",
+     "zeit": "2026-09-18T01:58:53.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 73
+    },
+    {
      "id": "Al Jazeera (GN):Iran expels Swedish diplomat in retaliatory move",
      "titel": "Iran expels Swedish diplomat in retaliatory move",
      "titelDe": "Iran weist schwedischen Diplomaten als Vergeltungsmaßnahme aus",
@@ -2189,21 +2204,6 @@
       "usd": 0.15
      },
      "priority": 91
-    },
-    {
-     "id": "Reuters:Goldman's October hike call underscores renewed Fed tightening risks",
-     "titel": "Goldman's October hike call underscores renewed Fed tightening risks",
-     "titelDe": "Goldmans Oktober-Hike-Anruf unterstreicht erneute Fed-Härte-Risiken",
-     "quelle": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNnA4bVp0ZlNGeVVZRGJvNmIwcVdmSHN3N1I1WlpaYldOaDdGUEoxUkxJNjd3ZkFkNkxhN09iR0RJbzU0VnQxdHdqUHhhVHRsZ3B4cnl0dHE5VHh1WHFBbjRFNnhpQ2NtRjlNQXRtUUVHN0w3azFuS2VxMEJ1NHB3SG5MVWl0NzVDcGNNVmlwYXJsMzZoNWpr?oc=5",
-     "zeit": "2026-09-18T02:21:55.000Z",
-     "scores": {
-      "crypto": -0.5,
-      "stocks": -0.425,
-      "gold": -0.4,
-      "usd": 0.5
-     },
-     "priority": 80
     }
    ]
   }
