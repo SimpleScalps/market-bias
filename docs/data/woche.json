@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T15:46:14.697Z",
+ "updated": "2026-09-18T15:54:45.621Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T15:46:14.728Z",
+   "stand": "2026-09-18T15:54:45.678Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,7 +2056,7 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T15:46:14.720Z",
+   "stand": "2026-09-18T15:54:45.663Z",
    "anzahl": 230,
    "klassen": {
     "crypto": {
@@ -2085,6 +2085,21 @@
     }
    },
    "top": [
+    {
+     "id": "TASS:IAEA chief says attacks on nuclear sites unacceptable after Kursk NPP strike",
+     "titel": "IAEA chief says attacks on nuclear sites unacceptable after Kursk NPP strike",
+     "titelDe": "IAEA-Vorsitzender erklärt Angriffe auf Kernkraftwerke nach dem Kursk-Atomkraftwerksangriff als inakzeptabel",
+     "quelle": "TASS",
+     "url": "https://tass.com/world/2189823",
+     "zeit": "2026-09-18T15:46:55.000Z",
+     "scores": {
+      "crypto": -0.855,
+      "stocks": -0.855,
+      "gold": 0.427,
+      "usd": 0.285
+     },
+     "priority": 100
+    },
     {
      "id": "CNBC Economy:Why Japanese stocks rose as government bond yields and the yen fell after rate hike",
      "titel": "Why Japanese stocks rose as government bond yields and the yen fell after rate hike",
@@ -2189,21 +2204,6 @@
       "usd": 0.75
      },
      "priority": 82
-    },
-    {
-     "id": "BeInCrypto:Bank of Japan Follows Fed and ECB With Rate Hike to 1.25%",
-     "titel": "Bank of Japan Follows Fed and ECB With Rate Hike to 1.25%",
-     "titelDe": "Bank of Japan folgt Fed und EZB mit Zinserhöhung auf 1,25 %",
-     "quelle": "BeInCrypto",
-     "url": "https://beincrypto.com/bank-of-japan-rate-hike-yen/",
-     "zeit": "2026-09-18T05:22:52.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 80
     }
    ]
   }
