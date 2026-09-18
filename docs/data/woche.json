@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T15:32:09.081Z",
+ "updated": "2026-09-18T15:46:14.697Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T15:32:09.137Z",
+   "stand": "2026-09-18T15:46:14.728Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,7 +2056,7 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T15:32:09.122Z",
+   "stand": "2026-09-18T15:46:14.720Z",
    "anzahl": 230,
    "klassen": {
     "crypto": {
@@ -2107,6 +2107,21 @@
      "quelle": "FXStreet",
      "url": "https://www.fxstreet.com/news/forex-today-us-dollar-holds-gains-as-markets-weigh-fed-rate-hike-boj-move-in-focus-202609180549",
      "zeit": "2026-09-18T05:49:53.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
+    {
+     "id": "FXStreet:Fed’s Schmid supports rate hike as inflation broadens beyond 3%",
+     "titel": "Fed’s Schmid supports rate hike as inflation broadens beyond 3%",
+     "titelDe": "Schmid der Fed befürwortet Zinserhöhung, da Inflation über 3 % hinausgeht",
+     "quelle": "FXStreet",
+     "url": "https://www.fxstreet.com/news/feds-schmid-supports-rate-hike-as-inflation-broadens-beyond-3-202609181541",
+     "zeit": "2026-09-18T15:41:15.000Z",
      "scores": {
       "crypto": -0.75,
       "stocks": -0.637,
@@ -2189,21 +2204,6 @@
       "usd": 0.75
      },
      "priority": 80
-    },
-    {
-     "id": "TASS:Russian forces conduct two massive, five group strikes on targets in Ukraine in past week",
-     "titel": "Russian forces conduct two massive, five group strikes on targets in Ukraine in past week",
-     "titelDe": "Russische Streitkräfte führen in der vergangenen Woche zwei massive, fünf Gruppenangriffe auf Ziele in der Ukraine durch",
-     "quelle": "TASS",
-     "url": "https://tass.com/politics/2189615",
-     "zeit": "2026-09-18T11:17:07.000Z",
-     "scores": {
-      "crypto": -0.81,
-      "stocks": -0.81,
-      "gold": 0.405,
-      "usd": 0.27
-     },
-     "priority": 74
     }
    ]
   }
