@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T00:26:32.138Z",
+ "updated": "2026-09-18T00:41:06.343Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1750,7 +1750,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-18T00:26:32.215Z",
+   "stand": "2026-09-18T00:41:06.424Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T00:26:32.198Z",
+   "stand": "2026-09-18T00:41:06.407Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T00:26:32.181Z",
-   "anzahl": 47,
+   "stand": "2026-09-18T00:41:06.388Z",
+   "anzahl": 58,
    "klassen": {
     "crypto": {
-     "score": -0.1412,
+     "score": -0.0937,
      "bull": 0,
-     "bear": 7,
-     "neut": 40
+     "bear": 6,
+     "neut": 52
     },
     "stocks": {
-     "score": -0.1342,
+     "score": -0.0937,
      "bull": 0,
-     "bear": 7,
-     "neut": 40
+     "bear": 6,
+     "neut": 52
     },
     "gold": {
-     "score": 0.0096,
-     "bull": 5,
-     "bear": 2,
-     "neut": 40
+     "score": 0.0469,
+     "bull": 6,
+     "bear": 0,
+     "neut": 52
     },
     "usd": {
-     "score": 0.0784,
-     "bull": 2,
+     "score": 0.0312,
+     "bull": 0,
      "bear": 0,
-     "neut": 45
+     "neut": 58
     }
    },
    "top": [
@@ -2114,6 +2114,21 @@
       "usd": 0.15
      },
      "priority": 95
+    },
+    {
+     "id": "Al Jazeera (GN):Iran expels Swedish diplomat in retaliatory move",
+     "titel": "Iran expels Swedish diplomat in retaliatory move",
+     "titelDe": "Iran weist schwedischen Diplomaten als Vergeltungsmaßnahme aus",
+     "quelle": "Al Jazeera (GN)",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPako1QWFTVHUtLUwtSUM1LTVSN3MzQ0dWUUZUQ1ZrSGJpZjdTZk9saHNiRnFBOFRWeE9NeVlmejRGSFFTQS1ESTdnVjVPWHhFaXpFWjUxM2I0aHlFS3NmUi1TTy1lcE04bjFTQVN3Q3kwWlp5VzIwVnJXdkRyemdKR1VDRGh5U0tKQ1lwbWNrQWxqVGPSAZgBQVVfeXFMT21sZGJJUGxTM1kwWGNmVjV6RFM5T1V3WXVLbXltdUNRcE02S1M1ZkI3WmRIN015ZXR5cW0yNUlOMUl4cUNXV3R6N05qVHFzN2ZDOV9qNHNfSFFrbVJ5U1NjVkFMN3pOeVVwV244RnBFcDFtX0JWdl9rV2RNMWZhdy1LczBQUE1HNkZ4N3ZPU2dwR3d3cTQ0dkc?oc=5",
+     "zeit": "2026-09-18T00:09:32.000Z",
+     "scores": {
+      "crypto": -0.45,
+      "stocks": -0.45,
+      "gold": 0.225,
+      "usd": 0.15
+     },
+     "priority": 94
     },
     {
      "id": "Reuters:Goldman's October hike call underscores renewed Fed tightening risks",
@@ -2158,7 +2173,7 @@
       "gold": 0.203,
       "usd": 0.135
      },
-     "priority": 94
+     "priority": 93
     }
    ]
   }
