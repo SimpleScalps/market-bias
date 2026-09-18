@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T05:29:49.045Z",
+ "updated": "2026-09-18T05:40:47.360Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1750,7 +1750,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-18T05:29:49.127Z",
+   "stand": "2026-09-18T05:40:47.445Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T05:29:49.110Z",
+   "stand": "2026-09-18T05:40:47.427Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T05:29:49.091Z",
-   "anzahl": 106,
+   "stand": "2026-09-18T05:40:47.408Z",
+   "anzahl": 111,
    "klassen": {
     "crypto": {
-     "score": -0.1231,
+     "score": -0.1236,
      "bull": 0,
-     "bear": 15,
-     "neut": 91
+     "bear": 16,
+     "neut": 95
     },
     "stocks": {
-     "score": -0.1068,
+     "score": -0.1073,
      "bull": 0,
-     "bear": 14,
-     "neut": 92
+     "bear": 15,
+     "neut": 96
     },
     "gold": {
-     "score": -0.0079,
+     "score": -0.0132,
      "bull": 8,
-     "bear": 6,
-     "neut": 92
+     "bear": 7,
+     "neut": 96
     },
     "usd": {
-     "score": 0.0715,
-     "bull": 7,
+     "score": 0.0749,
+     "bull": 8,
      "bear": 0,
-     "neut": 99
+     "neut": 103
     }
    },
    "top": [
@@ -2128,7 +2128,7 @@
       "gold": -0.6,
       "usd": 0.75
      },
-     "priority": 80
+     "priority": 79
     },
     {
      "id": "Al Jazeera (GN):UN findings show US strikes on Minab could be war crimes",
@@ -2188,7 +2188,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 69
+     "priority": 68
     },
     {
      "id": "FXStreet:Gold bulls seem hesitant as hawkish Fed and Middle East jitters limit USD downside",
