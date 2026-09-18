@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T09:06:53.092Z",
+ "updated": "2026-09-18T09:21:20.177Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T09:06:53.147Z",
+   "stand": "2026-09-18T09:21:20.245Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T09:06:53.132Z",
-   "anzahl": 141,
+   "stand": "2026-09-18T09:21:20.225Z",
+   "anzahl": 146,
    "klassen": {
     "crypto": {
-     "score": -0.1113,
+     "score": -0.1132,
      "bull": 1,
-     "bear": 18,
-     "neut": 122
+     "bear": 19,
+     "neut": 126
     },
     "stocks": {
-     "score": -0.1006,
+     "score": -0.1027,
      "bull": 0,
-     "bear": 17,
-     "neut": 124
+     "bear": 18,
+     "neut": 128
     },
     "gold": {
-     "score": -0.0283,
-     "bull": 9,
+     "score": -0.0256,
+     "bull": 10,
      "bear": 8,
-     "neut": 124
+     "neut": 128
     },
     "usd": {
-     "score": 0.0795,
+     "score": 0.0793,
      "bull": 8,
      "bear": 0,
-     "neut": 133
+     "neut": 138
     }
    },
    "top": [
@@ -2146,21 +2146,6 @@
      "priority": 83
     },
     {
-     "id": "CNBC Economy:Why Japan’s markets flipped the usual script after central bank rate hike",
-     "titel": "Why Japan’s markets flipped the usual script after central bank rate hike",
-     "titelDe": "Warum Japans Märkte nach der Zinserhöhung der Zentralbank das übliche Skript umgedreht haben",
-     "quelle": "CNBC Economy",
-     "url": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html",
-     "zeit": "2026-09-18T05:22:52.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 82
-    },
-    {
      "id": "FXStreet:Forex Today: Japanese Yen falls despite BoJ's rate hike; Fedspeak in focus",
      "titel": "Forex Today: Japanese Yen falls despite BoJ's rate hike; Fedspeak in focus",
      "titelDe": "Devisen heute: Yen fällt trotz BoJ Zinserhöhung; Fed-Sprache im Fokus",
@@ -2174,6 +2159,21 @@
       "usd": 0.75
      },
      "priority": 82
+    },
+    {
+     "id": "CNBC Economy:Why Japan’s markets flipped the usual script after central bank rate hike",
+     "titel": "Why Japan’s markets flipped the usual script after central bank rate hike",
+     "titelDe": "Warum Japans Märkte nach der Zinserhöhung der Zentralbank das übliche Skript umgedreht haben",
+     "quelle": "CNBC Economy",
+     "url": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html",
+     "zeit": "2026-09-18T05:22:52.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 81
     },
     {
      "id": "BeInCrypto:Bank of Japan Follows Fed and ECB With Rate Hike to 1.25%",
