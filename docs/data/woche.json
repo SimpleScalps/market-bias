@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T02:54:42.406Z",
+ "updated": "2026-09-18T03:04:06.011Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1750,7 +1750,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-18T02:54:42.469Z",
+   "stand": "2026-09-18T03:04:06.080Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T02:54:42.457Z",
+   "stand": "2026-09-18T03:04:06.065Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,7 +2056,7 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T02:54:42.445Z",
+   "stand": "2026-09-18T03:04:06.051Z",
    "anzahl": 93,
    "klassen": {
     "crypto": {
@@ -2146,6 +2146,21 @@
      "priority": 73
     },
     {
+     "id": "Al Jazeera:UN findings show US strikes on Minab could be war crimes",
+     "titel": "UN findings show US strikes on Minab could be war crimes",
+     "titelDe": "UN-Ergebnisse deuten darauf hin, dass US-Stöße auf Minab Kriegsverbrechen darstellen",
+     "quelle": "Al Jazeera",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/9/18/un-findings-show-us-strikes-on-minab-could-be-war-crimes?traffic_source=rss",
+     "zeit": "2026-09-18T01:58:53.000Z",
+     "scores": {
+      "crypto": -0.765,
+      "stocks": -0.765,
+      "gold": 0.383,
+      "usd": 0.255
+     },
+     "priority": 73
+    },
+    {
      "id": "FXStreet:Canadian Dollar bears retain control near August 7 low amid US-Canada rate gap/trade war",
      "titel": "Canadian Dollar bears retain control near August 7 low amid US-Canada rate gap/trade war",
      "titelDe": "Kanadischer Dollar behält Kontrolle nahe dem August-7-Tief trotz US‑Kanada‑Zinsunterschied/Handelskrieg",
@@ -2189,21 +2204,6 @@
       "usd": 0.15
      },
      "priority": 94
-    },
-    {
-     "id": "Al Jazeera:Iran expels Swedish diplomat in retaliatory move",
-     "titel": "Iran expels Swedish diplomat in retaliatory move",
-     "titelDe": "Iran weist schwedischen Diplomaten als Vergeltungsmaßnahme aus",
-     "quelle": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/9/18/iran-expels-swedish-diplomat-in-retaliatory-move?traffic_source=rss",
-     "zeit": "2026-09-18T00:09:32.000Z",
-     "scores": {
-      "crypto": -0.45,
-      "stocks": -0.45,
-      "gold": 0.225,
-      "usd": 0.15
-     },
-     "priority": 91
     }
    ]
   }
