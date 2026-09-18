@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T10:20:34.176Z",
+ "updated": "2026-09-18T10:36:36.367Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T10:20:34.247Z",
+   "stand": "2026-09-18T10:36:36.422Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T10:20:34.226Z",
-   "anzahl": 176,
+   "stand": "2026-09-18T10:36:36.408Z",
+   "anzahl": 181,
    "klassen": {
     "crypto": {
-     "score": -0.1018,
+     "score": -0.0884,
      "bull": 2,
-     "bear": 24,
-     "neut": 150
+     "bear": 23,
+     "neut": 156
     },
     "stocks": {
-     "score": -0.0945,
+     "score": -0.0826,
      "bull": 1,
-     "bear": 23,
-     "neut": 152
+     "bear": 22,
+     "neut": 158
     },
     "gold": {
-     "score": -0.0057,
+     "score": 0.001,
      "bull": 15,
-     "bear": 9,
-     "neut": 152
+     "bear": 8,
+     "neut": 158
     },
     "usd": {
-     "score": 0.0625,
-     "bull": 9,
+     "score": 0.0512,
+     "bull": 8,
      "bear": 0,
-     "neut": 167
+     "neut": 173
     }
    },
    "top": [
@@ -2176,21 +2176,6 @@
      "priority": 82
     },
     {
-     "id": "CNBC Economy:Why Japan’s markets flipped the usual script after central bank rate hike",
-     "titel": "Why Japan’s markets flipped the usual script after central bank rate hike",
-     "titelDe": "Warum Japans Märkte nach der Zinserhöhung der Zentralbank das übliche Skript umgedreht haben",
-     "quelle": "CNBC Economy",
-     "url": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html",
-     "zeit": "2026-09-18T05:22:52.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 80
-    },
-    {
      "id": "BeInCrypto:Bank of Japan Follows Fed and ECB With Rate Hike to 1.25%",
      "titel": "Bank of Japan Follows Fed and ECB With Rate Hike to 1.25%",
      "titelDe": "Bank of Japan folgt Fed und EZB mit Zinserhöhung auf 1,25 %",
@@ -2204,6 +2189,21 @@
       "usd": 0.75
      },
      "priority": 80
+    },
+    {
+     "id": "CNBC Economy:Why Japan’s markets flipped the usual script after central bank rate hike",
+     "titel": "Why Japan’s markets flipped the usual script after central bank rate hike",
+     "titelDe": "Warum Japans Märkte nach der Zinserhöhung der Zentralbank das übliche Skript umgedreht haben",
+     "quelle": "CNBC Economy",
+     "url": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html",
+     "zeit": "2026-09-18T05:22:52.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 79
     }
    ]
   }
