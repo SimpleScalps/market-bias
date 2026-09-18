@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T07:36:05.779Z",
+ "updated": "2026-09-18T07:46:28.983Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T07:36:05.844Z",
+   "stand": "2026-09-18T07:46:29.048Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,35 +2056,50 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T07:36:05.825Z",
-   "anzahl": 126,
+   "stand": "2026-09-18T07:46:29.030Z",
+   "anzahl": 127,
    "klassen": {
     "crypto": {
-     "score": -0.1214,
-     "bull": 1,
-     "bear": 17,
-     "neut": 108
+     "score": -0.1143,
+     "bull": 2,
+     "bear": 18,
+     "neut": 107
     },
     "stocks": {
-     "score": -0.1084,
-     "bull": 0,
-     "bear": 16,
-     "neut": 110
+     "score": -0.1035,
+     "bull": 1,
+     "bear": 17,
+     "neut": 109
     },
     "gold": {
-     "score": -0.0427,
-     "bull": 9,
+     "score": -0.0263,
+     "bull": 11,
      "bear": 7,
-     "neut": 110
+     "neut": 109
     },
     "usd": {
-     "score": 0.0928,
-     "bull": 7,
+     "score": 0.0802,
+     "bull": 6,
      "bear": 0,
-     "neut": 119
+     "neut": 121
     }
    },
    "top": [
+    {
+     "id": "CNBC Economy:Why Japan’s markets flipped the usual script after central bank rate hike",
+     "titel": "Why Japan’s markets flipped the usual script after central bank rate hike",
+     "titelDe": "Warum Japans Märkte nach der Zinserhöhung der Zentralbank das übliche Skript umgedreht haben",
+     "quelle": "CNBC Economy",
+     "url": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html",
+     "zeit": "2026-09-18T05:22:52.000Z",
+     "scores": {
+      "crypto": -0.75,
+      "stocks": -0.637,
+      "gold": -0.6,
+      "usd": 0.75
+     },
+     "priority": 84
+    },
     {
      "id": "CNBC Economy:Why Japanese stocks rose as government bond yields and the yen fell after rate hike",
      "titel": "Why Japanese stocks rose as government bond yields and the yen fell after rate hike",
@@ -2189,21 +2204,6 @@
       "usd": 0.75
      },
      "priority": 76
-    },
-    {
-     "id": "Al Jazeera (GN):UN findings show US strikes on Minab could be war crimes",
-     "titel": "UN findings show US strikes on Minab could be war crimes",
-     "titelDe": "UN-Ergebnisse deuten darauf hin, dass US-Stöße auf Minab Kriegsverbrechen darstellen",
-     "quelle": "Al Jazeera (GN)",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNEY5LVl2VUN1TnNFM3NsSkJ5bTg0NjRieUplb1VXbURfZ0dUdzFhVU8xY2sxNGdweWcxWUNoeVZscjdjUUF1TjFoVGZlWld2T1Nla3pZUjhCX0NGbzB5dTZZYW5Wb0tYdFFGNGtURS1rOEJULVpaVWJwWjhnMzY0eXpBaGNoWEhVSmVhVEg0cW41dFlXcC02a3ZseWJBajRubGI4X1YzMTRsaUXSAbABQVVfeXFMT29TYmFqU0NfX3JOWTNaSjFBdk1Ea2hRZmhncFk0QkdpZmZkSkxBQ1VnQ0NGajItRG1XcUhacVhXZjZQeHp6QUtJZkd4S1RSNDFwdGlVVWlCbENGaTZmbENoSnJDM1lKN2owdkNQX292R0hkeGdrekZreTlrUExuV2FqRGU2a3ppMGR5YzAtY3l0UUZLZWhuY1pibHduUl9pT3BuejFlMU82eDZiUHMwZ1k?oc=5",
-     "zeit": "2026-09-18T01:58:53.000Z",
-     "scores": {
-      "crypto": -0.765,
-      "stocks": -0.765,
-      "gold": 0.383,
-      "usd": 0.255
-     },
-     "priority": 73
     }
    ]
   }
