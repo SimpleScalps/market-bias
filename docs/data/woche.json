@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T20:52:42.979Z",
+ "updated": "2026-09-18T21:04:03.233Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T20:52:43.034Z",
+   "stand": "2026-09-18T21:04:03.295Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,7 +2056,7 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T20:52:43.019Z",
+   "stand": "2026-09-18T21:04:03.277Z",
    "anzahl": 236,
    "klassen": {
     "crypto": {
@@ -2114,6 +2114,21 @@
       "usd": 0.285
      },
      "priority": 99
+    },
+    {
+     "id": "TASS:Egyptian captain killed in strike on port in Russia — Egyptian Foreign Ministry",
+     "titel": "Egyptian captain killed in strike on port in Russia — Egyptian Foreign Ministry",
+     "titelDe": "Ägyptischer Kapitän bei Angriff auf Hafen in Russland getötet — ägyptisches Außenministerium",
+     "quelle": "TASS",
+     "url": "https://tass.com/emergencies/2189981",
+     "zeit": "2026-09-18T21:00:18.000Z",
+     "scores": {
+      "crypto": -0.81,
+      "stocks": -0.81,
+      "gold": 0.405,
+      "usd": 0.27
+     },
+     "priority": 100
     },
     {
      "id": "CNBC Economy:Why Japanese stocks rose as government bond yields and the yen fell after rate hike",
@@ -2189,21 +2204,6 @@
       "usd": 0.75
      },
      "priority": 82
-    },
-    {
-     "id": "MarketWatch:Why investors’ best move in reaction to Fed’s rate hike is doing nothing at all",
-     "titel": "Why investors’ best move in reaction to Fed’s rate hike is doing nothing at all",
-     "titelDe": "Die beste Reaktion der Anleger auf die Fed‑Erhöhung ist, nichts zu tun",
-     "quelle": "MarketWatch",
-     "url": "https://www.marketwatch.com/story/why-investors-best-move-in-reaction-to-feds-rate-hike-is-doing-nothing-at-all-6ff56b4c?mod=mw_rss_topstories",
-     "zeit": "2026-09-18T16:39:00.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 79
     }
    ]
   }
