@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T02:21:07.956Z",
+ "updated": "2026-09-18T02:36:59.237Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1750,7 +1750,7 @@
   },
   "2026-09-16": {
    "tag": "2026-09-16",
-   "stand": "2026-09-18T02:21:08.011Z",
+   "stand": "2026-09-18T02:36:59.329Z",
    "anzahl": 252,
    "klassen": {
     "crypto": {
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T02:21:08.000Z",
+   "stand": "2026-09-18T02:36:59.310Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,32 +2056,32 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T02:21:07.989Z",
-   "anzahl": 81,
+   "stand": "2026-09-18T02:36:59.291Z",
+   "anzahl": 91,
    "klassen": {
     "crypto": {
-     "score": -0.1471,
+     "score": -0.1477,
      "bull": 0,
-     "bear": 10,
-     "neut": 71
+     "bear": 12,
+     "neut": 79
     },
     "stocks": {
-     "score": -0.1449,
+     "score": -0.1437,
      "bull": 0,
-     "bear": 10,
-     "neut": 71
+     "bear": 12,
+     "neut": 79
     },
     "gold": {
-     "score": 0.0546,
-     "bull": 9,
-     "bear": 1,
-     "neut": 71
+     "score": 0.0394,
+     "bull": 10,
+     "bear": 2,
+     "neut": 79
     },
     "usd": {
-     "score": 0.0587,
-     "bull": 3,
+     "score": 0.0669,
+     "bull": 4,
      "bear": 0,
-     "neut": 78
+     "neut": 87
     }
    },
    "top": [
@@ -2128,7 +2128,7 @@
       "gold": 0.383,
       "usd": 0.255
      },
-     "priority": 74
+     "priority": 73
     },
     {
      "id": "FXStreet:Canadian Dollar bears retain control near August 7 low amid US-Canada rate gap/trade war",
@@ -2188,7 +2188,7 @@
       "gold": 0.225,
       "usd": 0.15
      },
-     "priority": 92
+     "priority": 91
     },
     {
      "id": "Reuters:Goldman's October hike call underscores renewed Fed tightening risks",
@@ -2196,14 +2196,14 @@
      "titelDe": "Goldmans Oktober-Hike-Anruf unterstreicht erneute Fed-Härte-Risiken",
      "quelle": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNnA4bVp0ZlNGeVVZRGJvNmIwcVdmSHN3N1I1WlpaYldOaDdGUEoxUkxJNjd3ZkFkNkxhN09iR0RJbzU0VnQxdHdqUHhhVHRsZ3B4cnl0dHE5VHh1WHFBbjRFNnhpQ2NtRjlNQXRtUUVHN0w3azFuS2VxMEJ1NHB3SG5MVWl0NzVDcGNNVmlwYXJsMzZoNWpr?oc=5",
-     "zeit": "2026-09-17T23:08:14.000Z",
+     "zeit": "2026-09-18T02:21:55.000Z",
      "scores": {
       "crypto": -0.5,
       "stocks": -0.425,
       "gold": -0.4,
       "usd": 0.5
      },
-     "priority": 79
+     "priority": 80
     }
    ]
   }
