@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18T17:35:27.958Z",
+ "updated": "2026-09-18T17:43:21.107Z",
  "tage": {
   "2026-09-05": {
    "tag": "2026-09-05",
@@ -1903,7 +1903,7 @@
   },
   "2026-09-17": {
    "tag": "2026-09-17",
-   "stand": "2026-09-18T17:35:28.029Z",
+   "stand": "2026-09-18T17:43:21.173Z",
    "anzahl": 231,
    "klassen": {
     "crypto": {
@@ -2056,7 +2056,7 @@
   },
   "2026-09-18": {
    "tag": "2026-09-18",
-   "stand": "2026-09-18T17:35:28.009Z",
+   "stand": "2026-09-18T17:43:21.154Z",
    "anzahl": 232,
    "klassen": {
     "crypto": {
@@ -2085,6 +2085,21 @@
     }
    },
    "top": [
+    {
+     "id": "Reuters:Ukrainian capital Kyiv under missile attack, mayor says",
+     "titel": "Ukrainian capital Kyiv under missile attack, mayor says",
+     "titelDe": "Ukrainische Hauptstadt Kiew unter Raketenangriff, sagt Bürgermeister",
+     "quelle": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZVlDYTFXd2lVSThnZWxLQ2hFTTRoVjRJem5PZUc1X2ZvSHROSFI5QlozNmdZTGJDdUN4Nzl3STZXcEtGX3ZVWFlKSjdTVjN0VURfdXQzMmFaR1o2ZUQ0UDdrRkYzdXpTRkZ2LXM5ZjkwR1JkSGk2ODFOYUgxeFJTbTFnSmVwTHdtb0NaOFQ1QzBVM0I4RHRSVV9ndWk?oc=5",
+     "zeit": "2026-09-18T17:37:01.000Z",
+     "scores": {
+      "crypto": -0.9,
+      "stocks": -0.9,
+      "gold": 0.45,
+      "usd": 0.3
+     },
+     "priority": 100
+    },
     {
      "id": "TASS:IAEA chief says attacks on nuclear sites unacceptable after Kursk NPP strike",
      "titel": "IAEA chief says attacks on nuclear sites unacceptable after Kursk NPP strike",
@@ -2189,21 +2204,6 @@
       "usd": 0.75
      },
      "priority": 82
-    },
-    {
-     "id": "FXStreet:Fed’s Schmid supports rate hike as inflation broadens beyond 3%",
-     "titel": "Fed’s Schmid supports rate hike as inflation broadens beyond 3%",
-     "titelDe": "Schmid der Fed befürwortet Zinserhöhung, da Inflation über 3 % hinausgeht",
-     "quelle": "FXStreet",
-     "url": "https://www.fxstreet.com/news/feds-schmid-supports-rate-hike-as-inflation-broadens-beyond-3-202609181541",
-     "zeit": "2026-09-18T15:41:15.000Z",
-     "scores": {
-      "crypto": -0.75,
-      "stocks": -0.637,
-      "gold": -0.6,
-      "usd": 0.75
-     },
-     "priority": 81
     }
    ]
   }
